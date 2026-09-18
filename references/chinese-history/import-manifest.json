@@ -54,8 +54,8 @@
   "files": [
     {
       "path": "INDEX.md",
-      "bytes": 102089,
-      "sha256": "cf7130ef3a96dec6e103ba1e2f721aaeb33785fa23ce81373c30f3ab162806ee"
+      "bytes": 102088,
+      "sha256": "c1e11a9ba561083a52be10915609c26ed0fc209d4bd264f5486eac2288ba79c9"
     },
     {
       "path": "catalog.jsonl",

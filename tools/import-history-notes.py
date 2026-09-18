@@ -105,7 +105,7 @@ def main():
             cell = f'[{title}]({link(path)})' if path else title
             index.append(f'| {record["stable_id"]} | {cell} | {"可读" if path else "仅目录，缺稿"} |')
         index.append('')
-    files['INDEX.md'] = ('\n'.join(index) + '\n').encode()
+    files['INDEX.md'] = ('\n'.join(index).rstrip() + '\n').encode()
     receipt = {
         'source_archive': args.archive.name,
         'source_sha256': EXPECTED_SHA256,
