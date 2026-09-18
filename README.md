@@ -2,6 +2,8 @@
 
 **当前状态：首版工程基线，用户不认可现有界面、故事与文案，等待重做评审。** 技术测试通过不代表体验验收通过。
 
+仓库当前为私有；当前GPT的GitHub连接尚不能读取这个新库，访问条件见 [BLOCKED.md](BLOCKED.md)。
+
 给 GPT 的入口：[单文件评审包](docs/REVIEW_PACKET.md)（汇集截图、故事原稿、实际台词与评审问题）；[简版评审说明](docs/GPT_REVIEW.md)。
 
 ![当前首页](evidence/01-home.png)

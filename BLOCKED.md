@@ -1,5 +1,11 @@
 # 阻塞及待验收
 
+## B-04 GPT的GitHub连接尚不能读取新私有仓库
+- 已完成：新建并上传私有仓库 https://github.com/yvain57-afk/yilu-changge ，本机gh读回成功、远端提交与本地一致；GPT评审说明及单文件材料已入库。
+- 未完成：当前GitHub连接器读取仓库和docs/REVIEW_PACKET.md均返回404，不能保证另一段GPT会话能看见仓库。连接器列可管理安装返回空数组；本机gh列App安装权限返回403，不据此尝试越权。
+- 缺失条件：让GPT的GitHub连接获准访问此仓库，或用户明确确认将仓库设为公开。不会把未答复视作公开或扩大App权限的许可。
+- 可用材料：docs/REVIEW_PACKET.md可直接交给GPT阅读，图像原件在evidence。没有虚构已经获得GPT改进意见。
+
 ## B-01 微信专用小游戏身份未确认
 - 已完成：Cocos 3.8.8 真实微信小游戏构建，退出36；产物 `build/wechatgame`，compileType=game，appid=touristappid；没有打开或上传引擎默认示例AppID。
 - 未完成：合法小游戏 AppID 下开发者工具与微信真机验收。
