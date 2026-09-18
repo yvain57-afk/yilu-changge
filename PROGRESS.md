@@ -5,8 +5,8 @@
 - 当前指令：新建GitHub仓库上传当前项目，让GPT查看和给改进建议。本轮先做仓库与评审入口，不擅自开始新一轮游戏改造。
 - 已核实账号yvain57-afk；拟用仓库名yilu-changge。本地初始无.git，准备保留完整源码、原创素材、截图及验证资料。
 - 已整理docs/GPT_REVIEW.md，README前置用户反馈及评审入口。依赖、缓存、下载包和本地release压缩包不入库。
-- 公开尚未获确认，按先前边界创建私有仓库 https://github.com/yvain57-afk/yilu-changge 并上传。游戏上架、Pages部署、商业化仍未授权。
-- 本机gh认证可读仓库，远端main与本地提交ebe2d2f一致；当前GitHub连接器读取新私有库返回404，尚不能宣称GPT已能直接读库，见BLOCKED B-04。
+- 仓库最初按边界设为私有；用户随后授权「如果不行就公开」。复查连接仍404后，已将 https://github.com/yvain57-afk/yilu-changge 设为PUBLIC。游戏上架、Pages部署、商业化仍未授权。
+- 公开后当前GitHub连接fetch_file读取评审包成功，免登录网页也读取成功；BLOCKED B-04已解除。下一步可将docs/REVIEW_PACKET.md链接交给GPT评审，尚未代替用户选择重做方向。
 
 ## 首版技术基线（历史实测，不代表体验通过）
 - 浏览器三关可玩，真实Cocos 3.8.8双平台构建均退出36；入口 http://127.0.0.1:43187 。
