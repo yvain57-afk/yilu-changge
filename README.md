@@ -6,6 +6,8 @@
 
 给 GPT 的入口：[单文件评审包](docs/REVIEW_PACKET.md)（汇集截图、故事原稿、实际台词与评审问题）；[简版评审说明](docs/GPT_REVIEW.md)。
 
+历史课程参考资料：[原创学习稿与收录说明](references/chinese-history/README.md) · [全部目录](references/chinese-history/INDEX.md) · [GPT 阅读指南](references/chinese-history/GPT_GUIDE.md)。含 326 篇逐讲稿、12 份时期综述等共 388 份原始 Markdown；目录另有 8 条缺稿，已标明。课程观点不直接等同于已经核实的史实。
+
 ![当前首页](evidence/01-home.png)
 
 国风纸兵冒险，竖屏，战国「渡口送简」→西汉「关道护粮」→唐「长街寻信」。单指空白处左右拖动、自动前进与向前射箭。人数同时决定余量与火力，归零折返，可免费重开。

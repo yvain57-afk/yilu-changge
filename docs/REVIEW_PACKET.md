@@ -36,6 +36,8 @@
 
 ## 建议阅读顺序
 
+新增历史参考：[课程原创学习稿说明](../references/chinese-history/README.md)、[课程目录](../references/chinese-history/INDEX.md)、[课程材料与创意任务指南](../references/chinese-history/GPT_GUIDE.md)。共 326 篇逐讲稿、12 份时期综述；8 条目录缺稿。请在了解游戏目标后按需选读，区分课程观点、独立史料和游戏虚构。首关战国材料仍需补证。
+
 1. 本页：用户目标、反馈、截图及问题。
 2. [人物与三关故事](STORY.md)、[实际游戏台词与关卡配置](../assets/scripts/core/levels.ts)。台词最终以代码为准。
 3. [十二章总纲](TWELVE-CHAPTERS.md)、[史料与虚构边界](HISTORY-SOURCES.md)。首版只开放三关，其他章节只作文字规划。
