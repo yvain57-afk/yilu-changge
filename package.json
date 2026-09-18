@@ -1,0 +1,29 @@
+{
+  "name": "yilu-changge",
+  "version": "0.1.0",
+  "private": true,
+  "creator": {
+    "version": "3.8.8"
+  },
+  "description": "一路长歌 — 三页无名者的归途",
+  "scripts": {
+    "test": "node tools/run-local.mjs tsx --test tests/*.test.ts",
+    "typecheck:core": "node tools/run-local.mjs tsc -p tsconfig.core.json --noEmit",
+    "typecheck": "node tools/run-local.mjs tsc --noEmit -p tsconfig.json",
+    "art": "node tools/art.mjs && python3 tools/audio.py",
+    "build:web": "node tools/build.mjs web-mobile",
+    "build:wechat": "node tools/build.mjs wechatgame",
+    "serve": "node tools/serve.mjs",
+    "test:negative": "node tools/run-local.mjs node tools/mutation.mjs",
+    "test:browser": "node tools/run-local.mjs node tools/browser-play.mjs 10",
+    "test:edge": "node tools/run-local.mjs node tools/browser-edge.mjs",
+    "test:failure": "node tools/run-local.mjs node tools/browser-failure.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.55.1",
+    "sharp": "^0.34.4",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "uuid": "1d61d330-d6e6-4526-bdf9-c0aad1a82910"
+}

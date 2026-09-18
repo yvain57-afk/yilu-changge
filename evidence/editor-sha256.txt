@@ -1,0 +1,1 @@
+cc65c3665539e996c076fa8202dee8531b8770e7e956f0c68f610537735d640c  tools/downloads/CocosCreator-v3.8.8-mac-121518.zip

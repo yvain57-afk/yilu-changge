@@ -1,0 +1,15 @@
+import {spawn} from 'node:child_process';
+import {mkdirSync,writeFileSync,createWriteStream,readFileSync} from 'node:fs';
+import {resolve} from 'node:path';
+const platform=process.argv[2]||'web-mobile';
+if(!['web-mobile','wechatgame'].includes(platform))throw Error('unsupported platform');
+mkdirSync('evidence',{recursive:true});
+const config={name:'一路长歌',platform,buildPath:'project://build',outputName:platform,debug:false,startScene:'752d3aa0-8b82-4e8e-a6d4-c6587c90bcf2',scenes:[{url:'db://assets/scenes/Journey.scene',uuid:'752d3aa0-8b82-4e8e-a6d4-c6587c90bcf2'}],packages:{'web-mobile':{orientation:'portrait'},wechatgame:{appid:'touristappid',orientation:'portrait'}},sourceMaps:false};
+writeFileSync(`tools/build-${platform}.json`,JSON.stringify(config,null,2));
+const bin='/Applications/CocosCreator/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator';
+const args=['--project',process.cwd(),'--build',`configPath=${resolve(`tools/build-${platform}.json`)}`];
+console.log(bin,args.join(' '));
+mkdirSync('.cache/tmp',{recursive:true});
+const log=createWriteStream(`evidence/build-${platform}.log`);const p=spawn(bin,args,{stdio:['ignore','pipe','pipe'],env:{...process.env,TMPDIR:resolve('.cache/tmp')}});
+p.stdout.on('data',d=>{log.write(d);process.stdout.write(d)});p.stderr.on('data',d=>{log.write(d);process.stderr.write(d)});
+p.on('close',code=>{log.end();if(code===36&&platform==='wechatgame'){const config=JSON.parse(readFileSync('build/wechatgame/project.config.json','utf8'));if(config.appid!=='touristappid'){console.error('Unexpected appid in generated package; do not open/upload.');code=34;}}writeFileSync(`evidence/build-${platform}-result.json`,JSON.stringify({platform,exitCode:code,success:code===36,date:new Date().toISOString(),bin,args},null,2));process.exit(code===36?0:1)});

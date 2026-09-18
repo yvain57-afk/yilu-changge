@@ -1,0 +1,5 @@
+
+> yilu-changge@0.1.0 test:failure
+> node tools/run-local.mjs node tools/browser-failure.mjs
+
+{"passed":true,"cause":"未避开守关墨影的落墨","gameSeconds":89.48333333332954,"zeroFails":true,"freeRestartCount":8,"clueRetainedAfterFailureRestartAndReload":true,"errors":[]}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "cause": "未避开守关墨影的落墨",
+  "gameSeconds": 89.48333333332954,
+  "zeroFails": true,
+  "freeRestartCount": 8,
+  "clueRetainedAfterFailureRestartAndReload": true,
+  "errors": []
+}

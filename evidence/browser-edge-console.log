@@ -1,0 +1,7 @@
+
+> yilu-changge@0.1.0 test:edge
+> node tools/browser-edge.mjs
+
+{"passed":true,"background":{"hidden":true,"visibility":"hidden","focused":false,"screen":"pause"},"returnedPaused":true,"explicitContinueRestoresProgress":true,"browser":"Chrome/152.0.7977.83"}
+
+{"checks":["坏档恢复默认并提示","三个设置开关保存并恢复","手机比例触摸点击跳剧情直接开战","真实单指拖动改变横向位置","后台自动暂停，返回须点击继续","连续五次免费重开，无叠加门收益","线索册返回保留已有进度","真实Storage写失败显示提示，仍可开战"],"errors":[]}

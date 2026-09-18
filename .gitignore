@@ -1,0 +1,19 @@
+node_modules/
+.cache/
+library/
+temp/
+profiles/
+build/
+tools/downloads/
+*.log
+.DS_Store
+
+# Local-only build archives, diagnostics and credentials
+release/
+.write-probe
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+__pycache__/

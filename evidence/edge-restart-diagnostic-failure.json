@@ -1,0 +1,12 @@
+{
+  "passed": false,
+  "checks": [
+    "坏档恢复默认并提示",
+    "三个设置开关保存并恢复",
+    "手机比例触摸点击跳剧情直接开战",
+    "真实单指拖动改变横向位置",
+    "后台自动暂停，返回须点击继续"
+  ],
+  "errors": [],
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n1 !== 0\n"
+}

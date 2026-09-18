@@ -1,0 +1,17 @@
+{
+  "node": "v22.23.1",
+  "arch": "arm64",
+  "platform": "darwin",
+  "date": "2026-09-18T02:13:31Z",
+  "os": "27.0",
+  "npm": "10.9.8",
+  "browser": "Chrome/152.0.7977.83",
+  "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M5, Unspecified Version)",
+  "creator": "3.8.8",
+  "wechatDevTools": "36.6.0",
+  "viewport": {
+    "stability": "450x800",
+    "touch": "390x844"
+  },
+  "targetPhone": "not verified"
+}

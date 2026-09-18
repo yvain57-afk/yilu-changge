@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "background": {
+    "hidden": true,
+    "visibility": "hidden",
+    "focused": false,
+    "screen": "pause"
+  },
+  "returnedPaused": true,
+  "explicitContinueRestoresProgress": true,
+  "browser": "Chrome/152.0.7977.83"
+}

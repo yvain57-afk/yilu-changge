@@ -1,0 +1,24 @@
+{
+  "name": "一路长歌",
+  "platform": "web-mobile",
+  "buildPath": "project://build",
+  "outputName": "web-mobile",
+  "debug": false,
+  "startScene": "752d3aa0-8b82-4e8e-a6d4-c6587c90bcf2",
+  "scenes": [
+    {
+      "url": "db://assets/scenes/Journey.scene",
+      "uuid": "752d3aa0-8b82-4e8e-a6d4-c6587c90bcf2"
+    }
+  ],
+  "packages": {
+    "web-mobile": {
+      "orientation": "portrait"
+    },
+    "wechatgame": {
+      "appid": "touristappid",
+      "orientation": "portrait"
+    }
+  },
+  "sourceMaps": false
+}

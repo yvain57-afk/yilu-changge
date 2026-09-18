@@ -1,0 +1,15 @@
+
+> yilu-changge@0.1.0 test:browser
+> node tools/browser-play.mjs 10
+
+GPU ANGLE (Apple, ANGLE Metal Renderer: Apple M5, Unspecified Version)
+{"run":1,"level":0,"phase":"won","count":160,"gameSeconds":59.66666666666456,"wallSeconds":58.644,"meanFPS":56.15887380593157,"minSampleFPS":44.26955238563701,"maxNodes":98,"maxPool":83,"resultNodes":18,"samples":439}
+{"run":2,"level":1,"phase":"won","count":256,"gameSeconds":74.66666666666372,"wallSeconds":74.621,"meanFPS":59.99651805921902,"minSampleFPS":59.910134797803316,"maxNodes":109,"maxPool":94,"resultNodes":18,"samples":559}
+{"run":3,"level":2,"phase":"won","count":256,"gameSeconds":90.16666666666283,"wallSeconds":90.085,"meanFPS":59.996783906223165,"minSampleFPS":59.92808629537397,"maxNodes":118,"maxPool":103,"resultNodes":18,"samples":675}
+{"run":4,"level":0,"phase":"won","count":160,"gameSeconds":60.16666666666453,"wallSeconds":59.996,"meanFPS":59.99518044256714,"minSampleFPS":59.026069847516,"maxNodes":98,"maxPool":83,"resultNodes":18,"samples":449}
+{"run":5,"level":1,"phase":"won","count":256,"gameSeconds":75.91666666666364,"wallSeconds":75.866,"meanFPS":54.19972103278007,"minSampleFPS":42.30201672405313,"maxNodes":109,"maxPool":94,"resultNodes":18,"samples":568}
+{"run":6,"level":2,"phase":"won","count":256,"gameSeconds":90.41666666666282,"wallSeconds":90.317,"meanFPS":59.996593741786484,"minSampleFPS":59.85037406483792,"maxNodes":118,"maxPool":103,"resultNodes":18,"samples":676}
+{"run":7,"level":0,"phase":"won","count":160,"gameSeconds":59.66666666666456,"wallSeconds":59.494,"meanFPS":59.996949875713426,"minSampleFPS":59.88023952165882,"maxNodes":98,"maxPool":83,"resultNodes":18,"samples":445}
+{"run":8,"level":1,"phase":"won","count":256,"gameSeconds":74.66666666666372,"wallSeconds":74.498,"meanFPS":59.9971608486473,"minSampleFPS":59.862316672723175,"maxNodes":109,"maxPool":94,"resultNodes":18,"samples":558}
+{"run":9,"level":2,"phase":"won","count":256,"gameSeconds":90.41666666666282,"wallSeconds":90.251,"meanFPS":56.56765391876911,"minSampleFPS":40,"maxNodes":118,"maxPool":103,"resultNodes":18,"samples":676}
+{"run":10,"level":0,"phase":"won","count":160,"gameSeconds":60.16666666666453,"wallSeconds":59.994,"meanFPS":59.9971746482841,"minSampleFPS":59.87426404586059,"maxNodes":98,"maxPool":83,"resultNodes":18,"samples":449}

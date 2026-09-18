@@ -1,0 +1,17 @@
+{
+  "scope": "Project TypeScript source only; browser request observation is independent evidence. Engine libraries contain generic network APIs for resource loading.",
+  "files": {
+    "assets/scripts/Game.ts": "c42dc1888831ed5828781ec027cc1ff2a2c25a2b15fd674d364d1eb623b86428",
+    "assets/scripts/Platform.ts": "b8743680f4bf7101bf5be57e0599344ce49e7594ccdae44c1d218dd9b21f741f",
+    "assets/scripts/core/levels.ts": "49a9c1442403e4166d10d16ae44e2344ea442e3aac963b59c0098c0f5969a9e6",
+    "assets/scripts/core/model.ts": "4451f5b9e97b3b57a5ffd805abff1117378a442b1e1ba881f2d954e27f84dbd4",
+    "assets/scripts/core/save.ts": "79b17a1ea3d148b6d85e8839a89ae8e8fc9a0f06271c22fd7c3414656f7e0d16"
+  },
+  "productNetworkOrCommerceCalls": [],
+  "wechat": {
+    "appid": "touristappid",
+    "compileType": "game"
+  },
+  "published": false,
+  "priorOutsideCacheDeviation": "See BLOCKED.md; subsequent TMPDIR is under this project."
+}
