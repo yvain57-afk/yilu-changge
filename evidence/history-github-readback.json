@@ -1,0 +1,19 @@
+{
+  "repository": "yvain57-afk/yilu-changge",
+  "verified_commit": "82440b6e25888d75a9d5d0a250b66502913fc7bc",
+  "remote_main_matches_local": true,
+  "course_files_blob_hash_matched": 393,
+  "truncated": false,
+  "connector_readback": {
+    "status": "tool_unavailable",
+    "error": "Unknown tool (github.fetch_file)"
+  },
+  "anonymous_web_readback": {
+    "status": "pass",
+    "host": "raw.githubusercontent.com",
+    "files": [
+      "references/chinese-history/README.md",
+      "references/chinese-history/notes/01-逐讲学习稿/023-汉初格局：承秦制、惩秦弊.md"
+    ]
+  }
+}
