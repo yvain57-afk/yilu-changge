@@ -1,11 +1,11 @@
 {
   "name": "yilu-changge",
-  "version": "0.1.0",
+  "version": "0.2.0-s1",
   "private": true,
   "creator": {
     "version": "3.8.8"
   },
-  "description": "一路长歌 — 三页无名者的归途",
+  "description": "一路长歌 — 从小人物起步，拿下第一座城（S1首关草模）",
   "scripts": {
     "test": "node tools/run-local.mjs tsx --test tests/*.test.ts",
     "typecheck:core": "node tools/run-local.mjs tsc -p tsconfig.core.json --noEmit",
@@ -15,9 +15,9 @@
     "build:wechat": "node tools/build.mjs wechatgame",
     "serve": "node tools/serve.mjs",
     "test:negative": "node tools/run-local.mjs node tools/mutation.mjs",
-    "test:browser": "node tools/run-local.mjs node tools/browser-play.mjs 10",
-    "test:edge": "node tools/run-local.mjs node tools/browser-edge.mjs",
-    "test:failure": "node tools/run-local.mjs node tools/browser-failure.mjs"
+    "test:browser": "node tools/run-local.mjs node tools/browser-v02.mjs",
+    "test:edge": "node tools/run-local.mjs node tools/browser-v02-edge.mjs",
+    "test:failure": "node tools/run-local.mjs node tools/browser-v02-failure.mjs"
   },
   "devDependencies": {
     "playwright": "^1.55.1",

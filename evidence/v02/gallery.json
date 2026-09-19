@@ -1,0 +1,136 @@
+{
+  "passed": true,
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "checks": [
+    {
+      "n": 8,
+      "x": 0,
+      "counts": [
+        {
+          "count": 8,
+          "hero": 1
+        },
+        {
+          "count": 8,
+          "hero": 1
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "x": -0.91,
+      "counts": [
+        {
+          "count": 8,
+          "hero": 1
+        },
+        {
+          "count": 8,
+          "hero": 1
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "x": 0.91,
+      "counts": [
+        {
+          "count": 8,
+          "hero": 1
+        },
+        {
+          "count": 8,
+          "hero": 1
+        }
+      ]
+    },
+    {
+      "n": 24,
+      "x": 0,
+      "counts": [
+        {
+          "count": 24,
+          "hero": 1
+        },
+        {
+          "count": 24,
+          "hero": 1
+        }
+      ]
+    },
+    {
+      "n": 24,
+      "x": -0.91,
+      "counts": [
+        {
+          "count": 24,
+          "hero": 1
+        },
+        {
+          "count": 24,
+          "hero": 1
+        }
+      ]
+    },
+    {
+      "n": 24,
+      "x": 0.91,
+      "counts": [
+        {
+          "count": 24,
+          "hero": 1
+        },
+        {
+          "count": 24,
+          "hero": 1
+        }
+      ]
+    },
+    {
+      "n": 48,
+      "x": 0,
+      "counts": [
+        {
+          "count": 48,
+          "hero": 1
+        },
+        {
+          "count": 48,
+          "hero": 1
+        }
+      ]
+    },
+    {
+      "n": 48,
+      "x": -0.91,
+      "counts": [
+        {
+          "count": 48,
+          "hero": 1
+        },
+        {
+          "count": 48,
+          "hero": 1
+        }
+      ]
+    },
+    {
+      "n": 48,
+      "x": 0.91,
+      "counts": [
+        {
+          "count": 48,
+          "hero": 1
+        },
+        {
+          "count": 48,
+          "hero": 1
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

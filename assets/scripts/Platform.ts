@@ -17,7 +17,7 @@ export class Platform {
   if(typeof wx!=='undefined'){wx.onHide?.(this.onHide);wx.onShow?.(this.onShow);}
  }
  async load(){await Promise.all(['music','gather','hit','break','hurt','warn'].map(k=>new Promise<void>(resolve=>resources.load(`audio/${k}`,AudioClip,(e,a)=>{if(!e)this.clips[k]=a;resolve()}))));this.music.clip=this.clips.music;this.music.loop=true;this.music.volume=.36;this.sfx.volume=.6;}
- syncAudio(active=true){if(active&&!this.hidden&&this.book.data.settings.music){if(!this.music.playing)this.music.play();}else this.music.pause();}
+ syncAudio(active=true){if(active&&!this.hidden&&this.book.data.settings.music){if(!this.music.playing)this.music.play();}else {this.music.pause();if(!active)this.sfx.stop();}}
  sound(k:string){if(!this.hidden&&this.book.data.settings.sfx&&this.clips[k])this.sfx.playOneShot(this.clips[k],.65);}
  vibrate(){if(this.book.data.settings.vibration&&typeof wx!=='undefined'&&wx.vibrateShort)wx.vibrateShort({type:'light'});}
  destroy(){if(sys.isBrowser){document.removeEventListener('visibilitychange',this.visibility);window.removeEventListener('blur',this.blur);window.removeEventListener('focus',this.onShow);}if(typeof wx!=='undefined'){wx.offHide?.(this.onHide);wx.offShow?.(this.onShow);}game.off(EngineGame.EVENT_HIDE,this.onHide);game.off(EngineGame.EVENT_SHOW,this.onShow);this.music.stop();this.sfx.stop();}

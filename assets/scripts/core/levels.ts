@@ -1,28 +1,540 @@
-import { Level, Row, Obstacle } from './model';
-const add = (value: number) => ({kind:'add' as const, value});
-const double = {kind:'double' as const, value:2};
-const row = (id:number, at:number, n:number, reverse=false):Row => ({id,at,left:reverse?double:add(n),right:reverse?add(n):double});
-const obstacle = (id:number,at:number,x:number,kind:Obstacle['kind'],hp:number,loss:number,width=.29):Obstacle => ({id,at,x,kind,hp,loss,width});
-export const LEVELS:Level[] = [
- {id:0,title:'渡口送简',era:'战国 · 第一页',duration:46,start:8,bossHP:1100,bossLoss:7,
- rows:[row(1,6,12),row(2,15,18,true),row(3,26,26),row(4,37,34,true)],
- obstacles:[obstacle(1,12,.48,'wood',22,12),obstacle(2,21,-.48,'rock',999,10),obstacle(3,25,.48,'wood',35,16),obstacle(4,32,-.48,'ink',1,9),obstacle(5,40,.48,'rock',999,14)],
- intro:['渡口的阿禾：这一束竹简，能捎给对岸的阿兄吗？','纸雀：手指左右拖，纸兵会跟着你，箭会自己往前飞。'],
- ending:'竹简送到了，渡口多留了一盏等人回家的灯。',
- clue:'【虚构】阿禾托你送竹简，纸雀和纸兵都来自残缺史书的幻想力量，并非战国纸张已普遍使用的证据。【历史背景】战国楚地已有竹简书写，存世竹书保存了思想与典籍材料。本关借“送简”讲牵挂，不复原某次真实递送；渡口位置、人物衣饰与竹简所写内容均为艺术设定，具体形制待考。',
- source:'清华大学《千年竹简与百年清华的相遇》',url:'https://www.tsinghua.edu.cn/info/2035/70732.htm'},
- {id:1,title:'关道护粮',era:'西汉 · 第二页',duration:60,start:8,bossHP:1900,bossLoss:11,
- rows:[row(1,6,16),row(2,17,22,true),row(3,29,30),row(4,41,36,true),row(5,52,44)],
- obstacles:[obstacle(1,13,.48,'wood',30,16),obstacle(2,23,-.48,'rock',999,18),obstacle(3,28,.48,'wood',55,25),obstacle(4,35,.48,'ink',1,14),obstacle(5,40,-.48,'wood',64,22),obstacle(6,47,-.48,'rock',999,20),obstacle(7,55,.48,'ink',1,16)],
- intro:['炊人阿麦：粮到了，灶上的水才不算白烧。','纸雀：翻过数百年，这次走西汉关道；先射开木栅，再选门。'],
- ending:'粮车停在灶边，远行的人终于赶上了一顿热饭。',
- clue:'【虚构】阿麦、粮车和护送之旅是原创故事；粮车只承载叙事，没有独立血条。【历史背景】悬泉置汉简留下驿置接待、粮食出入与日常事务的记录，让宏大交通网络背后的吃饭与劳作可被看见。本关借此想象关道上的一顿饭，并非复原某条运输路线；车辆、服饰和关门细部仍属待考的简化美术。',
- source:'甘肃文博会《悬泉置：驿站小人物与历史大事件》',url:'https://www.gswbj.gov.cn/a/2019/11/01/3487.html'},
- {id:2,title:'长街寻信',era:'唐 · 第三页',duration:74,start:8,bossHP:2000,bossLoss:15,
- rows:[row(1,6,18),row(2,18,24,true),row(3,31,32),row(4,44,42,true),row(5,57,50),row(6,67,56,true)],
- obstacles:[obstacle(1,14,.48,'wood',36,20),obstacle(2,24,-.48,'ink',1,15),obstacle(3,30,.48,'wood',70,27),obstacle(4,38,-.48,'rock',999,25),obstacle(5,43,-.48,'wood',85,28),obstacle(6,50,.48,'ink',1,20),obstacle(7,56,.48,'wood',100,32),obstacle(8,63,-.48,'rock',999,28),obstacle(9,70,.48,'ink',1,22)],
- intro:['补衣人小满：信还没到，他会不会以为家里没人等？','纸雀：又翻过数百年，已是唐时；替无名的人，把牵挂找回来。'],
- ending:'家书里没有壮阔功业，只有一句：饭还热着，等你。',
- clue:'【虚构】小满与遗失家书的情节为原创，墨影象征残页的失序，不指代真实人物或族群。【历史背景】敦煌吐鲁番书信文献保留了问候、报平安及封题等线索，唐代书信也承载日常往来。本关长街并非某座城市的精确复原，建筑、服饰和邮递细节待考；信中文字是今人创作，不冒称出土原文。',
- source:'王启涛《中国社会科学网：秦汉简牍对敦煌吐鲁番文献研究的重要性》',url:'https://www.cssn.cn/lsx/lsx_zgs/202210/t20221024_5552518.shtml'}
+import { Level } from './model';
+// Explicitly mapped design draft. Only trial-01 is exposed in S1.
+export const PLAYABLE_LEVELS = 1;
+export const LEVELS: Level[] = [
+  {
+    "id": "trial-01",
+    "title": "拉起队伍",
+    "scene": "山道",
+    "rankBefore": "布衣",
+    "rankAfter": "头领",
+    "duration": 42,
+    "start": 8,
+    "bossHP": 650,
+    "bossName": "投矛头目",
+    "bossDelay": 2.0,
+    "bossAttacks": [
+      {
+        "kind": "aimed",
+        "telegraphSeconds": 1.4,
+        "halfWidth": 0.22,
+        "loss": 6,
+        "impactSeconds": 0.12,
+        "recoverySeconds": 1.5
+      }
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "at": 6,
+        "left": {
+          "kind": "add",
+          "value": 12
+        },
+        "right": {
+          "kind": "double",
+          "value": 2
+        }
+      },
+      {
+        "id": 2,
+        "at": 18,
+        "left": {
+          "kind": "double",
+          "value": 2
+        },
+        "right": {
+          "kind": "add",
+          "value": 24
+        }
+      },
+      {
+        "id": 3,
+        "at": 34,
+        "left": {
+          "kind": "add",
+          "value": 12
+        },
+        "right": {
+          "kind": "double",
+          "value": 2
+        }
+      }
+    ],
+    "obstacles": [
+      {
+        "id": 1,
+        "at": 11,
+        "x": 0,
+        "width": 0.2,
+        "kind": "fighter",
+        "hp": 12,
+        "loss": 4
+      },
+      {
+        "id": 2,
+        "at": 14,
+        "x": 0.5,
+        "width": 0.2,
+        "kind": "rock",
+        "hp": 1,
+        "loss": 6
+      },
+      {
+        "id": 3,
+        "at": 24,
+        "x": -0.5,
+        "width": 0.2,
+        "kind": "fighter",
+        "hp": 26,
+        "loss": 6
+      },
+      {
+        "id": 4,
+        "at": 27,
+        "x": 0.5,
+        "width": 0.2,
+        "kind": "fighter",
+        "hp": 30,
+        "loss": 6
+      },
+      {
+        "id": 5,
+        "at": 38,
+        "x": 0,
+        "width": 0.2,
+        "kind": "fighter",
+        "hp": 40,
+        "loss": 8
+      },
+      {
+        "id": 102,
+        "at": 34,
+        "x": 0.5,
+        "width": 0.5,
+        "kind": "wood",
+        "hp": 80,
+        "loss": 18,
+        "rowId": 3,
+        "side": "right"
+      }
+    ],
+    "opening": "先打出自己的旗号。",
+    "ending": "有队伍了。下一战，拿下一座营寨。"
+  },
+  {
+    "id": "trial-02",
+    "title": "拿下营寨",
+    "scene": "营寨",
+    "rankBefore": "头领",
+    "rankAfter": "统领",
+    "duration": 54,
+    "start": 12,
+    "bossHP": 1800,
+    "bossName": "营寨弩将",
+    "bossDelay": 2.0,
+    "bossAttacks": [
+      {
+        "kind": "fixed",
+        "x": -0.6,
+        "telegraphSeconds": 1.25,
+        "halfWidth": 0.33,
+        "loss": 8,
+        "impactSeconds": 0.12,
+        "recoverySeconds": 1.25
+      },
+      {
+        "kind": "fixed",
+        "x": 0.6,
+        "telegraphSeconds": 1.25,
+        "halfWidth": 0.33,
+        "loss": 8,
+        "impactSeconds": 0.12,
+        "recoverySeconds": 1.25
+      },
+      {
+        "kind": "fixed",
+        "x": 0,
+        "telegraphSeconds": 1.25,
+        "halfWidth": 0.33,
+        "loss": 8,
+        "impactSeconds": 0.12,
+        "recoverySeconds": 1.25
+      }
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "at": 5,
+        "left": {
+          "kind": "add",
+          "value": 16
+        },
+        "right": {
+          "kind": "double",
+          "value": 2
+        }
+      },
+      {
+        "id": 2,
+        "at": 17,
+        "left": {
+          "kind": "double",
+          "value": 2
+        },
+        "right": {
+          "kind": "add",
+          "value": 20
+        }
+      },
+      {
+        "id": 3,
+        "at": 31,
+        "left": {
+          "kind": "add",
+          "value": 24
+        },
+        "right": {
+          "kind": "double",
+          "value": 2
+        }
+      },
+      {
+        "id": 4,
+        "at": 45,
+        "left": {
+          "kind": "double",
+          "value": 2
+        },
+        "right": {
+          "kind": "add",
+          "value": 32
+        }
+      }
+    ],
+    "obstacles": [
+      {
+        "id": 1,
+        "at": 11,
+        "x": 0,
+        "width": 0.2,
+        "kind": "fighter",
+        "hp": 24,
+        "loss": 5
+      },
+      {
+        "id": 2,
+        "at": 12,
+        "x": -0.5,
+        "width": 0.2,
+        "kind": "rock",
+        "hp": 1,
+        "loss": 8
+      },
+      {
+        "id": 3,
+        "at": 25,
+        "x": 0.5,
+        "width": 0.2,
+        "kind": "crossbowman",
+        "hp": 72,
+        "loss": 10,
+        "attack": {
+          "kind": "aimed",
+          "startAt": 23,
+          "telegraphSeconds": 1.25,
+          "halfWidth": 0.22,
+          "loss": 8,
+          "impactSeconds": 0.12,
+          "recoverySeconds": 0
+        }
+      },
+      {
+        "id": 4,
+        "at": 35,
+        "x": 0,
+        "width": 0.2,
+        "kind": "fighter",
+        "hp": 100,
+        "loss": 10
+      },
+      {
+        "id": 5,
+        "at": 38,
+        "x": 0.5,
+        "width": 0.2,
+        "kind": "rock",
+        "hp": 1,
+        "loss": 12
+      },
+      {
+        "id": 6,
+        "at": 40,
+        "x": -0.5,
+        "width": 0.2,
+        "kind": "crossbowman",
+        "hp": 112,
+        "loss": 12,
+        "attack": {
+          "kind": "aimed",
+          "startAt": 38,
+          "telegraphSeconds": 1.25,
+          "halfWidth": 0.22,
+          "loss": 10,
+          "impactSeconds": 0.12,
+          "recoverySeconds": 0
+        }
+      },
+      {
+        "id": 7,
+        "at": 49,
+        "x": 0.5,
+        "width": 0.2,
+        "kind": "fighter",
+        "hp": 130,
+        "loss": 12
+      },
+      {
+        "id": 101,
+        "at": 17,
+        "x": -0.5,
+        "width": 0.5,
+        "kind": "wood",
+        "hp": 64,
+        "loss": 10,
+        "rowId": 2,
+        "side": "left"
+      },
+      {
+        "id": 103,
+        "at": 45,
+        "x": -0.5,
+        "width": 0.5,
+        "kind": "wood",
+        "hp": 180,
+        "loss": 48,
+        "rowId": 4,
+        "side": "left"
+      }
+    ],
+    "opening": "打穿营门，换上你的旗。",
+    "ending": "营寨拿下了。下一战，城门。"
+  },
+  {
+    "id": "trial-03",
+    "title": "夺下首城",
+    "scene": "城门",
+    "rankBefore": "统领",
+    "rankAfter": "城主",
+    "duration": 66,
+    "start": 16,
+    "bossHP": 2600,
+    "bossName": "守城主将",
+    "bossDelay": 2.0,
+    "bossAttacks": [
+      {
+        "kind": "aimed",
+        "telegraphSeconds": 1.25,
+        "halfWidth": 0.24,
+        "loss": 10,
+        "impactSeconds": 0.12,
+        "recoverySeconds": 1.4
+      },
+      {
+        "kind": "fixed",
+        "x": -0.6,
+        "telegraphSeconds": 1.15,
+        "halfWidth": 0.33,
+        "loss": 10,
+        "impactSeconds": 0.12,
+        "recoverySeconds": 0.4
+      },
+      {
+        "kind": "fixed",
+        "x": 0.6,
+        "telegraphSeconds": 1.15,
+        "halfWidth": 0.33,
+        "loss": 10,
+        "impactSeconds": 0.12,
+        "recoverySeconds": 1.6
+      }
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "at": 6,
+        "left": {
+          "kind": "add",
+          "value": 18
+        },
+        "right": {
+          "kind": "double",
+          "value": 2
+        }
+      },
+      {
+        "id": 2,
+        "at": 22,
+        "left": {
+          "kind": "double",
+          "value": 2
+        },
+        "right": {
+          "kind": "add",
+          "value": 26
+        }
+      },
+      {
+        "id": 3,
+        "at": 40,
+        "left": {
+          "kind": "add",
+          "value": 36
+        },
+        "right": {
+          "kind": "double",
+          "value": 2
+        }
+      },
+      {
+        "id": 4,
+        "at": 57,
+        "left": {
+          "kind": "double",
+          "value": 2
+        },
+        "right": {
+          "kind": "add",
+          "value": 40
+        }
+      }
+    ],
+    "obstacles": [
+      {
+        "id": 1,
+        "at": 12,
+        "x": -0.5,
+        "width": 0.2,
+        "kind": "fighter",
+        "hp": 28,
+        "loss": 8
+      },
+      {
+        "id": 2,
+        "at": 16,
+        "x": 0.5,
+        "width": 0.2,
+        "kind": "rock",
+        "hp": 1,
+        "loss": 10
+      },
+      {
+        "id": 3,
+        "at": 29,
+        "x": 0.5,
+        "width": 0.2,
+        "kind": "crossbowman",
+        "hp": 112,
+        "loss": 12,
+        "attack": {
+          "kind": "aimed",
+          "startAt": 27,
+          "telegraphSeconds": 1.25,
+          "halfWidth": 0.22,
+          "loss": 12,
+          "impactSeconds": 0.12,
+          "recoverySeconds": 0
+        }
+      },
+      {
+        "id": 4,
+        "at": 34,
+        "x": 0,
+        "width": 0.2,
+        "kind": "fighter",
+        "hp": 120,
+        "loss": 14
+      },
+      {
+        "id": 5,
+        "at": 48,
+        "x": -0.5,
+        "width": 0.2,
+        "kind": "crossbowman",
+        "hp": 160,
+        "loss": 12,
+        "attack": {
+          "kind": "aimed",
+          "startAt": 46,
+          "telegraphSeconds": 1.25,
+          "halfWidth": 0.22,
+          "loss": 12,
+          "impactSeconds": 0.12,
+          "recoverySeconds": 0
+        }
+      },
+      {
+        "id": 6,
+        "at": 52,
+        "x": 0.5,
+        "width": 0.2,
+        "kind": "crossbowman",
+        "hp": 180,
+        "loss": 14,
+        "attack": {
+          "kind": "aimed",
+          "startAt": 50,
+          "telegraphSeconds": 1.25,
+          "halfWidth": 0.22,
+          "loss": 12,
+          "impactSeconds": 0.12,
+          "recoverySeconds": 0
+        }
+      },
+      {
+        "id": 7,
+        "at": 62,
+        "x": 0.5,
+        "width": 0.2,
+        "kind": "fighter",
+        "hp": 200,
+        "loss": 16
+      },
+      {
+        "id": 101,
+        "at": 22,
+        "x": -0.5,
+        "width": 0.5,
+        "kind": "wood",
+        "hp": 100,
+        "loss": 12,
+        "rowId": 2,
+        "side": "left"
+      },
+      {
+        "id": 102,
+        "at": 40,
+        "x": 0.5,
+        "width": 0.5,
+        "kind": "wood",
+        "hp": 120,
+        "loss": 24,
+        "rowId": 3,
+        "side": "right"
+      },
+      {
+        "id": 103,
+        "at": 57,
+        "x": -0.5,
+        "width": 0.5,
+        "kind": "wood",
+        "hp": 240,
+        "loss": 56,
+        "rowId": 4,
+        "side": "left"
+      }
+    ],
+    "opening": "打败守将，拿下第一座城。",
+    "ending": "首城已得。登基之路，刚刚开始。"
+  }
 ];

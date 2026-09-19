@@ -1,0 +1,7 @@
+
+> yilu-changge@0.2.0-s1 test:edge
+> node tools/run-local.mjs node tools/browser-v02-edge.mjs
+
+{"passed":true,"background":{"hidden":true,"visibility":"hidden","focused":false,"screen":"pause"},"returnedPaused":true,"explicitContinueRestoresProgress":true,"browser":"Chrome/153.0.8010.50"}
+
+{"passed":true,"checks":["native-background-pause-explicit-resume","legacy-settings-only","settings-persist-legacy-untouched","restart-five-390","restart-five-360"],"errors":[]}

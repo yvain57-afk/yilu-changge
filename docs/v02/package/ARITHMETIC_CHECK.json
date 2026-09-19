@@ -1,0 +1,128 @@
+{
+  "status": "passed_static_schema_and_arithmetic_checks_only",
+  "not_tested": [
+    "Cocos execution",
+    "projectile travel and interruption",
+    "visual readability",
+    "complete route survival",
+    "input timing",
+    "new boss behavior",
+    "balance",
+    "device performance"
+  ],
+  "levels": [
+    {
+      "id": "trial-01",
+      "ideal_gate_only_trace": [
+        {
+          "id": "g1",
+          "before": 8,
+          "side": "left",
+          "after": 20
+        },
+        {
+          "id": "g2",
+          "before": 20,
+          "side": "right",
+          "after": 44
+        },
+        {
+          "id": "g3",
+          "before": 44,
+          "side": "right",
+          "after": 88
+        }
+      ],
+      "ideal_gate_only_end": 88,
+      "avoid_all_guard_sides_gate_only_end": 56,
+      "avoid_guard_path": [
+        "left",
+        "right",
+        "left"
+      ],
+      "always_double_with_guards_cleared_gate_only_end": 64,
+      "boss_ideal_continuous_dps": 70.4,
+      "boss_hp_over_ideal_dps_seconds_not_actual_fight_duration": 9.233
+    },
+    {
+      "id": "trial-02",
+      "ideal_gate_only_trace": [
+        {
+          "id": "g1",
+          "before": 12,
+          "side": "left",
+          "after": 28
+        },
+        {
+          "id": "g2",
+          "before": 28,
+          "side": "left",
+          "after": 56
+        },
+        {
+          "id": "g3",
+          "before": 56,
+          "side": "right",
+          "after": 112
+        },
+        {
+          "id": "g4",
+          "before": 112,
+          "side": "left",
+          "after": 224
+        }
+      ],
+      "ideal_gate_only_end": 224,
+      "avoid_all_guard_sides_gate_only_end": 128,
+      "avoid_guard_path": [
+        "left",
+        "right",
+        "right",
+        "right"
+      ],
+      "always_double_with_guards_cleared_gate_only_end": 192,
+      "boss_ideal_continuous_dps": 179.20000000000002,
+      "boss_hp_over_ideal_dps_seconds_not_actual_fight_duration": 10.045
+    },
+    {
+      "id": "trial-03",
+      "ideal_gate_only_trace": [
+        {
+          "id": "g1",
+          "before": 16,
+          "side": "left",
+          "after": 34
+        },
+        {
+          "id": "g2",
+          "before": 34,
+          "side": "left",
+          "after": 68
+        },
+        {
+          "id": "g3",
+          "before": 68,
+          "side": "right",
+          "after": 136
+        },
+        {
+          "id": "g4",
+          "before": 136,
+          "side": "left",
+          "after": 256
+        }
+      ],
+      "ideal_gate_only_end": 256,
+      "avoid_all_guard_sides_gate_only_end": 136,
+      "avoid_guard_path": [
+        "left",
+        "right",
+        "left",
+        "right"
+      ],
+      "always_double_with_guards_cleared_gate_only_end": 256,
+      "boss_ideal_continuous_dps": 204.8,
+      "boss_hp_over_ideal_dps_seconds_not_actual_fight_duration": 12.695
+    }
+  ]
+}

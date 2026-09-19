@@ -1,0 +1,20 @@
+{
+  "version": "v0.2-S1",
+  "rulesPassed": 30,
+  "firstLevel": {
+    "count": 88,
+    "seconds": 58.66666666666462,
+    "meanFPS": 58.155984850856264,
+    "minimumSampleFPS": 45.244418216326714,
+    "maxNodes": 28,
+    "maxLabelPool": 15,
+    "pageErrors": [],
+    "externalRequests": []
+  },
+  "failure": {
+    "seconds": 84.61666666666315,
+    "cause": "被投矛击中，损失2人，队伍归零"
+  },
+  "wechat": "Built with touristappid; DevTools and device not accepted",
+  "stageStop": "A: choose character direction"
+}

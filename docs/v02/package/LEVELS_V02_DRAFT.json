@@ -1,0 +1,603 @@
+{
+  "schema": "yilu-first-three-design-draft/0.2",
+  "status": "planning_reference_not_runtime_config_not_playtested",
+  "baselineCommit": "4f498ea39f19bc56082a889c3ee74947c69c68c6",
+  "notes": [
+    "All numeric values are initial tuning proposals, not proven balance.",
+    "at is forward world distance measured in travel seconds; it is not an enemy spawn time.",
+    "Renderer reveals objects/guards no earlier than the forward horizon; hostile shots may not occur before source and telegraph are visible.",
+    "New guarded gate transaction resolves unresolved blocker loss BEFORE immutable gate operation, once per row.",
+    "Normal mode has three stages only; beating stage 3 does not unlock an unimplemented coronation stage."
+  ],
+  "global": {
+    "engine": "Cocos Creator 3.8.8",
+    "designResolution": [
+      720,
+      1280
+    ],
+    "step": 0.016666666666666666,
+    "maxAcceptedDelta": 0.25,
+    "xRange": [
+      -0.91,
+      0.91
+    ],
+    "xSpeed": 2.7,
+    "visibleAheadSeconds": 7,
+    "startX": 0,
+    "gateSplitX": 0,
+    "xExactlyZeroChooses": "right",
+    "gateCoverage": {
+      "left": [
+        -1,
+        0
+      ],
+      "right": [
+        0,
+        1
+      ]
+    },
+    "countCap": 256,
+    "visibleCountCapIncludingHero": 48,
+    "shotIntervalSeconds": 0.25,
+    "damagePerSoldierPerVolley": 0.2,
+    "projectileSpeed": 9,
+    "volleyDamageFrozenAtEmission": true,
+    "gateGuardBeforeBuff": true,
+    "zeroCountFailsBeforeGateBuff": true,
+    "contactUses": "marked_team_center_not_decorative_formation_edges",
+    "noTimeLimit": true,
+    "noKillIncome": true,
+    "bossMovement": false,
+    "bossInvulnerability": false,
+    "saveNamespaceProposal": "yilu-changge-prototype-v2",
+    "rankAffects": "cosmetics_and_next_level_fixed_start_count_only"
+  },
+  "levels": [
+    {
+      "id": "trial-01",
+      "title": "拉起队伍",
+      "scene": "山道",
+      "rankBefore": "布衣",
+      "rankAfter": "头领",
+      "startCount": 8,
+      "runSeconds": 42,
+      "targetTotalSeconds": [
+        55,
+        65
+      ],
+      "opening": "先打出自己的旗号。",
+      "victory": "有队伍了。下一战，拿下一座营寨。",
+      "gates": [
+        {
+          "id": "g1",
+          "at": 6,
+          "left": {
+            "kind": "add",
+            "value": 12
+          },
+          "right": {
+            "kind": "double",
+            "value": 2
+          }
+        },
+        {
+          "id": "g2",
+          "at": 18,
+          "left": {
+            "kind": "double",
+            "value": 2
+          },
+          "right": {
+            "kind": "add",
+            "value": 24
+          }
+        },
+        {
+          "id": "g3",
+          "at": 34,
+          "left": {
+            "kind": "add",
+            "value": 12
+          },
+          "right": {
+            "kind": "double",
+            "value": 2
+          },
+          "guard": {
+            "side": "right",
+            "hp": 80,
+            "contactLoss": 18,
+            "coverage": "entire_selected_half",
+            "kind": "barricade"
+          }
+        }
+      ],
+      "objects": [
+        {
+          "id": "o1",
+          "at": 11,
+          "x": 0,
+          "halfWidth": 0.2,
+          "kind": "fighter",
+          "contactLoss": 4,
+          "hp": 12
+        },
+        {
+          "id": "o2",
+          "at": 14,
+          "x": 0.5,
+          "halfWidth": 0.2,
+          "kind": "rock",
+          "contactLoss": 6
+        },
+        {
+          "id": "o3",
+          "at": 24,
+          "x": -0.5,
+          "halfWidth": 0.2,
+          "kind": "fighter",
+          "contactLoss": 6,
+          "hp": 26
+        },
+        {
+          "id": "o4",
+          "at": 27,
+          "x": 0.5,
+          "halfWidth": 0.2,
+          "kind": "fighter",
+          "contactLoss": 6,
+          "hp": 30
+        },
+        {
+          "id": "o5",
+          "at": 38,
+          "x": 0,
+          "halfWidth": 0.2,
+          "kind": "fighter",
+          "contactLoss": 8,
+          "hp": 40
+        }
+      ],
+      "boss": {
+        "id": "spear-chief",
+        "name": "投矛头目",
+        "hp": 650,
+        "x": 0,
+        "hurtHalfWidth": 0.42,
+        "firstAttackDelay": 2.0,
+        "attackSequence": [
+          {
+            "kind": "aimed",
+            "telegraphSeconds": 1.4,
+            "halfWidth": 0.22,
+            "loss": 6,
+            "impactSeconds": 0.12,
+            "recoverySeconds": 1.5
+          }
+        ]
+      },
+      "referenceBestGatePath": [
+        "left",
+        "right",
+        "right"
+      ]
+    },
+    {
+      "id": "trial-02",
+      "title": "拿下营寨",
+      "scene": "营寨",
+      "rankBefore": "头领",
+      "rankAfter": "统领",
+      "startCount": 12,
+      "runSeconds": 54,
+      "targetTotalSeconds": [
+        68,
+        82
+      ],
+      "opening": "打穿营门，换上你的旗。",
+      "victory": "营寨拿下了。下一战，城门。",
+      "gates": [
+        {
+          "id": "g1",
+          "at": 5,
+          "left": {
+            "kind": "add",
+            "value": 16
+          },
+          "right": {
+            "kind": "double",
+            "value": 2
+          }
+        },
+        {
+          "id": "g2",
+          "at": 17,
+          "left": {
+            "kind": "double",
+            "value": 2
+          },
+          "right": {
+            "kind": "add",
+            "value": 20
+          },
+          "guard": {
+            "side": "left",
+            "hp": 64,
+            "contactLoss": 10,
+            "coverage": "entire_selected_half",
+            "kind": "barricade"
+          }
+        },
+        {
+          "id": "g3",
+          "at": 31,
+          "left": {
+            "kind": "add",
+            "value": 24
+          },
+          "right": {
+            "kind": "double",
+            "value": 2
+          }
+        },
+        {
+          "id": "g4",
+          "at": 45,
+          "left": {
+            "kind": "double",
+            "value": 2
+          },
+          "right": {
+            "kind": "add",
+            "value": 32
+          },
+          "guard": {
+            "side": "left",
+            "hp": 180,
+            "contactLoss": 48,
+            "coverage": "entire_selected_half",
+            "kind": "barricade"
+          }
+        }
+      ],
+      "objects": [
+        {
+          "id": "o1",
+          "at": 11,
+          "x": 0,
+          "halfWidth": 0.2,
+          "kind": "fighter",
+          "contactLoss": 5,
+          "hp": 24
+        },
+        {
+          "id": "o2",
+          "at": 12,
+          "x": -0.5,
+          "halfWidth": 0.2,
+          "kind": "rock",
+          "contactLoss": 8
+        },
+        {
+          "id": "o3",
+          "at": 25,
+          "x": 0.5,
+          "halfWidth": 0.2,
+          "kind": "crossbowman",
+          "contactLoss": 10,
+          "hp": 72,
+          "attack": {
+            "kind": "aimed",
+            "startAt": 23,
+            "telegraphSeconds": 1.25,
+            "halfWidth": 0.22,
+            "loss": 8,
+            "maxStrikes": 1
+          }
+        },
+        {
+          "id": "o4",
+          "at": 35,
+          "x": 0,
+          "halfWidth": 0.2,
+          "kind": "fighter",
+          "contactLoss": 10,
+          "hp": 100
+        },
+        {
+          "id": "o5",
+          "at": 38,
+          "x": 0.5,
+          "halfWidth": 0.2,
+          "kind": "rock",
+          "contactLoss": 12
+        },
+        {
+          "id": "o6",
+          "at": 40,
+          "x": -0.5,
+          "halfWidth": 0.2,
+          "kind": "crossbowman",
+          "contactLoss": 12,
+          "hp": 112,
+          "attack": {
+            "kind": "aimed",
+            "startAt": 38,
+            "telegraphSeconds": 1.25,
+            "halfWidth": 0.22,
+            "loss": 10,
+            "maxStrikes": 1
+          }
+        },
+        {
+          "id": "o7",
+          "at": 49,
+          "x": 0.5,
+          "halfWidth": 0.2,
+          "kind": "fighter",
+          "contactLoss": 12,
+          "hp": 130
+        }
+      ],
+      "boss": {
+        "id": "crossbow-chief",
+        "name": "营寨弩将",
+        "hp": 1800,
+        "x": 0,
+        "hurtHalfWidth": 0.42,
+        "firstAttackDelay": 2.0,
+        "attackSequence": [
+          {
+            "kind": "fixed",
+            "x": -0.6,
+            "telegraphSeconds": 1.25,
+            "halfWidth": 0.33,
+            "loss": 8,
+            "impactSeconds": 0.12,
+            "recoverySeconds": 1.25
+          },
+          {
+            "kind": "fixed",
+            "x": 0.6,
+            "telegraphSeconds": 1.25,
+            "halfWidth": 0.33,
+            "loss": 8,
+            "impactSeconds": 0.12,
+            "recoverySeconds": 1.25
+          },
+          {
+            "kind": "fixed",
+            "x": 0,
+            "telegraphSeconds": 1.25,
+            "halfWidth": 0.33,
+            "loss": 8,
+            "impactSeconds": 0.12,
+            "recoverySeconds": 1.25
+          }
+        ]
+      },
+      "referenceBestGatePath": [
+        "left",
+        "left",
+        "right",
+        "left"
+      ]
+    },
+    {
+      "id": "trial-03",
+      "title": "夺下首城",
+      "scene": "城门",
+      "rankBefore": "统领",
+      "rankAfter": "城主",
+      "startCount": 16,
+      "runSeconds": 66,
+      "targetTotalSeconds": [
+        82,
+        98
+      ],
+      "opening": "打败守将，拿下第一座城。",
+      "victory": "首城已得。登基之路，刚刚开始。",
+      "gates": [
+        {
+          "id": "g1",
+          "at": 6,
+          "left": {
+            "kind": "add",
+            "value": 18
+          },
+          "right": {
+            "kind": "double",
+            "value": 2
+          }
+        },
+        {
+          "id": "g2",
+          "at": 22,
+          "left": {
+            "kind": "double",
+            "value": 2
+          },
+          "right": {
+            "kind": "add",
+            "value": 26
+          },
+          "guard": {
+            "side": "left",
+            "hp": 100,
+            "contactLoss": 12,
+            "coverage": "entire_selected_half",
+            "kind": "barricade"
+          }
+        },
+        {
+          "id": "g3",
+          "at": 40,
+          "left": {
+            "kind": "add",
+            "value": 36
+          },
+          "right": {
+            "kind": "double",
+            "value": 2
+          },
+          "guard": {
+            "side": "right",
+            "hp": 120,
+            "contactLoss": 24,
+            "coverage": "entire_selected_half",
+            "kind": "barricade"
+          }
+        },
+        {
+          "id": "g4",
+          "at": 57,
+          "left": {
+            "kind": "double",
+            "value": 2
+          },
+          "right": {
+            "kind": "add",
+            "value": 40
+          },
+          "guard": {
+            "side": "left",
+            "hp": 240,
+            "contactLoss": 56,
+            "coverage": "entire_selected_half",
+            "kind": "barricade"
+          }
+        }
+      ],
+      "objects": [
+        {
+          "id": "o1",
+          "at": 12,
+          "x": -0.5,
+          "halfWidth": 0.2,
+          "kind": "fighter",
+          "contactLoss": 8,
+          "hp": 28
+        },
+        {
+          "id": "o2",
+          "at": 16,
+          "x": 0.5,
+          "halfWidth": 0.2,
+          "kind": "rock",
+          "contactLoss": 10
+        },
+        {
+          "id": "o3",
+          "at": 29,
+          "x": 0.5,
+          "halfWidth": 0.2,
+          "kind": "crossbowman",
+          "contactLoss": 12,
+          "hp": 112,
+          "attack": {
+            "kind": "aimed",
+            "startAt": 27,
+            "telegraphSeconds": 1.25,
+            "halfWidth": 0.22,
+            "loss": 12,
+            "maxStrikes": 1
+          }
+        },
+        {
+          "id": "o4",
+          "at": 34,
+          "x": 0,
+          "halfWidth": 0.2,
+          "kind": "fighter",
+          "contactLoss": 14,
+          "hp": 120
+        },
+        {
+          "id": "o5",
+          "at": 48,
+          "x": -0.5,
+          "halfWidth": 0.2,
+          "kind": "crossbowman",
+          "contactLoss": 12,
+          "hp": 160,
+          "attack": {
+            "kind": "aimed",
+            "startAt": 46,
+            "telegraphSeconds": 1.25,
+            "halfWidth": 0.22,
+            "loss": 12,
+            "maxStrikes": 1
+          }
+        },
+        {
+          "id": "o6",
+          "at": 52,
+          "x": 0.5,
+          "halfWidth": 0.2,
+          "kind": "crossbowman",
+          "contactLoss": 14,
+          "hp": 180,
+          "attack": {
+            "kind": "aimed",
+            "startAt": 50,
+            "telegraphSeconds": 1.25,
+            "halfWidth": 0.22,
+            "loss": 12,
+            "maxStrikes": 1
+          }
+        },
+        {
+          "id": "o7",
+          "at": 62,
+          "x": 0.5,
+          "halfWidth": 0.2,
+          "kind": "fighter",
+          "contactLoss": 16,
+          "hp": 200
+        }
+      ],
+      "boss": {
+        "id": "city-general",
+        "name": "守城主将",
+        "hp": 2600,
+        "x": 0,
+        "hurtHalfWidth": 0.42,
+        "firstAttackDelay": 2.0,
+        "attackSequence": [
+          {
+            "kind": "aimed",
+            "telegraphSeconds": 1.25,
+            "halfWidth": 0.24,
+            "loss": 10,
+            "impactSeconds": 0.12,
+            "recoverySeconds": 1.4
+          },
+          {
+            "kind": "fixed",
+            "x": -0.6,
+            "telegraphSeconds": 1.15,
+            "halfWidth": 0.33,
+            "loss": 10,
+            "impactSeconds": 0.12,
+            "recoverySeconds": 0.4
+          },
+          {
+            "kind": "fixed",
+            "x": 0.6,
+            "telegraphSeconds": 1.15,
+            "halfWidth": 0.33,
+            "loss": 10,
+            "impactSeconds": 0.12,
+            "recoverySeconds": 1.6
+          }
+        ]
+      },
+      "referenceBestGatePath": [
+        "left",
+        "left",
+        "right",
+        "left"
+      ]
+    }
+  ]
+}

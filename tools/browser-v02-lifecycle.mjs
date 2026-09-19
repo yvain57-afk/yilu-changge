@@ -1,0 +1,24 @@
+// Native Chrome CDP: no Playwright focus emulation. All input goes through the browser.
+import {spawn} from 'node:child_process';import {writeFileSync} from 'node:fs';import {resolve} from 'node:path';import assert from 'node:assert/strict';
+const delay=ms=>new Promise(r=>setTimeout(r,ms));
+const chrome=spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',['--remote-debugging-port=43188',`--user-data-dir=${resolve('.cache/browser-v02-lifecycle')}`,'--no-first-run','--no-default-browser-check','about:blank'],{stdio:'ignore'});
+let ws,sequence=0;const pending=new Map();const events=[];
+async function send(method,params={},sessionId){const id=++sequence;return new Promise((resolve,reject)=>{pending.set(id,{resolve,reject});ws.send(JSON.stringify({id,method,params,...(sessionId?{sessionId}:{})}));});}
+let sessionId;let report={passed:false};
+try{
+ let version;for(let i=0;i<40;i++){try{version=await(await fetch('http://127.0.0.1:43188/json/version')).json();break;}catch{await delay(200)}}assert.ok(version);
+ ws=new WebSocket(version.webSocketDebuggerUrl);await new Promise((r,j)=>{ws.onopen=r;ws.onerror=j});ws.onmessage=e=>{const m=JSON.parse(e.data);if(m.id){const p=pending.get(m.id);pending.delete(m.id);m.error?p.reject(Error(JSON.stringify(m.error))):p.resolve(m.result);}else events.push(m)};
+ const {targetId}=await send('Target.createTarget',{url:'about:blank'});({sessionId}=await send('Target.attachToTarget',{targetId,flatten:true}));
+ const cmd=(method,params={})=>send(method,params,sessionId);
+ await cmd('Page.enable');await cmd('Runtime.enable');await cmd('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});await cmd('Emulation.setTouchEmulationEnabled',{enabled:true});await cmd('Page.navigate',{url:'http://127.0.0.1:43187'});await cmd('Page.bringToFront');
+ const evaluate=async expression=>{const r=await cmd('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value};
+ let ready=false;for(let i=0;i<150;i++){if(await evaluate('!!globalThis.__YLCG__')){ready=true;break}await delay(100)}assert.ok(ready,'Actual engine should load');
+ const snapshot=()=>evaluate('globalThis.__YLCG__.snapshot()');
+ async function tap(id){const s=await snapshot(),b=s.buttons.find(b=>b.id===id);assert.ok(b,`${s.screen} / ${id}`);const rect=await evaluate('(()=>{const r=document.querySelector("canvas").getBoundingClientRect();return {x:r.x,y:r.y,width:r.width,height:r.height}})()');const scale=Math.min(rect.width/720,rect.height/1280),x=rect.x+rect.width/2+b.x*scale,y=rect.y+rect.height/2-b.y*scale;await cmd('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y,id:1}]});await cmd('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await delay(120)}
+ await tap('start');await delay(400);assert.equal((await snapshot()).screen,'battle');
+ const other=await send('Target.createTarget',{url:'about:blank'});await send('Target.activateTarget',{targetId:other.targetId});await delay(500);
+ const background=await evaluate('({hidden:document.hidden,visibility:document.visibilityState,focused:document.hasFocus(),screen:globalThis.__YLCG__.snapshot().screen})');
+ assert.equal(background.hidden,true,'Actual browser page must be hidden');assert.equal(background.screen,'pause');
+ await send('Target.activateTarget',{targetId});await delay(300);assert.equal((await snapshot()).screen,'pause');const z=(await snapshot()).journey.z;await delay(700);assert.equal((await snapshot()).journey.z,z);await tap('continue');await delay(300);assert.ok((await snapshot()).journey.z>z);
+ report={passed:true,background,returnedPaused:true,explicitContinueRestoresProgress:true,browser:version.Browser};const shot=await cmd('Page.captureScreenshot',{format:'png'});writeFileSync('evidence/v02/lifecycle-native.png',Buffer.from(shot.data,'base64'));console.log(JSON.stringify(report));
+}catch(e){writeFileSync('evidence/v02/lifecycle-events-failure.json',JSON.stringify(events.filter(m=>['Runtime.exceptionThrown','Page.loadEventFired','Page.lifecycleEvent'].includes(m.method)),null,2));report={...report,error:String(e)};console.error(e);process.exitCode=1;}finally{writeFileSync('evidence/v02/browser-lifecycle.json',JSON.stringify(report,null,2));if(ws?.readyState===1){await send('Browser.close');ws.close();}chrome.kill('SIGTERM');}

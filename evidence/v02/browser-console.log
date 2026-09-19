@@ -1,0 +1,5 @@
+
+> yilu-changge@0.2.0-s1 test:browser
+> node tools/run-local.mjs node tools/browser-v02.mjs
+
+{"passed":true,"recordingStart":1789843045114,"firstVictory":{"phase":"won","paused":false,"count":88,"x":-1.5372319209729546e-16,"target":-1.5372319209729546e-16,"z":42,"elapsed":58.66666666666462,"duration":42,"damage":17.6,"visible":48,"bossHP":0,"bossWarning":null,"warnings":[],"cause":"","arrows":0,"rows":[],"obstacles":[],"usedRows":[1,2,3]},"samples":619,"checks":["first-level-real-touch-win","save-before-result","free-restart","pause-explicit-resume","touch-cancel","leave-clears-projectiles","reload-preserves-rank","390x844","360x800","corrupt-save","storage-write-failure"],"errors":[],"external":[]}

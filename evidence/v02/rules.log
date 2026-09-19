@@ -1,0 +1,203 @@
+
+> yilu-changge@0.2.0-s1 test
+> node tools/run-local.mjs tsx --test tests/*.test.ts
+
+TAP version 13
+# {"level":"trial-01","route":"best","count":88,"seconds":59.16666666666459,"bossSeconds":17.16666666666459,"losses":[]}
+# {"level":"trial-01","route":"safe","count":56,"seconds":68.66666666666406,"bossSeconds":26.666666666664057,"losses":[]}
+# {"level":"trial-01","route":"late","count":52,"seconds":70.91666666666393,"bossSeconds":28.91666666666393,"losses":[18]}
+# {"level":"trial-02","route":"best","count":172,"seconds":68.91666666666404,"bossSeconds":14.916666666664042,"losses":[8,10]}
+# {"level":"trial-02","route":"safe","count":112,"seconds":77.16666666666357,"bossSeconds":23.166666666663573,"losses":[8]}
+# {"level":"trial-02","route":"late","count":16,"seconds":220.41666666673422,"bossSeconds":166.41666666673422,"losses":[10,8,48]}
+# {"level":"trial-03","route":"best","count":256,"seconds":81.66666666666332,"bossSeconds":15.666666666663318,"losses":[]}
+# {"level":"trial-03","route":"safe","count":124,"seconds":97.41666666666242,"bossSeconds":31.416666666662422,"losses":[12]}
+# {"level":"trial-03","route":"late","count":68,"seconds":123.91666666666092,"bossSeconds":57.916666666660916,"losses":[12,24,12]}
+# Subtest: R01 首关8兵、上下界、真实火力和主角计数
+ok 1 - R01 首关8兵、上下界、真实火力和主角计数
+  ---
+  duration_ms: 0.734958
+  type: 'test'
+  ...
+# Subtest: R02 同排中心选择一次，极速横移不重复加兵
+ok 2 - R02 同排中心选择一次，极速横移不重复加兵
+  ---
+  duration_ms: 0.123166
+  type: 'test'
+  ...
+# Subtest: R02 穿门一次、正中归右、射击不改门值
+ok 3 - R02 穿门一次、正中归右、射击不改门值
+  ---
+  duration_ms: 0.888917
+  type: 'test'
+  ...
+# Subtest: R02 受阻门先扣后加、两侧边界及0兵不复活
+ok 4 - R02 受阻门先扣后加、两侧边界及0兵不复活
+  ---
+  duration_ms: 0.089708
+  type: 'test'
+  ...
+# Subtest: R02 清障后可换侧；无隐形重复接触
+ok 5 - R02 清障后可换侧；无隐形重复接触
+  ---
+  duration_ms: 0.110125
+  type: 'test'
+  ...
+# Subtest: R03 箭发射冻结伤害及位置；最近对象优先，无穿透
+ok 6 - R03 箭发射冻结伤害及位置；最近对象优先，无穿透
+  ---
+  duration_ms: 0.081042
+  type: 'test'
+  ...
+# Subtest: R03 射击通道、山石挡箭不毁、视野外无伤
+ok 7 - R03 射击通道、山石挡箭不毁、视野外无伤
+  ---
+  duration_ms: 0.177583
+  type: 'test'
+  ...
+# Subtest: R04 弩手完整预告、锁定不追踪、躲开不损兵
+ok 8 - R04 弩手完整预告、锁定不追踪、躲开不损兵
+  ---
+  duration_ms: 0.524417
+  type: 'test'
+  ...
+# Subtest: R04 蓄力可打断，已出手箭不撤回，一箭只伤一次
+ok 9 - R04 蓄力可打断，已出手箭不撤回，一箭只伤一次
+  ---
+  duration_ms: 0.54225
+  type: 'test'
+  ...
+# Subtest: R05 Boss入场2秒、1.4秒锁定、触发恢复独立，无幽灵攻击
+ok 10 - R05 Boss入场2秒、1.4秒锁定、触发恢复独立，无幽灵攻击
+  ---
+  duration_ms: 0.434875
+  type: 'test'
+  ...
+# Subtest: R05 低兵力无超时，HP归零才胜
+ok 11 - R05 低兵力无超时，HP归零才胜
+  ---
+  duration_ms: 7.495709
+  type: 'test'
+  ...
+# Subtest: R06 拉起队伍 best 合法路线
+ok 12 - R06 拉起队伍 best 合法路线
+  ---
+  duration_ms: 5.087667
+  type: 'test'
+  ...
+# Subtest: R06 拉起队伍 safe 合法路线
+ok 13 - R06 拉起队伍 safe 合法路线
+  ---
+  duration_ms: 4.623125
+  type: 'test'
+  ...
+# Subtest: R06 拉起队伍 late 合法路线
+ok 14 - R06 拉起队伍 late 合法路线
+  ---
+  duration_ms: 3.374916
+  type: 'test'
+  ...
+# Subtest: R06 拉起队伍 真实失败与配置重开
+ok 15 - R06 拉起队伍 真实失败与配置重开
+  ---
+  duration_ms: 2.027959
+  type: 'test'
+  ...
+# Subtest: R06 拿下营寨 best 合法路线
+ok 16 - R06 拿下营寨 best 合法路线
+  ---
+  duration_ms: 6.196916
+  type: 'test'
+  ...
+# Subtest: R06 拿下营寨 safe 合法路线
+ok 17 - R06 拿下营寨 safe 合法路线
+  ---
+  duration_ms: 5.571417
+  type: 'test'
+  ...
+# Subtest: R06 拿下营寨 late 合法路线
+ok 18 - R06 拿下营寨 late 合法路线
+  ---
+  duration_ms: 6.940125
+  type: 'test'
+  ...
+# Subtest: R06 拿下营寨 真实失败与配置重开
+ok 19 - R06 拿下营寨 真实失败与配置重开
+  ---
+  duration_ms: 2.59875
+  type: 'test'
+  ...
+# Subtest: R06 夺下首城 best 合法路线
+ok 20 - R06 夺下首城 best 合法路线
+  ---
+  duration_ms: 2.865583
+  type: 'test'
+  ...
+# Subtest: R06 夺下首城 safe 合法路线
+ok 21 - R06 夺下首城 safe 合法路线
+  ---
+  duration_ms: 3.7855
+  type: 'test'
+  ...
+# Subtest: R06 夺下首城 late 合法路线
+ok 22 - R06 夺下首城 late 合法路线
+  ---
+  duration_ms: 2.751958
+  type: 'test'
+  ...
+# Subtest: R06 夺下首城 真实失败与配置重开
+ok 23 - R06 夺下首城 真实失败与配置重开
+  ---
+  duration_ms: 2.06425
+  type: 'test'
+  ...
+# Subtest: R07 暂停冻结预告和射击、取消输入不再横移
+ok 24 - R07 暂停冻结预告和射击、取消输入不再横移
+  ---
+  duration_ms: 0.108625
+  type: 'test'
+  ...
+# Subtest: R08 旧档保留，只迁移设置；新关不解锁
+ok 25 - R08 旧档保留，只迁移设置；新关不解锁
+  ---
+  duration_ms: 0.189917
+  type: 'test'
+  ...
+# Subtest: R08 坏档及存储失败仍可玩；保存先于画面且成绩不降
+ok 26 - R08 坏档及存储失败仍可玩；保存先于画面且成绩不降
+  ---
+  duration_ms: 0.405125
+  type: 'test'
+  ...
+# Subtest: R09 稳定ID存档，只保留允许字段
+ok 27 - R09 稳定ID存档，只保留允许字段
+  ---
+  duration_ms: 0.066458
+  type: 'test'
+  ...
+# Subtest: R10 手机阵型有且仅有一个主角，48可见边界，中心投影一致
+ok 28 - R10 手机阵型有且仅有一个主角，48可见边界，中心投影一致
+  ---
+  duration_ms: 0.193083
+  type: 'test'
+  ...
+# Subtest: R11 十局对象有界，胜负无遗留箭或预告
+ok 29 - R11 十局对象有界，胜负无遗留箭或预告
+  ---
+  duration_ms: 15.17875
+  type: 'test'
+  ...
+# Subtest: R03 同步击杀与接触时先结算箭命中；半侧木障贴中线可射
+ok 30 - R03 同步击杀与接触时先结算箭命中；半侧木障贴中线可射
+  ---
+  duration_ms: 0.116209
+  type: 'test'
+  ...
+1..30
+# tests 30
+# suites 0
+# pass 30
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 244.835792

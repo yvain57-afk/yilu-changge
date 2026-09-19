@@ -1,0 +1,123 @@
+
+> yilu-changge@0.1.0 test
+> node tools/run-local.mjs tsx --test tests/*.test.ts
+
+TAP version 13
+# {"modelRuns":[{"run":0,"seconds":59.92,"count":160,"maxArrows":4},{"run":1,"seconds":75.92,"count":256,"maxArrows":4},{"run":2,"seconds":90.42,"count":256,"maxArrows":4},{"run":3,"seconds":59.92,"count":160,"maxArrows":4},{"run":4,"seconds":75.92,"count":256,"maxArrows":4},{"run":5,"seconds":90.42,"count":256,"maxArrows":4},{"run":6,"seconds":59.92,"count":160,"maxArrows":4},{"run":7,"seconds":75.92,"count":256,"maxArrows":4},{"run":8,"seconds":90.42,"count":256,"maxArrows":4},{"run":9,"seconds":59.92,"count":160,"maxArrows":4}]}
+# Subtest: R01 首关8兵、人数上下界及真实火力不被48截断
+ok 1 - R01 首关8兵、人数上下界及真实火力不被48截断
+  ---
+  duration_ms: 0.560875
+  type: 'test'
+  ...
+# Subtest: R02 同排中心选择一次，极速横移不重复加兵
+ok 2 - R02 同排中心选择一次，极速横移不重复加兵
+  ---
+  duration_ms: 0.090042
+  type: 'test'
+  ...
+# Subtest: R02 穿门步只结算一次，左右每排互斥、射击不改门值
+ok 3 - R02 穿门步只结算一次，左右每排互斥、射击不改门值
+  ---
+  duration_ms: 0.628292
+  type: 'test'
+  ...
+# Subtest: R03 射击位置真实决定清障、人数增多火力更大
+ok 4 - R03 射击位置真实决定清障、人数增多火力更大
+  ---
+  duration_ms: 0.453542
+  type: 'test'
+  ...
+# Subtest: R03 地形不可射毁，接触损失及失败原因
+ok 5 - R03 地形不可射毁，接触损失及失败原因
+  ---
+  duration_ms: 0.188625
+  type: 'test'
+  ...
+# Subtest: R04 墨影有至少1秒预告，避开不损兵
+ok 6 - R04 墨影有至少1秒预告，避开不损兵
+  ---
+  duration_ms: 0.171541
+  type: 'test'
+  ...
+# Subtest: R05 守关停止前进、低兵力不超时判负、击破才胜
+ok 7 - R05 守关停止前进、低兵力不超时判负、击破才胜
+  ---
+  duration_ms: 9.646625
+  type: 'test'
+  ...
+# Subtest: R06 渡口送简真实规则有可通路线
+ok 8 - R06 渡口送简真实规则有可通路线
+  ---
+  duration_ms: 4.486
+  type: 'test'
+  ...
+# Subtest: R06 渡口送简损兵为0即失败、无重开费用
+ok 9 - R06 渡口送简损兵为0即失败、无重开费用
+  ---
+  duration_ms: 5.317917
+  type: 'test'
+  ...
+# Subtest: R06 关道护粮真实规则有可通路线
+ok 10 - R06 关道护粮真实规则有可通路线
+  ---
+  duration_ms: 5.694375
+  type: 'test'
+  ...
+# Subtest: R06 关道护粮损兵为0即失败、无重开费用
+ok 11 - R06 关道护粮损兵为0即失败、无重开费用
+  ---
+  duration_ms: 4.865709
+  type: 'test'
+  ...
+# Subtest: R06 长街寻信真实规则有可通路线
+ok 12 - R06 长街寻信真实规则有可通路线
+  ---
+  duration_ms: 2.367875
+  type: 'test'
+  ...
+# Subtest: R06 长街寻信损兵为0即失败、无重开费用
+ok 13 - R06 长街寻信损兵为0即失败、无重开费用
+  ---
+  duration_ms: 2.56775
+  type: 'test'
+  ...
+# Subtest: R07 暂停冻结，显式继续才恢复
+ok 14 - R07 暂停冻结，显式继续才恢复
+  ---
+  duration_ms: 0.111791
+  type: 'test'
+  ...
+# Subtest: R08 坏档回默认并告知、存储异常仍可游玩
+ok 15 - R08 坏档回默认并告知、存储异常仍可游玩
+  ---
+  duration_ms: 0.332042
+  type: 'test'
+  ...
+# Subtest: R08 只保存允许字段、失败不丢线索、成绩和设置可恢复
+ok 16 - R08 只保存允许字段、失败不丢线索、成绩和设置可恢复
+  ---
+  duration_ms: 0.307166
+  type: 'test'
+  ...
+# Subtest: R09 仅三关，立即解锁不依赖阅读；100–180字线索
+ok 17 - R09 仅三关，立即解锁不依赖阅读；100–180字线索
+  ---
+  duration_ms: 0.047042
+  type: 'test'
+  ...
+# Subtest: R11 模型10局无永久对象累积
+ok 18 - R11 模型10局无永久对象累积
+  ---
+  duration_ms: 23.244375
+  type: 'test'
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 18
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 159.69675

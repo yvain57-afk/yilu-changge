@@ -17,3 +17,11 @@ release/
 *.pem
 *.key
 __pycache__/
+
+# v0.2 recorder originals and intermediate diagnostic frames stay local
+/evidence/v02/recordings/
+/evidence/v02/session.webm
+/evidence/v02/pre-final-*
+/evidence/v02/video-frame-*
+/evidence/v02/final-frame-*
+/evidence/v02/clip-*.png

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "src": "http://127.0.0.1:43187/evidence/v02/first-ten-seconds.mp4",
+      "duration": 10,
+      "played": 0.351778,
+      "width": 304,
+      "height": 632
+    },
+    {
+      "src": "http://127.0.0.1:43187/evidence/v02/first-level.mp4",
+      "duration": 68,
+      "played": 0.352945,
+      "width": 304,
+      "height": 632
+    }
+  ]
+}
