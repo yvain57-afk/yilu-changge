@@ -1,0 +1,826 @@
+{
+  "baselineCommit": "5478427c7ae02037c93f8b8fb75203e3b19a6b14",
+  "strategy": "7s early alignment; safe avoids guarded side; late aligns until last1.2s; all dodge ordinary warnings",
+  "baseline": [
+    {
+      "level": "trial-01",
+      "route": "best",
+      "gates": [
+        {
+          "row": 1,
+          "before": 8,
+          "loss": 0,
+          "after": 20,
+          "x": -0.5
+        },
+        {
+          "row": 2,
+          "before": 20,
+          "loss": 0,
+          "after": 44,
+          "x": 0.5
+        },
+        {
+          "row": 3,
+          "before": 44,
+          "loss": 0,
+          "after": 88,
+          "x": 0.5
+        }
+      ],
+      "losses": [],
+      "bossEntry": 88,
+      "bossSeconds": 17.16666666666459,
+      "total": 59.16666666666459,
+      "count": 88,
+      "outcome": "won",
+      "cause": ""
+    },
+    {
+      "level": "trial-01",
+      "route": "safe",
+      "gates": [
+        {
+          "row": 1,
+          "before": 8,
+          "loss": 0,
+          "after": 20,
+          "x": -0.5
+        },
+        {
+          "row": 2,
+          "before": 20,
+          "loss": 0,
+          "after": 44,
+          "x": 0.5
+        },
+        {
+          "row": 3,
+          "before": 44,
+          "loss": 0,
+          "after": 56,
+          "x": -0.5
+        }
+      ],
+      "losses": [],
+      "bossEntry": 56,
+      "bossSeconds": 26.666666666664057,
+      "total": 68.66666666666406,
+      "count": 56,
+      "outcome": "won",
+      "cause": ""
+    },
+    {
+      "level": "trial-01",
+      "route": "late",
+      "gates": [
+        {
+          "row": 1,
+          "before": 8,
+          "loss": 0,
+          "after": 20,
+          "x": -0.5
+        },
+        {
+          "row": 2,
+          "before": 20,
+          "loss": 0,
+          "after": 44,
+          "x": 0.5
+        },
+        {
+          "row": 3,
+          "before": 44,
+          "loss": 18,
+          "after": 52,
+          "x": 0.5
+        }
+      ],
+      "losses": [
+        {
+          "time": 34.01666666666602,
+          "loss": 18,
+          "cause": "木障未清除，损失18人"
+        }
+      ],
+      "bossEntry": 52,
+      "bossSeconds": 28.91666666666393,
+      "total": 70.91666666666393,
+      "count": 52,
+      "outcome": "won",
+      "cause": "木障未清除，损失18人"
+    },
+    {
+      "level": "trial-02",
+      "route": "best",
+      "gates": [
+        {
+          "row": 1,
+          "before": 12,
+          "loss": 0,
+          "after": 28,
+          "x": -0.5
+        },
+        {
+          "row": 2,
+          "before": 28,
+          "loss": 0,
+          "after": 56,
+          "x": -0.5
+        },
+        {
+          "row": 3,
+          "before": 48,
+          "loss": 0,
+          "after": 96,
+          "x": 0.5
+        },
+        {
+          "row": 4,
+          "before": 86,
+          "loss": 0,
+          "after": 172,
+          "x": -0.5
+        }
+      ],
+      "losses": [
+        {
+          "time": 24.249999999999904,
+          "loss": 8,
+          "cause": "被弩箭击中，损失8人"
+        },
+        {
+          "time": 39.249999999999055,
+          "loss": 10,
+          "cause": "被弩箭击中，损失10人"
+        }
+      ],
+      "bossEntry": 172,
+      "bossSeconds": 14.916666666664042,
+      "total": 68.91666666666404,
+      "count": 172,
+      "outcome": "won",
+      "cause": "被弩箭击中，损失10人"
+    },
+    {
+      "level": "trial-02",
+      "route": "safe",
+      "gates": [
+        {
+          "row": 1,
+          "before": 12,
+          "loss": 0,
+          "after": 28,
+          "x": -0.5
+        },
+        {
+          "row": 2,
+          "before": 28,
+          "loss": 0,
+          "after": 48,
+          "x": 0.5
+        },
+        {
+          "row": 3,
+          "before": 40,
+          "loss": 0,
+          "after": 80,
+          "x": 0.5
+        },
+        {
+          "row": 4,
+          "before": 80,
+          "loss": 0,
+          "after": 112,
+          "x": 0.5
+        }
+      ],
+      "losses": [
+        {
+          "time": 24.249999999999904,
+          "loss": 8,
+          "cause": "被弩箭击中，损失8人"
+        }
+      ],
+      "bossEntry": 112,
+      "bossSeconds": 23.166666666663573,
+      "total": 77.16666666666357,
+      "count": 112,
+      "outcome": "won",
+      "cause": "被弩箭击中，损失8人"
+    },
+    {
+      "level": "trial-02",
+      "route": "late",
+      "gates": [
+        {
+          "row": 1,
+          "before": 12,
+          "loss": 0,
+          "after": 28,
+          "x": -0.5
+        },
+        {
+          "row": 2,
+          "before": 28,
+          "loss": 10,
+          "after": 36,
+          "x": -0.5
+        },
+        {
+          "row": 3,
+          "before": 28,
+          "loss": 0,
+          "after": 56,
+          "x": 0.5
+        },
+        {
+          "row": 4,
+          "before": 56,
+          "loss": 48,
+          "after": 16,
+          "x": -0.5
+        }
+      ],
+      "losses": [
+        {
+          "time": 17.000000000000316,
+          "loss": 10,
+          "cause": "木障未清除，损失10人"
+        },
+        {
+          "time": 24.249999999999904,
+          "loss": 8,
+          "cause": "被弩箭击中，损失8人"
+        },
+        {
+          "time": 45.016666666665394,
+          "loss": 48,
+          "cause": "木障未清除，损失48人"
+        }
+      ],
+      "bossEntry": 16,
+      "bossSeconds": 166.41666666673422,
+      "total": 220.41666666673422,
+      "count": 16,
+      "outcome": "won",
+      "cause": "木障未清除，损失48人"
+    },
+    {
+      "level": "trial-03",
+      "route": "best",
+      "gates": [
+        {
+          "row": 1,
+          "before": 16,
+          "loss": 0,
+          "after": 34,
+          "x": -0.5
+        },
+        {
+          "row": 2,
+          "before": 34,
+          "loss": 0,
+          "after": 68,
+          "x": -0.5
+        },
+        {
+          "row": 3,
+          "before": 68,
+          "loss": 0,
+          "after": 136,
+          "x": 0.5
+        },
+        {
+          "row": 4,
+          "before": 136,
+          "loss": 0,
+          "after": 256,
+          "x": -0.5
+        }
+      ],
+      "losses": [],
+      "bossEntry": 256,
+      "bossSeconds": 15.666666666663318,
+      "total": 81.66666666666332,
+      "count": 256,
+      "outcome": "won",
+      "cause": ""
+    },
+    {
+      "level": "trial-03",
+      "route": "safe",
+      "gates": [
+        {
+          "row": 1,
+          "before": 16,
+          "loss": 0,
+          "after": 34,
+          "x": -0.5
+        },
+        {
+          "row": 2,
+          "before": 34,
+          "loss": 0,
+          "after": 60,
+          "x": 0.5
+        },
+        {
+          "row": 3,
+          "before": 60,
+          "loss": 0,
+          "after": 96,
+          "x": -0.5
+        },
+        {
+          "row": 4,
+          "before": 84,
+          "loss": 0,
+          "after": 124,
+          "x": 0.5
+        }
+      ],
+      "losses": [
+        {
+          "time": 51.24999999999837,
+          "loss": 12,
+          "cause": "被弩箭击中，损失12人"
+        }
+      ],
+      "bossEntry": 124,
+      "bossSeconds": 31.416666666662422,
+      "total": 97.41666666666242,
+      "count": 124,
+      "outcome": "won",
+      "cause": "被弩箭击中，损失12人"
+    },
+    {
+      "level": "trial-03",
+      "route": "late",
+      "gates": [
+        {
+          "row": 1,
+          "before": 16,
+          "loss": 0,
+          "after": 34,
+          "x": -0.5
+        },
+        {
+          "row": 2,
+          "before": 34,
+          "loss": 12,
+          "after": 44,
+          "x": -0.5
+        },
+        {
+          "row": 3,
+          "before": 44,
+          "loss": 24,
+          "after": 40,
+          "x": 0.5
+        },
+        {
+          "row": 4,
+          "before": 28,
+          "loss": 0,
+          "after": 68,
+          "x": 0.5
+        }
+      ],
+      "losses": [
+        {
+          "time": 22.000000000000032,
+          "loss": 12,
+          "cause": "木障未清除，损失12人"
+        },
+        {
+          "time": 40.01666666666568,
+          "loss": 24,
+          "cause": "木障未清除，损失24人"
+        },
+        {
+          "time": 51.24999999999837,
+          "loss": 12,
+          "cause": "被弩箭击中，损失12人"
+        }
+      ],
+      "bossEntry": 68,
+      "bossSeconds": 57.916666666660916,
+      "total": 123.91666666666092,
+      "count": 68,
+      "outcome": "won",
+      "cause": "被弩箭击中，损失12人"
+    }
+  ],
+  "candidateA": [
+    {
+      "level": "trial-01",
+      "route": "best",
+      "gates": [
+        {
+          "row": 1,
+          "before": 8,
+          "loss": 0,
+          "after": 20,
+          "x": -0.5
+        },
+        {
+          "row": 2,
+          "before": 20,
+          "loss": 0,
+          "after": 44,
+          "x": 0.5
+        },
+        {
+          "row": 3,
+          "before": 44,
+          "loss": 0,
+          "after": 88,
+          "x": 0.5
+        }
+      ],
+      "losses": [],
+      "bossEntry": 88,
+      "bossSeconds": 17.16666666666459,
+      "total": 59.16666666666459,
+      "count": 88,
+      "outcome": "won",
+      "cause": ""
+    },
+    {
+      "level": "trial-01",
+      "route": "safe",
+      "gates": [
+        {
+          "row": 1,
+          "before": 8,
+          "loss": 0,
+          "after": 20,
+          "x": -0.5
+        },
+        {
+          "row": 2,
+          "before": 20,
+          "loss": 0,
+          "after": 44,
+          "x": 0.5
+        },
+        {
+          "row": 3,
+          "before": 44,
+          "loss": 0,
+          "after": 56,
+          "x": -0.5
+        }
+      ],
+      "losses": [],
+      "bossEntry": 56,
+      "bossSeconds": 26.666666666664057,
+      "total": 68.66666666666406,
+      "count": 56,
+      "outcome": "won",
+      "cause": ""
+    },
+    {
+      "level": "trial-01",
+      "route": "late",
+      "gates": [
+        {
+          "row": 1,
+          "before": 8,
+          "loss": 0,
+          "after": 20,
+          "x": -0.5
+        },
+        {
+          "row": 2,
+          "before": 20,
+          "loss": 0,
+          "after": 44,
+          "x": 0.5
+        },
+        {
+          "row": 3,
+          "before": 44,
+          "loss": 18,
+          "after": 52,
+          "x": 0.5
+        }
+      ],
+      "losses": [
+        {
+          "time": 34.01666666666602,
+          "loss": 18,
+          "cause": "木障未清除，损失18人"
+        }
+      ],
+      "bossEntry": 52,
+      "bossSeconds": 28.91666666666393,
+      "total": 70.91666666666393,
+      "count": 52,
+      "outcome": "won",
+      "cause": "木障未清除，损失18人"
+    },
+    {
+      "level": "trial-02",
+      "route": "best",
+      "gates": [
+        {
+          "row": 1,
+          "before": 12,
+          "loss": 0,
+          "after": 28,
+          "x": -0.5
+        },
+        {
+          "row": 2,
+          "before": 28,
+          "loss": 0,
+          "after": 56,
+          "x": -0.5
+        },
+        {
+          "row": 3,
+          "before": 48,
+          "loss": 0,
+          "after": 96,
+          "x": 0.5
+        },
+        {
+          "row": 4,
+          "before": 86,
+          "loss": 0,
+          "after": 172,
+          "x": -0.5
+        }
+      ],
+      "losses": [
+        {
+          "time": 24.249999999999904,
+          "loss": 8,
+          "cause": "被弩箭击中，损失8人"
+        },
+        {
+          "time": 39.249999999999055,
+          "loss": 10,
+          "cause": "被弩箭击中，损失10人"
+        }
+      ],
+      "bossEntry": 172,
+      "bossSeconds": 14.916666666664042,
+      "total": 68.91666666666404,
+      "count": 172,
+      "outcome": "won",
+      "cause": "被弩箭击中，损失10人"
+    },
+    {
+      "level": "trial-02",
+      "route": "safe",
+      "gates": [
+        {
+          "row": 1,
+          "before": 12,
+          "loss": 0,
+          "after": 28,
+          "x": -0.5
+        },
+        {
+          "row": 2,
+          "before": 28,
+          "loss": 0,
+          "after": 48,
+          "x": 0.5
+        },
+        {
+          "row": 3,
+          "before": 40,
+          "loss": 0,
+          "after": 80,
+          "x": 0.5
+        },
+        {
+          "row": 4,
+          "before": 80,
+          "loss": 0,
+          "after": 112,
+          "x": 0.5
+        }
+      ],
+      "losses": [
+        {
+          "time": 24.249999999999904,
+          "loss": 8,
+          "cause": "被弩箭击中，损失8人"
+        }
+      ],
+      "bossEntry": 112,
+      "bossSeconds": 23.166666666663573,
+      "total": 77.16666666666357,
+      "count": 112,
+      "outcome": "won",
+      "cause": "被弩箭击中，损失8人"
+    },
+    {
+      "level": "trial-02",
+      "route": "late",
+      "gates": [
+        {
+          "row": 1,
+          "before": 12,
+          "loss": 0,
+          "after": 28,
+          "x": -0.5
+        },
+        {
+          "row": 2,
+          "before": 28,
+          "loss": 5,
+          "after": 46,
+          "x": -0.5
+        },
+        {
+          "row": 3,
+          "before": 38,
+          "loss": 0,
+          "after": 76,
+          "x": 0.5
+        },
+        {
+          "row": 4,
+          "before": 76,
+          "loss": 48,
+          "after": 56,
+          "x": -0.5
+        }
+      ],
+      "losses": [
+        {
+          "time": 17.000000000000316,
+          "loss": 5,
+          "cause": "木障未清除，损失5人"
+        },
+        {
+          "time": 24.249999999999904,
+          "loss": 8,
+          "cause": "被弩箭击中，损失8人"
+        },
+        {
+          "time": 45.016666666665394,
+          "loss": 48,
+          "cause": "木障未清除，损失48人"
+        }
+      ],
+      "bossEntry": 56,
+      "bossSeconds": 46.66666666666224,
+      "total": 100.66666666666224,
+      "count": 56,
+      "outcome": "won",
+      "cause": "木障未清除，损失48人"
+    },
+    {
+      "level": "trial-03",
+      "route": "best",
+      "gates": [
+        {
+          "row": 1,
+          "before": 16,
+          "loss": 0,
+          "after": 34,
+          "x": -0.5
+        },
+        {
+          "row": 2,
+          "before": 34,
+          "loss": 0,
+          "after": 68,
+          "x": -0.5
+        },
+        {
+          "row": 3,
+          "before": 68,
+          "loss": 0,
+          "after": 136,
+          "x": 0.5
+        },
+        {
+          "row": 4,
+          "before": 136,
+          "loss": 0,
+          "after": 256,
+          "x": -0.5
+        }
+      ],
+      "losses": [],
+      "bossEntry": 256,
+      "bossSeconds": 15.666666666663318,
+      "total": 81.66666666666332,
+      "count": 256,
+      "outcome": "won",
+      "cause": ""
+    },
+    {
+      "level": "trial-03",
+      "route": "safe",
+      "gates": [
+        {
+          "row": 1,
+          "before": 16,
+          "loss": 0,
+          "after": 34,
+          "x": -0.5
+        },
+        {
+          "row": 2,
+          "before": 34,
+          "loss": 0,
+          "after": 60,
+          "x": 0.5
+        },
+        {
+          "row": 3,
+          "before": 60,
+          "loss": 0,
+          "after": 96,
+          "x": -0.5
+        },
+        {
+          "row": 4,
+          "before": 84,
+          "loss": 0,
+          "after": 124,
+          "x": 0.5
+        }
+      ],
+      "losses": [
+        {
+          "time": 51.24999999999837,
+          "loss": 12,
+          "cause": "被弩箭击中，损失12人"
+        }
+      ],
+      "bossEntry": 124,
+      "bossSeconds": 31.416666666662422,
+      "total": 97.41666666666242,
+      "count": 124,
+      "outcome": "won",
+      "cause": "被弩箭击中，损失12人"
+    },
+    {
+      "level": "trial-03",
+      "route": "late",
+      "gates": [
+        {
+          "row": 1,
+          "before": 16,
+          "loss": 0,
+          "after": 34,
+          "x": -0.5
+        },
+        {
+          "row": 2,
+          "before": 34,
+          "loss": 12,
+          "after": 44,
+          "x": -0.5
+        },
+        {
+          "row": 3,
+          "before": 44,
+          "loss": 24,
+          "after": 40,
+          "x": 0.5
+        },
+        {
+          "row": 4,
+          "before": 28,
+          "loss": 0,
+          "after": 68,
+          "x": 0.5
+        }
+      ],
+      "losses": [
+        {
+          "time": 22.000000000000032,
+          "loss": 12,
+          "cause": "木障未清除，损失12人"
+        },
+        {
+          "time": 40.01666666666568,
+          "loss": 24,
+          "cause": "木障未清除，损失24人"
+        },
+        {
+          "time": 51.24999999999837,
+          "loss": 12,
+          "cause": "被弩箭击中，损失12人"
+        }
+      ],
+      "bossEntry": 68,
+      "bossSeconds": 57.916666666660916,
+      "total": 123.91666666666092,
+      "count": 68,
+      "outcome": "won",
+      "cause": "被弩箭击中，损失12人"
+    }
+  ]
+}

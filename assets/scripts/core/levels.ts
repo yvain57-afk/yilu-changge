@@ -1,6 +1,6 @@
 import { Level } from './model';
-// Explicitly mapped design draft. Only trial-01 is exposed in S1.
-export const PLAYABLE_LEVELS = 1;
+// v0.3: three complete levels, guarded by contiguous progress and ready resources.
+export const PLAYABLE_LEVELS = 3;
 export const LEVELS: Level[] = [
   {
     "id": "trial-01",
@@ -301,7 +301,7 @@ export const LEVELS: Level[] = [
         "width": 0.5,
         "kind": "wood",
         "hp": 64,
-        "loss": 10,
+        "loss": 5,
         "rowId": 2,
         "side": "left"
       },

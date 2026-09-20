@@ -1,0 +1,253 @@
+{
+  "version": "0.3.0-rc1",
+  "status": "三关试玩候选，等待用户集中试玩",
+  "baseline": "5478427c7ae02037c93f8b8fb75203e3b19a6b14",
+  "runtimeFingerprint": "072eaf5662fe22d9221463820a5147e95a4f69a5200f1a50ae2d1d950a7f6e6f",
+  "unitTests": {
+    "passed": 55,
+    "failed": 0,
+    "skipped": 0
+  },
+  "browser": {
+    "wins": 10,
+    "distribution": [
+      4,
+      3,
+      3
+    ],
+    "device": "Apple M5 desktop Chrome",
+    "viewports": [
+      [
+        360,
+        800
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        360,
+        640
+      ]
+    ],
+    "meanFPS": [
+      57.898726295711626,
+      59.99676512809285
+    ],
+    "sampleFPS": {
+      "minimum": 43.251744814198766,
+      "p05": 56.06925044462445,
+      "median": 59.99400059850981
+    },
+    "stabilityScope": "Exhaustive presentation-cache warmup fixtures, followed by full real-touch battles; if the first cycle still allocates lazy GPU buffers, repeat a full cycle in the same context. Final three must be stable. Additional to the required 10 natural browser victories.",
+    "additionalWarmedVictories": 3,
+    "endNodes": [
+      170,
+      171
+    ],
+    "endPool": [
+      149,
+      149
+    ],
+    "gpuBuffersMiB": [
+      56.29,
+      56.29
+    ],
+    "gpuTexturesMiB": [
+      31.72,
+      31.73
+    ],
+    "heapMiB": [
+      22.15,
+      81.11
+    ],
+    "peakDrawCalls": 29,
+    "peakEffects": 3,
+    "runs": [
+      {
+        "run": 1,
+        "level": 1,
+        "route": "best",
+        "viewport": [
+          390,
+          844
+        ],
+        "elapsed": 58.41666666666463,
+        "count": 88,
+        "meanFPS": 57.898726295711626
+      },
+      {
+        "run": 2,
+        "level": 2,
+        "route": "best",
+        "viewport": [
+          390,
+          844
+        ],
+        "elapsed": 66.91666666666416,
+        "count": 204,
+        "meanFPS": 59.953120031943506
+      },
+      {
+        "run": 3,
+        "level": 3,
+        "route": "best",
+        "viewport": [
+          390,
+          844
+        ],
+        "elapsed": 81.16666666666335,
+        "count": 256,
+        "meanFPS": 59.9729816220939
+      },
+      {
+        "run": 4,
+        "level": 1,
+        "route": "best",
+        "viewport": [
+          360,
+          800
+        ],
+        "elapsed": 58.66666666666462,
+        "count": 88,
+        "meanFPS": 59.99676512809285
+      },
+      {
+        "run": 5,
+        "level": 2,
+        "route": "late",
+        "viewport": [
+          360,
+          800
+        ],
+        "elapsed": 83.91666666666319,
+        "count": 88,
+        "meanFPS": 58.88561746570499
+      },
+      {
+        "run": 6,
+        "level": 3,
+        "route": "late",
+        "viewport": [
+          360,
+          800
+        ],
+        "elapsed": 123.91666666666092,
+        "count": 68,
+        "meanFPS": 59.996350222022905
+      },
+      {
+        "run": 7,
+        "level": 1,
+        "route": "best",
+        "viewport": [
+          390,
+          844
+        ],
+        "elapsed": 56.66666666666473,
+        "count": 88,
+        "meanFPS": 59.9967569320324
+      },
+      {
+        "run": 8,
+        "level": 2,
+        "route": "best",
+        "viewport": [
+          390,
+          844
+        ],
+        "elapsed": 66.91666666666416,
+        "count": 204,
+        "meanFPS": 59.982012792250025
+      },
+      {
+        "run": 9,
+        "level": 3,
+        "route": "best",
+        "viewport": [
+          390,
+          844
+        ],
+        "elapsed": 81.41666666666333,
+        "count": 256,
+        "meanFPS": 58.35253652668335
+      },
+      {
+        "run": 10,
+        "level": 1,
+        "route": "best",
+        "viewport": [
+          390,
+          844
+        ],
+        "elapsed": 58.41666666666463,
+        "count": 88,
+        "meanFPS": 59.99583785217228
+      }
+    ],
+    "errors": []
+  },
+  "video": {
+    "file": "three-levels-with-audio.mp4",
+    "seconds": 213.985333,
+    "capture": "actual canvas and live WebAudio; uncut, normal time, no added music",
+    "naturalWins": [
+      {
+        "level": 1,
+        "elapsed": 58.41666666666463,
+        "count": 88
+      },
+      {
+        "level": 2,
+        "elapsed": 66.91666666666416,
+        "count": 204
+      },
+      {
+        "level": 3,
+        "elapsed": 81.16666666666335,
+        "count": 256
+      }
+    ]
+  },
+  "builds": {
+    "web": {
+      "platform": "web-mobile",
+      "exitCode": 36,
+      "success": true,
+      "date": "2026-09-20T07:37:51.181Z",
+      "bin": "/Applications/CocosCreator/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator",
+      "args": [
+        "--project",
+        "/Users/yvainair/Code/游戏-左右滑古代史",
+        "--build",
+        "configPath=/Users/yvainair/Code/游戏-左右滑古代史/tools/build-web-mobile.json"
+      ]
+    },
+    "wechat": {
+      "platform": "wechatgame",
+      "exitCode": 36,
+      "success": true,
+      "date": "2026-09-20T07:37:59.785Z",
+      "bin": "/Applications/CocosCreator/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator",
+      "args": [
+        "--project",
+        "/Users/yvainair/Code/游戏-左右滑古代史",
+        "--build",
+        "configPath=/Users/yvainair/Code/游戏-左右滑古代史/tools/build-wechatgame.json"
+      ]
+    }
+  },
+  "platform": {
+    "checkedProjectConfigFolders": [
+      "settings",
+      "tools"
+    ],
+    "configuredNonPlaceholderAppidFiles": [],
+    "buildUsesTouristPlaceholder": true,
+    "dedicatedGamePermissionVerified": false,
+    "deviceTested": false,
+    "uploaded": false,
+    "deployed": false
+  },
+  "displayText": "55 项规则与流程测试通过，失败／跳过均为 0。\n真实浏览器 10/10 通关：山道 4 局、营寨 3 局、城门 3 局。\n平均 FPS 57.90–60.00；最小一秒采样 43.25。\n补充全部表现预热后的三关实战复验：结算节点 170–171，池 149–149，GPU 缓冲 56.29–56.29 MiB。\n连续有声录像 213.99 秒，覆盖首页到首城结尾。\n桌面结果；微信真机和用户集中试玩尚待验收。"
+}

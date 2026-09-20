@@ -1,0 +1,12 @@
+[
+  {
+    "file": "release/v03/yilu-v03-playable-mac.zip",
+    "bytes": 10747458,
+    "sha256": "af0e5d62e6cdd3082d1d991e014de6ff8addd60cea2db900b250aa5dc0bb3e94"
+  },
+  {
+    "file": "release/v03/yilu-v03-wechat-tourist.zip",
+    "bytes": 10740452,
+    "sha256": "85afb6389b0b924cb3cb63a1e1e6433e19f523a7a6728ac8d80b97e504d1c2a5"
+  }
+]

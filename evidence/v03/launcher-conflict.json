@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "exitCode": 1,
+  "unrelatedServerStillAlive": true,
+  "output": "file:///Users/yvainair/Code/%E6%B8%B8%E6%88%8F-%E5%B7%A6%E5%8F%B3%E6%BB%91%E5%8F%A4%E4%BB%A3%E5%8F%B2/tools/launch.mjs:6\nlet state=await health();if(state?.project!==identity){if(await occupied())throw Error(`端口 ${port} 被其他进程占用；未终止任何进程。请关闭该服务或设置 PORT 使用其他端口。`);mkdirSync('.cache',{recursive:true});const log=openSync('.cache/launcher.log','a'),p=spawn(process.execPath,['tools/serve.mjs'],{cwd:project,env:{...process.env,PORT:String(port)},detached:true,stdio:['ignore',log,log]});p.unref();for(let i=0;i<40;i++){await new Promise(r=>setTimeout(r,150));state=await health();if(state?.project===identity)break;}if(state?.project!==identity)throw Error('启动未成功，请查看 .cache/launcher.log');console.log('已启动本项目服务');}else console.log('已复用本项目服务');console.log(url);if(!process.argv.includes('--check-only'))execFileSync('open',[url]);\n                                                                                 ^\n\nError: 端口 43191 被其他进程占用；未终止任何进程。请关闭该服务或设置 PORT 使用其他端口。\n    at file:///Users/yvainair/Code/%E6%B8%B8%E6%88%8F-%E5%B7%A6%E5%8F%B3%E6%BB%91%E5%8F%A4%E4%BB%A3%E5%8F%B2/tools/launch.mjs:6:82\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n\nNode.js v22.23.1\n"
+}

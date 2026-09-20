@@ -1,0 +1,2 @@
+import {open,root} from './browser-v03-common.mjs';
+const t=await open('probe',360,640);try{await t.p.screenshot({path:root+'/probe-home-360x640.png'});await t.tap('chapters');await t.p.screenshot({path:root+'/probe-map-360x640.png'});await t.tap('level0');await t.p.waitForTimeout(2000);await t.p.screenshot({path:root+'/probe-battle-360x640.png'});console.log(JSON.stringify(await t.snap()));}finally{await t.c.close();}

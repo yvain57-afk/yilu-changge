@@ -1,0 +1,3 @@
+Fully warmed real level1: 58.42s, nodes 170, pool 149
+Fully warmed real level2: 66.92s, nodes 171, pool 149
+Fully warmed real level3: 81.67s, nodes 171, pool 149

@@ -1,0 +1,1 @@
+{"passed":true,"background":{"hidden":true,"visibility":"hidden","focused":false,"screen":"pause"},"returnedPaused":true,"explicitContinueRestoresProgress":true,"browser":"Chrome/153.0.8010.50"}

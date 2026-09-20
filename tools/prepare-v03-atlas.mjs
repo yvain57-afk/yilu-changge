@@ -1,0 +1,18 @@
+import sharp from 'sharp';import {readFileSync,writeFileSync,copyFileSync,existsSync} from 'node:fs';import {createHash,randomUUID} from 'node:crypto';
+const frames={},assets=[];
+for(const sheet of ['enemies','heroes','scenery']){
+ const file=`art-source/v4/${sheet}.png`,bytes=readFileSync(file),{data,info}=await sharp(bytes).raw().toBuffer({resolveWithObject:true});
+ const regions=sheet==='scenery'?[[15,0,510,332],[529,0,479,332],[1012,0,524,335],[15,338,525,346],[542,338,553,350],[1175,328,310,375],[150,685,227,339],[648,685,230,339],[1030,735,490,289]]:Array.from({length:sheet==='enemies'?12:16},(_,i)=>{const r=Math.floor(i/4),c=i%4,ys=sheet==='enemies'?[0,416,823,1254]:[0,299,585,889,1254];return[c*313,ys[r],c===3?315:313,ys[r+1]-ys[r]]});
+ regions.forEach(([rx,ry,rw,rh],i)=>{let minx=info.width,miny=info.height,maxx=0,maxy=0;for(let y=ry;y<Math.min(ry+rh,info.height);y++)for(let x=rx;x<Math.min(rx+rw,info.width);x++)if(data[(y*info.width+x)*4+3]>8){minx=Math.min(minx,x);miny=Math.min(miny,y);maxx=Math.max(maxx,x);maxy=Math.max(maxy,y);}const rect=[minx,miny,maxx-minx+1,maxy-miny+1];let name=sheet==='scenery'?['campClosed','campOpen','tent','cityClosed','cityOpen','tower','redFlag','blueFlag','wall'][i]:sheet==='enemies'?['crossbow','campBoss','cityBoss'][Math.floor(i/4)]+i%4:Math.floor(i/4)===3?'portrait'+i%4:'rank'+(Math.floor(i/4)+1)+'_'+i%4;let px=sheet==='scenery'?minx+rect[2]/2:sheet==='heroes'?[171,480,787,1110][i%4]:[157,482,790,1108][i%4];frames[name]={sheet:'v4/'+sheet,rect,pivot:[px,maxy+1]};});
+ copyFileSync(file,`assets/resources/v4/${sheet}.png`);const metaPath=`assets/resources/v4/${sheet}.png.meta`;if(!existsSync(metaPath)){const meta=JSON.parse(readFileSync('assets/resources/v3/actors.png.meta')),uuid=randomUUID(),old=meta.uuid;writeFileSync(metaPath,JSON.stringify(meta).replaceAll(old,uuid).replaceAll('"actors"',JSON.stringify(sheet)));}
+ let zeros=0;for(let i=3;i<data.length;i+=4)if(!data[i])zeros++;assets.push({file,sha256:createHash('sha256').update(bytes).digest('hex'),width:info.width,height:info.height,channels:info.channels,transparentFraction:zeros/(info.width*info.height),runtimeByteIdentical:bytes.equals(readFileSync(`assets/resources/v4/${sheet}.png`))});
+}
+// Four walking crops touch the next row in the generated source. Do not sample adjacent actors.
+// Use the clean complete idle frame with runtime gait translation for those poses.
+const clean={rank1_0:[89,18,159,276],rank1_1:[400,18,162,284],rank1_2:[707,19,162,288],rank1_3:[1020,1,184,292],rank2_0:[89,304,154,276],rank2_3:[1021,295,184,283],rank3_0:[85,584,160,284],rank3_3:[1024,582,182,284]};
+for(const [k,r]of Object.entries(clean)){frames[k].rect=r;frames[k].pivot[1]=r[1]+r[3];}
+for(const stage of [2,3])for(const f of [1,2])frames[`rank${stage}_${f}`]={...frames[`rank${stage}_0`]};
+// Headman is the short mantle/clasp row; commander uses shoulder armor.
+// Citylord retains that battle armor; its independent front portrait adds the circlet/teal mantle.
+for(const f of [0,1,2,3]){frames[`rank1_${f}`]={...frames[`rank2_${f}`]};frames[`rank2_${f}`]={...frames[`rank3_${f}`]};}
+writeFileSync('assets/scripts/ArtAtlasV03.ts','// Runtime UVs into untouched generated PNGs. Source-pixel pivots.\nexport const V03_FRAMES = '+JSON.stringify(frames,null,2)+' as const;\n');writeFileSync('art-source/v4/atlas.json',JSON.stringify(frames,null,2));writeFileSync('art-source/v4/manifest.json',JSON.stringify({version:'0.3.0-rc1',tool:'built-in image_gen',processing:'Original RGBA bytes preserved, runtime UV only',approved:false,assets},null,2));console.log(JSON.stringify(frames));

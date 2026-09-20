@@ -1,0 +1,132 @@
+{
+  "baseline": [
+    {
+      "level": "trial-01",
+      "route": "best",
+      "bossEntry": 88,
+      "bossSeconds": 17.16666666666459,
+      "total": 59.16666666666459
+    },
+    {
+      "level": "trial-01",
+      "route": "safe",
+      "bossEntry": 56,
+      "bossSeconds": 26.666666666664057,
+      "total": 68.66666666666406
+    },
+    {
+      "level": "trial-01",
+      "route": "late",
+      "bossEntry": 52,
+      "bossSeconds": 28.91666666666393,
+      "total": 70.91666666666393
+    },
+    {
+      "level": "trial-02",
+      "route": "best",
+      "bossEntry": 172,
+      "bossSeconds": 14.916666666664042,
+      "total": 68.91666666666404
+    },
+    {
+      "level": "trial-02",
+      "route": "safe",
+      "bossEntry": 112,
+      "bossSeconds": 23.166666666663573,
+      "total": 77.16666666666357
+    },
+    {
+      "level": "trial-02",
+      "route": "late",
+      "bossEntry": 16,
+      "bossSeconds": 166.41666666673422,
+      "total": 220.41666666673422
+    },
+    {
+      "level": "trial-03",
+      "route": "best",
+      "bossEntry": 256,
+      "bossSeconds": 15.666666666663318,
+      "total": 81.66666666666332
+    },
+    {
+      "level": "trial-03",
+      "route": "safe",
+      "bossEntry": 124,
+      "bossSeconds": 31.416666666662422,
+      "total": 97.41666666666242
+    },
+    {
+      "level": "trial-03",
+      "route": "late",
+      "bossEntry": 68,
+      "bossSeconds": 57.916666666660916,
+      "total": 123.91666666666092
+    }
+  ],
+  "candidateA": [
+    {
+      "level": "trial-01",
+      "route": "best",
+      "bossEntry": 88,
+      "bossSeconds": 17.16666666666459,
+      "total": 59.16666666666459
+    },
+    {
+      "level": "trial-01",
+      "route": "safe",
+      "bossEntry": 56,
+      "bossSeconds": 26.666666666664057,
+      "total": 68.66666666666406
+    },
+    {
+      "level": "trial-01",
+      "route": "late",
+      "bossEntry": 52,
+      "bossSeconds": 28.91666666666393,
+      "total": 70.91666666666393
+    },
+    {
+      "level": "trial-02",
+      "route": "best",
+      "bossEntry": 172,
+      "bossSeconds": 14.916666666664042,
+      "total": 68.91666666666404
+    },
+    {
+      "level": "trial-02",
+      "route": "safe",
+      "bossEntry": 112,
+      "bossSeconds": 23.166666666663573,
+      "total": 77.16666666666357
+    },
+    {
+      "level": "trial-02",
+      "route": "late",
+      "bossEntry": 56,
+      "bossSeconds": 46.66666666666224,
+      "total": 100.66666666666224
+    },
+    {
+      "level": "trial-03",
+      "route": "best",
+      "bossEntry": 256,
+      "bossSeconds": 15.666666666663318,
+      "total": 81.66666666666332
+    },
+    {
+      "level": "trial-03",
+      "route": "safe",
+      "bossEntry": 124,
+      "bossSeconds": 31.416666666662422,
+      "total": 97.41666666666242
+    },
+    {
+      "level": "trial-03",
+      "route": "late",
+      "bossEntry": 68,
+      "bossSeconds": 57.916666666660916,
+      "total": 123.91666666666092
+    }
+  ]
+}

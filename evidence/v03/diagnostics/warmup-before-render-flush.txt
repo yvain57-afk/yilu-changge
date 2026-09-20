@@ -1,0 +1,15 @@
+Fully warmed real level1: 58.67s, nodes 170, pool 149
+Fully warmed real level2: 66.92s, nodes 171, pool 149
+Fully warmed real level3: 81.67s, nodes 171, pool 149
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(Math.max(...runs.map(r=>r.endMetrics.gpuBuffers))-Math.min(...runs.map(r=>r.endMetrics.gpuBuffers))<=65536)
+
+    at file:///Users/yvainair/Code/%E6%B8%B8%E6%88%8F-%E5%B7%A6%E5%8F%B3%E6%BB%91%E5%8F%A4%E4%BB%A3%E5%8F%B2/tools/browser-v03-warm-soak.mjs:12:62 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}

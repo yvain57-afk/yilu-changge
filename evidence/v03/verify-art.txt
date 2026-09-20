@@ -1,0 +1,10 @@
+{
+  campBoss0: { width: 290, y: 632, left: 12, right: 302 },
+  campBoss1: { width: 270, y: 600, left: 346, right: 617 },
+  campBoss2: { width: 270, y: 600, left: 655, right: 931 },
+  campBoss3: { width: 240, y: 616, left: 970, right: 1228 },
+  cityBoss0: { width: 234, y: 1118, left: 40, right: 297 },
+  cityBoss1: { width: 258, y: 997, left: 353, right: 611 },
+  cityBoss2: { width: 236, y: 1099, left: 672, right: 930 },
+  cityBoss3: { width: 248, y: 1121, left: 984, right: 1236 }
+}

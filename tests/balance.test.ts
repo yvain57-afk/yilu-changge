@@ -1,0 +1,2 @@
+import{test}from'node:test';import assert from'node:assert/strict';import{LEVELS}from'../assets/scripts/core/levels';import{simulate}from'../tools/balance-v03';
+for(const i of [1,2])for(const route of ['best','safe','late'])test(`v03 measured static timing level${i+1}/${route}`,()=>{const r=simulate(LEVELS[i],route);assert.equal(r.outcome,'won');if(route==='late'){assert.ok(r.total<=[0,130,150][i]);assert.ok(r.bossSeconds<=[0,70,80][i]);}else{assert.ok(r.total>=[0,60,75][i]);assert.ok(r.total<=[0,100,120][i]);}assert.ok(r.bossSeconds>10,'Boss windup remains observable');});

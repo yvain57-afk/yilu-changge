@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "isolatedPort": 43192,
+  "relocatedPrebuiltPlay": true,
+  "cocosRequiredToPlay": false,
+  "output": "已启动本项目服务\nhttp://127.0.0.1:43192/play/\n"
+}

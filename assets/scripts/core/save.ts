@@ -19,7 +19,7 @@ export class Book {
   }catch{this.notice='存档无法读取，已恢复默认；仍可继续游玩。';}
  }
  persist(){try{this.storage.setItem(KEY,JSON.stringify(this.data));}catch{this.notice='本机暂时无法保存，本次仍可游玩。';}}
- unlock(index:number){return index>=0&&index<IDS.length&&(index===0||this.data.cleared[IDS[index-1]]);}
+ unlock(index:number){return Number.isInteger(index)&&index>=0&&index<IDS.length&&IDS.slice(0,index).every(id=>this.data.cleared[id]);}
  get rank(){let n=0;while(n<IDS.length&&this.data.cleared[IDS[n]])n++;return ['布衣','头领','统领','城主'][n];}
  win(index:number,count:number){const id=IDS[index];if(!id||!Number.isFinite(count)||count<1)return;this.data.cleared[id]=true;this.data.best[id]=Math.max(this.data.best[id],Math.min(256,Math.floor(count)));this.persist();}
 }

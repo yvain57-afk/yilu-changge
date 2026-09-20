@@ -1,0 +1,35 @@
+{
+  "version": "0.3.0-rc1",
+  "tool": "built-in image_gen",
+  "processing": "Original RGBA bytes preserved, runtime UV only",
+  "approved": false,
+  "assets": [
+    {
+      "file": "art-source/v4/enemies.png",
+      "sha256": "1743774f0a20a11661c4244f7df112a12bd688baceee43267599322802e6da6e",
+      "width": 1254,
+      "height": 1254,
+      "channels": 4,
+      "transparentFraction": 0.5455117785764978,
+      "runtimeByteIdentical": true
+    },
+    {
+      "file": "art-source/v4/heroes.png",
+      "sha256": "3678351c4166367ef40f6682eecba8432bde1bd9795a56273b956c5648f9932a",
+      "width": 1254,
+      "height": 1254,
+      "channels": 4,
+      "transparentFraction": 0.6105686682997185,
+      "runtimeByteIdentical": true
+    },
+    {
+      "file": "art-source/v4/scenery.png",
+      "sha256": "dba799d87f5a2f120649cdb3e9669a6a7fedd053f00118417669d0e83955cf2a",
+      "width": 1536,
+      "height": 1024,
+      "channels": 4,
+      "transparentFraction": 0.47046152750651044,
+      "runtimeByteIdentical": true
+    }
+  ]
+}

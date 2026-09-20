@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "actual begin rejects locked and invalid levels",
+    "S2-B same-key save continues level2, touch cancellation",
+    "3 viewports and all levels restart exact count, highest appearance, pause and cleanup",
+    "legacy untouched and settings-only migration/persistence",
+    "bad save remains playable",
+    "write failure visible and playable"
+  ],
+  "errors": []
+}

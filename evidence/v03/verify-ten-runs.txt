@@ -1,0 +1,47 @@
+run 1/10 level 1 25.0s 44 troops
+run 1/10 level 1 50.1s 88 troops
+COMPLETE run 1: 58.42s, 88, FPS 57.90
+run 2/10 level 2 25.0s 56 troops
+run 2/10 level 2 50.1s 204 troops
+COMPLETE run 2: 66.92s, 204, FPS 59.95
+run 3/10 level 3 25.1s 68 troops
+run 3/10 level 3 51.0s 136 troops
+run 3/10 level 3 76.0s 256 troops
+COMPLETE run 3: 81.17s, 256, FPS 59.97
+run 4/10 level 1 25.0s 44 troops
+run 4/10 level 1 51.1s 88 troops
+COMPLETE run 4: 58.67s, 88, FPS 60.00
+run 5/10 level 2 25.0s 46 troops
+run 5/10 level 2 50.0s 88 troops
+run 5/10 level 2 76.0s 88 troops
+COMPLETE run 5: 83.92s, 88, FPS 58.89
+run 6/10 level 3 25.0s 44 troops
+run 6/10 level 3 51.0s 40 troops
+run 6/10 level 3 77.0s 68 troops
+run 6/10 level 3 102.1s 68 troops
+COMPLETE run 6: 123.92s, 68, FPS 60.00
+run 7/10 level 1 25.0s 44 troops
+run 7/10 level 1 50.1s 88 troops
+COMPLETE run 7: 56.67s, 88, FPS 60.00
+run 8/10 level 2 25.1s 56 troops
+run 8/10 level 2 51.0s 204 troops
+COMPLETE run 8: 66.92s, 204, FPS 59.98
+run 9/10 level 3 25.0s 68 troops
+run 9/10 level 3 50.0s 136 troops
+run 9/10 level 3 76.1s 256 troops
+COMPLETE run 9: 81.42s, 256, FPS 58.35
+run 10/10 level 1 25.0s 44 troops
+run 10/10 level 1 51.1s 88 troops
+COMPLETE run 10: 58.42s, 88, FPS 60.00
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+2 !== 1
+
+    at file:///Users/yvainair/Code/%E6%B8%B8%E6%88%8F-%E5%B7%A6%E5%8F%B3%E6%BB%91%E5%8F%A4%E4%BB%A3%E5%8F%B2/tools/browser-v03-delivery.mjs:15:64 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 2,
+  expected: 1,
+  operator: 'strictEqual',
+  diff: 'simple'
+}

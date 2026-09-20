@@ -1,0 +1,185 @@
+{
+  "version": "0.3.0-rc1",
+  "before": "072eaf5662fe22d9221463820a5147e95a4f69a5200f1a50ae2d1d950a7f6e6f",
+  "started": "2026-09-20T07:37:40.089Z",
+  "commands": [
+    {
+      "name": "rules",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "started": "2026-09-20T07:37:40.090Z",
+      "log": "evidence/v03/verify-rules.txt",
+      "exitCode": 0,
+      "ended": "2026-09-20T07:37:40.779Z"
+    },
+    {
+      "name": "types",
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "started": "2026-09-20T07:37:40.779Z",
+      "log": "evidence/v03/verify-types.txt",
+      "exitCode": 0,
+      "ended": "2026-09-20T07:37:41.269Z"
+    },
+    {
+      "name": "core-types",
+      "command": [
+        "npm",
+        "run",
+        "typecheck:core"
+      ],
+      "started": "2026-09-20T07:37:41.269Z",
+      "log": "evidence/v03/verify-core-types.txt",
+      "exitCode": 0,
+      "ended": "2026-09-20T07:37:41.599Z"
+    },
+    {
+      "name": "negative",
+      "command": [
+        "npm",
+        "run",
+        "test:negative"
+      ],
+      "started": "2026-09-20T07:37:41.600Z",
+      "log": "evidence/v03/verify-negative.txt",
+      "exitCode": 0,
+      "ended": "2026-09-20T07:37:41.899Z"
+    },
+    {
+      "name": "art",
+      "command": [
+        "node",
+        "tools/check-v03-art.mjs"
+      ],
+      "started": "2026-09-20T07:37:41.900Z",
+      "log": "evidence/v03/verify-art.txt",
+      "exitCode": 0,
+      "ended": "2026-09-20T07:37:41.983Z"
+    },
+    {
+      "name": "web-build",
+      "command": [
+        "npm",
+        "run",
+        "build:web"
+      ],
+      "started": "2026-09-20T07:37:41.983Z",
+      "log": "evidence/v03/verify-web-build.txt",
+      "exitCode": 0,
+      "ended": "2026-09-20T07:37:51.187Z"
+    },
+    {
+      "name": "wechat-build",
+      "command": [
+        "npm",
+        "run",
+        "build:wechat"
+      ],
+      "started": "2026-09-20T07:37:51.188Z",
+      "log": "evidence/v03/verify-wechat-build.txt",
+      "exitCode": 0,
+      "ended": "2026-09-20T07:37:59.790Z"
+    },
+    {
+      "name": "resource",
+      "command": [
+        "node",
+        "tools/browser-v03-resource.mjs"
+      ],
+      "started": "2026-09-20T07:37:59.790Z",
+      "log": "evidence/v03/verify-resource.txt",
+      "exitCode": 0,
+      "ended": "2026-09-20T07:38:13.596Z"
+    },
+    {
+      "name": "edges",
+      "command": [
+        "node",
+        "tools/browser-v03-edges.mjs"
+      ],
+      "started": "2026-09-20T07:38:13.596Z",
+      "log": "evidence/v03/verify-edges.txt",
+      "exitCode": 0,
+      "ended": "2026-09-20T07:39:07.146Z"
+    },
+    {
+      "name": "lifecycle",
+      "command": [
+        "node",
+        "tools/browser-v03-lifecycle.mjs"
+      ],
+      "started": "2026-09-20T07:39:07.147Z",
+      "log": "evidence/v03/verify-lifecycle.txt",
+      "exitCode": 0,
+      "ended": "2026-09-20T07:39:14.988Z"
+    },
+    {
+      "name": "sound",
+      "command": [
+        "node",
+        "tools/browser-v03-sound-pause.mjs"
+      ],
+      "started": "2026-09-20T07:39:14.989Z",
+      "log": "evidence/v03/verify-sound.txt",
+      "exitCode": 0,
+      "ended": "2026-09-20T07:39:30.589Z"
+    },
+    {
+      "name": "ten-runs",
+      "command": [
+        "node",
+        "tools/browser-v03-delivery.mjs"
+      ],
+      "started": "2026-09-20T07:39:30.590Z",
+      "log": "evidence/v03/verify-ten-runs.txt",
+      "exitCode": 1,
+      "ended": "2026-09-20T07:52:15.552Z",
+      "resolvedBy": "supplementary-exhaustive-warm"
+    },
+    {
+      "name": "failures",
+      "command": [
+        "node",
+        "tools/browser-v03-failures.mjs"
+      ],
+      "started": "2026-09-20T07:52:15.553Z",
+      "log": "evidence/v03/verify-failures.txt",
+      "exitCode": 0,
+      "ended": "2026-09-20T07:56:49.377Z"
+    }
+  ],
+  "passed": true,
+  "after": "072eaf5662fe22d9221463820a5147e95a4f69a5200f1a50ae2d1d950a7f6e6f",
+  "ended": "2026-09-20T07:56:49.395Z",
+  "mode": "full",
+  "supplementary": {
+    "recordedAt": "2026-09-20T08:11:45.302Z",
+    "runtimeFingerprint": "072eaf5662fe22d9221463820a5147e95a4f69a5200f1a50ae2d1d950a7f6e6f",
+    "checks": [
+      {
+        "name": "supplementary-exhaustive-warm",
+        "command": "node tools/browser-v03-warm-soak.mjs",
+        "report": "soak-stability.json",
+        "passed": true
+      },
+      {
+        "name": "immediate-save-next-replay",
+        "command": "node tools/browser-v03-transition.mjs",
+        "report": "transition-fixtures.json",
+        "passed": true
+      },
+      {
+        "name": "isolated-preview",
+        "command": "node tools/browser-v03-preview.mjs",
+        "report": "preview-isolation.json",
+        "passed": true
+      }
+    ]
+  },
+  "resolution": "All production checks passed; original ten-run postcondition failure preserved and resolved by unchanged-runtime exhaustive-warm full-three-level test."
+}

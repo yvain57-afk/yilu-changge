@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "version": "v03-rc1",
+  "capture": {
+    "audioTracks": 1,
+    "mime": "video/webm;codecs=vp9,opus",
+    "connections": 12
+  },
+  "wallSeconds": 214.994,
+  "scope": "Uncut homepage -> three natural victories with next buttons -> city ending; normal time, actual WebAudio, no replacement audio, no save mutation in chain",
+  "runs": [
+    {
+      "level": 1,
+      "elapsed": 58.41666666666463,
+      "count": 88
+    },
+    {
+      "level": 2,
+      "elapsed": 66.91666666666416,
+      "count": 204
+    },
+    {
+      "level": 3,
+      "elapsed": 81.16666666666335,
+      "count": 256
+    }
+  ],
+  "errors": []
+}

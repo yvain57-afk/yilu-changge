@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "scope": "Controlled in-engine victory fixtures to isolate save/animation/button race; NOT counted as natural runs or used for video",
+  "checks": [
+    "save during Boss exit before result; click next before portrait animation completes",
+    "refresh completion; replay no second promotion and no rank downgrade"
+  ],
+  "errors": []
+}

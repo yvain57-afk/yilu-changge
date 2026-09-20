@@ -1,0 +1,3 @@
+
+> yilu-changge@0.3.0-rc1 typecheck:core
+> node tools/run-local.mjs tsc -p tsconfig.core.json --noEmit

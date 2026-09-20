@@ -1,11 +1,11 @@
 {
   "name": "yilu-changge",
-  "version": "0.2.0-s2b",
+  "version": "0.3.0-rc1",
   "private": true,
   "creator": {
     "version": "3.8.8"
   },
-  "description": "一路长歌 — S2-B完整首关视觉升级",
+  "description": "一路长歌 — v0.3三关试玩候选",
   "scripts": {
     "test": "node tools/run-local.mjs tsx --test tests/*.test.ts",
     "typecheck:core": "node tools/run-local.mjs tsc -p tsconfig.core.json --noEmit",
@@ -15,13 +15,13 @@
     "build:wechat": "node tools/build.mjs wechatgame",
     "serve": "node tools/serve.mjs",
     "test:negative": "node tools/run-local.mjs node tools/mutation.mjs",
-    "test:browser": "node tools/run-local.mjs node tools/browser-v02.mjs",
-    "test:edge": "node tools/run-local.mjs node tools/browser-v02-edge.mjs",
-    "test:failure": "node tools/run-local.mjs node tools/browser-v02-failure.mjs",
-    "test:preview": "node tools/run-local.mjs node tools/browser-s2-preview.mjs",
-    "test:soak": "node tools/run-local.mjs node tools/browser-s2-soak.mjs",
-    "test:audio": "node tools/run-local.mjs node tools/browser-s2-audio.mjs",
-    "test:sound": "node tools/run-local.mjs node tools/browser-s2-sound-pause.mjs"
+    "test:browser": "node tools/run-local.mjs node tools/browser-v03-delivery.mjs",
+    "test:edge": "node tools/run-local.mjs node tools/browser-v03-edges.mjs",
+    "test:failure": "node tools/run-local.mjs node tools/browser-v03-failures.mjs",
+    "test:preview": "node tools/run-local.mjs node tools/browser-v03-preview.mjs",
+    "test:soak": "node tools/run-local.mjs node tools/browser-v03-delivery.mjs",
+    "test:audio": "node tools/run-local.mjs node tools/browser-v03-delivery.mjs",
+    "test:sound": "node tools/run-local.mjs node tools/browser-v03-sound-pause.mjs"
   },
   "devDependencies": {
     "playwright": "^1.55.1",

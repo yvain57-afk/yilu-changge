@@ -1,0 +1,484 @@
+// Runtime UVs into untouched generated PNGs. Source-pixel pivots.
+export const V03_FRAMES = {
+  "crossbow0": {
+    "sheet": "v4/enemies",
+    "rect": [
+      52,
+      66,
+      231,
+      325
+    ],
+    "pivot": [
+      157,
+      391
+    ]
+  },
+  "crossbow1": {
+    "sheet": "v4/enemies",
+    "rect": [
+      374,
+      66,
+      224,
+      334
+    ],
+    "pivot": [
+      482,
+      400
+    ]
+  },
+  "crossbow2": {
+    "sheet": "v4/enemies",
+    "rect": [
+      700,
+      65,
+      208,
+      335
+    ],
+    "pivot": [
+      790,
+      400
+    ]
+  },
+  "crossbow3": {
+    "sheet": "v4/enemies",
+    "rect": [
+      979,
+      100,
+      259,
+      299
+    ],
+    "pivot": [
+      1108,
+      399
+    ]
+  },
+  "campBoss0": {
+    "sheet": "v4/enemies",
+    "rect": [
+      11,
+      440,
+      294,
+      361
+    ],
+    "pivot": [
+      157,
+      801
+    ]
+  },
+  "campBoss1": {
+    "sheet": "v4/enemies",
+    "rect": [
+      342,
+      436,
+      277,
+      378
+    ],
+    "pivot": [
+      482,
+      814
+    ]
+  },
+  "campBoss2": {
+    "sheet": "v4/enemies",
+    "rect": [
+      653,
+      439,
+      281,
+      366
+    ],
+    "pivot": [
+      790,
+      805
+    ]
+  },
+  "campBoss3": {
+    "sheet": "v4/enemies",
+    "rect": [
+      962,
+      474,
+      282,
+      332
+    ],
+    "pivot": [
+      1108,
+      806
+    ]
+  },
+  "cityBoss0": {
+    "sheet": "v4/enemies",
+    "rect": [
+      37,
+      838,
+      265,
+      394
+    ],
+    "pivot": [
+      157,
+      1232
+    ]
+  },
+  "cityBoss1": {
+    "sheet": "v4/enemies",
+    "rect": [
+      349,
+      837,
+      270,
+      395
+    ],
+    "pivot": [
+      482,
+      1232
+    ]
+  },
+  "cityBoss2": {
+    "sheet": "v4/enemies",
+    "rect": [
+      670,
+      840,
+      269,
+      392
+    ],
+    "pivot": [
+      790,
+      1232
+    ]
+  },
+  "cityBoss3": {
+    "sheet": "v4/enemies",
+    "rect": [
+      939,
+      839,
+      301,
+      393
+    ],
+    "pivot": [
+      1108,
+      1232
+    ]
+  },
+  "rank1_0": {
+    "sheet": "v4/heroes",
+    "rect": [
+      89,
+      304,
+      154,
+      276
+    ],
+    "pivot": [
+      171,
+      580
+    ]
+  },
+  "rank1_1": {
+    "sheet": "v4/heroes",
+    "rect": [
+      89,
+      304,
+      154,
+      276
+    ],
+    "pivot": [
+      171,
+      580
+    ]
+  },
+  "rank1_2": {
+    "sheet": "v4/heroes",
+    "rect": [
+      89,
+      304,
+      154,
+      276
+    ],
+    "pivot": [
+      171,
+      580
+    ]
+  },
+  "rank1_3": {
+    "sheet": "v4/heroes",
+    "rect": [
+      1021,
+      295,
+      184,
+      283
+    ],
+    "pivot": [
+      1110,
+      578
+    ]
+  },
+  "rank2_0": {
+    "sheet": "v4/heroes",
+    "rect": [
+      85,
+      584,
+      160,
+      284
+    ],
+    "pivot": [
+      171,
+      868
+    ]
+  },
+  "rank2_1": {
+    "sheet": "v4/heroes",
+    "rect": [
+      85,
+      584,
+      160,
+      284
+    ],
+    "pivot": [
+      171,
+      868
+    ]
+  },
+  "rank2_2": {
+    "sheet": "v4/heroes",
+    "rect": [
+      85,
+      584,
+      160,
+      284
+    ],
+    "pivot": [
+      171,
+      868
+    ]
+  },
+  "rank2_3": {
+    "sheet": "v4/heroes",
+    "rect": [
+      1024,
+      582,
+      182,
+      284
+    ],
+    "pivot": [
+      1110,
+      866
+    ]
+  },
+  "rank3_0": {
+    "sheet": "v4/heroes",
+    "rect": [
+      85,
+      584,
+      160,
+      284
+    ],
+    "pivot": [
+      171,
+      868
+    ]
+  },
+  "rank3_1": {
+    "sheet": "v4/heroes",
+    "rect": [
+      85,
+      584,
+      160,
+      284
+    ],
+    "pivot": [
+      171,
+      868
+    ]
+  },
+  "rank3_2": {
+    "sheet": "v4/heroes",
+    "rect": [
+      85,
+      584,
+      160,
+      284
+    ],
+    "pivot": [
+      171,
+      868
+    ]
+  },
+  "rank3_3": {
+    "sheet": "v4/heroes",
+    "rect": [
+      1024,
+      582,
+      182,
+      284
+    ],
+    "pivot": [
+      1110,
+      866
+    ]
+  },
+  "portrait0": {
+    "sheet": "v4/heroes",
+    "rect": [
+      70,
+      893,
+      176,
+      333
+    ],
+    "pivot": [
+      171,
+      1226
+    ]
+  },
+  "portrait1": {
+    "sheet": "v4/heroes",
+    "rect": [
+      387,
+      896,
+      178,
+      330
+    ],
+    "pivot": [
+      480,
+      1226
+    ]
+  },
+  "portrait2": {
+    "sheet": "v4/heroes",
+    "rect": [
+      702,
+      895,
+      174,
+      331
+    ],
+    "pivot": [
+      787,
+      1226
+    ]
+  },
+  "portrait3": {
+    "sheet": "v4/heroes",
+    "rect": [
+      1016,
+      889,
+      183,
+      337
+    ],
+    "pivot": [
+      1110,
+      1226
+    ]
+  },
+  "campClosed": {
+    "sheet": "v4/scenery",
+    "rect": [
+      29,
+      13,
+      489,
+      305
+    ],
+    "pivot": [
+      273.5,
+      318
+    ]
+  },
+  "campOpen": {
+    "sheet": "v4/scenery",
+    "rect": [
+      532,
+      13,
+      472,
+      305
+    ],
+    "pivot": [
+      768,
+      318
+    ]
+  },
+  "tent": {
+    "sheet": "v4/scenery",
+    "rect": [
+      1015,
+      9,
+      502,
+      317
+    ],
+    "pivot": [
+      1266,
+      326
+    ]
+  },
+  "cityClosed": {
+    "sheet": "v4/scenery",
+    "rect": [
+      27,
+      343,
+      507,
+      340
+    ],
+    "pivot": [
+      280.5,
+      683
+    ]
+  },
+  "cityOpen": {
+    "sheet": "v4/scenery",
+    "rect": [
+      551,
+      342,
+      540,
+      346
+    ],
+    "pivot": [
+      821,
+      688
+    ]
+  },
+  "tower": {
+    "sheet": "v4/scenery",
+    "rect": [
+      1201,
+      336,
+      266,
+      357
+    ],
+    "pivot": [
+      1334,
+      693
+    ]
+  },
+  "redFlag": {
+    "sheet": "v4/scenery",
+    "rect": [
+      162,
+      685,
+      197,
+      324
+    ],
+    "pivot": [
+      260.5,
+      1009
+    ]
+  },
+  "blueFlag": {
+    "sheet": "v4/scenery",
+    "rect": [
+      650,
+      685,
+      206,
+      324
+    ],
+    "pivot": [
+      753,
+      1009
+    ]
+  },
+  "wall": {
+    "sheet": "v4/scenery",
+    "rect": [
+      1048,
+      757,
+      435,
+      243
+    ],
+    "pivot": [
+      1265.5,
+      1000
+    ]
+  }
+} as const;

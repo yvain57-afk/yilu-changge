@@ -16,7 +16,7 @@ export class Platform {
   if(sys.isBrowser){document.addEventListener('visibilitychange',this.visibility);window.addEventListener('blur',this.blur);window.addEventListener('focus',this.onShow);}
   if(typeof wx!=='undefined'){wx.onHide?.(this.onHide);wx.onShow?.(this.onShow);}
  }
- async load(){await Promise.all(['music','gather','hit','break','hurt','warn'].map(k=>new Promise<void>(resolve=>resources.load(`audio/${k}`,AudioClip,(e,a)=>{if(!e)this.clips[k]=a;resolve()}))));this.music.clip=this.clips.music;this.music.loop=true;this.music.volume=.36;for(const k of ['gather','hit','break','hurt','warn']){const channel=this.root.addComponent(AudioSource);channel.clip=this.clips[k];channel.volume=.39;channel.loop=false;this.effects[k]=channel;}}
+ async load(){await Promise.all(['music','gather','hit','break','hurt','warn'].map(k=>new Promise<void>(resolve=>resources.load(`audio/${k}`,AudioClip,(e,a)=>{if(!e)this.clips[k]=a;resolve()}))));this.music.clip=this.clips.music;this.music.loop=true;this.music.volume=.36;for(const k of ['gather','hit','break','hurt','warn']){const channel=this.effects[k]||this.root.addComponent(AudioSource);channel.clip=this.clips[k];channel.volume=.39;channel.loop=false;this.effects[k]=channel;}}
  syncAudio(active=true){this.active=active&&!this.hidden;if(this.active&&this.book.data.settings.music){if(!this.music.playing)this.music.play();}else this.music.pause();if(!this.active||!this.book.data.settings.sfx)this.stopEffects();}
  /** Own every SFX player: AudioSource.stop does not stop playOneShot's detached player. */
  stopEffects(){for(const k of Object.keys(this.effects))this.effects[k].stop();}
