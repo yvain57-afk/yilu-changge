@@ -1,0 +1,126 @@
+{
+  "version": "0.2.0-s2b",
+  "sourceFingerprint": "88fa189df035d79e26306e51da7074c38e1b830a4ddbf6102264a007a0ebb538",
+  "unchanged": true,
+  "inProgress": false,
+  "passed": true,
+  "results": [
+    {
+      "command": "npm test",
+      "started": "2026-09-20T05:14:58.884Z",
+      "finished": "2026-09-20T05:14:59.497Z",
+      "code": 0,
+      "log": "check-1.txt",
+      "rawLogSha256": "13d718d8223c2b60d3922515f74db3c7d767577cb64e341fe3a913ca99ebb7aa",
+      "exportFormatting": "CR/LF normalized; trailing whitespace removed; content retained"
+    },
+    {
+      "command": "npm run typecheck",
+      "started": "2026-09-20T05:14:59.499Z",
+      "finished": "2026-09-20T05:14:59.986Z",
+      "code": 0,
+      "log": "check-2.txt",
+      "rawLogSha256": "46e234121bf73c814e63609839ef62426b886272b7c51d1b7802f11d554629eb",
+      "exportFormatting": "CR/LF normalized; trailing whitespace removed; content retained"
+    },
+    {
+      "command": "npm run typecheck:core",
+      "started": "2026-09-20T05:14:59.989Z",
+      "finished": "2026-09-20T05:15:00.298Z",
+      "code": 0,
+      "log": "check-3.txt",
+      "rawLogSha256": "b985af721b95062297b74a67402845ce67abdef0b25d5fd12956c53189415f14",
+      "exportFormatting": "CR/LF normalized; trailing whitespace removed; content retained"
+    },
+    {
+      "command": "npm run test:negative",
+      "started": "2026-09-20T05:15:00.300Z",
+      "finished": "2026-09-20T05:15:00.568Z",
+      "code": 0,
+      "log": "check-4.txt",
+      "rawLogSha256": "8f7e2cbf661c122fcccef835f60fb51436a350110ec65d3d687fbf0c05c94dc9",
+      "exportFormatting": "CR/LF normalized; trailing whitespace removed; content retained"
+    },
+    {
+      "command": "npm run build:wechat",
+      "started": "2026-09-20T05:15:00.571Z",
+      "finished": "2026-09-20T05:15:08.844Z",
+      "code": 0,
+      "log": "check-5.txt",
+      "rawLogSha256": "5a8882d48a9b1857cb75cf67bbb5a5313199c316a3b62602ca2bb2a68d996bbf",
+      "exportFormatting": "CR/LF normalized; trailing whitespace removed; content retained"
+    },
+    {
+      "command": "node tools/run-local.mjs node tools/browser-s2b-preview.mjs",
+      "started": "2026-09-20T05:15:08.847Z",
+      "finished": "2026-09-20T05:15:27.424Z",
+      "code": 0,
+      "log": "check-6.txt",
+      "rawLogSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exportFormatting": "CR/LF normalized; trailing whitespace removed; content retained"
+    },
+    {
+      "command": "node tools/run-local.mjs node tools/browser-s2b-comparison.mjs after",
+      "started": "2026-09-20T05:15:27.431Z",
+      "finished": "2026-09-20T05:17:39.192Z",
+      "code": 0,
+      "log": "check-7.txt",
+      "rawLogSha256": "bb247c8a5edb6214229515d078d82485988b376f16a9e1f281f801d4cbfe5481",
+      "exportFormatting": "CR/LF normalized; trailing whitespace removed; content retained"
+    },
+    {
+      "command": "node tools/run-local.mjs node tools/browser-s2b-audio.mjs",
+      "started": "2026-09-20T05:17:39.199Z",
+      "finished": "2026-09-20T05:18:47.891Z",
+      "code": 0,
+      "log": "check-8.txt",
+      "rawLogSha256": "f36bd5f756387083369031fe50e87776188011c4f7b43298c63279f561f83285",
+      "exportFormatting": "CR/LF normalized; trailing whitespace removed; content retained"
+    },
+    {
+      "command": "node tools/run-local.mjs node tools/browser-s2b.mjs",
+      "started": "2026-09-20T05:18:47.897Z",
+      "finished": "2026-09-20T05:20:09.181Z",
+      "code": 0,
+      "log": "check-9.txt",
+      "rawLogSha256": "666d58c2f33b4adf78d7e51bf39f565f0908a2d9421e320eaef9524e9c162f2f",
+      "exportFormatting": "CR/LF normalized; trailing whitespace removed; content retained"
+    },
+    {
+      "command": "node tools/run-local.mjs node tools/browser-s2b-edge.mjs",
+      "started": "2026-09-20T05:20:09.190Z",
+      "finished": "2026-09-20T05:20:28.076Z",
+      "code": 0,
+      "log": "check-10.txt",
+      "rawLogSha256": "b4c7729df871e3900d314a25f3816cf24176fbef87833f50322273825a9a3f50",
+      "exportFormatting": "CR/LF normalized; trailing whitespace removed; content retained"
+    },
+    {
+      "command": "node tools/run-local.mjs node tools/browser-s2b-sound-pause.mjs",
+      "started": "2026-09-20T05:20:28.083Z",
+      "finished": "2026-09-20T05:20:39.677Z",
+      "code": 0,
+      "log": "check-11.txt",
+      "rawLogSha256": "06b9a7674f699b5914370962649f5593764851689e492f996a209e3f6a3ccd93",
+      "exportFormatting": "CR/LF normalized; trailing whitespace removed; content retained"
+    },
+    {
+      "command": "node tools/run-local.mjs node tools/browser-s2b-failure.mjs",
+      "started": "2026-09-20T05:20:39.680Z",
+      "finished": "2026-09-20T05:22:09.755Z",
+      "code": 0,
+      "log": "check-12.txt",
+      "rawLogSha256": "843bd10a2957a7e53f30ba7ec052ca4a0fb67e780300da3d680e7f7e4019b01c",
+      "exportFormatting": "CR/LF normalized; trailing whitespace removed; content retained"
+    },
+    {
+      "command": "node tools/run-local.mjs node tools/browser-s2b-soak.mjs",
+      "started": "2026-09-20T05:22:09.761Z",
+      "finished": "2026-09-20T05:32:10.447Z",
+      "code": 0,
+      "log": "check-13.txt",
+      "rawLogSha256": "89efc16227538241558819ff1f88b069c91236ccae1b61363b334ea9d8c6641f",
+      "exportFormatting": "CR/LF normalized; trailing whitespace removed; content retained"
+    }
+  ]
+}

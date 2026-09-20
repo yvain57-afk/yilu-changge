@@ -1,0 +1,1109 @@
+{
+  "passed": true,
+  "captures": [
+    {
+      "width": 360,
+      "key": "team",
+      "snapshot": {
+        "version": "v02-s2a",
+        "engine": "Cocos Creator 3.8.8",
+        "screen": "battle",
+        "level": 0,
+        "buttons": [
+          {
+            "id": "pause",
+            "x": 291,
+            "y": 715,
+            "w": 78,
+            "h": 74
+          }
+        ],
+        "save": {
+          "cleared": {
+            "trial-01": false,
+            "trial-02": false,
+            "trial-03": false
+          },
+          "best": {
+            "trial-01": 0,
+            "trial-02": 0,
+            "trial-03": 0
+          },
+          "settings": {
+            "music": true,
+            "sfx": true,
+            "vibration": true
+          }
+        },
+        "rank": "布衣",
+        "notice": "",
+        "nodes": 50,
+        "pool": 11,
+        "presentation": {
+          "effects": 0,
+          "peakEffects": 0,
+          "rigs": 2,
+          "ready": true,
+          "depthOrder": [
+            "ground",
+            "danger-ground",
+            "gate1",
+            "team-hero",
+            "team-followers",
+            "projectiles",
+            "effects",
+            "warning-label"
+          ],
+          "bounds": [
+            {
+              "id": "battle",
+              "left": 198.64790842988836,
+              "right": 248.32999999999998,
+              "bottom": 529.9469694863433,
+              "top": 621.65
+            }
+          ]
+        },
+        "audio": {
+          "active": true,
+          "hidden": false,
+          "musicPlaying": true,
+          "effectChannels": 5,
+          "playingEffects": []
+        },
+        "preview": null,
+        "fps": 60,
+        "meanFPS": 59.996470797097594,
+        "journey": {
+          "phase": "run",
+          "paused": false,
+          "count": 8,
+          "x": -0.5,
+          "target": -0.5,
+          "z": 0.5666666666666668,
+          "elapsed": 0.5666666666666668,
+          "duration": 42,
+          "damage": 1.6,
+          "visible": 8,
+          "bossHP": 650,
+          "bossWarning": null,
+          "warnings": [],
+          "cause": "",
+          "arrows": 3,
+          "rows": [
+            {
+              "id": 1,
+              "at": 6,
+              "left": {
+                "kind": "add",
+                "value": 12
+              },
+              "right": {
+                "kind": "double",
+                "value": 2
+              }
+            },
+            {
+              "id": 2,
+              "at": 18,
+              "left": {
+                "kind": "double",
+                "value": 2
+              },
+              "right": {
+                "kind": "add",
+                "value": 24
+              }
+            },
+            {
+              "id": 3,
+              "at": 34,
+              "left": {
+                "kind": "add",
+                "value": 12
+              },
+              "right": {
+                "kind": "double",
+                "value": 2
+              }
+            }
+          ],
+          "obstacles": [
+            {
+              "id": 1,
+              "at": 11,
+              "x": 0,
+              "width": 0.2,
+              "kind": "fighter",
+              "hp": 12,
+              "loss": 4
+            },
+            {
+              "id": 2,
+              "at": 14,
+              "x": 0.5,
+              "width": 0.2,
+              "kind": "rock",
+              "hp": 1,
+              "loss": 6
+            },
+            {
+              "id": 3,
+              "at": 24,
+              "x": -0.5,
+              "width": 0.2,
+              "kind": "fighter",
+              "hp": 26,
+              "loss": 6
+            },
+            {
+              "id": 4,
+              "at": 27,
+              "x": 0.5,
+              "width": 0.2,
+              "kind": "fighter",
+              "hp": 30,
+              "loss": 6
+            },
+            {
+              "id": 5,
+              "at": 38,
+              "x": 0,
+              "width": 0.2,
+              "kind": "fighter",
+              "hp": 40,
+              "loss": 8
+            },
+            {
+              "id": 102,
+              "at": 34,
+              "x": 0.5,
+              "width": 0.5,
+              "kind": "wood",
+              "hp": 80,
+              "loss": 18,
+              "rowId": 3,
+              "side": "right"
+            }
+          ],
+          "usedRows": []
+        }
+      }
+    },
+    {
+      "width": 360,
+      "key": "guard",
+      "snapshot": {
+        "version": "v02-s2a",
+        "engine": "Cocos Creator 3.8.8",
+        "screen": "battle",
+        "level": 0,
+        "buttons": [
+          {
+            "id": "pause",
+            "x": 291,
+            "y": 715,
+            "w": 78,
+            "h": 74
+          }
+        ],
+        "save": {
+          "cleared": {
+            "trial-01": false,
+            "trial-02": false,
+            "trial-03": false
+          },
+          "best": {
+            "trial-01": 0,
+            "trial-02": 0,
+            "trial-03": 0
+          },
+          "settings": {
+            "music": true,
+            "sfx": true,
+            "vibration": true
+          }
+        },
+        "rank": "布衣",
+        "notice": "",
+        "nodes": 66,
+        "pool": 27,
+        "presentation": {
+          "effects": 2,
+          "peakEffects": 3,
+          "rigs": 2,
+          "ready": true,
+          "depthOrder": [
+            "ground",
+            "danger-ground",
+            "gate3",
+            "obstacle102",
+            "team-hero",
+            "team-followers",
+            "projectiles",
+            "effects",
+            "warning-label"
+          ],
+          "bounds": [
+            {
+              "id": "battle",
+              "left": 458.6479084298883,
+              "right": 509.18094251475964,
+              "bottom": 529.5326951012715,
+              "top": 621.65
+            }
+          ]
+        },
+        "audio": {
+          "active": true,
+          "hidden": false,
+          "musicPlaying": true,
+          "effectChannels": 5,
+          "playingEffects": [
+            "hit"
+          ]
+        },
+        "preview": null,
+        "fps": 60.00983767830793,
+        "meanFPS": 59.996664880763525,
+        "journey": {
+          "phase": "run",
+          "paused": false,
+          "count": 44,
+          "x": 0.5,
+          "target": 0.5,
+          "z": 28.183333333333014,
+          "elapsed": 28.183333333333014,
+          "duration": 42,
+          "damage": 8.8,
+          "visible": 44,
+          "bossHP": 650,
+          "bossWarning": null,
+          "warnings": [],
+          "cause": "",
+          "arrows": 2,
+          "rows": [
+            {
+              "id": 3,
+              "at": 34,
+              "left": {
+                "kind": "add",
+                "value": 12
+              },
+              "right": {
+                "kind": "double",
+                "value": 2
+              }
+            }
+          ],
+          "obstacles": [
+            {
+              "id": 5,
+              "at": 38,
+              "x": 0,
+              "width": 0.2,
+              "kind": "fighter",
+              "hp": 40,
+              "loss": 8
+            },
+            {
+              "id": 102,
+              "at": 34,
+              "x": 0.5,
+              "width": 0.5,
+              "kind": "wood",
+              "hp": 27.200000000000014,
+              "loss": 18,
+              "rowId": 3,
+              "side": "right"
+            }
+          ],
+          "usedRows": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "width": 360,
+      "key": "boss",
+      "snapshot": {
+        "version": "v02-s2a",
+        "engine": "Cocos Creator 3.8.8",
+        "screen": "battle",
+        "level": 0,
+        "buttons": [
+          {
+            "id": "pause",
+            "x": 291,
+            "y": 715,
+            "w": 78,
+            "h": 74
+          }
+        ],
+        "save": {
+          "cleared": {
+            "trial-01": false,
+            "trial-02": false,
+            "trial-03": false
+          },
+          "best": {
+            "trial-01": 0,
+            "trial-02": 0,
+            "trial-03": 0
+          },
+          "settings": {
+            "music": true,
+            "sfx": true,
+            "vibration": true
+          }
+        },
+        "rank": "布衣",
+        "notice": "",
+        "nodes": 72,
+        "pool": 33,
+        "presentation": {
+          "effects": 1,
+          "peakEffects": 3,
+          "rigs": 2,
+          "ready": true,
+          "depthOrder": [
+            "ground",
+            "danger-ground",
+            "boss",
+            "team-hero",
+            "team-followers",
+            "projectiles",
+            "effects",
+            "warning-label"
+          ],
+          "bounds": [
+            {
+              "id": "battle",
+              "left": 387.1479084298883,
+              "right": 437.03609214301946,
+              "bottom": 529.5328223727953,
+              "top": 621.65
+            }
+          ]
+        },
+        "audio": {
+          "active": true,
+          "hidden": false,
+          "musicPlaying": true,
+          "effectChannels": 5,
+          "playingEffects": [
+            "warn"
+          ]
+        },
+        "preview": null,
+        "fps": 59.97001499250376,
+        "meanFPS": 59.99673856908894,
+        "journey": {
+          "phase": "boss",
+          "paused": false,
+          "count": 88,
+          "x": 0.22500000000000003,
+          "target": 0.7799999530498798,
+          "z": 42,
+          "elapsed": 44.149999999998776,
+          "duration": 42,
+          "damage": 17.6,
+          "visible": 48,
+          "bossHP": 544.3999999999999,
+          "bossWarning": {
+            "id": 1,
+            "source": "boss",
+            "x": 0,
+            "width": 0.22,
+            "loss": 6,
+            "remaining": 1.2500000000000004,
+            "duration": 1.4,
+            "flight": 0.2,
+            "impact": 0.12,
+            "stage": "charge",
+            "hit": false
+          },
+          "warnings": [
+            {
+              "id": 1,
+              "source": "boss",
+              "x": 0,
+              "width": 0.22,
+              "loss": 6,
+              "remaining": 1.2500000000000004,
+              "duration": 1.4,
+              "flight": 0.2,
+              "impact": 0.12,
+              "stage": "charge",
+              "hit": false
+            }
+          ],
+          "cause": "",
+          "arrows": 2,
+          "rows": [],
+          "obstacles": [],
+          "usedRows": [
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "width": 360,
+      "key": "promotion",
+      "snapshot": {
+        "version": "v02-s2a",
+        "engine": "Cocos Creator 3.8.8",
+        "screen": "result",
+        "level": 0,
+        "buttons": [
+          {
+            "id": "restart",
+            "x": 0,
+            "y": -195,
+            "w": 530,
+            "h": 74
+          },
+          {
+            "id": "chapters",
+            "x": 0,
+            "y": -300,
+            "w": 510,
+            "h": 74
+          }
+        ],
+        "save": {
+          "cleared": {
+            "trial-01": true,
+            "trial-02": false,
+            "trial-03": false
+          },
+          "best": {
+            "trial-01": 88,
+            "trial-02": 0,
+            "trial-03": 0
+          },
+          "settings": {
+            "music": true,
+            "sfx": true,
+            "vibration": true
+          }
+        },
+        "rank": "头领",
+        "notice": "",
+        "nodes": 89,
+        "pool": 33,
+        "presentation": {
+          "effects": 0,
+          "peakEffects": 3,
+          "rigs": 2,
+          "ready": true,
+          "depthOrder": [
+            "ground",
+            "hero-home"
+          ],
+          "bounds": [
+            {
+              "id": "home",
+              "left": 299.96407997212657,
+              "right": 436.5,
+              "bottom": 725,
+              "top": 905
+            }
+          ]
+        },
+        "audio": {
+          "active": true,
+          "hidden": false,
+          "musicPlaying": true,
+          "effectChannels": 5,
+          "playingEffects": []
+        },
+        "preview": null,
+        "fps": 50.12285012285013,
+        "meanFPS": 57.566099164997446,
+        "journey": {
+          "phase": "won",
+          "paused": false,
+          "count": 88,
+          "x": 0,
+          "target": 0,
+          "z": 42,
+          "elapsed": 58.41666666666463,
+          "duration": 42,
+          "damage": 17.6,
+          "visible": 48,
+          "bossHP": 0,
+          "bossWarning": null,
+          "warnings": [],
+          "cause": "",
+          "arrows": 0,
+          "rows": [],
+          "obstacles": [],
+          "usedRows": [
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "width": 390,
+      "key": "team",
+      "snapshot": {
+        "version": "v02-s2a",
+        "engine": "Cocos Creator 3.8.8",
+        "screen": "battle",
+        "level": 0,
+        "buttons": [
+          {
+            "id": "pause",
+            "x": 291,
+            "y": 694.0769230769231,
+            "w": 78,
+            "h": 74
+          }
+        ],
+        "save": {
+          "cleared": {
+            "trial-01": false,
+            "trial-02": false,
+            "trial-03": false
+          },
+          "best": {
+            "trial-01": 0,
+            "trial-02": 0,
+            "trial-03": 0
+          },
+          "settings": {
+            "music": true,
+            "sfx": true,
+            "vibration": true
+          }
+        },
+        "rank": "布衣",
+        "notice": "",
+        "nodes": 50,
+        "pool": 11,
+        "presentation": {
+          "effects": 0,
+          "peakEffects": 0,
+          "rigs": 2,
+          "ready": true,
+          "depthOrder": [
+            "ground",
+            "danger-ground",
+            "gate1",
+            "team-hero",
+            "team-followers",
+            "projectiles",
+            "effects",
+            "warning-label"
+          ],
+          "bounds": [
+            {
+              "id": "battle",
+              "left": 198.64791312490036,
+              "right": 249.28436733851646,
+              "bottom": 508.79685635566807,
+              "top": 600.7269230769231
+            }
+          ]
+        },
+        "audio": {
+          "active": true,
+          "hidden": false,
+          "musicPlaying": true,
+          "effectChannels": 5,
+          "playingEffects": []
+        },
+        "preview": null,
+        "fps": 60,
+        "meanFPS": 59.99250094006434,
+        "journey": {
+          "phase": "run",
+          "paused": false,
+          "count": 8,
+          "x": -0.49999998194226153,
+          "target": -0.49999998194226153,
+          "z": 0.5333333333333333,
+          "elapsed": 0.5333333333333333,
+          "duration": 42,
+          "damage": 1.6,
+          "visible": 8,
+          "bossHP": 650,
+          "bossWarning": null,
+          "warnings": [],
+          "cause": "",
+          "arrows": 3,
+          "rows": [
+            {
+              "id": 1,
+              "at": 6,
+              "left": {
+                "kind": "add",
+                "value": 12
+              },
+              "right": {
+                "kind": "double",
+                "value": 2
+              }
+            },
+            {
+              "id": 2,
+              "at": 18,
+              "left": {
+                "kind": "double",
+                "value": 2
+              },
+              "right": {
+                "kind": "add",
+                "value": 24
+              }
+            },
+            {
+              "id": 3,
+              "at": 34,
+              "left": {
+                "kind": "add",
+                "value": 12
+              },
+              "right": {
+                "kind": "double",
+                "value": 2
+              }
+            }
+          ],
+          "obstacles": [
+            {
+              "id": 1,
+              "at": 11,
+              "x": 0,
+              "width": 0.2,
+              "kind": "fighter",
+              "hp": 12,
+              "loss": 4
+            },
+            {
+              "id": 2,
+              "at": 14,
+              "x": 0.5,
+              "width": 0.2,
+              "kind": "rock",
+              "hp": 1,
+              "loss": 6
+            },
+            {
+              "id": 3,
+              "at": 24,
+              "x": -0.5,
+              "width": 0.2,
+              "kind": "fighter",
+              "hp": 26,
+              "loss": 6
+            },
+            {
+              "id": 4,
+              "at": 27,
+              "x": 0.5,
+              "width": 0.2,
+              "kind": "fighter",
+              "hp": 30,
+              "loss": 6
+            },
+            {
+              "id": 5,
+              "at": 38,
+              "x": 0,
+              "width": 0.2,
+              "kind": "fighter",
+              "hp": 40,
+              "loss": 8
+            },
+            {
+              "id": 102,
+              "at": 34,
+              "x": 0.5,
+              "width": 0.5,
+              "kind": "wood",
+              "hp": 80,
+              "loss": 18,
+              "rowId": 3,
+              "side": "right"
+            }
+          ],
+          "usedRows": []
+        }
+      }
+    },
+    {
+      "width": 390,
+      "key": "guard",
+      "snapshot": {
+        "version": "v02-s2a",
+        "engine": "Cocos Creator 3.8.8",
+        "screen": "battle",
+        "level": 0,
+        "buttons": [
+          {
+            "id": "pause",
+            "x": 291,
+            "y": 694.0769230769231,
+            "w": 78,
+            "h": 74
+          }
+        ],
+        "save": {
+          "cleared": {
+            "trial-01": false,
+            "trial-02": false,
+            "trial-03": false
+          },
+          "best": {
+            "trial-01": 0,
+            "trial-02": 0,
+            "trial-03": 0
+          },
+          "settings": {
+            "music": true,
+            "sfx": true,
+            "vibration": true
+          }
+        },
+        "rank": "布衣",
+        "notice": "",
+        "nodes": 66,
+        "pool": 27,
+        "presentation": {
+          "effects": 1,
+          "peakEffects": 3,
+          "rigs": 2,
+          "ready": true,
+          "depthOrder": [
+            "ground",
+            "danger-ground",
+            "gate3",
+            "obstacle102",
+            "team-hero",
+            "team-followers",
+            "projectiles",
+            "effects",
+            "warning-label"
+          ],
+          "bounds": [
+            {
+              "id": "battle",
+              "left": 458.64794598998446,
+              "right": 509.9914754963069,
+              "bottom": 508.6619295066298,
+              "top": 600.7269230769231
+            }
+          ]
+        },
+        "audio": {
+          "active": true,
+          "hidden": false,
+          "musicPlaying": true,
+          "effectChannels": 5,
+          "playingEffects": [
+            "hit"
+          ]
+        },
+        "preview": null,
+        "fps": 59.99803284856802,
+        "meanFPS": 59.996601962441545,
+        "journey": {
+          "phase": "run",
+          "paused": false,
+          "count": 44,
+          "x": 0.5000001444619083,
+          "target": 0.5000001444619083,
+          "z": 28.249999999999677,
+          "elapsed": 28.249999999999677,
+          "duration": 42,
+          "damage": 8.8,
+          "visible": 44,
+          "bossHP": 650,
+          "bossWarning": null,
+          "warnings": [],
+          "cause": "",
+          "arrows": 2,
+          "rows": [
+            {
+              "id": 3,
+              "at": 34,
+              "left": {
+                "kind": "add",
+                "value": 12
+              },
+              "right": {
+                "kind": "double",
+                "value": 2
+              }
+            }
+          ],
+          "obstacles": [
+            {
+              "id": 5,
+              "at": 38,
+              "x": 0,
+              "width": 0.2,
+              "kind": "fighter",
+              "hp": 40,
+              "loss": 8
+            },
+            {
+              "id": 102,
+              "at": 34,
+              "x": 0.5,
+              "width": 0.5,
+              "kind": "wood",
+              "hp": 62.400000000000006,
+              "loss": 18,
+              "rowId": 3,
+              "side": "right"
+            }
+          ],
+          "usedRows": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "width": 390,
+      "key": "boss",
+      "snapshot": {
+        "version": "v02-s2a",
+        "engine": "Cocos Creator 3.8.8",
+        "screen": "battle",
+        "level": 0,
+        "buttons": [
+          {
+            "id": "pause",
+            "x": 291,
+            "y": 694.0769230769231,
+            "w": 78,
+            "h": 74
+          }
+        ],
+        "save": {
+          "cleared": {
+            "trial-01": false,
+            "trial-02": false,
+            "trial-03": false
+          },
+          "best": {
+            "trial-01": 0,
+            "trial-02": 0,
+            "trial-03": 0
+          },
+          "settings": {
+            "music": true,
+            "sfx": true,
+            "vibration": true
+          }
+        },
+        "rank": "布衣",
+        "notice": "",
+        "nodes": 72,
+        "pool": 33,
+        "presentation": {
+          "effects": 2,
+          "peakEffects": 3,
+          "rigs": 2,
+          "ready": true,
+          "depthOrder": [
+            "ground",
+            "danger-ground",
+            "boss",
+            "team-hero",
+            "team-followers",
+            "projectiles",
+            "effects",
+            "warning-label"
+          ],
+          "bounds": [
+            {
+              "id": "battle",
+              "left": 387.1479084298883,
+              "right": 437.6809425147006,
+              "bottom": 508.6247281369225,
+              "top": 600.7269230769231
+            }
+          ]
+        },
+        "audio": {
+          "active": true,
+          "hidden": false,
+          "musicPlaying": true,
+          "effectChannels": 5,
+          "playingEffects": [
+            "hit",
+            "warn"
+          ]
+        },
+        "preview": null,
+        "fps": 59.97600959759092,
+        "meanFPS": 59.996786290602905,
+        "journey": {
+          "phase": "boss",
+          "paused": false,
+          "count": 88,
+          "x": 0.22499999999999992,
+          "target": 0.7800000433385726,
+          "z": 42,
+          "elapsed": 44.18333333333211,
+          "duration": 42,
+          "damage": 17.6,
+          "visible": 48,
+          "bossHP": 526.7999999999998,
+          "bossWarning": {
+            "id": 1,
+            "source": "boss",
+            "x": -1.1102230246251565e-16,
+            "width": 0.22,
+            "loss": 6,
+            "remaining": 1.2166666666666672,
+            "duration": 1.4,
+            "flight": 0.2,
+            "impact": 0.12,
+            "stage": "charge",
+            "hit": false
+          },
+          "warnings": [
+            {
+              "id": 1,
+              "source": "boss",
+              "x": -1.1102230246251565e-16,
+              "width": 0.22,
+              "loss": 6,
+              "remaining": 1.2166666666666672,
+              "duration": 1.4,
+              "flight": 0.2,
+              "impact": 0.12,
+              "stage": "charge",
+              "hit": false
+            }
+          ],
+          "cause": "",
+          "arrows": 1,
+          "rows": [],
+          "obstacles": [],
+          "usedRows": [
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "width": 390,
+      "key": "promotion",
+      "snapshot": {
+        "version": "v02-s2a",
+        "engine": "Cocos Creator 3.8.8",
+        "screen": "result",
+        "level": 0,
+        "buttons": [
+          {
+            "id": "restart",
+            "x": 0,
+            "y": -195,
+            "w": 530,
+            "h": 74
+          },
+          {
+            "id": "chapters",
+            "x": 0,
+            "y": -300,
+            "w": 510,
+            "h": 74
+          }
+        ],
+        "save": {
+          "cleared": {
+            "trial-01": true,
+            "trial-02": false,
+            "trial-03": false
+          },
+          "best": {
+            "trial-01": 88,
+            "trial-02": 0,
+            "trial-03": 0
+          },
+          "settings": {
+            "music": true,
+            "sfx": true,
+            "vibration": true
+          }
+        },
+        "rank": "头领",
+        "notice": "",
+        "nodes": 89,
+        "pool": 33,
+        "presentation": {
+          "effects": 0,
+          "peakEffects": 3,
+          "rigs": 2,
+          "ready": true,
+          "depthOrder": [
+            "ground",
+            "hero-home"
+          ],
+          "bounds": [
+            {
+              "id": "home",
+              "left": 299.96407997212657,
+              "right": 436.5,
+              "bottom": 704.0769230769231,
+              "top": 884.0769230769231
+            }
+          ]
+        },
+        "audio": {
+          "active": true,
+          "hidden": false,
+          "musicPlaying": true,
+          "effectChannels": 5,
+          "playingEffects": []
+        },
+        "preview": null,
+        "fps": 59.99803285208542,
+        "meanFPS": 59.99679562573683,
+        "journey": {
+          "phase": "won",
+          "paused": false,
+          "count": 88,
+          "x": -1.1102230246251565e-16,
+          "target": -1.1102230246251565e-16,
+          "z": 42,
+          "elapsed": 58.66666666666462,
+          "duration": 42,
+          "damage": 17.6,
+          "visible": 48,
+          "bossHP": 0,
+          "bossWarning": null,
+          "warnings": [],
+          "cause": "",
+          "arrows": 0,
+          "rows": [],
+          "obstacles": [],
+          "usedRows": [
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    }
+  ],
+  "errors": []
+}

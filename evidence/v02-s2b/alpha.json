@@ -1,0 +1,73 @@
+{
+  "rgbaAndRuntimeIdentityPassed": true,
+  "strictSourceCornerProbePassed": false,
+  "strictProbeFinding": "Scenery bottom-left original pixel alpha=1/255; not in any runtime UV rectangle. Actors all source corners alpha=0. Original bytes retained; no keying/erasing.",
+  "files": [
+    {
+      "name": "actors",
+      "width": 1254,
+      "height": 1254,
+      "alphaZero": 1018478,
+      "corners": [
+        {
+          "x": 0,
+          "y": 0,
+          "alpha": 0,
+          "usedByFrames": []
+        },
+        {
+          "x": 1253,
+          "y": 0,
+          "alpha": 0,
+          "usedByFrames": []
+        },
+        {
+          "x": 0,
+          "y": 1253,
+          "alpha": 0,
+          "usedByFrames": []
+        },
+        {
+          "x": 1253,
+          "y": 1253,
+          "alpha": 0,
+          "usedByFrames": []
+        }
+      ],
+      "sourceEqualsRuntime": true
+    },
+    {
+      "name": "scenery",
+      "width": 1226,
+      "height": 1283,
+      "alphaZero": 752858,
+      "corners": [
+        {
+          "x": 0,
+          "y": 0,
+          "alpha": 0,
+          "usedByFrames": []
+        },
+        {
+          "x": 1225,
+          "y": 0,
+          "alpha": 0,
+          "usedByFrames": []
+        },
+        {
+          "x": 0,
+          "y": 1282,
+          "alpha": 1,
+          "usedByFrames": []
+        },
+        {
+          "x": 1225,
+          "y": 1282,
+          "alpha": 0,
+          "usedByFrames": []
+        }
+      ],
+      "sourceEqualsRuntime": true
+    }
+  ]
+}

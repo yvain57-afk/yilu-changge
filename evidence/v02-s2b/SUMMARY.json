@@ -1,0 +1,87 @@
+{
+  "version": "0.2.0-s2b",
+  "passed": true,
+  "sourceFingerprint": "88fa189df035d79e26306e51da7074c38e1b830a4ddbf6102264a007a0ebb538",
+  "rules": {
+    "pass": 43,
+    "fail": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "desktop": {
+    "runs": 10,
+    "troops": [
+      88,
+      88,
+      88,
+      88,
+      88,
+      88,
+      88,
+      88,
+      88,
+      88
+    ],
+    "meanFPS": [
+      53.51035330985772,
+      59.99692149989091
+    ],
+    "sampleFPS": {
+      "min": 39.35071323167732,
+      "p05": 49.24167815754778,
+      "median": 59.994000598509786,
+      "p95": 60.080764308938136
+    },
+    "endNodes": [
+      152,
+      152
+    ],
+    "endPool": [
+      109,
+      109
+    ],
+    "endGpuBufferMiB": [
+      47.28647994995117,
+      47.28647994995117
+    ],
+    "endGpuTextureMiB": [
+      19.525611877441406,
+      19.53394317626953
+    ],
+    "endHeapMiB": [
+      16.058979034423828,
+      36.8494873046875
+    ],
+    "drawCallsPeak": 23,
+    "effectsPeak": 3,
+    "samples": 591
+  },
+  "video": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 390,
+        "height": 844,
+        "r_frame_rate": "60000/1001",
+        "duration": "63.079683"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "r_frame_rate": "0/0",
+        "duration": "63.133000"
+      }
+    ],
+    "format": {
+      "duration": "63.133000"
+    }
+  },
+  "limitations": [
+    "desktop Chrome only, not target-phone performance",
+    "touristappid build only, not WeChat DevTools or device acceptance",
+    "user visual and play acceptance pending"
+  ]
+}

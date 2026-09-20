@@ -1,0 +1,28 @@
+{
+  "stage": "S2-B",
+  "tool": "built-in image_gen",
+  "approved": false,
+  "reference": "art-source/v2/hero-a-front-v2.png",
+  "identity": "approved hero preserved; simplified small-screen sprites and distinct supporting cast",
+  "processing": "original PNG copied byte-for-byte; runtime UV rectangles, no background removal",
+  "assets": [
+    {
+      "file": "art-source/v3/actors.png",
+      "sha256": "14dcb6d5692d39709710d135db0b37d066cd7548a5b9933dd9385c1ba6941e1a",
+      "width": 1254,
+      "height": 1254,
+      "channels": 4,
+      "transparentFraction": 0.6476741731085726,
+      "runtimeByteIdentical": true
+    },
+    {
+      "file": "art-source/v3/scenery.png",
+      "sha256": "e55c72f08ce0f74f736c147479dbc257e9f4e942f95b676026f7da4a595a1080",
+      "width": 1226,
+      "height": 1283,
+      "channels": 4,
+      "transparentFraction": 0.4786256212816871,
+      "runtimeByteIdentical": true
+    }
+  ]
+}

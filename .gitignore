@@ -31,3 +31,6 @@ __pycache__/
 /evidence/v02-s2/session.webm
 /evidence/v02-s2/hero-preview.webm
 /evidence/v02-s2/actual-audio.webm
+
+/evidence/v02-s2b/**/recordings/
+/evidence/v02-s2b/*.webm

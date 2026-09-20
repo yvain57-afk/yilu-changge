@@ -1,0 +1,5 @@
+
+> yilu-changge@0.2.0-s2b test:negative
+> node tools/run-local.mjs node tools/mutation.mjs
+
+Deliberate duplicate-gate fixture: FAIL detected (256 !== 20). Fixture removed; production source unchanged.

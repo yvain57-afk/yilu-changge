@@ -1,11 +1,11 @@
 {
   "name": "yilu-changge",
-  "version": "0.2.0-s2a",
+  "version": "0.2.0-s2b",
   "private": true,
   "creator": {
     "version": "3.8.8"
   },
-  "description": "一路长歌 — S2-A主角候选与首关可读性修复",
+  "description": "一路长歌 — S2-B完整首关视觉升级",
   "scripts": {
     "test": "node tools/run-local.mjs tsx --test tests/*.test.ts",
     "typecheck:core": "node tools/run-local.mjs tsc -p tsconfig.core.json --noEmit",

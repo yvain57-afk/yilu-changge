@@ -1,0 +1,10 @@
+Real browser run 1/10: 58.92s, 88 troops, 60.0 FPS
+Real browser run 2/10: 58.67s, 88 troops, 60.0 FPS
+Real browser run 3/10: 58.67s, 88 troops, 53.5 FPS
+Real browser run 4/10: 58.17s, 88 troops, 60.0 FPS
+Real browser run 5/10: 58.67s, 88 troops, 60.0 FPS
+Real browser run 6/10: 58.42s, 88 troops, 60.0 FPS
+Real browser run 7/10: 58.42s, 88 troops, 60.0 FPS
+Real browser run 8/10: 58.92s, 88 troops, 54.1 FPS
+Real browser run 9/10: 58.67s, 88 troops, 59.6 FPS
+Real browser run 10/10: 59.17s, 88 troops, 60.0 FPS
