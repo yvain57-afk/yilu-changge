@@ -7,7 +7,7 @@ export type Obstacle = { id: number; at: number; x: number; width: number; kind:
 export type Level = { id: string; title: string; scene: string; rankBefore: string; rankAfter: string; duration: number; start: number; bossHP: number; bossName: string; bossDelay: number; bossAttacks: Attack[]; rows: Row[]; obstacles: Obstacle[]; opening: string; ending: string };
 export type Arrow = { x: number; z: number; damage: number; readonly id?: number };
 export type Warning = { id: number; source: number | 'boss'; x: number; width: number; loss: number; remaining: number; duration: number; flight: number; impact: number; stage: 'charge' | 'flight' | 'impact'; hit: boolean };
-export type Feedback = Readonly<{ kind: 'shot' | 'gather' | 'hit' | 'break' | 'hurt' | 'warn'; x: number; amount: number; targetId?: number | 'boss' | 'team'; worldZ?: number; simulationTick?: number; projectileId?: number; sourceId?: number | 'boss' | 'team' }>;
+export type Feedback = Readonly<{ kind: 'shot' | 'gather' | 'hit' | 'break' | 'hurt' | 'warn'; x: number; amount: number; targetId?: number | 'boss' | 'team'; worldZ?: number; simulationTick?: number; projectileId?: number; sourceId?: number | 'boss' | 'team'; volley?: Readonly<{count:number; aimZ:number; height:number}> }>;
 /** Shared collision contract; renderers read this, never approximate it. */
 export const BOSS_TARGET = Object.freeze({ halfWidth: .42, depth: 4 });
 export const STEP = 1 / 60;
@@ -62,7 +62,10 @@ export class Journey {
  }
  private projectiles(previousZ:number) {
   this.fireClock -= STEP;
-  if (this.fireClock <= 0) { this.fireClock += .25; const a={id:++this.projectileId,x:this.x,z:this.z+.35,damage:this.damage};this.arrows.push(a);this.emit({kind:'shot',x:a.x,amount:a.damage,worldZ:a.z,sourceId:'team',projectileId:a.id}); }
+  if (this.fireClock <= 0) { this.fireClock += .25; const a={id:++this.projectileId,x:this.x,z:this.z+.35,damage:this.damage};this.arrows.push(a);// Read-only presentation snapshot; never feeds targeting, collision or damage.
+   const target=this.phase==='run'?this.obstacles.filter(o=>!o.dead&&!o.resolved&&o.at>=a.z&&o.at-this.z<=HORIZON&&(o.side?(o.side==='left'?a.x<0:a.x>=0):Math.abs(a.x-o.x)<=o.width)).sort((u,v)=>u.at-v.at||u.id-v.id)[0]:undefined;
+   const boss=this.phase==='boss'&&Math.abs(a.x)<=BOSS_TARGET.halfWidth;
+   this.emit({kind:'shot',x:a.x,amount:a.damage,worldZ:a.z,sourceId:'team',projectileId:a.id,volley:Object.freeze({count:this.count,aimZ:target?.at??(this.z+(boss?BOSS_TARGET.depth:HORIZON)),height:boss?85:target?.kind==='wood'?30:target?.kind==='rock'?35:target?48:45})}); }
   for (const a of this.arrows) {
    const prev=a.z; a.z += STEP*9;
    // Sort actual intersections: array order is never a targeting rule.

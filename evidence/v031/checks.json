@@ -1,0 +1,286 @@
+{
+  "version": "0.3.1-rc1",
+  "date": "2026-09-20T10:02:49.101335+00:00",
+  "baseline": "efe7bd9a72153d82f2807a543a46fcb4daa307c1",
+  "published": false,
+  "displayText": "本轮：64项快速测试已覆盖通过；最终类型检查通过。\n一次自然三关：58.42 / 66.92 / 81.42 秒，3/3通关。\n18秒高密度夹具：P99 17.7 ms，>33ms 长帧 0；三次快速重开池/节点/GPU稳定。\n新BGM播放、循环、开关、缺失静音继续通过；音乐听感/接缝待人工确认。\n旧十局、长稳、微信游客构建：本轮未运行。",
+  "checks": {
+    "fastTests": {
+      "covered": 64,
+      "skipped": 0,
+      "initialFullRun": {
+        "exitCode": 1,
+        "pass": 55,
+        "fail": 9
+      },
+      "resolution": "新增命中事件对照误用 S1 坐标语义；改为未修改的 efe7bd9 v0.3 模型 fixture。相关 presentation 12项复测全部通过，原 S1 每tick状态对照保留。未改玩法或放宽断言。",
+      "targetedRetest": {
+        "exitCode": 0,
+        "passed": 12
+      }
+    },
+    "typecheck": {
+      "exitCode": 0,
+      "log": "typecheck-final.txt"
+    },
+    "webBuild": {
+      "platform": "web-mobile",
+      "exitCode": 36,
+      "success": true,
+      "date": "2026-09-20T09:55:49.355Z",
+      "bin": "/Applications/CocosCreator/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator",
+      "args": [
+        "--project",
+        "/Users/yvainair/Code/游戏-左右滑古代史",
+        "--build",
+        "configPath=/Users/yvainair/Code/游戏-左右滑古代史/tools/build-web-mobile.json"
+      ]
+    },
+    "densityFixture": {
+      "passed": true,
+      "report": "fixture.json",
+      "perf": {
+        "frames": 1079,
+        "p50": 16.69999999999891,
+        "p95": 17.600000000002183,
+        "p99": 17.700000000000728,
+        "max": 17.799999999999272,
+        "over33ms": 0,
+        "over50ms": 0
+      }
+    },
+    "music": {
+      "passed": true,
+      "report": "music.json",
+      "auditoryAcceptance": false
+    },
+    "naturalThreeLevels": {
+      "passed": true,
+      "report": "delivery.json",
+      "runs": [
+        {
+          "level": 1,
+          "elapsed": 58.41666666666463,
+          "count": 88
+        },
+        {
+          "level": 2,
+          "elapsed": 66.91666666666416,
+          "count": 204
+        },
+        {
+          "level": 3,
+          "elapsed": 81.41666666666333,
+          "count": 256
+        }
+      ]
+    },
+    "launcher": {
+      "passed": true,
+      "url": "http://127.0.0.1:43187/play/",
+      "workspace": "current source checkout, not release/v03 extracted archive"
+    }
+  },
+  "notRun": [
+    "tools/verify-v03.mjs (including --browser-only)",
+    "10-run browser soak",
+    "long warmed stability",
+    "WeChat tourist rebuild",
+    "WeChat DevTools/device acceptance"
+  ],
+  "protected": {
+    "levelsUnchanged": true,
+    "saveUnchanged": true,
+    "originalSfxUnchanged": true
+  },
+  "sourceSha256": {
+    "assets/resources/art/cart.png": "075d160e3d6c9fe04d27d8127444a3a35c174a080025762026e59766ffc755af",
+    "assets/resources/art/cart.png.meta": "6dac9039412e6d313715c820db4f9d22c9ba88211396197cded50e5c37fa00a7",
+    "assets/resources/art/ink.png": "826eb3326c6c0f4e186254e4b3c801f1cbd529e982d7f5342a7434269c8a0a6e",
+    "assets/resources/art/ink.png.meta": "0b028455d2808707a76cd5f1321dfa33594dc50b66501e6152996bb7494ccf5f",
+    "assets/resources/art/landscape-0.png": "af5d4ceeef1d216e67bd64b4c2ce7069ff3c93f7b7b145ef7c897dc53ed8847a",
+    "assets/resources/art/landscape-0.png.meta": "ca64f7428c25dbc484de695f443b15d7a8f22ac094497654ce9fda3381fc488d",
+    "assets/resources/art/landscape-1.png": "f9f117132c7e68aafc7468359946dd1b11bd77e1b4d2dfd0dfb9049be1d5ebaa",
+    "assets/resources/art/landscape-1.png.meta": "f00f77c26611e47efb2e6ccf22e5c32c67dda63c752357f6e43b296cccad76ce",
+    "assets/resources/art/landscape-2.png": "e78749684a44fe3483dd85eb6d12dbc9371d4e77a62b41143b0389af9fe33dd1",
+    "assets/resources/art/landscape-2.png.meta": "2e1330f4b7becc4691502258880d0f84d6ca7dd4bf87b3dde6d528b73393bd89",
+    "assets/resources/art/rock.png": "221f5e99d9f6fb334b6ee3ed13c85aec07676dfe80e06dec9ebec30e05602261",
+    "assets/resources/art/rock.png.meta": "5162d8f6f1629a1dfe61d7b689bc7d41c7756ae7d8aedfd7dad343d98ddddcb9",
+    "assets/resources/art/soldier.png": "b9725188c0a3b4ca6bff9eda5fa8ec3e737addca1876e1dd8d12c5b9b84eec03",
+    "assets/resources/art/soldier.png.meta": "ee29871c788554fceff6d8e9432ffd8984afd7cca77e4d0a2cda08480f3ee594",
+    "assets/resources/art/sparrow.png": "b36191d8f0b6dc9aad09da2e9dc6f47512ae4867ad75e9527224a3bde2d3b53c",
+    "assets/resources/art/sparrow.png.meta": "7a8ae20642d6dbdb00eb203ba980256b4315978641371274f8f3f2d060771f6a",
+    "assets/resources/art/traveler.png": "bec457421097c5857390946bf9f18b204d206fc283cb23592349da00b0e022b4",
+    "assets/resources/art/traveler.png.meta": "734312fe3b1a1d55b420fb4cccf267596e8982c1cd7badd8c5ae7545d6a5f3c4",
+    "assets/resources/art/wood.png": "06609d423832ab28d4e83108e3a465104a49ce99791baa7580e284021897f01b",
+    "assets/resources/art/wood.png.meta": "074fd42d1f462cae1e62cd3f8d12305c8bc1e6bcb3f5705556263c90defeb168",
+    "assets/resources/art.meta": "89a49ed80346a0839f0d1fab0d58add3551aa981f4eb2a4bc0d7a31b118e0057",
+    "assets/resources/audio/break.mp3": "a792daf8c80a915f089ef8dd69c7b991ddd82af115062f7300d0e45f69c2bbf7",
+    "assets/resources/audio/break.mp3.meta": "190348fa5a69c4183a16c75a8ab4c9d9100d8318f06db50fe97ae988e831a8d5",
+    "assets/resources/audio/gather.mp3": "31bbdad4a26a001e9ce7b360dacb1d2617c2a52861194dca7317c8a61f40bf66",
+    "assets/resources/audio/gather.mp3.meta": "9af3dfcebc5d0f4ff500953bacc2901a0d9b0ea398c4f55cddf85f8c1b7b6715",
+    "assets/resources/audio/hit.mp3": "e0c56190020ae7be5bdb329b79a810e9761c4ae038212d84564af0c5dba087c1",
+    "assets/resources/audio/hit.mp3.meta": "923cf0d76a8a87ad0753ada40e0132a8fce1ecc9b68847f83c5545b36d7a0f90",
+    "assets/resources/audio/hurt.mp3": "16c55c77040394c5e5cd68959350db3510d9ac9b3bd7d3e0f4cf1c5757a33423",
+    "assets/resources/audio/hurt.mp3.meta": "716eb48ca2cfc63d388d83ba264a59261b44a590960ff81a4ba5bcf5df37850a",
+    "assets/resources/audio/music.mp3": "b16ba541ef475d7c4d3917f103671e0f4deeb518a5196b1abd752527e8a10f67",
+    "assets/resources/audio/music.mp3.meta": "7cd99befe7f17a1a8604dda3533c5b766da28d306eb901824348fe3788bcece6",
+    "assets/resources/audio/warn.mp3": "99a7ac1ef3e111cd697e45bf2266447f6e01a95395f1aba472419fdafd143fce",
+    "assets/resources/audio/warn.mp3.meta": "664fe80c54524a3ce930938a564746b17be46cba0e49ce270c53d0a802430707",
+    "assets/resources/audio-v031/music-battle.m4a": "91b99afa2695415731820e9e8a1b13de0ea1511a2dd08dbbdfd554cd51d2bae1",
+    "assets/resources/audio-v031/music-battle.m4a.meta": "3f5d8ce6ec3b04994eee3ef53754feb886b79cd43d6edbb57370400680a42202",
+    "assets/resources/audio-v031.meta": "bfa61f5dd91bf94b86e21594013d552fb4140415acf4c8177e0b564ebdaf749f",
+    "assets/resources/audio.meta": "dce6278ba176b2dba82dc61770982bfd5e238483f2ad1e60311b3cdb883e343b",
+    "assets/resources/v031/archers.png": "79c0b60a5558a3169713b9300055cda41c316475569a05d248e4e375f765b393",
+    "assets/resources/v031/archers.png.meta": "7026d65c33d8d9e8d2911cccec8180ca5cfac0a68772b1951fec6876d44cf624",
+    "assets/resources/v031.meta": "4db96489c2727044f2a3b26cb9c6759875fad4395ec4ae49cb073170e1e1a3ca",
+    "assets/resources/v2/hero-a-rig.png": "7d9d85ad6a5c378a66ca6fbfe4d05ecaf89ac0e91568d8819a9ef60384957a01",
+    "assets/resources/v2/hero-a-rig.png.meta": "3db343dc8351b6ca6244d9290377ed63a7581afd869050f24697c3b71cf1c455",
+    "assets/resources/v2.meta": "95c477e46d84d02e72c264bddf405cfc84ad1b3b933d09381dc7e47b0d372cc8",
+    "assets/resources/v3/actors.png": "14dcb6d5692d39709710d135db0b37d066cd7548a5b9933dd9385c1ba6941e1a",
+    "assets/resources/v3/actors.png.meta": "a5f90328e61bd797e6e662cbce438afca0acc1b239633301fbe0ca23db43c688",
+    "assets/resources/v3/scenery.png": "e55c72f08ce0f74f736c147479dbc257e9f4e942f95b676026f7da4a595a1080",
+    "assets/resources/v3/scenery.png.meta": "81f63e243121e76c07f9fdb7e2bddc65814077f5f72b43cca601511f5d1ad96b",
+    "assets/resources/v3.meta": "536664659ad1e4bbc48450c87157d9d0f0d8d2916f8196f6924e7fc531d56e20",
+    "assets/resources/v4/enemies.png": "1743774f0a20a11661c4244f7df112a12bd688baceee43267599322802e6da6e",
+    "assets/resources/v4/enemies.png.meta": "43d0acaa08664da3a60a51c22f6fcfb3afa68a5d8cb3601e15abd96efef2e0dc",
+    "assets/resources/v4/heroes.png": "3678351c4166367ef40f6682eecba8432bde1bd9795a56273b956c5648f9932a",
+    "assets/resources/v4/heroes.png.meta": "6d7b27520961e7f3bfa1c9528efe5471675a0976879a70112ec09e154fff0281",
+    "assets/resources/v4/scenery.png": "dba799d87f5a2f120649cdb3e9669a6a7fedd053f00118417669d0e83955cf2a",
+    "assets/resources/v4/scenery.png.meta": "e28752d531a4ed4aecd46d49249f8e15ca3581cf2c3c919397bea62aa40955ce",
+    "assets/resources/v4.meta": "422de8bc70efcf073a9d03423693a161700aa8b2ee5d650c50b08769ad71cd3d",
+    "assets/scripts/ArtAtlas.ts": "e58c34aee420b6a61775eccc0c10b0b0a74863af9e44c18100f8f77b87962623",
+    "assets/scripts/ArtAtlas.ts.meta": "2686835ab4ab505e1c0c689afbdf12ac7b0aad0fe5a56ab1cf2c6222e2d95684",
+    "assets/scripts/ArtAtlasV03.ts": "8a60884c5249c19a934e58d490d7c4e8ca2795ac1c860475cc7a73f67408a28c",
+    "assets/scripts/ArtAtlasV03.ts.meta": "c8a10b8b5fbaa0c949f528455c652ce4ca8f8c56d92bec23fde6fdfbd12662a5",
+    "assets/scripts/ArtAtlasV031.ts": "712f9c309dc654ad7faf87a524f336024f9e5abde539278008e871486b1d7fbc",
+    "assets/scripts/ArtAtlasV031.ts.meta": "2cf3de364b38901c25d7f6f12c01f34eabb4c3e64add69b9c62ed3d5c75c4a7d",
+    "assets/scripts/ArtSprites.ts": "cadc025159ec84a8584d0421505d1f6d60af3719a14511e77a5b84ddf05ed213",
+    "assets/scripts/ArtSprites.ts.meta": "2160aa22cf5a75422c7a6a1c000c526a40a8facb8fa2c3c25a5794efc82b4317",
+    "assets/scripts/BattleView.ts": "d6180e608762f50eb464548c241b595fb1595b347e34fbbe49897b985dc82fd9",
+    "assets/scripts/BattleView.ts.meta": "8ec45178e413473014018366ff4d3394625aff46babeb5cbb7525a7ab4a7fca0",
+    "assets/scripts/Game.ts": "509bd6bced72db40e9bc62c3e9fcba1b716288859604e487af696b30cc6987e5",
+    "assets/scripts/Game.ts.meta": "bf0772e55a8a2426aff3be95a521241acc63cc782ee067db4ab05ebeaa3e68ff",
+    "assets/scripts/HeroAtlas.ts": "01914b76930d8a6f6b27fb87d8960f592d366396fff23aa624639379ac981507",
+    "assets/scripts/HeroAtlas.ts.meta": "427442c4521007459192fdf776647ead6d0fe508e50b6a1692c2008e82ef2d4d",
+    "assets/scripts/HeroRig.ts": "0132d48b8f32cee62db02fe4e4cb86dc02e0e9ce274c86bbe12092e1d7bc094a",
+    "assets/scripts/HeroRig.ts.meta": "54a5ed82727c414b1da9ad97b1cf6a4c3cc45e66076e3d274bcd80d3de1835ec",
+    "assets/scripts/Platform.ts": "13b727eafb5d059f2b2f09a1e7a7ea6e3a08920d0949dfa59ad234db43d5c98f",
+    "assets/scripts/Platform.ts.meta": "c3dd28d973d6978a1ab0d309b12833cf9dbb71bfff760b266891a062ebe3e2cd",
+    "assets/scripts/Presentation.ts": "ab3b58d054233f6d1f11a882c37c1f986bbec04271e2271f849f11c6ea9a58a8",
+    "assets/scripts/Presentation.ts.meta": "7ab4eb700f5056a58eb142e0b6f6fc05ccee927ba7a6c129e433261301a2b87c",
+    "assets/scripts/VisualConfig.ts": "ab68ef569deeb6851036229c0907d10511b308526fce1cb7020c16d28e642ed0",
+    "assets/scripts/VisualConfig.ts.meta": "e97eac2a2be8edaee1fb1a40087513377bf5f9969a7c5457d652091b81b3d8e6",
+    "assets/scripts/Volley.ts": "3fb83bb16a184515f5197da3c7f1f8bb6135e4566201c9cf24c93847169e95e3",
+    "assets/scripts/Volley.ts.meta": "03159b2d1fa5c90b483506f1aef40125970e9c8eedb689b50e3f66eeee002023",
+    "assets/scripts/WorldScenery.ts": "e5562617975384e4ceb14035392bc844a428a7d54063e74ca6e0ccdf80702a7b",
+    "assets/scripts/WorldScenery.ts.meta": "4046bf81fee93bdc3a98d958283110e5d4e34f092980ebe5acfc8d546c2eeaaa",
+    "assets/scripts/core/levels.ts": "e30c2673a0374f6e7414f35de68c7c1cf46ceb3527606c4cbbaecf1a74ba3f3a",
+    "assets/scripts/core/levels.ts.meta": "a154e35c3e392ae9fca44cd390f57556fac40e5290bb132568c1276006f9effb",
+    "assets/scripts/core/model.ts": "25b42201db9995ee0a60972538095019e257f2f80a840b20a031e3563a598d3a",
+    "assets/scripts/core/model.ts.meta": "abe345cdc72df2e64eca0c908d56b050b1b9f1f5edab8ca8003120a347894964",
+    "assets/scripts/core/progression.ts": "5115f60d42e96b4ed39b15cbae436b633be2e33215db1aa724c36e414c0cf442",
+    "assets/scripts/core/progression.ts.meta": "9a83f48b6babca38d3ee57bdd658ad3ee6aaf018951cf27a9e014ce4ea751e19",
+    "assets/scripts/core/save.ts": "97f8ca136531346c78431d444bbf9826c5556467202de641c470eeb9014d1b30",
+    "assets/scripts/core/save.ts.meta": "ea5e67ba8687f633f9f12ec6d3408e9c9645ce4222b03189f973aa1a7d9ff20a",
+    "assets/scripts/core.meta": "d80b878b2b24c6e2803c5f44688f0596f2bf5c901f7e67f390b24a2463211f1a"
+  },
+  "compiledMainSha256": "884df62bf8845641d5a1ad364f0496445a5e5d2eb787ba6c07fbe6ccac9fae9a",
+  "commands": [
+    {
+      "command": "node tools/run-local.mjs node_modules/.bin/tsx --test tests/feel.test.ts",
+      "exitCode": 0
+    },
+    {
+      "command": "npm test",
+      "exitCode": 1,
+      "resolvedBy": "presentation.test.ts baseline correction and targeted 12-test rerun"
+    },
+    {
+      "command": "node tools/run-local.mjs node_modules/.bin/tsx --test tests/presentation.test.ts",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0
+    },
+    {
+      "command": "YILU_EVIDENCE_DIR=evidence/v031 npm run build:web",
+      "exitCode": 0,
+      "engineExitCode": 36
+    },
+    {
+      "command": "node tools/run-local.mjs node tools/browser-v031-fixture.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "node tools/run-local.mjs node tools/browser-v031-music.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "node tools/run-local.mjs node tools/browser-v031-delivery.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "node tools/launch.mjs --check-only",
+      "exitCode": 0
+    }
+  ],
+  "video": {
+    "three-levels-with-audio.mp4": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 390,
+          "height": 844
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "213.926333",
+        "size": "58249391"
+      },
+      "sha256": "3050af47457a478dde9f4ee3f1f3be2ae80cfc36224b31b3276aa73722931966"
+    },
+    "feel-excerpt.mp4": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 390,
+          "height": 844
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "40.006633",
+        "size": "11764712"
+      },
+      "sha256": "b268b62cde0fe6f577c9d38a10376e80c0a8f894c9830c478fffe2f732411f13"
+    }
+  },
+  "entryReadback": {
+    "passed": true,
+    "version": "v031-rc1",
+    "clip": {
+      "duration": 40.006633,
+      "width": 390,
+      "height": 844,
+      "playing": true,
+      "summary": "本轮：64项快速测试已覆盖通过；最终类型检查通过。\n一次自然三关：58.42 / 66.92 / 81.42 秒，3/3通关。\n18秒高密度夹具：P99 17.7 ms，>33ms 长帧 0；三次快速重开池/节点/GPU稳定。\n新BGM播放、循环、开关、缺失静音继续通过；音乐听感/接缝待人工确认。\n旧十局、长稳、微信游客构建：本轮未运行。"
+    }
+  },
+  "passed": true,
+  "publicationNote": "published=false records the verification-time state. A later user message authorized GitHub commit/push; see docs/v03/GPT_NEXT_STEP.md. No website or WeChat deployment."
+}

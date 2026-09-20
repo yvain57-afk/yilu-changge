@@ -1,0 +1,9 @@
+{
+  "source": "three-levels-with-audio.mp4",
+  "startSeconds": 73.517,
+  "durationSeconds": 40,
+  "cropped": true,
+  "speed": 1,
+  "audio": "original live game audio, no overdub",
+  "additionalGameplayRuns": 0
+}

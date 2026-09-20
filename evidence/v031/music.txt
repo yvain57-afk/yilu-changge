@@ -1,0 +1,1 @@
+{"passed":true,"loop":{"duration":151.458005,"after":0.6509466667024526,"playing":true,"channels":5},"missing":{"blocked":1,"screen":"battle","musicPlaying":false},"listening":"Playback and loop-state tested; no reliable auditory perception tool, subjective music/seam acceptance pending user","errors":[]}

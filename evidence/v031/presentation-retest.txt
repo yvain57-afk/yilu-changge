@@ -1,0 +1,91 @@
+TAP version 13
+# {"equivalence":"trial-01","mode":"best","ticks":3550,"outcome":"won","seconds":59.16666666666459,"count":88}
+# {"equivalence":"trial-01","mode":"late","ticks":4255,"outcome":"won","seconds":70.91666666666393,"count":52}
+# {"equivalence":"trial-01","mode":"failure","ticks":5077,"outcome":"lost","seconds":84.61666666666315,"count":0}
+# {"equivalence":"trial-02","mode":"best","ticks":4135,"outcome":"won","seconds":68.91666666666404,"count":172}
+# {"equivalence":"trial-02","mode":"late","ticks":6040,"outcome":"won","seconds":100.66666666666224,"count":56}
+# {"equivalence":"trial-02","mode":"failure","ticks":5162,"outcome":"lost","seconds":86.03333333332974,"count":0}
+# {"equivalence":"trial-03","mode":"best","ticks":4900,"outcome":"won","seconds":81.66666666666332,"count":256}
+# {"equivalence":"trial-03","mode":"late","ticks":7435,"outcome":"won","seconds":123.91666666666092,"count":68}
+# {"equivalence":"trial-03","mode":"failure","ticks":5629,"outcome":"lost","seconds":93.81666666666263,"count":0}
+# Subtest: S2 presentation preserves every simulation tick: trial-01/best
+ok 1 - S2 presentation preserves every simulation tick: trial-01/best
+  ---
+  duration_ms: 31.469041
+  type: 'test'
+  ...
+# Subtest: S2 presentation preserves every simulation tick: trial-01/late
+ok 2 - S2 presentation preserves every simulation tick: trial-01/late
+  ---
+  duration_ms: 27.313084
+  type: 'test'
+  ...
+# Subtest: S2 presentation preserves every simulation tick: trial-01/failure
+ok 3 - S2 presentation preserves every simulation tick: trial-01/failure
+  ---
+  duration_ms: 22.778083
+  type: 'test'
+  ...
+# Subtest: S2 presentation preserves every simulation tick: trial-02/best
+ok 4 - S2 presentation preserves every simulation tick: trial-02/best
+  ---
+  duration_ms: 31.89975
+  type: 'test'
+  ...
+# Subtest: S2 presentation preserves every simulation tick: trial-02/late
+ok 5 - S2 presentation preserves every simulation tick: trial-02/late
+  ---
+  duration_ms: 32.743833
+  type: 'test'
+  ...
+# Subtest: S2 presentation preserves every simulation tick: trial-02/failure
+ok 6 - S2 presentation preserves every simulation tick: trial-02/failure
+  ---
+  duration_ms: 26.4085
+  type: 'test'
+  ...
+# Subtest: S2 presentation preserves every simulation tick: trial-03/best
+ok 7 - S2 presentation preserves every simulation tick: trial-03/best
+  ---
+  duration_ms: 30.300792
+  type: 'test'
+  ...
+# Subtest: S2 presentation preserves every simulation tick: trial-03/late
+ok 8 - S2 presentation preserves every simulation tick: trial-03/late
+  ---
+  duration_ms: 40.527458
+  type: 'test'
+  ...
+# Subtest: S2 presentation preserves every simulation tick: trial-03/failure
+ok 9 - S2 presentation preserves every simulation tick: trial-03/failure
+  ---
+  duration_ms: 32.316208
+  type: 'test'
+  ...
+# Subtest: S2 rock loss is data-driven, including actual loss when insufficient troops
+ok 10 - S2 rock loss is data-driven, including actual loss when insufficient troops
+  ---
+  duration_ms: 0.271875
+  type: 'test'
+  ...
+# Subtest: S2 shared boss target and hit events at center/edges/outside
+ok 11 - S2 shared boss target and hit events at center/edges/outside
+  ---
+  duration_ms: 0.144958
+  type: 'test'
+  ...
+# Subtest: S2 event metadata identifies arrow, target and tick without driving gameplay
+ok 12 - S2 event metadata identifies arrow, target and tick without driving gameplay
+  ---
+  duration_ms: 0.210875
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 418.733458

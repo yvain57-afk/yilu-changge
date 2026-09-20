@@ -1,0 +1,11 @@
+level 1 25s, 44 troops
+level 1 51s, 88 troops
+PASS level1: 58.42s; 88 troops
+level 2 25s, 56 troops
+level 2 50s, 204 troops
+PASS level2: 66.92s; 204 troops
+level 3 25s, 68 troops
+level 3 51s, 136 troops
+level 3 76s, 256 troops
+PASS level3: 81.42s; 256 troops
+{"passed":true,"runs":[{"elapsed":58.41666666666463,"count":88},{"elapsed":66.91666666666416,"count":204},{"elapsed":81.41666666666333,"count":256}]}

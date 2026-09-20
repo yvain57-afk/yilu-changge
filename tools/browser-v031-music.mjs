@@ -1,0 +1,9 @@
+import{open}from'./browser-v03-common.mjs';import assert from'node:assert/strict';import{writeFileSync}from'node:fs';
+const t=await open('v031-music',390,844,{audio:true,version:'v031-rc1'});let report={passed:false};
+try{
+ await t.tap('settings');await t.p.waitForFunction(()=>globalThis.__YLCG__.snapshot().audio.musicReady);await t.tap('music');await t.tap('music');
+ const loop=await t.p.evaluate(async()=>{const{director}=await System.import('cc'),find=n=>n.getComponent('Game')||n.children.map(find).find(Boolean),g=find(director.getScene()),m=g.platform.music;const duration=m.duration;m.currentTime=duration-.45;await new Promise(r=>setTimeout(r,1100));return{duration,after:m.currentTime,playing:m.playing,channels:g.platform.audioState.effectChannels};});assert.equal(loop.playing,true);assert.ok(loop.after<2);assert.equal(loop.channels,5);
+ await t.tap('return');await t.tap('start');await t.tap('pause');const frozen=(await t.snap()).journey.elapsed;await t.p.waitForTimeout(200);assert.equal((await t.snap()).journey.elapsed,frozen);await t.tap('continue');
+ const blocked=[];await t.p.route('**/*.m4a',async r=>{blocked.push(r.request().url());await r.abort();});await t.p.reload();await t.ready();await t.tap('start');const missing=await t.snap();assert.equal(missing.screen,'battle');assert.equal(missing.audio.musicReady,false);assert.equal(missing.audio.musicPlaying,false);assert.ok(blocked.length>0);
+ report={passed:true,loop,missing:{blocked:blocked.length,screen:missing.screen,musicPlaying:missing.audio.musicPlaying},listening:'Playback and loop-state tested; no reliable auditory perception tool, subjective music/seam acceptance pending user',errors:t.errors};
+}catch(e){report.error=String(e);process.exitCode=1;console.error(e);}finally{writeFileSync('evidence/v031/music.json',JSON.stringify(report,null,2));await t.c.close();console.log(JSON.stringify(report));}

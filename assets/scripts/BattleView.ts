@@ -5,12 +5,14 @@ import { lossLabel, bossFootprint, Effects } from './Presentation';
 import { Pose } from './HeroRig';
 import { ArtSprites, Art, ART_FRAMES } from './ArtSprites';
 import { RankStage } from './core/progression';
+import { Volleys, VOLLEY_CAPACITY } from './Volley';
+import { worldStrip, gaitFrame, shootFrame } from './WorldScenery';
 const C={ink:'#263c43',cream:'#f8edcf',red:'#a34e37',gold:'#c5a15c',road:'#deceb0',grass:'#899c88'};
 export type Preview={count:number;x:number;time:number;pose:Pose;rank:boolean;debug:boolean};
 /** Shared atlas sprites and bounded effects. Simulation facts remain read-only. */
 export class BattleView {
  private g!:Graphics;private layer!:Node;private order=0;private labels=new Map<string,Node>();private layers=new Map<string,Node>();private currentScene=0;private currentRank:RankStage=0;private art=new ArtSprites();
- readonly effects=new Effects();debug=false;
+ readonly effects=new Effects();readonly volleys=new Volleys();debug=false;private sceneryState:{id:number;worldZ:number;y:number}[]=[];
  constructor(private root:Node){}
  private use(id:string){let n=this.layers.get(id);if(!n){n=new Node(id);n.layer=Layers.Enum.UI_2D;this.root.addChild(n);n.addComponent(UITransform);n.addComponent(Graphics);this.layers.set(id,n);}n.active=true;n.setSiblingIndex(this.order++);this.layer=n;this.g=n.getComponent(Graphics)!;this.g.clear();return n;}
  private begin(){this.order=0;for(const n of this.layers.values())n.active=false;for(const n of this.labels.values())n.active=false;this.art.begin();}
@@ -21,13 +23,37 @@ export class BattleView {
  private poly(points:number[][],c:string){this.g.fillColor=this.color(c);this.g.moveTo(points[0][0],points[0][1]);for(const p of points.slice(1))this.g.lineTo(p[0],p[1]);this.g.close();this.g.fill();}
  private text(id:string,t:string,x:number,y:number,size=24,color=C.ink,w=300){let n=this.labels.get(id);if(!n){n=new Node(id);n.layer=Layers.Enum.UI_2D;n.addComponent(UITransform);n.addComponent(Label);this.labels.set(id,n);}if(n.parent!==this.layer)this.layer.addChild(n);n.active=true;n.setSiblingIndex(this.layer.children.length-1);n.setPosition(x,y);n.setScale(1,1,1);n.getComponent(UITransform)!.setContentSize(w,Math.max(65,size*1.35));const l=n.getComponent(Label)!;l.fontSize=size;l.lineHeight=size*1.3;l.horizontalAlign=Label.HorizontalAlign.CENTER;l.verticalAlign=Label.VerticalAlign.CENTER;l.overflow=Label.Overflow.NONE;l.string=t;l.color=this.color(color);return n;}
  private sprite(id:string,frame:Art,x:number,y:number,s:number,angle=0,alpha=255,tint='#ffffff'){return this.art.draw(id,frame,this.layer,x,y,s,angle,alpha,tint);}
- private hero(id:string,x:number,y:number,h:number,t:number,pose:Pose,rank:RankStage,age=10){this.ellipse(x,y,h*.22,h*.06,'#788773');const shot=pose==='shoot'||age<.18,walk=pose==='walk'||pose==='shoot',f=shot?3:walk?1+Math.floor(t/.19)%2:0;const art=(rank?`rank${rank}_${f}`:`hero${f}`) as Art;const d=ART_FRAMES[art];this.sprite(id,art,x,y+(walk?Math.sin(t*16)*1.4:0),h/(rank?284:298),walk?Math.sin(t*16)*1.2:0);}
- private ground(z:number,scene=0,progress=0,victory=false){this.use('ground');this.rect(-360,-1900,720,3800,scene===1?'#a89b7c':scene===2?'#889c95':C.grass);this.rect(-360,300,720,1000,'#c7d5c5');this.poly([[-440,-1700],[440,-1700],[70,550],[-70,550]],C.road);this.poly([[-450,-1700],[-420,-1700],[-61,540],[-74,540]],'#b0b293');this.poly([[450,-1700],[420,-1700],[61,540],[74,540]],'#b0b293');for(let i=0;i<18;i++){const p=project(Math.sin(i*19)*.9,i*.55-z%.55);this.line(p.x-6,p.y,p.x+8,p.y+2,'#d2bf9a',2);}
-  if(scene===0){this.sprite('ridge','ridge',0,360,1.25);this.sprite('stockade','stockade',0,400,.42);for(let i=0;i<7;i++){const y=330-i*165+(z*42)%165,x=(i%2?-1:1)*(313+(330-y)*.035);this.ellipse(x,y,48,12,'#738971');this.sprite('pine'+i,'pine',x,y,.20+(330-y)*.000035);}}
-  else {const city=scene===2,approach=clamp(progress,0,1),frame=(city?(victory?'cityOpen':'cityClosed'):(victory?'campOpen':'campClosed')) as Art;const scale=(city?.65:.48)+approach*(city?.40:.35);this.sprite('destination',frame,0,405-approach*190,scale);for(let i=0;i<6;i++){const y=350-i*190+(z*48)%190,x=(i%2?-1:1)*(326+(300-y)*.022),s=.23+(350-y)*.00006;this.sprite('side'+i,city?'tower':i%3===0?'wall':'tent',x,y,s);if(i%2===0)this.sprite('banner'+i,victory?'blueFlag':'redFlag',x+(x<0?48:-48),y-5,.32);}}
+ private archer(id:string,x:number,y:number,h:number,time:number,row:number,age:number,moving=true,phase=0,alpha=255){
+  const scale=h/(row===3?205:190),leg=moving?gaitFrame(time,phase):0,upper=shootFrame(age),sway=moving?Math.sin((time/.66+phase*.137)*Math.PI*4)*.8:0;
+  this.sprite(id+'-legs',(`archer${row}Leg${leg}`) as Art,x,y,scale,0,alpha);
+  this.sprite(id+'-upper',(`archer${row}Upper${upper}`) as Art,x,y+sway,scale,0,alpha);
+ }
+ private hero(id:string,x:number,y:number,h:number,t:number,pose:Pose,rank:RankStage,age=10){this.ellipse(x,y,h*.22,h*.06,'#788773');this.archer(id,x,y,h,t,Math.min(rank,2),age,pose==='walk'||pose==='shoot');}
+
+ private ground(z:number,scene=0,duration=54,victory=false){
+  this.use('ground');this.rect(-360,-1900,720,3800,scene===1?'#a89b7c':scene===2?'#889c95':C.grass);
+  this.rect(-360,530,720,1000,'#c7d5c5');
+  // Every ground point uses the same world-distance projection as obstacles.
+  const strip=worldStrip(z);for(const tile of strip){const d=tile.worldZ-z,a=project(-1.25,d),b=project(1.25,d),c=project(1.25,d+1.25),e=project(-1.25,d+1.25);
+   this.poly([[a.x,a.y],[b.x,b.y],[c.x,c.y],[e.x,e.y]],tile.id%2?'#deceb0':'#dac9aa');
+   this.line(a.x,a.y,e.x,e.y,'#acb18f',5);this.line(b.x,b.y,c.x,c.y,'#acb18f',5);
+   for(const x of [-.72,-.25,.3,.78]){const p=project(x,d+.18),q=project(x+.07,d+.54);this.line(p.x,p.y,q.x,q.y,'#cebb98',2);}
+  }
+  if(scene===0)this.sprite('ridge','ridge',0,520-z*.12,1.25);
+  const dest=project(0,duration+6-z),frame=(scene===0?'stockade':scene===1?(victory?'campOpen':'campClosed'):(victory?'cityOpen':'cityClosed')) as Art;
+  if(dest.y<920)this.sprite('destination',frame,0,dest.y,(scene===0?.6:scene===1?1.1:1.3)*dest.s);
+  const sides=worldStrip(z,2.4,12);this.sceneryState=sides.map(p=>({id:p.id,worldZ:p.worldZ,y:p.y}));
+  for(const o of sides){const side=o.id%2?-1:1,p=project(side*1.55,o.worldZ-z),variant=((o.id%3)+3)%3;
+   this.ellipse(p.x,p.y,28*p.s,7*p.s,'#798e77');
+   if(scene===0)this.sprite('side'+o.slot,'pine',p.x,p.y,.27*p.s);
+   else if(scene===1)this.sprite('side'+o.slot,variant===0?'tent':'wall',p.x,p.y,(variant===0?.30:.25)*p.s);
+   else {this.sprite('side'+o.slot,'wall',p.x,p.y,.24*p.s);this.line(p.x-15*p.s,p.y,p.x-20*p.s,p.y+15*p.s,'#637e68',3);}
+  }
+  // Only two city towers at fixed world locations; never a repeating conveyor.
+  if(scene===2)for(const side of [-1,1]){const p=project(side*1.65,duration+3-z);if(p.y<920)this.sprite('tower'+side,'tower',p.x,p.y,.42*p.s);}
  }
 
- render(j:Journey|null,rank:RankStage=0,finishAge=0){this.begin();this.currentRank=rank;this.currentScene=j?Math.max(0,Number(j.level.id.slice(-2))-1):rank===3?2:rank===2?1:0;this.ground(j?.z||0,this.currentScene,j?j.z/j.level.duration:1,j?.phase==='won'||!j&&rank>0);if(!j){this.use('hero-home');this.sprite('home',('portrait'+rank) as Art,0,-65,200/330);return;}
+ render(j:Journey|null,rank:RankStage=0,finishAge=0){this.begin();this.currentRank=rank;this.currentScene=j?Math.max(0,Number(j.level.id.slice(-2))-1):rank===3?2:rank===2?1:0;this.ground(j?.z||0,this.currentScene,j?j.level.duration:6,j?.phase==='won'||!j&&rank>0);if(!j){this.use('hero-home');this.sprite('home',('portrait'+rank) as Art,0,-65,200/330);return;}
   this.effects.advance(j.elapsed);this.use('danger-ground');
   for(const w of j.warnings){const x=w.x*260,width=w.width*520;this.g.fillColor=new Color(163,62,38,w.stage==='impact'?150:38);this.g.rect(x-width/2,-570,width,870);this.g.fill();for(const edge of [-1,1])this.line(x+edge*width/2,-570,x+edge*width/2,300,C.red,3);for(let y=-550;y<290;y+=65)this.line(x-width/2,y,x+width/2,y+16,'#c1906b',1);this.ellipse(x,-270,width/2,12,w.stage==='impact'?C.cream:C.red);}
   const jobs:{y:number;id:string;draw:()=>void}[]=[];
@@ -39,19 +65,20 @@ export class BattleView {
    const targetWidths=[[186,176,160,174],[220,220,220,220],[200,200,200,200]],scale=width/targetWidths[this.currentScene][frame],bossFrame=((this.currentScene===1?'campBoss':this.currentScene===2?'cityBoss':'boss')+frame) as Art;this.ellipse(0,p.y,width*.55,15,'#798773');this.sprite('boss',bossFrame,0,p.y+(j.phase==='won'?finishAge*28:0),scale,j.phase==='won'?-finishAge*24:0,j.phase==='won'?255*(1-clamp(finishAge/.65,0,1)):255,hit?'#ffe1a4':'#ffffff');this.text('boss',j.level.bossName,0,p.y-80,27);this.rect(-130,p.y-38,260,10,'#8b8970');this.rect(-130,p.y-38,260*j.bossHP/j.level.bossHP,10,C.red);this.text('bosshp',`${Math.ceil(j.bossHP)} / ${j.level.bossHP}`,0,p.y-112,20);
    if(this.debug){this.line(-width/2,p.y,width/2,p.y,'#00d5d5',3);for(const x of [-width/2,width/2])this.line(x,p.y,x,p.y+180,'#00d5d5',2);}}});}
   const team=formation(j.visibleCount,j.x),gather=this.effects.items.find(f=>f.event.kind==='gather'),newStart=gather?Math.max(1,Math.min(48,j.count-gather.event.amount)):48;
-  if(team.length){const u=team[0];jobs.push({id:'team-hero',y:u.y,draw:()=>this.hero('battle',u.x,u.y,108,j.elapsed,'walk',rank,j.elapsed-this.effects.lastShot)});}
-  if(team.length>1)jobs.push({id:'team-followers',y:team[1].y,draw:()=>{for(let i=1;i<team.length;i++){const u=team[i];this.ellipse(u.x,u.y,16,4,'#7e8c77');}for(let i=1;i<team.length;i++){const u=team[i],age=gather?j.elapsed-gather.born:1,join=i>=newStart?1-clamp(age/.36,0,1):0,shot=j.elapsed-this.effects.lastShot<.16;const f=shot?3:1+Math.floor((j.elapsed+i*.047)/.22)%2;this.sprite('friend'+i,('ally'+f) as Art,u.x,u.y-join*28,70/272,0,255*(1-join*.55));}}});
+  if(team.length){const u=team[0];jobs.push({id:'team-hero',y:u.y,draw:()=>this.hero('battle',u.x,u.y,108,j.elapsed,j.phase==='run'?'walk':'idle',rank,j.elapsed-this.effects.lastShot)});}
+  if(team.length>1)jobs.push({id:'team-followers',y:team[1].y,draw:()=>{for(let i=1;i<team.length;i++){const u=team[i];this.ellipse(u.x,u.y,16,4,'#7e8c77');}for(let i=1;i<team.length;i++){const u=team[i],age=gather?j.elapsed-gather.born:1,join=i>=newStart?1-clamp(age/.36,0,1):0;this.archer('friend'+i,u.x,u.y-join*28,70,j.elapsed,3,j.elapsed-this.effects.lastShot,j.phase==='run',i,255*(1-join*.55));}}});
   // Dead foes remain briefly as presentation ghosts; they no longer collide or fire.
   for(const f of this.effects.items.filter(f=>f.event.kind==='break')){const o=j.obstacles.find(o=>o.id===f.event.targetId);if(!o)continue;const p=project(o.x,o.at-j.z),age=(j.elapsed-f.born)/f.life;jobs.push({id:'fallen'+o.id,y:p.y,draw:()=>{if(o.kind==='fighter'||o.kind==='crossbowman')this.sprite('fallen'+o.id,o.kind==='crossbowman'?'crossbow3':'enemy3',p.x+age*20,p.y+age*20,98*p.s/(o.kind==='crossbowman'?330:278),-age*32,255*(1-age));}});}
   jobs.sort((a,b)=>b.y-a.y||a.id.localeCompare(b.id));for(const job of jobs){this.use(job.id);job.draw();}
-  this.use('projectiles');for(const a of j.arrows){const p=project(a.x,a.z-j.z);this.line(p.x,p.y-20,p.x,p.y+10,C.ink,3);this.line(p.x-4,p.y+4,p.x,p.y+11,C.cream,2);this.line(p.x+4,p.y+4,p.x,p.y+11,C.cream,2);this.line(p.x-3,p.y-18,p.x,p.y-11,C.gold,2);if(this.debug)this.ellipse(p.x,p.y,3,3,'#00d5d5');}
+  this.use('projectiles');this.volleys.retain(j.arrows);for(const a of j.arrows){const points=this.volleys.points(a,j.z),previous=this.volleys.points({...a,z:a.z-.09},j.z);points.forEach((p,i)=>{const old=previous[i],length=Math.hypot(p.x-old.x,p.y-old.y)||1,dx=(p.x-old.x)/length,dy=(p.y-old.y)/length;this.line(p.x-dx*20,p.y-dy*20,p.x,p.y,C.ink,2.6);this.poly([[p.x+dx*3,p.y+dy*3],[p.x-dx*5-dy*3,p.y-dy*5+dx*3],[p.x-dx*5+dy*3,p.y-dy*5-dx*3]],C.ink);});}
+
   this.use('effects');for(const f of this.effects.items){const p=project(f.event.x,(f.event.worldZ??j.z)-j.z),age=(j.elapsed-f.born)/f.life;if(f.event.kind==='gather'){this.g.strokeColor=this.color(C.gold);this.g.lineWidth=3;this.g.ellipse(j.x*260,-280,28+age*85,8+age*18);this.g.stroke();continue;}const n=f.event.kind==='break'?7:4;for(let i=0;i<n;i++){const a=i*Math.PI*2/n,x=p.x+Math.cos(a)*age*36,y=p.y+52+Math.sin(a)*age*32-age*age*20;this.rect(x,y,5*(1-age)+1,3*(1-age)+1,f.event.kind==='hurt'?C.red:C.gold);}}
   this.use('warning-label');j.warnings.forEach((w,i)=>{const weapon=w.source==='boss'?(this.currentScene===0?'长矛':this.currentScene===2?'羽箭':'重弩'):'弩箭';this.text('warn'+w.source,`${weapon}${w.stage==='charge'?'蓄力':w.stage==='flight'?'已出':'落点'} · 命中 −${w.loss}`,0,-522-i*31,23,C.red,540);if(w.stage==='flight'){const q=clamp(w.remaining/w.flight,0,1),source=w.source==='boss'?project(0,BOSS_TARGET.depth):project(j.obstacles.find(o=>o.id===w.source)!.x,j.obstacles.find(o=>o.id===w.source)!.at-j.z),x=w.x*260*(1-q)+source.x*q,originHeight=w.source==='boss'?[170,155,180][this.currentScene]:48*source.s,y=-270+(source.y+originHeight+270)*q;const len=weapon==='长矛'?50:weapon==='羽箭'?32:23;this.line(x,y,x+(source.x-w.x*260)*.04,y+len,C.ink,weapon==='重弩'?6:3);this.poly([[x,y-10],[x-5,y+5],[x+5,y+5]],weapon==='羽箭'?C.cream:C.gold);}});
 
  }
  preview(p:Preview){this.begin();this.ground(p.pose==='walk'||p.pose==='shoot'?p.time:0);this.use('preview-main');this.hero('preview-large',0,30,250,p.time,p.pose,p.rank?1:0);const units=formation(p.count,p.x);this.use('preview-team');for(const u of units)this.ellipse(u.x,u.y,u.hero?23:16,4,'#7e8c77');for(let i=0;i<units.length;i++){const u=units[i];if(u.hero)this.hero('fixture0',u.x,u.y,108,p.time,p.pose,p.rank?1:0);else{const f=p.pose==='shoot'?3:p.pose==='walk'?1+Math.floor((p.time+i*.047)/.22)%2:0;this.sprite('fixture'+i,('ally'+f) as Art,u.x,u.y,70/272);}if(p.debug)this.line(u.x-23,u.y,u.x+23,u.y,'#00d5d5',1);}this.use('fixture-caption');this.text('fixture-caption',`排布测试 ${p.count} 人 · 显示 ${units.length}（含主角）`,0,-565,21);}
  portrait(rank:RankStage,time=1.5,level=0){this.begin();this.use('portrait');if(level>0)this.sprite('victory-place',level===2?'cityOpen':'campOpen',0,5,.58,0,140);this.sprite('victory-flag','blueFlag',-170,Math.min(time/.7,1)*30-20,.42);const t=clamp(time/.7,0,1);if(rank>0&&t<1)this.sprite('portrait-before',('portrait'+(rank-1)) as Art,0,-30,220/330,0,255*(1-t));this.sprite('portrait',('portrait'+rank) as Art,0,-30,220/330,0,255*t);}
- clear(){this.effects.clear();}
+ clear(){this.effects.clear();this.volleys.clear();}
  get poolSize(){return this.labels.size+this.layers.size+this.art.size;}
- get diagnostics(){return {effects:this.effects.items.length,peakEffects:this.effects.peak,rigs:0,scene:this.currentScene,rank:this.currentRank,sprites:this.art.size,ready:ArtSprites.ready,depthOrder:Array.from(this.layers.values()).filter(n=>n.active).sort((a,b)=>a.getSiblingIndex()-b.getSiblingIndex()).map(n=>n.name),bounds:this.art.bounds};}
+ get diagnostics(){return {volleyCapacity:VOLLEY_CAPACITY,volleyGroups:this.volleys.groups.length,visualArrows:this.volleys.groups.reduce((n,g)=>n+g.origins.length,0),volleys:this.volleys.groups,scenery:this.sceneryState,effects:this.effects.items.length,peakEffects:this.effects.peak,rigs:0,scene:this.currentScene,rank:this.currentRank,sprites:this.art.size,ready:ArtSprites.ready,depthOrder:Array.from(this.layers.values()).filter(n=>n.active).sort((a,b)=>a.getSiblingIndex()-b.getSiblingIndex()).map(n=>n.name),bounds:this.art.bounds};}
 }

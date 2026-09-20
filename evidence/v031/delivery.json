@@ -1,0 +1,3709 @@
+{
+  "passed": true,
+  "pause": {
+    "beforeAudio": 0.022548309919146095,
+    "pausedAudio": 0,
+    "resumedAudio": 0.01445577292025226
+  },
+  "version": "v031-rc1",
+  "scope": "Exactly 3 natural real-touch wins, one uncut normal-speed live-audio capture; reload/save check after recording",
+  "capture": {
+    "audioTracks": 1,
+    "mime": "video/webm;codecs=vp9,opus"
+  },
+  "timeline": [
+    {
+      "level": 1,
+      "startSeconds": 0.849,
+      "endSeconds": 60.529
+    },
+    {
+      "level": 2,
+      "startSeconds": 61.517,
+      "endSeconds": 129.083
+    },
+    {
+      "level": 3,
+      "startSeconds": 130.056,
+      "endSeconds": 212.073
+    }
+  ],
+  "runs": [
+    {
+      "savedBeforeResult": true,
+      "elapsed": 58.41666666666463,
+      "count": 88,
+      "phase": "won",
+      "wallSeconds": 59.679,
+      "meanFPS": 57.797600113688524,
+      "endNodes": 183,
+      "endPool": 162,
+      "endMetrics": {
+        "drawCalls": 17,
+        "triangles": 974,
+        "gpuBuffers": 47232220,
+        "gpuTextures": 39352220,
+        "jsHeap": 60483212
+      },
+      "samples": [
+        {
+          "elapsed": 0.08333333333333333,
+          "count": 8,
+          "fps": 59.15409642048195,
+          "nodes": 56,
+          "pool": 43,
+          "effects": 0,
+          "drawCalls": 21,
+          "triangles": 1066,
+          "gpuBuffers": 16545900,
+          "gpuTextures": 38426768,
+          "jsHeap": 14920548
+        },
+        {
+          "elapsed": 1.0500000000000012,
+          "count": 8,
+          "fps": 59.04349537561884,
+          "nodes": 56,
+          "pool": 43,
+          "effects": 0,
+          "drawCalls": 21,
+          "triangles": 1138,
+          "gpuBuffers": 16545900,
+          "gpuTextures": 38426768,
+          "jsHeap": 17420448
+        },
+        {
+          "elapsed": 2.0999999999999974,
+          "count": 8,
+          "fps": 59.97001499250376,
+          "nodes": 56,
+          "pool": 43,
+          "effects": 0,
+          "drawCalls": 21,
+          "triangles": 1122,
+          "gpuBuffers": 16545900,
+          "gpuTextures": 38426768,
+          "jsHeap": 25915808
+        },
+        {
+          "elapsed": 3.099999999999994,
+          "count": 8,
+          "fps": 60.04528004513498,
+          "nodes": 56,
+          "pool": 43,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 1118,
+          "gpuBuffers": 16545900,
+          "gpuTextures": 38426768,
+          "jsHeap": 34852108
+        },
+        {
+          "elapsed": 4.0666666666666575,
+          "count": 8,
+          "fps": 59.94604855772729,
+          "nodes": 59,
+          "pool": 46,
+          "effects": 0,
+          "drawCalls": 22,
+          "triangles": 1145,
+          "gpuBuffers": 18905704,
+          "gpuTextures": 38438312,
+          "jsHeap": 34882648
+        },
+        {
+          "elapsed": 5.099999999999987,
+          "count": 8,
+          "fps": 60.04528004513497,
+          "nodes": 59,
+          "pool": 46,
+          "effects": 0,
+          "drawCalls": 22,
+          "triangles": 1149,
+          "gpuBuffers": 18905704,
+          "gpuTextures": 38438312,
+          "jsHeap": 53995504
+        },
+        {
+          "elapsed": 6.033333333333317,
+          "count": 20,
+          "fps": 59.94604855772729,
+          "nodes": 83,
+          "pool": 70,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 1503,
+          "gpuBuffers": 21268352,
+          "gpuTextures": 38438312,
+          "jsHeap": 69417028
+        },
+        {
+          "elapsed": 7.066666666666647,
+          "count": 20,
+          "fps": 59.994000598509786,
+          "nodes": 86,
+          "pool": 73,
+          "effects": 1,
+          "drawCalls": 20,
+          "triangles": 1419,
+          "gpuBuffers": 21268664,
+          "gpuTextures": 38459772,
+          "jsHeap": 21282288
+        },
+        {
+          "elapsed": 8.066666666666647,
+          "count": 20,
+          "fps": 59.99803285208541,
+          "nodes": 88,
+          "pool": 75,
+          "effects": 0,
+          "drawCalls": 15,
+          "triangles": 1502,
+          "gpuBuffers": 21268664,
+          "gpuTextures": 38459772,
+          "jsHeap": 33795268
+        },
+        {
+          "elapsed": 9.016666666666694,
+          "count": 20,
+          "fps": 59.99803285208541,
+          "nodes": 88,
+          "pool": 75,
+          "effects": 0,
+          "drawCalls": 15,
+          "triangles": 1502,
+          "gpuBuffers": 21268664,
+          "gpuTextures": 38459772,
+          "jsHeap": 47950880
+        },
+        {
+          "elapsed": 10.050000000000079,
+          "count": 20,
+          "fps": 59.992132178682986,
+          "nodes": 88,
+          "pool": 75,
+          "effects": 0,
+          "drawCalls": 15,
+          "triangles": 1502,
+          "gpuBuffers": 21268664,
+          "gpuTextures": 38459772,
+          "jsHeap": 21889832
+        },
+        {
+          "elapsed": 11.050000000000129,
+          "count": 20,
+          "fps": 59.99803285208541,
+          "nodes": 93,
+          "pool": 80,
+          "effects": 0,
+          "drawCalls": 21,
+          "triangles": 1498,
+          "gpuBuffers": 23628480,
+          "gpuTextures": 38495484,
+          "jsHeap": 39088056
+        },
+        {
+          "elapsed": 12.000000000000176,
+          "count": 20,
+          "fps": 59.974437127268565,
+          "nodes": 93,
+          "pool": 80,
+          "effects": 0,
+          "drawCalls": 20,
+          "triangles": 1318,
+          "gpuBuffers": 23628480,
+          "gpuTextures": 38495484,
+          "jsHeap": 49040204
+        },
+        {
+          "elapsed": 13.016666666666893,
+          "count": 20,
+          "fps": 59.98033431661752,
+          "nodes": 93,
+          "pool": 80,
+          "effects": 0,
+          "drawCalls": 21,
+          "triangles": 1378,
+          "gpuBuffers": 23628492,
+          "gpuTextures": 38495484,
+          "jsHeap": 60617900
+        },
+        {
+          "elapsed": 14.050000000000278,
+          "count": 20,
+          "fps": 60.068931560807506,
+          "nodes": 93,
+          "pool": 80,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 1502,
+          "gpuBuffers": 23628492,
+          "gpuTextures": 38495484,
+          "jsHeap": 41549512
+        },
+        {
+          "elapsed": 15.000000000000325,
+          "count": 20,
+          "fps": 59.982005397665674,
+          "nodes": 93,
+          "pool": 80,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 1562,
+          "gpuBuffers": 23628492,
+          "gpuTextures": 38495484,
+          "jsHeap": 55213412
+        },
+        {
+          "elapsed": 16.05000000000037,
+          "count": 20,
+          "fps": 59.958029380148666,
+          "nodes": 93,
+          "pool": 80,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 1502,
+          "gpuBuffers": 23628492,
+          "gpuTextures": 38495484,
+          "jsHeap": 58635484
+        },
+        {
+          "elapsed": 17.050000000000313,
+          "count": 20,
+          "fps": 59.99213217868297,
+          "nodes": 96,
+          "pool": 83,
+          "effects": 0,
+          "drawCalls": 22,
+          "triangles": 1533,
+          "gpuBuffers": 25988008,
+          "gpuTextures": 38507028,
+          "jsHeap": 26790208
+        },
+        {
+          "elapsed": 18.050000000000257,
+          "count": 44,
+          "fps": 60.00393468283435,
+          "nodes": 144,
+          "pool": 131,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2227,
+          "gpuBuffers": 25994872,
+          "gpuTextures": 38507028,
+          "jsHeap": 48897788
+        },
+        {
+          "elapsed": 19.08333333333353,
+          "count": 44,
+          "fps": 59.99400060208536,
+          "nodes": 144,
+          "pool": 131,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2235,
+          "gpuBuffers": 25994872,
+          "gpuTextures": 38507028,
+          "jsHeap": 62015284
+        },
+        {
+          "elapsed": 20.050000000000143,
+          "count": 44,
+          "fps": 57.994200578559486,
+          "nodes": 147,
+          "pool": 134,
+          "effects": 0,
+          "drawCalls": 20,
+          "triangles": 2260,
+          "gpuBuffers": 28354688,
+          "gpuTextures": 38518572,
+          "jsHeap": 48535160
+        },
+        {
+          "elapsed": 21.050000000000086,
+          "count": 44,
+          "fps": 57.99420058201583,
+          "nodes": 147,
+          "pool": 134,
+          "effects": 0,
+          "drawCalls": 20,
+          "triangles": 2396,
+          "gpuBuffers": 28354688,
+          "gpuTextures": 38518572,
+          "jsHeap": 63726452
+        },
+        {
+          "elapsed": 22.016666666666698,
+          "count": 44,
+          "fps": 60,
+          "nodes": 147,
+          "pool": 134,
+          "effects": 0,
+          "drawCalls": 20,
+          "triangles": 2396,
+          "gpuBuffers": 28354688,
+          "gpuTextures": 38518572,
+          "jsHeap": 32227908
+        },
+        {
+          "elapsed": 23.01666666666664,
+          "count": 44,
+          "fps": 58.994100588534636,
+          "nodes": 147,
+          "pool": 134,
+          "effects": 0,
+          "drawCalls": 20,
+          "triangles": 2396,
+          "gpuBuffers": 28354688,
+          "gpuTextures": 38518572,
+          "jsHeap": 67478668
+        },
+        {
+          "elapsed": 24.016666666666584,
+          "count": 44,
+          "fps": 58.036592562085694,
+          "nodes": 147,
+          "pool": 134,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2369,
+          "gpuBuffers": 28354688,
+          "gpuTextures": 38518572,
+          "jsHeap": 37067828
+        },
+        {
+          "elapsed": 25.08333333333319,
+          "count": 44,
+          "fps": 60.045280048657936,
+          "nodes": 147,
+          "pool": 134,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2237,
+          "gpuBuffers": 28354688,
+          "gpuTextures": 38518572,
+          "jsHeap": 62894520
+        },
+        {
+          "elapsed": 26.0499999999998,
+          "count": 44,
+          "fps": 59.940059940059946,
+          "nodes": 147,
+          "pool": 134,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2369,
+          "gpuBuffers": 28354688,
+          "gpuTextures": 38518572,
+          "jsHeap": 30148480
+        },
+        {
+          "elapsed": 27.049999999999745,
+          "count": 44,
+          "fps": 59.01445854303484,
+          "nodes": 155,
+          "pool": 142,
+          "effects": 0,
+          "drawCalls": 23,
+          "triangles": 2301,
+          "gpuBuffers": 33074032,
+          "gpuTextures": 38578408,
+          "jsHeap": 47639316
+        },
+        {
+          "elapsed": 28.016666666666357,
+          "count": 44,
+          "fps": 59.01445854303483,
+          "nodes": 155,
+          "pool": 142,
+          "effects": 2,
+          "drawCalls": 23,
+          "triangles": 2301,
+          "gpuBuffers": 33074032,
+          "gpuTextures": 38578408,
+          "jsHeap": 24242024
+        },
+        {
+          "elapsed": 29.04999999999963,
+          "count": 44,
+          "fps": 56.063735612596325,
+          "nodes": 155,
+          "pool": 142,
+          "effects": 1,
+          "drawCalls": 20,
+          "triangles": 2164,
+          "gpuBuffers": 33074032,
+          "gpuTextures": 38578408,
+          "jsHeap": 56273416
+        },
+        {
+          "elapsed": 30.016666666666243,
+          "count": 44,
+          "fps": 59.898173106433106,
+          "nodes": 156,
+          "pool": 143,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2402,
+          "gpuBuffers": 33074032,
+          "gpuTextures": 38578408,
+          "jsHeap": 63632352
+        },
+        {
+          "elapsed": 31.066666666666183,
+          "count": 44,
+          "fps": 57.142857142857146,
+          "nodes": 159,
+          "pool": 146,
+          "effects": 0,
+          "drawCalls": 22,
+          "triangles": 2297,
+          "gpuBuffers": 35433548,
+          "gpuTextures": 38589952,
+          "jsHeap": 40393504
+        },
+        {
+          "elapsed": 32.01666666666613,
+          "count": 44,
+          "fps": 57.988402320227216,
+          "nodes": 159,
+          "pool": 146,
+          "effects": 0,
+          "drawCalls": 22,
+          "triangles": 2429,
+          "gpuBuffers": 35433548,
+          "gpuTextures": 38589952,
+          "jsHeap": 66405964
+        },
+        {
+          "elapsed": 33.08333333333274,
+          "count": 44,
+          "fps": 57,
+          "nodes": 159,
+          "pool": 146,
+          "effects": 0,
+          "drawCalls": 22,
+          "triangles": 2297,
+          "gpuBuffers": 35433548,
+          "gpuTextures": 38589952,
+          "jsHeap": 36836792
+        },
+        {
+          "elapsed": 34.033333333332685,
+          "count": 88,
+          "fps": 58.025177025283526,
+          "nodes": 167,
+          "pool": 154,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2447,
+          "gpuBuffers": 35434184,
+          "gpuTextures": 38589952,
+          "jsHeap": 64296068
+        },
+        {
+          "elapsed": 35.01666666666596,
+          "count": 88,
+          "fps": 56.113408150552345,
+          "nodes": 167,
+          "pool": 154,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2231,
+          "gpuBuffers": 35434184,
+          "gpuTextures": 38589952,
+          "jsHeap": 39095524
+        },
+        {
+          "elapsed": 36.08333333333257,
+          "count": 88,
+          "fps": 59.02606984751601,
+          "nodes": 169,
+          "pool": 156,
+          "effects": 0,
+          "drawCalls": 14,
+          "triangles": 2334,
+          "gpuBuffers": 35434184,
+          "gpuTextures": 38589952,
+          "jsHeap": 60440924
+        },
+        {
+          "elapsed": 37.066666666665846,
+          "count": 88,
+          "fps": 58.93517131366267,
+          "nodes": 170,
+          "pool": 157,
+          "effects": 0,
+          "drawCalls": 14,
+          "triangles": 2480,
+          "gpuBuffers": 35434184,
+          "gpuTextures": 38589952,
+          "jsHeap": 30830664
+        },
+        {
+          "elapsed": 38.03333333333246,
+          "count": 88,
+          "fps": 59.00865460198325,
+          "nodes": 174,
+          "pool": 161,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2529,
+          "gpuBuffers": 37794000,
+          "gpuTextures": 38619584,
+          "jsHeap": 49009564
+        },
+        {
+          "elapsed": 39.016666666665735,
+          "count": 88,
+          "fps": 57.047309924933664,
+          "nodes": 174,
+          "pool": 161,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2529,
+          "gpuBuffers": 37794000,
+          "gpuTextures": 38619584,
+          "jsHeap": 62699712
+        },
+        {
+          "elapsed": 40.09999999999901,
+          "count": 88,
+          "fps": 47.216210897968004,
+          "nodes": 174,
+          "pool": 161,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2385,
+          "gpuBuffers": 37794000,
+          "gpuTextures": 38619584,
+          "jsHeap": 44931220
+        },
+        {
+          "elapsed": 41.06666666666562,
+          "count": 88,
+          "fps": 48.93149590689697,
+          "nodes": 174,
+          "pool": 161,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2389,
+          "gpuBuffers": 37794000,
+          "gpuTextures": 38619584,
+          "jsHeap": 50475960
+        },
+        {
+          "elapsed": 42.06666666666556,
+          "count": 88,
+          "fps": 48.256844591564125,
+          "nodes": 174,
+          "pool": 161,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 1953,
+          "gpuBuffers": 37794000,
+          "gpuTextures": 38619584,
+          "jsHeap": 22374192
+        },
+        {
+          "elapsed": 43.01666666666551,
+          "count": 88,
+          "fps": 52.98940212020764,
+          "nodes": 174,
+          "pool": 161,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2249,
+          "gpuBuffers": 37794000,
+          "gpuTextures": 38619584,
+          "jsHeap": 47482388
+        },
+        {
+          "elapsed": 44.033333333332116,
+          "count": 88,
+          "fps": 51.14586407063018,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 1,
+          "drawCalls": 21,
+          "triangles": 2318,
+          "gpuBuffers": 40153672,
+          "gpuTextures": 38647852,
+          "jsHeap": 69378496
+        },
+        {
+          "elapsed": 45.03333333333206,
+          "count": 88,
+          "fps": 58.036592562085694,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 0,
+          "drawCalls": 20,
+          "triangles": 2454,
+          "gpuBuffers": 40153672,
+          "gpuTextures": 38647852,
+          "jsHeap": 25599792
+        },
+        {
+          "elapsed": 46.033333333332,
+          "count": 88,
+          "fps": 55.98880224021941,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2385,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38647852,
+          "jsHeap": 57965172
+        },
+        {
+          "elapsed": 47.01666666666528,
+          "count": 88,
+          "fps": 52,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2249,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38647852,
+          "jsHeap": 77038964
+        },
+        {
+          "elapsed": 48.083333333331886,
+          "count": 88,
+          "fps": 57.99420058201586,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 0,
+          "drawCalls": 20,
+          "triangles": 2454,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38647852,
+          "jsHeap": 40204792
+        },
+        {
+          "elapsed": 49.0499999999985,
+          "count": 88,
+          "fps": 58.03659256208571,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2385,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38647852,
+          "jsHeap": 72919596
+        },
+        {
+          "elapsed": 50.033333333331775,
+          "count": 88,
+          "fps": 53.99460053865883,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2249,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38647852,
+          "jsHeap": 36992112
+        },
+        {
+          "elapsed": 51.01666666666505,
+          "count": 88,
+          "fps": 58.9941005920506,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 0,
+          "drawCalls": 20,
+          "triangles": 2454,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38647852,
+          "jsHeap": 46002020
+        },
+        {
+          "elapsed": 52.016666666664996,
+          "count": 88,
+          "fps": 59.01445854303484,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2385,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38647852,
+          "jsHeap": 82626292
+        },
+        {
+          "elapsed": 53.066666666664936,
+          "count": 88,
+          "fps": 55.080161303603404,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 1,
+          "drawCalls": 21,
+          "triangles": 2318,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38647852,
+          "jsHeap": 39051520
+        },
+        {
+          "elapsed": 54.049999999998214,
+          "count": 88,
+          "fps": 59.00865460544233,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 0,
+          "drawCalls": 20,
+          "triangles": 2454,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38647852,
+          "jsHeap": 64897312
+        },
+        {
+          "elapsed": 55.04999999999816,
+          "count": 88,
+          "fps": 56.063735612596325,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2385,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38647852,
+          "jsHeap": 41048236
+        },
+        {
+          "elapsed": 56.0999999999981,
+          "count": 88,
+          "fps": 57.09861608702475,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 1,
+          "drawCalls": 21,
+          "triangles": 2318,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38646444,
+          "jsHeap": 54876680
+        },
+        {
+          "elapsed": 57.09999999999804,
+          "count": 88,
+          "fps": 56.99430056858431,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 0,
+          "drawCalls": 20,
+          "triangles": 2454,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38646444,
+          "jsHeap": 78446896
+        },
+        {
+          "elapsed": 58.016666666664655,
+          "count": 88,
+          "fps": 58.994100588534636,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2385,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38646444,
+          "jsHeap": 36870488
+        }
+      ],
+      "end": {
+        "version": "v031-rc1",
+        "resourcesReady": true,
+        "appearance": 1,
+        "firstVictory": true,
+        "engine": "Cocos Creator 3.8.8",
+        "screen": "result",
+        "level": 0,
+        "texts": [
+          {
+            "id": "title",
+            "text": "晋升头领"
+          },
+          {
+            "id": "ending",
+            "text": "有队伍了。下一战，拿下一座营寨。"
+          },
+          {
+            "id": "identity",
+            "text": "布衣 → 头领 · 进度已保存"
+          },
+          {
+            "id": "stats",
+            "text": "剩余兵力：88  /  最佳：88 人\n用时：58.4 秒"
+          },
+          {
+            "id": "next",
+            "text": "下一关：拿下营寨"
+          },
+          {
+            "id": "restart",
+            "text": "再战本关"
+          },
+          {
+            "id": "chapters",
+            "text": "返回关卡"
+          },
+          {
+            "id": "prototype",
+            "text": "一路长歌 · v0.3.1 三关试玩"
+          }
+        ],
+        "buttons": [
+          {
+            "id": "next",
+            "x": 0,
+            "y": -260,
+            "w": 530,
+            "h": 74
+          },
+          {
+            "id": "restart",
+            "x": 0,
+            "y": -363,
+            "w": 530,
+            "h": 74
+          },
+          {
+            "id": "chapters",
+            "x": 0,
+            "y": -465,
+            "w": 510,
+            "h": 74
+          }
+        ],
+        "save": {
+          "cleared": {
+            "trial-01": true,
+            "trial-02": false,
+            "trial-03": false
+          },
+          "best": {
+            "trial-01": 88,
+            "trial-02": 0,
+            "trial-03": 0
+          },
+          "settings": {
+            "music": true,
+            "sfx": true,
+            "vibration": true
+          }
+        },
+        "rank": "头领",
+        "notice": "",
+        "nodes": 183,
+        "pool": 162,
+        "presentation": {
+          "volleyCapacity": 240,
+          "volleyGroups": 0,
+          "visualArrows": 0,
+          "volleys": [],
+          "scenery": [
+            {
+              "id": -5,
+              "worldZ": -12,
+              "y": -1518
+            },
+            {
+              "id": -4,
+              "worldZ": -9.6,
+              "y": -1268.4
+            },
+            {
+              "id": -3,
+              "worldZ": -7.199999999999999,
+              "y": -1018.8
+            },
+            {
+              "id": -2,
+              "worldZ": -4.8,
+              "y": -769.2
+            },
+            {
+              "id": -1,
+              "worldZ": -2.4,
+              "y": -519.6
+            },
+            {
+              "id": 0,
+              "worldZ": 0,
+              "y": -270
+            },
+            {
+              "id": 1,
+              "worldZ": 2.4,
+              "y": -20.400000000000006
+            },
+            {
+              "id": 2,
+              "worldZ": 4.8,
+              "y": 229.2
+            },
+            {
+              "id": 3,
+              "worldZ": 7.199999999999999,
+              "y": 478.79999999999995
+            },
+            {
+              "id": 4,
+              "worldZ": 9.6,
+              "y": 728.4
+            },
+            {
+              "id": 5,
+              "worldZ": 12,
+              "y": 978
+            },
+            {
+              "id": 6,
+              "worldZ": 14.399999999999999,
+              "y": 1227.6
+            }
+          ],
+          "effects": 0,
+          "peakEffects": 3,
+          "rigs": 0,
+          "scene": 0,
+          "rank": 1,
+          "sprites": 126,
+          "ready": true,
+          "depthOrder": [
+            "ground",
+            "hero-home"
+          ],
+          "bounds": [
+            {
+              "id": "ridge",
+              "left": -21.875,
+              "right": 741.875,
+              "bottom": 1299.076923076923,
+              "top": 1732.826923076923
+            },
+            {
+              "id": "side7",
+              "left": -136.90160000000003,
+              "right": 18.66160000000002,
+              "bottom": -738.9230769230769,
+              "top": -631.9382769230768
+            },
+            {
+              "id": "side8",
+              "left": 701.3384,
+              "right": 856.9016,
+              "bottom": -489.323076923077,
+              "top": -382.338276923077
+            },
+            {
+              "id": "side9",
+              "left": -136.90160000000003,
+              "right": 18.66160000000002,
+              "bottom": -239.72307692307686,
+              "top": -132.73827692307685
+            },
+            {
+              "id": "side10",
+              "left": 701.3384,
+              "right": 856.9016,
+              "bottom": 9.876923076923049,
+              "top": 116.86172307692307
+            },
+            {
+              "id": "side11",
+              "left": -136.90160000000003,
+              "right": 18.66160000000002,
+              "bottom": 259.4769230769231,
+              "top": 366.4617230769231
+            },
+            {
+              "id": "side0",
+              "left": 688.21,
+              "right": 837.79,
+              "bottom": 509.0769230769231,
+              "top": 611.9469230769231
+            },
+            {
+              "id": "side1",
+              "left": -43.254760000000005,
+              "right": 82.99076,
+              "bottom": 758.6769230769231,
+              "top": 845.4992030769231
+            },
+            {
+              "id": "side2",
+              "left": 585.8084799999999,
+              "right": 688.7195199999999,
+              "bottom": 1008.2769230769231,
+              "top": 1079.0514830769232
+            },
+            {
+              "id": "side3",
+              "left": 105.81571999999997,
+              "right": 185.39228,
+              "bottom": 1257.876923076923,
+              "top": 1312.603763076923
+            },
+            {
+              "id": "side4",
+              "left": 524.105,
+              "right": 598.895,
+              "bottom": 1507.476923076923,
+              "top": 1558.911923076923
+            },
+            {
+              "id": "side5",
+              "left": 121.10499999999999,
+              "right": 195.895,
+              "bottom": 1757.076923076923,
+              "top": 1808.511923076923
+            },
+            {
+              "id": "side6",
+              "left": 524.105,
+              "right": 598.895,
+              "bottom": 2006.676923076923,
+              "top": 2058.111923076923
+            },
+            {
+              "id": "home",
+              "left": 303.6363636363636,
+              "right": 411.5151515151515,
+              "bottom": 714.0769230769231,
+              "top": 914.0769230769231
+            }
+          ]
+        },
+        "audio": {
+          "active": true,
+          "hidden": false,
+          "musicReady": true,
+          "musicTrack": "Shenyang — Kevin MacLeod",
+          "musicPlaying": true,
+          "effectChannels": 5,
+          "playingEffects": [
+            "gather"
+          ]
+        },
+        "preview": null,
+        "fps": 59.014458543034856,
+        "meanFPS": 57.797600113688524,
+        "journey": {
+          "phase": "won",
+          "paused": false,
+          "count": 88,
+          "x": 1.1102230246251565e-16,
+          "target": 1.1102230246251565e-16,
+          "z": 42,
+          "elapsed": 58.41666666666463,
+          "duration": 42,
+          "damage": 17.6,
+          "visible": 48,
+          "bossHP": 0,
+          "bossWarning": null,
+          "warnings": [],
+          "cause": "",
+          "arrows": 0,
+          "rows": [],
+          "obstacles": [],
+          "usedRows": [
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "savedBeforeResult": true,
+      "elapsed": 66.91666666666416,
+      "count": 204,
+      "phase": "won",
+      "wallSeconds": 67.566,
+      "meanFPS": 59.99668739021693,
+      "endNodes": 207,
+      "endPool": 185,
+      "endMetrics": {
+        "drawCalls": 17,
+        "triangles": 974,
+        "gpuBuffers": 59030280,
+        "gpuTextures": 39536452,
+        "jsHeap": 63640924
+      },
+      "samples": [
+        {
+          "elapsed": 0.09999999999999999,
+          "count": 12,
+          "fps": 59.98200539766569,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 0,
+          "drawCalls": 21,
+          "triangles": 1168,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38645036,
+          "jsHeap": 57420600
+        },
+        {
+          "elapsed": 1.100000000000001,
+          "count": 12,
+          "fps": 59.99400060208536,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 0,
+          "drawCalls": 21,
+          "triangles": 1248,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38645036,
+          "jsHeap": 20294940
+        },
+        {
+          "elapsed": 2.0499999999999976,
+          "count": 12,
+          "fps": 60.00393468283436,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 0,
+          "drawCalls": 21,
+          "triangles": 1248,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38645036,
+          "jsHeap": 40557908
+        },
+        {
+          "elapsed": 3.0666666666666607,
+          "count": 12,
+          "fps": 60.00393468635246,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 1244,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38645036,
+          "jsHeap": 46487876
+        },
+        {
+          "elapsed": 4.083333333333324,
+          "count": 12,
+          "fps": 59.988002396660235,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 0,
+          "drawCalls": 22,
+          "triangles": 1271,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38645036,
+          "jsHeap": 54007092
+        },
+        {
+          "elapsed": 5.049999999999987,
+          "count": 28,
+          "fps": 60.009837678307925,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 1,
+          "drawCalls": 21,
+          "triangles": 1721,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38645036,
+          "jsHeap": 78905716
+        },
+        {
+          "elapsed": 6.016666666666651,
+          "count": 28,
+          "fps": 59.99400060208536,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 1,
+          "drawCalls": 21,
+          "triangles": 1733,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38645036,
+          "jsHeap": 44191800
+        },
+        {
+          "elapsed": 7.04999999999998,
+          "count": 28,
+          "fps": 59.99400059850981,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 1,
+          "drawCalls": 18,
+          "triangles": 1712,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38645036,
+          "jsHeap": 53861892
+        },
+        {
+          "elapsed": 8.083333333333314,
+          "count": 28,
+          "fps": 60.00393468635247,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 0,
+          "drawCalls": 16,
+          "triangles": 1696,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38645036,
+          "jsHeap": 69937372
+        },
+        {
+          "elapsed": 9.05000000000003,
+          "count": 28,
+          "fps": 59.96264621968466,
+          "nodes": 175,
+          "pool": 162,
+          "effects": 0,
+          "drawCalls": 16,
+          "triangles": 1780,
+          "gpuBuffers": 42513188,
+          "gpuTextures": 38645036,
+          "jsHeap": 44188888
+        },
+        {
+          "elapsed": 10.000000000000076,
+          "count": 28,
+          "fps": 60.03346127208809,
+          "nodes": 178,
+          "pool": 165,
+          "effects": 0,
+          "drawCalls": 24,
+          "triangles": 1867,
+          "gpuBuffers": 44872704,
+          "gpuTextures": 38667236,
+          "jsHeap": 55241744
+        },
+        {
+          "elapsed": 11.066666666666796,
+          "count": 28,
+          "fps": 59.98800240023509,
+          "nodes": 178,
+          "pool": 165,
+          "effects": 0,
+          "drawCalls": 23,
+          "triangles": 1531,
+          "gpuBuffers": 44872704,
+          "gpuTextures": 38667236,
+          "jsHeap": 65112092
+        },
+        {
+          "elapsed": 12.050000000000178,
+          "count": 28,
+          "fps": 59.98800240023508,
+          "nodes": 178,
+          "pool": 165,
+          "effects": 1,
+          "drawCalls": 23,
+          "triangles": 1791,
+          "gpuBuffers": 44872704,
+          "gpuTextures": 38667236,
+          "jsHeap": 27345352
+        },
+        {
+          "elapsed": 13.10000000000023,
+          "count": 28,
+          "fps": 60.01574183181197,
+          "nodes": 178,
+          "pool": 165,
+          "effects": 1,
+          "drawCalls": 23,
+          "triangles": 1715,
+          "gpuBuffers": 44872704,
+          "gpuTextures": 38667236,
+          "jsHeap": 44465436
+        },
+        {
+          "elapsed": 14.050000000000278,
+          "count": 28,
+          "fps": 59.9880024002351,
+          "nodes": 178,
+          "pool": 165,
+          "effects": 1,
+          "drawCalls": 23,
+          "triangles": 1639,
+          "gpuBuffers": 44872704,
+          "gpuTextures": 38667236,
+          "jsHeap": 62049776
+        },
+        {
+          "elapsed": 15.000000000000325,
+          "count": 28,
+          "fps": 59.9880024002351,
+          "nodes": 179,
+          "pool": 166,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 1840,
+          "gpuBuffers": 44872704,
+          "gpuTextures": 38667236,
+          "jsHeap": 41824172
+        },
+        {
+          "elapsed": 16.066666666667036,
+          "count": 28,
+          "fps": 60.00393468283436,
+          "nodes": 179,
+          "pool": 166,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 1756,
+          "gpuBuffers": 44872704,
+          "gpuTextures": 38667236,
+          "jsHeap": 54856336
+        },
+        {
+          "elapsed": 17.016666666666982,
+          "count": 56,
+          "fps": 60.00393468283436,
+          "nodes": 179,
+          "pool": 166,
+          "effects": 1,
+          "drawCalls": 16,
+          "triangles": 2418,
+          "gpuBuffers": 44872704,
+          "gpuTextures": 38667236,
+          "jsHeap": 67221380
+        },
+        {
+          "elapsed": 18.050000000000257,
+          "count": 56,
+          "fps": 59.994000598509786,
+          "nodes": 179,
+          "pool": 166,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2505,
+          "gpuBuffers": 44872704,
+          "gpuTextures": 38669160,
+          "jsHeap": 34402748
+        },
+        {
+          "elapsed": 19.01666666666687,
+          "count": 56,
+          "fps": 59.994000598509786,
+          "nodes": 179,
+          "pool": 166,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2503,
+          "gpuBuffers": 44872704,
+          "gpuTextures": 38669160,
+          "jsHeap": 55956360
+        },
+        {
+          "elapsed": 20.033333333333477,
+          "count": 56,
+          "fps": 59.99803285208542,
+          "nodes": 179,
+          "pool": 166,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2503,
+          "gpuBuffers": 44872704,
+          "gpuTextures": 38669160,
+          "jsHeap": 27306132
+        },
+        {
+          "elapsed": 21.03333333333342,
+          "count": 56,
+          "fps": 60.00393468635246,
+          "nodes": 179,
+          "pool": 166,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2503,
+          "gpuBuffers": 44872704,
+          "gpuTextures": 38669160,
+          "jsHeap": 53368100
+        },
+        {
+          "elapsed": 22.05000000000003,
+          "count": 56,
+          "fps": 59.994000598509786,
+          "nodes": 179,
+          "pool": 166,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2507,
+          "gpuBuffers": 44872704,
+          "gpuTextures": 38669160,
+          "jsHeap": 27377756
+        },
+        {
+          "elapsed": 23.049999999999972,
+          "count": 56,
+          "fps": 59.99803285208542,
+          "nodes": 180,
+          "pool": 167,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2432,
+          "gpuBuffers": 44872704,
+          "gpuTextures": 38697428,
+          "jsHeap": 51928748
+        },
+        {
+          "elapsed": 24.049999999999915,
+          "count": 56,
+          "fps": 59.98200539766566,
+          "nodes": 180,
+          "pool": 167,
+          "effects": 0,
+          "drawCalls": 25,
+          "triangles": 2491,
+          "gpuBuffers": 44872860,
+          "gpuTextures": 38697428,
+          "jsHeap": 69712292
+        },
+        {
+          "elapsed": 25.033333333333193,
+          "count": 56,
+          "fps": 59.994000598509786,
+          "nodes": 180,
+          "pool": 167,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2388,
+          "gpuBuffers": 44872860,
+          "gpuTextures": 38697428,
+          "jsHeap": 37700816
+        },
+        {
+          "elapsed": 26.01666666666647,
+          "count": 56,
+          "fps": 60.00983767830793,
+          "nodes": 180,
+          "pool": 167,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2532,
+          "gpuBuffers": 44872860,
+          "gpuTextures": 38697428,
+          "jsHeap": 56844984
+        },
+        {
+          "elapsed": 27.06666666666641,
+          "count": 56,
+          "fps": 59.97001499250375,
+          "nodes": 180,
+          "pool": 167,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2396,
+          "gpuBuffers": 44872860,
+          "gpuTextures": 38697428,
+          "jsHeap": 42051212
+        },
+        {
+          "elapsed": 28.049999999999688,
+          "count": 56,
+          "fps": 60.027553631879165,
+          "nodes": 180,
+          "pool": 167,
+          "effects": 0,
+          "drawCalls": 22,
+          "triangles": 2423,
+          "gpuBuffers": 44872860,
+          "gpuTextures": 38699352,
+          "jsHeap": 64018616
+        },
+        {
+          "elapsed": 29.0166666666663,
+          "count": 56,
+          "fps": 59.99400060208534,
+          "nodes": 180,
+          "pool": 167,
+          "effects": 0,
+          "drawCalls": 22,
+          "triangles": 2567,
+          "gpuBuffers": 44872860,
+          "gpuTextures": 38699352,
+          "jsHeap": 27746152
+        },
+        {
+          "elapsed": 30.116666666666237,
+          "count": 56,
+          "fps": 59.99803284856801,
+          "nodes": 180,
+          "pool": 167,
+          "effects": 0,
+          "drawCalls": 22,
+          "triangles": 2423,
+          "gpuBuffers": 44872860,
+          "gpuTextures": 38699352,
+          "jsHeap": 61102544
+        },
+        {
+          "elapsed": 31.08333333333285,
+          "count": 112,
+          "fps": 59.992132182199704,
+          "nodes": 180,
+          "pool": 167,
+          "effects": 1,
+          "drawCalls": 21,
+          "triangles": 2501,
+          "gpuBuffers": 44872860,
+          "gpuTextures": 38711044,
+          "jsHeap": 15145152
+        },
+        {
+          "elapsed": 32.0333333333328,
+          "count": 112,
+          "fps": 60.00393468283436,
+          "nodes": 180,
+          "pool": 167,
+          "effects": 1,
+          "drawCalls": 21,
+          "triangles": 2233,
+          "gpuBuffers": 44872860,
+          "gpuTextures": 38711044,
+          "jsHeap": 39374472
+        },
+        {
+          "elapsed": 33.06666666666607,
+          "count": 112,
+          "fps": 60,
+          "nodes": 185,
+          "pool": 172,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2363,
+          "gpuBuffers": 47232376,
+          "gpuTextures": 38724512,
+          "jsHeap": 67421420
+        },
+        {
+          "elapsed": 34.04999999999935,
+          "count": 112,
+          "fps": 59.98800240023507,
+          "nodes": 185,
+          "pool": 172,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2507,
+          "gpuBuffers": 47232376,
+          "gpuTextures": 38724512,
+          "jsHeap": 39416928
+        },
+        {
+          "elapsed": 35.03333333333263,
+          "count": 112,
+          "fps": 60.009837678307925,
+          "nodes": 185,
+          "pool": 172,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2507,
+          "gpuBuffers": 47232376,
+          "gpuTextures": 38724512,
+          "jsHeap": 64366256
+        },
+        {
+          "elapsed": 36.03333333333257,
+          "count": 112,
+          "fps": 59.98623266580268,
+          "nodes": 185,
+          "pool": 172,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2507,
+          "gpuBuffers": 47232376,
+          "gpuTextures": 38724512,
+          "jsHeap": 36041600
+        },
+        {
+          "elapsed": 37.01666666666585,
+          "count": 112,
+          "fps": 59.99400060208534,
+          "nodes": 185,
+          "pool": 172,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2511,
+          "gpuBuffers": 47232376,
+          "gpuTextures": 38724512,
+          "jsHeap": 61065180
+        },
+        {
+          "elapsed": 38.01666666666579,
+          "count": 112,
+          "fps": 59.99803285208542,
+          "nodes": 194,
+          "pool": 181,
+          "effects": 0,
+          "drawCalls": 27,
+          "triangles": 2663,
+          "gpuBuffers": 51951720,
+          "gpuTextures": 38814392,
+          "jsHeap": 37987840
+        },
+        {
+          "elapsed": 39.06666666666573,
+          "count": 112,
+          "fps": 59.99803284856801,
+          "nodes": 194,
+          "pool": 181,
+          "effects": 1,
+          "drawCalls": 28,
+          "triangles": 2106,
+          "gpuBuffers": 51951720,
+          "gpuTextures": 38814392,
+          "jsHeap": 53683164
+        },
+        {
+          "elapsed": 40.04999999999901,
+          "count": 102,
+          "fps": 59.99803285208544,
+          "nodes": 194,
+          "pool": 181,
+          "effects": 1,
+          "drawCalls": 24,
+          "triangles": 2433,
+          "gpuBuffers": 51951732,
+          "gpuTextures": 38814392,
+          "jsHeap": 79628228
+        },
+        {
+          "elapsed": 41.01666666666562,
+          "count": 102,
+          "fps": 60.05710347614054,
+          "nodes": 194,
+          "pool": 181,
+          "effects": 1,
+          "drawCalls": 24,
+          "triangles": 2441,
+          "gpuBuffers": 51951732,
+          "gpuTextures": 38814392,
+          "jsHeap": 30726116
+        },
+        {
+          "elapsed": 42.08333333333223,
+          "count": 102,
+          "fps": 59.93407251880039,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 23,
+          "triangles": 2437,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38827860,
+          "jsHeap": 64578528
+        },
+        {
+          "elapsed": 43.03333333333217,
+          "count": 102,
+          "fps": 59.99400060208538,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 22,
+          "triangles": 2567,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38827860,
+          "jsHeap": 28801924
+        },
+        {
+          "elapsed": 44.06666666666545,
+          "count": 102,
+          "fps": 60.00393468283436,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 22,
+          "triangles": 2423,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38827860,
+          "jsHeap": 61454512
+        },
+        {
+          "elapsed": 45.016666666665394,
+          "count": 204,
+          "fps": 60,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2625,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38827860,
+          "jsHeap": 26213836
+        },
+        {
+          "elapsed": 46.033333333332,
+          "count": 204,
+          "fps": 59.98800240023509,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2509,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38827860,
+          "jsHeap": 49878504
+        },
+        {
+          "elapsed": 47.01666666666528,
+          "count": 204,
+          "fps": 60.00393468283435,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2507,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38827860,
+          "jsHeap": 73046428
+        },
+        {
+          "elapsed": 48.01666666666522,
+          "count": 204,
+          "fps": 59.99213218219972,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2507,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38827860,
+          "jsHeap": 43013620
+        },
+        {
+          "elapsed": 49.08333333333183,
+          "count": 204,
+          "fps": 59.9940005985098,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 14,
+          "triangles": 2334,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38827860,
+          "jsHeap": 61851008
+        },
+        {
+          "elapsed": 50.08333333333177,
+          "count": 204,
+          "fps": 59.9940005985098,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2383,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38833492,
+          "jsHeap": 50523896
+        },
+        {
+          "elapsed": 51.06666666666505,
+          "count": 204,
+          "fps": 60.00393468635248,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2383,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38833492,
+          "jsHeap": 58510828
+        },
+        {
+          "elapsed": 52.06666666666499,
+          "count": 204,
+          "fps": 60.033461272088076,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2383,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38833492,
+          "jsHeap": 31014816
+        },
+        {
+          "elapsed": 53.04999999999827,
+          "count": 204,
+          "fps": 59.95802938014868,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2527,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38833492,
+          "jsHeap": 57159352
+        },
+        {
+          "elapsed": 54.03333333333155,
+          "count": 204,
+          "fps": 59.99213217868297,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 1951,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38833492,
+          "jsHeap": 28025552
+        },
+        {
+          "elapsed": 55.08333333333149,
+          "count": 204,
+          "fps": 60.045280048657936,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2247,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38833492,
+          "jsHeap": 55110120
+        },
+        {
+          "elapsed": 56.0499999999981,
+          "count": 204,
+          "fps": 59.95203836859045,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 21,
+          "triangles": 2316,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38833492,
+          "jsHeap": 80477360
+        },
+        {
+          "elapsed": 57.083333333331375,
+          "count": 204,
+          "fps": 60.00393468283436,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 22,
+          "triangles": 2319,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38833492,
+          "jsHeap": 42136156
+        },
+        {
+          "elapsed": 58.016666666664655,
+          "count": 204,
+          "fps": 59.98800240023508,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2247,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38833492,
+          "jsHeap": 62225044
+        },
+        {
+          "elapsed": 59.066666666664595,
+          "count": 204,
+          "fps": 59.99400060208536,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 21,
+          "triangles": 2316,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38833492,
+          "jsHeap": 41781520
+        },
+        {
+          "elapsed": 60.01666666666454,
+          "count": 204,
+          "fps": 60.057103472616205,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2247,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832084,
+          "jsHeap": 49753268
+        },
+        {
+          "elapsed": 61.08333333333115,
+          "count": 204,
+          "fps": 59.99803285208542,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2247,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832084,
+          "jsHeap": 83821708
+        },
+        {
+          "elapsed": 62.066666666664425,
+          "count": 204,
+          "fps": 59.93407252236882,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 20,
+          "triangles": 2452,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832084,
+          "jsHeap": 42244268
+        },
+        {
+          "elapsed": 63.08333333333103,
+          "count": 204,
+          "fps": 60.039370078740156,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2383,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832084,
+          "jsHeap": 63796904
+        },
+        {
+          "elapsed": 64.04999999999765,
+          "count": 204,
+          "fps": 60.00393468283435,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 21,
+          "triangles": 2316,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832084,
+          "jsHeap": 37261956
+        },
+        {
+          "elapsed": 65.09999999999759,
+          "count": 204,
+          "fps": 59.958029380148666,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 21,
+          "triangles": 2316,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832084,
+          "jsHeap": 55386380
+        },
+        {
+          "elapsed": 66.04999999999754,
+          "count": 204,
+          "fps": 59.98800240023508,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2247,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832084,
+          "jsHeap": 28423924
+        }
+      ],
+      "end": {
+        "version": "v031-rc1",
+        "resourcesReady": true,
+        "appearance": 2,
+        "firstVictory": true,
+        "engine": "Cocos Creator 3.8.8",
+        "screen": "result",
+        "level": 1,
+        "texts": [
+          {
+            "id": "title",
+            "text": "晋升统领"
+          },
+          {
+            "id": "ending",
+            "text": "营寨拿下了。下一战，城门。"
+          },
+          {
+            "id": "identity",
+            "text": "头领 → 统领 · 进度已保存"
+          },
+          {
+            "id": "stats",
+            "text": "剩余兵力：204  /  最佳：204 人\n用时：66.9 秒"
+          },
+          {
+            "id": "next",
+            "text": "下一关：夺下首城"
+          },
+          {
+            "id": "restart",
+            "text": "再战本关"
+          },
+          {
+            "id": "chapters",
+            "text": "返回关卡"
+          },
+          {
+            "id": "prototype",
+            "text": "一路长歌 · v0.3.1 三关试玩"
+          }
+        ],
+        "buttons": [
+          {
+            "id": "next",
+            "x": 0,
+            "y": -260,
+            "w": 530,
+            "h": 74
+          },
+          {
+            "id": "restart",
+            "x": 0,
+            "y": -363,
+            "w": 530,
+            "h": 74
+          },
+          {
+            "id": "chapters",
+            "x": 0,
+            "y": -465,
+            "w": 510,
+            "h": 74
+          }
+        ],
+        "save": {
+          "cleared": {
+            "trial-01": true,
+            "trial-02": true,
+            "trial-03": false
+          },
+          "best": {
+            "trial-01": 88,
+            "trial-02": 204,
+            "trial-03": 0
+          },
+          "settings": {
+            "music": true,
+            "sfx": true,
+            "vibration": true
+          }
+        },
+        "rank": "统领",
+        "notice": "",
+        "nodes": 207,
+        "pool": 185,
+        "presentation": {
+          "volleyCapacity": 240,
+          "volleyGroups": 0,
+          "visualArrows": 0,
+          "volleys": [],
+          "scenery": [
+            {
+              "id": -5,
+              "worldZ": -12,
+              "y": -1518
+            },
+            {
+              "id": -4,
+              "worldZ": -9.6,
+              "y": -1268.4
+            },
+            {
+              "id": -3,
+              "worldZ": -7.199999999999999,
+              "y": -1018.8
+            },
+            {
+              "id": -2,
+              "worldZ": -4.8,
+              "y": -769.2
+            },
+            {
+              "id": -1,
+              "worldZ": -2.4,
+              "y": -519.6
+            },
+            {
+              "id": 0,
+              "worldZ": 0,
+              "y": -270
+            },
+            {
+              "id": 1,
+              "worldZ": 2.4,
+              "y": -20.400000000000006
+            },
+            {
+              "id": 2,
+              "worldZ": 4.8,
+              "y": 229.2
+            },
+            {
+              "id": 3,
+              "worldZ": 7.199999999999999,
+              "y": 478.79999999999995
+            },
+            {
+              "id": 4,
+              "worldZ": 9.6,
+              "y": 728.4
+            },
+            {
+              "id": 5,
+              "worldZ": 12,
+              "y": 978
+            },
+            {
+              "id": 6,
+              "worldZ": 14.399999999999999,
+              "y": 1227.6
+            }
+          ],
+          "effects": 0,
+          "peakEffects": 3,
+          "rigs": 0,
+          "scene": 1,
+          "rank": 2,
+          "sprites": 133,
+          "ready": true,
+          "depthOrder": [
+            "ground",
+            "hero-home"
+          ],
+          "bounds": [
+            {
+              "id": "side7",
+              "left": -115.67000000000002,
+              "right": -2.569999999999993,
+              "bottom": -738.9230769230769,
+              "top": -675.743076923077
+            },
+            {
+              "id": "side8",
+              "left": 722.57,
+              "right": 835.67,
+              "bottom": -489.323076923077,
+              "top": -426.143076923077
+            },
+            {
+              "id": "side9",
+              "left": -137.43200000000002,
+              "right": 19.192000000000007,
+              "bottom": -239.72307692307686,
+              "top": -140.81907692307686
+            },
+            {
+              "id": "side10",
+              "left": 722.57,
+              "right": 835.67,
+              "bottom": 9.876923076923049,
+              "top": 73.05692307692306
+            },
+            {
+              "id": "side11",
+              "left": -115.67000000000002,
+              "right": -2.569999999999993,
+              "bottom": 259.4769230769231,
+              "top": 322.6569230769231
+            },
+            {
+              "id": "side0",
+              "left": 687.7,
+              "right": 838.3,
+              "bottom": 509.0769230769231,
+              "top": 604.1769230769231
+            },
+            {
+              "id": "side1",
+              "left": -26.024500000000003,
+              "right": 65.7605,
+              "bottom": 758.6769230769231,
+              "top": 809.9499230769231
+            },
+            {
+              "id": "side2",
+              "left": 599.8539999999999,
+              "right": 674.6739999999999,
+              "bottom": 1008.2769230769231,
+              "top": 1050.0729230769232
+            },
+            {
+              "id": "side3",
+              "left": 105.5444,
+              "right": 185.66359999999997,
+              "bottom": 1257.876923076923,
+              "top": 1308.470123076923
+            },
+            {
+              "id": "side4",
+              "left": 534.3125,
+              "right": 588.6875,
+              "bottom": 1507.476923076923,
+              "top": 1537.851923076923
+            },
+            {
+              "id": "side5",
+              "left": 131.3125,
+              "right": 185.6875,
+              "bottom": 1757.076923076923,
+              "top": 1787.451923076923
+            },
+            {
+              "id": "side6",
+              "left": 523.85,
+              "right": 599.15,
+              "bottom": 2006.676923076923,
+              "top": 2054.226923076923
+            },
+            {
+              "id": "home",
+              "left": 308.4848484848485,
+              "right": 413.93939393939394,
+              "bottom": 714.0769230769231,
+              "top": 914.6829836829837
+            }
+          ]
+        },
+        "audio": {
+          "active": true,
+          "hidden": false,
+          "musicReady": true,
+          "musicTrack": "Shenyang — Kevin MacLeod",
+          "musicPlaying": true,
+          "effectChannels": 5,
+          "playingEffects": [
+            "gather"
+          ]
+        },
+        "preview": null,
+        "fps": 60.039370078740184,
+        "meanFPS": 59.99668739021693,
+        "journey": {
+          "phase": "won",
+          "paused": false,
+          "count": 204,
+          "x": -2.647454945598111e-16,
+          "target": -2.647454945598111e-16,
+          "z": 54,
+          "elapsed": 66.91666666666416,
+          "duration": 54,
+          "damage": 40.800000000000004,
+          "visible": 48,
+          "bossHP": 0,
+          "bossWarning": null,
+          "warnings": [],
+          "cause": "被弩箭击中，损失10人",
+          "arrows": 0,
+          "rows": [],
+          "obstacles": [],
+          "usedRows": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "savedBeforeResult": true,
+      "elapsed": 81.41666666666333,
+      "count": 256,
+      "phase": "won",
+      "wallSeconds": 82.016,
+      "meanFPS": 59.996053852748474,
+      "endNodes": 210,
+      "endPool": 188,
+      "endMetrics": {
+        "drawCalls": 17,
+        "triangles": 1002,
+        "gpuBuffers": 59030280,
+        "gpuTextures": 39563980,
+        "jsHeap": 60483800
+      },
+      "samples": [
+        {
+          "elapsed": 0.09999999999999999,
+          "count": 16,
+          "fps": 60.03346127208809,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 21,
+          "triangles": 1296,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38829268,
+          "jsHeap": 62044876
+        },
+        {
+          "elapsed": 1.0833333333333344,
+          "count": 16,
+          "fps": 59.98800240023507,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 21,
+          "triangles": 1392,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38829268,
+          "jsHeap": 68637272
+        },
+        {
+          "elapsed": 2.033333333333331,
+          "count": 16,
+          "fps": 59.99803285208542,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 21,
+          "triangles": 1448,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38829268,
+          "jsHeap": 35354000
+        },
+        {
+          "elapsed": 3.0666666666666607,
+          "count": 16,
+          "fps": 60.02164715072765,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 1396,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38829268,
+          "jsHeap": 52552064
+        },
+        {
+          "elapsed": 4.033333333333324,
+          "count": 16,
+          "fps": 59.9760095975909,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 1396,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38829268,
+          "jsHeap": 61285824
+        },
+        {
+          "elapsed": 5.099999999999987,
+          "count": 16,
+          "fps": 60,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 23,
+          "triangles": 1435,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38829268,
+          "jsHeap": 79225140
+        },
+        {
+          "elapsed": 6.049999999999984,
+          "count": 34,
+          "fps": 59.994000598509786,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 2,
+          "drawCalls": 19,
+          "triangles": 1919,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38829268,
+          "jsHeap": 35488456
+        },
+        {
+          "elapsed": 7.04999999999998,
+          "count": 34,
+          "fps": 59.9940005985098,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2039,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38829268,
+          "jsHeap": 50493176
+        },
+        {
+          "elapsed": 8.016666666666644,
+          "count": 34,
+          "fps": 59.9940005985098,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2037,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38829268,
+          "jsHeap": 69905516
+        },
+        {
+          "elapsed": 9.066666666666697,
+          "count": 34,
+          "fps": 59.98800240023508,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2045,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38831044,
+          "jsHeap": 46287412
+        },
+        {
+          "elapsed": 10.050000000000079,
+          "count": 34,
+          "fps": 60.00393468283436,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2045,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38831044,
+          "jsHeap": 51486256
+        },
+        {
+          "elapsed": 11.033333333333461,
+          "count": 34,
+          "fps": 60.00393468283436,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2045,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38831044,
+          "jsHeap": 20610776
+        },
+        {
+          "elapsed": 12.000000000000176,
+          "count": 34,
+          "fps": 59.992132178682986,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 16,
+          "triangles": 2014,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38831044,
+          "jsHeap": 45316820
+        },
+        {
+          "elapsed": 13.066666666666896,
+          "count": 34,
+          "fps": 59.9940005985098,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 16,
+          "triangles": 1912,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38831044,
+          "jsHeap": 75983332
+        },
+        {
+          "elapsed": 14.03333333333361,
+          "count": 34,
+          "fps": 59.9940005985098,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 16,
+          "triangles": 2014,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38831044,
+          "jsHeap": 43438360
+        },
+        {
+          "elapsed": 15.000000000000325,
+          "count": 34,
+          "fps": 60.00393468283435,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 24,
+          "triangles": 2101,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832968,
+          "jsHeap": 64373108
+        },
+        {
+          "elapsed": 16.05000000000037,
+          "count": 34,
+          "fps": 59.99400060208536,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 23,
+          "triangles": 2003,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832968,
+          "jsHeap": 73060416
+        },
+        {
+          "elapsed": 17.000000000000316,
+          "count": 34,
+          "fps": 59.99213217868297,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 23,
+          "triangles": 2007,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832968,
+          "jsHeap": 42901776
+        },
+        {
+          "elapsed": 18.03333333333359,
+          "count": 34,
+          "fps": 60.00393468283438,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 23,
+          "triangles": 1913,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832968,
+          "jsHeap": 62186860
+        },
+        {
+          "elapsed": 19.100000000000197,
+          "count": 34,
+          "fps": 59.9820054012398,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 1972,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832968,
+          "jsHeap": 33601456
+        },
+        {
+          "elapsed": 20.050000000000143,
+          "count": 34,
+          "fps": 60.01574183181196,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 1972,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832968,
+          "jsHeap": 48405664
+        },
+        {
+          "elapsed": 21.00000000000009,
+          "count": 34,
+          "fps": 59.99400060208536,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2074,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832968,
+          "jsHeap": 64952196
+        },
+        {
+          "elapsed": 22.066666666666695,
+          "count": 68,
+          "fps": 59.96402158561898,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2437,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832968,
+          "jsHeap": 36527236
+        },
+        {
+          "elapsed": 23.09999999999997,
+          "count": 68,
+          "fps": 60.02164715072763,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2385,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832968,
+          "jsHeap": 63610432
+        },
+        {
+          "elapsed": 24.083333333333247,
+          "count": 68,
+          "fps": 59.99803285208542,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2383,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832968,
+          "jsHeap": 35911340
+        },
+        {
+          "elapsed": 25.08333333333319,
+          "count": 68,
+          "fps": 59.99803285208542,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2383,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832968,
+          "jsHeap": 58788592
+        },
+        {
+          "elapsed": 26.083333333333133,
+          "count": 68,
+          "fps": 59.99803285208544,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2387,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38832968,
+          "jsHeap": 85035712
+        },
+        {
+          "elapsed": 27.06666666666641,
+          "count": 68,
+          "fps": 59.9940005985098,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 23,
+          "triangles": 2491,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38834744,
+          "jsHeap": 39574504
+        },
+        {
+          "elapsed": 28.049999999999688,
+          "count": 68,
+          "fps": 60.00393468283436,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 23,
+          "triangles": 2486,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38834744,
+          "jsHeap": 74202368
+        },
+        {
+          "elapsed": 29.033333333332966,
+          "count": 68,
+          "fps": 59.98800240023508,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2527,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38834744,
+          "jsHeap": 34750352
+        },
+        {
+          "elapsed": 30.083333333332906,
+          "count": 68,
+          "fps": 60.00983767830793,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 2,
+          "drawCalls": 16,
+          "triangles": 2236,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38834744,
+          "jsHeap": 53617384
+        },
+        {
+          "elapsed": 31.066666666666183,
+          "count": 68,
+          "fps": 60.0511911786613,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 14,
+          "triangles": 2356,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38834744,
+          "jsHeap": 39308980
+        },
+        {
+          "elapsed": 32.049999999999464,
+          "count": 68,
+          "fps": 59.94005994005996,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 14,
+          "triangles": 2500,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38834744,
+          "jsHeap": 63752080
+        },
+        {
+          "elapsed": 33.03333333333274,
+          "count": 68,
+          "fps": 59.98800240023508,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 22,
+          "triangles": 2443,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38834744,
+          "jsHeap": 89066208
+        },
+        {
+          "elapsed": 34.09999999999935,
+          "count": 68,
+          "fps": 59.992132178682986,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 23,
+          "triangles": 2451,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38834744,
+          "jsHeap": 50685516
+        },
+        {
+          "elapsed": 35.049999999999294,
+          "count": 68,
+          "fps": 60.00393468635246,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 23,
+          "triangles": 2319,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38834744,
+          "jsHeap": 65162976
+        },
+        {
+          "elapsed": 36.1166666666659,
+          "count": 68,
+          "fps": 59.99803285208542,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 20,
+          "triangles": 2434,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38834744,
+          "jsHeap": 42871060
+        },
+        {
+          "elapsed": 37.066666666665846,
+          "count": 68,
+          "fps": 60.0511911786613,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2420,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38834744,
+          "jsHeap": 62056764
+        },
+        {
+          "elapsed": 38.04999999999912,
+          "count": 68,
+          "fps": 59.93407251880038,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2564,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38834744,
+          "jsHeap": 29437040
+        },
+        {
+          "elapsed": 39.0333333333324,
+          "count": 68,
+          "fps": 59.98800240023508,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2564,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38834744,
+          "jsHeap": 53256596
+        },
+        {
+          "elapsed": 40.09999999999901,
+          "count": 136,
+          "fps": 60.01574183533145,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 1,
+          "drawCalls": 16,
+          "triangles": 2494,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38834744,
+          "jsHeap": 26067684
+        },
+        {
+          "elapsed": 41.01666666666562,
+          "count": 136,
+          "fps": 59.99400059850981,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2529,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38824976,
+          "jsHeap": 39574132
+        },
+        {
+          "elapsed": 42.08333333333223,
+          "count": 136,
+          "fps": 59.9940005985098,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2383,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38824976,
+          "jsHeap": 76225364
+        },
+        {
+          "elapsed": 43.099999999998836,
+          "count": 136,
+          "fps": 59.99803285208542,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2383,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38824976,
+          "jsHeap": 50312796
+        },
+        {
+          "elapsed": 44.083333333332114,
+          "count": 136,
+          "fps": 60,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2383,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38824976,
+          "jsHeap": 75659592
+        },
+        {
+          "elapsed": 45.09999999999872,
+          "count": 136,
+          "fps": 59.98033431661751,
+          "nodes": 198,
+          "pool": 185,
+          "effects": 0,
+          "drawCalls": 20,
+          "triangles": 2414,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38824976,
+          "jsHeap": 46546920
+        },
+        {
+          "elapsed": 46.099999999998666,
+          "count": 136,
+          "fps": 59.99400060208534,
+          "nodes": 199,
+          "pool": 186,
+          "effects": 0,
+          "drawCalls": 22,
+          "triangles": 2483,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38855020,
+          "jsHeap": 61013148
+        },
+        {
+          "elapsed": 47.06666666666528,
+          "count": 136,
+          "fps": 60.01574183181197,
+          "nodes": 199,
+          "pool": 186,
+          "effects": 1,
+          "drawCalls": 24,
+          "triangles": 2494,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38855020,
+          "jsHeap": 36544260
+        },
+        {
+          "elapsed": 48.03333333333189,
+          "count": 136,
+          "fps": 59.99803285208542,
+          "nodes": 199,
+          "pool": 186,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2527,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38855020,
+          "jsHeap": 61409684
+        },
+        {
+          "elapsed": 49.01666666666517,
+          "count": 136,
+          "fps": 59.92210126763776,
+          "nodes": 199,
+          "pool": 186,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2531,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38855020,
+          "jsHeap": 28761732
+        },
+        {
+          "elapsed": 50.08333333333177,
+          "count": 136,
+          "fps": 60.063016937916544,
+          "nodes": 199,
+          "pool": 186,
+          "effects": 1,
+          "drawCalls": 28,
+          "triangles": 2551,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38855020,
+          "jsHeap": 65589028
+        },
+        {
+          "elapsed": 51.049999999998384,
+          "count": 136,
+          "fps": 60,
+          "nodes": 199,
+          "pool": 186,
+          "effects": 1,
+          "drawCalls": 29,
+          "triangles": 2554,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38855020,
+          "jsHeap": 38093252
+        },
+        {
+          "elapsed": 52.11666666666499,
+          "count": 136,
+          "fps": 60.0511911786613,
+          "nodes": 199,
+          "pool": 186,
+          "effects": 2,
+          "drawCalls": 20,
+          "triangles": 2426,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38855020,
+          "jsHeap": 44750612
+        },
+        {
+          "elapsed": 53.066666666664936,
+          "count": 136,
+          "fps": 59.940059940059975,
+          "nodes": 199,
+          "pool": 186,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2420,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38855020,
+          "jsHeap": 83308720
+        },
+        {
+          "elapsed": 54.01666666666488,
+          "count": 136,
+          "fps": 59.99803285208542,
+          "nodes": 199,
+          "pool": 186,
+          "effects": 0,
+          "drawCalls": 19,
+          "triangles": 2564,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38855020,
+          "jsHeap": 47147052
+        },
+        {
+          "elapsed": 55.06666666666482,
+          "count": 136,
+          "fps": 60.04528004513498,
+          "nodes": 199,
+          "pool": 186,
+          "effects": 0,
+          "drawCalls": 22,
+          "triangles": 2447,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38855020,
+          "jsHeap": 80349328
+        },
+        {
+          "elapsed": 56.033333333331434,
+          "count": 136,
+          "fps": 59.95203836859045,
+          "nodes": 199,
+          "pool": 186,
+          "effects": 0,
+          "drawCalls": 22,
+          "triangles": 2591,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38855020,
+          "jsHeap": 43437072
+        },
+        {
+          "elapsed": 57.09999999999804,
+          "count": 256,
+          "fps": 59.98800240023508,
+          "nodes": 199,
+          "pool": 186,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2521,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38855020,
+          "jsHeap": 59944292
+        },
+        {
+          "elapsed": 58.03333333333132,
+          "count": 256,
+          "fps": 59.99803285208544,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2533,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38855020,
+          "jsHeap": 40339160
+        },
+        {
+          "elapsed": 59.0166666666646,
+          "count": 256,
+          "fps": 60.057103476140554,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2535,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38855020,
+          "jsHeap": 68890016
+        },
+        {
+          "elapsed": 60.083333333331204,
+          "count": 256,
+          "fps": 59.9940005985098,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2391,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38855020,
+          "jsHeap": 34076084
+        },
+        {
+          "elapsed": 61.06666666666448,
+          "count": 256,
+          "fps": 59.94005994005996,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 2393,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38855020,
+          "jsHeap": 62000432
+        },
+        {
+          "elapsed": 62.066666666664425,
+          "count": 256,
+          "fps": 60.00393468635247,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2411,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38859244,
+          "jsHeap": 34641084
+        },
+        {
+          "elapsed": 63.0499999999977,
+          "count": 256,
+          "fps": 59.9940005985098,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2555,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38859244,
+          "jsHeap": 62368652
+        },
+        {
+          "elapsed": 64.04999999999765,
+          "count": 256,
+          "fps": 59.986232669318724,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2555,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38859244,
+          "jsHeap": 39016704
+        },
+        {
+          "elapsed": 65.03333333333093,
+          "count": 256,
+          "fps": 59.9940005985098,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2555,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38859244,
+          "jsHeap": 44799252
+        },
+        {
+          "elapsed": 66.01666666666421,
+          "count": 256,
+          "fps": 60.009837678307925,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 0,
+          "drawCalls": 17,
+          "triangles": 1979,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38859244,
+          "jsHeap": 19975844
+        },
+        {
+          "elapsed": 67.06666666666415,
+          "count": 256,
+          "fps": 59.994000598509786,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2275,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38859244,
+          "jsHeap": 45773012
+        },
+        {
+          "elapsed": 68.04999999999742,
+          "count": 256,
+          "fps": 59.98800240023507,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 1,
+          "drawCalls": 21,
+          "triangles": 2344,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38861020,
+          "jsHeap": 74244076
+        },
+        {
+          "elapsed": 69.06666666666403,
+          "count": 256,
+          "fps": 60.01574183533145,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 0,
+          "drawCalls": 21,
+          "triangles": 2483,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38861020,
+          "jsHeap": 37043708
+        },
+        {
+          "elapsed": 70.01666666666398,
+          "count": 256,
+          "fps": 59.976009594017505,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2275,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38861020,
+          "jsHeap": 53527468
+        },
+        {
+          "elapsed": 71.06666666666392,
+          "count": 256,
+          "fps": 59.99803285208544,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 1,
+          "drawCalls": 21,
+          "triangles": 2344,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38861020,
+          "jsHeap": 39804616
+        },
+        {
+          "elapsed": 72.03333333333053,
+          "count": 256,
+          "fps": 60.009837678307946,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2275,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38861020,
+          "jsHeap": 46839528
+        },
+        {
+          "elapsed": 73.08333333333047,
+          "count": 256,
+          "fps": 60.045280048657936,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 1,
+          "drawCalls": 21,
+          "triangles": 2344,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38861020,
+          "jsHeap": 65568960
+        },
+        {
+          "elapsed": 74.06666666666375,
+          "count": 256,
+          "fps": 59.940059940059975,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2275,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38861020,
+          "jsHeap": 41519996
+        },
+        {
+          "elapsed": 75.03333333333036,
+          "count": 256,
+          "fps": 59.9940005985098,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2275,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38860636,
+          "jsHeap": 68355516
+        },
+        {
+          "elapsed": 76.0833333333303,
+          "count": 256,
+          "fps": 60.039370078740184,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 1,
+          "drawCalls": 21,
+          "triangles": 2344,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38859484,
+          "jsHeap": 22129904
+        },
+        {
+          "elapsed": 77.06666666666358,
+          "count": 256,
+          "fps": 59.94604855772729,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 0,
+          "drawCalls": 18,
+          "triangles": 2411,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38859484,
+          "jsHeap": 45888296
+        },
+        {
+          "elapsed": 78.03333333333019,
+          "count": 256,
+          "fps": 60.003934682834334,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2275,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38859612,
+          "jsHeap": 74009340
+        },
+        {
+          "elapsed": 79.01666666666347,
+          "count": 256,
+          "fps": 59.94604855772727,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 1,
+          "drawCalls": 22,
+          "triangles": 2347,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38859612,
+          "jsHeap": 47441164
+        },
+        {
+          "elapsed": 80.08333333333007,
+          "count": 256,
+          "fps": 59.99213217868297,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 1,
+          "drawCalls": 21,
+          "triangles": 2344,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38859612,
+          "jsHeap": 66925844
+        },
+        {
+          "elapsed": 81.04999999999669,
+          "count": 256,
+          "fps": 59.99803285208542,
+          "nodes": 201,
+          "pool": 188,
+          "effects": 1,
+          "drawCalls": 19,
+          "triangles": 2275,
+          "gpuBuffers": 54311248,
+          "gpuTextures": 38858204,
+          "jsHeap": 39554704
+        }
+      ],
+      "end": {
+        "version": "v031-rc1",
+        "resourcesReady": true,
+        "appearance": 3,
+        "firstVictory": true,
+        "engine": "Cocos Creator 3.8.8",
+        "screen": "result",
+        "level": 2,
+        "texts": [
+          {
+            "id": "title",
+            "text": "首城已得"
+          },
+          {
+            "id": "ending",
+            "text": "起步篇完成 · 登基之路，刚刚开始"
+          },
+          {
+            "id": "identity",
+            "text": "统领 → 城主 · 进度已保存"
+          },
+          {
+            "id": "stats",
+            "text": "剩余兵力：256  /  最佳：256 人\n用时：81.4 秒"
+          },
+          {
+            "id": "replay-map",
+            "text": "重玩关卡"
+          },
+          {
+            "id": "restart",
+            "text": "再战本关"
+          },
+          {
+            "id": "chapters",
+            "text": "返回关卡"
+          },
+          {
+            "id": "prototype",
+            "text": "一路长歌 · v0.3.1 三关试玩"
+          }
+        ],
+        "buttons": [
+          {
+            "id": "replay-map",
+            "x": 0,
+            "y": -260,
+            "w": 530,
+            "h": 74
+          },
+          {
+            "id": "restart",
+            "x": 0,
+            "y": -363,
+            "w": 530,
+            "h": 74
+          },
+          {
+            "id": "chapters",
+            "x": 0,
+            "y": -465,
+            "w": 510,
+            "h": 74
+          }
+        ],
+        "save": {
+          "cleared": {
+            "trial-01": true,
+            "trial-02": true,
+            "trial-03": true
+          },
+          "best": {
+            "trial-01": 88,
+            "trial-02": 204,
+            "trial-03": 256
+          },
+          "settings": {
+            "music": true,
+            "sfx": true,
+            "vibration": true
+          }
+        },
+        "rank": "城主",
+        "notice": "",
+        "nodes": 210,
+        "pool": 188,
+        "presentation": {
+          "volleyCapacity": 240,
+          "volleyGroups": 0,
+          "visualArrows": 0,
+          "volleys": [],
+          "scenery": [
+            {
+              "id": -5,
+              "worldZ": -12,
+              "y": -1518
+            },
+            {
+              "id": -4,
+              "worldZ": -9.6,
+              "y": -1268.4
+            },
+            {
+              "id": -3,
+              "worldZ": -7.199999999999999,
+              "y": -1018.8
+            },
+            {
+              "id": -2,
+              "worldZ": -4.8,
+              "y": -769.2
+            },
+            {
+              "id": -1,
+              "worldZ": -2.4,
+              "y": -519.6
+            },
+            {
+              "id": 0,
+              "worldZ": 0,
+              "y": -270
+            },
+            {
+              "id": 1,
+              "worldZ": 2.4,
+              "y": -20.400000000000006
+            },
+            {
+              "id": 2,
+              "worldZ": 4.8,
+              "y": 229.2
+            },
+            {
+              "id": 3,
+              "worldZ": 7.199999999999999,
+              "y": 478.79999999999995
+            },
+            {
+              "id": 4,
+              "worldZ": 9.6,
+              "y": 728.4
+            },
+            {
+              "id": 5,
+              "worldZ": 12,
+              "y": 978
+            },
+            {
+              "id": 6,
+              "worldZ": 14.399999999999999,
+              "y": 1227.6
+            }
+          ],
+          "effects": 0,
+          "peakEffects": 3,
+          "rigs": 0,
+          "scene": 2,
+          "rank": 3,
+          "sprites": 135,
+          "ready": true,
+          "depthOrder": [
+            "ground",
+            "hero-home"
+          ],
+          "bounds": [
+            {
+              "id": "side7",
+              "left": -113.408,
+              "right": -4.832000000000008,
+              "bottom": -738.9230769230769,
+              "top": -678.270276923077
+            },
+            {
+              "id": "side8",
+              "left": 724.832,
+              "right": 833.408,
+              "bottom": -489.323076923077,
+              "top": -428.670276923077
+            },
+            {
+              "id": "side9",
+              "left": -113.408,
+              "right": -4.832000000000008,
+              "bottom": -239.72307692307686,
+              "top": -179.07027692307685
+            },
+            {
+              "id": "side10",
+              "left": 724.832,
+              "right": 833.408,
+              "bottom": 9.876923076923049,
+              "top": 70.52972307692305
+            },
+            {
+              "id": "side11",
+              "left": -113.408,
+              "right": -4.832000000000008,
+              "bottom": 259.4769230769231,
+              "top": 320.1297230769231
+            },
+            {
+              "id": "side0",
+              "left": 710.8,
+              "right": 815.2,
+              "bottom": 509.0769230769231,
+              "top": 567.3969230769231
+            },
+            {
+              "id": "side1",
+              "left": -24.1888,
+              "right": 63.92479999999999,
+              "bottom": 758.6769230769231,
+              "top": 807.8990030769231
+            },
+            {
+              "id": "side2",
+              "left": 601.3503999999999,
+              "right": 673.1775999999999,
+              "bottom": 1008.2769230769231,
+              "top": 1048.4010830769232
+            },
+            {
+              "id": "side3",
+              "left": 117.83359999999999,
+              "right": 173.37439999999998,
+              "bottom": 1257.876923076923,
+              "top": 1288.903163076923
+            },
+            {
+              "id": "side4",
+              "left": 535.4,
+              "right": 587.6,
+              "bottom": 1507.476923076923,
+              "top": 1536.636923076923
+            },
+            {
+              "id": "side5",
+              "left": 132.4,
+              "right": 184.6,
+              "bottom": 1757.076923076923,
+              "top": 1786.2369230769232
+            },
+            {
+              "id": "side6",
+              "left": 535.4,
+              "right": 587.6,
+              "bottom": 2006.676923076923,
+              "top": 2035.836923076923
+            },
+            {
+              "id": "home",
+              "left": 303.030303030303,
+              "right": 413.93939393939394,
+              "bottom": 714.0769230769231,
+              "top": 918.3193473193473
+            },
+            {
+              "id": "tower-1",
+              "left": 117.57,
+              "right": 173.43,
+              "bottom": 1445.076923076923,
+              "top": 1520.0469230769231
+            },
+            {
+              "id": "tower1",
+              "left": 546.57,
+              "right": 602.43,
+              "bottom": 1445.076923076923,
+              "top": 1520.0469230769231
+            }
+          ]
+        },
+        "audio": {
+          "active": true,
+          "hidden": false,
+          "musicReady": true,
+          "musicTrack": "Shenyang — Kevin MacLeod",
+          "musicPlaying": true,
+          "effectChannels": 5,
+          "playingEffects": [
+            "gather"
+          ]
+        },
+        "preview": null,
+        "fps": 59.964021585618994,
+        "meanFPS": 59.996053852748474,
+        "journey": {
+          "phase": "won",
+          "paused": false,
+          "count": 256,
+          "x": -3.3306690738754696e-16,
+          "target": -3.3306690738754696e-16,
+          "z": 66,
+          "elapsed": 81.41666666666333,
+          "duration": 66,
+          "damage": 51.2,
+          "visible": 48,
+          "bossHP": 0,
+          "bossWarning": null,
+          "warnings": [],
+          "cause": "",
+          "arrows": 0,
+          "rows": [],
+          "obstacles": [],
+          "usedRows": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    }
+  ],
+  "errors": []
+}
