@@ -5,9 +5,11 @@ export type Row = { id: number; at: number; left: Gate; right: Gate };
 export type Attack = { kind: 'aimed' | 'fixed'; x?: number; telegraphSeconds: number; halfWidth: number; loss: number; impactSeconds: number; recoverySeconds: number };
 export type Obstacle = { id: number; at: number; x: number; width: number; kind: 'wood' | 'rock' | 'fighter' | 'crossbowman'; hp: number; loss: number; rowId?: number; side?: 'left' | 'right'; dead?: boolean; resolved?: boolean; attack?: Attack & {startAt:number}; attackStarted?: boolean };
 export type Level = { id: string; title: string; scene: string; rankBefore: string; rankAfter: string; duration: number; start: number; bossHP: number; bossName: string; bossDelay: number; bossAttacks: Attack[]; rows: Row[]; obstacles: Obstacle[]; opening: string; ending: string };
-export type Arrow = { x: number; z: number; damage: number };
+export type Arrow = { x: number; z: number; damage: number; readonly id?: number };
 export type Warning = { id: number; source: number | 'boss'; x: number; width: number; loss: number; remaining: number; duration: number; flight: number; impact: number; stage: 'charge' | 'flight' | 'impact'; hit: boolean };
-export type Feedback = { kind: 'gather' | 'hit' | 'break' | 'hurt' | 'warn'; x: number; amount: number };
+export type Feedback = Readonly<{ kind: 'shot' | 'gather' | 'hit' | 'break' | 'hurt' | 'warn'; x: number; amount: number; targetId?: number | 'boss' | 'team'; worldZ?: number; simulationTick?: number; projectileId?: number; sourceId?: number | 'boss' | 'team' }>;
+/** Shared collision contract; renderers read this, never approximate it. */
+export const BOSS_TARGET = Object.freeze({ halfWidth: .42, depth: 4 });
 export const STEP = 1 / 60;
 export const HORIZON = 7;
 export const clamp = (n: number, a: number, b: number) => Math.max(a, Math.min(b, n));
@@ -15,7 +17,7 @@ export class Journey {
  phase: Phase = 'run'; count: number; x = 0; target = 0; z = 0; elapsed = 0; paused = false;
  bossHP: number; bossClock = 0; bossIndex = 0; bossReady: number;
  arrows: Arrow[] = []; warnings: Warning[] = []; feedback: Feedback[] = []; usedRows = new Set<number>();
- obstacles: Obstacle[]; cause = ''; fireClock = 0; accumulator = 0; private warningId = 0;
+ obstacles: Obstacle[]; cause = ''; fireClock = 0; accumulator = 0; private warningId = 0; private projectileId = 0; simulationTick = 0;
  constructor(public level: Level) { this.count = level.start; this.bossHP = level.bossHP; this.bossReady = level.bossDelay; this.obstacles = level.obstacles.map(o => ({ ...o, attack:o.attack ? {...o.attack} : undefined })); }
  get finished() { return this.phase === 'won' || this.phase === 'lost'; }
  get visibleCount() { return Math.min(48, this.count); }
@@ -42,12 +44,12 @@ export class Journey {
   if (this.finished) return;
   const gate = row[side], before = this.count;
   this.count = clamp(gate.kind === 'add' ? this.count + gate.value : this.count * 2, 0, 256);
-  this.feedback.push({kind:'gather', x:this.x, amount:this.count-before});
+  this.emit({kind:'gather', x:this.x, amount:this.count-before,targetId:'team',worldZ:this.z,sourceId:row.id});
  }
  hurt(loss: number, cause: string) {
   if (this.finished) return;
   const actual = Math.min(this.count,Math.max(0,loss));
-  this.count -= actual; this.feedback.push({kind:'hurt', x:this.x, amount:actual});
+  this.count -= actual; this.emit({kind:'hurt', x:this.x, amount:actual,targetId:'team',worldZ:this.z});
   this.cause = `${cause}，损失${actual}人${this.count===0?'，队伍归零':''}`;
   if (!this.count) { this.phase = 'lost'; this.arrows.length=0; this.warnings.length=0; }
  }
@@ -56,11 +58,11 @@ export class Journey {
   // the archer no longer cancels it; strike still occurs at the advertised time.
   const flight=Math.min(.2,a.telegraphSeconds/2);
   this.warnings.push({id:++this.warningId,source,x:a.kind==='aimed'?this.x:a.x??0,width:a.halfWidth,loss:a.loss,remaining:a.telegraphSeconds,duration:a.telegraphSeconds,flight,impact:a.impactSeconds,stage:'charge',hit:false});
-  this.feedback.push({kind:'warn',x:this.x,amount:a.loss});
+  this.emit({kind:'warn',x:this.warnings[this.warnings.length-1].x,amount:a.loss,sourceId:source,worldZ:source==='boss'?this.z+BOSS_TARGET.depth:this.obstacles.find(o=>o.id===source)?.at});
  }
  private projectiles(previousZ:number) {
   this.fireClock -= STEP;
-  if (this.fireClock <= 0) { this.fireClock += .25; this.arrows.push({x:this.x,z:this.z+.35,damage:this.damage}); }
+  if (this.fireClock <= 0) { this.fireClock += .25; const a={id:++this.projectileId,x:this.x,z:this.z+.35,damage:this.damage};this.arrows.push(a);this.emit({kind:'shot',x:a.x,amount:a.damage,worldZ:a.z,sourceId:'team',projectileId:a.id}); }
   for (const a of this.arrows) {
    const prev=a.z; a.z += STEP*9;
    // Sort actual intersections: array order is never a targeting rule.
@@ -68,15 +70,15 @@ export class Journey {
    const o=hits[0];
    if (o && this.phase==='run') {
     a.z=Infinity;
-    if(o.kind!=='rock') { o.hp=Math.max(0,o.hp-a.damage);this.feedback.push({kind:'hit',x:o.x,amount:0});if(o.hp===0){o.dead=true;this.feedback.push({kind:'break',x:o.x,amount:0});} }
-   } else if(this.phase==='boss' && prev<this.z+4 && a.z>=this.z+4 && Math.abs(a.x)<=.42) {
-    this.bossHP=Math.max(0,this.bossHP-a.damage);a.z=Infinity;this.feedback.push({kind:'hit',x:0,amount:0});
+    if(o.kind!=='rock') { o.hp=Math.max(0,o.hp-a.damage);this.emit({kind:'hit',x:a.x,amount:0,targetId:o.id,worldZ:o.at,projectileId:a.id,sourceId:'team'});if(o.hp===0){o.dead=true;this.emit({kind:'break',x:o.x,amount:0,targetId:o.id,worldZ:o.at,projectileId:a.id,sourceId:'team'});} }
+   } else if(this.phase==='boss' && prev<this.z+BOSS_TARGET.depth && a.z>=this.z+BOSS_TARGET.depth && Math.abs(a.x)<=BOSS_TARGET.halfWidth) {
+    this.bossHP=Math.max(0,this.bossHP-a.damage);a.z=Infinity;this.emit({kind:'hit',x:a.x,amount:0,targetId:'boss',worldZ:this.z+BOSS_TARGET.depth,projectileId:a.id,sourceId:'team'});
    }
   }
   this.arrows=this.arrows.filter(a=>a.z<this.z+HORIZON);
  }
  private tick() {
-  this.elapsed += STEP; this.x += clamp(this.target-this.x,-STEP*2.7,STEP*2.7);
+  this.simulationTick++; this.elapsed += STEP; this.x += clamp(this.target-this.x,-STEP*2.7,STEP*2.7);
   const previous=this.z;
   if(this.phase==='run') this.z=Math.min(this.level.duration,this.z+STEP);
   // Within a step: player arrows -> kills/cancel -> contact/row -> hostile impact.
@@ -105,5 +107,6 @@ export class Journey {
   }
   this.warnings=this.warnings.filter(w=>w.remaining>-w.impact);
  }
+ private emit(e:Feedback) { this.feedback.push(Object.freeze({...e,simulationTick:this.simulationTick})); }
  drainFeedback() { const events = this.feedback; this.feedback = []; return events; }
 }

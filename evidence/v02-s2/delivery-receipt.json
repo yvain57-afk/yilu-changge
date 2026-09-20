@@ -1,0 +1,86 @@
+{
+  "stage": "S2-A",
+  "recordedAt": "2026-09-20T03:48:02.173Z",
+  "baseline": "184f974c0498e39cf612de2127b0c76c33ec284a",
+  "branch": "main",
+  "published": false,
+  "approved": false,
+  "engine": "Cocos Creator 3.8.8",
+  "files": [
+    {
+      "file": "assets/scripts/core/model.ts",
+      "bytes": 8927,
+      "sha256": "e5fe33902bf5f5c19ae49ae112397fcb68a765d1922b989c9bc0c2f727759f12"
+    },
+    {
+      "file": "assets/scripts/core/levels.ts",
+      "bytes": 10448,
+      "sha256": "8d19539cf61d03bd621280deff3e142713a7619711a06eeef942741a04b24af4"
+    },
+    {
+      "file": "assets/scripts/BattleView.ts",
+      "bytes": 10522,
+      "sha256": "b9b9c05510c7bec71435e2b3b6eaca77bef5fb7a4248cd0f79b915dbcd2edd43"
+    },
+    {
+      "file": "assets/scripts/Game.ts",
+      "bytes": 13617,
+      "sha256": "985fecd72670b052687ef82b568e8882ed73df99749e7f1afd2aeb77dd2d25f8"
+    },
+    {
+      "file": "assets/scripts/Platform.ts",
+      "bytes": 3506,
+      "sha256": "0d21b39aab8af7d714a3066b06b85bc0ff63e197f7dd529e1aa7bdf6b07ca9a5"
+    },
+    {
+      "file": "assets/scripts/HeroRig.ts",
+      "bytes": 3939,
+      "sha256": "0132d48b8f32cee62db02fe4e4cb86dc02e0e9ce274c86bbe12092e1d7bc094a"
+    },
+    {
+      "file": "assets/scripts/HeroAtlas.ts",
+      "bytes": 751,
+      "sha256": "01914b76930d8a6f6b27fb87d8960f592d366396fff23aa624639379ac981507"
+    },
+    {
+      "file": "assets/scripts/Presentation.ts",
+      "bytes": 1289,
+      "sha256": "986e534ac717c0f8ccca328151c3448757337d7e24e60abd4a9b4a6e327d9a63"
+    },
+    {
+      "file": "assets/scripts/VisualConfig.ts",
+      "bytes": 785,
+      "sha256": "3b44b30dcb5fb878f44984bb30e4c10c0afba89fc31a0ea4d84f16d772939de9"
+    },
+    {
+      "file": "art-source/v2/hero-a-rig.png",
+      "bytes": 827673,
+      "sha256": "7d9d85ad6a5c378a66ca6fbfe4d05ecaf89ac0e91568d8819a9ef60384957a01"
+    },
+    {
+      "file": "art-source/v2/hero-a-front-v2.png",
+      "bytes": 1685114,
+      "sha256": "a6d6365019b84553f35d1a98b20a08372f81b44e3988528986e3fac0b42da179"
+    },
+    {
+      "file": "assets/resources/v2/hero-a-rig.png",
+      "bytes": 827673,
+      "sha256": "7d9d85ad6a5c378a66ca6fbfe4d05ecaf89ac0e91568d8819a9ef60384957a01"
+    },
+    {
+      "file": "evidence/v02-s2/hero-actions.mp4",
+      "bytes": 338349,
+      "sha256": "78b1003fdeb246ac51938f9b8f322609777192ca273b0d9ff07e3e0c3cfacebf"
+    },
+    {
+      "file": "evidence/v02-s2/first-level-with-audio.mp4",
+      "bytes": 2659999,
+      "sha256": "214b64e18fe254c9a3e462967bed47e7669a7d4778aaaa3013cd85e640749369"
+    },
+    {
+      "file": "evidence/v02-s2/first-ten-seconds.mp4",
+      "bytes": 424920,
+      "sha256": "e31593bea7f897bf83d74764f14b3bd4d9494ff023218ffa0b648540818e7d5e"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "BALANCE_CANDIDATES.md": {
+    "bytes": 2835,
+    "sha256": "a01f81a10e58eb8ab8fff784849e77ba8946cc93cfe054540671b316738be7be"
+  },
+  "READ_ME_FIRST.md": {
+    "bytes": 912,
+    "sha256": "7b88b05b415603d13d66da224e6561b177dfb1ea82662a5f790d62f9e5baa667"
+  },
+  "REVIEW_FINDINGS.md": {
+    "bytes": 5888,
+    "sha256": "ade4cb838a5cb3d52ae7c162770b5bb4a6ebdbd6b6da8d93b4c7753c570af3eb"
+  },
+  "S2_CODEX_TASK.md": {
+    "bytes": 16548,
+    "sha256": "2593ed96518c6039888b0a4cb8a0693b2af12dc1b609f93af43c37c266ea059a"
+  },
+  "START_WITH_CODEX.md": {
+    "bytes": 1740,
+    "sha256": "16a6d5306eb7b56392add5f5f2eba364378eb8b9c60c7aa8058aa43ba8923bc6"
+  },
+  "STATIC_MATH_CHECK.json": {
+    "bytes": 579,
+    "sha256": "40da41c7362a7f5d8aaf54e58a9948ffb010c86636f6917d627cf7761148f840"
+  }
+}

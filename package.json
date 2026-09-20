@@ -1,11 +1,11 @@
 {
   "name": "yilu-changge",
-  "version": "0.2.0-s1",
+  "version": "0.2.0-s2a",
   "private": true,
   "creator": {
     "version": "3.8.8"
   },
-  "description": "一路长歌 — 从小人物起步，拿下第一座城（S1首关草模）",
+  "description": "一路长歌 — S2-A主角候选与首关可读性修复",
   "scripts": {
     "test": "node tools/run-local.mjs tsx --test tests/*.test.ts",
     "typecheck:core": "node tools/run-local.mjs tsc -p tsconfig.core.json --noEmit",
@@ -17,7 +17,11 @@
     "test:negative": "node tools/run-local.mjs node tools/mutation.mjs",
     "test:browser": "node tools/run-local.mjs node tools/browser-v02.mjs",
     "test:edge": "node tools/run-local.mjs node tools/browser-v02-edge.mjs",
-    "test:failure": "node tools/run-local.mjs node tools/browser-v02-failure.mjs"
+    "test:failure": "node tools/run-local.mjs node tools/browser-v02-failure.mjs",
+    "test:preview": "node tools/run-local.mjs node tools/browser-s2-preview.mjs",
+    "test:soak": "node tools/run-local.mjs node tools/browser-s2-soak.mjs",
+    "test:audio": "node tools/run-local.mjs node tools/browser-s2-audio.mjs",
+    "test:sound": "node tools/run-local.mjs node tools/browser-s2-sound-pause.mjs"
   },
   "devDependencies": {
     "playwright": "^1.55.1",

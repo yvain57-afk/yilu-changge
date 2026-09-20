@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "playing": [
+    {
+      "state": "running",
+      "rms": 0.0038053442119327105
+    }
+  ],
+  "pausedAudio": [
+    {
+      "state": "running",
+      "rms": 0
+    }
+  ],
+  "resumed": [
+    {
+      "state": "running",
+      "rms": 0.007015397505883157
+    }
+  ],
+  "effectChannels": 5,
+  "checks": [
+    "actual-output-before-pause",
+    "silence-after-gather-pause",
+    "sprite-arrow-effects-time-frozen",
+    "resume-audio-progress",
+    "restart-no-stale-sfx",
+    "leave-clears-effects",
+    "preview-pause-freezes-rig"
+  ],
+  "errors": []
+}

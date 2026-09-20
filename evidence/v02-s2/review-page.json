@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "playback": [
+    {
+      "src": "http://127.0.0.1:43189/evidence/v02-s2/hero-actions.mp4",
+      "time": 0.354161,
+      "ready": 4
+    },
+    {
+      "src": "http://127.0.0.1:43189/evidence/v02-s2/first-level-with-audio.mp4",
+      "time": 0.313238,
+      "ready": 4
+    },
+    {
+      "src": "http://127.0.0.1:43189/evidence/v02-s2/first-ten-seconds.mp4",
+      "time": 0.313265,
+      "ready": 4
+    }
+  ],
+  "images": 5,
+  "media": [
+    {
+      "src": "http://127.0.0.1:43189/evidence/v02-s2/hero-actions.mp4",
+      "ready": 4,
+      "duration": 10.52,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "src": "http://127.0.0.1:43189/evidence/v02-s2/first-level-with-audio.mp4",
+      "ready": 4,
+      "duration": 60.923333,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "src": "http://127.0.0.1:43189/evidence/v02-s2/first-ten-seconds.mp4",
+      "ready": 4,
+      "duration": 10.005,
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "links": [
+    "http://127.0.0.1:43189/?preview=character",
+    "http://127.0.0.1:43189/",
+    "http://127.0.0.1:43189/?debug=hitboxes",
+    "http://127.0.0.1:43189/review/s2/GPT_REVIEW.md",
+    "http://127.0.0.1:43189/review/s2/VERIFICATION.md",
+    "http://127.0.0.1:43189/review/"
+  ],
+  "errors": []
+}

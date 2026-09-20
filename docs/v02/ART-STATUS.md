@@ -1,3 +1,5 @@
+> 本文件保留 S1 历史。当前 S2-A 候选与验证见 [s2/GPT_REVIEW.md](s2/GPT_REVIEW.md)。
+
 # 角色提案与素材状态
 
 本轮使用内置 image_gen 制作 A/B 对比稿；提示词及修订指令完整保存在 `image-prompts.json`。未调用额外付费 API，没有下载商业游戏角色。以下都未获用户选定。

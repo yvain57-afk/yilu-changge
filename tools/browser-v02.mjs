@@ -1,12 +1,12 @@
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 import {writeFileSync,mkdirSync,copyFileSync} from 'node:fs';
-const root='evidence/v02';mkdirSync(`${root}/recordings`,{recursive:true});
+const root='evidence/v02-s2';mkdirSync(`${root}/recordings`,{recursive:true});
 const context=await chromium.launchPersistentContext('.cache/browser-v02',{executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:false,viewport:{width:390,height:844},hasTouch:true,isMobile:true,recordVideo:{dir:`${root}/recordings`,size:{width:390,height:844}},args:['--disable-background-timer-throttling','--disable-renderer-backgrounding','--disable-backgrounding-occluded-windows']});
 const page=await context.newPage(),errors=[],external=[],samples=[];let report={passed:false};
 page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(!r.url().startsWith('http://127.0.0.1:43187')&&!r.url().startsWith('data:'))external.push(r.url())});
 const snap=()=>page.evaluate(()=>globalThis.__YLCG__.snapshot());
-const boot=async()=>{await page.goto('http://127.0.0.1:43187');await page.bringToFront();await page.waitForFunction(()=>globalThis.__YLCG__?.snapshot().version==='v02-s1',null,{timeout:30000});};
+const boot=async()=>{await page.goto('http://127.0.0.1:43187');await page.bringToFront();await page.waitForFunction(()=>globalThis.__YLCG__?.snapshot().version==='v02-s2a',null,{timeout:30000});};
 async function pos(x,y){const b=await page.locator('canvas').boundingBox(),s=Math.min(b.width/720,b.height/1280);return{x:b.x+b.width/2+x*s,y:b.y+b.height/2-y*s,s};}
 async function tap(id){const s=await snap(),b=s.buttons.find(b=>b.id===id);assert.ok(b,`${s.screen} missing ${id}`);const p=await pos(b.x,b.y);await page.touchscreen.tap(p.x,p.y);await page.waitForTimeout(100);}
 const cdp=await context.newCDPSession(page);let cursor=195,touch=false;

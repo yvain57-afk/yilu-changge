@@ -1,0 +1,18 @@
+{
+  "type": "static_math_only_not_engine_verification",
+  "baseline": "184f974c0498e39cf612de2127b0c76c33ec284a",
+  "boss_depth": 4,
+  "projection_scale": 0.74,
+  "boss_hit_width_design_units": 161.616,
+  "boss_actor_nominal_width_design_units": 85.1,
+  "low_force_ideal_dps": 12.8,
+  "low_force_damage_time_seconds": 140.625,
+  "conditional_counts": {
+    "A_before_final_gate": 72,
+    "A_final": 48,
+    "B_final": 56,
+    "baseline_before_final_gate": 56,
+    "baseline_final": 16
+  },
+  "warning": "数学核对，不是Cocos实测、截图观察或完整策略模拟。"
+}

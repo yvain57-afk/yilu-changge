@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "runtimeSourceByteIdentical": true,
+  "method": "Read original RGBA data. Runtime alpha and byte identity validated; no raster edits/color keying. Reference corner alpha values are recorded without changes. Both contain real transparency.",
+  "files": [
+    {
+      "file": "art-source/v2/hero-a-rig.png",
+      "sha256": "7d9d85ad6a5c378a66ca6fbfe4d05ecaf89ac0e91568d8819a9ef60384957a01",
+      "width": 1448,
+      "height": 1086,
+      "channels": 4,
+      "transparentPixels": 1199941,
+      "softAlphaPixels": 371459,
+      "opaquePixels": 1128,
+      "nearInvisiblePixels": 1223510,
+      "transparentFraction": 0.7630649501948455,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "candidate",
+      "approved": false,
+      "usedInRuntime": true
+    },
+    {
+      "file": "art-source/v2/hero-a-front-v2.png",
+      "sha256": "a6d6365019b84553f35d1a98b20a08372f81b44e3988528986e3fac0b42da179",
+      "width": 1226,
+      "height": 1283,
+      "channels": 4,
+      "transparentPixels": 772980,
+      "softAlphaPixels": 798567,
+      "opaquePixels": 1411,
+      "nearInvisiblePixels": 793454,
+      "transparentFraction": 0.49141807982158453,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "candidate",
+      "approved": false,
+      "usedInRuntime": false
+    }
+  ]
+}

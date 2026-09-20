@@ -25,3 +25,9 @@ __pycache__/
 /evidence/v02/video-frame-*
 /evidence/v02/final-frame-*
 /evidence/v02/clip-*.png
+
+# S2 recorder originals are local; reviewed MP4s and reports are deliverables.
+/evidence/v02-s2/recordings/
+/evidence/v02-s2/session.webm
+/evidence/v02-s2/hero-preview.webm
+/evidence/v02-s2/actual-audio.webm

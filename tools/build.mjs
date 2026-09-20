@@ -3,7 +3,7 @@ import {mkdirSync,writeFileSync,createWriteStream,readFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 const platform=process.argv[2]||'web-mobile';
 if(!['web-mobile','wechatgame'].includes(platform))throw Error('unsupported platform');
-const evidence='evidence/v02';mkdirSync(evidence,{recursive:true});
+const evidence=process.env.YILU_EVIDENCE_DIR||'evidence/v02-s2';mkdirSync(evidence,{recursive:true});
 const config={name:'一路长歌',platform,buildPath:'project://build',outputName:platform,debug:false,startScene:'752d3aa0-8b82-4e8e-a6d4-c6587c90bcf2',scenes:[{url:'db://assets/scenes/Journey.scene',uuid:'752d3aa0-8b82-4e8e-a6d4-c6587c90bcf2'}],packages:{'web-mobile':{orientation:'portrait'},wechatgame:{appid:'touristappid',orientation:'portrait'}},sourceMaps:false};
 writeFileSync(`tools/build-${platform}.json`,JSON.stringify(config,null,2));
 const bin='/Applications/CocosCreator/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator';

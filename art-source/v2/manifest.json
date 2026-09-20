@@ -1,0 +1,100 @@
+{
+  "stage": "S2-A",
+  "approved": false,
+  "approvalRecord": null,
+  "tool": "built-in image_gen",
+  "sourceBaseline": "184f974c0498e39cf612de2127b0c76c33ec284a",
+  "assets": [
+    {
+      "file": "art-source/v2/hero-a-rig.png",
+      "sha256": "7d9d85ad6a5c378a66ca6fbfe4d05ecaf89ac0e91568d8819a9ef60384957a01",
+      "width": 1448,
+      "height": 1086,
+      "channels": 4,
+      "transparentPixels": 1199941,
+      "softAlphaPixels": 371459,
+      "opaquePixels": 1128,
+      "nearInvisiblePixels": 1223510,
+      "transparentFraction": 0.7630649501948455,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "candidate",
+      "approved": false,
+      "usedInRuntime": true,
+      "role": "rear layered rig, cloth + leader",
+      "runtime": "assets/resources/v2/hero-a-rig.png"
+    },
+    {
+      "file": "art-source/v2/hero-a-front-v2.png",
+      "sha256": "a6d6365019b84553f35d1a98b20a08372f81b44e3988528986e3fac0b42da179",
+      "width": 1226,
+      "height": 1283,
+      "channels": 4,
+      "transparentPixels": 772980,
+      "softAlphaPixels": 798567,
+      "opaquePixels": 1411,
+      "nearInvisiblePixels": 793454,
+      "transparentFraction": 0.49141807982158453,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "candidate",
+      "approved": false,
+      "usedInRuntime": false,
+      "role": "front reference v2, cloth + leader",
+      "runtime": null
+    }
+  ],
+  "rig": {
+    "source": "assets/scripts/HeroRig.ts",
+    "uvRects": "assets/scripts/HeroAtlas.ts",
+    "editableSource": "TypeScript node hierarchy and key poses + original PNG",
+    "logicalHeroHeight": 94,
+    "fixtureCopyHeight": 67,
+    "footPivot": [
+      0,
+      0
+    ],
+    "headIdentityShared": true,
+    "bowGrip": "bow is parented to foreL hand",
+    "walkCycleSeconds": 0.76,
+    "walkKeys": 6,
+    "shootCycleSeconds": 0.25,
+    "shootKeys": 4,
+    "shadows": "independent Graphics, no baked shadow",
+    "approval": "pending"
+  },
+  "history": [
+    {
+      "version": "candidate-1",
+      "change": "generated transparent rear rig and same-character front reference; retained untouched source"
+    },
+    {
+      "version": "candidate-1a",
+      "change": "corrected forearm UV gutter, expanded row spacing and clamped whole rows for edge readability"
+    },
+    {
+      "version": "candidate-1b",
+      "change": "promotion flag rises to the hand; arm reaches and holds the pole; five owned SFX channels replace untracked one-shot players"
+    },
+    {
+      "version": "front-reference-2",
+      "change": "correct anatomical left bow hand in front reference to match rear rig; original reference retained"
+    }
+  ],
+  "userFeedback": {
+    "date": "2026-09-20",
+    "quote": "你做的这个角色，我觉得没问题啊。但我实际看你测试的页面里，那个小人太丑了。",
+    "designDirectionApproved": true,
+    "inGameAppearanceApproved": false,
+    "scope": "Design direction accepted; full art and rig approval remain false. Improve actual game-scale characters and formation.",
+    "document": "docs/v02/s2/GPT_FEEDBACK.md"
+  }
+}

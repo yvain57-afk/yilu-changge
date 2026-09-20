@@ -1,0 +1,100 @@
+{
+  "stage": "S2-A",
+  "candidateApproved": false,
+  "scope": "candidate hero plus S1 placeholders; desktop Chrome only",
+  "ruleTests": 43,
+  "levelsUnchanged": true,
+  "soak": {
+    "passed": true,
+    "runs": 10,
+    "counts": [
+      88,
+      88,
+      88,
+      88,
+      88,
+      88,
+      88,
+      88,
+      88,
+      88
+    ],
+    "meanFPS": {
+      "min": 55.2252645358239,
+      "max": 59.996884612565765
+    },
+    "oneSecondFPS": {
+      "min": 41.31418453814432,
+      "max": 60.11629052992674
+    },
+    "endNodes": {
+      "min": 89,
+      "max": 89
+    },
+    "endPool": {
+      "min": 33,
+      "max": 33
+    },
+    "maxEffects": 3,
+    "maxDrawCalls": 18,
+    "gpuBufferBytes": {
+      "min": 51936768,
+      "max": 51936768
+    },
+    "gpuTextureBytes": {
+      "min": 8065284,
+      "max": 8065284
+    },
+    "jsHeapBytes": {
+      "min": 15090148,
+      "max": 39764832
+    },
+    "oldGpuBufferBytes": 160474504
+  },
+  "audio": {
+    "passed": true,
+    "playing": [
+      {
+        "state": "running",
+        "rms": 0.0038053442119327105
+      }
+    ],
+    "pausedAudio": [
+      {
+        "state": "running",
+        "rms": 0
+      }
+    ],
+    "resumed": [
+      {
+        "state": "running",
+        "rms": 0.007015397505883157
+      }
+    ],
+    "effectChannels": 5,
+    "checks": [
+      "actual-output-before-pause",
+      "silence-after-gather-pause",
+      "sprite-arrow-effects-time-frozen",
+      "resume-audio-progress",
+      "restart-no-stale-sfx",
+      "leave-clears-effects",
+      "preview-pause-freezes-rig"
+    ],
+    "errors": []
+  },
+  "bounds": true,
+  "alpha": true,
+  "webBuild": true,
+  "wechatBuild": true,
+  "wechatDeviceVerified": false,
+  "pushed": false,
+  "failure": {
+    "passed": true,
+    "seconds": 84.61666666666315,
+    "count": 0,
+    "effects": 0,
+    "playingEffects": []
+  },
+  "reviewURL": "http://127.0.0.1:43187/review/s2/"
+}

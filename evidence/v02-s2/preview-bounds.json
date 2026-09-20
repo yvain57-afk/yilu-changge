@@ -1,0 +1,312 @@
+{
+  "passed": true,
+  "method": "Actual Cocos UITransform world bounding boxes of all active limb/bow/flag Sprite parts, not center points; shared shadows checked separately visually. Adjacent-row overlap is intentional depth layering.",
+  "metrics": [
+    {
+      "count": 8,
+      "x": 0,
+      "pose": "idle",
+      "visible": 8,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 211.65329643406935,
+      "right": 489.0326174393696
+    },
+    {
+      "count": 8,
+      "x": 0,
+      "pose": "walk",
+      "visible": 8,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 211.65329643406935,
+      "right": 489.0326174393696
+    },
+    {
+      "count": 8,
+      "x": 0,
+      "pose": "shoot",
+      "visible": 8,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 211.65329643406935,
+      "right": 488.3552937489788
+    },
+    {
+      "count": 8,
+      "x": 0,
+      "pose": "promote",
+      "visible": 8,
+      "maxSameRowOverlapDesignPx": 2.8217035659306475,
+      "left": 211.65329643406935,
+      "right": 502.475
+    },
+    {
+      "count": 1,
+      "x": -0.91,
+      "pose": "walk",
+      "visible": 1,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 92.04790842988837,
+      "right": 144.490537900011
+    },
+    {
+      "count": 1,
+      "x": 0,
+      "pose": "walk",
+      "visible": 1,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 328.6479084298883,
+      "right": 381.09053790001104
+    },
+    {
+      "count": 1,
+      "x": 0.91,
+      "pose": "walk",
+      "visible": 1,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 565.2479084298884,
+      "right": 617.690537900011
+    },
+    {
+      "count": 8,
+      "x": -0.91,
+      "pose": "walk",
+      "visible": 8,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 27.653296434069347,
+      "right": 305.0326174393696
+    },
+    {
+      "count": 8,
+      "x": 0,
+      "pose": "walk",
+      "visible": 8,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 211.65329643406935,
+      "right": 489.0326174393696
+    },
+    {
+      "count": 8,
+      "x": 0.91,
+      "pose": "walk",
+      "visible": 8,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 407.6532964340694,
+      "right": 685.0326174393696
+    },
+    {
+      "count": 24,
+      "x": -0.91,
+      "pose": "walk",
+      "visible": 24,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 27.653296434069347,
+      "right": 305.0326174393696
+    },
+    {
+      "count": 24,
+      "x": 0,
+      "pose": "walk",
+      "visible": 24,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 211.65329643406935,
+      "right": 501.0326174393696
+    },
+    {
+      "count": 24,
+      "x": 0.91,
+      "pose": "walk",
+      "visible": 24,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 407.6532964340694,
+      "right": 685.0326174393696
+    },
+    {
+      "count": 48,
+      "x": -0.91,
+      "pose": "walk",
+      "visible": 48,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 27.653296434069347,
+      "right": 305.0326174393696
+    },
+    {
+      "count": 48,
+      "x": 0,
+      "pose": "walk",
+      "visible": 48,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 211.65329643406935,
+      "right": 501.0326174393696
+    },
+    {
+      "count": 48,
+      "x": 0.91,
+      "pose": "walk",
+      "visible": 48,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 407.6532964340694,
+      "right": 685.0326174393696
+    },
+    {
+      "count": 256,
+      "x": -0.91,
+      "pose": "walk",
+      "visible": 48,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 27.653296434069347,
+      "right": 305.0326174393696
+    },
+    {
+      "count": 256,
+      "x": 0,
+      "pose": "walk",
+      "visible": 48,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 211.65329643406935,
+      "right": 501.0326174393696
+    },
+    {
+      "count": 256,
+      "x": 0.91,
+      "pose": "walk",
+      "visible": 48,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 407.6532964340694,
+      "right": 685.0326174393696
+    },
+    {
+      "count": 1,
+      "x": -0.91,
+      "pose": "walk",
+      "visible": 1,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 92.04790842988837,
+      "right": 144.490537900011
+    },
+    {
+      "count": 1,
+      "x": 0,
+      "pose": "walk",
+      "visible": 1,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 328.6479084298883,
+      "right": 381.09053790001104
+    },
+    {
+      "count": 1,
+      "x": 0.91,
+      "pose": "walk",
+      "visible": 1,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 565.2479084298884,
+      "right": 617.690537900011
+    },
+    {
+      "count": 8,
+      "x": -0.91,
+      "pose": "walk",
+      "visible": 8,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 27.653296434069347,
+      "right": 305.0326174393696
+    },
+    {
+      "count": 8,
+      "x": 0,
+      "pose": "walk",
+      "visible": 8,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 211.65329643406935,
+      "right": 489.0326174393696
+    },
+    {
+      "count": 8,
+      "x": 0.91,
+      "pose": "walk",
+      "visible": 8,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 407.6532964340694,
+      "right": 685.0326174393696
+    },
+    {
+      "count": 24,
+      "x": -0.91,
+      "pose": "walk",
+      "visible": 24,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 27.653296434069347,
+      "right": 305.0326174393696
+    },
+    {
+      "count": 24,
+      "x": 0,
+      "pose": "walk",
+      "visible": 24,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 211.65329643406935,
+      "right": 501.0326174393696
+    },
+    {
+      "count": 24,
+      "x": 0.91,
+      "pose": "walk",
+      "visible": 24,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 407.6532964340694,
+      "right": 685.0326174393696
+    },
+    {
+      "count": 48,
+      "x": -0.91,
+      "pose": "walk",
+      "visible": 48,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 27.653296434069347,
+      "right": 305.0326174393696
+    },
+    {
+      "count": 48,
+      "x": 0,
+      "pose": "walk",
+      "visible": 48,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 211.65329643406935,
+      "right": 501.0326174393696
+    },
+    {
+      "count": 48,
+      "x": 0.91,
+      "pose": "walk",
+      "visible": 48,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 407.6532964340694,
+      "right": 685.0326174393696
+    },
+    {
+      "count": 256,
+      "x": -0.91,
+      "pose": "walk",
+      "visible": 48,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 27.653296434069347,
+      "right": 305.0326174393696
+    },
+    {
+      "count": 256,
+      "x": 0,
+      "pose": "walk",
+      "visible": 48,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 211.65329643406935,
+      "right": 501.0326174393696
+    },
+    {
+      "count": 256,
+      "x": 0.91,
+      "pose": "walk",
+      "visible": 48,
+      "maxSameRowOverlapDesignPx": 0,
+      "left": 407.6532964340694,
+      "right": 685.0326174393696
+    }
+  ]
+}

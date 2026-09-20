@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "native-background-pause-explicit-resume",
+    "legacy-settings-only",
+    "settings-persist-legacy-untouched",
+    "restart-five-390",
+    "restart-five-360"
+  ],
+  "errors": []
+}
