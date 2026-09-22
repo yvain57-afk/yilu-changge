@@ -1,0 +1,32 @@
+{
+  "assets/scripts/Game.ts": {
+    "actual": "209dddc9aae39505cc117427ccb4a99c3c48af81a27f0311f93b88b81ced2716",
+    "manifest": "209dddc9aae39505cc117427ccb4a99c3c48af81a27f0311f93b88b81ced2716",
+    "matches": true
+  },
+  "assets/scripts/BattleView.ts": {
+    "actual": "fa1ac03634fb9bab45e9d105bfb6c546ce35146e5e94c09ddeea22252f1984f5",
+    "manifest": "fa1ac03634fb9bab45e9d105bfb6c546ce35146e5e94c09ddeea22252f1984f5",
+    "matches": true
+  },
+  "assets/scripts/core/model.ts": {
+    "actual": "32d7c20b4f2751bb9623ff4fa872dc3f470f19ff215c83042e61fbbd7bea6180",
+    "manifest": "32d7c20b4f2751bb9623ff4fa872dc3f470f19ff215c83042e61fbbd7bea6180",
+    "matches": true
+  },
+  "assets/scripts/core/growth.ts": {
+    "actual": "037a140bbd736c3190b538440608c43cc93a19203df54f375db88cbd983218b5",
+    "manifest": "037a140bbd736c3190b538440608c43cc93a19203df54f375db88cbd983218b5",
+    "matches": true
+  },
+  "assets/scripts/core/levels.ts": {
+    "actual": "7952c5ff4ba4b2937b594641dddf76d7add77517a746a2c4c2d2a191353c0890",
+    "manifest": "7952c5ff4ba4b2937b594641dddf76d7add77517a746a2c4c2d2a191353c0890",
+    "matches": true
+  },
+  "assets/scripts/core/weapons.ts": {
+    "actual": "d6c4e6844e9ff9ab6b2d4369dff453b43b58eb24e42faf3d5a67f612e422c6cd",
+    "manifest": "d6c4e6844e9ff9ab6b2d4369dff453b43b58eb24e42faf3d5a67f612e422c6cd",
+    "matches": true
+  }
+}

@@ -1,0 +1,4 @@
+
+> yilu-changge@0.5.1-rc1 typecheck
+> node tools/run-local.mjs tsc --noEmit -p tsconfig.json
+

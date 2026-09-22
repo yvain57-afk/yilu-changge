@@ -1,0 +1,114 @@
+{
+  "version": "v05-rc1",
+  "sourceHash": "b15cc37c05471e9524c8bb41bb5c70e9f6e3753c0623738e1b5737bac53f6a51",
+  "webHash": "a73b1c74856ac3e44ccb6ba0f795620f4207e04d2c7165cef80700567a7ab9d5",
+  "modelTests": {
+    "passed": 89,
+    "failed": 0,
+    "log": "check-fast.log"
+  },
+  "typecheck": {
+    "passed": true,
+    "log": "typecheck-final.log"
+  },
+  "webBuild": {
+    "platform": "web-mobile",
+    "exitCode": 36,
+    "success": true,
+    "date": "2026-09-22T14:02:12.760Z",
+    "bin": "/Applications/CocosCreator/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator",
+    "args": [
+      "--project",
+      "/Users/yvainair/Code/游戏-左右滑古代史",
+      "--build",
+      "configPath=/Users/yvainair/Code/游戏-左右滑古代史/tools/build-web-mobile.json"
+    ]
+  },
+  "synthetic": {
+    "passed": true,
+    "viewports": [
+      [
+        360,
+        780
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "densitySeconds": 18.00000000000026,
+    "performance": {
+      "p99": 17.699999999999818,
+      "over33ms": 0
+    },
+    "notes": "fixture-note.md"
+  },
+  "natural": {
+    "passed": true,
+    "runs": [
+      {
+        "level": 1,
+        "elapsed": 55.566666666664794,
+        "count": 88,
+        "weapon": "spear",
+        "companion": null,
+        "tier": 3,
+        "upgradeRewards": [
+          1,
+          3
+        ]
+      },
+      {
+        "level": 2,
+        "elapsed": 68.06666666666409,
+        "count": 204,
+        "weapon": "blade",
+        "companion": "xing_daorong",
+        "tier": 3,
+        "upgradeRewards": [
+          1,
+          4
+        ]
+      },
+      {
+        "level": 3,
+        "elapsed": 86.31666666666305,
+        "count": 256,
+        "weapon": "spear",
+        "companion": "chen_ying",
+        "tier": 3,
+        "upgradeRewards": [
+          1,
+          4
+        ]
+      }
+    ],
+    "recording": "three-levels-live-audio.mp4",
+    "seconds": "228.666667",
+    "liveSFX": {
+      "peak": 0.05900580220256291,
+      "audibleSamples": 1173,
+      "samples": 4572
+    },
+    "bgm": false,
+    "mutatedModel": false
+  },
+  "zhaoReplay": {
+    "passed": true,
+    "elapsed": 7.1666666666666465,
+    "companionHits": 2,
+    "recording": "zhao-real-replay.mp4"
+  },
+  "launchChecked": true,
+  "wechat": {
+    "checkedAt": "2026-09-22",
+    "devToolsLoginReady": true,
+    "skillVersion": "0.3.9",
+    "localGameTestAppIdMatchesPrior": true,
+    "wechatBuild": "prior v04; not rebuilt for v05",
+    "v05Uploaded": false,
+    "v05DeviceAccepted": false
+  },
+  "userVisualAcceptance": "pending user playtest",
+  "githubPushed": false
+}

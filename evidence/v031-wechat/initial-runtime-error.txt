@@ -1,0 +1,5 @@
+WeChat DevTools 2.02.2608060 / base library 3.17.3
+Test account assigned using the UI 测试号 link.
+Initial startup failed: ReferenceError: MiniProgramError URLSearchParams is not defined
+Game.ts start() and loadAssets() used URLSearchParams after checking only location.
+Other initial logs: jsbridge not ready; first-run missing gamecaches/cacheList.json.

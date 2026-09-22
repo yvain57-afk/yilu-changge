@@ -1,0 +1,27 @@
+{
+  "version": "v051-rc1",
+  "success": true,
+  "generatedAt": "2026-09-22T16:23:58.562359+00:00",
+  "identity": "existing local mini-game test AppID preserved",
+  "qrFile": "preview-qr.png (local only)",
+  "scope": "preview only; no review/release",
+  "deviceAcceptance": "awaiting user scan and feedback",
+  "sourcePackageBytes": 20828198,
+  "serverAcceptedSize": {
+    "total": 20803961,
+    "packages": [
+      {
+        "name": "TOTAL",
+        "size": 20803961
+      },
+      {
+        "name": "main",
+        "size": 1887816
+      },
+      {
+        "name": "/subpackages/resources/",
+        "size": 18916145
+      }
+    ]
+  }
+}

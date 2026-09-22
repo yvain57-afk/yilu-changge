@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "tool": "get_simulator_console",
+  "clientName": "Codex",
+  "result": [
+    "[error]",
+    "[jsbridge] invoke getSystemInfo fail: jsbridge not ready.",
+    "[String] Error: jsbridge not ready\n    at Object.invoke (http://127.0.0.1:48954/__dev__/WAGame.js:1:135629)\n    at d (http://127.0.0.1:48954/__dev__/WAGame.js:1:798188)\n    at http://127.0.0.1:48954/__dev__/WAGame.js:1:804143\n    at se (http://127.0.0.1:48954/__dev__/WAGame.js:1:804294)\n    at http://127.0.0.1:48954/__dev__/WAGame.js:1:510214\n    at x (http://127.0.0.1:48954/__dev__/WAGame.js:1:510282)\n    at http://127.0.0.1:48954/__dev__/WAGame.js:1:833158\n    at b (http://127.0.0.1:48954/__dev__/WAGam... (length=658)"
+  ]
+}

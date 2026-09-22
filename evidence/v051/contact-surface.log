@@ -1,0 +1,229 @@
+TAP version 13
+# {"solo":"trial-01","seconds":91.9833333333294,"hits":130}
+# {"solo":"trial-02","seconds":241.38333333341757,"hits":360}
+# {"solo":"trial-03","seconds":379.9833333333164,"hits":520}
+# Subtest: one spear and N-1 archers; frozen 256-count damage; no new arrows at one
+ok 1 - one spear and N-1 archers; frozen 256-count damage; no new arrows at one
+  ---
+  duration_ms: 2.528542
+  type: 'test'
+  ...
+# Subtest: 10/5/21 spear phases, one hit per ID and real damage, no projectile ID
+ok 2 - 10/5/21 spear phases, one hit per ID and real damage, no projectile ID
+  ---
+  duration_ms: 0.645375
+  type: 'test'
+  ...
+# Subtest: live spear follows lateral input; misses do not damage; nearest stable ID rock blocks
+ok 3 - live spear follows lateral input; misses do not damage; nearest stable ID rock blocks
+  ---
+  duration_ms: 0.360917
+  type: 'test'
+  ...
+# Subtest: full half-side gate wood hit, gate arithmetic unchanged
+ok 4 - full half-side gate wood hit, gate arithmetic unchanged
+  ---
+  duration_ms: 0.224583
+  type: 'test'
+  ...
+# Subtest: same-tick melee kill precedes contact and boss win precedes hostile impact
+ok 5 - same-tick melee kill precedes contact and boss win precedes hostile impact
+  ---
+  duration_ms: 0.260959
+  type: 'test'
+  ...
+# Subtest: boss approach takes 60 ticks, arrow swept relative collision, first warning at tick120
+ok 6 - boss approach takes 60 ticks, arrow swept relative collision, first warning at tick120
+  ---
+  duration_ms: 0.384042
+  type: 'test'
+  ...
+# Subtest: pause freezes melee / boss / warnings and dispose clears phase
+ok 7 - pause freezes melee / boss / warnings and dispose clears phase
+  ---
+  duration_ms: 0.578875
+  type: 'test'
+  ...
+# Subtest: opening 901 receives an actual spear/wave hit on default center before first gate
+ok 8 - opening 901 receives an actual spear/wave hit on default center before first gate
+  ---
+  duration_ms: 0.687083
+  type: 'test'
+  ...
+# Subtest: trial-01: sole hero wins boss using legal lateral movement, no reinforcement
+ok 9 - trial-01: sole hero wins boss using legal lateral movement, no reinforcement
+  ---
+  duration_ms: 14.597916
+  type: 'test'
+  ...
+# Subtest: trial-02: sole hero wins boss using legal lateral movement, no reinforcement
+ok 10 - trial-02: sole hero wins boss using legal lateral movement, no reinforcement
+  ---
+  duration_ms: 13.65875
+  type: 'test'
+  ...
+# Subtest: trial-03: sole hero wins boss using legal lateral movement, no reinforcement
+ok 11 - trial-03: sole hero wins boss using legal lateral movement, no reinforcement
+  ---
+  duration_ms: 10.286917
+  type: 'test'
+  ...
+# Subtest: old base saves migrate idempotently; achievements/settings unmodified
+ok 12 - old base saves migrate idempotently; achievements/settings unmodified
+  ---
+  duration_ms: 0.505834
+  type: 'test'
+  ...
+# Subtest: pending survives reload; cannot complete locked transition; repeat does not reward
+ok 13 - pending survives reload; cannot complete locked transition; repeat does not reward
+  ---
+  duration_ms: 0.195
+  type: 'test'
+  ...
+# Subtest: corrupt sidecar recovers from base, failed storage allows progress and meeting
+ok 14 - corrupt sidecar recovers from base, failed storage allows progress and meeting
+  ---
+  duration_ms: 0.137459
+  type: 'test'
+  ...
+# Subtest: near and swept wave share unique attack ledger, tier three hits at most two
+ok 15 - near and swept wave share unique attack ledger, tier three hits at most two
+  ---
+  duration_ms: 2.374375
+  type: 'test'
+  ...
+# Subtest: rock always blocks; surviving wood blocks; killed wood only passes with spare budget
+ok 16 - rock always blocks; surviving wood blocks; killed wood only passes with spare budget
+  ---
+  duration_ms: 0.313834
+  type: 'test'
+  ...
+# Subtest: weapon, tier, damage and lane frozen per attack; upgrade cannot retrofit wave
+ok 17 - weapon, tier, damage and lane frozen per attack; upgrade cannot retrofit wave
+  ---
+  duration_ms: 0.144
+  type: 'test'
+  ...
+# Subtest: two fixed unique elite kills count once in reverse order, bypass does not upgrade
+ok 18 - two fixed unique elite kills count once in reverse order, bypass does not upgrade
+  ---
+  duration_ms: 0.404833
+  type: 'test'
+  ...
+# Subtest: awakening begins on actual hero boss hit, does not retrofit trigger, freezes paused, expires once
+ok 19 - awakening begins on actual hero boss hit, does not retrofit trigger, freezes paused, expires once
+  ---
+  duration_ms: 1.178667
+  type: 'test'
+  ...
+# Subtest: N includes companion, bow sources exclude both leaders, one troop stops new ally and bow attacks
+ok 20 - N includes companion, bow sources exclude both leaders, one troop stops new ally and bow attacks
+  ---
+  duration_ms: 0.567875
+  type: 'test'
+  ...
+# Subtest: matching boss stands ally down for that run, selection survives; companion DPS = 20%
+ok 21 - matching boss stands ally down for that run, selection survives; companion DPS = 20%
+  ---
+  duration_ms: 0.060042
+  type: 'test'
+  ...
+# Subtest: all boss attacks lock direction and hurt only at physical arrival, lateral dodge works
+ok 22 - all boss attacks lock direction and hurt only at physical arrival, lateral dodge works
+  ---
+  duration_ms: 6.221083
+  type: 'test'
+  ...
+# Subtest: wave lifetime/cadence has bounded pools without dropping active projectiles; clear on exit
+ok 23 - wave lifetime/cadence has bounded pools without dropping active projectiles; clear on exit
+  ---
+  duration_ms: 14.031125
+  type: 'test'
+  ...
+# Subtest: legacy clears backfill rewards idempotently, selection and unknown save fields survive reload
+ok 24 - legacy clears backfill rewards idempotently, selection and unknown save fields survive reload
+  ---
+  duration_ms: 0.677959
+  type: 'test'
+  ...
+# Subtest: storage failure does not prevent current-session rewards or equipment
+ok 25 - storage failure does not prevent current-session rewards or equipment
+  ---
+  duration_ms: 0.081916
+  type: 'test'
+  ...
+# Subtest: v051 blade reaches Boss 1 by MELEE, not only wave
+ok 26 - v051 blade reaches Boss 1 by MELEE, not only wave
+  ---
+  duration_ms: 4.450125
+  type: 'test'
+  ...
+# Subtest: v051 blade reaches Boss 2 by MELEE, not only wave
+ok 27 - v051 blade reaches Boss 2 by MELEE, not only wave
+  ---
+  duration_ms: 1.585833
+  type: 'test'
+  ...
+# Subtest: v051 blade reaches Boss 3 by MELEE, not only wave
+ok 28 - v051 blade reaches Boss 3 by MELEE, not only wave
+  ---
+  duration_ms: 1.07425
+  type: 'test'
+  ...
+# Subtest: v051 xing_daorong can physically contact the second Boss
+ok 29 - v051 xing_daorong can physically contact the second Boss
+  ---
+  duration_ms: 1.496083
+  type: 'test'
+  ...
+# Subtest: v051 zhao_yun_guest can physically contact the second Boss
+ok 30 - v051 zhao_yun_guest can physically contact the second Boss
+  ---
+  duration_ms: 2.483041
+  type: 'test'
+  ...
+# Subtest: v051 off-axis blade misses; do not globally widen the arena to pass
+ok 31 - v051 off-axis blade misses; do not globally widen the arena to pass
+  ---
+  duration_ms: 1.288875
+  type: 'test'
+  ...
+# Subtest: v051 contact and wave retain one per-source per-attack target ledger
+ok 32 - v051 contact and wave retain one per-source per-attack target ledger
+  ---
+  duration_ms: 1.5245
+  type: 'test'
+  ...
+# Subtest: v051 pause still freezes approach, contact cycle and traveling waves
+ok 33 - v051 pause still freezes approach, contact cycle and traveling waves
+  ---
+  duration_ms: 1.787583
+  type: 'test'
+  ...
+# Subtest: rigid weapon keeps length across phase, motion and Boss distance; feet move with companion origin
+ok 34 - rigid weapon keeps length across phase, motion and Boss distance; feet move with companion origin
+  ---
+  duration_ms: 4.914375
+  type: 'test'
+  ...
+# Subtest: actual damage aggregates by source and never counts overkill
+ok 35 - actual damage aggregates by source and never counts overkill
+  ---
+  duration_ms: 0.528458
+  type: 'test'
+  ...
+# Subtest: growth is not overwritten by recruitment; danger wins; expired notices clear
+ok 36 - growth is not overwritten by recruitment; danger wins; expired notices clear
+  ---
+  duration_ms: 0.076334
+  type: 'test'
+  ...
+1..36
+# tests 36
+# suites 0
+# pass 36
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 214.483041

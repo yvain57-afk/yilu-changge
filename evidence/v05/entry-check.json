@@ -1,0 +1,47 @@
+[
+  {
+    "path": "/__yilu_health",
+    "status": 200,
+    "contentType": "application/json"
+  },
+  {
+    "path": "/play/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/review/v05/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/review/v05/GPT_REVIEW.md",
+    "status": 200,
+    "contentType": "text/plain; charset=utf-8"
+  },
+  {
+    "path": "/evidence/v05/checks.json",
+    "status": 200,
+    "contentType": "application/json"
+  },
+  {
+    "path": "/evidence/v05/three-levels-live-audio.mp4",
+    "status": 200,
+    "contentType": "video/mp4"
+  },
+  {
+    "path": "/evidence/v05/zhao-real-replay.mp4",
+    "status": 200,
+    "contentType": "video/mp4"
+  },
+  {
+    "path": "/evidence/v04/final-boss1-360.png",
+    "status": 200,
+    "contentType": "image/png"
+  },
+  {
+    "path": "/evidence/v04/final-boss2-390.png",
+    "status": 200,
+    "contentType": "image/png"
+  }
+]

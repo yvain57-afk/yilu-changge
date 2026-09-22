@@ -1,0 +1,31 @@
+import{open,steer}from'./browser-v03-common.mjs';import assert from'node:assert/strict';import{writeFileSync}from'node:fs';
+const root='evidence/v04',t=await open('v04-delivery',390,844,{audio:true,version:'v04-rc1'}),runs=[],timeline=[];let report={passed:false},start=0;
+const snap=t.snap,mark=(type,level)=>timeline.push({type,level,seconds:(Date.now()-start)/1000});
+try{
+ await t.p.evaluate(()=>{localStorage.removeItem('yilu-changge-prototype-v2');localStorage.removeItem('yilu-changge-campaign-v04');});await t.p.reload();await t.ready();assert.equal((await snap()).rank,'无名小卒');
+ await t.tap('settings');await t.p.waitForFunction(()=>globalThis.__YLCG__.snapshot().audio.musicReady);await t.tap('return');
+ const capture=await t.p.evaluate(()=>{const canvas=document.querySelector('canvas'),bus=Array.from(globalThis.__audioCapture.buses.values())[0],stream=canvas.captureStream(30);for(const a of bus.stream.getAudioTracks())stream.addTrack(a);const src=bus.context.createMediaStreamSource(bus.stream),analyser=bus.context.createAnalyser();src.connect(analyser);globalThis.__captureAnalyser=analyser;const chunks=[],rec=new MediaRecorder(stream,{mimeType:'video/webm;codecs=vp9,opus',videoBitsPerSecond:2800000});globalThis.__recording={rec,chunks};rec.ondataavailable=e=>chunks.push(e.data);rec.start(1000);return{audioTracks:stream.getAudioTracks().length,mime:rec.mimeType};});assert.equal(capture.audioTracks,1);start=Date.now();await t.p.screenshot({path:root+'/home-final-390.png'});await t.tap('start');
+ let pauseChecked=false;
+ for(let i=0;i<3;i++){
+  const initial=await snap();assert.equal(initial.screen,'battle');assert.equal(initial.level,i);assert.equal(initial.journey.count,[8,12,16][i]);mark('battle-start',i+1);let savedBeforeResult=false,lastLog=0;const frames=[],samples=[];let bossShot=false,meleeShot=false,volleyShot=false;
+  while((await snap()).screen==='battle'){
+   const s=await snap(),j=s.journey;
+   if(j.phase==='won'){assert.equal(s.save.cleared['trial-0'+(i+1)],true);savedBeforeResult=true;}
+   // Same legal touch controller as previous deliveries; first 3 seconds remain
+   // centered so the natural default approach demonstrates the added spear foe.
+   const x=i===0&&j.elapsed<3?0:steer(j);await t.target(x);
+   if(!meleeShot&&i===0&&s.combatStats.meleeHits>0){mark('opening-melee',1);await t.p.screenshot({path:root+'/natural-opening-melee.png'});meleeShot=true;}
+   if(!volleyShot&&j.count>=48){await t.p.screenshot({path:`${root}/natural-volley${i+1}.png`});volleyShot=true;}
+   if(!bossShot&&j.phase==='boss'&&j.bossDepth<1){mark('boss-engaged',i+1);await t.p.screenshot({path:`${root}/natural-boss${i+1}.png`});bossShot=true;}
+   if(!pauseChecked&&i===0&&j.elapsed>12){await t.release();await t.tap('pause');const frozen=await snap();const rms=async()=>t.p.evaluate(()=>{const a=globalThis.__captureAnalyser,b=new Float32Array(a.fftSize);a.getFloatTimeDomainData(b);return Math.sqrt(b.reduce((n,x)=>n+x*x,0)/b.length);});await t.p.waitForTimeout(400);assert.equal((await snap()).journey.elapsed,frozen.journey.elapsed);assert.ok(await rms()<.000001);await t.tap('continue');await t.p.waitForTimeout(200);assert.ok(await rms()>.000001);pauseChecked=true;}
+   if(j.elapsed>lastLog+20){lastLog=j.elapsed;console.log(`level${i+1}: ${j.elapsed.toFixed(1)}s, ${j.count} troops, melee ${s.combatStats.meleeHits}`);samples.push({elapsed:j.elapsed,fps:s.fps,count:j.count,...await t.metrics()});}
+   assert.ok(Date.now()-start<360000,'bounded single three-level capture');await t.p.waitForTimeout(55);
+  }
+  await t.release();const end=await snap();assert.equal(end.journey.phase,'won');assert.ok(savedBeforeResult);assert.ok(end.combatStats.meleeHits>0);assert.equal(end.rank,['领队','统领','白石驻将'][i]);assert.ok(end.buttons.some(b=>b.id==='transition'));runs.push({level:i+1,elapsed:end.journey.elapsed,count:end.journey.count,combat:end.combatStats,savedBeforeResult,samples,meanFPS:end.meanFPS});mark('victory',i+1);await t.p.screenshot({path:`${root}/natural-result${i+1}.png`});await t.p.waitForTimeout(700);await t.tap('transition');await t.p.waitForTimeout(800);mark('transition',i+1);await t.p.screenshot({path:`${root}/natural-transition${i+1}.png`});
+  // One drag only, no second confirmation. Transition animation is part of capture.
+  const from=await t.pos(-215,-105),to=await t.pos(0,-170);await t.cd.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:from.x,y:from.y,id:7}]});for(let q=1;q<=12;q++){await t.cd.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:from.x+(to.x-from.x)*q/12,y:from.y+(to.y-from.y)*q/12,id:7}]});await t.p.waitForTimeout(35);}await t.cd.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});assert.equal((await snap()).transition.done,true);await t.p.waitForTimeout(1400);
+ }
+ assert.equal((await snap()).screen,'meeting');mark('zhaoyun',3);await t.p.screenshot({path:root+'/natural-meeting.png'});await t.p.waitForTimeout(2400);await t.tap('return-camp');await t.p.screenshot({path:root+'/natural-camp.png'});await t.p.waitForTimeout(1200);mark('end',3);
+ const base64=await t.p.evaluate(async()=>{const{rec,chunks}=globalThis.__recording;await new Promise(r=>{rec.onstop=r;rec.stop();});const a=new Uint8Array(await new Blob(chunks).arrayBuffer());let s='';for(let i=0;i<a.length;i+=32768)s+=String.fromCharCode(...a.subarray(i,i+32768));return btoa(s);});writeFileSync(root+'/three-levels-live-audio.webm',Buffer.from(base64,'base64'));
+ const saved=await snap();await t.p.reload();await t.ready();assert.deepEqual((await snap()).save,saved.save);assert.deepEqual((await snap()).campaign,saved.campaign);await t.tap('start');assert.equal((await snap()).screen,'camp');assert.deepEqual(t.errors,[]);report={passed:true,version:'v04-rc1',scope:'one continuous natural real-input three-level run, no model mutation, one realtime live audio recording; reload verified after capture',capture,pauseChecked,timeline,runs,errors:t.errors};
+}catch(e){report.error=String(e);report.runs=runs;report.timeline=timeline;report.errors=t.errors;process.exitCode=1;console.error(e);}finally{writeFileSync(root+'/delivery.json',JSON.stringify(report,null,2));await t.c.close();console.log(JSON.stringify({passed:report.passed,error:report.error,runs:runs.map(r=>({elapsed:r.elapsed,count:r.count,melee:r.combat.meleeHits}))}));}

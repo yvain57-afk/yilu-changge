@@ -1,0 +1,252 @@
+{
+  "passed": true,
+  "version": "v04-rc1",
+  "scope": "one continuous natural real-input three-level run, no model mutation, one realtime live audio recording; reload verified after capture",
+  "capture": {
+    "audioTracks": 1,
+    "mime": "video/webm;codecs=vp9,opus"
+  },
+  "pauseChecked": true,
+  "timeline": [
+    {
+      "type": "battle-start",
+      "level": 1,
+      "seconds": 0.731
+    },
+    {
+      "type": "opening-melee",
+      "level": 1,
+      "seconds": 2.614
+    },
+    {
+      "type": "boss-engaged",
+      "level": 1,
+      "seconds": 44.246
+    },
+    {
+      "type": "victory",
+      "level": 1,
+      "seconds": 58.227
+    },
+    {
+      "type": "transition",
+      "level": 1,
+      "seconds": 59.923
+    },
+    {
+      "type": "battle-start",
+      "level": 2,
+      "seconds": 62.255
+    },
+    {
+      "type": "boss-engaged",
+      "level": 2,
+      "seconds": 117.091
+    },
+    {
+      "type": "victory",
+      "level": 2,
+      "seconds": 128.842
+    },
+    {
+      "type": "transition",
+      "level": 2,
+      "seconds": 130.531
+    },
+    {
+      "type": "battle-start",
+      "level": 3,
+      "seconds": 132.836
+    },
+    {
+      "type": "boss-engaged",
+      "level": 3,
+      "seconds": 199.633
+    },
+    {
+      "type": "victory",
+      "level": 3,
+      "seconds": 214.209
+    },
+    {
+      "type": "transition",
+      "level": 3,
+      "seconds": 215.898
+    },
+    {
+      "type": "zhaoyun",
+      "level": 3,
+      "seconds": 218.203
+    },
+    {
+      "type": "end",
+      "level": 3,
+      "seconds": 222.059
+    }
+  ],
+  "runs": [
+    {
+      "level": 1,
+      "elapsed": 56.31666666666475,
+      "count": 88,
+      "combat": {
+        "meleeHits": 16,
+        "meleeDamage": 77.8,
+        "volleys": 226,
+        "lastMelee": {
+          "kind": "meleeHit",
+          "x": 1.1102230246251565e-16,
+          "amount": 5,
+          "targetId": "boss",
+          "worldZ": 42.9,
+          "sourceId": "hero",
+          "attackId": 17,
+          "simulationTick": 3359
+        }
+      },
+      "savedBeforeResult": true,
+      "samples": [
+        {
+          "elapsed": 20.06666666666681,
+          "fps": 59.99803285208542,
+          "count": 44,
+          "drawCalls": 21,
+          "triangles": 2380,
+          "gpuBuffers": 33073720,
+          "gpuTextures": 57323700,
+          "jsHeap": 20334660
+        },
+        {
+          "elapsed": 40.08333333333234,
+          "fps": 60.00393468283435,
+          "count": 88,
+          "drawCalls": 19,
+          "triangles": 2376,
+          "gpuBuffers": 42513032,
+          "gpuTextures": 57424712,
+          "jsHeap": 59708248
+        }
+      ],
+      "meanFPS": 59.999157906605475
+    },
+    {
+      "level": 2,
+      "elapsed": 66.0666666666642,
+      "count": 204,
+      "combat": {
+        "meleeHits": 19,
+        "meleeDamage": 95,
+        "volleys": 265,
+        "lastMelee": {
+          "kind": "meleeHit",
+          "x": -4.2700889634779806e-17,
+          "amount": 5,
+          "targetId": "boss",
+          "worldZ": 54.9,
+          "sourceId": "hero",
+          "attackId": 20,
+          "simulationTick": 3946
+        }
+      },
+      "savedBeforeResult": true,
+      "samples": [
+        {
+          "elapsed": 20.06666666666681,
+          "fps": 60.00393468283436,
+          "count": 56,
+          "drawCalls": 18,
+          "triangles": 2491,
+          "gpuBuffers": 51951252,
+          "gpuTextures": 57486288,
+          "jsHeap": 63202816
+        },
+        {
+          "elapsed": 40.13333333333234,
+          "fps": 60.01574183533146,
+          "count": 102,
+          "drawCalls": 24,
+          "triangles": 2416,
+          "gpuBuffers": 59030280,
+          "gpuTextures": 57631520,
+          "jsHeap": 50485776
+        },
+        {
+          "elapsed": 60.199999999997864,
+          "fps": 59.994000602085364,
+          "count": 204,
+          "drawCalls": 19,
+          "triangles": 1959,
+          "gpuBuffers": 61389796,
+          "gpuTextures": 57649212,
+          "jsHeap": 47325428
+        }
+      ],
+      "meanFPS": 60.00023964151747
+    },
+    {
+      "level": 3,
+      "elapsed": 80.81666666666337,
+      "count": 256,
+      "combat": {
+        "meleeHits": 23,
+        "meleeDamage": 115,
+        "volleys": 324,
+        "lastMelee": {
+          "kind": "meleeHit",
+          "x": -2.220446049250313e-16,
+          "amount": 5,
+          "targetId": "boss",
+          "worldZ": 66.9,
+          "sourceId": "hero",
+          "attackId": 23,
+          "simulationTick": 4830
+        }
+      },
+      "savedBeforeResult": true,
+      "samples": [
+        {
+          "elapsed": 20.000000000000146,
+          "fps": 59.998032848567995,
+          "count": 34,
+          "drawCalls": 20,
+          "triangles": 2062,
+          "gpuBuffers": 61389796,
+          "gpuTextures": 57650096,
+          "jsHeap": 71000492
+        },
+        {
+          "elapsed": 40.08333333333234,
+          "fps": 59.99803285208542,
+          "count": 136,
+          "drawCalls": 17,
+          "triangles": 2485,
+          "gpuBuffers": 61389796,
+          "gpuTextures": 57651872,
+          "jsHeap": 66655948
+        },
+        {
+          "elapsed": 60.09999999999787,
+          "fps": 60.00983767830793,
+          "count": 256,
+          "drawCalls": 18,
+          "triangles": 2382,
+          "gpuBuffers": 61389796,
+          "gpuTextures": 57672148,
+          "jsHeap": 38151388
+        },
+        {
+          "elapsed": 80.14999999999674,
+          "fps": 60.00393468635246,
+          "count": 256,
+          "drawCalls": 21,
+          "triangles": 2064,
+          "gpuBuffers": 61389796,
+          "gpuTextures": 57676740,
+          "jsHeap": 45688724
+        }
+      ],
+      "meanFPS": 59.93972911218109
+    }
+  ],
+  "errors": []
+}

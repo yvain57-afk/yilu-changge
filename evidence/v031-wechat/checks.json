@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-20T11:22:05.936485+00:00",
+  "baseCommit": "a8b56c16cc94f26d81fe12479b3d12854989efd8",
+  "sourceModified": [
+    "assets/scripts/Game.ts"
+  ],
+  "typecheck": "passed",
+  "wechatBuild": "passed (exit 36)",
+  "devtools": "2.02.2608060",
+  "baseLibrary": "3.17.3",
+  "identity": "UI-assigned minigame test account",
+  "homeRender": "passed",
+  "storageReadback": {
+    "cleared": {
+      "trial-01": true,
+      "trial-02": false,
+      "trial-03": false
+    },
+    "best": {
+      "trial-01": 62,
+      "trial-02": 0,
+      "trial-03": 0
+    },
+    "settings": {
+      "music": true,
+      "sfx": true,
+      "vibration": true
+    }
+  },
+  "threeLevelsDevtools": "not verified",
+  "audio": "not verified",
+  "phone": "not tested",
+  "touchStepAssertions": "inconclusive; command success without contemporaneous battle image",
+  "remainingIssue": "WAGame.js jsbridge not ready initialization error",
+  "sha256": {
+    "assets/scripts/Game.ts": "53adbf3e4c2b0dad6ed289272117a69978980b43a2d8a5bf9ba1ee5a9b3027d9",
+    "build/wechatgame/assets/main/index.js": "fb35d19c7e18f255597f42f6906469384f40e1ef626cb2026302e92a7c6be690",
+    "build/wechatgame/project.config.json": "a99e401015e90381cec5b7aba28e6df97354f80822b67345c2eeae794a0e1a9e"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "info": {
+    "size": {
+      "total": 16146263,
+      "packages": [
+        {
+          "name": "TOTAL",
+          "size": 16146263
+        },
+        {
+          "name": "main",
+          "size": 1839514
+        },
+        {
+          "name": "/subpackages/resources/",
+          "size": 14306749
+        }
+      ]
+    }
+  },
+  "qrLocalFile": "preview-qr.png",
+  "phoneRuntime": "awaiting user scan"
+}

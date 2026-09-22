@@ -1,0 +1,305 @@
+{
+  "schema": "yilu.v05.design-config.1",
+  "status": "candidate_design_not_drop_in_code",
+  "created": "2026-09-22",
+  "base": {
+    "use": "latest_local_v04",
+    "remoteObserved": "a8b56c16cc94f26d81fe12479b3d12854989efd8",
+    "remoteV04Review": "404",
+    "doNotReset": true,
+    "parametersFromLocal": [
+      "hero_base_damage",
+      "hero_attack_cycle",
+      "boss_hp",
+      "boss_loss",
+      "boss_approach",
+      "level_object_ids",
+      "save_transition_state"
+    ]
+  },
+  "scope": {
+    "playableLevelIds": [
+      "trial-01",
+      "trial-02",
+      "trial-03"
+    ],
+    "playerWeapons": [
+      "spear",
+      "blade"
+    ],
+    "futureHiddenWeaponTypes": [
+      "sword",
+      "halberd"
+    ],
+    "bgmEnabled": false,
+    "sfxEnabled": "preserve_existing_user_setting",
+    "companionSlots": 1,
+    "maxRealCount": 256,
+    "maxVisibleCount": 48,
+    "countIncludesHeroAndCompanion": true,
+    "noNewLevel": true
+  },
+  "attackContract": {
+    "release": "weapon_socket",
+    "normalWaveEveryAttack": true,
+    "frozenAtRelease": [
+      "weaponId",
+      "tier",
+      "damage",
+      "direction"
+    ],
+    "dedupKey": [
+      "attackId",
+      "targetId"
+    ],
+    "sharedNearAndWaveHitBudget": true,
+    "geometry": [
+      "swept_capsule",
+      "sector",
+      "swept_polygon"
+    ],
+    "rockBlocks": true,
+    "unclearedWoodBlocks": true,
+    "bowOrigins": "archer_slots_only",
+    "maxTargetsByTier": [
+      1,
+      1,
+      2
+    ]
+  },
+  "weapons": [
+    {
+      "id": "spear",
+      "label": "长枪",
+      "unlock": "default",
+      "waveProfile": "tapered_lance",
+      "nearProfile": "thrust",
+      "damageMultipliers": [
+        1,
+        1.2,
+        1.4
+      ],
+      "widthMultipliers": [
+        1,
+        1.1,
+        1.15
+      ],
+      "cadence": "local_v04_hero_cycle"
+    },
+    {
+      "id": "blade",
+      "label": "长刀",
+      "unlock": "first_clear:trial-01",
+      "waveProfile": "thin_crescent",
+      "nearProfile": "arc_sweep",
+      "damageMultipliers": [
+        1,
+        1.2,
+        1.4
+      ],
+      "widthMultipliers": [
+        1,
+        1.1,
+        1.15
+      ],
+      "cadence": "candidate_same_average_dps_as_spear",
+      "developmentRequired": true
+    }
+  ],
+  "runGrowth": {
+    "startTier": 1,
+    "maxTier": 3,
+    "rewardType": "unique_elite_kill",
+    "eliteBinding": "resolve_existing_fighter_ids_once_in_local_config",
+    "firstProgressWindow": [
+      0.2,
+      0.35
+    ],
+    "secondProgressWindow": [
+      0.5,
+      0.7
+    ],
+    "maxRewards": 2,
+    "skipAllowed": true,
+    "resetOnRestart": true
+  },
+  "awakening": {
+    "label": "破阵觉醒",
+    "condition": "tier3_and_first_successful_boss_hit_and_not_used",
+    "oncePerRun": true,
+    "durationSimSeconds": 6,
+    "heroDamageMultiplier": 1.25,
+    "changeArcherDamage": false,
+    "changeFireRate": false,
+    "invulnerable": false,
+    "grantTroops": false,
+    "changeCollisionSize": false,
+    "pauseFreezes": true
+  },
+  "encounters": [
+    {
+      "levelId": "trial-01",
+      "title": "乱军突围",
+      "region": "零陵外围·山道",
+      "sceneReuse": "existing_mountain_road",
+      "boss": "xing_daorong",
+      "weapon": "great_axe",
+      "sourceRef": "S52",
+      "attackProfiles": [
+        "axe_sweep",
+        "axe_ground_wave"
+      ],
+      "transition": "rally_existing",
+      "rewards": [
+        "companion:xing_daorong",
+        "weapon:blade"
+      ],
+      "opening": [
+        "前路被截，先杀出山道。"
+      ],
+      "victory": "邢道荣愿随军出战。"
+    },
+    {
+      "levelId": "trial-02",
+      "title": "夺粮立营",
+      "region": "桂阳一线·粮营",
+      "sceneReuse": "existing_camp",
+      "boss": "chen_ying",
+      "weapon": "throwing_fork",
+      "sourceRef": "S52",
+      "attackProfiles": [
+        "single_fork",
+        "staggered_forks",
+        "close_fork_thrust"
+      ],
+      "transition": "camp_existing",
+      "rewards": [
+        "companion:chen_ying"
+      ],
+      "opening": [
+        "粮械就在营中，打进去。"
+      ],
+      "victory": "陈应加入，可在营中安排随军。"
+    },
+    {
+      "levelId": "trial-03",
+      "title": "白石解围",
+      "region": "长沙方向·白石",
+      "sceneReuse": "existing_city",
+      "boss": "yang_ling",
+      "weapon": "spear",
+      "sourceRef": "S53",
+      "attackProfiles": [
+        "step_thrust",
+        "lance_wave"
+      ],
+      "transition": "garrison_existing",
+      "rewards": [
+        "companion:zhao_yun_guest"
+      ],
+      "opening": [
+        "解开白石之围，守住落脚之地。"
+      ],
+      "victory": "与赵云并肩一战。"
+    }
+  ],
+  "cast": [
+    {
+      "id": "xing_daorong",
+      "name": "邢道荣",
+      "weaponName": "开山大斧",
+      "weaponType": "great_axe",
+      "regionTags": [
+        "零陵"
+      ],
+      "sourceRef": "S52",
+      "boss": true,
+      "companion": true,
+      "relation": "本作归降同行",
+      "attackRole": "slow_melee_and_short_wave"
+    },
+    {
+      "id": "chen_ying",
+      "name": "陈应",
+      "weaponName": "飞叉",
+      "weaponType": "throwing_fork",
+      "regionTags": [
+        "桂阳"
+      ],
+      "sourceRef": "S52",
+      "boss": true,
+      "companion": true,
+      "relation": "本作投效同行",
+      "attackRole": "ranged_fork_and_close_stab"
+    },
+    {
+      "id": "yang_ling",
+      "name": "杨龄",
+      "weaponName": "长枪",
+      "weaponType": "spear",
+      "regionTags": [
+        "长沙"
+      ],
+      "sourceRef": "S53",
+      "boss": true,
+      "companion": false,
+      "attackRole": "close_thrust_and_lance_wave"
+    },
+    {
+      "id": "zhao_yun_guest",
+      "name": "赵云",
+      "weaponName": "长枪",
+      "weaponType": "spear",
+      "regionTags": [
+        "荆州",
+        "长坂",
+        "桂阳"
+      ],
+      "sourceRef": "S41",
+      "boss": false,
+      "companion": true,
+      "relation": "同行助阵",
+      "attackRole": "rapid_thrust_and_lance_wave"
+    }
+  ],
+  "companionContract": {
+    "maxDeployed": 1,
+    "contributesArcherDamage": false,
+    "countedInN": true,
+    "minimumN": 2,
+    "sameIdAsBoss": "standby_for_this_encounter_keep_saved_selection",
+    "damageBudgetCandidateRelativeToHero": 0.2,
+    "damageBudgetInitialCeilingRelativeToHero": 0.3,
+    "ownHealthBar": false,
+    "rewardIdempotent": true,
+    "autoEquipFirstCompanion": true,
+    "autoReplaceLaterChoice": false,
+    "oldClearsGrantMissingRewardsOnce": true
+  },
+  "attackPresentation": {
+    "largeSolidRedRectangle": false,
+    "tell": "weapon_pose_plus_low_opacity_shape_edge",
+    "attackDamage": "moving_entity_or_melee_active_shape",
+    "noColourOnlyEncoding": true,
+    "noFullScreenFlash": true,
+    "noGlobalHitStop": true,
+    "noFakeParry": true
+  },
+  "poolCandidates": {
+    "heroWaves": 12,
+    "companionProjectiles": 12,
+    "enemyProjectiles": 12,
+    "decorativeEffects": 48,
+    "notes": "derive_and_check_peak_from_cadence_lifetime_and_sources; keep existing archer volley cap; never silently drop damaging entities"
+  },
+  "validation": {
+    "fastRelatedTests": true,
+    "boundedDensityFixtureSeconds": 18,
+    "naturalCampaignRuns": 1,
+    "reuseCapture": true,
+    "extraZhaoYunClip": "short_targeted_replay_or_labeled_fixture",
+    "defaultTenRuns": false,
+    "defaultLegacyFullVerify": false,
+    "wechat": "check_local_login_and_existing_test_app_id_no_automatic_upload"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "version": "0.4.0-dev",
+  "status": "prototype_seed_not_game_validated",
+  "baselineSha": "a8b56c16cc94f26d81fe12479b3d12854989efd8",
+  "units": {
+    "simulationHz": 60,
+    "forwardUnit": "existing_z_travel_unit_not_metre",
+    "lateralUnit": "existing_normalized_x"
+  },
+  "team": {
+    "maximumTotal": 256,
+    "maximumVisibleIncludingHero": 48,
+    "heroCountWhenAlive": 1,
+    "archerCountFormula": "max(0,totalCount-1)",
+    "startingTotalCounts": [
+      8,
+      12,
+      16
+    ]
+  },
+  "archery": {
+    "intervalTicks": 15,
+    "damagePerArcher": 0.2,
+    "freezeDamageAtLaunch": true,
+    "heroLaunchesArrow": false,
+    "maximumVolleyGroups": 5,
+    "maximumVisibleArrowsPerVolley": 47,
+    "maximumVisibleArrows": 235
+  },
+  "heroMelee": {
+    "weaponId": "starter-spear",
+    "windupTicks": 10,
+    "activeTicks": 5,
+    "recoveryTicks": 21,
+    "cycleTicks": 36,
+    "damage": 5,
+    "prepareDepthMax": 1.25,
+    "attackDepthMin": 0.0,
+    "attackDepthMax": 1.1,
+    "lateralHalfWidth": 0.14,
+    "maxTargetsPerAttack": 1,
+    "maxHitsPerAttack": 1,
+    "blocksOnRock": true,
+    "hitsGates": false,
+    "locksPlayerInput": false,
+    "autoChasesTarget": false,
+    "projectileWave": false
+  },
+  "bossEngagement": {
+    "initialDepth": 4.0,
+    "engagedDepth": 0.9,
+    "approachTicks": 60,
+    "firstTelegraphAtOrAfterBossTick": 120,
+    "lateralX": 0.0,
+    "halfWidth": 0.42,
+    "modelAndRenderShareGeometry": true,
+    "sweptProjectileIntersection": true,
+    "invulnerableApproach": false
+  },
+  "firstLevelDemonstration": {
+    "levelId": "trial-01",
+    "operation": "append_obstacle",
+    "obstacle": {
+      "id": 901,
+      "at": 3.0,
+      "x": 0.0,
+      "width": 0.2,
+      "kind": "fighter",
+      "hp": 14,
+      "loss": 4
+    },
+    "forceHit": false,
+    "forcePlayerPosition": false
+  },
+  "simulationOrder": [
+    "movement_and_camera",
+    "boss_movement",
+    "archer_projectiles",
+    "hero_melee",
+    "early_terminal_state",
+    "gate_and_contact",
+    "hostile_impacts",
+    "cleanup"
+  ],
+  "limits": {
+    "hardTimeout": false,
+    "hiddenReinforcementsInBattle": false,
+    "automaticBossHpScaling": false,
+    "independentHeroHealth": false
+  }
+}

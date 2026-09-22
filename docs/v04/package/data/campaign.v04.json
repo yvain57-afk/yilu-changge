@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "jingzhou-foothold-v04",
+  "title": "一路长歌：三国",
+  "chapterTitle": "荆州立足",
+  "tagline": "带兵破阵，逐鹿三国",
+  "baseSaveKey": "yilu-changge-prototype-v2",
+  "sidecarSaveKey": "yilu-changge-campaign-v04",
+  "rankLabels": [
+    "无名小卒",
+    "领队",
+    "统领",
+    "白石驻将"
+  ],
+  "home": {
+    "newGame": "出征",
+    "continue": "继续征程",
+    "resumeTransition": "回营整军",
+    "completed": "返回驻地",
+    "replay": "重整旗鼓",
+    "settings": "设置"
+  },
+  "tutorials": {
+    "move": "左右移动，主将接敌出枪，弓兵自动齐射",
+    "gate": "兵力越多，齐射越强",
+    "melee": "靠近敌人，长枪自动出击"
+  },
+  "creditsPolicy": "preserve-existing-attribution-and-platform-required-notices",
+  "levels": [
+    {
+      "id": "trial-01",
+      "title": "乱军突围",
+      "location": "荆南山道",
+      "startCount": 8,
+      "visualRank": 0,
+      "bossName": "截路头目",
+      "objective": "带队冲出山道",
+      "opening": [
+        {
+          "speaker": "同袍",
+          "line": "前面还有伏兵！"
+        },
+        {
+          "speaker": "你",
+          "line": "跟紧我，杀出去。"
+        }
+      ],
+      "ending": "这一仗，弟兄们认了你的旗。",
+      "transitionId": "rally"
+    },
+    {
+      "id": "trial-02",
+      "title": "夺粮立营",
+      "location": "山道粮营",
+      "startCount": 12,
+      "visualRank": 1,
+      "bossName": "守营弩将",
+      "objective": "夺下粮营，整备人马",
+      "opening": [
+        {
+          "speaker": "同袍",
+          "line": "粮械都在营里，先打穿营门。"
+        },
+        {
+          "speaker": "你",
+          "line": "弓手压住两翼，随我上！"
+        }
+      ],
+      "ending": "粮械齐备，终于有营可守。",
+      "transitionId": "camp"
+    },
+    {
+      "id": "trial-03",
+      "title": "白石解围",
+      "location": "荆州·白石",
+      "startCount": 16,
+      "visualRank": 2,
+      "bossName": "围城都尉",
+      "objective": "击退围兵，解白石之围",
+      "opening": [
+        {
+          "speaker": "同袍",
+          "line": "白石就在前头，围兵堵着城门。"
+        },
+        {
+          "speaker": "你",
+          "line": "先破围，再进城。"
+        }
+      ],
+      "ending": "白石围解，这面旗有了立足之地。",
+      "transitionId": "garrison"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "rally",
+      "afterLevelId": "trial-01",
+      "sceneVariant": "rally-clearing",
+      "title": "聚拢人马",
+      "instruction": "将军旗立在整队处",
+      "dragItem": "player-flag",
+      "dropTarget": "rally-ground",
+      "primaryAction": "整军出发",
+      "context": "收拢散兵，点齐十二名先锋，去取粮营。",
+      "resultText": "其余弟兄留守，先锋出征。",
+      "nextStartCount": 12,
+      "nextLevelId": "trial-02",
+      "visibleChanges": [
+        "form-12-vanguard",
+        "show-route-to-grain-camp"
+      ],
+      "replayMandatory": false,
+      "grantsCurrency": false
+    },
+    {
+      "id": "camp",
+      "afterLevelId": "trial-02",
+      "sceneVariant": "secured-camp",
+      "title": "安营立旗",
+      "instruction": "将你的军旗升上营门",
+      "dragItem": "player-flag",
+      "dropTarget": "camp-flagpole",
+      "primaryAction": "驻营出征",
+      "context": "粮械留营，十六名先锋随你驰援白石。",
+      "resultText": "营地已定，白石告急。",
+      "nextStartCount": 16,
+      "nextLevelId": "trial-03",
+      "visibleChanges": [
+        "raise-player-banner",
+        "show-arrow-rack",
+        "form-16-vanguard"
+      ],
+      "replayMandatory": false,
+      "grantsCurrency": false
+    },
+    {
+      "id": "garrison",
+      "afterLevelId": "trial-03",
+      "sceneVariant": "baishi-garrison",
+      "title": "白石初定",
+      "instruction": "将军旗立在白石驻军处",
+      "dragItem": "player-flag",
+      "dropTarget": "baishi-node",
+      "primaryAction": "落旗驻防",
+      "context": "白石围解，众人请你驻军守城。",
+      "resultText": "白石初定，立足荆州。",
+      "nextStartCount": null,
+      "nextLevelId": null,
+      "visibleChanges": [
+        "open-city-gate",
+        "mark-baishi-owned",
+        "show-zhaoyun-meeting"
+      ],
+      "replayMandatory": false,
+      "grantsCurrency": false
+    }
+  ],
+  "encounters": [
+    {
+      "id": "zhaoyun-meeting",
+      "trigger": "garrison-completed",
+      "name": "赵云",
+      "mode": "portrait-dialogue",
+      "lines": [
+        {
+          "speaker": "赵云",
+          "line": "城外的援兵已退。白石的百姓，还要靠诸位守住。"
+        },
+        {
+          "speaker": "你",
+          "line": "这面旗，会留在这里。"
+        }
+      ],
+      "primaryAction": "返回驻地",
+      "recruitment": false,
+      "combatAi": false
+    }
+  ],
+  "camp": {
+    "title": "白石驻地",
+    "status": "你的军旗，已在荆州立住。",
+    "mapLabels": [
+      "曹操",
+      "刘备",
+      "孙权",
+      "荆州",
+      "白石"
+    ],
+    "playableNodeIds": [
+      "trial-01",
+      "trial-02",
+      "trial-03"
+    ],
+    "buttons": [
+      "重整旗鼓",
+      "设置"
+    ]
+  },
+  "errors": {
+    "save": "本机暂时无法保存，本次仍可继续。",
+    "resource": "画面未能载入，请重试。",
+    "retry": "重试"
+  },
+  "flow": {
+    "battleWinSavesBeforePresentation": true,
+    "transitionIsOneAction": true,
+    "tapEqualsDrag": true,
+    "skippingAnimationChangesRewards": false,
+    "mandatoryReadSeconds": 0,
+    "repeatPlaySkipsCompletedTransitions": true,
+    "unlockUsesExistingCanStart": true
+  }
+}

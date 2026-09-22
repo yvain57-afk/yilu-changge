@@ -1,0 +1,14 @@
+{
+  "build": "success",
+  "localTestIdentityRestored": true,
+  "previewUploaded": false,
+  "deviceAccepted": false,
+  "blocker": "WeChat developer login expired; waiting for user QR login",
+  "pendingTask": {
+    "taskId": "login_a45973fc-28e6-47fa-ba67-d1fdb95500df",
+    "tool": "login",
+    "type": "window",
+    "status": "pending",
+    "polls": 10
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "version": "v051-rc1",
+  "sourceHash": "ab42d38cbed2208538ba51bcca0768cc9fea773463844ed5a9505deba0396916",
+  "unitTests": {
+    "passed": 100,
+    "failed": 0,
+    "log": "check-fast.log"
+  },
+  "typecheck": "passed",
+  "webBuild": true,
+  "wechatBuild": true,
+  "contactContract": {
+    "baselinePassed": 4,
+    "baselineFailed": 4,
+    "currentPassed": 8,
+    "currentFailed": 0
+  },
+  "naturalThreeLevels": true,
+  "naturalBladeAndAxeBoss2": true,
+  "rawCaptureCount": 1,
+  "video": {
+    "duration": 230.318333,
+    "bytes": 57089730,
+    "video": "H.264",
+    "audio": "AAC, captured live SFX",
+    "speed": "original timestamps; no speed transform"
+  },
+  "contactExcerpt": {
+    "source": "three-levels-live-audio.mp4",
+    "startSeconds": 114,
+    "durationSeconds": 13
+  },
+  "phonePreview": {
+    "version": "v051-rc1",
+    "success": true,
+    "generatedAt": "2026-09-22T16:23:58.562359+00:00",
+    "identity": "existing local mini-game test AppID preserved",
+    "qrFile": "preview-qr.png (local only)",
+    "scope": "preview only; no review/release",
+    "deviceAcceptance": "awaiting user scan and feedback",
+    "sourcePackageBytes": 20828198,
+    "serverAcceptedSize": {
+      "total": 20803961,
+      "packages": [
+        {
+          "name": "TOTAL",
+          "size": 20803961
+        },
+        {
+          "name": "main",
+          "size": 1887816
+        },
+        {
+          "name": "/subpackages/resources/",
+          "size": 18916145
+        }
+      ]
+    }
+  },
+  "smallScreen": "360/390 contact and growth fixtures; final natural run at 390",
+  "density": "one 18s fixture + 3 restarts, before unused legacy rank texture request removal; not repeated",
+  "legacyTenRunScript": "not run",
+  "userVisualAcceptance": "pending",
+  "deviceAcceptance": "pending",
+  "gitPush": "not performed at validation time; later user-authorized delivery is identified by the containing Git commit",
+  "wechatSimulator": {
+    "observed": "After one refresh, current local project displayed game home and preserved rank 统领. Native UI observed because dedicated screenshot command did not return.",
+    "console": "An initial WeChat jsbridge not ready message was recorded; game home rendered after refresh.",
+    "scope": "startup only; not a second full campaign and not phone acceptance"
+  }
+}

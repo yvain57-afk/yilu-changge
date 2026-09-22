@@ -538,3 +538,17 @@ export const LEVELS: Level[] = [
     "ending": "首城已得。登基之路，刚刚开始。"
   }
 ];
+
+// v04 presentation overlay; stable IDs, gate rules, HP and timing retained.
+import { CAMPAIGN } from './campaignData';
+LEVELS.forEach((l,i)=>{const c=CAMPAIGN.levels[i];l.title=c.title;l.scene=c.location;l.bossName=c.bossName;l.rankBefore=CAMPAIGN.rankLabels[i];l.rankAfter=CAMPAIGN.rankLabels[i+1];l.opening=c.opening.map(v=>v.speaker+'：'+v.line).join('\n');l.ending=c.ending;});
+LEVELS[0].obstacles.unshift({id:901,at:3,x:0,width:.20,kind:'fighter',hp:14,loss:4});
+
+// v05 fixed elite bindings. Original object positions / HP / gates are unchanged.
+import { CAST, CastId } from './weapons';
+const bosses:CastId[]=['xing_daorong','chen_ying','yang_ling'];
+LEVELS.forEach((l,i)=>{l.bossId=bosses[i];l.bossName=CAST[bosses[i]].name;l.scene=CAST[bosses[i]].region;l.eliteIds=[[1,3],[1,4],[1,4]][i];});
+const base0=LEVELS[0].bossAttacks[0],base1=LEVELS[1].bossAttacks[0],base2=LEVELS[2].bossAttacks[0];
+LEVELS[0].bossAttacks=[{...base0,weaponId:'great_axe',profile:'axe_sweep',halfWidth:.28},{...base0,weaponId:'great_axe',profile:'axe_ground_wave',halfWidth:.20}];
+LEVELS[1].bossAttacks=[{...base1,kind:'aimed',weaponId:'throwing_fork',profile:'single_fork',halfWidth:.18},{...base1,weaponId:'throwing_fork',profile:'staggered_fork',x:-.45,halfWidth:.18,recoverySeconds:.4},{...base1,weaponId:'throwing_fork',profile:'staggered_fork',x:.45,halfWidth:.18},{...base1,kind:'aimed',weaponId:'throwing_fork',profile:'close_fork_thrust',halfWidth:.20}];
+LEVELS[2].bossAttacks=[{...base2,weaponId:'spear',profile:'step_thrust',halfWidth:.18},{...base2,weaponId:'spear',profile:'lance_wave',halfWidth:.16}];

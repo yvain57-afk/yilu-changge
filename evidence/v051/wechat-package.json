@@ -1,0 +1,39 @@
+{
+  "totalBytes": 25444676,
+  "excludedBytes": 4616478,
+  "uploadBytes": 20828198,
+  "limitBytes": 20971520,
+  "excludedSource": [
+    "assets/resources/art/cart.png",
+    "assets/resources/art/ink.png",
+    "assets/resources/art/landscape-0.png",
+    "assets/resources/art/landscape-1.png",
+    "assets/resources/art/landscape-2.png",
+    "assets/resources/art/rock.png",
+    "assets/resources/art/soldier.png",
+    "assets/resources/art/sparrow.png",
+    "assets/resources/art/traveler.png",
+    "assets/resources/art/wood.png",
+    "assets/resources/audio/music.mp3",
+    "assets/resources/audio-v031/music-battle.m4a",
+    "assets/resources/v2/hero-a-rig.png",
+    "assets/resources/v4/heroes.png"
+  ],
+  "excluded": [
+    "subpackages/resources/native/1a/1ae912b9-7822-44b2-9311-df40a35f8c47.png",
+    "subpackages/resources/native/46/4628b3c8-68ed-4eed-9804-c8ab8369fd53.png",
+    "subpackages/resources/native/4e/4ed9d725-538e-4ca9-81ed-c68712e75a10.png",
+    "subpackages/resources/native/4f/4f92e73c-2162-4816-9b0f-46698f695b22.png",
+    "subpackages/resources/native/69/69356416-2560-4f5c-ba5c-2f0654a3a6b4.png",
+    "subpackages/resources/native/77/770fdb90-6908-4b59-93c4-b38460585467.png",
+    "subpackages/resources/native/84/84b49c27-f7c3-44c9-ba83-ec58dcbc9845.png",
+    "subpackages/resources/native/91/917f855e-aaec-4589-8545-8364bfefbf8d.png",
+    "subpackages/resources/native/99/9905285d-3e53-4f9e-8507-3e7a3c04cf3f.png",
+    "subpackages/resources/native/a8/a88269ff-c70b-4c3c-b7f1-b56c58916218.mp3",
+    "subpackages/resources/native/b6/b6462068-5533-4bba-bcce-2ec2b27e63b4.png",
+    "subpackages/resources/native/c6/c6018ba7-e96b-44a7-8085-79fe615cca75.m4a",
+    "subpackages/resources/native/c6/c698781f-f9ba-45fc-ae45-8ead3fdf5c34.png",
+    "subpackages/resources/native/dc/dc300c8e-7d11-44de-bc19-fd31941b6c65.png"
+  ],
+  "reason": "Unused historical art and disabled music only; source files preserved, current art unchanged."
+}

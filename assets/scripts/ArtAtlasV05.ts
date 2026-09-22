@@ -1,0 +1,251 @@
+// Original RGBA atlas; UV crops only, with measured transparent bounds.
+export const V05_FRAMES={
+  "cast0Pose0": {
+    "sheet": "v05/cast",
+    "rect": [
+      94,
+      94,
+      150,
+      215
+    ],
+    "pivot": [
+      168.5,
+      306
+    ]
+  },
+  "cast0Pose1": {
+    "sheet": "v05/cast",
+    "rect": [
+      410,
+      94,
+      138,
+      217
+    ],
+    "pivot": [
+      478.5,
+      308
+    ]
+  },
+  "cast0Pose2": {
+    "sheet": "v05/cast",
+    "rect": [
+      716,
+      109,
+      140,
+      205
+    ],
+    "pivot": [
+      785.5,
+      311
+    ]
+  },
+  "cast0Pose3": {
+    "sheet": "v05/cast",
+    "rect": [
+      1010,
+      95,
+      148,
+      215
+    ],
+    "pivot": [
+      1083.5,
+      307
+    ]
+  },
+  "cast1Pose0": {
+    "sheet": "v05/cast",
+    "rect": [
+      95,
+      382,
+      149,
+      228
+    ],
+    "pivot": [
+      169,
+      607
+    ]
+  },
+  "cast1Pose1": {
+    "sheet": "v05/cast",
+    "rect": [
+      410,
+      383,
+      153,
+      230
+    ],
+    "pivot": [
+      486,
+      610
+    ]
+  },
+  "cast1Pose2": {
+    "sheet": "v05/cast",
+    "rect": [
+      713,
+      399,
+      149,
+      214
+    ],
+    "pivot": [
+      787,
+      610
+    ]
+  },
+  "cast1Pose3": {
+    "sheet": "v05/cast",
+    "rect": [
+      1017,
+      385,
+      161,
+      226
+    ],
+    "pivot": [
+      1097,
+      608
+    ]
+  },
+  "cast2Pose0": {
+    "sheet": "v05/cast",
+    "rect": [
+      88,
+      672,
+      170,
+      231
+    ],
+    "pivot": [
+      172.5,
+      900
+    ]
+  },
+  "cast2Pose1": {
+    "sheet": "v05/cast",
+    "rect": [
+      409,
+      672,
+      182,
+      230
+    ],
+    "pivot": [
+      499.5,
+      899
+    ]
+  },
+  "cast2Pose2": {
+    "sheet": "v05/cast",
+    "rect": [
+      703,
+      688,
+      153,
+      216
+    ],
+    "pivot": [
+      779,
+      901
+    ]
+  },
+  "cast2Pose3": {
+    "sheet": "v05/cast",
+    "rect": [
+      1011,
+      674,
+      168,
+      229
+    ],
+    "pivot": [
+      1094.5,
+      900
+    ]
+  },
+  "cast3Pose0": {
+    "sheet": "v05/cast",
+    "rect": [
+      94,
+      966,
+      163,
+      218
+    ],
+    "pivot": [
+      175,
+      1181
+    ]
+  },
+  "cast3Pose1": {
+    "sheet": "v05/cast",
+    "rect": [
+      413,
+      967,
+      173,
+      220
+    ],
+    "pivot": [
+      499,
+      1184
+    ]
+  },
+  "cast3Pose2": {
+    "sheet": "v05/cast",
+    "rect": [
+      684,
+      974,
+      178,
+      214
+    ],
+    "pivot": [
+      772.5,
+      1185
+    ]
+  },
+  "cast3Pose3": {
+    "sheet": "v05/cast",
+    "rect": [
+      1013,
+      968,
+      169,
+      217
+    ],
+    "pivot": [
+      1097,
+      1182
+    ]
+  },
+  "great_axe": {
+    "sheet": "v05/weapons",
+    "rect": [
+      120,
+      12,
+      370,
+      996
+    ],
+    "pivot": [
+      387,
+      580
+    ]
+  },
+  "throwing_fork": {
+    "sheet": "v05/weapons",
+    "rect": [
+      631,
+      75,
+      340,
+      839
+    ],
+    "pivot": [
+      801,
+      735
+    ]
+  },
+  "blade": {
+    "sheet": "v05/weapons",
+    "rect": [
+      1196,
+      8,
+      198,
+      997
+    ],
+    "pivot": [
+      1263,
+      791
+    ]
+  }
+} as const;
+export const V05_SOCKETS={"spear":{"grip":[626,850],"tip":[626,27]},"blade":{"grip":[1263,791],"tip":[1360,24]},"great_axe":{"grip":[387,580],"tip":[243,94]},"throwing_fork":{"grip":[801,735],"tip":[801,96]}} as const;

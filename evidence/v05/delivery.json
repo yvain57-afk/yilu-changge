@@ -1,0 +1,293 @@
+{
+  "passed": true,
+  "version": "v05-rc1",
+  "scope": "one continuous natural real-input three-level run, no model mutation, one realtime live audio recording; reload verified after capture",
+  "capture": {
+    "audioTracks": 1,
+    "mime": "video/webm;codecs=vp9,opus"
+  },
+  "sound": {
+    "peak": 0.05900580220256291,
+    "audibleSamples": 1173,
+    "samples": 4572
+  },
+  "pauseChecked": true,
+  "timeline": [
+    {
+      "type": "battle-start",
+      "level": 1,
+      "seconds": 0.208
+    },
+    {
+      "type": "opening-melee",
+      "level": 1,
+      "seconds": 0.575
+    },
+    {
+      "type": "boss-engaged",
+      "level": 1,
+      "seconds": 43.66
+    },
+    {
+      "type": "victory",
+      "level": 1,
+      "seconds": 56.936
+    },
+    {
+      "type": "transition",
+      "level": 1,
+      "seconds": 58.62
+    },
+    {
+      "type": "battle-start",
+      "level": 2,
+      "seconds": 61.197
+    },
+    {
+      "type": "boss-engaged",
+      "level": 2,
+      "seconds": 115.995
+    },
+    {
+      "type": "victory",
+      "level": 2,
+      "seconds": 129.768
+    },
+    {
+      "type": "transition",
+      "level": 2,
+      "seconds": 131.455
+    },
+    {
+      "type": "battle-start",
+      "level": 3,
+      "seconds": 133.998
+    },
+    {
+      "type": "boss-engaged",
+      "level": 3,
+      "seconds": 200.8
+    },
+    {
+      "type": "victory",
+      "level": 3,
+      "seconds": 220.8
+    },
+    {
+      "type": "transition",
+      "level": 3,
+      "seconds": 222.487
+    },
+    {
+      "type": "zhaoyun",
+      "level": 3,
+      "seconds": 224.794
+    },
+    {
+      "type": "end",
+      "level": 3,
+      "seconds": 228.651
+    }
+  ],
+  "runs": [
+    {
+      "level": 1,
+      "elapsed": 55.566666666664794,
+      "count": 88,
+      "combat": {
+        "meleeHits": 13,
+        "meleeDamage": 99.75,
+        "waveHits": 8,
+        "companionHits": 0,
+        "upgrades": 2,
+        "awakenings": 1,
+        "volleys": 223,
+        "lastMelee": {
+          "kind": "meleeHit",
+          "x": 2.220446049250313e-16,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 42.9,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 94,
+          "simulationTick": 3324
+        }
+      },
+      "weapon": "spear",
+      "companion": null,
+      "tier": 3,
+      "upgradeRewards": [
+        1,
+        3
+      ],
+      "savedBeforeResult": true,
+      "samples": [
+        {
+          "elapsed": 20.000000000000146,
+          "fps": 60.01574183533146,
+          "count": 44,
+          "drawCalls": 26,
+          "triangles": 2229,
+          "gpuBuffers": 37793064,
+          "gpuTextures": 70050756,
+          "jsHeap": 37956276
+        },
+        {
+          "elapsed": 40.066666666665675,
+          "fps": 59.89817310643313,
+          "count": 88,
+          "drawCalls": 23,
+          "triangles": 2592,
+          "gpuBuffers": 47232376,
+          "gpuTextures": 70147016,
+          "jsHeap": 73010852
+        }
+      ],
+      "meanFPS": 59.928341911463676
+    },
+    {
+      "level": 2,
+      "elapsed": 68.06666666666409,
+      "count": 204,
+      "combat": {
+        "meleeHits": 1,
+        "meleeDamage": 7,
+        "waveHits": 36,
+        "companionHits": 10,
+        "upgrades": 2,
+        "awakenings": 1,
+        "volleys": 273,
+        "lastMelee": {
+          "kind": "meleeHit",
+          "x": -0.31999998194226137,
+          "amount": 7,
+          "targetId": 6,
+          "worldZ": 40,
+          "sourceId": "hero",
+          "weaponId": "blade",
+          "attackId": 99,
+          "simulationTick": 2351
+        }
+      },
+      "weapon": "blade",
+      "companion": "xing_daorong",
+      "tier": 3,
+      "upgradeRewards": [
+        1,
+        4
+      ],
+      "savedBeforeResult": true,
+      "samples": [
+        {
+          "elapsed": 20.033333333333477,
+          "fps": 59.9940005985098,
+          "count": 56,
+          "drawCalls": 24,
+          "triangles": 2633,
+          "gpuBuffers": 56670608,
+          "gpuTextures": 70208592,
+          "jsHeap": 53477164
+        },
+        {
+          "elapsed": 40.08333333333234,
+          "fps": 59.96402158561898,
+          "count": 102,
+          "drawCalls": 30,
+          "triangles": 2565,
+          "gpuBuffers": 63749624,
+          "gpuTextures": 70364192,
+          "jsHeap": 36464192
+        },
+        {
+          "elapsed": 60.14999999999787,
+          "fps": 59.93407251880039,
+          "count": 204,
+          "drawCalls": 26,
+          "triangles": 2226,
+          "gpuBuffers": 66109140,
+          "gpuTextures": 70377132,
+          "jsHeap": 48424744
+        }
+      ],
+      "meanFPS": 59.999534661883885
+    },
+    {
+      "level": 3,
+      "elapsed": 86.31666666666305,
+      "count": 256,
+      "combat": {
+        "meleeHits": 22,
+        "meleeDamage": 163.5,
+        "waveHits": 30,
+        "companionHits": 15,
+        "upgrades": 2,
+        "awakenings": 1,
+        "volleys": 346,
+        "lastMelee": {
+          "kind": "meleeHit",
+          "x": -0.5549999891653563,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 66.9,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 232,
+          "simulationTick": 5161
+        }
+      },
+      "weapon": "spear",
+      "companion": "chen_ying",
+      "tier": 3,
+      "upgradeRewards": [
+        1,
+        4
+      ],
+      "savedBeforeResult": true,
+      "samples": [
+        {
+          "elapsed": 20.06666666666681,
+          "fps": 60.009837678307925,
+          "count": 34,
+          "drawCalls": 26,
+          "triangles": 2064,
+          "gpuBuffers": 66109140,
+          "gpuTextures": 70378016,
+          "jsHeap": 61921828
+        },
+        {
+          "elapsed": 40.149999999999004,
+          "fps": 59.994000598509786,
+          "count": 136,
+          "drawCalls": 23,
+          "triangles": 2586,
+          "gpuBuffers": 66109140,
+          "gpuTextures": 70379792,
+          "jsHeap": 68114424
+        },
+        {
+          "elapsed": 60.1833333333312,
+          "fps": 59.99803285208542,
+          "count": 256,
+          "drawCalls": 24,
+          "triangles": 2483,
+          "gpuBuffers": 66109140,
+          "gpuTextures": 70400068,
+          "jsHeap": 58515788
+        },
+        {
+          "elapsed": 80.29999999999673,
+          "fps": 60.00983767830793,
+          "count": 256,
+          "drawCalls": 28,
+          "triangles": 2655,
+          "gpuBuffers": 66109140,
+          "gpuTextures": 70404660,
+          "jsHeap": 44828472
+        }
+      ],
+      "meanFPS": 59.95360951532062
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,18 @@
+{
+  "mainBytes": 1861171,
+  "totalBytes": 16168169,
+  "subpackages": [
+    {
+      "name": "resources",
+      "root": "subpackages/resources/"
+    }
+  ],
+  "preloadBundles": [
+    {
+      "bundle": "resources"
+    },
+    {
+      "bundle": "main"
+    }
+  ]
+}

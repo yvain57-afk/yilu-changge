@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "tool": "automation_evaluate",
+  "clientName": "Codex",
+  "result": {
+    "success": true,
+    "result": "{\"cleared\":{\"trial-01\":true,\"trial-02\":false,\"trial-03\":false},\"best\":{\"trial-01\":62,\"trial-02\":0,\"trial-03\":0},\"settings\":{\"music\":true,\"sfx\":true,\"vibration\":true}}"
+  }
+}

@@ -1,0 +1,893 @@
+{
+  "version": "v051-rc1",
+  "sourceHash": "ab42d38cbed2208538ba51bcca0768cc9fea773463844ed5a9505deba0396916",
+  "source": [
+    {
+      "path": "assets/resources/art/cart.png",
+      "sha256": "075d160e3d6c9fe04d27d8127444a3a35c174a080025762026e59766ffc755af"
+    },
+    {
+      "path": "assets/resources/art/ink.png",
+      "sha256": "826eb3326c6c0f4e186254e4b3c801f1cbd529e982d7f5342a7434269c8a0a6e"
+    },
+    {
+      "path": "assets/resources/art/landscape-0.png",
+      "sha256": "af5d4ceeef1d216e67bd64b4c2ce7069ff3c93f7b7b145ef7c897dc53ed8847a"
+    },
+    {
+      "path": "assets/resources/art/landscape-1.png",
+      "sha256": "f9f117132c7e68aafc7468359946dd1b11bd77e1b4d2dfd0dfb9049be1d5ebaa"
+    },
+    {
+      "path": "assets/resources/art/landscape-2.png",
+      "sha256": "e78749684a44fe3483dd85eb6d12dbc9371d4e77a62b41143b0389af9fe33dd1"
+    },
+    {
+      "path": "assets/resources/art/rock.png",
+      "sha256": "221f5e99d9f6fb334b6ee3ed13c85aec07676dfe80e06dec9ebec30e05602261"
+    },
+    {
+      "path": "assets/resources/art/soldier.png",
+      "sha256": "b9725188c0a3b4ca6bff9eda5fa8ec3e737addca1876e1dd8d12c5b9b84eec03"
+    },
+    {
+      "path": "assets/resources/art/sparrow.png",
+      "sha256": "b36191d8f0b6dc9aad09da2e9dc6f47512ae4867ad75e9527224a3bde2d3b53c"
+    },
+    {
+      "path": "assets/resources/art/traveler.png",
+      "sha256": "bec457421097c5857390946bf9f18b204d206fc283cb23592349da00b0e022b4"
+    },
+    {
+      "path": "assets/resources/art/wood.png",
+      "sha256": "06609d423832ab28d4e83108e3a465104a49ce99791baa7580e284021897f01b"
+    },
+    {
+      "path": "assets/resources/audio-v031/music-battle.m4a",
+      "sha256": "91b99afa2695415731820e9e8a1b13de0ea1511a2dd08dbbdfd554cd51d2bae1"
+    },
+    {
+      "path": "assets/resources/audio/break.mp3",
+      "sha256": "a792daf8c80a915f089ef8dd69c7b991ddd82af115062f7300d0e45f69c2bbf7"
+    },
+    {
+      "path": "assets/resources/audio/gather.mp3",
+      "sha256": "31bbdad4a26a001e9ce7b360dacb1d2617c2a52861194dca7317c8a61f40bf66"
+    },
+    {
+      "path": "assets/resources/audio/hit.mp3",
+      "sha256": "e0c56190020ae7be5bdb329b79a810e9761c4ae038212d84564af0c5dba087c1"
+    },
+    {
+      "path": "assets/resources/audio/hurt.mp3",
+      "sha256": "16c55c77040394c5e5cd68959350db3510d9ac9b3bd7d3e0f4cf1c5757a33423"
+    },
+    {
+      "path": "assets/resources/audio/music.mp3",
+      "sha256": "b16ba541ef475d7c4d3917f103671e0f4deeb518a5196b1abd752527e8a10f67"
+    },
+    {
+      "path": "assets/resources/audio/warn.mp3",
+      "sha256": "99a7ac1ef3e111cd697e45bf2266447f6e01a95395f1aba472419fdafd143fce"
+    },
+    {
+      "path": "assets/resources/v031/archers.png",
+      "sha256": "79c0b60a5558a3169713b9300055cda41c316475569a05d248e4e375f765b393"
+    },
+    {
+      "path": "assets/resources/v04/spear-hero.png",
+      "sha256": "c066db628f8a493c1c8ed500e58e1472e5bc3328cc18c3699c0b71a16a8aec00"
+    },
+    {
+      "path": "assets/resources/v04/spear.png",
+      "sha256": "bb021f81546acd5d0045371933d6a0852409b004d0adc6c31e1cf930a6537f0d"
+    },
+    {
+      "path": "assets/resources/v04/zhaoyun.png",
+      "sha256": "dfa0a0321d0070d79ef3ff754a2ad50707dbab4938927c5cbf06ad3e27e0c76a"
+    },
+    {
+      "path": "assets/resources/v05/cast.png",
+      "sha256": "e550fe48982205119c67991d50529738971093215691f59aaf97df329593c951"
+    },
+    {
+      "path": "assets/resources/v05/weapons.png",
+      "sha256": "84b3409aeac0fc0db506bf9624789b4e32a55c76b32f1405bf8faab78a84b284"
+    },
+    {
+      "path": "assets/resources/v051/allies.png",
+      "sha256": "5614d21e445536a40cc15d58e9de92e64d81900c33ccaa23681a4fb3a70278fd"
+    },
+    {
+      "path": "assets/resources/v051/blade-hero.png",
+      "sha256": "e8c24a5ce8d318a7dc449242c00f95c24ba4cf36bf4957ff0e3e025fa05a8b66"
+    },
+    {
+      "path": "assets/resources/v2/hero-a-rig.png",
+      "sha256": "7d9d85ad6a5c378a66ca6fbfe4d05ecaf89ac0e91568d8819a9ef60384957a01"
+    },
+    {
+      "path": "assets/resources/v3/actors.png",
+      "sha256": "14dcb6d5692d39709710d135db0b37d066cd7548a5b9933dd9385c1ba6941e1a"
+    },
+    {
+      "path": "assets/resources/v3/scenery.png",
+      "sha256": "e55c72f08ce0f74f736c147479dbc257e9f4e942f95b676026f7da4a595a1080"
+    },
+    {
+      "path": "assets/resources/v4/enemies.png",
+      "sha256": "1743774f0a20a11661c4244f7df112a12bd688baceee43267599322802e6da6e"
+    },
+    {
+      "path": "assets/resources/v4/heroes.png",
+      "sha256": "3678351c4166367ef40f6682eecba8432bde1bd9795a56273b956c5648f9932a"
+    },
+    {
+      "path": "assets/resources/v4/scenery.png",
+      "sha256": "dba799d87f5a2f120649cdb3e9669a6a7fedd053f00118417669d0e83955cf2a"
+    },
+    {
+      "path": "assets/scripts/ArtAtlas.ts",
+      "sha256": "e58c34aee420b6a61775eccc0c10b0b0a74863af9e44c18100f8f77b87962623"
+    },
+    {
+      "path": "assets/scripts/ArtAtlasV03.ts",
+      "sha256": "8a60884c5249c19a934e58d490d7c4e8ca2795ac1c860475cc7a73f67408a28c"
+    },
+    {
+      "path": "assets/scripts/ArtAtlasV031.ts",
+      "sha256": "712f9c309dc654ad7faf87a524f336024f9e5abde539278008e871486b1d7fbc"
+    },
+    {
+      "path": "assets/scripts/ArtAtlasV04.ts",
+      "sha256": "63d95e98b7cfe93df5a48df86c6e25b091daf2a281af19a6b97da9bf73d3e9f2"
+    },
+    {
+      "path": "assets/scripts/ArtAtlasV05.ts",
+      "sha256": "1d11c9deac04af702aded51c33979ca15113e0e90c5e8b3a42b200abc2d747de"
+    },
+    {
+      "path": "assets/scripts/ArtAtlasV051.ts",
+      "sha256": "ac05dbffb65aef2f6eec94326124d8cdd5a0797d75f66add5112aa56323201aa"
+    },
+    {
+      "path": "assets/scripts/ArtSprites.ts",
+      "sha256": "127d0ec9db66a3d34ae34036043eb4dc399afbe75545e1e0e1994e8c0e469c1b"
+    },
+    {
+      "path": "assets/scripts/BattleView.ts",
+      "sha256": "88c444db92e96e766486c7e7604ba6f12c4482eb93b0d93881aca272dee81c76"
+    },
+    {
+      "path": "assets/scripts/Game.ts",
+      "sha256": "b43bd6a3694fc2a249906df3902c7ff4db9073ad2b756bbd64811b222fcdfeb7"
+    },
+    {
+      "path": "assets/scripts/HeroAtlas.ts",
+      "sha256": "01914b76930d8a6f6b27fb87d8960f592d366396fff23aa624639379ac981507"
+    },
+    {
+      "path": "assets/scripts/HeroRig.ts",
+      "sha256": "0132d48b8f32cee62db02fe4e4cb86dc02e0e9ce274c86bbe12092e1d7bc094a"
+    },
+    {
+      "path": "assets/scripts/Platform.ts",
+      "sha256": "fe09b070e45574804f573e81906e00fd7d3919c03050b3ed1e23f4c03f03ed3a"
+    },
+    {
+      "path": "assets/scripts/Presentation.ts",
+      "sha256": "355640722b639ebbe6dc53a697b695ffd8438b98c9c87043e19059ce92cb32a9"
+    },
+    {
+      "path": "assets/scripts/VisualConfig.ts",
+      "sha256": "de0bfddf168987d597ffcaaef3a3302950977a78c5e3421bd88eaaf81424110f"
+    },
+    {
+      "path": "assets/scripts/Volley.ts",
+      "sha256": "5aedcdc9294f8a3f29d7138b8f83cb6d86d960c2f52d25876a915793829752f4"
+    },
+    {
+      "path": "assets/scripts/WorldScenery.ts",
+      "sha256": "e5562617975384e4ceb14035392bc844a428a7d54063e74ca6e0ccdf80702a7b"
+    },
+    {
+      "path": "assets/scripts/core/artSockets.ts",
+      "sha256": "04ba8a67bd5658137af3e52581a1e4046da37a67333ba2da86d6add31a6a4d73"
+    },
+    {
+      "path": "assets/scripts/core/battleNotices.ts",
+      "sha256": "43a69f058175ceeeceb1c11443a8509cbc507f0aea738bfc224e007d9163550c"
+    },
+    {
+      "path": "assets/scripts/core/campaign.ts",
+      "sha256": "6595d340922f37d71ded01852fb51b9e1224b2141200b79286f68798a980ec55"
+    },
+    {
+      "path": "assets/scripts/core/campaignData.ts",
+      "sha256": "f3522d4f86cec3b7641c0983774ceeebe527754da407f15a72d91470f7a040fb"
+    },
+    {
+      "path": "assets/scripts/core/combatGeometry.ts",
+      "sha256": "23c641c4c212c055b33ba73214fc623735fb8d06d4a833ee32a1034f4df9f5b0"
+    },
+    {
+      "path": "assets/scripts/core/growth.ts",
+      "sha256": "037a140bbd736c3190b538440608c43cc93a19203df54f375db88cbd983218b5"
+    },
+    {
+      "path": "assets/scripts/core/levels.ts",
+      "sha256": "7952c5ff4ba4b2937b594641dddf76d7add77517a746a2c4c2d2a191353c0890"
+    },
+    {
+      "path": "assets/scripts/core/model.ts",
+      "sha256": "5f00b726c97712f257521b082d4df6ae1bb5be801f2c723396feae9e0ff63de8"
+    },
+    {
+      "path": "assets/scripts/core/progression.ts",
+      "sha256": "5115f60d42e96b4ed39b15cbae436b633be2e33215db1aa724c36e414c0cf442"
+    },
+    {
+      "path": "assets/scripts/core/save.ts",
+      "sha256": "7f30ae18c310aff5425b0ef266b3eeaac3c965be368a2371d501f00ed8293132"
+    },
+    {
+      "path": "assets/scripts/core/weapons.ts",
+      "sha256": "ceb0cda5d2e401de53e92355907b2cfef14490a08ef5237403c9a3c0d205a697"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "280056365940100979a780e340ae859b97e1643fb3c6cef72f796d79715f8405"
+    },
+    {
+      "path": "package.json",
+      "sha256": "5347eb074af70e57c9b66ba80b0739c6c82a57c059537502222dde0259f52ae6"
+    },
+    {
+      "path": "settings/v2/packages/builder.json",
+      "sha256": "ab6009a527c824151b1336a2e4afc090f990f0e654242f86627d46fbd0562ceb"
+    }
+  ],
+  "web": {
+    "sha256": "8e2b13e47d897b44e3726c3e3a424666f9300316e0271e4c329bf250ed8f0734",
+    "files": [
+      {
+        "path": "build/web-mobile/application.js",
+        "sha256": "359f85dd922e2568aa991af95a5c356a0102042c8918252987bfbd37f2153eb2"
+      },
+      {
+        "path": "build/web-mobile/assets/internal/config.json",
+        "sha256": "ed5fe4286ac7ccc8bc08188296502480f98cf956e74dc04780afa9b58fc60385"
+      },
+      {
+        "path": "build/web-mobile/assets/internal/import/0b/0b0f7a282.json",
+        "sha256": "4436abc5b0607e56136f40624532487c1843327950c3ada497ed3986e70218d1"
+      },
+      {
+        "path": "build/web-mobile/assets/internal/index.js",
+        "sha256": "19bd675acfdd6f12d4bfec92fa4fa354b57c1dee7256325dce20ebfc5657b58c"
+      },
+      {
+        "path": "build/web-mobile/assets/main/config.json",
+        "sha256": "a4486c3038296fcbb466e656539b8509f00b0b80634bab6a003dc649d05c3fa3"
+      },
+      {
+        "path": "build/web-mobile/assets/main/import/75/752d3aa0-8b82-4e8e-a6d4-c6587c90bcf2.json",
+        "sha256": "2c424a3913a288b9d5d8a15df069165c2ffa0fefc9a17d938ba1889927efc722"
+      },
+      {
+        "path": "build/web-mobile/assets/main/import/ba/ba21476f-2866-4f81-9c4d-6e359316e448.json",
+        "sha256": "0a34e9263b215bb661d6334db6a255497c6cdac1f1c40b130f50bf9d91f4dd39"
+      },
+      {
+        "path": "build/web-mobile/assets/main/import/fd/fd8ec536-a354-4a17-9c74-4f3883c378c8.json",
+        "sha256": "c2eee4552a460ed97591f527e127b95c811d5f796b9448f3f705974af9beba9d"
+      },
+      {
+        "path": "build/web-mobile/assets/main/index.js",
+        "sha256": "9bee1f4d9977c165ff255cd5c5afd466fa689edace5e1f13e6dc3f8b95fe7a12"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/config.json",
+        "sha256": "a743a293c56b4e75b4e85481c6434b40140941325aaeb16c321ce96afa6f64da"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/02/02b99c7d-dec3-4346-b692-ca9aaadbf696.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/06/06f6b9c40.json",
+        "sha256": "e09e2b07b33931ba29b4c14189a953a56f4cdc9f615fc0b69b3f24471255f0ab"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/07/077d75a1-d656-4a57-889c-63ef6cf24ef8.json",
+        "sha256": "689a4380e05f71f36e19a0f98e95eaaec687b44eafe721042afd729a284a3edb"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/07/079a184f-d120-4a14-ba21-e137ff8cdb86.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/15/15aec887-a6bb-4792-a785-0aea83036ae7.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/1a/1ae912b9-7822-44b2-9311-df40a35f8c47.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/2d/2dd04d23-56ff-4b1d-b60a-04820e67cf28.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/46/4628b3c8-68ed-4eed-9804-c8ab8369fd53.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/4e/4ed9d725-538e-4ca9-81ed-c68712e75a10.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/4f/4f92e73c-2162-4816-9b0f-46698f695b22.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/62/6203fabf-0570-4acc-9212-178d0106e49d.json",
+        "sha256": "00feec59b644bcc2ae72278868a41fee0a716a97250a18163eb79ea127c18990"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/69/69356416-2560-4f5c-ba5c-2f0654a3a6b4.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/74/74ea62e0-29e8-4760-a973-1500b899b8c7.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/76/76274ed3-1f31-4677-8536-022bbbf765cc.json",
+        "sha256": "e7abdb4e0b8860898623bb5594af98b887861801884c133f0125a8abf25767d3"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/77/770fdb90-6908-4b59-93c4-b38460585467.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/78/78e14d24-08d4-48b7-8ef7-dee292d5c033.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/7e/7ee8c4c6-ccc3-4454-b1a8-1a83dd57bd8b.json",
+        "sha256": "7c1bd8d7746aa4e6042c83433dd08ea893edea081dd61bd07cc07547c3e9c7d9"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/84/84b49c27-f7c3-44c9-ba83-ec58dcbc9845.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/91/917f855e-aaec-4589-8545-8364bfefbf8d.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/92/9268763b-05be-48b6-a2be-24a25f8532d2.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/99/9905285d-3e53-4f9e-8507-3e7a3c04cf3f.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/a8/a88269ff-c70b-4c3c-b7f1-b56c58916218.json",
+        "sha256": "1d1534446d06b56798f2fda7ef89ff86077271fb45256588cd0f0da780bfa082"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/b6/b6462068-5533-4bba-bcce-2ec2b27e63b4.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/c4/c4f2fd53-2936-4484-9409-6332d0eee16b.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/c6/c6018ba7-e96b-44a7-8085-79fe615cca75.json",
+        "sha256": "e4c4e40f59bebd77564a34dcc037f1f00379d5759bded577cd5dbfe65dfcf446"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/c6/c698781f-f9ba-45fc-ae45-8ead3fdf5c34.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/da/daddd450-ea58-4380-8fd3-f89e803ca338.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/db/db0d01b5-2581-4f79-b9a6-7eec8f4d8381.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/dc/dc300c8e-7d11-44de-bc19-fd31941b6c65.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/df/dff5a617-2f8b-4767-807b-ab290886caff.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/ea/eaa0ff9f-7dbf-4ccb-a284-22b2bda80e81.json",
+        "sha256": "1c97d59aa415bdf18af926ceb602e7e60dc3820ff6d68ea83cb8c4d027c8f0a4"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/import/fd/fd3303dc-1047-4e3e-83ab-9f346876e32e.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/index.js",
+        "sha256": "51a07ab61ee49561d29734ff6ee095b0d8a47998bbe30a6f1973bf3c8b7faa25"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/02/02b99c7d-dec3-4346-b692-ca9aaadbf696.png",
+        "sha256": "1743774f0a20a11661c4244f7df112a12bd688baceee43267599322802e6da6e"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/07/077d75a1-d656-4a57-889c-63ef6cf24ef8.mp3",
+        "sha256": "99a7ac1ef3e111cd697e45bf2266447f6e01a95395f1aba472419fdafd143fce"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/07/079a184f-d120-4a14-ba21-e137ff8cdb86.png",
+        "sha256": "79c0b60a5558a3169713b9300055cda41c316475569a05d248e4e375f765b393"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/15/15aec887-a6bb-4792-a785-0aea83036ae7.png",
+        "sha256": "dba799d87f5a2f120649cdb3e9669a6a7fedd053f00118417669d0e83955cf2a"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/1a/1ae912b9-7822-44b2-9311-df40a35f8c47.png",
+        "sha256": "f9f117132c7e68aafc7468359946dd1b11bd77e1b4d2dfd0dfb9049be1d5ebaa"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/2d/2dd04d23-56ff-4b1d-b60a-04820e67cf28.png",
+        "sha256": "e550fe48982205119c67991d50529738971093215691f59aaf97df329593c951"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/46/4628b3c8-68ed-4eed-9804-c8ab8369fd53.png",
+        "sha256": "b9725188c0a3b4ca6bff9eda5fa8ec3e737addca1876e1dd8d12c5b9b84eec03"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/4e/4ed9d725-538e-4ca9-81ed-c68712e75a10.png",
+        "sha256": "b36191d8f0b6dc9aad09da2e9dc6f47512ae4867ad75e9527224a3bde2d3b53c"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/4f/4f92e73c-2162-4816-9b0f-46698f695b22.png",
+        "sha256": "075d160e3d6c9fe04d27d8127444a3a35c174a080025762026e59766ffc755af"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/62/6203fabf-0570-4acc-9212-178d0106e49d.mp3",
+        "sha256": "16c55c77040394c5e5cd68959350db3510d9ac9b3bd7d3e0f4cf1c5757a33423"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/69/69356416-2560-4f5c-ba5c-2f0654a3a6b4.png",
+        "sha256": "e78749684a44fe3483dd85eb6d12dbc9371d4e77a62b41143b0389af9fe33dd1"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/74/74ea62e0-29e8-4760-a973-1500b899b8c7.png",
+        "sha256": "14dcb6d5692d39709710d135db0b37d066cd7548a5b9933dd9385c1ba6941e1a"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/76/76274ed3-1f31-4677-8536-022bbbf765cc.mp3",
+        "sha256": "31bbdad4a26a001e9ce7b360dacb1d2617c2a52861194dca7317c8a61f40bf66"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/77/770fdb90-6908-4b59-93c4-b38460585467.png",
+        "sha256": "221f5e99d9f6fb334b6ee3ed13c85aec07676dfe80e06dec9ebec30e05602261"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/78/78e14d24-08d4-48b7-8ef7-dee292d5c033.png",
+        "sha256": "e55c72f08ce0f74f736c147479dbc257e9f4e942f95b676026f7da4a595a1080"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/7e/7ee8c4c6-ccc3-4454-b1a8-1a83dd57bd8b.mp3",
+        "sha256": "e0c56190020ae7be5bdb329b79a810e9761c4ae038212d84564af0c5dba087c1"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/84/84b49c27-f7c3-44c9-ba83-ec58dcbc9845.png",
+        "sha256": "af5d4ceeef1d216e67bd64b4c2ce7069ff3c93f7b7b145ef7c897dc53ed8847a"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/91/917f855e-aaec-4589-8545-8364bfefbf8d.png",
+        "sha256": "06609d423832ab28d4e83108e3a465104a49ce99791baa7580e284021897f01b"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/92/9268763b-05be-48b6-a2be-24a25f8532d2.png",
+        "sha256": "bb021f81546acd5d0045371933d6a0852409b004d0adc6c31e1cf930a6537f0d"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/99/9905285d-3e53-4f9e-8507-3e7a3c04cf3f.png",
+        "sha256": "7d9d85ad6a5c378a66ca6fbfe4d05ecaf89ac0e91568d8819a9ef60384957a01"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/a8/a88269ff-c70b-4c3c-b7f1-b56c58916218.mp3",
+        "sha256": "b16ba541ef475d7c4d3917f103671e0f4deeb518a5196b1abd752527e8a10f67"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/b6/b6462068-5533-4bba-bcce-2ec2b27e63b4.png",
+        "sha256": "826eb3326c6c0f4e186254e4b3c801f1cbd529e982d7f5342a7434269c8a0a6e"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/c4/c4f2fd53-2936-4484-9409-6332d0eee16b.png",
+        "sha256": "e8c24a5ce8d318a7dc449242c00f95c24ba4cf36bf4957ff0e3e025fa05a8b66"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/c6/c6018ba7-e96b-44a7-8085-79fe615cca75.m4a",
+        "sha256": "91b99afa2695415731820e9e8a1b13de0ea1511a2dd08dbbdfd554cd51d2bae1"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/c6/c698781f-f9ba-45fc-ae45-8ead3fdf5c34.png",
+        "sha256": "3678351c4166367ef40f6682eecba8432bde1bd9795a56273b956c5648f9932a"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/da/daddd450-ea58-4380-8fd3-f89e803ca338.png",
+        "sha256": "5614d21e445536a40cc15d58e9de92e64d81900c33ccaa23681a4fb3a70278fd"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/db/db0d01b5-2581-4f79-b9a6-7eec8f4d8381.png",
+        "sha256": "dfa0a0321d0070d79ef3ff754a2ad50707dbab4938927c5cbf06ad3e27e0c76a"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/dc/dc300c8e-7d11-44de-bc19-fd31941b6c65.png",
+        "sha256": "bec457421097c5857390946bf9f18b204d206fc283cb23592349da00b0e022b4"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/df/dff5a617-2f8b-4767-807b-ab290886caff.png",
+        "sha256": "c066db628f8a493c1c8ed500e58e1472e5bc3328cc18c3699c0b71a16a8aec00"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/ea/eaa0ff9f-7dbf-4ccb-a284-22b2bda80e81.mp3",
+        "sha256": "a792daf8c80a915f089ef8dd69c7b991ddd82af115062f7300d0e45f69c2bbf7"
+      },
+      {
+        "path": "build/web-mobile/assets/resources/native/fd/fd3303dc-1047-4e3e-83ab-9f346876e32e.png",
+        "sha256": "84b3409aeac0fc0db506bf9624789b4e32a55c76b32f1405bf8faab78a84b284"
+      },
+      {
+        "path": "build/web-mobile/cocos-js/cc.js",
+        "sha256": "81c7cd57cb15a4effc2311d16017dcb58ab295aa76c930cd294c995d16152fb6"
+      },
+      {
+        "path": "build/web-mobile/index.html",
+        "sha256": "3ed5cf71346496751197ca4a2abb5d1304629d01502a380db46407fc6932167d"
+      },
+      {
+        "path": "build/web-mobile/index.js",
+        "sha256": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd"
+      },
+      {
+        "path": "build/web-mobile/src/chunks/bundle.js",
+        "sha256": "676505eab615bbe3437148994a411977623dbdd52c4336a00f17df52f3527e26"
+      },
+      {
+        "path": "build/web-mobile/src/effect.bin",
+        "sha256": "b0d92f8307e3109abe8af8a863d68feb58cf4f49cf000b1d48fbb3dc3ad45556"
+      },
+      {
+        "path": "build/web-mobile/src/import-map.json",
+        "sha256": "2be73d8f2e7e1d814627714ace691b6e1a9d445c779426a224e7f3685f0fa278"
+      },
+      {
+        "path": "build/web-mobile/src/polyfills.bundle.js",
+        "sha256": "f1e4ced3322168d6b9915e782e4c1cf1055d75f66f2b38e7fcd60f48cf89082b"
+      },
+      {
+        "path": "build/web-mobile/src/settings.json",
+        "sha256": "a1490573225531da33c419b7ed5acee48043b529e79797f39761c191892b9d9c"
+      },
+      {
+        "path": "build/web-mobile/src/system.bundle.js",
+        "sha256": "90f192f3b04f7fcb5bba9c15745cdd1a798d9b855f752c5ee7e48bb526dd543d"
+      },
+      {
+        "path": "build/web-mobile/style.css",
+        "sha256": "338fc9d734af60103e6d303333e28b413f477b295fd7dd233dc7022320c56e48"
+      }
+    ]
+  },
+  "wechat": {
+    "sha256": "2ab40206c87593ccef6393e98ab9b7f9935c37fcec4c26b298f945f6dff6abea",
+    "files": [
+      {
+        "path": "build/wechatgame/application.js",
+        "sha256": "359f85dd922e2568aa991af95a5c356a0102042c8918252987bfbd37f2153eb2"
+      },
+      {
+        "path": "build/wechatgame/assets/internal/config.json",
+        "sha256": "ed5fe4286ac7ccc8bc08188296502480f98cf956e74dc04780afa9b58fc60385"
+      },
+      {
+        "path": "build/wechatgame/assets/internal/import/0b/0b0f7a282.json",
+        "sha256": "1c31e605c04ca108616054a2234ffd45f411d09bab5824a8e662780fcacc5169"
+      },
+      {
+        "path": "build/wechatgame/assets/internal/index.js",
+        "sha256": "19bd675acfdd6f12d4bfec92fa4fa354b57c1dee7256325dce20ebfc5657b58c"
+      },
+      {
+        "path": "build/wechatgame/assets/main/config.json",
+        "sha256": "a4486c3038296fcbb466e656539b8509f00b0b80634bab6a003dc649d05c3fa3"
+      },
+      {
+        "path": "build/wechatgame/assets/main/import/75/752d3aa0-8b82-4e8e-a6d4-c6587c90bcf2.json",
+        "sha256": "2c424a3913a288b9d5d8a15df069165c2ffa0fefc9a17d938ba1889927efc722"
+      },
+      {
+        "path": "build/wechatgame/assets/main/import/ba/ba21476f-2866-4f81-9c4d-6e359316e448.json",
+        "sha256": "0a34e9263b215bb661d6334db6a255497c6cdac1f1c40b130f50bf9d91f4dd39"
+      },
+      {
+        "path": "build/wechatgame/assets/main/import/fd/fd8ec536-a354-4a17-9c74-4f3883c378c8.json",
+        "sha256": "c2eee4552a460ed97591f527e127b95c811d5f796b9448f3f705974af9beba9d"
+      },
+      {
+        "path": "build/wechatgame/assets/main/index.js",
+        "sha256": "4320a31b89dcd2080d450b374be0aff87e35013d8aeec0b7ac0047f24d0b9190"
+      },
+      {
+        "path": "build/wechatgame/cocos-js/cc.js",
+        "sha256": "e182b6b7ac6a99851c120e147c13f9f72464b4a17869c7837c421880707a8d53"
+      },
+      {
+        "path": "build/wechatgame/engine-adapter.js",
+        "sha256": "5b649b336c4be870e7d40cad6b5231623032a77444644e42af34ad31fd9fd031"
+      },
+      {
+        "path": "build/wechatgame/first-screen.js",
+        "sha256": "ff5e1afcc7ffcf0bb11f343107cee2b300c13c9c2314ca55333cb86a58c6097c"
+      },
+      {
+        "path": "build/wechatgame/game.js",
+        "sha256": "32a997ceb72b71efbc26553d820d1a2de26115a5b00ac48917351ca5ab68c5a3"
+      },
+      {
+        "path": "build/wechatgame/game.json",
+        "sha256": "4db9a66f62759fe5fcf86de77c8174e47654a1820354453958fef345a25e3473"
+      },
+      {
+        "path": "build/wechatgame/logo.png",
+        "sha256": "9e6a5832c6bc9c5f2da97dc54d916fd257a6ab35e9ffd57dbe88c435bd535940"
+      },
+      {
+        "path": "build/wechatgame/slogan.png",
+        "sha256": "b3113554f80c03f9ce51d12ea7c17d68bf7914b89d092743cc54cd370d7f65a9"
+      },
+      {
+        "path": "build/wechatgame/src/chunks/bundle.js",
+        "sha256": "8ea7b6c98a721a5c629c1ce09abb3d95a472ece4f364b51c2bd6da6d6685695e"
+      },
+      {
+        "path": "build/wechatgame/src/effect.bin",
+        "sha256": "b0d92f8307e3109abe8af8a863d68feb58cf4f49cf000b1d48fbb3dc3ad45556"
+      },
+      {
+        "path": "build/wechatgame/src/import-map.js",
+        "sha256": "f3cf39bc861d3a2ffd0bfc7d2e7df4397e54d13f71d3f74fbe213219e728bbdc"
+      },
+      {
+        "path": "build/wechatgame/src/polyfills.bundle.js",
+        "sha256": "cb588d11797e0ca56123d979812db39c8b38dd01c5a6761b2aa5f79cb1d4c701"
+      },
+      {
+        "path": "build/wechatgame/src/settings.json",
+        "sha256": "0514d102ce45c94ee2bf4221351cd3103c648e4523f90e73ffc1710ba7636149"
+      },
+      {
+        "path": "build/wechatgame/src/system.bundle.js",
+        "sha256": "9e52437715d2e6a8acacb41f1c64d916e4b455d2a9d448f09cecd551dc084b84"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/config.json",
+        "sha256": "a743a293c56b4e75b4e85481c6434b40140941325aaeb16c321ce96afa6f64da"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/game.js",
+        "sha256": "51a07ab61ee49561d29734ff6ee095b0d8a47998bbe30a6f1973bf3c8b7faa25"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/02/02b99c7d-dec3-4346-b692-ca9aaadbf696.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/06/06f6b9c40.json",
+        "sha256": "e09e2b07b33931ba29b4c14189a953a56f4cdc9f615fc0b69b3f24471255f0ab"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/07/077d75a1-d656-4a57-889c-63ef6cf24ef8.json",
+        "sha256": "689a4380e05f71f36e19a0f98e95eaaec687b44eafe721042afd729a284a3edb"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/07/079a184f-d120-4a14-ba21-e137ff8cdb86.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/15/15aec887-a6bb-4792-a785-0aea83036ae7.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/1a/1ae912b9-7822-44b2-9311-df40a35f8c47.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/2d/2dd04d23-56ff-4b1d-b60a-04820e67cf28.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/46/4628b3c8-68ed-4eed-9804-c8ab8369fd53.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/4e/4ed9d725-538e-4ca9-81ed-c68712e75a10.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/4f/4f92e73c-2162-4816-9b0f-46698f695b22.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/62/6203fabf-0570-4acc-9212-178d0106e49d.json",
+        "sha256": "00feec59b644bcc2ae72278868a41fee0a716a97250a18163eb79ea127c18990"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/69/69356416-2560-4f5c-ba5c-2f0654a3a6b4.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/74/74ea62e0-29e8-4760-a973-1500b899b8c7.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/76/76274ed3-1f31-4677-8536-022bbbf765cc.json",
+        "sha256": "e7abdb4e0b8860898623bb5594af98b887861801884c133f0125a8abf25767d3"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/77/770fdb90-6908-4b59-93c4-b38460585467.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/78/78e14d24-08d4-48b7-8ef7-dee292d5c033.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/7e/7ee8c4c6-ccc3-4454-b1a8-1a83dd57bd8b.json",
+        "sha256": "7c1bd8d7746aa4e6042c83433dd08ea893edea081dd61bd07cc07547c3e9c7d9"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/84/84b49c27-f7c3-44c9-ba83-ec58dcbc9845.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/91/917f855e-aaec-4589-8545-8364bfefbf8d.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/92/9268763b-05be-48b6-a2be-24a25f8532d2.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/99/9905285d-3e53-4f9e-8507-3e7a3c04cf3f.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/a8/a88269ff-c70b-4c3c-b7f1-b56c58916218.json",
+        "sha256": "1d1534446d06b56798f2fda7ef89ff86077271fb45256588cd0f0da780bfa082"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/b6/b6462068-5533-4bba-bcce-2ec2b27e63b4.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/c4/c4f2fd53-2936-4484-9409-6332d0eee16b.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/c6/c6018ba7-e96b-44a7-8085-79fe615cca75.json",
+        "sha256": "e4c4e40f59bebd77564a34dcc037f1f00379d5759bded577cd5dbfe65dfcf446"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/c6/c698781f-f9ba-45fc-ae45-8ead3fdf5c34.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/da/daddd450-ea58-4380-8fd3-f89e803ca338.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/db/db0d01b5-2581-4f79-b9a6-7eec8f4d8381.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/dc/dc300c8e-7d11-44de-bc19-fd31941b6c65.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/df/dff5a617-2f8b-4767-807b-ab290886caff.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/ea/eaa0ff9f-7dbf-4ccb-a284-22b2bda80e81.json",
+        "sha256": "1c97d59aa415bdf18af926ceb602e7e60dc3820ff6d68ea83cb8c4d027c8f0a4"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/import/fd/fd3303dc-1047-4e3e-83ab-9f346876e32e.json",
+        "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/native/02/02b99c7d-dec3-4346-b692-ca9aaadbf696.png",
+        "sha256": "1743774f0a20a11661c4244f7df112a12bd688baceee43267599322802e6da6e"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/native/07/077d75a1-d656-4a57-889c-63ef6cf24ef8.mp3",
+        "sha256": "99a7ac1ef3e111cd697e45bf2266447f6e01a95395f1aba472419fdafd143fce"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/native/07/079a184f-d120-4a14-ba21-e137ff8cdb86.png",
+        "sha256": "79c0b60a5558a3169713b9300055cda41c316475569a05d248e4e375f765b393"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/native/15/15aec887-a6bb-4792-a785-0aea83036ae7.png",
+        "sha256": "dba799d87f5a2f120649cdb3e9669a6a7fedd053f00118417669d0e83955cf2a"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/native/2d/2dd04d23-56ff-4b1d-b60a-04820e67cf28.png",
+        "sha256": "e550fe48982205119c67991d50529738971093215691f59aaf97df329593c951"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/native/62/6203fabf-0570-4acc-9212-178d0106e49d.mp3",
+        "sha256": "16c55c77040394c5e5cd68959350db3510d9ac9b3bd7d3e0f4cf1c5757a33423"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/native/74/74ea62e0-29e8-4760-a973-1500b899b8c7.png",
+        "sha256": "14dcb6d5692d39709710d135db0b37d066cd7548a5b9933dd9385c1ba6941e1a"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/native/76/76274ed3-1f31-4677-8536-022bbbf765cc.mp3",
+        "sha256": "31bbdad4a26a001e9ce7b360dacb1d2617c2a52861194dca7317c8a61f40bf66"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/native/78/78e14d24-08d4-48b7-8ef7-dee292d5c033.png",
+        "sha256": "e55c72f08ce0f74f736c147479dbc257e9f4e942f95b676026f7da4a595a1080"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/native/7e/7ee8c4c6-ccc3-4454-b1a8-1a83dd57bd8b.mp3",
+        "sha256": "e0c56190020ae7be5bdb329b79a810e9761c4ae038212d84564af0c5dba087c1"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/native/92/9268763b-05be-48b6-a2be-24a25f8532d2.png",
+        "sha256": "bb021f81546acd5d0045371933d6a0852409b004d0adc6c31e1cf930a6537f0d"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/native/c4/c4f2fd53-2936-4484-9409-6332d0eee16b.png",
+        "sha256": "e8c24a5ce8d318a7dc449242c00f95c24ba4cf36bf4957ff0e3e025fa05a8b66"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/native/da/daddd450-ea58-4380-8fd3-f89e803ca338.png",
+        "sha256": "5614d21e445536a40cc15d58e9de92e64d81900c33ccaa23681a4fb3a70278fd"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/native/db/db0d01b5-2581-4f79-b9a6-7eec8f4d8381.png",
+        "sha256": "dfa0a0321d0070d79ef3ff754a2ad50707dbab4938927c5cbf06ad3e27e0c76a"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/native/df/dff5a617-2f8b-4767-807b-ab290886caff.png",
+        "sha256": "c066db628f8a493c1c8ed500e58e1472e5bc3328cc18c3699c0b71a16a8aec00"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/native/ea/eaa0ff9f-7dbf-4ccb-a284-22b2bda80e81.mp3",
+        "sha256": "a792daf8c80a915f089ef8dd69c7b991ddd82af115062f7300d0e45f69c2bbf7"
+      },
+      {
+        "path": "build/wechatgame/subpackages/resources/native/fd/fd3303dc-1047-4e3e-83ab-9f346876e32e.png",
+        "sha256": "84b3409aeac0fc0db506bf9624789b4e32a55c76b32f1405bf8faab78a84b284"
+      },
+      {
+        "path": "build/wechatgame/web-adapter.js",
+        "sha256": "699ad028d891e2671b6be8c46bd7835d9dadbda23758b072e3db22085edea34f"
+      }
+    ]
+  },
+  "localTestIdentityExcluded": true
+}

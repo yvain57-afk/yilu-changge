@@ -1,11 +1,11 @@
 {
   "name": "yilu-changge",
-  "version": "0.3.1-rc1",
+  "version": "0.5.1-rc1",
   "private": true,
   "creator": {
     "version": "3.8.8"
   },
-  "description": "一路长歌 — v0.3三关试玩候选",
+  "description": "一路长歌：三国 — 三关完整试玩",
   "scripts": {
     "test": "node tools/run-local.mjs tsx --test tests/*.test.ts",
     "typecheck:core": "node tools/run-local.mjs tsc -p tsconfig.core.json --noEmit",

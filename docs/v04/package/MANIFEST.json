@@ -1,0 +1,67 @@
+{
+  "package": "YILU_THREE_KINGDOMS_V04_CODEX",
+  "createdDate": "2026-09-22",
+  "kind": "development-specification-not-game-build",
+  "files": [
+    {
+      "path": "00_START_WITH_CODEX.md",
+      "bytes": 3173,
+      "sha256": "7b2d9f111e969eb9eb1e24734cd2f5b5476462351cfd385042a5b08b93ab99f3"
+    },
+    {
+      "path": "01_DELIVERY_BRIEF.md",
+      "bytes": 6020,
+      "sha256": "1a8b3bbb5029453c89e3c0b224af79a82a5a2a64c9087a1c590aa00a0849bd23"
+    },
+    {
+      "path": "02_COMBAT_CONTRACT.md",
+      "bytes": 8378,
+      "sha256": "c194441027c731e370ca642e1c6af93d5ad3448d5cea84c9f4461b60946bdb50"
+    },
+    {
+      "path": "03_CAMPAIGN_AND_TRANSITIONS.md",
+      "bytes": 8620,
+      "sha256": "1356d2e46c8cf0db1956df877f0503c22044b213cbb4d3ec46f0e2d7b5a33dfb"
+    },
+    {
+      "path": "04_ART_AND_MOTION.md",
+      "bytes": 6146,
+      "sha256": "cd6ed1a5ffd98d0e37577114e8aa4b82ad1903aff2477f831ee6d286f358e279"
+    },
+    {
+      "path": "05_TESTS_AND_DELIVERY.md",
+      "bytes": 6077,
+      "sha256": "86c2cad0d55b7bd534f162ad61235f09eb86f726fa0897c3806e33cf4957ea54"
+    },
+    {
+      "path": "06_BASELINE_AND_DECISIONS.md",
+      "bytes": 3611,
+      "sha256": "cc92b233e460c35d1a2d4dbebdaab04aaf0dde32bb75f5447b7ab06a15f0a038"
+    },
+    {
+      "path": "PACKAGE_CHECK.json",
+      "bytes": 973,
+      "sha256": "0b1381b87bfac80db00c7b2a72d240309a391cfdc34acd7708da7b79761d9b13"
+    },
+    {
+      "path": "README_FIRST.md",
+      "bytes": 2382,
+      "sha256": "516d297d5ec73e2ed460c80064260b1218068e76eb40cacd5c35c05bd5276345"
+    },
+    {
+      "path": "data/campaign.v04.json",
+      "bytes": 5830,
+      "sha256": "1b275c32fe3b43e29d8d435e0ad7b7a528a4ad96a97b921f433934348bb92a04"
+    },
+    {
+      "path": "data/combat.v04.json",
+      "bytes": 2221,
+      "sha256": "556f7199b9ca842233fb32e02a166d07c0bf6ade624e54bd7d4da12225976dbf"
+    },
+    {
+      "path": "tools/validate_package.py",
+      "bytes": 4468,
+      "sha256": "9c58395be3f925e3ea47fb68c37ae0201ae784371354c01a75e0c7914ce04148"
+    }
+  ]
+}

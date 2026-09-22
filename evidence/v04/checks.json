@@ -1,0 +1,18 @@
+{
+  "version": "v04-rc1",
+  "sourceHash": "a37d7e8f9c270a09b3f229232ac03d018742fd110ad09994e0d81d1df767db56",
+  "fastTests": {
+    "passed": 78,
+    "failed": 0,
+    "file": "tests.tap"
+  },
+  "typecheck": true,
+  "webBuild": true,
+  "wechatBuild": true,
+  "fixture": true,
+  "finalLayout": true,
+  "naturalDelivery": true,
+  "continuousVideoSeconds": 222.084333,
+  "wechatDeviceAccepted": false,
+  "wechatPreviewUploaded": false
+}

@@ -1,0 +1,986 @@
+{
+  "passed": true,
+  "version": "v051-rc1",
+  "scope": "one continuous natural real-input three-level run, no model mutation, one realtime live audio recording; reload verified after capture",
+  "capture": {
+    "audioTracks": 1,
+    "mime": "video/webm;codecs=vp9,opus"
+  },
+  "sound": {
+    "peak": 0.058574437436376664,
+    "audibleSamples": 1194,
+    "samples": 4605
+  },
+  "pauseChecked": true,
+  "timeline": [
+    {
+      "type": "battle-start",
+      "level": 1,
+      "seconds": 0.198
+    },
+    {
+      "type": "opening-melee",
+      "level": 1,
+      "seconds": 0.566
+    },
+    {
+      "type": "boss-engaged",
+      "level": 1,
+      "seconds": 43.659
+    },
+    {
+      "type": "victory",
+      "level": 1,
+      "seconds": 56.958
+    },
+    {
+      "type": "transition",
+      "level": 1,
+      "seconds": 58.679
+    },
+    {
+      "type": "battle-start",
+      "level": 2,
+      "seconds": 61.221
+    },
+    {
+      "type": "boss-engaged",
+      "level": 2,
+      "seconds": 116.034
+    },
+    {
+      "type": "victory",
+      "level": 2,
+      "seconds": 131.074
+    },
+    {
+      "type": "transition",
+      "level": 2,
+      "seconds": 132.762
+    },
+    {
+      "type": "battle-start",
+      "level": 3,
+      "seconds": 135.307
+    },
+    {
+      "type": "boss-engaged",
+      "level": 3,
+      "seconds": 202.164
+    },
+    {
+      "type": "victory",
+      "level": 3,
+      "seconds": 222.444
+    },
+    {
+      "type": "transition",
+      "level": 3,
+      "seconds": 224.131
+    },
+    {
+      "type": "zhaoyun",
+      "level": 3,
+      "seconds": 226.436
+    },
+    {
+      "type": "end",
+      "level": 3,
+      "seconds": 230.307
+    }
+  ],
+  "runs": [
+    {
+      "level": 1,
+      "elapsed": 55.566666666664794,
+      "count": 88,
+      "combat": {
+        "meleeHits": 13,
+        "meleeDamage": 99.75,
+        "waveHits": 8,
+        "companionHits": 0,
+        "upgrades": 2,
+        "awakenings": 1,
+        "volleys": 223,
+        "lastMelee": {
+          "kind": "meleeHit",
+          "x": 0.05325523763526537,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 42.75,
+          "hitHeight": 15.83952800364468,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 94,
+          "simulationTick": 3324
+        }
+      },
+      "contacts": [
+        {
+          "kind": "meleeHit",
+          "x": 0.019374579420254046,
+          "amount": 8.75,
+          "targetId": "boss",
+          "worldZ": 42.9,
+          "hitHeight": 21.59212718132752,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 74,
+          "simulationTick": 2604,
+          "wallSeconds": 44.1
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.019374579420254046,
+          "amount": 8.75,
+          "targetId": "boss",
+          "worldZ": 42.9,
+          "hitHeight": 21.59212718132752,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 75,
+          "simulationTick": 2640,
+          "wallSeconds": 44.673
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.05325523763526537,
+          "amount": 8.75,
+          "targetId": "boss",
+          "worldZ": 42.75,
+          "hitHeight": 15.83952800364468,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 78,
+          "simulationTick": 2748,
+          "wallSeconds": 46.484
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.03633977390544061,
+          "amount": 8.75,
+          "targetId": "boss",
+          "worldZ": 42.800000000000004,
+          "hitHeight": 21.411571073146558,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 79,
+          "simulationTick": 2784,
+          "wallSeconds": 47.074
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.019374579420254046,
+          "amount": 8.75,
+          "targetId": "boss",
+          "worldZ": 42.9,
+          "hitHeight": 21.59212718132752,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 80,
+          "simulationTick": 2820,
+          "wallSeconds": 47.646
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.05325523763526537,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 42.75,
+          "hitHeight": 15.83952800364468,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 83,
+          "simulationTick": 2928,
+          "wallSeconds": 49.496
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.036298293787715534,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 42.78333333333333,
+          "hitHeight": 23.213454432182175,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 84,
+          "simulationTick": 2964,
+          "wallSeconds": 50.066
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.019374579420254046,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 42.9,
+          "hitHeight": 21.59212718132752,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 85,
+          "simulationTick": 3000,
+          "wallSeconds": 50.694
+        },
+        {
+          "kind": "meleeHit",
+          "x": -0.009819666657676184,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 42.75,
+          "hitHeight": 15.83952800364468,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 88,
+          "simulationTick": 3108,
+          "wallSeconds": 52.484
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.053315956639760936,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 42.766666666666666,
+          "hitHeight": 14.033346093808563,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 89,
+          "simulationTick": 3144,
+          "wallSeconds": 53.058
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.019374579420254046,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 42.9,
+          "hitHeight": 21.59212718132752,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 90,
+          "simulationTick": 3180,
+          "wallSeconds": 53.703
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.05325523763526537,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 42.75,
+          "hitHeight": 15.83952800364468,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 93,
+          "simulationTick": 3288,
+          "wallSeconds": 55.446
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.05325523763526537,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 42.75,
+          "hitHeight": 15.83952800364468,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 94,
+          "simulationTick": 3324,
+          "wallSeconds": 56.084
+        }
+      ],
+      "damageTotals": {
+        "hero": {
+          "melee": 99.75,
+          "wave": 49.949999999999996
+        },
+        "archer": 672.2999999999998,
+        "companions": {}
+      },
+      "weapon": "spear",
+      "companion": null,
+      "tier": 3,
+      "upgradeRewards": [
+        1,
+        3
+      ],
+      "savedBeforeResult": true,
+      "samples": [
+        {
+          "elapsed": 20.06666666666681,
+          "fps": 59.95085995085997,
+          "count": 44,
+          "drawCalls": 26,
+          "triangles": 2223,
+          "gpuBuffers": 37793508,
+          "gpuTextures": 76333188,
+          "jsHeap": 30757812
+        },
+        {
+          "elapsed": 40.09999999999901,
+          "fps": 59.94604855772729,
+          "count": 88,
+          "drawCalls": 23,
+          "triangles": 2455,
+          "gpuBuffers": 47232820,
+          "gpuTextures": 76429448,
+          "jsHeap": 24390528
+        }
+      ],
+      "meanFPS": 60.00113746229593
+    },
+    {
+      "level": 2,
+      "elapsed": 69.31666666666402,
+      "count": 172,
+      "combat": {
+        "meleeHits": 19,
+        "meleeDamage": 89.29999999999998,
+        "waveHits": 31,
+        "companionHits": 15,
+        "upgrades": 2,
+        "awakenings": 1,
+        "volleys": 278,
+        "lastMelee": {
+          "kind": "meleeHit",
+          "x": -0.37444778026576403,
+          "amount": 2.8000000000000003,
+          "targetId": "boss",
+          "worldZ": 54.9,
+          "hitHeight": 15.277900305551809,
+          "sourceId": "xing_daorong",
+          "weaponId": "great_axe",
+          "attackId": 175,
+          "simulationTick": 4129
+        }
+      },
+      "contacts": [
+        {
+          "kind": "meleeHit",
+          "x": -0.3744477802657639,
+          "amount": 2.8000000000000003,
+          "targetId": "boss",
+          "worldZ": 54.9,
+          "hitHeight": 15.277900305551809,
+          "sourceId": "xing_daorong",
+          "weaponId": "great_axe",
+          "attackId": 142,
+          "simulationTick": 3337,
+          "wallSeconds": 116.674
+        },
+        {
+          "kind": "meleeHit",
+          "x": -0.07042992820168646,
+          "amount": 8.75,
+          "targetId": "boss",
+          "worldZ": 54.75,
+          "hitHeight": 16.71132970806314,
+          "sourceId": "hero",
+          "weaponId": "blade",
+          "attackId": 147,
+          "simulationTick": 3469,
+          "wallSeconds": 118.878
+        },
+        {
+          "kind": "meleeHit",
+          "x": -0.37060981352979433,
+          "amount": 2.8000000000000003,
+          "targetId": "boss",
+          "worldZ": 54.75,
+          "hitHeight": 31.52078122226216,
+          "sourceId": "xing_daorong",
+          "weaponId": "great_axe",
+          "attackId": 148,
+          "simulationTick": 3480,
+          "wallSeconds": 119.026
+        },
+        {
+          "kind": "meleeHit",
+          "x": -0.37444778026576403,
+          "amount": 2.8000000000000003,
+          "targetId": "boss",
+          "worldZ": 54.9,
+          "hitHeight": 15.277900305551809,
+          "sourceId": "xing_daorong",
+          "weaponId": "great_axe",
+          "attackId": 151,
+          "simulationTick": 3553,
+          "wallSeconds": 120.252
+        },
+        {
+          "kind": "meleeHit",
+          "x": -0.07042992820168646,
+          "amount": 8.75,
+          "targetId": "boss",
+          "worldZ": 54.75,
+          "hitHeight": 16.71132970806314,
+          "sourceId": "hero",
+          "weaponId": "blade",
+          "attackId": 153,
+          "simulationTick": 3613,
+          "wallSeconds": 121.256
+        },
+        {
+          "kind": "meleeHit",
+          "x": -0.37060981352979433,
+          "amount": 2.8000000000000003,
+          "targetId": "boss",
+          "worldZ": 54.75,
+          "hitHeight": 31.52078122226216,
+          "sourceId": "xing_daorong",
+          "weaponId": "great_axe",
+          "attackId": 154,
+          "simulationTick": 3624,
+          "wallSeconds": 121.467
+        },
+        {
+          "kind": "meleeHit",
+          "x": -0.37444778026576403,
+          "amount": 2.8000000000000003,
+          "targetId": "boss",
+          "worldZ": 54.9,
+          "hitHeight": 15.277900305551809,
+          "sourceId": "xing_daorong",
+          "weaponId": "great_axe",
+          "attackId": 157,
+          "simulationTick": 3697,
+          "wallSeconds": 122.695
+        },
+        {
+          "kind": "meleeHit",
+          "x": -0.07042992820168646,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 54.75,
+          "hitHeight": 16.71132970806314,
+          "sourceId": "hero",
+          "weaponId": "blade",
+          "attackId": 158,
+          "simulationTick": 3721,
+          "wallSeconds": 123.054
+        },
+        {
+          "kind": "meleeHit",
+          "x": -0.08925219273876164,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 54.78333333333333,
+          "hitHeight": 16.887618717600745,
+          "sourceId": "hero",
+          "weaponId": "blade",
+          "attackId": 159,
+          "simulationTick": 3757,
+          "wallSeconds": 123.633
+        },
+        {
+          "kind": "meleeHit",
+          "x": -0.37444778026576403,
+          "amount": 2.8000000000000003,
+          "targetId": "boss",
+          "worldZ": 54.9,
+          "hitHeight": 15.277900305551809,
+          "sourceId": "xing_daorong",
+          "weaponId": "great_axe",
+          "attackId": 160,
+          "simulationTick": 3769,
+          "wallSeconds": 123.849
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.4318658712263506,
+          "amount": 2.8000000000000003,
+          "targetId": "boss",
+          "worldZ": 54.9,
+          "hitHeight": 19.083456267294004,
+          "sourceId": "xing_daorong",
+          "weaponId": "great_axe",
+          "attackId": 163,
+          "simulationTick": 3841,
+          "wallSeconds": 125.072
+        },
+        {
+          "kind": "meleeHit",
+          "x": -0.0704299282016865,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 54.75,
+          "hitHeight": 16.71132970806314,
+          "sourceId": "hero",
+          "weaponId": "blade",
+          "attackId": 165,
+          "simulationTick": 3901,
+          "wallSeconds": 126.064
+        },
+        {
+          "kind": "meleeHit",
+          "x": -0.37060981352979433,
+          "amount": 2.8000000000000003,
+          "targetId": "boss",
+          "worldZ": 54.75,
+          "hitHeight": 31.52078122226216,
+          "sourceId": "xing_daorong",
+          "weaponId": "great_axe",
+          "attackId": 166,
+          "simulationTick": 3912,
+          "wallSeconds": 126.279
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.4318658712263506,
+          "amount": 2.8000000000000003,
+          "targetId": "boss",
+          "worldZ": 54.9,
+          "hitHeight": 19.083456267294004,
+          "sourceId": "xing_daorong",
+          "weaponId": "great_axe",
+          "attackId": 169,
+          "simulationTick": 3985,
+          "wallSeconds": 127.497
+        },
+        {
+          "kind": "meleeHit",
+          "x": -0.07042992820168646,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 54.75,
+          "hitHeight": 16.71132970806314,
+          "sourceId": "hero",
+          "weaponId": "blade",
+          "attackId": 171,
+          "simulationTick": 4045,
+          "wallSeconds": 128.493
+        },
+        {
+          "kind": "meleeHit",
+          "x": -0.37060981352979433,
+          "amount": 2.8000000000000003,
+          "targetId": "boss",
+          "worldZ": 54.75,
+          "hitHeight": 31.52078122226216,
+          "sourceId": "xing_daorong",
+          "weaponId": "great_axe",
+          "attackId": 172,
+          "simulationTick": 4056,
+          "wallSeconds": 128.641
+        },
+        {
+          "kind": "meleeHit",
+          "x": -0.37444778026576403,
+          "amount": 2.8000000000000003,
+          "targetId": "boss",
+          "worldZ": 54.9,
+          "hitHeight": 15.277900305551809,
+          "sourceId": "xing_daorong",
+          "weaponId": "great_axe",
+          "attackId": 175,
+          "simulationTick": 4129,
+          "wallSeconds": 129.865
+        }
+      ],
+      "damageTotals": {
+        "hero": {
+          "melee": 58.5,
+          "wave": 198
+        },
+        "archer": 2008.5000000000005,
+        "companions": {
+          "xing_daorong": {
+            "melee": 30.800000000000004,
+            "wave": 10.400000000000002
+          }
+        }
+      },
+      "weapon": "blade",
+      "companion": "xing_daorong",
+      "tier": 3,
+      "upgradeRewards": [
+        1,
+        4
+      ],
+      "savedBeforeResult": true,
+      "samples": [
+        {
+          "elapsed": 20.01666666666681,
+          "fps": 59.99400060208536,
+          "count": 56,
+          "drawCalls": 25,
+          "triangles": 2635,
+          "gpuBuffers": 56671064,
+          "gpuTextures": 76491024,
+          "jsHeap": 72692048
+        },
+        {
+          "elapsed": 40.09999999999901,
+          "fps": 60.009837678307925,
+          "count": 86,
+          "drawCalls": 31,
+          "triangles": 2573,
+          "gpuBuffers": 63750236,
+          "gpuTextures": 76646624,
+          "jsHeap": 57149744
+        },
+        {
+          "elapsed": 60.16666666666453,
+          "fps": 60.02755363187915,
+          "count": 172,
+          "drawCalls": 28,
+          "triangles": 2217,
+          "gpuBuffers": 66109752,
+          "gpuTextures": 76660972,
+          "jsHeap": 53109352
+        }
+      ],
+      "meanFPS": 59.92838871760158
+    },
+    {
+      "level": 3,
+      "elapsed": 86.54999999999637,
+      "count": 256,
+      "combat": {
+        "meleeHits": 21,
+        "meleeDamage": 151.83333333333331,
+        "waveHits": 33,
+        "companionHits": 18,
+        "upgrades": 2,
+        "awakenings": 1,
+        "volleys": 347,
+        "lastMelee": {
+          "kind": "meleeHit",
+          "x": 0.3212373043152442,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 66.80396825396825,
+          "hitHeight": 20.981944065429644,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 229,
+          "simulationTick": 5088
+        }
+      },
+      "contacts": [
+        {
+          "kind": "meleeHit",
+          "x": 0.019374579420253998,
+          "amount": 8.75,
+          "targetId": "boss",
+          "worldZ": 66.9,
+          "hitHeight": 21.592127181326745,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 183,
+          "simulationTick": 4044,
+          "wallSeconds": 202.523
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.019374579420253998,
+          "amount": 8.75,
+          "targetId": "boss",
+          "worldZ": 66.9,
+          "hitHeight": 21.592127181326745,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 184,
+          "simulationTick": 4080,
+          "wallSeconds": 203.167
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.053255237635265254,
+          "amount": 8.75,
+          "targetId": "boss",
+          "worldZ": 66.75,
+          "hitHeight": 15.83952800364468,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 189,
+          "simulationTick": 4188,
+          "wallSeconds": 204.957
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.01937457942025394,
+          "amount": 8.75,
+          "targetId": "boss",
+          "worldZ": 66.9,
+          "hitHeight": 21.592127181326745,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 191,
+          "simulationTick": 4224,
+          "wallSeconds": 205.531
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.40174314022747654,
+          "amount": 8.75,
+          "targetId": "boss",
+          "worldZ": 66.9,
+          "hitHeight": 21.592127181326745,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 192,
+          "simulationTick": 4260,
+          "wallSeconds": 206.126
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.428818736321611,
+          "amount": 8.75,
+          "targetId": "boss",
+          "worldZ": 66.825,
+          "hitHeight": 51.76660886960472,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 195,
+          "simulationTick": 4333,
+          "wallSeconds": 207.374
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.05325523763526521,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 66.75,
+          "hitHeight": 15.83952800364468,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 197,
+          "simulationTick": 4368,
+          "wallSeconds": 207.965
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.019374579420253894,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 66.9,
+          "hitHeight": 21.592127181326745,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 199,
+          "simulationTick": 4404,
+          "wallSeconds": 208.538
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.053255237635265254,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 66.75,
+          "hitHeight": 15.83952800364468,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 203,
+          "simulationTick": 4512,
+          "wallSeconds": 210.325
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.036381348934989954,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 66.81666666666666,
+          "hitHeight": 19.605564774102362,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 205,
+          "simulationTick": 4548,
+          "wallSeconds": 210.931
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.21055885982386527,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 66.9,
+          "hitHeight": 21.592127181326745,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 207,
+          "simulationTick": 4584,
+          "wallSeconds": 211.521
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.053255237635265254,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 66.75,
+          "hitHeight": 15.83952800364468,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 211,
+          "simulationTick": 4692,
+          "wallSeconds": 213.349
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.01937457942025394,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 66.9,
+          "hitHeight": 21.592127181326745,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 213,
+          "simulationTick": 4728,
+          "wallSeconds": 213.932
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.4276920987018512,
+          "amount": 2.333333333333333,
+          "targetId": "boss",
+          "worldZ": 66.35,
+          "hitHeight": 62.496691426123405,
+          "sourceId": "chen_ying",
+          "weaponId": "throwing_fork",
+          "attackId": 217,
+          "simulationTick": 4816,
+          "wallSeconds": 215.458
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.2582484850946187,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 66.75,
+          "hitHeight": 15.83952800364468,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 218,
+          "simulationTick": 4836,
+          "wallSeconds": 215.763
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.05325523763526521,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 66.75,
+          "hitHeight": 15.83952800364468,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 219,
+          "simulationTick": 4872,
+          "wallSeconds": 216.343
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.019374579420253894,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 66.9,
+          "hitHeight": 21.592127181326745,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 221,
+          "simulationTick": 4908,
+          "wallSeconds": 216.928
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.05325523763526521,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 66.75,
+          "hitHeight": 15.83952800364468,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 226,
+          "simulationTick": 5016,
+          "wallSeconds": 218.753
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.019374579420253894,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 66.9,
+          "hitHeight": 21.592127181326745,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 227,
+          "simulationTick": 5052,
+          "wallSeconds": 219.332
+        },
+        {
+          "kind": "meleeHit",
+          "x": 0.3212373043152442,
+          "amount": 7,
+          "targetId": "boss",
+          "worldZ": 66.80396825396825,
+          "hitHeight": 20.981944065429644,
+          "sourceId": "hero",
+          "weaponId": "spear",
+          "attackId": 229,
+          "simulationTick": 5088,
+          "wallSeconds": 220.006
+        }
+      ],
+      "damageTotals": {
+        "hero": {
+          "melee": 149.5,
+          "wave": 105.75
+        },
+        "archer": 2988.750000000001,
+        "companions": {
+          "chen_ying": {
+            "melee": 2.333333333333333,
+            "wave": 38.99999999999999
+          }
+        }
+      },
+      "weapon": "spear",
+      "companion": "chen_ying",
+      "tier": 3,
+      "upgradeRewards": [
+        1,
+        4
+      ],
+      "savedBeforeResult": true,
+      "samples": [
+        {
+          "elapsed": 20.000000000000146,
+          "fps": 60.00393468283435,
+          "count": 34,
+          "drawCalls": 27,
+          "triangles": 2164,
+          "gpuBuffers": 66109752,
+          "gpuTextures": 76660448,
+          "jsHeap": 82462168
+        },
+        {
+          "elapsed": 40.09999999999901,
+          "fps": 60.00393468283436,
+          "count": 136,
+          "drawCalls": 24,
+          "triangles": 2592,
+          "gpuBuffers": 66109752,
+          "gpuTextures": 76662224,
+          "jsHeap": 40646184
+        },
+        {
+          "elapsed": 60.116666666664536,
+          "fps": 60.03937007874017,
+          "count": 256,
+          "drawCalls": 25,
+          "triangles": 2487,
+          "gpuBuffers": 66109752,
+          "gpuTextures": 76682500,
+          "jsHeap": 63334528
+        },
+        {
+          "elapsed": 80.14999999999674,
+          "fps": 59.01445854303483,
+          "count": 256,
+          "drawCalls": 29,
+          "triangles": 2650,
+          "gpuBuffers": 66109752,
+          "gpuTextures": 76687092,
+          "jsHeap": 44559032
+        }
+      ],
+      "meanFPS": 59.95374243843148
+    }
+  ],
+  "errors": []
+}

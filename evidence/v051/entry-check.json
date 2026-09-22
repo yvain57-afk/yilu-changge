@@ -1,0 +1,32 @@
+[
+  {
+    "path": "/play/?v=051",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/review/v051/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/review/v051/GPT_REVIEW.md",
+    "status": 200,
+    "contentType": "text/plain; charset=utf-8"
+  },
+  {
+    "path": "/evidence/v051/three-levels-live-audio.mp4",
+    "status": 200,
+    "contentType": "video/mp4"
+  },
+  {
+    "path": "/evidence/v051/natural-contact-excerpt.mp4",
+    "status": 200,
+    "contentType": "video/mp4"
+  },
+  {
+    "path": "/evidence/v051/checks.json",
+    "status": 200,
+    "contentType": "application/json"
+  }
+]

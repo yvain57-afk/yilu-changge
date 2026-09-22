@@ -1,0 +1,42 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'evidence/v04/three-levels-with-audio.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf60.3.100
+  Duration: 00:03:42.08, start: 0.000000, bitrate: 2046 kb/s
+  Stream #0:0[0x1](eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 390x844 [SAR 1:1 DAR 195:422], 1861 kb/s, 120 fps, 120 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc60.3.100 libx264
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 164 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:1 -> #0:0 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf60.3.100
+  Stream #0:0(eng): Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc60.3.100 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=   0.0kbits/s speed=64.5x    size=N/A time=00:03:42.08 bitrate=N/A speed=1.18e+03x    
+video:0kB audio:41644kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+[Parsed_volumedetect_0 @ 0x1136045c0] n_samples: 21321728
+[Parsed_volumedetect_0 @ 0x1136045c0] mean_volume: -31.1 dB
+[Parsed_volumedetect_0 @ 0x1136045c0] max_volume: -12.4 dB
+[Parsed_volumedetect_0 @ 0x1136045c0] histogram_12db: 2
+[Parsed_volumedetect_0 @ 0x1136045c0] histogram_13db: 29
+[Parsed_volumedetect_0 @ 0x1136045c0] histogram_14db: 166
+[Parsed_volumedetect_0 @ 0x1136045c0] histogram_15db: 927
+[Parsed_volumedetect_0 @ 0x1136045c0] histogram_16db: 3134
+[Parsed_volumedetect_0 @ 0x1136045c0] histogram_17db: 9357
+[Parsed_volumedetect_0 @ 0x1136045c0] histogram_18db: 24077

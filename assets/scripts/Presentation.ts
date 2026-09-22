@@ -7,7 +7,7 @@ export function keyPose(keys:readonly number[],phase:number){const n=((phase%1)+
 /** Bounded presentation queue, only consumes immutable simulation facts. */
 export class Effects {
  items:{event:Feedback;born:number;life:number}[]=[];lastShot=-10;peak=0;
- accept(events:readonly Feedback[],time:number){for(const e of events){if(e.kind==='shot'){this.lastShot=e.simulationTick!==undefined?e.simulationTick/60:time;continue;}if(['hit','break','hurt','gather'].indexOf(e.kind)>=0)this.items.push({event:e,born:time,life:e.kind==='break'?.48:e.kind==='gather'?.55:.28});}this.items=this.items.slice(-64);this.peak=Math.max(this.peak,this.items.length);}
+ accept(events:readonly Feedback[],time:number){for(const e of events){if(e.kind==='shot'){this.lastShot=e.simulationTick!==undefined?e.simulationTick/60:time;continue;}if(['waveHit','upgrade','awaken','meleeHit','hit','break','hurt','gather'].indexOf(e.kind)>=0)this.items.push({event:e,born:time,life:e.kind==='upgrade'?1:e.kind==='awaken'?.3:e.kind==='break'?.48:e.kind==='gather'?.55:.28});}this.items=this.items.slice(-64);this.peak=Math.max(this.peak,this.items.length);}
  advance(time:number){this.items=this.items.filter(e=>time-e.born<e.life);}
  clear(){this.items=[];this.lastShot=-10;}
 }

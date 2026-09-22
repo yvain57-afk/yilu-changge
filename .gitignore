@@ -38,3 +38,24 @@ __pycache__/
 /evidence/v03/*.webm
 
 /evidence/v031/*.webm
+
+# Temporary WeChat phone-preview access artifacts stay local.
+/evidence/v031-wechat-phone/preview-qr.*
+/evidence/v031-wechat-phone/preview-result.json
+
+# v04 raw capture is retained locally; MP4 and reports are deliverables.
+/evidence/v04/*.webm
+/evidence/v04/preview-qr.*
+/evidence/v04/preview-result.json
+
+# v05 original recording remains local; shared MP4 and reports are deliverables.
+/evidence/v05/*.webm
+
+# v051 local preview access and raw capture
+/evidence/v051/*.webm
+/evidence/v051/preview-qr.*
+/evidence/v051/preview-result.json
+
+# Redundant local archive and raw WeChat identity diagnostics
+/docs/v05/YILU_V05_GPT_FEEDBACK.zip
+/evidence/v031-wechat/console-after-fix.json

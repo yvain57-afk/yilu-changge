@@ -1,0 +1,33 @@
+{
+  "scope": "handoff files and data only",
+  "gameImplementedByThisPackage": false,
+  "gameTestsExecuted": false,
+  "checksPassed": 23,
+  "checks": [
+    "required_files",
+    "three_stable_level_ids",
+    "starting_counts_preserved",
+    "unique_transition_ids",
+    "correct_level_transition_binding",
+    "correct_next_level",
+    "reinforcement_counts_are_between_levels",
+    "opening_limit",
+    "no_per_transition_currency",
+    "no_extra_playable_map_node",
+    "zhaoyun_has_no_new_ai",
+    "player_copy_has_no_disruptive_terms",
+    "player_copy_has_no_real_years",
+    "preserve_base_save_key",
+    "no_forced_reading",
+    "melee_cycle_adds_up",
+    "melee_not_ranged_wave",
+    "boss_reachable",
+    "boss_observation_window",
+    "one_hit_one_target",
+    "hero_removed_from_archery",
+    "volley_cap_consistent",
+    "no_hidden_timeouts_or_rescue"
+  ],
+  "gameBalance": "unverified seed values",
+  "baselineSha": "a8b56c16cc94f26d81fe12479b3d12854989efd8"
+}

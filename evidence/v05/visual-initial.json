@@ -1,0 +1,879 @@
+{
+  "errors": [],
+  "snapshot": {
+    "version": "v05-rc1",
+    "combatStats": {
+      "meleeHits": 4,
+      "meleeDamage": 33.25,
+      "waveHits": 3,
+      "companionHits": 3,
+      "upgrades": 0,
+      "awakenings": 1,
+      "volleys": 10,
+      "lastMelee": {
+        "kind": "meleeHit",
+        "x": 0,
+        "amount": 8.75,
+        "targetId": "boss",
+        "worldZ": 66.9,
+        "sourceId": "hero",
+        "weaponId": "spear",
+        "attackId": 6,
+        "simulationTick": 119
+      }
+    },
+    "resourcesReady": true,
+    "appearance": 3,
+    "firstVictory": false,
+    "engine": "Cocos Creator 3.8.8",
+    "screen": "camp",
+    "level": 2,
+    "texts": [
+      {
+        "id": "title",
+        "text": "白石驻地"
+      },
+      {
+        "id": "status",
+        "text": "你的军旗，已在荆州立住。"
+      },
+      {
+        "id": "weapon-spear",
+        "text": "✓ 长枪"
+      },
+      {
+        "id": "weapon-blade",
+        "text": "长刀"
+      },
+      {
+        "id": "companion-xing_daorong",
+        "text": "邢道荣"
+      },
+      {
+        "id": "companion-chen_ying",
+        "text": "✓ 陈应"
+      },
+      {
+        "id": "companion-zhao_yun_guest",
+        "text": "赵云"
+      },
+      {
+        "id": "chapters",
+        "text": "重整旗鼓"
+      },
+      {
+        "id": "settings",
+        "text": "设置"
+      }
+    ],
+    "buttons": [
+      {
+        "id": "weapon-spear",
+        "x": -140,
+        "y": 170,
+        "w": 250,
+        "h": 88
+      },
+      {
+        "id": "weapon-blade",
+        "x": 140,
+        "y": 170,
+        "w": 250,
+        "h": 88
+      },
+      {
+        "id": "companion-xing_daorong",
+        "x": -200,
+        "y": 70,
+        "w": 186,
+        "h": 88
+      },
+      {
+        "id": "companion-chen_ying",
+        "x": 0,
+        "y": 70,
+        "w": 186,
+        "h": 88
+      },
+      {
+        "id": "companion-zhao_yun_guest",
+        "x": 200,
+        "y": 70,
+        "w": 186,
+        "h": 88
+      },
+      {
+        "id": "chapters",
+        "x": 0,
+        "y": -520,
+        "w": 530,
+        "h": 88
+      },
+      {
+        "id": "settings",
+        "x": 0,
+        "y": -620,
+        "w": 510,
+        "h": 88
+      }
+    ],
+    "save": {
+      "cleared": {
+        "trial-01": true,
+        "trial-02": true,
+        "trial-03": true
+      },
+      "best": {
+        "trial-01": 48,
+        "trial-02": 48,
+        "trial-03": 48
+      },
+      "settings": {
+        "music": true,
+        "sfx": true,
+        "vibration": true
+      }
+    },
+    "campaign": {
+      "schema": 1,
+      "completed": {
+        "rally": false,
+        "camp": false,
+        "garrison": false
+      },
+      "seen": {
+        "zhaoyunMeeting": false
+      }
+    },
+    "growth": {
+      "schemaVersion": 1,
+      "unlockedWeapons": [
+        "spear",
+        "blade"
+      ],
+      "unlockedCompanions": [
+        "xing_daorong",
+        "chen_ying",
+        "zhao_yun_guest"
+      ],
+      "equippedWeapon": "spear",
+      "equippedCompanion": "chen_ying",
+      "claimedRewards": [
+        "first_clear:trial-01",
+        "first_clear:trial-02",
+        "first_clear:trial-03"
+      ]
+    },
+    "transition": {
+      "id": "garrison",
+      "done": false,
+      "age": 0.11669999998807908
+    },
+    "rank": "白石驻将",
+    "notice": "",
+    "nodes": 213,
+    "pool": 192,
+    "presentation": {
+      "weaponShapes": true,
+      "spear": {
+        "key": 0,
+        "grip": {
+          "x": -177.16571428571427,
+          "y": -166.56
+        },
+        "tip": {
+          "x": -165,
+          "y": -80
+        },
+        "phase": "idle"
+      },
+      "volleyCapacity": 235,
+      "volleyGroups": 0,
+      "visualArrows": 0,
+      "volleys": [],
+      "scenery": [
+        {
+          "id": 23,
+          "worldZ": 55.199999999999996,
+          "y": -1393.2000000000005
+        },
+        {
+          "id": 24,
+          "worldZ": 57.599999999999994,
+          "y": -1143.6000000000006
+        },
+        {
+          "id": 25,
+          "worldZ": 60,
+          "y": -894
+        },
+        {
+          "id": 26,
+          "worldZ": 62.4,
+          "y": -644.4000000000001
+        },
+        {
+          "id": 27,
+          "worldZ": 64.8,
+          "y": -394.8000000000003
+        },
+        {
+          "id": 28,
+          "worldZ": 67.2,
+          "y": -145.1999999999997
+        },
+        {
+          "id": 29,
+          "worldZ": 69.6,
+          "y": 104.39999999999941
+        },
+        {
+          "id": 30,
+          "worldZ": 72,
+          "y": 354
+        },
+        {
+          "id": 31,
+          "worldZ": 74.39999999999999,
+          "y": 603.5999999999991
+        },
+        {
+          "id": 32,
+          "worldZ": 76.8,
+          "y": 853.1999999999998
+        },
+        {
+          "id": 33,
+          "worldZ": 79.2,
+          "y": 1102.8000000000002
+        },
+        {
+          "id": 34,
+          "worldZ": 81.6,
+          "y": 1352.3999999999994
+        }
+      ],
+      "effects": 2,
+      "peakEffects": 5,
+      "rigs": 0,
+      "scene": 2,
+      "rank": 3,
+      "sprites": 167,
+      "ready": true,
+      "depthOrder": [
+        "ground",
+        "camp-scene"
+      ],
+      "bounds": [
+        {
+          "id": "side7",
+          "left": 132.4,
+          "right": 184.6,
+          "bottom": 1382.6769230769223,
+          "top": 1411.8369230769224
+        },
+        {
+          "id": "side8",
+          "left": 535.4,
+          "right": 587.6,
+          "bottom": 1632.276923076923,
+          "top": 1661.436923076923
+        },
+        {
+          "id": "side9",
+          "left": 132.4,
+          "right": 184.6,
+          "bottom": 1881.8769230769233,
+          "top": 1911.0369230769234
+        },
+        {
+          "id": "side10",
+          "left": 535.4,
+          "right": 587.6,
+          "bottom": 2131.4769230769225,
+          "top": 2160.6369230769224
+        },
+        {
+          "id": "side11",
+          "left": -113.408,
+          "right": -4.832000000000008,
+          "bottom": -614.1230769230774,
+          "top": -553.4702769230774
+        },
+        {
+          "id": "side0",
+          "left": 724.832,
+          "right": 833.408,
+          "bottom": -364.5230769230775,
+          "top": -303.8702769230775
+        },
+        {
+          "id": "side1",
+          "left": -113.408,
+          "right": -4.832000000000008,
+          "bottom": -114.9230769230769,
+          "top": -54.270276923076906
+        },
+        {
+          "id": "side2",
+          "left": 724.832,
+          "right": 833.408,
+          "bottom": 134.676923076923,
+          "top": 195.32972307692302
+        },
+        {
+          "id": "side3",
+          "left": -113.408,
+          "right": -4.832000000000008,
+          "bottom": 384.2769230769228,
+          "top": 444.9297230769228
+        },
+        {
+          "id": "side4",
+          "left": 683.4376,
+          "right": 779.6943999999999,
+          "bottom": 633.8769230769234,
+          "top": 687.6479630769234
+        },
+        {
+          "id": "side5",
+          "left": 11.31679999999983,
+          "right": 91.28719999999987,
+          "bottom": 883.4769230769225,
+          "top": 928.1500430769225
+        },
+        {
+          "id": "side6",
+          "left": 573.9879999999999,
+          "right": 637.6719999999999,
+          "bottom": 1133.076923076923,
+          "top": 1168.652123076923
+        },
+        {
+          "id": "destination",
+          "left": 145.89,
+          "right": 574.11,
+          "bottom": 1133.076923076923,
+          "top": 1407.454923076923
+        },
+        {
+          "id": "tower-1",
+          "left": -30.312299999999965,
+          "right": 59.622300000000024,
+          "bottom": 821.0769230769231,
+          "top": 941.778623076923
+        },
+        {
+          "id": "tower1",
+          "left": 660.3777,
+          "right": 750.3123,
+          "bottom": 821.0769230769231,
+          "top": 941.778623076923
+        },
+        {
+          "id": "camp-soldier0-legs",
+          "left": 188.1390243902439,
+          "right": 216.8609756097561,
+          "bottom": 414.0769230769231,
+          "top": 429.9988742964353
+        },
+        {
+          "id": "camp-soldier0-upper",
+          "left": 178.77317073170732,
+          "right": 226.22682926829268,
+          "bottom": 429.9988742964353,
+          "top": 485.56960600375237
+        },
+        {
+          "id": "camp-soldier1-legs",
+          "left": 233.1390243902439,
+          "right": 261.8609756097561,
+          "bottom": 414.0769230769231,
+          "top": 429.9988742964353
+        },
+        {
+          "id": "camp-soldier1-upper",
+          "left": 223.77317073170732,
+          "right": 271.2268292682927,
+          "bottom": 429.9988742964353,
+          "top": 485.56960600375237
+        },
+        {
+          "id": "camp-soldier2-legs",
+          "left": 278.1390243902439,
+          "right": 306.8609756097561,
+          "bottom": 414.0769230769231,
+          "top": 429.9988742964353
+        },
+        {
+          "id": "camp-soldier2-upper",
+          "left": 268.7731707317073,
+          "right": 316.2268292682927,
+          "bottom": 429.9988742964353,
+          "top": 485.56960600375237
+        },
+        {
+          "id": "camp-soldier3-legs",
+          "left": 323.1390243902439,
+          "right": 351.8609756097561,
+          "bottom": 414.0769230769231,
+          "top": 429.9988742964353
+        },
+        {
+          "id": "camp-soldier3-upper",
+          "left": 313.7731707317073,
+          "right": 361.2268292682927,
+          "bottom": 429.9988742964353,
+          "top": 485.56960600375237
+        },
+        {
+          "id": "camp-soldier4-legs",
+          "left": 368.1390243902439,
+          "right": 396.8609756097561,
+          "bottom": 414.0769230769231,
+          "top": 429.9988742964353
+        },
+        {
+          "id": "camp-soldier4-upper",
+          "left": 358.7731707317073,
+          "right": 406.2268292682927,
+          "bottom": 429.9988742964353,
+          "top": 485.56960600375237
+        },
+        {
+          "id": "camp-soldier5-legs",
+          "left": 413.1390243902439,
+          "right": 441.8609756097561,
+          "bottom": 414.0769230769231,
+          "top": 429.9988742964353
+        },
+        {
+          "id": "camp-soldier5-upper",
+          "left": 403.7731707317073,
+          "right": 451.2268292682927,
+          "bottom": 429.9988742964353,
+          "top": 485.56960600375237
+        },
+        {
+          "id": "camp-soldier6-legs",
+          "left": 458.1390243902439,
+          "right": 486.8609756097561,
+          "bottom": 414.0769230769231,
+          "top": 429.9988742964353
+        },
+        {
+          "id": "camp-soldier6-upper",
+          "left": 448.7731707317073,
+          "right": 496.2268292682927,
+          "bottom": 429.9988742964353,
+          "top": 485.56960600375237
+        },
+        {
+          "id": "camp-soldier7-legs",
+          "left": 503.1390243902439,
+          "right": 531.8609756097561,
+          "bottom": 414.0769230769231,
+          "top": 429.9988742964353
+        },
+        {
+          "id": "camp-soldier7-upper",
+          "left": 493.7731707317073,
+          "right": 541.2268292682927,
+          "bottom": 429.9988742964353,
+          "top": 485.56960600375237
+        },
+        {
+          "id": "camp-soldier8-legs",
+          "left": 188.1390243902439,
+          "right": 216.8609756097561,
+          "bottom": 369.0769230769231,
+          "top": 384.9988742964353
+        },
+        {
+          "id": "camp-soldier8-upper",
+          "left": 178.77317073170732,
+          "right": 226.22682926829268,
+          "bottom": 384.9988742964353,
+          "top": 440.56960600375237
+        },
+        {
+          "id": "camp-soldier9-legs",
+          "left": 233.1390243902439,
+          "right": 261.8609756097561,
+          "bottom": 369.0769230769231,
+          "top": 384.9988742964353
+        },
+        {
+          "id": "camp-soldier9-upper",
+          "left": 223.77317073170732,
+          "right": 271.2268292682927,
+          "bottom": 384.9988742964353,
+          "top": 440.56960600375237
+        },
+        {
+          "id": "camp-soldier10-legs",
+          "left": 278.1390243902439,
+          "right": 306.8609756097561,
+          "bottom": 369.0769230769231,
+          "top": 384.9988742964353
+        },
+        {
+          "id": "camp-soldier10-upper",
+          "left": 268.7731707317073,
+          "right": 316.2268292682927,
+          "bottom": 384.9988742964353,
+          "top": 440.56960600375237
+        },
+        {
+          "id": "camp-soldier11-legs",
+          "left": 323.1390243902439,
+          "right": 351.8609756097561,
+          "bottom": 369.0769230769231,
+          "top": 384.9988742964353
+        },
+        {
+          "id": "camp-soldier11-upper",
+          "left": 313.7731707317073,
+          "right": 361.2268292682927,
+          "bottom": 384.9988742964353,
+          "top": 440.56960600375237
+        },
+        {
+          "id": "camp-hero-legs",
+          "left": 133.85263157894735,
+          "right": 186.14736842105265,
+          "bottom": 539.0769230769231,
+          "top": 568.0663967611337
+        },
+        {
+          "id": "camp-hero-upper",
+          "left": 104.14857142857143,
+          "right": 222.64,
+          "bottom": 561.294065934066,
+          "top": 645.8426373626373
+        },
+        {
+          "id": "camp-hero-weapon",
+          "left": 169.42264884568652,
+          "right": 202.85524735289013,
+          "bottom": 569.8932327453834,
+          "top": 701.4033525162566
+        },
+        {
+          "id": "camp-flag",
+          "left": 303.35,
+          "right": 416.65,
+          "bottom": 624.0769230769231,
+          "top": 802.2769230769231
+        },
+        {
+          "id": "camp-soldier12-legs",
+          "left": 368.1390243902439,
+          "right": 396.8609756097561,
+          "bottom": 369.0769230769231,
+          "top": 384.9988742964353
+        },
+        {
+          "id": "camp-soldier12-upper",
+          "left": 358.7731707317073,
+          "right": 406.2268292682927,
+          "bottom": 384.9988742964353,
+          "top": 440.56960600375237
+        },
+        {
+          "id": "camp-soldier13-legs",
+          "left": 413.1390243902439,
+          "right": 441.8609756097561,
+          "bottom": 369.0769230769231,
+          "top": 384.9988742964353
+        },
+        {
+          "id": "camp-soldier13-upper",
+          "left": 403.7731707317073,
+          "right": 451.2268292682927,
+          "bottom": 384.9988742964353,
+          "top": 440.56960600375237
+        },
+        {
+          "id": "camp-soldier14-legs",
+          "left": 458.1390243902439,
+          "right": 486.8609756097561,
+          "bottom": 369.0769230769231,
+          "top": 384.9988742964353
+        },
+        {
+          "id": "camp-soldier14-upper",
+          "left": 448.7731707317073,
+          "right": 496.2268292682927,
+          "bottom": 384.9988742964353,
+          "top": 440.56960600375237
+        },
+        {
+          "id": "camp-soldier15-legs",
+          "left": 503.1390243902439,
+          "right": 531.8609756097561,
+          "bottom": 369.0769230769231,
+          "top": 384.9988742964353
+        },
+        {
+          "id": "camp-soldier15-upper",
+          "left": 493.7731707317073,
+          "right": 541.2268292682927,
+          "bottom": 384.9988742964353,
+          "top": 440.56960600375237
+        },
+        {
+          "id": "secured-city",
+          "left": 252,
+          "right": 468,
+          "bottom": 679.0769230769231,
+          "top": 817.4769230769231
+        },
+        {
+          "id": "direction0",
+          "left": 178.18,
+          "right": 201.82,
+          "bottom": 729.0769230769231,
+          "top": 767.9569230769231
+        },
+        {
+          "id": "direction1",
+          "left": 347.64,
+          "right": 372.36,
+          "bottom": 729.0769230769231,
+          "top": 767.9569230769231
+        },
+        {
+          "id": "direction2",
+          "left": 518.18,
+          "right": 541.82,
+          "bottom": 729.0769230769231,
+          "top": 767.9569230769231
+        }
+      ]
+    },
+    "audio": {
+      "active": true,
+      "hidden": false,
+      "bgmEnabled": false,
+      "musicRequested": false,
+      "musicReady": false,
+      "musicTrack": null,
+      "musicPlaying": false,
+      "effectChannels": 5,
+      "playingEffects": []
+    },
+    "preview": null,
+    "fps": 59.99400060208536,
+    "meanFPS": 59.991142247741365,
+    "journey": {
+      "phase": "boss",
+      "paused": false,
+      "count": 48,
+      "x": 0,
+      "target": 0,
+      "z": 66,
+      "elapsed": 2.4833333333333294,
+      "duration": 66,
+      "damage": 9.200000000000001,
+      "visible": 48,
+      "bossHP": 2467.7500000000014,
+      "bossDepth": 0.6468253968253967,
+      "melee": null,
+      "weapon": "spear",
+      "tier": 1,
+      "awakeningUsed": false,
+      "awakeningRemaining": 0,
+      "upgradeRewards": [],
+      "waves": [],
+      "wavePeak": {
+        "hero": 1,
+        "companion": 1
+      },
+      "companion": "chen_ying",
+      "companionActive": true,
+      "companionAttack": null,
+      "archerCount": 46,
+      "bossWarning": null,
+      "warnings": [],
+      "cause": "",
+      "arrows": 0,
+      "rows": [
+        {
+          "id": 1,
+          "at": 6,
+          "left": {
+            "kind": "add",
+            "value": 18
+          },
+          "right": {
+            "kind": "double",
+            "value": 2
+          }
+        },
+        {
+          "id": 2,
+          "at": 22,
+          "left": {
+            "kind": "double",
+            "value": 2
+          },
+          "right": {
+            "kind": "add",
+            "value": 26
+          }
+        },
+        {
+          "id": 3,
+          "at": 40,
+          "left": {
+            "kind": "add",
+            "value": 36
+          },
+          "right": {
+            "kind": "double",
+            "value": 2
+          }
+        },
+        {
+          "id": 4,
+          "at": 57,
+          "left": {
+            "kind": "double",
+            "value": 2
+          },
+          "right": {
+            "kind": "add",
+            "value": 40
+          }
+        }
+      ],
+      "obstacles": [
+        {
+          "id": 1,
+          "at": 12,
+          "x": -0.5,
+          "width": 0.2,
+          "kind": "fighter",
+          "hp": 28,
+          "loss": 8
+        },
+        {
+          "id": 2,
+          "at": 16,
+          "x": 0.5,
+          "width": 0.2,
+          "kind": "rock",
+          "hp": 1,
+          "loss": 10
+        },
+        {
+          "id": 3,
+          "at": 29,
+          "x": 0.5,
+          "width": 0.2,
+          "kind": "crossbowman",
+          "hp": 112,
+          "loss": 12,
+          "attack": {
+            "kind": "aimed",
+            "startAt": 27,
+            "telegraphSeconds": 1.25,
+            "halfWidth": 0.22,
+            "loss": 12,
+            "impactSeconds": 0.12,
+            "recoverySeconds": 0
+          }
+        },
+        {
+          "id": 4,
+          "at": 34,
+          "x": 0,
+          "width": 0.2,
+          "kind": "fighter",
+          "hp": 120,
+          "loss": 14
+        },
+        {
+          "id": 5,
+          "at": 48,
+          "x": -0.5,
+          "width": 0.2,
+          "kind": "crossbowman",
+          "hp": 160,
+          "loss": 12,
+          "attack": {
+            "kind": "aimed",
+            "startAt": 46,
+            "telegraphSeconds": 1.25,
+            "halfWidth": 0.22,
+            "loss": 12,
+            "impactSeconds": 0.12,
+            "recoverySeconds": 0
+          }
+        },
+        {
+          "id": 6,
+          "at": 52,
+          "x": 0.5,
+          "width": 0.2,
+          "kind": "crossbowman",
+          "hp": 180,
+          "loss": 14,
+          "attack": {
+            "kind": "aimed",
+            "startAt": 50,
+            "telegraphSeconds": 1.25,
+            "halfWidth": 0.22,
+            "loss": 12,
+            "impactSeconds": 0.12,
+            "recoverySeconds": 0
+          }
+        },
+        {
+          "id": 7,
+          "at": 62,
+          "x": 0.5,
+          "width": 0.2,
+          "kind": "fighter",
+          "hp": 200,
+          "loss": 16
+        },
+        {
+          "id": 101,
+          "at": 22,
+          "x": -0.5,
+          "width": 0.5,
+          "kind": "wood",
+          "hp": 100,
+          "loss": 12,
+          "rowId": 2,
+          "side": "left"
+        },
+        {
+          "id": 102,
+          "at": 40,
+          "x": 0.5,
+          "width": 0.5,
+          "kind": "wood",
+          "hp": 120,
+          "loss": 24,
+          "rowId": 3,
+          "side": "right"
+        },
+        {
+          "id": 103,
+          "at": 57,
+          "x": -0.5,
+          "width": 0.5,
+          "kind": "wood",
+          "hp": 240,
+          "loss": 56,
+          "rowId": 4,
+          "side": "left"
+        }
+      ],
+      "usedRows": []
+    }
+  }
+}

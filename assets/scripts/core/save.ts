@@ -10,15 +10,15 @@ export function valid(value:unknown):value is Save {
  return !!s && !!s.cleared && !!s.best && IDS.every(id=>typeof s.cleared[id]==='boolean'&&Number.isInteger(s.best[id])&&s.best[id]>=0&&s.best[id]<=256)&&settingsValid(s.settings);
 }
 export class Book {
- data=defaults(); notice='';
+ private extras:Record<string,unknown>={}; data=defaults(); notice='';
  constructor(private storage:Storage) {
   try {
    const raw=storage.getItem(KEY);
-   if(raw!==null){const parsed=JSON.parse(raw);if(!valid(parsed))throw Error('bad save');for(const id of IDS){this.data.cleared[id]=parsed.cleared[id];this.data.best[id]=parsed.best[id];}this.data.settings={music:parsed.settings.music,sfx:parsed.settings.sfx,vibration:parsed.settings.vibration};}
+   if(raw!==null){const parsed=JSON.parse(raw);if(!valid(parsed))throw Error('bad save');this.extras={...parsed};for(const id of IDS){this.data.cleared[id]=parsed.cleared[id];this.data.best[id]=parsed.best[id];}this.data.settings={music:parsed.settings.music,sfx:parsed.settings.sfx,vibration:parsed.settings.vibration};}
    else {const old=storage.getItem(LEGACY_KEY);if(old!==null){try{const parsed=JSON.parse(old);if(settingsValid(parsed.settings))this.data.settings={music:parsed.settings.music,sfx:parsed.settings.sfx,vibration:parsed.settings.vibration};}catch{/* Keep unreadable legacy data untouched. */}this.notice='旧版记录已保留，新试玩从第一关开始';this.persist();}}
   }catch{this.notice='存档无法读取，已恢复默认；仍可继续游玩。';}
  }
- persist(){try{this.storage.setItem(KEY,JSON.stringify(this.data));}catch{this.notice='本机暂时无法保存，本次仍可游玩。';}}
+ persist(){try{this.storage.setItem(KEY,JSON.stringify({...this.extras,...this.data,settings:{...(this.extras.settings as object??{}),...this.data.settings},cleared:{...(this.extras.cleared as object??{}),...this.data.cleared},best:{...(this.extras.best as object??{}),...this.data.best}}));}catch{this.notice='本机暂时无法保存，本次仍可游玩。';}}
  unlock(index:number){return Number.isInteger(index)&&index>=0&&index<IDS.length&&IDS.slice(0,index).every(id=>this.data.cleared[id]);}
  get rank(){let n=0;while(n<IDS.length&&this.data.cleared[IDS[n]])n++;return ['布衣','头领','统领','城主'][n];}
  win(index:number,count:number){const id=IDS[index];if(!id||!Number.isFinite(count)||count<1)return;this.data.cleared[id]=true;this.data.best[id]=Math.max(this.data.best[id],Math.min(256,Math.floor(count)));this.persist();}

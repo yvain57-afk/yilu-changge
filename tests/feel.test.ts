@@ -6,11 +6,12 @@ import {Volleys,VOLLEY_CAPACITY,bowMouth} from '../assets/scripts/Volley';
 import {formation,project} from '../assets/scripts/VisualConfig';
 import {worldStrip,gaitFrame} from '../assets/scripts/WorldScenery';
 
-for(const count of [1,8,24,48,256])test(`volley ${count}: own bow mouths, frozen launch, original damage only`,()=>{
+for(const count of [1,8,24,48,256])test(`volley ${count}: own bow mouths, frozen launch, v04 archer-only damage`,()=>{
  const j=new Journey({...LEVELS[0],start:count,rows:[],obstacles:[]}),v=new Volleys();j.advance(STEP);const events=j.drainFeedback();v.accept(events);
- const shot=events.find(e=>e.kind==='shot')!,a=j.arrows[0],n=Math.min(count,48),points=v.points({...a,z:shot.worldZ!},j.z);
- assert.equal(shot.amount,count*.2);assert.equal(points.length,n);assert.equal(j.arrows.length,1);assert.ok(Object.isFrozen(shot.volley));
- formation(count,shot.x).forEach((u,i)=>{const m=bowMouth(u.hero);assert.ok(Math.abs(points[i].x-u.x-m.x)<1e-6);assert.ok(Math.abs(points[i].y-u.y-m.y)<1e-6);});
+ if(count===1){assert.equal(events.filter(e=>e.kind==='shot').length,0);assert.equal(j.arrows.length,0);assert.equal(v.groups.length,0);return;}
+ const shot=events.find(e=>e.kind==='shot')!,a=j.arrows[0],n=Math.min(count,48)-1,points=v.points({...a,z:shot.worldZ!},j.z);
+ assert.equal(shot.amount,(count-1)*.2);assert.equal(points.length,n);assert.equal(j.arrows.length,1);assert.ok(Object.isFrozen(shot.volley));
+ formation(count,shot.x).filter(u=>!u.hero).forEach((u,i)=>{const m=bowMouth(u.hero);assert.ok(Math.abs(points[i].x-u.x-m.x)<1e-6);assert.ok(Math.abs(points[i].y-u.y-m.y)<1e-6);});
  const frozen=JSON.stringify(v.groups);j.move(.9);for(let i=0;i<5;i++)j.advance(STEP);assert.equal(JSON.stringify(v.groups),frozen);
  const g=v.groups[0],end=v.points({...a,z:g.aimZ},j.z);assert.ok(end.every(p=>Math.abs(p.x-project(a.x,g.aimZ-j.z).x)<1e-8));
 });

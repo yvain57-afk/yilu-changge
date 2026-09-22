@@ -1,0 +1,494 @@
+
+> yilu-changge@0.4.0-rc1 test
+> node tools/run-local.mjs tsx --test tests/*.test.ts
+
+TAP version 13
+# Subtest: v03 measured static timing level2/best
+ok 1 - v03 measured static timing level2/best
+  ---
+  duration_ms: 24.183625
+  type: 'test'
+  ...
+# Subtest: v03 measured static timing level2/safe
+ok 2 - v03 measured static timing level2/safe
+  ---
+  duration_ms: 28.648917
+  type: 'test'
+  ...
+# Subtest: v03 measured static timing level2/late
+ok 3 - v03 measured static timing level2/late
+  ---
+  duration_ms: 11.362792
+  type: 'test'
+  ...
+# Subtest: v03 measured static timing level3/best
+ok 4 - v03 measured static timing level3/best
+  ---
+  duration_ms: 9.893958
+  type: 'test'
+  ...
+# Subtest: v03 measured static timing level3/safe
+ok 5 - v03 measured static timing level3/safe
+  ---
+  duration_ms: 10.917125
+  type: 'test'
+  ...
+# Subtest: v03 measured static timing level3/late
+ok 6 - v03 measured static timing level3/late
+  ---
+  duration_ms: 8.918959
+  type: 'test'
+  ...
+# {"solo":"trial-01","seconds":97.78333333332907,"hits":130}
+# {"solo":"trial-02","seconds":219.45000000006678,"hits":360}
+# {"solo":"trial-03","seconds":316.7166666667073,"hits":520}
+# Subtest: one spear and N-1 archers; frozen 256-count damage; no new arrows at one
+ok 7 - one spear and N-1 archers; frozen 256-count damage; no new arrows at one
+  ---
+  duration_ms: 1.989375
+  type: 'test'
+  ...
+# Subtest: 10/5/21 spear phases, one hit per ID and real damage, no projectile ID
+ok 8 - 10/5/21 spear phases, one hit per ID and real damage, no projectile ID
+  ---
+  duration_ms: 0.900292
+  type: 'test'
+  ...
+# Subtest: live spear follows lateral input; misses do not damage; nearest stable ID rock blocks
+ok 9 - live spear follows lateral input; misses do not damage; nearest stable ID rock blocks
+  ---
+  duration_ms: 0.394084
+  type: 'test'
+  ...
+# Subtest: full half-side gate wood hit, gate arithmetic unchanged
+ok 10 - full half-side gate wood hit, gate arithmetic unchanged
+  ---
+  duration_ms: 0.343334
+  type: 'test'
+  ...
+# Subtest: same-tick melee kill precedes contact and boss win precedes hostile impact
+ok 11 - same-tick melee kill precedes contact and boss win precedes hostile impact
+  ---
+  duration_ms: 0.260375
+  type: 'test'
+  ...
+# Subtest: boss approach takes 60 ticks, arrow swept relative collision, first warning at tick120
+ok 12 - boss approach takes 60 ticks, arrow swept relative collision, first warning at tick120
+  ---
+  duration_ms: 0.3975
+  type: 'test'
+  ...
+# Subtest: pause freezes melee / boss / warnings and dispose clears phase
+ok 13 - pause freezes melee / boss / warnings and dispose clears phase
+  ---
+  duration_ms: 0.262083
+  type: 'test'
+  ...
+# Subtest: opening 901 receives an actual spear hit on default center before first gate
+ok 14 - opening 901 receives an actual spear hit on default center before first gate
+  ---
+  duration_ms: 2.630834
+  type: 'test'
+  ...
+# Subtest: trial-01: sole hero wins boss using legal lateral movement, no reinforcement
+ok 15 - trial-01: sole hero wins boss using legal lateral movement, no reinforcement
+  ---
+  duration_ms: 12.03675
+  type: 'test'
+  ...
+# Subtest: trial-02: sole hero wins boss using legal lateral movement, no reinforcement
+ok 16 - trial-02: sole hero wins boss using legal lateral movement, no reinforcement
+  ---
+  duration_ms: 12.23625
+  type: 'test'
+  ...
+# Subtest: trial-03: sole hero wins boss using legal lateral movement, no reinforcement
+ok 17 - trial-03: sole hero wins boss using legal lateral movement, no reinforcement
+  ---
+  duration_ms: 3.9215
+  type: 'test'
+  ...
+# Subtest: old base saves migrate idempotently; achievements/settings unmodified
+ok 18 - old base saves migrate idempotently; achievements/settings unmodified
+  ---
+  duration_ms: 0.420083
+  type: 'test'
+  ...
+# Subtest: pending survives reload; cannot complete locked transition; repeat does not reward
+ok 19 - pending survives reload; cannot complete locked transition; repeat does not reward
+  ---
+  duration_ms: 0.173834
+  type: 'test'
+  ...
+# Subtest: corrupt sidecar recovers from base, failed storage allows progress and meeting
+ok 20 - corrupt sidecar recovers from base, failed storage allows progress and meeting
+  ---
+  duration_ms: 0.339625
+  type: 'test'
+  ...
+# Subtest: volley 1: own bow mouths, frozen launch, v04 archer-only damage
+ok 21 - volley 1: own bow mouths, frozen launch, v04 archer-only damage
+  ---
+  duration_ms: 0.730334
+  type: 'test'
+  ...
+# Subtest: volley 8: own bow mouths, frozen launch, v04 archer-only damage
+ok 22 - volley 8: own bow mouths, frozen launch, v04 archer-only damage
+  ---
+  duration_ms: 0.978667
+  type: 'test'
+  ...
+# Subtest: volley 24: own bow mouths, frozen launch, v04 archer-only damage
+ok 23 - volley 24: own bow mouths, frozen launch, v04 archer-only damage
+  ---
+  duration_ms: 0.48125
+  type: 'test'
+  ...
+# Subtest: volley 48: own bow mouths, frozen launch, v04 archer-only damage
+ok 24 - volley 48: own bow mouths, frozen launch, v04 archer-only damage
+  ---
+  duration_ms: 0.209666
+  type: 'test'
+  ...
+# Subtest: volley 256: own bow mouths, frozen launch, v04 archer-only damage
+ok 25 - volley 256: own bow mouths, frozen launch, v04 archer-only damage
+  ---
+  duration_ms: 0.190334
+  type: 'test'
+  ...
+# Subtest: rock consumes the whole visual volley; no repeated damage or surviving cosmetic arrows
+ok 26 - rock consumes the whole visual volley; no repeated damage or surviving cosmetic arrows
+  ---
+  duration_ms: 0.288125
+  type: 'test'
+  ...
+# Subtest: bounded high density volley fixture, camera travel and boss stop
+ok 27 - bounded high density volley fixture, camera travel and boss stop
+  ---
+  duration_ms: 5.239417
+  type: 'test'
+  ...
+# Subtest: world strip recycles only offscreen and retained objects keep identity and continuous projection
+ok 28 - world strip recycles only offscreen and retained objects keep identity and continuous projection
+  ---
+  duration_ms: 33.134792
+  type: 'test'
+  ...
+# Subtest: six distinct gait keys with phase offset between soldiers
+ok 29 - six distinct gait keys with phase offset between soldiers
+  ---
+  duration_ms: 0.382708
+  type: 'test'
+  ...
+# Subtest: S2 lateral formation translates whole rows without stacking edge units
+ok 30 - S2 lateral formation translates whole rows without stacking edge units
+  ---
+  duration_ms: 0.870333
+  type: 'test'
+  ...
+# Subtest: v04 presentation is read-only: trial-01/best
+ok 31 - v04 presentation is read-only: trial-01/best
+  ---
+  duration_ms: 49.553917
+  type: 'test'
+  ...
+# Subtest: v04 presentation is read-only: trial-01/late
+ok 32 - v04 presentation is read-only: trial-01/late
+  ---
+  duration_ms: 35.730375
+  type: 'test'
+  ...
+# Subtest: v04 presentation is read-only: trial-01/failure
+ok 33 - v04 presentation is read-only: trial-01/failure
+  ---
+  duration_ms: 32.528333
+  type: 'test'
+  ...
+# Subtest: v04 presentation is read-only: trial-02/best
+ok 34 - v04 presentation is read-only: trial-02/best
+  ---
+  duration_ms: 29.887709
+  type: 'test'
+  ...
+# Subtest: v04 presentation is read-only: trial-02/late
+ok 35 - v04 presentation is read-only: trial-02/late
+  ---
+  duration_ms: 31.737166
+  type: 'test'
+  ...
+# Subtest: v04 presentation is read-only: trial-02/failure
+ok 36 - v04 presentation is read-only: trial-02/failure
+  ---
+  duration_ms: 28.598375
+  type: 'test'
+  ...
+# Subtest: v04 presentation is read-only: trial-03/best
+ok 37 - v04 presentation is read-only: trial-03/best
+  ---
+  duration_ms: 30.959041
+  type: 'test'
+  ...
+# Subtest: v04 presentation is read-only: trial-03/late
+ok 38 - v04 presentation is read-only: trial-03/late
+  ---
+  duration_ms: 36.539083
+  type: 'test'
+  ...
+# Subtest: v04 presentation is read-only: trial-03/failure
+ok 39 - v04 presentation is read-only: trial-03/failure
+  ---
+  duration_ms: 32.868084
+  type: 'test'
+  ...
+# Subtest: S2 rock loss is data-driven, including actual loss when insufficient troops
+ok 40 - S2 rock loss is data-driven, including actual loss when insufficient troops
+  ---
+  duration_ms: 0.2735
+  type: 'test'
+  ...
+# Subtest: S2 shared boss target and hit events at center/edges/outside
+ok 41 - S2 shared boss target and hit events at center/edges/outside
+  ---
+  duration_ms: 0.1665
+  type: 'test'
+  ...
+# Subtest: S2 event metadata identifies arrow, target and tick without driving gameplay
+ok 42 - S2 event metadata identifies arrow, target and tick without driving gameplay
+  ---
+  duration_ms: 0.108208
+  type: 'test'
+  ...
+# Subtest: v03 fresh scope, every ordinary entry guard, invalid IDs and missing assets
+ok 43 - v03 fresh scope, every ordinary entry guard, invalid IDs and missing assets
+  ---
+  duration_ms: 0.851834
+  type: 'test'
+  ...
+# Subtest: v03 immediate persisted next, contiguous rank, end/replay without downgrade
+ok 44 - v03 immediate persisted next, contiguous rank, end/replay without downgrade
+  ---
+  duration_ms: 0.568792
+  type: 'test'
+  ...
+# Subtest: v03 S2-B same-key save continues camp; gaps cannot unlock city
+ok 45 - v03 S2-B same-key save continues camp; gaps cannot unlock city
+  ---
+  duration_ms: 0.1535
+  type: 'test'
+  ...
+# Subtest: v03 candidate A gate arithmetic across reachable counts; no resurrection
+ok 46 - v03 candidate A gate arithmetic across reachable counts; no resurrection
+  ---
+  duration_ms: 0.305292
+  type: 'test'
+  ...
+# Subtest: v03 scene/weapon identities and static first-level contract
+ok 47 - v03 scene/weapon identities and static first-level contract
+  ---
+  duration_ms: 0.310041
+  type: 'test'
+  ...
+# Subtest: v03 all Bosses share exact center/edge target, frozen projectile damage
+ok 48 - v03 all Bosses share exact center/edge target, frozen projectile damage
+  ---
+  duration_ms: 0.614708
+  type: 'test'
+  ...
+# {"level":"trial-01","route":"best","count":88,"seconds":58.06666666666465,"bossSeconds":16.066666666664652,"losses":[]}
+# {"level":"trial-01","route":"safe","count":56,"seconds":64.81666666666428,"bossSeconds":22.816666666664275,"losses":[]}
+# {"level":"trial-01","route":"late","count":52,"seconds":66.76666666666416,"bossSeconds":24.766666666664165,"losses":[18]}
+# {"level":"trial-02","route":"best","count":172,"seconds":67.8166666666641,"bossSeconds":13.816666666664105,"losses":[8,10]}
+# {"level":"trial-02","route":"safe","count":112,"seconds":75.31666666666368,"bossSeconds":21.31666666666368,"losses":[8]}
+# {"level":"trial-02","route":"late","count":56,"seconds":94.73333333332924,"bossSeconds":40.73333333332924,"losses":[5,8,48]}
+# {"level":"trial-03","route":"best","count":256,"seconds":80.99999999999669,"bossSeconds":14.999999999996689,"losses":[]}
+# {"level":"trial-03","route":"safe","count":124,"seconds":95.31666666666254,"bossSeconds":29.31666666666254,"losses":[12]}
+# {"level":"trial-03","route":"late","count":68,"seconds":116.31666666666135,"bossSeconds":50.31666666666135,"losses":[12,24,12]}
+# Subtest: R01 首关8兵、上下界、真实火力和主角计数
+ok 49 - R01 首关8兵、上下界、真实火力和主角计数
+  ---
+  duration_ms: 0.832875
+  type: 'test'
+  ...
+# Subtest: R02 同排中心选择一次，极速横移不重复加兵
+ok 50 - R02 同排中心选择一次，极速横移不重复加兵
+  ---
+  duration_ms: 0.118292
+  type: 'test'
+  ...
+# Subtest: R02 穿门一次、正中归右、射击不改门值
+ok 51 - R02 穿门一次、正中归右、射击不改门值
+  ---
+  duration_ms: 1.598625
+  type: 'test'
+  ...
+# Subtest: R02 受阻门先扣后加、两侧边界及0兵不复活
+ok 52 - R02 受阻门先扣后加、两侧边界及0兵不复活
+  ---
+  duration_ms: 0.21075
+  type: 'test'
+  ...
+# Subtest: R02 清障后可换侧；无隐形重复接触
+ok 53 - R02 清障后可换侧；无隐形重复接触
+  ---
+  duration_ms: 0.145042
+  type: 'test'
+  ...
+# Subtest: R03 箭发射冻结伤害及位置；最近对象优先，无穿透
+ok 54 - R03 箭发射冻结伤害及位置；最近对象优先，无穿透
+  ---
+  duration_ms: 0.320125
+  type: 'test'
+  ...
+# Subtest: R03 射击通道、山石挡箭不毁、视野外无伤
+ok 55 - R03 射击通道、山石挡箭不毁、视野外无伤
+  ---
+  duration_ms: 0.605916
+  type: 'test'
+  ...
+# Subtest: R04 弩手完整预告、锁定不追踪、躲开不损兵
+ok 56 - R04 弩手完整预告、锁定不追踪、躲开不损兵
+  ---
+  duration_ms: 1.184833
+  type: 'test'
+  ...
+# Subtest: R04 蓄力可打断，已出手箭不撤回，一箭只伤一次
+ok 57 - R04 蓄力可打断，已出手箭不撤回，一箭只伤一次
+  ---
+  duration_ms: 0.997542
+  type: 'test'
+  ...
+# Subtest: R05 Boss入场2秒、1.4秒锁定、触发恢复独立，无幽灵攻击
+ok 58 - R05 Boss入场2秒、1.4秒锁定、触发恢复独立，无幽灵攻击
+  ---
+  duration_ms: 1.010458
+  type: 'test'
+  ...
+# Subtest: R05 低兵力无超时，HP归零才胜
+ok 59 - R05 低兵力无超时，HP归零才胜
+  ---
+  duration_ms: 12.002791
+  type: 'test'
+  ...
+# Subtest: R06 乱军突围 best 合法路线
+ok 60 - R06 乱军突围 best 合法路线
+  ---
+  duration_ms: 9.745917
+  type: 'test'
+  ...
+# Subtest: R06 乱军突围 safe 合法路线
+ok 61 - R06 乱军突围 safe 合法路线
+  ---
+  duration_ms: 8.901083
+  type: 'test'
+  ...
+# Subtest: R06 乱军突围 late 合法路线
+ok 62 - R06 乱军突围 late 合法路线
+  ---
+  duration_ms: 16.347791
+  type: 'test'
+  ...
+# Subtest: R06 乱军突围 真实失败与配置重开
+ok 63 - R06 乱军突围 真实失败与配置重开
+  ---
+  duration_ms: 13.705083
+  type: 'test'
+  ...
+# Subtest: R06 夺粮立营 best 合法路线
+ok 64 - R06 夺粮立营 best 合法路线
+  ---
+  duration_ms: 8.699167
+  type: 'test'
+  ...
+# Subtest: R06 夺粮立营 safe 合法路线
+ok 65 - R06 夺粮立营 safe 合法路线
+  ---
+  duration_ms: 12.141
+  type: 'test'
+  ...
+# Subtest: R06 夺粮立营 late 合法路线
+ok 66 - R06 夺粮立营 late 合法路线
+  ---
+  duration_ms: 7.81275
+  type: 'test'
+  ...
+# Subtest: R06 夺粮立营 真实失败与配置重开
+ok 67 - R06 夺粮立营 真实失败与配置重开
+  ---
+  duration_ms: 5.018541
+  type: 'test'
+  ...
+# Subtest: R06 白石解围 best 合法路线
+ok 68 - R06 白石解围 best 合法路线
+  ---
+  duration_ms: 6.036667
+  type: 'test'
+  ...
+# Subtest: R06 白石解围 safe 合法路线
+ok 69 - R06 白石解围 safe 合法路线
+  ---
+  duration_ms: 3.931541
+  type: 'test'
+  ...
+# Subtest: R06 白石解围 late 合法路线
+ok 70 - R06 白石解围 late 合法路线
+  ---
+  duration_ms: 4.553709
+  type: 'test'
+  ...
+# Subtest: R06 白石解围 真实失败与配置重开
+ok 71 - R06 白石解围 真实失败与配置重开
+  ---
+  duration_ms: 3.519417
+  type: 'test'
+  ...
+# Subtest: R07 暂停冻结预告和射击、取消输入不再横移
+ok 72 - R07 暂停冻结预告和射击、取消输入不再横移
+  ---
+  duration_ms: 0.14525
+  type: 'test'
+  ...
+# Subtest: R08 旧档保留，只迁移设置；新关不解锁
+ok 73 - R08 旧档保留，只迁移设置；新关不解锁
+  ---
+  duration_ms: 0.221
+  type: 'test'
+  ...
+# Subtest: R08 坏档及存储失败仍可玩；保存先于画面且成绩不降
+ok 74 - R08 坏档及存储失败仍可玩；保存先于画面且成绩不降
+  ---
+  duration_ms: 0.102709
+  type: 'test'
+  ...
+# Subtest: R09 稳定ID存档，只保留允许字段
+ok 75 - R09 稳定ID存档，只保留允许字段
+  ---
+  duration_ms: 0.060292
+  type: 'test'
+  ...
+# Subtest: R10 手机阵型有且仅有一个主角，48可见边界，中心投影一致
+ok 76 - R10 手机阵型有且仅有一个主角，48可见边界，中心投影一致
+  ---
+  duration_ms: 0.22125
+  type: 'test'
+  ...
+# Subtest: R11 十局对象有界，胜负无遗留箭或预告
+ok 77 - R11 十局对象有界，胜负无遗留箭或预告
+  ---
+  duration_ms: 26.101417
+  type: 'test'
+  ...
+# Subtest: R03 同步击杀与接触时先结算箭命中；半侧木障贴中线可射
+ok 78 - R03 同步击杀与接触时先结算箭命中；半侧木障贴中线可射
+  ---
+  duration_ms: 0.184
+  type: 'test'
+  ...
+1..78
+# tests 78
+# suites 0
+# pass 78
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 511.18175

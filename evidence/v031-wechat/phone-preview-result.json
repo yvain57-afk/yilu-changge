@@ -1,0 +1,18 @@
+{
+  "ok": false,
+  "errorType": "MCP_TOOL_ERROR",
+  "message": "错误 Error: 上传失败：网络请求错误， (async upload fail Error: 系统错误，错误码：80051,source size 15767KB exceed max limit 4MB [20260920 19:27:19]) 系统错误，错误码：80051,source size 15767KB exceed max limit 4MB [20260920 19:27:21]\n    at ie.doUpload (/Applications/wechatwebdevtools.app/Contents/Resources/app.asar/js/527609dda0ad86da09fa2e9c04f60db9.js:2:17739)\n    at async ie.run (/Applications/wechatwebdevtools.app/Contents/Resources/app.asar/js/527609dda0ad86da09fa2e9c04f60db9.js:2:27832)\n    at async s.lazyRun (/Applications/wechatwebdevtools.app/Contents/Resources/app.asar/js/c082f07fdaffce7bfae7c321aa6b86a4.js:2:628) (code 10)",
+  "source": "mcp_business",
+  "code": "10",
+  "detail": {
+    "rawResult": {
+      "success": false,
+      "error": "错误 Error: 上传失败：网络请求错误， (async upload fail Error: 系统错误，错误码：80051,source size 15767KB exceed max limit 4MB [20260920 19:27:19]) 系统错误，错误码：80051,source size 15767KB exceed max limit 4MB [20260920 19:27:21]\n    at ie.doUpload (/Applications/wechatwebdevtools.app/Contents/Resources/app.asar/js/527609dda0ad86da09fa2e9c04f60db9.js:2:17739)\n    at async ie.run (/Applications/wechatwebdevtools.app/Contents/Resources/app.asar/js/527609dda0ad86da09fa2e9c04f60db9.js:2:27832)\n    at async s.lazyRun (/Applications/wechatwebdevtools.app/Contents/Resources/app.asar/js/c082f07fdaffce7bfae7c321aa6b86a4.js:2:628) (code 10)",
+      "code": "10"
+    }
+  },
+  "reason": "10",
+  "tool": "auto_preview",
+  "clientName": "Codex",
+  "suggestions": "查看该工具完整参数, wechatide -c Codex auto_preview -h"
+}

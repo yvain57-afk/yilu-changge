@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "scope": "short real replay from the naturally unlocked save; no model mutation; separate from main three-level recording",
+  "sawAttack": true,
+  "sawWave": true,
+  "combat": {
+    "meleeHits": 0,
+    "meleeDamage": 0,
+    "waveHits": 5,
+    "companionHits": 2,
+    "upgrades": 1,
+    "awakenings": 0,
+    "volleys": 29,
+    "lastMelee": null
+  },
+  "elapsed": 7.14999999999998,
+  "errors": []
+}

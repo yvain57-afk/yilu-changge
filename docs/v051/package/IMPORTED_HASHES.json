@@ -1,0 +1,11 @@
+{
+  "02_REVIEW_EVIDENCE.md": "79f156046c4e7eb17d2ae0760bebf74aa080b06ac66c41edc33793f5c3825966",
+  "00_START_WITH_CODEX.md": "5d050ddd3f8fd76137dd482d6e326ba44757f26c07059c4c025c454b025610f9",
+  "01_TASK.md": "d9ca53df637ed7eac0fba9cdc2ebf11075b20cbe3f9c1bdfda557757f60f7c11",
+  "evidence/contract-before-fix.log": "5033472467d55f90e92f828f34bb86dc1d229b0e7f208552ebaf59ba79a98d30",
+  "evidence/isolated-contact-results.json": "a7a4ea025705df6b0afef4579773979672435752251e7d2fed5a6890382bb341",
+  "evidence/provided-files-hash-check.json": "96e8884f3b883b1cc2e9d3a7ec4383ecf332284d156a881f9ec3b0289334806e",
+  "evidence/blade-boss-contact-sequence.jpg": "9523f6ea626a0dfb91a6727763ab8b2ad29e701372492cb7d3b3b3f5d8a8cff1",
+  "evidence/source-feedback.md": "9cb52bf8cecad6e32ee1009fa2a6144fa3c2b9b5ec45da6ed43c061175ddb89b",
+  "tests/contact-v051.contract.test.ts": "3a256af08a23d76e4c9b97c889df6d7038059c9640aaf9a99efe44b79fe75054"
+}
