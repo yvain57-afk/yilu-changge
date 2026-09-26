@@ -1,0 +1,13 @@
+{
+  "platform": "wechatgame",
+  "exitCode": 36,
+  "success": true,
+  "date": "2026-09-25T16:48:13.224Z",
+  "bin": "/Applications/CocosCreator/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator",
+  "args": [
+    "--project",
+    "/Users/yvainair/Code/游戏-左右滑古代史",
+    "--build",
+    "configPath=/Users/yvainair/Code/游戏-左右滑古代史/.cache/build-wechatgame-local.json"
+  ]
+}

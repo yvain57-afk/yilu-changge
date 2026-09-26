@@ -1,0 +1,220 @@
+{
+  "kind": "explicit-loadout-fixtures",
+  "speed": 1,
+  "segments": [
+    {
+      "name": "hero-blade-slow",
+      "source": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-blade-slow.webm",
+      "sourceStart": 0,
+      "duration": 3,
+      "sourceAvailableSeconds": 3.088,
+      "outputStart": 0,
+      "loadout": {
+        "name": "hero-blade",
+        "weapon": "blade",
+        "companion": null,
+        "focus": "hero"
+      },
+      "phase": {
+        "name": "slow",
+        "stage": 2,
+        "seconds": 3,
+        "interval": 0.45
+      },
+      "speed": 1
+    },
+    {
+      "name": "hero-blade-fast",
+      "source": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-blade-fast.webm",
+      "sourceStart": 0,
+      "duration": 2,
+      "sourceAvailableSeconds": 2.058,
+      "outputStart": 3,
+      "loadout": {
+        "name": "hero-blade",
+        "weapon": "blade",
+        "companion": null,
+        "focus": "hero"
+      },
+      "phase": {
+        "name": "fast",
+        "stage": 1,
+        "seconds": 2,
+        "interval": 0.2
+      },
+      "speed": 1
+    },
+    {
+      "name": "hero-spear-slow",
+      "source": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-spear-slow.webm",
+      "sourceStart": 0,
+      "duration": 3,
+      "sourceAvailableSeconds": 3.026,
+      "outputStart": 5,
+      "loadout": {
+        "name": "hero-spear",
+        "weapon": "spear",
+        "companion": null,
+        "focus": "hero"
+      },
+      "phase": {
+        "name": "slow",
+        "stage": 2,
+        "seconds": 3,
+        "interval": 0.45
+      },
+      "speed": 1
+    },
+    {
+      "name": "hero-spear-fast",
+      "source": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-spear-fast.webm",
+      "sourceStart": 0,
+      "duration": 2,
+      "sourceAvailableSeconds": 2.052,
+      "outputStart": 8,
+      "loadout": {
+        "name": "hero-spear",
+        "weapon": "spear",
+        "companion": null,
+        "focus": "hero"
+      },
+      "phase": {
+        "name": "fast",
+        "stage": 1,
+        "seconds": 2,
+        "interval": 0.2
+      },
+      "speed": 1
+    },
+    {
+      "name": "xing-axe-slow",
+      "source": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/xing-axe-slow.webm",
+      "sourceStart": 0,
+      "duration": 3,
+      "sourceAvailableSeconds": 3.075,
+      "outputStart": 10,
+      "loadout": {
+        "name": "xing-axe",
+        "weapon": "blade",
+        "companion": "xing_daorong",
+        "focus": "companion"
+      },
+      "phase": {
+        "name": "slow",
+        "stage": 2,
+        "seconds": 3,
+        "interval": 0.45
+      },
+      "speed": 1
+    },
+    {
+      "name": "xing-axe-fast",
+      "source": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/xing-axe-fast.webm",
+      "sourceStart": 0,
+      "duration": 2,
+      "sourceAvailableSeconds": 2.055,
+      "outputStart": 13,
+      "loadout": {
+        "name": "xing-axe",
+        "weapon": "blade",
+        "companion": "xing_daorong",
+        "focus": "companion"
+      },
+      "phase": {
+        "name": "fast",
+        "stage": 1,
+        "seconds": 2,
+        "interval": 0.2
+      },
+      "speed": 1
+    },
+    {
+      "name": "chen-fork-slow",
+      "source": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/chen-fork-slow.webm",
+      "sourceStart": 0,
+      "duration": 3,
+      "sourceAvailableSeconds": 3.082,
+      "outputStart": 15,
+      "loadout": {
+        "name": "chen-fork",
+        "weapon": "spear",
+        "companion": "chen_ying",
+        "focus": "companion"
+      },
+      "phase": {
+        "name": "slow",
+        "stage": 2,
+        "seconds": 3,
+        "interval": 0.45
+      },
+      "speed": 1
+    },
+    {
+      "name": "chen-fork-fast",
+      "source": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/chen-fork-fast.webm",
+      "sourceStart": 0,
+      "duration": 2,
+      "sourceAvailableSeconds": 2.058,
+      "outputStart": 18,
+      "loadout": {
+        "name": "chen-fork",
+        "weapon": "spear",
+        "companion": "chen_ying",
+        "focus": "companion"
+      },
+      "phase": {
+        "name": "fast",
+        "stage": 1,
+        "seconds": 2,
+        "interval": 0.2
+      },
+      "speed": 1
+    },
+    {
+      "name": "zhao-spear-slow",
+      "source": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/zhao-spear-slow.webm",
+      "sourceStart": 0,
+      "duration": 3,
+      "sourceAvailableSeconds": 3.077,
+      "outputStart": 20,
+      "loadout": {
+        "name": "zhao-spear",
+        "weapon": "spear",
+        "companion": "zhao_yun_guest",
+        "focus": "companion"
+      },
+      "phase": {
+        "name": "slow",
+        "stage": 2,
+        "seconds": 3,
+        "interval": 0.45
+      },
+      "speed": 1
+    },
+    {
+      "name": "zhao-spear-fast",
+      "source": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/zhao-spear-fast.webm",
+      "sourceStart": 0,
+      "duration": 2,
+      "sourceAvailableSeconds": 2.059,
+      "outputStart": 23,
+      "loadout": {
+        "name": "zhao-spear",
+        "weapon": "spear",
+        "companion": "zhao_yun_guest",
+        "focus": "companion"
+      },
+      "phase": {
+        "name": "fast",
+        "stage": 1,
+        "seconds": 2,
+        "interval": 0.2
+      },
+      "speed": 1
+    }
+  ],
+  "seconds": 25,
+  "extraAudio": false,
+  "music": false,
+  "scope": "Ten separately labelled fixture captures concatenated without retiming; not one natural playthrough. Capture frame/diagnostic samples may differ by 1–2 frames. Continuous original frames are the pose evidence."
+}

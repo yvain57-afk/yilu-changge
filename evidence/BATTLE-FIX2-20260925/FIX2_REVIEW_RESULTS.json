@@ -1,0 +1,429 @@
+{
+  "taskId": "BATTLE-FIX2-20260925",
+  "runtime": "battle-fix2-20260925",
+  "sourceAndBuildSha256": "fee06efe1dd9a74248c5c3470b5532a3c4bbecb2ca3af51e261cd38043d45624",
+  "generatedAt": "2026-09-26T01:11:09.280261+08:00",
+  "statusEnum": [
+    "通过",
+    "部分完成",
+    "未通过",
+    "待实测"
+  ],
+  "functionalRegression": "通过",
+  "requiredArtResources": "通过",
+  "developerVisualReview": "通过",
+  "userAestheticApproval": "待用户核验",
+  "physicalDevice": "待实测",
+  "packaging": "pending",
+  "cases": [
+    {
+      "id": "A01",
+      "group": "攻击",
+      "scenario": "主将及实际同袍分别检查",
+      "expected": "真实持械、动作、光波形状一致；普通弓弩兵不误改。",
+      "evidenceRequired": "角色映射表＋原速片段",
+      "evidence": [
+        "weapon-clips-latest.json",
+        "targeted-latest.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "A02",
+      "group": "攻击",
+      "scenario": "低频单次攻击",
+      "expected": "起势、发力、收势和握点连续，未用整图抖动替代。",
+      "evidenceRequired": "局部放大逐帧＋原速",
+      "evidence": [
+        "weapon-clips-latest.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "A03",
+      "group": "攻击",
+      "scenario": "最高实际连发阶段",
+      "expected": "出手不抽搐、不等长动画、不新增或漏掉模型弹丸。",
+      "evidenceRequired": "发射事件计数与原速片段",
+      "evidence": [
+        "weapon-clips-latest.json",
+        "related-checks.log"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "A04",
+      "group": "攻击",
+      "scenario": "出手后立刻左右拖动",
+      "expected": "已发光波不跟随转向；出手点与兵器出口对应。",
+      "evidenceRequired": "事件ID及弹道覆盖调试",
+      "evidence": [
+        "targeted-latest.json",
+        "weapon-clips-latest.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "A05",
+      "group": "攻击",
+      "scenario": "命中门/箱/敌人/隔离墙",
+      "expected": "视觉命中、消失与真实碰撞一致，没有假群伤或穿透。",
+      "evidenceRequired": "定向片段与碰撞记录",
+      "evidence": [
+        "targeted-latest.json",
+        "natural-flow.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "A06",
+      "group": "攻击",
+      "scenario": "切兵器、死亡、暂停、重开",
+      "expected": "新发射使用当前武器；旧弹保留原身份，旧局动作不残留。",
+      "evidenceRequired": "定向回归",
+      "evidence": [
+        "targeted-latest.json",
+        "related-checks.log"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "U01",
+      "group": "排版",
+      "scenario": "同屏正门/负门/零值",
+      "expected": "大符号与数字对齐，零为0，不出现重复说明牌。",
+      "evidenceRequired": "375×667与390×844实图",
+      "evidence": [
+        "targeted-latest.json",
+        "compare-latest.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "U02",
+      "group": "排版",
+      "scenario": "四种箱依次及并排",
+      "expected": "奖励与耐久分层且属于同一信息组；无重复耐久前缀。",
+      "evidenceRequired": "四类箱状态截图",
+      "evidence": [
+        "targeted-latest.json",
+        "layout-recheck-latest.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "U03",
+      "group": "排版",
+      "scenario": "值从9到10及到三位",
+      "expected": "位置稳定、无遮挡、不骤然缩字、不截断符号。",
+      "evidenceRequired": "定向连续截图",
+      "evidence": [
+        "layout-recheck-latest.json"
+      ],
+      "status": "通过",
+      "notes": "近景32px；远处按透视缩放，容器固定预留三位数及符号。真实碰撞宽度、地面触发条均不变。"
+    },
+    {
+      "id": "U04",
+      "group": "排版",
+      "scenario": "密集连续+1及接敌",
+      "expected": "每枚有就近清楚+1，无侧栏长线；奖励逐个兑现。",
+      "evidenceRequired": "原速片段＋对象ID",
+      "evidence": [
+        "layout-recheck-latest.json",
+        "natural-flow.json"
+      ],
+      "status": "通过",
+      "notes": "旧3项遮挡失败保留；本轮三尺寸24枚实图与27项定向复核关闭。"
+    },
+    {
+      "id": "U05",
+      "group": "排版",
+      "scenario": "顶端进入、队伍附近、边缘目标",
+      "expected": "关键值不被HUD/墙/人数遮住，局部避让不乱跳。",
+      "evidenceRequired": "三位置截图",
+      "evidence": [
+        "layout-recheck-latest.json",
+        "compare-latest.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "U06",
+      "group": "排版",
+      "scenario": "实际尺寸与高分辨率缩放",
+      "expected": "字体清晰、风格统一；技术不重叠与视觉合格分别检查。",
+      "evidenceRequired": "实际比例视觉检查",
+      "evidence": [
+        "layout-recheck-latest.json",
+        "compare-latest.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "E01",
+      "group": "场景",
+      "scenario": "顶部原问题段连续8秒以上",
+      "expected": "成对顶部近景组合不再持续出现或重复向前漂。",
+      "evidenceRequired": "连续原速录像＋实例日志",
+      "evidence": [
+        "top-decoration-uncut.mp4",
+        "CLIPS.json",
+        "PRESERVED_CONTRACTS.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "E02",
+      "group": "场景",
+      "scenario": "正常路侧物体接近和离屏",
+      "expected": "保留物体世界投影连续，完整离屏才回收，不钳在顶部。",
+      "evidenceRequired": "连续录像",
+      "evidence": [
+        "full-natural-three-levels.mp4",
+        "natural-flow.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "E03",
+      "group": "隔离墙",
+      "scenario": "墙中段/两端与开口",
+      "expected": "木墙、阴影与地面融合，首尾完整；可见边界对应原规则。",
+      "evidenceRequired": "全段截图＋碰撞叠层",
+      "evidence": [
+        "compare-latest.json",
+        "layout-recheck-latest.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "E04",
+      "group": "隔离墙",
+      "scenario": "过墙端横移和射击",
+      "expected": "自由横移保留，原挡弹仍正确，没有新增封闭分路。",
+      "evidenceRequired": "实操片段＋定向检查",
+      "evidence": [
+        "targeted-latest.json",
+        "full-natural-three-levels.mp4"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "G01",
+      "group": "门规则",
+      "scenario": "原maxPositive=4/8/12实例",
+      "expected": "新window模式能继续跨原阈值增长，未只删满员文字。",
+      "evidenceRequired": "模型断言＋画面读数",
+      "evidence": [
+        "CAP_AND_PACING_REPORT.json",
+        "related-checks.log"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "G02",
+      "group": "门规则",
+      "scenario": "负值跨0到正值",
+      "expected": "累计伤害与余数正确，不每击无条件+1，翻色同步。",
+      "evidenceRequired": "阈值前/等于/超过三类断言",
+      "evidence": [
+        "related-checks.log",
+        "CAP_AND_PACING_REPORT.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "G03",
+      "group": "门规则",
+      "scenario": "两成员同帧碰门/多个连续门",
+      "expected": "每门一次结算；逐门账本无重复，错过不补发。",
+      "evidenceRequired": "奖励账本",
+      "evidence": [
+        "targeted-latest.json",
+        "related-checks.log"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "G04",
+      "group": "门规则",
+      "scenario": "旧配置回退和未结算存档恢复",
+      "expected": "window未被空值回退重新封顶；已领取不重发、历史不补偿。",
+      "evidenceRequired": "存储回归",
+      "evidence": [
+        "related-checks.log"
+      ],
+      "status": "通过",
+      "notes": "真实存档不持久化半局 Journey/Runner，故不存在未结算门的存档迁移；未知字段/旧成绩兼容及已结算不补偿有相关检查。"
+    },
+    {
+      "id": "G05",
+      "group": "门规则",
+      "scenario": "高人数代理与数值保护",
+      "expected": "可见数量不限制奖励；权重/兵力/伤害/占位按真实规则。",
+      "evidenceRequired": "容量来源＋边界断言",
+      "evidence": [
+        "CAP_AND_PACING_REPORT.json",
+        "natural-flow.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "G06",
+      "group": "门规则",
+      "scenario": "同初值同输入A/B门窗口",
+      "expected": "记录首次可看清/可命中、增长、封顶空耗和领取，说明改值依据。",
+      "evidenceRequired": "CAP_AND_PACING_REPORT",
+      "evidence": [
+        "CAP_AND_PACING_REPORT.json",
+        "cap-readability-latest.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "G07",
+      "group": "门规则",
+      "scenario": "普通手动路径、偏晚换向、强火力",
+      "expected": "观察是否看清来得及打、是否仍常态停涨及增长失控。",
+      "evidenceRequired": "少量短定向测试，非胜率声明",
+      "evidence": [
+        "CAP_AND_PACING_REPORT.json"
+      ],
+      "status": "通过",
+      "notes": "固定正常瞄准、偏晚换向、强火力的少量配对模型输入；没有人工胜率或自动最优路线声明。"
+    },
+    {
+      "id": "G08",
+      "group": "门规则",
+      "scenario": "改后自然三关",
+      "expected": "新收益下仍有取舍；没有偷偷改敌HP/倍增奖励或丢奖励。",
+      "evidenceRequired": "模型差异说明＋自然录像",
+      "evidence": [
+        "natural-flow.json",
+        "PARAMETER_DIFF.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "R01",
+      "group": "回归",
+      "scenario": "纯视觉差异隔离验证",
+      "expected": "关闭门规则差异时，同输入模型一致；开启后核对有意变化。",
+      "evidenceRequired": "两层回归结果",
+      "evidence": [
+        "compare-latest.json",
+        "CAP_AND_PACING_REPORT.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "R02",
+      "group": "回归",
+      "scenario": "原有菜单/过渡/会面/存档",
+      "expected": "可继续三关，未重复首次奖励、未覆盖未知字段。",
+      "evidenceRequired": "同一次自然流程",
+      "evidence": [
+        "natural-flow.json",
+        "PRESERVED_CONTRACTS.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "R03",
+      "group": "适配",
+      "scenario": "375×667/390×844/430×932",
+      "expected": "字/热区/拖动与安全区一致，不用一款视口代表全部。",
+      "evidenceRequired": "视口状态截图",
+      "evidence": [
+        "compare-latest.json",
+        "layout-recheck-latest.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "R04",
+      "group": "生命周期",
+      "scenario": "连续重开与高密度短段",
+      "expected": "旧标签/光波/动作无残留，资源正确归还，无明显新增卡顿。",
+      "evidenceRequired": "定向性能与资源记录",
+      "evidence": [
+        "targeted-latest.json"
+      ],
+      "status": "通过"
+    },
+    {
+      "id": "R05",
+      "group": "真机",
+      "scenario": "真实手机触控/胶囊/听感/后台",
+      "expected": "有设备才实测；无设备明确待验，不用桌面结果代替。",
+      "evidenceRequired": "设备与版本或blocked原因",
+      "evidence": [],
+      "status": "待实测",
+      "notes": "无实体手机证据；触控、微信胶囊、听感、切后台及持续性能待真机。"
+    },
+    {
+      "id": "R06",
+      "group": "交付",
+      "scenario": "实际构建回读与打包",
+      "expected": "运行标识、媒体、源码/构建指纹一致；无假pass和虚构证据路径。",
+      "evidenceRequired": "媒体清单＋包内容核查",
+      "evidence": [
+        "BUILD_ID.json",
+        "wechat-package.json",
+        "CLIPS.json"
+      ],
+      "status": "通过",
+      "notes": "双端构建及本地运行通过。独立解包运行和归档哈希由打包工具实际通过后回填，不提前标绿。",
+      "packageVerification": {
+        "path": "evidence/BATTLE-FIX2-20260925/PACKAGE_VERIFICATION.json",
+        "runtime": "battle-fix2-20260925",
+        "sourceAndBuildSha256": "fee06efe1dd9a74248c5c3470b5532a3c4bbecb2ca3af51e261cd38043d45624"
+      }
+    }
+  ],
+  "sixGroups": [
+    {
+      "name": "武将动作与兵器光波",
+      "status": "通过"
+    },
+    {
+      "name": "四类箱信息组",
+      "status": "通过"
+    },
+    {
+      "name": "正负零值及连续门排版",
+      "status": "通过"
+    },
+    {
+      "name": "顶部近景清理",
+      "status": "通过"
+    },
+    {
+      "name": "增援门增长与有效窗口",
+      "status": "通过"
+    },
+    {
+      "name": "木墙与原障碍规则",
+      "status": "通过"
+    }
+  ],
+  "limits": [
+    "浏览器移动视口不等于实体手机。",
+    "同状态视觉对照显式固定旧 capped；自然局使用 window，不声称新收益下所有模型相同。",
+    "少量固定输入观察不是玩家胜率；未知原版公式仍是明确工程初值。",
+    "拥挤时队伍人数牌移至相邻空位，部分位置归属感仍弱于固定HUD；关键门值与武将已避免遮挡。"
+  ],
+  "weaponCaptureTiming": "Diagnostic samples may differ from MediaRecorder by 1–2 frames. Continuous original frames confirm poses; Zhao fastest observed actor interval is 0.3s, other identities 0.2s.",
+  "failuresClosed": [
+    {
+      "file": "targeted/2026-09-25T16-34-58-687Z/report.json",
+      "issue": "人数牌遮两枚连续门",
+      "resolution": "layout-recheck-latest.json"
+    },
+    {
+      "issue": "三位值越旗、近箱遮武将、木墙锯齿",
+      "resolution": "layout-recheck-latest.json + final 12 screenshots"
+    }
+  ]
+}

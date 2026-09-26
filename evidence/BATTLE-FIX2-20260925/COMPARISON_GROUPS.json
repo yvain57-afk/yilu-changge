@@ -1,0 +1,30 @@
+[
+  {
+    "id": "normal-attack",
+    "before": "before/normal-attack.png",
+    "after": "after/2026-09-25T16-54-45-552Z/390x844-normal-attack.png",
+    "beforeMetadata": "comparison-metadata/normal-attack-before.json",
+    "afterMetadata": "comparison-metadata/normal-attack-after.json"
+  },
+  {
+    "id": "gates-crates",
+    "before": "before/gates-crates.png",
+    "after": "after/2026-09-25T16-54-45-552Z/390x844-gates-crates.png",
+    "beforeMetadata": "comparison-metadata/gates-crates-before.json",
+    "afterMetadata": "comparison-metadata/gates-crates-after.json"
+  },
+  {
+    "id": "wall-end",
+    "before": "before/wall-end.png",
+    "after": "after/2026-09-25T16-54-45-552Z/390x844-wall-end.png",
+    "beforeMetadata": "comparison-metadata/wall-end-before.json",
+    "afterMetadata": "comparison-metadata/wall-end-after.json"
+  },
+  {
+    "id": "chain-contact",
+    "before": "before/chain-contact.png",
+    "after": "after/2026-09-25T16-54-45-552Z/390x844-chain-contact.png",
+    "beforeMetadata": "comparison-metadata/chain-contact-before.json",
+    "afterMetadata": "comparison-metadata/chain-contact-after.json"
+  }
+]

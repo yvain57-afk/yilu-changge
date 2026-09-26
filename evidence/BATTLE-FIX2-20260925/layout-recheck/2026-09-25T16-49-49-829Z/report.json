@@ -1,0 +1,248 @@
+{
+  "kind": "targeted-failure-recheck",
+  "dir": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z",
+  "reason": "Recheck previously failed legal24-token labels, narrow3-digit gate art, and near-actor crate labels after local UI fixes; no whole-targeted repeat.",
+  "checks": [
+    {
+      "name": "375 depth1 value9 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "375 depth1 value10 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "375 depth1 value100 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "375 depth1 value-100 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "375 depth3 value9 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "375 depth3 value10 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "375 depth3 value100 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "375 depth3 value-100 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "375 all24 legal token values keep original local IDs",
+      "pass": true
+    },
+    {
+      "name": "390 depth1 value9 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "390 depth1 value10 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "390 depth1 value100 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "390 depth1 value-100 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "390 depth3 value9 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "390 depth3 value10 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "390 depth3 value100 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "390 depth3 value-100 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "390 all24 legal token values keep original local IDs",
+      "pass": true
+    },
+    {
+      "name": "430 depth1 value9 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "430 depth1 value10 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "430 depth1 value100 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "430 depth1 value-100 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "430 depth3 value9 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "430 depth3 value10 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "430 depth3 value100 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "430 depth3 value-100 stable/legible local value",
+      "pass": true
+    },
+    {
+      "name": "430 all24 legal token values keep original local IDs",
+      "pass": true
+    }
+  ],
+  "failures": [],
+  "captures": [
+    {
+      "name": "375-depth1-value9",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/375-depth1-value9.png"
+    },
+    {
+      "name": "375-depth1-value10",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/375-depth1-value10.png"
+    },
+    {
+      "name": "375-depth1-value100",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/375-depth1-value100.png"
+    },
+    {
+      "name": "375-depth1-value-100",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/375-depth1-value-100.png"
+    },
+    {
+      "name": "375-depth3-value9",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/375-depth3-value9.png"
+    },
+    {
+      "name": "375-depth3-value10",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/375-depth3-value10.png"
+    },
+    {
+      "name": "375-depth3-value100",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/375-depth3-value100.png"
+    },
+    {
+      "name": "375-depth3-value-100",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/375-depth3-value-100.png"
+    },
+    {
+      "name": "375-24-tokens",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/375-24-tokens.png"
+    },
+    {
+      "name": "375-wall-end-near-crate",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/375-wall-end-near-crate.png"
+    },
+    {
+      "name": "390-depth1-value9",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/390-depth1-value9.png"
+    },
+    {
+      "name": "390-depth1-value10",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/390-depth1-value10.png"
+    },
+    {
+      "name": "390-depth1-value100",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/390-depth1-value100.png"
+    },
+    {
+      "name": "390-depth1-value-100",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/390-depth1-value-100.png"
+    },
+    {
+      "name": "390-depth3-value9",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/390-depth3-value9.png"
+    },
+    {
+      "name": "390-depth3-value10",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/390-depth3-value10.png"
+    },
+    {
+      "name": "390-depth3-value100",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/390-depth3-value100.png"
+    },
+    {
+      "name": "390-depth3-value-100",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/390-depth3-value-100.png"
+    },
+    {
+      "name": "390-24-tokens",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/390-24-tokens.png"
+    },
+    {
+      "name": "390-wall-end-near-crate",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/390-wall-end-near-crate.png"
+    },
+    {
+      "name": "430-depth1-value9",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/430-depth1-value9.png"
+    },
+    {
+      "name": "430-depth1-value10",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/430-depth1-value10.png"
+    },
+    {
+      "name": "430-depth1-value100",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/430-depth1-value100.png"
+    },
+    {
+      "name": "430-depth1-value-100",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/430-depth1-value-100.png"
+    },
+    {
+      "name": "430-depth3-value9",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/430-depth3-value9.png"
+    },
+    {
+      "name": "430-depth3-value10",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/430-depth3-value10.png"
+    },
+    {
+      "name": "430-depth3-value100",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/430-depth3-value100.png"
+    },
+    {
+      "name": "430-depth3-value-100",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/430-depth3-value-100.png"
+    },
+    {
+      "name": "430-24-tokens",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/430-24-tokens.png"
+    },
+    {
+      "name": "430-wall-end-near-crate",
+      "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/430-wall-end-near-crate.png"
+    }
+  ],
+  "visualStatus": "reviewed_pass_with_documented_scope",
+  "errors": [],
+  "passed": true,
+  "visualReview": {
+    "reviewer": "Codex visual inspection",
+    "notes": [
+      "Viewed 375 legal24-token PNG and 390 near -100/wall-end PNGs: all24 local +1 labels, three-digit plate containment and card below formation.",
+      "27 assertions cover all three sizes; other value/size variants are structural assertions, not a claim that every screenshot was individually visually rated."
+    ]
+  }
+}
