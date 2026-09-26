@@ -1,0 +1,276 @@
+{
+  "taskId": "BATTLE-FIX2-20260925",
+  "status": "not_executed",
+  "cases": [
+    {
+      "id": "A01",
+      "group": "攻击",
+      "scenario": "主将及实际同袍分别检查",
+      "expected": "真实持械、动作、光波形状一致；普通弓弩兵不误改。",
+      "evidenceRequired": "角色映射表＋原速片段",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "A02",
+      "group": "攻击",
+      "scenario": "低频单次攻击",
+      "expected": "起势、发力、收势和握点连续，未用整图抖动替代。",
+      "evidenceRequired": "局部放大逐帧＋原速",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "A03",
+      "group": "攻击",
+      "scenario": "最高实际连发阶段",
+      "expected": "出手不抽搐、不等长动画、不新增或漏掉模型弹丸。",
+      "evidenceRequired": "发射事件计数与原速片段",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "A04",
+      "group": "攻击",
+      "scenario": "出手后立刻左右拖动",
+      "expected": "已发光波不跟随转向；出手点与兵器出口对应。",
+      "evidenceRequired": "事件ID及弹道覆盖调试",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "A05",
+      "group": "攻击",
+      "scenario": "命中门/箱/敌人/隔离墙",
+      "expected": "视觉命中、消失与真实碰撞一致，没有假群伤或穿透。",
+      "evidenceRequired": "定向片段与碰撞记录",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "A06",
+      "group": "攻击",
+      "scenario": "切兵器、死亡、暂停、重开",
+      "expected": "新发射使用当前武器；旧弹保留原身份，旧局动作不残留。",
+      "evidenceRequired": "定向回归",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "U01",
+      "group": "排版",
+      "scenario": "同屏正门/负门/零值",
+      "expected": "大符号与数字对齐，零为0，不出现重复说明牌。",
+      "evidenceRequired": "375×667与390×844实图",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "U02",
+      "group": "排版",
+      "scenario": "四种箱依次及并排",
+      "expected": "奖励与耐久分层且属于同一信息组；无重复耐久前缀。",
+      "evidenceRequired": "四类箱状态截图",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "U03",
+      "group": "排版",
+      "scenario": "值从9到10及到三位",
+      "expected": "位置稳定、无遮挡、不骤然缩字、不截断符号。",
+      "evidenceRequired": "定向连续截图",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "U04",
+      "group": "排版",
+      "scenario": "密集连续+1及接敌",
+      "expected": "每枚有就近清楚+1，无侧栏长线；奖励逐个兑现。",
+      "evidenceRequired": "原速片段＋对象ID",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "U05",
+      "group": "排版",
+      "scenario": "顶端进入、队伍附近、边缘目标",
+      "expected": "关键值不被HUD/墙/人数遮住，局部避让不乱跳。",
+      "evidenceRequired": "三位置截图",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "U06",
+      "group": "排版",
+      "scenario": "实际尺寸与高分辨率缩放",
+      "expected": "字体清晰、风格统一；技术不重叠与视觉合格分别检查。",
+      "evidenceRequired": "实际比例视觉检查",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "E01",
+      "group": "场景",
+      "scenario": "顶部原问题段连续8秒以上",
+      "expected": "成对顶部近景组合不再持续出现或重复向前漂。",
+      "evidenceRequired": "连续原速录像＋实例日志",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "E02",
+      "group": "场景",
+      "scenario": "正常路侧物体接近和离屏",
+      "expected": "保留物体世界投影连续，完整离屏才回收，不钳在顶部。",
+      "evidenceRequired": "连续录像",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "E03",
+      "group": "隔离墙",
+      "scenario": "墙中段/两端与开口",
+      "expected": "木墙、阴影与地面融合，首尾完整；可见边界对应原规则。",
+      "evidenceRequired": "全段截图＋碰撞叠层",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "E04",
+      "group": "隔离墙",
+      "scenario": "过墙端横移和射击",
+      "expected": "自由横移保留，原挡弹仍正确，没有新增封闭分路。",
+      "evidenceRequired": "实操片段＋定向检查",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "G01",
+      "group": "门规则",
+      "scenario": "原maxPositive=4/8/12实例",
+      "expected": "新window模式能继续跨原阈值增长，未只删满员文字。",
+      "evidenceRequired": "模型断言＋画面读数",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "G02",
+      "group": "门规则",
+      "scenario": "负值跨0到正值",
+      "expected": "累计伤害与余数正确，不每击无条件+1，翻色同步。",
+      "evidenceRequired": "阈值前/等于/超过三类断言",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "G03",
+      "group": "门规则",
+      "scenario": "两成员同帧碰门/多个连续门",
+      "expected": "每门一次结算；逐门账本无重复，错过不补发。",
+      "evidenceRequired": "奖励账本",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "G04",
+      "group": "门规则",
+      "scenario": "旧配置回退和未结算存档恢复",
+      "expected": "window未被空值回退重新封顶；已领取不重发、历史不补偿。",
+      "evidenceRequired": "存储回归",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "G05",
+      "group": "门规则",
+      "scenario": "高人数代理与数值保护",
+      "expected": "可见数量不限制奖励；权重/兵力/伤害/占位按真实规则。",
+      "evidenceRequired": "容量来源＋边界断言",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "G06",
+      "group": "门规则",
+      "scenario": "同初值同输入A/B门窗口",
+      "expected": "记录首次可看清/可命中、增长、封顶空耗和领取，说明改值依据。",
+      "evidenceRequired": "CAP_AND_PACING_REPORT",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "G07",
+      "group": "门规则",
+      "scenario": "普通手动路径、偏晚换向、强火力",
+      "expected": "观察是否看清来得及打、是否仍常态停涨及增长失控。",
+      "evidenceRequired": "少量短定向测试，非胜率声明",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "G08",
+      "group": "门规则",
+      "scenario": "改后自然三关",
+      "expected": "新收益下仍有取舍；没有偷偷改敌HP/倍增奖励或丢奖励。",
+      "evidenceRequired": "模型差异说明＋自然录像",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "R01",
+      "group": "回归",
+      "scenario": "纯视觉差异隔离验证",
+      "expected": "关闭门规则差异时，同输入模型一致；开启后核对有意变化。",
+      "evidenceRequired": "两层回归结果",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "R02",
+      "group": "回归",
+      "scenario": "原有菜单/过渡/会面/存档",
+      "expected": "可继续三关，未重复首次奖励、未覆盖未知字段。",
+      "evidenceRequired": "同一次自然流程",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "R03",
+      "group": "适配",
+      "scenario": "375×667/390×844/430×932",
+      "expected": "字/热区/拖动与安全区一致，不用一款视口代表全部。",
+      "evidenceRequired": "视口状态截图",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "R04",
+      "group": "生命周期",
+      "scenario": "连续重开与高密度短段",
+      "expected": "旧标签/光波/动作无残留，资源正确归还，无明显新增卡顿。",
+      "evidenceRequired": "定向性能与资源记录",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "R05",
+      "group": "真机",
+      "scenario": "真实手机触控/胶囊/听感/后台",
+      "expected": "有设备才实测；无设备明确待验，不用桌面结果代替。",
+      "evidenceRequired": "设备与版本或blocked原因",
+      "result": "not_run",
+      "evidence": []
+    },
+    {
+      "id": "R06",
+      "group": "交付",
+      "scenario": "实际构建回读与打包",
+      "expected": "运行标识、媒体、源码/构建指纹一致；无假pass和虚构证据路径。",
+      "evidenceRequired": "媒体清单＋包内容核查",
+      "result": "not_run",
+      "evidence": []
+    }
+  ]
+}

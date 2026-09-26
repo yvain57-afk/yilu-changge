@@ -1,0 +1,92 @@
+{
+  "kind": "fixture",
+  "runtime": "battle-rework-20260925-fix1",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "loadout": {
+    "level": 1,
+    "weapon": "blade",
+    "companion": "xing_daorong"
+  },
+  "policySha256": "39659b1879287cdd96072bb26758a36b3a0a4df85144a91eebc54e7c318e7551",
+  "holdTicks": 3,
+  "buildMainSha256": "3158ce6aa8c5b93bee60ae923154f4aded06403f3dde4429e7f78599d8b517df",
+  "states": [
+    {
+      "id": "normal-attack",
+      "tick": 720,
+      "elapsed": 12.000000000000176,
+      "count": 10,
+      "stage": 1,
+      "modelSha256": "e070473e8a18f92aeedb3d840cbeb83a497d985f1f0d196a515bd64223e60df3",
+      "barriers": [
+        {
+          "id": "l2.divider",
+          "left": -0.045,
+          "right": 0.045,
+          "back": 13.500000000000178,
+          "front": 19.500000000000178,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "gates-crates",
+      "tick": 1320,
+      "elapsed": 22.000000000000032,
+      "count": 14,
+      "stage": 1,
+      "modelSha256": "388707eb9ee08c8eabf20e2bf897c315f1ca0630fb5d48c35609fd7687312f96",
+      "barriers": [
+        {
+          "id": "l2.divider",
+          "left": -0.045,
+          "right": 0.045,
+          "back": 23.500000000000032,
+          "front": 29.500000000000032,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "wall-end",
+      "tick": 1995,
+      "elapsed": 33.249999999999396,
+      "count": 16,
+      "stage": 2,
+      "modelSha256": "640a8d4992a20aa3a919f25da76cf493bfc40ca79474ae5c0e5acdf629ed5682",
+      "barriers": [
+        {
+          "id": "l2.divider",
+          "left": -0.045,
+          "right": 0.045,
+          "back": 36.24999999999577,
+          "front": 40.749999999999396,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "chain-contact",
+      "tick": 1731,
+      "elapsed": 28.849999999999643,
+      "count": 13,
+      "stage": 2,
+      "modelSha256": "abc234d4367da8794ced9d2046c65c2c91a9c18c7d7e9a34e5d209e59b3c2c78",
+      "barriers": [
+        {
+          "id": "l2.divider",
+          "left": -0.045,
+          "right": 0.045,
+          "back": 30.34999999999964,
+          "front": 36.34999999999964,
+          "visible": true
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

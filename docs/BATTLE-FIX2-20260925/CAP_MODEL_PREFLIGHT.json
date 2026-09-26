@@ -1,0 +1,6252 @@
+{
+  "taskId": "BATTLE-FIX2-20260925",
+  "sourceSha256": {
+    "assets/scripts/core/runner.ts": "0c13a1750bff6c1208545a194bcb4a15d35b0167949ffd2423a5406fa9dce1ed",
+    "assets/scripts/core/runnerConfig.ts": "3bd24ede32edafbcd0ce6880f52272e369ab7cc602c3963eec14538bf50732c8",
+    "tools/v09-model-policy.ts": "26aa9d7cdff5f28f045dd7d815d3b96ac3ee5000c6337ca549b881493b7bbd64"
+  },
+  "parameterSha256": "f4538211f630c5a75dde2eb872241a64c22833e917235885e3e8fdf9c6048489",
+  "guard": 4398046511104,
+  "windowBound": 12,
+  "proof": [
+    {
+      "level": "trial-01",
+      "seed": 25,
+      "slotShotBound": 133,
+      "damagePerCountBound": 498.75,
+      "countBound": 354783529499
+    },
+    {
+      "level": "trial-02",
+      "seed": 43,
+      "slotShotBound": 134,
+      "damagePerCountBound": 502.5,
+      "countBound": 4023782714
+    },
+    {
+      "level": "trial-03",
+      "seed": 70,
+      "slotShotBound": 138,
+      "damagePerCountBound": 517.5,
+      "countBound": 1321985683997
+    }
+  ],
+  "runs": [
+    {
+      "level": "trial-01",
+      "scope": "One pure-model deterministic preflight using existing runnerSteer legal move inputs; no state injection, no route search, not natural/browser/player evidence",
+      "weapon": "spear",
+      "companion": null,
+      "phase": "won",
+      "elapsed": 36.016666666665905,
+      "count": 533,
+      "peakCount": 533,
+      "minCount": 1,
+      "remaining": 0,
+      "cause": "",
+      "stats": {
+        "issuedShots": 3253,
+        "tickIssuedShots": 0,
+        "numericGuards": 0,
+        "shots": 3253,
+        "damageBudget": 31116.5,
+        "hits": 1190,
+        "gateHits": 1003,
+        "converted": 4,
+        "gatesTaken": 5,
+        "crates": 6,
+        "chainGenerated": 0,
+        "chainTaken": 0,
+        "missed": 0,
+        "equipment": 2,
+        "fieldCompanions": 0,
+        "blocked": 0,
+        "deferredShots": 0,
+        "deferredChains": 0,
+        "peakShots": 236,
+        "peakEnemies": 12,
+        "peakTokens": 0
+      },
+      "pacing": [
+        {
+          "id": "l1.g0.left",
+          "kind": "mutableGate",
+          "value": 4,
+          "growthStrategy": "window",
+          "initialValue": -2,
+          "maxPositive": 8,
+          "progress": 0,
+          "damagePerPoint": 2,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 6.599999999999982,
+          "firstAvailableAt": 0.016666666666666666,
+          "firstHitAt": 0.8833333333333344,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 6.016666666666651,
+          "claimedReward": {
+            "kind": "gate",
+            "count": 4
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 0.03333333333333333,
+          "hittableAimTime": 2.2666666666666635,
+          "aimedSeconds": 2.2666666666666635,
+          "blockedAimSeconds": 0,
+          "totalHitDamage": 12,
+          "gateHitCount": 12,
+          "valueChangeCount": 6,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 6.599999999999982,
+          "actualClaimCount": 4,
+          "resolvedAt": 6.599999999999982,
+          "valueSamples": [
+            {
+              "tick": 66,
+              "time": 1.100000000000001,
+              "value": -1,
+              "progress": 0,
+              "damage": 2
+            },
+            {
+              "tick": 93,
+              "time": 1.5499999999999994,
+              "value": 0,
+              "progress": 0,
+              "damage": 4
+            },
+            {
+              "tick": 120,
+              "time": 1.9999999999999978,
+              "value": 1,
+              "progress": 0,
+              "damage": 6
+            },
+            {
+              "tick": 377,
+              "time": 6.283333333333316,
+              "value": 2,
+              "progress": 0,
+              "damage": 8
+            },
+            {
+              "tick": 388,
+              "time": 6.466666666666649,
+              "value": 3,
+              "progress": 0,
+              "damage": 10
+            },
+            {
+              "tick": 390,
+              "time": 6.499999999999982,
+              "value": 4,
+              "progress": 0,
+              "damage": 12
+            }
+          ]
+        },
+        {
+          "id": "l1.g0.right",
+          "kind": "mutableGate",
+          "value": 7,
+          "growthStrategy": "window",
+          "initialValue": 2,
+          "maxPositive": 8,
+          "progress": 2,
+          "damagePerPoint": 3,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 5.949999999999984,
+          "firstAvailableAt": 0.016666666666666666,
+          "firstHitAt": 2.2166666666666637,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 6.016666666666651,
+          "claimedReward": {
+            "kind": "gate",
+            "count": 7
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 1.7666666666666653,
+          "hittableAimTime": 4.19999999999999,
+          "aimedSeconds": 4.19999999999999,
+          "blockedAimSeconds": 0,
+          "totalHitDamage": 17,
+          "gateHitCount": 17,
+          "valueChangeCount": 5,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 5.949999999999984,
+          "actualClaimCount": 7,
+          "resolvedAt": 5.949999999999984,
+          "valueSamples": [
+            {
+              "tick": 160,
+              "time": 2.666666666666662,
+              "value": 3,
+              "progress": 0,
+              "damage": 3
+            },
+            {
+              "tick": 200,
+              "time": 3.3333333333333264,
+              "value": 4,
+              "progress": 0,
+              "damage": 6
+            },
+            {
+              "tick": 240,
+              "time": 3.9999999999999907,
+              "value": 5,
+              "progress": 0,
+              "damage": 9
+            },
+            {
+              "tick": 280,
+              "time": 4.666666666666655,
+              "value": 6,
+              "progress": 0,
+              "damage": 12
+            },
+            {
+              "tick": 320,
+              "time": 5.33333333333332,
+              "value": 7,
+              "progress": 0,
+              "damage": 15
+            }
+          ]
+        },
+        {
+          "id": "l1.r0",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 12,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 5.149999999999987,
+          "firstAvailableAt": 1.9666666666666646,
+          "firstHitAt": 6.499999999999982,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 10.000000000000076,
+          "claimedReward": {
+            "kind": "troops",
+            "count": 3
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 5.966666666666651,
+          "hittableAimTime": 1.1500000000000008,
+          "aimedSeconds": 1.1500000000000008,
+          "blockedAimSeconds": 0,
+          "totalHitDamage": 12,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 7.09999999999998,
+          "actualClaimCount": null,
+          "resolvedAt": 7.09999999999998,
+          "valueSamples": []
+        },
+        {
+          "id": "l1.w0",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 16,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 3.21666666666666,
+          "firstAvailableAt": 4.966666666666654,
+          "firstHitAt": 6.766666666666648,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 13.000000000000226,
+          "claimedReward": {
+            "kind": "equipment",
+            "stage": 1
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 5.966666666666651,
+          "hittableAimTime": 1.1666666666666674,
+          "aimedSeconds": 2.166666666666664,
+          "blockedAimSeconds": 1.0000000000000013,
+          "totalHitDamage": 16,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 8.166666666666652,
+          "actualClaimCount": null,
+          "resolvedAt": 8.166666666666652,
+          "valueSamples": []
+        },
+        {
+          "id": "l1.g1",
+          "kind": "mutableGate",
+          "value": 91,
+          "growthStrategy": "window",
+          "initialValue": -12,
+          "maxPositive": 4,
+          "progress": 0,
+          "damagePerPoint": 4,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 7.999999999999977,
+          "firstAvailableAt": 7.966666666666644,
+          "firstHitAt": 9.466666666666717,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 16.000000000000373,
+          "claimedReward": {
+            "kind": "gate",
+            "count": 91
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 8.600000000000007,
+          "hittableAimTime": 7.366666666666646,
+          "aimedSeconds": 7.366666666666646,
+          "blockedAimSeconds": 0,
+          "totalHitDamage": 412,
+          "gateHitCount": 412,
+          "valueChangeCount": 103,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 15.950000000000372,
+          "actualClaimCount": 91,
+          "resolvedAt": 15.950000000000372,
+          "valueSamples": [
+            {
+              "tick": 578,
+              "time": 9.633333333333391,
+              "value": -11,
+              "progress": 0,
+              "damage": 4
+            },
+            {
+              "tick": 580,
+              "time": 9.666666666666726,
+              "value": -10,
+              "progress": 0,
+              "damage": 8
+            },
+            {
+              "tick": 589,
+              "time": 9.816666666666734,
+              "value": -9,
+              "progress": 0,
+              "damage": 12
+            },
+            {
+              "tick": 591,
+              "time": 9.850000000000069,
+              "value": -8,
+              "progress": 0,
+              "damage": 16
+            },
+            {
+              "tick": 600,
+              "time": 10.000000000000076,
+              "value": -7,
+              "progress": 0,
+              "damage": 20
+            },
+            {
+              "tick": 601,
+              "time": 10.016666666666744,
+              "value": -6,
+              "progress": 0,
+              "damage": 24
+            },
+            {
+              "tick": 603,
+              "time": 10.050000000000079,
+              "value": -5,
+              "progress": 0,
+              "damage": 28
+            },
+            {
+              "tick": 610,
+              "time": 10.166666666666751,
+              "value": -4,
+              "progress": 0,
+              "damage": 32
+            },
+            {
+              "tick": 612,
+              "time": 10.200000000000086,
+              "value": -3,
+              "progress": 0,
+              "damage": 36
+            },
+            {
+              "tick": 613,
+              "time": 10.216666666666754,
+              "value": -2,
+              "progress": 0,
+              "damage": 40
+            },
+            {
+              "tick": 621,
+              "time": 10.350000000000094,
+              "value": -1,
+              "progress": 0,
+              "damage": 44
+            },
+            {
+              "tick": 623,
+              "time": 10.383333333333429,
+              "value": 0,
+              "progress": 0,
+              "damage": 48
+            },
+            {
+              "tick": 624,
+              "time": 10.400000000000096,
+              "value": 1,
+              "progress": 0,
+              "damage": 52
+            },
+            {
+              "tick": 632,
+              "time": 10.533333333333436,
+              "value": 2,
+              "progress": 0,
+              "damage": 56
+            },
+            {
+              "tick": 633,
+              "time": 10.550000000000104,
+              "value": 3,
+              "progress": 0,
+              "damage": 60
+            },
+            {
+              "tick": 635,
+              "time": 10.583333333333439,
+              "value": 4,
+              "progress": 0,
+              "damage": 64
+            },
+            {
+              "tick": 642,
+              "time": 10.700000000000111,
+              "value": 5,
+              "progress": 0,
+              "damage": 68
+            },
+            {
+              "tick": 644,
+              "time": 10.733333333333446,
+              "value": 6,
+              "progress": 0,
+              "damage": 72
+            },
+            {
+              "tick": 645,
+              "time": 10.750000000000114,
+              "value": 7,
+              "progress": 0,
+              "damage": 76
+            },
+            {
+              "tick": 653,
+              "time": 10.883333333333454,
+              "value": 8,
+              "progress": 0,
+              "damage": 80
+            },
+            {
+              "tick": 655,
+              "time": 10.916666666666789,
+              "value": 9,
+              "progress": 0,
+              "damage": 84
+            },
+            {
+              "tick": 656,
+              "time": 10.933333333333456,
+              "value": 10,
+              "progress": 0,
+              "damage": 88
+            },
+            {
+              "tick": 664,
+              "time": 11.066666666666796,
+              "value": 11,
+              "progress": 0,
+              "damage": 92
+            },
+            {
+              "tick": 665,
+              "time": 11.083333333333464,
+              "value": 12,
+              "progress": 0,
+              "damage": 96
+            },
+            {
+              "tick": 667,
+              "time": 11.116666666666799,
+              "value": 13,
+              "progress": 0,
+              "damage": 100
+            },
+            {
+              "tick": 674,
+              "time": 11.233333333333471,
+              "value": 14,
+              "progress": 0,
+              "damage": 104
+            },
+            {
+              "tick": 676,
+              "time": 11.266666666666806,
+              "value": 15,
+              "progress": 0,
+              "damage": 108
+            },
+            {
+              "tick": 677,
+              "time": 11.283333333333474,
+              "value": 16,
+              "progress": 0,
+              "damage": 112
+            },
+            {
+              "tick": 685,
+              "time": 11.416666666666814,
+              "value": 17,
+              "progress": 0,
+              "damage": 116
+            },
+            {
+              "tick": 687,
+              "time": 11.450000000000149,
+              "value": 18,
+              "progress": 0,
+              "damage": 120
+            },
+            {
+              "tick": 688,
+              "time": 11.466666666666816,
+              "value": 19,
+              "progress": 0,
+              "damage": 124
+            },
+            {
+              "tick": 696,
+              "time": 11.600000000000156,
+              "value": 20,
+              "progress": 0,
+              "damage": 128
+            },
+            {
+              "tick": 697,
+              "time": 11.616666666666823,
+              "value": 21,
+              "progress": 0,
+              "damage": 132
+            },
+            {
+              "tick": 699,
+              "time": 11.650000000000158,
+              "value": 22,
+              "progress": 0,
+              "damage": 136
+            },
+            {
+              "tick": 706,
+              "time": 11.766666666666831,
+              "value": 23,
+              "progress": 0,
+              "damage": 140
+            },
+            {
+              "tick": 708,
+              "time": 11.800000000000166,
+              "value": 24,
+              "progress": 0,
+              "damage": 144
+            },
+            {
+              "tick": 709,
+              "time": 11.816666666666833,
+              "value": 25,
+              "progress": 0,
+              "damage": 148
+            },
+            {
+              "tick": 717,
+              "time": 11.950000000000173,
+              "value": 26,
+              "progress": 0,
+              "damage": 152
+            },
+            {
+              "tick": 719,
+              "time": 11.983333333333508,
+              "value": 27,
+              "progress": 0,
+              "damage": 156
+            },
+            {
+              "tick": 720,
+              "time": 12.000000000000176,
+              "value": 28,
+              "progress": 0,
+              "damage": 160
+            },
+            {
+              "tick": 728,
+              "time": 12.133333333333516,
+              "value": 29,
+              "progress": 0,
+              "damage": 164
+            },
+            {
+              "tick": 729,
+              "time": 12.150000000000183,
+              "value": 30,
+              "progress": 0,
+              "damage": 168
+            },
+            {
+              "tick": 731,
+              "time": 12.183333333333518,
+              "value": 31,
+              "progress": 0,
+              "damage": 172
+            },
+            {
+              "tick": 738,
+              "time": 12.30000000000019,
+              "value": 32,
+              "progress": 0,
+              "damage": 176
+            },
+            {
+              "tick": 740,
+              "time": 12.333333333333526,
+              "value": 33,
+              "progress": 0,
+              "damage": 180
+            },
+            {
+              "tick": 741,
+              "time": 12.350000000000193,
+              "value": 34,
+              "progress": 0,
+              "damage": 184
+            },
+            {
+              "tick": 749,
+              "time": 12.483333333333533,
+              "value": 35,
+              "progress": 0,
+              "damage": 188
+            },
+            {
+              "tick": 751,
+              "time": 12.516666666666868,
+              "value": 36,
+              "progress": 0,
+              "damage": 192
+            },
+            {
+              "tick": 752,
+              "time": 12.533333333333536,
+              "value": 37,
+              "progress": 0,
+              "damage": 196
+            },
+            {
+              "tick": 760,
+              "time": 12.666666666666876,
+              "value": 38,
+              "progress": 0,
+              "damage": 200
+            },
+            {
+              "tick": 761,
+              "time": 12.683333333333543,
+              "value": 39,
+              "progress": 0,
+              "damage": 204
+            },
+            {
+              "tick": 763,
+              "time": 12.716666666666878,
+              "value": 40,
+              "progress": 0,
+              "damage": 208
+            },
+            {
+              "tick": 770,
+              "time": 12.83333333333355,
+              "value": 41,
+              "progress": 0,
+              "damage": 212
+            },
+            {
+              "tick": 772,
+              "time": 12.866666666666886,
+              "value": 42,
+              "progress": 0,
+              "damage": 216
+            },
+            {
+              "tick": 773,
+              "time": 12.883333333333553,
+              "value": 43,
+              "progress": 0,
+              "damage": 220
+            },
+            {
+              "tick": 781,
+              "time": 13.016666666666893,
+              "value": 44,
+              "progress": 0,
+              "damage": 224
+            },
+            {
+              "tick": 783,
+              "time": 13.050000000000228,
+              "value": 45,
+              "progress": 0,
+              "damage": 228
+            },
+            {
+              "tick": 784,
+              "time": 13.066666666666896,
+              "value": 46,
+              "progress": 0,
+              "damage": 232
+            },
+            {
+              "tick": 792,
+              "time": 13.200000000000236,
+              "value": 47,
+              "progress": 0,
+              "damage": 236
+            },
+            {
+              "tick": 793,
+              "time": 13.216666666666903,
+              "value": 48,
+              "progress": 0,
+              "damage": 240
+            },
+            {
+              "tick": 795,
+              "time": 13.250000000000238,
+              "value": 49,
+              "progress": 0,
+              "damage": 244
+            },
+            {
+              "tick": 802,
+              "time": 13.36666666666691,
+              "value": 50,
+              "progress": 0,
+              "damage": 248
+            },
+            {
+              "tick": 804,
+              "time": 13.400000000000245,
+              "value": 51,
+              "progress": 0,
+              "damage": 252
+            },
+            {
+              "tick": 805,
+              "time": 13.416666666666913,
+              "value": 52,
+              "progress": 0,
+              "damage": 256
+            },
+            {
+              "tick": 813,
+              "time": 13.550000000000253,
+              "value": 53,
+              "progress": 0,
+              "damage": 260
+            },
+            {
+              "tick": 815,
+              "time": 13.583333333333588,
+              "value": 54,
+              "progress": 0,
+              "damage": 264
+            },
+            {
+              "tick": 816,
+              "time": 13.600000000000255,
+              "value": 55,
+              "progress": 0,
+              "damage": 268
+            },
+            {
+              "tick": 824,
+              "time": 13.733333333333595,
+              "value": 56,
+              "progress": 0,
+              "damage": 272
+            },
+            {
+              "tick": 825,
+              "time": 13.750000000000263,
+              "value": 57,
+              "progress": 0,
+              "damage": 276
+            },
+            {
+              "tick": 827,
+              "time": 13.783333333333598,
+              "value": 58,
+              "progress": 0,
+              "damage": 280
+            },
+            {
+              "tick": 834,
+              "time": 13.90000000000027,
+              "value": 59,
+              "progress": 0,
+              "damage": 284
+            },
+            {
+              "tick": 836,
+              "time": 13.933333333333605,
+              "value": 60,
+              "progress": 0,
+              "damage": 288
+            },
+            {
+              "tick": 837,
+              "time": 13.950000000000273,
+              "value": 61,
+              "progress": 0,
+              "damage": 292
+            },
+            {
+              "tick": 845,
+              "time": 14.083333333333613,
+              "value": 62,
+              "progress": 0,
+              "damage": 296
+            },
+            {
+              "tick": 847,
+              "time": 14.116666666666948,
+              "value": 63,
+              "progress": 0,
+              "damage": 300
+            },
+            {
+              "tick": 848,
+              "time": 14.133333333333615,
+              "value": 64,
+              "progress": 0,
+              "damage": 304
+            },
+            {
+              "tick": 856,
+              "time": 14.266666666666955,
+              "value": 65,
+              "progress": 0,
+              "damage": 308
+            },
+            {
+              "tick": 857,
+              "time": 14.283333333333623,
+              "value": 66,
+              "progress": 0,
+              "damage": 312
+            },
+            {
+              "tick": 859,
+              "time": 14.316666666666958,
+              "value": 67,
+              "progress": 0,
+              "damage": 316
+            },
+            {
+              "tick": 866,
+              "time": 14.43333333333363,
+              "value": 68,
+              "progress": 0,
+              "damage": 320
+            },
+            {
+              "tick": 868,
+              "time": 14.466666666666965,
+              "value": 69,
+              "progress": 0,
+              "damage": 324
+            },
+            {
+              "tick": 869,
+              "time": 14.483333333333633,
+              "value": 70,
+              "progress": 0,
+              "damage": 328
+            },
+            {
+              "tick": 877,
+              "time": 14.616666666666973,
+              "value": 71,
+              "progress": 0,
+              "damage": 332
+            },
+            {
+              "tick": 879,
+              "time": 14.650000000000308,
+              "value": 72,
+              "progress": 0,
+              "damage": 336
+            },
+            {
+              "tick": 880,
+              "time": 14.666666666666975,
+              "value": 73,
+              "progress": 0,
+              "damage": 340
+            },
+            {
+              "tick": 889,
+              "time": 14.816666666666983,
+              "value": 74,
+              "progress": 0,
+              "damage": 344
+            },
+            {
+              "tick": 891,
+              "time": 14.850000000000318,
+              "value": 75,
+              "progress": 0,
+              "damage": 348
+            },
+            {
+              "tick": 899,
+              "time": 14.983333333333658,
+              "value": 76,
+              "progress": 0,
+              "damage": 352
+            },
+            {
+              "tick": 901,
+              "time": 15.016666666666993,
+              "value": 77,
+              "progress": 0,
+              "damage": 356
+            },
+            {
+              "tick": 910,
+              "time": 15.166666666667,
+              "value": 78,
+              "progress": 0,
+              "damage": 360
+            },
+            {
+              "tick": 912,
+              "time": 15.200000000000335,
+              "value": 79,
+              "progress": 0,
+              "damage": 364
+            },
+            {
+              "tick": 913,
+              "time": 15.216666666667003,
+              "value": 80,
+              "progress": 0,
+              "damage": 368
+            },
+            {
+              "tick": 921,
+              "time": 15.350000000000342,
+              "value": 81,
+              "progress": 0,
+              "damage": 372
+            },
+            {
+              "tick": 923,
+              "time": 15.383333333333677,
+              "value": 82,
+              "progress": 0,
+              "damage": 376
+            },
+            {
+              "tick": 931,
+              "time": 15.516666666667017,
+              "value": 83,
+              "progress": 0,
+              "damage": 380
+            },
+            {
+              "tick": 933,
+              "time": 15.550000000000352,
+              "value": 84,
+              "progress": 0,
+              "damage": 384
+            },
+            {
+              "tick": 934,
+              "time": 15.56666666666702,
+              "value": 85,
+              "progress": 0,
+              "damage": 388
+            },
+            {
+              "tick": 943,
+              "time": 15.716666666667027,
+              "value": 86,
+              "progress": 0,
+              "damage": 392
+            },
+            {
+              "tick": 944,
+              "time": 15.733333333333695,
+              "value": 87,
+              "progress": 0,
+              "damage": 396
+            },
+            {
+              "tick": 945,
+              "time": 15.750000000000362,
+              "value": 88,
+              "progress": 0,
+              "damage": 400
+            },
+            {
+              "tick": 953,
+              "time": 15.883333333333702,
+              "value": 89,
+              "progress": 0,
+              "damage": 404
+            },
+            {
+              "tick": 955,
+              "time": 15.916666666667037,
+              "value": 91,
+              "progress": 0,
+              "damage": 412
+            }
+          ]
+        },
+        {
+          "id": "l1.r1",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 45,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 6.749999999999981,
+          "firstAvailableAt": 9.950000000000074,
+          "firstHitAt": 16.43333333333368,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 18.00000000000026,
+          "claimedReward": {
+            "kind": "troops",
+            "count": 6
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 16.0833333333337,
+          "hittableAimTime": 0.6166666666666669,
+          "aimedSeconds": 0.6166666666666669,
+          "blockedAimSeconds": 0,
+          "totalHitDamage": 47,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 16.683333333333668,
+          "actualClaimCount": null,
+          "resolvedAt": 16.683333333333668,
+          "valueSamples": []
+        },
+        {
+          "id": "l1.g2",
+          "kind": "mutableGate",
+          "value": 160,
+          "growthStrategy": "window",
+          "initialValue": -40,
+          "maxPositive": 4,
+          "progress": 0,
+          "damagePerPoint": 8,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 8.016666666666644,
+          "firstAvailableAt": 14.950000000000323,
+          "firstHitAt": 17.016666666666982,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 23.01666666666664,
+          "claimedReward": {
+            "kind": "gate",
+            "count": 160
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 16.066666666667036,
+          "hittableAimTime": 5.2166666666666535,
+          "aimedSeconds": 5.266666666666653,
+          "blockedAimSeconds": 0.05,
+          "totalHitDamage": 1600,
+          "gateHitCount": 302,
+          "valueChangeCount": 200,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 22.949999999999978,
+          "actualClaimCount": 160,
+          "resolvedAt": 22.949999999999978,
+          "valueSamples": [
+            {
+              "tick": 1023,
+              "time": 17.050000000000313,
+              "value": -39,
+              "progress": 0,
+              "damage": 8
+            },
+            {
+              "tick": 1033,
+              "time": 17.21666666666697,
+              "value": -38,
+              "progress": 1,
+              "damage": 17
+            },
+            {
+              "tick": 1035,
+              "time": 17.250000000000302,
+              "value": -37,
+              "progress": 0,
+              "damage": 24
+            },
+            {
+              "tick": 1042,
+              "time": 17.366666666666962,
+              "value": -36,
+              "progress": 2,
+              "damage": 34
+            },
+            {
+              "tick": 1043,
+              "time": 17.383333333333628,
+              "value": -35,
+              "progress": 0,
+              "damage": 40
+            },
+            {
+              "tick": 1044,
+              "time": 17.400000000000293,
+              "value": -34,
+              "progress": 0,
+              "damage": 48
+            },
+            {
+              "tick": 1045,
+              "time": 17.41666666666696,
+              "value": -33,
+              "progress": 2,
+              "damage": 58
+            },
+            {
+              "tick": 1046,
+              "time": 17.433333333333625,
+              "value": -32,
+              "progress": 1,
+              "damage": 65
+            },
+            {
+              "tick": 1053,
+              "time": 17.550000000000285,
+              "value": -31,
+              "progress": 0,
+              "damage": 72
+            },
+            {
+              "tick": 1055,
+              "time": 17.583333333333616,
+              "value": -29,
+              "progress": 2,
+              "damage": 90
+            },
+            {
+              "tick": 1057,
+              "time": 17.616666666666948,
+              "value": -28,
+              "progress": 0,
+              "damage": 96
+            },
+            {
+              "tick": 1059,
+              "time": 17.65000000000028,
+              "value": -27,
+              "progress": 0,
+              "damage": 104
+            },
+            {
+              "tick": 1069,
+              "time": 17.816666666666936,
+              "value": -26,
+              "progress": 1,
+              "damage": 113
+            },
+            {
+              "tick": 1166,
+              "time": 19.43333333333351,
+              "value": -25,
+              "progress": 2.5,
+              "damage": 122.5
+            },
+            {
+              "tick": 1168,
+              "time": 19.466666666666843,
+              "value": -23,
+              "progress": 1.5,
+              "damage": 137.5
+            },
+            {
+              "tick": 1171,
+              "time": 19.51666666666684,
+              "value": -21,
+              "progress": 0.5,
+              "damage": 152.5
+            },
+            {
+              "tick": 1173,
+              "time": 19.55000000000017,
+              "value": -20,
+              "progress": 2.5,
+              "damage": 162.5
+            },
+            {
+              "tick": 1176,
+              "time": 19.60000000000017,
+              "value": -18,
+              "progress": 1.5,
+              "damage": 177.5
+            },
+            {
+              "tick": 1178,
+              "time": 19.6333333333335,
+              "value": -16,
+              "progress": 0.5,
+              "damage": 192.5
+            },
+            {
+              "tick": 1179,
+              "time": 19.650000000000166,
+              "value": -15,
+              "progress": 5,
+              "damage": 205
+            },
+            {
+              "tick": 1182,
+              "time": 19.700000000000163,
+              "value": -13,
+              "progress": 4,
+              "damage": 220
+            },
+            {
+              "tick": 1189,
+              "time": 19.816666666666823,
+              "value": -12,
+              "progress": 3.5,
+              "damage": 227.5
+            },
+            {
+              "tick": 1192,
+              "time": 19.86666666666682,
+              "value": -9,
+              "progress": 2,
+              "damage": 250
+            },
+            {
+              "tick": 1194,
+              "time": 19.90000000000015,
+              "value": -7,
+              "progress": 1,
+              "damage": 265
+            },
+            {
+              "tick": 1197,
+              "time": 19.95000000000015,
+              "value": -4,
+              "progress": 2,
+              "damage": 290
+            },
+            {
+              "tick": 1199,
+              "time": 19.98333333333348,
+              "value": -2,
+              "progress": 1,
+              "damage": 305
+            },
+            {
+              "tick": 1200,
+              "time": 20.000000000000146,
+              "value": -1,
+              "progress": 0.5,
+              "damage": 312.5
+            },
+            {
+              "tick": 1201,
+              "time": 20.01666666666681,
+              "value": 1,
+              "progress": 4.5,
+              "damage": 332.5
+            },
+            {
+              "tick": 1203,
+              "time": 20.050000000000143,
+              "value": 3,
+              "progress": 3.5,
+              "damage": 347.5
+            },
+            {
+              "tick": 1204,
+              "time": 20.06666666666681,
+              "value": 4,
+              "progress": 0.5,
+              "damage": 352.5
+            },
+            {
+              "tick": 1205,
+              "time": 20.083333333333474,
+              "value": 5,
+              "progress": 0,
+              "damage": 360
+            },
+            {
+              "tick": 1213,
+              "time": 20.2166666666668,
+              "value": 6,
+              "progress": 7,
+              "damage": 375
+            },
+            {
+              "tick": 1215,
+              "time": 20.25000000000013,
+              "value": 10,
+              "progress": 5,
+              "damage": 405
+            },
+            {
+              "tick": 1218,
+              "time": 20.30000000000013,
+              "value": 13,
+              "progress": 1,
+              "damage": 425
+            },
+            {
+              "tick": 1220,
+              "time": 20.33333333333346,
+              "value": 15,
+              "progress": 0,
+              "damage": 440
+            },
+            {
+              "tick": 1222,
+              "time": 20.36666666666679,
+              "value": 18,
+              "progress": 1,
+              "damage": 465
+            },
+            {
+              "tick": 1225,
+              "time": 20.41666666666679,
+              "value": 20,
+              "progress": 2.5,
+              "damage": 482.5
+            },
+            {
+              "tick": 1226,
+              "time": 20.433333333333454,
+              "value": 23,
+              "progress": 6,
+              "damage": 510
+            },
+            {
+              "tick": 1227,
+              "time": 20.45000000000012,
+              "value": 25,
+              "progress": 0,
+              "damage": 520
+            },
+            {
+              "tick": 1228,
+              "time": 20.466666666666786,
+              "value": 27,
+              "progress": 6.5,
+              "damage": 542.5
+            },
+            {
+              "tick": 1236,
+              "time": 20.60000000000011,
+              "value": 28,
+              "progress": 6,
+              "damage": 550
+            },
+            {
+              "tick": 1239,
+              "time": 20.65000000000011,
+              "value": 32,
+              "progress": 4,
+              "damage": 580
+            },
+            {
+              "tick": 1241,
+              "time": 20.68333333333344,
+              "value": 35,
+              "progress": 0,
+              "damage": 600
+            },
+            {
+              "tick": 1243,
+              "time": 20.71666666666677,
+              "value": 37,
+              "progress": 4,
+              "damage": 620
+            },
+            {
+              "tick": 1246,
+              "time": 20.76666666666677,
+              "value": 40,
+              "progress": 0,
+              "damage": 640
+            },
+            {
+              "tick": 1248,
+              "time": 20.8000000000001,
+              "value": 42,
+              "progress": 1.5,
+              "damage": 657.5
+            },
+            {
+              "tick": 1249,
+              "time": 20.816666666666766,
+              "value": 45,
+              "progress": 5,
+              "damage": 685
+            },
+            {
+              "tick": 1251,
+              "time": 20.850000000000097,
+              "value": 46,
+              "progress": 2,
+              "damage": 690
+            },
+            {
+              "tick": 1252,
+              "time": 20.866666666666763,
+              "value": 49,
+              "progress": 5.5,
+              "damage": 717.5
+            },
+            {
+              "tick": 1260,
+              "time": 21.00000000000009,
+              "value": 50,
+              "progress": 5,
+              "damage": 725
+            },
+            {
+              "tick": 1262,
+              "time": 21.03333333333342,
+              "value": 54,
+              "progress": 3,
+              "damage": 755
+            },
+            {
+              "tick": 1264,
+              "time": 21.06666666666675,
+              "value": 56,
+              "progress": 2,
+              "damage": 770
+            },
+            {
+              "tick": 1267,
+              "time": 21.11666666666675,
+              "value": 59,
+              "progress": 3,
+              "damage": 795
+            },
+            {
+              "tick": 1269,
+              "time": 21.15000000000008,
+              "value": 61,
+              "progress": 2,
+              "damage": 810
+            },
+            {
+              "tick": 1270,
+              "time": 21.166666666666746,
+              "value": 62,
+              "progress": 1.5,
+              "damage": 817.5
+            },
+            {
+              "tick": 1272,
+              "time": 21.200000000000077,
+              "value": 64,
+              "progress": 0.5,
+              "damage": 832.5
+            },
+            {
+              "tick": 1273,
+              "time": 21.216666666666743,
+              "value": 67,
+              "progress": 4,
+              "damage": 860
+            },
+            {
+              "tick": 1274,
+              "time": 21.23333333333341,
+              "value": 68,
+              "progress": 1,
+              "damage": 865
+            },
+            {
+              "tick": 1275,
+              "time": 21.250000000000075,
+              "value": 71,
+              "progress": 4.5,
+              "damage": 892.5
+            },
+            {
+              "tick": 1283,
+              "time": 21.3833333333334,
+              "value": 72,
+              "progress": 4,
+              "damage": 900
+            },
+            {
+              "tick": 1285,
+              "time": 21.416666666666732,
+              "value": 76,
+              "progress": 2,
+              "damage": 930
+            },
+            {
+              "tick": 1288,
+              "time": 21.46666666666673,
+              "value": 78,
+              "progress": 1,
+              "damage": 945
+            },
+            {
+              "tick": 1290,
+              "time": 21.50000000000006,
+              "value": 81,
+              "progress": 2,
+              "damage": 970
+            },
+            {
+              "tick": 1293,
+              "time": 21.550000000000058,
+              "value": 83,
+              "progress": 1,
+              "damage": 985
+            },
+            {
+              "tick": 1294,
+              "time": 21.566666666666723,
+              "value": 84,
+              "progress": 0.5,
+              "damage": 992.5
+            },
+            {
+              "tick": 1295,
+              "time": 21.58333333333339,
+              "value": 86,
+              "progress": 4.5,
+              "damage": 1012.5
+            },
+            {
+              "tick": 1296,
+              "time": 21.600000000000055,
+              "value": 89,
+              "progress": 3,
+              "damage": 1035
+            },
+            {
+              "tick": 1297,
+              "time": 21.61666666666672,
+              "value": 90,
+              "progress": 0,
+              "damage": 1040
+            },
+            {
+              "tick": 1299,
+              "time": 21.650000000000052,
+              "value": 93,
+              "progress": 3.5,
+              "damage": 1067.5
+            },
+            {
+              "tick": 1306,
+              "time": 21.766666666666712,
+              "value": 94,
+              "progress": 3,
+              "damage": 1075
+            },
+            {
+              "tick": 1309,
+              "time": 21.81666666666671,
+              "value": 98,
+              "progress": 1,
+              "damage": 1105
+            },
+            {
+              "tick": 1311,
+              "time": 21.85000000000004,
+              "value": 100,
+              "progress": 0,
+              "damage": 1120
+            },
+            {
+              "tick": 1314,
+              "time": 21.900000000000038,
+              "value": 103,
+              "progress": 1,
+              "damage": 1145
+            },
+            {
+              "tick": 1316,
+              "time": 21.93333333333337,
+              "value": 105,
+              "progress": 0,
+              "damage": 1160
+            },
+            {
+              "tick": 1318,
+              "time": 21.9666666666667,
+              "value": 108,
+              "progress": 3.5,
+              "damage": 1187.5
+            },
+            {
+              "tick": 1320,
+              "time": 22.000000000000032,
+              "value": 111,
+              "progress": 2,
+              "damage": 1210
+            },
+            {
+              "tick": 1321,
+              "time": 22.016666666666698,
+              "value": 112,
+              "progress": 4,
+              "damage": 1220
+            },
+            {
+              "tick": 1322,
+              "time": 22.033333333333363,
+              "value": 115,
+              "progress": 2.5,
+              "damage": 1242.5
+            },
+            {
+              "tick": 1330,
+              "time": 22.16666666666669,
+              "value": 116,
+              "progress": 2,
+              "damage": 1250
+            },
+            {
+              "tick": 1332,
+              "time": 22.20000000000002,
+              "value": 120,
+              "progress": 0,
+              "damage": 1280
+            },
+            {
+              "tick": 1335,
+              "time": 22.250000000000018,
+              "value": 122,
+              "progress": 4,
+              "damage": 1300
+            },
+            {
+              "tick": 1337,
+              "time": 22.28333333333335,
+              "value": 125,
+              "progress": 0,
+              "damage": 1320
+            },
+            {
+              "tick": 1339,
+              "time": 22.31666666666668,
+              "value": 127,
+              "progress": 4,
+              "damage": 1340
+            },
+            {
+              "tick": 1342,
+              "time": 22.366666666666678,
+              "value": 130,
+              "progress": 2.5,
+              "damage": 1362.5
+            },
+            {
+              "tick": 1343,
+              "time": 22.383333333333344,
+              "value": 133,
+              "progress": 1,
+              "damage": 1385
+            },
+            {
+              "tick": 1344,
+              "time": 22.40000000000001,
+              "value": 134,
+              "progress": 3,
+              "damage": 1395
+            },
+            {
+              "tick": 1345,
+              "time": 22.416666666666675,
+              "value": 137,
+              "progress": 1.5,
+              "damage": 1417.5
+            },
+            {
+              "tick": 1353,
+              "time": 22.55,
+              "value": 138,
+              "progress": 1,
+              "damage": 1425
+            },
+            {
+              "tick": 1356,
+              "time": 22.599999999999998,
+              "value": 141,
+              "progress": 7,
+              "damage": 1455
+            },
+            {
+              "tick": 1358,
+              "time": 22.63333333333333,
+              "value": 144,
+              "progress": 3,
+              "damage": 1475
+            },
+            {
+              "tick": 1360,
+              "time": 22.66666666666666,
+              "value": 146,
+              "progress": 2,
+              "damage": 1490
+            },
+            {
+              "tick": 1363,
+              "time": 22.716666666666658,
+              "value": 149,
+              "progress": 3,
+              "damage": 1515
+            },
+            {
+              "tick": 1365,
+              "time": 22.74999999999999,
+              "value": 152,
+              "progress": 1.5,
+              "damage": 1537.5
+            },
+            {
+              "tick": 1366,
+              "time": 22.766666666666655,
+              "value": 155,
+              "progress": 0,
+              "damage": 1560
+            },
+            {
+              "tick": 1368,
+              "time": 22.799999999999986,
+              "value": 156,
+              "progress": 2,
+              "damage": 1570
+            },
+            {
+              "tick": 1369,
+              "time": 22.816666666666652,
+              "value": 159,
+              "progress": 0.5,
+              "damage": 1592.5
+            },
+            {
+              "tick": 1377,
+              "time": 22.949999999999978,
+              "value": 160,
+              "progress": 0,
+              "damage": 1600
+            }
+          ]
+        },
+        {
+          "id": "l1.w1",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 85,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 2.6499999999999955,
+          "firstAvailableAt": 15.950000000000372,
+          "firstHitAt": 17.850000000000268,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 24.016666666666584,
+          "claimedReward": {
+            "kind": "equipment",
+            "stage": 2
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 15.96666666666704,
+          "hittableAimTime": 1.7666666666666653,
+          "aimedSeconds": 1.7833333333333319,
+          "blockedAimSeconds": 0.016666666666666666,
+          "totalHitDamage": 87,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 18.58333333333356,
+          "actualClaimCount": null,
+          "resolvedAt": 18.58333333333356,
+          "valueSamples": []
+        },
+        {
+          "id": "l1.r2",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 120,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 3.0666666666666607,
+          "firstAvailableAt": 20.95000000000009,
+          "firstHitAt": 23.21666666666663,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 29.0166666666663,
+          "claimedReward": {
+            "kind": "troops",
+            "count": 8
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 21.900000000000038,
+          "hittableAimTime": 2.116666666666664,
+          "aimedSeconds": 2.116666666666664,
+          "blockedAimSeconds": 0,
+          "totalHitDamage": 132.5,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 23.99999999999992,
+          "actualClaimCount": null,
+          "resolvedAt": 23.99999999999992,
+          "valueSamples": []
+        },
+        {
+          "id": "l1.g3",
+          "kind": "mutableGate",
+          "value": 248,
+          "growthStrategy": "window",
+          "initialValue": -70,
+          "maxPositive": 4,
+          "progress": 6.5,
+          "damagePerPoint": 12,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 7.999999999999977,
+          "firstAvailableAt": 23.966666666666587,
+          "firstHitAt": 25.099999999999856,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 32.01666666666613,
+          "claimedReward": {
+            "kind": "gate",
+            "count": 248
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 24.03333333333325,
+          "hittableAimTime": 7.09999999999998,
+          "aimedSeconds": 7.533333333333312,
+          "blockedAimSeconds": 0.4333333333333333,
+          "totalHitDamage": 3822.5,
+          "gateHitCount": 260,
+          "valueChangeCount": 254,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 31.949999999999466,
+          "actualClaimCount": 248,
+          "resolvedAt": 31.949999999999466,
+          "valueSamples": [
+            {
+              "tick": 1591,
+              "time": 26.516666666666442,
+              "value": -66,
+              "progress": 2,
+              "damage": 50
+            },
+            {
+              "tick": 1594,
+              "time": 26.56666666666644,
+              "value": -63,
+              "progress": 11,
+              "damage": 95
+            },
+            {
+              "tick": 1615,
+              "time": 26.91666666666642,
+              "value": -61,
+              "progress": 2,
+              "damage": 110
+            },
+            {
+              "tick": 1617,
+              "time": 26.94999999999975,
+              "value": -60,
+              "progress": 5,
+              "damage": 125
+            },
+            {
+              "tick": 1620,
+              "time": 26.999999999999748,
+              "value": -59,
+              "progress": 8,
+              "damage": 140
+            },
+            {
+              "tick": 1638,
+              "time": 27.29999999999973,
+              "value": -58,
+              "progress": 11,
+              "damage": 155
+            },
+            {
+              "tick": 1641,
+              "time": 27.349999999999728,
+              "value": -56,
+              "progress": 2,
+              "damage": 170
+            },
+            {
+              "tick": 1643,
+              "time": 27.38333333333306,
+              "value": -55,
+              "progress": 5,
+              "damage": 185
+            },
+            {
+              "tick": 1645,
+              "time": 27.41666666666639,
+              "value": -54,
+              "progress": 8,
+              "damage": 200
+            },
+            {
+              "tick": 1648,
+              "time": 27.466666666666388,
+              "value": -53,
+              "progress": 11,
+              "damage": 215
+            },
+            {
+              "tick": 1662,
+              "time": 27.699999999999708,
+              "value": -51,
+              "progress": 2,
+              "damage": 230
+            },
+            {
+              "tick": 1664,
+              "time": 27.73333333333304,
+              "value": -50,
+              "progress": 5,
+              "damage": 245
+            },
+            {
+              "tick": 1666,
+              "time": 27.76666666666637,
+              "value": -49,
+              "progress": 8,
+              "damage": 260
+            },
+            {
+              "tick": 1669,
+              "time": 27.816666666666368,
+              "value": -48,
+              "progress": 11,
+              "damage": 275
+            },
+            {
+              "tick": 1671,
+              "time": 27.8499999999997,
+              "value": -46,
+              "progress": 2,
+              "damage": 290
+            },
+            {
+              "tick": 1674,
+              "time": 27.899999999999697,
+              "value": -45,
+              "progress": 5,
+              "damage": 305
+            },
+            {
+              "tick": 1685,
+              "time": 28.08333333333302,
+              "value": -44,
+              "progress": 8,
+              "damage": 320
+            },
+            {
+              "tick": 1687,
+              "time": 28.11666666666635,
+              "value": -43,
+              "progress": 11,
+              "damage": 335
+            },
+            {
+              "tick": 1690,
+              "time": 28.166666666666348,
+              "value": -41,
+              "progress": 2,
+              "damage": 350
+            },
+            {
+              "tick": 1692,
+              "time": 28.19999999999968,
+              "value": -40,
+              "progress": 5,
+              "damage": 365
+            },
+            {
+              "tick": 1695,
+              "time": 28.249999999999677,
+              "value": -39,
+              "progress": 8,
+              "damage": 380
+            },
+            {
+              "tick": 1697,
+              "time": 28.283333333333008,
+              "value": -38,
+              "progress": 11,
+              "damage": 395
+            },
+            {
+              "tick": 1698,
+              "time": 28.299999999999674,
+              "value": -36,
+              "progress": 2,
+              "damage": 410
+            },
+            {
+              "tick": 1708,
+              "time": 28.46666666666633,
+              "value": -34,
+              "progress": 8,
+              "damage": 440
+            },
+            {
+              "tick": 1711,
+              "time": 28.516666666666328,
+              "value": -31,
+              "progress": 2,
+              "damage": 470
+            },
+            {
+              "tick": 1713,
+              "time": 28.54999999999966,
+              "value": -29,
+              "progress": 8,
+              "damage": 500
+            },
+            {
+              "tick": 1716,
+              "time": 28.599999999999657,
+              "value": -26,
+              "progress": 2,
+              "damage": 530
+            },
+            {
+              "tick": 1718,
+              "time": 28.63333333333299,
+              "value": -24,
+              "progress": 8,
+              "damage": 560
+            },
+            {
+              "tick": 1720,
+              "time": 28.66666666666632,
+              "value": -21,
+              "progress": 2,
+              "damage": 590
+            },
+            {
+              "tick": 1722,
+              "time": 28.69999999999965,
+              "value": -20,
+              "progress": 5,
+              "damage": 605
+            },
+            {
+              "tick": 1732,
+              "time": 28.86666666666631,
+              "value": -18,
+              "progress": 11,
+              "damage": 635
+            },
+            {
+              "tick": 1734,
+              "time": 28.89999999999964,
+              "value": -15,
+              "progress": 5,
+              "damage": 665
+            },
+            {
+              "tick": 1737,
+              "time": 28.949999999999637,
+              "value": -13,
+              "progress": 11,
+              "damage": 695
+            },
+            {
+              "tick": 1739,
+              "time": 28.98333333333297,
+              "value": -10,
+              "progress": 5,
+              "damage": 725
+            },
+            {
+              "tick": 1741,
+              "time": 29.0166666666663,
+              "value": -8,
+              "progress": 11,
+              "damage": 755
+            },
+            {
+              "tick": 1744,
+              "time": 29.066666666666297,
+              "value": -5,
+              "progress": 5,
+              "damage": 785
+            },
+            {
+              "tick": 1745,
+              "time": 29.083333333332963,
+              "value": -4,
+              "progress": 8,
+              "damage": 800
+            },
+            {
+              "tick": 1755,
+              "time": 29.24999999999962,
+              "value": -1,
+              "progress": 2,
+              "damage": 830
+            },
+            {
+              "tick": 1758,
+              "time": 29.299999999999617,
+              "value": 1,
+              "progress": 8,
+              "damage": 860
+            },
+            {
+              "tick": 1760,
+              "time": 29.33333333333295,
+              "value": 4,
+              "progress": 2,
+              "damage": 890
+            },
+            {
+              "tick": 1762,
+              "time": 29.36666666666628,
+              "value": 6,
+              "progress": 8,
+              "damage": 920
+            },
+            {
+              "tick": 1765,
+              "time": 29.416666666666277,
+              "value": 9,
+              "progress": 4.5,
+              "damage": 952.5
+            },
+            {
+              "tick": 1766,
+              "time": 29.433333333332943,
+              "value": 12,
+              "progress": 3.5,
+              "damage": 987.5
+            },
+            {
+              "tick": 1767,
+              "time": 29.44999999999961,
+              "value": 14,
+              "progress": 9.5,
+              "damage": 1017.5
+            },
+            {
+              "tick": 1768,
+              "time": 29.466666666666274,
+              "value": 18,
+              "progress": 6.5,
+              "damage": 1062.5
+            },
+            {
+              "tick": 1776,
+              "time": 29.5999999999996,
+              "value": 19,
+              "progress": 9.5,
+              "damage": 1077.5
+            },
+            {
+              "tick": 1779,
+              "time": 29.649999999999597,
+              "value": 26,
+              "progress": 0.5,
+              "damage": 1152.5
+            },
+            {
+              "tick": 1781,
+              "time": 29.68333333333293,
+              "value": 32,
+              "progress": 3.5,
+              "damage": 1227.5
+            },
+            {
+              "tick": 1783,
+              "time": 29.71666666666626,
+              "value": 38,
+              "progress": 6.5,
+              "damage": 1302.5
+            },
+            {
+              "tick": 1786,
+              "time": 29.766666666666257,
+              "value": 44,
+              "progress": 9.5,
+              "damage": 1377.5
+            },
+            {
+              "tick": 1787,
+              "time": 29.783333333332923,
+              "value": 45,
+              "progress": 0,
+              "damage": 1380
+            },
+            {
+              "tick": 1788,
+              "time": 29.79999999999959,
+              "value": 51,
+              "progress": 3,
+              "damage": 1455
+            },
+            {
+              "tick": 1789,
+              "time": 29.816666666666254,
+              "value": 55,
+              "progress": 5,
+              "damage": 1505
+            },
+            {
+              "tick": 1791,
+              "time": 29.849999999999586,
+              "value": 59,
+              "progress": 2,
+              "damage": 1550
+            },
+            {
+              "tick": 1792,
+              "time": 29.86666666666625,
+              "value": 62,
+              "progress": 11,
+              "damage": 1595
+            },
+            {
+              "tick": 1800,
+              "time": 29.999999999999577,
+              "value": 64,
+              "progress": 2,
+              "damage": 1610
+            },
+            {
+              "tick": 1802,
+              "time": 30.03333333333291,
+              "value": 69,
+              "progress": 2,
+              "damage": 1670
+            },
+            {
+              "tick": 1804,
+              "time": 30.06666666666624,
+              "value": 74,
+              "progress": 2,
+              "damage": 1730
+            },
+            {
+              "tick": 1807,
+              "time": 30.116666666666237,
+              "value": 79,
+              "progress": 2,
+              "damage": 1790
+            },
+            {
+              "tick": 1809,
+              "time": 30.14999999999957,
+              "value": 84,
+              "progress": 2,
+              "damage": 1850
+            },
+            {
+              "tick": 1812,
+              "time": 30.199999999999566,
+              "value": 89,
+              "progress": 4.5,
+              "damage": 1912.5
+            },
+            {
+              "tick": 1813,
+              "time": 30.21666666666623,
+              "value": 93,
+              "progress": 6.5,
+              "damage": 1962.5
+            },
+            {
+              "tick": 1814,
+              "time": 30.233333333332897,
+              "value": 96,
+              "progress": 0.5,
+              "damage": 1992.5
+            },
+            {
+              "tick": 1815,
+              "time": 30.249999999999563,
+              "value": 99,
+              "progress": 9.5,
+              "damage": 2037.5
+            },
+            {
+              "tick": 1823,
+              "time": 30.38333333333289,
+              "value": 101,
+              "progress": 0.5,
+              "damage": 2052.5
+            },
+            {
+              "tick": 1825,
+              "time": 30.41666666666622,
+              "value": 106,
+              "progress": 0.5,
+              "damage": 2112.5
+            },
+            {
+              "tick": 1828,
+              "time": 30.466666666666217,
+              "value": 111,
+              "progress": 0.5,
+              "damage": 2172.5
+            },
+            {
+              "tick": 1830,
+              "time": 30.49999999999955,
+              "value": 116,
+              "progress": 0.5,
+              "damage": 2232.5
+            },
+            {
+              "tick": 1833,
+              "time": 30.549999999999546,
+              "value": 121,
+              "progress": 0.5,
+              "damage": 2292.5
+            },
+            {
+              "tick": 1835,
+              "time": 30.583333333332877,
+              "value": 126,
+              "progress": 3,
+              "damage": 2355
+            },
+            {
+              "tick": 1836,
+              "time": 30.599999999999543,
+              "value": 130,
+              "progress": 5,
+              "damage": 2405
+            },
+            {
+              "tick": 1837,
+              "time": 30.61666666666621,
+              "value": 132,
+              "progress": 11,
+              "damage": 2435
+            },
+            {
+              "tick": 1839,
+              "time": 30.64999999999954,
+              "value": 136,
+              "progress": 8,
+              "damage": 2480
+            },
+            {
+              "tick": 1846,
+              "time": 30.7666666666662,
+              "value": 137,
+              "progress": 11,
+              "damage": 2495
+            },
+            {
+              "tick": 1849,
+              "time": 30.816666666666197,
+              "value": 142,
+              "progress": 11,
+              "damage": 2555
+            },
+            {
+              "tick": 1851,
+              "time": 30.84999999999953,
+              "value": 147,
+              "progress": 11,
+              "damage": 2615
+            },
+            {
+              "tick": 1854,
+              "time": 30.899999999999526,
+              "value": 152,
+              "progress": 11,
+              "damage": 2675
+            },
+            {
+              "tick": 1856,
+              "time": 30.933333333332858,
+              "value": 157,
+              "progress": 11,
+              "damage": 2735
+            },
+            {
+              "tick": 1857,
+              "time": 30.949999999999523,
+              "value": 158,
+              "progress": 1.5,
+              "damage": 2737.5
+            },
+            {
+              "tick": 1858,
+              "time": 30.96666666666619,
+              "value": 163,
+              "progress": 1.5,
+              "damage": 2797.5
+            },
+            {
+              "tick": 1860,
+              "time": 30.99999999999952,
+              "value": 167,
+              "progress": 3.5,
+              "damage": 2847.5
+            },
+            {
+              "tick": 1861,
+              "time": 31.016666666666186,
+              "value": 169,
+              "progress": 9.5,
+              "damage": 2877.5
+            },
+            {
+              "tick": 1862,
+              "time": 31.033333333332852,
+              "value": 173,
+              "progress": 6.5,
+              "damage": 2922.5
+            },
+            {
+              "tick": 1870,
+              "time": 31.166666666666178,
+              "value": 174,
+              "progress": 9.5,
+              "damage": 2937.5
+            },
+            {
+              "tick": 1872,
+              "time": 31.19999999999951,
+              "value": 179,
+              "progress": 9.5,
+              "damage": 2997.5
+            },
+            {
+              "tick": 1875,
+              "time": 31.249999999999506,
+              "value": 184,
+              "progress": 9.5,
+              "damage": 3057.5
+            },
+            {
+              "tick": 1877,
+              "time": 31.283333333332838,
+              "value": 189,
+              "progress": 9.5,
+              "damage": 3117.5
+            },
+            {
+              "tick": 1879,
+              "time": 31.31666666666617,
+              "value": 194,
+              "progress": 9.5,
+              "damage": 3177.5
+            },
+            {
+              "tick": 1880,
+              "time": 31.333333333332835,
+              "value": 195,
+              "progress": 0,
+              "damage": 3180
+            },
+            {
+              "tick": 1882,
+              "time": 31.366666666666166,
+              "value": 200,
+              "progress": 0,
+              "damage": 3240
+            },
+            {
+              "tick": 1883,
+              "time": 31.383333333332832,
+              "value": 204,
+              "progress": 2,
+              "damage": 3290
+            },
+            {
+              "tick": 1884,
+              "time": 31.399999999999498,
+              "value": 206,
+              "progress": 8,
+              "damage": 3320
+            },
+            {
+              "tick": 1885,
+              "time": 31.416666666666163,
+              "value": 210,
+              "progress": 5,
+              "damage": 3365
+            },
+            {
+              "tick": 1893,
+              "time": 31.54999999999949,
+              "value": 211,
+              "progress": 8,
+              "damage": 3380
+            },
+            {
+              "tick": 1896,
+              "time": 31.599999999999486,
+              "value": 216,
+              "progress": 8,
+              "damage": 3440
+            },
+            {
+              "tick": 1898,
+              "time": 31.633333333332818,
+              "value": 221,
+              "progress": 8,
+              "damage": 3500
+            },
+            {
+              "tick": 1900,
+              "time": 31.66666666666615,
+              "value": 226,
+              "progress": 8,
+              "damage": 3560
+            },
+            {
+              "tick": 1903,
+              "time": 31.716666666666146,
+              "value": 231,
+              "progress": 8,
+              "damage": 3620
+            },
+            {
+              "tick": 1905,
+              "time": 31.749999999999478,
+              "value": 236,
+              "progress": 10.5,
+              "damage": 3682.5
+            },
+            {
+              "tick": 1906,
+              "time": 31.766666666666143,
+              "value": 241,
+              "progress": 0.5,
+              "damage": 3732.5
+            },
+            {
+              "tick": 1908,
+              "time": 31.799999999999475,
+              "value": 243,
+              "progress": 6.5,
+              "damage": 3762.5
+            },
+            {
+              "tick": 1909,
+              "time": 31.81666666666614,
+              "value": 247,
+              "progress": 3.5,
+              "damage": 3807.5
+            },
+            {
+              "tick": 1917,
+              "time": 31.949999999999466,
+              "value": 248,
+              "progress": 6.5,
+              "damage": 3822.5
+            }
+          ]
+        },
+        {
+          "id": "l1.r3",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 120,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 2.4833333333333294,
+          "firstAvailableAt": 24.96666666666653,
+          "firstHitAt": 26.79999999999976,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 33.016666666666076,
+          "claimedReward": {
+            "kind": "troops",
+            "count": 5
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 25.383333333333173,
+          "hittableAimTime": 1.7833333333333319,
+          "aimedSeconds": 2.199999999999997,
+          "blockedAimSeconds": 0.41666666666666663,
+          "totalHitDamage": 125,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 27.433333333333056,
+          "actualClaimCount": null,
+          "resolvedAt": 27.433333333333056,
+          "valueSamples": []
+        }
+      ],
+      "rewardLedger": [
+        {
+          "tick": 957,
+          "type": "gateContact",
+          "sourceId": "l1.g1",
+          "value": 91,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 957,
+          "type": "gateGain",
+          "sourceId": "l1.g1",
+          "value": 91,
+          "countBefore": 15,
+          "countAfter": 106
+        },
+        {
+          "tick": 1001,
+          "type": "reinforcement",
+          "sourceId": "l1.r1",
+          "value": 6,
+          "countBefore": 106,
+          "countAfter": 112
+        },
+        {
+          "tick": 1377,
+          "type": "gateContact",
+          "sourceId": "l1.g2",
+          "value": 160,
+          "countBefore": 112,
+          "countAfter": 112
+        },
+        {
+          "tick": 1377,
+          "type": "gateGain",
+          "sourceId": "l1.g2",
+          "value": 160,
+          "countBefore": 112,
+          "countAfter": 272
+        },
+        {
+          "tick": 1440,
+          "type": "reinforcement",
+          "sourceId": "l1.r2",
+          "value": 8,
+          "countBefore": 272,
+          "countAfter": 280
+        },
+        {
+          "tick": 1646,
+          "type": "reinforcement",
+          "sourceId": "l1.r3",
+          "value": 5,
+          "countBefore": 280,
+          "countAfter": 285
+        },
+        {
+          "tick": 1917,
+          "type": "gateContact",
+          "sourceId": "l1.g3",
+          "value": 248,
+          "countBefore": 285,
+          "countAfter": 285
+        },
+        {
+          "tick": 1917,
+          "type": "gateGain",
+          "sourceId": "l1.g3",
+          "value": 248,
+          "countBefore": 285,
+          "countAfter": 533
+        }
+      ]
+    },
+    {
+      "level": "trial-02",
+      "scope": "One pure-model deterministic preflight using existing runnerSteer legal move inputs; no state injection, no route search, not natural/browser/player evidence",
+      "weapon": "blade",
+      "companion": "xing_daorong",
+      "phase": "won",
+      "elapsed": 55.64999999999812,
+      "count": 16,
+      "peakCount": 16,
+      "minCount": 1,
+      "remaining": 0,
+      "cause": "被敌兵近身攻击击中，损失 1 人",
+      "stats": {
+        "issuedShots": 2089,
+        "tickIssuedShots": 4,
+        "numericGuards": 0,
+        "shots": 2089,
+        "damageBudget": 3814,
+        "hits": 898,
+        "gateHits": 156,
+        "converted": 1,
+        "gatesTaken": 14,
+        "crates": 5,
+        "chainGenerated": 14,
+        "chainTaken": 13,
+        "missed": 7,
+        "equipment": 2,
+        "fieldCompanions": 0,
+        "blocked": 26,
+        "deferredShots": 0,
+        "deferredChains": 0,
+        "peakShots": 52,
+        "peakEnemies": 41,
+        "peakTokens": 8
+      },
+      "pacing": [
+        {
+          "id": "l2.g0.left",
+          "kind": "mutableGate",
+          "value": 0,
+          "growthStrategy": "window",
+          "initialValue": -4,
+          "maxPositive": 8,
+          "progress": 1,
+          "damagePerPoint": 2,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 5.899999999999984,
+          "firstAvailableAt": 0.016666666666666666,
+          "firstHitAt": 0.7666666666666674,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 5.016666666666654,
+          "claimedReward": null,
+          "lossCause": "not-contacted",
+          "lastAimedTick": -1,
+          "firstHittableAt": 0.03333333333333333,
+          "hittableAimTime": 2.5666666666666624,
+          "aimedSeconds": 2.5666666666666624,
+          "blockedAimSeconds": 0,
+          "totalHitDamage": 9,
+          "gateHitCount": 9,
+          "valueChangeCount": 4,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": null,
+          "actualClaimCount": null,
+          "resolvedAt": 6.11666666666665,
+          "valueSamples": [
+            {
+              "tick": 60,
+              "time": 1.0000000000000013,
+              "value": -3,
+              "progress": 0,
+              "damage": 2
+            },
+            {
+              "tick": 86,
+              "time": 1.4333333333333331,
+              "value": -2,
+              "progress": 0,
+              "damage": 4
+            },
+            {
+              "tick": 113,
+              "time": 1.8833333333333315,
+              "value": -1,
+              "progress": 0,
+              "damage": 6
+            },
+            {
+              "tick": 140,
+              "time": 2.33333333333333,
+              "value": 0,
+              "progress": 0,
+              "damage": 8
+            }
+          ]
+        },
+        {
+          "id": "l2.g0.right",
+          "kind": "mutableGate",
+          "value": 5,
+          "growthStrategy": "window",
+          "initialValue": 2,
+          "maxPositive": 8,
+          "progress": 0,
+          "damagePerPoint": 3,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 4.949999999999988,
+          "firstAvailableAt": 0.016666666666666666,
+          "firstHitAt": 2.9999999999999942,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 5.016666666666654,
+          "claimedReward": {
+            "kind": "gate",
+            "count": 5
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 2.549999999999996,
+          "hittableAimTime": 2.416666666666663,
+          "aimedSeconds": 2.416666666666663,
+          "blockedAimSeconds": 0,
+          "totalHitDamage": 9,
+          "gateHitCount": 9,
+          "valueChangeCount": 3,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 4.949999999999988,
+          "actualClaimCount": 5,
+          "resolvedAt": 4.949999999999988,
+          "valueSamples": [
+            {
+              "tick": 206,
+              "time": 3.433333333333326,
+              "value": 3,
+              "progress": 0,
+              "damage": 3
+            },
+            {
+              "tick": 246,
+              "time": 4.099999999999991,
+              "value": 4,
+              "progress": 0,
+              "damage": 6
+            },
+            {
+              "tick": 286,
+              "time": 4.766666666666655,
+              "value": 5,
+              "progress": 0,
+              "damage": 9
+            }
+          ]
+        },
+        {
+          "id": "l2.r0",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 16,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 5.349999999999986,
+          "firstAvailableAt": 0.9500000000000013,
+          "firstHitAt": 5.399999999999986,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 9.000000000000027,
+          "claimedReward": {
+            "kind": "troops",
+            "count": 4
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 4.966666666666654,
+          "hittableAimTime": 1.3333333333333335,
+          "aimedSeconds": 3.6666666666666585,
+          "blockedAimSeconds": 2.33333333333333,
+          "totalHitDamage": 16,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 6.283333333333316,
+          "actualClaimCount": null,
+          "resolvedAt": 6.283333333333316,
+          "valueSamples": []
+        },
+        {
+          "id": "l2.w0",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 26,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 4.39999999999999,
+          "firstAvailableAt": 3.9666666666666575,
+          "firstHitAt": 7.233333333333313,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 12.000000000000176,
+          "claimedReward": {
+            "kind": "equipment",
+            "stage": 1
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 6.433333333333316,
+          "hittableAimTime": 1.8999999999999981,
+          "aimedSeconds": 1.9333333333333313,
+          "blockedAimSeconds": 0.03333333333333333,
+          "totalHitDamage": 26,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 8.349999999999994,
+          "actualClaimCount": null,
+          "resolvedAt": 8.349999999999994,
+          "valueSamples": []
+        },
+        {
+          "id": "l2.c0",
+          "kind": "chainCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 38,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 2.933333333333328,
+          "firstAvailableAt": 7.966666666666644,
+          "firstHitAt": 9.816666666666734,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 16.000000000000373,
+          "claimedReward": {
+            "kind": "chain",
+            "count": 6,
+            "value": 1,
+            "spacing": 0.5
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 8.933333333333357,
+          "hittableAimTime": 1.9666666666666646,
+          "aimedSeconds": 1.9666666666666646,
+          "blockedAimSeconds": 0,
+          "totalHitDamage": 38,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 10.883333333333454,
+          "actualClaimCount": null,
+          "resolvedAt": 10.883333333333454,
+          "valueSamples": []
+        },
+        {
+          "id": "l2.r1",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 61,
+          "maxHp": 80,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 9.250000000000039,
+          "firstAvailableAt": 10.950000000000124,
+          "firstHitAt": 18.73333333333355,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 69,
+          "passedAt": 19.000000000000203,
+          "claimedReward": null,
+          "lossCause": "unopened",
+          "lastAimedTick": -1,
+          "firstHittableAt": 18.533333333333562,
+          "hittableAimTime": 0.8000000000000008,
+          "aimedSeconds": 0.8000000000000008,
+          "blockedAimSeconds": 0,
+          "totalHitDamage": 19,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": null,
+          "actualClaimCount": null,
+          "resolvedAt": 20.400000000000123,
+          "valueSamples": []
+        },
+        {
+          "id": "l2.w1",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 120,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 6.333333333333316,
+          "firstAvailableAt": 15.950000000000372,
+          "firstHitAt": 16.75000000000033,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 24.016666666666584,
+          "claimedReward": {
+            "kind": "equipment",
+            "stage": 2
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 15.950000000000372,
+          "hittableAimTime": 4.949999999999988,
+          "aimedSeconds": 4.949999999999988,
+          "blockedAimSeconds": 0,
+          "totalHitDamage": 120,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 22.266666666666683,
+          "actualClaimCount": null,
+          "resolvedAt": 22.266666666666683,
+          "valueSamples": []
+        },
+        {
+          "id": "l2.g1",
+          "kind": "mutableGate",
+          "value": -28,
+          "growthStrategy": "window",
+          "initialValue": -35,
+          "maxPositive": 12,
+          "progress": 7,
+          "damagePerPoint": 8,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 9.266666666666707,
+          "firstAvailableAt": 16.95000000000032,
+          "firstHitAt": 19.0500000000002,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 25.016666666666527,
+          "claimedReward": null,
+          "lossCause": "not-contacted",
+          "lastAimedTick": -1,
+          "firstHittableAt": 18.200000000000248,
+          "hittableAimTime": 5.466666666666653,
+          "aimedSeconds": 5.883333333333318,
+          "blockedAimSeconds": 0.41666666666666663,
+          "totalHitDamage": 63,
+          "gateHitCount": 57,
+          "valueChangeCount": 7,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": null,
+          "actualClaimCount": null,
+          "resolvedAt": 26.416666666666448,
+          "valueSamples": [
+            {
+              "tick": 1182,
+              "time": 19.700000000000163,
+              "value": -34,
+              "progress": 0,
+              "damage": 8
+            },
+            {
+              "tick": 1197,
+              "time": 19.95000000000015,
+              "value": -33,
+              "progress": 0,
+              "damage": 16
+            },
+            {
+              "tick": 1260,
+              "time": 21.00000000000009,
+              "value": -32,
+              "progress": 0,
+              "damage": 24
+            },
+            {
+              "tick": 1289,
+              "time": 21.483333333333395,
+              "value": -31,
+              "progress": 0,
+              "damage": 32
+            },
+            {
+              "tick": 1303,
+              "time": 21.716666666666715,
+              "value": -30,
+              "progress": 0,
+              "damage": 40
+            },
+            {
+              "tick": 1319,
+              "time": 21.983333333333366,
+              "value": -29,
+              "progress": 0,
+              "damage": 48
+            },
+            {
+              "tick": 1442,
+              "time": 24.03333333333325,
+              "value": -28,
+              "progress": 2,
+              "damage": 58
+            }
+          ]
+        },
+        {
+          "id": "l2.c1",
+          "kind": "chainCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 140,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 5.533333333333319,
+          "firstAvailableAt": 20.95000000000009,
+          "firstHitAt": 22.816666666666652,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 29.0166666666663,
+          "claimedReward": {
+            "kind": "chain",
+            "count": 8,
+            "value": 1,
+            "spacing": 0.5
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 22.28333333333335,
+          "hittableAimTime": 4.19999999999999,
+          "aimedSeconds": 4.8333333333333215,
+          "blockedAimSeconds": 0.6333333333333336,
+          "totalHitDamage": 141,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 26.466666666666445,
+          "actualClaimCount": null,
+          "resolvedAt": 26.466666666666445,
+          "valueSamples": []
+        },
+        {
+          "id": "l2.r2",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 192.5,
+          "maxHp": 220,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 9.250000000000039,
+          "firstAvailableAt": 23.966666666666587,
+          "firstHitAt": 31.766666666666143,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 205,
+          "passedAt": 32.01666666666613,
+          "claimedReward": null,
+          "lossCause": "unopened",
+          "lastAimedTick": -1,
+          "firstHittableAt": 31.533333333332823,
+          "hittableAimTime": 1.4999999999999996,
+          "aimedSeconds": 1.4999999999999996,
+          "blockedAimSeconds": 0,
+          "totalHitDamage": 27.5,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": null,
+          "actualClaimCount": null,
+          "resolvedAt": 33.41666666666605,
+          "valueSamples": []
+        },
+        {
+          "id": "l2.g2",
+          "kind": "mutableGate",
+          "value": -77,
+          "growthStrategy": "window",
+          "initialValue": -90,
+          "maxPositive": 12,
+          "progress": 7.5,
+          "damagePerPoint": 15,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 9.250000000000039,
+          "firstAvailableAt": 27.96666666666636,
+          "firstHitAt": 29.316666666666283,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 36.016666666665905,
+          "claimedReward": null,
+          "lossCause": "not-contacted",
+          "lastAimedTick": -1,
+          "firstHittableAt": 27.96666666666636,
+          "hittableAimTime": 5.149999999999987,
+          "aimedSeconds": 5.166666666666654,
+          "blockedAimSeconds": 0.016666666666666666,
+          "totalHitDamage": 202.5,
+          "gateHitCount": 81,
+          "valueChangeCount": 13,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": null,
+          "actualClaimCount": null,
+          "resolvedAt": 37.416666666665826,
+          "valueSamples": [
+            {
+              "tick": 1807,
+              "time": 30.116666666666237,
+              "value": -89,
+              "progress": 0,
+              "damage": 15
+            },
+            {
+              "tick": 1811,
+              "time": 30.1833333333329,
+              "value": -88,
+              "progress": 0,
+              "damage": 30
+            },
+            {
+              "tick": 1831,
+              "time": 30.516666666666215,
+              "value": -87,
+              "progress": 0,
+              "damage": 45
+            },
+            {
+              "tick": 1845,
+              "time": 30.749999999999535,
+              "value": -86,
+              "progress": 0,
+              "damage": 60
+            },
+            {
+              "tick": 1863,
+              "time": 31.049999999999518,
+              "value": -85,
+              "progress": 0,
+              "damage": 75
+            },
+            {
+              "tick": 1886,
+              "time": 31.43333333333283,
+              "value": -84,
+              "progress": 0,
+              "damage": 90
+            },
+            {
+              "tick": 1901,
+              "time": 31.683333333332815,
+              "value": -83,
+              "progress": 0,
+              "damage": 105
+            },
+            {
+              "tick": 1924,
+              "time": 32.06666666666613,
+              "value": -82,
+              "progress": 0,
+              "damage": 120
+            },
+            {
+              "tick": 1928,
+              "time": 32.13333333333279,
+              "value": -81,
+              "progress": 0,
+              "damage": 135
+            },
+            {
+              "tick": 1975,
+              "time": 32.91666666666608,
+              "value": -80,
+              "progress": 0,
+              "damage": 150
+            },
+            {
+              "tick": 2065,
+              "time": 34.416666666665996,
+              "value": -79,
+              "progress": 0,
+              "damage": 165
+            },
+            {
+              "tick": 2078,
+              "time": 34.63333333333265,
+              "value": -78,
+              "progress": 0,
+              "damage": 180
+            },
+            {
+              "tick": 2092,
+              "time": 34.86666666666597,
+              "value": -77,
+              "progress": 0,
+              "damage": 195
+            }
+          ]
+        },
+        {
+          "id": "l2.r3",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 40,
+          "maxHp": 250,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 9.250000000000039,
+          "firstAvailableAt": 30.96666666666619,
+          "firstHitAt": 33.61666666666604,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 57.5,
+          "passedAt": 39.016666666665735,
+          "claimedReward": null,
+          "lossCause": "unopened",
+          "lastAimedTick": -1,
+          "firstHittableAt": 32.01666666666613,
+          "hittableAimTime": 6.1499999999999835,
+          "aimedSeconds": 7.216666666666646,
+          "blockedAimSeconds": 1.0666666666666678,
+          "totalHitDamage": 210,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": null,
+          "actualClaimCount": null,
+          "resolvedAt": 40.416666666665655,
+          "valueSamples": []
+        }
+      ],
+      "rewardLedger": [
+        {
+          "tick": 297,
+          "type": "gateContact",
+          "sourceId": "l2.g0.right",
+          "value": 5,
+          "countBefore": 1,
+          "countAfter": 1
+        },
+        {
+          "tick": 297,
+          "type": "gateGain",
+          "sourceId": "l2.g0.right",
+          "value": 5,
+          "countBefore": 1,
+          "countAfter": 6
+        },
+        {
+          "tick": 377,
+          "type": "reinforcement",
+          "sourceId": "l2.r0",
+          "value": 4,
+          "countBefore": 6,
+          "countAfter": 10
+        },
+        {
+          "tick": 957,
+          "type": "gateContact",
+          "sourceId": "l2.c0:token:0",
+          "value": 1,
+          "countBefore": 10,
+          "countAfter": 10
+        },
+        {
+          "tick": 957,
+          "type": "gateGain",
+          "sourceId": "l2.c0:token:0",
+          "value": 1,
+          "countBefore": 10,
+          "countAfter": 11
+        },
+        {
+          "tick": 987,
+          "type": "gateContact",
+          "sourceId": "l2.c0:token:1",
+          "value": 1,
+          "countBefore": 11,
+          "countAfter": 11
+        },
+        {
+          "tick": 987,
+          "type": "gateGain",
+          "sourceId": "l2.c0:token:1",
+          "value": 1,
+          "countBefore": 11,
+          "countAfter": 12
+        },
+        {
+          "tick": 993,
+          "type": "enemyContact",
+          "sourceId": "l2.e1:3",
+          "value": -1,
+          "countBefore": 12,
+          "countAfter": 11,
+          "sourceEnemyId": "l2.e1:3",
+          "memberId": 5,
+          "point": {
+            "x": 0.13999999999999996,
+            "z": 15.60000000000034
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [
+            5
+          ],
+          "removedMembers": [
+            {
+              "id": 5,
+              "slot": 5,
+              "x": 0.13999999999999996,
+              "z": 15.60000000000034,
+              "radius": 0.025,
+              "role": "soldier",
+              "weight": 1
+            }
+          ],
+          "reason": "enemyContact"
+        },
+        {
+          "tick": 1017,
+          "type": "gateContact",
+          "sourceId": "l2.c0:token:2",
+          "value": 1,
+          "countBefore": 11,
+          "countAfter": 11
+        },
+        {
+          "tick": 1017,
+          "type": "gateGain",
+          "sourceId": "l2.c0:token:2",
+          "value": 1,
+          "countBefore": 11,
+          "countAfter": 12
+        },
+        {
+          "tick": 1047,
+          "type": "gateContact",
+          "sourceId": "l2.c0:token:3",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 12
+        },
+        {
+          "tick": 1047,
+          "type": "gateGain",
+          "sourceId": "l2.c0:token:3",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 13
+        },
+        {
+          "tick": 1054,
+          "type": "enemyContact",
+          "sourceId": "l2.e1:3",
+          "value": -1,
+          "countBefore": 13,
+          "countAfter": 12,
+          "sourceEnemyId": "l2.e1:3",
+          "memberId": 12,
+          "point": {
+            "x": 0.13999999999999996,
+            "z": 16.61666666666695
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [
+            12
+          ],
+          "removedMembers": [
+            {
+              "id": 12,
+              "slot": 5,
+              "x": 0.13999999999999996,
+              "z": 16.61666666666695,
+              "radius": 0.025,
+              "role": "soldier",
+              "weight": 1
+            }
+          ],
+          "reason": "enemyContact"
+        },
+        {
+          "tick": 1077,
+          "type": "gateContact",
+          "sourceId": "l2.c0:token:4",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 12
+        },
+        {
+          "tick": 1077,
+          "type": "gateGain",
+          "sourceId": "l2.c0:token:4",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 13
+        },
+        {
+          "tick": 1107,
+          "type": "gateContact",
+          "sourceId": "l2.c0:token:5",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1107,
+          "type": "gateGain",
+          "sourceId": "l2.c0:token:5",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 14
+        },
+        {
+          "tick": 1731,
+          "type": "enemyContact",
+          "sourceId": "l2.e3:10",
+          "value": -1,
+          "countBefore": 14,
+          "countAfter": 13,
+          "sourceEnemyId": "l2.e3:10",
+          "memberId": 10,
+          "point": {
+            "x": -0.030000000000000027,
+            "z": 27.599999999999643
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [
+            10
+          ],
+          "removedMembers": [
+            {
+              "id": 10,
+              "slot": 10,
+              "x": -0.030000000000000027,
+              "z": 27.599999999999643,
+              "radius": 0.025,
+              "role": "soldier",
+              "weight": 1
+            }
+          ],
+          "reason": "enemyContact"
+        },
+        {
+          "tick": 1737,
+          "type": "gateContact",
+          "sourceId": "l2.c1:token:6",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1737,
+          "type": "gateGain",
+          "sourceId": "l2.c1:token:6",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 14
+        },
+        {
+          "tick": 1750,
+          "type": "enemyContact",
+          "sourceId": "l2.e3:21",
+          "value": -1,
+          "countBefore": 14,
+          "countAfter": 13,
+          "sourceEnemyId": "l2.e3:21",
+          "memberId": 14,
+          "point": {
+            "x": 0.13999999999999996,
+            "z": 28.216666666666292
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [
+            14
+          ],
+          "removedMembers": [
+            {
+              "id": 14,
+              "slot": 5,
+              "x": 0.13999999999999996,
+              "z": 28.216666666666292,
+              "radius": 0.025,
+              "role": "soldier",
+              "weight": 1
+            }
+          ],
+          "reason": "enemyContact"
+        },
+        {
+          "tick": 1767,
+          "type": "gateContact",
+          "sourceId": "l2.c1:token:7",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1767,
+          "type": "gateGain",
+          "sourceId": "l2.c1:token:7",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 14
+        },
+        {
+          "tick": 1797,
+          "type": "gateContact",
+          "sourceId": "l2.c1:token:8",
+          "value": 1,
+          "countBefore": 14,
+          "countAfter": 14
+        },
+        {
+          "tick": 1797,
+          "type": "gateGain",
+          "sourceId": "l2.c1:token:8",
+          "value": 1,
+          "countBefore": 14,
+          "countAfter": 15
+        },
+        {
+          "tick": 1808,
+          "type": "enemyContact",
+          "sourceId": "l2.e3:10",
+          "value": -1,
+          "countBefore": 15,
+          "countAfter": 14,
+          "sourceEnemyId": "l2.e3:10",
+          "memberId": 16,
+          "point": {
+            "x": -0.030000000000000027,
+            "z": 28.883333333332903
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [
+            16
+          ],
+          "removedMembers": [
+            {
+              "id": 16,
+              "slot": 10,
+              "x": -0.030000000000000027,
+              "z": 28.883333333332903,
+              "radius": 0.025,
+              "role": "soldier",
+              "weight": 1
+            }
+          ],
+          "reason": "enemyContact"
+        },
+        {
+          "tick": 1821,
+          "type": "enemyContact",
+          "sourceId": "l2.e3:21",
+          "value": -1,
+          "countBefore": 14,
+          "countAfter": 13,
+          "sourceEnemyId": "l2.e3:21",
+          "memberId": 17,
+          "point": {
+            "x": 0.13999999999999996,
+            "z": 29.399999999999558
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [
+            17
+          ],
+          "removedMembers": [
+            {
+              "id": 17,
+              "slot": 5,
+              "x": 0.13999999999999996,
+              "z": 29.399999999999558,
+              "radius": 0.025,
+              "role": "soldier",
+              "weight": 1
+            }
+          ],
+          "reason": "enemyContact"
+        },
+        {
+          "tick": 1827,
+          "type": "gateContact",
+          "sourceId": "l2.c1:token:9",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1827,
+          "type": "gateGain",
+          "sourceId": "l2.c1:token:9",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 14
+        },
+        {
+          "tick": 1857,
+          "type": "gateContact",
+          "sourceId": "l2.c1:token:10",
+          "value": 1,
+          "countBefore": 14,
+          "countAfter": 14
+        },
+        {
+          "tick": 1857,
+          "type": "gateGain",
+          "sourceId": "l2.c1:token:10",
+          "value": 1,
+          "countBefore": 14,
+          "countAfter": 15
+        },
+        {
+          "tick": 1879,
+          "type": "enemyContact",
+          "sourceId": "l2.e3:21",
+          "value": -1,
+          "countBefore": 15,
+          "countAfter": 14,
+          "sourceEnemyId": "l2.e3:21",
+          "memberId": 19,
+          "point": {
+            "x": 0.13999999999999996,
+            "z": 30.36666666666617
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [
+            19
+          ],
+          "removedMembers": [
+            {
+              "id": 19,
+              "slot": 5,
+              "x": 0.13999999999999996,
+              "z": 30.36666666666617,
+              "radius": 0.025,
+              "role": "soldier",
+              "weight": 1
+            }
+          ],
+          "reason": "enemyContact"
+        },
+        {
+          "tick": 1887,
+          "type": "gateContact",
+          "sourceId": "l2.c1:token:11",
+          "value": 1,
+          "countBefore": 14,
+          "countAfter": 14
+        },
+        {
+          "tick": 1887,
+          "type": "gateGain",
+          "sourceId": "l2.c1:token:11",
+          "value": 1,
+          "countBefore": 14,
+          "countAfter": 15
+        },
+        {
+          "tick": 1947,
+          "type": "gateContact",
+          "sourceId": "l2.c1:token:13",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 1947,
+          "type": "gateGain",
+          "sourceId": "l2.c1:token:13",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 16
+        }
+      ]
+    },
+    {
+      "level": "trial-03",
+      "scope": "One pure-model deterministic preflight using existing runnerSteer legal move inputs; no state injection, no route search, not natural/browser/player evidence",
+      "weapon": "blade",
+      "companion": "zhao_yun_guest",
+      "phase": "won",
+      "elapsed": 56.01666666666477,
+      "count": 125,
+      "peakCount": 125,
+      "minCount": 3,
+      "remaining": 0,
+      "cause": "被杨龄的飞矛击中，损失 1 人",
+      "stats": {
+        "issuedShots": 5816,
+        "tickIssuedShots": 0,
+        "numericGuards": 0,
+        "shots": 5816,
+        "damageBudget": 24478.5,
+        "hits": 2157,
+        "gateHits": 1062,
+        "converted": 2,
+        "gatesTaken": 13,
+        "crates": 9,
+        "chainGenerated": 10,
+        "chainTaken": 10,
+        "missed": 4,
+        "equipment": 2,
+        "fieldCompanions": 1,
+        "blocked": 0,
+        "deferredShots": 0,
+        "deferredChains": 0,
+        "peakShots": 227,
+        "peakEnemies": 26,
+        "peakTokens": 10
+      },
+      "pacing": [
+        {
+          "id": "l3.g0.left",
+          "kind": "mutableGate",
+          "value": 11,
+          "growthStrategy": "window",
+          "initialValue": 2,
+          "maxPositive": 8,
+          "progress": 2,
+          "damagePerPoint": 5,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 5.949999999999984,
+          "firstAvailableAt": 0.016666666666666666,
+          "firstHitAt": 0.6666666666666671,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 6.016666666666651,
+          "claimedReward": {
+            "kind": "gate",
+            "count": 11
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 0.016666666666666666,
+          "hittableAimTime": 3.8833333333333244,
+          "aimedSeconds": 3.8833333333333244,
+          "blockedAimSeconds": 0,
+          "totalHitDamage": 47,
+          "gateHitCount": 47,
+          "valueChangeCount": 9,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 5.949999999999984,
+          "actualClaimCount": 11,
+          "resolvedAt": 5.949999999999984,
+          "valueSamples": [
+            {
+              "tick": 164,
+              "time": 2.7333333333333285,
+              "value": 3,
+              "progress": 0,
+              "damage": 5
+            },
+            {
+              "tick": 186,
+              "time": 3.099999999999994,
+              "value": 4,
+              "progress": 0,
+              "damage": 10
+            },
+            {
+              "tick": 213,
+              "time": 3.5499999999999923,
+              "value": 5,
+              "progress": 0,
+              "damage": 15
+            },
+            {
+              "tick": 231,
+              "time": 3.849999999999991,
+              "value": 6,
+              "progress": 0,
+              "damage": 20
+            },
+            {
+              "tick": 253,
+              "time": 4.216666666666657,
+              "value": 7,
+              "progress": 0,
+              "damage": 25
+            },
+            {
+              "tick": 280,
+              "time": 4.666666666666655,
+              "value": 8,
+              "progress": 0,
+              "damage": 30
+            },
+            {
+              "tick": 297,
+              "time": 4.949999999999988,
+              "value": 9,
+              "progress": 0,
+              "damage": 35
+            },
+            {
+              "tick": 320,
+              "time": 5.33333333333332,
+              "value": 10,
+              "progress": 0,
+              "damage": 40
+            },
+            {
+              "tick": 346,
+              "time": 5.7666666666666515,
+              "value": 11,
+              "progress": 0,
+              "damage": 45
+            }
+          ]
+        },
+        {
+          "id": "l3.g0.right",
+          "kind": "mutableGate",
+          "value": 4,
+          "growthStrategy": "window",
+          "initialValue": -6,
+          "maxPositive": 8,
+          "progress": 1,
+          "damagePerPoint": 3,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 6.599999999999982,
+          "firstAvailableAt": 0.016666666666666666,
+          "firstHitAt": 0.6666666666666671,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 6.016666666666651,
+          "claimedReward": {
+            "kind": "gate",
+            "count": 4
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 0.016666666666666666,
+          "hittableAimTime": 2.749999999999995,
+          "aimedSeconds": 2.749999999999995,
+          "blockedAimSeconds": 0,
+          "totalHitDamage": 31,
+          "gateHitCount": 31,
+          "valueChangeCount": 10,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 6.599999999999982,
+          "actualClaimCount": 4,
+          "resolvedAt": 6.599999999999982,
+          "valueSamples": [
+            {
+              "tick": 53,
+              "time": 0.8833333333333344,
+              "value": -5,
+              "progress": 0,
+              "damage": 3
+            },
+            {
+              "tick": 66,
+              "time": 1.100000000000001,
+              "value": -4,
+              "progress": 0,
+              "damage": 6
+            },
+            {
+              "tick": 80,
+              "time": 1.3333333333333335,
+              "value": -3,
+              "progress": 0,
+              "damage": 9
+            },
+            {
+              "tick": 93,
+              "time": 1.5499999999999994,
+              "value": -2,
+              "progress": 0,
+              "damage": 12
+            },
+            {
+              "tick": 106,
+              "time": 1.7666666666666653,
+              "value": -1,
+              "progress": 0,
+              "damage": 15
+            },
+            {
+              "tick": 120,
+              "time": 1.9999999999999978,
+              "value": 0,
+              "progress": 0,
+              "damage": 18
+            },
+            {
+              "tick": 133,
+              "time": 2.2166666666666637,
+              "value": 1,
+              "progress": 0,
+              "damage": 21
+            },
+            {
+              "tick": 146,
+              "time": 2.4333333333333296,
+              "value": 2,
+              "progress": 0,
+              "damage": 24
+            },
+            {
+              "tick": 377,
+              "time": 6.283333333333316,
+              "value": 3,
+              "progress": 0,
+              "damage": 27
+            },
+            {
+              "tick": 390,
+              "time": 6.499999999999982,
+              "value": 4,
+              "progress": 0,
+              "damage": 30
+            }
+          ]
+        },
+        {
+          "id": "l3.r0",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 35,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 5.883333333333318,
+          "firstAvailableAt": 1.9666666666666646,
+          "firstHitAt": 6.683333333333315,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 10.000000000000076,
+          "claimedReward": {
+            "kind": "troops",
+            "count": 4
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 2.0999999999999974,
+          "hittableAimTime": 1.9166666666666647,
+          "aimedSeconds": 2.116666666666664,
+          "blockedAimSeconds": 0.19999999999999998,
+          "totalHitDamage": 35,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 7.833333333333311,
+          "actualClaimCount": null,
+          "resolvedAt": 7.833333333333311,
+          "valueSamples": []
+        },
+        {
+          "id": "l3.w0",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 45,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 4.049999999999991,
+          "firstAvailableAt": 4.966666666666654,
+          "firstHitAt": 6.766666666666648,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 13.000000000000226,
+          "claimedReward": {
+            "kind": "equipment",
+            "stage": 1
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 5.966666666666651,
+          "hittableAimTime": 2.9499999999999944,
+          "aimedSeconds": 4.049999999999991,
+          "blockedAimSeconds": 1.100000000000001,
+          "totalHitDamage": 45,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 9.000000000000027,
+          "actualClaimCount": null,
+          "resolvedAt": 9.000000000000027,
+          "valueSamples": []
+        },
+        {
+          "id": "l3.g1",
+          "kind": "mutableGate",
+          "value": 58,
+          "growthStrategy": "window",
+          "initialValue": -20,
+          "maxPositive": 8,
+          "progress": 4,
+          "damagePerPoint": 6,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 8.016666666666644,
+          "firstAvailableAt": 8.950000000000024,
+          "firstHitAt": 10.883333333333454,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 17.000000000000316,
+          "claimedReward": {
+            "kind": "gate",
+            "count": 58
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 9.166666666666702,
+          "hittableAimTime": 6.816666666666648,
+          "aimedSeconds": 7.799999999999978,
+          "blockedAimSeconds": 0.9833333333333347,
+          "totalHitDamage": 472,
+          "gateHitCount": 472,
+          "valueChangeCount": 78,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 16.95000000000032,
+          "actualClaimCount": 58,
+          "resolvedAt": 16.95000000000032,
+          "valueSamples": [
+            {
+              "tick": 665,
+              "time": 11.083333333333464,
+              "value": -19,
+              "progress": 0,
+              "damage": 6
+            },
+            {
+              "tick": 676,
+              "time": 11.266666666666806,
+              "value": -18,
+              "progress": 0,
+              "damage": 12
+            },
+            {
+              "tick": 685,
+              "time": 11.416666666666814,
+              "value": -17,
+              "progress": 0,
+              "damage": 18
+            },
+            {
+              "tick": 692,
+              "time": 11.533333333333486,
+              "value": -16,
+              "progress": 0,
+              "damage": 24
+            },
+            {
+              "tick": 695,
+              "time": 11.583333333333488,
+              "value": -15,
+              "progress": 0,
+              "damage": 30
+            },
+            {
+              "tick": 704,
+              "time": 11.733333333333496,
+              "value": -14,
+              "progress": 0,
+              "damage": 36
+            },
+            {
+              "tick": 713,
+              "time": 11.883333333333503,
+              "value": -13,
+              "progress": 0,
+              "damage": 42
+            },
+            {
+              "tick": 724,
+              "time": 12.066666666666846,
+              "value": -12,
+              "progress": 0,
+              "damage": 48
+            },
+            {
+              "tick": 735,
+              "time": 12.250000000000188,
+              "value": -11,
+              "progress": 0,
+              "damage": 54
+            },
+            {
+              "tick": 742,
+              "time": 12.36666666666686,
+              "value": -10,
+              "progress": 0,
+              "damage": 60
+            },
+            {
+              "tick": 747,
+              "time": 12.450000000000198,
+              "value": -9,
+              "progress": 0,
+              "damage": 66
+            },
+            {
+              "tick": 749,
+              "time": 12.483333333333533,
+              "value": -8,
+              "progress": 0,
+              "damage": 72
+            },
+            {
+              "tick": 756,
+              "time": 12.600000000000206,
+              "value": -7,
+              "progress": 0,
+              "damage": 78
+            },
+            {
+              "tick": 757,
+              "time": 12.616666666666873,
+              "value": -6,
+              "progress": 0,
+              "damage": 84
+            },
+            {
+              "tick": 761,
+              "time": 12.683333333333543,
+              "value": -5,
+              "progress": 0,
+              "damage": 90
+            },
+            {
+              "tick": 768,
+              "time": 12.800000000000216,
+              "value": -4,
+              "progress": 0,
+              "damage": 96
+            },
+            {
+              "tick": 770,
+              "time": 12.83333333333355,
+              "value": -3,
+              "progress": 0,
+              "damage": 102
+            },
+            {
+              "tick": 774,
+              "time": 12.90000000000022,
+              "value": -2,
+              "progress": 0,
+              "damage": 108
+            },
+            {
+              "tick": 779,
+              "time": 12.983333333333558,
+              "value": -1,
+              "progress": 0,
+              "damage": 114
+            },
+            {
+              "tick": 781,
+              "time": 13.016666666666893,
+              "value": 0,
+              "progress": 0,
+              "damage": 120
+            },
+            {
+              "tick": 788,
+              "time": 13.133333333333566,
+              "value": 1,
+              "progress": 0,
+              "damage": 126
+            },
+            {
+              "tick": 789,
+              "time": 13.150000000000233,
+              "value": 2,
+              "progress": 0,
+              "damage": 132
+            },
+            {
+              "tick": 793,
+              "time": 13.216666666666903,
+              "value": 3,
+              "progress": 0,
+              "damage": 138
+            },
+            {
+              "tick": 800,
+              "time": 13.333333333333576,
+              "value": 4,
+              "progress": 0,
+              "damage": 144
+            },
+            {
+              "tick": 802,
+              "time": 13.36666666666691,
+              "value": 5,
+              "progress": 0,
+              "damage": 150
+            },
+            {
+              "tick": 806,
+              "time": 13.43333333333358,
+              "value": 6,
+              "progress": 0,
+              "damage": 156
+            },
+            {
+              "tick": 811,
+              "time": 13.516666666666918,
+              "value": 7,
+              "progress": 0,
+              "damage": 162
+            },
+            {
+              "tick": 813,
+              "time": 13.550000000000253,
+              "value": 8,
+              "progress": 0,
+              "damage": 168
+            },
+            {
+              "tick": 820,
+              "time": 13.666666666666925,
+              "value": 9,
+              "progress": 0,
+              "damage": 174
+            },
+            {
+              "tick": 821,
+              "time": 13.683333333333593,
+              "value": 10,
+              "progress": 0,
+              "damage": 180
+            },
+            {
+              "tick": 825,
+              "time": 13.750000000000263,
+              "value": 11,
+              "progress": 0,
+              "damage": 186
+            },
+            {
+              "tick": 832,
+              "time": 13.866666666666935,
+              "value": 12,
+              "progress": 0,
+              "damage": 192
+            },
+            {
+              "tick": 834,
+              "time": 13.90000000000027,
+              "value": 13,
+              "progress": 0,
+              "damage": 198
+            },
+            {
+              "tick": 838,
+              "time": 13.96666666666694,
+              "value": 14,
+              "progress": 0,
+              "damage": 204
+            },
+            {
+              "tick": 843,
+              "time": 14.050000000000278,
+              "value": 15,
+              "progress": 0,
+              "damage": 210
+            },
+            {
+              "tick": 845,
+              "time": 14.083333333333613,
+              "value": 16,
+              "progress": 0,
+              "damage": 216
+            },
+            {
+              "tick": 852,
+              "time": 14.200000000000285,
+              "value": 17,
+              "progress": 0,
+              "damage": 222
+            },
+            {
+              "tick": 853,
+              "time": 14.216666666666953,
+              "value": 18,
+              "progress": 0,
+              "damage": 228
+            },
+            {
+              "tick": 857,
+              "time": 14.283333333333623,
+              "value": 19,
+              "progress": 0,
+              "damage": 234
+            },
+            {
+              "tick": 864,
+              "time": 14.400000000000295,
+              "value": 20,
+              "progress": 0,
+              "damage": 240
+            },
+            {
+              "tick": 866,
+              "time": 14.43333333333363,
+              "value": 21,
+              "progress": 0,
+              "damage": 246
+            },
+            {
+              "tick": 870,
+              "time": 14.5000000000003,
+              "value": 22,
+              "progress": 0,
+              "damage": 252
+            },
+            {
+              "tick": 875,
+              "time": 14.583333333333638,
+              "value": 23,
+              "progress": 0,
+              "damage": 258
+            },
+            {
+              "tick": 877,
+              "time": 14.616666666666973,
+              "value": 24,
+              "progress": 0,
+              "damage": 264
+            },
+            {
+              "tick": 884,
+              "time": 14.733333333333645,
+              "value": 25,
+              "progress": 0,
+              "damage": 270
+            },
+            {
+              "tick": 885,
+              "time": 14.750000000000313,
+              "value": 26,
+              "progress": 0,
+              "damage": 276
+            },
+            {
+              "tick": 889,
+              "time": 14.816666666666983,
+              "value": 27,
+              "progress": 0,
+              "damage": 282
+            },
+            {
+              "tick": 896,
+              "time": 14.933333333333655,
+              "value": 28,
+              "progress": 0,
+              "damage": 288
+            },
+            {
+              "tick": 898,
+              "time": 14.96666666666699,
+              "value": 29,
+              "progress": 0,
+              "damage": 294
+            },
+            {
+              "tick": 902,
+              "time": 15.03333333333366,
+              "value": 30,
+              "progress": 0,
+              "damage": 300
+            },
+            {
+              "tick": 907,
+              "time": 15.116666666666998,
+              "value": 31,
+              "progress": 0,
+              "damage": 306
+            },
+            {
+              "tick": 909,
+              "time": 15.150000000000333,
+              "value": 32,
+              "progress": 0,
+              "damage": 312
+            },
+            {
+              "tick": 916,
+              "time": 15.266666666667005,
+              "value": 33,
+              "progress": 0,
+              "damage": 318
+            },
+            {
+              "tick": 917,
+              "time": 15.283333333333672,
+              "value": 34,
+              "progress": 0,
+              "damage": 324
+            },
+            {
+              "tick": 921,
+              "time": 15.350000000000342,
+              "value": 35,
+              "progress": 0,
+              "damage": 330
+            },
+            {
+              "tick": 928,
+              "time": 15.466666666667015,
+              "value": 36,
+              "progress": 0,
+              "damage": 336
+            },
+            {
+              "tick": 930,
+              "time": 15.50000000000035,
+              "value": 37,
+              "progress": 0,
+              "damage": 342
+            },
+            {
+              "tick": 934,
+              "time": 15.56666666666702,
+              "value": 38,
+              "progress": 0,
+              "damage": 348
+            },
+            {
+              "tick": 939,
+              "time": 15.650000000000357,
+              "value": 39,
+              "progress": 0,
+              "damage": 354
+            },
+            {
+              "tick": 941,
+              "time": 15.683333333333692,
+              "value": 40,
+              "progress": 0,
+              "damage": 360
+            },
+            {
+              "tick": 948,
+              "time": 15.800000000000365,
+              "value": 41,
+              "progress": 0,
+              "damage": 366
+            },
+            {
+              "tick": 949,
+              "time": 15.816666666667032,
+              "value": 42,
+              "progress": 0,
+              "damage": 372
+            },
+            {
+              "tick": 953,
+              "time": 15.883333333333702,
+              "value": 43,
+              "progress": 0,
+              "damage": 378
+            },
+            {
+              "tick": 960,
+              "time": 16.000000000000373,
+              "value": 44,
+              "progress": 0,
+              "damage": 384
+            },
+            {
+              "tick": 962,
+              "time": 16.033333333333704,
+              "value": 45,
+              "progress": 0,
+              "damage": 390
+            },
+            {
+              "tick": 966,
+              "time": 16.100000000000367,
+              "value": 46,
+              "progress": 0,
+              "damage": 396
+            },
+            {
+              "tick": 971,
+              "time": 16.183333333333696,
+              "value": 47,
+              "progress": 0,
+              "damage": 402
+            },
+            {
+              "tick": 973,
+              "time": 16.216666666667027,
+              "value": 48,
+              "progress": 0,
+              "damage": 408
+            },
+            {
+              "tick": 980,
+              "time": 16.333333333333687,
+              "value": 49,
+              "progress": 0,
+              "damage": 414
+            },
+            {
+              "tick": 981,
+              "time": 16.350000000000353,
+              "value": 50,
+              "progress": 0,
+              "damage": 420
+            },
+            {
+              "tick": 985,
+              "time": 16.416666666667016,
+              "value": 51,
+              "progress": 0,
+              "damage": 426
+            },
+            {
+              "tick": 992,
+              "time": 16.533333333333676,
+              "value": 52,
+              "progress": 0,
+              "damage": 432
+            },
+            {
+              "tick": 994,
+              "time": 16.566666666667007,
+              "value": 53,
+              "progress": 0,
+              "damage": 438
+            },
+            {
+              "tick": 998,
+              "time": 16.63333333333367,
+              "value": 54,
+              "progress": 0,
+              "damage": 444
+            },
+            {
+              "tick": 1003,
+              "time": 16.716666666667,
+              "value": 55,
+              "progress": 0,
+              "damage": 450
+            },
+            {
+              "tick": 1005,
+              "time": 16.75000000000033,
+              "value": 56,
+              "progress": 0,
+              "damage": 456
+            },
+            {
+              "tick": 1012,
+              "time": 16.86666666666699,
+              "value": 57,
+              "progress": 0,
+              "damage": 462
+            },
+            {
+              "tick": 1013,
+              "time": 16.883333333333656,
+              "value": 58,
+              "progress": 0,
+              "damage": 468
+            }
+          ]
+        },
+        {
+          "id": "l3.r1",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 100,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 6.21666666666665,
+          "firstAvailableAt": 11.950000000000173,
+          "firstHitAt": 17.500000000000288,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 20.000000000000146,
+          "claimedReward": {
+            "kind": "troops",
+            "count": 8
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 17.033333333333648,
+          "hittableAimTime": 1.1333333333333342,
+          "aimedSeconds": 1.1333333333333342,
+          "blockedAimSeconds": 0,
+          "totalHitDamage": 101,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 18.15000000000025,
+          "actualClaimCount": null,
+          "resolvedAt": 18.15000000000025,
+          "valueSamples": []
+        },
+        {
+          "id": "l3.r2",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 180,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 4.799999999999988,
+          "firstAvailableAt": 16.95000000000032,
+          "firstHitAt": 18.483333333333565,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 25.016666666666527,
+          "claimedReward": {
+            "kind": "troops",
+            "count": 12
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 17.600000000000282,
+          "hittableAimTime": 3.6333333333333253,
+          "aimedSeconds": 3.9999999999999907,
+          "blockedAimSeconds": 0.36666666666666664,
+          "totalHitDamage": 184,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 21.73333333333338,
+          "actualClaimCount": null,
+          "resolvedAt": 21.73333333333338,
+          "valueSamples": []
+        },
+        {
+          "id": "l3.ally0",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 240,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 7.09999999999998,
+          "firstAvailableAt": 21.950000000000035,
+          "firstHitAt": 24.833333333333204,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 30.016666666666243,
+          "claimedReward": {
+            "kind": "fieldCompanion",
+            "id": "zhao_yun_guest",
+            "count": 1
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 22.849999999999984,
+          "hittableAimTime": 1.5166666666666662,
+          "aimedSeconds": 3.4999999999999925,
+          "blockedAimSeconds": 1.9833333333333312,
+          "totalHitDamage": 240,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 29.033333333332966,
+          "actualClaimCount": null,
+          "resolvedAt": 29.033333333332966,
+          "valueSamples": []
+        },
+        {
+          "id": "l3.w1",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 180,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 3.599999999999992,
+          "firstAvailableAt": 16.95000000000032,
+          "firstHitAt": 18.066666666666922,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 25.016666666666527,
+          "claimedReward": {
+            "kind": "equipment",
+            "stage": 2
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 17.033333333333648,
+          "hittableAimTime": 2.5166666666666626,
+          "aimedSeconds": 2.583333333333329,
+          "blockedAimSeconds": 0.06666666666666667,
+          "totalHitDamage": 181,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 20.53333333333345,
+          "actualClaimCount": null,
+          "resolvedAt": 20.53333333333345,
+          "valueSamples": []
+        },
+        {
+          "id": "l3.g2",
+          "kind": "mutableGate",
+          "value": -71,
+          "growthStrategy": "window",
+          "initialValue": -100,
+          "maxPositive": 8,
+          "progress": 13,
+          "damagePerPoint": 14,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 10.766666666666781,
+          "firstAvailableAt": 16.95000000000032,
+          "firstHitAt": 19.183333333333525,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 25.016666666666527,
+          "claimedReward": null,
+          "lossCause": "not-contacted",
+          "lastAimedTick": -1,
+          "firstHittableAt": 16.966666666666985,
+          "hittableAimTime": 4.433333333333323,
+          "aimedSeconds": 4.483333333333323,
+          "blockedAimSeconds": 0.05,
+          "totalHitDamage": 419,
+          "gateHitCount": 129,
+          "valueChangeCount": 29,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": null,
+          "actualClaimCount": null,
+          "resolvedAt": 27.916666666666362,
+          "valueSamples": [
+            {
+              "tick": 1179,
+              "time": 19.650000000000166,
+              "value": -99,
+              "progress": 0,
+              "damage": 14
+            },
+            {
+              "tick": 1200,
+              "time": 20.000000000000146,
+              "value": -98,
+              "progress": 0,
+              "damage": 28
+            },
+            {
+              "tick": 1219,
+              "time": 20.316666666666794,
+              "value": -97,
+              "progress": 1,
+              "damage": 43
+            },
+            {
+              "tick": 1230,
+              "time": 20.500000000000117,
+              "value": -96,
+              "progress": 0,
+              "damage": 56
+            },
+            {
+              "tick": 1236,
+              "time": 20.60000000000011,
+              "value": -95,
+              "progress": 1,
+              "damage": 71
+            },
+            {
+              "tick": 1239,
+              "time": 20.65000000000011,
+              "value": -94,
+              "progress": 0,
+              "damage": 84
+            },
+            {
+              "tick": 1245,
+              "time": 20.750000000000103,
+              "value": -93,
+              "progress": 0,
+              "damage": 98
+            },
+            {
+              "tick": 1247,
+              "time": 20.783333333333434,
+              "value": -92,
+              "progress": 0,
+              "damage": 112
+            },
+            {
+              "tick": 1255,
+              "time": 20.91666666666676,
+              "value": -91,
+              "progress": 0,
+              "damage": 126
+            },
+            {
+              "tick": 1388,
+              "time": 23.1333333333333,
+              "value": -90,
+              "progress": 1.5,
+              "damage": 141.5
+            },
+            {
+              "tick": 1393,
+              "time": 23.21666666666663,
+              "value": -89,
+              "progress": 2.5,
+              "damage": 156.5
+            },
+            {
+              "tick": 1395,
+              "time": 23.24999999999996,
+              "value": -88,
+              "progress": 1,
+              "damage": 169
+            },
+            {
+              "tick": 1398,
+              "time": 23.299999999999958,
+              "value": -87,
+              "progress": 2,
+              "damage": 184
+            },
+            {
+              "tick": 1402,
+              "time": 23.36666666666662,
+              "value": -86,
+              "progress": 3,
+              "damage": 199
+            },
+            {
+              "tick": 1403,
+              "time": 23.383333333333287,
+              "value": -85,
+              "progress": 4,
+              "damage": 214
+            },
+            {
+              "tick": 1404,
+              "time": 23.399999999999952,
+              "value": -84,
+              "progress": 0,
+              "damage": 224
+            },
+            {
+              "tick": 1416,
+              "time": 23.59999999999994,
+              "value": -83,
+              "progress": 6,
+              "damage": 244
+            },
+            {
+              "tick": 1419,
+              "time": 23.649999999999938,
+              "value": -81,
+              "progress": 3,
+              "damage": 269
+            },
+            {
+              "tick": 1423,
+              "time": 23.7166666666666,
+              "value": -79,
+              "progress": 0,
+              "damage": 294
+            },
+            {
+              "tick": 1426,
+              "time": 23.766666666666598,
+              "value": -78,
+              "progress": 1,
+              "damage": 309
+            },
+            {
+              "tick": 1428,
+              "time": 23.79999999999993,
+              "value": -76,
+              "progress": 3,
+              "damage": 339
+            },
+            {
+              "tick": 1447,
+              "time": 24.11666666666658,
+              "value": -75,
+              "progress": 4,
+              "damage": 354
+            },
+            {
+              "tick": 1450,
+              "time": 24.166666666666575,
+              "value": -74,
+              "progress": 0,
+              "damage": 364
+            },
+            {
+              "tick": 1470,
+              "time": 24.49999999999989,
+              "value": -73,
+              "progress": 1,
+              "damage": 379
+            },
+            {
+              "tick": 1475,
+              "time": 24.58333333333322,
+              "value": -72,
+              "progress": 2,
+              "damage": 394
+            },
+            {
+              "tick": 1496,
+              "time": 24.9333333333332,
+              "value": -71,
+              "progress": 3,
+              "damage": 409
+            }
+          ]
+        },
+        {
+          "id": "l3.c0",
+          "kind": "chainCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 200,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 3.4666666666666592,
+          "firstAvailableAt": 23.966666666666587,
+          "firstHitAt": 26.01666666666647,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 32.01666666666613,
+          "claimedReward": {
+            "kind": "chain",
+            "count": 10,
+            "value": 1,
+            "spacing": 0.5
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 24.799999999999873,
+          "hittableAimTime": 2.633333333333329,
+          "aimedSeconds": 2.633333333333329,
+          "blockedAimSeconds": 0,
+          "totalHitDamage": 202.5,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 27.41666666666639,
+          "actualClaimCount": null,
+          "resolvedAt": 27.41666666666639,
+          "valueSamples": []
+        },
+        {
+          "id": "l3.r3",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 150,
+          "maxHp": 350,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 10.750000000000114,
+          "firstAvailableAt": 26.966666666666416,
+          "firstHitAt": 29.733333333332926,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 295,
+          "passedAt": 35.01666666666596,
+          "claimedReward": null,
+          "lossCause": "unopened",
+          "lastAimedTick": -1,
+          "firstHittableAt": 29.04999999999963,
+          "hittableAimTime": 1.7666666666666653,
+          "aimedSeconds": 3.0833333333333273,
+          "blockedAimSeconds": 1.3166666666666669,
+          "totalHitDamage": 200,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": null,
+          "actualClaimCount": null,
+          "resolvedAt": 37.9166666666658,
+          "valueSamples": []
+        },
+        {
+          "id": "l3.g3",
+          "kind": "mutableGate",
+          "value": -113,
+          "growthStrategy": "window",
+          "initialValue": -180,
+          "maxPositive": 8,
+          "progress": 15.75,
+          "damagePerPoint": 24,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 10.750000000000114,
+          "firstAvailableAt": 30.96666666666619,
+          "firstHitAt": 32.01666666666613,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 39.016666666665735,
+          "claimedReward": null,
+          "lossCause": "not-contacted",
+          "lastAimedTick": -1,
+          "firstHittableAt": 30.96666666666619,
+          "hittableAimTime": 7.949999999999977,
+          "aimedSeconds": 7.949999999999977,
+          "blockedAimSeconds": 0,
+          "totalHitDamage": 1623.75,
+          "gateHitCount": 284,
+          "valueChangeCount": 67,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": null,
+          "actualClaimCount": null,
+          "resolvedAt": 41.91666666666557,
+          "valueSamples": [
+            {
+              "tick": 1973,
+              "time": 32.88333333333275,
+              "value": -179,
+              "progress": 6,
+              "damage": 30
+            },
+            {
+              "tick": 1975,
+              "time": 32.91666666666608,
+              "value": -178,
+              "progress": 4.5,
+              "damage": 52.5
+            },
+            {
+              "tick": 1996,
+              "time": 33.26666666666606,
+              "value": -177,
+              "progress": 3,
+              "damage": 75
+            },
+            {
+              "tick": 1999,
+              "time": 33.31666666666606,
+              "value": -175,
+              "progress": 0,
+              "damage": 120
+            },
+            {
+              "tick": 2014,
+              "time": 33.566666666666045,
+              "value": -174,
+              "progress": 2.25,
+              "damage": 146.25
+            },
+            {
+              "tick": 2020,
+              "time": 33.66666666666604,
+              "value": -173,
+              "progress": 0.75,
+              "damage": 168.75
+            },
+            {
+              "tick": 2022,
+              "time": 33.69999999999937,
+              "value": -172,
+              "progress": 6.75,
+              "damage": 198.75
+            },
+            {
+              "tick": 2030,
+              "time": 33.833333333332696,
+              "value": -171,
+              "progress": 2.75,
+              "damage": 218.75
+            },
+            {
+              "tick": 2038,
+              "time": 33.96666666666602,
+              "value": -170,
+              "progress": 1.25,
+              "damage": 241.25
+            },
+            {
+              "tick": 2043,
+              "time": 34.04999999999935,
+              "value": -169,
+              "progress": 3.5,
+              "damage": 267.5
+            },
+            {
+              "tick": 2045,
+              "time": 34.08333333333268,
+              "value": -168,
+              "progress": 2,
+              "damage": 290
+            },
+            {
+              "tick": 2048,
+              "time": 34.13333333333268,
+              "value": -167,
+              "progress": 0.5,
+              "damage": 312.5
+            },
+            {
+              "tick": 2052,
+              "time": 34.19999999999934,
+              "value": -166,
+              "progress": 1.5,
+              "damage": 337.5
+            },
+            {
+              "tick": 2053,
+              "time": 34.21666666666601,
+              "value": -165,
+              "progress": 2.5,
+              "damage": 362.5
+            },
+            {
+              "tick": 2066,
+              "time": 34.43333333333266,
+              "value": -164,
+              "progress": 3.5,
+              "damage": 387.5
+            },
+            {
+              "tick": 2069,
+              "time": 34.48333333333266,
+              "value": -162,
+              "progress": 0.5,
+              "damage": 432.5
+            },
+            {
+              "tick": 2073,
+              "time": 34.54999999999932,
+              "value": -161,
+              "progress": 4,
+              "damage": 460
+            },
+            {
+              "tick": 2076,
+              "time": 34.59999999999932,
+              "value": -160,
+              "progress": 0,
+              "damage": 480
+            },
+            {
+              "tick": 2078,
+              "time": 34.63333333333265,
+              "value": -158,
+              "progress": 2,
+              "damage": 530
+            },
+            {
+              "tick": 2090,
+              "time": 34.83333333333264,
+              "value": -157,
+              "progress": 0.5,
+              "damage": 552.5
+            },
+            {
+              "tick": 2092,
+              "time": 34.86666666666597,
+              "value": -156,
+              "progress": 6.5,
+              "damage": 582.5
+            },
+            {
+              "tick": 2095,
+              "time": 34.91666666666597,
+              "value": -155,
+              "progress": 2.5,
+              "damage": 602.5
+            },
+            {
+              "tick": 2097,
+              "time": 34.9499999999993,
+              "value": -154,
+              "progress": 1,
+              "damage": 625
+            },
+            {
+              "tick": 2099,
+              "time": 34.98333333333263,
+              "value": -153,
+              "progress": 2,
+              "damage": 650
+            },
+            {
+              "tick": 2101,
+              "time": 35.01666666666596,
+              "value": -152,
+              "progress": 3,
+              "damage": 675
+            },
+            {
+              "tick": 2108,
+              "time": 35.13333333333262,
+              "value": -151,
+              "progress": 1.5,
+              "damage": 697.5
+            },
+            {
+              "tick": 2116,
+              "time": 35.26666666666595,
+              "value": -150,
+              "progress": 0,
+              "damage": 720
+            },
+            {
+              "tick": 2118,
+              "time": 35.29999999999928,
+              "value": -149,
+              "progress": 6,
+              "damage": 750
+            },
+            {
+              "tick": 2120,
+              "time": 35.33333333333261,
+              "value": -148,
+              "progress": 4.5,
+              "damage": 772.5
+            },
+            {
+              "tick": 2123,
+              "time": 35.38333333333261,
+              "value": -147,
+              "progress": 0.5,
+              "damage": 792.5
+            },
+            {
+              "tick": 2125,
+              "time": 35.41666666666594,
+              "value": -145,
+              "progress": 2.5,
+              "damage": 842.5
+            },
+            {
+              "tick": 2141,
+              "time": 35.68333333333259,
+              "value": -144,
+              "progress": 6,
+              "damage": 870
+            },
+            {
+              "tick": 2149,
+              "time": 35.81666666666592,
+              "value": -143,
+              "progress": 2,
+              "damage": 890
+            },
+            {
+              "tick": 2160,
+              "time": 35.99999999999924,
+              "value": -142,
+              "progress": 0.5,
+              "damage": 912.5
+            },
+            {
+              "tick": 2162,
+              "time": 36.03333333333257,
+              "value": -141,
+              "progress": 6.5,
+              "damage": 942.5
+            },
+            {
+              "tick": 2165,
+              "time": 36.08333333333257,
+              "value": -140,
+              "progress": 2.5,
+              "damage": 962.5
+            },
+            {
+              "tick": 2167,
+              "time": 36.1166666666659,
+              "value": -139,
+              "progress": 1,
+              "damage": 985
+            },
+            {
+              "tick": 2169,
+              "time": 36.14999999999923,
+              "value": -138,
+              "progress": 2,
+              "damage": 1010
+            },
+            {
+              "tick": 2170,
+              "time": 36.1666666666659,
+              "value": -137,
+              "progress": 3,
+              "damage": 1035
+            },
+            {
+              "tick": 2172,
+              "time": 36.19999999999923,
+              "value": -136,
+              "progress": 4,
+              "damage": 1060
+            },
+            {
+              "tick": 2174,
+              "time": 36.23333333333256,
+              "value": -135,
+              "progress": 0,
+              "damage": 1080
+            },
+            {
+              "tick": 2183,
+              "time": 36.38333333333255,
+              "value": -134,
+              "progress": 2.25,
+              "damage": 1106.25
+            },
+            {
+              "tick": 2186,
+              "time": 36.43333333333255,
+              "value": -133,
+              "progress": 0.75,
+              "damage": 1128.75
+            },
+            {
+              "tick": 2188,
+              "time": 36.46666666666588,
+              "value": -132,
+              "progress": 4.25,
+              "damage": 1156.25
+            },
+            {
+              "tick": 2190,
+              "time": 36.49999999999921,
+              "value": -131,
+              "progress": 2.75,
+              "damage": 1178.75
+            },
+            {
+              "tick": 2193,
+              "time": 36.54999999999921,
+              "value": -130,
+              "progress": 3.75,
+              "damage": 1203.75
+            },
+            {
+              "tick": 2195,
+              "time": 36.58333333333254,
+              "value": -128,
+              "progress": 0.75,
+              "damage": 1248.75
+            },
+            {
+              "tick": 2207,
+              "time": 36.78333333333253,
+              "value": -127,
+              "progress": 4.25,
+              "damage": 1276.25
+            },
+            {
+              "tick": 2209,
+              "time": 36.81666666666586,
+              "value": -126,
+              "progress": 2.75,
+              "damage": 1298.75
+            },
+            {
+              "tick": 2212,
+              "time": 36.86666666666586,
+              "value": -125,
+              "progress": 6.25,
+              "damage": 1326.25
+            },
+            {
+              "tick": 2214,
+              "time": 36.89999999999919,
+              "value": -124,
+              "progress": 4.75,
+              "damage": 1348.75
+            },
+            {
+              "tick": 2216,
+              "time": 36.93333333333252,
+              "value": -123,
+              "progress": 0.75,
+              "damage": 1368.75
+            },
+            {
+              "tick": 2218,
+              "time": 36.96666666666585,
+              "value": -122,
+              "progress": 1.75,
+              "damage": 1393.75
+            },
+            {
+              "tick": 2219,
+              "time": 36.98333333333252,
+              "value": -121,
+              "progress": 2.75,
+              "damage": 1418.75
+            },
+            {
+              "tick": 2237,
+              "time": 37.2833333333325,
+              "value": -120,
+              "progress": 1.25,
+              "damage": 1441.25
+            },
+            {
+              "tick": 2258,
+              "time": 37.63333333333248,
+              "value": -119,
+              "progress": 7.25,
+              "damage": 1471.25
+            },
+            {
+              "tick": 2266,
+              "time": 37.766666666665806,
+              "value": -118,
+              "progress": 5.75,
+              "damage": 1493.75
+            },
+            {
+              "tick": 2286,
+              "time": 38.09999999999912,
+              "value": -117,
+              "progress": 4.25,
+              "damage": 1516.25
+            },
+            {
+              "tick": 2305,
+              "time": 38.41666666666577,
+              "value": -116,
+              "progress": 5.25,
+              "damage": 1541.25
+            },
+            {
+              "tick": 2313,
+              "time": 38.549999999999095,
+              "value": -115,
+              "progress": 3.75,
+              "damage": 1563.75
+            },
+            {
+              "tick": 2333,
+              "time": 38.88333333333241,
+              "value": -114,
+              "progress": 2.25,
+              "damage": 1586.25
+            },
+            {
+              "tick": 2449,
+              "time": 40.81666666666563,
+              "value": -113,
+              "progress": 0.75,
+              "damage": 1608.75
+            }
+          ]
+        },
+        {
+          "id": "l3.w2",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 500,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 6.199999999999983,
+          "firstAvailableAt": 33.96666666666602,
+          "firstHitAt": 35.91666666666591,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 42.016666666665564,
+          "claimedReward": {
+            "kind": "equipment",
+            "stage": 2
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 35.01666666666596,
+          "hittableAimTime": 3.7166666666666583,
+          "aimedSeconds": 4.19999999999999,
+          "blockedAimSeconds": 0.4833333333333333,
+          "totalHitDamage": 502.5,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 40.149999999999004,
+          "actualClaimCount": null,
+          "resolvedAt": 40.149999999999004,
+          "valueSamples": []
+        },
+        {
+          "id": "l3.r4",
+          "kind": "rewardCrate",
+          "value": 0,
+          "growthStrategy": "window",
+          "progress": 0,
+          "hp": 0,
+          "maxHp": 620,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 5.633333333333319,
+          "firstAvailableAt": 39.96666666666568,
+          "firstHitAt": 42.96666666666551,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 48.01666666666522,
+          "claimedReward": {
+            "kind": "troops",
+            "count": 16
+          },
+          "lossCause": null,
+          "lastAimedTick": -1,
+          "firstHittableAt": 42.016666666665564,
+          "hittableAimTime": 3.5833333333333255,
+          "aimedSeconds": 3.5833333333333255,
+          "blockedAimSeconds": 0,
+          "totalHitDamage": 620,
+          "gateHitCount": 0,
+          "valueChangeCount": 0,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": 45.58333333333203,
+          "actualClaimCount": null,
+          "resolvedAt": 45.58333333333203,
+          "valueSamples": []
+        },
+        {
+          "id": "l3.g4",
+          "kind": "mutableGate",
+          "value": -264,
+          "growthStrategy": "window",
+          "initialValue": -280,
+          "maxPositive": 8,
+          "progress": 2.5,
+          "damagePerPoint": 40,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 10.750000000000114,
+          "firstAvailableAt": 39.96666666666568,
+          "firstHitAt": 41.13333333333228,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 48.01666666666522,
+          "claimedReward": null,
+          "lossCause": "not-contacted",
+          "lastAimedTick": -1,
+          "firstHittableAt": 39.96666666666568,
+          "hittableAimTime": 4.083333333333324,
+          "aimedSeconds": 4.149999999999991,
+          "blockedAimSeconds": 0.06666666666666667,
+          "totalHitDamage": 642.5,
+          "gateHitCount": 99,
+          "valueChangeCount": 16,
+          "damageAfterCap": 0,
+          "invalidPlateauSeconds": 0,
+          "claimedAt": null,
+          "actualClaimCount": null,
+          "resolvedAt": 50.91666666666506,
+          "valueSamples": [
+            {
+              "tick": 2515,
+              "time": 41.91666666666557,
+              "value": -279,
+              "progress": 2.5,
+              "damage": 42.5
+            },
+            {
+              "tick": 2539,
+              "time": 42.31666666666555,
+              "value": -278,
+              "progress": 2.5,
+              "damage": 82.5
+            },
+            {
+              "tick": 2546,
+              "time": 42.43333333333221,
+              "value": -277,
+              "progress": 3.75,
+              "damage": 123.75
+            },
+            {
+              "tick": 2562,
+              "time": 42.69999999999886,
+              "value": -276,
+              "progress": 3.75,
+              "damage": 163.75
+            },
+            {
+              "tick": 2571,
+              "time": 42.84999999999885,
+              "value": -275,
+              "progress": 3.75,
+              "damage": 203.75
+            },
+            {
+              "tick": 2773,
+              "time": 46.216666666665326,
+              "value": -274,
+              "progress": 6.25,
+              "damage": 246.25
+            },
+            {
+              "tick": 2775,
+              "time": 46.24999999999866,
+              "value": -273,
+              "progress": 3.75,
+              "damage": 283.75
+            },
+            {
+              "tick": 2780,
+              "time": 46.333333333331986,
+              "value": -272,
+              "progress": 1.25,
+              "damage": 321.25
+            },
+            {
+              "tick": 2782,
+              "time": 46.36666666666532,
+              "value": -271,
+              "progress": 3.75,
+              "damage": 363.75
+            },
+            {
+              "tick": 2796,
+              "time": 46.59999999999864,
+              "value": -270,
+              "progress": 0,
+              "damage": 400
+            },
+            {
+              "tick": 2801,
+              "time": 46.683333333331966,
+              "value": -269,
+              "progress": 5,
+              "damage": 445
+            },
+            {
+              "tick": 2803,
+              "time": 46.7166666666653,
+              "value": -268,
+              "progress": 2.5,
+              "damage": 482.5
+            },
+            {
+              "tick": 2805,
+              "time": 46.74999999999863,
+              "value": -267,
+              "progress": 5,
+              "damage": 525
+            },
+            {
+              "tick": 2822,
+              "time": 47.033333333331946,
+              "value": -266,
+              "progress": 0,
+              "damage": 560
+            },
+            {
+              "tick": 2827,
+              "time": 47.116666666665274,
+              "value": -265,
+              "progress": 0,
+              "damage": 600
+            },
+            {
+              "tick": 2852,
+              "time": 47.53333333333192,
+              "value": -264,
+              "progress": 2.5,
+              "damage": 642.5
+            }
+          ]
+        }
+      ],
+      "rewardLedger": [
+        {
+          "tick": 357,
+          "type": "gateContact",
+          "sourceId": "l3.g0.left",
+          "value": 11,
+          "countBefore": 3,
+          "countAfter": 3
+        },
+        {
+          "tick": 357,
+          "type": "gateGain",
+          "sourceId": "l3.g0.left",
+          "value": 11,
+          "countBefore": 3,
+          "countAfter": 14
+        },
+        {
+          "tick": 396,
+          "type": "gateContact",
+          "sourceId": "l3.g0.right",
+          "value": 4,
+          "countBefore": 14,
+          "countAfter": 14
+        },
+        {
+          "tick": 396,
+          "type": "gateGain",
+          "sourceId": "l3.g0.right",
+          "value": 4,
+          "countBefore": 14,
+          "countAfter": 18
+        },
+        {
+          "tick": 470,
+          "type": "reinforcement",
+          "sourceId": "l3.r0",
+          "value": 4,
+          "countBefore": 18,
+          "countAfter": 22
+        },
+        {
+          "tick": 1017,
+          "type": "gateContact",
+          "sourceId": "l3.g1",
+          "value": 58,
+          "countBefore": 22,
+          "countAfter": 22
+        },
+        {
+          "tick": 1017,
+          "type": "gateGain",
+          "sourceId": "l3.g1",
+          "value": 58,
+          "countBefore": 22,
+          "countAfter": 80
+        },
+        {
+          "tick": 1089,
+          "type": "reinforcement",
+          "sourceId": "l3.r1",
+          "value": 8,
+          "countBefore": 80,
+          "countAfter": 88
+        },
+        {
+          "tick": 1304,
+          "type": "reinforcement",
+          "sourceId": "l3.r2",
+          "value": 12,
+          "countBefore": 88,
+          "countAfter": 100
+        },
+        {
+          "tick": 1917,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:0",
+          "value": 1,
+          "countBefore": 101,
+          "countAfter": 101
+        },
+        {
+          "tick": 1917,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:0",
+          "value": 1,
+          "countBefore": 101,
+          "countAfter": 102
+        },
+        {
+          "tick": 1947,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:1",
+          "value": 1,
+          "countBefore": 102,
+          "countAfter": 102
+        },
+        {
+          "tick": 1947,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:1",
+          "value": 1,
+          "countBefore": 102,
+          "countAfter": 103
+        },
+        {
+          "tick": 1977,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:2",
+          "value": 1,
+          "countBefore": 103,
+          "countAfter": 103
+        },
+        {
+          "tick": 1977,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:2",
+          "value": 1,
+          "countBefore": 103,
+          "countAfter": 104
+        },
+        {
+          "tick": 2007,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:3",
+          "value": 1,
+          "countBefore": 104,
+          "countAfter": 104
+        },
+        {
+          "tick": 2007,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:3",
+          "value": 1,
+          "countBefore": 104,
+          "countAfter": 105
+        },
+        {
+          "tick": 2037,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:4",
+          "value": 1,
+          "countBefore": 105,
+          "countAfter": 105
+        },
+        {
+          "tick": 2037,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:4",
+          "value": 1,
+          "countBefore": 105,
+          "countAfter": 106
+        },
+        {
+          "tick": 2067,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:5",
+          "value": 1,
+          "countBefore": 106,
+          "countAfter": 106
+        },
+        {
+          "tick": 2067,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:5",
+          "value": 1,
+          "countBefore": 106,
+          "countAfter": 107
+        },
+        {
+          "tick": 2127,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:7",
+          "value": 1,
+          "countBefore": 107,
+          "countAfter": 107
+        },
+        {
+          "tick": 2127,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:7",
+          "value": 1,
+          "countBefore": 107,
+          "countAfter": 108
+        },
+        {
+          "tick": 2136,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:6",
+          "value": 1,
+          "countBefore": 108,
+          "countAfter": 108
+        },
+        {
+          "tick": 2136,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:6",
+          "value": 1,
+          "countBefore": 108,
+          "countAfter": 109
+        },
+        {
+          "tick": 2157,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:8",
+          "value": 1,
+          "countBefore": 109,
+          "countAfter": 109
+        },
+        {
+          "tick": 2157,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:8",
+          "value": 1,
+          "countBefore": 109,
+          "countAfter": 110
+        },
+        {
+          "tick": 2187,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:9",
+          "value": 1,
+          "countBefore": 110,
+          "countAfter": 110
+        },
+        {
+          "tick": 2187,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:9",
+          "value": 1,
+          "countBefore": 110,
+          "countAfter": 111
+        },
+        {
+          "tick": 2369,
+          "type": "enemyProjectile",
+          "sourceId": "10112",
+          "value": -1,
+          "countBefore": 111,
+          "countAfter": 110,
+          "sourceEnemyId": "large:yang_ling",
+          "memberId": 0,
+          "point": {
+            "x": 0.49,
+            "z": 39.483333333332375
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [],
+          "removedMembers": [],
+          "reason": "enemyProjectile"
+        },
+        {
+          "tick": 2502,
+          "type": "enemyProjectile",
+          "sourceId": "10112",
+          "value": -1,
+          "countBefore": 110,
+          "countAfter": 109,
+          "sourceEnemyId": "large:yang_ling",
+          "memberId": 0,
+          "point": {
+            "x": 0.49,
+            "z": 41.699999999998916
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [],
+          "removedMembers": [],
+          "reason": "enemyProjectile"
+        },
+        {
+          "tick": 2735,
+          "type": "reinforcement",
+          "sourceId": "l3.r4",
+          "value": 16,
+          "countBefore": 109,
+          "countAfter": 125
+        }
+      ]
+    }
+  ]
+}

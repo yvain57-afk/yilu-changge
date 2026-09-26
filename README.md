@@ -1,3 +1,21 @@
+> 当前 FIX2 入口：[BATTLE-FIX2-20260925](docs/BATTLE-FIX2-20260925/00_START_WITH_CODEX.md)。版本0.9.3-battlefix2，运行 `node tools/launch.mjs`。六组战斗改动、四组实图和原速录像已完成开发端验证；手机与用户审美待核验。以下保留历史记录。
+
+> 当前修复版入口：[BATTLE-REWORK-20260925-FIX1](docs/BATTLE-REWORK-20260925-FIX1/00_START_WITH_CODEX.md)。版本0.9.2-battle20260925.1；通知遮挡与连续门可读性已修复。运行 `node tools/launch.mjs`。本轮当前证据与状态见FIX1；以下保留旧版记录。
+
+> 当前战斗返工入口：[BATTLE-REWORK-20260925](docs/BATTLE-REWORK-20260925/00_START_WITH_CODEX.md)。版本0.9.2-battle20260925；直接运行 `node tools/launch.mjs`。真实战场前后图、视频与逐项状态在本轮目录；以下旧版本记录保留，不作为当前状态。
+
+> 当前交付入口：[UI-20260925](docs/UI-20260925/00_START_WITH_CODEX.md)。版本0.9.1-ui20260925，包含真实游戏重构、七态对照和唯一自然三关录像；完整视觉与手机验收仍有明确缺口。以下历史说明保留。
+
+# 当前交付：一路长歌 v0.9
+
+直接运行：`PORT=43196 node tools/serve.mjs`，打开 http://127.0.0.1:43196/play/?v=09 。附带Web构建不需安装依赖。macOS也可双击 `启动一路长歌.command`。
+
+开发与核验先读 `docs/v09/00_START_WITH_CODEX.md`。实际入口是 `npm run check:v09`、`npm run review:v09`、`npm run record:v09`；浏览器工具需要本文档指定的本机Chrome及服务，录像策略先按v09手册编译。旧 `test:browser`、`record:three` 等保留为历史工具，不作为本轮验收命令。
+
+本轮结果：`evidence/v09/VERIFICATION.json`；整体画面与录像：http://127.0.0.1:43196/review/v09/ 。以下保留历史说明。
+
+---
+
 > **当前版本 v0.5.1-rc1**：给下一轮 GPT 请从 [固定反馈入口](docs/GPT_START_HERE.md) 开始。包含 v0.4 至 v0.5.1 累积开发、测试和原速录像。没有恢复 BGM；下方旧版本记录保留供追溯，不作为当前制作停点。
 
 # 一路长歌 · v0.3 三关试玩候选

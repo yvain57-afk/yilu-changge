@@ -1,0 +1,40 @@
+{
+  "task": "BATTLE-REWORK-20260925-FIX1",
+  "runtime": "battle-rework-20260925-fix1",
+  "typecheck": "passed",
+  "relatedTests": {
+    "passed": 71,
+    "failed": 0,
+    "log": "related-checks.log"
+  },
+  "focusedChecks": {
+    "passed": true,
+    "count": 28,
+    "file": "fix-checks-latest.json"
+  },
+  "natural": {
+    "passed": true,
+    "runs": [
+      {
+        "level": 1,
+        "seconds": 36.016666666665905,
+        "count": 38
+      },
+      {
+        "level": 2,
+        "seconds": 48.81666666666518,
+        "count": 17
+      },
+      {
+        "level": 3,
+        "seconds": 56.01666666666477,
+        "count": 68
+      }
+    ],
+    "file": "natural-flow.json"
+  },
+  "corePreserved": true,
+  "localBuilds": "passed",
+  "physicalDevice": "not performed",
+  "uploaded": false
+}

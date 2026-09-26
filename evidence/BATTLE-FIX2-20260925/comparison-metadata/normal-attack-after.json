@@ -1,0 +1,18 @@
+{
+  "kind": "fixture",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "model": {
+    "level": 1,
+    "elapsed": 12.000000000000176,
+    "count": 10,
+    "weapon": "blade",
+    "stage": 1
+  },
+  "rawState": "after/2026-09-25T16-54-45-552Z/390x844-normal-attack.json",
+  "scope": "Identical FIX1 capped state for visual isolation; normal gameplay uses window in natural recording",
+  "companion": "xing_daorong",
+  "tick": 720
+}

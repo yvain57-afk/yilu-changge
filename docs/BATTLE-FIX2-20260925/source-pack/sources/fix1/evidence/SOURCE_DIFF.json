@@ -1,0 +1,22 @@
+[
+  {
+    "path": "assets/scripts/BattleView.ts",
+    "before": "3f8b052594adfdd5a1a9bbc9d45dc98fb6a194b0c7a255e9a46a6cb8a89131b2",
+    "after": "58a1dbb221e60002b4a9211c471c30115c7bde051fd1d4d5c6389def203dba25"
+  },
+  {
+    "path": "assets/scripts/Game.ts",
+    "before": "a8ae0281d2b097cb4dff0993945bf0e7bc6ef562b3993c1aaff74dbfe2dae62f",
+    "after": "2d3070385f5ef024ada260ca666a187a20bcc724b904db00bfc16f1f1ae0013f"
+  },
+  {
+    "path": "assets/scripts/ui/WorldLabels.ts",
+    "before": "86377534514c2ad305e560ffad143c258eec86526df6c565641e47e3728aa507",
+    "after": "131adab302ff7616ae345eec22044990ffbea1916c79ed3c760a16c6397d6628"
+  },
+  {
+    "path": "package.json",
+    "before": "e16198c5c31b83fab951e66f047216ccb3be34f76f44f6332e3d4e4b068ce95f",
+    "after": "665779e87230134af868ad084f78d1cce6ab0c6f2b29ed0d50885768b79d9cdb"
+  }
+]

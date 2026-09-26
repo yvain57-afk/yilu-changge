@@ -1,0 +1,186 @@
+{
+  "taskId": "BATTLE-FIX2-20260925",
+  "scope": "handoff_files_not_runtime_game",
+  "files": [
+    {
+      "path": "00_START_WITH_CODEX_FIX2.md",
+      "bytes": 3870,
+      "sha256": "c5b5dc18702c39feb581104d2796165b983b3505d817acfdf39c250505998027"
+    },
+    {
+      "path": "01_FIX2_IMPLEMENTATION.md",
+      "bytes": 15749,
+      "sha256": "7ccd5dfe6f1fa34f36cc072521d545a7599179586792b80173e18e8fd47280cd"
+    },
+    {
+      "path": "02_EVIDENCE_AND_CAP_AUDIT.md",
+      "bytes": 5282,
+      "sha256": "16e101a0130086f4ef5d274f90e8ad33f16ae974e17f90d0fe9aeab10bd335be"
+    },
+    {
+      "path": "03_ART_AND_LABEL_SPEC.md",
+      "bytes": 5671,
+      "sha256": "88b5af0f614a4236bf2d2b4e3649a90ccc4cd8ee95720c663ae63d7249e6bf99"
+    },
+    {
+      "path": "04_ACCEPTANCE_AND_DELIVERY.md",
+      "bytes": 8042,
+      "sha256": "ee1ac11c67f5d9b223d79f6600d4ea6e49bb4cfcc9b2b94a6435a47155e2b8c4"
+    },
+    {
+      "path": "05_USER_FEEDBACK_VERBATIM.md",
+      "bytes": 1486,
+      "sha256": "64ec26fd656f9675b0e4c1bd621ac598ae9b696925d61cfdb6ebbe50fee872e4"
+    },
+    {
+      "path": "HANDOFF_QA.json",
+      "bytes": 396,
+      "sha256": "4e0ef617b54808c595b15f2f4a6817d0148cc6ee5875cd8e243473a71e7dac45"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2139,
+      "sha256": "997d432c9c2e3e7eb2a0985fca605117c14d9f549adbcae1eb9166d0f6ef29dc"
+    },
+    {
+      "path": "config/FIX1_CAP_OBSERVATIONS.json",
+      "bytes": 8292,
+      "sha256": "4b707c75a7a4f7766722adabc7148dd67579844335b4bbb39e31b80cecbe5d57"
+    },
+    {
+      "path": "config/asset_manifest.json",
+      "bytes": 5117,
+      "sha256": "dc09fde1990c4a70d6cae39797ff6e6f02963f02aceba412d6348977eda6494a"
+    },
+    {
+      "path": "config/battle_typography.json",
+      "bytes": 1794,
+      "sha256": "1597d67538774be0039bc3af512348d18d46564cab3df4987ac018a6e30955bc"
+    },
+    {
+      "path": "config/fix2_policy.json",
+      "bytes": 1746,
+      "sha256": "b62a06223735cfae0fbabb9bb791e8385a8463d8dbd408179561982836365012"
+    },
+    {
+      "path": "config/review_cases.json",
+      "bytes": 9260,
+      "sha256": "92b2cf8757e5c686e34546879fa3902ef89477eb47148368dc1eab853331f7ed"
+    },
+    {
+      "path": "references/approved/battle-depth-and-wall.png",
+      "bytes": 515307,
+      "sha256": "9b7b55a5055ee41bc4e6bf6c2162da25933083a4579da19a65200561de9fa69e"
+    },
+    {
+      "path": "references/approved/gate-and-crate-style.png",
+      "bytes": 157181,
+      "sha256": "8bedd4d8dd3c6a73d2c04d69c9c3dbe50f2b39621d034cba4eeb64242ef35292"
+    },
+    {
+      "path": "references/fix1/01-gate-converted.png",
+      "bytes": 507899,
+      "sha256": "a2560b97e6f8404b5e47152c0db76ed9717d9b4cdf26207ade42e1e1aabfb5d9"
+    },
+    {
+      "path": "references/fix1/02-equipment.png",
+      "bytes": 518895,
+      "sha256": "88d656530212f75bccc5f207f333dc332eff0f2b2adc0886825ae5b3b1af9887"
+    },
+    {
+      "path": "references/fix1/03-chain.png",
+      "bytes": 519504,
+      "sha256": "a623ccca589cd58fde73e4cb4b610c35038c3c85023ac04890e84b9a05fa619e"
+    },
+    {
+      "path": "references/fix1/06-large-enemy.png",
+      "bytes": 556150,
+      "sha256": "96308fffee5971f5f2070764493d1beb4e21154762549b5bfd268dacd1fb2391"
+    },
+    {
+      "path": "references/fix1/390x844-contact.png",
+      "bytes": 521339,
+      "sha256": "d70343546224df2c0b686f1bf8ea58e3a7413fccb8109852bc51983d3c4491bb"
+    },
+    {
+      "path": "references/fix1/390x844-gates-crates.png",
+      "bytes": 531034,
+      "sha256": "8caf72a3a711cfd342a4e365a9aeb84088dd532560300c73324253b5e3e061f6"
+    },
+    {
+      "path": "references/fix1/battle-showcase.mp4",
+      "bytes": 4848443,
+      "sha256": "31e08881b0f991a2747b1b2ce364f173c16c931207c416520e036554933fed7b"
+    },
+    {
+      "path": "references/fix1/clip-contact-sheet.jpg",
+      "bytes": 354210,
+      "sha256": "7c56bd3d04369f938f05af20ca9ca48fb2437290cbc408eb6d5d6f34e2bdf726"
+    },
+    {
+      "path": "sources/fix1/390x844-contact.json",
+      "bytes": 226639,
+      "sha256": "a7030f57227ae89349fa1863fdf024ce8760a2e7c5a403fbe2691f185a5d2aec"
+    },
+    {
+      "path": "sources/fix1/390x844-gates-crates.json",
+      "bytes": 227236,
+      "sha256": "6f603d59e9a27161cf405d159afcdec6435d1c80367124181d2a6ade5cb46c38"
+    },
+    {
+      "path": "sources/fix1/README.md",
+      "bytes": 596,
+      "sha256": "4b5dbd527bc140859701cf751999a27c1a7a1b29da694c82a0d754bd5e6f727a"
+    },
+    {
+      "path": "sources/fix1/docs/00_START_WITH_CODEX.md",
+      "bytes": 1135,
+      "sha256": "0001ca2a2859f805f79ac91ba545e923f51a41811e384b84a495cc27b0174ef6"
+    },
+    {
+      "path": "sources/fix1/docs/FINAL_REVIEW.md",
+      "bytes": 928,
+      "sha256": "f0c22558654e6d4d1b66798a58371e03a82f38350aeaa22475a5f80ba17661da"
+    },
+    {
+      "path": "sources/fix1/docs/KNOWN_GAPS.md",
+      "bytes": 594,
+      "sha256": "42d8918fa9e9b8830bb71e681753607b403ab1df4b20683a8a249857638f3ef3"
+    },
+    {
+      "path": "sources/fix1/evidence/CLIPS.json",
+      "bytes": 826,
+      "sha256": "27b80b757c10a4081a92137f7861b2e4b36171de5239ab133bbd3ca1a90fed5b"
+    },
+    {
+      "path": "sources/fix1/evidence/PRESERVED_CONTRACTS.json",
+      "bytes": 2886,
+      "sha256": "4e855329b483455176b870220a1b347791c1469c5e5b25afee7195a4eda1460f"
+    },
+    {
+      "path": "sources/fix1/evidence/SOURCE_DIFF.json",
+      "bytes": 845,
+      "sha256": "8ca822ef46f290fb00ea3408434b50256c3ef2779a9c56250033969767359424"
+    },
+    {
+      "path": "sources/fix1/evidence/natural-flow.json",
+      "bytes": 169317,
+      "sha256": "e0ac7bbc4a326f382c1d724ad4fc7ad1bd5492347061c75951f593cc2c18fb1c"
+    },
+    {
+      "path": "templates/CAP_AND_PACING_REPORT.json",
+      "bytes": 1418,
+      "sha256": "0e5292c2e5ffeb8b13c5abfc88338f5ed7151c6a70273e235d18ef658eea5d1b"
+    },
+    {
+      "path": "templates/DEVELOPER_READBACK.md",
+      "bytes": 1017,
+      "sha256": "538d1492804f2bffe81d6c82ee7103bc2babb48eee479425667f4285f75fc1df"
+    },
+    {
+      "path": "tools/verify_handoff.py",
+      "bytes": 1222,
+      "sha256": "695a97fdf71fa8c24920783363ebf96a7e381ae033afe84977dbb9091d50caa5"
+    }
+  ]
+}

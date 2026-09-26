@@ -1,0 +1,44 @@
+{
+  "scope": "Targeted browser checks; initial failures preserved and resolved by narrower final-build recheck. Not a natural or physical-device claim.",
+  "baselineTargeted": {
+    "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/report.json",
+    "passedChecks": 39,
+    "failedChecks": [
+      {
+        "id": "U04/R03",
+        "name": "375 legal two columns of 12 keep all 24 local IDs readable",
+        "error": "AssertionError [ERR_ASSERTION]: Missing dense-column-1:token:12"
+      },
+      {
+        "id": "U04/R03",
+        "name": "390 legal two columns of 12 keep all 24 local IDs readable",
+        "error": "AssertionError [ERR_ASSERTION]: Missing dense-column-1:token:12"
+      },
+      {
+        "id": "U04/R03",
+        "name": "430 legal two columns of 12 keep all 24 local IDs readable",
+        "error": "AssertionError [ERR_ASSERTION]: Missing dense-column-1:token:12"
+      }
+    ]
+  },
+  "finalLayoutRecheck": {
+    "path": "evidence/BATTLE-FIX2-20260925/layout-recheck/2026-09-25T16-49-49-829Z/report.json",
+    "passedChecks": 27,
+    "failures": []
+  },
+  "finalComparison": {
+    "path": "evidence/BATTLE-FIX2-20260925/after/2026-09-25T16-54-45-552Z/report.json",
+    "allOriginalFieldsEqual": true,
+    "states": 12
+  },
+  "resolvedFailures": [
+    "375/390/430 legal24-token label ownership: all24 visible on final build",
+    "Near three-digit flag: fixed plate width contains signed number",
+    "Near actor crate card moved below real formation"
+  ],
+  "remainingBoundary": [
+    "At375 short viewport, far objects can enter behind top HUD before text fits world-label bounds; near interaction remains clear.",
+    "Physical device is not tested."
+  ],
+  "passed": true
+}

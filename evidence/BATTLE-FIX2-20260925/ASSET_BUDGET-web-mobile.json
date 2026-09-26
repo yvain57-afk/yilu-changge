@@ -1,0 +1,3950 @@
+{
+  "generatedAt": "2026-09-25T16:46:31.122Z",
+  "mode": "compiled-output",
+  "platform": "web-mobile",
+  "sourceArtPreserved": true,
+  "atlasCoordinatesUnchanged": true,
+  "quality": "Exact RGBA preserved in every runtime frame plus 4px filtering guard; only unreachable atlas pixels become transparent. Same dimensions. No palette, scaling, or lossy codec.",
+  "contract": {
+    "atlasFiles": [
+      {
+        "path": "assets/scripts/ArtAtlas.ts",
+        "sha256": "e58c34aee420b6a61775eccc0c10b0b0a74863af9e44c18100f8f77b87962623"
+      },
+      {
+        "path": "assets/scripts/ArtAtlasV03.ts",
+        "sha256": "8a60884c5249c19a934e58d490d7c4e8ca2795ac1c860475cc7a73f67408a28c"
+      },
+      {
+        "path": "assets/scripts/ArtAtlasV031.ts",
+        "sha256": "712f9c309dc654ad7faf87a524f336024f9e5abde539278008e871486b1d7fbc"
+      },
+      {
+        "path": "assets/scripts/ArtAtlasV04.ts",
+        "sha256": "63d95e98b7cfe93df5a48df86c6e25b091daf2a281af19a6b97da9bf73d3e9f2"
+      },
+      {
+        "path": "assets/scripts/ArtAtlasV05.ts",
+        "sha256": "1d11c9deac04af702aded51c33979ca15113e0e90c5e8b3a42b200abc2d747de"
+      },
+      {
+        "path": "assets/scripts/ArtAtlasV051.ts",
+        "sha256": "ac05dbffb65aef2f6eec94326124d8cdd5a0797d75f66add5112aa56323201aa"
+      }
+    ],
+    "resourceCallers": [
+      "assets/scripts/ArtSprites.ts",
+      "assets/scripts/BattleAssets.ts",
+      "assets/scripts/HeroRig.ts",
+      "assets/scripts/Platform.ts",
+      "assets/scripts/ui/BattleFix2Assets.ts",
+      "assets/scripts/ui/PresentationAssets.ts"
+    ],
+    "presentationAssets": [
+      "assets/resources/ui20260925/result-bg.jpg",
+      "assets/resources/ui20260925/brand-title.png",
+      "assets/resources/ui20260925/home-bg.jpg",
+      "assets/resources/ui20260925/map-bg.jpg",
+      "assets/resources/ui20260925/gold-button.png",
+      "assets/resources/ui20260925/hero-blade.png",
+      "assets/resources/ui20260925/hero-home.png",
+      "assets/resources/ui20260925/camp-bg.jpg"
+    ],
+    "battleAssets": [
+      "assets/resources/battle20260925/soldiers.png",
+      "assets/resources/battle20260925/scenery.png",
+      "assets/resources/battle20260925/crates.png",
+      "assets/resources/battle20260925/gate-parts.png",
+      "assets/resources/battle20260925/heroes.png",
+      "assets/resources/battle20260925/bosses.png",
+      "assets/resources/battle20260925/companions.png",
+      "assets/resources/battle20260925/grass.jpg",
+      "assets/resources/battle20260925/distant.png",
+      "assets/resources/battle20260925/road.jpg"
+    ],
+    "fix2Assets": [
+      "assets/resources/battlefix2/blade.png",
+      "assets/resources/battlefix2/waves.png",
+      "assets/resources/battlefix2/environment.png",
+      "assets/resources/battlefix2/shadow.png",
+      "assets/resources/battlefix2/actions.png",
+      "assets/resources/battlefix2/zhao.png",
+      "assets/resources/battlefix2/wall-middle.png"
+    ],
+    "serializedFiles": [
+      "assets/scenes/Journey.scene"
+    ],
+    "serializedReferences": [],
+    "sfx": [
+      "gather",
+      "hit",
+      "break",
+      "hurt",
+      "warn"
+    ],
+    "musicRequested": false,
+    "loaderFrames": 378
+  },
+  "inventory": [
+    {
+      "source": "assets/resources/art/cart.png",
+      "uuid": "4f92e73c-2162-4816-9b0f-46698f695b22",
+      "bytes": 1416,
+      "sha256": "075d160e3d6c9fe04d27d8127444a3a35c174a080025762026e59766ffc755af",
+      "loaded": false,
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/ink.png",
+      "uuid": "b6462068-5533-4bba-bcce-2ec2b27e63b4",
+      "bytes": 2472,
+      "sha256": "826eb3326c6c0f4e186254e4b3c801f1cbd529e982d7f5342a7434269c8a0a6e",
+      "loaded": false,
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/landscape-0.png",
+      "uuid": "84b49c27-f7c3-44c9-ba83-ec58dcbc9845",
+      "bytes": 88827,
+      "sha256": "af5d4ceeef1d216e67bd64b4c2ce7069ff3c93f7b7b145ef7c897dc53ed8847a",
+      "loaded": false,
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/landscape-1.png",
+      "uuid": "1ae912b9-7822-44b2-9311-df40a35f8c47",
+      "bytes": 88751,
+      "sha256": "f9f117132c7e68aafc7468359946dd1b11bd77e1b4d2dfd0dfb9049be1d5ebaa",
+      "loaded": false,
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/landscape-2.png",
+      "uuid": "69356416-2560-4f5c-ba5c-2f0654a3a6b4",
+      "bytes": 33101,
+      "sha256": "e78749684a44fe3483dd85eb6d12dbc9371d4e77a62b41143b0389af9fe33dd1",
+      "loaded": false,
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/rock.png",
+      "uuid": "770fdb90-6908-4b59-93c4-b38460585467",
+      "bytes": 1778,
+      "sha256": "221f5e99d9f6fb334b6ee3ed13c85aec07676dfe80e06dec9ebec30e05602261",
+      "loaded": false,
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/soldier.png",
+      "uuid": "4628b3c8-68ed-4eed-9804-c8ab8369fd53",
+      "bytes": 1135,
+      "sha256": "b9725188c0a3b4ca6bff9eda5fa8ec3e737addca1876e1dd8d12c5b9b84eec03",
+      "loaded": false,
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/sparrow.png",
+      "uuid": "4ed9d725-538e-4ca9-81ed-c68712e75a10",
+      "bytes": 1279,
+      "sha256": "b36191d8f0b6dc9aad09da2e9dc6f47512ae4867ad75e9527224a3bde2d3b53c",
+      "loaded": false,
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/traveler.png",
+      "uuid": "dc300c8e-7d11-44de-bc19-fd31941b6c65",
+      "bytes": 2167,
+      "sha256": "bec457421097c5857390946bf9f18b204d206fc283cb23592349da00b0e022b4",
+      "loaded": false,
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/wood.png",
+      "uuid": "917f855e-aaec-4589-8545-8364bfefbf8d",
+      "bytes": 2467,
+      "sha256": "06609d423832ab28d4e83108e3a465104a49ce99791baa7580e284021897f01b",
+      "loaded": false,
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/audio/break.mp3",
+      "uuid": "eaa0ff9f-7dbf-4ccb-a284-22b2bda80e81",
+      "bytes": 2759,
+      "sha256": "a792daf8c80a915f089ef8dd69c7b991ddd82af115062f7300d0e45f69c2bbf7",
+      "loaded": true,
+      "reason": "Platform SFX whitelist"
+    },
+    {
+      "source": "assets/resources/audio/gather.mp3",
+      "uuid": "76274ed3-1f31-4677-8536-022bbbf765cc",
+      "bytes": 6312,
+      "sha256": "31bbdad4a26a001e9ce7b360dacb1d2617c2a52861194dca7317c8a61f40bf66",
+      "loaded": true,
+      "reason": "Platform SFX whitelist"
+    },
+    {
+      "source": "assets/resources/audio/hit.mp3",
+      "uuid": "7ee8c4c6-ccc3-4454-b1a8-1a83dd57bd8b",
+      "bytes": 1505,
+      "sha256": "e0c56190020ae7be5bdb329b79a810e9761c4ae038212d84564af0c5dba087c1",
+      "loaded": true,
+      "reason": "Platform SFX whitelist"
+    },
+    {
+      "source": "assets/resources/audio/hurt.mp3",
+      "uuid": "6203fabf-0570-4acc-9212-178d0106e49d",
+      "bytes": 3595,
+      "sha256": "16c55c77040394c5e5cd68959350db3510d9ac9b3bd7d3e0f4cf1c5757a33423",
+      "loaded": true,
+      "reason": "Platform SFX whitelist"
+    },
+    {
+      "source": "assets/resources/audio/music.mp3",
+      "uuid": "a88269ff-c70b-4c3c-b7f1-b56c58916218",
+      "bytes": 128774,
+      "sha256": "b16ba541ef475d7c4d3917f103671e0f4deeb518a5196b1abd752527e8a10f67",
+      "loaded": false,
+      "reason": "BGM disabled: no load request"
+    },
+    {
+      "source": "assets/resources/audio/warn.mp3",
+      "uuid": "077d75a1-d656-4a57-889c-63ef6cf24ef8",
+      "bytes": 4013,
+      "sha256": "99a7ac1ef3e111cd697e45bf2266447f6e01a95395f1aba472419fdafd143fce",
+      "loaded": true,
+      "reason": "Platform SFX whitelist"
+    },
+    {
+      "source": "assets/resources/audio-v031/music-battle.m4a",
+      "uuid": "c6018ba7-e96b-44a7-8085-79fe615cca75",
+      "bytes": 1865512,
+      "sha256": "91b99afa2695415731820e9e8a1b13de0ea1511a2dd08dbbdfd554cd51d2bae1",
+      "loaded": false,
+      "reason": "BGM disabled: no load request"
+    },
+    {
+      "source": "assets/resources/battle20260925/bosses.png",
+      "uuid": "ff5917e1-db02-4cfe-9542-f4a668d4b073",
+      "bytes": 180156,
+      "sha256": "9d2806319b2ea7455d86b5352f671fff4fcf9e617d52b46209ceb0537a05f3c4",
+      "loaded": true,
+      "reason": "BattleAssets production manifest whitelist"
+    },
+    {
+      "source": "assets/resources/battle20260925/companions.png",
+      "uuid": "c4a7ddb5-7813-4b59-9804-4372834ee5b8",
+      "bytes": 59330,
+      "sha256": "b16215f180ddf0d4c5405b62df784754dcf2408d98fd32e23324b175ce9cea0c",
+      "loaded": true,
+      "reason": "BattleAssets production manifest whitelist"
+    },
+    {
+      "source": "assets/resources/battle20260925/crates.png",
+      "uuid": "3574a907-8101-40d9-b1a0-01e929671a94",
+      "bytes": 163514,
+      "sha256": "1245b890834f166b6e7205a1f8b58ef546d6830eafb6d0b5c77b00a33c821a07",
+      "loaded": true,
+      "reason": "BattleAssets production manifest whitelist"
+    },
+    {
+      "source": "assets/resources/battle20260925/distant.png",
+      "uuid": "0a0bd130-f23c-4db7-a908-7e336497459e",
+      "bytes": 556231,
+      "sha256": "54f39a89b76cdaad57563d630b5583ffa8fbfde30b26ca130070db47e78ff08b",
+      "loaded": true,
+      "reason": "BattleAssets production manifest whitelist"
+    },
+    {
+      "source": "assets/resources/battle20260925/gate-parts.png",
+      "uuid": "8e2e2234-86cc-4688-915b-632f7acd73f6",
+      "bytes": 180238,
+      "sha256": "c0c972921bfa114447e2a1a649fe3c5d5af4a955be4c53be782a8b62467450fb",
+      "loaded": true,
+      "reason": "BattleAssets production manifest whitelist"
+    },
+    {
+      "source": "assets/resources/battle20260925/grass.jpg",
+      "uuid": "812683c3-d902-490a-9b68-2df863530e5e",
+      "bytes": 64361,
+      "sha256": "9366a85600a192c13fafb4052a8d2bd5eca9ad157e9db38e32c56c457a094cc6",
+      "loaded": true,
+      "reason": "BattleAssets production manifest whitelist"
+    },
+    {
+      "source": "assets/resources/battle20260925/heroes.png",
+      "uuid": "0c03037c-ea2f-47f1-969b-e19b90789d69",
+      "bytes": 127398,
+      "sha256": "d1ca90e59597dae7c3f6cf0721faa46bd736b1785f502b44a37ac97a84f09af3",
+      "loaded": true,
+      "reason": "BattleAssets production manifest whitelist"
+    },
+    {
+      "source": "assets/resources/battle20260925/road.jpg",
+      "uuid": "bc08b5ec-55d4-4fff-b188-e4394363c499",
+      "bytes": 93297,
+      "sha256": "e5aab5c57d636c3b357523382666d7cbe4738bdb89fdf32f2b278509a07701e2",
+      "loaded": true,
+      "reason": "BattleAssets production manifest whitelist"
+    },
+    {
+      "source": "assets/resources/battle20260925/scenery.png",
+      "uuid": "76e6f701-9570-4118-b39f-9b5db7137951",
+      "bytes": 180576,
+      "sha256": "ce5025c52e170050bc209ff8ac4e4b024c867295ce0625bb2b4ae54a21c70405",
+      "loaded": true,
+      "reason": "BattleAssets production manifest whitelist"
+    },
+    {
+      "source": "assets/resources/battle20260925/soldiers.png",
+      "uuid": "a91a7793-81f0-4bb7-80b5-250c335603b4",
+      "bytes": 49622,
+      "sha256": "df9cab6da83288b57544c7f54190f4ad60046c2d6f4403c43d11f9e0ea92f8f3",
+      "loaded": true,
+      "reason": "BattleAssets production manifest whitelist"
+    },
+    {
+      "source": "assets/resources/battlefix2/actions.png",
+      "uuid": "6a376794-7761-4530-9b8b-09f929ee259d",
+      "bytes": 206823,
+      "sha256": "a6d06f6e3c24cf63ddb5cc91953a03a825ed8b4620bcc427fdb0e0effb2fb792",
+      "loaded": true,
+      "reason": "Merged ART_FRAMES loaded by ArtSprites"
+    },
+    {
+      "source": "assets/resources/battlefix2/blade.png",
+      "uuid": "178b47fa-51ce-4378-a31b-02d9550bd705",
+      "bytes": 41610,
+      "sha256": "a52b78f8bd38ae891f2f09a8639e00d552350f2b69d87467427709ba6fa39c04",
+      "loaded": true,
+      "reason": "Merged ART_FRAMES loaded by ArtSprites"
+    },
+    {
+      "source": "assets/resources/battlefix2/environment.png",
+      "uuid": "99443c1a-f45b-4cda-8c2b-2b126706d278",
+      "bytes": 71539,
+      "sha256": "4516ba1f3f2297e8db2d61063cd5a0007ec97848bc4543c2c0f48e8999e1ac2d",
+      "loaded": true,
+      "reason": "Merged ART_FRAMES loaded by ArtSprites"
+    },
+    {
+      "source": "assets/resources/battlefix2/shadow.png",
+      "uuid": "57299ec4-949a-4bb6-87b7-585afa7a8884",
+      "bytes": 5753,
+      "sha256": "0bb08d11f55a63498d8198e9c4ce515bd51cc60cd7b80d96c4565f3bd8728aef",
+      "loaded": true,
+      "reason": "Merged ART_FRAMES loaded by ArtSprites"
+    },
+    {
+      "source": "assets/resources/battlefix2/wall-middle.png",
+      "uuid": "213e7942-6002-48a3-8eca-3bdde9f8d9f9",
+      "bytes": 19486,
+      "sha256": "28c546a36894c2e29eca4fb8f2d70d75e78243c161fc33fab29023ae8ce550f2",
+      "loaded": true,
+      "reason": "Merged ART_FRAMES loaded by ArtSprites"
+    },
+    {
+      "source": "assets/resources/battlefix2/waves.png",
+      "uuid": "cc69ffdb-d72c-49e2-b252-8e4245dfa721",
+      "bytes": 135803,
+      "sha256": "b181f20e0583dcfcac4e292c14efe450640dfc9c626c6998dabb143d7e46e033",
+      "loaded": true,
+      "reason": "Merged ART_FRAMES loaded by ArtSprites"
+    },
+    {
+      "source": "assets/resources/battlefix2/zhao.png",
+      "uuid": "828c7824-4d1c-419f-9379-4f63c7bc1ccb",
+      "bytes": 43639,
+      "sha256": "42db3e0609240f7ef2360a2be86eaf60cb9d9ee2c21adc12adaef14c90c38f5d",
+      "loaded": true,
+      "reason": "Merged ART_FRAMES loaded by ArtSprites"
+    },
+    {
+      "source": "assets/resources/ui20260925/brand-title.png",
+      "uuid": "90d6679e-ab10-42d6-b446-35b8481a2834",
+      "bytes": 71342,
+      "sha256": "ae443fe6e88ca66ca236a11f60f7908c03dc1844ad34ee1df11c7c9d18b842f1",
+      "loaded": true,
+      "reason": "Independent PresentationAssets manifest whitelist"
+    },
+    {
+      "source": "assets/resources/ui20260925/camp-bg.jpg",
+      "uuid": "f55ac691-dba8-4aae-8090-9fefb9c1316f",
+      "bytes": 104052,
+      "sha256": "77caaacc066beda98480c258bc28d0bfca9c5d755bc91691ada045217c86bec7",
+      "loaded": true,
+      "reason": "Independent PresentationAssets manifest whitelist"
+    },
+    {
+      "source": "assets/resources/ui20260925/gold-button.png",
+      "uuid": "a65a6514-ff8e-4507-aed1-d8a3926c6461",
+      "bytes": 55357,
+      "sha256": "9463f58d27c241fd05521dc8bdba6e486fef8392aef1fcf8c74ab53cab88ccb3",
+      "loaded": true,
+      "reason": "Independent PresentationAssets manifest whitelist"
+    },
+    {
+      "source": "assets/resources/ui20260925/hero-blade.png",
+      "uuid": "583fb5e8-96d8-4a58-a33c-8e71e8bb2caf",
+      "bytes": 125712,
+      "sha256": "e6f32dedc3dcda3e287105dd7981b57b16893fd329a35d9d7723c68270dda5a6",
+      "loaded": true,
+      "reason": "Independent PresentationAssets manifest whitelist"
+    },
+    {
+      "source": "assets/resources/ui20260925/hero-home.png",
+      "uuid": "cda34036-3556-49eb-9742-a2109e835549",
+      "bytes": 120503,
+      "sha256": "e6a93eca7ed89b971dd16b868322272080df0f6b56fe6926b423a40f6c8f97ac",
+      "loaded": true,
+      "reason": "Independent PresentationAssets manifest whitelist"
+    },
+    {
+      "source": "assets/resources/ui20260925/home-bg.jpg",
+      "uuid": "48c3c467-b408-43f4-aa79-081546b0406b",
+      "bytes": 110316,
+      "sha256": "946a66ff5a8c4c3d7a4c27fdf3914f1fcabbf15a7741c480ac1aac233fed316e",
+      "loaded": true,
+      "reason": "Independent PresentationAssets manifest whitelist"
+    },
+    {
+      "source": "assets/resources/ui20260925/map-bg.jpg",
+      "uuid": "f57501bb-4a58-476d-987a-8691d114a1c0",
+      "bytes": 183733,
+      "sha256": "277eca86476d2eb40dce4da7bae8f07d4f7d99791e4ff67c0318120a6a96e6e6",
+      "loaded": true,
+      "reason": "Independent PresentationAssets manifest whitelist"
+    },
+    {
+      "source": "assets/resources/ui20260925/result-bg.jpg",
+      "uuid": "e41e3c40-16d4-4cd4-9169-a497f07fd30f",
+      "bytes": 97141,
+      "sha256": "7646938e30c42955c7ad94d0a49fca521eedc571cdd9c17ca2b2f5b77d09e107",
+      "loaded": true,
+      "reason": "Independent PresentationAssets manifest whitelist"
+    },
+    {
+      "source": "assets/resources/v031/archers.png",
+      "uuid": "079a184f-d120-4a14-ba21-e137ff8cdb86",
+      "bytes": 2126374,
+      "sha256": "79c0b60a5558a3169713b9300055cda41c316475569a05d248e4e375f765b393",
+      "loaded": true,
+      "reason": "Merged ART_FRAMES loaded by ArtSprites"
+    },
+    {
+      "source": "assets/resources/v04/spear-hero.png",
+      "uuid": "dff5a617-2f8b-4767-807b-ab290886caff",
+      "bytes": 1949290,
+      "sha256": "c066db628f8a493c1c8ed500e58e1472e5bc3328cc18c3699c0b71a16a8aec00",
+      "loaded": true,
+      "reason": "Merged ART_FRAMES loaded by ArtSprites"
+    },
+    {
+      "source": "assets/resources/v04/spear.png",
+      "uuid": "9268763b-05be-48b6-a2be-24a25f8532d2",
+      "bytes": 146434,
+      "sha256": "bb021f81546acd5d0045371933d6a0852409b004d0adc6c31e1cf930a6537f0d",
+      "loaded": true,
+      "reason": "Merged ART_FRAMES loaded by ArtSprites"
+    },
+    {
+      "source": "assets/resources/v04/zhaoyun.png",
+      "uuid": "db0d01b5-2581-4f79-b9a6-7eec8f4d8381",
+      "bytes": 1748995,
+      "sha256": "dfa0a0321d0070d79ef3ff754a2ad50707dbab4938927c5cbf06ad3e27e0c76a",
+      "loaded": false,
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/v05/cast.png",
+      "uuid": "2dd04d23-56ff-4b1d-b60a-04820e67cf28",
+      "bytes": 1081095,
+      "sha256": "e550fe48982205119c67991d50529738971093215691f59aaf97df329593c951",
+      "loaded": true,
+      "reason": "Merged ART_FRAMES loaded by ArtSprites"
+    },
+    {
+      "source": "assets/resources/v05/weapons.png",
+      "uuid": "fd3303dc-1047-4e3e-83ab-9f346876e32e",
+      "bytes": 1534361,
+      "sha256": "84b3409aeac0fc0db506bf9624789b4e32a55c76b32f1405bf8faab78a84b284",
+      "loaded": true,
+      "reason": "Merged ART_FRAMES loaded by ArtSprites"
+    },
+    {
+      "source": "assets/resources/v051/allies.png",
+      "uuid": "daddd450-ea58-4380-8fd3-f89e803ca338",
+      "bytes": 1354438,
+      "sha256": "5614d21e445536a40cc15d58e9de92e64d81900c33ccaa23681a4fb3a70278fd",
+      "loaded": false,
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/v051/blade-hero.png",
+      "uuid": "c4f2fd53-2936-4484-9409-6332d0eee16b",
+      "bytes": 1409633,
+      "sha256": "e8c24a5ce8d318a7dc449242c00f95c24ba4cf36bf4957ff0e3e025fa05a8b66",
+      "loaded": true,
+      "reason": "Merged ART_FRAMES loaded by ArtSprites"
+    },
+    {
+      "source": "assets/resources/v2/hero-a-rig.png",
+      "uuid": "9905285d-3e53-4f9e-8507-3e7a3c04cf3f",
+      "bytes": 827673,
+      "sha256": "7d9d85ad6a5c378a66ca6fbfe4d05ecaf89ac0e91568d8819a9ef60384957a01",
+      "loaded": false,
+      "reason": "HeroRig has no runtime load/constructor call; Pose is a type only"
+    },
+    {
+      "source": "assets/resources/v3/actors.png",
+      "uuid": "74ea62e0-29e8-4760-a973-1500b899b8c7",
+      "bytes": 1388058,
+      "sha256": "14dcb6d5692d39709710d135db0b37d066cd7548a5b9933dd9385c1ba6941e1a",
+      "loaded": true,
+      "reason": "Merged ART_FRAMES loaded by ArtSprites"
+    },
+    {
+      "source": "assets/resources/v3/scenery.png",
+      "uuid": "78e14d24-08d4-48b7-8ef7-dee292d5c033",
+      "bytes": 1784681,
+      "sha256": "e55c72f08ce0f74f736c147479dbc257e9f4e942f95b676026f7da4a595a1080",
+      "loaded": true,
+      "reason": "Merged ART_FRAMES loaded by ArtSprites"
+    },
+    {
+      "source": "assets/resources/v4/enemies.png",
+      "uuid": "02b99c7d-dec3-4346-b692-ca9aaadbf696",
+      "bytes": 1883386,
+      "sha256": "1743774f0a20a11661c4244f7df112a12bd688baceee43267599322802e6da6e",
+      "loaded": true,
+      "reason": "Merged ART_FRAMES loaded by ArtSprites"
+    },
+    {
+      "source": "assets/resources/v4/heroes.png",
+      "uuid": "c698781f-f9ba-45fc-ae45-8ead3fdf5c34",
+      "bytes": 1571126,
+      "sha256": "3678351c4166367ef40f6682eecba8432bde1bd9795a56273b956c5648f9932a",
+      "loaded": false,
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/v4/scenery.png",
+      "uuid": "15aec887-a6bb-4792-a785-0aea83036ae7",
+      "bytes": 2483733,
+      "sha256": "dba799d87f5a2f120649cdb3e9669a6a7fedd053f00118417669d0e83955cf2a",
+      "loaded": true,
+      "reason": "Merged ART_FRAMES loaded by ArtSprites"
+    }
+  ],
+  "duplicateContent": [],
+  "operations": [
+    {
+      "sheet": "battle20260925/bosses",
+      "width": 716,
+      "height": 651,
+      "frames": [
+        {
+          "name": "battle:bossXingWalk0",
+          "rect": [
+            4,
+            4,
+            141,
+            202
+          ],
+          "pivot": [
+            75.12279151943463,
+            201.5111111111111
+          ]
+        },
+        {
+          "name": "battle:bossXingWalk1",
+          "rect": [
+            183,
+            4,
+            171,
+            207
+          ],
+          "pivot": [
+            245.2609011627907,
+            203.01927710843376
+          ]
+        },
+        {
+          "name": "battle:bossXingAttack",
+          "rect": [
+            362,
+            4,
+            115,
+            209
+          ],
+          "pivot": [
+            410.9493534482759,
+            205.53571428571428
+          ]
+        },
+        {
+          "name": "battle:bossXingHurt",
+          "rect": [
+            541,
+            4,
+            142,
+            179
+          ],
+          "pivot": [
+            616.5926573426573,
+            177.51532033426184
+          ]
+        },
+        {
+          "name": "battle:bossChenWalk0",
+          "rect": [
+            4,
+            221,
+            114,
+            192
+          ],
+          "pivot": [
+            59.63100436681223,
+            420.9792207792208
+          ]
+        },
+        {
+          "name": "battle:bossChenWalk1",
+          "rect": [
+            183,
+            221,
+            123,
+            193
+          ],
+          "pivot": [
+            239.8937246963563,
+            419.4716494845361
+          ]
+        },
+        {
+          "name": "battle:bossChenAttack",
+          "rect": [
+            362,
+            221,
+            129,
+            188
+          ],
+          "pivot": [
+            427.3682692307692,
+            414.47089947089944
+          ]
+        },
+        {
+          "name": "battle:bossChenHurt",
+          "rect": [
+            541,
+            221,
+            127,
+            187
+          ],
+          "pivot": [
+            607.1044921875,
+            415.97866666666664
+          ]
+        },
+        {
+          "name": "battle:bossYangWalk0",
+          "rect": [
+            4,
+            438,
+            138,
+            208
+          ],
+          "pivot": [
+            75.35791366906474,
+            654.4391408114559
+          ]
+        },
+        {
+          "name": "battle:bossYangWalk1",
+          "rect": [
+            183,
+            438,
+            143,
+            207
+          ],
+          "pivot": [
+            254.87369337979095,
+            653.4591346153846
+          ]
+        },
+        {
+          "name": "battle:bossYangAttack",
+          "rect": [
+            362,
+            438,
+            150,
+            206
+          ],
+          "pivot": [
+            408.22093023255815,
+            651.9613526570048
+          ]
+        },
+        {
+          "name": "battle:bossYangHurt",
+          "rect": [
+            541,
+            438,
+            131,
+            198
+          ],
+          "pivot": [
+            593.9230038022814,
+            644.4572864321608
+          ]
+        }
+      ],
+      "beforeBytes": 180156,
+      "afterBytes": 180156,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 111245,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "66748af0866a472123051ec77e6e73dd88f966178f21cfdfc82d5d852605673d",
+      "beforeSha256": "9d2806319b2ea7455d86b5352f671fff4fcf9e617d52b46209ceb0537a05f3c4",
+      "afterSha256": "9d2806319b2ea7455d86b5352f671fff4fcf9e617d52b46209ceb0537a05f3c4",
+      "path": "assets/resources/native/ff/ff5917e1-db02-4cfe-9542-f4a668d4b073.png"
+    },
+    {
+      "sheet": "battle20260925/companions",
+      "width": 500,
+      "height": 344,
+      "frames": [
+        {
+          "name": "zhaoyun",
+          "rect": [
+            4,
+            176,
+            95,
+            164
+          ],
+          "pivot": [
+            42.430420711974115,
+            339.0820895522388
+          ]
+        },
+        {
+          "name": "companion1Pose0",
+          "rect": [
+            4,
+            4,
+            95,
+            152
+          ],
+          "pivot": [
+            39.24193548387097,
+            154.4738955823293
+          ]
+        },
+        {
+          "name": "companion1Pose1",
+          "rect": [
+            129,
+            4,
+            100,
+            150
+          ],
+          "pivot": [
+            179.76687116564418,
+            153.6938775510204
+          ]
+        },
+        {
+          "name": "companion1Pose2",
+          "rect": [
+            254,
+            4,
+            108,
+            146
+          ],
+          "pivot": [
+            289.59090909090907,
+            148.46638655462186
+          ]
+        },
+        {
+          "name": "companion1Pose3",
+          "rect": [
+            379,
+            4,
+            85,
+            130
+          ],
+          "pivot": [
+            425.1823104693141,
+            136.14117647058822
+          ]
+        },
+        {
+          "name": "companion2Pose0",
+          "rect": [
+            4,
+            176,
+            95,
+            164
+          ],
+          "pivot": [
+            42.430420711974115,
+            339.0820895522388
+          ]
+        },
+        {
+          "name": "companion2Pose1",
+          "rect": [
+            129,
+            176,
+            98,
+            158
+          ],
+          "pivot": [
+            178.9216300940439,
+            340.1240310077519
+          ]
+        },
+        {
+          "name": "companion2Pose2",
+          "rect": [
+            254,
+            176,
+            117,
+            159
+          ],
+          "pivot": [
+            292.38582677165357,
+            334.6936416184971
+          ]
+        },
+        {
+          "name": "companion2Pose3",
+          "rect": [
+            379,
+            176,
+            91,
+            147
+          ],
+          "pivot": [
+            429.0959595959596,
+            327.5841995841996
+          ]
+        },
+        {
+          "name": "battle:panWalk0",
+          "rect": [
+            4,
+            4,
+            95,
+            152
+          ],
+          "pivot": [
+            39.24193548387097,
+            154.4738955823293
+          ]
+        },
+        {
+          "name": "battle:panWalk1",
+          "rect": [
+            129,
+            4,
+            100,
+            150
+          ],
+          "pivot": [
+            179.76687116564418,
+            153.6938775510204
+          ]
+        },
+        {
+          "name": "battle:panAttack",
+          "rect": [
+            254,
+            4,
+            108,
+            146
+          ],
+          "pivot": [
+            289.59090909090907,
+            148.46638655462186
+          ]
+        },
+        {
+          "name": "battle:panHurt",
+          "rect": [
+            379,
+            4,
+            85,
+            130
+          ],
+          "pivot": [
+            425.1823104693141,
+            136.14117647058822
+          ]
+        },
+        {
+          "name": "battle:zhaoWalk0",
+          "rect": [
+            4,
+            176,
+            95,
+            164
+          ],
+          "pivot": [
+            42.430420711974115,
+            339.0820895522388
+          ]
+        },
+        {
+          "name": "battle:zhaoWalk1",
+          "rect": [
+            129,
+            176,
+            98,
+            158
+          ],
+          "pivot": [
+            178.9216300940439,
+            340.1240310077519
+          ]
+        },
+        {
+          "name": "battle:zhaoAttack",
+          "rect": [
+            254,
+            176,
+            117,
+            159
+          ],
+          "pivot": [
+            292.38582677165357,
+            334.6936416184971
+          ]
+        },
+        {
+          "name": "battle:zhaoHurt",
+          "rect": [
+            379,
+            176,
+            91,
+            147
+          ],
+          "pivot": [
+            429.0959595959596,
+            327.5841995841996
+          ]
+        }
+      ],
+      "beforeBytes": 59330,
+      "afterBytes": 59330,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 36226,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "db4ed294fbfa81e9c092de376c38cb185c4fe07b76130434e1dcfcf7a467c9ed",
+      "beforeSha256": "b16215f180ddf0d4c5405b62df784754dcf2408d98fd32e23324b175ce9cea0c",
+      "afterSha256": "b16215f180ddf0d4c5405b62df784754dcf2408d98fd32e23324b175ce9cea0c",
+      "path": "assets/resources/native/c4/c4a7ddb5-7813-4b59-9804-4372834ee5b8.png"
+    },
+    {
+      "sheet": "battle20260925/crates",
+      "width": 708,
+      "height": 436,
+      "frames": [
+        {
+          "name": "battle:boxTroops",
+          "rect": [
+            4,
+            4,
+            160,
+            154
+          ],
+          "pivot": [
+            84.65753424657535,
+            159.3125
+          ]
+        },
+        {
+          "name": "battle:boxEquipment",
+          "rect": [
+            181,
+            4,
+            162,
+            172
+          ],
+          "pivot": [
+            261.56216216216217,
+            178.1938775510204
+          ]
+        },
+        {
+          "name": "battle:boxChain",
+          "rect": [
+            358,
+            4,
+            161,
+            210
+          ],
+          "pivot": [
+            438.0625,
+            212.69022869022868
+          ]
+        },
+        {
+          "name": "battle:boxCompanion",
+          "rect": [
+            535,
+            4,
+            162,
+            182
+          ],
+          "pivot": [
+            616.8756756756757,
+            184.25
+          ]
+        },
+        {
+          "name": "battle:boxTroopsOpen",
+          "rect": [
+            4,
+            222,
+            169,
+            196
+          ],
+          "pivot": [
+            82.6046511627907,
+            426.75
+          ]
+        },
+        {
+          "name": "battle:boxEquipmentOpen",
+          "rect": [
+            181,
+            222,
+            166,
+            192
+          ],
+          "pivot": [
+            261.8157894736842,
+            424.0821917808219
+          ]
+        },
+        {
+          "name": "battle:boxChainOpen",
+          "rect": [
+            358,
+            222,
+            168,
+            195
+          ],
+          "pivot": [
+            440.46475195822455,
+            425.3071748878924
+          ]
+        },
+        {
+          "name": "battle:boxCompanionOpen",
+          "rect": [
+            535,
+            222,
+            167,
+            196
+          ],
+          "pivot": [
+            619.1574803149606,
+            422.8232662192394
+          ]
+        }
+      ],
+      "beforeBytes": 163514,
+      "afterBytes": 163514,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 39394,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "2d9cd011e9ab5160d666c7d2ea12698e82fd4619624d2f1c4dfaa4e32555e015",
+      "beforeSha256": "1245b890834f166b6e7205a1f8b58ef546d6830eafb6d0b5c77b00a33c821a07",
+      "afterSha256": "1245b890834f166b6e7205a1f8b58ef546d6830eafb6d0b5c77b00a33c821a07",
+      "path": "assets/resources/native/35/3574a907-8101-40d9-b1a0-01e929671a94.png"
+    },
+    {
+      "sheet": "battle20260925/distant",
+      "width": 768,
+      "height": 512,
+      "frames": [
+        {
+          "name": "battle:distantBackdrop",
+          "rect": [
+            0,
+            0,
+            768,
+            512
+          ],
+          "pivot": [
+            384,
+            512
+          ]
+        }
+      ],
+      "beforeBytes": 556231,
+      "afterBytes": 556231,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 0,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "02b7be15070045ff69aa4997821f190429d025be60dcb1c2f2ddd262351e44df",
+      "beforeSha256": "54f39a89b76cdaad57563d630b5583ffa8fbfde30b26ca130070db47e78ff08b",
+      "afterSha256": "54f39a89b76cdaad57563d630b5583ffa8fbfde30b26ca130070db47e78ff08b",
+      "path": "assets/resources/native/0a/0a0bd130-f23c-4db7-a908-7e336497459e.png"
+    },
+    {
+      "sheet": "battle20260925/gate-parts",
+      "width": 1128,
+      "height": 948,
+      "frames": [
+        {
+          "name": "battle:gatePost",
+          "rect": [
+            4,
+            4,
+            93,
+            293
+          ],
+          "pivot": [
+            50.5,
+            297
+          ]
+        },
+        {
+          "name": "battle:gateBlue",
+          "rect": [
+            286,
+            4,
+            168,
+            281
+          ],
+          "pivot": [
+            370,
+            285
+          ]
+        },
+        {
+          "name": "battle:gateRed",
+          "rect": [
+            568,
+            4,
+            165,
+            280
+          ],
+          "pivot": [
+            650.5,
+            284
+          ]
+        },
+        {
+          "name": "battle:gateNeutral",
+          "rect": [
+            850,
+            4,
+            167,
+            280
+          ],
+          "pivot": [
+            933.5,
+            284
+          ]
+        },
+        {
+          "name": "battle:iconHelmet",
+          "rect": [
+            4,
+            320,
+            155,
+            194
+          ],
+          "pivot": [
+            81.5,
+            514
+          ]
+        },
+        {
+          "name": "battle:iconSkull",
+          "rect": [
+            286,
+            320,
+            80,
+            103
+          ],
+          "pivot": [
+            326,
+            423
+          ]
+        },
+        {
+          "name": "battle:weaponCrossbow",
+          "rect": [
+            568,
+            320,
+            274,
+            290
+          ],
+          "pivot": [
+            705,
+            610
+          ]
+        },
+        {
+          "name": "battle:fireArrow",
+          "rect": [
+            850,
+            320,
+            98,
+            308
+          ],
+          "pivot": [
+            899,
+            628
+          ]
+        },
+        {
+          "name": "battle:woodFragment0",
+          "rect": [
+            4,
+            636,
+            129,
+            172
+          ],
+          "pivot": [
+            68.5,
+            808
+          ]
+        },
+        {
+          "name": "battle:woodFragment1",
+          "rect": [
+            286,
+            636,
+            126,
+            122
+          ],
+          "pivot": [
+            349,
+            758
+          ]
+        },
+        {
+          "name": "battle:woodFragment2",
+          "rect": [
+            568,
+            636,
+            115,
+            101
+          ],
+          "pivot": [
+            625.5,
+            737
+          ]
+        },
+        {
+          "name": "battle:boxLock",
+          "rect": [
+            850,
+            636,
+            75,
+            68
+          ],
+          "pivot": [
+            887.5,
+            704
+          ]
+        }
+      ],
+      "beforeBytes": 180238,
+      "afterBytes": 180238,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 665834,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "c6dcdadf6e07ab85ee331ae63c15eeef126ae8be5fd96a9cfd632f9090a8cb2f",
+      "beforeSha256": "c0c972921bfa114447e2a1a649fe3c5d5af4a955be4c53be782a8b62467450fb",
+      "afterSha256": "c0c972921bfa114447e2a1a649fe3c5d5af4a955be4c53be782a8b62467450fb",
+      "path": "assets/resources/native/8e/8e2e2234-86cc-4688-915b-632f7acd73f6.png"
+    },
+    {
+      "sheet": "battle20260925/heroes",
+      "width": 776,
+      "height": 591,
+      "frames": [
+        {
+          "name": "companion0Pose0",
+          "rect": [
+            4,
+            398,
+            151,
+            177
+          ],
+          "pivot": [
+            79.27051671732524,
+            576.8341968911917
+          ]
+        },
+        {
+          "name": "companion0Pose1",
+          "rect": [
+            198,
+            398,
+            123,
+            174
+          ],
+          "pivot": [
+            247.06179775280899,
+            572
+          ]
+        },
+        {
+          "name": "companion0Pose2",
+          "rect": [
+            392,
+            398,
+            154,
+            189
+          ],
+          "pivot": [
+            438.88955223880595,
+            587.9174757281553
+          ]
+        },
+        {
+          "name": "companion0Pose3",
+          "rect": [
+            586,
+            398,
+            123,
+            154
+          ],
+          "pivot": [
+            653.0280898876405,
+            561.625
+          ]
+        },
+        {
+          "name": "battle:heroSpearWalk0",
+          "rect": [
+            4,
+            4,
+            113,
+            158
+          ],
+          "pivot": [
+            70.33603238866397,
+            160.1627906976744
+          ]
+        },
+        {
+          "name": "battle:heroSpearWalk1",
+          "rect": [
+            198,
+            4,
+            111,
+            180
+          ],
+          "pivot": [
+            258.5663900414938,
+            180.32653061224488
+          ]
+        },
+        {
+          "name": "battle:heroSpearAttack",
+          "rect": [
+            392,
+            4,
+            178,
+            154
+          ],
+          "pivot": [
+            440.62886597938143,
+            157.0805970149254
+          ]
+        },
+        {
+          "name": "battle:heroSpearHurt",
+          "rect": [
+            586,
+            4,
+            113,
+            157
+          ],
+          "pivot": [
+            650.7348178137652,
+            160.54093567251462
+          ]
+        },
+        {
+          "name": "battle:heroBladeWalk0",
+          "rect": [
+            4,
+            201,
+            159,
+            165
+          ],
+          "pivot": [
+            67.69164265129683,
+            366.45833333333337
+          ]
+        },
+        {
+          "name": "battle:heroBladeWalk1",
+          "rect": [
+            198,
+            201,
+            135,
+            163
+          ],
+          "pivot": [
+            258.84183673469386,
+            360.78591549295777
+          ]
+        },
+        {
+          "name": "battle:heroBladeAttack",
+          "rect": [
+            392,
+            201,
+            186,
+            164
+          ],
+          "pivot": [
+            444.9455445544554,
+            365.4581005586592
+          ]
+        },
+        {
+          "name": "battle:heroBladeHurt",
+          "rect": [
+            586,
+            201,
+            119,
+            141
+          ],
+          "pivot": [
+            642.9826923076923,
+            351.21568627450984
+          ]
+        },
+        {
+          "name": "battle:xingWalk0",
+          "rect": [
+            4,
+            398,
+            151,
+            177
+          ],
+          "pivot": [
+            79.27051671732524,
+            576.8341968911917
+          ]
+        },
+        {
+          "name": "battle:xingWalk1",
+          "rect": [
+            198,
+            398,
+            123,
+            174
+          ],
+          "pivot": [
+            247.06179775280899,
+            572
+          ]
+        },
+        {
+          "name": "battle:xingAttack",
+          "rect": [
+            392,
+            398,
+            154,
+            189
+          ],
+          "pivot": [
+            438.88955223880595,
+            587.9174757281553
+          ]
+        },
+        {
+          "name": "battle:xingHurt",
+          "rect": [
+            586,
+            398,
+            123,
+            154
+          ],
+          "pivot": [
+            653.0280898876405,
+            561.625
+          ]
+        }
+      ],
+      "beforeBytes": 127398,
+      "afterBytes": 127398,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 154033,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "eacde40eb22acfa6d2c11ea5f8b945e8c5ea465d1f955c2d8c278e2207dd0110",
+      "beforeSha256": "d1ca90e59597dae7c3f6cf0721faa46bd736b1785f502b44a37ac97a84f09af3",
+      "afterSha256": "d1ca90e59597dae7c3f6cf0721faa46bd736b1785f502b44a37ac97a84f09af3",
+      "path": "assets/resources/native/0c/0c03037c-ea2f-47f1-969b-e19b90789d69.png"
+    },
+    {
+      "sheet": "battle20260925/scenery",
+      "width": 792,
+      "height": 528,
+      "frames": [
+        {
+          "name": "battle:tower",
+          "rect": [
+            4,
+            4,
+            185,
+            256
+          ],
+          "pivot": [
+            98.25474254742548,
+            246
+          ]
+        },
+        {
+          "name": "battle:palisade",
+          "rect": [
+            268,
+            4,
+            216,
+            168
+          ],
+          "pivot": [
+            377,
+            186.5
+          ]
+        },
+        {
+          "name": "battle:tent",
+          "rect": [
+            532,
+            4,
+            256,
+            250
+          ],
+          "pivot": [
+            660,
+            242
+          ]
+        },
+        {
+          "name": "battle:rocks",
+          "rect": [
+            4,
+            268,
+            249,
+            233
+          ],
+          "pivot": [
+            125,
+            510.52043010752686
+          ]
+        },
+        {
+          "name": "battle:cityGate",
+          "rect": [
+            268,
+            268,
+            256,
+            204
+          ],
+          "pivot": [
+            396,
+            504.0786240786241
+          ]
+        },
+        {
+          "name": "battle:granary",
+          "rect": [
+            532,
+            268,
+            250,
+            227
+          ],
+          "pivot": [
+            660.2565130260521,
+            507.52759381898454
+          ]
+        }
+      ],
+      "beforeBytes": 180576,
+      "afterBytes": 180576,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 81153,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "6d7ef97a53cbd2707e863054ccc87be0604ca9b3abf287dd0e5370502f6dbaa3",
+      "beforeSha256": "ce5025c52e170050bc209ff8ac4e4b024c867295ce0625bb2b4ae54a21c70405",
+      "afterSha256": "ce5025c52e170050bc209ff8ac4e4b024c867295ce0625bb2b4ae54a21c70405",
+      "path": "assets/resources/native/76/76e6f701-9570-4118-b39f-9b5db7137951.png"
+    },
+    {
+      "sheet": "battle20260925/soldiers",
+      "width": 424,
+      "height": 304,
+      "frames": [
+        {
+          "name": "battle:blueWalk0",
+          "rect": [
+            4,
+            4,
+            65,
+            139
+          ],
+          "pivot": [
+            35.875,
+            141.44170403587444
+          ]
+        },
+        {
+          "name": "battle:blueWalk1",
+          "rect": [
+            110,
+            4,
+            66,
+            141
+          ],
+          "pivot": [
+            140.96682464454977,
+            142.80666666666667
+          ]
+        },
+        {
+          "name": "battle:blueFire",
+          "rect": [
+            216,
+            4,
+            81,
+            137
+          ],
+          "pivot": [
+            264.4749034749035,
+            137.5593607305936
+          ]
+        },
+        {
+          "name": "battle:blueHurt",
+          "rect": [
+            322,
+            4,
+            93,
+            127
+          ],
+          "pivot": [
+            368.5,
+            129.43980343980343
+          ]
+        },
+        {
+          "name": "battle:redWalk0",
+          "rect": [
+            4,
+            156,
+            97,
+            144
+          ],
+          "pivot": [
+            56.56774193548387,
+            300.31304347826085
+          ]
+        },
+        {
+          "name": "battle:redWalk1",
+          "rect": [
+            110,
+            156,
+            93,
+            141
+          ],
+          "pivot": [
+            163.4983277591973,
+            298.8758314855876
+          ]
+        },
+        {
+          "name": "battle:redAttack",
+          "rect": [
+            216,
+            156,
+            95,
+            141
+          ],
+          "pivot": [
+            269.61386138613864,
+            299.1933333333333
+          ]
+        },
+        {
+          "name": "battle:redHurt",
+          "rect": [
+            322,
+            156,
+            98,
+            131
+          ],
+          "pivot": [
+            367.2307692307692,
+            289.18333333333334
+          ]
+        }
+      ],
+      "beforeBytes": 49622,
+      "afterBytes": 49622,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 19509,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "374e570bd7688b911ed408dee7f227d31a07239d39061c6feca64d73bdd4bde9",
+      "beforeSha256": "df9cab6da83288b57544c7f54190f4ad60046c2d6f4403c43d11f9e0ea92f8f3",
+      "afterSha256": "df9cab6da83288b57544c7f54190f4ad60046c2d6f4403c43d11f9e0ea92f8f3",
+      "path": "assets/resources/native/a9/a91a7793-81f0-4bb7-80b5-250c335603b4.png"
+    },
+    {
+      "sheet": "battlefix2/actions",
+      "width": 636,
+      "height": 980,
+      "frames": [],
+      "beforeBytes": 206823,
+      "afterBytes": 206823,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 0,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "e8cbcc9fff08d0e071418147c925a6b926eff01819005c9aa7166225f5c6f060",
+      "beforeSha256": "a6d06f6e3c24cf63ddb5cc91953a03a825ed8b4620bcc427fdb0e0effb2fb792",
+      "afterSha256": "a6d06f6e3c24cf63ddb5cc91953a03a825ed8b4620bcc427fdb0e0effb2fb792",
+      "path": "assets/resources/native/6a/6a376794-7761-4530-9b8b-09f929ee259d.png"
+    },
+    {
+      "sheet": "battlefix2/blade",
+      "width": 486,
+      "height": 202,
+      "frames": [],
+      "beforeBytes": 41610,
+      "afterBytes": 41610,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 0,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "89c929359dd6c2e779bd63f55269da99badd361838c215b8d4488eb3e51b3840",
+      "beforeSha256": "a52b78f8bd38ae891f2f09a8639e00d552350f2b69d87467427709ba6fa39c04",
+      "afterSha256": "a52b78f8bd38ae891f2f09a8639e00d552350f2b69d87467427709ba6fa39c04",
+      "path": "assets/resources/native/17/178b47fa-51ce-4378-a31b-02d9550bd705.png"
+    },
+    {
+      "sheet": "battlefix2/environment",
+      "width": 464,
+      "height": 394,
+      "frames": [],
+      "beforeBytes": 71539,
+      "afterBytes": 71539,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 0,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "92425817aae258a50cdbad2af01ac9c8ab0a072172506018c13f1ff5cab34973",
+      "beforeSha256": "4516ba1f3f2297e8db2d61063cd5a0007ec97848bc4543c2c0f48e8999e1ac2d",
+      "afterSha256": "4516ba1f3f2297e8db2d61063cd5a0007ec97848bc4543c2c0f48e8999e1ac2d",
+      "path": "assets/resources/native/99/99443c1a-f45b-4cda-8c2b-2b126706d278.png"
+    },
+    {
+      "sheet": "battlefix2/shadow",
+      "width": 512,
+      "height": 58,
+      "frames": [],
+      "beforeBytes": 5753,
+      "afterBytes": 5753,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 0,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "28e715c2d6fda3bf00435fb67e6284ed6d8621f150fb8183a6668240d82eb28c",
+      "beforeSha256": "0bb08d11f55a63498d8198e9c4ce515bd51cc60cd7b80d96c4565f3bd8728aef",
+      "afterSha256": "0bb08d11f55a63498d8198e9c4ce515bd51cc60cd7b80d96c4565f3bd8728aef",
+      "path": "assets/resources/native/57/57299ec4-949a-4bb6-87b7-585afa7a8884.png"
+    },
+    {
+      "sheet": "battlefix2/wall-middle",
+      "width": 40,
+      "height": 328,
+      "frames": [],
+      "beforeBytes": 19486,
+      "afterBytes": 19486,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 0,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "59991ef5b248060279556ed23e1ff376126024dedd1fd35788b47d71a22923a3",
+      "beforeSha256": "28c546a36894c2e29eca4fb8f2d70d75e78243c161fc33fab29023ae8ce550f2",
+      "afterSha256": "28c546a36894c2e29eca4fb8f2d70d75e78243c161fc33fab29023ae8ce550f2",
+      "path": "assets/resources/native/21/213e7942-6002-48a3-8eca-3bdde9f8d9f9.png"
+    },
+    {
+      "sheet": "battlefix2/waves",
+      "width": 525,
+      "height": 366,
+      "frames": [],
+      "beforeBytes": 135803,
+      "afterBytes": 135803,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 0,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "cd06f7b883a409bf286b9c0a56bb485732e89709fbae6db9366b1010e5b6cb01",
+      "beforeSha256": "b181f20e0583dcfcac4e292c14efe450640dfc9c626c6998dabb143d7e46e033",
+      "afterSha256": "b181f20e0583dcfcac4e292c14efe450640dfc9c626c6998dabb143d7e46e033",
+      "path": "assets/resources/native/cc/cc69ffdb-d72c-49e2-b252-8e4245dfa721.png"
+    },
+    {
+      "sheet": "battlefix2/zhao",
+      "width": 573,
+      "height": 216,
+      "frames": [],
+      "beforeBytes": 43639,
+      "afterBytes": 43639,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 0,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "81e04da36eb35618d403513060632fc28b612d33ea8669e365e61344e774a37b",
+      "beforeSha256": "42db3e0609240f7ef2360a2be86eaf60cb9d9ee2c21adc12adaef14c90c38f5d",
+      "afterSha256": "42db3e0609240f7ef2360a2be86eaf60cb9d9ee2c21adc12adaef14c90c38f5d",
+      "path": "assets/resources/native/82/828c7824-4d1c-419f-9379-4f63c7bc1ccb.png"
+    },
+    {
+      "sheet": "ui20260925/brand-title",
+      "width": 600,
+      "height": 200,
+      "frames": [],
+      "beforeBytes": 71342,
+      "afterBytes": 71342,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 0,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "e4d6dd98a47cbbcbd83b3a17ede130f9d6c91296f82336e07381f0b52e884983",
+      "beforeSha256": "ae443fe6e88ca66ca236a11f60f7908c03dc1844ad34ee1df11c7c9d18b842f1",
+      "afterSha256": "ae443fe6e88ca66ca236a11f60f7908c03dc1844ad34ee1df11c7c9d18b842f1",
+      "path": "assets/resources/native/90/90d6679e-ab10-42d6-b446-35b8481a2834.png"
+    },
+    {
+      "sheet": "ui20260925/gold-button",
+      "width": 400,
+      "height": 80,
+      "frames": [],
+      "beforeBytes": 55357,
+      "afterBytes": 55357,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 0,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "0af9d8710a25cdea2cb490f1b9432c2cc9e55afd98f9ef81c4b59b65b4e1acca",
+      "beforeSha256": "9463f58d27c241fd05521dc8bdba6e486fef8392aef1fcf8c74ab53cab88ccb3",
+      "afterSha256": "9463f58d27c241fd05521dc8bdba6e486fef8392aef1fcf8c74ab53cab88ccb3",
+      "path": "assets/resources/native/a6/a65a6514-ff8e-4507-aed1-d8a3926c6461.png"
+    },
+    {
+      "sheet": "ui20260925/hero-blade",
+      "width": 512,
+      "height": 768,
+      "frames": [],
+      "beforeBytes": 125712,
+      "afterBytes": 125712,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 0,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "148aea26fd81d79bd6b8e6a90ae5e871deaa97bdd9c0e69ce3945661c1600dd7",
+      "beforeSha256": "e6f32dedc3dcda3e287105dd7981b57b16893fd329a35d9d7723c68270dda5a6",
+      "afterSha256": "e6f32dedc3dcda3e287105dd7981b57b16893fd329a35d9d7723c68270dda5a6",
+      "path": "assets/resources/native/58/583fb5e8-96d8-4a58-a33c-8e71e8bb2caf.png"
+    },
+    {
+      "sheet": "ui20260925/hero-home",
+      "width": 512,
+      "height": 768,
+      "frames": [],
+      "beforeBytes": 120503,
+      "afterBytes": 120503,
+      "savedBytes": 0,
+      "clearedUnusedPixels": 0,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "cf6ad504bdd41105adb3b372629c9dd877f6f0d53ca7b3581842b6b6bba58053",
+      "beforeSha256": "e6a93eca7ed89b971dd16b868322272080df0f6b56fe6926b423a40f6c8f97ac",
+      "afterSha256": "e6a93eca7ed89b971dd16b868322272080df0f6b56fe6926b423a40f6c8f97ac",
+      "path": "assets/resources/native/cd/cda34036-3556-49eb-9742-a2109e835549.png"
+    },
+    {
+      "sheet": "v031/archers",
+      "width": 1536,
+      "height": 1024,
+      "frames": [
+        {
+          "name": "archer0Upper0",
+          "rect": [
+            82,
+            32,
+            152,
+            178
+          ],
+          "pivot": [
+            158,
+            261
+          ]
+        },
+        {
+          "name": "archer0Leg0",
+          "rect": [
+            112,
+            210,
+            92,
+            51
+          ],
+          "pivot": [
+            158,
+            261
+          ]
+        },
+        {
+          "name": "archer0Upper1",
+          "rect": [
+            323,
+            32,
+            152,
+            178
+          ],
+          "pivot": [
+            399,
+            261
+          ]
+        },
+        {
+          "name": "archer0Leg1",
+          "rect": [
+            353,
+            210,
+            92,
+            51
+          ],
+          "pivot": [
+            399,
+            261
+          ]
+        },
+        {
+          "name": "archer0Upper2",
+          "rect": [
+            570,
+            32,
+            152,
+            178
+          ],
+          "pivot": [
+            646,
+            261
+          ]
+        },
+        {
+          "name": "archer0Leg2",
+          "rect": [
+            600,
+            210,
+            92,
+            51
+          ],
+          "pivot": [
+            646,
+            261
+          ]
+        },
+        {
+          "name": "archer0Upper3",
+          "rect": [
+            838,
+            32,
+            152,
+            178
+          ],
+          "pivot": [
+            914,
+            261
+          ]
+        },
+        {
+          "name": "archer0Leg3",
+          "rect": [
+            868,
+            210,
+            92,
+            51
+          ],
+          "pivot": [
+            914,
+            261
+          ]
+        },
+        {
+          "name": "archer0Upper4",
+          "rect": [
+            1092,
+            32,
+            152,
+            178
+          ],
+          "pivot": [
+            1168,
+            261
+          ]
+        },
+        {
+          "name": "archer0Leg4",
+          "rect": [
+            1122,
+            210,
+            92,
+            51
+          ],
+          "pivot": [
+            1168,
+            261
+          ]
+        },
+        {
+          "name": "archer0Upper5",
+          "rect": [
+            1336,
+            32,
+            152,
+            178
+          ],
+          "pivot": [
+            1412,
+            261
+          ]
+        },
+        {
+          "name": "archer0Leg5",
+          "rect": [
+            1366,
+            210,
+            92,
+            51
+          ],
+          "pivot": [
+            1412,
+            261
+          ]
+        },
+        {
+          "name": "archer1Upper0",
+          "rect": [
+            82,
+            275,
+            152,
+            177
+          ],
+          "pivot": [
+            158,
+            505
+          ]
+        },
+        {
+          "name": "archer1Leg0",
+          "rect": [
+            112,
+            452,
+            92,
+            53
+          ],
+          "pivot": [
+            158,
+            505
+          ]
+        },
+        {
+          "name": "archer1Upper1",
+          "rect": [
+            323,
+            275,
+            152,
+            177
+          ],
+          "pivot": [
+            399,
+            505
+          ]
+        },
+        {
+          "name": "archer1Leg1",
+          "rect": [
+            353,
+            452,
+            92,
+            53
+          ],
+          "pivot": [
+            399,
+            505
+          ]
+        },
+        {
+          "name": "archer1Upper2",
+          "rect": [
+            570,
+            275,
+            152,
+            177
+          ],
+          "pivot": [
+            646,
+            505
+          ]
+        },
+        {
+          "name": "archer1Leg2",
+          "rect": [
+            600,
+            452,
+            92,
+            53
+          ],
+          "pivot": [
+            646,
+            505
+          ]
+        },
+        {
+          "name": "archer1Upper3",
+          "rect": [
+            838,
+            275,
+            152,
+            177
+          ],
+          "pivot": [
+            914,
+            505
+          ]
+        },
+        {
+          "name": "archer1Leg3",
+          "rect": [
+            868,
+            452,
+            92,
+            53
+          ],
+          "pivot": [
+            914,
+            505
+          ]
+        },
+        {
+          "name": "archer1Upper4",
+          "rect": [
+            1092,
+            275,
+            152,
+            177
+          ],
+          "pivot": [
+            1168,
+            505
+          ]
+        },
+        {
+          "name": "archer1Leg4",
+          "rect": [
+            1122,
+            452,
+            92,
+            53
+          ],
+          "pivot": [
+            1168,
+            505
+          ]
+        },
+        {
+          "name": "archer1Upper5",
+          "rect": [
+            1336,
+            275,
+            152,
+            177
+          ],
+          "pivot": [
+            1412,
+            505
+          ]
+        },
+        {
+          "name": "archer1Leg5",
+          "rect": [
+            1366,
+            452,
+            92,
+            53
+          ],
+          "pivot": [
+            1412,
+            505
+          ]
+        },
+        {
+          "name": "archer2Upper0",
+          "rect": [
+            82,
+            519,
+            152,
+            177
+          ],
+          "pivot": [
+            158,
+            747
+          ]
+        },
+        {
+          "name": "archer2Leg0",
+          "rect": [
+            112,
+            696,
+            92,
+            51
+          ],
+          "pivot": [
+            158,
+            747
+          ]
+        },
+        {
+          "name": "archer2Upper1",
+          "rect": [
+            323,
+            519,
+            152,
+            177
+          ],
+          "pivot": [
+            399,
+            747
+          ]
+        },
+        {
+          "name": "archer2Leg1",
+          "rect": [
+            353,
+            696,
+            92,
+            51
+          ],
+          "pivot": [
+            399,
+            747
+          ]
+        },
+        {
+          "name": "archer2Upper2",
+          "rect": [
+            570,
+            519,
+            152,
+            177
+          ],
+          "pivot": [
+            646,
+            747
+          ]
+        },
+        {
+          "name": "archer2Leg2",
+          "rect": [
+            600,
+            696,
+            92,
+            51
+          ],
+          "pivot": [
+            646,
+            747
+          ]
+        },
+        {
+          "name": "archer2Upper3",
+          "rect": [
+            838,
+            519,
+            152,
+            177
+          ],
+          "pivot": [
+            914,
+            747
+          ]
+        },
+        {
+          "name": "archer2Leg3",
+          "rect": [
+            868,
+            696,
+            92,
+            51
+          ],
+          "pivot": [
+            914,
+            747
+          ]
+        },
+        {
+          "name": "archer2Upper4",
+          "rect": [
+            1092,
+            519,
+            152,
+            177
+          ],
+          "pivot": [
+            1168,
+            747
+          ]
+        },
+        {
+          "name": "archer2Leg4",
+          "rect": [
+            1122,
+            696,
+            92,
+            51
+          ],
+          "pivot": [
+            1168,
+            747
+          ]
+        },
+        {
+          "name": "archer2Upper5",
+          "rect": [
+            1336,
+            519,
+            152,
+            177
+          ],
+          "pivot": [
+            1412,
+            747
+          ]
+        },
+        {
+          "name": "archer2Leg5",
+          "rect": [
+            1366,
+            696,
+            92,
+            51
+          ],
+          "pivot": [
+            1412,
+            747
+          ]
+        },
+        {
+          "name": "archer3Upper0",
+          "rect": [
+            82,
+            754,
+            152,
+            178
+          ],
+          "pivot": [
+            158,
+            983
+          ]
+        },
+        {
+          "name": "archer3Leg0",
+          "rect": [
+            112,
+            932,
+            92,
+            51
+          ],
+          "pivot": [
+            158,
+            983
+          ]
+        },
+        {
+          "name": "archer3Upper1",
+          "rect": [
+            323,
+            754,
+            152,
+            178
+          ],
+          "pivot": [
+            399,
+            983
+          ]
+        },
+        {
+          "name": "archer3Leg1",
+          "rect": [
+            353,
+            932,
+            92,
+            51
+          ],
+          "pivot": [
+            399,
+            983
+          ]
+        },
+        {
+          "name": "archer3Upper2",
+          "rect": [
+            570,
+            754,
+            152,
+            178
+          ],
+          "pivot": [
+            646,
+            983
+          ]
+        },
+        {
+          "name": "archer3Leg2",
+          "rect": [
+            600,
+            932,
+            92,
+            51
+          ],
+          "pivot": [
+            646,
+            983
+          ]
+        },
+        {
+          "name": "archer3Upper3",
+          "rect": [
+            838,
+            754,
+            152,
+            178
+          ],
+          "pivot": [
+            914,
+            983
+          ]
+        },
+        {
+          "name": "archer3Leg3",
+          "rect": [
+            868,
+            932,
+            92,
+            51
+          ],
+          "pivot": [
+            914,
+            983
+          ]
+        },
+        {
+          "name": "archer3Upper4",
+          "rect": [
+            1092,
+            754,
+            152,
+            178
+          ],
+          "pivot": [
+            1168,
+            983
+          ]
+        },
+        {
+          "name": "archer3Leg4",
+          "rect": [
+            1122,
+            932,
+            92,
+            51
+          ],
+          "pivot": [
+            1168,
+            983
+          ]
+        },
+        {
+          "name": "archer3Upper5",
+          "rect": [
+            1336,
+            754,
+            152,
+            178
+          ],
+          "pivot": [
+            1412,
+            983
+          ]
+        },
+        {
+          "name": "archer3Leg5",
+          "rect": [
+            1366,
+            932,
+            92,
+            51
+          ],
+          "pivot": [
+            1412,
+            983
+          ]
+        }
+      ],
+      "beforeBytes": 2126374,
+      "afterBytes": 1500511,
+      "savedBytes": 625863,
+      "clearedUnusedPixels": 737544,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "7a0614581eea34582a3d8bb20f9b1bcb527f87bff23b47d34085e67f2760a5c6",
+      "beforeSha256": "79c0b60a5558a3169713b9300055cda41c316475569a05d248e4e375f765b393",
+      "afterSha256": "c91ee0688be6ce87912afdc49ebb2f1f96405925c328fc6dbd88a60bb45bb3ac",
+      "path": "assets/resources/native/07/079a184f-d120-4a14-ba21-e137ff8cdb86.png"
+    },
+    {
+      "sheet": "v04/spear-hero",
+      "width": 1536,
+      "height": 1024,
+      "frames": [
+        {
+          "name": "spearHero0Pose0",
+          "rect": [
+            0,
+            32,
+            384,
+            279
+          ],
+          "pivot": [
+            181,
+            383
+          ]
+        },
+        {
+          "name": "spearHero0Pose1",
+          "rect": [
+            384,
+            32,
+            384,
+            279
+          ],
+          "pivot": [
+            566,
+            383
+          ]
+        },
+        {
+          "name": "spearHero0Pose2",
+          "rect": [
+            768,
+            32,
+            384,
+            279
+          ],
+          "pivot": [
+            940,
+            383
+          ]
+        },
+        {
+          "name": "spearHero0Pose3",
+          "rect": [
+            1152,
+            32,
+            384,
+            279
+          ],
+          "pivot": [
+            1370,
+            383
+          ]
+        },
+        {
+          "name": "spearHero1Pose0",
+          "rect": [
+            0,
+            360,
+            384,
+            275
+          ],
+          "pivot": [
+            181,
+            707
+          ]
+        },
+        {
+          "name": "spearHero1Pose1",
+          "rect": [
+            384,
+            360,
+            384,
+            275
+          ],
+          "pivot": [
+            566,
+            707
+          ]
+        },
+        {
+          "name": "spearHero1Pose2",
+          "rect": [
+            768,
+            360,
+            384,
+            275
+          ],
+          "pivot": [
+            940,
+            707
+          ]
+        },
+        {
+          "name": "spearHero1Pose3",
+          "rect": [
+            1152,
+            360,
+            384,
+            275
+          ],
+          "pivot": [
+            1370,
+            707
+          ]
+        },
+        {
+          "name": "spearHero2Pose0",
+          "rect": [
+            0,
+            686,
+            384,
+            274
+          ],
+          "pivot": [
+            181,
+            1032
+          ]
+        },
+        {
+          "name": "spearHero2Pose1",
+          "rect": [
+            384,
+            686,
+            384,
+            274
+          ],
+          "pivot": [
+            566,
+            1032
+          ]
+        },
+        {
+          "name": "spearHero2Pose2",
+          "rect": [
+            768,
+            686,
+            384,
+            274
+          ],
+          "pivot": [
+            940,
+            1032
+          ]
+        },
+        {
+          "name": "spearHero2Pose3",
+          "rect": [
+            1152,
+            686,
+            384,
+            274
+          ],
+          "pivot": [
+            1370,
+            1032
+          ]
+        }
+      ],
+      "beforeBytes": 1949290,
+      "afterBytes": 1640527,
+      "savedBytes": 308763,
+      "clearedUnusedPixels": 264192,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "20744729dcc39d8cbbd587c80054fb8ff3f4138608ba2db07321a0a18208d75e",
+      "beforeSha256": "c066db628f8a493c1c8ed500e58e1472e5bc3328cc18c3699c0b71a16a8aec00",
+      "afterSha256": "c862d943d08689c0ca0b21bc53d0f9aff2747c5062d7cb4c8e60eb5d112be08c",
+      "path": "assets/resources/native/df/dff5a617-2f8b-4767-807b-ab290886caff.png"
+    },
+    {
+      "sheet": "v04/spear",
+      "width": 1254,
+      "height": 1254,
+      "frames": [
+        {
+          "name": "spear",
+          "rect": [
+            554,
+            15,
+            145,
+            1230
+          ],
+          "pivot": [
+            626,
+            850
+          ]
+        }
+      ],
+      "beforeBytes": 146434,
+      "afterBytes": 122895,
+      "savedBytes": 23539,
+      "clearedUnusedPixels": 1383102,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "132cc7589167ce24dbf2e7cdef122cf30a71b400d1db4bb74b99154b44d5dcc9",
+      "beforeSha256": "bb021f81546acd5d0045371933d6a0852409b004d0adc6c31e1cf930a6537f0d",
+      "afterSha256": "e421c8687b64fa8fd638bc02a22bf55fbac62c32be237af5c0d3958554fee485",
+      "path": "assets/resources/native/92/9268763b-05be-48b6-a2be-24a25f8532d2.png"
+    },
+    {
+      "sheet": "v05/cast",
+      "width": 1254,
+      "height": 1254,
+      "frames": [
+        {
+          "name": "cast0Pose0",
+          "rect": [
+            94,
+            94,
+            150,
+            215
+          ],
+          "pivot": [
+            168.5,
+            306
+          ]
+        },
+        {
+          "name": "cast0Pose1",
+          "rect": [
+            410,
+            94,
+            138,
+            217
+          ],
+          "pivot": [
+            478.5,
+            308
+          ]
+        },
+        {
+          "name": "cast0Pose2",
+          "rect": [
+            716,
+            109,
+            140,
+            205
+          ],
+          "pivot": [
+            785.5,
+            311
+          ]
+        },
+        {
+          "name": "cast0Pose3",
+          "rect": [
+            1010,
+            95,
+            148,
+            215
+          ],
+          "pivot": [
+            1083.5,
+            307
+          ]
+        },
+        {
+          "name": "cast1Pose0",
+          "rect": [
+            95,
+            382,
+            149,
+            228
+          ],
+          "pivot": [
+            169,
+            607
+          ]
+        },
+        {
+          "name": "cast1Pose1",
+          "rect": [
+            410,
+            383,
+            153,
+            230
+          ],
+          "pivot": [
+            486,
+            610
+          ]
+        },
+        {
+          "name": "cast1Pose2",
+          "rect": [
+            713,
+            399,
+            149,
+            214
+          ],
+          "pivot": [
+            787,
+            610
+          ]
+        },
+        {
+          "name": "cast1Pose3",
+          "rect": [
+            1017,
+            385,
+            161,
+            226
+          ],
+          "pivot": [
+            1097,
+            608
+          ]
+        },
+        {
+          "name": "cast2Pose0",
+          "rect": [
+            88,
+            672,
+            170,
+            231
+          ],
+          "pivot": [
+            172.5,
+            900
+          ]
+        },
+        {
+          "name": "cast2Pose1",
+          "rect": [
+            409,
+            672,
+            182,
+            230
+          ],
+          "pivot": [
+            499.5,
+            899
+          ]
+        },
+        {
+          "name": "cast2Pose2",
+          "rect": [
+            703,
+            688,
+            153,
+            216
+          ],
+          "pivot": [
+            779,
+            901
+          ]
+        },
+        {
+          "name": "cast2Pose3",
+          "rect": [
+            1011,
+            674,
+            168,
+            229
+          ],
+          "pivot": [
+            1094.5,
+            900
+          ]
+        },
+        {
+          "name": "cast3Pose0",
+          "rect": [
+            94,
+            966,
+            163,
+            218
+          ],
+          "pivot": [
+            175,
+            1181
+          ]
+        },
+        {
+          "name": "cast3Pose1",
+          "rect": [
+            413,
+            967,
+            173,
+            220
+          ],
+          "pivot": [
+            499,
+            1184
+          ]
+        },
+        {
+          "name": "cast3Pose2",
+          "rect": [
+            684,
+            974,
+            178,
+            214
+          ],
+          "pivot": [
+            772.5,
+            1185
+          ]
+        },
+        {
+          "name": "cast3Pose3",
+          "rect": [
+            1013,
+            968,
+            169,
+            217
+          ],
+          "pivot": [
+            1097,
+            1182
+          ]
+        }
+      ],
+      "beforeBytes": 1081095,
+      "afterBytes": 1055164,
+      "savedBytes": 25931,
+      "clearedUnusedPixels": 961781,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "cfb15070a7ac632582b7fc73e28cecfee62b046360dc51112dbff70da0e94734",
+      "beforeSha256": "e550fe48982205119c67991d50529738971093215691f59aaf97df329593c951",
+      "afterSha256": "0c8eef850a46cdfe7f0844618afc07a6ac83b0c4041c61eecb69d29db7c51c33",
+      "path": "assets/resources/native/2d/2dd04d23-56ff-4b1d-b60a-04820e67cf28.png"
+    },
+    {
+      "sheet": "v05/weapons",
+      "width": 1536,
+      "height": 1024,
+      "frames": [
+        {
+          "name": "great_axe",
+          "rect": [
+            120,
+            12,
+            370,
+            996
+          ],
+          "pivot": [
+            387,
+            580
+          ]
+        },
+        {
+          "name": "throwing_fork",
+          "rect": [
+            631,
+            75,
+            340,
+            839
+          ],
+          "pivot": [
+            801,
+            735
+          ]
+        },
+        {
+          "name": "blade",
+          "rect": [
+            1196,
+            8,
+            198,
+            997
+          ],
+          "pivot": [
+            1263,
+            791
+          ]
+        }
+      ],
+      "beforeBytes": 1534361,
+      "afterBytes": 1038959,
+      "savedBytes": 495402,
+      "clearedUnusedPixels": 691566,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "eb9ae96032d6969a5ea3c7a5aade1e4b029a1110948d7c48d8422d2253ac5ffa",
+      "beforeSha256": "84b3409aeac0fc0db506bf9624789b4e32a55c76b32f1405bf8faab78a84b284",
+      "afterSha256": "61ca98403a5470d0954478203007fd07ecb56f8d12a68680d736c95b754e31fe",
+      "path": "assets/resources/native/fd/fd3303dc-1047-4e3e-83ab-9f346876e32e.png"
+    },
+    {
+      "sheet": "v051/blade-hero",
+      "width": 1448,
+      "height": 1086,
+      "frames": [
+        {
+          "name": "bladeHero0Pose0",
+          "rect": [
+            53,
+            57,
+            239,
+            296
+          ],
+          "pivot": [
+            181,
+            425
+          ]
+        },
+        {
+          "name": "bladeHero0Pose1",
+          "rect": [
+            398,
+            48,
+            258,
+            306
+          ],
+          "pivot": [
+            543,
+            426
+          ]
+        },
+        {
+          "name": "bladeHero0Pose2",
+          "rect": [
+            735,
+            62,
+            353,
+            292
+          ],
+          "pivot": [
+            905,
+            426
+          ]
+        },
+        {
+          "name": "bladeHero0Pose3",
+          "rect": [
+            1143,
+            64,
+            260,
+            291
+          ],
+          "pivot": [
+            1267,
+            427
+          ]
+        },
+        {
+          "name": "bladeHero1Pose0",
+          "rect": [
+            42,
+            393,
+            249,
+            293
+          ],
+          "pivot": [
+            181,
+            758
+          ]
+        },
+        {
+          "name": "bladeHero1Pose1",
+          "rect": [
+            399,
+            384,
+            257,
+            302
+          ],
+          "pivot": [
+            543,
+            758
+          ]
+        },
+        {
+          "name": "bladeHero1Pose2",
+          "rect": [
+            735,
+            396,
+            353,
+            292
+          ],
+          "pivot": [
+            905,
+            760
+          ]
+        },
+        {
+          "name": "bladeHero1Pose3",
+          "rect": [
+            1143,
+            399,
+            260,
+            290
+          ],
+          "pivot": [
+            1267,
+            761
+          ]
+        },
+        {
+          "name": "bladeHero2Pose0",
+          "rect": [
+            41,
+            727,
+            250,
+            293
+          ],
+          "pivot": [
+            181,
+            1092
+          ]
+        },
+        {
+          "name": "bladeHero2Pose1",
+          "rect": [
+            402,
+            722,
+            255,
+            299
+          ],
+          "pivot": [
+            543,
+            1093
+          ]
+        },
+        {
+          "name": "bladeHero2Pose2",
+          "rect": [
+            735,
+            729,
+            353,
+            294
+          ],
+          "pivot": [
+            905,
+            1095
+          ]
+        },
+        {
+          "name": "bladeHero2Pose3",
+          "rect": [
+            1143,
+            733,
+            263,
+            291
+          ],
+          "pivot": [
+            1267,
+            1096
+          ]
+        }
+      ],
+      "beforeBytes": 1409633,
+      "afterBytes": 1374167,
+      "savedBytes": 35466,
+      "clearedUnusedPixels": 529363,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "2f224b89c16cea46c0ce315d16f64349215ea474be3385bf6f0c39b174c7a859",
+      "beforeSha256": "e8c24a5ce8d318a7dc449242c00f95c24ba4cf36bf4957ff0e3e025fa05a8b66",
+      "afterSha256": "948710cc1c9b308431f0ae13011a1268ac56af508ef4918ebc4a33a2f83b0dff",
+      "path": "assets/resources/native/c4/c4f2fd53-2936-4484-9409-6332d0eee16b.png"
+    },
+    {
+      "sheet": "v3/actors",
+      "width": 1254,
+      "height": 1254,
+      "frames": [
+        {
+          "name": "hero0",
+          "rect": [
+            86,
+            28,
+            163,
+            298
+          ],
+          "pivot": [
+            169,
+            328
+          ]
+        },
+        {
+          "name": "hero1",
+          "rect": [
+            390,
+            29,
+            173,
+            300
+          ],
+          "pivot": [
+            476,
+            328
+          ]
+        },
+        {
+          "name": "hero2",
+          "rect": [
+            700,
+            27,
+            170,
+            302
+          ],
+          "pivot": [
+            783,
+            328
+          ]
+        },
+        {
+          "name": "hero3",
+          "rect": [
+            996,
+            0,
+            191,
+            324
+          ],
+          "pivot": [
+            1093,
+            328
+          ]
+        },
+        {
+          "name": "ally0",
+          "rect": [
+            96,
+            349,
+            150,
+            272
+          ],
+          "pivot": [
+            170,
+            628
+          ]
+        },
+        {
+          "name": "ally1",
+          "rect": [
+            403,
+            354,
+            141,
+            273
+          ],
+          "pivot": [
+            476,
+            628
+          ]
+        },
+        {
+          "name": "ally2",
+          "rect": [
+            701,
+            355,
+            152,
+            273
+          ],
+          "pivot": [
+            780,
+            628
+          ]
+        },
+        {
+          "name": "ally3",
+          "rect": [
+            1025,
+            320,
+            169,
+            305
+          ],
+          "pivot": [
+            1108,
+            628
+          ]
+        },
+        {
+          "name": "enemy0",
+          "rect": [
+            84,
+            620,
+            187,
+            282
+          ],
+          "pivot": [
+            174,
+            910
+          ]
+        },
+        {
+          "name": "enemy1",
+          "rect": [
+            357,
+            670,
+            250,
+            236
+          ],
+          "pivot": [
+            480,
+            910
+          ]
+        },
+        {
+          "name": "enemy2",
+          "rect": [
+            687,
+            666,
+            213,
+            240
+          ],
+          "pivot": [
+            788,
+            910
+          ]
+        },
+        {
+          "name": "enemy3",
+          "rect": [
+            1010,
+            664,
+            182,
+            247
+          ],
+          "pivot": [
+            1100,
+            910
+          ]
+        },
+        {
+          "name": "boss0",
+          "rect": [
+            57,
+            906,
+            225,
+            321
+          ],
+          "pivot": [
+            182,
+            1234
+          ]
+        },
+        {
+          "name": "boss1",
+          "rect": [
+            349,
+            913,
+            232,
+            321
+          ],
+          "pivot": [
+            489,
+            1234
+          ]
+        },
+        {
+          "name": "boss2",
+          "rect": [
+            665,
+            956,
+            298,
+            278
+          ],
+          "pivot": [
+            788,
+            1234
+          ]
+        },
+        {
+          "name": "boss3",
+          "rect": [
+            987,
+            941,
+            230,
+            281
+          ],
+          "pivot": [
+            1125,
+            1234
+          ]
+        }
+      ],
+      "beforeBytes": 1388058,
+      "afterBytes": 1356030,
+      "savedBytes": 32028,
+      "clearedUnusedPixels": 627319,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "07d21fd59dff21d42461bc740c697ed4ba541f9cba2a7e8ce361277f9a74fd88",
+      "beforeSha256": "14dcb6d5692d39709710d135db0b37d066cd7548a5b9933dd9385c1ba6941e1a",
+      "afterSha256": "8b8b02993f1504ac28ddef424d783855af2cb05441ff4162c490fd07a89f1aff",
+      "path": "assets/resources/native/74/74ea62e0-29e8-4760-a973-1500b899b8c7.png"
+    },
+    {
+      "sheet": "v3/scenery",
+      "width": 1226,
+      "height": 1283,
+      "frames": [
+        {
+          "name": "ridge",
+          "rect": [
+            6,
+            53,
+            611,
+            347
+          ],
+          "pivot": [
+            311.5,
+            400
+          ]
+        },
+        {
+          "name": "stockade",
+          "rect": [
+            634,
+            50,
+            566,
+            343
+          ],
+          "pivot": [
+            917,
+            393
+          ]
+        },
+        {
+          "name": "pine",
+          "rect": [
+            40,
+            423,
+            554,
+            381
+          ],
+          "pivot": [
+            317,
+            804
+          ]
+        },
+        {
+          "name": "rock",
+          "rect": [
+            625,
+            503,
+            588,
+            275
+          ],
+          "pivot": [
+            919,
+            778
+          ]
+        },
+        {
+          "name": "wood",
+          "rect": [
+            45,
+            889,
+            538,
+            331
+          ],
+          "pivot": [
+            314,
+            1220
+          ]
+        },
+        {
+          "name": "gate",
+          "rect": [
+            627,
+            809,
+            561,
+            414
+          ],
+          "pivot": [
+            907.5,
+            1223
+          ]
+        }
+      ],
+      "beforeBytes": 1784681,
+      "afterBytes": 1747328,
+      "savedBytes": 37353,
+      "clearedUnusedPixels": 339241,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "6801ea948f3a7511b7774597e2ae6942a1630f11318d5c8ceb001ad1ca9787aa",
+      "beforeSha256": "e55c72f08ce0f74f736c147479dbc257e9f4e942f95b676026f7da4a595a1080",
+      "afterSha256": "11ff1536f17e5ca3711ae59c046be787fcc239657abfa01a5d2d4f7122d0fdd6",
+      "path": "assets/resources/native/78/78e14d24-08d4-48b7-8ef7-dee292d5c033.png"
+    },
+    {
+      "sheet": "v4/enemies",
+      "width": 1254,
+      "height": 1254,
+      "frames": [
+        {
+          "name": "crossbow0",
+          "rect": [
+            52,
+            66,
+            231,
+            325
+          ],
+          "pivot": [
+            157,
+            391
+          ]
+        },
+        {
+          "name": "crossbow1",
+          "rect": [
+            374,
+            66,
+            224,
+            334
+          ],
+          "pivot": [
+            482,
+            400
+          ]
+        },
+        {
+          "name": "crossbow2",
+          "rect": [
+            700,
+            65,
+            208,
+            335
+          ],
+          "pivot": [
+            790,
+            400
+          ]
+        },
+        {
+          "name": "crossbow3",
+          "rect": [
+            979,
+            100,
+            259,
+            299
+          ],
+          "pivot": [
+            1108,
+            399
+          ]
+        },
+        {
+          "name": "campBoss0",
+          "rect": [
+            11,
+            440,
+            294,
+            361
+          ],
+          "pivot": [
+            157,
+            801
+          ]
+        },
+        {
+          "name": "campBoss1",
+          "rect": [
+            342,
+            436,
+            277,
+            378
+          ],
+          "pivot": [
+            482,
+            814
+          ]
+        },
+        {
+          "name": "campBoss2",
+          "rect": [
+            653,
+            439,
+            281,
+            366
+          ],
+          "pivot": [
+            790,
+            805
+          ]
+        },
+        {
+          "name": "campBoss3",
+          "rect": [
+            962,
+            474,
+            282,
+            332
+          ],
+          "pivot": [
+            1108,
+            806
+          ]
+        },
+        {
+          "name": "cityBoss0",
+          "rect": [
+            37,
+            838,
+            265,
+            394
+          ],
+          "pivot": [
+            157,
+            1232
+          ]
+        },
+        {
+          "name": "cityBoss1",
+          "rect": [
+            349,
+            837,
+            270,
+            395
+          ],
+          "pivot": [
+            482,
+            1232
+          ]
+        },
+        {
+          "name": "cityBoss2",
+          "rect": [
+            670,
+            840,
+            269,
+            392
+          ],
+          "pivot": [
+            790,
+            1232
+          ]
+        },
+        {
+          "name": "cityBoss3",
+          "rect": [
+            939,
+            839,
+            301,
+            393
+          ],
+          "pivot": [
+            1108,
+            1232
+          ]
+        }
+      ],
+      "beforeBytes": 1883386,
+      "afterBytes": 1856928,
+      "savedBytes": 26458,
+      "clearedUnusedPixels": 376105,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "09dddbef7666ba6e41ee16582422131683f738f9b6f4a52cc428232b470325b6",
+      "beforeSha256": "1743774f0a20a11661c4244f7df112a12bd688baceee43267599322802e6da6e",
+      "afterSha256": "2c5cb918b234e582c02356311396a93f45c400fe48e9f4a41d7671503a6a21b1",
+      "path": "assets/resources/native/02/02b99c7d-dec3-4346-b692-ca9aaadbf696.png"
+    },
+    {
+      "sheet": "v4/scenery",
+      "width": 1536,
+      "height": 1024,
+      "frames": [
+        {
+          "name": "campClosed",
+          "rect": [
+            29,
+            13,
+            489,
+            305
+          ],
+          "pivot": [
+            273.5,
+            318
+          ]
+        },
+        {
+          "name": "campOpen",
+          "rect": [
+            532,
+            13,
+            472,
+            305
+          ],
+          "pivot": [
+            768,
+            318
+          ]
+        },
+        {
+          "name": "tent",
+          "rect": [
+            1015,
+            9,
+            502,
+            317
+          ],
+          "pivot": [
+            1266,
+            326
+          ]
+        },
+        {
+          "name": "cityClosed",
+          "rect": [
+            27,
+            343,
+            507,
+            340
+          ],
+          "pivot": [
+            280.5,
+            683
+          ]
+        },
+        {
+          "name": "cityOpen",
+          "rect": [
+            551,
+            342,
+            540,
+            346
+          ],
+          "pivot": [
+            821,
+            688
+          ]
+        },
+        {
+          "name": "tower",
+          "rect": [
+            1201,
+            336,
+            266,
+            357
+          ],
+          "pivot": [
+            1334,
+            693
+          ]
+        },
+        {
+          "name": "redFlag",
+          "rect": [
+            162,
+            685,
+            197,
+            324
+          ],
+          "pivot": [
+            260.5,
+            1009
+          ]
+        },
+        {
+          "name": "blueFlag",
+          "rect": [
+            650,
+            685,
+            206,
+            324
+          ],
+          "pivot": [
+            753,
+            1009
+          ]
+        },
+        {
+          "name": "wall",
+          "rect": [
+            1048,
+            757,
+            435,
+            243
+          ],
+          "pivot": [
+            1265.5,
+            1000
+          ]
+        }
+      ],
+      "beforeBytes": 2483733,
+      "afterBytes": 2128425,
+      "savedBytes": 355308,
+      "clearedUnusedPixels": 381374,
+      "guardPixels": 4,
+      "frameAndGuardPixelsEqual": true,
+      "preservedPixelsSha256": "d2057b95086c8e2c83466181a9ccbab736e7cceba34382de8ceb3e31bd0935e0",
+      "beforeSha256": "dba799d87f5a2f120649cdb3e9669a6a7fedd053f00118417669d0e83955cf2a",
+      "afterSha256": "39766cf6dadd2186aa67dbf7fb1432b750cff22691731d727f813add6b805915",
+      "path": "assets/resources/native/15/15aec887-a6bb-4792-a785-0aea83036ae7.png"
+    }
+  ],
+  "removed": [
+    {
+      "source": "assets/resources/art/cart.png",
+      "path": "assets/resources/native/4f/4f92e73c-2162-4816-9b0f-46698f695b22.png",
+      "bytes": 1416,
+      "sha256": "075d160e3d6c9fe04d27d8127444a3a35c174a080025762026e59766ffc755af",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/ink.png",
+      "path": "assets/resources/native/b6/b6462068-5533-4bba-bcce-2ec2b27e63b4.png",
+      "bytes": 2472,
+      "sha256": "826eb3326c6c0f4e186254e4b3c801f1cbd529e982d7f5342a7434269c8a0a6e",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/landscape-0.png",
+      "path": "assets/resources/native/84/84b49c27-f7c3-44c9-ba83-ec58dcbc9845.png",
+      "bytes": 88827,
+      "sha256": "af5d4ceeef1d216e67bd64b4c2ce7069ff3c93f7b7b145ef7c897dc53ed8847a",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/landscape-1.png",
+      "path": "assets/resources/native/1a/1ae912b9-7822-44b2-9311-df40a35f8c47.png",
+      "bytes": 88751,
+      "sha256": "f9f117132c7e68aafc7468359946dd1b11bd77e1b4d2dfd0dfb9049be1d5ebaa",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/landscape-2.png",
+      "path": "assets/resources/native/69/69356416-2560-4f5c-ba5c-2f0654a3a6b4.png",
+      "bytes": 33101,
+      "sha256": "e78749684a44fe3483dd85eb6d12dbc9371d4e77a62b41143b0389af9fe33dd1",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/rock.png",
+      "path": "assets/resources/native/77/770fdb90-6908-4b59-93c4-b38460585467.png",
+      "bytes": 1778,
+      "sha256": "221f5e99d9f6fb334b6ee3ed13c85aec07676dfe80e06dec9ebec30e05602261",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/soldier.png",
+      "path": "assets/resources/native/46/4628b3c8-68ed-4eed-9804-c8ab8369fd53.png",
+      "bytes": 1135,
+      "sha256": "b9725188c0a3b4ca6bff9eda5fa8ec3e737addca1876e1dd8d12c5b9b84eec03",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/sparrow.png",
+      "path": "assets/resources/native/4e/4ed9d725-538e-4ca9-81ed-c68712e75a10.png",
+      "bytes": 1279,
+      "sha256": "b36191d8f0b6dc9aad09da2e9dc6f47512ae4867ad75e9527224a3bde2d3b53c",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/traveler.png",
+      "path": "assets/resources/native/dc/dc300c8e-7d11-44de-bc19-fd31941b6c65.png",
+      "bytes": 2167,
+      "sha256": "bec457421097c5857390946bf9f18b204d206fc283cb23592349da00b0e022b4",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/wood.png",
+      "path": "assets/resources/native/91/917f855e-aaec-4589-8545-8364bfefbf8d.png",
+      "bytes": 2467,
+      "sha256": "06609d423832ab28d4e83108e3a465104a49ce99791baa7580e284021897f01b",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/audio/music.mp3",
+      "path": "assets/resources/native/a8/a88269ff-c70b-4c3c-b7f1-b56c58916218.mp3",
+      "bytes": 128774,
+      "sha256": "b16ba541ef475d7c4d3917f103671e0f4deeb518a5196b1abd752527e8a10f67",
+      "reason": "BGM disabled: no load request"
+    },
+    {
+      "source": "assets/resources/audio-v031/music-battle.m4a",
+      "path": "assets/resources/native/c6/c6018ba7-e96b-44a7-8085-79fe615cca75.m4a",
+      "bytes": 1865512,
+      "sha256": "91b99afa2695415731820e9e8a1b13de0ea1511a2dd08dbbdfd554cd51d2bae1",
+      "reason": "BGM disabled: no load request"
+    },
+    {
+      "source": "assets/resources/v04/zhaoyun.png",
+      "path": "assets/resources/native/db/db0d01b5-2581-4f79-b9a6-7eec8f4d8381.png",
+      "bytes": 1748995,
+      "sha256": "dfa0a0321d0070d79ef3ff754a2ad50707dbab4938927c5cbf06ad3e27e0c76a",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/v051/allies.png",
+      "path": "assets/resources/native/da/daddd450-ea58-4380-8fd3-f89e803ca338.png",
+      "bytes": 1354438,
+      "sha256": "5614d21e445536a40cc15d58e9de92e64d81900c33ccaa23681a4fb3a70278fd",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/v2/hero-a-rig.png",
+      "path": "assets/resources/native/99/9905285d-3e53-4f9e-8507-3e7a3c04cf3f.png",
+      "bytes": 827673,
+      "sha256": "7d9d85ad6a5c378a66ca6fbfe4d05ecaf89ac0e91568d8819a9ef60384957a01",
+      "reason": "HeroRig has no runtime load/constructor call; Pose is a type only"
+    },
+    {
+      "source": "assets/resources/v4/heroes.png",
+      "path": "assets/resources/native/c6/c698781f-f9ba-45fc-ae45-8ead3fdf5c34.png",
+      "bytes": 1571126,
+      "sha256": "3678351c4166367ef40f6682eecba8432bde1bd9795a56273b956c5648f9932a",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    }
+  ],
+  "beforeBytes": 28809622,
+  "afterBytes": 19123600,
+  "savedBytes": 9686022,
+  "budget": {
+    "limitBytes": 20971520,
+    "thresholdSource": "Existing local project preview/package workflow threshold; not a claim about universal/current WeChat platform allowance. Parent must attach current official preview receipt.",
+    "targetMarginBytes": 1048576,
+    "targetMarginFraction": 0.05,
+    "localFileMarginBytes": null,
+    "officialUploadBytes": null,
+    "officialMarginBytes": null
+  },
+  "verification": {
+    "allFrameAndGuardPixelsEqual": true,
+    "sourceHashesCaptured": true,
+    "officialPreview": "pending",
+    "device": "not-tested"
+  }
+}

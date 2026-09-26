@@ -1,0 +1,1378 @@
+{
+  "schemaVersion": 1,
+  "proposalVersion": "0.6.0-playtest1",
+  "status": "trial_values_not_gameplay_validated",
+  "referenceCommit": "7ee7685e4bcb4fb7aa67284e7b56692826b86675",
+  "integration": "Merge into latest local work; do not reset to referenceCommit or replace model.ts wholesale.",
+  "units": {
+    "tickRate": 60,
+    "x": "existing normalized lane coordinate [-0.91,0.91]",
+    "z": "existing world travel-distance unit",
+    "playerForwardSpeed": 1,
+    "planarXPerNormalizedX": 2.5
+  },
+  "scope": {
+    "playableLevelIds": [
+      "trial-01",
+      "trial-02",
+      "trial-03"
+    ],
+    "forksPerLevel": 3,
+    "defaultCombatProfile": "horde-v06",
+    "bgm": false
+  },
+  "limits": {
+    "hostilesSoft": 48,
+    "hostilesHard": 64,
+    "pendingSpawns": 32,
+    "pendingMaxTicks": 72,
+    "maxSpawnsPerTick": 6,
+    "alliesVisibleIncludingHeroAndCompanion": 48,
+    "armyMax": 256,
+    "corpseVisible": 16,
+    "corpseLifeTicks": 18,
+    "heroWaveCap": 12,
+    "companionWaveCap": 12,
+    "enemyProjectileCap": 12,
+    "visualArrowCap": 240,
+    "sfxVoices": 5
+  },
+  "fork": {
+    "previewTicks": 120,
+    "commitRule": "x<0 => left; x>=0 => right",
+    "presentationExpandTicks": 24,
+    "stopSpawnsBeforeBossSeconds": 6,
+    "quietCommitSeconds": 0.6,
+    "lastRouteRewardOnlyIfAlive": true
+  },
+  "growth": {
+    "killThresholds": [
+      30,
+      80
+    ],
+    "tierFactors": [
+      1,
+      1.2,
+      1.4
+    ],
+    "upgradeRule": "real_enemy_death_once_entire_team",
+    "oldEliteDirectUpgradeEnabled": false,
+    "resetEveryAttempt": [
+      "kills",
+      "tier",
+      "awakeningUsed",
+      "awakeningRemaining",
+      "branchChoices",
+      "exitRewards"
+    ],
+    "awakening": {
+      "durationTicks": 360,
+      "requiresTier": 3,
+      "trigger": "first successful hero hit on boss",
+      "newAttackDamageMultiplier": 1.25,
+      "invulnerable": false
+    }
+  },
+  "ordinaryContact": {
+    "lossPerEnemy": 1,
+    "aggregationWindowTicks": 12,
+    "maxLossPerWindow": 2,
+    "normalEnemiesOnly": true,
+    "bossDamageIndependent": true,
+    "escapedEnemiesGiveKillCredit": false
+  },
+  "enemyProfiles": {
+    "footman": {
+      "hpByStage": [
+        3,
+        4,
+        5
+      ],
+      "advanceSpeed": 0.45,
+      "contactLoss": 1,
+      "radiusX": 0.055,
+      "bodyDepth": 0.16,
+      "tacticAffected": true
+    },
+    "runner": {
+      "hpByStage": [
+        3,
+        4,
+        5
+      ],
+      "advanceSpeed": 0.58,
+      "contactLoss": 1,
+      "radiusX": 0.05,
+      "bodyDepth": 0.16,
+      "tacticAffected": true
+    },
+    "crossbowman": {
+      "hpByStage": [
+        18,
+        24,
+        30
+      ],
+      "advanceSpeed": 0.35,
+      "contactLoss": 2,
+      "warningTicks": 75,
+      "attackLoss": 2,
+      "oneAttackBeforeRetiring": true,
+      "tacticAffected": false,
+      "beginAimAtDepth": 3.0,
+      "flightTicks": 18,
+      "maxConcurrentRangedWarnings": 2,
+      "aimFreezesAtStart": true
+    },
+    "elite": {
+      "hpByStage": [
+        20,
+        26,
+        32
+      ],
+      "advanceSpeed": 0.38,
+      "contactLoss": 2,
+      "tacticAffected": false,
+      "killCredit": 1,
+      "directUpgrade": false
+    }
+  },
+  "weapons": {
+    "spear": {
+      "reuseWeaponId": "spear",
+      "baseDamage": 5,
+      "cycleTicks": 36,
+      "near": 1.1,
+      "ordinaryTargetBudgetByTier": [
+        4,
+        6,
+        8
+      ],
+      "specialTargetBudgetByTier": [
+        1,
+        1,
+        2
+      ],
+      "normalWaveHalfWidth": 0.1,
+      "waveRange": 4.8,
+      "description": "narrow forward penetration; retain validated physical spear contact"
+    },
+    "blade": {
+      "reuseWeaponId": "blade",
+      "baseDamage": 5,
+      "cycleTicks": 36,
+      "near": 0.85,
+      "ordinaryTargetBudgetByTier": [
+        5,
+        7,
+        10
+      ],
+      "specialTargetBudgetByTier": [
+        1,
+        1,
+        2
+      ],
+      "normalWaveHalfWidth": 0.24,
+      "waveRange": 3.7,
+      "description": "wide close sweep and crescent; retain validated physical blade contact"
+    }
+  },
+  "tactics": {
+    "guanzhen": {
+      "label": "贯阵",
+      "availableFromStart": true,
+      "default": true,
+      "extraOrdinaryTargetsByTier": [
+        2,
+        3,
+        4
+      ],
+      "changesDamage": false,
+      "affectsBoss": false
+    },
+    "zhenjun": {
+      "label": "震军",
+      "availableFromStart": true,
+      "knockbackWorldDistance": 0.18,
+      "slowSpeedMultiplier": 0.6,
+      "slowTicksByTier": [
+        12,
+        15,
+        18
+      ],
+      "perTargetCooldownTicks": 54,
+      "heroOnly": true,
+      "affectsBoss": false,
+      "affectsElite": false
+    }
+  },
+  "tacticSave": {
+    "key": "yilu-changge-tactics-v06",
+    "schemaVersion": 1,
+    "defaultEquipped": "guanzhen",
+    "doNotModifyLegacyKeys": true,
+    "snapshotOnRunStart": true
+  },
+  "levels": [
+    {
+      "id": "trial-01",
+      "title": "乱军突围",
+      "startArmy": 8,
+      "runDuration": 42,
+      "bossId": "xing_daorong",
+      "bossHp": "reuse_current_local_v051_value_first",
+      "speedMultiplier": 1.0,
+      "warmup": {
+        "id": "trial-01:warmup",
+        "preplaced": true,
+        "count": 6,
+        "kind": "footman",
+        "hp": 2,
+        "depthFront": 2.7,
+        "rowSpacing": 0.18,
+        "formation": "scattered"
+      },
+      "commonWaves": [],
+      "forks": [
+        {
+          "id": "trial-01:fork:1",
+          "stage": 1,
+          "previewAt": 2,
+          "commitAt": 4,
+          "endAt": 14,
+          "insideGateAt": 6.8,
+          "internalGate": {
+            "left": {
+              "kind": "add",
+              "value": 12
+            },
+            "right": {
+              "kind": "double",
+              "value": 2
+            }
+          },
+          "safeSide": "left",
+          "hardSide": "right",
+          "routes": {
+            "safe": {
+              "side": "left",
+              "label": "稳进",
+              "hint": "疏散步兵",
+              "exitReinforcements": 8,
+              "exitCondition": "alive_and_crossed_end",
+              "waves": [
+                {
+                  "id": "trial-01:fork:1:safe:wave:1",
+                  "offset": 0.45,
+                  "count": 9,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-01:fork:1:safe:wave:2",
+                  "offset": 2.6,
+                  "count": 9,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-01:fork:1:safe:wave:3",
+                  "offset": 4.75,
+                  "count": 9,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1,
+                  "replacements": []
+                }
+              ],
+              "terrain": []
+            },
+            "hard": {
+              "side": "right",
+              "label": "强攻",
+              "hint": "纵列兵阵",
+              "exitReinforcements": 14,
+              "exitCondition": "alive_and_crossed_end",
+              "waves": [
+                {
+                  "id": "trial-01:fork:1:hard:wave:1",
+                  "offset": 0.45,
+                  "count": 14,
+                  "kind": "footman",
+                  "formation": "columns",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-01:fork:1:hard:wave:2",
+                  "offset": 2.6,
+                  "count": 14,
+                  "kind": "footman",
+                  "formation": "columns",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-01:fork:1:hard:wave:3",
+                  "offset": 4.75,
+                  "count": 14,
+                  "kind": "footman",
+                  "formation": "wide",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1,
+                  "replacements": []
+                }
+              ],
+              "terrain": []
+            }
+          }
+        },
+        {
+          "id": "trial-01:fork:2",
+          "stage": 2,
+          "previewAt": 15,
+          "commitAt": 17,
+          "endAt": 27,
+          "insideGateAt": 19.8,
+          "internalGate": {
+            "left": {
+              "kind": "double",
+              "value": 2
+            },
+            "right": {
+              "kind": "add",
+              "value": 24
+            }
+          },
+          "safeSide": "right",
+          "hardSide": "left",
+          "routes": {
+            "safe": {
+              "side": "right",
+              "label": "稳进",
+              "hint": "疏散步兵",
+              "exitReinforcements": 10,
+              "exitCondition": "alive_and_crossed_end",
+              "waves": [
+                {
+                  "id": "trial-01:fork:2:safe:wave:1",
+                  "offset": 0.45,
+                  "count": 13,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-01:fork:2:safe:wave:2",
+                  "offset": 2.6,
+                  "count": 13,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-01:fork:2:safe:wave:3",
+                  "offset": 4.75,
+                  "count": 13,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.1,
+                  "replacements": []
+                }
+              ],
+              "terrain": []
+            },
+            "hard": {
+              "side": "left",
+              "label": "强攻",
+              "hint": "密集兵群",
+              "exitReinforcements": 18,
+              "exitCondition": "alive_and_crossed_end",
+              "waves": [
+                {
+                  "id": "trial-01:fork:2:hard:wave:1",
+                  "offset": 0.45,
+                  "count": 21,
+                  "kind": "footman",
+                  "formation": "wide",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-01:fork:2:hard:wave:2",
+                  "offset": 2.6,
+                  "count": 21,
+                  "kind": "footman",
+                  "formation": "columns",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-01:fork:2:hard:wave:3",
+                  "offset": 4.75,
+                  "count": 21,
+                  "kind": "footman",
+                  "formation": "wide",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.1,
+                  "replacements": []
+                }
+              ],
+              "terrain": []
+            }
+          }
+        },
+        {
+          "id": "trial-01:fork:3",
+          "stage": 3,
+          "previewAt": 28,
+          "commitAt": 30,
+          "endAt": 40,
+          "insideGateAt": 32.8,
+          "internalGate": {
+            "left": {
+              "kind": "add",
+              "value": 12
+            },
+            "right": {
+              "kind": "double",
+              "value": 2
+            }
+          },
+          "safeSide": "left",
+          "hardSide": "right",
+          "routes": {
+            "safe": {
+              "side": "left",
+              "label": "稳进",
+              "hint": "疏散步兵",
+              "exitReinforcements": 12,
+              "exitCondition": "alive_and_crossed_end",
+              "waves": [
+                {
+                  "id": "trial-01:fork:3:safe:wave:1",
+                  "offset": 0.45,
+                  "count": 18,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.2,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-01:fork:3:safe:wave:2",
+                  "offset": 2.6,
+                  "count": 18,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.2,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-01:fork:3:safe:wave:3",
+                  "offset": 4.75,
+                  "count": 18,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.2,
+                  "replacements": []
+                }
+              ],
+              "terrain": []
+            },
+            "hard": {
+              "side": "right",
+              "label": "强攻",
+              "hint": "纵列兵阵",
+              "exitReinforcements": 22,
+              "exitCondition": "alive_and_crossed_end",
+              "waves": [
+                {
+                  "id": "trial-01:fork:3:hard:wave:1",
+                  "offset": 0.45,
+                  "count": 27,
+                  "kind": "footman",
+                  "formation": "columns",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.2,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-01:fork:3:hard:wave:2",
+                  "offset": 2.6,
+                  "count": 27,
+                  "kind": "footman",
+                  "formation": "columns",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.2,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-01:fork:3:hard:wave:3",
+                  "offset": 4.75,
+                  "count": 27,
+                  "kind": "footman",
+                  "formation": "wide",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.2,
+                  "replacements": []
+                }
+              ],
+              "terrain": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "trial-02",
+      "title": "夺粮立营",
+      "startArmy": 12,
+      "runDuration": 54,
+      "bossId": "chen_ying",
+      "bossHp": "reuse_current_local_v051_value_first",
+      "speedMultiplier": 1.08,
+      "warmup": {
+        "id": "trial-02:warmup",
+        "preplaced": true,
+        "count": 6,
+        "kind": "footman",
+        "hp": 2,
+        "depthFront": 2.7,
+        "rowSpacing": 0.18,
+        "formation": "scattered"
+      },
+      "commonWaves": [
+        {
+          "id": "trial-02:common:1",
+          "at": 17.4,
+          "count": 6,
+          "kind": "footman",
+          "entry": "visible_outer_side",
+          "spawnDepth": 3.3,
+          "formation": "scattered",
+          "noHostileRangedAttack": true
+        },
+        {
+          "id": "trial-02:common:2",
+          "at": 33.4,
+          "count": 6,
+          "kind": "footman",
+          "entry": "visible_outer_side",
+          "spawnDepth": 3.3,
+          "formation": "scattered",
+          "noHostileRangedAttack": true
+        }
+      ],
+      "forks": [
+        {
+          "id": "trial-02:fork:1",
+          "stage": 1,
+          "previewAt": 3,
+          "commitAt": 5,
+          "endAt": 17,
+          "insideGateAt": 7.8,
+          "internalGate": {
+            "left": {
+              "kind": "add",
+              "value": 16
+            },
+            "right": {
+              "kind": "double",
+              "value": 2
+            }
+          },
+          "safeSide": "right",
+          "hardSide": "left",
+          "routes": {
+            "safe": {
+              "side": "right",
+              "label": "稳进",
+              "hint": "疏散步兵",
+              "exitReinforcements": 8,
+              "exitCondition": "alive_and_crossed_end",
+              "waves": [
+                {
+                  "id": "trial-02:fork:1:safe:wave:1",
+                  "offset": 0.45,
+                  "count": 10,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-02:fork:1:safe:wave:2",
+                  "offset": 3.9,
+                  "count": 10,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-02:fork:1:safe:wave:3",
+                  "offset": 7.35,
+                  "count": 10,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1,
+                  "replacements": []
+                }
+              ],
+              "terrain": []
+            },
+            "hard": {
+              "side": "left",
+              "label": "强攻",
+              "hint": "纵列兵阵",
+              "exitReinforcements": 14,
+              "exitCondition": "alive_and_crossed_end",
+              "waves": [
+                {
+                  "id": "trial-02:fork:1:hard:wave:1",
+                  "offset": 0.45,
+                  "count": 16,
+                  "kind": "footman",
+                  "formation": "columns",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-02:fork:1:hard:wave:2",
+                  "offset": 3.9,
+                  "count": 16,
+                  "kind": "footman",
+                  "formation": "columns",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-02:fork:1:hard:wave:3",
+                  "offset": 7.35,
+                  "count": 16,
+                  "kind": "footman",
+                  "formation": "wide",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1,
+                  "replacements": []
+                }
+              ],
+              "terrain": []
+            }
+          }
+        },
+        {
+          "id": "trial-02:fork:2",
+          "stage": 2,
+          "previewAt": 19,
+          "commitAt": 21,
+          "endAt": 33,
+          "insideGateAt": 23.8,
+          "internalGate": {
+            "left": {
+              "kind": "double",
+              "value": 2
+            },
+            "right": {
+              "kind": "add",
+              "value": 20
+            }
+          },
+          "safeSide": "left",
+          "hardSide": "right",
+          "routes": {
+            "safe": {
+              "side": "left",
+              "label": "稳进",
+              "hint": "疏散步兵",
+              "exitReinforcements": 10,
+              "exitCondition": "alive_and_crossed_end",
+              "waves": [
+                {
+                  "id": "trial-02:fork:2:safe:wave:1",
+                  "offset": 0.45,
+                  "count": 14,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-02:fork:2:safe:wave:2",
+                  "offset": 3.9,
+                  "count": 14,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-02:fork:2:safe:wave:3",
+                  "offset": 7.35,
+                  "count": 14,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.1,
+                  "replacements": [
+                    {
+                      "kind": "crossbowman",
+                      "count": 1
+                    }
+                  ]
+                }
+              ],
+              "terrain": []
+            },
+            "hard": {
+              "side": "right",
+              "label": "强攻",
+              "hint": "密集兵群",
+              "exitReinforcements": 18,
+              "exitCondition": "alive_and_crossed_end",
+              "waves": [
+                {
+                  "id": "trial-02:fork:2:hard:wave:1",
+                  "offset": 0.45,
+                  "count": 22,
+                  "kind": "footman",
+                  "formation": "wide",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-02:fork:2:hard:wave:2",
+                  "offset": 3.9,
+                  "count": 22,
+                  "kind": "footman",
+                  "formation": "columns",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.1,
+                  "replacements": [
+                    {
+                      "kind": "runner",
+                      "count": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "trial-02:fork:2:hard:wave:3",
+                  "offset": 7.35,
+                  "count": 22,
+                  "kind": "footman",
+                  "formation": "wide",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.1,
+                  "replacements": [
+                    {
+                      "kind": "crossbowman",
+                      "count": 1
+                    }
+                  ]
+                }
+              ],
+              "terrain": []
+            }
+          }
+        },
+        {
+          "id": "trial-02:fork:3",
+          "stage": 3,
+          "previewAt": 35,
+          "commitAt": 37,
+          "endAt": 49,
+          "insideGateAt": 39.8,
+          "internalGate": {
+            "left": {
+              "kind": "add",
+              "value": 24
+            },
+            "right": {
+              "kind": "double",
+              "value": 2
+            }
+          },
+          "safeSide": "right",
+          "hardSide": "left",
+          "routes": {
+            "safe": {
+              "side": "right",
+              "label": "稳进",
+              "hint": "疏散步兵",
+              "exitReinforcements": 12,
+              "exitCondition": "alive_and_crossed_end",
+              "waves": [
+                {
+                  "id": "trial-02:fork:3:safe:wave:1",
+                  "offset": 0.45,
+                  "count": 18,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.2,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-02:fork:3:safe:wave:2",
+                  "offset": 3.9,
+                  "count": 18,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.2,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-02:fork:3:safe:wave:3",
+                  "offset": 7.35,
+                  "count": 18,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.2,
+                  "replacements": [
+                    {
+                      "kind": "crossbowman",
+                      "count": 1
+                    }
+                  ]
+                }
+              ],
+              "terrain": []
+            },
+            "hard": {
+              "side": "left",
+              "label": "强攻",
+              "hint": "纵列兵阵",
+              "exitReinforcements": 22,
+              "exitCondition": "alive_and_crossed_end",
+              "waves": [
+                {
+                  "id": "trial-02:fork:3:hard:wave:1",
+                  "offset": 0.45,
+                  "count": 28,
+                  "kind": "footman",
+                  "formation": "columns",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.2,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-02:fork:3:hard:wave:2",
+                  "offset": 3.9,
+                  "count": 28,
+                  "kind": "footman",
+                  "formation": "columns",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.2,
+                  "replacements": [
+                    {
+                      "kind": "runner",
+                      "count": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "trial-02:fork:3:hard:wave:3",
+                  "offset": 7.35,
+                  "count": 28,
+                  "kind": "footman",
+                  "formation": "wide",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.2,
+                  "replacements": [
+                    {
+                      "kind": "crossbowman",
+                      "count": 1
+                    }
+                  ]
+                }
+              ],
+              "terrain": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "trial-03",
+      "title": "白石解围",
+      "startArmy": 16,
+      "runDuration": 66,
+      "bossId": "yang_ling",
+      "bossHp": "reuse_current_local_v051_value_first",
+      "speedMultiplier": 1.15,
+      "warmup": {
+        "id": "trial-03:warmup",
+        "preplaced": true,
+        "count": 6,
+        "kind": "footman",
+        "hp": 2,
+        "depthFront": 2.7,
+        "rowSpacing": 0.18,
+        "formation": "scattered"
+      },
+      "commonWaves": [
+        {
+          "id": "trial-03:common:1",
+          "at": 18.4,
+          "count": 8,
+          "kind": "footman",
+          "entry": "visible_outer_side",
+          "spawnDepth": 3.3,
+          "formation": "scattered",
+          "noHostileRangedAttack": true
+        },
+        {
+          "id": "trial-03:common:2",
+          "at": 37.4,
+          "count": 8,
+          "kind": "footman",
+          "entry": "visible_outer_side",
+          "spawnDepth": 3.3,
+          "formation": "scattered",
+          "noHostileRangedAttack": true
+        },
+        {
+          "id": "trial-03:common:3",
+          "at": 58.0,
+          "count": 8,
+          "kind": "footman",
+          "entry": "visible_outer_side",
+          "spawnDepth": 5.0,
+          "formation": "scattered",
+          "noHostileRangedAttack": true
+        }
+      ],
+      "forks": [
+        {
+          "id": "trial-03:fork:1",
+          "stage": 1,
+          "previewAt": 4,
+          "commitAt": 6,
+          "endAt": 18,
+          "insideGateAt": 8.8,
+          "internalGate": {
+            "left": {
+              "kind": "add",
+              "value": 18
+            },
+            "right": {
+              "kind": "double",
+              "value": 2
+            }
+          },
+          "safeSide": "left",
+          "hardSide": "right",
+          "routes": {
+            "safe": {
+              "side": "left",
+              "label": "稳进",
+              "hint": "疏散步兵",
+              "exitReinforcements": 8,
+              "exitCondition": "alive_and_crossed_end",
+              "waves": [
+                {
+                  "id": "trial-03:fork:1:safe:wave:1",
+                  "offset": 0.45,
+                  "count": 10,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-03:fork:1:safe:wave:2",
+                  "offset": 3.9,
+                  "count": 10,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-03:fork:1:safe:wave:3",
+                  "offset": 7.35,
+                  "count": 10,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1,
+                  "replacements": []
+                }
+              ],
+              "terrain": []
+            },
+            "hard": {
+              "side": "right",
+              "label": "强攻",
+              "hint": "纵列兵阵",
+              "exitReinforcements": 14,
+              "exitCondition": "alive_and_crossed_end",
+              "waves": [
+                {
+                  "id": "trial-03:fork:1:hard:wave:1",
+                  "offset": 0.45,
+                  "count": 16,
+                  "kind": "footman",
+                  "formation": "columns",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-03:fork:1:hard:wave:2",
+                  "offset": 3.9,
+                  "count": 16,
+                  "kind": "footman",
+                  "formation": "columns",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-03:fork:1:hard:wave:3",
+                  "offset": 7.35,
+                  "count": 16,
+                  "kind": "footman",
+                  "formation": "wide",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1,
+                  "replacements": []
+                }
+              ],
+              "terrain": []
+            }
+          }
+        },
+        {
+          "id": "trial-03:fork:2",
+          "stage": 2,
+          "previewAt": 23,
+          "commitAt": 25,
+          "endAt": 37,
+          "insideGateAt": 27.8,
+          "internalGate": {
+            "left": {
+              "kind": "double",
+              "value": 2
+            },
+            "right": {
+              "kind": "add",
+              "value": 26
+            }
+          },
+          "safeSide": "right",
+          "hardSide": "left",
+          "routes": {
+            "safe": {
+              "side": "right",
+              "label": "稳进",
+              "hint": "疏散步兵",
+              "exitReinforcements": 10,
+              "exitCondition": "alive_and_crossed_end",
+              "waves": [
+                {
+                  "id": "trial-03:fork:2:safe:wave:1",
+                  "offset": 0.45,
+                  "count": 16,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-03:fork:2:safe:wave:2",
+                  "offset": 3.9,
+                  "count": 16,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-03:fork:2:safe:wave:3",
+                  "offset": 7.35,
+                  "count": 16,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.1,
+                  "replacements": [
+                    {
+                      "kind": "crossbowman",
+                      "count": 1
+                    }
+                  ]
+                }
+              ],
+              "terrain": []
+            },
+            "hard": {
+              "side": "left",
+              "label": "强攻",
+              "hint": "密集兵群",
+              "exitReinforcements": 18,
+              "exitCondition": "alive_and_crossed_end",
+              "waves": [
+                {
+                  "id": "trial-03:fork:2:hard:wave:1",
+                  "offset": 0.45,
+                  "count": 24,
+                  "kind": "footman",
+                  "formation": "wide",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.1,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-03:fork:2:hard:wave:2",
+                  "offset": 3.9,
+                  "count": 24,
+                  "kind": "footman",
+                  "formation": "columns",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.1,
+                  "replacements": [
+                    {
+                      "kind": "runner",
+                      "count": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "trial-03:fork:2:hard:wave:3",
+                  "offset": 7.35,
+                  "count": 24,
+                  "kind": "footman",
+                  "formation": "wide",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.1,
+                  "replacements": [
+                    {
+                      "kind": "crossbowman",
+                      "count": 1
+                    }
+                  ]
+                }
+              ],
+              "terrain": []
+            }
+          }
+        },
+        {
+          "id": "trial-03:fork:3",
+          "stage": 3,
+          "previewAt": 42,
+          "commitAt": 44,
+          "endAt": 56,
+          "insideGateAt": 46.8,
+          "internalGate": {
+            "left": {
+              "kind": "add",
+              "value": 36
+            },
+            "right": {
+              "kind": "double",
+              "value": 2
+            }
+          },
+          "safeSide": "left",
+          "hardSide": "right",
+          "routes": {
+            "safe": {
+              "side": "left",
+              "label": "稳进",
+              "hint": "疏散步兵",
+              "exitReinforcements": 12,
+              "exitCondition": "alive_and_crossed_end",
+              "waves": [
+                {
+                  "id": "trial-03:fork:3:safe:wave:1",
+                  "offset": 0.45,
+                  "count": 20,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.2,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-03:fork:3:safe:wave:2",
+                  "offset": 3.9,
+                  "count": 20,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.2,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-03:fork:3:safe:wave:3",
+                  "offset": 7.35,
+                  "count": 20,
+                  "kind": "footman",
+                  "formation": "scattered",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.2,
+                  "replacements": [
+                    {
+                      "kind": "crossbowman",
+                      "count": 1
+                    }
+                  ]
+                }
+              ],
+              "terrain": []
+            },
+            "hard": {
+              "side": "right",
+              "label": "强攻",
+              "hint": "纵列兵阵",
+              "exitReinforcements": 22,
+              "exitCondition": "alive_and_crossed_end",
+              "waves": [
+                {
+                  "id": "trial-03:fork:3:hard:wave:1",
+                  "offset": 0.45,
+                  "count": 30,
+                  "kind": "footman",
+                  "formation": "columns",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.2,
+                  "replacements": []
+                },
+                {
+                  "id": "trial-03:fork:3:hard:wave:2",
+                  "offset": 3.9,
+                  "count": 30,
+                  "kind": "footman",
+                  "formation": "columns",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.2,
+                  "replacements": [
+                    {
+                      "kind": "runner",
+                      "count": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "trial-03:fork:3:hard:wave:3",
+                  "offset": 7.35,
+                  "count": 30,
+                  "kind": "footman",
+                  "formation": "wide",
+                  "spawnDepth": 6.5,
+                  "rowSpacing": 0.28,
+                  "stageSpeedMultiplier": 1.2,
+                  "replacements": [
+                    {
+                      "kind": "runner",
+                      "count": 2
+                    },
+                    {
+                      "kind": "crossbowman",
+                      "count": 1
+                    }
+                  ]
+                }
+              ],
+              "terrain": []
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "replacementPolicy": {
+    "legacySparseEnemiesEnabled": false,
+    "legacyFixedRowsEnabled": false,
+    "legacyEliteDirectUpgradeEnabled": false,
+    "legacyStaticTerrainPlacementEnabled": false,
+    "terrainBlockingRulesRetained": true
+  }
+}

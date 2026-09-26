@@ -1,0 +1,8 @@
+{
+  "kind": "prototype only; no game save or audio changes",
+  "awakeningStart": "觉醒 5.8秒",
+  "awakeningEndsAfterSixSeconds": true,
+  "settingsToggle": "音效：关",
+  "pausePanel": "暂歇片刻",
+  "runtimePngBytes": 2231
+}

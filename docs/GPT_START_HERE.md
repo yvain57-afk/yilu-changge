@@ -1,19 +1,49 @@
+# 当前入口：v0.9
+
+先读 `v09/00_START_WITH_CODEX.md`、`v09/CHANGELOG.md` 与 `../evidence/v09/VERIFICATION.json`。
+用户本轮原包保存在 `v09/source-pack`；完整开发包为 `../release/v09/YILU_V09_FULL_DEV.zip`。
+下面内容保留为历史，不作为v0.9当前事实。
+
+---
+
+# 最新：v0.8.1 截图评审修订
+
+先读 `docs/v081/GPT_REVIEW.md` 与 `docs/v081/YILU_V08_SCREENSHOT_REVIEW.md`，当前证据为 `evidence/v081/summary.json`。下面v0.8及更早记录作为历史保留。
+
+# 当前：v0.8 · Last War 视频实证对齐 v2
+
+默认三关为 runnerVideoV2。先读 [当前机制对照和反馈](runner-video-v2/GPT_REVIEW.md)，查看 `evidence/runner-video-v2/summary.json`。
+
+- 试玩：http://127.0.0.1:43192/play/?v=08
+- 实际变化展示：http://127.0.0.1:43192/review/v08/
+- 本版取消旧分路/击杀升级/近战Boss流程，保留UI、安全区、存档和关间过渡。
+- 一次自然三关完成；旧证据不能充当本版结果。微信预览已生成，手机实玩待验收。
+
+以下保留为历史上下文。
+
+# 当前：v0.7 射击变门与军械补给
+
+用户根据 Last War 视频要求优化后试玩。当前源码默认关卡为 assault-v07。
+
+- 改动/操作：[v07/README.md](v07/README.md)
+- 当前证据页：http://127.0.0.1:43189/review/v07/
+- 试玩：http://127.0.0.1:43189/play/?v=07
+- 报告：evidence/v07/delivery.json、mobile.json、tests.log。
+- 当前反馈与接手说明：[v07/GPT_REVIEW.md](v07/GPT_REVIEW.md)。完整包用法：[v07/DEVELOPMENT_PACKAGE.md](v07/DEVELOPMENT_PACKAGE.md)。
+- v0.7 微信构建及新预览已成功，手机运行/手感仍待用户扫码验收；二维码单独交付，不纳入 GPT 包。
+
+以下内容保留为历史上下文。
+
 # 一路长歌：给下一轮 GPT 的固定入口
 
-当前开发版本：**v0.5.1-rc1**。先阅读 [本轮反馈与交付](v051/GPT_REVIEW.md)，再按其中链接查看同版证据和源码。
+当前最新本地版本：**v0.6-rc1**。先阅读 [本轮反馈与交付](v06/GPT_REVIEW.md)，再查看 [交付检查](../evidence/v06/checks.json) 和 [自然三关录像](../evidence/v06/three-levels-live-audio.mp4)。
 
-当前提交汇总 v0.4 → v0.5 → v0.5.1 的累积开发与交付证据；旧 main 提交 a8b56c1 不能当作 v0.5.1 基线。请以包含本文件的 main 提交为阅读基线，不把本地预览二维码或历史截图当成当前真机验收。
+v0.6 在本地 `7ee7685` 基线上继续，包含尚未提交的 UI 设计成果。本轮未授权提交或推送，因此 GitHub 上的旧文档不代表最新本地交付。后续推送后可将这个固定入口交给 GPT。
 
-下一轮规划请先区分：实现完成、模型测试、浏览器自然流程、微信预览生成、用户手机验收。只对有证据的阶段写“通过”。尊重用户对小屏画面、真实接触与节奏的反馈；不自动扩关卡、武将/装备/经营系统，不恢复停用音乐。
+请区分：代码实现、模型测试、浏览器自然流程、微信预览生成、用户手机验收。短隔离夹具不冒充正常游戏流程；脚本获胜不代表玩家通过率；模拟刘海/胶囊不代表真机验收。
 
-手机测试二维码有时效且只留在本机，不进入公开反馈包。需要更新时，用当前本地已核验的小游戏测试 AppID 重新生成；gh_ 原始 ID 不能代替 AppID 或权限。
+不自动扩关、恢复背景音乐、添加经营/货币系统。优先听取用户对兵群密度、击杀可读性、两套兵法与 Boss 展示节奏的反馈。
 
-## 可直接读取的同版证据
+二维码和本地测试身份仅保留本机，不进入公开反馈包。仓库证据与本机试玩地址不是公网部署。
 
-- [100 项测试与类型检查原始输出](../evidence/v051/check-fast.log)
-- [测试摘要](../evidence/v051/checks.json) 与 [自然三关记录](../evidence/v051/delivery.json)
-- [230 秒完整原速有声录像](../evidence/v051/three-levels-live-audio.mp4)
-- [同源刀、斧接触短片](../evidence/v051/natural-contact-excerpt.mp4)
-- [360 宽接触截图](../evidence/v051/blade-contact-360.png) · [390 宽接触截图](../evidence/v051/blade-contact-390.png)
-
-仓库包含源码和证据；本机试玩地址仅在开发电脑有效，不是已部署的公网游戏。
+历史反馈：[v0.5.1](v051/GPT_REVIEW.md)。

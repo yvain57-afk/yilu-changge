@@ -1,0 +1,18 @@
+{
+  "videoTitle": "Last War Gameplay (Android/iOS)",
+  "videoUrl": "https://www.youtube.com/watch?v=3hrg3sz_SrE",
+  "uploaderAsProvided": "Reari Gaming",
+  "providedUploadDate": "2025-09-22",
+  "localVideo": {
+    "file": "source.mp4",
+    "bytes": 252617859,
+    "sha256": "1db6de1a4e400b7c4aa02418c847d7326bb71036769a2ef5d3ac6a70fd1c508c",
+    "durationSeconds": 722.183333,
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "audioStreams": 0
+  },
+  "reviewCoverage": "Full supplied written report + 6 source contact sheets + independently re-extracted 99–107s sequence; not uninterrupted viewing of all 722s.",
+  "currentGameWorktreeInspected": false
+}

@@ -1,0 +1,160 @@
+{
+  "task_id": "BATTLE-REWORK-20260925",
+  "kind": "blank_review_template",
+  "baseline_report": "ui-20260925 / 0.9.1-ui20260925 (developer_report_only)",
+  "new_build_id": null,
+  "source_fingerprint": null,
+  "functional_status": "not_checked",
+  "visual_status": "not_checked",
+  "physical_device_status": "not_checked",
+  "status_enum": [
+    "not_checked",
+    "passed",
+    "partial",
+    "failed",
+    "blocked",
+    "not_applicable"
+  ],
+  "checks": [
+    {
+      "id": "V01",
+      "title": "连续道路材质与路缘",
+      "domain": "visual",
+      "status": "not_checked",
+      "evidence_type": null,
+      "evidence_paths": [],
+      "observations": null,
+      "limitations": null
+    },
+    {
+      "id": "V02",
+      "title": "建筑体积、光照和落地",
+      "domain": "visual",
+      "status": "not_checked",
+      "evidence_type": null,
+      "evidence_paths": [],
+      "observations": null,
+      "limitations": null
+    },
+    {
+      "id": "V03",
+      "title": "横移通路与真实障碍",
+      "domain": "visual_and_model",
+      "status": "not_checked",
+      "evidence_type": null,
+      "evidence_paths": [],
+      "observations": null,
+      "limitations": null
+    },
+    {
+      "id": "V04",
+      "title": "参战角色统一",
+      "domain": "visual",
+      "status": "not_checked",
+      "evidence_type": null,
+      "evidence_paths": [],
+      "observations": null,
+      "limitations": null
+    },
+    {
+      "id": "V05",
+      "title": "行军/出手/受击/退出动态",
+      "domain": "visual_motion",
+      "status": "not_checked",
+      "evidence_type": null,
+      "evidence_paths": [],
+      "observations": null,
+      "limitations": null
+    },
+    {
+      "id": "V06",
+      "title": "人数与队形对应",
+      "domain": "visual_and_model",
+      "status": "not_checked",
+      "evidence_type": null,
+      "evidence_paths": [],
+      "observations": null,
+      "limitations": null
+    },
+    {
+      "id": "V07",
+      "title": "正负门完整反馈",
+      "domain": "visual_and_model",
+      "status": "not_checked",
+      "evidence_type": null,
+      "evidence_paths": [],
+      "observations": null,
+      "limitations": null
+    },
+    {
+      "id": "V08",
+      "title": "四类箱完整外观与兑现",
+      "domain": "visual_and_model",
+      "status": "not_checked",
+      "evidence_type": null,
+      "evidence_paths": [],
+      "observations": null,
+      "limitations": null
+    },
+    {
+      "id": "V09",
+      "title": "真实出弹/命中/死亡/换装",
+      "domain": "visual_and_model",
+      "status": "not_checked",
+      "evidence_type": null,
+      "evidence_paths": [],
+      "observations": null,
+      "limitations": null
+    },
+    {
+      "id": "V10",
+      "title": "投影、输入和判定一致",
+      "domain": "model_and_input",
+      "status": "not_checked",
+      "evidence_type": null,
+      "evidence_paths": [],
+      "observations": null,
+      "limitations": null
+    },
+    {
+      "id": "V11",
+      "title": "战斗信息与短屏",
+      "domain": "layout_and_input",
+      "status": "not_checked",
+      "evidence_type": null,
+      "evidence_paths": [],
+      "observations": null,
+      "limitations": null
+    },
+    {
+      "id": "V12",
+      "title": "自然三关及必要定向验证",
+      "domain": "flow",
+      "status": "not_checked",
+      "evidence_type": null,
+      "evidence_paths": [],
+      "observations": null,
+      "limitations": null
+    },
+    {
+      "id": "V13",
+      "title": "实际构建预算与性能边界",
+      "domain": "build_and_performance",
+      "status": "not_checked",
+      "evidence_type": null,
+      "evidence_paths": [],
+      "observations": null,
+      "limitations": null
+    },
+    {
+      "id": "V14",
+      "title": "真机触控/安全区/声音/后台/持续表现",
+      "domain": "physical_device",
+      "status": "not_checked",
+      "evidence_type": null,
+      "evidence_paths": [],
+      "observations": null,
+      "limitations": null
+    }
+  ]
+}

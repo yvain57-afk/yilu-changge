@@ -1,0 +1,102 @@
+{
+  "columns": 3,
+  "rows": 1,
+  "height": 224,
+  "logicalHeight": 680,
+  "alphaThreshold": 1,
+  "keys": [
+    "zhaoWindup",
+    "zhaoRelease",
+    "zhaoRecover"
+  ],
+  "componentSeeds": [
+    [
+      430,
+      250
+    ],
+    [
+      1086,
+      300
+    ],
+    [
+      1810,
+      290
+    ]
+  ],
+  "feet": [
+    [
+      452,
+      627
+    ],
+    [
+      362,
+      644
+    ],
+    [
+      363,
+      635
+    ]
+  ],
+  "grips": [
+    null,
+    [
+      369,
+      183
+    ],
+    null
+  ],
+  "muzzles": [
+    null,
+    [
+      362,
+      82
+    ],
+    null
+  ],
+  "weapons": [
+    "spear",
+    "spear",
+    "spear"
+  ],
+  "phases": [
+    "windup",
+    "release",
+    "recover"
+  ],
+  "footMeasurement": {
+    "method": "Manual source pixel readback of projected sole centers; midpoint of fore/rear foot contacts, not lowest single foot edge",
+    "contacts": [
+      [
+        [
+          398,
+          578
+        ],
+        [
+          506,
+          676
+        ]
+      ],
+      [
+        [
+          982,
+          685
+        ],
+        [
+          1190,
+          603
+        ]
+      ],
+      [
+        [
+          1740,
+          588
+        ],
+        [
+          1882,
+          682
+        ]
+      ]
+    ],
+    "coordinateSpace": "global source pixels"
+  }
+}

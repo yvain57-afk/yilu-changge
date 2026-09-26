@@ -1,0 +1,11 @@
+{
+  "totalBytes": 19019472,
+  "uploadBytes": 19019472,
+  "limitBytes": 20971520,
+  "marginBytes": 1952048,
+  "targetMarginBytes": 1048576,
+  "meetsLocalMargin": true,
+  "thresholdSource": "Existing local project preview/package workflow threshold; not a claim about universal/current WeChat platform allowance. Parent must attach current official preview receipt.",
+  "officialUploadBytes": null,
+  "reason": "Build-only removal from verified runtime whitelist and exact used-frame RGBA preservation; original source art and private local config unchanged."
+}

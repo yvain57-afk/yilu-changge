@@ -1,0 +1,66 @@
+{
+  "kind": "design-agent-brief-not-game-patch",
+  "baselineCommit": "7ee7685e4bcb4fb7aa67284e7b56692826b86675",
+  "files": [
+    {
+      "path": "00_START_DESIGN_AGENT.md",
+      "bytes": 4407,
+      "sha256": "9814384603f40c8653bb732b2be9f5984ef5a123a4fddab81052d346c16c6c6d"
+    },
+    {
+      "path": "01_UI_DESIGN_BRIEF.md",
+      "bytes": 10659,
+      "sha256": "774f729d586f1e257391b5d46aa45375c9ec65531d8c084c109c8d527dc0d3ce"
+    },
+    {
+      "path": "02_SAFE_AREA_AND_HANDOFF.md",
+      "bytes": 6922,
+      "sha256": "78469e4ceb5f9b7a341c12cf200e58239a9666984797a60fccea0653deed2031"
+    },
+    {
+      "path": "03_SOURCE_NOTES.md",
+      "bytes": 2874,
+      "sha256": "4c282d805d1fc0a3fe9b6cf88a4bf15a0bfd08dd2bf64db0242205f0e99d142b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2052,
+      "sha256": "2e8849b3f8f1cb1bbe48a4c9246d1f796dfc699a0a846ffedf54d08946a53c7f"
+    },
+    {
+      "path": "design-data/viewport-fixtures.json",
+      "bytes": 1723,
+      "sha256": "41f11cfcd0f341674538a5a64bc5ef29ac2aa69d834fad26888bb91bc9ceb7df"
+    },
+    {
+      "path": "design-data/visual-seeds.json",
+      "bytes": 1290,
+      "sha256": "52c926ebe70c63b8b7aa393c3d6b0e5756f525a2671e7ffa58c1c05f9a1347f9"
+    },
+    {
+      "path": "references/battle-issues-annotated.png",
+      "bytes": 424175,
+      "sha256": "6ecbd2e839cfb04597184b9b07c07b456601a08b492b78de76903ca8ea80d24e"
+    },
+    {
+      "path": "references/home-issues-annotated.png",
+      "bytes": 515717,
+      "sha256": "7bfb4340bd7ea7dd8466830db448a8c5625c3169726651086e279a95e4906377"
+    },
+    {
+      "path": "references/user-battle-original.png",
+      "bytes": 512422,
+      "sha256": "969d3e270d93d0563149f70fb9302ad87d44db9b94a10eaafe3ddff115db78e9"
+    },
+    {
+      "path": "references/user-home-original.png",
+      "bytes": 836552,
+      "sha256": "f23dd7d3f394fcbfcb7d7ca789df4b96ef74f6ccca9482b67e25bebfdf0a56c1"
+    },
+    {
+      "path": "source-context/SOURCE_EXCERPTS.md",
+      "bytes": 3202,
+      "sha256": "8d924d1c38a9a9911ebbea8dbda9d60dd6932c1a8da870d8a2eeee03da7ad329"
+    }
+  ]
+}

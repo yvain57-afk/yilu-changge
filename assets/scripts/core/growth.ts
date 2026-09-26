@@ -8,7 +8,7 @@ export class Growth {
   this.reconcile();
  }
  reconcile(){IDS.forEach((id,i)=>{if(!this.book.data.cleared[id])return;const reward='first_clear:'+id;if(this.data.claimedRewards.indexOf(reward)<0)this.data.claimedRewards.push(reward);const c=companions[i];if(this.data.unlockedCompanions.indexOf(c)<0)this.data.unlockedCompanions.push(c);if(i===0&&this.data.unlockedWeapons.indexOf('blade')<0)this.data.unlockedWeapons.push('blade');});if(!this.data.equippedCompanion&&this.data.unlockedCompanions.indexOf('xing_daorong')>=0)this.data.equippedCompanion='xing_daorong';if(this.data.unlockedWeapons.indexOf(this.data.equippedWeapon)<0)this.data.equippedWeapon='spear';if(this.data.equippedCompanion&&this.data.unlockedCompanions.indexOf(this.data.equippedCompanion)<0)this.data.equippedCompanion=null;this.persist();}
- equipWeapon(id:PlayerWeapon){if(this.data.unlockedWeapons.indexOf(id)<0)return false;this.data.equippedWeapon=id;this.persist();return true;}
- equipCompanion(id:CompanionId){if(this.data.unlockedCompanions.indexOf(id)<0)return false;this.data.equippedCompanion=id;this.persist();return true;}
- persist(){try{this.storage.setItem(GROWTH_KEY,JSON.stringify(this.data));}catch{this.notice='本机暂时无法保存，本次仍可继续。';}}
+ equipWeapon(id:PlayerWeapon){if(this.data.unlockedWeapons.indexOf(id)<0)return false;this.data.equippedWeapon=id;return this.persist();}
+ equipCompanion(id:CompanionId){if(this.data.unlockedCompanions.indexOf(id)<0)return false;this.data.equippedCompanion=id;return this.persist();}
+ persist():boolean{try{this.storage.setItem(GROWTH_KEY,JSON.stringify(this.data));this.notice='';return true;}catch{this.notice='选择与成长记录未保存，本次数据仍保留，请重试。';return false;}}
 }

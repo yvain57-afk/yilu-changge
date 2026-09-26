@@ -1,0 +1,72 @@
+{
+  "source": "full-natural-three-levels.mp4",
+  "rawSource": "full-natural-three-levels.webm",
+  "speed": 1,
+  "seconds": 38,
+  "fps": 30,
+  "timelineOffset": 2.803,
+  "segments": [
+    {
+      "event": "battle-start",
+      "level": 2,
+      "sourceStart": 41.57,
+      "duration": 8,
+      "outputStart": 0,
+      "speed": 1,
+      "sourceFrame": 1247
+    },
+    {
+      "event": "gate-converted",
+      "level": 1,
+      "sourceStart": 0.7050000000000001,
+      "duration": 6,
+      "outputStart": 8,
+      "speed": 1,
+      "sourceFrame": 21
+    },
+    {
+      "event": "equipment",
+      "level": 1,
+      "sourceStart": 6.437999999999999,
+      "duration": 6,
+      "outputStart": 14,
+      "speed": 1,
+      "sourceFrame": 193
+    },
+    {
+      "event": "chain-passing",
+      "level": 2,
+      "sourceStart": 55.908,
+      "duration": 6,
+      "outputStart": 20,
+      "speed": 1,
+      "sourceFrame": 1677
+    },
+    {
+      "event": "wall-end",
+      "level": 2,
+      "sourceStart": 70.938,
+      "duration": 6,
+      "outputStart": 26,
+      "speed": 1,
+      "sourceFrame": 2128
+    },
+    {
+      "event": "large-combat",
+      "level": 3,
+      "sourceStart": 135.31900000000002,
+      "duration": 6,
+      "outputStart": 32,
+      "speed": 1,
+      "sourceFrame": 4060
+    }
+  ],
+  "topUncut": {
+    "path": "top-decoration-uncut.mp4",
+    "sourceStart": 41.57,
+    "duration": 8
+  },
+  "extraAudio": false,
+  "music": false,
+  "scope": "One continuous natural three-level recording supplies all these excerpts. Showcase has disclosed cuts; top excerpt is eight continuous seconds. Weapon fixture media is separate."
+}

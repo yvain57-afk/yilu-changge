@@ -1,0 +1,18 @@
+{
+  "kind": "fixture",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "model": {
+    "level": 1,
+    "elapsed": 33.249999999999396,
+    "count": 16,
+    "weapon": "blade",
+    "stage": 2
+  },
+  "rawState": "before/wall-end.json",
+  "scope": "Identical FIX1 capped state for visual isolation; normal gameplay uses window in natural recording",
+  "companion": "xing_daorong",
+  "tick": 1995
+}

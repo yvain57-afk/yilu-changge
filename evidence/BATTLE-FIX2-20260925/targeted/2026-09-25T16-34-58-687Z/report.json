@@ -1,0 +1,4686 @@
+{
+  "kind": "explicit_fixture",
+  "run": "2026-09-25T16-34-58-687Z",
+  "dir": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z",
+  "checks": [
+    {
+      "id": "U01/R03",
+      "name": "375 signed / zero / positive labels",
+      "pass": true
+    },
+    {
+      "id": "R03",
+      "name": "375 pause safe-area and logical hit size",
+      "pass": true
+    },
+    {
+      "id": "U01/R03",
+      "name": "390 signed / zero / positive labels",
+      "pass": true
+    },
+    {
+      "id": "R03",
+      "name": "390 pause safe-area and logical hit size",
+      "pass": true
+    },
+    {
+      "id": "U01/R03",
+      "name": "430 signed / zero / positive labels",
+      "pass": true
+    },
+    {
+      "id": "R03",
+      "name": "430 pause safe-area and logical hit size",
+      "pass": true
+    },
+    {
+      "id": "U03",
+      "name": "9/10/99/100 gate anchor and font remain stable",
+      "pass": true
+    },
+    {
+      "id": "U02/A05",
+      "name": "troops one grouped reward/durability label and real damage",
+      "pass": true
+    },
+    {
+      "id": "U02/A05",
+      "name": "equipment one grouped reward/durability label and real damage",
+      "pass": true
+    },
+    {
+      "id": "U02/A05",
+      "name": "chain one grouped reward/durability label and real damage",
+      "pass": true
+    },
+    {
+      "id": "U02/A05",
+      "name": "companion one grouped reward/durability label and real damage",
+      "pass": true
+    },
+    {
+      "id": "U02",
+      "name": "all four paired crates keep one grouped information ID",
+      "pass": true
+    },
+    {
+      "id": "U04",
+      "name": "chain 8 values stay on their own gates",
+      "pass": true
+    },
+    {
+      "id": "U04",
+      "name": "chain 10 values stay on their own gates",
+      "pass": true
+    },
+    {
+      "id": "U04",
+      "name": "chain 12 values stay on their own gates",
+      "pass": true
+    },
+    {
+      "id": "U04",
+      "name": "375 individual claims and misses never compensate other column",
+      "pass": true
+    },
+    {
+      "id": "U04",
+      "name": "390 individual claims and misses never compensate other column",
+      "pass": true
+    },
+    {
+      "id": "U04",
+      "name": "430 individual claims and misses never compensate other column",
+      "pass": true
+    },
+    {
+      "id": "U05",
+      "name": "top-entry visible target retains local value",
+      "pass": true
+    },
+    {
+      "id": "U05",
+      "name": "near-team visible target retains local value",
+      "pass": true
+    },
+    {
+      "id": "U05",
+      "name": "road-edge visible target retains local value",
+      "pass": true
+    },
+    {
+      "id": "A03",
+      "name": "stage 0 every issued shot observed without animation damage",
+      "pass": true
+    },
+    {
+      "id": "A03",
+      "name": "stage 1 every issued shot observed without animation damage",
+      "pass": true
+    },
+    {
+      "id": "A03",
+      "name": "stage 2 every issued shot observed without animation damage",
+      "pass": true
+    },
+    {
+      "id": "A01",
+      "name": "xing_daorong actual weapon identity and separate archer projectiles",
+      "pass": true
+    },
+    {
+      "id": "A01",
+      "name": "chen_ying actual weapon identity and separate archer projectiles",
+      "pass": true
+    },
+    {
+      "id": "A01",
+      "name": "zhao_yun_guest actual weapon identity and separate archer projectiles",
+      "pass": true
+    },
+    {
+      "id": "A04",
+      "name": "issued origin and weapon freeze while squad moves",
+      "pass": true
+    },
+    {
+      "id": "A06",
+      "name": "new run uses new weapon and clears observed events",
+      "pass": true
+    },
+    {
+      "id": "A06",
+      "name": "dead roster has no lingering actor attack",
+      "pass": true
+    },
+    {
+      "id": "A05/E04",
+      "name": "actual divider blocks real shots",
+      "pass": true
+    },
+    {
+      "id": "E04",
+      "name": "wall retains open lateral maneuver band",
+      "pass": true
+    },
+    {
+      "id": "R04",
+      "name": "reentry 0 fresh event sequence and bounded roster",
+      "pass": true
+    },
+    {
+      "id": "R04",
+      "name": "reentry 1 fresh event sequence and bounded roster",
+      "pass": true
+    },
+    {
+      "id": "R04",
+      "name": "reentry 2 fresh event sequence and bounded roster",
+      "pass": true
+    },
+    {
+      "id": "R04",
+      "name": "three short reentries settle at bounded pools",
+      "pass": true
+    },
+    {
+      "id": "A06",
+      "name": "pause freezes model and shot-event observer",
+      "pass": true
+    },
+    {
+      "id": "R03",
+      "name": "cancel ends lateral motion after real touch",
+      "pass": true
+    },
+    {
+      "id": "R04",
+      "name": "no browser errors",
+      "pass": true
+    }
+  ],
+  "failures": [
+    {
+      "id": "U04/R03",
+      "name": "375 legal two columns of 12 keep all 24 local IDs readable",
+      "error": "AssertionError [ERR_ASSERTION]: Missing dense-column-1:token:12"
+    },
+    {
+      "id": "U04/R03",
+      "name": "390 legal two columns of 12 keep all 24 local IDs readable",
+      "error": "AssertionError [ERR_ASSERTION]: Missing dense-column-1:token:12"
+    },
+    {
+      "id": "U04/R03",
+      "name": "430 legal two columns of 12 keep all 24 local IDs readable",
+      "error": "AssertionError [ERR_ASSERTION]: Missing dense-column-1:token:12"
+    }
+  ],
+  "captures": [
+    {
+      "name": "375-signs",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/375-signs.png"
+    },
+    {
+      "name": "390-signs",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/390-signs.png"
+    },
+    {
+      "name": "430-signs",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/430-signs.png"
+    },
+    {
+      "name": "digits-9",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/digits-9.png"
+    },
+    {
+      "name": "digits-10",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/digits-10.png"
+    },
+    {
+      "name": "digits-99",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/digits-99.png"
+    },
+    {
+      "name": "digits-100",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/digits-100.png"
+    },
+    {
+      "name": "digits--100",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/digits--100.png"
+    },
+    {
+      "name": "troops-intact",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/troops-intact.png"
+    },
+    {
+      "name": "troops-hit",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/troops-hit.png"
+    },
+    {
+      "name": "troops-broken",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/troops-broken.png"
+    },
+    {
+      "name": "equipment-intact",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/equipment-intact.png"
+    },
+    {
+      "name": "equipment-hit",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/equipment-hit.png"
+    },
+    {
+      "name": "equipment-broken",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/equipment-broken.png"
+    },
+    {
+      "name": "chain-intact",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/chain-intact.png"
+    },
+    {
+      "name": "chain-hit",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/chain-hit.png"
+    },
+    {
+      "name": "chain-broken",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/chain-broken.png"
+    },
+    {
+      "name": "companion-intact",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/companion-intact.png"
+    },
+    {
+      "name": "companion-hit",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/companion-hit.png"
+    },
+    {
+      "name": "companion-broken",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/companion-broken.png"
+    },
+    {
+      "name": "four-crates-two-pairs",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/four-crates-two-pairs.png"
+    },
+    {
+      "name": "chain-8",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/chain-8.png"
+    },
+    {
+      "name": "chain-10",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/chain-10.png"
+    },
+    {
+      "name": "chain-12",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/chain-12.png"
+    },
+    {
+      "name": "375-two-columns-24-tokens",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/375-two-columns-24-tokens.png"
+    },
+    {
+      "name": "375-two-columns-claims-and-misses",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/375-two-columns-claims-and-misses.png"
+    },
+    {
+      "name": "390-two-columns-24-tokens",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/390-two-columns-24-tokens.png"
+    },
+    {
+      "name": "390-two-columns-claims-and-misses",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/390-two-columns-claims-and-misses.png"
+    },
+    {
+      "name": "430-two-columns-24-tokens",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/430-two-columns-24-tokens.png"
+    },
+    {
+      "name": "430-two-columns-claims-and-misses",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/430-two-columns-claims-and-misses.png"
+    },
+    {
+      "name": "top-entry",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/top-entry.png"
+    },
+    {
+      "name": "near-team",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/near-team.png"
+    },
+    {
+      "name": "road-edge",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/road-edge.png"
+    },
+    {
+      "name": "firing-stage-0",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/firing-stage-0.png"
+    },
+    {
+      "name": "firing-stage-1",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/firing-stage-1.png"
+    },
+    {
+      "name": "firing-stage-2",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/firing-stage-2.png"
+    },
+    {
+      "name": "identity-xing_daorong",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/identity-xing_daorong.png"
+    },
+    {
+      "name": "identity-chen_ying",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/identity-chen_ying.png"
+    },
+    {
+      "name": "identity-zhao_yun_guest",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/identity-zhao_yun_guest.png"
+    },
+    {
+      "name": "frozen-shot-after-drag",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/frozen-shot-after-drag.png"
+    },
+    {
+      "name": "new-spear-run",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/new-spear-run.png"
+    },
+    {
+      "name": "death-clears-actors",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/death-clears-actors.png"
+    },
+    {
+      "name": "wall-impact",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/wall-impact.png"
+    },
+    {
+      "name": "wall-open-crossing",
+      "path": "evidence/BATTLE-FIX2-20260925/targeted/2026-09-25T16-34-58-687Z/wall-open-crossing.png"
+    }
+  ],
+  "lifecycle": [
+    {
+      "run": 0,
+      "nodes": 589,
+      "pool": 561,
+      "metrics": {
+        "drawCalls": 296,
+        "triangles": 4267,
+        "gpuBuffers": 297387236,
+        "gpuTextures": 111922016,
+        "jsHeap": 34777444
+      },
+      "frameTiming": {
+        "p50": 16.699999928474426,
+        "max": 28.200000047683716,
+        "p95": 18.5,
+        "p99": 25.600000023841858,
+        "over33": 0,
+        "frames": 83
+      },
+      "weaponPresentation": {
+        "run": 1,
+        "observed": 336,
+        "namedObserved": 14,
+        "events": [
+          {
+            "run": 1,
+            "id": 145,
+            "owner": 0,
+            "weapon": "blade",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 146,
+            "owner": 1,
+            "weapon": "great_axe",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 147,
+            "owner": 2,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 148,
+            "owner": 3,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 149,
+            "owner": 4,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 150,
+            "owner": 5,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 151,
+            "owner": 6,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 152,
+            "owner": 7,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 153,
+            "owner": 8,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 154,
+            "owner": 9,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 155,
+            "owner": 10,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 156,
+            "owner": 11,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 157,
+            "owner": 12,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 158,
+            "owner": 13,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 159,
+            "owner": 14,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 160,
+            "owner": 15,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 161,
+            "owner": 16,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 162,
+            "owner": 17,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 163,
+            "owner": 18,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 164,
+            "owner": 19,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 165,
+            "owner": 20,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 166,
+            "owner": 21,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 167,
+            "owner": 22,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 168,
+            "owner": 23,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 169,
+            "owner": 24,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 170,
+            "owner": 25,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 171,
+            "owner": 26,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 172,
+            "owner": 27,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 173,
+            "owner": 28,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 174,
+            "owner": 29,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 175,
+            "owner": 30,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 176,
+            "owner": 31,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 177,
+            "owner": 32,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 178,
+            "owner": 33,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 179,
+            "owner": 34,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 180,
+            "owner": 35,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 181,
+            "owner": 36,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 182,
+            "owner": 37,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 183,
+            "owner": 38,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 184,
+            "owner": 39,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 185,
+            "owner": 40,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 186,
+            "owner": 41,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 187,
+            "owner": 42,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 188,
+            "owner": 43,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 189,
+            "owner": 44,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 190,
+            "owner": 45,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 191,
+            "owner": 46,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 192,
+            "owner": 47,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 193,
+            "owner": 0,
+            "weapon": "blade",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 194,
+            "owner": 1,
+            "weapon": "great_axe",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 195,
+            "owner": 2,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 196,
+            "owner": 3,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 197,
+            "owner": 4,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 198,
+            "owner": 5,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 199,
+            "owner": 6,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 200,
+            "owner": 7,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 201,
+            "owner": 8,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 202,
+            "owner": 9,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 203,
+            "owner": 10,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 204,
+            "owner": 11,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 205,
+            "owner": 12,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 206,
+            "owner": 13,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 207,
+            "owner": 14,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 208,
+            "owner": 15,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 209,
+            "owner": 16,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 210,
+            "owner": 17,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 211,
+            "owner": 18,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 212,
+            "owner": 19,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 213,
+            "owner": 20,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 214,
+            "owner": 21,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 215,
+            "owner": 22,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 216,
+            "owner": 23,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 217,
+            "owner": 24,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 218,
+            "owner": 25,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 219,
+            "owner": 26,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 220,
+            "owner": 27,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 221,
+            "owner": 28,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 222,
+            "owner": 29,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 223,
+            "owner": 30,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 224,
+            "owner": 31,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 225,
+            "owner": 32,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 226,
+            "owner": 33,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 227,
+            "owner": 34,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 228,
+            "owner": 35,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 229,
+            "owner": 36,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 230,
+            "owner": 37,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 231,
+            "owner": 38,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 232,
+            "owner": 39,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 233,
+            "owner": 40,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 234,
+            "owner": 41,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 235,
+            "owner": 42,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 236,
+            "owner": 43,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 237,
+            "owner": 44,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 238,
+            "owner": 45,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 239,
+            "owner": 46,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 240,
+            "owner": 47,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 241,
+            "owner": 0,
+            "weapon": "blade",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 242,
+            "owner": 1,
+            "weapon": "great_axe",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 243,
+            "owner": 2,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 244,
+            "owner": 3,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 245,
+            "owner": 4,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 246,
+            "owner": 5,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 247,
+            "owner": 6,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 248,
+            "owner": 7,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 249,
+            "owner": 8,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 250,
+            "owner": 9,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 251,
+            "owner": 10,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 252,
+            "owner": 11,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 253,
+            "owner": 12,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 254,
+            "owner": 13,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 255,
+            "owner": 14,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 256,
+            "owner": 15,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 257,
+            "owner": 16,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 258,
+            "owner": 17,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 259,
+            "owner": 18,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 260,
+            "owner": 19,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 261,
+            "owner": 20,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 262,
+            "owner": 21,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 263,
+            "owner": 22,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 264,
+            "owner": 23,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 265,
+            "owner": 24,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 266,
+            "owner": 25,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 267,
+            "owner": 26,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 268,
+            "owner": 27,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 269,
+            "owner": 28,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 270,
+            "owner": 29,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 271,
+            "owner": 30,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 272,
+            "owner": 31,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 273,
+            "owner": 32,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 274,
+            "owner": 33,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 275,
+            "owner": 34,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 276,
+            "owner": 35,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 277,
+            "owner": 36,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 278,
+            "owner": 37,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 279,
+            "owner": 38,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 280,
+            "owner": 39,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 281,
+            "owner": 40,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 282,
+            "owner": 41,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 283,
+            "owner": 42,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 284,
+            "owner": 43,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 285,
+            "owner": 44,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 286,
+            "owner": 45,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 287,
+            "owner": 46,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 288,
+            "owner": 47,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 289,
+            "owner": 0,
+            "weapon": "blade",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 290,
+            "owner": 1,
+            "weapon": "great_axe",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 291,
+            "owner": 2,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 292,
+            "owner": 3,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 293,
+            "owner": 4,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 294,
+            "owner": 5,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 295,
+            "owner": 6,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 296,
+            "owner": 7,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 297,
+            "owner": 8,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 298,
+            "owner": 9,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 299,
+            "owner": 10,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 300,
+            "owner": 11,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 301,
+            "owner": 12,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 302,
+            "owner": 13,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 303,
+            "owner": 14,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 304,
+            "owner": 15,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 305,
+            "owner": 16,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 306,
+            "owner": 17,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 307,
+            "owner": 18,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 308,
+            "owner": 19,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 309,
+            "owner": 20,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 310,
+            "owner": 21,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 311,
+            "owner": 22,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 312,
+            "owner": 23,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 313,
+            "owner": 24,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 314,
+            "owner": 25,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 315,
+            "owner": 26,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 316,
+            "owner": 27,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 317,
+            "owner": 28,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 318,
+            "owner": 29,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 319,
+            "owner": 30,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 320,
+            "owner": 31,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 321,
+            "owner": 32,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 322,
+            "owner": 33,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 323,
+            "owner": 34,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 324,
+            "owner": 35,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 325,
+            "owner": 36,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 326,
+            "owner": 37,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 327,
+            "owner": 38,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 328,
+            "owner": 39,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 329,
+            "owner": 40,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 330,
+            "owner": 41,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 331,
+            "owner": 42,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 332,
+            "owner": 43,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 333,
+            "owner": 44,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 334,
+            "owner": 45,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 335,
+            "owner": 46,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 336,
+            "owner": 47,
+            "weapon": "bow",
+            "tick": 73
+          }
+        ],
+        "trackedActors": 48,
+        "source": "RunnerDirector.recentFires; actual issued projectile IDs",
+        "damageDrivenByAnimation": false
+      },
+      "stats": {
+        "issuedShots": 336,
+        "tickIssuedShots": 0,
+        "numericGuards": 0,
+        "shots": 336,
+        "damageBudget": 336,
+        "hits": 51,
+        "gateHits": 0,
+        "converted": 0,
+        "gatesTaken": 0,
+        "crates": 0,
+        "chainGenerated": 0,
+        "chainTaken": 0,
+        "missed": 0,
+        "equipment": 0,
+        "fieldCompanions": 0,
+        "blocked": 0,
+        "deferredShots": 0,
+        "deferredChains": 0,
+        "peakShots": 237,
+        "peakEnemies": 64,
+        "peakTokens": 0
+      }
+    },
+    {
+      "run": 1,
+      "nodes": 589,
+      "pool": 561,
+      "metrics": {
+        "drawCalls": 296,
+        "triangles": 4267,
+        "gpuBuffers": 297387236,
+        "gpuTextures": 111922016,
+        "jsHeap": 57533572
+      },
+      "frameTiming": {
+        "p50": 16.699999928474426,
+        "max": 26.300000071525574,
+        "p95": 16.899999976158142,
+        "p99": 18.399999976158142,
+        "over33": 0,
+        "frames": 85
+      },
+      "weaponPresentation": {
+        "run": 1,
+        "observed": 336,
+        "namedObserved": 14,
+        "events": [
+          {
+            "run": 1,
+            "id": 145,
+            "owner": 0,
+            "weapon": "spear",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 146,
+            "owner": 1,
+            "weapon": "great_axe",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 147,
+            "owner": 2,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 148,
+            "owner": 3,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 149,
+            "owner": 4,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 150,
+            "owner": 5,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 151,
+            "owner": 6,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 152,
+            "owner": 7,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 153,
+            "owner": 8,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 154,
+            "owner": 9,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 155,
+            "owner": 10,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 156,
+            "owner": 11,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 157,
+            "owner": 12,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 158,
+            "owner": 13,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 159,
+            "owner": 14,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 160,
+            "owner": 15,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 161,
+            "owner": 16,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 162,
+            "owner": 17,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 163,
+            "owner": 18,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 164,
+            "owner": 19,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 165,
+            "owner": 20,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 166,
+            "owner": 21,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 167,
+            "owner": 22,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 168,
+            "owner": 23,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 169,
+            "owner": 24,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 170,
+            "owner": 25,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 171,
+            "owner": 26,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 172,
+            "owner": 27,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 173,
+            "owner": 28,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 174,
+            "owner": 29,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 175,
+            "owner": 30,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 176,
+            "owner": 31,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 177,
+            "owner": 32,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 178,
+            "owner": 33,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 179,
+            "owner": 34,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 180,
+            "owner": 35,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 181,
+            "owner": 36,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 182,
+            "owner": 37,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 183,
+            "owner": 38,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 184,
+            "owner": 39,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 185,
+            "owner": 40,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 186,
+            "owner": 41,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 187,
+            "owner": 42,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 188,
+            "owner": 43,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 189,
+            "owner": 44,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 190,
+            "owner": 45,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 191,
+            "owner": 46,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 192,
+            "owner": 47,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 193,
+            "owner": 0,
+            "weapon": "spear",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 194,
+            "owner": 1,
+            "weapon": "great_axe",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 195,
+            "owner": 2,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 196,
+            "owner": 3,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 197,
+            "owner": 4,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 198,
+            "owner": 5,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 199,
+            "owner": 6,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 200,
+            "owner": 7,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 201,
+            "owner": 8,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 202,
+            "owner": 9,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 203,
+            "owner": 10,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 204,
+            "owner": 11,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 205,
+            "owner": 12,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 206,
+            "owner": 13,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 207,
+            "owner": 14,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 208,
+            "owner": 15,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 209,
+            "owner": 16,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 210,
+            "owner": 17,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 211,
+            "owner": 18,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 212,
+            "owner": 19,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 213,
+            "owner": 20,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 214,
+            "owner": 21,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 215,
+            "owner": 22,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 216,
+            "owner": 23,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 217,
+            "owner": 24,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 218,
+            "owner": 25,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 219,
+            "owner": 26,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 220,
+            "owner": 27,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 221,
+            "owner": 28,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 222,
+            "owner": 29,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 223,
+            "owner": 30,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 224,
+            "owner": 31,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 225,
+            "owner": 32,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 226,
+            "owner": 33,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 227,
+            "owner": 34,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 228,
+            "owner": 35,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 229,
+            "owner": 36,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 230,
+            "owner": 37,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 231,
+            "owner": 38,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 232,
+            "owner": 39,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 233,
+            "owner": 40,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 234,
+            "owner": 41,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 235,
+            "owner": 42,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 236,
+            "owner": 43,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 237,
+            "owner": 44,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 238,
+            "owner": 45,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 239,
+            "owner": 46,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 240,
+            "owner": 47,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 241,
+            "owner": 0,
+            "weapon": "spear",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 242,
+            "owner": 1,
+            "weapon": "great_axe",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 243,
+            "owner": 2,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 244,
+            "owner": 3,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 245,
+            "owner": 4,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 246,
+            "owner": 5,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 247,
+            "owner": 6,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 248,
+            "owner": 7,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 249,
+            "owner": 8,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 250,
+            "owner": 9,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 251,
+            "owner": 10,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 252,
+            "owner": 11,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 253,
+            "owner": 12,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 254,
+            "owner": 13,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 255,
+            "owner": 14,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 256,
+            "owner": 15,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 257,
+            "owner": 16,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 258,
+            "owner": 17,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 259,
+            "owner": 18,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 260,
+            "owner": 19,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 261,
+            "owner": 20,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 262,
+            "owner": 21,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 263,
+            "owner": 22,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 264,
+            "owner": 23,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 265,
+            "owner": 24,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 266,
+            "owner": 25,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 267,
+            "owner": 26,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 268,
+            "owner": 27,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 269,
+            "owner": 28,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 270,
+            "owner": 29,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 271,
+            "owner": 30,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 272,
+            "owner": 31,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 273,
+            "owner": 32,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 274,
+            "owner": 33,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 275,
+            "owner": 34,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 276,
+            "owner": 35,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 277,
+            "owner": 36,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 278,
+            "owner": 37,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 279,
+            "owner": 38,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 280,
+            "owner": 39,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 281,
+            "owner": 40,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 282,
+            "owner": 41,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 283,
+            "owner": 42,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 284,
+            "owner": 43,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 285,
+            "owner": 44,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 286,
+            "owner": 45,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 287,
+            "owner": 46,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 288,
+            "owner": 47,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 289,
+            "owner": 0,
+            "weapon": "spear",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 290,
+            "owner": 1,
+            "weapon": "great_axe",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 291,
+            "owner": 2,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 292,
+            "owner": 3,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 293,
+            "owner": 4,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 294,
+            "owner": 5,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 295,
+            "owner": 6,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 296,
+            "owner": 7,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 297,
+            "owner": 8,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 298,
+            "owner": 9,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 299,
+            "owner": 10,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 300,
+            "owner": 11,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 301,
+            "owner": 12,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 302,
+            "owner": 13,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 303,
+            "owner": 14,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 304,
+            "owner": 15,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 305,
+            "owner": 16,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 306,
+            "owner": 17,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 307,
+            "owner": 18,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 308,
+            "owner": 19,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 309,
+            "owner": 20,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 310,
+            "owner": 21,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 311,
+            "owner": 22,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 312,
+            "owner": 23,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 313,
+            "owner": 24,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 314,
+            "owner": 25,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 315,
+            "owner": 26,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 316,
+            "owner": 27,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 317,
+            "owner": 28,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 318,
+            "owner": 29,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 319,
+            "owner": 30,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 320,
+            "owner": 31,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 321,
+            "owner": 32,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 322,
+            "owner": 33,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 323,
+            "owner": 34,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 324,
+            "owner": 35,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 325,
+            "owner": 36,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 326,
+            "owner": 37,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 327,
+            "owner": 38,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 328,
+            "owner": 39,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 329,
+            "owner": 40,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 330,
+            "owner": 41,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 331,
+            "owner": 42,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 332,
+            "owner": 43,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 333,
+            "owner": 44,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 334,
+            "owner": 45,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 335,
+            "owner": 46,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 336,
+            "owner": 47,
+            "weapon": "bow",
+            "tick": 73
+          }
+        ],
+        "trackedActors": 48,
+        "source": "RunnerDirector.recentFires; actual issued projectile IDs",
+        "damageDrivenByAnimation": false
+      },
+      "stats": {
+        "issuedShots": 336,
+        "tickIssuedShots": 0,
+        "numericGuards": 0,
+        "shots": 336,
+        "damageBudget": 336,
+        "hits": 51,
+        "gateHits": 0,
+        "converted": 0,
+        "gatesTaken": 0,
+        "crates": 0,
+        "chainGenerated": 0,
+        "chainTaken": 0,
+        "missed": 0,
+        "equipment": 0,
+        "fieldCompanions": 0,
+        "blocked": 0,
+        "deferredShots": 0,
+        "deferredChains": 0,
+        "peakShots": 237,
+        "peakEnemies": 64,
+        "peakTokens": 0
+      }
+    },
+    {
+      "run": 2,
+      "nodes": 589,
+      "pool": 561,
+      "metrics": {
+        "drawCalls": 296,
+        "triangles": 4267,
+        "gpuBuffers": 297387236,
+        "gpuTextures": 111922016,
+        "jsHeap": 75825280
+      },
+      "frameTiming": {
+        "p50": 16.699999928474426,
+        "max": 28.299999952316284,
+        "p95": 18.199999928474426,
+        "p99": 18.699999928474426,
+        "over33": 0,
+        "frames": 85
+      },
+      "weaponPresentation": {
+        "run": 1,
+        "observed": 336,
+        "namedObserved": 14,
+        "events": [
+          {
+            "run": 1,
+            "id": 145,
+            "owner": 0,
+            "weapon": "blade",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 146,
+            "owner": 1,
+            "weapon": "great_axe",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 147,
+            "owner": 2,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 148,
+            "owner": 3,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 149,
+            "owner": 4,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 150,
+            "owner": 5,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 151,
+            "owner": 6,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 152,
+            "owner": 7,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 153,
+            "owner": 8,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 154,
+            "owner": 9,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 155,
+            "owner": 10,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 156,
+            "owner": 11,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 157,
+            "owner": 12,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 158,
+            "owner": 13,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 159,
+            "owner": 14,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 160,
+            "owner": 15,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 161,
+            "owner": 16,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 162,
+            "owner": 17,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 163,
+            "owner": 18,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 164,
+            "owner": 19,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 165,
+            "owner": 20,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 166,
+            "owner": 21,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 167,
+            "owner": 22,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 168,
+            "owner": 23,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 169,
+            "owner": 24,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 170,
+            "owner": 25,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 171,
+            "owner": 26,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 172,
+            "owner": 27,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 173,
+            "owner": 28,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 174,
+            "owner": 29,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 175,
+            "owner": 30,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 176,
+            "owner": 31,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 177,
+            "owner": 32,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 178,
+            "owner": 33,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 179,
+            "owner": 34,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 180,
+            "owner": 35,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 181,
+            "owner": 36,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 182,
+            "owner": 37,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 183,
+            "owner": 38,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 184,
+            "owner": 39,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 185,
+            "owner": 40,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 186,
+            "owner": 41,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 187,
+            "owner": 42,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 188,
+            "owner": 43,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 189,
+            "owner": 44,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 190,
+            "owner": 45,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 191,
+            "owner": 46,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 192,
+            "owner": 47,
+            "weapon": "bow",
+            "tick": 37
+          },
+          {
+            "run": 1,
+            "id": 193,
+            "owner": 0,
+            "weapon": "blade",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 194,
+            "owner": 1,
+            "weapon": "great_axe",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 195,
+            "owner": 2,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 196,
+            "owner": 3,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 197,
+            "owner": 4,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 198,
+            "owner": 5,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 199,
+            "owner": 6,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 200,
+            "owner": 7,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 201,
+            "owner": 8,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 202,
+            "owner": 9,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 203,
+            "owner": 10,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 204,
+            "owner": 11,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 205,
+            "owner": 12,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 206,
+            "owner": 13,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 207,
+            "owner": 14,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 208,
+            "owner": 15,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 209,
+            "owner": 16,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 210,
+            "owner": 17,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 211,
+            "owner": 18,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 212,
+            "owner": 19,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 213,
+            "owner": 20,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 214,
+            "owner": 21,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 215,
+            "owner": 22,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 216,
+            "owner": 23,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 217,
+            "owner": 24,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 218,
+            "owner": 25,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 219,
+            "owner": 26,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 220,
+            "owner": 27,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 221,
+            "owner": 28,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 222,
+            "owner": 29,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 223,
+            "owner": 30,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 224,
+            "owner": 31,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 225,
+            "owner": 32,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 226,
+            "owner": 33,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 227,
+            "owner": 34,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 228,
+            "owner": 35,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 229,
+            "owner": 36,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 230,
+            "owner": 37,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 231,
+            "owner": 38,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 232,
+            "owner": 39,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 233,
+            "owner": 40,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 234,
+            "owner": 41,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 235,
+            "owner": 42,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 236,
+            "owner": 43,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 237,
+            "owner": 44,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 238,
+            "owner": 45,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 239,
+            "owner": 46,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 240,
+            "owner": 47,
+            "weapon": "bow",
+            "tick": 49
+          },
+          {
+            "run": 1,
+            "id": 241,
+            "owner": 0,
+            "weapon": "blade",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 242,
+            "owner": 1,
+            "weapon": "great_axe",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 243,
+            "owner": 2,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 244,
+            "owner": 3,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 245,
+            "owner": 4,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 246,
+            "owner": 5,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 247,
+            "owner": 6,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 248,
+            "owner": 7,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 249,
+            "owner": 8,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 250,
+            "owner": 9,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 251,
+            "owner": 10,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 252,
+            "owner": 11,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 253,
+            "owner": 12,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 254,
+            "owner": 13,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 255,
+            "owner": 14,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 256,
+            "owner": 15,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 257,
+            "owner": 16,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 258,
+            "owner": 17,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 259,
+            "owner": 18,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 260,
+            "owner": 19,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 261,
+            "owner": 20,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 262,
+            "owner": 21,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 263,
+            "owner": 22,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 264,
+            "owner": 23,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 265,
+            "owner": 24,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 266,
+            "owner": 25,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 267,
+            "owner": 26,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 268,
+            "owner": 27,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 269,
+            "owner": 28,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 270,
+            "owner": 29,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 271,
+            "owner": 30,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 272,
+            "owner": 31,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 273,
+            "owner": 32,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 274,
+            "owner": 33,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 275,
+            "owner": 34,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 276,
+            "owner": 35,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 277,
+            "owner": 36,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 278,
+            "owner": 37,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 279,
+            "owner": 38,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 280,
+            "owner": 39,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 281,
+            "owner": 40,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 282,
+            "owner": 41,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 283,
+            "owner": 42,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 284,
+            "owner": 43,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 285,
+            "owner": 44,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 286,
+            "owner": 45,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 287,
+            "owner": 46,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 288,
+            "owner": 47,
+            "weapon": "bow",
+            "tick": 61
+          },
+          {
+            "run": 1,
+            "id": 289,
+            "owner": 0,
+            "weapon": "blade",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 290,
+            "owner": 1,
+            "weapon": "great_axe",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 291,
+            "owner": 2,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 292,
+            "owner": 3,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 293,
+            "owner": 4,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 294,
+            "owner": 5,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 295,
+            "owner": 6,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 296,
+            "owner": 7,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 297,
+            "owner": 8,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 298,
+            "owner": 9,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 299,
+            "owner": 10,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 300,
+            "owner": 11,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 301,
+            "owner": 12,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 302,
+            "owner": 13,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 303,
+            "owner": 14,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 304,
+            "owner": 15,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 305,
+            "owner": 16,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 306,
+            "owner": 17,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 307,
+            "owner": 18,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 308,
+            "owner": 19,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 309,
+            "owner": 20,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 310,
+            "owner": 21,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 311,
+            "owner": 22,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 312,
+            "owner": 23,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 313,
+            "owner": 24,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 314,
+            "owner": 25,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 315,
+            "owner": 26,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 316,
+            "owner": 27,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 317,
+            "owner": 28,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 318,
+            "owner": 29,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 319,
+            "owner": 30,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 320,
+            "owner": 31,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 321,
+            "owner": 32,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 322,
+            "owner": 33,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 323,
+            "owner": 34,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 324,
+            "owner": 35,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 325,
+            "owner": 36,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 326,
+            "owner": 37,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 327,
+            "owner": 38,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 328,
+            "owner": 39,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 329,
+            "owner": 40,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 330,
+            "owner": 41,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 331,
+            "owner": 42,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 332,
+            "owner": 43,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 333,
+            "owner": 44,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 334,
+            "owner": 45,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 335,
+            "owner": 46,
+            "weapon": "bow",
+            "tick": 73
+          },
+          {
+            "run": 1,
+            "id": 336,
+            "owner": 47,
+            "weapon": "bow",
+            "tick": 73
+          }
+        ],
+        "trackedActors": 48,
+        "source": "RunnerDirector.recentFires; actual issued projectile IDs",
+        "damageDrivenByAnimation": false
+      },
+      "stats": {
+        "issuedShots": 336,
+        "tickIssuedShots": 0,
+        "numericGuards": 0,
+        "shots": 336,
+        "damageBudget": 336,
+        "hits": 51,
+        "gateHits": 0,
+        "converted": 0,
+        "gatesTaken": 0,
+        "crates": 0,
+        "chainGenerated": 0,
+        "chainTaken": 0,
+        "missed": 0,
+        "equipment": 0,
+        "fieldCompanions": 0,
+        "blocked": 0,
+        "deferredShots": 0,
+        "deferredChains": 0,
+        "peakShots": 237,
+        "peakEnemies": 64,
+        "peakTokens": 0
+      }
+    }
+  ],
+  "visualStatus": "not_reviewed",
+  "scope": "Targeted FIX2 presentation and input regression. All artificial initial state and direct model stepping are fixture-only; no natural run claim. Visual quality is reviewed separately.",
+  "digitLabels": [
+    {
+      "value": 9,
+      "id": "runner-object-0-value",
+      "text": "+9",
+      "x": 0,
+      "y": 100.443,
+      "width": 88,
+      "size": 59.07692307692308,
+      "color": "#fff7df",
+      "priority": 12,
+      "depth": 3,
+      "anchorY": 42,
+      "locked": true,
+      "sourceX": 0,
+      "sourceY": 100.443,
+      "shifted": false,
+      "compact": false
+    },
+    {
+      "value": 10,
+      "id": "runner-object-0-value",
+      "text": "+10",
+      "x": 0,
+      "y": 100.443,
+      "width": 88,
+      "size": 51.69230769230769,
+      "color": "#fff7df",
+      "priority": 12,
+      "depth": 3,
+      "anchorY": 42,
+      "locked": true,
+      "sourceX": 0,
+      "sourceY": 100.443,
+      "shifted": false,
+      "compact": false
+    },
+    {
+      "value": 99,
+      "id": "runner-object-0-value",
+      "text": "+99",
+      "x": 0,
+      "y": 100.443,
+      "width": 88,
+      "size": 51.69230769230769,
+      "color": "#fff7df",
+      "priority": 12,
+      "depth": 3,
+      "anchorY": 42,
+      "locked": true,
+      "sourceX": 0,
+      "sourceY": 100.443,
+      "shifted": false,
+      "compact": false
+    },
+    {
+      "value": 100,
+      "id": "runner-object-0-value",
+      "text": "+100",
+      "x": 0,
+      "y": 100.443,
+      "width": 88,
+      "size": 51.69230769230769,
+      "color": "#fff7df",
+      "priority": 12,
+      "depth": 3,
+      "anchorY": 42,
+      "locked": true,
+      "sourceX": 0,
+      "sourceY": 100.443,
+      "shifted": false,
+      "compact": false
+    },
+    {
+      "value": -100,
+      "id": "runner-object-0-value",
+      "text": "−100",
+      "x": 0,
+      "y": 100.443,
+      "width": 88,
+      "size": 51.69230769230769,
+      "color": "#fff7df",
+      "priority": 12,
+      "depth": 3,
+      "anchorY": 42,
+      "locked": true,
+      "sourceX": 0,
+      "sourceY": 100.443,
+      "shifted": false,
+      "compact": false
+    }
+  ],
+  "errors": [],
+  "passed": false
+}

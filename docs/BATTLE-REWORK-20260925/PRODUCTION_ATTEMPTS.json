@@ -1,0 +1,173 @@
+{
+  "task": "BATTLE-REWORK-20260925",
+  "round": "initial production and three identity/gait corrections",
+  "tool": "Built-in imagegen invoked by parent agent",
+  "attemptCount": 14,
+  "confirmedBy": "Parent confirmed11 initial/correction images plus3 R2 images; all14 sources exist",
+  "visualAcceptance": "R1 failed and preserved; parent accepted R2 internal samples, final horizon UV improvement compiled; final visual/device status belongs to parent review evidence",
+  "attempts": [
+    {
+      "index": 1,
+      "sourcePath": "art-source/battle-rework20260925/road-source.png",
+      "sourceSha256": "fe0d713b9fdba896407254ab27eb9a6021373ca1a6852b4cc13f1ea4d64332bf",
+      "bytes": 3066382,
+      "purpose": "Independent battle material generation",
+      "sourcePreserved": true,
+      "output": "file present; runtime import recorded in manifest",
+      "review": "Original production source retained, including superseded poses"
+    },
+    {
+      "index": 2,
+      "sourcePath": "art-source/battle-rework20260925/soldiers-source.png",
+      "sourceSha256": "23fb54935deae61c04e40b4c8e1e5ac44364f17968731a48cb4a414cbaf2b2c4",
+      "bytes": 2124567,
+      "purpose": "Independent battle material generation",
+      "sourcePreserved": true,
+      "output": "file present; runtime import recorded in manifest",
+      "review": "Original production source retained, including superseded poses"
+    },
+    {
+      "index": 3,
+      "sourcePath": "art-source/battle-rework20260925/scenery-source.png",
+      "sourceSha256": "ce9ed7acc60f1960bc2cf91532c618ddc29b078eca527b1c8ee194f64e201a39",
+      "bytes": 2554849,
+      "purpose": "Independent battle material generation",
+      "sourcePreserved": true,
+      "output": "file present; runtime import recorded in manifest",
+      "review": "Original production source retained, including superseded poses"
+    },
+    {
+      "index": 4,
+      "sourcePath": "art-source/battle-rework20260925/heroes-first-source.png",
+      "sourceSha256": "f5bf29678f2fa0bce402e8e3826b992963f90be64f7262ecae2b418a03ed8a35",
+      "bytes": 1553617,
+      "purpose": "Independent battle material generation",
+      "sourcePreserved": true,
+      "output": "file present; runtime import recorded in manifest",
+      "review": "Original production source retained, including superseded poses"
+    },
+    {
+      "index": 5,
+      "sourcePath": "art-source/battle-rework20260925/companions-source.png",
+      "sourceSha256": "5cc77ead5e52a29df5d60e6f3668f5a62292c0a84aefd7d96c030ea6785ff560",
+      "bytes": 1533271,
+      "purpose": "Independent battle material generation",
+      "sourcePreserved": true,
+      "output": "file present; runtime import recorded in manifest",
+      "review": "Original production source retained, including superseded poses"
+    },
+    {
+      "index": 6,
+      "sourcePath": "art-source/battle-rework20260925/bosses-source.png",
+      "sourceSha256": "4e817a370d0b58e99d93e9f545a2d22364ae150481b797b0d16865cb942bc527",
+      "bytes": 2002211,
+      "purpose": "Independent battle material generation",
+      "sourcePreserved": true,
+      "output": "file present; runtime import recorded in manifest",
+      "review": "Original production source retained, including superseded poses"
+    },
+    {
+      "index": 7,
+      "sourcePath": "art-source/battle-rework20260925/crates-source.png",
+      "sourceSha256": "be2e67502a462877818a6b8e36dfc818ece58a3cdf5634cccbf4bff745deb5a5",
+      "bytes": 2992493,
+      "purpose": "Independent battle material generation",
+      "sourcePreserved": true,
+      "output": "file present; runtime import recorded in manifest",
+      "review": "Original production source retained, including superseded poses"
+    },
+    {
+      "index": 8,
+      "sourcePath": "art-source/battle-rework20260925/gate-parts-source.png",
+      "sourceSha256": "52dbd4bb868f0ca59da5c78aad98911369ad7b9c7b90770c7e4c52e28c6c85ce",
+      "bytes": 2193772,
+      "purpose": "Independent battle material generation",
+      "sourcePreserved": true,
+      "output": "file present; runtime import recorded in manifest",
+      "review": "Original production source retained, including superseded poses"
+    },
+    {
+      "index": 9,
+      "sourcePath": "art-source/battle-rework20260925/heroes-gait-corrected-source.png",
+      "sourceSha256": "2e7bed0f2c3f2e3bff6e8c63a71ff821948efd9d9c9c3e635ff1b053c5fe5d27",
+      "bytes": 1601724,
+      "purpose": "Correct second walking pose with opposite leg forward",
+      "sourcePreserved": true,
+      "output": "file present; runtime import recorded in manifest",
+      "review": "Corrected runtime atlas visually inspected; full game visual acceptance pending"
+    },
+    {
+      "index": 10,
+      "sourcePath": "art-source/battle-rework20260925/bosses-spear-corrected-source.png",
+      "sourceSha256": "3f019b68cab9416e525a5d3443222399275c3dd57ff4fd0f6ebafc340bbc1ee3",
+      "bytes": 1994548,
+      "purpose": "Correct Yang Ling weapon from blade to spear",
+      "sourcePreserved": true,
+      "output": "file present; runtime import recorded in manifest",
+      "review": "Corrected runtime atlas visually inspected; full game visual acceptance pending"
+    },
+    {
+      "index": 11,
+      "sourcePath": "art-source/battle-rework20260925/companions-gait-corrected-source.png",
+      "sourceSha256": "4aab330ffdb679063806918430dc96b8db5720e8bf00ef067d0d9a4c02849d1f",
+      "bytes": 1591068,
+      "purpose": "Correct second walking pose with opposite leg forward",
+      "sourcePreserved": true,
+      "output": "file present; runtime import recorded in manifest",
+      "review": "Corrected runtime atlas visually inspected; full game visual acceptance pending"
+    },
+    {
+      "index": 12,
+      "round": "R2 after R1 visual failure",
+      "sourcePath": "art-source/battle-rework20260925/road-soft-source.png",
+      "sourceSha256": "a39bd7bc2cc5b741ce4b30108298065fbec2bc88329b6262f9eb565a8ca3de6d",
+      "bytes": 2579306,
+      "purpose": "Reduce road texture noise",
+      "sourcePreserved": true,
+      "output": "Imported; actual R2 game visual review pending"
+    },
+    {
+      "index": 13,
+      "round": "R2 after R1 visual failure",
+      "sourcePath": "art-source/battle-rework20260925/grass-source.png",
+      "sourceSha256": "75522e805dbe6741da42ef7fff8b4147fb48f0a2de7b464bfc64773292e08e48",
+      "bytes": 2743515,
+      "purpose": "Independent full grass tile; remove stretched narrow strip",
+      "sourcePreserved": true,
+      "output": "Imported; actual R2 game visual review pending"
+    },
+    {
+      "index": 14,
+      "round": "R2 after R1 visual failure",
+      "sourcePath": "art-source/battle-rework20260925/distant-source.png",
+      "sourceSha256": "926b0f78fdcc408a7b5eae96327091f32e5c9ad15ee80e118a322d7dbbc4434a",
+      "bytes": 2113205,
+      "purpose": "Independent distant mountains with continuous bottom fog alpha",
+      "sourcePreserved": true,
+      "output": "Imported; actual R2 game visual review pending"
+    }
+  ],
+  "engineeringActions": [
+    "RGBA alpha validation",
+    "Explicit connected-component selection for crossing grid weapons",
+    "Uniform logic cell and foot anchors",
+    "Palette/mobile production encoding with full originals retained",
+    "Road uses alternating mirrored rendering, no script painting or seam blending",
+    "Frozen menu source hash comparison",
+    "Cocos web/WeChat compile and local package budget check",
+    "Distant palette encoding rejected after visual gradient inspection; preserved as previous runtime, replaced by RGBA PNG with continuous alpha",
+    "Final128 cached horizon UV slices, source road SHA unchanged",
+    "Current BattleAssets and ArtSprites source tested for concurrent failure/retry; frozen22 menu frame descriptors unchanged"
+  ],
+  "limitations": [
+    "GPU texture memory is estimated from dimensions; no physical device measurement",
+    "No screenshot beautification or reference total-image runtime replacement",
+    "R1 visual failure retained by parent; construction success does not imply visual acceptance"
+  ],
+  "finalBuild": {
+    "web": true,
+    "wechat": true,
+    "localWechatBytes": 18472446,
+    "localMarginBytes": 2499074
+  }
+}

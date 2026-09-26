@@ -1,0 +1,18 @@
+{
+  "kind": "fixture",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "model": {
+    "level": 1,
+    "elapsed": 28.849999999999643,
+    "count": 13,
+    "weapon": "blade",
+    "stage": 2
+  },
+  "rawState": "before/chain-contact.json",
+  "scope": "Identical FIX1 capped state for visual isolation; normal gameplay uses window in natural recording",
+  "companion": "xing_daorong",
+  "tick": 1731
+}

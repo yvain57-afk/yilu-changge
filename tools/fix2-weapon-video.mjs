@@ -1,0 +1,11 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {spawnSync} from 'node:child_process';
+const root='evidence/BATTLE-FIX2-20260925', report=JSON.parse(readFileSync(root+'/weapon-clips-latest.json'));
+if(!report.passed||report.clips.length!==10)throw Error('Ten passed real-time clips required');
+let offset=0;
+const segments=report.clips.map(c=>{const probe=spawnSync('ffprobe',['-v','error','-show_entries','packet=pts_time,duration_time','-of','json',c.path],{encoding:'utf8'});if(probe.status!==0)throw Error(probe.stderr);const packets=JSON.parse(probe.stdout).packets;const duration=Math.max(...packets.map(p=>Number(p.pts_time)+Number(p.duration_time||0)));if(!Number.isFinite(duration))throw Error('Invalid packet duration');const available=duration;const seconds=c.phase.seconds;if(available<seconds)throw Error('Clip too short');const s={name:c.name,source:c.path,sourceStart:0,duration:seconds,sourceAvailableSeconds:available,outputStart:offset,loadout:c.loadout,phase:c.phase,speed:1};offset+=seconds;return s;});
+const filters=segments.flatMap((s,i)=>[`[${i}:v]trim=duration=${s.duration},fps=30,setpts=PTS-STARTPTS[v${i}]`,`[${i}:a]atrim=duration=${s.duration},aresample=48000,asetpts=PTS-STARTPTS[a${i}]`]);
+filters.push(segments.map((_,i)=>`[v${i}][a${i}]`).join('')+`concat=n=${segments.length}:v=1:a=1[v][a]`);
+const run=spawnSync('ffmpeg',['-y',...segments.flatMap(s=>['-i',s.source]),'-filter_complex',filters.join(';'),'-map','[v]','-map','[a]','-c:v','libx264','-preset','fast','-crf','20','-c:a','aac','-b:a','128k','-movflags','+faststart',root+'/weapon-identity-showcase.mp4'],{encoding:'utf8'});
+writeFileSync(root+'/encode-weapons.log',run.stderr??'');if(run.status!==0)throw Error('Weapon video encode failed');
+writeFileSync(root+'/WEAPON_CLIPS.json',JSON.stringify({kind:'explicit-loadout-fixtures',speed:1,segments,seconds:offset,extraAudio:false,music:false,scope:'Ten separately labelled fixture captures concatenated without retiming; not one natural playthrough. Capture frame/diagnostic samples may differ by 1–2 frames. Continuous original frames are the pose evidence.'},null,2));console.log(JSON.stringify({segments:segments.length,seconds:offset}));

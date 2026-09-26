@@ -8,7 +8,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { Journey, STEP, type Level, type Feedback } from '../assets/scripts/core/model';
-import { LEVELS } from '../assets/scripts/core/levels';
+import { V07_LEVELS as LEVELS } from '../assets/scripts/core/levels';
 import type { PlayerWeapon, CompanionId } from '../assets/scripts/core/weapons';
 
 function sample(index: number, weapon: PlayerWeapon, companion: CompanionId | null = null, x = 0) {

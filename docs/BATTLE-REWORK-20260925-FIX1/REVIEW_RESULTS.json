@@ -1,0 +1,268 @@
+{
+  "status_enum": [
+    "not_checked",
+    "passed",
+    "partial",
+    "failed",
+    "blocked",
+    "not_applicable"
+  ],
+  "checks": [
+    {
+      "id": "V01",
+      "title": "连续道路材质与路缘",
+      "domain": "visual",
+      "status": "passed",
+      "evidence_type": "fixture_and_natural_video",
+      "evidence_paths": [
+        "comparison/normal-before.png",
+        "comparison/normal-after.png",
+        "natural-keyframes/7.00.png",
+        "natural-keyframes/7.13.png",
+        "final-three-levels.webm"
+      ],
+      "observations": "土路有细纹理、路缘与独立草地；同状态比较确认旧平面路面已替换。最终原速连续流程及抽帧未见明显纹理回跳，远缘 roadFine 已柔化。",
+      "limitations": "实看三态和自然关键帧；不声称原图逐像素还原。",
+      "evidence_origin": "BATTLE-REWORK-20260925 prior verified result, reused only where source/assets unchanged; FIX1 PRESERVED_CONTRACTS.json and SOURCE_DIFF.json"
+    },
+    {
+      "id": "V02",
+      "title": "建筑体积、光照和落地",
+      "domain": "visual",
+      "status": "passed",
+      "evidence_type": "fixture_and_natural_video",
+      "evidence_paths": [
+        "comparison/gates-crates-after.png",
+        "natural-keyframes/71.30.png",
+        "natural-keyframes/156.00.png"
+      ],
+      "observations": "木塔、粮仓、营帐、白石关门及山谷远景有体积和落地阴影，连续推进提供方向线索。",
+      "limitations": "参考图城寨围合密度仍有差距；装饰不新增碰撞。",
+      "evidence_origin": "BATTLE-REWORK-20260925 prior verified result, reused only where source/assets unchanged; FIX1 PRESERVED_CONTRACTS.json and SOURCE_DIFF.json"
+    },
+    {
+      "id": "V03",
+      "title": "横移通路与真实障碍",
+      "domain": "visual_and_model",
+      "status": "passed",
+      "evidence_type": "model_equivalence_and_natural_input",
+      "evidence_paths": [
+        "comparison/model-equivalence.json",
+        "natural-flow.json",
+        "PRESERVED_CONTRACTS.json"
+      ],
+      "observations": "三态完整 barriers 与模型摘要逐项相等；实际触摸横移自然三关通过。第二关账本记录 16 次真实挡弹，下方通路保持开放。",
+      "limitations": "未采用参考中的三条封闭跑道或侧边巨箱。",
+      "evidence_origin": "BATTLE-REWORK-20260925 prior verified result, reused only where source/assets unchanged; FIX1 PRESERVED_CONTRACTS.json and SOURCE_DIFF.json"
+    },
+    {
+      "id": "V04",
+      "title": "参战角色统一",
+      "domain": "visual",
+      "status": "passed",
+      "evidence_type": "fixture_and_natural_frames",
+      "evidence_paths": [
+        "targeted/fieldCompanion-broken.png",
+        "targeted/density-48.png",
+        "03-chain.png",
+        "06-large-enemy.png",
+        "ASSET_WORKLIST.json"
+      ],
+      "observations": "蓝方主将、邢道荣、陈应、赵云、普通兵与红军/杨龄使用本轮统一战斗资产；双武器、同袍、敌将实际运行已见。",
+      "limitations": "素材与三国身份保留；并非直接复制用户参考人物。",
+      "evidence_origin": "BATTLE-REWORK-20260925 prior verified result, reused only where source/assets unchanged; FIX1 PRESERVED_CONTRACTS.json and SOURCE_DIFF.json"
+    },
+    {
+      "id": "V05",
+      "title": "行军/出手/受击/退出动态",
+      "domain": "visual_motion",
+      "status": "passed",
+      "evidence_type": "natural_frame_pairs_and_model_ledger",
+      "evidence_paths": [
+        "natural-keyframes/7.00.png",
+        "natural-keyframes/7.13.png",
+        "natural-keyframes/56.65.png",
+        "natural-keyframes/56.85.png",
+        "natural-keyframes/57.05.png",
+        "natural-flow.json"
+      ],
+      "observations": "主将出手姿态、士兵脚步和增援入场有变化；第二关 11→10 人接触减员具有实际受击点、减员提示与成员退出，原始 ledger 保留被移除成员。",
+      "limitations": "动画是有限关键帧与位移/透明度组合，没有声称每名角色都有独立全帧死亡动画。",
+      "evidence_origin": "BATTLE-REWORK-20260925 prior verified result, reused only where source/assets unchanged; FIX1 PRESERVED_CONTRACTS.json and SOURCE_DIFF.json"
+    },
+    {
+      "id": "V06",
+      "title": "人数与队形对应",
+      "domain": "visual_and_model",
+      "status": "passed",
+      "evidence_type": "density_fixture_and_equivalent_model",
+      "evidence_paths": [
+        "targeted-checks.json",
+        "targeted/density-1.png",
+        "targeted/density-8.png",
+        "targeted/density-24.png",
+        "targeted/density-48.png",
+        "targeted/density-256.png"
+      ],
+      "observations": "1/8/24/48 队形递增，成员与稳定 slot/权重一致；256 人保持 48 个加权可见成员，逻辑权重总和 256，未无限增节点。",
+      "limitations": "48 以上是已有代理表示，不能称画出全部 256 人；密集近战及连续门有局部重叠。",
+      "evidence_origin": "BATTLE-REWORK-20260925 prior verified result, reused only where source/assets unchanged; FIX1 PRESERVED_CONTRACTS.json and SOURCE_DIFF.json"
+    },
+    {
+      "id": "V07",
+      "title": "正负门完整反馈",
+      "domain": "visual_and_model",
+      "status": "passed",
+      "evidence_type": "real_shot_fixture_and_natural",
+      "evidence_paths": [
+        "targeted/gate-negative.png",
+        "targeted/gate-zero.png",
+        "targeted/gate-positive.png",
+        "targeted/gate-cap.png",
+        "targeted-checks.json",
+        "01-gate-converted.png"
+      ],
+      "observations": "真实射击令门 -2→0→+1→+2 封顶；颜色与门脚同步、封顶后额外命中不增值，实际穿越才兑现且只一次。自然三关合计 5 次打正。",
+      "limitations": "定向门数值是测试初值，不是原版公式结论。",
+      "evidence_origin": "BATTLE-REWORK-20260925 prior verified result, reused only where source/assets unchanged; FIX1 PRESERVED_CONTRACTS.json and SOURCE_DIFF.json"
+    },
+    {
+      "id": "V08",
+      "title": "四类箱完整外观与兑现",
+      "domain": "visual_and_model",
+      "status": "passed",
+      "evidence_type": "four_crate_fixture_and_natural",
+      "evidence_paths": [
+        "targeted-checks.json",
+        "TARGETED_REVIEW.md",
+        "targeted/troops-intact.png",
+        "targeted/equipment-hit.png",
+        "targeted/chain-broken.png",
+        "targeted/fieldCompanion-broken.png"
+      ],
+      "observations": "四类箱完整/受击/击破共 12 张图均实看；不同外观、3→2→0 耐久与一次奖励已断言。兵员加人、兵器换装、连续门生成、赵云援手均来自真实事务且不污染永久成长。",
+      "limitations": "四类齐全的覆盖来自隔离 fixture，最终自然路线没有援手箱触发，已分开标注。",
+      "evidence_origin": "BATTLE-REWORK-20260925 prior verified result, reused only where source/assets unchanged; FIX1 PRESERVED_CONTRACTS.json and SOURCE_DIFF.json"
+    },
+    {
+      "id": "V09",
+      "title": "真实出弹/命中/死亡/换装",
+      "domain": "visual_and_model",
+      "status": "passed",
+      "evidence_type": "natural_frames_and_model_equivalence",
+      "evidence_paths": [
+        "comparison/model-equivalence.json",
+        "02-equipment.png",
+        "natural-keyframes/56.85.png",
+        "06-large-enemy.png",
+        "natural-flow.json"
+      ],
+      "observations": "真实队员出弹轨迹、木箱耐久、武器变更、敌群击杀和接触损失均对应模型；自然末关火矢及杨龄战斗持续到 HP0 与终点。",
+      "limitations": "未改射速/血量/射击预算；自然关键帧检查不能替代每一弹逐帧人工审计。",
+      "evidence_origin": "BATTLE-REWORK-20260925 prior verified result, reused only where source/assets unchanged; FIX1 PRESERVED_CONTRACTS.json and SOURCE_DIFF.json"
+    },
+    {
+      "id": "V10",
+      "title": "投影、输入和判定一致",
+      "domain": "model_and_input",
+      "status": "passed",
+      "evidence_type": "model_equivalence_and_touch_checks",
+      "evidence_paths": [
+        "comparison/model-equivalence.json",
+        "targeted-checks.json",
+        "targeted/short375-battle.png",
+        "natural-flow.json"
+      ],
+      "observations": "投影改观后模型位置与障碍保持基线一致；真实触摸左右移动完成三关，375×667 取消触摸后不漂移，暂停冻结、新触摸继续恢复。",
+      "limitations": "仅桌面移动视口，不等同实体手机触控。",
+      "evidence_origin": "BATTLE-REWORK-20260925 prior verified result, reused only where source/assets unchanged; FIX1 PRESERVED_CONTRACTS.json and SOURCE_DIFF.json"
+    },
+    {
+      "id": "V11",
+      "title": "战斗信息与短屏",
+      "domain": "layout_and_input",
+      "status": "passed",
+      "evidence_type": "actual_browser_screenshots_and_geometry",
+      "evidence_paths": [
+        "fix-checks-latest.json",
+        "evidence/BATTLE-REWORK-20260925-FIX1/checks/2026-09-25T14-45-05-794Z",
+        "battle-showcase.mp4"
+      ],
+      "observations": "通知占用顶部信息卡装备行，到期恢复装备文字；390×844和375×667三个同状态模型一致。接触态8个连续门逐一保留，8个+1侧签有连线指向真实门，标签互不交叠，低门横梁不再纵向堆叠。",
+      "limitations": "桌面移动视口可读性通过；物理手机触控与文字观感仍待真机。",
+      "evidence_origin": "BATTLE-REWORK-20260925-FIX1"
+    },
+    {
+      "id": "V12",
+      "title": "自然三关及必要定向验证",
+      "domain": "flow",
+      "status": "passed",
+      "evidence_type": "one_final_natural_run_and_targeted",
+      "evidence_paths": [
+        "natural-flow.json",
+        "final-three-levels.webm",
+        "final-three-levels.mp4",
+        "battle-showcase.mp4",
+        "CLIPS.json"
+      ],
+      "observations": "修复构建仅一次自然三关通过；真实触摸输入、暂停、选装、三次旗帜过渡、会盟、回营和存档重载通过，现场动作音效，未恢复音乐。结尾人数：[38, 17, 68]",
+      "limitations": "自动策略驱动真实触摸；不是人工手感或实体手机验收。",
+      "evidence_origin": "BATTLE-REWORK-20260925-FIX1"
+    },
+    {
+      "id": "V13",
+      "title": "实际构建预算与性能边界",
+      "domain": "build_and_performance",
+      "status": "passed",
+      "evidence_type": "actual_build_and_desktop_metrics",
+      "evidence_paths": [
+        "wechat-package.json",
+        "ASSET_BUDGET-web-mobile.json",
+        "ASSET_BUDGET-wechatgame.json",
+        "natural-flow.json",
+        "BUILD_ID.json"
+      ],
+      "observations": "新Web/微信构建成功。微信本地18472673字节，预算余量2498847字节。自然三关p95(ms)：[20.40000009536743, 19.600000023841858, 28.100000023841858]",
+      "limitations": "工程本地预算；未上传。桌面录像性能不能当真机性能，未做默认十局长测。",
+      "evidence_origin": "BATTLE-REWORK-20260925-FIX1"
+    },
+    {
+      "id": "V14",
+      "title": "真机触控/安全区/声音/后台/持续表现",
+      "domain": "physical_device",
+      "status": "blocked",
+      "evidence_type": "no_physical_device",
+      "evidence_paths": [],
+      "observations": "尚无实体手机验证。本轮本地缺陷修复已通过，可以进入手机实测；不将未执行项目改成通过。",
+      "limitations": "真机触控 blocked；真机安全区 blocked；真机声音 blocked；真机后台恢复 blocked；真机持续表现 blocked。浏览器结果不能替代。",
+      "evidence_origin": "No physical device evidence"
+    }
+  ],
+  "reference_comparison": {
+    "already_close": [
+      "沙土路面及草地边缘",
+      "蓝军/红军色相区分与斜俯视体积",
+      "木制正负门与可辨四类箱",
+      "远处城门和建筑方向感"
+    ],
+    "remaining_gaps": [
+      "参考图的城寨围合密度仍属于风格差异；当前功能映射不采用封闭三跑道。"
+    ],
+    "not_adopted": [
+      "固定 +50/-30 或乘法作为核心",
+      "三条封闭跑道",
+      "两侧巨箱界面",
+      "强制近战 Boss 对决"
+    ]
+  },
+  "task_id": "BATTLE-REWORK-20260925-FIX1",
+  "kind": "targeted_fix_review",
+  "new_build_id": "battle-rework-20260925-fix1",
+  "source_fingerprint": "d8b3fc4ab49ae168f5f611222f97cc210094acc063dbeebac1f2e50f1b61887c",
+  "functional_status": "passed",
+  "visual_status": "passed",
+  "physical_device_status": "blocked",
+  "local_next_step_ready": true,
+  "reviewed_at": "2026-09-25T22:51:10.053730+08:00",
+  "scope": "Local browser visual defect closure; physical-device acceptance remains separate and unverified. No claim of identical original artwork or formulas."
+}

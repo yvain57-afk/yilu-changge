@@ -1,0 +1,89 @@
+{
+  "status": "design_starting_values_not_final",
+  "units": "final_screen_logical_px",
+  "referenceViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "colors": {
+    "ink": "#1E2F46",
+    "gold": "#D4B06A",
+    "paper": "#F4EBDC",
+    "positive": "#2A94D6",
+    "negative": "#C94537",
+    "zero": "#9CA9AF"
+  },
+  "font": {
+    "policy": "one_existing_licensed_readable_CJK_family",
+    "runtimeFontFilesIncluded": false,
+    "digits": "stable_metrics",
+    "distortedScaling": false
+  },
+  "gate": {
+    "valueSize": 32,
+    "nearRange": [
+      28,
+      36
+    ],
+    "paddingX": 8,
+    "paddingY": 5,
+    "zeroText": "0",
+    "positiveSign": "+",
+    "negativeSign": "−",
+    "separateExplainerPlate": false
+  },
+  "chainToken": {
+    "valueSize": 16,
+    "nearRange": [
+      14,
+      18
+    ],
+    "placement": "local_gate_face",
+    "sideRailList": false,
+    "longLeaderLines": false
+  },
+  "crate": {
+    "primarySize": 16,
+    "secondarySize": 14,
+    "iconSizeRange": [
+      16,
+      20
+    ],
+    "groupWidthRange": [
+      88,
+      132
+    ],
+    "paddingRange": [
+      6,
+      8
+    ],
+    "hpBarHeightRange": [
+      4,
+      5
+    ],
+    "hpPrefix": "",
+    "maxLayers": 2,
+    "separateTopAndBottomPlates": false
+  },
+  "animation": {
+    "slowAttackCycleMsRange": [
+      240,
+      400
+    ],
+    "valueFeedbackMsRange": [
+      100,
+      160
+    ],
+    "signTransitionMsRange": [
+      160,
+      220
+    ],
+    "mustFitModelSchedule": true
+  },
+  "constraints": [
+    "门体宽与真实投影判定对应，不为字体扩宽碰撞外观。",
+    "可操作近景要读清，远端只降级次要信息。",
+    "逻辑px须经实际适配转换，不可直接当作引擎设计单位。",
+    "所有数值为提案，按真实构建截图校正。"
+  ]
+}

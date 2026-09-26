@@ -1,0 +1,636 @@
+{
+  "kind": "matched-cap-fixture-browser-readability",
+  "dir": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z",
+  "method": "Exact CAP_AND_PACING_REPORT single-gate setup and input: encounter-local elapsed starts zero at original gate.at-8. Renderer advances each real model tick. First readable requires a placed key-value label, >=14 screen logical px and label rectangle entirely inside canvas. No natural or manual-player reaction-time claim.",
+  "results": [
+    {
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "runId": "A-l1.g1-1-0-hold",
+      "firstReadableAt": 1.2833333333333337,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/375x667-A-l1.g1-1-0-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "runId": "A-l1.g1-8-1-hold",
+      "firstReadableAt": 1.2833333333333337,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/375x667-A-l1.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "runId": "A-l2.g1-8-1-hold",
+      "firstReadableAt": 1.2833333333333337,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/375x667-A-l2.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "runId": "A-l2.g1-8-1-late",
+      "firstReadableAt": 1.2833333333333337,
+      "firstHittableAt": 5.583333333333319,
+      "firstHitAt": 5.966666666666651,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/375x667-A-l2.g1-8-1-late.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "runId": "A-l3.g1-8-1-hold",
+      "firstReadableAt": 1.3166666666666669,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/375x667-A-l3.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "runId": "A-l3.g1-48-2-hold",
+      "firstReadableAt": 1.2833333333333337,
+      "firstHittableAt": 0,
+      "firstHitAt": 1.0500000000000012,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/375x667-A-l3.g1-48-2-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "runId": "B-l1.g1-1-0-hold",
+      "firstReadableAt": 1.3833333333333333,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/375x667-B-l1.g1-1-0-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "runId": "B-l1.g1-8-1-hold",
+      "firstReadableAt": 1.3833333333333333,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/375x667-B-l1.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "runId": "B-l2.g1-8-1-hold",
+      "firstReadableAt": 1.3833333333333333,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/375x667-B-l2.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "runId": "B-l2.g1-8-1-late",
+      "firstReadableAt": 1.3833333333333333,
+      "firstHittableAt": 5.583333333333319,
+      "firstHitAt": 5.966666666666651,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/375x667-B-l2.g1-8-1-late.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "runId": "B-l3.g1-8-1-hold",
+      "firstReadableAt": 1.3833333333333333,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/375x667-B-l3.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "runId": "B-l3.g1-48-2-hold",
+      "firstReadableAt": 1.3833333333333333,
+      "firstHittableAt": 0,
+      "firstHitAt": 1.0500000000000012,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/375x667-B-l3.g1-48-2-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "A-l1.g1-1-0-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-A-l1.g1-1-0-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "A-l1.g1-8-1-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-A-l1.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "A-l2.g1-8-1-hold",
+      "firstReadableAt": 0.21666666666666665,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-A-l2.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "A-l2.g1-8-1-late",
+      "firstReadableAt": 0.21666666666666665,
+      "firstHittableAt": 5.583333333333319,
+      "firstHitAt": 5.966666666666651,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-A-l2.g1-8-1-late.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "A-l3.g1-8-1-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-A-l3.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "A-l3.g1-48-2-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 1.0500000000000012,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-A-l3.g1-48-2-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "B-l1.g1-1-0-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-B-l1.g1-1-0-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "B-l1.g1-8-1-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-B-l1.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "B-l2.g1-8-1-hold",
+      "firstReadableAt": 0.21666666666666665,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-B-l2.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "B-l2.g1-8-1-late",
+      "firstReadableAt": 0.21666666666666665,
+      "firstHittableAt": 5.583333333333319,
+      "firstHitAt": 5.966666666666651,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-B-l2.g1-8-1-late.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "B-l3.g1-8-1-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-B-l3.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "B-l3.g1-48-2-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 1.0500000000000012,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-B-l3.g1-48-2-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "runId": "A-l1.g1-1-0-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/430x932-A-l1.g1-1-0-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "runId": "A-l1.g1-8-1-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/430x932-A-l1.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "runId": "A-l2.g1-8-1-hold",
+      "firstReadableAt": 0.21666666666666665,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/430x932-A-l2.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "runId": "A-l2.g1-8-1-late",
+      "firstReadableAt": 0.21666666666666665,
+      "firstHittableAt": 5.583333333333319,
+      "firstHitAt": 5.966666666666651,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/430x932-A-l2.g1-8-1-late.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "runId": "A-l3.g1-8-1-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/430x932-A-l3.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "runId": "A-l3.g1-48-2-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 1.0500000000000012,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/430x932-A-l3.g1-48-2-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "runId": "B-l1.g1-1-0-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/430x932-B-l1.g1-1-0-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "runId": "B-l1.g1-8-1-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/430x932-B-l1.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "runId": "B-l2.g1-8-1-hold",
+      "firstReadableAt": 0.21666666666666665,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/430x932-B-l2.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "runId": "B-l2.g1-8-1-late",
+      "firstReadableAt": 0.21666666666666665,
+      "firstHittableAt": 5.583333333333319,
+      "firstHitAt": 5.966666666666651,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/430x932-B-l2.g1-8-1-late.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "runId": "B-l3.g1-8-1-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/430x932-B-l3.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "runId": "B-l3.g1-48-2-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 1.0500000000000012,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/430x932-B-l3.g1-48-2-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    }
+  ],
+  "failures": [],
+  "errors": [],
+  "passed": true,
+  "primary390": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "A-l1.g1-1-0-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-A-l1.g1-1-0-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "A-l1.g1-8-1-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-A-l1.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "A-l2.g1-8-1-hold",
+      "firstReadableAt": 0.21666666666666665,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-A-l2.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "A-l2.g1-8-1-late",
+      "firstReadableAt": 0.21666666666666665,
+      "firstHittableAt": 5.583333333333319,
+      "firstHitAt": 5.966666666666651,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-A-l2.g1-8-1-late.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "A-l3.g1-8-1-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-A-l3.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "A-l3.g1-48-2-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 1.0500000000000012,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-A-l3.g1-48-2-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "B-l1.g1-1-0-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-B-l1.g1-1-0-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "B-l1.g1-8-1-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-B-l1.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "B-l2.g1-8-1-hold",
+      "firstReadableAt": 0.21666666666666665,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-B-l2.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "B-l2.g1-8-1-late",
+      "firstReadableAt": 0.21666666666666665,
+      "firstHittableAt": 5.583333333333319,
+      "firstHitAt": 5.966666666666651,
+      "leaderPassAt": null,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-B-l2.g1-8-1-late.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "B-l3.g1-8-1-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 0.8833333333333344,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-B-l3.g1-8-1-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "runId": "B-l3.g1-48-2-hold",
+      "firstReadableAt": 0.19999999999999998,
+      "firstHittableAt": 0,
+      "firstHitAt": 1.0500000000000012,
+      "leaderPassAt": 7.999999999999977,
+      "png": "evidence/BATTLE-FIX2-20260925/readability/2026-09-25T16-56-00-531Z/390x844-B-l3.g1-48-2-hold.png",
+      "scope": "Matched isolated encounter; elapsed origin at gate.at-8. 390x844 result may populate primary scalar; other sizes remain separate."
+    }
+  ]
+}

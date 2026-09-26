@@ -1,0 +1,5025 @@
+{
+  "kind": "real-time-explicit-loadout-fixtures",
+  "dir": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z",
+  "scope": "Each clip starts from labelled isolated loadout/stage/count, then normal engine real time and legal touch only. No manual advance or retiming. Slow uses actual stage2 interval .45s; fast actual stage1 .2s. No natural-run claim.",
+  "clips": [
+    {
+      "name": "hero-blade-slow",
+      "path": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-blade-slow.webm",
+      "loadout": {
+        "name": "hero-blade",
+        "weapon": "blade",
+        "companion": null,
+        "focus": "hero"
+      },
+      "phase": {
+        "name": "slow",
+        "stage": 2,
+        "seconds": 3,
+        "interval": 0.45
+      },
+      "frameCount": 92,
+      "poseSamples": [
+        {
+          "pose": "Windup",
+          "memberId": 0,
+          "key": "bladeWindup",
+          "eventId": 1,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.40719999992847444,
+          "videoFrame": 12,
+          "frameTime": 0.399,
+          "sampleToFrameErrorSeconds": 0.008199999928474422,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-blade-slow-sequence-Windup-frame-12.png"
+        },
+        {
+          "pose": "Release",
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoSeconds": 0.485,
+          "videoFrame": 15,
+          "frameTime": 0.5,
+          "sampleToFrameErrorSeconds": 0.015000000000000013,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-blade-slow-sequence-Release-frame-15.png"
+        },
+        {
+          "pose": "Recover",
+          "memberId": 0,
+          "key": "bladeRecover",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.5492999999523163,
+          "videoFrame": 16,
+          "frameTime": 0.534,
+          "sampleToFrameErrorSeconds": 0.015299999952316234,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-blade-slow-sequence-Recover-frame-16.png"
+        }
+      ],
+      "releaseSamples": [
+        {
+          "videoSeconds": 0.026799999952316283,
+          "tick": 1,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 1,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoFrame": 1,
+          "frameTime": 0.034,
+          "sampleToFrameErrorSeconds": 0.00720000004768372
+        },
+        {
+          "videoSeconds": 0.046,
+          "tick": 2,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 1,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoFrame": 1,
+          "frameTime": 0.034,
+          "sampleToFrameErrorSeconds": 0.011999999999999997
+        },
+        {
+          "videoSeconds": 0.06689999997615814,
+          "tick": 3,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 1,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoFrame": 2,
+          "frameTime": 0.067,
+          "sampleToFrameErrorSeconds": 0.00010000002384186191
+        },
+        {
+          "videoSeconds": 0.08719999992847442,
+          "tick": 4,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 1,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoFrame": 3,
+          "frameTime": 0.099,
+          "sampleToFrameErrorSeconds": 0.011800000071525582
+        },
+        {
+          "videoSeconds": 0.485,
+          "tick": 28,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoFrame": 15,
+          "frameTime": 0.5,
+          "sampleToFrameErrorSeconds": 0.015000000000000013
+        },
+        {
+          "videoSeconds": 0.507,
+          "tick": 30,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoFrame": 15,
+          "frameTime": 0.5,
+          "sampleToFrameErrorSeconds": 0.007000000000000006
+        },
+        {
+          "videoSeconds": 0.5276999999284744,
+          "tick": 31,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoFrame": 16,
+          "frameTime": 0.534,
+          "sampleToFrameErrorSeconds": 0.0063000000715256466
+        },
+        {
+          "videoSeconds": 0.9361999999284745,
+          "tick": 55,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 17,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 28,
+          "frameTime": 0.934,
+          "sampleToFrameErrorSeconds": 0.0021999999284744165
+        },
+        {
+          "videoSeconds": 0.9578999999761582,
+          "tick": 57,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 17,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 29,
+          "frameTime": 0.968,
+          "sampleToFrameErrorSeconds": 0.010100000023841815
+        },
+        {
+          "videoSeconds": 0.9797999999523163,
+          "tick": 58,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 17,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 29,
+          "frameTime": 0.968,
+          "sampleToFrameErrorSeconds": 0.011799999952316287
+        },
+        {
+          "videoSeconds": 1.386399999976158,
+          "tick": 82,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 25,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 42,
+          "frameTime": 1.399,
+          "sampleToFrameErrorSeconds": 0.012600000023841984
+        },
+        {
+          "videoSeconds": 1.8331999999284745,
+          "tick": 109,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 33,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 55,
+          "frameTime": 1.832,
+          "sampleToFrameErrorSeconds": 0.0011999999284744156
+        },
+        {
+          "videoSeconds": 1.8566000000238418,
+          "tick": 111,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 33,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 56,
+          "frameTime": 1.867,
+          "sampleToFrameErrorSeconds": 0.010399999976158147
+        },
+        {
+          "videoSeconds": 1.8782999999523162,
+          "tick": 112,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 33,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 56,
+          "frameTime": 1.867,
+          "sampleToFrameErrorSeconds": 0.011299999952316231
+        },
+        {
+          "videoSeconds": 2.2801999999284743,
+          "tick": 136,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 41,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 68,
+          "frameTime": 2.267,
+          "sampleToFrameErrorSeconds": 0.013199999928474426
+        },
+        {
+          "videoSeconds": 2.303,
+          "tick": 137,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 41,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 69,
+          "frameTime": 2.3,
+          "sampleToFrameErrorSeconds": 0.0030000000000001137
+        },
+        {
+          "videoSeconds": 2.3251000000238418,
+          "tick": 139,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 41,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 70,
+          "frameTime": 2.334,
+          "sampleToFrameErrorSeconds": 0.008899999976158313
+        },
+        {
+          "videoSeconds": 2.7306999999284742,
+          "tick": 163,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 49,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 82,
+          "frameTime": 2.734,
+          "sampleToFrameErrorSeconds": 0.003300000071525755
+        },
+        {
+          "videoSeconds": 2.7533999999761583,
+          "tick": 164,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 49,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 83,
+          "frameTime": 2.767,
+          "sampleToFrameErrorSeconds": 0.013600000023841652
+        },
+        {
+          "videoSeconds": 2.776100000023842,
+          "tick": 166,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 49,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 83,
+          "frameTime": 2.767,
+          "sampleToFrameErrorSeconds": 0.009100000023841925
+        }
+      ],
+      "maxOutletError": 0.2535000000000025,
+      "sound": {
+        "peak": 0.006335985091058655,
+        "audibleSamples": 17,
+        "samples": 50
+      },
+      "frameTiming": {
+        "p50": 16.699999928474426,
+        "max": 31.30000007152557,
+        "p95": 18.299999952316284,
+        "p99": 21.799999952316284,
+        "over33": 0,
+        "frames": 189
+      },
+      "poseStrip": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-blade-slow-pose-strip.png"
+    },
+    {
+      "name": "hero-blade-fast",
+      "path": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-blade-fast.webm",
+      "loadout": {
+        "name": "hero-blade",
+        "weapon": "blade",
+        "companion": null,
+        "focus": "hero"
+      },
+      "phase": {
+        "name": "fast",
+        "stage": 1,
+        "seconds": 2,
+        "interval": 0.2
+      },
+      "frameCount": 61,
+      "poseSamples": [
+        {
+          "pose": "Windup",
+          "memberId": 0,
+          "key": "bladeWindup",
+          "eventId": 1,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.16079999995231628,
+          "videoFrame": 5,
+          "frameTime": 0.165,
+          "sampleToFrameErrorSeconds": 0.004200000047683727,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-blade-fast-sequence-Windup-frame-5.png"
+        },
+        {
+          "pose": "Release",
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoSeconds": 0.2205,
+          "videoFrame": 7,
+          "frameTime": 0.231,
+          "sampleToFrameErrorSeconds": 0.01050000000000001,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-blade-fast-sequence-Release-frame-7.png"
+        },
+        {
+          "pose": "Recover",
+          "memberId": 0,
+          "key": "bladeRecover",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.30679999995231627,
+          "videoFrame": 9,
+          "frameTime": 0.296,
+          "sampleToFrameErrorSeconds": 0.010799999952316286,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-blade-fast-sequence-Recover-frame-9.png"
+        }
+      ],
+      "releaseSamples": [
+        {
+          "videoSeconds": 0.039,
+          "tick": 2,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 1,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoFrame": 1,
+          "frameTime": 0.033,
+          "sampleToFrameErrorSeconds": 0.005999999999999998
+        },
+        {
+          "videoSeconds": 0.059,
+          "tick": 3,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 1,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoFrame": 2,
+          "frameTime": 0.065,
+          "sampleToFrameErrorSeconds": 0.006000000000000005
+        },
+        {
+          "videoSeconds": 0.2205,
+          "tick": 13,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoFrame": 7,
+          "frameTime": 0.231,
+          "sampleToFrameErrorSeconds": 0.01050000000000001
+        },
+        {
+          "videoSeconds": 0.241,
+          "tick": 14,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoFrame": 7,
+          "frameTime": 0.231,
+          "sampleToFrameErrorSeconds": 0.009999999999999981
+        },
+        {
+          "videoSeconds": 0.2636999999284744,
+          "tick": 15,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoFrame": 8,
+          "frameTime": 0.265,
+          "sampleToFrameErrorSeconds": 0.0013000000715255866
+        },
+        {
+          "videoSeconds": 0.28760000002384184,
+          "tick": 16,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoFrame": 9,
+          "frameTime": 0.296,
+          "sampleToFrameErrorSeconds": 0.008399999976158146
+        },
+        {
+          "videoSeconds": 0.43289999997615813,
+          "tick": 25,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 17,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoFrame": 13,
+          "frameTime": 0.432,
+          "sampleToFrameErrorSeconds": 0.000899999976158139
+        },
+        {
+          "videoSeconds": 0.4532999999523163,
+          "tick": 27,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 17,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoFrame": 14,
+          "frameTime": 0.464,
+          "sampleToFrameErrorSeconds": 0.010700000047683733
+        },
+        {
+          "videoSeconds": 0.47560000002384184,
+          "tick": 28,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 17,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoFrame": 14,
+          "frameTime": 0.464,
+          "sampleToFrameErrorSeconds": 0.011600000023841817
+        },
+        {
+          "videoSeconds": 0.6255,
+          "tick": 37,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 25,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoFrame": 19,
+          "frameTime": 0.632,
+          "sampleToFrameErrorSeconds": 0.006500000000000061
+        },
+        {
+          "videoSeconds": 0.6481999999284744,
+          "tick": 39,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 25,
+          "muzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -182.08823529411768
+          },
+          "outletError": 0,
+          "videoFrame": 19,
+          "frameTime": 0.632,
+          "sampleToFrameErrorSeconds": 0.01619999992847443
+        },
+        {
+          "videoSeconds": 0.8478999999761582,
+          "tick": 51,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 33,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 25,
+          "frameTime": 0.831,
+          "sampleToFrameErrorSeconds": 0.01689999997615821
+        },
+        {
+          "videoSeconds": 0.8706999999284745,
+          "tick": 52,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 33,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 26,
+          "frameTime": 0.865,
+          "sampleToFrameErrorSeconds": 0.005699999928474475
+        },
+        {
+          "videoSeconds": 1.031399999976158,
+          "tick": 62,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 41,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 31,
+          "frameTime": 1.032,
+          "sampleToFrameErrorSeconds": 0.0006000000238419734
+        },
+        {
+          "videoSeconds": 1.0545,
+          "tick": 63,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 41,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 32,
+          "frameTime": 1.066,
+          "sampleToFrameErrorSeconds": 0.011500000000000066
+        },
+        {
+          "videoSeconds": 1.079,
+          "tick": 64,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 41,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 32,
+          "frameTime": 1.066,
+          "sampleToFrameErrorSeconds": 0.0129999999999999
+        },
+        {
+          "videoSeconds": 1.234600000023842,
+          "tick": 74,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 49,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 37,
+          "frameTime": 1.231,
+          "sampleToFrameErrorSeconds": 0.003600000023841865
+        },
+        {
+          "videoSeconds": 1.2566999999284745,
+          "tick": 75,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 49,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 38,
+          "frameTime": 1.265,
+          "sampleToFrameErrorSeconds": 0.008300000071525426
+        },
+        {
+          "videoSeconds": 1.4645,
+          "tick": 87,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 57,
+          "muzzle": {
+            "x": -54.42255,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": -54.6,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.17745000000000033,
+          "videoFrame": 44,
+          "frameTime": 1.465,
+          "sampleToFrameErrorSeconds": 0.000500000000000167
+        },
+        {
+          "videoSeconds": 1.6455,
+          "tick": 97,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 65,
+          "muzzle": {
+            "x": 62.19720000000003,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 62.40000000000003,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.20279999999999632,
+          "videoFrame": 49,
+          "frameTime": 1.633,
+          "sampleToFrameErrorSeconds": 0.012499999999999956
+        },
+        {
+          "videoSeconds": 1.6688999999761582,
+          "tick": 100,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 65,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 50,
+          "frameTime": 1.664,
+          "sampleToFrameErrorSeconds": 0.004899999976158309
+        },
+        {
+          "videoSeconds": 1.693,
+          "tick": 100,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 65,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 51,
+          "frameTime": 1.698,
+          "sampleToFrameErrorSeconds": 0.004999999999999893
+        },
+        {
+          "videoSeconds": 1.8371999999284745,
+          "tick": 110,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 73,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 55,
+          "frameTime": 1.831,
+          "sampleToFrameErrorSeconds": 0.006199999928474531
+        },
+        {
+          "videoSeconds": 1.8593999999761581,
+          "tick": 111,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 73,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 56,
+          "frameTime": 1.865,
+          "sampleToFrameErrorSeconds": 0.005600000023841867
+        },
+        {
+          "videoSeconds": 1.8841999999284744,
+          "tick": 112,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 73,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 57,
+          "frameTime": 1.897,
+          "sampleToFrameErrorSeconds": 0.012800000071525597
+        },
+        {
+          "videoSeconds": 2.025899999976158,
+          "tick": 121,
+          "memberId": 0,
+          "key": "bladeRelease",
+          "eventId": 81,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -182.08823529411768
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -182.08823529411768
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 60,
+          "frameTime": 1.998,
+          "sampleToFrameErrorSeconds": 0.02789999997615822
+        }
+      ],
+      "maxOutletError": 0.2535000000000025,
+      "sound": {
+        "peak": 0.006271669436149712,
+        "audibleSamples": 18,
+        "samples": 34
+      },
+      "frameTiming": {
+        "p50": 16.699999928474426,
+        "max": 26,
+        "p95": 18.299999952316284,
+        "p99": 18.600000023841858,
+        "over33": 0,
+        "frames": 128
+      },
+      "poseStrip": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-blade-fast-pose-strip.png"
+    },
+    {
+      "name": "hero-spear-slow",
+      "path": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-spear-slow.webm",
+      "loadout": {
+        "name": "hero-spear",
+        "weapon": "spear",
+        "companion": null,
+        "focus": "hero"
+      },
+      "phase": {
+        "name": "slow",
+        "stage": 2,
+        "seconds": 3,
+        "interval": 0.45
+      },
+      "frameCount": 91,
+      "poseSamples": [
+        {
+          "pose": "Windup",
+          "memberId": 0,
+          "key": "spearWindup",
+          "eventId": 1,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.4117999999523163,
+          "videoFrame": 13,
+          "frameTime": 0.428,
+          "sampleToFrameErrorSeconds": 0.016200000047683683,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-spear-slow-sequence-Windup-frame-13.png"
+        },
+        {
+          "pose": "Release",
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoSeconds": 0.4712999999523163,
+          "videoFrame": 14,
+          "frameTime": 0.461,
+          "sampleToFrameErrorSeconds": 0.010299999952316286,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-spear-slow-sequence-Release-frame-14.png"
+        },
+        {
+          "pose": "Recover",
+          "memberId": 0,
+          "key": "spearRecover",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.5363999999761582,
+          "videoFrame": 16,
+          "frameTime": 0.528,
+          "sampleToFrameErrorSeconds": 0.008399999976158146,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-spear-slow-sequence-Recover-frame-16.png"
+        }
+      ],
+      "releaseSamples": [
+        {
+          "videoSeconds": 0.021600000023841857,
+          "tick": 1,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 1,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoFrame": 1,
+          "frameTime": 0.028,
+          "sampleToFrameErrorSeconds": 0.006399999976158144
+        },
+        {
+          "videoSeconds": 0.04220000004768371,
+          "tick": 1,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 1,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoFrame": 1,
+          "frameTime": 0.028,
+          "sampleToFrameErrorSeconds": 0.014200000047683712
+        },
+        {
+          "videoSeconds": 0.06560000002384186,
+          "tick": 4,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 1,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoFrame": 2,
+          "frameTime": 0.061,
+          "sampleToFrameErrorSeconds": 0.004600000023841866
+        },
+        {
+          "videoSeconds": 0.4712999999523163,
+          "tick": 28,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoFrame": 14,
+          "frameTime": 0.461,
+          "sampleToFrameErrorSeconds": 0.010299999952316286
+        },
+        {
+          "videoSeconds": 0.4927000000476837,
+          "tick": 29,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoFrame": 15,
+          "frameTime": 0.494,
+          "sampleToFrameErrorSeconds": 0.0012999999523162775
+        },
+        {
+          "videoSeconds": 0.5151000000238418,
+          "tick": 31,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoFrame": 16,
+          "frameTime": 0.528,
+          "sampleToFrameErrorSeconds": 0.012899999976158205
+        },
+        {
+          "videoSeconds": 0.9228999999761581,
+          "tick": 55,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 17,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 28,
+          "frameTime": 0.927,
+          "sampleToFrameErrorSeconds": 0.004100000023841921
+        },
+        {
+          "videoSeconds": 0.9441000000238419,
+          "tick": 56,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 17,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 29,
+          "frameTime": 0.961,
+          "sampleToFrameErrorSeconds": 0.016899999976158098
+        },
+        {
+          "videoSeconds": 0.9666000000238418,
+          "tick": 57,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 17,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 29,
+          "frameTime": 0.961,
+          "sampleToFrameErrorSeconds": 0.005600000023841867
+        },
+        {
+          "videoSeconds": 1.388100000023842,
+          "tick": 83,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 25,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 42,
+          "frameTime": 1.393,
+          "sampleToFrameErrorSeconds": 0.004899999976158087
+        },
+        {
+          "videoSeconds": 1.823899999976158,
+          "tick": 109,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 33,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 55,
+          "frameTime": 1.826,
+          "sampleToFrameErrorSeconds": 0.00210000002384203
+        },
+        {
+          "videoSeconds": 1.8475,
+          "tick": 110,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 33,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 56,
+          "frameTime": 1.86,
+          "sampleToFrameErrorSeconds": 0.012500000000000178
+        },
+        {
+          "videoSeconds": 1.867600000023842,
+          "tick": 112,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 33,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 56,
+          "frameTime": 1.86,
+          "sampleToFrameErrorSeconds": 0.007600000023841869
+        },
+        {
+          "videoSeconds": 2.2771000000238417,
+          "tick": 136,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 41,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 69,
+          "frameTime": 2.294,
+          "sampleToFrameErrorSeconds": 0.01689999997615832
+        },
+        {
+          "videoSeconds": 2.2982000000476837,
+          "tick": 138,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 41,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 69,
+          "frameTime": 2.294,
+          "sampleToFrameErrorSeconds": 0.004200000047683616
+        },
+        {
+          "videoSeconds": 2.3196000000238417,
+          "tick": 139,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 41,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 70,
+          "frameTime": 2.326,
+          "sampleToFrameErrorSeconds": 0.006399999976158366
+        },
+        {
+          "videoSeconds": 2.7215,
+          "tick": 163,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 49,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 82,
+          "frameTime": 2.726,
+          "sampleToFrameErrorSeconds": 0.0045000000000001705
+        },
+        {
+          "videoSeconds": 2.743600000023842,
+          "tick": 163,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 49,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 83,
+          "frameTime": 2.76,
+          "sampleToFrameErrorSeconds": 0.01639999997615771
+        },
+        {
+          "videoSeconds": 2.764399999976158,
+          "tick": 166,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 49,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 83,
+          "frameTime": 2.76,
+          "sampleToFrameErrorSeconds": 0.004399999976158142
+        }
+      ],
+      "maxOutletError": 0.2535000000000025,
+      "sound": {
+        "peak": 0.006206534221329286,
+        "audibleSamples": 16,
+        "samples": 50
+      },
+      "frameTiming": {
+        "p50": 16.699999928474426,
+        "max": 20.299999952316284,
+        "p95": 18.399999976158142,
+        "p99": 18.799999952316284,
+        "over33": 0,
+        "frames": 187
+      },
+      "poseStrip": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-spear-slow-pose-strip.png"
+    },
+    {
+      "name": "hero-spear-fast",
+      "path": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-spear-fast.webm",
+      "loadout": {
+        "name": "hero-spear",
+        "weapon": "spear",
+        "companion": null,
+        "focus": "hero"
+      },
+      "phase": {
+        "name": "fast",
+        "stage": 1,
+        "seconds": 2,
+        "interval": 0.2
+      },
+      "frameCount": 62,
+      "poseSamples": [
+        {
+          "pose": "Windup",
+          "memberId": 0,
+          "key": "spearWindup",
+          "eventId": 1,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.16819999992847443,
+          "videoFrame": 5,
+          "frameTime": 0.159,
+          "sampleToFrameErrorSeconds": 0.009199999928474423,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-spear-fast-sequence-Windup-frame-5.png"
+        },
+        {
+          "pose": "Release",
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoSeconds": 0.23069999992847443,
+          "videoFrame": 7,
+          "frameTime": 0.225,
+          "sampleToFrameErrorSeconds": 0.00569999992847442,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-spear-fast-sequence-Release-frame-7.png"
+        },
+        {
+          "pose": "Recover",
+          "memberId": 0,
+          "key": "spearRecover",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.2971999999284744,
+          "videoFrame": 9,
+          "frameTime": 0.292,
+          "sampleToFrameErrorSeconds": 0.005199999928474419,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-spear-fast-sequence-Recover-frame-9.png"
+        }
+      ],
+      "releaseSamples": [
+        {
+          "videoSeconds": 0.02289999997615814,
+          "tick": 1,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 1,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoFrame": 1,
+          "frameTime": 0.025,
+          "sampleToFrameErrorSeconds": 0.00210000002384186
+        },
+        {
+          "videoSeconds": 0.04259999990463257,
+          "tick": 1,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 1,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoFrame": 2,
+          "frameTime": 0.058,
+          "sampleToFrameErrorSeconds": 0.015400000095367433
+        },
+        {
+          "videoSeconds": 0.06429999995231628,
+          "tick": 4,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 1,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoFrame": 2,
+          "frameTime": 0.058,
+          "sampleToFrameErrorSeconds": 0.006299999952316275
+        },
+        {
+          "videoSeconds": 0.08539999997615814,
+          "tick": 4,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 1,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoFrame": 3,
+          "frameTime": 0.091,
+          "sampleToFrameErrorSeconds": 0.005600000023841853
+        },
+        {
+          "videoSeconds": 0.23069999992847443,
+          "tick": 13,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoFrame": 7,
+          "frameTime": 0.225,
+          "sampleToFrameErrorSeconds": 0.00569999992847442
+        },
+        {
+          "videoSeconds": 0.2531999999284744,
+          "tick": 14,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoFrame": 8,
+          "frameTime": 0.258,
+          "sampleToFrameErrorSeconds": 0.00480000007152559
+        },
+        {
+          "videoSeconds": 0.275,
+          "tick": 15,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 9,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoFrame": 9,
+          "frameTime": 0.292,
+          "sampleToFrameErrorSeconds": 0.01699999999999996
+        },
+        {
+          "videoSeconds": 0.44759999990463256,
+          "tick": 27,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 17,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoFrame": 14,
+          "frameTime": 0.458,
+          "sampleToFrameErrorSeconds": 0.010400000095367457
+        },
+        {
+          "videoSeconds": 0.46869999992847444,
+          "tick": 27,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 17,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoFrame": 14,
+          "frameTime": 0.458,
+          "sampleToFrameErrorSeconds": 0.010699999928474424
+        },
+        {
+          "videoSeconds": 0.4915,
+          "tick": 28,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 17,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoFrame": 15,
+          "frameTime": 0.491,
+          "sampleToFrameErrorSeconds": 0.0005000000000000004
+        },
+        {
+          "videoSeconds": 0.6468999999761581,
+          "tick": 38,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 25,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoFrame": 20,
+          "frameTime": 0.657,
+          "sampleToFrameErrorSeconds": 0.010100000023841926
+        },
+        {
+          "videoSeconds": 0.6745,
+          "tick": 40,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 25,
+          "muzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 0,
+            "y": -155.91160220994476
+          },
+          "outletError": 0,
+          "videoFrame": 21,
+          "frameTime": 0.689,
+          "sampleToFrameErrorSeconds": 0.014499999999999957
+        },
+        {
+          "videoSeconds": 0.8422999999523163,
+          "tick": 49,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 33,
+          "muzzle": {
+            "x": -46.64790000000001,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": -46.800000000000004,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.15209999999999724,
+          "videoFrame": 26,
+          "frameTime": 0.859,
+          "sampleToFrameErrorSeconds": 0.016700000047683683
+        },
+        {
+          "videoSeconds": 0.8663999999761581,
+          "tick": 51,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 33,
+          "muzzle": {
+            "x": -69.97185,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": -70.2,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2281499999999994,
+          "videoFrame": 26,
+          "frameTime": 0.859,
+          "sampleToFrameErrorSeconds": 0.007399999976158145
+        },
+        {
+          "videoSeconds": 1.0252999999523162,
+          "tick": 61,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 41,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 31,
+          "frameTime": 1.025,
+          "sampleToFrameErrorSeconds": 0.00029999995231633214
+        },
+        {
+          "videoSeconds": 1.0487999999523163,
+          "tick": 63,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 41,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 32,
+          "frameTime": 1.057,
+          "sampleToFrameErrorSeconds": 0.00820000004768362
+        },
+        {
+          "videoSeconds": 1.0721999999284744,
+          "tick": 64,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 41,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 32,
+          "frameTime": 1.057,
+          "sampleToFrameErrorSeconds": 0.015199999928474428
+        },
+        {
+          "videoSeconds": 1.2307999999523163,
+          "tick": 73,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 49,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 37,
+          "frameTime": 1.224,
+          "sampleToFrameErrorSeconds": 0.006799999952316282
+        },
+        {
+          "videoSeconds": 1.2546999999284745,
+          "tick": 75,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 49,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 38,
+          "frameTime": 1.259,
+          "sampleToFrameErrorSeconds": 0.004300000071525423
+        },
+        {
+          "videoSeconds": 1.2770999999046326,
+          "tick": 75,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 49,
+          "muzzle": {
+            "x": -77.7465,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": -78,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 39,
+          "frameTime": 1.289,
+          "sampleToFrameErrorSeconds": 0.011900000095367291
+        },
+        {
+          "videoSeconds": 1.4801999999284745,
+          "tick": 88,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 57,
+          "muzzle": {
+            "x": -54.42255,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": -54.6,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.17745000000000033,
+          "videoFrame": 45,
+          "frameTime": 1.491,
+          "sampleToFrameErrorSeconds": 0.010800000071525595
+        },
+        {
+          "videoSeconds": 1.6425,
+          "tick": 97,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 65,
+          "muzzle": {
+            "x": 50.535225000000025,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 50.700000000000024,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.16477499999999878,
+          "videoFrame": 50,
+          "frameTime": 1.658,
+          "sampleToFrameErrorSeconds": 0.015499999999999847
+        },
+        {
+          "videoSeconds": 1.6666999999284744,
+          "tick": 99,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 65,
+          "muzzle": {
+            "x": 73.85917500000002,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 74.10000000000002,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.24082500000000095,
+          "videoFrame": 50,
+          "frameTime": 1.658,
+          "sampleToFrameErrorSeconds": 0.008699999928474478
+        },
+        {
+          "videoSeconds": 1.6905,
+          "tick": 100,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 65,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 51,
+          "frameTime": 1.691,
+          "sampleToFrameErrorSeconds": 0.000500000000000167
+        },
+        {
+          "videoSeconds": 1.8331999999284745,
+          "tick": 109,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 73,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 55,
+          "frameTime": 1.824,
+          "sampleToFrameErrorSeconds": 0.009199999928474423
+        },
+        {
+          "videoSeconds": 1.8576999999284745,
+          "tick": 110,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 73,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 56,
+          "frameTime": 1.857,
+          "sampleToFrameErrorSeconds": 0.0006999999284744707
+        },
+        {
+          "videoSeconds": 1.8820999999046326,
+          "tick": 112,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 73,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 57,
+          "frameTime": 1.891,
+          "sampleToFrameErrorSeconds": 0.0089000000953674
+        },
+        {
+          "videoSeconds": 2.0430999999046326,
+          "tick": 121,
+          "memberId": 0,
+          "key": "spearRelease",
+          "eventId": 81,
+          "muzzle": {
+            "x": 77.74650000000005,
+            "y": -155.91160220994476
+          },
+          "artMuzzle": {
+            "x": 78.00000000000006,
+            "y": -155.91160220994476
+          },
+          "outletError": 0.2535000000000025,
+          "videoFrame": 61,
+          "frameTime": 2.025,
+          "sampleToFrameErrorSeconds": 0.018099999904632735
+        }
+      ],
+      "maxOutletError": 0.2535000000000025,
+      "sound": {
+        "peak": 0.006195942341753924,
+        "audibleSamples": 22,
+        "samples": 34
+      },
+      "frameTiming": {
+        "p50": 16.699999928474426,
+        "max": 24,
+        "p95": 18.100000023841858,
+        "p99": 18.59999990463257,
+        "over33": 0,
+        "frames": 131
+      },
+      "poseStrip": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/hero-spear-fast-pose-strip.png"
+    },
+    {
+      "name": "xing-axe-slow",
+      "path": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/xing-axe-slow.webm",
+      "loadout": {
+        "name": "xing-axe",
+        "weapon": "blade",
+        "companion": "xing_daorong",
+        "focus": "companion"
+      },
+      "phase": {
+        "name": "slow",
+        "stage": 2,
+        "seconds": 3,
+        "interval": 0.45
+      },
+      "frameCount": 92,
+      "poseSamples": [
+        {
+          "pose": "Windup",
+          "memberId": 1,
+          "key": "xingWindup",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.4135,
+          "videoFrame": 12,
+          "frameTime": 0.398,
+          "sampleToFrameErrorSeconds": 0.015499999999999958,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/xing-axe-slow-sequence-Windup-frame-12.png"
+        },
+        {
+          "pose": "Release",
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoSeconds": 0.49639999997615813,
+          "videoFrame": 15,
+          "frameTime": 0.498,
+          "sampleToFrameErrorSeconds": 0.0016000000238418632,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/xing-axe-slow-sequence-Release-frame-15.png"
+        },
+        {
+          "pose": "Recover",
+          "memberId": 1,
+          "key": "xingRecover",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.5388000000715256,
+          "videoFrame": 16,
+          "frameTime": 0.531,
+          "sampleToFrameErrorSeconds": 0.007800000071525592,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/xing-axe-slow-sequence-Recover-frame-16.png"
+        }
+      ],
+      "releaseSamples": [
+        {
+          "videoSeconds": 0.03980000007152557,
+          "tick": 2,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 1,
+          "frameTime": 0.032,
+          "sampleToFrameErrorSeconds": 0.0078000000715255716
+        },
+        {
+          "videoSeconds": 0.0605,
+          "tick": 3,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 2,
+          "frameTime": 0.065,
+          "sampleToFrameErrorSeconds": 0.004500000000000004
+        },
+        {
+          "videoSeconds": 0.49639999997615813,
+          "tick": 28,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 15,
+          "frameTime": 0.498,
+          "sampleToFrameErrorSeconds": 0.0016000000238418632
+        },
+        {
+          "videoSeconds": 0.5173999999761582,
+          "tick": 31,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 16,
+          "frameTime": 0.531,
+          "sampleToFrameErrorSeconds": 0.013600000023841874
+        },
+        {
+          "videoSeconds": 0.9172000000476838,
+          "tick": 55,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 18,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 28,
+          "frameTime": 0.931,
+          "sampleToFrameErrorSeconds": 0.013799999952316289
+        },
+        {
+          "videoSeconds": 0.9388000000715255,
+          "tick": 56,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 18,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 28,
+          "frameTime": 0.931,
+          "sampleToFrameErrorSeconds": 0.007800000071525481
+        },
+        {
+          "videoSeconds": 0.961,
+          "tick": 57,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 18,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 29,
+          "frameTime": 0.964,
+          "sampleToFrameErrorSeconds": 0.0030000000000000027
+        },
+        {
+          "videoSeconds": 0.9838999999761582,
+          "tick": 58,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 18,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 30,
+          "frameTime": 0.998,
+          "sampleToFrameErrorSeconds": 0.014100000023841819
+        },
+        {
+          "videoSeconds": 1.3692000000476836,
+          "tick": 82,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 26,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 41,
+          "frameTime": 1.364,
+          "sampleToFrameErrorSeconds": 0.005200000047683506
+        },
+        {
+          "videoSeconds": 1.8357000000476837,
+          "tick": 110,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 34,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 55,
+          "frameTime": 1.83,
+          "sampleToFrameErrorSeconds": 0.005700000047683673
+        },
+        {
+          "videoSeconds": 1.858,
+          "tick": 110,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 34,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 56,
+          "frameTime": 1.864,
+          "sampleToFrameErrorSeconds": 0.006000000000000005
+        },
+        {
+          "videoSeconds": 1.877899999976158,
+          "tick": 112,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 34,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 56,
+          "frameTime": 1.864,
+          "sampleToFrameErrorSeconds": 0.013899999976157984
+        },
+        {
+          "videoSeconds": 2.298100000023842,
+          "tick": 137,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 42,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 69,
+          "frameTime": 2.297,
+          "sampleToFrameErrorSeconds": 0.0011000000238419183
+        },
+        {
+          "videoSeconds": 2.3198999999761583,
+          "tick": 138,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 42,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 70,
+          "frameTime": 2.33,
+          "sampleToFrameErrorSeconds": 0.010100000023841815
+        },
+        {
+          "videoSeconds": 2.3418000000715256,
+          "tick": 139,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 42,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 70,
+          "frameTime": 2.33,
+          "sampleToFrameErrorSeconds": 0.011800000071525485
+        },
+        {
+          "videoSeconds": 2.7493999999761582,
+          "tick": 164,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 50,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 83,
+          "frameTime": 2.764,
+          "sampleToFrameErrorSeconds": 0.014600000023841542
+        },
+        {
+          "videoSeconds": 2.770399999976158,
+          "tick": 165,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 50,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 83,
+          "frameTime": 2.764,
+          "sampleToFrameErrorSeconds": 0.006399999976158366
+        },
+        {
+          "videoSeconds": 2.792200000047684,
+          "tick": 166,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 50,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 84,
+          "frameTime": 2.797,
+          "sampleToFrameErrorSeconds": 0.004799999952316281
+        }
+      ],
+      "maxOutletError": 0.38025000000000375,
+      "sound": {
+        "peak": 0.006356778353371822,
+        "audibleSamples": 18,
+        "samples": 51
+      },
+      "frameTiming": {
+        "p50": 16.699999928474426,
+        "max": 23.200000047683716,
+        "p95": 18.40000009536743,
+        "p99": 18.799999952316284,
+        "over33": 0,
+        "frames": 189
+      },
+      "poseStrip": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/xing-axe-slow-pose-strip.png"
+    },
+    {
+      "name": "xing-axe-fast",
+      "path": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/xing-axe-fast.webm",
+      "loadout": {
+        "name": "xing-axe",
+        "weapon": "blade",
+        "companion": "xing_daorong",
+        "focus": "companion"
+      },
+      "phase": {
+        "name": "fast",
+        "stage": 1,
+        "seconds": 2,
+        "interval": 0.2
+      },
+      "frameCount": 61,
+      "poseSamples": [
+        {
+          "pose": "Windup",
+          "memberId": 1,
+          "key": "xingWindup",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.15910000002384186,
+          "videoFrame": 5,
+          "frameTime": 0.167,
+          "sampleToFrameErrorSeconds": 0.007899999976158145,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/xing-axe-fast-sequence-Windup-frame-5.png"
+        },
+        {
+          "pose": "Release",
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoSeconds": 0.24230000007152558,
+          "videoFrame": 7,
+          "frameTime": 0.234,
+          "sampleToFrameErrorSeconds": 0.008300000071525565,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/xing-axe-fast-sequence-Release-frame-7.png"
+        },
+        {
+          "pose": "Recover",
+          "memberId": 1,
+          "key": "xingRecover",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.30839999997615813,
+          "videoFrame": 9,
+          "frameTime": 0.299,
+          "sampleToFrameErrorSeconds": 0.009399999976158147,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/xing-axe-fast-sequence-Recover-frame-9.png"
+        }
+      ],
+      "releaseSamples": [
+        {
+          "videoSeconds": 0.0395,
+          "tick": 1,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 1,
+          "frameTime": 0.035,
+          "sampleToFrameErrorSeconds": 0.004499999999999997
+        },
+        {
+          "videoSeconds": 0.05789999997615814,
+          "tick": 3,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 2,
+          "frameTime": 0.066,
+          "sampleToFrameErrorSeconds": 0.008100000023841862
+        },
+        {
+          "videoSeconds": 0.07830000007152557,
+          "tick": 4,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 2,
+          "frameTime": 0.066,
+          "sampleToFrameErrorSeconds": 0.012300000071525569
+        },
+        {
+          "videoSeconds": 0.24230000007152558,
+          "tick": 14,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 7,
+          "frameTime": 0.234,
+          "sampleToFrameErrorSeconds": 0.008300000071525565
+        },
+        {
+          "videoSeconds": 0.26520000004768374,
+          "tick": 15,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 8,
+          "frameTime": 0.267,
+          "sampleToFrameErrorSeconds": 0.001799999952316278
+        },
+        {
+          "videoSeconds": 0.2865,
+          "tick": 16,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 9,
+          "frameTime": 0.299,
+          "sampleToFrameErrorSeconds": 0.012500000000000011
+        },
+        {
+          "videoSeconds": 0.4158999999761581,
+          "tick": 25,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 18,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 12,
+          "frameTime": 0.401,
+          "sampleToFrameErrorSeconds": 0.014899999976158096
+        },
+        {
+          "videoSeconds": 0.4388000000715256,
+          "tick": 26,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 18,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 13,
+          "frameTime": 0.432,
+          "sampleToFrameErrorSeconds": 0.0068000000715255915
+        },
+        {
+          "videoSeconds": 0.45939999997615816,
+          "tick": 26,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 18,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 14,
+          "frameTime": 0.465,
+          "sampleToFrameErrorSeconds": 0.005600000023841867
+        },
+        {
+          "videoSeconds": 0.48130000007152557,
+          "tick": 28,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 18,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 14,
+          "frameTime": 0.465,
+          "sampleToFrameErrorSeconds": 0.016300000071525544
+        },
+        {
+          "videoSeconds": 0.6323999999761581,
+          "tick": 38,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 26,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 19,
+          "frameTime": 0.634,
+          "sampleToFrameErrorSeconds": 0.0016000000238418632
+        },
+        {
+          "videoSeconds": 0.6558000000715256,
+          "tick": 38,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 26,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 20,
+          "frameTime": 0.667,
+          "sampleToFrameErrorSeconds": 0.011199999928474424
+        },
+        {
+          "videoSeconds": 0.6773000000715256,
+          "tick": 39,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 26,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 20,
+          "frameTime": 0.667,
+          "sampleToFrameErrorSeconds": 0.010300000071525539
+        },
+        {
+          "videoSeconds": 0.8193000000715256,
+          "tick": 49,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 34,
+          "muzzle": {
+            "x": -31.09860000000001,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": -31.200000000000006,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.10139999999999816,
+          "videoFrame": 25,
+          "frameTime": 0.834,
+          "sampleToFrameErrorSeconds": 0.014699999928474372
+        },
+        {
+          "videoSeconds": 0.8425,
+          "tick": 49,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 34,
+          "muzzle": {
+            "x": -31.09860000000001,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": -31.200000000000006,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.10139999999999816,
+          "videoFrame": 25,
+          "frameTime": 0.834,
+          "sampleToFrameErrorSeconds": 0.008500000000000063
+        },
+        {
+          "videoSeconds": 0.8656000000238419,
+          "tick": 52,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 34,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 26,
+          "frameTime": 0.868,
+          "sampleToFrameErrorSeconds": 0.0023999999761581403
+        },
+        {
+          "videoSeconds": 1.0281000000238418,
+          "tick": 61,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 42,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 31,
+          "frameTime": 1.034,
+          "sampleToFrameErrorSeconds": 0.005899999976158199
+        },
+        {
+          "videoSeconds": 1.0527000000476838,
+          "tick": 62,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 42,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 32,
+          "frameTime": 1.067,
+          "sampleToFrameErrorSeconds": 0.014299999952316123
+        },
+        {
+          "videoSeconds": 1.0747000000476836,
+          "tick": 64,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 42,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 32,
+          "frameTime": 1.067,
+          "sampleToFrameErrorSeconds": 0.007700000047683675
+        },
+        {
+          "videoSeconds": 1.2356000000238418,
+          "tick": 73,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 50,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 37,
+          "frameTime": 1.234,
+          "sampleToFrameErrorSeconds": 0.0016000000238418632
+        },
+        {
+          "videoSeconds": 1.259,
+          "tick": 75,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 50,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 38,
+          "frameTime": 1.267,
+          "sampleToFrameErrorSeconds": 0.008000000000000007
+        },
+        {
+          "videoSeconds": 1.4653000000715255,
+          "tick": 87,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 58,
+          "muzzle": {
+            "x": -15.5493,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": -15.6,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.05069999999999908,
+          "videoFrame": 44,
+          "frameTime": 1.467,
+          "sampleToFrameErrorSeconds": 0.0016999999284745826
+        },
+        {
+          "videoSeconds": 1.6508999999761582,
+          "tick": 98,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 66,
+          "muzzle": {
+            "x": 112.732425,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 113.10000000000001,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.3675750000000022,
+          "videoFrame": 50,
+          "frameTime": 1.667,
+          "sampleToFrameErrorSeconds": 0.01610000002384182
+        },
+        {
+          "videoSeconds": 1.6732000000476837,
+          "tick": 100,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 66,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 50,
+          "frameTime": 1.667,
+          "sampleToFrameErrorSeconds": 0.006200000047683618
+        },
+        {
+          "videoSeconds": 1.833899999976158,
+          "tick": 109,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 74,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 55,
+          "frameTime": 1.834,
+          "sampleToFrameErrorSeconds": 0.00010000002384202844
+        },
+        {
+          "videoSeconds": 1.8568999999761582,
+          "tick": 110,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 74,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 56,
+          "frameTime": 1.865,
+          "sampleToFrameErrorSeconds": 0.008100000023841814
+        },
+        {
+          "videoSeconds": 1.880399999976158,
+          "tick": 112,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 74,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 56,
+          "frameTime": 1.865,
+          "sampleToFrameErrorSeconds": 0.01539999997615804
+        },
+        {
+          "videoSeconds": 2.025100000023842,
+          "tick": 121,
+          "memberId": 1,
+          "key": "xingRelease",
+          "eventId": 82,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -170.8011049723757
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -170.8011049723757
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 60,
+          "frameTime": 2.001,
+          "sampleToFrameErrorSeconds": 0.02410000002384205
+        }
+      ],
+      "maxOutletError": 0.38025000000000375,
+      "sound": {
+        "peak": 0.00615846500772325,
+        "audibleSamples": 19,
+        "samples": 34
+      },
+      "frameTiming": {
+        "p50": 16.699999928474426,
+        "max": 23.399999976158142,
+        "p95": 18.59999990463257,
+        "p99": 18.799999952316284,
+        "over33": 0,
+        "frames": 128
+      },
+      "poseStrip": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/xing-axe-fast-pose-strip.png"
+    },
+    {
+      "name": "chen-fork-slow",
+      "path": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/chen-fork-slow.webm",
+      "loadout": {
+        "name": "chen-fork",
+        "weapon": "spear",
+        "companion": "chen_ying",
+        "focus": "companion"
+      },
+      "phase": {
+        "name": "slow",
+        "stage": 2,
+        "seconds": 3,
+        "interval": 0.45
+      },
+      "frameCount": 92,
+      "poseSamples": [
+        {
+          "pose": "Windup",
+          "memberId": 1,
+          "key": "chenWindup",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.41579999995231626,
+          "videoFrame": 13,
+          "frameTime": 0.43,
+          "sampleToFrameErrorSeconds": 0.014200000047683736,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/chen-fork-slow-sequence-Windup-frame-13.png"
+        },
+        {
+          "pose": "Release",
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoSeconds": 0.47860000002384184,
+          "videoFrame": 14,
+          "frameTime": 0.462,
+          "sampleToFrameErrorSeconds": 0.01660000002384182,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/chen-fork-slow-sequence-Release-frame-14.png"
+        },
+        {
+          "pose": "Recover",
+          "memberId": 1,
+          "key": "chenRecover",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.5633999999761582,
+          "videoFrame": 17,
+          "frameTime": 0.564,
+          "sampleToFrameErrorSeconds": 0.0006000000238417513,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/chen-fork-slow-sequence-Recover-frame-17.png"
+        }
+      ],
+      "releaseSamples": [
+        {
+          "videoSeconds": 0.04110000002384186,
+          "tick": 1,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 1,
+          "frameTime": 0.031,
+          "sampleToFrameErrorSeconds": 0.010100000023841857
+        },
+        {
+          "videoSeconds": 0.06410000002384186,
+          "tick": 3,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 2,
+          "frameTime": 0.064,
+          "sampleToFrameErrorSeconds": 0.00010000002384186191
+        },
+        {
+          "videoSeconds": 0.08479999995231628,
+          "tick": 4,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 3,
+          "frameTime": 0.098,
+          "sampleToFrameErrorSeconds": 0.013200000047683721
+        },
+        {
+          "videoSeconds": 0.47860000002384184,
+          "tick": 28,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 14,
+          "frameTime": 0.462,
+          "sampleToFrameErrorSeconds": 0.01660000002384182
+        },
+        {
+          "videoSeconds": 0.49989999997615814,
+          "tick": 29,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 15,
+          "frameTime": 0.497,
+          "sampleToFrameErrorSeconds": 0.0028999999761581408
+        },
+        {
+          "videoSeconds": 0.5192000000476837,
+          "tick": 30,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 16,
+          "frameTime": 0.53,
+          "sampleToFrameErrorSeconds": 0.010799999952316286
+        },
+        {
+          "videoSeconds": 0.5408999999761581,
+          "tick": 31,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 16,
+          "frameTime": 0.53,
+          "sampleToFrameErrorSeconds": 0.010899999976158092
+        },
+        {
+          "videoSeconds": 0.9362999999523163,
+          "tick": 55,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 18,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 28,
+          "frameTime": 0.93,
+          "sampleToFrameErrorSeconds": 0.0062999999523162264
+        },
+        {
+          "videoSeconds": 0.9586000000238418,
+          "tick": 56,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 18,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 29,
+          "frameTime": 0.964,
+          "sampleToFrameErrorSeconds": 0.005399999976158143
+        },
+        {
+          "videoSeconds": 0.9812000000476837,
+          "tick": 58,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 18,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 30,
+          "frameTime": 0.997,
+          "sampleToFrameErrorSeconds": 0.01579999995231629
+        },
+        {
+          "videoSeconds": 1.3802999999523162,
+          "tick": 82,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 26,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 41,
+          "frameTime": 1.364,
+          "sampleToFrameErrorSeconds": 0.016299999952316124
+        },
+        {
+          "videoSeconds": 1.8477000000476838,
+          "tick": 110,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 34,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 56,
+          "frameTime": 1.864,
+          "sampleToFrameErrorSeconds": 0.016299999952316346
+        },
+        {
+          "videoSeconds": 1.869899999976158,
+          "tick": 111,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 34,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 56,
+          "frameTime": 1.864,
+          "sampleToFrameErrorSeconds": 0.005899999976157977
+        },
+        {
+          "videoSeconds": 1.892,
+          "tick": 112,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 34,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 57,
+          "frameTime": 1.895,
+          "sampleToFrameErrorSeconds": 0.0030000000000001137
+        },
+        {
+          "videoSeconds": 2.2872999999523165,
+          "tick": 136,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 42,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 69,
+          "frameTime": 2.297,
+          "sampleToFrameErrorSeconds": 0.009700000047683677
+        },
+        {
+          "videoSeconds": 2.308100000023842,
+          "tick": 137,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 42,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 69,
+          "frameTime": 2.297,
+          "sampleToFrameErrorSeconds": 0.011100000023841705
+        },
+        {
+          "videoSeconds": 2.3312000000476836,
+          "tick": 139,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 42,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 70,
+          "frameTime": 2.329,
+          "sampleToFrameErrorSeconds": 0.0022000000476833925
+        },
+        {
+          "videoSeconds": 2.745,
+          "tick": 164,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 50,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 82,
+          "frameTime": 2.728,
+          "sampleToFrameErrorSeconds": 0.016999999999999904
+        },
+        {
+          "videoSeconds": 2.7676000000238417,
+          "tick": 165,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 50,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 83,
+          "frameTime": 2.762,
+          "sampleToFrameErrorSeconds": 0.005600000023841645
+        },
+        {
+          "videoSeconds": 2.7905,
+          "tick": 166,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 50,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 84,
+          "frameTime": 2.797,
+          "sampleToFrameErrorSeconds": 0.00649999999999995
+        }
+      ],
+      "maxOutletError": 0.38025000000000375,
+      "sound": {
+        "peak": 0.006141021832793736,
+        "audibleSamples": 23,
+        "samples": 50
+      },
+      "frameTiming": {
+        "p50": 16.699999928474426,
+        "max": 24.299999952316284,
+        "p95": 18.399999976158142,
+        "p99": 19.899999976158142,
+        "over33": 0,
+        "frames": 190
+      },
+      "poseStrip": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/chen-fork-slow-pose-strip.png"
+    },
+    {
+      "name": "chen-fork-fast",
+      "path": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/chen-fork-fast.webm",
+      "loadout": {
+        "name": "chen-fork",
+        "weapon": "spear",
+        "companion": "chen_ying",
+        "focus": "companion"
+      },
+      "phase": {
+        "name": "fast",
+        "stage": 1,
+        "seconds": 2,
+        "interval": 0.2
+      },
+      "frameCount": 61,
+      "poseSamples": [
+        {
+          "pose": "Windup",
+          "memberId": 1,
+          "key": "chenWindup",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.14889999997615813,
+          "videoFrame": 5,
+          "frameTime": 0.161,
+          "sampleToFrameErrorSeconds": 0.012100000023841873,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/chen-fork-fast-sequence-Windup-frame-5.png"
+        },
+        {
+          "pose": "Release",
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoSeconds": 0.23260000002384185,
+          "videoFrame": 7,
+          "frameTime": 0.226,
+          "sampleToFrameErrorSeconds": 0.00660000002384184,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/chen-fork-fast-sequence-Release-frame-7.png"
+        },
+        {
+          "pose": "Recover",
+          "memberId": 1,
+          "key": "chenRecover",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.29860000002384185,
+          "videoFrame": 9,
+          "frameTime": 0.292,
+          "sampleToFrameErrorSeconds": 0.006600000023841868,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/chen-fork-fast-sequence-Recover-frame-9.png"
+        }
+      ],
+      "releaseSamples": [
+        {
+          "videoSeconds": 0.022299999952316286,
+          "tick": 1,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 1,
+          "frameTime": 0.027,
+          "sampleToFrameErrorSeconds": 0.004700000047683714
+        },
+        {
+          "videoSeconds": 0.043699999928474426,
+          "tick": 2,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 1,
+          "frameTime": 0.027,
+          "sampleToFrameErrorSeconds": 0.016699999928474426
+        },
+        {
+          "videoSeconds": 0.06389999997615814,
+          "tick": 3,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 2,
+          "frameTime": 0.061,
+          "sampleToFrameErrorSeconds": 0.0028999999761581408
+        },
+        {
+          "videoSeconds": 0.23260000002384185,
+          "tick": 14,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 7,
+          "frameTime": 0.226,
+          "sampleToFrameErrorSeconds": 0.00660000002384184
+        },
+        {
+          "videoSeconds": 0.2542999999523163,
+          "tick": 14,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 8,
+          "frameTime": 0.26,
+          "sampleToFrameErrorSeconds": 0.005700000047683729
+        },
+        {
+          "videoSeconds": 0.2757999999523163,
+          "tick": 16,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 10,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 8,
+          "frameTime": 0.26,
+          "sampleToFrameErrorSeconds": 0.01579999995231629
+        },
+        {
+          "videoSeconds": 0.4261999999284744,
+          "tick": 25,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 18,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 13,
+          "frameTime": 0.427,
+          "sampleToFrameErrorSeconds": 0.0008000000715255862
+        },
+        {
+          "videoSeconds": 0.44889999997615815,
+          "tick": 27,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 18,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 14,
+          "frameTime": 0.46,
+          "sampleToFrameErrorSeconds": 0.011100000023841872
+        },
+        {
+          "videoSeconds": 0.47119999992847444,
+          "tick": 28,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 18,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 14,
+          "frameTime": 0.46,
+          "sampleToFrameErrorSeconds": 0.011199999928474424
+        },
+        {
+          "videoSeconds": 0.6297999999523163,
+          "tick": 37,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 26,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 19,
+          "frameTime": 0.628,
+          "sampleToFrameErrorSeconds": 0.001799999952316278
+        },
+        {
+          "videoSeconds": 0.6552999999523162,
+          "tick": 39,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 26,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 20,
+          "frameTime": 0.66,
+          "sampleToFrameErrorSeconds": 0.004700000047683783
+        },
+        {
+          "videoSeconds": 0.8251000000238419,
+          "tick": 49,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 34,
+          "muzzle": {
+            "x": -19.43662500000001,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": -19.50000000000001,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.06337500000000063,
+          "videoFrame": 25,
+          "frameTime": 0.827,
+          "sampleToFrameErrorSeconds": 0.0018999999761580844
+        },
+        {
+          "videoSeconds": 0.8485,
+          "tick": 51,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 34,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 26,
+          "frameTime": 0.861,
+          "sampleToFrameErrorSeconds": 0.012499999999999956
+        },
+        {
+          "videoSeconds": 0.8718999999761582,
+          "tick": 52,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 34,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 26,
+          "frameTime": 0.861,
+          "sampleToFrameErrorSeconds": 0.010899999976158203
+        },
+        {
+          "videoSeconds": 1.033,
+          "tick": 62,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 42,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 31,
+          "frameTime": 1.027,
+          "sampleToFrameErrorSeconds": 0.006000000000000005
+        },
+        {
+          "videoSeconds": 1.0561999999284744,
+          "tick": 63,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 42,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 32,
+          "frameTime": 1.06,
+          "sampleToFrameErrorSeconds": 0.0038000000715257
+        },
+        {
+          "videoSeconds": 1.2217999999523164,
+          "tick": 73,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 50,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 37,
+          "frameTime": 1.225,
+          "sampleToFrameErrorSeconds": 0.0032000000476837265
+        },
+        {
+          "videoSeconds": 1.247100000023842,
+          "tick": 75,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 50,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 38,
+          "frameTime": 1.26,
+          "sampleToFrameErrorSeconds": 0.012899999976158094
+        },
+        {
+          "videoSeconds": 1.2711999999284744,
+          "tick": 75,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 50,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 38,
+          "frameTime": 1.26,
+          "sampleToFrameErrorSeconds": 0.011199999928474424
+        },
+        {
+          "videoSeconds": 1.448600000023842,
+          "tick": 87,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 58,
+          "muzzle": {
+            "x": -15.5493,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": -15.6,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.05069999999999908,
+          "videoFrame": 44,
+          "frameTime": 1.46,
+          "sampleToFrameErrorSeconds": 0.011399999976158037
+        },
+        {
+          "videoSeconds": 1.616100000023842,
+          "tick": 97,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 66,
+          "muzzle": {
+            "x": 101.07045000000004,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 101.40000000000003,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.32954999999999757,
+          "videoFrame": 49,
+          "frameTime": 1.626,
+          "sampleToFrameErrorSeconds": 0.00989999997615798
+        },
+        {
+          "videoSeconds": 1.6396000000238418,
+          "tick": 98,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 66,
+          "muzzle": {
+            "x": 112.732425,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 113.10000000000001,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.3675750000000022,
+          "videoFrame": 49,
+          "frameTime": 1.626,
+          "sampleToFrameErrorSeconds": 0.013600000023841874
+        },
+        {
+          "videoSeconds": 1.6645,
+          "tick": 100,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 66,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 50,
+          "frameTime": 1.66,
+          "sampleToFrameErrorSeconds": 0.0045000000000001705
+        },
+        {
+          "videoSeconds": 1.825,
+          "tick": 109,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 74,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 55,
+          "frameTime": 1.827,
+          "sampleToFrameErrorSeconds": 0.0020000000000000018
+        },
+        {
+          "videoSeconds": 1.849,
+          "tick": 111,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 74,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 56,
+          "frameTime": 1.86,
+          "sampleToFrameErrorSeconds": 0.01100000000000012
+        },
+        {
+          "videoSeconds": 1.8737999999523163,
+          "tick": 112,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 74,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 56,
+          "frameTime": 1.86,
+          "sampleToFrameErrorSeconds": 0.013799999952316178
+        },
+        {
+          "videoSeconds": 2.014600000023842,
+          "tick": 121,
+          "memberId": 1,
+          "key": "chenRelease",
+          "eventId": 82,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -159.31491712707185
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -159.31491712707182
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 60,
+          "frameTime": 1.993,
+          "sampleToFrameErrorSeconds": 0.02160000002384188
+        }
+      ],
+      "maxOutletError": 0.38025000000000375,
+      "sound": {
+        "peak": 0.006335985091058655,
+        "audibleSamples": 18,
+        "samples": 34
+      },
+      "frameTiming": {
+        "p50": 16.699999928474426,
+        "max": 21.700000047683716,
+        "p95": 18.100000023841858,
+        "p99": 18.600000023841858,
+        "over33": 0,
+        "frames": 129
+      },
+      "poseStrip": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/chen-fork-fast-pose-strip.png"
+    },
+    {
+      "name": "zhao-spear-slow",
+      "path": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/zhao-spear-slow.webm",
+      "loadout": {
+        "name": "zhao-spear",
+        "weapon": "spear",
+        "companion": "zhao_yun_guest",
+        "focus": "companion"
+      },
+      "phase": {
+        "name": "slow",
+        "stage": 2,
+        "seconds": 3,
+        "interval": 0.45
+      },
+      "frameCount": 92,
+      "poseSamples": [
+        {
+          "pose": "Windup",
+          "memberId": 1,
+          "key": "zhaoWindup",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.6285,
+          "videoFrame": 19,
+          "frameTime": 0.626,
+          "sampleToFrameErrorSeconds": 0.0024999999999999467,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/zhao-spear-slow-sequence-Windup-frame-19.png"
+        },
+        {
+          "pose": "Release",
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 16,
+          "muzzle": {
+            "x": 27.211274999999997,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 27.299999999999997,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.08872500000000016,
+          "videoSeconds": 0.7663999999761582,
+          "videoFrame": 23,
+          "frameTime": 0.759,
+          "sampleToFrameErrorSeconds": 0.007399999976158145,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/zhao-spear-slow-sequence-Release-frame-23.png"
+        },
+        {
+          "pose": "Recover",
+          "memberId": 1,
+          "key": "zhaoRecover",
+          "eventId": 16,
+          "muzzle": {
+            "x": -7.774650000000007,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.8022000000476838,
+          "videoFrame": 24,
+          "frameTime": 0.793,
+          "sampleToFrameErrorSeconds": 0.009200000047683732,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/zhao-spear-slow-sequence-Recover-frame-24.png"
+        }
+      ],
+      "releaseSamples": [
+        {
+          "videoSeconds": 0.022800000071525574,
+          "tick": 1,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 1,
+          "frameTime": 0.027,
+          "sampleToFrameErrorSeconds": 0.004199999928474425
+        },
+        {
+          "videoSeconds": 0.04439999997615814,
+          "tick": 2,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 2,
+          "frameTime": 0.059,
+          "sampleToFrameErrorSeconds": 0.014600000023841854
+        },
+        {
+          "videoSeconds": 0.06620000004768371,
+          "tick": 4,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 2,
+          "frameTime": 0.059,
+          "sampleToFrameErrorSeconds": 0.007200000047683716
+        },
+        {
+          "videoSeconds": 0.7663999999761582,
+          "tick": 45,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 16,
+          "muzzle": {
+            "x": 27.211274999999997,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 27.299999999999997,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.08872500000000016,
+          "videoFrame": 23,
+          "frameTime": 0.759,
+          "sampleToFrameErrorSeconds": 0.007399999976158145
+        },
+        {
+          "videoSeconds": 2.0918000000715256,
+          "tick": 125,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 39,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 63,
+          "frameTime": 2.093,
+          "sampleToFrameErrorSeconds": 0.0011999999284744156
+        },
+        {
+          "videoSeconds": 2.115899999976158,
+          "tick": 127,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 39,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 64,
+          "frameTime": 2.127,
+          "sampleToFrameErrorSeconds": 0.011100000023841705
+        },
+        {
+          "videoSeconds": 2.758399999976158,
+          "tick": 165,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 54,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 83,
+          "frameTime": 2.76,
+          "sampleToFrameErrorSeconds": 0.0016000000238416412
+        },
+        {
+          "videoSeconds": 2.7822000000476836,
+          "tick": 167,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 54,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 84,
+          "frameTime": 2.791,
+          "sampleToFrameErrorSeconds": 0.008799999952316284
+        },
+        {
+          "videoSeconds": 2.804899999976158,
+          "tick": 168,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 54,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 84,
+          "frameTime": 2.791,
+          "sampleToFrameErrorSeconds": 0.013899999976158206
+        },
+        {
+          "videoSeconds": 2.8253999999761583,
+          "tick": 168,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 54,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 85,
+          "frameTime": 2.826,
+          "sampleToFrameErrorSeconds": 0.0006000000238417513
+        }
+      ],
+      "maxOutletError": 0.38025000000000375,
+      "sound": {
+        "peak": 0.006271669436149712,
+        "audibleSamples": 20,
+        "samples": 51
+      },
+      "frameTiming": {
+        "p50": 16.699999928474426,
+        "max": 21.5,
+        "p95": 18.100000023841858,
+        "p99": 18.699999928474426,
+        "over33": 0,
+        "frames": 190
+      },
+      "poseStrip": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/zhao-spear-slow-pose-strip.png"
+    },
+    {
+      "name": "zhao-spear-fast",
+      "path": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/zhao-spear-fast.webm",
+      "loadout": {
+        "name": "zhao-spear",
+        "weapon": "spear",
+        "companion": "zhao_yun_guest",
+        "focus": "companion"
+      },
+      "phase": {
+        "name": "fast",
+        "stage": 1,
+        "seconds": 2,
+        "interval": 0.2
+      },
+      "frameCount": 62,
+      "poseSamples": [
+        {
+          "pose": "Windup",
+          "memberId": 1,
+          "key": "zhaoWindup",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.2675,
+          "videoFrame": 8,
+          "frameTime": 0.264,
+          "sampleToFrameErrorSeconds": 0.003500000000000003,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/zhao-spear-fast-sequence-Windup-frame-8.png"
+        },
+        {
+          "pose": "Release",
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 16,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.12675000000000125,
+          "videoSeconds": 0.32919999992847443,
+          "videoFrame": 10,
+          "frameTime": 0.331,
+          "sampleToFrameErrorSeconds": 0.001800000071525587,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/zhao-spear-fast-sequence-Release-frame-10.png"
+        },
+        {
+          "pose": "Recover",
+          "memberId": 1,
+          "key": "zhaoRecover",
+          "eventId": 16,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": null,
+          "outletError": null,
+          "videoSeconds": 0.4128999999761581,
+          "videoFrame": 12,
+          "frameTime": 0.398,
+          "sampleToFrameErrorSeconds": 0.014899999976158096,
+          "png": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/zhao-spear-fast-sequence-Recover-frame-12.png"
+        }
+      ],
+      "releaseSamples": [
+        {
+          "videoSeconds": 0.041,
+          "tick": 1,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 1,
+          "frameTime": 0.031,
+          "sampleToFrameErrorSeconds": 0.010000000000000002
+        },
+        {
+          "videoSeconds": 0.06329999995231629,
+          "tick": 3,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 2,
+          "frameTime": 0.065,
+          "sampleToFrameErrorSeconds": 0.0017000000476837113
+        },
+        {
+          "videoSeconds": 0.0825,
+          "tick": 4,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 2,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 3,
+          "frameTime": 0.098,
+          "sampleToFrameErrorSeconds": 0.0155
+        },
+        {
+          "videoSeconds": 0.32919999992847443,
+          "tick": 19,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 16,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 10,
+          "frameTime": 0.331,
+          "sampleToFrameErrorSeconds": 0.001800000071525587
+        },
+        {
+          "videoSeconds": 0.35010000002384184,
+          "tick": 20,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 16,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 11,
+          "frameTime": 0.363,
+          "sampleToFrameErrorSeconds": 0.01289999997615815
+        },
+        {
+          "videoSeconds": 0.37,
+          "tick": 21,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 16,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 11,
+          "frameTime": 0.363,
+          "sampleToFrameErrorSeconds": 0.007000000000000006
+        },
+        {
+          "videoSeconds": 0.3906000000238419,
+          "tick": 22,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 16,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 12,
+          "frameTime": 0.398,
+          "sampleToFrameErrorSeconds": 0.007399999976158145
+        },
+        {
+          "videoSeconds": 0.6346999999284745,
+          "tick": 37,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 25,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 19,
+          "frameTime": 0.631,
+          "sampleToFrameErrorSeconds": 0.0036999999284744733
+        },
+        {
+          "videoSeconds": 0.6576999999284744,
+          "tick": 39,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 25,
+          "muzzle": {
+            "x": 38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 39,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 20,
+          "frameTime": 0.664,
+          "sampleToFrameErrorSeconds": 0.0063000000715256466
+        },
+        {
+          "videoSeconds": 0.9461000000238419,
+          "tick": 56,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 39,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 28,
+          "frameTime": 0.931,
+          "sampleToFrameErrorSeconds": 0.01510000002384182
+        },
+        {
+          "videoSeconds": 0.9691999999284744,
+          "tick": 57,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 39,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 29,
+          "frameTime": 0.965,
+          "sampleToFrameErrorSeconds": 0.004199999928474418
+        },
+        {
+          "videoSeconds": 0.9931999999284744,
+          "tick": 58,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 39,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 30,
+          "frameTime": 0.997,
+          "sampleToFrameErrorSeconds": 0.003800000071525589
+        },
+        {
+          "videoSeconds": 1.2455,
+          "tick": 74,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 48,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 37,
+          "frameTime": 1.23,
+          "sampleToFrameErrorSeconds": 0.01550000000000007
+        },
+        {
+          "videoSeconds": 1.2695,
+          "tick": 75,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 48,
+          "muzzle": {
+            "x": -38.87325,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": -39,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.12675000000000125,
+          "videoFrame": 38,
+          "frameTime": 1.264,
+          "sampleToFrameErrorSeconds": 0.00550000000000006
+        },
+        {
+          "videoSeconds": 1.5341999999284743,
+          "tick": 91,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 62,
+          "muzzle": {
+            "x": 31.098600000000015,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 31.200000000000014,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.10139999999999816,
+          "videoFrame": 46,
+          "frameTime": 1.53,
+          "sampleToFrameErrorSeconds": 0.004199999928474307
+        },
+        {
+          "videoSeconds": 1.5557999999523162,
+          "tick": 92,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 62,
+          "muzzle": {
+            "x": 42.76057500000001,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 42.900000000000006,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.1394249999999957,
+          "videoFrame": 47,
+          "frameTime": 1.564,
+          "sampleToFrameErrorSeconds": 0.008200000047683842
+        },
+        {
+          "videoSeconds": 1.5786000000238418,
+          "tick": 94,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 62,
+          "muzzle": {
+            "x": 66.08452500000001,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 66.30000000000001,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.21547499999999786,
+          "videoFrame": 47,
+          "frameTime": 1.564,
+          "sampleToFrameErrorSeconds": 0.014600000023841764
+        },
+        {
+          "videoSeconds": 1.8305,
+          "tick": 109,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 71,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 55,
+          "frameTime": 1.83,
+          "sampleToFrameErrorSeconds": 0.0004999999999999449
+        },
+        {
+          "videoSeconds": 1.8541999999284744,
+          "tick": 110,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 71,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 56,
+          "frameTime": 1.864,
+          "sampleToFrameErrorSeconds": 0.009800000071525705
+        },
+        {
+          "videoSeconds": 1.8788999999761582,
+          "tick": 112,
+          "memberId": 1,
+          "key": "zhaoRelease",
+          "eventId": 71,
+          "muzzle": {
+            "x": 116.61975000000004,
+            "y": -165.86470588235295
+          },
+          "artMuzzle": {
+            "x": 117.00000000000004,
+            "y": -165.86470588235295
+          },
+          "outletError": 0.38025000000000375,
+          "videoFrame": 56,
+          "frameTime": 1.864,
+          "sampleToFrameErrorSeconds": 0.014899999976158096
+        }
+      ],
+      "maxOutletError": 0.38025000000000375,
+      "sound": {
+        "peak": 0.006180073860565673,
+        "audibleSamples": 17,
+        "samples": 34
+      },
+      "frameTiming": {
+        "p50": 16.699999928474426,
+        "max": 28.699999928474426,
+        "p95": 18.200000047683716,
+        "p99": 18.699999928474426,
+        "over33": 0,
+        "frames": 130
+      },
+      "poseStrip": "evidence/BATTLE-FIX2-20260925/weapon-clips/2026-09-25T17-00-59-090Z/zhao-spear-fast-pose-strip.png"
+    }
+  ],
+  "failures": [],
+  "visualStatus": "reviewed_with_frame_mapping_scope",
+  "errors": [],
+  "passed": true,
+  "visualReview": {
+    "poseStripsViewed": 10,
+    "chronologicalVideoEvidence": "zhao-sequential-059-102.png",
+    "notes": [
+      "All five types show distinct attack poses, held weapon identity and matching directional wave. Ordinary archer projectiles remain separate.",
+      "Frame timestamps map asynchronous browser diagnostic samples to nearest MediaRecorder frame. Pose boundary sample may appear in adjacent phase; exact key-to-frame identity is not asserted. The continuous Zhao strip confirms the actual full cycle.",
+      "Original real-time clips are not retimed. Frame crops are enlarged evidence, not new animation.",
+      "Observed model issue counts match renderer observer in all10 clips."
+    ]
+  }
+}

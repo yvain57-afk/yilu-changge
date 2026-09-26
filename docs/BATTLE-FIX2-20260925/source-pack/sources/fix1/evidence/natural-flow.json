@@ -1,0 +1,6795 @@
+{
+  "attemptId": "2026-09-25T14-47-36-419Z",
+  "attemptDir": "evidence/BATTLE-REWORK-20260925-FIX1/runs/2026-09-25T14-47-36-419Z",
+  "passed": true,
+  "scope": "One real-time continuous three-level run driven only by touch input; no injected troops, HP, equipment or time",
+  "capture": {
+    "audioTracks": 1,
+    "mime": "video/webm;codecs=vp9,opus"
+  },
+  "sound": {
+    "peak": 0.02795029896144487,
+    "audibleSamples": 1827,
+    "samples": 2582
+  },
+  "pauseChecked": true,
+  "savedAndRestored": true,
+  "runs": [
+    {
+      "level": 1,
+      "seconds": 36.016666666665905,
+      "count": 38,
+      "stage": 2,
+      "remaining": 0,
+      "bossHP": 0,
+      "distanceLeft": 0,
+      "stats": {
+        "shots": 2340,
+        "damageBudget": 4005,
+        "hits": 1031,
+        "gateHits": 636,
+        "converted": 2,
+        "gatesTaken": 3,
+        "crates": 6,
+        "chainGenerated": 0,
+        "chainTaken": 0,
+        "missed": 2,
+        "equipment": 2,
+        "fieldCompanions": 0,
+        "blocked": 0,
+        "deferredShots": 0,
+        "deferredChains": 0,
+        "peakShots": 109,
+        "peakEnemies": 13,
+        "peakTokens": 0
+      },
+      "ledger": [
+        {
+          "tick": 66,
+          "type": "gateValue",
+          "sourceId": "l1.g0.left",
+          "value": -1,
+          "countBefore": 1,
+          "countAfter": 1,
+          "detail": "-2→-1"
+        },
+        {
+          "tick": 93,
+          "type": "gateValue",
+          "sourceId": "l1.g0.left",
+          "value": 0,
+          "countBefore": 1,
+          "countAfter": 1,
+          "detail": "-1→0"
+        },
+        {
+          "tick": 120,
+          "type": "gateValue",
+          "sourceId": "l1.g0.left",
+          "value": 1,
+          "countBefore": 1,
+          "countAfter": 1,
+          "detail": "0→1"
+        },
+        {
+          "tick": 173,
+          "type": "gateValue",
+          "sourceId": "l1.g0.right",
+          "value": 3,
+          "countBefore": 1,
+          "countAfter": 1,
+          "detail": "2→3"
+        },
+        {
+          "tick": 213,
+          "type": "gateValue",
+          "sourceId": "l1.g0.right",
+          "value": 4,
+          "countBefore": 1,
+          "countAfter": 1,
+          "detail": "3→4"
+        },
+        {
+          "tick": 253,
+          "type": "gateValue",
+          "sourceId": "l1.g0.right",
+          "value": 5,
+          "countBefore": 1,
+          "countAfter": 1,
+          "detail": "4→5"
+        },
+        {
+          "tick": 293,
+          "type": "gateValue",
+          "sourceId": "l1.g0.right",
+          "value": 6,
+          "countBefore": 1,
+          "countAfter": 1,
+          "detail": "5→6"
+        },
+        {
+          "tick": 333,
+          "type": "gateValue",
+          "sourceId": "l1.g0.right",
+          "value": 7,
+          "countBefore": 1,
+          "countAfter": 1,
+          "detail": "6→7"
+        },
+        {
+          "tick": 357,
+          "type": "gateContact",
+          "sourceId": "l1.g0.right",
+          "value": 7,
+          "countBefore": 1,
+          "countAfter": 1
+        },
+        {
+          "tick": 357,
+          "type": "gateGain",
+          "sourceId": "l1.g0.right",
+          "value": 7,
+          "countBefore": 1,
+          "countAfter": 8
+        },
+        {
+          "tick": 375,
+          "type": "gateValue",
+          "sourceId": "l1.g0.left",
+          "value": 2,
+          "countBefore": 8,
+          "countAfter": 8,
+          "detail": "1→2"
+        },
+        {
+          "tick": 377,
+          "type": "gateValue",
+          "sourceId": "l1.g0.left",
+          "value": 3,
+          "countBefore": 8,
+          "countAfter": 8,
+          "detail": "2→3"
+        },
+        {
+          "tick": 390,
+          "type": "gateValue",
+          "sourceId": "l1.g0.left",
+          "value": 4,
+          "countBefore": 8,
+          "countAfter": 8,
+          "detail": "3→4"
+        },
+        {
+          "tick": 396,
+          "type": "gateContact",
+          "sourceId": "l1.g0.left",
+          "value": 4,
+          "countBefore": 8,
+          "countAfter": 8
+        },
+        {
+          "tick": 396,
+          "type": "gateGain",
+          "sourceId": "l1.g0.left",
+          "value": 4,
+          "countBefore": 8,
+          "countAfter": 12
+        },
+        {
+          "tick": 426,
+          "type": "crateBroken",
+          "sourceId": "l1.r0",
+          "value": 12,
+          "countBefore": 12,
+          "countAfter": 12,
+          "detail": "troops"
+        },
+        {
+          "tick": 426,
+          "type": "reinforcement",
+          "sourceId": "l1.r0",
+          "value": 3,
+          "countBefore": 12,
+          "countAfter": 15
+        },
+        {
+          "tick": 434,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e0:0",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 445,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e0:1",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 445,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e0:2",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 460,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e0:3",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 501,
+          "type": "crateBroken",
+          "sourceId": "l1.w0",
+          "value": 16,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "equipment"
+        },
+        {
+          "tick": 501,
+          "type": "equipment",
+          "sourceId": "l1.w0",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 583,
+          "type": "gateValue",
+          "sourceId": "l1.g1",
+          "value": -11,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "-12→-11"
+        },
+        {
+          "tick": 585,
+          "type": "gateValue",
+          "sourceId": "l1.g1",
+          "value": -10,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "-11→-10"
+        },
+        {
+          "tick": 593,
+          "type": "gateValue",
+          "sourceId": "l1.g1",
+          "value": -9,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "-10→-9"
+        },
+        {
+          "tick": 595,
+          "type": "gateValue",
+          "sourceId": "l1.g1",
+          "value": -8,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "-9→-8"
+        },
+        {
+          "tick": 603,
+          "type": "gateValue",
+          "sourceId": "l1.g1",
+          "value": -7,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "-8→-7"
+        },
+        {
+          "tick": 604,
+          "type": "gateValue",
+          "sourceId": "l1.g1",
+          "value": -6,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "-7→-6"
+        },
+        {
+          "tick": 606,
+          "type": "gateValue",
+          "sourceId": "l1.g1",
+          "value": -5,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "-6→-5"
+        },
+        {
+          "tick": 613,
+          "type": "gateValue",
+          "sourceId": "l1.g1",
+          "value": -4,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "-5→-4"
+        },
+        {
+          "tick": 615,
+          "type": "gateValue",
+          "sourceId": "l1.g1",
+          "value": -3,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "-4→-3"
+        },
+        {
+          "tick": 617,
+          "type": "gateValue",
+          "sourceId": "l1.g1",
+          "value": -2,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "-3→-2"
+        },
+        {
+          "tick": 624,
+          "type": "gateValue",
+          "sourceId": "l1.g1",
+          "value": -1,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "-2→-1"
+        },
+        {
+          "tick": 625,
+          "type": "gateValue",
+          "sourceId": "l1.g1",
+          "value": 0,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "-1→0"
+        },
+        {
+          "tick": 627,
+          "type": "gateValue",
+          "sourceId": "l1.g1",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "0→1"
+        },
+        {
+          "tick": 635,
+          "type": "gateValue",
+          "sourceId": "l1.g1",
+          "value": 2,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "1→2"
+        },
+        {
+          "tick": 636,
+          "type": "gateValue",
+          "sourceId": "l1.g1",
+          "value": 3,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "2→3"
+        },
+        {
+          "tick": 638,
+          "type": "gateValue",
+          "sourceId": "l1.g1",
+          "value": 4,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "3→4"
+        },
+        {
+          "tick": 892,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e1:1",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 904,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e1:2",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 908,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e1:0",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 931,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e1:5",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 957,
+          "type": "gateContact",
+          "sourceId": "l1.g1",
+          "value": 4,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 957,
+          "type": "gateGain",
+          "sourceId": "l1.g1",
+          "value": 4,
+          "countBefore": 15,
+          "countAfter": 19
+        },
+        {
+          "tick": 985,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e1:3",
+          "value": 1,
+          "countBefore": 19,
+          "countAfter": 19
+        },
+        {
+          "tick": 1025,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e1:4",
+          "value": 1,
+          "countBefore": 19,
+          "countAfter": 19
+        },
+        {
+          "tick": 1033,
+          "type": "gateValue",
+          "sourceId": "l1.g2",
+          "value": -39,
+          "countBefore": 19,
+          "countAfter": 19,
+          "detail": "-40→-39"
+        },
+        {
+          "tick": 1046,
+          "type": "gateValue",
+          "sourceId": "l1.g2",
+          "value": -38,
+          "countBefore": 19,
+          "countAfter": 19,
+          "detail": "-39→-38"
+        },
+        {
+          "tick": 1057,
+          "type": "crateBroken",
+          "sourceId": "l1.r1",
+          "value": 45,
+          "countBefore": 19,
+          "countAfter": 19,
+          "detail": "troops"
+        },
+        {
+          "tick": 1057,
+          "type": "reinforcement",
+          "sourceId": "l1.r1",
+          "value": 6,
+          "countBefore": 19,
+          "countAfter": 25
+        },
+        {
+          "tick": 1063,
+          "type": "gateValue",
+          "sourceId": "l1.g2",
+          "value": -37,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "-38→-37"
+        },
+        {
+          "tick": 1076,
+          "type": "gateValue",
+          "sourceId": "l1.g2",
+          "value": -36,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "-37→-36"
+        },
+        {
+          "tick": 1089,
+          "type": "gateValue",
+          "sourceId": "l1.g2",
+          "value": -35,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "-36→-35"
+        },
+        {
+          "tick": 1098,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e2:5",
+          "value": 1,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1099,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e2:4",
+          "value": 1,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1101,
+          "type": "gateValue",
+          "sourceId": "l1.g2",
+          "value": -34,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "-35→-34"
+        },
+        {
+          "tick": 1108,
+          "type": "gateValue",
+          "sourceId": "l1.g2",
+          "value": -33,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "-34→-33"
+        },
+        {
+          "tick": 1115,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e2:2",
+          "value": 1,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1117,
+          "type": "gateValue",
+          "sourceId": "l1.g2",
+          "value": -32,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "-33→-32"
+        },
+        {
+          "tick": 1118,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e2:1",
+          "value": 1,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1128,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e2:3",
+          "value": 1,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1223,
+          "type": "crateBroken",
+          "sourceId": "l1.w1",
+          "value": 85,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "equipment"
+        },
+        {
+          "tick": 1223,
+          "type": "equipment",
+          "sourceId": "l1.w1",
+          "value": 2,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1261,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e2:0",
+          "value": 1,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1274,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e2:7",
+          "value": 1,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1291,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e2:6",
+          "value": 1,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1299,
+          "type": "gateValue",
+          "sourceId": "l1.g2",
+          "value": -31,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "-32→-31"
+        },
+        {
+          "tick": 1304,
+          "type": "gateValue",
+          "sourceId": "l1.g2",
+          "value": -30,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "-31→-30"
+        },
+        {
+          "tick": 1309,
+          "type": "gateValue",
+          "sourceId": "l1.g2",
+          "value": -29,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "-30→-29"
+        },
+        {
+          "tick": 1309,
+          "type": "gateValue",
+          "sourceId": "l1.g2",
+          "value": -28,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "-29→-28"
+        },
+        {
+          "tick": 1328,
+          "type": "gateValue",
+          "sourceId": "l1.g2",
+          "value": -27,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "-28→-27"
+        },
+        {
+          "tick": 1332,
+          "type": "gateValue",
+          "sourceId": "l1.g2",
+          "value": -26,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "-27→-26"
+        },
+        {
+          "tick": 1351,
+          "type": "gateValue",
+          "sourceId": "l1.g2",
+          "value": -25,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "-26→-25"
+        },
+        {
+          "tick": 1356,
+          "type": "gateValue",
+          "sourceId": "l1.g2",
+          "value": -24,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "-25→-24"
+        },
+        {
+          "tick": 1366,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e3:1",
+          "value": 1,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1377,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e3:5",
+          "value": 1,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1399,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e3:9",
+          "value": 1,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1406,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e3:0",
+          "value": 1,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1501,
+          "type": "missed",
+          "sourceId": "l1.g2",
+          "value": -24,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1548,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e3:2",
+          "value": 1,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1551,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e3:4",
+          "value": 1,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1552,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e3:7",
+          "value": 1,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1557,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e3:8",
+          "value": 1,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1559,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e3:3",
+          "value": 1,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1560,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -69,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "-70→-69"
+        },
+        {
+          "tick": 1587,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e3:6",
+          "value": 1,
+          "countBefore": 25,
+          "countAfter": 25
+        },
+        {
+          "tick": 1591,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -68,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "-69→-68"
+        },
+        {
+          "tick": 1615,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -67,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "-68→-67"
+        },
+        {
+          "tick": 1633,
+          "type": "crateBroken",
+          "sourceId": "l1.r2",
+          "value": 120,
+          "countBefore": 25,
+          "countAfter": 25,
+          "detail": "troops"
+        },
+        {
+          "tick": 1633,
+          "type": "reinforcement",
+          "sourceId": "l1.r2",
+          "value": 8,
+          "countBefore": 25,
+          "countAfter": 33
+        },
+        {
+          "tick": 1660,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -66,
+          "countBefore": 33,
+          "countAfter": 33,
+          "detail": "-67→-66"
+        },
+        {
+          "tick": 1662,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -65,
+          "countBefore": 33,
+          "countAfter": 33,
+          "detail": "-66→-65"
+        },
+        {
+          "tick": 1666,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e4:2",
+          "value": 1,
+          "countBefore": 33,
+          "countAfter": 33
+        },
+        {
+          "tick": 1672,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e4:7",
+          "value": 1,
+          "countBefore": 33,
+          "countAfter": 33
+        },
+        {
+          "tick": 1677,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -64,
+          "countBefore": 33,
+          "countAfter": 33,
+          "detail": "-65→-64"
+        },
+        {
+          "tick": 1685,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -63,
+          "countBefore": 33,
+          "countAfter": 33,
+          "detail": "-64→-63"
+        },
+        {
+          "tick": 1687,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -62,
+          "countBefore": 33,
+          "countAfter": 33,
+          "detail": "-63→-62"
+        },
+        {
+          "tick": 1706,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e4:3",
+          "value": 1,
+          "countBefore": 33,
+          "countAfter": 33
+        },
+        {
+          "tick": 1708,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e4:0",
+          "value": 1,
+          "countBefore": 33,
+          "countAfter": 33
+        },
+        {
+          "tick": 1708,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e4:4",
+          "value": 1,
+          "countBefore": 33,
+          "countAfter": 33
+        },
+        {
+          "tick": 1708,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -61,
+          "countBefore": 33,
+          "countAfter": 33,
+          "detail": "-62→-61"
+        },
+        {
+          "tick": 1717,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e4:5",
+          "value": 1,
+          "countBefore": 33,
+          "countAfter": 33
+        },
+        {
+          "tick": 1722,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e4:10",
+          "value": 1,
+          "countBefore": 33,
+          "countAfter": 33
+        },
+        {
+          "tick": 1732,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -60,
+          "countBefore": 33,
+          "countAfter": 33,
+          "detail": "-61→-60"
+        },
+        {
+          "tick": 1735,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e4:8",
+          "value": 1,
+          "countBefore": 33,
+          "countAfter": 33
+        },
+        {
+          "tick": 1735,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e4:9",
+          "value": 1,
+          "countBefore": 33,
+          "countAfter": 33
+        },
+        {
+          "tick": 1758,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -59,
+          "countBefore": 33,
+          "countAfter": 33,
+          "detail": "-60→-59"
+        },
+        {
+          "tick": 1782,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -58,
+          "countBefore": 33,
+          "countAfter": 33,
+          "detail": "-59→-58"
+        },
+        {
+          "tick": 1782,
+          "type": "crateBroken",
+          "sourceId": "l1.r3",
+          "value": 120,
+          "countBefore": 33,
+          "countAfter": 33,
+          "detail": "troops"
+        },
+        {
+          "tick": 1782,
+          "type": "reinforcement",
+          "sourceId": "l1.r3",
+          "value": 5,
+          "countBefore": 33,
+          "countAfter": 38
+        },
+        {
+          "tick": 1815,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e4:1",
+          "value": 1,
+          "countBefore": 38,
+          "countAfter": 38
+        },
+        {
+          "tick": 1818,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -57,
+          "countBefore": 38,
+          "countAfter": 38,
+          "detail": "-58→-57"
+        },
+        {
+          "tick": 1822,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e4:6",
+          "value": 1,
+          "countBefore": 38,
+          "countAfter": 38
+        },
+        {
+          "tick": 1825,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -56,
+          "countBefore": 38,
+          "countAfter": 38,
+          "detail": "-57→-56"
+        },
+        {
+          "tick": 1828,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -55,
+          "countBefore": 38,
+          "countAfter": 38,
+          "detail": "-56→-55"
+        },
+        {
+          "tick": 1831,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e4:11",
+          "value": 1,
+          "countBefore": 38,
+          "countAfter": 38
+        },
+        {
+          "tick": 1849,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -54,
+          "countBefore": 38,
+          "countAfter": 38,
+          "detail": "-55→-54"
+        },
+        {
+          "tick": 1852,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -53,
+          "countBefore": 38,
+          "countAfter": 38,
+          "detail": "-54→-53"
+        },
+        {
+          "tick": 1872,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -52,
+          "countBefore": 38,
+          "countAfter": 38,
+          "detail": "-53→-52"
+        },
+        {
+          "tick": 1875,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -51,
+          "countBefore": 38,
+          "countAfter": 38,
+          "detail": "-52→-51"
+        },
+        {
+          "tick": 1884,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e5:3",
+          "value": 1,
+          "countBefore": 38,
+          "countAfter": 38
+        },
+        {
+          "tick": 1889,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e5:5",
+          "value": 1,
+          "countBefore": 38,
+          "countAfter": 38
+        },
+        {
+          "tick": 1894,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -50,
+          "countBefore": 38,
+          "countAfter": 38,
+          "detail": "-51→-50"
+        },
+        {
+          "tick": 1899,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -49,
+          "countBefore": 38,
+          "countAfter": 38,
+          "detail": "-50→-49"
+        },
+        {
+          "tick": 1901,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e5:4",
+          "value": 1,
+          "countBefore": 38,
+          "countAfter": 38
+        },
+        {
+          "tick": 1909,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e5:6",
+          "value": 1,
+          "countBefore": 38,
+          "countAfter": 38
+        },
+        {
+          "tick": 1921,
+          "type": "gateValue",
+          "sourceId": "l1.g3",
+          "value": -48,
+          "countBefore": 38,
+          "countAfter": 38,
+          "detail": "-49→-48"
+        },
+        {
+          "tick": 1949,
+          "type": "enemyDefeated",
+          "sourceId": "l1.named:0",
+          "value": 1,
+          "countBefore": 38,
+          "countAfter": 38
+        },
+        {
+          "tick": 2077,
+          "type": "missed",
+          "sourceId": "l1.g3",
+          "value": -48,
+          "countBefore": 38,
+          "countAfter": 38
+        },
+        {
+          "tick": 2112,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e5:0",
+          "value": 1,
+          "countBefore": 38,
+          "countAfter": 38
+        },
+        {
+          "tick": 2112,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e5:2",
+          "value": 1,
+          "countBefore": 38,
+          "countAfter": 38
+        },
+        {
+          "tick": 2112,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e5:8",
+          "value": 1,
+          "countBefore": 38,
+          "countAfter": 38
+        },
+        {
+          "tick": 2126,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e5:7",
+          "value": 1,
+          "countBefore": 38,
+          "countAfter": 38
+        },
+        {
+          "tick": 2126,
+          "type": "enemyDefeated",
+          "sourceId": "l1.e5:1",
+          "value": 1,
+          "countBefore": 38,
+          "countAfter": 38
+        }
+      ],
+      "lastDamage": null,
+      "meanFPS": 58.20775649664405,
+      "frameTiming": {
+        "p50": 16.700000047683716,
+        "max": 35.299999952316284,
+        "p95": 20.40000009536743,
+        "p99": 30,
+        "over33": 2,
+        "frames": 2138
+      },
+      "pacing": [
+        {
+          "id": "l1.g0.left",
+          "kind": "mutableGate",
+          "value": 4,
+          "maxPositive": 8,
+          "damagePerPoint": 2,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 6.599999999999982,
+          "firstAvailableAt": 0.016666666666666666,
+          "firstHitAt": 0.8833333333333344,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 6.016666666666651,
+          "claimedReward": {
+            "kind": "gate",
+            "count": 4
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l1.g0.right",
+          "kind": "mutableGate",
+          "value": 7,
+          "maxPositive": 8,
+          "damagePerPoint": 3,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 5.949999999999984,
+          "firstAvailableAt": 0.016666666666666666,
+          "firstHitAt": 2.4333333333333296,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 6.016666666666651,
+          "claimedReward": {
+            "kind": "gate",
+            "count": 7
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l1.r0",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 12,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 5.149999999999987,
+          "firstAvailableAt": 1.9666666666666646,
+          "firstHitAt": 6.499999999999982,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 10.000000000000076,
+          "claimedReward": {
+            "kind": "troops",
+            "count": 3
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l1.w0",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 16,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 3.399999999999993,
+          "firstAvailableAt": 4.966666666666654,
+          "firstHitAt": 6.766666666666648,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 13.000000000000226,
+          "claimedReward": {
+            "kind": "equipment",
+            "stage": 1
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l1.g1",
+          "kind": "mutableGate",
+          "value": 4,
+          "maxPositive": 4,
+          "damagePerPoint": 4,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 7.999999999999977,
+          "firstAvailableAt": 7.966666666666644,
+          "firstHitAt": 9.500000000000052,
+          "cappedAt": 10.633333333333441,
+          "hitsAfterCap": 345,
+          "spentAimingAfterCap": 5.316666666666653,
+          "durabilityAtPass": 0,
+          "passedAt": 16.000000000000373,
+          "claimedReward": {
+            "kind": "gate",
+            "count": 4
+          },
+          "lossCause": null,
+          "lastAimedTick": 957
+        },
+        {
+          "id": "l1.r1",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 45,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 7.683333333333311,
+          "firstAvailableAt": 9.950000000000074,
+          "firstHitAt": 16.48333333333368,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 18.00000000000026,
+          "claimedReward": {
+            "kind": "troops",
+            "count": 6
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l1.g2",
+          "kind": "mutableGate",
+          "value": -24,
+          "maxPositive": 4,
+          "damagePerPoint": 8,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 9.866666666666736,
+          "firstAvailableAt": 14.950000000000323,
+          "firstHitAt": 17.016666666666982,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 23.01666666666664,
+          "claimedReward": null,
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l1.w1",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 85,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 4.4499999999999895,
+          "firstAvailableAt": 15.950000000000372,
+          "firstHitAt": 18.633333333333557,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 24.016666666666584,
+          "claimedReward": {
+            "kind": "equipment",
+            "stage": 2
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l1.r2",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 120,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 6.283333333333316,
+          "firstAvailableAt": 20.95000000000009,
+          "firstHitAt": 22.799999999999986,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 29.0166666666663,
+          "claimedReward": {
+            "kind": "troops",
+            "count": 8
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l1.g3",
+          "kind": "mutableGate",
+          "value": -48,
+          "maxPositive": 4,
+          "damagePerPoint": 12,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 10.450000000000099,
+          "firstAvailableAt": 23.966666666666587,
+          "firstHitAt": 25.149999999999853,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 32.01666666666613,
+          "claimedReward": null,
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l1.r3",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 120,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 4.7499999999999885,
+          "firstAvailableAt": 24.96666666666653,
+          "firstHitAt": 26.883333333333088,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 33.016666666666076,
+          "claimedReward": {
+            "kind": "troops",
+            "count": 5
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        }
+      ],
+      "samples": [
+        {
+          "elapsed": 8.016666666666644,
+          "count": 15,
+          "stage": 0,
+          "remaining": 46,
+          "distance": 27.983333333333356,
+          "stats": {
+            "shots": 132,
+            "damageBudget": 132,
+            "hits": 58,
+            "gateHits": 29,
+            "converted": 1,
+            "gatesTaken": 2,
+            "crates": 1,
+            "chainGenerated": 0,
+            "chainTaken": 0,
+            "missed": 0,
+            "equipment": 0,
+            "fieldCompanions": 0,
+            "blocked": 0,
+            "deferredShots": 0,
+            "deferredChains": 0,
+            "peakShots": 56,
+            "peakEnemies": 4,
+            "peakTokens": 0
+          },
+          "fps": 59.119125031394205,
+          "nodes": 379,
+          "pool": 351
+        },
+        {
+          "elapsed": 16.01666666666704,
+          "count": 19,
+          "stage": 1,
+          "remaining": 42,
+          "distance": 19.98333333333296,
+          "stats": {
+            "shots": 728,
+            "damageBudget": 728,
+            "hits": 491,
+            "gateHits": 438,
+            "converted": 2,
+            "gatesTaken": 3,
+            "crates": 2,
+            "chainGenerated": 0,
+            "chainTaken": 0,
+            "missed": 0,
+            "equipment": 1,
+            "fieldCompanions": 0,
+            "blocked": 0,
+            "deferredShots": 0,
+            "deferredChains": 0,
+            "peakShots": 68,
+            "peakEnemies": 10,
+            "peakTokens": 0
+          },
+          "fps": 57.85536159600999,
+          "nodes": 440,
+          "pool": 412
+        },
+        {
+          "elapsed": 24.016666666666584,
+          "count": 25,
+          "stage": 2,
+          "remaining": 28,
+          "distance": 11.983333333333416,
+          "stats": {
+            "shots": 1430,
+            "damageBudget": 1730,
+            "hits": 758,
+            "gateHits": 529,
+            "converted": 2,
+            "gatesTaken": 3,
+            "crates": 4,
+            "chainGenerated": 0,
+            "chainTaken": 0,
+            "missed": 0,
+            "equipment": 2,
+            "fieldCompanions": 0,
+            "blocked": 0,
+            "deferredShots": 0,
+            "deferredChains": 0,
+            "peakShots": 108,
+            "peakEnemies": 13,
+            "peakTokens": 0
+          },
+          "fps": 54.02219821741673,
+          "nodes": 480,
+          "pool": 452
+        },
+        {
+          "elapsed": 32.01666666666613,
+          "count": 38,
+          "stage": 2,
+          "remaining": 6,
+          "distance": 3.983333333333867,
+          "stats": {
+            "shots": 1998,
+            "damageBudget": 3150,
+            "hits": 1008,
+            "gateHits": 635,
+            "converted": 2,
+            "gatesTaken": 3,
+            "crates": 6,
+            "chainGenerated": 0,
+            "chainTaken": 0,
+            "missed": 1,
+            "equipment": 2,
+            "fieldCompanions": 0,
+            "blocked": 0,
+            "deferredShots": 0,
+            "deferredChains": 0,
+            "peakShots": 108,
+            "peakEnemies": 13,
+            "peakTokens": 0
+          },
+          "fps": 58.156727451946786,
+          "nodes": 535,
+          "pool": 507
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "seconds": 48.81666666666518,
+      "count": 17,
+      "stage": 2,
+      "remaining": 0,
+      "bossHP": 0,
+      "distanceLeft": 0,
+      "stats": {
+        "shots": 1789,
+        "damageBudget": 3169,
+        "hits": 843,
+        "gateHits": 120,
+        "converted": 1,
+        "gatesTaken": 15,
+        "crates": 5,
+        "chainGenerated": 14,
+        "chainTaken": 14,
+        "missed": 6,
+        "equipment": 2,
+        "fieldCompanions": 0,
+        "blocked": 16,
+        "deferredShots": 0,
+        "deferredChains": 0,
+        "peakShots": 47,
+        "peakEnemies": 39,
+        "peakTokens": 8
+      },
+      "ledger": [
+        {
+          "tick": 73,
+          "type": "gateValue",
+          "sourceId": "l2.g0.left",
+          "value": -3,
+          "countBefore": 1,
+          "countAfter": 1,
+          "detail": "-4→-3"
+        },
+        {
+          "tick": 100,
+          "type": "gateValue",
+          "sourceId": "l2.g0.left",
+          "value": -2,
+          "countBefore": 1,
+          "countAfter": 1,
+          "detail": "-3→-2"
+        },
+        {
+          "tick": 126,
+          "type": "gateValue",
+          "sourceId": "l2.g0.left",
+          "value": -1,
+          "countBefore": 1,
+          "countAfter": 1,
+          "detail": "-2→-1"
+        },
+        {
+          "tick": 153,
+          "type": "gateValue",
+          "sourceId": "l2.g0.left",
+          "value": 0,
+          "countBefore": 1,
+          "countAfter": 1,
+          "detail": "-1→0"
+        },
+        {
+          "tick": 220,
+          "type": "gateValue",
+          "sourceId": "l2.g0.right",
+          "value": 3,
+          "countBefore": 1,
+          "countAfter": 1,
+          "detail": "2→3"
+        },
+        {
+          "tick": 260,
+          "type": "gateValue",
+          "sourceId": "l2.g0.right",
+          "value": 4,
+          "countBefore": 1,
+          "countAfter": 1,
+          "detail": "3→4"
+        },
+        {
+          "tick": 297,
+          "type": "gateContact",
+          "sourceId": "l2.g0.right",
+          "value": 4,
+          "countBefore": 1,
+          "countAfter": 1
+        },
+        {
+          "tick": 297,
+          "type": "gateGain",
+          "sourceId": "l2.g0.right",
+          "value": 4,
+          "countBefore": 1,
+          "countAfter": 5
+        },
+        {
+          "tick": 315,
+          "type": "gateValue",
+          "sourceId": "l2.g0.left",
+          "value": 1,
+          "countBefore": 5,
+          "countAfter": 5,
+          "detail": "0→1"
+        },
+        {
+          "tick": 349,
+          "type": "missed",
+          "sourceId": "l2.g0.left",
+          "value": 1,
+          "countBefore": 5,
+          "countAfter": 5
+        },
+        {
+          "tick": 355,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e0:5",
+          "value": 1,
+          "countBefore": 5,
+          "countAfter": 5
+        },
+        {
+          "tick": 381,
+          "type": "crateBroken",
+          "sourceId": "l2.r0",
+          "value": 16,
+          "countBefore": 5,
+          "countAfter": 5,
+          "detail": "troops"
+        },
+        {
+          "tick": 381,
+          "type": "reinforcement",
+          "sourceId": "l2.r0",
+          "value": 4,
+          "countBefore": 5,
+          "countAfter": 9
+        },
+        {
+          "tick": 419,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e0:6",
+          "value": 1,
+          "countBefore": 9,
+          "countAfter": 9
+        },
+        {
+          "tick": 429,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e0:4",
+          "value": 1,
+          "countBefore": 9,
+          "countAfter": 9
+        },
+        {
+          "tick": 445,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e0:0",
+          "value": 1,
+          "countBefore": 9,
+          "countAfter": 9
+        },
+        {
+          "tick": 469,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e0:7",
+          "value": 1,
+          "countBefore": 9,
+          "countAfter": 9
+        },
+        {
+          "tick": 508,
+          "type": "crateBroken",
+          "sourceId": "l2.w0",
+          "value": 26,
+          "countBefore": 9,
+          "countAfter": 9,
+          "detail": "equipment"
+        },
+        {
+          "tick": 508,
+          "type": "equipment",
+          "sourceId": "l2.w0",
+          "value": 1,
+          "countBefore": 9,
+          "countAfter": 9
+        },
+        {
+          "tick": 538,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e0:1",
+          "value": 1,
+          "countBefore": 9,
+          "countAfter": 9
+        },
+        {
+          "tick": 542,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e0:2",
+          "value": 1,
+          "countBefore": 9,
+          "countAfter": 9
+        },
+        {
+          "tick": 551,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e0:3",
+          "value": 1,
+          "countBefore": 9,
+          "countAfter": 9
+        },
+        {
+          "tick": 681,
+          "type": "crateBroken",
+          "sourceId": "l2.c0",
+          "value": 38,
+          "countBefore": 9,
+          "countAfter": 9,
+          "detail": "chain"
+        },
+        {
+          "tick": 681,
+          "type": "chainSpawn",
+          "sourceId": "l2.c0",
+          "value": 6,
+          "countBefore": 9,
+          "countAfter": 9,
+          "detail": "firstZ=16"
+        },
+        {
+          "tick": 943,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e1:1",
+          "value": 1,
+          "countBefore": 9,
+          "countAfter": 9
+        },
+        {
+          "tick": 957,
+          "type": "gateContact",
+          "sourceId": "l2.c0:token:0",
+          "value": 1,
+          "countBefore": 9,
+          "countAfter": 9
+        },
+        {
+          "tick": 957,
+          "type": "gateGain",
+          "sourceId": "l2.c0:token:0",
+          "value": 1,
+          "countBefore": 9,
+          "countAfter": 10
+        },
+        {
+          "tick": 973,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e1:2",
+          "value": 1,
+          "countBefore": 10,
+          "countAfter": 10
+        },
+        {
+          "tick": 979,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e1:0",
+          "value": 1,
+          "countBefore": 10,
+          "countAfter": 10
+        },
+        {
+          "tick": 987,
+          "type": "gateContact",
+          "sourceId": "l2.c0:token:1",
+          "value": 1,
+          "countBefore": 10,
+          "countAfter": 10
+        },
+        {
+          "tick": 987,
+          "type": "gateGain",
+          "sourceId": "l2.c0:token:1",
+          "value": 1,
+          "countBefore": 10,
+          "countAfter": 11
+        },
+        {
+          "tick": 993,
+          "type": "enemyContact",
+          "sourceId": "l2.e1:3",
+          "value": -1,
+          "countBefore": 11,
+          "countAfter": 10,
+          "sourceEnemyId": "l2.e1:3",
+          "memberId": 5,
+          "point": {
+            "x": 0.13999982664571015,
+            "z": 15.60000000000034
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [
+            5
+          ],
+          "removedMembers": [
+            {
+              "id": 5,
+              "slot": 5,
+              "x": 0.13999982664571015,
+              "z": 15.60000000000034,
+              "radius": 0.025,
+              "role": "soldier",
+              "weight": 1
+            }
+          ],
+          "reason": "enemyContact"
+        },
+        {
+          "tick": 998,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e1:7",
+          "value": 1,
+          "countBefore": 10,
+          "countAfter": 10
+        },
+        {
+          "tick": 1010,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e1:9",
+          "value": 1,
+          "countBefore": 10,
+          "countAfter": 10
+        },
+        {
+          "tick": 1016,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e1:5",
+          "value": 1,
+          "countBefore": 10,
+          "countAfter": 10
+        },
+        {
+          "tick": 1017,
+          "type": "gateContact",
+          "sourceId": "l2.c0:token:2",
+          "value": 1,
+          "countBefore": 10,
+          "countAfter": 10
+        },
+        {
+          "tick": 1017,
+          "type": "gateGain",
+          "sourceId": "l2.c0:token:2",
+          "value": 1,
+          "countBefore": 10,
+          "countAfter": 11
+        },
+        {
+          "tick": 1027,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e1:6",
+          "value": 1,
+          "countBefore": 11,
+          "countAfter": 11
+        },
+        {
+          "tick": 1031,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e1:4",
+          "value": 1,
+          "countBefore": 11,
+          "countAfter": 11
+        },
+        {
+          "tick": 1034,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e1:8",
+          "value": 1,
+          "countBefore": 11,
+          "countAfter": 11
+        },
+        {
+          "tick": 1045,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e1:11",
+          "value": 1,
+          "countBefore": 11,
+          "countAfter": 11
+        },
+        {
+          "tick": 1047,
+          "type": "gateContact",
+          "sourceId": "l2.c0:token:3",
+          "value": 1,
+          "countBefore": 11,
+          "countAfter": 11
+        },
+        {
+          "tick": 1047,
+          "type": "gateGain",
+          "sourceId": "l2.c0:token:3",
+          "value": 1,
+          "countBefore": 11,
+          "countAfter": 12
+        },
+        {
+          "tick": 1051,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e1:10",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 12
+        },
+        {
+          "tick": 1061,
+          "type": "enemyContact",
+          "sourceId": "l2.e1:3",
+          "value": -1,
+          "countBefore": 12,
+          "countAfter": 11,
+          "sourceEnemyId": "l2.e1:3",
+          "memberId": 10,
+          "point": {
+            "x": -0.029999956661427407,
+            "z": 16.43333333333361
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [
+            10
+          ],
+          "removedMembers": [
+            {
+              "id": 10,
+              "slot": 10,
+              "x": -0.029999956661427407,
+              "z": 16.43333333333361,
+              "radius": 0.025,
+              "role": "soldier",
+              "weight": 1
+            }
+          ],
+          "reason": "enemyContact"
+        },
+        {
+          "tick": 1077,
+          "type": "gateContact",
+          "sourceId": "l2.c0:token:4",
+          "value": 1,
+          "countBefore": 11,
+          "countAfter": 11
+        },
+        {
+          "tick": 1077,
+          "type": "gateGain",
+          "sourceId": "l2.c0:token:4",
+          "value": 1,
+          "countBefore": 11,
+          "countAfter": 12
+        },
+        {
+          "tick": 1080,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e2:3",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 12
+        },
+        {
+          "tick": 1085,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e1:3",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 12
+        },
+        {
+          "tick": 1092,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e2:2",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 12
+        },
+        {
+          "tick": 1102,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e2:7",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 12
+        },
+        {
+          "tick": 1107,
+          "type": "gateContact",
+          "sourceId": "l2.c0:token:5",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 12
+        },
+        {
+          "tick": 1107,
+          "type": "gateGain",
+          "sourceId": "l2.c0:token:5",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 13
+        },
+        {
+          "tick": 1117,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e2:6",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1124,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e2:11",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1146,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e2:10",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1146,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e2:15",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1173,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e2:0",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1180,
+          "type": "gateValue",
+          "sourceId": "l2.g1",
+          "value": -34,
+          "countBefore": 13,
+          "countAfter": 13,
+          "detail": "-35→-34"
+        },
+        {
+          "tick": 1205,
+          "type": "gateValue",
+          "sourceId": "l2.g1",
+          "value": -33,
+          "countBefore": 13,
+          "countAfter": 13,
+          "detail": "-34→-33"
+        },
+        {
+          "tick": 1209,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e2:14",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1224,
+          "type": "missed",
+          "sourceId": "l2.r1",
+          "value": 63,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1281,
+          "type": "gateValue",
+          "sourceId": "l2.g1",
+          "value": -32,
+          "countBefore": 13,
+          "countAfter": 13,
+          "detail": "-33→-32"
+        },
+        {
+          "tick": 1282,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e2:9",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1295,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e2:1",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1307,
+          "type": "gateValue",
+          "sourceId": "l2.g1",
+          "value": -31,
+          "countBefore": 13,
+          "countAfter": 13,
+          "detail": "-32→-31"
+        },
+        {
+          "tick": 1326,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e2:4",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1331,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e2:5",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1353,
+          "type": "crateBroken",
+          "sourceId": "l2.w1",
+          "value": 120,
+          "countBefore": 13,
+          "countAfter": 13,
+          "detail": "equipment"
+        },
+        {
+          "tick": 1353,
+          "type": "equipment",
+          "sourceId": "l2.w1",
+          "value": 2,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1354,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e2:16",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1381,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e2:8",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1392,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e2:13",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1417,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e2:17",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1444,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e2:12",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1476,
+          "type": "gateValue",
+          "sourceId": "l2.g1",
+          "value": -30,
+          "countBefore": 13,
+          "countAfter": 13,
+          "detail": "-31→-30"
+        },
+        {
+          "tick": 1585,
+          "type": "missed",
+          "sourceId": "l2.g1",
+          "value": -30,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1628,
+          "type": "crateBroken",
+          "sourceId": "l2.c1",
+          "value": 140,
+          "countBefore": 13,
+          "countAfter": 13,
+          "detail": "chain"
+        },
+        {
+          "tick": 1628,
+          "type": "chainSpawn",
+          "sourceId": "l2.c1",
+          "value": 8,
+          "countBefore": 13,
+          "countAfter": 13,
+          "detail": "firstZ=29"
+        },
+        {
+          "tick": 1635,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:4",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1638,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:2",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1639,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:3",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1641,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:9",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1657,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:8",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1664,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:13",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1680,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:11",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1681,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:12",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1687,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:14",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1687,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:1",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1687,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:19",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1694,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:17",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1705,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:16",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1705,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:5",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1710,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:7",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1716,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:18",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1719,
+          "type": "enemyContact",
+          "sourceId": "l2.e3:6",
+          "value": -1,
+          "countBefore": 13,
+          "countAfter": 12,
+          "sourceEnemyId": "l2.e3:6",
+          "memberId": 11,
+          "point": {
+            "x": 0.1400000433385727,
+            "z": 27.699999999999655
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [
+            11
+          ],
+          "removedMembers": [
+            {
+              "id": 11,
+              "slot": 5,
+              "x": 0.1400000433385727,
+              "z": 27.699999999999655,
+              "radius": 0.025,
+              "role": "soldier",
+              "weight": 1
+            }
+          ],
+          "reason": "enemyContact"
+        },
+        {
+          "tick": 1732,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:20",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 12
+        },
+        {
+          "tick": 1732,
+          "type": "enemyContact",
+          "sourceId": "l2.e3:10",
+          "value": -1,
+          "countBefore": 12,
+          "countAfter": 11,
+          "sourceEnemyId": "l2.e3:10",
+          "memberId": 13,
+          "point": {
+            "x": -0.029999956661427296,
+            "z": 27.61666666666631
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [
+            13
+          ],
+          "removedMembers": [
+            {
+              "id": 13,
+              "slot": 10,
+              "x": -0.029999956661427296,
+              "z": 27.61666666666631,
+              "radius": 0.025,
+              "role": "soldier",
+              "weight": 1
+            }
+          ],
+          "reason": "enemyContact"
+        },
+        {
+          "tick": 1737,
+          "type": "gateContact",
+          "sourceId": "l2.c1:token:6",
+          "value": 1,
+          "countBefore": 11,
+          "countAfter": 11
+        },
+        {
+          "tick": 1737,
+          "type": "gateGain",
+          "sourceId": "l2.c1:token:6",
+          "value": 1,
+          "countBefore": 11,
+          "countAfter": 12
+        },
+        {
+          "tick": 1738,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:21",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 12
+        },
+        {
+          "tick": 1741,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:0",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 12
+        },
+        {
+          "tick": 1767,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:10",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 12
+        },
+        {
+          "tick": 1767,
+          "type": "gateContact",
+          "sourceId": "l2.c1:token:7",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 12
+        },
+        {
+          "tick": 1767,
+          "type": "gateGain",
+          "sourceId": "l2.c1:token:7",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 13
+        },
+        {
+          "tick": 1768,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:15",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1780,
+          "type": "enemyContact",
+          "sourceId": "l2.e3:6",
+          "value": -1,
+          "countBefore": 13,
+          "countAfter": 12,
+          "sourceEnemyId": "l2.e3:6",
+          "memberId": 15,
+          "point": {
+            "x": 0.1400000433385727,
+            "z": 28.716666666666264
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [
+            15
+          ],
+          "removedMembers": [
+            {
+              "id": 15,
+              "slot": 5,
+              "x": 0.1400000433385727,
+              "z": 28.716666666666264,
+              "radius": 0.025,
+              "role": "soldier",
+              "weight": 1
+            }
+          ],
+          "reason": "enemyContact"
+        },
+        {
+          "tick": 1795,
+          "type": "gateValue",
+          "sourceId": "l2.g2",
+          "value": -89,
+          "countBefore": 12,
+          "countAfter": 12,
+          "detail": "-90→-89"
+        },
+        {
+          "tick": 1797,
+          "type": "gateContact",
+          "sourceId": "l2.c1:token:8",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 12
+        },
+        {
+          "tick": 1797,
+          "type": "gateGain",
+          "sourceId": "l2.c1:token:8",
+          "value": 1,
+          "countBefore": 12,
+          "countAfter": 13
+        },
+        {
+          "tick": 1801,
+          "type": "gateValue",
+          "sourceId": "l2.g2",
+          "value": -88,
+          "countBefore": 13,
+          "countAfter": 13,
+          "detail": "-89→-88"
+        },
+        {
+          "tick": 1821,
+          "type": "gateValue",
+          "sourceId": "l2.g2",
+          "value": -87,
+          "countBefore": 13,
+          "countAfter": 13,
+          "detail": "-88→-87"
+        },
+        {
+          "tick": 1827,
+          "type": "gateContact",
+          "sourceId": "l2.c1:token:9",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1827,
+          "type": "gateGain",
+          "sourceId": "l2.c1:token:9",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 14
+        },
+        {
+          "tick": 1841,
+          "type": "enemyContact",
+          "sourceId": "l2.e3:6",
+          "value": -1,
+          "countBefore": 14,
+          "countAfter": 13,
+          "sourceEnemyId": "l2.e3:6",
+          "memberId": 17,
+          "point": {
+            "x": 0.1400000433385727,
+            "z": 29.733333333332872
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [
+            17
+          ],
+          "removedMembers": [
+            {
+              "id": 17,
+              "slot": 5,
+              "x": 0.1400000433385727,
+              "z": 29.733333333332872,
+              "radius": 0.025,
+              "role": "soldier",
+              "weight": 1
+            }
+          ],
+          "reason": "enemyContact"
+        },
+        {
+          "tick": 1842,
+          "type": "gateValue",
+          "sourceId": "l2.g2",
+          "value": -86,
+          "countBefore": 13,
+          "countAfter": 13,
+          "detail": "-87→-86"
+        },
+        {
+          "tick": 1847,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:4",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1847,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:5",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1857,
+          "type": "gateContact",
+          "sourceId": "l2.c1:token:10",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 13
+        },
+        {
+          "tick": 1857,
+          "type": "gateGain",
+          "sourceId": "l2.c1:token:10",
+          "value": 1,
+          "countBefore": 13,
+          "countAfter": 14
+        },
+        {
+          "tick": 1868,
+          "type": "gateValue",
+          "sourceId": "l2.g2",
+          "value": -85,
+          "countBefore": 14,
+          "countAfter": 14,
+          "detail": "-86→-85"
+        },
+        {
+          "tick": 1873,
+          "type": "gateValue",
+          "sourceId": "l2.g2",
+          "value": -84,
+          "countBefore": 14,
+          "countAfter": 14,
+          "detail": "-85→-84"
+        },
+        {
+          "tick": 1886,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:6",
+          "value": 1,
+          "countBefore": 14,
+          "countAfter": 14
+        },
+        {
+          "tick": 1887,
+          "type": "gateContact",
+          "sourceId": "l2.c1:token:11",
+          "value": 1,
+          "countBefore": 14,
+          "countAfter": 14
+        },
+        {
+          "tick": 1887,
+          "type": "gateGain",
+          "sourceId": "l2.c1:token:11",
+          "value": 1,
+          "countBefore": 14,
+          "countAfter": 15
+        },
+        {
+          "tick": 1890,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:12",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 1893,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:11",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 1896,
+          "type": "gateValue",
+          "sourceId": "l2.g2",
+          "value": -83,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "-84→-83"
+        },
+        {
+          "tick": 1914,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:19",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 1917,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:18",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 1920,
+          "type": "gateValue",
+          "sourceId": "l2.g2",
+          "value": -82,
+          "countBefore": 15,
+          "countAfter": 15,
+          "detail": "-83→-82"
+        },
+        {
+          "tick": 1938,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e3:6",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 1941,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:25",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 1945,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:2",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 1947,
+          "type": "gateContact",
+          "sourceId": "l2.c1:token:13",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 15
+        },
+        {
+          "tick": 1947,
+          "type": "gateGain",
+          "sourceId": "l2.c1:token:13",
+          "value": 1,
+          "countBefore": 15,
+          "countAfter": 16
+        },
+        {
+          "tick": 1954,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:9",
+          "value": 1,
+          "countBefore": 16,
+          "countAfter": 16
+        },
+        {
+          "tick": 1956,
+          "type": "gateContact",
+          "sourceId": "l2.c1:token:12",
+          "value": 1,
+          "countBefore": 16,
+          "countAfter": 16
+        },
+        {
+          "tick": 1956,
+          "type": "gateGain",
+          "sourceId": "l2.c1:token:12",
+          "value": 1,
+          "countBefore": 16,
+          "countAfter": 17
+        },
+        {
+          "tick": 1976,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:13",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 1980,
+          "type": "gateValue",
+          "sourceId": "l2.g2",
+          "value": -81,
+          "countBefore": 17,
+          "countAfter": 17,
+          "detail": "-82→-81"
+        },
+        {
+          "tick": 1988,
+          "type": "gateValue",
+          "sourceId": "l2.g2",
+          "value": -80,
+          "countBefore": 17,
+          "countAfter": 17,
+          "detail": "-81→-80"
+        },
+        {
+          "tick": 2001,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:1",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2002,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:16",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2005,
+          "type": "missed",
+          "sourceId": "l2.r2",
+          "value": 195,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2016,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:0",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2018,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:3",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2019,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:8",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2028,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:14",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2034,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:15",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2038,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:7",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2039,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:10",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2041,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:23",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2045,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:21",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2062,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:22",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2069,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:20",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2094,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:17",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2220,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e4:24",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2245,
+          "type": "missed",
+          "sourceId": "l2.g2",
+          "value": -80,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2335,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:0",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2353,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:2",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2365,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:1",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2373,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:10",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2383,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:15",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2385,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:8",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2386,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:23",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2388,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:22",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2388,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:12",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2389,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:16",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2389,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:17",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2391,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:3",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2393,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:25",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2394,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:5",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2416,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:24",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2416,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:4",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2416,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:28",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2425,
+          "type": "missed",
+          "sourceId": "l2.r3",
+          "value": 37.5,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2434,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:7",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2437,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:30",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2437,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:31",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2444,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:27",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2457,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:19",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2471,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:26",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2481,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:9",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2491,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:18",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2497,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:14",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2525,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:21",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2526,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:13",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2572,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:29",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2581,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:11",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2639,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:20",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2686,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:32",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2794,
+          "type": "enemyDefeated",
+          "sourceId": "l2.e5:6",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        },
+        {
+          "tick": 2929,
+          "type": "enemyDefeated",
+          "sourceId": "l2.named:0",
+          "value": 1,
+          "countBefore": 17,
+          "countAfter": 17
+        }
+      ],
+      "lastDamage": {
+        "tick": 1841,
+        "type": "enemyContact",
+        "sourceId": "l2.e3:6",
+        "value": -1,
+        "countBefore": 14,
+        "countAfter": 13,
+        "sourceEnemyId": "l2.e3:6",
+        "memberId": 17,
+        "point": {
+          "x": 0.1400000433385727,
+          "z": 29.733333333332872
+        },
+        "actualLoss": 1,
+        "removedMemberIds": [
+          17
+        ],
+        "removedMembers": [
+          {
+            "id": 17,
+            "slot": 5,
+            "x": 0.1400000433385727,
+            "z": 29.733333333332872,
+            "radius": 0.025,
+            "role": "soldier",
+            "weight": 1
+          }
+        ],
+        "reason": "enemyContact"
+      },
+      "meanFPS": 58.904568942096,
+      "frameTiming": {
+        "p50": 16.699999928474426,
+        "max": 35.90000009536743,
+        "p95": 19.600000023841858,
+        "p99": 29.5,
+        "over33": 1,
+        "frames": 2916
+      },
+      "pacing": [
+        {
+          "id": "l2.g0.left",
+          "kind": "mutableGate",
+          "value": 1,
+          "maxPositive": 8,
+          "damagePerPoint": 2,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 5.599999999999985,
+          "firstAvailableAt": 0.016666666666666666,
+          "firstHitAt": 1.0000000000000013,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 5.016666666666654,
+          "claimedReward": null,
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l2.g0.right",
+          "kind": "mutableGate",
+          "value": 4,
+          "maxPositive": 8,
+          "damagePerPoint": 3,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 4.949999999999988,
+          "firstAvailableAt": 0.016666666666666666,
+          "firstHitAt": 3.21666666666666,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 5.016666666666654,
+          "claimedReward": {
+            "kind": "gate",
+            "count": 4
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l2.r0",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 16,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 5.416666666666653,
+          "firstAvailableAt": 0.9500000000000013,
+          "firstHitAt": 5.399999999999986,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 9.000000000000027,
+          "claimedReward": {
+            "kind": "troops",
+            "count": 4
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l2.w0",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 26,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 4.516666666666656,
+          "firstAvailableAt": 3.9666666666666575,
+          "firstHitAt": 7.333333333333313,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 12.000000000000176,
+          "claimedReward": {
+            "kind": "equipment",
+            "stage": 1
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l2.c0",
+          "kind": "chainCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 38,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 3.399999999999993,
+          "firstAvailableAt": 7.966666666666644,
+          "firstHitAt": 10.216666666666754,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 16.000000000000373,
+          "claimedReward": {
+            "kind": "chain",
+            "count": 6,
+            "value": 1,
+            "spacing": 0.5
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l2.r1",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 63,
+          "maxHp": 80,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 9.250000000000039,
+          "firstAvailableAt": 10.950000000000124,
+          "firstHitAt": 18.883333333333542,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 73,
+          "passedAt": 19.000000000000203,
+          "claimedReward": null,
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l2.w1",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 120,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 6.6166666666666485,
+          "firstAvailableAt": 15.950000000000372,
+          "firstHitAt": 16.800000000000328,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 24.016666666666584,
+          "claimedReward": {
+            "kind": "equipment",
+            "stage": 2
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l2.g1",
+          "kind": "mutableGate",
+          "value": -30,
+          "maxPositive": 12,
+          "damagePerPoint": 8,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 9.266666666666707,
+          "firstAvailableAt": 16.95000000000032,
+          "firstHitAt": 19.0500000000002,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 25.016666666666527,
+          "claimedReward": null,
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l2.c1",
+          "kind": "chainCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 140,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 6.199999999999983,
+          "firstAvailableAt": 20.95000000000009,
+          "firstHitAt": 23.21666666666663,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 29.0166666666663,
+          "claimedReward": {
+            "kind": "chain",
+            "count": 8,
+            "value": 1,
+            "spacing": 0.5
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l2.r2",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 195,
+          "maxHp": 220,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 9.250000000000039,
+          "firstAvailableAt": 23.966666666666587,
+          "firstHitAt": 31.89999999999947,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 217.5,
+          "passedAt": 32.01666666666613,
+          "claimedReward": null,
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l2.g2",
+          "kind": "mutableGate",
+          "value": -80,
+          "maxPositive": 12,
+          "damagePerPoint": 15,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 9.250000000000039,
+          "firstAvailableAt": 27.96666666666636,
+          "firstHitAt": 29.149999999999626,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 36.016666666665905,
+          "claimedReward": null,
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l2.r3",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 37.5,
+          "maxHp": 250,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 9.250000000000039,
+          "firstAvailableAt": 30.96666666666619,
+          "firstHitAt": 33.04999999999941,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 57.5,
+          "passedAt": 39.016666666665735,
+          "claimedReward": null,
+          "lossCause": null,
+          "lastAimedTick": -1
+        }
+      ],
+      "samples": [
+        {
+          "elapsed": 8.04999999999998,
+          "count": 9,
+          "stage": 0,
+          "remaining": 115,
+          "distance": 35.95000000000002,
+          "stats": {
+            "shots": 113,
+            "damageBudget": 113,
+            "hits": 68,
+            "gateHits": 18,
+            "converted": 1,
+            "gatesTaken": 1,
+            "crates": 1,
+            "chainGenerated": 0,
+            "chainTaken": 0,
+            "missed": 1,
+            "equipment": 0,
+            "fieldCompanions": 0,
+            "blocked": 0,
+            "deferredShots": 0,
+            "deferredChains": 0,
+            "peakShots": 29,
+            "peakEnemies": 8,
+            "peakTokens": 0
+          },
+          "fps": 60.1222156500755,
+          "nodes": 545,
+          "pool": 517
+        },
+        {
+          "elapsed": 16.01666666666704,
+          "count": 10,
+          "stage": 1,
+          "remaining": 111,
+          "distance": 27.98333333333296,
+          "stats": {
+            "shots": 469,
+            "damageBudget": 469,
+            "hits": 129,
+            "gateHits": 18,
+            "converted": 1,
+            "gatesTaken": 2,
+            "crates": 3,
+            "chainGenerated": 6,
+            "chainTaken": 1,
+            "missed": 1,
+            "equipment": 1,
+            "fieldCompanions": 0,
+            "blocked": 1,
+            "deferredShots": 0,
+            "deferredChains": 0,
+            "peakShots": 41,
+            "peakEnemies": 29,
+            "peakTokens": 6
+          },
+          "fps": 55.13439007322144,
+          "nodes": 605,
+          "pool": 577
+        },
+        {
+          "elapsed": 24.049999999999915,
+          "count": 13,
+          "stage": 2,
+          "remaining": 83,
+          "distance": 19.950000000000085,
+          "stats": {
+            "shots": 916,
+            "damageBudget": 986.5,
+            "hits": 429,
+            "gateHits": 56,
+            "converted": 1,
+            "gatesTaken": 7,
+            "crates": 4,
+            "chainGenerated": 6,
+            "chainTaken": 6,
+            "missed": 2,
+            "equipment": 2,
+            "fieldCompanions": 0,
+            "blocked": 13,
+            "deferredShots": 0,
+            "deferredChains": 0,
+            "peakShots": 47,
+            "peakEnemies": 29,
+            "peakTokens": 6
+          },
+          "fps": 58.03088423738635,
+          "nodes": 645,
+          "pool": 617
+        },
+        {
+          "elapsed": 32.083333333332796,
+          "count": 15,
+          "stage": 2,
+          "remaining": 54,
+          "distance": 11.916666666667204,
+          "stats": {
+            "shots": 1152,
+            "damageBudget": 1576.5,
+            "hits": 578,
+            "gateHits": 106,
+            "converted": 1,
+            "gatesTaken": 13,
+            "crates": 5,
+            "chainGenerated": 14,
+            "chainTaken": 12,
+            "missed": 3,
+            "equipment": 2,
+            "fieldCompanions": 0,
+            "blocked": 15,
+            "deferredShots": 0,
+            "deferredChains": 0,
+            "peakShots": 47,
+            "peakEnemies": 30,
+            "peakTokens": 8
+          },
+          "fps": 59.12495073198592,
+          "nodes": 708,
+          "pool": 680
+        },
+        {
+          "elapsed": 40.066666666665675,
+          "count": 17,
+          "stage": 2,
+          "remaining": 20,
+          "distance": 3.9333333333343248,
+          "stats": {
+            "shots": 1452,
+            "damageBudget": 2326.5,
+            "hits": 755,
+            "gateHits": 120,
+            "converted": 1,
+            "gatesTaken": 15,
+            "crates": 5,
+            "chainGenerated": 14,
+            "chainTaken": 14,
+            "missed": 5,
+            "equipment": 2,
+            "fieldCompanions": 0,
+            "blocked": 16,
+            "deferredShots": 0,
+            "deferredChains": 0,
+            "peakShots": 47,
+            "peakEnemies": 39,
+            "peakTokens": 8
+          },
+          "fps": 59.63437285591245,
+          "nodes": 729,
+          "pool": 701
+        },
+        {
+          "elapsed": 48.09999999999855,
+          "count": 17,
+          "stage": 2,
+          "remaining": 1,
+          "distance": 0,
+          "stats": {
+            "shots": 1757,
+            "damageBudget": 3089,
+            "hits": 836,
+            "gateHits": 120,
+            "converted": 1,
+            "gatesTaken": 15,
+            "crates": 5,
+            "chainGenerated": 14,
+            "chainTaken": 14,
+            "missed": 6,
+            "equipment": 2,
+            "fieldCompanions": 0,
+            "blocked": 16,
+            "deferredShots": 0,
+            "deferredChains": 0,
+            "peakShots": 47,
+            "peakEnemies": 39,
+            "peakTokens": 8
+          },
+          "fps": 60.015741835331475,
+          "nodes": 730,
+          "pool": 702
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "seconds": 56.01666666666477,
+      "count": 68,
+      "stage": 2,
+      "remaining": 0,
+      "bossHP": 0,
+      "distanceLeft": 0,
+      "stats": {
+        "shots": 5537,
+        "damageBudget": 12346.5,
+        "hits": 2707,
+        "gateHits": 848,
+        "converted": 2,
+        "gatesTaken": 13,
+        "crates": 8,
+        "chainGenerated": 10,
+        "chainTaken": 10,
+        "missed": 5,
+        "equipment": 2,
+        "fieldCompanions": 0,
+        "blocked": 0,
+        "deferredShots": 0,
+        "deferredChains": 0,
+        "peakShots": 145,
+        "peakEnemies": 26,
+        "peakTokens": 10
+      },
+      "ledger": [
+        {
+          "tick": 66,
+          "type": "gateValue",
+          "sourceId": "l3.g0.right",
+          "value": -5,
+          "countBefore": 3,
+          "countAfter": 3,
+          "detail": "-6→-5"
+        },
+        {
+          "tick": 80,
+          "type": "gateValue",
+          "sourceId": "l3.g0.right",
+          "value": -4,
+          "countBefore": 3,
+          "countAfter": 3,
+          "detail": "-5→-4"
+        },
+        {
+          "tick": 93,
+          "type": "gateValue",
+          "sourceId": "l3.g0.right",
+          "value": -3,
+          "countBefore": 3,
+          "countAfter": 3,
+          "detail": "-4→-3"
+        },
+        {
+          "tick": 106,
+          "type": "gateValue",
+          "sourceId": "l3.g0.right",
+          "value": -2,
+          "countBefore": 3,
+          "countAfter": 3,
+          "detail": "-3→-2"
+        },
+        {
+          "tick": 120,
+          "type": "gateValue",
+          "sourceId": "l3.g0.right",
+          "value": -1,
+          "countBefore": 3,
+          "countAfter": 3,
+          "detail": "-2→-1"
+        },
+        {
+          "tick": 133,
+          "type": "gateValue",
+          "sourceId": "l3.g0.right",
+          "value": 0,
+          "countBefore": 3,
+          "countAfter": 3,
+          "detail": "-1→0"
+        },
+        {
+          "tick": 146,
+          "type": "gateValue",
+          "sourceId": "l3.g0.right",
+          "value": 1,
+          "countBefore": 3,
+          "countAfter": 3,
+          "detail": "0→1"
+        },
+        {
+          "tick": 160,
+          "type": "gateValue",
+          "sourceId": "l3.g0.right",
+          "value": 2,
+          "countBefore": 3,
+          "countAfter": 3,
+          "detail": "1→2"
+        },
+        {
+          "tick": 173,
+          "type": "gateValue",
+          "sourceId": "l3.g0.left",
+          "value": 3,
+          "countBefore": 3,
+          "countAfter": 3,
+          "detail": "2→3"
+        },
+        {
+          "tick": 173,
+          "type": "gateValue",
+          "sourceId": "l3.g0.right",
+          "value": 3,
+          "countBefore": 3,
+          "countAfter": 3,
+          "detail": "2→3"
+        },
+        {
+          "tick": 200,
+          "type": "gateValue",
+          "sourceId": "l3.g0.left",
+          "value": 4,
+          "countBefore": 3,
+          "countAfter": 3,
+          "detail": "3→4"
+        },
+        {
+          "tick": 217,
+          "type": "gateValue",
+          "sourceId": "l3.g0.left",
+          "value": 5,
+          "countBefore": 3,
+          "countAfter": 3,
+          "detail": "4→5"
+        },
+        {
+          "tick": 240,
+          "type": "gateValue",
+          "sourceId": "l3.g0.left",
+          "value": 6,
+          "countBefore": 3,
+          "countAfter": 3,
+          "detail": "5→6"
+        },
+        {
+          "tick": 266,
+          "type": "gateValue",
+          "sourceId": "l3.g0.left",
+          "value": 7,
+          "countBefore": 3,
+          "countAfter": 3,
+          "detail": "6→7"
+        },
+        {
+          "tick": 284,
+          "type": "gateValue",
+          "sourceId": "l3.g0.left",
+          "value": 8,
+          "countBefore": 3,
+          "countAfter": 3,
+          "detail": "7→8"
+        },
+        {
+          "tick": 357,
+          "type": "gateContact",
+          "sourceId": "l3.g0.left",
+          "value": 8,
+          "countBefore": 3,
+          "countAfter": 3
+        },
+        {
+          "tick": 357,
+          "type": "gateGain",
+          "sourceId": "l3.g0.left",
+          "value": 8,
+          "countBefore": 3,
+          "countAfter": 11
+        },
+        {
+          "tick": 377,
+          "type": "gateValue",
+          "sourceId": "l3.g0.right",
+          "value": 4,
+          "countBefore": 11,
+          "countAfter": 11,
+          "detail": "3→4"
+        },
+        {
+          "tick": 390,
+          "type": "gateValue",
+          "sourceId": "l3.g0.right",
+          "value": 5,
+          "countBefore": 11,
+          "countAfter": 11,
+          "detail": "4→5"
+        },
+        {
+          "tick": 396,
+          "type": "gateContact",
+          "sourceId": "l3.g0.right",
+          "value": 5,
+          "countBefore": 11,
+          "countAfter": 11
+        },
+        {
+          "tick": 396,
+          "type": "gateGain",
+          "sourceId": "l3.g0.right",
+          "value": 5,
+          "countBefore": 11,
+          "countAfter": 16
+        },
+        {
+          "tick": 400,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e0:0",
+          "value": 1,
+          "countBefore": 16,
+          "countAfter": 16
+        },
+        {
+          "tick": 401,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e0:1",
+          "value": 1,
+          "countBefore": 16,
+          "countAfter": 16
+        },
+        {
+          "tick": 422,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e0:2",
+          "value": 1,
+          "countBefore": 16,
+          "countAfter": 16
+        },
+        {
+          "tick": 422,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e0:4",
+          "value": 1,
+          "countBefore": 16,
+          "countAfter": 16
+        },
+        {
+          "tick": 427,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e0:7",
+          "value": 1,
+          "countBefore": 16,
+          "countAfter": 16
+        },
+        {
+          "tick": 435,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e0:5",
+          "value": 1,
+          "countBefore": 16,
+          "countAfter": 16
+        },
+        {
+          "tick": 463,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e0:3",
+          "value": 1,
+          "countBefore": 16,
+          "countAfter": 16
+        },
+        {
+          "tick": 472,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e0:6",
+          "value": 1,
+          "countBefore": 16,
+          "countAfter": 16
+        },
+        {
+          "tick": 480,
+          "type": "crateBroken",
+          "sourceId": "l3.r0",
+          "value": 35,
+          "countBefore": 16,
+          "countAfter": 16,
+          "detail": "troops"
+        },
+        {
+          "tick": 480,
+          "type": "reinforcement",
+          "sourceId": "l3.r0",
+          "value": 4,
+          "countBefore": 16,
+          "countAfter": 20
+        },
+        {
+          "tick": 557,
+          "type": "crateBroken",
+          "sourceId": "l3.w0",
+          "value": 45,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "equipment"
+        },
+        {
+          "tick": 557,
+          "type": "equipment",
+          "sourceId": "l3.w0",
+          "value": 1,
+          "countBefore": 20,
+          "countAfter": 20
+        },
+        {
+          "tick": 627,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e1:0",
+          "value": 1,
+          "countBefore": 20,
+          "countAfter": 20
+        },
+        {
+          "tick": 639,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e1:2",
+          "value": 1,
+          "countBefore": 20,
+          "countAfter": 20
+        },
+        {
+          "tick": 646,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e1:1",
+          "value": 1,
+          "countBefore": 20,
+          "countAfter": 20
+        },
+        {
+          "tick": 651,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e1:4",
+          "value": 1,
+          "countBefore": 20,
+          "countAfter": 20
+        },
+        {
+          "tick": 662,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e1:6",
+          "value": 1,
+          "countBefore": 20,
+          "countAfter": 20
+        },
+        {
+          "tick": 668,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e1:3",
+          "value": 1,
+          "countBefore": 20,
+          "countAfter": 20
+        },
+        {
+          "tick": 674,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e1:8",
+          "value": 1,
+          "countBefore": 20,
+          "countAfter": 20
+        },
+        {
+          "tick": 681,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e1:5",
+          "value": 1,
+          "countBefore": 20,
+          "countAfter": 20
+        },
+        {
+          "tick": 684,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -19,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-20→-19"
+        },
+        {
+          "tick": 693,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e1:7",
+          "value": 1,
+          "countBefore": 20,
+          "countAfter": 20
+        },
+        {
+          "tick": 695,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -18,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-19→-18"
+        },
+        {
+          "tick": 705,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e1:9",
+          "value": 1,
+          "countBefore": 20,
+          "countAfter": 20
+        },
+        {
+          "tick": 705,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -17,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-18→-17"
+        },
+        {
+          "tick": 716,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -16,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-17→-16"
+        },
+        {
+          "tick": 717,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e1:11",
+          "value": 1,
+          "countBefore": 20,
+          "countAfter": 20
+        },
+        {
+          "tick": 726,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -15,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-16→-15"
+        },
+        {
+          "tick": 730,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -14,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-15→-14"
+        },
+        {
+          "tick": 737,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -13,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-14→-13"
+        },
+        {
+          "tick": 741,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -12,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-13→-12"
+        },
+        {
+          "tick": 751,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -11,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-12→-11"
+        },
+        {
+          "tick": 756,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e1:10",
+          "value": 1,
+          "countBefore": 20,
+          "countAfter": 20
+        },
+        {
+          "tick": 762,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -10,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-11→-10"
+        },
+        {
+          "tick": 769,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -9,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-10→-9"
+        },
+        {
+          "tick": 773,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -8,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-9→-8"
+        },
+        {
+          "tick": 780,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -7,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-8→-7"
+        },
+        {
+          "tick": 783,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -6,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-7→-6"
+        },
+        {
+          "tick": 790,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -5,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-6→-5"
+        },
+        {
+          "tick": 792,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -4,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-5→-4"
+        },
+        {
+          "tick": 801,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -3,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-4→-3"
+        },
+        {
+          "tick": 801,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -2,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-3→-2"
+        },
+        {
+          "tick": 805,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": -1,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-2→-1"
+        },
+        {
+          "tick": 812,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": 0,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "-1→0"
+        },
+        {
+          "tick": 815,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": 1,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "0→1"
+        },
+        {
+          "tick": 822,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": 2,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "1→2"
+        },
+        {
+          "tick": 824,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": 3,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "2→3"
+        },
+        {
+          "tick": 833,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": 4,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "3→4"
+        },
+        {
+          "tick": 833,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": 5,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "4→5"
+        },
+        {
+          "tick": 837,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": 6,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "5→6"
+        },
+        {
+          "tick": 844,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": 7,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "6→7"
+        },
+        {
+          "tick": 847,
+          "type": "gateValue",
+          "sourceId": "l3.g1",
+          "value": 8,
+          "countBefore": 20,
+          "countAfter": 20,
+          "detail": "7→8"
+        },
+        {
+          "tick": 1017,
+          "type": "gateContact",
+          "sourceId": "l3.g1",
+          "value": 8,
+          "countBefore": 20,
+          "countAfter": 20
+        },
+        {
+          "tick": 1017,
+          "type": "gateGain",
+          "sourceId": "l3.g1",
+          "value": 8,
+          "countBefore": 20,
+          "countAfter": 28
+        },
+        {
+          "tick": 1058,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e2:4",
+          "value": 1,
+          "countBefore": 28,
+          "countAfter": 28
+        },
+        {
+          "tick": 1060,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e2:5",
+          "value": 1,
+          "countBefore": 28,
+          "countAfter": 28
+        },
+        {
+          "tick": 1086,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e2:3",
+          "value": 1,
+          "countBefore": 28,
+          "countAfter": 28
+        },
+        {
+          "tick": 1088,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e2:2",
+          "value": 1,
+          "countBefore": 28,
+          "countAfter": 28
+        },
+        {
+          "tick": 1102,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e2:9",
+          "value": 1,
+          "countBefore": 28,
+          "countAfter": 28
+        },
+        {
+          "tick": 1108,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e2:10",
+          "value": 1,
+          "countBefore": 28,
+          "countAfter": 28
+        },
+        {
+          "tick": 1115,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e2:16",
+          "value": 1,
+          "countBefore": 28,
+          "countAfter": 28
+        },
+        {
+          "tick": 1130,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e2:17",
+          "value": 1,
+          "countBefore": 28,
+          "countAfter": 28
+        },
+        {
+          "tick": 1153,
+          "type": "crateBroken",
+          "sourceId": "l3.r1",
+          "value": 100,
+          "countBefore": 28,
+          "countAfter": 28,
+          "detail": "troops"
+        },
+        {
+          "tick": 1153,
+          "type": "reinforcement",
+          "sourceId": "l3.r1",
+          "value": 8,
+          "countBefore": 28,
+          "countAfter": 36
+        },
+        {
+          "tick": 1180,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e2:1",
+          "value": 1,
+          "countBefore": 36,
+          "countAfter": 36
+        },
+        {
+          "tick": 1183,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e2:0",
+          "value": 1,
+          "countBefore": 36,
+          "countAfter": 36
+        },
+        {
+          "tick": 1189,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e2:11",
+          "value": 1,
+          "countBefore": 36,
+          "countAfter": 36
+        },
+        {
+          "tick": 1189,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e2:12",
+          "value": 1,
+          "countBefore": 36,
+          "countAfter": 36
+        },
+        {
+          "tick": 1192,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e2:8",
+          "value": 1,
+          "countBefore": 36,
+          "countAfter": 36
+        },
+        {
+          "tick": 1202,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e2:15",
+          "value": 1,
+          "countBefore": 36,
+          "countAfter": 36
+        },
+        {
+          "tick": 1206,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e2:14",
+          "value": 1,
+          "countBefore": 36,
+          "countAfter": 36
+        },
+        {
+          "tick": 1208,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e2:6",
+          "value": 1,
+          "countBefore": 36,
+          "countAfter": 36
+        },
+        {
+          "tick": 1209,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e2:7",
+          "value": 1,
+          "countBefore": 36,
+          "countAfter": 36
+        },
+        {
+          "tick": 1230,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e2:13",
+          "value": 1,
+          "countBefore": 36,
+          "countAfter": 36
+        },
+        {
+          "tick": 1257,
+          "type": "gateValue",
+          "sourceId": "l3.g2",
+          "value": -99,
+          "countBefore": 36,
+          "countAfter": 36,
+          "detail": "-100→-99"
+        },
+        {
+          "tick": 1273,
+          "type": "gateValue",
+          "sourceId": "l3.g2",
+          "value": -98,
+          "countBefore": 36,
+          "countAfter": 36,
+          "detail": "-99→-98"
+        },
+        {
+          "tick": 1321,
+          "type": "gateValue",
+          "sourceId": "l3.g2",
+          "value": -97,
+          "countBefore": 36,
+          "countAfter": 36,
+          "detail": "-98→-97"
+        },
+        {
+          "tick": 1345,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:1",
+          "value": 1,
+          "countBefore": 36,
+          "countAfter": 36
+        },
+        {
+          "tick": 1360,
+          "type": "crateBroken",
+          "sourceId": "l3.w1",
+          "value": 180,
+          "countBefore": 36,
+          "countAfter": 36,
+          "detail": "equipment"
+        },
+        {
+          "tick": 1360,
+          "type": "equipment",
+          "sourceId": "l3.w1",
+          "value": 2,
+          "countBefore": 36,
+          "countAfter": 36
+        },
+        {
+          "tick": 1366,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:5",
+          "value": 1,
+          "countBefore": 36,
+          "countAfter": 36
+        },
+        {
+          "tick": 1369,
+          "type": "gateValue",
+          "sourceId": "l3.g2",
+          "value": -96,
+          "countBefore": 36,
+          "countAfter": 36,
+          "detail": "-97→-96"
+        },
+        {
+          "tick": 1381,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:9",
+          "value": 1,
+          "countBefore": 36,
+          "countAfter": 36
+        },
+        {
+          "tick": 1399,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:13",
+          "value": 1,
+          "countBefore": 36,
+          "countAfter": 36
+        },
+        {
+          "tick": 1411,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:17",
+          "value": 1,
+          "countBefore": 36,
+          "countAfter": 36
+        },
+        {
+          "tick": 1422,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:21",
+          "value": 1,
+          "countBefore": 36,
+          "countAfter": 36
+        },
+        {
+          "tick": 1446,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:0",
+          "value": 1,
+          "countBefore": 36,
+          "countAfter": 36
+        },
+        {
+          "tick": 1450,
+          "type": "crateBroken",
+          "sourceId": "l3.r2",
+          "value": 180,
+          "countBefore": 36,
+          "countAfter": 36,
+          "detail": "troops"
+        },
+        {
+          "tick": 1450,
+          "type": "reinforcement",
+          "sourceId": "l3.r2",
+          "value": 12,
+          "countBefore": 36,
+          "countAfter": 48
+        },
+        {
+          "tick": 1481,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:4",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1485,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:8",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1493,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:12",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1494,
+          "type": "gateValue",
+          "sourceId": "l3.g2",
+          "value": -95,
+          "countBefore": 48,
+          "countAfter": 48,
+          "detail": "-96→-95"
+        },
+        {
+          "tick": 1499,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:16",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1504,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:2",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1515,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:20",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1551,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:3",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1556,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:6",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1569,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:10",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1569,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:11",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1576,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:14",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1589,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:15",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1599,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:7",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1599,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:19",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1623,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e3:18",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1675,
+          "type": "missed",
+          "sourceId": "l3.g2",
+          "value": -95,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1717,
+          "type": "crateBroken",
+          "sourceId": "l3.c0",
+          "value": 200,
+          "countBefore": 48,
+          "countAfter": 48,
+          "detail": "chain"
+        },
+        {
+          "tick": 1717,
+          "type": "chainSpawn",
+          "sourceId": "l3.c0",
+          "value": 10,
+          "countBefore": 48,
+          "countAfter": 48,
+          "detail": "firstZ=32"
+        },
+        {
+          "tick": 1758,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:2",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1777,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:1",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1779,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:7",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1781,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:6",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1796,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:12",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1803,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:11",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1804,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:17",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1821,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:22",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1826,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:16",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1831,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:21",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1885,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:0",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1897,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:5",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1903,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:10",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1917,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:0",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 48
+        },
+        {
+          "tick": 1917,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:0",
+          "value": 1,
+          "countBefore": 48,
+          "countAfter": 49
+        },
+        {
+          "tick": 1917,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:15",
+          "value": 1,
+          "countBefore": 49,
+          "countAfter": 49
+        },
+        {
+          "tick": 1926,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:20",
+          "value": 1,
+          "countBefore": 49,
+          "countAfter": 49
+        },
+        {
+          "tick": 1938,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:25",
+          "value": 1,
+          "countBefore": 49,
+          "countAfter": 49
+        },
+        {
+          "tick": 1947,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:1",
+          "value": 1,
+          "countBefore": 49,
+          "countAfter": 49
+        },
+        {
+          "tick": 1947,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:1",
+          "value": 1,
+          "countBefore": 49,
+          "countAfter": 50
+        },
+        {
+          "tick": 1975,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -179,
+          "countBefore": 50,
+          "countAfter": 50,
+          "detail": "-180→-179"
+        },
+        {
+          "tick": 1975,
+          "type": "missed",
+          "sourceId": "l3.ally0",
+          "value": 27.5,
+          "countBefore": 50,
+          "countAfter": 50
+        },
+        {
+          "tick": 1977,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:2",
+          "value": 1,
+          "countBefore": 50,
+          "countAfter": 50
+        },
+        {
+          "tick": 1977,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:2",
+          "value": 1,
+          "countBefore": 50,
+          "countAfter": 51
+        },
+        {
+          "tick": 1985,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:3",
+          "value": 1,
+          "countBefore": 51,
+          "countAfter": 51
+        },
+        {
+          "tick": 1995,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:8",
+          "value": 1,
+          "countBefore": 51,
+          "countAfter": 51
+        },
+        {
+          "tick": 1996,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -178,
+          "countBefore": 51,
+          "countAfter": 51,
+          "detail": "-179→-178"
+        },
+        {
+          "tick": 2007,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:3",
+          "value": 1,
+          "countBefore": 51,
+          "countAfter": 51
+        },
+        {
+          "tick": 2007,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:3",
+          "value": 1,
+          "countBefore": 51,
+          "countAfter": 52
+        },
+        {
+          "tick": 2010,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:13",
+          "value": 1,
+          "countBefore": 52,
+          "countAfter": 52
+        },
+        {
+          "tick": 2010,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:4",
+          "value": 1,
+          "countBefore": 52,
+          "countAfter": 52
+        },
+        {
+          "tick": 2012,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -177,
+          "countBefore": 52,
+          "countAfter": 52,
+          "detail": "-178→-177"
+        },
+        {
+          "tick": 2018,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:9",
+          "value": 1,
+          "countBefore": 52,
+          "countAfter": 52
+        },
+        {
+          "tick": 2022,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -176,
+          "countBefore": 52,
+          "countAfter": 52,
+          "detail": "-177→-176"
+        },
+        {
+          "tick": 2027,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:18",
+          "value": 1,
+          "countBefore": 52,
+          "countAfter": 52
+        },
+        {
+          "tick": 2035,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -175,
+          "countBefore": 52,
+          "countAfter": 52,
+          "detail": "-176→-175"
+        },
+        {
+          "tick": 2037,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:4",
+          "value": 1,
+          "countBefore": 52,
+          "countAfter": 52
+        },
+        {
+          "tick": 2037,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:4",
+          "value": 1,
+          "countBefore": 52,
+          "countAfter": 53
+        },
+        {
+          "tick": 2041,
+          "type": "largeEntry",
+          "sourceId": "large:yang_ling",
+          "value": 1600,
+          "countBefore": 53,
+          "countAfter": 53
+        },
+        {
+          "tick": 2045,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -174,
+          "countBefore": 53,
+          "countAfter": 53,
+          "detail": "-175→-174"
+        },
+        {
+          "tick": 2048,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:24",
+          "value": 1,
+          "countBefore": 53,
+          "countAfter": 53
+        },
+        {
+          "tick": 2051,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -173,
+          "countBefore": 53,
+          "countAfter": 53,
+          "detail": "-174→-173"
+        },
+        {
+          "tick": 2054,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:23",
+          "value": 1,
+          "countBefore": 53,
+          "countAfter": 53
+        },
+        {
+          "tick": 2055,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:19",
+          "value": 1,
+          "countBefore": 53,
+          "countAfter": 53
+        },
+        {
+          "tick": 2066,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -172,
+          "countBefore": 53,
+          "countAfter": 53,
+          "detail": "-173→-172"
+        },
+        {
+          "tick": 2067,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:5",
+          "value": 1,
+          "countBefore": 53,
+          "countAfter": 53
+        },
+        {
+          "tick": 2067,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:5",
+          "value": 1,
+          "countBefore": 53,
+          "countAfter": 54
+        },
+        {
+          "tick": 2068,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -171,
+          "countBefore": 54,
+          "countAfter": 54,
+          "detail": "-172→-171"
+        },
+        {
+          "tick": 2068,
+          "type": "enemyContact",
+          "sourceId": "l3.e4:14",
+          "value": -1,
+          "countBefore": 54,
+          "countAfter": 53,
+          "sourceEnemyId": "l3.e4:14",
+          "memberId": 16,
+          "point": {
+            "x": 0.030000010834643376,
+            "z": 33.21666666666599
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [],
+          "removedMembers": [],
+          "reason": "enemyContact"
+        },
+        {
+          "tick": 2074,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -170,
+          "countBefore": 53,
+          "countAfter": 53,
+          "detail": "-171→-170"
+        },
+        {
+          "tick": 2079,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -169,
+          "countBefore": 53,
+          "countAfter": 53,
+          "detail": "-170→-169"
+        },
+        {
+          "tick": 2090,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -168,
+          "countBefore": 53,
+          "countAfter": 53,
+          "detail": "-169→-168"
+        },
+        {
+          "tick": 2094,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -167,
+          "countBefore": 53,
+          "countAfter": 53,
+          "detail": "-168→-167"
+        },
+        {
+          "tick": 2099,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e4:14",
+          "value": 1,
+          "countBefore": 53,
+          "countAfter": 53
+        },
+        {
+          "tick": 2103,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -166,
+          "countBefore": 53,
+          "countAfter": 53,
+          "detail": "-167→-166"
+        },
+        {
+          "tick": 2113,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -165,
+          "countBefore": 53,
+          "countAfter": 53,
+          "detail": "-166→-165"
+        },
+        {
+          "tick": 2116,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -164,
+          "countBefore": 53,
+          "countAfter": 53,
+          "detail": "-165→-164"
+        },
+        {
+          "tick": 2124,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -163,
+          "countBefore": 53,
+          "countAfter": 53,
+          "detail": "-164→-163"
+        },
+        {
+          "tick": 2127,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:7",
+          "value": 1,
+          "countBefore": 53,
+          "countAfter": 53
+        },
+        {
+          "tick": 2127,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:7",
+          "value": 1,
+          "countBefore": 53,
+          "countAfter": 54
+        },
+        {
+          "tick": 2136,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:6",
+          "value": 1,
+          "countBefore": 54,
+          "countAfter": 54
+        },
+        {
+          "tick": 2136,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:6",
+          "value": 1,
+          "countBefore": 54,
+          "countAfter": 55
+        },
+        {
+          "tick": 2147,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -162,
+          "countBefore": 55,
+          "countAfter": 55,
+          "detail": "-163→-162"
+        },
+        {
+          "tick": 2157,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:8",
+          "value": 1,
+          "countBefore": 55,
+          "countAfter": 55
+        },
+        {
+          "tick": 2157,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:8",
+          "value": 1,
+          "countBefore": 55,
+          "countAfter": 56
+        },
+        {
+          "tick": 2160,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -161,
+          "countBefore": 56,
+          "countAfter": 56,
+          "detail": "-162→-161"
+        },
+        {
+          "tick": 2164,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -160,
+          "countBefore": 56,
+          "countAfter": 56,
+          "detail": "-161→-160"
+        },
+        {
+          "tick": 2173,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -159,
+          "countBefore": 56,
+          "countAfter": 56,
+          "detail": "-160→-159"
+        },
+        {
+          "tick": 2183,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -158,
+          "countBefore": 56,
+          "countAfter": 56,
+          "detail": "-159→-158"
+        },
+        {
+          "tick": 2185,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -157,
+          "countBefore": 56,
+          "countAfter": 56,
+          "detail": "-158→-157"
+        },
+        {
+          "tick": 2187,
+          "type": "gateContact",
+          "sourceId": "l3.c0:token:9",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2187,
+          "type": "gateGain",
+          "sourceId": "l3.c0:token:9",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 57
+        },
+        {
+          "tick": 2191,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -156,
+          "countBefore": 57,
+          "countAfter": 57,
+          "detail": "-157→-156"
+        },
+        {
+          "tick": 2196,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -155,
+          "countBefore": 57,
+          "countAfter": 57,
+          "detail": "-156→-155"
+        },
+        {
+          "tick": 2206,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -154,
+          "countBefore": 57,
+          "countAfter": 57,
+          "detail": "-155→-154"
+        },
+        {
+          "tick": 2209,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -153,
+          "countBefore": 57,
+          "countAfter": 57,
+          "detail": "-154→-153"
+        },
+        {
+          "tick": 2215,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -152,
+          "countBefore": 57,
+          "countAfter": 57,
+          "detail": "-153→-152"
+        },
+        {
+          "tick": 2222,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -151,
+          "countBefore": 57,
+          "countAfter": 57,
+          "detail": "-152→-151"
+        },
+        {
+          "tick": 2232,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -150,
+          "countBefore": 57,
+          "countAfter": 57,
+          "detail": "-151→-150"
+        },
+        {
+          "tick": 2241,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -149,
+          "countBefore": 57,
+          "countAfter": 57,
+          "detail": "-150→-149"
+        },
+        {
+          "tick": 2258,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -148,
+          "countBefore": 57,
+          "countAfter": 57,
+          "detail": "-149→-148"
+        },
+        {
+          "tick": 2275,
+          "type": "missed",
+          "sourceId": "l3.r3",
+          "value": 277.5,
+          "countBefore": 57,
+          "countAfter": 57
+        },
+        {
+          "tick": 2283,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:2",
+          "value": 1,
+          "countBefore": 57,
+          "countAfter": 57
+        },
+        {
+          "tick": 2287,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -147,
+          "countBefore": 57,
+          "countAfter": 57,
+          "detail": "-148→-147"
+        },
+        {
+          "tick": 2323,
+          "type": "gateValue",
+          "sourceId": "l3.g3",
+          "value": -146,
+          "countBefore": 57,
+          "countAfter": 57,
+          "detail": "-147→-146"
+        },
+        {
+          "tick": 2349,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:3",
+          "value": 1,
+          "countBefore": 57,
+          "countAfter": 57
+        },
+        {
+          "tick": 2356,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:6",
+          "value": 1,
+          "countBefore": 57,
+          "countAfter": 57
+        },
+        {
+          "tick": 2367,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:10",
+          "value": 1,
+          "countBefore": 57,
+          "countAfter": 57
+        },
+        {
+          "tick": 2369,
+          "type": "enemyProjectile",
+          "sourceId": "10112",
+          "value": -1,
+          "countBefore": 57,
+          "countAfter": 56,
+          "sourceEnemyId": "large:yang_ling",
+          "memberId": 0,
+          "point": {
+            "x": 0.48999998555380975,
+            "z": 39.483333333332375
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [],
+          "removedMembers": [],
+          "reason": "enemyProjectile"
+        },
+        {
+          "tick": 2379,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:14",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2383,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:18",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2386,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:11",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2390,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:15",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2392,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:7",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2395,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:22",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2410,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:19",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2413,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:23",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2415,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:1",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2422,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:5",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2435,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:9",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2435,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:4",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2447,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:0",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2450,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:8",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2463,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:21",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2465,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:13",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2477,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:17",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2477,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:12",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2489,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:16",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2498,
+          "type": "enemyDefeated",
+          "sourceId": "l3.e5:20",
+          "value": 1,
+          "countBefore": 56,
+          "countAfter": 56
+        },
+        {
+          "tick": 2502,
+          "type": "enemyProjectile",
+          "sourceId": "10112",
+          "value": -1,
+          "countBefore": 56,
+          "countAfter": 55,
+          "sourceEnemyId": "large:yang_ling",
+          "memberId": 0,
+          "point": {
+            "x": 0.48999998555380975,
+            "z": 41.699999999998916
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [],
+          "removedMembers": [],
+          "reason": "enemyProjectile"
+        },
+        {
+          "tick": 2515,
+          "type": "missed",
+          "sourceId": "l3.g3",
+          "value": -146,
+          "countBefore": 55,
+          "countAfter": 55
+        },
+        {
+          "tick": 2539,
+          "type": "crateBroken",
+          "sourceId": "l3.w2",
+          "value": 500,
+          "countBefore": 55,
+          "countAfter": 55,
+          "detail": "equipment"
+        },
+        {
+          "tick": 2560,
+          "type": "gateValue",
+          "sourceId": "l3.g4",
+          "value": -279,
+          "countBefore": 55,
+          "countAfter": 55,
+          "detail": "-280→-279"
+        },
+        {
+          "tick": 2889,
+          "type": "crateBroken",
+          "sourceId": "l3.r4",
+          "value": 620,
+          "countBefore": 55,
+          "countAfter": 55,
+          "detail": "troops"
+        },
+        {
+          "tick": 2889,
+          "type": "reinforcement",
+          "sourceId": "l3.r4",
+          "value": 16,
+          "countBefore": 55,
+          "countAfter": 71
+        },
+        {
+          "tick": 2901,
+          "type": "enemyProjectile",
+          "sourceId": "10112",
+          "value": -1,
+          "countBefore": 71,
+          "countAfter": 70,
+          "sourceEnemyId": "large:yang_ling",
+          "memberId": 1,
+          "point": {
+            "x": -0.49000003972702444,
+            "z": 48.34999999999854
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [],
+          "removedMembers": [],
+          "reason": "enemyProjectile"
+        },
+        {
+          "tick": 3034,
+          "type": "enemyProjectile",
+          "sourceId": "10112",
+          "value": -1,
+          "countBefore": 70,
+          "countAfter": 69,
+          "sourceEnemyId": "large:yang_ling",
+          "memberId": 1,
+          "point": {
+            "x": -0.49000003972702444,
+            "z": 50.56666666666508
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [],
+          "removedMembers": [],
+          "reason": "enemyProjectile"
+        },
+        {
+          "tick": 3055,
+          "type": "missed",
+          "sourceId": "l3.g4",
+          "value": -279,
+          "countBefore": 69,
+          "countAfter": 69
+        },
+        {
+          "tick": 3279,
+          "type": "largeDefeated",
+          "sourceId": "large:yang_ling",
+          "value": 1,
+          "countBefore": 69,
+          "countAfter": 69
+        },
+        {
+          "tick": 3300,
+          "type": "enemyProjectile",
+          "sourceId": "10112",
+          "value": -1,
+          "countBefore": 69,
+          "countAfter": 68,
+          "sourceEnemyId": "10112",
+          "memberId": 1,
+          "point": {
+            "x": 0.15000000000000024,
+            "z": 54.99999999999816
+          },
+          "actualLoss": 1,
+          "removedMemberIds": [],
+          "removedMembers": [],
+          "reason": "enemyProjectile"
+        }
+      ],
+      "lastDamage": {
+        "tick": 3300,
+        "type": "enemyProjectile",
+        "sourceId": "10112",
+        "value": -1,
+        "countBefore": 69,
+        "countAfter": 68,
+        "sourceEnemyId": "10112",
+        "memberId": 1,
+        "point": {
+          "x": 0.15000000000000024,
+          "z": 54.99999999999816
+        },
+        "actualLoss": 1,
+        "removedMemberIds": [],
+        "removedMembers": [],
+        "reason": "enemyProjectile"
+      },
+      "meanFPS": 55.30825179354414,
+      "frameTiming": {
+        "p50": 16.799999952316284,
+        "max": 40.700000047683716,
+        "p95": 28.100000023841858,
+        "p99": 29.799999952316284,
+        "over33": 2,
+        "frames": 3136
+      },
+      "pacing": [
+        {
+          "id": "l3.g0.left",
+          "kind": "mutableGate",
+          "value": 8,
+          "maxPositive": 8,
+          "damagePerPoint": 5,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 5.949999999999984,
+          "firstAvailableAt": 0.016666666666666666,
+          "firstHitAt": 0.6666666666666671,
+          "cappedAt": 4.733333333333322,
+          "hitsAfterCap": 15,
+          "spentAimingAfterCap": 1.2166666666666672,
+          "durabilityAtPass": 0,
+          "passedAt": 6.016666666666651,
+          "claimedReward": {
+            "kind": "gate",
+            "count": 8
+          },
+          "lossCause": null,
+          "lastAimedTick": 357
+        },
+        {
+          "id": "l3.g0.right",
+          "kind": "mutableGate",
+          "value": 5,
+          "maxPositive": 8,
+          "damagePerPoint": 3,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 6.599999999999982,
+          "firstAvailableAt": 0.016666666666666666,
+          "firstHitAt": 0.6666666666666671,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 6.016666666666651,
+          "claimedReward": {
+            "kind": "gate",
+            "count": 5
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l3.r0",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 35,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 6.049999999999984,
+          "firstAvailableAt": 1.9666666666666646,
+          "firstHitAt": 6.683333333333315,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 10.000000000000076,
+          "claimedReward": {
+            "kind": "troops",
+            "count": 4
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l3.w0",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 45,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 4.333333333333323,
+          "firstAvailableAt": 4.966666666666654,
+          "firstHitAt": 6.766666666666648,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 13.000000000000226,
+          "claimedReward": {
+            "kind": "equipment",
+            "stage": 1
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l3.g1",
+          "kind": "mutableGate",
+          "value": 8,
+          "maxPositive": 8,
+          "damagePerPoint": 6,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 8.016666666666644,
+          "firstAvailableAt": 8.950000000000024,
+          "firstHitAt": 11.000000000000126,
+          "cappedAt": 14.116666666666948,
+          "hitsAfterCap": 222,
+          "spentAimingAfterCap": 2.833333333333328,
+          "durabilityAtPass": 0,
+          "passedAt": 17.000000000000316,
+          "claimedReward": {
+            "kind": "gate",
+            "count": 8
+          },
+          "lossCause": null,
+          "lastAimedTick": 1017
+        },
+        {
+          "id": "l3.r1",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 100,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 7.283333333333313,
+          "firstAvailableAt": 11.950000000000173,
+          "firstHitAt": 17.600000000000282,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 20.000000000000146,
+          "claimedReward": {
+            "kind": "troops",
+            "count": 8
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l3.r2",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 180,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 7.233333333333313,
+          "firstAvailableAt": 16.95000000000032,
+          "firstHitAt": 18.400000000000237,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 25.016666666666527,
+          "claimedReward": {
+            "kind": "troops",
+            "count": 12
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l3.ally0",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 27.5,
+          "maxHp": 240,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 10.766666666666781,
+          "firstAvailableAt": 21.950000000000035,
+          "firstHitAt": 28.299999999999674,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 67.5,
+          "passedAt": 30.016666666666243,
+          "claimedReward": null,
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l3.w1",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 180,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 5.733333333333318,
+          "firstAvailableAt": 16.95000000000032,
+          "firstHitAt": 18.15000000000025,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 25.016666666666527,
+          "claimedReward": {
+            "kind": "equipment",
+            "stage": 2
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l3.g2",
+          "kind": "mutableGate",
+          "value": -95,
+          "maxPositive": 8,
+          "damagePerPoint": 14,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 10.766666666666781,
+          "firstAvailableAt": 16.95000000000032,
+          "firstHitAt": 20.316666666666794,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 25.016666666666527,
+          "claimedReward": null,
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l3.c0",
+          "kind": "chainCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 200,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 4.666666666666655,
+          "firstAvailableAt": 23.966666666666587,
+          "firstHitAt": 25.883333333333145,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 32.01666666666613,
+          "claimedReward": {
+            "kind": "chain",
+            "count": 10,
+            "value": 1,
+            "spacing": 0.5
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l3.r3",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 277.5,
+          "maxHp": 350,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 10.750000000000114,
+          "firstAvailableAt": 26.966666666666416,
+          "firstHitAt": 34.86666666666597,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 347.5,
+          "passedAt": 35.01666666666596,
+          "claimedReward": null,
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l3.g3",
+          "kind": "mutableGate",
+          "value": -146,
+          "maxPositive": 8,
+          "damagePerPoint": 24,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 10.750000000000114,
+          "firstAvailableAt": 30.96666666666619,
+          "firstHitAt": 32.26666666666612,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 39.016666666665735,
+          "claimedReward": null,
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l3.w2",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 500,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 8.366666666666662,
+          "firstAvailableAt": 33.96666666666602,
+          "firstHitAt": 36.18333333333256,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 45,
+          "passedAt": 42.016666666665564,
+          "claimedReward": {
+            "kind": "equipment",
+            "stage": 2
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l3.r4",
+          "kind": "rewardCrate",
+          "value": 0,
+          "hp": 0,
+          "maxHp": 620,
+          "resolved": true,
+          "claimed": true,
+          "availableAimTime": 8.199999999999987,
+          "firstAvailableAt": 39.96666666666568,
+          "firstHitAt": 43.216666666665496,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 12.5,
+          "passedAt": 48.01666666666522,
+          "claimedReward": {
+            "kind": "troops",
+            "count": 16
+          },
+          "lossCause": null,
+          "lastAimedTick": -1
+        },
+        {
+          "id": "l3.g4",
+          "kind": "mutableGate",
+          "value": -279,
+          "maxPositive": 8,
+          "damagePerPoint": 40,
+          "hp": 0,
+          "maxHp": 0,
+          "resolved": true,
+          "claimed": false,
+          "availableAimTime": 10.750000000000114,
+          "firstAvailableAt": 39.96666666666568,
+          "firstHitAt": 41.26666666666561,
+          "cappedAt": null,
+          "hitsAfterCap": 0,
+          "spentAimingAfterCap": 0,
+          "durabilityAtPass": 0,
+          "passedAt": 48.01666666666522,
+          "claimedReward": null,
+          "lossCause": null,
+          "lastAimedTick": -1
+        }
+      ],
+      "samples": [
+        {
+          "elapsed": 8.033333333333312,
+          "count": 20,
+          "stage": 0,
+          "remaining": 102,
+          "distance": 47.96666666666669,
+          "stats": {
+            "shots": 205,
+            "damageBudget": 205,
+            "hits": 149,
+            "gateHits": 78,
+            "converted": 1,
+            "gatesTaken": 2,
+            "crates": 1,
+            "chainGenerated": 0,
+            "chainTaken": 0,
+            "missed": 0,
+            "equipment": 0,
+            "fieldCompanions": 0,
+            "blocked": 0,
+            "deferredShots": 0,
+            "deferredChains": 0,
+            "peakShots": 42,
+            "peakEnemies": 8,
+            "peakTokens": 0
+          },
+          "fps": 57.23872496075136,
+          "nodes": 731,
+          "pool": 703
+        },
+        {
+          "elapsed": 16.05000000000037,
+          "count": 20,
+          "stage": 1,
+          "remaining": 90,
+          "distance": 39.94999999999963,
+          "stats": {
+            "shots": 970,
+            "damageBudget": 970,
+            "hits": 550,
+            "gateHits": 398,
+            "converted": 2,
+            "gatesTaken": 2,
+            "crates": 2,
+            "chainGenerated": 0,
+            "chainTaken": 0,
+            "missed": 0,
+            "equipment": 1,
+            "fieldCompanions": 0,
+            "blocked": 0,
+            "deferredShots": 0,
+            "deferredChains": 0,
+            "peakShots": 95,
+            "peakEnemies": 18,
+            "peakTokens": 0
+          },
+          "fps": 57.942057942057936,
+          "nodes": 731,
+          "pool": 703
+        },
+        {
+          "elapsed": 24.03333333333325,
+          "count": 36,
+          "stage": 2,
+          "remaining": 66,
+          "distance": 31.96666666666675,
+          "stats": {
+            "shots": 2122,
+            "damageBudget": 2284,
+            "hits": 1186,
+            "gateHits": 529,
+            "converted": 2,
+            "gatesTaken": 3,
+            "crates": 4,
+            "chainGenerated": 0,
+            "chainTaken": 0,
+            "missed": 0,
+            "equipment": 2,
+            "fieldCompanions": 0,
+            "blocked": 0,
+            "deferredShots": 0,
+            "deferredChains": 0,
+            "peakShots": 145,
+            "peakEnemies": 22,
+            "peakTokens": 0
+          },
+          "fps": 52.221893777731545,
+          "nodes": 731,
+          "pool": 703
+        },
+        {
+          "elapsed": 32.06666666666613,
+          "count": 49,
+          "stage": 2,
+          "remaining": 36,
+          "distance": 23.93333333333387,
+          "stats": {
+            "shots": 2986,
+            "damageBudget": 4444,
+            "hits": 1420,
+            "gateHits": 534,
+            "converted": 2,
+            "gatesTaken": 4,
+            "crates": 6,
+            "chainGenerated": 10,
+            "chainTaken": 1,
+            "missed": 1,
+            "equipment": 2,
+            "fieldCompanions": 0,
+            "blocked": 0,
+            "deferredShots": 0,
+            "deferredChains": 0,
+            "peakShots": 145,
+            "peakEnemies": 26,
+            "peakTokens": 10
+          },
+          "fps": 53.96222644534793,
+          "nodes": 762,
+          "pool": 734
+        },
+        {
+          "elapsed": 40.04999999999901,
+          "count": 56,
+          "stage": 2,
+          "remaining": 14,
+          "distance": 15.95000000000099,
+          "stats": {
+            "shots": 3850,
+            "damageBudget": 6894,
+            "hits": 1968,
+            "gateHits": 825,
+            "converted": 2,
+            "gatesTaken": 13,
+            "crates": 6,
+            "chainGenerated": 10,
+            "chainTaken": 10,
+            "missed": 3,
+            "equipment": 2,
+            "fieldCompanions": 0,
+            "blocked": 0,
+            "deferredShots": 0,
+            "deferredChains": 0,
+            "peakShots": 145,
+            "peakEnemies": 26,
+            "peakTokens": 10
+          },
+          "fps": 53.10256662529852,
+          "nodes": 767,
+          "pool": 739
+        },
+        {
+          "elapsed": 48.049999999998555,
+          "count": 55,
+          "stage": 2,
+          "remaining": 0,
+          "distance": 7.950000000001445,
+          "stats": {
+            "shots": 4706,
+            "damageBudget": 9341.5,
+            "hits": 2481,
+            "gateHits": 848,
+            "converted": 2,
+            "gatesTaken": 13,
+            "crates": 7,
+            "chainGenerated": 10,
+            "chainTaken": 10,
+            "missed": 4,
+            "equipment": 2,
+            "fieldCompanions": 0,
+            "blocked": 0,
+            "deferredShots": 0,
+            "deferredChains": 0,
+            "peakShots": 145,
+            "peakEnemies": 26,
+            "peakTokens": 10
+          },
+          "fps": 49.534376858709145,
+          "nodes": 772,
+          "pool": 744
+        },
+        {
+          "elapsed": 56.01666666666477,
+          "count": 68,
+          "stage": 2,
+          "remaining": 0,
+          "distance": 0,
+          "stats": {
+            "shots": 5537,
+            "damageBudget": 12346.5,
+            "hits": 2707,
+            "gateHits": 848,
+            "converted": 2,
+            "gatesTaken": 13,
+            "crates": 8,
+            "chainGenerated": 10,
+            "chainTaken": 10,
+            "missed": 5,
+            "equipment": 2,
+            "fieldCompanions": 0,
+            "blocked": 0,
+            "deferredShots": 0,
+            "deferredChains": 0,
+            "peakShots": 145,
+            "peakEnemies": 26,
+            "peakTokens": 10
+          },
+          "fps": 54.61767626613706,
+          "nodes": 773,
+          "pool": 745
+        }
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "type": "recording-start",
+      "level": 0,
+      "seconds": 2.831
+    },
+    {
+      "type": "battle-start",
+      "level": 1,
+      "seconds": 2.977
+    },
+    {
+      "type": "gate-converted",
+      "level": 1,
+      "seconds": 4.529,
+      "at": 1.5999999999999992
+    },
+    {
+      "type": "equipment",
+      "level": 1,
+      "seconds": 11.279,
+      "stage": 1,
+      "at": 8.366666666666662
+    },
+    {
+      "type": "gate-converted",
+      "level": 1,
+      "seconds": 13.355,
+      "at": 10.450000000000099
+    },
+    {
+      "type": "equipment",
+      "level": 1,
+      "seconds": 23.879,
+      "stage": 2,
+      "at": 20.433333333333454
+    },
+    {
+      "type": "victory",
+      "level": 1,
+      "seconds": 40.171
+    },
+    {
+      "type": "transition",
+      "level": 1,
+      "seconds": 41.101
+    },
+    {
+      "type": "battle-start",
+      "level": 2,
+      "seconds": 43.238
+    },
+    {
+      "type": "gate-converted",
+      "level": 2,
+      "seconds": 45.629,
+      "at": 2.5666666666666624
+    },
+    {
+      "type": "equipment",
+      "level": 2,
+      "seconds": 51.545,
+      "stage": 1,
+      "at": 8.466666666666667
+    },
+    {
+      "type": "chain-generated",
+      "level": 2,
+      "seconds": 54.48,
+      "count": 6,
+      "at": 11.400000000000146
+    },
+    {
+      "type": "chain-passing",
+      "level": 2,
+      "seconds": 59.563,
+      "at": 16.48333333333368
+    },
+    {
+      "type": "equipment",
+      "level": 2,
+      "seconds": 65.696,
+      "stage": 2,
+      "at": 22.616666666666664
+    },
+    {
+      "type": "chain-generated",
+      "level": 2,
+      "seconds": 70.273,
+      "count": 14,
+      "at": 27.199999999999736
+    },
+    {
+      "type": "victory",
+      "level": 2,
+      "seconds": 92.589
+    },
+    {
+      "type": "transition",
+      "level": 2,
+      "seconds": 93.551
+    },
+    {
+      "type": "battle-start",
+      "level": 3,
+      "seconds": 95.701
+    },
+    {
+      "type": "gate-converted",
+      "level": 3,
+      "seconds": 97.813,
+      "at": 2.249999999999997
+    },
+    {
+      "type": "equipment",
+      "level": 3,
+      "seconds": 104.894,
+      "stage": 1,
+      "at": 9.366666666666712
+    },
+    {
+      "type": "gate-converted",
+      "level": 3,
+      "seconds": 109.113,
+      "at": 13.56666666666692
+    },
+    {
+      "type": "multi-column",
+      "level": 3,
+      "seconds": 116.549,
+      "at": 21.016666666666755
+    },
+    {
+      "type": "equipment",
+      "level": 3,
+      "seconds": 118.196,
+      "stage": 2,
+      "at": 22.66666666666666
+    },
+    {
+      "type": "chain-generated",
+      "level": 3,
+      "seconds": 124.186,
+      "count": 10,
+      "at": 28.649999999999654
+    },
+    {
+      "type": "large-enemy",
+      "level": 3,
+      "seconds": 129.609,
+      "at": 34.08333333333268
+    },
+    {
+      "type": "wide-squad-negative",
+      "level": 3,
+      "seconds": 132.553,
+      "at": 37.033333333332514
+    },
+    {
+      "type": "large-combat",
+      "level": 3,
+      "seconds": 135.596,
+      "at": 40.04999999999901
+    },
+    {
+      "type": "victory",
+      "level": 3,
+      "seconds": 152.224
+    },
+    {
+      "type": "transition",
+      "level": 3,
+      "seconds": 152.92
+    },
+    {
+      "type": "ending",
+      "level": 3,
+      "seconds": 157.775
+    }
+  ],
+  "errors": []
+}

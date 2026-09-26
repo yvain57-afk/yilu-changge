@@ -1,0 +1,130 @@
+{
+  "stage": "/Users/yvainair/Code/游戏-左右滑古代史/.cache/package-battle-fix2-check-0ye9407x/unpacked/YILU_BATTLE_FIX2_20260925_FULL_DEV",
+  "port": 43210,
+  "passed": true,
+  "boot": "prebuilt with stock Node server; no npm install/Cocos required",
+  "home": {
+    "version": "battle-fix2-20260925",
+    "resourcesReady": true,
+    "menuArtwork": 8
+  },
+  "battle": {
+    "version": "battle-fix2-20260925",
+    "phase": "run",
+    "elapsed": 0.7833333333333341,
+    "count": 1,
+    "battleAssets": {
+      "ready": true,
+      "loading": false,
+      "frames": 230,
+      "expectedFrames": 230
+    }
+  },
+  "errors": [],
+  "preparedSnapshotSha256": "2279fde0b21003ae759b6ac9c1505b684349043094f73e2ba702fffa9a9acb97",
+  "buildIdSha256": "59c69a3a4e23c79e39bd3f2cddfec41b45a383ce04e66ee121de443a68b51f25",
+  "unpackedVerification": {
+    "passed": true,
+    "transportSha256": "88ed141e87f0e4c5a47b6bab084aef397e7fa6dbfa5e5003bbffa6783920e139",
+    "fileCount": 2227,
+    "allFileHashes": true,
+    "fingerprintMatched": true,
+    "root": "/Users/yvainair/Code/游戏-左右滑古代史/.cache/package-battle-fix2-check-0ye9407x/unpacked/YILU_BATTLE_FIX2_20260925_FULL_DEV"
+  },
+  "verificationAdapter": "Existing boot/start assertions on extracted package. No fixed legacy frame count; complete art bytes verified by BUILD_ID. Headless unless --visible.",
+  "sourceAndBuildSha256": "fee06efe1dd9a74248c5c3470b5532a3c4bbecb2ca3af51e261cd38043d45624",
+  "smallPreparedSnapshotSha256": "3d30ba7d866cbdf62c36d7efc583f4aa329814f6b6aa0245b9f1143736a7bccd",
+  "postVerificationDocumentationDelta": {
+    "allowedReportNames": [
+      "FIX2_REVIEW_RESULTS.json",
+      "VERIFICATION.json"
+    ],
+    "files": [
+      {
+        "scope": "workspace",
+        "path": "docs/BATTLE-FIX2-20260925/FIX2_REVIEW_RESULTS.json",
+        "beforeSha256": "0618629d3a813c9d9e149141e44f30f55e82dc60d455d11d7564806a42e66f9c",
+        "afterSha256": "07d39dbc687ea6a58912a254a01cc502bb6216203c3af18f586c6e1b909b5dc2"
+      },
+      {
+        "scope": "workspace",
+        "path": "evidence/BATTLE-FIX2-20260925/FIX2_REVIEW_RESULTS.json",
+        "beforeSha256": "0618629d3a813c9d9e149141e44f30f55e82dc60d455d11d7564806a42e66f9c",
+        "afterSha256": "07d39dbc687ea6a58912a254a01cc502bb6216203c3af18f586c6e1b909b5dc2"
+      },
+      {
+        "scope": "workspace",
+        "path": "docs/BATTLE-FIX2-20260925/VERIFICATION.json",
+        "beforeSha256": "547a85e258be07c97194f6999486613172d0d07867ce91cdf3db51f2c0b343b3",
+        "afterSha256": "f5bf98f762285293a9d731ac6ac0997743580bd8b8b074f9f5e536bf53cba8fc"
+      },
+      {
+        "scope": "workspace",
+        "path": "evidence/BATTLE-FIX2-20260925/VERIFICATION.json",
+        "beforeSha256": "547a85e258be07c97194f6999486613172d0d07867ce91cdf3db51f2c0b343b3",
+        "afterSha256": "f5bf98f762285293a9d731ac6ac0997743580bd8b8b074f9f5e536bf53cba8fc"
+      },
+      {
+        "scope": "full",
+        "path": "release/BATTLE-FIX2-20260925/YILU_BATTLE_FIX2_20260925_FULL_DEV/docs/BATTLE-FIX2-20260925/FIX2_REVIEW_RESULTS.json",
+        "beforeSha256": "0618629d3a813c9d9e149141e44f30f55e82dc60d455d11d7564806a42e66f9c",
+        "afterSha256": "fb7fee6419f6a8172a2190b105490cce2a2247720fa94e7ceec66101675c563e"
+      },
+      {
+        "scope": "full",
+        "path": "release/BATTLE-FIX2-20260925/YILU_BATTLE_FIX2_20260925_FULL_DEV/evidence/BATTLE-FIX2-20260925/FIX2_REVIEW_RESULTS.json",
+        "beforeSha256": "0618629d3a813c9d9e149141e44f30f55e82dc60d455d11d7564806a42e66f9c",
+        "afterSha256": "fb7fee6419f6a8172a2190b105490cce2a2247720fa94e7ceec66101675c563e"
+      },
+      {
+        "scope": "full",
+        "path": "release/BATTLE-FIX2-20260925/YILU_BATTLE_FIX2_20260925_FULL_DEV/docs/BATTLE-FIX2-20260925/VERIFICATION.json",
+        "beforeSha256": "547a85e258be07c97194f6999486613172d0d07867ce91cdf3db51f2c0b343b3",
+        "afterSha256": "aec3243a8325d1d69296af23a226668304c1c4c1057ba8367e5ee364f6ce631f"
+      },
+      {
+        "scope": "full",
+        "path": "release/BATTLE-FIX2-20260925/YILU_BATTLE_FIX2_20260925_FULL_DEV/evidence/BATTLE-FIX2-20260925/VERIFICATION.json",
+        "beforeSha256": "547a85e258be07c97194f6999486613172d0d07867ce91cdf3db51f2c0b343b3",
+        "afterSha256": "aec3243a8325d1d69296af23a226668304c1c4c1057ba8367e5ee364f6ce631f"
+      },
+      {
+        "scope": "small",
+        "path": "release/BATTLE-FIX2-20260925/YILU_BATTLE_FIX2_20260925_GPT_EVIDENCE/docs/FIX2_REVIEW_RESULTS.json",
+        "beforeSha256": "0618629d3a813c9d9e149141e44f30f55e82dc60d455d11d7564806a42e66f9c",
+        "afterSha256": "fb7fee6419f6a8172a2190b105490cce2a2247720fa94e7ceec66101675c563e"
+      },
+      {
+        "scope": "small",
+        "path": "release/BATTLE-FIX2-20260925/YILU_BATTLE_FIX2_20260925_GPT_EVIDENCE/evidence/FIX2_REVIEW_RESULTS.json",
+        "beforeSha256": "0618629d3a813c9d9e149141e44f30f55e82dc60d455d11d7564806a42e66f9c",
+        "afterSha256": "fb7fee6419f6a8172a2190b105490cce2a2247720fa94e7ceec66101675c563e"
+      },
+      {
+        "scope": "small",
+        "path": "release/BATTLE-FIX2-20260925/YILU_BATTLE_FIX2_20260925_GPT_EVIDENCE/docs/VERIFICATION.json",
+        "beforeSha256": "547a85e258be07c97194f6999486613172d0d07867ce91cdf3db51f2c0b343b3",
+        "afterSha256": "aec3243a8325d1d69296af23a226668304c1c4c1057ba8367e5ee364f6ce631f"
+      },
+      {
+        "scope": "small",
+        "path": "release/BATTLE-FIX2-20260925/YILU_BATTLE_FIX2_20260925_GPT_EVIDENCE/evidence/VERIFICATION.json",
+        "beforeSha256": "547a85e258be07c97194f6999486613172d0d07867ce91cdf3db51f2c0b343b3",
+        "afterSha256": "aec3243a8325d1d69296af23a226668304c1c4c1057ba8367e5ee364f6ce631f"
+      }
+    ],
+    "preVerificationPreparedHashes": {
+      "YILU_BATTLE_FIX2_20260925_FULL_DEV": "810f380d7de8df7a149446183e0e2f2b7f18681ec0cc729d7e764540702f2f06",
+      "YILU_BATTLE_FIX2_20260925_GPT_EVIDENCE": "cdebbc32903fe00d71474fa81fa16372f38817b6932d6415d303c49035d77e75"
+    },
+    "postVerificationPreparedHashes": {
+      "YILU_BATTLE_FIX2_20260925_FULL_DEV": "2279fde0b21003ae759b6ac9c1505b684349043094f73e2ba702fffa9a9acb97",
+      "YILU_BATTLE_FIX2_20260925_GPT_EVIDENCE": "3d30ba7d866cbdf62c36d7efc583f4aa329814f6b6aa0245b9f1143736a7bccd"
+    },
+    "runtime": "battle-fix2-20260925",
+    "sourceAndBuildSha256": "fee06efe1dd9a74248c5c3470b5532a3c4bbecb2ca3af51e261cd38043d45624",
+    "executableSourceAssetsBuildUnchanged": true,
+    "actualRuntimeStartOccurredBeforeReportStatusUpdate": true,
+    "note": "One real unpacked startup occurred before status-only report updates. No second startup is claimed. Source/assets/build fingerprints and all other staged bytes remained unchanged."
+  }
+}
