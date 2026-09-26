@@ -1,3 +1,4 @@
+import type {TacticId} from './tactics';
 /** Shared rule/presentation shapes. Distances are world seconds along the road. */
 export type PlayerWeapon='spear'|'blade';
 export type WeaponId=PlayerWeapon|'great_axe'|'throwing_fork'|'bow'|'sword'|'halberd';
@@ -23,7 +24,7 @@ export const HERO_BASE_DAMAGE=5;
 export const TIER_FACTORS=[1,1.2,1.4] as const;
 export const TIER_WIDTHS=[1,1.1,1.15] as const;
 export const POOL_LIMITS=Object.freeze({hero:12,companion:12,enemy:12,decorative:48});
-export type AttackInstance={id:number;sourceId:'hero'|CompanionId;weaponId:WeaponId;tier:number;damage:number;direction:number;startedTick:number;tick:number;poseTick?:number;phase:'windup'|'active'|'recovery';spent:boolean;hitTargetIds:(number|'boss')[];budget:number;released:boolean;cycle:number};
+export type AttackInstance={id:number;sourceId:'hero'|CompanionId;weaponId:WeaponId;tier:number;damage:number;direction:number;startedTick:number;tick:number;poseTick?:number;phase:'windup'|'active'|'recovery';spent:boolean;hitTargetIds:(number|'boss')[];budget:number;ordinaryBudget?:number;specialBudget?:number;tactic?:TacticId;released:boolean;cycle:number};
 export type WeaponWave={id:number;attack:AttackInstance;x:number;originX:number;z:number;previousZ:number;originZ:number;life:number;halfWidth:number;speed:number;range:number;stopped:boolean};
-export type RunLoadout={appearance?:number;weapon?:PlayerWeapon;companion?:CompanionId|null};
+export type RunLoadout={appearance?:number;weapon?:PlayerWeapon;companion?:CompanionId|null;tactic?:TacticId};
 export function companionFor(boss:CastId|undefined,choice:CompanionId|null|undefined){return choice&&choice!==boss?choice:null;}

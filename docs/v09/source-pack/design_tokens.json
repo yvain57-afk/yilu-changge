@@ -1,0 +1,137 @@
+{
+  "status": "design_candidates_not_game_configuration",
+  "units": "logical window pixels after Platform metrics; never physical screenshot pixels",
+  "direction": "三国军旅手绘：军营出征、连续跑道、战后落脚",
+  "color": {
+    "ink": "#19363D",
+    "deep": "#102A31",
+    "paper": "#F3EBD8",
+    "gold": "#C6A25A",
+    "primary": "#A74232",
+    "positiveGate": "#277E8D",
+    "negativeGate": "#B7483D",
+    "neutralGate": "#76837A",
+    "onDark": "#F7F0DF",
+    "onLight": "#1D343B",
+    "secondaryOnLight": "#4F615D",
+    "secondaryOnDark": "#C7D1C8"
+  },
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "type": {
+    "title": 28,
+    "section": 20,
+    "body": 15,
+    "secondary": 13,
+    "essentialMinimum": 12,
+    "teamCount": 26,
+    "gateValue": 28,
+    "crateDurability": 21,
+    "button": 17
+  },
+  "touch": {
+    "minimumTarget": 44,
+    "primaryHeight": 52,
+    "targetGap": 8
+  },
+  "layout": {
+    "sideInset": 16,
+    "topAvoid": "safe and capsule geometry, then 8px gap",
+    "bottomAvoid": "safe content and gesture inset; no fixed hardware assumptions",
+    "battleTopBarTargetHeight": 52,
+    "worldLabelPassive": true,
+    "shortScreenThreshold": 700,
+    "shortScreenStrategy": "reduce decoration, scroll body, preserve action size"
+  },
+  "displayOwners": {
+    "home": [
+      "homeBackdrop",
+      "homeHero"
+    ],
+    "loadout": [
+      "loadoutBackdrop",
+      "equipmentHero",
+      "selectedCompanion"
+    ],
+    "chapters": [
+      "mapBackdrop",
+      "chapterNodes"
+    ],
+    "battle": [
+      "runnerWorld",
+      "combatActors",
+      "worldLabels",
+      "hud"
+    ],
+    "result": [
+      "resultBackdrop",
+      "resultHero",
+      "actualNewRewardActor_if_first_unlock"
+    ],
+    "camp": [
+      "campBackdrop",
+      "campActors",
+      "campMap"
+    ],
+    "transition": [
+      "campBackdrop",
+      "flagActors",
+      "transitionUi"
+    ],
+    "meeting": [
+      "meetingBackdrop",
+      "encounterPortraits"
+    ],
+    "pause": [
+      "frozenPreviousBase",
+      "pauseOverlay"
+    ],
+    "settings": [
+      "frozenPreviousBase",
+      "settingsOverlay"
+    ],
+    "loading": [
+      "neutralBackdrop",
+      "loadingLabel"
+    ],
+    "error": [
+      "neutralBackdrop",
+      "errorLabel",
+      "retry"
+    ]
+  },
+  "semanticRules": {
+    "gateHitChangesWholeFill": false,
+    "showSignedGateNumber": true,
+    "negativeGateReadableWhileHit": true,
+    "differentiateCrateRewardAndDurability": true,
+    "defaultWorldLabelReceivesInput": false,
+    "onlyOnePrimaryAction": true,
+    "duplicateDefaultHeroAllowed": false,
+    "falseRecruitmentOnReplayAllowed": false
+  },
+  "motion": {
+    "uiTransitionMs": 160,
+    "hitAccentMs": 90,
+    "rewardAccentMs": 360,
+    "resultEntranceMs": 450,
+    "mayDelaySaveOrDamage": false,
+    "fullScreenFlash": false,
+    "defaultScreenShake": false,
+    "backgroundMusicEnabled": false
+  },
+  "budgetTargets": {
+    "newLargeAssetsRequireInventory": true,
+    "compiledPackageMarginBytes": 1048576,
+    "compiledPackageMarginRatio": 0.05,
+    "actualPlatformLimit": "recheck local current build/preview; v08 threshold is historical",
+    "fullEnemySkeletonPerUnit": false,
+    "defaultLongSoakRuns": 0
+  }
+}

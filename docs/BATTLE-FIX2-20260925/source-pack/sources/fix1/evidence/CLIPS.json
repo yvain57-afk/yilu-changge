@@ -1,0 +1,44 @@
+{
+  "source": "final-three-levels.mp4",
+  "speed": 1,
+  "seconds": 30,
+  "timelineOffset": 2.831,
+  "segments": [
+    {
+      "event": "gate-converted",
+      "level": 1,
+      "sourceStart": 0,
+      "duration": 6,
+      "outputStart": 0
+    },
+    {
+      "event": "equipment",
+      "level": 1,
+      "sourceStart": 6.448,
+      "duration": 6,
+      "outputStart": 6
+    },
+    {
+      "event": "chain-passing",
+      "level": 2,
+      "sourceStart": 54.732,
+      "duration": 6,
+      "outputStart": 12
+    },
+    {
+      "event": "multi-column",
+      "level": 3,
+      "sourceStart": 111.718,
+      "duration": 6,
+      "outputStart": 18
+    },
+    {
+      "event": "large-combat",
+      "level": 3,
+      "sourceStart": 130.76500000000001,
+      "duration": 6,
+      "outputStart": 24
+    }
+  ],
+  "extraAudio": false
+}

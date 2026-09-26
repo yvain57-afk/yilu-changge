@@ -1,0 +1,54 @@
+{
+  "columns": 4,
+  "rows": 3,
+  "height": 208,
+  "tight": true,
+  "keys": [
+    "gatePost",
+    "gateBlue",
+    "gateRed",
+    "gateNeutral",
+    "iconHelmet",
+    "iconSkull",
+    "weaponCrossbow",
+    "fireArrow",
+    "woodFragment0",
+    "woodFragment1",
+    "woodFragment2",
+    "boxLock"
+  ],
+  "componentSeeds": [
+    7853,
+    15782,
+    16185,
+    18127,
+    887957,
+    1083199,
+    788555,
+    739818,
+    885944,
+    852298,
+    1131861,
+    1305381
+  ],
+  "insets": {
+    "gateBlue": [
+      18,
+      18,
+      30,
+      36
+    ],
+    "gateRed": [
+      18,
+      18,
+      30,
+      36
+    ],
+    "gateNeutral": [
+      18,
+      18,
+      30,
+      36
+    ]
+  }
+}

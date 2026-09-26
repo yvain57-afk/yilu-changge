@@ -1,0 +1,9 @@
+import {open,steer,freshSave,root} from './browser-v07-common.mjs';
+import assert from 'node:assert/strict';import {writeFileSync} from 'node:fs';
+const t=await open('final-short',360,640);const report={passed:false};
+try{
+ await freshSave(t);await t.tap('start');while((await t.snap()).journey.elapsed<5){await t.target(steer((await t.snap()).journey));await t.p.waitForTimeout(65);}await t.release();const s=await t.snap();const line=s.texts.find(t=>t.id==='kill-progress').text;assert.match(line,/^弩阵 [ⅠⅡⅢ] · 歼敌 \d+$/);await t.p.screenshot({path:root+'/mobile-360x640.png'});report.shortHud=line;
+ await t.p.goto('http://127.0.0.1:43189/review/v07/');await t.p.locator('video').evaluate(v=>{v.load();});await t.p.waitForFunction(()=>document.querySelector('video').readyState>=1);assert.ok(await t.p.locator('video').evaluate(v=>v.duration>33&&v.duration<35));
+ const broken=await t.p.evaluate(async()=>{const urls=[...document.querySelectorAll('a[href],img[src],video[src]')].map(e=>e.getAttribute('href')||e.getAttribute('src'));const results=await Promise.all(urls.map(async url=>({url,status:(await fetch(url,{method:'HEAD'})).status})));return results.filter(r=>r.status!==200);});assert.deepEqual(broken,[]);
+ await t.p.getByRole('link',{name:'开始试玩 →'}).click();const frame=t.p.frames().find(f=>f!==t.p.mainFrame());assert.ok(frame);await frame.waitForFunction(()=>globalThis.__YLCG__?.snapshot().version==='v07-rc1'&&globalThis.__YLCG__.snapshot().resourcesReady);await t.p.screenshot({path:root+'/play-entry-final.png'});assert.deepEqual(t.errors,[]);Object.assign(report,{passed:true,linksChecked:true,clipSeconds:34,iframeVersion:'v07-rc1',errors:t.errors});
+}catch(e){report.error=String(e);console.error(e);process.exitCode=1;}finally{writeFileSync(root+'/final-entry.json',JSON.stringify(report,null,2));await t.c.close();console.log(JSON.stringify(report));}

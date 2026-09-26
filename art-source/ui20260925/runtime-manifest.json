@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "assetId": "result-bg",
+      "sourcePath": "art-source/ui20260925/result-bg-original-1723bb91a367.png",
+      "runtimePath": "assets/resources/ui20260925/result-bg.jpg",
+      "origin": "User-authorized image generation; inspect source delivery metadata separately",
+      "sourceDimensions": [
+        1024,
+        1536
+      ],
+      "runtimeDimensions": [
+        540,
+        810
+      ],
+      "sourceSha256": "1723bb91a367f8af544f2a7aeaa7fa41c010dc778ffa213c94bacfe0938161d3",
+      "runtimeSha256": "7646938e30c42955c7ad94d0a49fca521eedc571cdd9c17ca2b2f5b77d09e107",
+      "bytes": 97141,
+      "transparent": false,
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sliceInsets": null,
+      "encoding": "JPEG quality82 4:4:4; resized full composition",
+      "pageGroups": [
+        "result"
+      ],
+      "status": "imported; real Cocos visual acceptance pending",
+      "alpha": null
+    },
+    {
+      "assetId": "brand-title",
+      "sourcePath": "art-source/ui20260925/brand-title-original-91914250bc0f.png",
+      "runtimePath": "assets/resources/ui20260925/brand-title.png",
+      "origin": "User-authorized image generation; inspect source delivery metadata separately",
+      "sourceDimensions": [
+        2172,
+        724
+      ],
+      "runtimeDimensions": [
+        600,
+        200
+      ],
+      "sourceSha256": "91914250bc0f7747dfcff15d68c6677aa7f13405c1abeebdd2b75b8547729a0f",
+      "runtimeSha256": "ae443fe6e88ca66ca236a11f60f7908c03dc1844ad34ee1df11c7c9d18b842f1",
+      "bytes": 71342,
+      "transparent": true,
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sliceInsets": null,
+      "previousVersions": [],
+      "encoding": "RGBA PNG; downscaled full image, no crop; no palette",
+      "pageGroups": [
+        "home"
+      ],
+      "status": "imported; real Cocos visual acceptance pending",
+      "alpha": {
+        "isOpaque": false
+      }
+    },
+    {
+      "assetId": "home-bg",
+      "sourcePath": "art-source/ui20260925/home-bg-original-249dd1b4ab40.png",
+      "runtimePath": "assets/resources/ui20260925/home-bg.jpg",
+      "origin": "User-authorized image generation; inspect source delivery metadata separately",
+      "sourceDimensions": [
+        1024,
+        1536
+      ],
+      "runtimeDimensions": [
+        540,
+        810
+      ],
+      "sourceSha256": "249dd1b4ab408940c1becb5c878c02e93f8338168e20c4189cf1f1f14b99e82a",
+      "runtimeSha256": "946a66ff5a8c4c3d7a4c27fdf3914f1fcabbf15a7741c480ac1aac233fed316e",
+      "bytes": 110316,
+      "transparent": false,
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sliceInsets": null,
+      "previousVersions": [
+        {
+          "path": "art-source/ui20260925/home-bg-runtime-before-fb487c7b3882.jpg",
+          "sha256": "fb487c7b3882709b0a85d5c1f9cb75efcf7772dc2f018f2194461fcb2d0d94af",
+          "bytes": 147180
+        }
+      ],
+      "encoding": "JPEG quality82 4:4:4; resized full composition",
+      "pageGroups": [
+        "home"
+      ],
+      "status": "imported; real Cocos visual acceptance pending",
+      "alpha": null
+    },
+    {
+      "assetId": "map-bg",
+      "sourcePath": "art-source/ui20260925/map-bg-original-cc9c82b26fb6.png",
+      "runtimePath": "assets/resources/ui20260925/map-bg.jpg",
+      "origin": "User-authorized image generation; inspect source delivery metadata separately",
+      "sourceDimensions": [
+        1024,
+        1536
+      ],
+      "runtimeDimensions": [
+        540,
+        810
+      ],
+      "sourceSha256": "cc9c82b26fb6c065ab5cef709430404c278f8ef0032f90dcd00b54865e10356e",
+      "runtimeSha256": "277eca86476d2eb40dce4da7bae8f07d4f7d99791e4ff67c0318120a6a96e6e6",
+      "bytes": 183733,
+      "transparent": false,
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sliceInsets": null,
+      "previousVersions": [
+        {
+          "path": "art-source/ui20260925/map-bg-runtime-before-e6bfb60b5d85.jpg",
+          "sha256": "e6bfb60b5d85dad3563f2559220b091b3d7b7c33309e55f6a0cd9381b4869bd9",
+          "bytes": 248352
+        }
+      ],
+      "encoding": "JPEG quality82 4:4:4; resized full composition",
+      "pageGroups": [
+        "chapters"
+      ],
+      "status": "imported; real Cocos visual acceptance pending",
+      "alpha": null
+    },
+    {
+      "assetId": "gold-button",
+      "sourcePath": "art-source/ui20260925/gold-button-original-b5da40b581b9.png",
+      "runtimePath": "assets/resources/ui20260925/gold-button.png",
+      "origin": "User-authorized image generation; inspect source delivery metadata separately",
+      "sourceDimensions": [
+        2172,
+        724
+      ],
+      "runtimeDimensions": [
+        400,
+        80
+      ],
+      "sourceSha256": "b5da40b581b9e94ae919451376a13374676c99518aa9f08fc8510e2e74bd07d4",
+      "runtimeSha256": "9463f58d27c241fd05521dc8bdba6e486fef8392aef1fcf8c74ab53cab88ccb3",
+      "bytes": 55357,
+      "transparent": true,
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sliceInsets": {
+        "left": 60,
+        "right": 60,
+        "top": 16,
+        "bottom": 16
+      },
+      "crop": {
+        "left": 20,
+        "top": 126,
+        "width": 2136,
+        "height": 426,
+        "alphaThreshold": 2,
+        "guard": 2
+      },
+      "previousVersions": [],
+      "encoding": "RGBA PNG; transparent-margin extraction with threshold2 + 2px guard, then downscale; no palette",
+      "pageGroups": [
+        "all_ui"
+      ],
+      "status": "imported; real Cocos visual acceptance pending",
+      "alpha": {
+        "isOpaque": false
+      }
+    },
+    {
+      "assetId": "hero-blade",
+      "sourcePath": "art-source/ui20260925/hero-blade-original-63fd7296e886.png",
+      "runtimePath": "assets/resources/ui20260925/hero-blade.png",
+      "origin": "User-authorized image generation; inspect source delivery metadata separately",
+      "sourceDimensions": [
+        1024,
+        1536
+      ],
+      "runtimeDimensions": [
+        512,
+        768
+      ],
+      "sourceSha256": "63fd7296e886ff4857a1c447642f0fd06dd4e5d4ff0ca584ba3f0e4c31ae0efb",
+      "runtimeSha256": "e6f32dedc3dcda3e287105dd7981b57b16893fd329a35d9d7723c68270dda5a6",
+      "bytes": 125712,
+      "transparent": true,
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sliceInsets": null,
+      "crop": null,
+      "previousVersions": [],
+      "encoding": "Transparent PNG palette256 quality90 dither0.5; full composition resized, source alpha retained",
+      "pageGroups": [
+        "home"
+      ],
+      "status": "imported; real Cocos visual acceptance pending",
+      "alpha": {
+        "isOpaque": false
+      }
+    },
+    {
+      "assetId": "hero-home",
+      "sourcePath": "art-source/ui20260925/hero-home-original-d6ec215d08e2.png",
+      "runtimePath": "assets/resources/ui20260925/hero-home.png",
+      "origin": "User-authorized image generation; inspect source delivery metadata separately",
+      "sourceDimensions": [
+        1024,
+        1536
+      ],
+      "runtimeDimensions": [
+        512,
+        768
+      ],
+      "sourceSha256": "d6ec215d08e28f472cd04c38c08f35e2b9d1e698ca94755c3f34f71f9522019b",
+      "runtimeSha256": "e6a93eca7ed89b971dd16b868322272080df0f6b56fe6926b423a40f6c8f97ac",
+      "bytes": 120503,
+      "transparent": true,
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sliceInsets": null,
+      "crop": null,
+      "previousVersions": [
+        {
+          "path": "art-source/ui20260925/hero-home-runtime-before-80075187c994.png",
+          "sha256": "80075187c994b8dfa4ca7b3bd323936cd06682fee522cbd245957d1f28f77ff6",
+          "bytes": 368726
+        }
+      ],
+      "encoding": "Transparent PNG palette256 quality90 dither0.5; full composition resized, source alpha retained",
+      "pageGroups": [
+        "home"
+      ],
+      "status": "imported; real Cocos visual acceptance pending",
+      "alpha": {
+        "isOpaque": false
+      }
+    },
+    {
+      "assetId": "camp-bg",
+      "sourcePath": "art-source/ui20260925/camp-bg-original-9c25f4803cad.png",
+      "runtimePath": "assets/resources/ui20260925/camp-bg.jpg",
+      "origin": "User-authorized image generation; inspect source delivery metadata separately",
+      "sourceDimensions": [
+        1024,
+        1536
+      ],
+      "runtimeDimensions": [
+        540,
+        810
+      ],
+      "sourceSha256": "9c25f4803cadfff145455d416f0c134c3958af8740eeb1a9101da81efe21bd5a",
+      "runtimeSha256": "77caaacc066beda98480c258bc28d0bfca9c5d755bc91691ada045217c86bec7",
+      "bytes": 104052,
+      "transparent": false,
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sliceInsets": null,
+      "crop": null,
+      "previousVersions": [
+        {
+          "path": "art-source/ui20260925/camp-bg-runtime-before-bfe485041a7e.jpg",
+          "sha256": "bfe485041a7ed90794cca05f6f018b4b47e0bc3a2d10324c350ce1fcf5a910e3",
+          "bytes": 140134
+        }
+      ],
+      "encoding": "JPEG quality82 4:4:4; resized full composition",
+      "pageGroups": [
+        "camp",
+        "transition",
+        "meeting"
+      ],
+      "status": "imported; real Cocos visual acceptance pending",
+      "alpha": null
+    }
+  ]
+}

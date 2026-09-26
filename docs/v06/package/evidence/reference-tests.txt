@@ -1,0 +1,106 @@
+TAP version 13
+# Subtest: P01 tier thresholds, non-integer input rejected
+ok 1 - P01 tier thresholds, non-integer input rejected
+  ---
+  duration_ms: 1.320582
+  type: 'test'
+  ...
+# Subtest: P02 center/right and a single branch commit
+ok 2 - P02 center/right and a single branch commit
+  ---
+  duration_ms: 0.291712
+  type: 'test'
+  ...
+# Subtest: P03 negative center chooses left; reward once; no side switching
+ok 3 - P03 negative center chooses left; reward once; no side switching
+  ---
+  duration_ms: 0.172715
+  type: 'test'
+  ...
+# Subtest: P04 exits never revive; cap reports actual gain
+ok 4 - P04 exits never revive; cap reports actual gain
+  ---
+  duration_ms: 0.117013
+  type: 'test'
+  ...
+# Subtest: P05 kills dedupe and ignore objects / escapes
+ok 5 - P05 kills dedupe and ignore objects / escapes
+  ---
+  duration_ms: 0.234167
+  type: 'test'
+  ...
+# Subtest: P06 thresholds increment once from combined sources; run resets
+ok 6 - P06 thresholds increment once from combined sources; run resets
+  ---
+  duration_ms: 0.335856
+  type: 'test'
+  ...
+# Subtest: P07 four build budgets retain base damage profile
+ok 7 - P07 four build budgets retain base damage profile
+  ---
+  duration_ms: 0.158905
+  type: 'test'
+  ...
+# Subtest: P08 melee and wave share once-per-target ledger
+ok 8 - P08 melee and wave share once-per-target ledger
+  ---
+  duration_ms: 0.143542
+  type: 'test'
+  ...
+# Subtest: P09 budgets do not auto-hit and stone stops a wave
+ok 9 - P09 budgets do not auto-hit and stone stops a wave
+  ---
+  duration_ms: 0.267655
+  type: 'test'
+  ...
+# Subtest: P10 moving targets intersect even when neither final point overlaps
+ok 10 - P10 moving targets intersect even when neither final point overlaps
+  ---
+  duration_ms: 0.432149
+  type: 'test'
+  ...
+# Subtest: P11 capsule excludes transparent AABB corner
+ok 11 - P11 capsule excludes transparent AABB corner
+  ---
+  duration_ms: 0.185294
+  type: 'test'
+  ...
+# Subtest: P12 sector excludes corner and rear half
+ok 12 - P12 sector excludes corner and rear half
+  ---
+  duration_ms: 1.48206
+  type: 'test'
+  ...
+# Subtest: P13 crowded contact rolling limit and unique contact
+ok 13 - P13 crowded contact rolling limit and unique contact
+  ---
+  duration_ms: 0.229699
+  type: 'test'
+  ...
+# Subtest: P14 fork pair has a real gap and stays in world bounds
+ok 14 - P14 fork pair has a real gap and stays in world bounds
+  ---
+  duration_ms: 0.116953
+  type: 'test'
+  ...
+# Subtest: P15 all formations preserve real count and deterministic positions
+ok 15 - P15 all formations preserve real count and deterministic positions
+  ---
+  duration_ms: 0.795426
+  type: 'test'
+  ...
+# Subtest: P16 controls cannot last longer than cooldown; no boss control
+ok 16 - P16 controls cannot last longer than cooldown; no boss control
+  ---
+  duration_ms: 0.080449
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 61.910713

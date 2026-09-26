@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "screens": [
+    {
+      "id": "home",
+      "title": "首页",
+      "reference": "references/crops/home.png",
+      "states": [
+        "new_game",
+        "resume",
+        "pending_transition",
+        "completed"
+      ],
+      "regions": [
+        "header",
+        "brand",
+        "hero_scene",
+        "objective",
+        "primary",
+        "navigation"
+      ],
+      "suggestedActions": [
+        "resolve_start_or_continue",
+        "open_chapters",
+        "open_loadout",
+        "open_camp",
+        "open_settings"
+      ],
+      "implementationStatus": "not_implemented_by_this_package",
+      "binding": "map to actual local model and commands",
+      "safeArea": true,
+      "notes": [
+        "Only one hero. No fake resource bar. Primary resolved from real progress."
+      ]
+    },
+    {
+      "id": "chapters",
+      "title": "关卡",
+      "reference": "references/crops/chapters.png",
+      "states": [
+        "current",
+        "cleared",
+        "locked",
+        "no_best"
+      ],
+      "regions": [
+        "header",
+        "scroll_title",
+        "map",
+        "nodes",
+        "selected_detail",
+        "primary"
+      ],
+      "suggestedActions": [
+        "select_level",
+        "start_selected",
+        "back"
+      ],
+      "implementationStatus": "not_implemented_by_this_package",
+      "binding": "map to actual local model and commands",
+      "safeArea": true,
+      "notes": [
+        "Exactly three actual levels in this scope; labels from level config."
+      ]
+    },
+    {
+      "id": "loadout",
+      "title": "出征整备",
+      "reference": "references/crops/loadout.png",
+      "states": [
+        "no_companion",
+        "selected",
+        "locked",
+        "saving",
+        "save_failed"
+      ],
+      "regions": [
+        "header",
+        "current_party",
+        "companion_choices",
+        "weapon_choices",
+        "footer"
+      ],
+      "suggestedActions": [
+        "select_companion",
+        "select_weapon",
+        "resolve_start_or_continue",
+        "back"
+      ],
+      "implementationStatus": "not_implemented_by_this_package",
+      "binding": "map to actual local model and commands",
+      "safeArea": true,
+      "notes": [
+        "One actual main character and at most the existing selected companion capacity. No fake levels or stars."
+      ]
+    },
+    {
+      "id": "battle",
+      "title": "战斗",
+      "reference": "references/crops/battle.png",
+      "states": [
+        "normal",
+        "dense",
+        "contact",
+        "boss"
+      ],
+      "regions": [
+        "world",
+        "world_labels",
+        "hud",
+        "pause",
+        "transient_hint"
+      ],
+      "suggestedActions": [
+        "drag_horizontal",
+        "pause"
+      ],
+      "implementationStatus": "not_implemented_by_this_package",
+      "binding": "map to actual local model and commands",
+      "safeArea": true,
+      "notes": [
+        "One continuous runner; open lower horizontal area; only actual blockers. Count anchor follows visible squad."
+      ]
+    },
+    {
+      "id": "result",
+      "title": "结算",
+      "reference": "references/crops/result.png",
+      "states": [
+        "first_win",
+        "repeat_win",
+        "loss",
+        "final_win",
+        "save_failed"
+      ],
+      "regions": [
+        "backdrop",
+        "title",
+        "summary",
+        "actual_rewards",
+        "footer"
+      ],
+      "suggestedActions": [
+        "advance_actual_flow",
+        "replay",
+        "return_to_chapters",
+        "retry_save"
+      ],
+      "implementationStatus": "not_implemented_by_this_package",
+      "binding": "map to actual local model and commands",
+      "safeArea": true,
+      "notes": [
+        "Read settled result; no reward grant from UI. No stars without scoring."
+      ]
+    },
+    {
+      "id": "camp",
+      "title": "驻地",
+      "reference": null,
+      "states": [
+        "in_progress",
+        "completed"
+      ],
+      "regions": [
+        "backdrop",
+        "header",
+        "current_status",
+        "primary",
+        "navigation"
+      ],
+      "suggestedActions": [
+        "continue",
+        "open_loadout",
+        "open_chapters"
+      ],
+      "implementationStatus": "not_implemented_by_this_package",
+      "binding": "map to actual local model and commands",
+      "safeArea": true,
+      "notes": []
+    },
+    {
+      "id": "transition",
+      "title": "关间过渡",
+      "reference": null,
+      "states": [
+        "pending",
+        "doing",
+        "saved",
+        "interrupted"
+      ],
+      "regions": [
+        "backdrop",
+        "current_action",
+        "instruction",
+        "primary"
+      ],
+      "suggestedActions": [
+        "perform_existing_action",
+        "advance_after_save"
+      ],
+      "implementationStatus": "not_implemented_by_this_package",
+      "binding": "map to actual local model and commands",
+      "safeArea": true,
+      "notes": []
+    },
+    {
+      "id": "meeting",
+      "title": "会面",
+      "reference": null,
+      "states": [
+        "new",
+        "completed",
+        "skipped"
+      ],
+      "regions": [
+        "character",
+        "dialogue",
+        "continue",
+        "skip"
+      ],
+      "suggestedActions": [
+        "advance_dialogue",
+        "skip_existing"
+      ],
+      "implementationStatus": "not_implemented_by_this_package",
+      "binding": "map to actual local model and commands",
+      "safeArea": true,
+      "notes": []
+    },
+    {
+      "id": "pause",
+      "title": "暂停",
+      "reference": null,
+      "states": [
+        "paused"
+      ],
+      "regions": [
+        "dim_backdrop",
+        "modal",
+        "resume",
+        "settings",
+        "exit"
+      ],
+      "suggestedActions": [
+        "resume",
+        "settings",
+        "confirm_exit"
+      ],
+      "implementationStatus": "not_implemented_by_this_package",
+      "binding": "map to actual local model and commands",
+      "safeArea": true,
+      "notes": []
+    },
+    {
+      "id": "settings",
+      "title": "设置",
+      "reference": null,
+      "states": [
+        "sfx_on_off",
+        "haptics_on_off"
+      ],
+      "regions": [
+        "header",
+        "options",
+        "legal_info",
+        "back"
+      ],
+      "suggestedActions": [
+        "toggle_sfx",
+        "toggle_haptics",
+        "back"
+      ],
+      "implementationStatus": "not_implemented_by_this_package",
+      "binding": "map to actual local model and commands",
+      "safeArea": true,
+      "notes": []
+    },
+    {
+      "id": "loading_error",
+      "title": "加载与错误",
+      "reference": null,
+      "states": [
+        "loading",
+        "load_failed",
+        "save_failed",
+        "empty"
+      ],
+      "regions": [
+        "status",
+        "explanation",
+        "retry",
+        "back"
+      ],
+      "suggestedActions": [
+        "retry_if_supported",
+        "back"
+      ],
+      "implementationStatus": "not_implemented_by_this_package",
+      "binding": "map to actual local model and commands",
+      "safeArea": true,
+      "notes": []
+    }
+  ]
+}

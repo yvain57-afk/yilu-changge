@@ -1,0 +1,60 @@
+{
+  "optional": true,
+  "newRuntimeTextureBudgetKiB": 128,
+  "atlas": {
+    "width": 256,
+    "height": 64
+  },
+  "sprites": [
+    {
+      "name": "primary",
+      "rect": [
+        0,
+        0,
+        80,
+        56
+      ],
+      "insets": {
+        "left": 12,
+        "right": 12,
+        "top": 8,
+        "bottom": 8
+      },
+      "transparentCorners": 5
+    },
+    {
+      "name": "ink",
+      "rect": [
+        88,
+        0,
+        80,
+        56
+      ],
+      "insets": {
+        "left": 12,
+        "right": 12,
+        "top": 8,
+        "bottom": 8
+      },
+      "transparentCorners": 5
+    },
+    {
+      "name": "paper",
+      "rect": [
+        176,
+        0,
+        80,
+        56
+      ],
+      "insets": {
+        "left": 12,
+        "right": 12,
+        "top": 8,
+        "bottom": 8
+      },
+      "transparentCorners": 5
+    }
+  ],
+  "text": "separate Label; never baked",
+  "alternative": "Use Cocos Graphics for these 5px chamfers; no new runtime bitmap required."
+}

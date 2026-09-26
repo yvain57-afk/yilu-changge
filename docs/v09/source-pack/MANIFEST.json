@@ -1,0 +1,73 @@
+{
+  "package": "YILU_V09_GLOBAL_OPTIMIZATION_CODEX",
+  "kind": "development_brief_not_implemented_game",
+  "basis": "User v0.8 local snapshot and screenshots",
+  "gameExecutedHere": false,
+  "files": [
+    {
+      "path": "00_START_WITH_CODEX.md",
+      "bytes": 4113,
+      "sha256": "9c102515ae2f85b1a4ec4789b28ef24ef6e8a42391055b98c95b31d59b4157e8"
+    },
+    {
+      "path": "01_GLOBAL_DESIGN.md",
+      "bytes": 13796,
+      "sha256": "8be8b36efe2608aecf48010f82e4e5dd34beb88433abade1fe73a4041c40089d"
+    },
+    {
+      "path": "02_IMPLEMENTATION.md",
+      "bytes": 12179,
+      "sha256": "a8e7c8616ba23866308ac005e7b0b3eab26d67fad4c0e84f6e56f5a8b06e3401"
+    },
+    {
+      "path": "03_ACCEPTANCE.md",
+      "bytes": 7296,
+      "sha256": "77a8ece39c649eec1638c46a7ebee5e78ad9effb5fc75d71e03b70e297e308af"
+    },
+    {
+      "path": "04_EVIDENCE.md",
+      "bytes": 2980,
+      "sha256": "d39e530054d0898b5f7432d530828945cb9806e91eb6959e429fde66553f745e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1002,
+      "sha256": "55636f64d071a9eeb09eec7a644e6418a1062ac6d6bfb5d2befa277d53409d9b"
+    },
+    {
+      "path": "design_tokens.json",
+      "bytes": 3239,
+      "sha256": "018e1f74330b26fedd5a56cfc740a29f29438628e6b210c100f67f4d7d6613b1"
+    },
+    {
+      "path": "references/01-loadout-current.jpg",
+      "bytes": 78657,
+      "sha256": "a8c7782e21b32158939d54f4257430a41d540f3b19e5b176daa0bec9dc481add"
+    },
+    {
+      "path": "references/02-battle-current.jpg",
+      "bytes": 61145,
+      "sha256": "bc29764454b613464b8065b29757eb390e4e4d9134ce7b2ec7f4292ff94d34a4"
+    },
+    {
+      "path": "references/03-contact-current-crop.jpg",
+      "bytes": 48244,
+      "sha256": "144cb3789b3d88fe9058f369f142882ca06221413d3ebbe7ff1dd731319dc2f0"
+    },
+    {
+      "path": "references/04-result-current.jpg",
+      "bytes": 63714,
+      "sha256": "eaa6f395cf44925324996fa7192566d4c278c8624900075da7551754748e4ba3"
+    },
+    {
+      "path": "references/README.md",
+      "bytes": 569,
+      "sha256": "c958a2236cb47c790870bba6dfa5f19aeb402f127c32ad484b296d0eabd8c062"
+    },
+    {
+      "path": "review_states.json",
+      "bytes": 6078,
+      "sha256": "28bc298e3f600f3b3a02edca7881a14662dad746b7854acbcf8ee67582c9e3f8"
+    }
+  ]
+}

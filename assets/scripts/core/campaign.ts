@@ -14,8 +14,8 @@ export class Campaign {
   this.persist();
  }
  private migrate(){transitions.forEach(t=>this.data.completed[t.id]=this.book.data.cleared[t.afterLevelId]);this.data.seen.zhaoyunMeeting=IDS.every(id=>this.book.data.cleared[id]);}
- persist(){try{this.storage.setItem(CAMPAIGN.sidecarSaveKey,JSON.stringify(this.data));}catch{this.notice=CAMPAIGN.errors.save;}}
+ persist():boolean{try{this.storage.setItem(CAMPAIGN.sidecarSaveKey,JSON.stringify(this.data));this.notice='';return true;}catch{this.notice='营地进度未保存，本次数据仍保留，请重试。';return false;}}
  get pending(){return transitions.find(t=>this.book.data.cleared[t.afterLevelId]&&!this.data.completed[t.id])?.id??null;}
- complete(id:TransitionId){const t=transitions.find(t=>t.id===id);if(!t||!this.book.data.cleared[t.afterLevelId])return false;if(!this.data.completed[id]){this.data.completed[id]=true;this.persist();}return true;}
- meet(){if(!this.data.completed.garrison)return false;this.data.seen.zhaoyunMeeting=true;this.persist();return true;}
+ complete(id:TransitionId){const t=transitions.find(t=>t.id===id);if(!t||!this.book.data.cleared[t.afterLevelId])return false;this.data.completed[id]=true;return this.persist();}
+ meet(){if(!this.data.completed.garrison)return false;this.data.seen.zhaoyunMeeting=true;return this.persist();}
 }

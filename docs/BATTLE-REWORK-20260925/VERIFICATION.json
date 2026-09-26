@@ -1,0 +1,123 @@
+{
+  "task": "BATTLE-REWORK-20260925",
+  "runtime": "battle-rework-20260925",
+  "build": {
+    "source": "ae3de89300829e78720717235ba5bb117d2a8ff08c4ca8d62f1089cc737d60eb",
+    "web": "0cbf1c3a4af4ad7d643a2b2dec94b8177c50143a62ad1d79c2256b7637899de9"
+  },
+  "typecheck": "passed",
+  "relatedTests": {
+    "passed": 71,
+    "failed": 0,
+    "log": "related-checks.log"
+  },
+  "assetLoading": "asset-loader-regression.json",
+  "exactStatePairs": {
+    "runKind": "fixture",
+    "fixtureSpec": {
+      "schema": 1,
+      "runKind": "fixture",
+      "method": "Accelerated exact 60Hz replay of existing second-level Journey, legal model move commands held 3 ticks, then paused. Not a natural real-time playthrough.",
+      "level": 1,
+      "loadout": {
+        "weapon": "blade",
+        "companion": "xing_daorong"
+      },
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "holdTicks": 3,
+      "normalTick": 720,
+      "gatesCratesTick": 1320,
+      "contactRule": "first exact simulation tick after elapsed20 with runner.lastContact.tick equal current tick",
+      "policySha256": "39659b1879287cdd96072bb26758a36b3a0a4df85144a91eebc54e7c318e7551"
+    },
+    "pages": [
+      {
+        "state": "normal",
+        "tick": 720,
+        "count": 10,
+        "baselineModelSha256": "651a409b07527b2601560dbdd367ed887bee68683510265b5249593c6e864615",
+        "modelSha256": "651a409b07527b2601560dbdd367ed887bee68683510265b5249593c6e864615",
+        "modelEqual": true
+      },
+      {
+        "state": "gates-crates",
+        "tick": 1320,
+        "count": 14,
+        "baselineModelSha256": "1a6492a679a59b3297fcc6e1439cbe257c7f74114c3eb1ff2b3da794a963c296",
+        "modelSha256": "1a6492a679a59b3297fcc6e1439cbe257c7f74114c3eb1ff2b3da794a963c296",
+        "modelEqual": true
+      },
+      {
+        "state": "contact",
+        "tick": 1731,
+        "count": 13,
+        "baselineModelSha256": "60a7f1dae48fb3b411c823eba1af56b274642984cf195df6735b2c41dbb999cf",
+        "modelSha256": "60a7f1dae48fb3b411c823eba1af56b274642984cf195df6735b2c41dbb999cf",
+        "modelEqual": true
+      }
+    ],
+    "failures": [],
+    "visualStatus": "passed",
+    "passed": true,
+    "errors": [],
+    "visualReview": "All three final after PNGs inspected against frozen UI before and supplied references: far landmarks restored, softer road and independent grass, larger unified troops, dimensional gates/crates; no literal reference replica claimed.",
+    "buildMainSha256": "814485bf2d00392d213be48488ae3475239ddf04527512b3fbde9d5c4fad04e9"
+  },
+  "targeted": {
+    "passed": true,
+    "checks": 22,
+    "failures": [],
+    "report": "targeted-checks.json"
+  },
+  "natural": {
+    "passed": true,
+    "attempts": 1,
+    "report": "natural-flow.json",
+    "endCounts": [
+      38,
+      17,
+      67
+    ],
+    "savedAndRestored": true,
+    "errors": []
+  },
+  "review": {
+    "functional": "passed",
+    "visual": "partial",
+    "physicalDevice": "blocked",
+    "report": "REVIEW_RESULTS.json"
+  },
+  "media": [
+    {
+      "path": "evidence/BATTLE-REWORK-20260925/final-three-levels.webm",
+      "bytes": 57271786,
+      "sha256": "f5ffe52b0d06b4d01b7dd09121f1b8384c80030a0703083ed1321a8d977e4b56"
+    },
+    {
+      "path": "evidence/BATTLE-REWORK-20260925/final-three-levels.mp4",
+      "bytes": 25913062,
+      "sha256": "b796f78b177ec2d297d3d266668db59d2a7c761ff3dcc23c2dfdc2ecda79636b"
+    },
+    {
+      "path": "evidence/BATTLE-REWORK-20260925/battle-showcase.mp4",
+      "bytes": 4733112,
+      "sha256": "bf127cabc7a09cb2df80fd0dc3963698ec92634214c0612aee3e634ffb0a0273"
+    }
+  ],
+  "publication": "local builds only; no upload or release",
+  "mediaReadback": {
+    "passed": true,
+    "report": "DELIVERABLE_READBACK.json",
+    "shortSeconds": 30,
+    "fullSeconds": 164.247333
+  },
+  "packageStagedBoot": {
+    "passed": true,
+    "report": "PACKAGE_VERIFICATION.json",
+    "scriptHarnessFailure": "Initial package check expected nonexistent phase marching; actual phase run confirmed and only test corrected. Failed report retained."
+  },
+  "archiveReadback": "ARCHIVE_VERIFICATION.json is produced after final ZIP creation, delivered alongside full ZIP and inside evidence ZIP"
+}

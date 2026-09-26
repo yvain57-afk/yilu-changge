@@ -1,0 +1,15 @@
+{
+  "scope": "handoff_documents_and_source_extraction_only",
+  "checks": {
+    "json_parse": "passed",
+    "cap_pointer_readback": "passed",
+    "review_cases_all_not_run": "passed",
+    "no_font_files": "passed"
+  },
+  "gameCodeModified": false,
+  "newProductionArtCreated": false,
+  "gameTestsExecuted": false,
+  "physicalDeviceTested": false,
+  "reviewCaseCount": 30,
+  "assetPlanCount": 16
+}

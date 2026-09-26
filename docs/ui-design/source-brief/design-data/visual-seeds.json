@@ -1,0 +1,77 @@
+{
+  "status": "proposed_not_approved",
+  "unit": "logical_design_pixel",
+  "referenceWidth": 390,
+  "direction": "轻量三国军阵",
+  "color": {
+    "ink": "#203640",
+    "navy": "#18303A",
+    "paper": "#F4E7CD",
+    "gold": "#B99A60",
+    "vermilion": "#AD503B",
+    "textOnDark": "#F5ECD9",
+    "textOnPaper": "#253A40",
+    "mutedOnPaper": "#586558"
+  },
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "typeScale": {
+    "body": [
+      14,
+      16
+    ],
+    "caption": [
+      12,
+      13
+    ],
+    "button": [
+      18,
+      20
+    ],
+    "troopNumber": [
+      28,
+      32
+    ]
+  },
+  "layout": {
+    "pagePadding": 16,
+    "platformGap": 8,
+    "minHitTarget": 44,
+    "hudHeightTarget": [
+      72,
+      88
+    ],
+    "primaryButtonHeight": [
+      52,
+      56
+    ]
+  },
+  "constraints": {
+    "finalThemeChosenByDesigner": true,
+    "preserveGameWorldProjection": true,
+    "interactiveHud": [
+      "pause"
+    ],
+    "noNewSkillButtons": true,
+    "bgm": false,
+    "addedRuntimeUiTextureBudgetKiBTarget": 128
+  },
+  "states": [
+    "home-new",
+    "home-resume",
+    "home-pending-transition",
+    "home-completed",
+    "battle-run",
+    "battle-boss",
+    "battle-awaken",
+    "no-companion",
+    "companion-standby",
+    "save-failure"
+  ]
+}

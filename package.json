@@ -1,6 +1,6 @@
 {
   "name": "yilu-changge",
-  "version": "0.5.1-rc1",
+  "version": "0.9.3-battlefix2",
   "private": true,
   "creator": {
     "version": "3.8.8"
@@ -26,7 +26,10 @@
     "test:feel": "node tools/run-local.mjs tsx --test tests/feel.test.ts tests/presentation.test.ts",
     "check:fixture": "node tools/run-local.mjs node tools/browser-v031-fixture.mjs",
     "check:music": "node tools/run-local.mjs node tools/browser-v031-music.mjs",
-    "record:three": "node tools/run-local.mjs node tools/browser-v031-delivery.mjs"
+    "record:three": "node tools/run-local.mjs node tools/browser-v031-delivery.mjs",
+    "check:v09": "npm run typecheck && node tools/run-local.mjs tsx --test tests/runner-v08.test.ts tests/runner-v09.test.ts tests/progression.test.ts tests/ui-v06.test.ts tests/ui-v09.test.ts tests/combat-v05.test.ts",
+    "review:v09": "node tools/browser-v09-matrix.mjs",
+    "record:v09": "node tools/browser-v09-delivery.mjs"
   },
   "devDependencies": {
     "playwright": "^1.55.1",

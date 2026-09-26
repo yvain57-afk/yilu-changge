@@ -1,0 +1,270 @@
+{
+  "task_id": "BATTLE-REWORK-20260925",
+  "kind": "final_browser_review",
+  "baseline_report": "ui-20260925 actual frozen browser build; before/manifest.json",
+  "new_build_id": "battle-rework-20260925 / final roadFine web build",
+  "source_fingerprint": "ae3de89300829e78720717235ba5bb117d2a8ff08c4ca8d62f1089cc737d60eb",
+  "functional_status": "passed",
+  "visual_status": "partial",
+  "physical_device_status": "blocked",
+  "status_enum": [
+    "not_checked",
+    "passed",
+    "partial",
+    "failed",
+    "blocked",
+    "not_applicable"
+  ],
+  "checks": [
+    {
+      "id": "V01",
+      "title": "连续道路材质与路缘",
+      "domain": "visual",
+      "status": "passed",
+      "evidence_type": "fixture_and_natural_video",
+      "evidence_paths": [
+        "comparison/normal-before.png",
+        "comparison/normal-after.png",
+        "natural-keyframes/7.00.png",
+        "natural-keyframes/7.13.png",
+        "final-three-levels.webm"
+      ],
+      "observations": "土路有细纹理、路缘与独立草地；同状态比较确认旧平面路面已替换。最终原速连续流程及抽帧未见明显纹理回跳，远缘 roadFine 已柔化。",
+      "limitations": "实看三态和自然关键帧；不声称原图逐像素还原。"
+    },
+    {
+      "id": "V02",
+      "title": "建筑体积、光照和落地",
+      "domain": "visual",
+      "status": "passed",
+      "evidence_type": "fixture_and_natural_video",
+      "evidence_paths": [
+        "comparison/gates-crates-after.png",
+        "natural-keyframes/71.30.png",
+        "natural-keyframes/156.00.png"
+      ],
+      "observations": "木塔、粮仓、营帐、白石关门及山谷远景有体积和落地阴影，连续推进提供方向线索。",
+      "limitations": "参考图城寨围合密度仍有差距；装饰不新增碰撞。"
+    },
+    {
+      "id": "V03",
+      "title": "横移通路与真实障碍",
+      "domain": "visual_and_model",
+      "status": "passed",
+      "evidence_type": "model_equivalence_and_natural_input",
+      "evidence_paths": [
+        "comparison/model-equivalence.json",
+        "natural-flow.json",
+        "PRESERVED_CONTRACTS.json"
+      ],
+      "observations": "三态完整 barriers 与模型摘要逐项相等；实际触摸横移自然三关通过。第二关账本记录 16 次真实挡弹，下方通路保持开放。",
+      "limitations": "未采用参考中的三条封闭跑道或侧边巨箱。"
+    },
+    {
+      "id": "V04",
+      "title": "参战角色统一",
+      "domain": "visual",
+      "status": "passed",
+      "evidence_type": "fixture_and_natural_frames",
+      "evidence_paths": [
+        "targeted/fieldCompanion-broken.png",
+        "targeted/density-48.png",
+        "03-chain.png",
+        "06-large-enemy.png",
+        "ASSET_WORKLIST.json"
+      ],
+      "observations": "蓝方主将、邢道荣、陈应、赵云、普通兵与红军/杨龄使用本轮统一战斗资产；双武器、同袍、敌将实际运行已见。",
+      "limitations": "素材与三国身份保留；并非直接复制用户参考人物。"
+    },
+    {
+      "id": "V05",
+      "title": "行军/出手/受击/退出动态",
+      "domain": "visual_motion",
+      "status": "passed",
+      "evidence_type": "natural_frame_pairs_and_model_ledger",
+      "evidence_paths": [
+        "natural-keyframes/7.00.png",
+        "natural-keyframes/7.13.png",
+        "natural-keyframes/56.65.png",
+        "natural-keyframes/56.85.png",
+        "natural-keyframes/57.05.png",
+        "natural-flow.json"
+      ],
+      "observations": "主将出手姿态、士兵脚步和增援入场有变化；第二关 11→10 人接触减员具有实际受击点、减员提示与成员退出，原始 ledger 保留被移除成员。",
+      "limitations": "动画是有限关键帧与位移/透明度组合，没有声称每名角色都有独立全帧死亡动画。"
+    },
+    {
+      "id": "V06",
+      "title": "人数与队形对应",
+      "domain": "visual_and_model",
+      "status": "passed",
+      "evidence_type": "density_fixture_and_equivalent_model",
+      "evidence_paths": [
+        "targeted-checks.json",
+        "targeted/density-1.png",
+        "targeted/density-8.png",
+        "targeted/density-24.png",
+        "targeted/density-48.png",
+        "targeted/density-256.png"
+      ],
+      "observations": "1/8/24/48 队形递增，成员与稳定 slot/权重一致；256 人保持 48 个加权可见成员，逻辑权重总和 256，未无限增节点。",
+      "limitations": "48 以上是已有代理表示，不能称画出全部 256 人；密集近战及连续门有局部重叠。"
+    },
+    {
+      "id": "V07",
+      "title": "正负门完整反馈",
+      "domain": "visual_and_model",
+      "status": "passed",
+      "evidence_type": "real_shot_fixture_and_natural",
+      "evidence_paths": [
+        "targeted/gate-negative.png",
+        "targeted/gate-zero.png",
+        "targeted/gate-positive.png",
+        "targeted/gate-cap.png",
+        "targeted-checks.json",
+        "01-gate-converted.png"
+      ],
+      "observations": "真实射击令门 -2→0→+1→+2 封顶；颜色与门脚同步、封顶后额外命中不增值，实际穿越才兑现且只一次。自然三关合计 5 次打正。",
+      "limitations": "定向门数值是测试初值，不是原版公式结论。"
+    },
+    {
+      "id": "V08",
+      "title": "四类箱完整外观与兑现",
+      "domain": "visual_and_model",
+      "status": "passed",
+      "evidence_type": "four_crate_fixture_and_natural",
+      "evidence_paths": [
+        "targeted-checks.json",
+        "TARGETED_REVIEW.md",
+        "targeted/troops-intact.png",
+        "targeted/equipment-hit.png",
+        "targeted/chain-broken.png",
+        "targeted/fieldCompanion-broken.png"
+      ],
+      "observations": "四类箱完整/受击/击破共 12 张图均实看；不同外观、3→2→0 耐久与一次奖励已断言。兵员加人、兵器换装、连续门生成、赵云援手均来自真实事务且不污染永久成长。",
+      "limitations": "四类齐全的覆盖来自隔离 fixture，最终自然路线没有援手箱触发，已分开标注。"
+    },
+    {
+      "id": "V09",
+      "title": "真实出弹/命中/死亡/换装",
+      "domain": "visual_and_model",
+      "status": "passed",
+      "evidence_type": "natural_frames_and_model_equivalence",
+      "evidence_paths": [
+        "comparison/model-equivalence.json",
+        "02-equipment.png",
+        "natural-keyframes/56.85.png",
+        "06-large-enemy.png",
+        "natural-flow.json"
+      ],
+      "observations": "真实队员出弹轨迹、木箱耐久、武器变更、敌群击杀和接触损失均对应模型；自然末关火矢及杨龄战斗持续到 HP0 与终点。",
+      "limitations": "未改射速/血量/射击预算；自然关键帧检查不能替代每一弹逐帧人工审计。"
+    },
+    {
+      "id": "V10",
+      "title": "投影、输入和判定一致",
+      "domain": "model_and_input",
+      "status": "passed",
+      "evidence_type": "model_equivalence_and_touch_checks",
+      "evidence_paths": [
+        "comparison/model-equivalence.json",
+        "targeted-checks.json",
+        "targeted/short375-battle.png",
+        "natural-flow.json"
+      ],
+      "observations": "投影改观后模型位置与障碍保持基线一致；真实触摸左右移动完成三关，375×667 取消触摸后不漂移，暂停冻结、新触摸继续恢复。",
+      "limitations": "仅桌面移动视口，不等同实体手机触控。"
+    },
+    {
+      "id": "V11",
+      "title": "战斗信息与短屏",
+      "domain": "layout_and_input",
+      "status": "partial",
+      "evidence_type": "native_viewport_visual_and_touch",
+      "evidence_paths": [
+        "targeted/short375-battle.png",
+        "targeted-checks.json",
+        "natural-keyframes/57.05.png",
+        "03-chain.png"
+      ],
+      "observations": "390×844 与 375×667 的主 HUD、队伍、近处目标和暂停按钮可读可达，暂停热区至少 48 逻辑像素。",
+      "limitations": "通知横条仍会暂时遮住远端新进入视野的敌人/箱标签；连续 +1 与近战人群较密。保留此视觉差距，未以功能通过替代全部无遮挡验收。"
+    },
+    {
+      "id": "V12",
+      "title": "自然三关及必要定向验证",
+      "domain": "flow",
+      "status": "passed",
+      "evidence_type": "one_final_natural_run_and_targeted",
+      "evidence_paths": [
+        "natural-flow.json",
+        "final-three-levels.webm",
+        "targeted-checks.json",
+        "comparison/model-equivalence.json",
+        "final-three-levels.mp4",
+        "battle-showcase.mp4",
+        "CLIPS.json"
+      ],
+      "observations": "最终冻结构建唯一一次自然三关通过：36.0167秒/38人、58.2167秒/17人、56.0167秒/67人；实际 UI 选装、旗帜过渡、会盟与存档重载均过，errors=[]。另 22 项定向检查通过。",
+      "limitations": "自然输入由真实触摸自动策略驱动，未注入人数/血量/时间；定向证据明确为 fixture，旧 R1 片段不冒充最终自然。"
+    },
+    {
+      "id": "V13",
+      "title": "实际构建预算与性能边界",
+      "domain": "build_and_performance",
+      "status": "passed",
+      "evidence_type": "actual_build_and_desktop_metrics",
+      "evidence_paths": [
+        "BATTLE_ASSET_BUDGET.json",
+        "ASSET_BUDGET-web-mobile.json",
+        "ASSET_BUDGET-wechatgame.json",
+        "targeted-checks.json",
+        "natural-flow.json",
+        "BUILD_ID.json"
+      ],
+      "observations": "最终 Web 18,576,090 字节，微信本地构建 18,472,446 字节。密度短测最大 535 节点/501池、249 draw calls；自然录制 p95 20.4/20.2/27ms，第三关 max38.5ms，实际数据保留。",
+      "limitations": "20MiB 是工程预算非官方平台限制；纹理估算和引擎 GPU 计数不代表手机物理内存。1.8秒密度采样与一次三关不证明长期无泄漏，未进行十局长测。"
+    },
+    {
+      "id": "V14",
+      "title": "真机触控/安全区/声音/后台/持续表现",
+      "domain": "physical_device",
+      "status": "blocked",
+      "evidence_type": "no_physical_device",
+      "evidence_paths": [],
+      "observations": "没有实体手机运行、操作或声音读回证据。",
+      "limitations": "真机触控 blocked；真机安全区 blocked；真机声音 blocked；真机后台恢复 blocked；真机持续表现 blocked。浏览器结果不能替代。"
+    }
+  ],
+  "review_stage": "Final equivalent comparison, 22 targeted checks and one real-time natural three-level run complete. Visual remains partial for far-target notification overlap; no phone acceptance.",
+  "build_main_sha256": "814485bf2d00392d213be48488ae3475239ddf04527512b3fbde9d5c4fad04e9",
+  "reviewed_at": "2026-09-25T14:08:03.011846+00:00",
+  "reference_comparison": {
+    "already_close": [
+      "沙土路面及草地边缘",
+      "蓝军/红军色相区分与斜俯视体积",
+      "木制正负门与可辨四类箱",
+      "远处城门和建筑方向感"
+    ],
+    "remaining_gaps": [
+      "参考图更紧凑的城寨围合感",
+      "密集 +1/敌群接触时局部拥挤",
+      "通知条对远端新目标的短暂遮挡"
+    ],
+    "not_adopted": [
+      "固定 +50/-30 或乘法作为核心",
+      "三条封闭跑道",
+      "两侧巨箱界面",
+      "强制近战 Boss 对决"
+    ]
+  },
+  "web_build_fingerprint": "0cbf1c3a4af4ad7d643a2b2dec94b8177c50143a62ad1d79c2256b7637899de9",
+  "build_manifest": "BUILD_ID.json",
+  "media": {
+    "natural_original": "final-three-levels.webm",
+    "natural_playable": "final-three-levels.mp4",
+    "showcase": "battle-showcase.mp4",
+    "edits": "CLIPS.json",
+    "showcase_scope": "Five 6-second extracts from this same final natural run, in real time with live sound; clearly an edited showcase, not another continuous run."
+  }
+}

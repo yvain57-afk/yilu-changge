@@ -1,0 +1,11 @@
+{
+  "columns": 1,
+  "rows": 1,
+  "height": 320,
+  "tight": true,
+  "rgba": true,
+  "keys": [
+    "wallMiddle"
+  ],
+  "alphaThreshold": 2
+}

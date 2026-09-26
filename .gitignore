@@ -59,3 +59,13 @@ __pycache__/
 # Redundant local archive and raw WeChat identity diagnostics
 /docs/v05/YILU_V05_GPT_FEEDBACK.zip
 /evidence/v031-wechat/console-after-fix.json
+
+# v06 raw captures and temporary preview access stay local.
+/evidence/v06/*.webm
+/evidence/v06/preview-qr.*
+/evidence/v06/preview-result.json
+
+# v08 raw capture and temporary preview access remain local.
+/evidence/v08/*.webm
+/evidence/v08/preview-qr.*
+/evidence/v08/preview-result.json
