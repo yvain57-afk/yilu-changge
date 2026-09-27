@@ -1,5 +1,5 @@
 import {Storage} from '../core/save';
-import {CHAPTERS,PEOPLE,TREASURES,WEAPON_DATA,WeaponId,Slot,TUNING} from './data';
+import {CHAPTERS,PEOPLE,TREASURES,WEAPON_DATA,WeaponId,Slot,TUNING,requiredOfficers} from './data';
 export const FORMAL_KEY='yilu-changge-formal-v2';
 export interface FormalSave {schemaVersion:2;cleared:string[];best:Record<string,number>;claimed:string[];weapons:string[];weaponLevels:Record<string,number>;captures:string[];visits:string[];allies:string[];treasures:string[];companions:string[];support:string|null;slots:Record<Slot,string|null>;xp:number;seen:string[];[key:string]:unknown}
 const fresh=():FormalSave=>({schemaVersion:2,cleared:[],best:{},claimed:[],weapons:['spear'],weaponLevels:{spear:1},captures:[],visits:[],allies:[],treasures:[],companions:[],support:null,slots:{dian:null,qi:null,ma:null},xp:0,seen:[]});
@@ -25,9 +25,10 @@ export class FormalStore {
  equipSupport(id:string){if(this.completed<2||!this.data.visits.includes(id))return false;this.data.support=this.data.support===id?null:id;return this.save();}
  equipTreasure(id:string){const t=TREASURES[id];if(!t||!this.slotOpen(t.slot)||!this.data.treasures.includes(id))return false;this.data.slots[t.slot]=this.data.slots[t.slot]===id?null:id;return this.save();}
  upgrade(id:string){if(!this.data.weapons.includes(id))return false;const n=this.data.weaponLevels[id]||1,cost=TUNING.upgradeCost(n);if(n>=TUNING.weaponMaxLevel||this.data.xp<cost)return false;this.data.xp-=cost;this.data.weaponLevels[id]=n+1;return this.save();}
- settle(run:{id:string;chapter:number;won:boolean;troops:number;treasures:string[]}){
+ settle(run:{id:string;chapter:number;won:boolean;troops:number;treasures:string[];defeatedOfficerIds?:string[];defeatedBossId?:string|null}){
   if(this.blocked||this.data.claimed.includes('run:'+run.id))return false;
   const c=CHAPTERS[run.chapter];if(!c||!this.unlocked(run.chapter)||!Number.isFinite(run.troops)||run.troops<0||(run.won&&run.troops<1))return false;
+  if(run.won&&(run.defeatedBossId!==c.boss||!requiredOfficers(run.chapter).every(id=>run.defeatedOfficerIds?.includes(id))))return false;
   this.data.claimed.push('run:'+run.id);if(!run.won)return this.save();
   const first=!this.data.cleared.includes(c.id);
   this.data.best[c.id]=Math.max(this.data.best[c.id]||0,Math.floor(run.troops));this.data.xp+=first?TUNING.clearXP:TUNING.replayXP;

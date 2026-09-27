@@ -1,0 +1,16 @@
+{
+  "data.ts": {
+    "bytes": 7241,
+    "github_blob_sha": "9104dabdbaafcec9b7a3f68b5e8868e826ed1b57",
+    "computed_blob_sha": "9104dabdbaafcec9b7a3f68b5e8868e826ed1b57",
+    "match": true,
+    "sha256": "992d121855a1f3236f4040d7832e562a5ddab556d99719c86736ad0b31664613"
+  },
+  "store.ts": {
+    "bytes": 5760,
+    "github_blob_sha": "b293703fea3755c6572fe961b60cdf46a14b5334",
+    "computed_blob_sha": "b293703fea3755c6572fe961b60cdf46a14b5334",
+    "match": true,
+    "sha256": "856319f61a7badf4069ba5a8017ad0a55153bbb4147d22b076d10275d2db05e6"
+  }
+}

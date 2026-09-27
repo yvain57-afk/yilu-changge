@@ -2,6 +2,10 @@
 
 > 由 Claude 在用户项目中实际工作后填写。本文件不是系统锁，也不证明 Codex 已经读取。凡写「未验证」的，均无实际证据。
 
+## 0a. PR2 独立审阅修复（2026-09-27）
+
+当前新增工作以 `docs/PR2-FIX-20260927/README.md`、`evidence/PR2-FIX-20260927/BUILD_ID.json` 与最终结果JSON为准。仍在 `codex/formal-cocos-20260927`、PR #2草稿。保留正式十关和Claude视觉基线。F1–F4修复，区域地图、人物详情、四势力布局、三首领差异、27动作与9肖像接入；249项测试通过。素材失败稿和未完成项逐条列在ART_STATUS，不能宣称完整视觉或手机验收通过。下面§0及原Claude交接为历史快照。
+
 ## 0. Codex 本轮当前状态（2026-09-27）
 
 - 当前分支 `codex/formal-cocos-20260927`，原 main/HEAD 7ee7685 与其他工作树未改；本轮 GitHub 审查入口见 `docs/FORMAL-20260927/GITHUB_REVIEW.md`。本段其余状态记录的是正式版本地交付时的快照。

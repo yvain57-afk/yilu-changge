@@ -1,0 +1,16 @@
+import {open,out} from './formal-browser.mjs';
+import {readFileSync,appendFileSync,writeFileSync} from 'node:fs';import assert from 'node:assert/strict';
+const t=await open('pr2-flow-'+Date.now()),events=[];const data=JSON.parse(readFileSync(out+'/model-ten-levels.json')).save;
+const dest=out+'/flow-fixtures.webm';writeFileSync(dest,'');await t.p.exposeBinding('saveChunk',(_,s)=>appendFileSync(dest,Buffer.from(s,'base64')));
+async function record(){await t.p.evaluate(()=>{const r=new MediaRecorder(document.querySelector('canvas').captureStream(30),{mimeType:'video/webm;codecs=vp8',videoBitsPerSecond:2500000});globalThis.__rec=r;globalThis.__chain=Promise.resolve();r.ondataavailable=e=>{if(e.data.size)__chain=__chain.then(async()=>{let s='';const a=new Uint8Array(await e.data.arrayBuffer());for(let i=0;i<a.length;i+=32768)s+=String.fromCharCode(...a.subarray(i,i+32768));await saveChunk(btoa(s));});};r.start(1000);});}
+async function getGame(fn,arg){return t.p.evaluate(async({code,arg})=>{const cc=await System.import('cc');function f(n){for(const c of n.components)if(typeof c.snapshot==='function'&&c.store)return c;for(const x of n.children){const g=f(x);if(g)return g;}}return eval('('+code+')')(f(cc.director.getScene()),arg);},{code:fn.toString(),arg});}
+const mark=async(name)=>{events.push({name,state:await t.snap()});await t.p.screenshot({path:out+'/flow-'+name+'.png'});};
+try{
+ await t.p.evaluate(d=>localStorage.setItem('yilu-changge-formal-v2',JSON.stringify(d)),data);await t.p.reload();await t.p.waitForFunction(()=>globalThis.__YLCG__?.snapshot().screen==='home');await record();
+ await t.tap('chapters');await t.p.waitForTimeout(1500);await mark('map');await t.tap('level3');await t.p.waitForTimeout(1500);await mark('map-rewards');await t.tap('back');await t.tap('collection');await t.p.waitForTimeout(1500);await mark('people');
+ await t.tap('person-hua');await t.p.waitForTimeout(2000);await mark('hua-detail');if((await t.snap()).save.support==='hua')await t.tap('person-equip');await t.tap('person-equip');assert.equal((await t.snap()).save.support,'hua');await mark('support-equipped');await t.tap('back');await t.tap('back');await t.tap('start');await t.tap('depart');
+ await getGame(g=>{const s=g.battle.state;s.course=[];s.speed=0;s.ents=[];s.troops=2;s.slots.qi={id:null};s.support={id:null,cd:0,pending:null,uses:0};s.ents=[{id:999,type:'gate',x:0,d:0,val:-12,passed:false}];});await t.p.waitForTimeout(1700);assert.equal((await t.snap()).battle.phase,'lost');await mark('failure');await t.tap('next');assert.equal((await t.snap()).screen,'battle');await t.p.waitForTimeout(1500);await mark('retry');
+ await getGame(g=>{g.battle.pause(true);g.show('home');});
+ await t.p.evaluate(async()=>{await new Promise(r=>{__rec.onstop=r;__rec.stop();});await __chain;});const save=(await t.snap()).save;await t.p.reload();await t.p.waitForFunction(()=>globalThis.__YLCG__?.snapshot().screen==='home');assert.deepEqual((await t.snap()).save,save);await mark('reload');assert.deepEqual(t.errors,[]);
+ writeFileSync(out+'/flow-fixtures.json',JSON.stringify({passed:true,scope:'Actual Cocos UI. Explicit completed-save fixture and lethal gate fixture; not natural progress. UI taps, save/reload and retry are real.',events,errors:t.errors},null,2));
+}finally{await t.c.close();}

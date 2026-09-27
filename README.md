@@ -1,3 +1,5 @@
+> **当前 PR2 修复审查入口：**[PR2-FIX-20260927](docs/PR2-FIX-20260927/README.md)。战斗规则修复、地图/人物详情、素材逐项状态、实际录像和可玩构建均在此。PR 保持草稿；以下为历史。
+
 > **当前正式十关 GitHub 审查入口：**[FORMAL-20260927/GITHUB_REVIEW.md](docs/FORMAL-20260927/GITHUB_REVIEW.md)。本仓库根目录以下的 FIX2、v0.9 与更早入口均为历史阶段；当前默认游戏入口已接入真实 Cocos 十关。可下载的 Web 构建、自然十关录像、同状态对照、规则和明确未完成项均从审查入口访问。
 
 > 当前 FIX2 入口：[BATTLE-FIX2-20260925](docs/BATTLE-FIX2-20260925/00_START_WITH_CODEX.md)。版本0.9.3-battlefix2，运行 `node tools/launch.mjs`。六组战斗改动、四组实图和原速录像已完成开发端验证；手机与用户审美待核验。以下保留历史记录。

@@ -1,0 +1,7 @@
+after [
+  { kind: 'officer-contact', troops: 30, boss: undefined, entities: 1 },
+  { kind: 'officer-missed', troops: 30, boss: undefined, entities: 1 },
+  { kind: 'healing', troops: 6, boss: undefined, entities: 0 },
+  { kind: 'pierce', troops: 30, boss: 100, entities: 1 },
+  { kind: 'behind-boss', troops: 30, boss: 100, entities: 0 }
+]

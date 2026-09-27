@@ -1,0 +1,907 @@
+{
+  "mode": "after",
+  "scope": "Explicit fixtures in the real Cocos scene; production battle.step, native rendering. Not a natural playthrough.",
+  "rows": [
+    {
+      "kind": "officer-contact",
+      "before": {
+        "chapter": 0,
+        "t": 0,
+        "dist": 0,
+        "phase": "run",
+        "x": 0,
+        "target": 0,
+        "troops": 30,
+        "weapon": "spear",
+        "tier": 1,
+        "arms": "bow",
+        "companions": [],
+        "support": {
+          "id": null,
+          "cd": 0,
+          "pending": null,
+          "uses": 0
+        },
+        "slots": {
+          "dian": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          },
+          "qi": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0,
+            "used": false
+          },
+          "ma": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          }
+        },
+        "boss": null,
+        "entities": [
+          {
+            "id": 9001,
+            "type": "officer",
+            "elite": true,
+            "person": "xu",
+            "x": 0,
+            "d": 0.2,
+            "hp": 18,
+            "max": 18,
+            "walk": 0,
+            "dead": 0,
+            "phase": "approach",
+            "pt": 0,
+            "band": [
+              -0.3,
+              0.3
+            ],
+            "z": 0.2
+          }
+        ],
+        "stats": {
+          "bossStrikes": 0,
+          "dodged": 0,
+          "hitTaken": 0,
+          "volleys": 0,
+          "arrowsHit": 0,
+          "taiping": 0,
+          "supportSaved": 0,
+          "crates": {}
+        },
+        "totals": {
+          "damage": 0,
+          "gate": 0,
+          "troops": 0
+        },
+        "paused": false,
+        "threatBands": [],
+        "runGot": [],
+        "defeatedOfficerIds": [],
+        "defeatedBossId": null,
+        "log": []
+      },
+      "after": {
+        "chapter": 0,
+        "t": 0.016666666666666666,
+        "dist": 0,
+        "phase": "run",
+        "x": 0,
+        "target": 0,
+        "troops": 30,
+        "weapon": "spear",
+        "tier": 1,
+        "arms": "bow",
+        "companions": [],
+        "support": {
+          "id": null,
+          "cd": 0,
+          "pending": null,
+          "uses": 0,
+          "flash": 0
+        },
+        "slots": {
+          "dian": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          },
+          "qi": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0,
+            "used": false
+          },
+          "ma": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          }
+        },
+        "boss": null,
+        "entities": [
+          {
+            "id": 9001,
+            "type": "officer",
+            "elite": true,
+            "person": "xu",
+            "x": 0,
+            "d": 12,
+            "hp": 18,
+            "max": 18,
+            "walk": 0.043333333333333335,
+            "dead": 0,
+            "phase": "idle",
+            "pt": 0.016666666666666666,
+            "band": [
+              -0.3,
+              0.3
+            ],
+            "hitT": 0,
+            "z": 12
+          }
+        ],
+        "stats": {
+          "bossStrikes": 0,
+          "dodged": 0,
+          "hitTaken": 0,
+          "volleys": 0,
+          "arrowsHit": 0,
+          "taiping": 0,
+          "supportSaved": 0,
+          "crates": {}
+        },
+        "totals": {
+          "damage": 0,
+          "gate": 0,
+          "troops": 0
+        },
+        "paused": true,
+        "threatBands": [],
+        "runGot": [],
+        "defeatedOfficerIds": [],
+        "defeatedBossId": null,
+        "log": [
+          {
+            "t": 0.02,
+            "kind": "officer",
+            "msg": "许褚 拦阵"
+          }
+        ]
+      },
+      "ledger": []
+    },
+    {
+      "kind": "officer-missed",
+      "before": {
+        "chapter": 0,
+        "t": 0,
+        "dist": 0,
+        "phase": "run",
+        "x": 0,
+        "target": 0,
+        "troops": 30,
+        "weapon": "spear",
+        "tier": 1,
+        "arms": "bow",
+        "companions": [],
+        "support": {
+          "id": null,
+          "cd": 0,
+          "pending": null,
+          "uses": 0
+        },
+        "slots": {
+          "dian": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          },
+          "qi": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0,
+            "used": false
+          },
+          "ma": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          }
+        },
+        "boss": null,
+        "entities": [
+          {
+            "id": 9001,
+            "type": "officer",
+            "elite": true,
+            "person": "xu",
+            "x": 0,
+            "d": -5,
+            "hp": 18,
+            "max": 18,
+            "walk": 0,
+            "dead": 0,
+            "phase": "approach",
+            "pt": 0,
+            "band": [
+              -0.3,
+              0.3
+            ],
+            "z": -5
+          }
+        ],
+        "stats": {
+          "bossStrikes": 0,
+          "dodged": 0,
+          "hitTaken": 0,
+          "volleys": 0,
+          "arrowsHit": 0,
+          "taiping": 0,
+          "supportSaved": 0,
+          "crates": {}
+        },
+        "totals": {
+          "damage": 0,
+          "gate": 0,
+          "troops": 0
+        },
+        "paused": false,
+        "threatBands": [],
+        "runGot": [],
+        "defeatedOfficerIds": [],
+        "defeatedBossId": null,
+        "log": []
+      },
+      "after": {
+        "chapter": 0,
+        "t": 0.016666666666666666,
+        "dist": 0,
+        "phase": "run",
+        "x": 0,
+        "target": 0,
+        "troops": 30,
+        "weapon": "spear",
+        "tier": 1,
+        "arms": "bow",
+        "companions": [],
+        "support": {
+          "id": null,
+          "cd": 0,
+          "pending": null,
+          "uses": 0,
+          "flash": 0
+        },
+        "slots": {
+          "dian": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          },
+          "qi": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0,
+            "used": false
+          },
+          "ma": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          }
+        },
+        "boss": null,
+        "entities": [
+          {
+            "id": 9001,
+            "type": "officer",
+            "elite": true,
+            "person": "xu",
+            "x": 0,
+            "d": 12,
+            "hp": 18,
+            "max": 18,
+            "walk": 0.043333333333333335,
+            "dead": 0,
+            "phase": "idle",
+            "pt": 0.016666666666666666,
+            "band": [
+              -0.3,
+              0.3
+            ],
+            "hitT": 0,
+            "z": 12
+          }
+        ],
+        "stats": {
+          "bossStrikes": 0,
+          "dodged": 0,
+          "hitTaken": 0,
+          "volleys": 0,
+          "arrowsHit": 0,
+          "taiping": 0,
+          "supportSaved": 0,
+          "crates": {}
+        },
+        "totals": {
+          "damage": 0,
+          "gate": 0,
+          "troops": 0
+        },
+        "paused": true,
+        "threatBands": [],
+        "runGot": [],
+        "defeatedOfficerIds": [],
+        "defeatedBossId": null,
+        "log": [
+          {
+            "t": 0.02,
+            "kind": "officer",
+            "msg": "许褚 拦阵"
+          }
+        ]
+      },
+      "ledger": []
+    },
+    {
+      "kind": "healing",
+      "before": {
+        "chapter": 0,
+        "t": 0,
+        "dist": 0,
+        "phase": "run",
+        "x": 0,
+        "target": 0,
+        "troops": 2,
+        "weapon": "spear",
+        "tier": 1,
+        "arms": "bow",
+        "companions": [],
+        "support": {
+          "id": "hua",
+          "cd": 0,
+          "pending": null,
+          "uses": 0
+        },
+        "slots": {
+          "dian": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          },
+          "qi": {
+            "id": "qixing",
+            "used": true,
+            "st": "worn",
+            "flash": 0,
+            "n": 0
+          },
+          "ma": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          }
+        },
+        "boss": null,
+        "entities": [
+          {
+            "id": 9002,
+            "type": "gate",
+            "x": 0,
+            "d": 0,
+            "val": -12,
+            "passed": false,
+            "z": 0
+          }
+        ],
+        "stats": {
+          "bossStrikes": 0,
+          "dodged": 0,
+          "hitTaken": 0,
+          "volleys": 0,
+          "arrowsHit": 0,
+          "taiping": 0,
+          "supportSaved": 1,
+          "crates": {},
+          "gates": 1
+        },
+        "totals": {
+          "damage": 0,
+          "gate": 0,
+          "troops": 0
+        },
+        "paused": false,
+        "threatBands": [],
+        "runGot": [],
+        "defeatedOfficerIds": [],
+        "defeatedBossId": null,
+        "log": []
+      },
+      "after": {
+        "chapter": 0,
+        "t": 1.0833333333333344,
+        "dist": 0,
+        "phase": "run",
+        "x": 0,
+        "target": 0,
+        "troops": 6,
+        "weapon": "spear",
+        "tier": 1,
+        "arms": "bow",
+        "companions": [],
+        "support": {
+          "id": "hua",
+          "cd": 11.916666666666663,
+          "pending": null,
+          "uses": 1,
+          "flash": 0.8999999999999997
+        },
+        "slots": {
+          "dian": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          },
+          "qi": {
+            "id": "qixing",
+            "used": true,
+            "st": "worn",
+            "flash": 0,
+            "n": 0
+          },
+          "ma": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          }
+        },
+        "boss": null,
+        "entities": [],
+        "stats": {
+          "bossStrikes": 0,
+          "dodged": 0,
+          "hitTaken": 0,
+          "volleys": 0,
+          "arrowsHit": 0,
+          "taiping": 0,
+          "supportSaved": 1,
+          "crates": {},
+          "gates": 1
+        },
+        "totals": {
+          "damage": 0,
+          "gate": 0,
+          "troops": -1
+        },
+        "paused": true,
+        "threatBands": [],
+        "runGot": [],
+        "defeatedOfficerIds": [],
+        "defeatedBossId": null,
+        "log": [
+          {
+            "t": 0.02,
+            "kind": "gate",
+            "msg": "伏兵门 -12"
+          },
+          {
+            "t": 1,
+            "kind": "support",
+            "msg": "华佗 +1"
+          }
+        ]
+      },
+      "ledger": [
+        {
+          "tick": 1,
+          "kind": "troops",
+          "source": "gate",
+          "target": "team",
+          "amount": -2
+        },
+        {
+          "tick": 1,
+          "kind": "revive",
+          "source": "qixing",
+          "target": "team",
+          "amount": 5
+        },
+        {
+          "tick": 60,
+          "kind": "troops",
+          "source": "hua",
+          "target": "team",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "kind": "pierce",
+      "before": {
+        "chapter": 0,
+        "t": 0,
+        "dist": 0,
+        "phase": "boss",
+        "x": 0,
+        "target": 0,
+        "troops": 30,
+        "weapon": "spear",
+        "tier": 1,
+        "arms": "bow",
+        "companions": [],
+        "support": {
+          "id": null,
+          "cd": 0,
+          "pending": null,
+          "uses": 0
+        },
+        "slots": {
+          "dian": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          },
+          "qi": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0,
+            "used": false
+          },
+          "ma": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          }
+        },
+        "boss": {
+          "person": "jiao",
+          "name": "张角",
+          "hp": 100,
+          "max": 100,
+          "trail": 100,
+          "phase": "idle",
+          "pt": 0,
+          "band": [
+            -1,
+            0
+          ],
+          "z": 17,
+          "hit": 0,
+          "flags": 4,
+          "flagFx": [],
+          "cycleN": 0
+        },
+        "entities": [
+          {
+            "id": 9003,
+            "type": "enemy",
+            "x": 0,
+            "d": 16.8,
+            "hp": 20,
+            "walk": 0,
+            "dead": 0,
+            "z": 16.8
+          }
+        ],
+        "stats": {
+          "bossStrikes": 0,
+          "dodged": 0,
+          "hitTaken": 0,
+          "volleys": 0,
+          "arrowsHit": 0,
+          "taiping": 0,
+          "supportSaved": 0,
+          "crates": {}
+        },
+        "totals": {
+          "damage": 0,
+          "gate": 0,
+          "troops": 0
+        },
+        "paused": false,
+        "threatBands": [],
+        "runGot": [],
+        "defeatedOfficerIds": [],
+        "defeatedBossId": null,
+        "log": []
+      },
+      "after": {
+        "chapter": 0,
+        "t": 0.016666666666666666,
+        "dist": 0,
+        "phase": "boss",
+        "x": 0,
+        "target": 0,
+        "troops": 30,
+        "weapon": "spear",
+        "tier": 1,
+        "arms": "bow",
+        "companions": [],
+        "support": {
+          "id": null,
+          "cd": 0,
+          "pending": null,
+          "uses": 0,
+          "flash": 0
+        },
+        "slots": {
+          "dian": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          },
+          "qi": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0,
+            "used": false
+          },
+          "ma": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          }
+        },
+        "boss": {
+          "person": "jiao",
+          "name": "张角",
+          "hp": 100,
+          "max": 100,
+          "trail": 100,
+          "phase": "idle",
+          "pt": 0.016666666666666666,
+          "band": [
+            -1,
+            0
+          ],
+          "z": 17,
+          "hit": 0,
+          "flags": 4,
+          "flagFx": [],
+          "cycleN": 0,
+          "pattern": "双符夹击",
+          "bigHit": 0,
+          "trailWait": -0.016666666666666666
+        },
+        "entities": [
+          {
+            "id": 9003,
+            "type": "enemy",
+            "x": 0,
+            "d": 16.763333333333335,
+            "hp": 10,
+            "walk": 0.043333333333333335,
+            "dead": 0,
+            "slow": 0,
+            "hitT": 0.12,
+            "z": 16.763333333333335
+          }
+        ],
+        "stats": {
+          "bossStrikes": 0,
+          "dodged": 0,
+          "hitTaken": 0,
+          "volleys": 0,
+          "arrowsHit": 0,
+          "taiping": 0,
+          "supportSaved": 0,
+          "crates": {}
+        },
+        "totals": {
+          "damage": 10,
+          "gate": 0,
+          "troops": 0
+        },
+        "paused": true,
+        "threatBands": [],
+        "runGot": [],
+        "defeatedOfficerIds": [],
+        "defeatedBossId": null,
+        "log": []
+      },
+      "ledger": [
+        {
+          "tick": 1,
+          "kind": "damage",
+          "source": "fixture",
+          "target": 9003,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "kind": "behind-boss",
+      "before": {
+        "chapter": 0,
+        "t": 0,
+        "dist": 0,
+        "phase": "boss",
+        "x": 0,
+        "target": 0,
+        "troops": 30,
+        "weapon": "spear",
+        "tier": 1,
+        "arms": "bow",
+        "companions": [],
+        "support": {
+          "id": null,
+          "cd": 0,
+          "pending": null,
+          "uses": 0
+        },
+        "slots": {
+          "dian": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          },
+          "qi": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0,
+            "used": false
+          },
+          "ma": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          }
+        },
+        "boss": {
+          "person": "jiao",
+          "name": "张角",
+          "hp": 100,
+          "max": 100,
+          "trail": 100,
+          "phase": "idle",
+          "pt": 0,
+          "band": [
+            -1,
+            0
+          ],
+          "z": 17,
+          "hit": 0,
+          "flags": 4,
+          "flagFx": [],
+          "cycleN": 0
+        },
+        "entities": [],
+        "stats": {
+          "bossStrikes": 0,
+          "dodged": 0,
+          "hitTaken": 0,
+          "volleys": 0,
+          "arrowsHit": 0,
+          "taiping": 0,
+          "supportSaved": 0,
+          "crates": {}
+        },
+        "totals": {
+          "damage": 0,
+          "gate": 0,
+          "troops": 0
+        },
+        "paused": false,
+        "threatBands": [],
+        "runGot": [],
+        "defeatedOfficerIds": [],
+        "defeatedBossId": null,
+        "log": []
+      },
+      "after": {
+        "chapter": 0,
+        "t": 0.016666666666666666,
+        "dist": 0,
+        "phase": "boss",
+        "x": 0,
+        "target": 0,
+        "troops": 30,
+        "weapon": "spear",
+        "tier": 1,
+        "arms": "bow",
+        "companions": [],
+        "support": {
+          "id": null,
+          "cd": 0,
+          "pending": null,
+          "uses": 0,
+          "flash": 0
+        },
+        "slots": {
+          "dian": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          },
+          "qi": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0,
+            "used": false
+          },
+          "ma": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          }
+        },
+        "boss": {
+          "person": "jiao",
+          "name": "张角",
+          "hp": 100,
+          "max": 100,
+          "trail": 100,
+          "phase": "idle",
+          "pt": 0.016666666666666666,
+          "band": [
+            -1,
+            0
+          ],
+          "z": 17,
+          "hit": 0,
+          "flags": 4,
+          "flagFx": [],
+          "cycleN": 0,
+          "pattern": "双符夹击",
+          "bigHit": 0,
+          "trailWait": -0.016666666666666666
+        },
+        "entities": [],
+        "stats": {
+          "bossStrikes": 0,
+          "dodged": 0,
+          "hitTaken": 0,
+          "volleys": 0,
+          "arrowsHit": 0,
+          "taiping": 0,
+          "supportSaved": 0,
+          "crates": {}
+        },
+        "totals": {
+          "damage": 0,
+          "gate": 0,
+          "troops": 0
+        },
+        "paused": true,
+        "threatBands": [],
+        "runGot": [],
+        "defeatedOfficerIds": [],
+        "defeatedBossId": null,
+        "log": []
+      },
+      "ledger": []
+    }
+  ],
+  "errors": []
+}

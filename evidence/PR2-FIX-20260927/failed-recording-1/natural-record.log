@@ -1,0 +1,999 @@
+{ at: 0, event: 'fresh-home' }
+{
+  at: 0.47,
+  event: 'prepare',
+  chapter: 1,
+  loadout: {
+    schemaVersion: 2,
+    cleared: [],
+    best: {},
+    claimed: [],
+    weapons: [ 'spear' ],
+    weaponLevels: { spear: 1 },
+    captures: [],
+    visits: [],
+    allies: [],
+    treasures: [],
+    companions: [],
+    support: null,
+    slots: { dian: null, qi: null, ma: null },
+    xp: 0,
+    seen: []
+  }
+}
+{ at: 0.59, event: 'battle-start', chapter: 1 }
+progress 1 0 run 30 undefined
+{
+  at: 7.23,
+  event: 'wall',
+  chapter: 1,
+  t: 6.5333333333333155,
+  weapon: 'spear',
+  tier: 1,
+  arms: 'fire'
+}
+{
+  at: 9.97,
+  event: 'tier-up',
+  chapter: 1,
+  t: 9.283333333333374,
+  weapon: 'spear',
+  tier: 2,
+  arms: 'fire'
+}
+progress 1 10 run 47 undefined
+{
+  at: 20.28,
+  event: 'boss-idle',
+  chapter: 1,
+  t: 19.60000000000017,
+  weapon: 'spear',
+  tier: 3,
+  arms: 'repeater'
+}
+progress 1 20 boss 56 66.85
+{
+  at: 21.42,
+  event: 'boss-warn',
+  chapter: 1,
+  t: 20.71666666666677,
+  weapon: 'spear',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 22.8,
+  event: 'boss-strike',
+  chapter: 1,
+  t: 22.116666666666692,
+  weapon: 'spear',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 23.31,
+  event: 'boss-rec',
+  chapter: 1,
+  t: 22.616666666666664,
+  weapon: 'spear',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 27.96,
+  event: 'boss-spent',
+  chapter: 1,
+  t: 27.2666666666664,
+  weapon: 'spear',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 29.36,
+  event: 'boss-yield',
+  chapter: 1,
+  t: 28.66666666666632,
+  weapon: 'spear',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 31,
+  event: 'saved-result',
+  chapter: 1,
+  troops: 56,
+  fps: 33.24265475858471,
+  seconds: 28.66666666666632
+}
+{
+  at: 33.09,
+  event: 'prepare',
+  chapter: 2,
+  loadout: {
+    schemaVersion: 2,
+    cleared: [ 'c01' ],
+    best: { c01: 56 },
+    claimed: [ 'run:mujcip5g-fwoyct0xnpo' ],
+    weapons: [ 'spear' ],
+    weaponLevels: { spear: 1 },
+    captures: [],
+    visits: [],
+    allies: [],
+    treasures: [ 'taiping' ],
+    companions: [],
+    support: null,
+    slots: { dian: 'taiping', qi: null, ma: null },
+    xp: 30,
+    seen: [ 'jiao' ]
+  }
+}
+{ at: 33.2, event: 'battle-start', chapter: 2 }
+progress 2 0 run 30 undefined
+{
+  at: 39.88,
+  event: 'wall',
+  chapter: 2,
+  t: 6.566666666666649,
+  weapon: 'spear',
+  tier: 1,
+  arms: 'fire'
+}
+{
+  at: 42.6,
+  event: 'tier-up',
+  chapter: 2,
+  t: 9.283333333333374,
+  weapon: 'spear',
+  tier: 2,
+  arms: 'fire'
+}
+progress 2 10 run 47 undefined
+progress 2 20 run 66 undefined
+{
+  at: 54.18,
+  event: 'boss-idle',
+  chapter: 2,
+  t: 20.83333333333343,
+  weapon: 'spear',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 55.25,
+  event: 'boss-warn',
+  chapter: 2,
+  t: 21.93333333333337,
+  weapon: 'spear',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 56.48,
+  event: 'boss-strike',
+  chapter: 2,
+  t: 23.166666666666632,
+  weapon: 'spear',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 56.96,
+  event: 'boss-rec',
+  chapter: 2,
+  t: 23.616666666666607,
+  weapon: 'spear',
+  tier: 3,
+  arms: 'repeater'
+}
+progress 2 30 boss 66 22.40000000000004
+{
+  at: 67.11,
+  event: 'boss-spent',
+  chapter: 2,
+  t: 33.76666666666603,
+  weapon: 'spear',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 68.51,
+  event: 'boss-yield',
+  chapter: 2,
+  t: 35.166666666665954,
+  weapon: 'spear',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 70.14,
+  event: 'saved-result',
+  chapter: 2,
+  troops: 66,
+  fps: 33.365030111983934,
+  seconds: 35.166666666665954
+}
+{
+  at: 72.55,
+  event: 'prepare',
+  chapter: 3,
+  loadout: {
+    schemaVersion: 2,
+    cleared: [ 'c01', 'c02' ],
+    best: { c01: 56, c02: 66 },
+    claimed: [ 'run:mujcip5g-fwoyct0xnpo', 'run:mujcjebg-olvc03xbhw9' ],
+    weapons: [ 'spear', 'guding' ],
+    weaponLevels: { spear: 1, guding: 1 },
+    captures: [],
+    visits: [ 'hua', 'sunjian' ],
+    allies: [ 'yuan' ],
+    treasures: [ 'taiping', 'yuxi' ],
+    companions: [],
+    support: 'hua',
+    slots: { dian: 'taiping', qi: 'yuxi', ma: null },
+    xp: 60,
+    seen: [ 'jiao', 'dong', 'hua', 'sunjian', 'yuan' ]
+  }
+}
+{ at: 72.67, event: 'battle-start', chapter: 3 }
+progress 3 0 run 36 undefined
+{
+  at: 75.53,
+  event: 'tier-up',
+  chapter: 3,
+  t: 2.666666666666662,
+  weapon: 'spear',
+  tier: 2,
+  arms: 'bow'
+}
+{
+  at: 79.22,
+  event: 'wall',
+  chapter: 3,
+  t: 6.466666666666649,
+  weapon: 'spear',
+  tier: 2,
+  arms: 'fire'
+}
+{
+  at: 81.56,
+  event: 'weapon-guding',
+  chapter: 3,
+  t: 8.65000000000001,
+  weapon: 'guding',
+  tier: 2,
+  arms: 'fire'
+}
+progress 3 10 run 57 undefined
+progress 3 19 run 76 undefined
+{
+  at: 96.05,
+  event: 'boss-idle',
+  chapter: 3,
+  t: 22.183333333333355,
+  weapon: 'guding',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 97.19,
+  event: 'boss-warn',
+  chapter: 3,
+  t: 23.266666666666627,
+  weapon: 'guding',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 98.42,
+  event: 'boss-strike',
+  chapter: 3,
+  t: 24.41666666666656,
+  weapon: 'guding',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 98.93,
+  event: 'boss-rec',
+  chapter: 3,
+  t: 24.8833333333332,
+  weapon: 'guding',
+  tier: 3,
+  arms: 'repeater'
+}
+progress 3 29 boss 76 51.55000000000022
+{
+  at: 109.56,
+  event: 'boss-spent',
+  chapter: 3,
+  t: 34.76666666666598,
+  weapon: 'guding',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 111.19,
+  event: 'boss-yield',
+  chapter: 3,
+  t: 36.18333333333256,
+  weapon: 'guding',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 112.79,
+  event: 'saved-result',
+  chapter: 3,
+  troops: 76,
+  fps: 33.181803099311686,
+  seconds: 36.18333333333256
+}
+{
+  at: 115.31,
+  event: 'prepare',
+  chapter: 4,
+  loadout: {
+    schemaVersion: 2,
+    cleared: [ 'c01', 'c02', 'c03' ],
+    best: { c01: 56, c02: 66, c03: 76 },
+    claimed: [
+      'run:mujcip5g-fwoyct0xnpo',
+      'run:mujcjebg-olvc03xbhw9',
+      'run:mujck8ro-eyu2nqkcjzr'
+    ],
+    weapons: [ 'spear', 'guding', 'huaji' ],
+    weaponLevels: { spear: 1, guding: 1, huaji: 1 },
+    captures: [ 'lubu' ],
+    visits: [ 'hua', 'sunjian', 'diao' ],
+    allies: [ 'yuan' ],
+    treasures: [ 'taiping', 'yuxi', 'chitu' ],
+    companions: [ 'lubu' ],
+    support: 'hua',
+    slots: { dian: 'taiping', qi: 'yuxi', ma: 'chitu' },
+    xp: 90,
+    seen: [
+      'jiao', 'dong',
+      'hua',  'sunjian',
+      'yuan', 'lubu',
+      'diao'
+    ]
+  }
+}
+{ at: 115.43, event: 'battle-start', chapter: 4 }
+progress 4 0 run 36 undefined
+{
+  at: 117.14,
+  event: 'tier-up',
+  chapter: 4,
+  t: 1.5999999999999992,
+  weapon: 'spear',
+  tier: 2,
+  arms: 'bow'
+}
+{
+  at: 120.58,
+  event: 'wall',
+  chapter: 4,
+  t: 5.016666666666654,
+  weapon: 'spear',
+  tier: 2,
+  arms: 'fire'
+}
+{
+  at: 122.82,
+  event: 'weapon-huaji',
+  chapter: 4,
+  t: 7.24999999999998,
+  weapon: 'huaji',
+  tier: 2,
+  arms: 'fire'
+}
+progress 4 10 run 63 undefined
+{
+  at: 127.39,
+  event: 'officer-xu-approach',
+  chapter: 4,
+  t: 11.850000000000168,
+  hp: 27
+}
+{
+  at: 128.84,
+  event: 'officer-xu-idle',
+  chapter: 4,
+  t: 13.266666666666906,
+  hp: 20.700000000000003
+}
+{
+  at: 129.32,
+  event: 'officer-xu-warn',
+  chapter: 4,
+  t: 13.783333333333598,
+  hp: 15.525000000000004
+}
+{
+  at: 130.26,
+  event: 'officer-xu-strike',
+  chapter: 4,
+  t: 14.733333333333645,
+  hp: 1.575
+}
+progress 4 20 run 67 undefined
+{
+  at: 139.81,
+  event: 'boss-idle',
+  chapter: 4,
+  t: 24.283333333333236,
+  weapon: 'huaji',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 140.9,
+  event: 'boss-warn',
+  chapter: 4,
+  t: 25.34999999999984,
+  weapon: 'huaji',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 142.13,
+  event: 'boss-strike',
+  chapter: 4,
+  t: 26.59999999999977,
+  weapon: 'huaji',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 142.63,
+  event: 'boss-rec',
+  chapter: 4,
+  t: 27.06666666666641,
+  weapon: 'huaji',
+  tier: 3,
+  arms: 'repeater'
+}
+progress 4 30 boss 67 54.150000000000226
+{
+  at: 153.63,
+  event: 'boss-spent',
+  chapter: 4,
+  t: 38.09999999999912,
+  weapon: 'huaji',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 155.16,
+  event: 'boss-yield',
+  chapter: 4,
+  t: 39.51666666666571,
+  weapon: 'huaji',
+  tier: 3,
+  arms: 'repeater'
+}
+progress 4 40 won 67 0
+{
+  at: 156.71,
+  event: 'saved-result',
+  chapter: 4,
+  troops: 67,
+  fps: 48.57984907832093,
+  seconds: 39.51666666666571
+}
+{
+  at: 158.83,
+  event: 'prepare',
+  chapter: 5,
+  loadout: {
+    schemaVersion: 2,
+    cleared: [ 'c01', 'c02', 'c03', 'c04' ],
+    best: { c01: 56, c02: 66, c03: 76, c04: 67 },
+    claimed: [
+      'run:mujcip5g-fwoyct0xnpo',
+      'run:mujcjebg-olvc03xbhw9',
+      'run:mujck8ro-eyu2nqkcjzr',
+      'run:mujcl5rm-8kqhg5u56he'
+    ],
+    weapons: [ 'spear', 'guding', 'huaji', 'shuangji' ],
+    weaponLevels: { spear: 1, guding: 1, huaji: 1, shuangji: 1 },
+    captures: [ 'lubu', 'dian', 'xu' ],
+    visits: [ 'hua', 'sunjian', 'diao', 'xun' ],
+    allies: [ 'yuan' ],
+    treasures: [ 'taiping', 'yuxi', 'chitu' ],
+    companions: [ 'lubu', 'xu' ],
+    support: 'hua',
+    slots: { dian: 'taiping', qi: 'yuxi', ma: 'chitu' },
+    xp: 120,
+    seen: [
+      'jiao', 'dong',
+      'hua',  'sunjian',
+      'yuan', 'lubu',
+      'diao', 'dian',
+      'xu',   'xun'
+    ]
+  }
+}
+{ at: 158.95, event: 'battle-start', chapter: 5 }
+progress 5 0 run 36 undefined
+{
+  at: 160.7,
+  event: 'tier-up',
+  chapter: 5,
+  t: 1.6166666666666658,
+  weapon: 'spear',
+  tier: 2,
+  arms: 'bow'
+}
+{
+  at: 164.13,
+  event: 'wall',
+  chapter: 5,
+  t: 5.016666666666654,
+  weapon: 'spear',
+  tier: 2,
+  arms: 'fire'
+}
+{
+  at: 166.25,
+  event: 'weapon-shuangji',
+  chapter: 5,
+  t: 7.183333333333313,
+  weapon: 'shuangji',
+  tier: 2,
+  arms: 'fire'
+}
+progress 5 10 run 59 undefined
+{
+  at: 170.94,
+  event: 'officer-xiahou-approach',
+  chapter: 5,
+  t: 11.866666666666836,
+  hp: 30
+}
+{
+  at: 172.39,
+  event: 'officer-xiahou-idle',
+  chapter: 5,
+  t: 13.30000000000024,
+  hp: 25.275000000000002
+}
+{
+  at: 172.9,
+  event: 'officer-xiahou-warn',
+  chapter: 5,
+  t: 13.8333333333336,
+  hp: 17.625000000000004
+}
+{
+  at: 173.75,
+  event: 'officer-xiahou-strike',
+  chapter: 5,
+  t: 14.683333333333643,
+  hp: 12.450000000000001
+}
+{
+  at: 174.04,
+  event: 'officer-xiahou-rec',
+  chapter: 5,
+  t: 14.96666666666699,
+  hp: 12.450000000000001
+}
+{
+  at: 174.88,
+  event: 'officer-liao-approach',
+  chapter: 5,
+  t: 15.8333333333337,
+  hp: 28.65
+}
+{
+  at: 176.2,
+  event: 'officer-liao-idle',
+  chapter: 5,
+  t: 17.133333333333642,
+  hp: 21
+}
+{
+  at: 176.82,
+  event: 'officer-liao-warn',
+  chapter: 5,
+  t: 17.750000000000274,
+  hp: 17.85
+}
+progress 5 20 run 57 undefined
+{
+  at: 186.1,
+  event: 'boss-idle',
+  chapter: 5,
+  t: 27.049999999999745,
+  weapon: 'shuangji',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 187.16,
+  event: 'boss-warn',
+  chapter: 5,
+  t: 28.099999999999685,
+  weapon: 'shuangji',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 188.44,
+  event: 'boss-strike',
+  chapter: 5,
+  t: 29.36666666666628,
+  weapon: 'shuangji',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 188.81,
+  event: 'boss-rec',
+  chapter: 5,
+  t: 29.766666666666257,
+  weapon: 'shuangji',
+  tier: 3,
+  arms: 'repeater'
+}
+progress 5 30 boss 67 88.40000000000006
+progress 5 40 boss 67 10.700000000000141
+{
+  at: 201.79,
+  event: 'boss-spent',
+  chapter: 5,
+  t: 42.73333333333219,
+  weapon: 'shuangji',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 203.25,
+  event: 'boss-yield',
+  chapter: 5,
+  t: 44.06666666666545,
+  weapon: 'shuangji',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 204.8,
+  event: 'saved-result',
+  chapter: 5,
+  troops: 67,
+  fps: 53.28028984455117,
+  seconds: 44.06666666666545
+}
+{
+  at: 207,
+  event: 'prepare',
+  chapter: 6,
+  loadout: {
+    schemaVersion: 2,
+    cleared: [ 'c01', 'c02', 'c03', 'c04', 'c05' ],
+    best: { c01: 56, c02: 66, c03: 76, c04: 67, c05: 67 },
+    claimed: [
+      'run:mujcip5g-fwoyct0xnpo',
+      'run:mujcjebg-olvc03xbhw9',
+      'run:mujck8ro-eyu2nqkcjzr',
+      'run:mujcl5rm-8kqhg5u56he',
+      'run:mujcm3ce-pwmwryg3w1c'
+    ],
+    weapons: [ 'spear', 'guding', 'huaji', 'shuangji', 'yitian' ],
+    weaponLevels: { spear: 1, guding: 1, huaji: 1, shuangji: 1, yitian: 1 },
+    captures: [ 'lubu', 'dian', 'xu', 'liao', 'xiahou' ],
+    visits: [ 'hua', 'sunjian', 'diao', 'xun', 'guo' ],
+    allies: [ 'yuan', 'cao' ],
+    treasures: [ 'taiping', 'yuxi', 'chitu', 'mengde' ],
+    companions: [ 'xu', 'xiahou' ],
+    support: 'hua',
+    slots: { dian: 'taiping', qi: 'yuxi', ma: 'chitu' },
+    xp: 150,
+    seen: [
+      'jiao', 'dong',
+      'hua',  'sunjian',
+      'yuan', 'lubu',
+      'diao', 'dian',
+      'xu',   'xun',
+      'cao',  'xiahou',
+      'liao', 'guo'
+    ]
+  }
+}
+{ at: 207.11, event: 'battle-start', chapter: 6 }
+progress 6 0 run 36 undefined
+{
+  at: 209.31,
+  event: 'tier-up',
+  chapter: 6,
+  t: 2.083333333333331,
+  weapon: 'spear',
+  tier: 2,
+  arms: 'bow'
+}
+{
+  at: 211.65,
+  event: 'wall',
+  chapter: 6,
+  t: 4.433333333333323,
+  weapon: 'spear',
+  tier: 2,
+  arms: 'bow'
+}
+{
+  at: 213.85,
+  event: 'weapon-yitian',
+  chapter: 6,
+  t: 6.633333333333315,
+  weapon: 'yitian',
+  tier: 2,
+  arms: 'fire'
+}
+progress 6 10 run 49 undefined
+{
+  at: 220.61,
+  event: 'officer-lumeng-approach',
+  chapter: 6,
+  t: 13.383333333333578,
+  hp: 25.9125
+}
+{
+  at: 222.08,
+  event: 'officer-lumeng-idle',
+  chapter: 6,
+  t: 14.83333333333365,
+  hp: 25.012500000000003
+}
+{
+  at: 222.59,
+  event: 'officer-lumeng-warn',
+  chapter: 6,
+  t: 15.36666666666701,
+  hp: 25.012500000000003
+}
+{
+  at: 223.5,
+  event: 'officer-lumeng-strike',
+  chapter: 6,
+  t: 16.266666666667025,
+  hp: 8.812499999999986
+}
+{
+  at: 223.79,
+  event: 'officer-lumeng-rec',
+  chapter: 6,
+  t: 16.566666666667007,
+  hp: 8.812499999999986
+}
+progress 6 20 run 77 undefined
+{
+  at: 233.77,
+  event: 'boss-idle',
+  chapter: 6,
+  t: 26.499999999999776,
+  weapon: 'yitian',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 234.73,
+  event: 'boss-warn',
+  chapter: 6,
+  t: 27.49999999999972,
+  weapon: 'yitian',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 235.98,
+  event: 'boss-strike',
+  chapter: 6,
+  t: 28.74999999999965,
+  weapon: 'yitian',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 236.47,
+  event: 'boss-rec',
+  chapter: 6,
+  t: 29.24999999999962,
+  weapon: 'yitian',
+  tier: 3,
+  arms: 'repeater'
+}
+progress 6 30 boss 77 86.5000000000001
+{
+  at: 245.81,
+  event: 'boss-spent',
+  chapter: 6,
+  t: 38.583333333332426,
+  weapon: 'yitian',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 247.31,
+  event: 'boss-yield',
+  chapter: 6,
+  t: 39.99999999999901,
+  weapon: 'yitian',
+  tier: 3,
+  arms: 'repeater'
+}
+progress 6 40 won 77 0
+{
+  at: 248.86,
+  event: 'saved-result',
+  chapter: 6,
+  troops: 77,
+  fps: 53.199035324271975,
+  seconds: 39.99999999999901
+}
+{
+  at: 251.31,
+  event: 'prepare',
+  chapter: 7,
+  loadout: {
+    schemaVersion: 2,
+    cleared: [ 'c01', 'c02', 'c03', 'c04', 'c05', 'c06' ],
+    best: { c01: 56, c02: 66, c03: 76, c04: 67, c05: 67, c06: 77 },
+    claimed: [
+      'run:mujcip5g-fwoyct0xnpo',
+      'run:mujcjebg-olvc03xbhw9',
+      'run:mujck8ro-eyu2nqkcjzr',
+      'run:mujcl5rm-8kqhg5u56he',
+      'run:mujcm3ce-pwmwryg3w1c',
+      'run:mujcn4i9-arw0ofikgxw'
+    ],
+    weapons: [ 'spear', 'guding', 'huaji', 'shuangji', 'yitian', 'shemao' ],
+    weaponLevels: {
+      spear: 1,
+      guding: 1,
+      huaji: 1,
+      shuangji: 1,
+      yitian: 1,
+      shemao: 1
+    },
+    captures: [ 'lubu', 'dian', 'xu', 'liao', 'xiahou', 'lumeng' ],
+    visits: [ 'hua', 'sunjian', 'diao', 'xun', 'guo' ],
+    allies: [ 'yuan', 'cao', 'sunce' ],
+    treasures: [ 'taiping', 'yuxi', 'chitu', 'mengde' ],
+    companions: [ 'lubu', 'lumeng' ],
+    support: 'hua',
+    slots: { dian: 'taiping', qi: 'yuxi', ma: 'chitu' },
+    xp: 180,
+    seen: [
+      'jiao',    'dong', 'hua',
+      'sunjian', 'yuan', 'lubu',
+      'diao',    'dian', 'xu',
+      'xun',     'cao',  'xiahou',
+      'liao',    'guo',  'sunce',
+      'lumeng'
+    ]
+  }
+}
+{ at: 251.43, event: 'battle-start', chapter: 7 }
+progress 7 0 run 36 undefined
+{
+  at: 253.27,
+  event: 'tier-up',
+  chapter: 7,
+  t: 1.6999999999999988,
+  weapon: 'spear',
+  tier: 2,
+  arms: 'bow'
+}
+{
+  at: 256.04,
+  event: 'wall',
+  chapter: 7,
+  t: 4.4499999999999895,
+  weapon: 'spear',
+  tier: 2,
+  arms: 'fire'
+}
+{
+  at: 258.18,
+  event: 'weapon-shemao',
+  chapter: 7,
+  t: 6.633333333333315,
+  weapon: 'shemao',
+  tier: 2,
+  arms: 'fire'
+}
+progress 7 10 run 61 undefined
+{
+  at: 265.02,
+  event: 'officer-luxun-approach',
+  chapter: 7,
+  t: 13.466666666666915,
+  hp: 33.525
+}
+{
+  at: 266.34,
+  event: 'officer-luxun-idle',
+  chapter: 7,
+  t: 14.783333333333648,
+  hp: 30.375
+}
+{
+  at: 266.93,
+  event: 'officer-luxun-warn',
+  chapter: 7,
+  t: 15.400000000000345,
+  hp: 30.375
+}
+{
+  at: 267.81,
+  event: 'officer-luxun-strike',
+  chapter: 7,
+  t: 16.28333333333369,
+  hp: 19.57499999999999
+}
+{
+  at: 268.09,
+  event: 'officer-luxun-rec',
+  chapter: 7,
+  t: 16.533333333333676,
+  hp: 19.57499999999999
+}
+progress 7 20 run 110 undefined
+{
+  at: 278.79,
+  event: 'boss-idle',
+  chapter: 7,
+  t: 27.249999999999734,
+  weapon: 'shemao',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 279.89,
+  event: 'boss-warn',
+  chapter: 7,
+  t: 28.31666666666634,
+  weapon: 'shemao',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 281.57,
+  event: 'boss-strike',
+  chapter: 7,
+  t: 29.98333333333291,
+  weapon: 'shemao',
+  tier: 3,
+  arms: 'repeater'
+}
+progress 7 30 boss 110 100.0500000000002
+{
+  at: 281.94,
+  event: 'boss-rec',
+  chapter: 7,
+  t: 30.399999999999554,
+  weapon: 'shemao',
+  tier: 3,
+  arms: 'repeater'
+}
+{
+  at: 291.26,
+  event: 'boss-spent',
+  chapter: 7,
+  t: 39.683333333332364,
+  weapon: 'shemao',
+  tier: 3,
+  arms: 'repeater'
+}
+progress 7 40 boss 110 0
+AssertionError [ERR_ASSERTION]: chapter timeout
+    at file:///Users/yvainair/Code/%E6%B8%B8%E6%88%8F-%E5%B7%A6%E5%8F%B3%E6%BB%91%E5%8F%A4%E4%BB%A3%E5%8F%B2/tools/formal-ten-record.mjs:22:43 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}

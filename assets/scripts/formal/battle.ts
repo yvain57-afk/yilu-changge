@@ -2,7 +2,7 @@
 /** Port of approved preview state and projection to the real Cocos scene.
  * Native renderer is injected; no DOM, Canvas, demo lineup, autopilot or debug progression.
  * Source provenance: docs/BATTLE-PREVIEW-20260926/preview.js. */
-import {WEAPON_DATA,PEOPLE,TREASURES,CHAPTERS,TUNING,routeFor} from './data';
+import {WEAPON_DATA,PEOPLE,TREASURES,CHAPTERS,TUNING,routeFor,requiredOfficers,BOSS_PATTERNS} from './data';
 import {MANIFEST} from './manifest';
 export function createBattle(options){
 const M=MANIFEST;const IMG=Object.fromEntries(Object.keys(M.sheets).map(k=>[k,k]));function tinted(k,color){return {sheet:M.frames[k].s,frame:k,tint:color};}let ctx=options.renderer;let activeSource='hero';const ledger=[];const totals={damage:0,gate:0,troops:0};
@@ -135,7 +135,7 @@ function newWorld(state) {
     companions: L0.companions.map((id, i) => ({id, dx: i ? -.30 : .30, t: i ? .9 : .3, pose: 0, fired: true})),
     support: {id: L0.support, cd: 0, pending: null, uses: 0},
     slots: {dian: {id: L0.treasures.dian, st: L0.treasures.dian?'worn':'empty', n: 0, flash: 0}, qi: {id: L0.treasures.qi, st: L0.treasures.qi?'worn':'empty', n: 0, flash: 0, used: false}, ma: {id: L0.treasures.ma, st: L0.treasures.ma ? 'worn' : 'empty', n: 0, flash: 0}},
-    runGot: [], storage: [],
+    runGot: [], storage: [], defeatedOfficerIds: [], defeatedBossId: null,
     arms: 'bow', volleyT: 1.0, volleyPose: 0, burstLeft: 0, burstT: 0,
     resUsed: {}, resFlash: 0, chipFlash: 0, pipFlash: -1, pipT: 0, show: 0, seal: null,
     stats: {bossStrikes: 0, dodged: 0, hitTaken: 0, volleys: 0, arrowsHit: 0, taiping: 0, supportSaved: 0, crates: {}},
@@ -168,7 +168,7 @@ function spawnCourse(){while(S.ci<S.course.length&&S.course[S.ci].d<=S.dist+SPAW
 let EID = 1;
 function spawn(e, d) {
   if(e.type==='cameo'){S.ents.push({id:EID++,type:'cameo',person:e.person,x:e.x,d});}
-  else if(e.type==='officer'){S.ents.push({id:EID++,type:'enemy',elite:true,person:e.person,x:e.x,d,hp:12+options.chapter*2,walk:0,dead:0});}
+  else if(e.type==='officer'){const hp=18+options.chapter*3;S.ents.push({id:EID++,type:'officer',person:e.person,x:e.x,d,hp,max:hp,walk:0,dead:0,phase:'approach',pt:0,band:[-.3,.3]});}
   else if (e.type === 'squad') {
     for (let i = 0; i < e.n; i++) S.ents.push({id: EID++, type: 'enemy', x: e.x + (i % 3 - 1) * .2 + (rnd() - .5) * .06, d: d + Math.floor(i / 3) * 1.1, hp: 1, walk: rnd(), dead: 0});
   } else if (e.type === 'crate') {
@@ -210,8 +210,11 @@ function step(dt) {
   }
   S.heroX = Math.max(-.82, Math.min(.82, S.heroX));
   S.bumped = Math.max(0, S.bumped - dt);
+  const encounter=S.ents.find(e=>e.type==='officer'&&!e.dead&&e.d-S.dist<=12);
+  if(encounter&&!S.encounterStop){S.resumeSpeed=S.speed;S.encounterStop=true;}
+  if(S.encounterStop){S.speed=0;if(!encounter){S.speed=S.resumeSpeed;S.encounterStop=false;}}
   S.dist += S.speed * dt;
-  if(S.state!=='general'){S.progress=Math.min(1,S.dist/S.courseLen);if(S.dist>=S.courseLen+5)setupGeneral();}
+  if(S.state!=='general'){S.progress=Math.min(1,S.dist/S.courseLen);if(S.dist>=S.courseLen+5&&requiredOfficers(options.chapter).every(id=>S.defeatedOfficerIds.includes(id)))setupGeneral();}
   spawnCourse();
   scenery(dt);
   if (!S.ended) { activeSource="hero";heroAttack(dt); activeSource="companion";if(companionsOn)companionsAttack(dt);activeSource="troop";troopVolley(dt); }
@@ -237,7 +240,7 @@ function step(dt) {
 }
 
 // ───────────────────────── 场景（路边） ─────────────────────────
-const SCEN = ['tower', 'tent', 'rocks', 'granary', 'tent', 'rocks'];
+const SCEN=({'群雄':['tower','tent','rocks','granary','tent','rocks'],'魏':['tower','granary','tent','tower'],'吴':['granary','tent','granary','palisade'],'蜀':['rocks','rocks','tower','rocks']}[CHAPTERS[options.chapter].faction]);
 function scenery() {
   S.scenNext = S.scenNext || 0;
   const ahead = S.dist + SPAWN_Z() + 10;
@@ -294,17 +297,18 @@ function heroAttack(dt) {
   if (S.atkT >= W.cycle) { S.atkT -= W.cycle; S.atkN++; }
 }
 // 随军：每 1.5 秒一次，蓄 .15 → 出手（此刻发出攻击）→ 收 .2
-const COMP = {zhao: {k: 'f2_spearWave', speed: 50, range: 30, hw: .09, dmg: 2, h: .26}, zhang: {k: 'f2_spearWave', speed: 60, range: 34, hw: .10, dmg: 2, h: .28, snake: 1}};
+const COMP = {lubu:{k:'g_wave_huaji',speed:48,range:36,hw:.2,dmg:3,h:.4,pierce:2},dian:{k:'g_wave_huaji',speed:40,range:28,hw:.19,dmg:2,h:.34,pierce:2},zhao: {k: 'f2_spearWave', speed: 50, range: 30, hw: .09, dmg: 2, h: .26}, zhang: {k: 'f2_spearWave', speed: 60, range: 34, hw: .10, dmg: 2, h: .28, snake: 1}};
 function companionsAttack(dt) {
   for (const c of S.companions) {
     c.t += dt;
     if (c.t > 1.5) { c.t = 0; c.pose = .35; c.fired = false; }
     c.pose = Math.max(0, c.pose - dt);
     if (!c.fired && c.pose <= .20) {
-      c.fired = true;
+      c.fired = true;activeSource='companion:'+c.id;
       const P = COMP[c.id]||{k:"f2_spearWave",speed:50,range:30,hw:.1,dmg:2,h:.28}, x = S.heroX + c.dx;
       const res = resonance(S.weapon); const boosted = res.state === 'on' && res.who === c.id;
       // 本主共鸣：本局首次出手放一次专属大招（宽蛇行），之后出手伤害 ×1.5
+      if(['lubu','dian'].includes(c.id)){const special=boosted&&!S.resUsed[c.id];if(special){S.resUsed[c.id]=true;S.resFlash=1.2;logEv('resonance',PEOPLE[c.id]+' 共鸣技');}const mult=boosted?1.5:1;for(const side of [-1,1])wave({k:P.k,x:x+side*.12,z:.3,speed:P.speed,range:P.range,hw:special?.30:P.hw,pierce:special?4:P.pierce,dmg:P.dmg*mult,h:P.h,wide:c.id==='lubu'?1.5:1.1,color:c.id==='lubu'?'#F2A57A':'#D9B997'});continue;}
       if (boosted && !S.resUsed[c.id]) {
         S.resUsed[c.id] = true; S.resFlash = 1.2;
         wave({k: 'f2_bladeWave', x, z: .3, speed: 40, range: 30, hw: .5, pierce: 99, dmg: 6, h: .5, wide: 2.2, color: '#F0D38A', grow: .3});
@@ -324,7 +328,7 @@ function troopVolley(dt) {
     if (S.burstT <= 0) {
       S.burstLeft--; S.burstT = .12;
       const n = Math.min(8, Math.max(2, Math.ceil(S.troops / 5)));
-      const tg = S.ents.filter(e => ((e.type === 'enemy' && !e.dead) || (e.type === 'crate' && !e.open)) && e.d - S.dist > 9 && e.d - S.dist < 30).sort((a, b) => a.d - b.d);
+      const tg = S.ents.filter(e => (((e.type === 'enemy'||e.type==='officer') && !e.dead) || (e.type === 'crate' && !e.open)) && e.d - S.dist > 9 && e.d - S.dist < 30).sort((a, b) => a.d - b.d);
       const bossT = S.boss && S.boss.phase !== 'spent' && S.boss.phase !== 'yield' ? {x: 0, z: S.boss.z} : null;
       for (let i = 0; i < n; i++) {
         const e = tg[i % Math.max(1, tg.length)];
@@ -345,7 +349,7 @@ function updateArrows(dt) {
     a.x = a.sx + (a.tx - a.sx) * k; a.z = a.sz + (a.tz - a.sz) * k; a.hgt = Math.sin(k * Math.PI) * (.6 + (a.tz - a.sz) * .02);
     if (k >= 1 && !a.done) {
       a.done = true;
-      const hitList = S.ents.filter(e => ((e.type === 'enemy' && !e.dead) || (e.type === 'crate' && !e.open)) && Math.abs(e.d - S.dist - a.z) < .9 && Math.abs(e.x - a.x) < .12 + a.splash);
+      const hitList = S.ents.filter(e => (((e.type === 'enemy'||e.type==='officer') && !e.dead) || (e.type === 'crate' && !e.open)) && Math.abs(e.d - S.dist - a.z) < .9 && Math.abs(e.x - a.x) < .12 + a.splash);
       for (const e of hitList) { hitEnt(e, a.dmg, null); S.stats.arrowsHit++; }
       if (a.target === 'boss' && S.boss && !['spent', 'yield'].includes(S.boss.phase)) bossDamage(a.dmg * .5, a.x);
       if (a.arms !== 'bow') fx('burst', a.x, a.z, .2 + a.splash, .3);
@@ -357,25 +361,26 @@ function wave(o) {if(activeSource==='hero'){o.k='g_wave_'+WEAPONS[S.weapon].fami
 function fx(k, x, z, h, life, extra = {}) { S.fx.push({k, x, z, h, life, t: 0, ...extra}); }
 function updateWaves(dt) {
   for (const w of S.waves) {
-    w.prevZ = w.z; w.z += w.speed * dt; w.t += dt;
-    if (w.snake) w.x = w.x0 + w.snake * SNAKE.amp * Math.sin((w.z - w.z0) * SNAKE.k);
-    if (w.boss) continue;
-    const targets=S.ents.filter(e=>(e.type==='enemy'&&!e.dead)||(e.type==='crate'&&!e.open)||(e.type==='gate'&&!e.passed&&e.d-S.dist>0&&e.d-S.dist<=TUNING.gateHitWindow)).sort((a,b)=>a.d-b.d);
-    for (const e of targets) {
-      if (w.hits.has(e.id)) continue;
-      const ez = e.d - S.dist;
-      const ehw = e.type === 'crate' ? .2 : .1;
-      if (ez >= w.prevZ - .5 && ez <= w.z + .3 && Math.abs(e.x - w.x) < w.hw + ehw) {
-        w.hits.add(e.id);if(e.type==="gate")gateHit(e,w.source);else hitEnt(e,w.dmg,w);
-        if (w.hits.size >= w.pierce) { w.spent = true; break; }
-      }
-    }
-    if (S.boss && !['spent', 'yield'].includes(S.boss.phase) && !w.hits.has('boss') && w.z >= S.boss.z - .5 && Math.abs(w.x) < w.hw + .35) {
-      w.hits.add('boss'); bossDamage(w.dmg, w.x);
-      if (w.pierce < 99) w.spent = true;
+    if(w.spent)continue;
+    w.prevZ=w.z;const prevX=w.x;w.z+=w.speed*dt;w.t+=dt;
+    if(w.snake)w.x=w.x0+w.snake*SNAKE.amp*Math.sin((w.z-w.z0)*SNAKE.k);
+    if(w.boss)continue;
+    // One swept segment and one shared hit budget, including the general.
+    const end=Math.min(w.z,w.z0+w.range),dz=end-w.prevZ;if(dz<0)continue;
+    const targets=S.ents.filter(e=>((e.type==='enemy'||e.type==='officer')&&!e.dead)||(e.type==='crate'&&!e.open)||(e.type==='gate'&&!e.passed&&e.d-S.dist>0&&e.d-S.dist<=TUNING.gateHitWindow)).map(e=>({id:e.id,e,z:e.d-S.dist,x:e.x,half:e.type==='crate'?.2:.1}));
+    if(S.boss&&!['spent','yield'].includes(S.boss.phase))targets.push({id:'boss',z:S.boss.z,x:0,half:.35});
+    const hits=targets.filter(q=>!w.hits.has(q.id)).map(q=>{
+      const entry=q.z-.3,exit=q.z+.3,t=Math.max(0,(entry-w.prevZ)/(dz||1));
+      const x=prevX+(w.x-prevX)*t;
+      return {...q,t,xAt:x,valid:exit>=w.prevZ&&entry<=end&&Math.abs(q.x-x)<w.hw+q.half};
+    }).filter(q=>q.valid).sort((a,b)=>a.t-b.t||String(a.id).localeCompare(String(b.id)));
+    for(const q of hits){
+      if(w.spent||w.hits.size>=w.pierce)break;
+      w.hits.add(q.id);if(q.id==='boss')bossDamage(w.dmg,q.xAt);else if(q.e.type==='gate')gateHit(q.e,w.source);else hitEnt(q.e,w.dmg,w);
+      if(w.hits.size>=w.pierce)w.spent=true;
     }
   }
-  S.waves = S.waves.filter(w => !w.spent && (w.boss || w.z - w.z0 < w.range));
+  S.waves=S.waves.filter(w=>!w.spent&&(w.boss||w.z-w.z0<w.range));
 }
 function bossDamage(dmg, x) {
   const b = S.boss; const mul = b.phase === 'rec' ? 2 : 1;
@@ -389,11 +394,11 @@ function bossDamage(dmg, x) {
 }
 // 开箱：状态在开箱这一刻改变，表现（飞入、闪光、亮兵、提示）随后播放
 function hitEnt(e, dmg, w) {
-  const actual=Math.min(Math.max(0,e.hp),dmg);e.hp-=actual;e.hitT=.12;record("damage",w?.source||"troop",e.id,actual);
+  const actual=Math.min(Math.max(0,e.hp),dmg*(e.type==='officer'?(e.phase==='rec'?1:.45):1));e.hp-=actual;e.hitT=.12;record("damage",w?.source||"troop",e.id,actual);
   if(e.type==='enemy'&&e.hp>0&&w?.control){e.slow=.65;e.d+=1;record('control','zhenjun',e.id,.65);}
   const z = e.d - S.dist;
   fx('f2_hitFlash', e.x, z, e.type === 'crate' ? .3 : .22, .16);
-  if (e.type === 'enemy' && e.hp <= 0 && !e.dead) { e.dead = .01; e.fallDir = e.x < S.heroX ? -1 : 1; }
+  if ((e.type === 'enemy'||e.type==='officer') && e.hp <= 0 && !e.dead) { e.dead = .01; e.fallDir = e.x < S.heroX ? -1 : 1;if(e.type==='officer'){S.defeatedOfficerIds.push(e.person);e.phase='defeated';record('officer-defeated',w?.source||'troop',e.person,1);logEv('officer',PEOPLE[e.person]+' 交锋败北');toast(PEOPLE[e.person]+' · 交锋败北，胜后归队','gold');} }
   if (e.type === 'crate' && e.hp <= 0 && !e.open) { e.open = .01; openCrate(e); }
 }
 function openCrate(e) {
@@ -441,14 +446,19 @@ function gainWeapon(k, x, z) {
 function footXs(){const n=Math.min(12,Math.round(S.troops/3)),xs=[S.heroX,...S.companions.map(c=>S.heroX+c.dx)];for(let i=0;i<n;i++)xs.push(S.heroX+((i%4)-1.5)*.17+(Math.floor(i/4)%2)*.08);return xs.map(x=>wallSafeX(x));}
 function wallSafeX(x){const wall=S.ents.find(e=>e.type==='wall'&&e.d-S.dist<.4&&e.d+e.len-S.dist>-.4);return Math.max(-.95,Math.min(.95,wall?(wall.side>0?Math.min(x,-.10):Math.max(x,.10)):x));}
 function addTroops(n, src) {
-  const before=S.troops;S.troops=Math.max(0,Math.min(999999,S.troops+n));record("troops",src||"event","team",S.troops-before);if(S.troops===0&&S.slots.qi.id==="qixing"&&!S.slots.qi.used){S.troops=5;S.slots.qi.used=true;record("revive","qixing","team",5);toast("七星灯 · 留住 5 人","gold");}
-  const last = S.deltas[S.deltas.length - 1];
-  if (last && last.t < .3 && Math.sign(last.v) === Math.sign(n) && !src) { last.v += n; last.t = 0; } else S.deltas.push({v: n, t: 0, src});
-  // 华佗（支援位）：减员事件触发，冷却中不触发
-  if (n < 0 && S.support.id === 'hua' && S.support.cd <= 0 && !S.support.pending) S.support.pending = {loss: -n, t: SUPPORT.delay};
-  else if (n < 0 && S.support.pending) S.support.pending.loss += -n;
+  const before=S.troops;S.troops=Math.max(0,Math.min(999999,S.troops+n));
+  const actual=S.troops-before,loss=Math.max(0,-actual);record('troops',src||'event','team',actual);
+  const last=S.deltas[S.deltas.length-1];
+  if(actual){if(last&&last.t<.3&&Math.sign(last.v)===Math.sign(actual)&&!src){last.v+=actual;last.t=0;}else S.deltas.push({v:actual,t:0,src});}
+  if(S.troops===0&&S.slots.qi.id==='qixing'&&!S.slots.qi.used){S.troops=5;S.slots.qi.used=true;record('revive','qixing','team',5);S.deltas.push({v:5,t:0,src:'qixing'});toast('七星灯 · 留住 5 人','gold');}
+  if(loss>0&&S.support.id==='hua'&&S.support.cd<=0&&S.troops>0){
+    if(!S.support.pending)S.support.pending={loss,t:SUPPORT.delay};else S.support.pending.loss+=loss;
+  }
+  if(S.troops<=0)S.support.pending=null;
+  return actual;
 }
 function supportStep(dt) {
+  if(S.ended||S.troops<=0){S.support.pending=null;return;}
   const sp = S.support; sp.cd = Math.max(0, sp.cd - dt);
   if (sp.pending) {
     sp.pending.t -= dt;
@@ -467,6 +477,7 @@ function updateEnts(dt) {
   for (const e of S.ents) {
     const z = e.d - S.dist;
     if(e.type==='cameo'&&!e.announced&&z<28){e.announced=true;const name=PEOPLE[e.person]||({xing:'邢道荣',chen:'陈应',yang:'杨龄'}[e.person]);toast(name+(e.person==='lubu'?'率亲兵观阵 · 此役不交手':' · 荆州旧将观阵'),'info');logEv('cameo',name+'观阵');}
+    if(e.type==='officer')officerStep(e,dt);
     if (e.type === 'enemy') {
       if (!e.dead) {
         e.slow=Math.max(0,(e.slow||0)-dt);e.d -= dt * (e.elite && S.boss && S.boss.phase === 'yield' ? -3 : e.slow>0?1.1:2.2); e.walk += dt * 2.6; e.hitT = Math.max(0, (e.hitT || 0) - dt);
@@ -493,6 +504,7 @@ function updateEnts(dt) {
   }
   S.ents = S.ents.filter(e => {
     const z = e.d - S.dist;
+    if(e.type==='officer')return !e.dead||e.dead<1.4;
     if (e.type === 'wall') return e.d + e.len - S.dist > -6;
     if (e.type === 'enemy' && e.dead > 1.0) return false;
     if (e.type === 'enemy' && e.elite && z > 40) return false;
@@ -502,12 +514,28 @@ function updateEnts(dt) {
   });
 }
 
+// Named route officers hold a fighting position; they never use soldier contact/cleanup.
+function officerStep(e,dt){
+  e.walk+=dt*2.6;e.hitT=Math.max(0,(e.hitT||0)-dt);
+  if(e.dead){e.dead+=dt;return;}
+  const z=e.d-S.dist;
+  if(e.phase==='approach'){
+    if(z>12){e.d-=dt*2.2;return;}
+    e.d=S.dist+12;e.phase='idle';e.pt=0;logEv('officer',PEOPLE[e.person]+' 拦阵');
+  }
+  e.d=S.dist+12;e.pt+=dt;
+  if(e.phase==='idle'&&e.pt>.6){e.phase='warn';e.pt=0;e.band=[Math.max(-1,S.heroX-.3),Math.min(1,S.heroX+.3)];logEv('officer',PEOPLE[e.person]+' 预警');}
+  else if(e.phase==='warn'&&e.pt>.9){e.phase='strike';e.pt=0;const hit=S.heroX>e.band[0]&&S.heroX<e.band[1];if(hit){const n=addTroops(-4,'officer');logEv('officer',PEOPLE[e.person]+' 出招 '+n);S.redFlash=.35;}else logEv('officer',PEOPLE[e.person]+' 出招闪过');fx('f2_bladeWave',e.x,2,.6,.3);}
+  else if(e.phase==='strike'&&e.pt>.25){e.phase='rec';e.pt=0;logEv('officer',PEOPLE[e.person]+' 收势');}
+  else if(e.phase==='rec'&&e.pt>1.2){e.phase='idle';e.pt=0;}
+}
+
 // ───────────────────────── 敌将 ─────────────────────────
 // 对峙 → 预警 → 出招 → 收势 循环；血尽 → 力竭（spent）→ 收服（yield）。收服后战斗结束，不再重置。
 const BOSS_DMG = .30; // 敌将承伤系数（调试初值）：约三轮攻防后力竭
 const BOSS_T = {idle: 1.1, warn: 1.2, strike: .45, rec: 1.5, spent: 1.4};
 function bossStep(dt) {
-  const b = S.boss; b.pt += dt; b.hit = Math.max(0, b.hit - dt); b.bigHit = Math.max(0, (b.bigHit || 0) - dt);
+  const b=S.boss,pattern=BOSS_PATTERNS[b.person]||{name:'锁定横扫',warn:BOSS_T.warn,speed:40,damage:10,style:'sweep'};b.pattern=pattern.name;b.pt+=dt; b.hit = Math.max(0, b.hit - dt); b.bigHit = Math.max(0, (b.bigHit || 0) - dt);
   b.trail += (b.hp - b.trail) * Math.min(1, dt * (b.trail > b.hp + .5 && b.trailWait <= 0 ? 3 : 0));
   b.trailWait = (b.trailWait || 0) - dt; if (b.hit > .1) b.trailWait = .4;
   for (const f of b.flagFx) f.t += dt; b.flagFx = b.flagFx.filter(f => f.t < 1.4);
@@ -520,16 +548,16 @@ function bossStep(dt) {
     next('warn');
     const side = S.heroX < -.15 ? -1 : S.heroX > .15 ? 1 : 0;
     b.band = side < 0 ? [-1, -.02] : side > 0 ? [.02, 1] : [-.5, .5];
-    b.cycleN++; S.stats.bossStrikes++;
+    b.cycleN++;b.bands=pattern.style==='sides'?[[-1,-.28],[.28,1]]:pattern.style==='fire'?(b.cycleN%2?[[-.42,.42]]:[[-1,-.25],[.25,1]]):[b.band];b.band=b.bands[0];S.stats.bossStrikes++;
     logEv('boss', '预警 ' + (side < 0 ? '左' : side > 0 ? '右' : '中'));
-  } else if (b.phase === 'warn' && b.pt > BOSS_T.warn) {
+  } else if (b.phase === 'warn' && b.pt > pattern.warn) {
     next('strike');
-    S.waves.push({boss: true, k: 'f2_bladeWave', x: (b.band[0] + b.band[1]) / 2, z: b.z - .6, z0: b.z, prevZ: b.z, speed: -40, t: 0, hits: new Set(), x0: 0, alpha: 1, hw: (b.band[1] - b.band[0]) / 2, h: .5, wide: (b.band[1] - b.band[0]) * 1.4, range: 99, dmg: 0, pierce: 0});
+    for(const band of b.bands||[b.band])for(let n=0;n<(pattern.style==='double'?2:1);n++)S.waves.push({boss:true,band:[...band],damage:pattern.damage,k:pattern.style==='sides'?'g_wave_shemao':pattern.style==='fire'?'g_wave_guandao':'g_wave_huaji',x:(band[0]+band[1])/2,z:b.z-.6+n*9,z0:b.z,prevZ:b.z,speed:-pattern.speed,t:0,hits:new Set(),x0:0,alpha:1,hw:(band[1]-band[0])/2,h:.5,wide:(band[1]-band[0])*1.4,range:99,dmg:0,pierce:0});
     S.shake = .5;
   } else if (b.phase === 'strike' && b.pt > BOSS_T.strike) next('rec');
   else if (b.phase === 'rec' && b.pt > BOSS_T.rec) next('idle');
   else if (b.phase === 'spent' && b.pt > BOSS_T.spent) {
-    next('yield'); S.ended = true; S.seal={t:0,life:2.2,who:b.person,ch:CHAPTERS[options.chapter].allies.includes(b.person)?'盟':CHAPTERS[options.chapter].visit.includes(b.person)?'访':CHAPTERS[options.chapter].capture.includes(b.person)?'降':'胜'};
+    next('yield');S.defeatedBossId=b.person;S.ended=true; S.seal={t:0,life:2.2,who:b.person,ch:CHAPTERS[options.chapter].allies.includes(b.person)?'盟':CHAPTERS[options.chapter].visit.includes(b.person)?'访':CHAPTERS[options.chapter].capture.includes(b.person)?'降':'胜'};
     b.flagFx.push({i: -1, t: 0, white: true});
     toast(b.name+' · '+(CHAPTERS[options.chapter].capture.includes(b.person)?'已收服':'胜利'),'gold'); logEv('boss', '收服');
   }
@@ -537,8 +565,8 @@ function bossStep(dt) {
   for (const w of S.waves) if (w.boss) {
     if (!w.hitDone && w.z <= .2) {
       w.hitDone = true; w.spent = true;
-      let inBand=S.heroX>b.band[0]-.05&&S.heroX<b.band[1]+.05;if(inBand&&S.slots.ma.id==="dilu"&&S.t>=(S.mountReady||0)){const edge=Math.min(Math.abs(S.heroX-b.band[0]),Math.abs(S.heroX-b.band[1]));if(edge<=.15){S.heroX=S.targetX=Math.max(-.82,Math.min(.82,Math.abs(S.heroX-b.band[0])<Math.abs(S.heroX-b.band[1])?b.band[0]-.16:b.band[1]+.16));inBand=S.heroX>b.band[0]-.05&&S.heroX<b.band[1]+.05;if(!inBand){S.mountReady=S.t+15;record("treasure","dilu","team",1);}}}
-      if (inBand) { S.stats.hitTaken++; addTroops(-10); S.redFlash = .8; S.shake = 1; toast('中招 · 兵力 −10', 'bad'); logEv('boss', '中招 −10'); }
+      const band=w.band||b.band;let inBand=S.heroX>band[0]-.05&&S.heroX<band[1]+.05;if(inBand&&S.slots.ma.id==="dilu"&&S.t>=(S.mountReady||0)){const edge=Math.min(Math.abs(S.heroX-band[0]),Math.abs(S.heroX-band[1]));if(edge<=.15){S.heroX=S.targetX=Math.max(-.82,Math.min(.82,Math.abs(S.heroX-band[0])<Math.abs(S.heroX-band[1])?band[0]-.16:band[1]+.16));inBand=S.heroX>band[0]-.05&&S.heroX<band[1]+.05;if(!inBand){S.mountReady=S.t+15;record("treasure","dilu","team",1);}}}
+      if (inBand) { S.stats.hitTaken++; const loss=addTroops(-(w.damage||10),'boss'); S.redFlash = .8; S.shake = 1; toast('中招 · 兵力 '+loss,'bad');logEv('boss','中招 '+loss); }
       else { S.stats.dodged++; toast('闪开横扫 · 趁收势反击', 'good'); logEv('boss', '闪开'); }
     }
   }
@@ -593,6 +621,7 @@ function drawEnt(e) {
   const z = e.d - S.dist;
   if (e.type === 'gate') return drawGate(e, z);
   if (e.type === 'crate') return drawCrate(e, z);
+  if(e.type==='officer')return drawOfficer(e,z);
   if (e.type === 'enemy') return drawEnemy(e, z);
   if(e.type==='cameo'){const p=proj(e.x,z),names={xing:'邢道荣',chen:'陈应',yang:'杨龄'},keys={xing:'bossXingWalk0',chen:'bossChenWalk0',yang:'bossYangWalk0'},key=e.person==='lubu'?'g_lubuIdle':keys[e.person];drawFrame(key,p.x,p.y,.5*L.ppu*p.s,{refH:M.frames[key].bh||M.frames[key].r[3]});if(zoneOf(p.y)>1)text((PEOPLE[e.person]||names[e.person])+' · 观阵',p.x,p.y-.58*L.ppu*p.s,11,{align:'center',color:'#F1D49C'});}
 }
@@ -754,6 +783,17 @@ function drawWallDecal(e) {
 
 // —— 敌兵 ——（新帧：行进两帧 / 受击 / 倒地；吕布亲兵为精兵服色）
 const BODY = {hero: .52, soldier: .34, elite: .37, companion: .42, general: .61}; // 躯干高（世界单位），按帧 bh 缩放
+function drawOfficer(e,z){
+  const p=proj(e.x,z),u=L.ppu*p.s;if(p.y<L.P0-10)return;
+  if(e.phase==='warn'||e.phase==='strike'){
+    const a=proj(e.band[0],0),b=proj(e.band[1],0),c=proj(e.band[1],12),d=proj(e.band[0],12);
+    ctx.fillStyle=e.phase==='warn'?'rgba(180,55,35,.22)':'rgba(220,85,40,.38)';ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.lineTo(c.x,c.y);ctx.lineTo(d.x,d.y);ctx.closePath();ctx.fill();
+  }
+  const pre='g_front_'+e.person,pose=e.dead||e.hitT>0?'Hurt':e.phase==='warn'?'Wind':e.phase==='strike'?'Strike':e.phase==='rec'||e.phase==='idle'?'Rec':'Run0';
+  const k=pick(pre+pose,pre+'Run0');
+  drawFrame(k,p.x,p.y+(e.phase==='strike'?5:0),.56*u,{refH:M.frames[k].bh,rot:e.phase==='warn'?-.06:e.phase==='strike'?.08:0,alpha:e.dead?Math.max(0,1-e.dead/1.4):1});
+  if(zoneOf(p.y)>1){const label=PEOPLE[e.person]+' · '+({approach:'拦阵',idle:'对峙',warn:'蓄势',strike:'出招',rec:'收势',defeated:'败北'}[e.phase]);text(label,p.x,p.y-.65*u,12,{align:'center',color:e.phase==='rec'?'#A9ECC4':'#FFE2B6',stroke:'#312313'});ctx.fillStyle='#3F2928';ctx.fillRect(p.x-24,p.y-.59*u,48,4);ctx.fillStyle='#D39961';ctx.fillRect(p.x-24,p.y-.59*u,48*Math.max(0,e.hp/e.max),4);}
+}
 function drawEnemy(e,z){if(e.person&&has('g_front_'+e.person+'Run0')){const p=proj(e.x,z),key='g_front_'+e.person+(e.dead||e.hitT>0?'Hurt':Math.floor(e.walk)%2?'Run1':'Run0');drawFrame(key,p.x,p.y,.46*L.ppu*p.s,{refH:M.frames[key].bh,alpha:e.dead?Math.max(0,1-e.dead):1});if(zoneOf(p.y)>1)text(PEOPLE[e.person]||e.person,p.x,p.y-.5*L.ppu*p.s,12,{align:'center',color:'#FFCCC0',stroke:'#3c1814'});return;}
   const p = proj(e.x, z); if (p.y < L.P0 - 10) return;
   const u = L.ppu * p.s, pre = e.elite ? 'g_elite' : 'g_red', cn = e.elite ? '吕布亲兵' : '敌兵';
@@ -836,7 +876,7 @@ function drawHeroGroup() {
   const runBob = ph === 'run' ? Math.abs(Math.sin(cyc * 1.7 * Math.PI / 2)) * 1.5 : 0;
   const lunge = ph === 'rel' ? -6 * Math.sin(pr * Math.PI) : ph === 'wind' ? 2 * pr : ph === 'show' ? -3 * Math.sin(pr * Math.PI) : 0;
   shadow(p.x, p.y, .30 * L.ppu);
-  // 坐骑（赤兔 / 的卢）：只做徽记与尘土，不做骑乘形象（预览实现）
+  // 骑乘图像使用逐姿态手部锚点；扬尘跟随真实横移。
   const mount = S.slots.ma.id;
   if (mount && Math.abs(S.heroV) > .4) for (let i = 0; i < 3; i++) { const q = proj(hx - Math.sign(S.heroV) * (.12 + i * .08), -.05 - i * .04); ctx.save(); ctx.fillStyle = `rgba(190,160,110,${.28 - i * .07})`; ctx.beginPath(); ctx.ellipse(q.x, q.y - 3, (7 + i * 4) * q.s * 1.5, (3 + i) * q.s * 1.5, 0, 0, 7); ctx.fill(); ctx.restore(); }
   ctx.save(); ctx.strokeStyle = mount ? 'rgba(242,165,122,.8)' : 'rgba(230,205,147,.55)'; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.ellipse(p.x, p.y, .2 * L.ppu, .055 * L.ppu, 0, 0, Math.PI * 2); ctx.stroke(); ctx.restore();
@@ -844,7 +884,7 @@ function drawHeroGroup() {
   const H=(mounted?.90:BODY.hero)*L.ppu;
   const r = drawFrame(k, p.x + bump, p.y - runBob + lunge, H, {refH: ref});
   if (ph === 'show' && r) { ctx.save(); ctx.globalAlpha = .5 * (1 - pr); drawFrame(k, p.x + bump, p.y + lunge, H, {refH: ref, tint: '#FFE6A6', comp: 'lighter'}); ctx.restore(); }
-  if(mounted){const ik='g_icon_'+S.weapon,handX=p.x+(ph==='run'?.13:.16)*L.ppu,handY=p.y-(ph==='run'?.59:.79)*L.ppu;drawFrame(ik,handX,handY,(['spear','guandao','shemao','huaji'].includes(S.weapon)?.56:.34)*L.ppu,{center:true,rot:ph==='rel'?.55:ph==='wind'?-.2:.9});}S.heroRect = r;
+  if(mounted){const ik='g_icon_'+S.weapon,f=M.frames[k],hand=({g_ride_chitu_run0:[.9429,.3874],g_ride_chitu_run1:[.9483,.389],g_ride_chitu_wind:[.9465,.084],g_ride_chitu_rel:[.9485,.0966],g_ride_dilu_run0:[.9502,.3924],g_ride_dilu_run1:[.952,.3996],g_ride_dilu_wind:[.9437,.0819],g_ride_dilu_rel:[.9309,.0799]})[k];const grip=({spear:[.26,.73],guandao:[.26,.78],shemao:[.30,.72],huaji:[.25,.75],guding:[.85,.78],shuangji:[.5,.64],yitian:[.5,.83],qinggang:[.48,.85],shuanggu:[.5,.70],liannu:[.65,.55]})[S.weapon];const sc=H/ref,handX=p.x+bump+(hand[0]-.5)*f.r[2]*sc,handY=p.y-runBob+lunge+(hand[1]-1)*f.r[3]*sc;drawFrame(ik,handX,handY,(['spear','guandao','shemao','huaji'].includes(S.weapon)?.56:.34)*L.ppu,{grip,rot:ph==='rel'?.55:ph==='wind'?-.2:.9});}S.heroRect = r;
   // 部曲兵力牌 → L6：固定在主将躯干上方
   const ty = p.y - H - 26; LABELS.push({kind: 'troop', x: p.x, y: ty}); S.troopY = ty; S.troopX = p.x;
 }
@@ -881,13 +921,13 @@ function drawBossDecal() {
   const u = L.ppu * p.s;
   const w=1.4*u,h=.13*u;drawFrame('g_platform',p.x,p.y+.24*u,.85*u);
   // 预警地面：目标带
-  if (b.phase === 'warn' || b.phase === 'strike') {
-    const [l, r] = b.band; const zA = b.z - .6, zB = -1.2;
+  if (b.phase === 'warn' || b.phase === 'strike') for(const band of b.bands||[b.band]){
+    const [l,r]=band; const zA = b.z - .6, zB = -1.2;
     const A = proj(l, zA), B = proj(r, zA), C = proj(r, zB), D = proj(l, zB);
     const pulse = b.phase === 'warn' ? .22 + .18 * Math.sin(b.pt * 16) : .5;
     ctx.save(); ctx.fillStyle = `rgba(178,58,43,${pulse})`; ctx.beginPath(); ctx.moveTo(A.x, A.y); ctx.lineTo(B.x, B.y); ctx.lineTo(C.x, C.y); ctx.lineTo(D.x, D.y); ctx.closePath(); ctx.fill();
     ctx.strokeStyle = 'rgba(255,190,170,.8)'; ctx.lineWidth = 2; ctx.setLineDash([8, 6]); ctx.stroke();
-    if (b.phase === 'warn') { const k = Math.min(1, b.pt / BOSS_T.warn); const zc = zA + (zB - zA) * k; const E = proj(l, zc), F = proj(r, zc); ctx.setLineDash([]); ctx.strokeStyle = '#FFD7C8'; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(E.x, E.y); ctx.lineTo(F.x, F.y); ctx.stroke(); }
+    if (b.phase === 'warn') { const k = Math.min(1, b.pt / (BOSS_PATTERNS[b.person]?.warn||BOSS_T.warn)); const zc = zA + (zB - zA) * k; const E = proj(l, zc), F = proj(r, zc); ctx.setLineDash([]); ctx.strokeStyle = '#FFD7C8'; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(E.x, E.y); ctx.lineTo(F.x, F.y); ctx.stroke(); }
     ctx.restore();
   }
   if (b.phase === 'rec') { // 破绽
@@ -1200,6 +1240,6 @@ return {get state(){return S;},get ledger(){return ledger;},get totals(){return 
  move(x){if(Number.isFinite(x))S.targetX=Math.max(-.82,Math.min(.82,x));},cancel(){S.targetX=S.heroX;},
  step(dt=DT){if(paused||S.ended)return;step(Math.min(DT,Math.max(0,dt)));},pause(value){paused=!!value;},
  render(sz){if(!ctx)return;L=layout(sz);L.capsule=sz.capsule||{x:L.W-8,y:0,w:0,h:0};const simSeed=seed;ctx.begin(L);render();ctx.end();seed=simSeed;},
- snapshot(){return {chapter:options.chapter,t:S.t,dist:S.dist,phase:S.ended?(S.troops>0?'won':'lost'):S.boss?'boss':'run',x:S.heroX,target:S.targetX,troops:S.troops,weapon:S.weapon,tier:S.tier,arms:S.arms,companions:S.companions.map(c=>c.id),support:{...S.support},slots:S.slots,boss:S.boss?{...S.boss}:null,entities:S.ents.map(e=>({...e,z:e.d-S.dist})),stats:S.stats,totals:{...totals},paused,runGot:[...S.runGot],log:[...S.log]};},
+ snapshot(){return {chapter:options.chapter,t:S.t,dist:S.dist,phase:S.ended?(S.troops>0?'won':'lost'):S.boss?'boss':'run',x:S.heroX,target:S.targetX,troops:S.troops,weapon:S.weapon,tier:S.tier,arms:S.arms,companions:S.companions.map(c=>c.id),support:{...S.support},slots:S.slots,boss:S.boss?{...S.boss}:null,entities:S.ents.map(e=>({...e,z:e.d-S.dist})),stats:S.stats,totals:{...totals},paused,threatBands:S.waves.filter(w=>w.boss&&!w.hitDone&&!w.spent).map(w=>w.band||S.boss?.band),runGot:[...S.runGot],defeatedOfficerIds:[...S.defeatedOfficerIds],defeatedBossId:S.defeatedBossId,log:[...S.log]};},
  get diagnostics(){return {texts:TXT,hud:HUDR,gate:GATE_STAT,used:Array.from(USED.entries())};}};
 }

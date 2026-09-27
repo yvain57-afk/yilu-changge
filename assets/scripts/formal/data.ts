@@ -38,21 +38,52 @@ export const CHAPTERS:Chapter[]=[
  {id:'c10',title:'隆中长歌',place:'隆中',faction:'蜀',boss:'zhuge',enemy:['pang','machao'],capture:['machao','jiang'],visit:['zhuge','pang','sima'],allies:['liu'],weapon:'liannu',treasure:'qixing',length:292,bossHP:135}
 ];
 export const RANKS=['乡勇','什长','屯长','军侯','司马','校尉','中郎将','将军','列侯','王'];
-export const TUNING={version:'formal-20260927.1',startTroops:30,tier:[1,1.35,1.75],overflow:4,weaponMaxLevel:5,weaponLevelDamage:.12,upgradeCost:(level:number)=>level*60,clearXP:30,replayXP:10,gateHitStep:1,gateHitWindow:30,gateSafetyLimit:9999};
+/** Route officers require individual defeat; Sun Shangxiang/Jiang Wei join after the commander is defeated. */
+export const requiredOfficers=(chapter:number)=>[...CHAPTERS[chapter].enemy];
+export const BOSS_PATTERNS:Record<string,{name:string;warn:number;speed:number;damage:number;style:string}>={
+ jiao:{name:'双符夹击',warn:1.4,speed:55,damage:8,style:'sides'},
+ lubu:{name:'画戟追斩',warn:1.2,speed:40,damage:10,style:'double'},
+ zhou:{name:'风火换阵',warn:1.6,speed:22,damage:6,style:'fire'}
+};
+export const TUNING={version:'formal-pr2-fix-20260927.2',startTroops:30,tier:[1,1.35,1.75],overflow:4,weaponMaxLevel:5,weaponLevelDamage:.12,upgradeCost:(level:number)=>level*60,clearXP:30,replayXP:10,gateHitStep:1,gateHitWindow:30,gateSafetyLimit:9999};
 export type RouteEvent={d:number;type:string;x?:number;kind?:string;gives?:string;vals?:number[];n?:number;len?:number;side?:number;person?:string;fixed?:boolean};
 /** Finite authored route, seeded per chapter; all crate contents must come from unlocked pools. */
 export function routeFor(chapter:number,weapons:string[],treasures:string[]):RouteEvent[]{
  const l=CHAPTERS[chapter],pool=weapons.filter(w=>w!=='spear'),w=pool[Math.min(chapter,pool.length-1)]||'spear';
- const route:RouteEvent[]=[{d:14,type:'squad',x:-.45,n:5+chapter},{d:30,type:'crate',x:.45,kind:'weapon',gives:'spear'},{d:30,type:'crate',x:-.5,kind:'grain'},
- {d:50,type:'gates',vals:[12,-8]},{d:68,type:'crate',x:0,kind:'arms'},{d:83,type:'wall',len:23,side:chapter%2?-1:1},
- {d:92,type:'squad',x:chapter%2?.5:-.5,n:6+chapter},{d:115,type:'crate',x:0,kind:'weapon',gives:w},
- {d:132,type:'gates',vals:[-12,6]},{d:149,type:'crate',x:0,kind:'weapon',gives:w},{d:168,type:'crate',x:0,kind:'arms'},
- {d:185,type:'gates',vals:[1,-5],fixed:true},{d:190,type:'gates',vals:[1,-5],fixed:true},{d:195,type:'gates',vals:[1,-5],fixed:true}];
+ const layouts:Record<string,{name:string;walls:[number,number,number][];gates:[number,number,number][];arms:number[];weapons:number[];grain:[number,number][];squads:[number,number][];chain:number}>= {
+  '群雄':{name:'旷野初阵',walls:[[83,23,chapter%2?-1:1]],gates:[[50,12,-8],[132,-12,6]],arms:[68,168],weapons:[30,115,149],grain:[[30,-.5]],squads:[[14,-.45],[92,.5]],chain:185},
+  '魏':{name:'营垒折冲',walls:[[67,14,1],[108,16,-1]],gates:[[42,8,-10],[145,-12,10]],arms:[56,175],weapons:[25,92,133],grain:[[28,.5],[126,-.5]],squads:[[14,-.45],[82,.5],[129,-.5]],chain:188},
+  '吴':{name:'水寨连桥',walls:[[60,12,-1],[101,10,1],[151,12,-1]],gates:[[45,-8,12],[125,10,-12]],arms:[80,168],weapons:[28,92,139],grain:[[30,.5],[144,-.5]],squads:[[15,.5],[76,-.5],[116,.5]],chain:177},
+  '蜀':{name:'山道回折',walls:[[49,25,1],[128,24,-1]],gates:[[94,14,-12],[169,-10,12]],arms:[82,178],weapons:[28,112,159],grain:[[32,-.5],[119,.5]],squads:[[15,-.5],[77,.5],[155,-.5]],chain:184}
+ };
+ const q=layouts[l.faction],route:RouteEvent[]=[];
+ q.squads.forEach(([d,x])=>route.push({d,type:'squad',x,n:5+chapter}));
+ q.grain.forEach(([d,x])=>route.push({d,type:'crate',x,kind:'grain'}));
+ q.weapons.forEach((d,i)=>route.push({d,type:'crate',x:i?0:.45,kind:'weapon',gives:i?w:'spear'}));
+ q.arms.forEach(d=>route.push({d,type:'crate',x:0,kind:'arms'}));
+ q.walls.forEach(([d,len,side])=>route.push({d,type:'wall',len,side}));
+ q.gates.forEach(([d,a,b])=>route.push({d,type:'gates',vals:[a,b]}));
+ for(let i=0;i<3;i++)route.push({d:q.chain+i*5,type:'gates',vals:[1,-5],fixed:true});
  if(treasures.length)route.push({d:122,type:'crate',x:-.5,kind:'treasure',gives:treasures[(chapter+treasures.length-1)%treasures.length]});
  if(chapter===1)route.push({d:162,type:'cameo',x:1.1,person:'lubu'});
  if(chapter===8)['xing','chen','yang'].forEach((person,i)=>route.push({d:213+i*17,type:'cameo',x:i%2?-1.15:1.15,person}));
  if(chapter>1)route.push({d:207,type:'crate',x:0,kind:'weapon',gives:w});
- l.enemy.forEach((person,i)=>route.push({d:155+i*40,type:'officer',x:i%2?.48:-.48,person,n:1}));
+ requiredOfficers(chapter).forEach((person,i)=>route.push({d:Math.max(174,...q.walls.map(([d,len])=>d+len+28))+i*24,type:'officer',x:i%2?.48:-.48,person,n:1}));
  for(let d=217;d<l.length-8;d+=20)route.push({d,type:'squad',x:d%3?.4:-.4,n:5+chapter});
  return route.sort((a,b)=>a.d-b.d);
+}
+
+export const FACTIONS=[{name:'群雄',color:'#A8844A',start:0,end:3},{name:'魏',color:'#3B5C7A',start:3,end:5},{name:'吴',color:'#9A4A32',start:5,end:7},{name:'蜀',color:'#4E7A4A',start:7,end:10}];
+/** Short narrative summaries, deliberately identified as history or Romance material. */
+export const PERSON_PROFILES:Record<string,[string,string,string,string]>={
+ jiao:['','天公将军','史载','太平道首领，发动黄巾起义。'],dong:['仲颖','西凉权臣','史载','入京掌权，后迁都长安。'],yuan:['本初','河北盟主','史载','据有河北，与曹操决战官渡。'],hua:['元化','神医','史载','以医术著称，后世尊为外科先驱。'],lubu:['奉先','飞将','演义','虎牢关前迎战诸侯，方天画戟名震天下。'],diao:['','闭月','演义','连环计中周旋于董卓与吕布之间。'],dian:['','古之恶来','史载','曹操帐前猛将，宛城力战护主。'],xu:['仲康','虎痴','史载','以勇力著称，任曹操宿卫。'],cao:['孟德','魏武','史载','官渡破袁绍，逐步统一北方。'],liao:['文远','合肥名将','史载','合肥迎击孙权，以少击众。'],xiahou:['元让','独眼将军','史载','随曹操征战，亦担负屯田与后方事务。'],guo:['奉孝','奇谋之士','史载','为曹操献策，参与平定北方的谋划。'],xun:['文若','王佐之才','史载','辅佐曹操，主持中枢事务。'],sunjian:['文台','江东猛虎','史载','讨董卓时进军洛阳。'],sunce:['伯符','小霸王','演义','以勇武创业，奠定江东基业。'],sunquan:['仲谋','江东之主','史载','继承江东基业，联合刘备抗曹。'],lumeng:['子明','白衣渡江','演义','以白衣渡江之计夺取荆州。'],zhou:['公瑾','江东都督','史载','与程普督军，在赤壁抗击曹操。'],luxun:['伯言','儒将','史载','夷陵统军，以火攻击败刘备。'],sunxiang:['','弓腰姬','演义题材','以尚武的孙夫人为原型；孙尚香为后世通行名。'],zhao:['子龙','常山赵子龙','演义','长坂单骑救主，护送幼主脱险。'],zhang:['翼德','万人敌','演义','当阳桥头喝退追兵。'],guan:['云长','美髯公','演义','过五关斩六将，千里寻兄。'],huang:['汉升','老将','史载','定军山战役中阵斩夏侯渊。'],liu:['玄德','昭烈','史载','辗转创业，后据益州建蜀汉。'],zhuge:['孔明','卧龙','演义','隆中论天下，借东风助赤壁火攻。'],sima:['仲达','鹰视之士','史载','与诸葛亮对垒，后掌握曹魏大权。'],machao:['孟起','锦马超','演义','潼关战曹操，勇武闻名。'],pang:['士元','凤雏','史载','辅佐刘备入蜀，攻雒城时战死。'],jiang:['伯约','麒麟儿','史载','继承北伐事业，多次出兵陇右。']
+};
+export function personRole(id:string){
+ if(id==='hua')return '支援：实际减员后救回30%，冷却12秒';
+ if(id==='lubu')return '随军：画戟双路穿刺，本主共鸣扩散';
+ if(id==='dian')return '随军：双铁戟左右齐出，各穿透2人';
+ if(id==='zhang')return '随军：蛇矛曲线连刺';if(id==='zhao')return '随军：长枪直刺';
+ const c=CHAPTERS.find(c=>c.capture.includes(id));if(c)return '随军：持械出手，可与本主兵器共鸣';
+ if(CHAPTERS.some(c=>c.allies.includes(id)))return '盟约：本主兵器伤害×1.5，无需上阵';
+ if(CHAPTERS.some(c=>c.visit.includes(id)))return ['diao','xun','sunjian'].includes(id)?'支援：每12秒鼓舞援兵+2':'支援：每12秒自动策应';return '敌将：只交锋，不编入己方';
 }

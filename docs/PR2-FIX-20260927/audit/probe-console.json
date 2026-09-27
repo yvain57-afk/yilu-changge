@@ -1,0 +1,105 @@
+{
+  "sourceHashes": {
+    "data.ts": {
+      "expected": "9104dabdbaafcec9b7a3f68b5e8868e826ed1b57",
+      "actual": "9104dabdbaafcec9b7a3f68b5e8868e826ed1b57",
+      "match": true
+    },
+    "store.ts": {
+      "expected": "b293703fea3755c6572fe961b60cdf46a14b5334",
+      "actual": "b293703fea3755c6572fe961b60cdf46a14b5334",
+      "match": true
+    }
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "case": "许褚满血接触",
+      "before": {
+        "hp": 18,
+        "troops": 30
+      },
+      "after": {
+        "hp": 18,
+        "dead": 0.01,
+        "troops": 29
+      },
+      "observed": "elite officer follows ordinary enemy contact exit, losing one troop without defeating its HP"
+    },
+    {
+      "id": "F2",
+      "case": "绕过满血许褚后提交第四关胜利",
+      "hpOnRemoval": 18,
+      "officerRemoved": true,
+      "settlementAcceptsNoOfficerDefeatFacts": true,
+      "captures": [
+        "lubu",
+        "dian",
+        "xu"
+      ],
+      "observed": "rule functions permit the missed officer to leave while first-clear settlement grants its capture; engine should prove actual defeat in the revised path"
+    },
+    {
+      "id": "F3",
+      "case": "剩2兵、−12门、七星灯与华佗",
+      "actualTroopsLost": 2,
+      "healingLossRecorded": 12,
+      "qixingRestored": 5,
+      "healed": 4,
+      "finalTroops": 9,
+      "healingAt30PercentOfActualLoss": 1,
+      "records": [
+        [
+          "troops",
+          "gate",
+          "team",
+          -2
+        ],
+        [
+          "revive",
+          "qixing",
+          "team",
+          5
+        ],
+        [
+          "troops",
+          "hua",
+          "team",
+          4
+        ]
+      ],
+      "observed": "healing uses nominal requested loss, not actual casualties"
+    },
+    {
+      "id": "F4",
+      "case": "同帧穿透1波先撞敌兵再到Boss",
+      "pierce": 1,
+      "hits": [
+        9,
+        "boss"
+      ],
+      "enemyDamage": 10,
+      "bossDamage": 3,
+      "observed": "spent wave proceeds into separate boss branch",
+      "boundary": "controlled collision-function case, not claimed observed in the recorded ten-level run"
+    }
+  ],
+  "routeSummary": {
+    "chapters": 10,
+    "sameWallEveryChapter": true
+  },
+  "sanity": [
+    {
+      "name": "store-only sequential10 / reload / legacy raw preservation / idempotency",
+      "passed": true,
+      "weaponCount": 10,
+      "treasureCount": 8,
+      "relations": {
+        "captures": 14,
+        "visits": 9,
+        "allies": 5
+      },
+      "note": "does not simulate the gameplay that precedes settlement"
+    }
+  ]
+}
