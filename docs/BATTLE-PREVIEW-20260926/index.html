@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>一路长歌：三国 · 战斗预览 2026-09-27</title>
+<style>
+  :root{--ink:#0E1826;--ink8:#15243A;--gold:#C9A45C;--gold3:#E6CD93;--paper:#F3EAD6;--mid:#C4BEB0;--low:#87847C}
+  *{box-sizing:border-box}
+  body{margin:0;background:#0b1119;color:var(--paper);font:14px/1.5 "PingFang SC","Source Han Sans SC",system-ui,sans-serif;display:flex;gap:28px;padding:24px;min-height:100vh;align-items:flex-start;justify-content:center}
+  #phoneWrap{flex:none;display:flex;flex-direction:column;align-items:center;gap:10px}
+  #phone{position:relative;border-radius:28px;overflow:hidden;box-shadow:0 0 0 10px #1a222d,0 0 0 11px #2d3947,0 30px 60px rgba(0,0,0,.6);background:#000}
+  #phone.small{border-radius:6px}
+  canvas{display:block;touch-action:none;cursor:grab}
+  canvas:active{cursor:grabbing}
+  #panel{width:380px;flex:none;display:flex;flex-direction:column;gap:14px}
+  .grp{background:#121b27;border:1px solid #243244;border-radius:6px;padding:12px}
+  .grp h3{margin:0 0 8px;font-size:14px;color:var(--gold3);font-weight:600}
+  .row{display:flex;flex-wrap:wrap;gap:6px}
+  button{font:inherit;font-size:14px;color:var(--paper);background:#1E3350;border:1px solid #33506f;border-radius:6px;padding:6px 12px;cursor:pointer;min-height:36px}
+  button.on{background:#8A6630;border-color:var(--gold3);color:#fff}
+  button:hover{filter:brightness(1.15)}
+  label{display:flex;align-items:center;gap:6px;color:var(--mid);font-size:13px;cursor:pointer}
+  .hint{color:var(--low);font-size:12px;margin-top:6px}
+  #assetList{font-size:12px;color:var(--mid);max-height:260px;overflow:auto;margin:0;padding-left:16px}
+  #assetList .miss{color:#e28a7a}
+  #assetList .ok{color:#8fc7a8}
+  #stats,#report{font:12px/1.45 ui-monospace,Menlo,monospace;color:var(--mid);white-space:pre-wrap;max-height:220px;overflow:auto;margin:0}
+  #caption{font-size:13px;color:var(--mid);min-height:20px}
+</style>
+</head>
+<body>
+<div id="phoneWrap">
+  <div id="phone"><canvas id="cv"></canvas></div>
+  <div id="caption">左右拖动画面控制主将；键盘 ← → 亦可</div>
+</div>
+<div id="panel">
+  <div class="grp"><h3>战斗状态</h3><div class="row" id="states"></div>
+    <div class="row" style="margin-top:8px"><button id="toWall">跳到固定墙段</button><button id="restart">重开本状态</button></div></div>
+  <div class="grp"><h3>主将兵器</h3><div class="row" id="weapons"></div>
+    <div class="row" style="margin-top:8px" id="tiers"></div>
+    <div class="hint">长枪：快、窄、远 · 偃月刀：蓄力长、横扫宽、近 · 蛇矛：双刺、蛇行、穿透 · 画戟：直刺＋侧扇两段。按钮为调试直切；正常战斗路线里由兵器匣真实换兵器 / 升阶。</div></div>
+  <div class="grp"><h3>操控</h3><div class="row" id="ctrls"></div>
+    <div class="row" style="margin-top:8px"><button id="bossLow">敌将残血（调试）</button></div>
+    <div class="hint">拖动画面 = 手动。敌将交锋可切「自动躲开 / 自动中招」核对判定。演示阵容：随军 赵云·张飞，支援 华佗，典 太平要术，器 传国玉玺（跨进度夹具，非新档默认）。</div></div>
+  <div class="grp"><h3>本局状态与事件</h3><pre id="stats"></pre></div>
+  <div class="grp"><h3>屏幕尺寸</h3><div class="row" id="sizes"></div></div>
+  <div class="grp"><h3>观察</h3><div class="row" id="speeds"></div>
+    <div class="row" style="margin-top:8px">
+      <label><input type="checkbox" id="zones">显示分区</label>
+      <label><input type="checkbox" id="compan" checked>随军出手</label>
+      <label><input type="checkbox" id="pause">暂停</label>
+    </div></div>
+  <div class="grp"><h3>版面自检（每帧）</h3><pre id="report"></pre></div>
+  <div class="grp"><h3>素材状态（自动）</h3><ul id="assetList"></ul></div>
+</div>
+<script src="assets/manifest.js"></script>
+<script src="assets/gen/manifest-gen.js" onerror="window.GEN_MANIFEST=null"></script>
+<script src="preview.js"></script>
+</body>
+</html>

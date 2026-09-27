@@ -1,3 +1,8 @@
+import {RunnerDirector,RunnerLevel} from './runner';
+import {AssaultDirector,AssaultPlan,AssaultReward} from './assault';
+import {BossDirector,createBossDirector,tickBossDirector,hitBossHazard} from './hazards';
+import {HordeDirector,HordeConfig,EnemyKind,sweptTarget} from './horde';
+import {TacticId,ordinaryBudget} from './tactics';
 import {actorAnchor,nearGeometry,bossContactDepth,contactSurface} from './combatGeometry';
 import {WEAPONS,CAST,HERO_BASE_DAMAGE,TIER_FACTORS,TIER_WIDTHS,AttackInstance,WeaponWave,RunLoadout,CompanionId,CastId,WeaponId,PlayerWeapon,companionFor} from './weapons';
 /** Fixed-step combat. x is lateral; z is travel seconds. Decoration never participates. */
@@ -5,8 +10,8 @@ export type Phase = 'run' | 'boss' | 'won' | 'lost';
 export type Gate = { kind: 'add' | 'double'; value: number };
 export type Row = { id: number; at: number; left: Gate; right: Gate };
 export type Attack = { weaponId?:WeaponId; profile?:string; kind: 'aimed' | 'fixed'; x?: number; telegraphSeconds: number; halfWidth: number; loss: number; impactSeconds: number; recoverySeconds: number };
-export type Obstacle = { id: number; at: number; x: number; width: number; kind: 'wood' | 'rock' | 'fighter' | 'crossbowman'; hp: number; loss: number; rowId?: number; side?: 'left' | 'right'; dead?: boolean; resolved?: boolean; attack?: Attack & {startAt:number}; attackStarted?: boolean };
-export type Level = { bossId?:CastId; eliteIds?:number[]; id: string; title: string; scene: string; rankBefore: string; rankAfter: string; duration: number; start: number; bossHP: number; bossName: string; bossDelay: number; bossAttacks: Attack[]; rows: Row[]; obstacles: Obstacle[]; opening: string; ending: string };
+export type Obstacle = { id: number; at: number; x: number; width: number; kind: 'wood' | 'rock' | 'fighter' | 'crossbowman'; hp: number; loss: number; rowId?: number; side?: 'left' | 'right'; dead?: boolean; resolved?: boolean; attack?: Attack & {startAt:number}; attackStarted?: boolean; enemyKind?:EnemyKind; ordinary?:boolean; previousX?:number; previousZ?:number; maxHp?:number; speed?:number; depthRadius?:number; spawnStage?:number; routeId?:string; poolSlot?:number; generation?:number; deadTick?:number; killRecorded?:boolean; lastControlTick?:number; slowUntil?:number };
+export type Level = { runner?:RunnerLevel;assault?:AssaultPlan;profile?:'legacy-v051'|'horde-v06'|'assault-v07'|'runnerVideoV2';horde?:HordeConfig; bossId?:CastId; eliteIds?:number[]; id: string; title: string; scene: string; rankBefore: string; rankAfter: string; duration: number; start: number; bossHP: number; bossName: string; bossDelay: number; bossAttacks: Attack[]; rows: Row[]; obstacles: Obstacle[]; opening: string; ending: string };
 export type Arrow = { x: number; z: number; damage: number; readonly id?: number };
 export type Warning = { weaponId?:WeaponId; profile?:string; originX?:number; originZ?:number; projectileX?:number; projectileZ?:number; previousZ?:number; id: number; source: number | 'boss'; x: number; width: number; loss: number; remaining: number; duration: number; flight: number; impact: number; stage: 'charge' | 'flight' | 'impact'; hit: boolean };
 export type Feedback = Readonly<{ kind: 'shot' | 'gather' | 'hit' | 'break' | 'hurt' | 'warn' | 'meleeStart' | 'meleeActive' | 'meleeHit' | 'meleeEnd' | 'waveHit' | 'upgrade' | 'awaken'; x: number; amount: number; targetId?: number | 'boss' | 'team'; worldZ?: number; hitHeight?:number; simulationTick?: number; projectileId?: number; sourceId?: number | 'boss' | 'team' | 'hero' | CompanionId; weaponId?:WeaponId; attackId?: number; volley?: Readonly<{count:number; totalCount?:number; archerCount?:number; companion?:boolean; tick?:number; x?:number; worldZ?:number; aimZ:number; height:number}> }>;
@@ -18,26 +23,29 @@ export const STEP = 1 / 60;
 export const HORIZON = 7;
 export const clamp = (n: number, a: number, b: number) => Math.max(a, Math.min(b, n));
 export class Journey {
+ readonly runner:RunnerDirector|null;readonly assault:AssaultDirector|null;readonly runTactic:TacticId; readonly horde:HordeDirector|null;readonly bossDirector:BossDirector|null;
+ get rows(){return this.horde?this.horde.rows:this.level.rows;}
+ get stageInfo(){return this.horde?.info(this.z,this.obstacles,this.runTactic)??null;}
  phase: Phase = 'run'; count: number; x = 0; target = 0; z = 0; elapsed = 0; paused = false;
  appearance=0;weapon:PlayerWeapon;companion:CompanionId|null;companionAttack:AttackInstance|null=null;waves:WeaponWave[]=[];tier=1;upgradeRewards=new Set<number>();awakeningUsed=false;awakeningRemaining=0;wavePeak={hero:0,companion:0};
  bossDepth=4; bossPrevDepth=4; bossTicks=0; melee:Melee|null=null; private attackId=0; damageTotals={hero:{melee:0,wave:0},archer:0,companions:{} as Record<string,{melee:number;wave:number}>};
  bossHP: number; bossClock = 0; bossIndex = 0; bossReady: number;
  arrows: Arrow[] = []; warnings: Warning[] = []; feedback: Feedback[] = []; usedRows = new Set<number>();
  obstacles: Obstacle[]; cause = ''; fireClock = 0; accumulator = 0; private warningId = 0; private projectileId = 0; simulationTick = 0;
- constructor(public level: Level,loadout:RunLoadout={}) {this.appearance=loadout.appearance??0;this.weapon=loadout.weapon??'spear';this.companion=companionFor(level.bossId,loadout.companion); this.count = level.start; this.bossHP = level.bossHP; this.bossReady = level.bossDelay; this.obstacles = level.obstacles.map(o => ({ ...o, attack:o.attack ? {...o.attack} : undefined })); }
+ constructor(public level: Level,loadout:RunLoadout={}) {this.assault=level.assault?new AssaultDirector(level.assault):null;this.runTactic=loadout.tactic==='zhenjun'?'zhenjun':'guanzhen';this.appearance=loadout.appearance??0;this.weapon=loadout.weapon??'spear';this.companion=companionFor(level.bossId,loadout.companion); this.count = level.start; this.bossHP = level.bossHP; this.bossReady = level.bossDelay; this.obstacles = level.obstacles.map(o => ({ ...o, attack:o.attack ? {...o.attack} : undefined }));this.horde=(level.profile==='horde-v06'||level.profile==='assault-v07')&&level.horde?new HordeDirector(level.horde,this.obstacles):null;this.bossDirector=this.horde?createBossDirector(level.bossId??'xing_daorong'):null;this.runner=level.profile==='runnerVideoV2'&&level.runner?new RunnerDirector(this,level.runner):null; }
  get heroGeometry(){return this.melee?nearGeometry(this.x,this.z,{...this.melee,tick:this.melee.poseTick??0},this.appearance):null;}
  get companionGeometry(){return this.companionAttack?nearGeometry(this.x,this.z,{...this.companionAttack,tick:this.companionAttack.poseTick??0},this.appearance):null;}
  get finished() { return this.phase === 'won' || this.phase === 'lost'; }
  get visibleCount() { return Math.min(48, this.count); }
  get companionActive(){return !!this.companion&&this.count>=2;}
  get archerCount() { return Math.max(0,this.count-1-(this.companionActive?1:0)); }
- get damage() { return this.archerCount * 0.2; }
+ get damage() { return this.archerCount * 0.2 * (this.assault?[1,1.4,1.9][this.tier-1]:1); }
  get bossWarning() { return this.warnings.find(w=>w.source==='boss') || null; }
  move(x: number) { if (Number.isFinite(x)) this.target = clamp(x, -0.91, 0.91); }
  cancelMove() { this.target = this.x; }
  pause() { this.paused = true; this.accumulator = 0; this.cancelMove(); }
  resume() { this.paused = false; this.accumulator = 0; }
- dispose() { this.clearCombat();this.awakeningUsed=false;this.upgradeRewards.clear();this.tier=1;this.melee=null; this.arrows.length=0; this.warnings.length=0; this.feedback.length=0; this.cancelMove(); }
+ dispose() { this.runner?.dispose();this.clearCombat();this.awakeningUsed=false;this.upgradeRewards.clear();this.tier=1;this.melee=null; this.arrows.length=0; this.warnings.length=0; this.feedback.length=0; this.cancelMove(); }
  advance(dt: number) {
   if (this.paused || this.finished || !Number.isFinite(dt)) return;
   this.accumulator += clamp(dt, 0, 0.25);
@@ -66,7 +74,7 @@ export class Journey {
  private warn(source:number|'boss',a:Attack) {
   // Last .2s of the telegraph is the released arrow/spear. After release, killing
   // the archer no longer cancels it; strike still occurs at the advertised time.
-  const flight=Math.min(a.weaponId==='great_axe'?.32:a.weaponId==='throwing_fork'?.28:.2,a.telegraphSeconds/2);
+  const flight=this.horde&&source!=='boss'?.3:Math.min(a.weaponId==='great_axe'?.32:a.weaponId==='throwing_fork'?.28:.2,a.telegraphSeconds/2);
   this.warnings.push({weaponId:a.weaponId??'bow',profile:a.profile??'arrow',id:++this.warningId,source,x:a.kind==='aimed'?this.x:a.x??0,width:a.halfWidth,loss:a.loss,remaining:a.telegraphSeconds,duration:a.telegraphSeconds,flight,impact:a.impactSeconds,stage:'charge',hit:false});
   this.emit({kind:'warn',x:this.warnings[this.warnings.length-1].x,amount:a.loss,sourceId:source,worldZ:source==='boss'?this.z+this.bossDepth:this.obstacles.find(o=>o.id===source)?.at});
  }
@@ -74,13 +82,17 @@ export class Journey {
   this.fireClock -= STEP;
   if (this.fireClock <= 0) { this.fireClock += .25; if(this.archerCount>0){ const a={id:++this.projectileId,x:this.x,z:this.z+.35,damage:this.damage};this.arrows.push(a);// Read-only presentation snapshot; never feeds targeting, collision or damage.
    const target=this.phase==='run'?this.obstacles.filter(o=>!o.dead&&!o.resolved&&o.at>=a.z&&o.at-this.z<=HORIZON&&(o.side?(o.side==='left'?a.x<0:a.x>=0):Math.abs(a.x-o.x)<=o.width)).sort((u,v)=>u.at-v.at||u.id-v.id)[0]:undefined;
+   const routeTarget=this.phase==='run'?this.assault?.nearest(a.x,a.z,this.z+HORIZON):undefined;
+   const aim=routeTarget&&(!target||routeTarget.at<target.at)?routeTarget:target;
    const boss=this.phase==='boss'&&Math.abs(a.x)<=BOSS_TARGET.halfWidth;
-   this.emit({kind:'shot',x:a.x,amount:a.damage,worldZ:a.z,sourceId:'team',projectileId:a.id,volley:Object.freeze({count:this.count,totalCount:this.count,archerCount:this.archerCount,companion:this.companionActive,tick:this.simulationTick,x:this.x,worldZ:a.z,aimZ:target?.at??(this.z+(boss?this.bossDepth:HORIZON)),height:boss?85:target?.kind==='wood'?30:target?.kind==='rock'?35:target?48:45})}); }}
+   this.emit({kind:'shot',x:a.x,amount:a.damage,worldZ:a.z,sourceId:'team',projectileId:a.id,volley:Object.freeze({count:this.count,totalCount:this.count,archerCount:this.archerCount,companion:this.companionActive,tick:this.simulationTick,x:this.x,worldZ:a.z,aimZ:aim?.at??(this.z+(boss?this.bossDepth:HORIZON)),height:boss?85:target?.kind==='wood'?30:target?.kind==='rock'?35:target?48:45})}); }}
   for (const a of this.arrows) {
    const prev=a.z; a.z += STEP*9;
    // Sort actual intersections: array order is never a targeting rule.
-   const hits=this.obstacles.filter(o=>!o.dead&&!o.resolved&&o.at>previousZ&&o.at-this.z<=HORIZON&&prev<o.at&&a.z>=o.at&&(o.side ? (o.side==='left'?a.x<0:a.x>=0) : Math.abs(a.x-o.x)<=o.width)).sort((u,v)=>u.at-v.at||u.id-v.id);
+   const hits=this.horde?this.obstacles.filter(o=>!o.dead&&!o.resolved&&o.at>=this.z-.1).map(o=>({o,t:sweptTarget(a.x,prev,a.x,a.z,o)})).filter(v=>v.t!==null).sort((u,v)=>u.t!-v.t!||u.o.id-v.o.id).map(v=>v.o):this.obstacles.filter(o=>!o.dead&&!o.resolved&&o.at>previousZ&&o.at-this.z<=HORIZON&&prev<o.at&&a.z>=o.at&&(o.side ? (o.side==='left'?a.x<0:a.x>=0) : Math.abs(a.x-o.x)<=o.width)).sort((u,v)=>u.at-v.at||u.id-v.id);
    const o=hits[0];
+   const routeTarget=this.phase==='run'?this.assault?.nearest(a.x,prev,a.z):undefined;
+   if(routeTarget&&(!o||routeTarget.at<o.at)){this.supplyHit(routeTarget,a.damage,a.id);a.z=Infinity;continue;}
    if (o && this.phase==='run') {
     a.z=Infinity;
     if(o.kind!=='rock') { const actual=Math.min(o.hp,a.damage);o.hp-=actual;this.damageTotals.archer+=actual;this.emit({kind:'hit',x:a.x,amount:actual,targetId:o.id,worldZ:o.at,projectileId:a.id,sourceId:'team'});if(o.hp===0){o.dead=true;this.rewardKill(o.id);this.emit({kind:'break',x:o.x,amount:0,targetId:o.id,worldZ:o.at,projectileId:a.id,sourceId:'team'});} }
@@ -90,8 +102,25 @@ export class Journey {
   }
   this.arrows=this.arrows.filter(a=>a.z<this.z+HORIZON);
  }
+ private receiveSupply(reward:AssaultReward|null){
+  if(!reward||this.finished)return;const {kind,amount,target}=reward;
+  if(kind==='gate'&&amount<0){this.hurt(-amount,'误入减员门');return;}
+  if(kind==='weapon'){
+   if(this.tier<amount){this.tier=amount;this.assault!.stats.weapons++;this.emit({kind:'upgrade',x:target.x,amount:this.tier,targetId:target.id,worldZ:target.at,sourceId:'hero'});}
+   return;
+  }
+  if(kind==='chain')return;
+  const before=this.count;this.count=clamp(this.count+amount,0,256);this.assault!.stats.troops+=this.count-before;
+  if(this.count>before)this.emit({kind:'gather',x:target.x,amount:this.count-before,targetId:'team',worldZ:target.at});
+ }
+ private supplyHit(target:NonNullable<Journey['assault']>['targets'][number],power:number,projectileId?:number){
+  const before=target.hp,reward=this.assault!.hit(target,power,this.simulationTick,this.z);
+  this.emit({kind:'hit',x:target.x,amount:target.kind==='gate'?0:before-target.hp,targetId:target.id,worldZ:target.at,projectileId,sourceId:'team'});
+  if(reward)this.emit({kind:'break',x:target.x,amount:0,targetId:target.id,worldZ:target.at,sourceId:'team'});
+  this.receiveSupply(reward);
+ }
  private clearCombat(){this.melee=null;this.companionAttack=null;this.waves=[];this.arrows=[];this.warnings=[];this.awakeningRemaining=0;}
- private rewardKill(id:number){if(this.level.eliteIds?.indexOf(id)===-1||!this.level.eliteIds||this.upgradeRewards.has(id))return;this.upgradeRewards.add(id);this.tier=Math.min(3,1+this.upgradeRewards.size);this.emit({kind:'upgrade',x:this.obstacles.find(o=>o.id===id)?.x??this.x,amount:this.tier,targetId:id,worldZ:this.obstacles.find(o=>o.id===id)?.at??this.z,sourceId:'hero'});}
+ private rewardKill(id:number){if(this.horde){const o=this.obstacles.find(o=>o.id===id);if(o&&this.horde.recordDeath(o,this.simulationTick)){for(const threshold of [30,80])if(this.horde.kills>=threshold&&this.tier<(threshold===30?2:3)){this.tier=threshold===30?2:3;this.emit({kind:'upgrade',x:o.x,amount:this.tier,targetId:id,worldZ:o.at,sourceId:'hero'});}}this.horde.trimCorpses(this.obstacles,this.simulationTick);return;}if(this.level.eliteIds?.indexOf(id)===-1||!this.level.eliteIds||this.upgradeRewards.has(id))return;this.upgradeRewards.add(id);this.tier=Math.min(3,1+this.upgradeRewards.size);this.emit({kind:'upgrade',x:this.obstacles.find(o=>o.id===id)?.x??this.x,amount:this.tier,targetId:id,worldZ:this.obstacles.find(o=>o.id===id)?.at??this.z,sourceId:'hero'});}
  private bossHit(){if(this.tier===3&&!this.awakeningUsed){this.awakeningUsed=true;this.awakeningRemaining=6;this.emit({kind:'awaken',x:this.x,amount:6,worldZ:this.z,sourceId:'hero'});}}
  private candidates(x:number,width:number,from:number,to:number){
   if(this.phase==='boss')return this.bossHP>0&&this.z+this.bossDepth>=from&&this.z+this.bossDepth<=to&&Math.abs(x)<=BOSS_TARGET.halfWidth+width?[{id:'boss' as const,z:this.z+this.bossDepth,kind:'boss'}]:[];
@@ -101,20 +130,28 @@ export class Journey {
   const weapon=source==='hero'?this.weapon:CAST[source].weapon,cycle=source==='hero'?WEAPONS[weapon].cycle:CAST[source].companionCycle;
   // Ally sustained DPS = 20% of the same-tier hero, adjusted for its own cadence.
   const factor=source==='hero'?1:.2*cycle/WEAPONS[this.weapon].cycle;
-  return{id:++this.attackId,sourceId:source,weaponId:weapon,tier:this.tier,damage:HERO_BASE_DAMAGE*TIER_FACTORS[this.tier-1]*factor*(source==='hero'&&this.awakeningRemaining>0?1.25:1),direction:this.x,startedTick:this.simulationTick,tick:0,phase:'windup',spent:false,hitTargetIds:[],budget:this.tier===3?2:1,released:false,cycle};
+  return{id:++this.attackId,sourceId:source,weaponId:weapon,tier:this.tier,damage:HERO_BASE_DAMAGE*TIER_FACTORS[this.tier-1]*factor*(source==='hero'&&this.awakeningRemaining>0?1.25:1),direction:this.x,startedTick:this.simulationTick,tick:0,phase:'windup',spent:false,hitTargetIds:[],budget:this.horde?(source==='hero'?ordinaryBudget(weapon,this.tier,this.runTactic)+(this.tier===3?2:1):1):(this.tier===3?2:1),ordinaryBudget:this.horde?(source==='hero'?ordinaryBudget(weapon,this.tier,this.runTactic):1):undefined,specialBudget:this.horde?(source==='hero'?(this.tier===3?2:1):1):undefined,tactic:this.runTactic,released:false,cycle};
  }
  /** A single ledger is shared by near contact and the traveling weapon wave. */
  private attackHit(a:AttackInstance,target:{id:number|'boss';z:number;kind:string;contact?:{x:number;height:number}|null},near:boolean){
   if(target.kind==='rock'){a.spent=true;a.budget=0;return true;}
-  if(a.hitTargetIds.indexOf(target.id)>=0)return false;
+  if(a.hitTargetIds.indexOf(target.id)>=0){if(target.kind==='wood'&&this.obstacles.some(o=>o.id===target.id&&!o.dead)){a.spent=true;return true;}return false;}
   if(a.budget<=0)return true;
   const o=target.id==='boss'?null:this.obstacles.find(o=>o.id===target.id)!;
+  const ordinary=!!o?.ordinary;if(this.horde){const remaining=ordinary?a.ordinaryBudget:a.specialBudget;if((remaining??0)<=0){if(o?.kind==='wood'&&!o.dead){a.spent=true;return true;}return false;}if(ordinary)a.ordinaryBudget!--;else a.specialBudget!--;}
   const before=o?o.hp:this.bossHP,damage=Math.min(before,a.damage);a.hitTargetIds.push(target.id);a.budget--;
+  if(this.horde&&o?.ordinary&&a.sourceId==='hero'&&a.tactic==='zhenjun'&&this.simulationTick-(o.lastControlTick??-999)>=54){o.at+=.18;o.lastControlTick=this.simulationTick;o.slowUntil=this.simulationTick+[12,15,18][a.tier-1];}
   if(o){o.hp=Math.max(0,o.hp-damage);if(o.hp===0){o.dead=true;this.rewardKill(o.id);}}else{this.bossHP=Math.max(0,this.bossHP-damage);if(a.sourceId==='hero')this.bossHit();}
   const bucket=a.sourceId==='hero'?this.damageTotals.hero:(this.damageTotals.companions[a.sourceId]??(this.damageTotals.companions[a.sourceId]={melee:0,wave:0}));bucket[near?'melee':'wave']+=damage;
   this.emit({kind:near?'meleeHit':'waveHit',x:target.contact?.x??(near?actorAnchor(this.x,this.z,a,a.sourceId).x:a.direction),amount:damage,targetId:target.id,worldZ:target.z,hitHeight:target.contact?.height,sourceId:a.sourceId,weaponId:a.weaponId,attackId:a.id});
   if(o?.dead)this.emit({kind:'break',x:o.x,amount:0,targetId:o.id,worldZ:o.at,sourceId:a.sourceId,weaponId:a.weaponId,attackId:a.id});
-  const stop=a.budget===0||(o?.kind==='wood'&&!o.dead);if(stop){a.spent=true;a.budget=0;}return stop;
+  const stop=(this.horde?(a.sourceId==='hero'?(a.ordinaryBudget??0)+(a.specialBudget??0)===0:a.hitTargetIds.length>=1):a.budget===0)||(o?.kind==='wood'&&!o.dead);if(stop){a.spent=true;a.budget=0;}return stop;
+ }
+ private nearContact(geo:ReturnType<typeof nearGeometry>,previous:ReturnType<typeof nearGeometry>,o:Obstacle|null,z:number,kind:string){
+  const target={x:o?.x??0,z,halfWidth:o?(o.side?.length?.5:o.width):BOSS_TARGET.halfWidth,height:kind==='boss'?220:kind==='wood'?100:kind==='rock'?85:98};
+  if(!o?.enemyKind)return contactSurface(geo,previous,target,this.z);
+  // Sample both target movement and the same fixed weapon edge at matching times.
+  for(let i=0;i<=4;i++){const q=i/4,pose={...geo,grip:{x:previous.grip.x+(geo.grip.x-previous.grip.x)*q,y:previous.grip.y+(geo.grip.y-previous.grip.y)*q},tip:{x:previous.tip.x+(geo.tip.x-previous.tip.x)*q,y:previous.tip.y+(geo.tip.y-previous.tip.y)*q}},body={...target,x:(o.previousX??o.x)+(o.x-(o.previousX??o.x))*q,z:(o.previousZ??o.at)+(o.at-(o.previousZ??o.at))*q};const contact=contactSurface(pose,pose,body,this.z);if(contact)return contact;}return null;
  }
  private attackStep(a:AttackInstance){
   a.poseTick=a.tick;
@@ -125,8 +162,8 @@ export class Journey {
   if(a.phase==='active'){
    const geo=nearGeometry(this.x,this.z,a,this.appearance),sx=geo.anchor.x,sz=geo.anchor.z;
    const previous=nearGeometry(this.x,this.z,{...a,tick:Math.max(spec.windup,a.tick-1)},this.appearance);
-   const near=this.candidates(sx,geo.halfWidth,geo.from,geo.to).filter(t=>a.hitTargetIds.indexOf(t.id)<0).map(t=>{const o=t.id==='boss'?null:this.obstacles.find(o=>o.id===t.id)!;return{...t,contact:contactSurface(geo,previous,{x:o?.x??0,z:t.z,halfWidth:o?(o.side?.length?.5:o.width):BOSS_TARGET.halfWidth,height:t.kind==='boss'?220:t.kind==='wood'?100:t.kind==='rock'?85:98},this.z)};}).find(t=>t.contact||t.kind==='rock');
-   if(near&&!a.spent)this.attackHit(a,near,true);
+   const near=(this.horde&&this.phase==='run'?this.obstacles.filter(o=>!o.dead&&!o.resolved&&Math.min(o.at,o.previousZ??o.at)<=geo.to+.1&&Math.max(o.at,o.previousZ??o.at)>=geo.from-.1&&Math.abs(o.x-sx)<=o.width+geo.halfWidth+.06).sort((a,b)=>a.at-b.at||a.id-b.id).map(o=>({id:o.id as number|'boss',z:o.at,kind:o.kind})):this.candidates(sx,geo.halfWidth,geo.from,geo.to)).filter(t=>a.hitTargetIds.indexOf(t.id)<0).map(t=>{const o=t.id==='boss'?null:this.obstacles.find(o=>o.id===t.id)!;return{...t,contact:this.nearContact(geo,previous,o,t.z,t.kind)};}).filter(t=>t.contact||t.kind==='rock');
+   for(const t of near){if(a.spent)break;this.attackHit(a,t,true);if(!this.horde)break;}
    if(!a.released&&a.tick>=spec.windup+Math.floor(spec.active/2)){a.released=true;if(!a.spent){const z=this.z+(geo.tip.y+270-48)/(104-48*.065),scale=Math.max(.5,Math.min(1.04,1-(z-this.z)*.065)),x=geo.tip.x/(260*scale);this.waves.push({id:a.id,attack:a,x,originX:x,z,previousZ:sz,originZ:z,life:0,halfWidth:spec.waveWidth*TIER_WIDTHS[a.tier-1],speed:spec.speed,range:spec.range,stopped:false});}}
   }
   a.tick++;if(a.tick>=a.cycle){this.emit({kind:'meleeEnd',x:this.x,amount:0,worldZ:this.z,sourceId:a.sourceId,weaponId:a.weaponId,attackId:a.id});return null;}return a;
@@ -137,27 +174,41 @@ export class Journey {
   if(this.companionActive){if(!this.companionAttack)this.companionAttack=this.newAttack(this.companion!);this.companionAttack=this.attackStep(this.companionAttack);}else this.companionAttack=null;
  }
  private weaponWaves(){
-  for(const w of this.waves){if(w.stopped||w.attack.spent){w.stopped=true;continue;}w.previousZ=w.life===0?w.previousZ:w.z;w.z+=w.speed*STEP;w.life+=STEP;w.x=w.originX+(w.attack.direction-w.originX)*Math.min(1,(w.z-w.originZ)/1.2);
-   let targets=this.candidates(w.x,w.halfWidth,w.previousZ,w.z);
+  for(const w of this.waves){const previousX=w.x;if(w.stopped||w.attack.spent){w.stopped=true;continue;}w.previousZ=w.life===0?w.previousZ:w.z;w.z+=w.speed*STEP;w.life+=STEP;w.x=w.originX+(w.attack.direction-w.originX)*Math.min(1,(w.z-w.originZ)/1.2);
+   let targets:{id:number|'boss';z:number;kind:string}[]=this.horde&&this.phase==='run'?this.obstacles.filter(o=>!o.dead&&!o.resolved).map(o=>({o,t:sweptTarget(previousX,w.previousZ,w.x,w.z,o,w.halfWidth)})).filter(v=>v.t!==null).sort((a,b)=>a.t!-b.t!||a.o.id-b.o.id).map(v=>({id:v.o.id as number|'boss',z:v.o.at,kind:v.o.kind})):this.candidates(w.x,w.halfWidth,w.previousZ,w.z);
    if(this.phase==='boss'&&this.bossHP>0&&w.previousZ<=this.z+this.bossPrevDepth&&w.z>=this.z+this.bossDepth&&Math.abs(w.x)<=BOSS_TARGET.halfWidth+w.halfWidth)targets=[{id:'boss',z:this.z+this.bossDepth,kind:'boss'}];
-   for(const t of targets){if(this.attackHit(w.attack,t,false)){w.stopped=true;w.z=t.z;break;}}
+   const routeTarget=this.phase==='run'?this.assault?.nearest(w.x,w.previousZ,w.z,w.halfWidth):undefined;
+   if(routeTarget)targets.push({id:routeTarget.id,z:routeTarget.at,kind:'supply'});
+   targets.sort((a,b)=>a.z-b.z||Number(a.id)-Number(b.id));
+   for(const t of targets){
+    if(routeTarget&&t.id===routeTarget.id){this.supplyHit(routeTarget,w.attack.damage);w.stopped=true;w.attack.spent=true;w.z=t.z;break;}
+    if(this.attackHit(w.attack,t,false)){w.stopped=true;w.z=t.z;break;}
+   }
    if(w.z-w.originZ>=w.range)w.stopped=true;
   }
   this.waves=this.waves.filter(w=>!w.stopped);
   this.wavePeak.hero=Math.max(this.wavePeak.hero,this.waves.filter(w=>w.attack.sourceId==='hero').length);this.wavePeak.companion=Math.max(this.wavePeak.companion,this.waves.filter(w=>w.attack.sourceId!=='hero').length);
  }
  private tick() {
+  if(this.runner){this.runner.tick();return;}
   this.simulationTick++; this.elapsed += STEP; this.x += clamp(this.target-this.x,-STEP*2.7,STEP*2.7);
   const previous=this.z;
-  if(this.phase==='run') this.z=Math.min(this.level.duration,this.z+STEP);
+  if(this.phase==='run'){this.z=Math.min(this.level.duration,this.z+STEP);this.horde?.before(this.z,this.x,this.simulationTick,this.obstacles);}
   if(this.awakeningRemaining>0)this.awakeningRemaining=Math.max(0,this.awakeningRemaining-STEP);
-  if(this.phase==='boss'){this.bossPrevDepth=this.bossDepth;this.bossTicks++;this.bossDepth=bossContactDepth(this.bossTicks,this.bossClock,this.bossIndex,this.bossWarning);}
+  if(this.phase==='boss'){this.bossPrevDepth=this.bossDepth;this.bossTicks++;if(this.bossDirector){const group=this.bossDirector.groupId;tickBossDirector(this.bossDirector,{playerX:this.x,teamZ:this.z,canAttack:true});this.bossDepth=this.bossDirector.bossDepth;if(group!==this.bossDirector.groupId)this.emit({kind:'warn',x:this.bossDirector.aimX,amount:this.bossDirector.loss,sourceId:'boss',worldZ:this.z+this.bossDepth});}else this.bossDepth=bossContactDepth(this.bossTicks,this.bossClock,this.bossIndex,this.bossWarning);}
   // Movement, moving boss, arrows, melee, terminal, contacts, hostile impacts.
   this.projectiles(previous);
   this.strike();
   this.weaponWaves();
   if(this.phase==='boss' && this.bossHP<=0){this.phase='won';this.clearCombat();return;}
-  if(this.phase==='run') {
+  if(this.phase==='run'&&this.horde){
+   for(const o of this.obstacles){if(o.dead||o.resolved)continue;
+    if(o.enemyKind==='crossbowman'&&!o.attackStarted&&o.at-this.z<=3&&o.at>this.z&&this.warnings.filter(w=>w.source!=='boss'&&w.stage==='charge').length<2&&!this.horde.config.forks.some(f=>Math.abs(this.z-f.commitAt)<.6||Math.abs(this.z+93/60-f.commitAt)<.6)){o.attackStarted=true;this.warn(o.id,{weaponId:'bow',profile:'arrow',kind:'aimed',telegraphSeconds:93/60,halfWidth:.10,loss:2,impactSeconds:.15,recoverySeconds:1});}
+    if(o.at<=this.z){o.resolved=true;this.horde.breached++;if(Math.abs(this.x-o.x)<=o.width+.06){const loss=o.ordinary?this.horde.collisionLoss(this.simulationTick,o.loss):o.loss;if(loss)this.hurt(loss,'敌兵冲阵');}if(this.finished)return;}
+   }
+   for(const row of this.rows)if(previous<row.at&&this.z>=row.at){this.choose(row);if(this.finished)return;}
+  }
+  if(this.phase==='run'&&!this.horde) {
    for(const row of this.level.rows) if(previous<row.at&&this.z>=row.at){this.choose(row);if(this.finished)return;}
    for(const o of this.obstacles) {
     if(o.dead||o.resolved||o.rowId!==undefined)continue;
@@ -165,8 +216,9 @@ export class Journey {
     if(previous<o.at&&this.z>=o.at){o.resolved=true;if(Math.abs(this.x-o.x)<=o.width)this.hurt(o.loss,o.kind==='rock'?'撞上山石':o.kind==='wood'?'木障未清除':'撞上敌兵');}
     if(this.finished)return;
    }
-   if(this.z>=this.level.duration){this.phase='boss';this.melee=null;this.companionAttack=null;this.waves=[];this.arrows.length=0;this.warnings.length=0;this.bossClock=0;this.bossTicks=0;this.bossDepth=this.bossPrevDepth=4;}
-  } else if(this.phase==='boss') {
+  }
+  if(this.phase==='run'&&this.assault){for(const reward of this.assault.pass(previous,this.z,this.x)){this.receiveSupply(reward);if(this.finished)return;}}
+  if(this.phase==='run'&&this.z>=this.level.duration&&(!this.horde||(!this.obstacles.some(o=>!o.dead&&!o.resolved)&&!this.horde.pending&&!this.horde.future&&!this.warnings.length))){this.phase='boss';this.melee=null;this.companionAttack=null;this.waves=[];this.arrows.length=0;this.warnings.length=0;this.bossClock=0;this.bossTicks=0;this.bossDepth=this.bossPrevDepth=4;} else if(this.phase==='boss'&&!this.bossDirector) {
    this.bossClock+=STEP;
    if(!this.bossWarning&&this.bossClock+1e-9>=this.bossReady){const a=this.level.bossAttacks[this.bossIndex%this.level.bossAttacks.length];this.warn('boss',a);this.bossReady=a.recoverySeconds;this.bossIndex++;this.bossClock=0;}
   }
@@ -187,7 +239,9 @@ export class Journey {
    }
    if(w.source==='boss')this.bossClock=0;
   }
+  if(this.phase==='boss'&&this.bossDirector){const loss=hitBossHazard(this.bossDirector,this.x,this.z);if(loss)this.hurt(loss,this.bossDirector.label);if(this.finished)return;}
   this.warnings=this.warnings.filter(w=>w.remaining>-w.impact);
+  if(this.horde&&!this.finished)for(const reward of this.horde.exits(this.z,this.count>0)){const before=this.count;this.count=Math.min(256,this.count+reward.amount);if(this.count>before||!this.assault)this.emit({kind:'gather',x:this.x,amount:this.count-before,targetId:'team',worldZ:this.z});}
  }
  private emit(e:Feedback) { this.feedback.push(Object.freeze({...e,simulationTick:this.simulationTick})); }
  drainFeedback() { const events = this.feedback; this.feedback = []; return events; }

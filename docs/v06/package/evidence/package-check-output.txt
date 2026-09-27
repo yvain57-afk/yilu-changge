@@ -1,0 +1,40 @@
+{
+  "status": "pass",
+  "scope": "package_config_only_not_cocos_or_phone",
+  "levels": 3,
+  "forks": 9,
+  "routeVariants": 18,
+  "configuredBranchPackets": 54,
+  "checks": [
+    "stable ids",
+    "references",
+    "route windows",
+    "preview and gate separation",
+    "spawn cutoff",
+    "enemy composition",
+    "reward ordering",
+    "growth thresholds",
+    "boss move counts"
+  ],
+  "plannedCountUpperBounds": [
+    {
+      "level": "trial-01",
+      "allSafePlannedEnemies": 126,
+      "allHardPlannedEnemies": 192,
+      "observedKills": null
+    },
+    {
+      "level": "trial-02",
+      "allSafePlannedEnemies": 144,
+      "allHardPlannedEnemies": 216,
+      "observedKills": null
+    },
+    {
+      "level": "trial-03",
+      "allSafePlannedEnemies": 168,
+      "allHardPlannedEnemies": 240,
+      "observedKills": null
+    }
+  ],
+  "gameplayValidated": false
+}

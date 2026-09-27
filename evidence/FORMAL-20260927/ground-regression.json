@@ -1,0 +1,171 @@
+{
+  "passed": true,
+  "scope": "Actual Cocos nodes disabled and reenabled via pause/quit/prepare/depart four times; custom mesh assembler identity and vertex counts checked",
+  "results": [
+    {
+      "restart": 0,
+      "meshes": [
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 512
+        },
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 512
+        },
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 512
+        },
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 389
+        },
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 512
+        },
+        {
+          "custom": true,
+          "capacity": 256,
+          "data": 1024,
+          "quads": 244
+        }
+      ]
+    },
+    {
+      "restart": 1,
+      "meshes": [
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 512
+        },
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 512
+        },
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 512
+        },
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 389
+        },
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 512
+        },
+        {
+          "custom": true,
+          "capacity": 256,
+          "data": 1024,
+          "quads": 244
+        }
+      ]
+    },
+    {
+      "restart": 2,
+      "meshes": [
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 512
+        },
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 512
+        },
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 512
+        },
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 389
+        },
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 512
+        },
+        {
+          "custom": true,
+          "capacity": 256,
+          "data": 1024,
+          "quads": 244
+        }
+      ]
+    },
+    {
+      "restart": 3,
+      "meshes": [
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 512
+        },
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 512
+        },
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 512
+        },
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 389
+        },
+        {
+          "custom": true,
+          "capacity": 512,
+          "data": 2048,
+          "quads": 512
+        },
+        {
+          "custom": true,
+          "capacity": 256,
+          "data": 1024,
+          "quads": 244
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

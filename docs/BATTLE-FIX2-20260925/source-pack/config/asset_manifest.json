@@ -1,0 +1,165 @@
+{
+  "status": "production_plan_no_new_finished_art_included",
+  "items": [
+    {
+      "id": "ART-01",
+      "name": "主将攻击动作",
+      "requirement": "按实际blade主将重做起势/出手/收势，连续握持与脚位。",
+      "kind": "animation",
+      "status": "needs_local_audit_and_work",
+      "runtimePath": null,
+      "evidencePath": null,
+      "licenseOrProvenance": null
+    },
+    {
+      "id": "ART-02",
+      "name": "其他可用武将攻击动作",
+      "requirement": "按真实兵器及同袍名单逐个映射，不新增角色。",
+      "kind": "animation",
+      "status": "needs_local_audit_and_work",
+      "runtimePath": null,
+      "evidencePath": null,
+      "licenseOrProvenance": null
+    },
+    {
+      "id": "ART-03",
+      "name": "刃器光波",
+      "requirement": "刃光核心、轻尾迹及出口；范围贴合实际弹丸。",
+      "kind": "effect",
+      "status": "needs_local_audit_and_work",
+      "runtimePath": null,
+      "evidencePath": null,
+      "licenseOrProvenance": null
+    },
+    {
+      "id": "ART-04",
+      "name": "其他实际兵器光波",
+      "requirement": "枪戟/斧等仅在真实配置存在时制作。",
+      "kind": "effect",
+      "status": "needs_local_audit_and_work",
+      "runtimePath": null,
+      "evidencePath": null,
+      "licenseOrProvenance": null
+    },
+    {
+      "id": "ART-05",
+      "name": "真实火力属性叠层",
+      "requirement": "与合法连发/火属性联动，不替代武器身份。",
+      "kind": "effect",
+      "status": "needs_local_audit_and_work",
+      "runtimePath": null,
+      "evidencePath": null,
+      "licenseOrProvenance": null
+    },
+    {
+      "id": "ART-06",
+      "name": "正负零门旗面",
+      "requirement": "统一结构及低噪声底，数字独立。",
+      "kind": "sprite",
+      "status": "needs_local_audit_and_work",
+      "runtimePath": null,
+      "evidencePath": null,
+      "licenseOrProvenance": null
+    },
+    {
+      "id": "ART-07",
+      "name": "门值排版组件",
+      "requirement": "大正负值、稳定宽度、真实跨阈值反馈。",
+      "kind": "component",
+      "status": "needs_local_audit_and_work",
+      "runtimePath": null,
+      "evidencePath": null,
+      "licenseOrProvenance": null
+    },
+    {
+      "id": "ART-08",
+      "name": "连续+1小门信息",
+      "requirement": "每门就近短签，去侧栏长引线。",
+      "kind": "component",
+      "status": "needs_local_audit_and_work",
+      "runtimePath": null,
+      "evidencePath": null,
+      "licenseOrProvenance": null
+    },
+    {
+      "id": "ART-09",
+      "name": "四类箱奖励图标",
+      "requirement": "兵员、装备、链门、真实同袍；不得添加品质经济。",
+      "kind": "sprite",
+      "status": "needs_local_audit_and_work",
+      "runtimePath": null,
+      "evidencePath": null,
+      "licenseOrProvenance": null
+    },
+    {
+      "id": "ART-10",
+      "name": "箱体统一信息组",
+      "requirement": "一行奖励、一行细耐久条及数字，统一样式。",
+      "kind": "component",
+      "status": "needs_local_audit_and_work",
+      "runtimePath": null,
+      "evidencePath": null,
+      "licenseOrProvenance": null
+    },
+    {
+      "id": "ART-11",
+      "name": "箱体破裂与文字退场",
+      "requirement": "原素材合格可复用；若不合格重做并绑定真实事件。",
+      "kind": "animation",
+      "status": "needs_local_audit_and_work",
+      "runtimePath": null,
+      "evidencePath": null,
+      "licenseOrProvenance": null
+    },
+    {
+      "id": "ART-12",
+      "name": "隔离墙中段",
+      "requirement": "木桩/横梁/绳结，与土路投影协调。",
+      "kind": "sprite",
+      "status": "needs_local_audit_and_work",
+      "runtimePath": null,
+      "evidencePath": null,
+      "licenseOrProvenance": null
+    },
+    {
+      "id": "ART-13",
+      "name": "隔离墙首尾",
+      "requirement": "开口收边，保留真实端点和通行空间。",
+      "kind": "sprite",
+      "status": "needs_local_audit_and_work",
+      "runtimePath": null,
+      "evidencePath": null,
+      "licenseOrProvenance": null
+    },
+    {
+      "id": "ART-14",
+      "name": "隔离墙阴影",
+      "requirement": "地面接触，不能遮假开口。",
+      "kind": "sprite",
+      "status": "needs_local_audit_and_work",
+      "runtimePath": null,
+      "evidencePath": null,
+      "licenseOrProvenance": null
+    },
+    {
+      "id": "ART-15",
+      "name": "顶部装饰组合清理",
+      "requirement": "找出运行实例和生成来源并删除；保留功能性对象。",
+      "kind": "scene",
+      "status": "needs_local_audit_and_work",
+      "runtimePath": null,
+      "evidencePath": null,
+      "licenseOrProvenance": null
+    },
+    {
+      "id": "ART-16",
+      "name": "武器短音效校正",
+      "requirement": "仅在原声音与动作冲突时替换/复用，无BGM。",
+      "kind": "audio",
+      "status": "needs_local_audit_and_work",
+      "runtimePath": null,
+      "evidencePath": null,
+      "licenseOrProvenance": null
+    }
+  ]
+}

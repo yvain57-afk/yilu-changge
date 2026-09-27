@@ -1,0 +1,628 @@
+{
+ "generatedAt": "2026-09-27T02:54:13+08:00",
+ "generatedBy": "Claude（交接最后一步）",
+ "projectRoot": "/Users/yvainair/Code/游戏-左右滑古代史",
+ "git": {
+  "branch": "main",
+  "head": "7ee7685",
+  "committed": false,
+  "note": "以下文件均为 untracked，未提交；工作树中其余 M/?? 为此前已有工作，未列入"
+ },
+ "scope": [
+  "docs/BATTLE-PREVIEW-20260926",
+  "art-source/battle-preview-20260926",
+  "art-source/battle-actions-20260927",
+  "AI_HANDOFF.md",
+  "AGENTS.md",
+  "CLAUDE.md"
+ ],
+ "count": 121,
+ "totalBytes": 141512483,
+ "files": [
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/base/battle20260925_bosses.png",
+   "bytes": 180156,
+   "sha256": "9d2806319b2ea7455d86b5352f671fff4fcf9e617d52b46209ceb0537a05f3c4"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/base/battle20260925_companions.png",
+   "bytes": 59330,
+   "sha256": "b16215f180ddf0d4c5405b62df784754dcf2408d98fd32e23324b175ce9cea0c"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/base/battle20260925_crates.png",
+   "bytes": 163514,
+   "sha256": "1245b890834f166b6e7205a1f8b58ef546d6830eafb6d0b5c77b00a33c821a07"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/base/battle20260925_distant.png",
+   "bytes": 556231,
+   "sha256": "54f39a89b76cdaad57563d630b5583ffa8fbfde30b26ca130070db47e78ff08b"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/base/battle20260925_gate-parts.png",
+   "bytes": 180238,
+   "sha256": "c0c972921bfa114447e2a1a649fe3c5d5af4a955be4c53be782a8b62467450fb"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/base/battle20260925_grass.jpg",
+   "bytes": 64361,
+   "sha256": "9366a85600a192c13fafb4052a8d2bd5eca9ad157e9db38e32c56c457a094cc6"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/base/battle20260925_heroes.png",
+   "bytes": 127398,
+   "sha256": "d1ca90e59597dae7c3f6cf0721faa46bd736b1785f502b44a37ac97a84f09af3"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/base/battle20260925_road.jpg",
+   "bytes": 93297,
+   "sha256": "e5aab5c57d636c3b357523382666d7cbe4738bdb89fdf32f2b278509a07701e2"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/base/battle20260925_scenery.png",
+   "bytes": 180576,
+   "sha256": "ce5025c52e170050bc209ff8ac4e4b024c867295ce0625bb2b4ae54a21c70405"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/base/battle20260925_soldiers.png",
+   "bytes": 49622,
+   "sha256": "df9cab6da83288b57544c7f54190f4ad60046c2d6f4403c43d11f9e0ea92f8f3"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/base/battlefix2_actions.png",
+   "bytes": 206823,
+   "sha256": "a6d06f6e3c24cf63ddb5cc91953a03a825ed8b4620bcc427fdb0e0effb2fb792"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/base/battlefix2_blade.png",
+   "bytes": 41610,
+   "sha256": "a52b78f8bd38ae891f2f09a8639e00d552350f2b69d87467427709ba6fa39c04"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/base/battlefix2_environment.png",
+   "bytes": 71539,
+   "sha256": "4516ba1f3f2297e8db2d61063cd5a0007ec97848bc4543c2c0f48e8999e1ac2d"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/base/battlefix2_shadow.png",
+   "bytes": 5753,
+   "sha256": "0bb08d11f55a63498d8198e9c4ce515bd51cc60cd7b80d96c4565f3bd8728aef"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/base/battlefix2_wall-middle.png",
+   "bytes": 19486,
+   "sha256": "28c546a36894c2e29eca4fb8f2d70d75e78243c161fc33fab29023ae8ce550f2"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/base/battlefix2_waves.png",
+   "bytes": 135803,
+   "sha256": "b181f20e0583dcfcac4e292c14efe450640dfc9c626c6998dabb143d7e46e033"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/base/battlefix2_zhao.png",
+   "bytes": 43639,
+   "sha256": "42db3e0609240f7ef2360a2be86eaf60cb9d9ee2c21adc12adaef14c90c38f5d"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/gen/companions.png",
+   "bytes": 1247476,
+   "sha256": "3d4b7d84b7d12050a7c6798192fa00cd92b33372a9d79843db90d3ea51d04e3b"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/gen/crates2.png",
+   "bytes": 1929209,
+   "sha256": "b547d5db069b40deb23812b09f559f32bb10ed22c8a611de29b3f1ee01838bc9"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/gen/enemy-lubu.png",
+   "bytes": 1058081,
+   "sha256": "54910582b7e960cd1561c9a8e5f616f1a57cd9fd7bf0a416d92d008207cd295b"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/gen/gate-parts2.png",
+   "bytes": 1244035,
+   "sha256": "f849472b1b2a3488c5eafb2fe5c307d8dad2242a448d9defd37ca63080ae613a"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/gen/hero-run.png",
+   "bytes": 1478594,
+   "sha256": "3ac8791bf51c412a8ea54201b3be52fb84796869e4ff862e14b37dff891f6c7e"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/gen/hero-spear.png",
+   "bytes": 970850,
+   "sha256": "64cef7d0f0cfe5d9d9b67b9a6b2d5015ef9288fcf7f413a138c97083ddb9e4e7"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/gen/hero-weapons.png",
+   "bytes": 1577310,
+   "sha256": "0fa1244dca747815001ae66847c108214b9d5277a9044974b5e435ac6b33329c"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/gen/lubu2.png",
+   "bytes": 1002062,
+   "sha256": "72d3a16de529e75639a47f63868937eccc4324e661aa41cd5a8269d6b51e22a5"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/gen/manifest-gen.js",
+   "bytes": 10424,
+   "sha256": "e993de10eb4edd3203aa1116913b9f9c34416433ee95f7967ca300b764a1c4dd"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/gen/props2.png",
+   "bytes": 1527655,
+   "sha256": "901eb2e2ebdfdf9186199421d8d35c453df784488e3ebc1d55dabc6c274aa19c"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/gen/treasure-icons.png",
+   "bytes": 1732542,
+   "sha256": "21757f580f3e4a0b065cfbde5f9a43d416d7cbd092e3e30fa1ea4fccabfb391d"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/gen/troops.png",
+   "bytes": 1037720,
+   "sha256": "8448af5e2961edf4d808fec05ac9305e2a2d06a485ab8a3f8c5aca02eda40446"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/gen/wall-parts.png",
+   "bytes": 1318556,
+   "sha256": "d3dc836bdae16865eb0a24dbe10de9f5606b3890fc00a5b60382ca4c99a4a8da"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/gen/weapon-icons.png",
+   "bytes": 1187380,
+   "sha256": "62642eb67d72f65242b6d16f45aa22c9c57fc7691a6160a5bc6e8ff798fab611"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/assets/manifest.js",
+   "bytes": 11092,
+   "sha256": "ccad26cc7546e3af00a4be676d619c84bcc484322af812a6cd8b58393591d34d"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/baseline-20260927-approved/SHA256SUMS",
+   "bytes": 1322,
+   "sha256": "7ea94968667f031c5a6ab3da14206cb37cc2b7e8964ce596541a314a9d34318c"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/baseline-20260927-approved/battle-dense@2x.png",
+   "bytes": 1944150,
+   "sha256": "57ab73a4fc47b0174a758f09963cd060e87c0504a230cb6e2bd3b69655c28a53"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/baseline-20260927-approved/battle-general@2x.png",
+   "bytes": 1794732,
+   "sha256": "ef10045ccebd112fdb1fd923b4a6a2ab9e7af376e587682919d03e2c3cad274d"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/baseline-20260927-approved/battle-normal@2x.png",
+   "bytes": 1815551,
+   "sha256": "4831d87315caf45fa004adfea748e2cf104c56f20010445b713862039a1898c9"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/baseline-20260927-approved/battle-preview.mp4",
+   "bytes": 21100130,
+   "sha256": "3c91ac0b2fab8a0f1b547119402e4c37168ffaeaedf91a2758b3ff50f018f1c8"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/baseline-20260927-approved/battle-zones@2x.png",
+   "bytes": 1827595,
+   "sha256": "4650d36131ff78f4cf0b0f2de17ce39727e01644d1d4b5327d53097701103098"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/baseline-20260927-approved/index.html",
+   "bytes": 3481,
+   "sha256": "d7752557463d0cc9c911c27d984c6804cd476aae3da253e6ab48a97edd48a104"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/baseline-20260927-approved/manifest-gen.js",
+   "bytes": 4141,
+   "sha256": "75b20fbed7d6594a7a9f3bf98a54b17735abcb6fb4ae987ec2101a2d778a9561"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/baseline-20260927-approved/preview.js",
+   "bytes": 63774,
+   "sha256": "3603cafbd66ca22cf5b5887ffc9a6beb288bfec5807845951a801c6e2efbf904"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/baseline-20260927-approved/size-matrix.jpg",
+   "bytes": 1179266,
+   "sha256": "1f45ec4739485aafbd1c855111064dc64dcd139f5ba2cbba14581e2d1a9fdd16"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/baseline-20260927-approved/still-3states.jpg",
+   "bytes": 776101,
+   "sha256": "7ed52976f2ecbeea001046d10067e0dd601f1567b0551bc307fe8c7a5ea016ae"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/baseline-20260927-approved/weapons-4x4.jpg",
+   "bytes": 1597905,
+   "sha256": "b6e1d1e554ff03c6d2cc1e3215b9a7a4e37a173b96f74dd2908bd02bd2bd43e8"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/baseline-20260927-approved/战斗规格.md",
+   "bytes": 12543,
+   "sha256": "bb007fd2640bf3f6330b94fda69a4e64bb11796f2109a8e0fd7700ac59bca55b"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/deliver/battle-dense@2x.png",
+   "bytes": 2027033,
+   "sha256": "613c0a2d03799fbf26bd1f7e879b67990d61eed7248d2b15c293910326e1b656"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/deliver/battle-general@2x.png",
+   "bytes": 1865830,
+   "sha256": "572ce684fca32e74b7ab26854b9778f20371856ab5633c1f7f79a375a4818fb3"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/deliver/battle-normal@2x.png",
+   "bytes": 1867789,
+   "sha256": "74a5e42a6a4d108f1fc04b3d6a5aa0134737ec9f3e1a87bd5acb499e5d3af71b"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/deliver/battle-preview.json",
+   "bytes": 7419,
+   "sha256": "93623d1535046d69b5459df715488d7d1ba1a7ce99cae2ec01d69132abe2e9f9"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/deliver/battle-preview.mp4",
+   "bytes": 51233395,
+   "sha256": "0c9dc66cc7cc3b1689e99f0f9fe6ea457c295b9abb0a7378f12c26b1b5490cc6"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/deliver/battle-zones@2x.png",
+   "bytes": 1871081,
+   "sha256": "f5ee8d5c492796f304f0575df22051981717bdfc837f5f2654c3b3549961e3e3"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/deliver/feedback-boss.jpg",
+   "bytes": 1064294,
+   "sha256": "344349e6d22a6eab5a069b51d3bf85969cda08a6e0c8edc96735156f041848f6"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/deliver/feedback-march.jpg",
+   "bytes": 1370278,
+   "sha256": "0b1045b2ef2f449f3c01e78f2ade5d0bb9868618910351b6cd0085d916ade658"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/deliver/size-matrix.jpg",
+   "bytes": 2100993,
+   "sha256": "a6b2817f2605a970ba636e3e7ea56d54d70ee0c95ca958c97a679d17bf0d01c3"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/deliver/still-3states.jpg",
+   "bytes": 844411,
+   "sha256": "34252fe111c1b4292af2dd76d25d45d3fcdc211a91f7495575396fa9dfa508bb"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/deliver/verification.json",
+   "bytes": 6077,
+   "sha256": "8c43f3891b38666a0f8b5bd0fd2b4153767c4dfb4cc542bbadfb861845f1eb4b"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/deliver/weapons-4x4.jpg",
+   "bytes": 1704998,
+   "sha256": "32853acf7efd53ad2f54aa4c36badd27a41344568c66d149d8b865b7da9f6c82"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/handoff/cocos-audit-20260927.md",
+   "bytes": 3549,
+   "sha256": "cc683ace9c655e3d178e79cb8de660d54bafec64d77604d1d5cae782883f36bf"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/index.html",
+   "bytes": 4146,
+   "sha256": "0e7c671802ce321af4855ecb39a3ceec583501bc87618825e4489b5dbd0be0a8"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/preview.js",
+   "bytes": 99518,
+   "sha256": "2b673841fd45a9177c6beeb010e86f07ae51abe56eadcbad1ff4108a165df804"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/tools/boards.py",
+   "bytes": 4380,
+   "sha256": "43ed76dcd765182642f3a768e8570ba7f11ad3e01d1eadbcb8c55e52b21a43f6"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/tools/common.mjs",
+   "bytes": 1948,
+   "sha256": "94a070f074e07ecd26d2a39a35d8e3628aa37707dc0e3381fc28d085f03d3b6b"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/tools/contact.py",
+   "bytes": 1720,
+   "sha256": "2ff6340073ce2f3f88eb766bd6fa34ab4c74b2e69d968107ccfae9c34b02850e"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/tools/serve.mjs",
+   "bytes": 972,
+   "sha256": "bd5561714dc100e975c6e4bcb8efc3e14f017276265072c6d9ff84c9e5c8c2ec"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/tools/shots.mjs",
+   "bytes": 4311,
+   "sha256": "f87cc24c85c0eb9c94f29a00e3be4fbf2322dcdeae98dcb01f0afbd049a59548"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/tools/smoke.mjs",
+   "bytes": 1139,
+   "sha256": "e3314d8e15a381823dc1b2d5e50eae2e5e6aee77ffd4d752cd610217a84272f4"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/tools/sweep.mjs",
+   "bytes": 1082,
+   "sha256": "b4ee8a9d7249dc772a96e9b70d8f59c45329b85aabbd615000fa9e29018e49ca"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/tools/video.mjs",
+   "bytes": 5222,
+   "sha256": "df7983dad25a44def8f046e769dc24652e106ad60a5f7cb87188de1fcc110a24"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/tools/videosheet.py",
+   "bytes": 1296,
+   "sha256": "40f56b3cfff7a684083bff794d00f91fd675bb78fcfd25e522540ec96fb043a0"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/战斗规格.md",
+   "bytes": 14919,
+   "sha256": "43781d00914d0ae1af75e7ecd92e04db5c360895760475cb0d60cb0603b93ba8"
+  },
+  {
+   "path": "docs/BATTLE-PREVIEW-20260926/统一玩法规则-20260927.md",
+   "bytes": 15650,
+   "sha256": "046c29e52b918f80b31c46b68ac0707669d3717aa1f5685c8f0a0f2b5b080860"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/crates2-v1-badalpha.png",
+   "bytes": 2550672,
+   "sha256": "675cf7fb3360c251491e7aa412a28a935229c6f8a48d9845812b4142aaa0dd74"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/crates2.png",
+   "bytes": 2349561,
+   "sha256": "c3607b5912ae291540998f6051f7f2bfced24f4979d5582c92210c0509563af3"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/enemy-lubu.png",
+   "bytes": 1040971,
+   "sha256": "cb29faafb1e6e3483f6dee7f0fde0e7304511628e5186feb7feed5c54eb0136b"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/gate-parts2.png",
+   "bytes": 1241072,
+   "sha256": "f3739971b9dcb4f337306f289b40edd1a76c3122969b8c63a35eb68292fff0f6"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/hero-weapons.png",
+   "bytes": 2066438,
+   "sha256": "ae0f331ce895facb133f82bdf883061f9cf112fb39d14ac06f5cd9d87807124a"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/logs-crates-2.txt",
+   "bytes": 20225,
+   "sha256": "ec1b54653a1687fa4c6d083dff9eeba3d8140df0432a97a5024e40d5b8fa7d15"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/logs-crates.txt",
+   "bytes": 68778,
+   "sha256": "494a39c4ebb69a58a445d0f7321b5e691b74b149ba78fa69f4af312846a57cd1"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/logs-gate-parts.txt",
+   "bytes": 57609,
+   "sha256": "33d130f92786258802655707acc5740391f1804716ffc5de980601a8f81deeb7"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/logs-hero-weapons.txt",
+   "bytes": 21261,
+   "sha256": "5fa5d2b9f5b12398c999e1b1e38e9066271e35c4a0b6256665604f7771389c87"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/logs-hero-weapons2.txt",
+   "bytes": 3849,
+   "sha256": "ae52198749ea6a2adde0c9f4497ec8b0fc47437fbfc4356b38bbb6c89c044c9b"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/logs-lubu.txt",
+   "bytes": 43230,
+   "sha256": "70483f223a24687ffb63ea38f4fef30b98d872c4b6053a824bcdad3dc01964e8"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/logs-wall-parts.txt",
+   "bytes": 31219,
+   "sha256": "6360069beb4a5a96f1ba5c2813979100303482aba645561e7585e7637faa0381"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/logs-weapon-icons-2.txt",
+   "bytes": 29189,
+   "sha256": "634b93786d14f3c5b8c6a4cf4761f684e723911d3a68ea7c255329f3654cf9bb"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/logs-weapon-icons.txt",
+   "bytes": 40079,
+   "sha256": "89119bd5f61da6d72b4912475b2c6a79cbbd58859fefad2b09157e319c86b0bb"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/prompts/common.txt",
+   "bytes": 1171,
+   "sha256": "121bf113c4ae6f19e96afe508f26f029b3cc6c135ab6071743eb2c3a7b5a6a1f"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/prompts/crates.txt",
+   "bytes": 984,
+   "sha256": "7a2843d9028fbc69bc424a7a567c0e143ab8aba0d23f82b3f7331d101276eaea"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/prompts/gate-parts.txt",
+   "bytes": 1147,
+   "sha256": "50353ff0d2632601276ed0c0a2f6725e6685f02ce0cf180b920404895a7856bc"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/prompts/hero-weapons.txt",
+   "bytes": 1381,
+   "sha256": "c70c00f24edc0e87330f3e1e3a56f1fd3e8ce2340c82108e625032255383949f"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/prompts/lubu.txt",
+   "bytes": 1300,
+   "sha256": "1e0fa39bfc608f06da5e6d5250d1b17b60cb470706c5ad991539b935d89a3420"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/prompts/wall-parts.txt",
+   "bytes": 795,
+   "sha256": "6ce94c6274b1e82cf381fb7fbeaacf6d6a8d04833aa03e4b4fda1d3356f34fad"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/prompts/weapon-icons.txt",
+   "bytes": 802,
+   "sha256": "a258d58bbbf43f1c46a6416fa2ebf89e3a0c0b96f2722a82ec7c50611b842aaa"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/slice.py",
+   "bytes": 16877,
+   "sha256": "f1e9bf6a68b106d73f622ac461c239f549dc5c47b622d99a6a881d4ca3f397c7"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/wall-parts.png",
+   "bytes": 1898743,
+   "sha256": "64d1f3cb5dd16e00e9aba9fd84eda3afd9bd746617e9506453cbb383b2cd9161"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/weapon-icons-v1-badalpha.png",
+   "bytes": 1586407,
+   "sha256": "b186cd2c4676f6fd28e6d6f9cb0a7051ff82bbb007313a085fdbc6c921a5ef8c"
+  },
+  {
+   "path": "art-source/battle-preview-20260926/weapon-icons.png",
+   "bytes": 1511163,
+   "sha256": "7fc3148fd9ebc6682ccf695096b1c3be2227c94f299415e4a883d75039e1108e"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/companions.png",
+   "bytes": 1090459,
+   "sha256": "e6caf458480d70cc698dcd556ee2d611e1d17ab345c71925ac10b565d77a1967"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/hero-run.png",
+   "bytes": 1904742,
+   "sha256": "7917a94dab8bae2df34a158afd1918ab4b4bc6073518dbfd930d35beab92791c"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/hero-spear.png",
+   "bytes": 854186,
+   "sha256": "24fb84ca89d51d8213b2128603b869e3f9f51c8ad5313e34eb01e7098fb91c8c"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/logs-companions.txt",
+   "bytes": 9862,
+   "sha256": "8d585f92b86dd12334621ab65c22c36bb30c9c6df3a52053161fe7e9dc5ec1e2"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/logs-hero-run.txt",
+   "bytes": 13966,
+   "sha256": "52348caecf9696ef912795cf71a27fc4fba8ecab8b5922a5c77f7ba5d1e07d68"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/logs-hero-spear.txt",
+   "bytes": 10308,
+   "sha256": "921561cefa28414b952a6b0902d041dcbb0d3907b2360a7f81c54306889c19d2"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/logs-lubu2.txt",
+   "bytes": 10195,
+   "sha256": "e14843dd39226af89eea937abcdbdce522c4d3d450f1c52cec130a13527cc21a"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/logs-props2.txt",
+   "bytes": 8079,
+   "sha256": "48046c1481777c5e682614ce8d893f930bad3d55c1c1a1092a4df17c3ac782d2"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/logs-treasure-icons.txt",
+   "bytes": 61958,
+   "sha256": "758dd5dad970864380299d01f2cd24dbaec1513bfefdc74e72270f408f758fcb"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/logs-troops.txt",
+   "bytes": 15039,
+   "sha256": "4f74039e6f324f2d7f47423568090bbeb47d64d3bbe79913d331277fe3e27789"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/lubu2.png",
+   "bytes": 1017470,
+   "sha256": "c7879f2ccf0840526f748d4f640ff4c44681cf339999945cb8b4082c82e84adf"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/prompts/common.txt",
+   "bytes": 1171,
+   "sha256": "121bf113c4ae6f19e96afe508f26f029b3cc6c135ab6071743eb2c3a7b5a6a1f"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/prompts/companions.txt",
+   "bytes": 1502,
+   "sha256": "193ab7d00abe01f22a5ee76c7bf1f4e62c796065479ef6258c18fb2f945a8ce2"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/prompts/hero-run.txt",
+   "bytes": 2108,
+   "sha256": "da866d8bb3921a512eb263e9e8a36d4318d1a907313b92b47729f34ec7cfa9d9"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/prompts/hero-spear.txt",
+   "bytes": 1591,
+   "sha256": "258604f89f7519d92f77eddc78c20b64b0c4ed9d5c395fc8094fedf0242e905c"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/prompts/lubu2.txt",
+   "bytes": 1518,
+   "sha256": "7d64c61be6a0d53e47aeaa37ce884ef06fbaef7f3b76994f596a10b2aa78deac"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/prompts/props2.txt",
+   "bytes": 1288,
+   "sha256": "93b098ad1b1dc8c78c1bc2201ff3a09d64e3f6c973615119eac525d688ddb68a"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/prompts/treasure-icons.txt",
+   "bytes": 1725,
+   "sha256": "cdc744ea774a32d6316fa0717565a7f6623d62cd6a6a22ace51e17c9b2443944"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/prompts/troops.txt",
+   "bytes": 1826,
+   "sha256": "5affb328cf96ac323bff6976b2798d576ebc11d9f5e833e97fd00ceae57f28e6"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/props2.png",
+   "bytes": 1543301,
+   "sha256": "05fd1ae12e7cd71d3301df4552cbc9b618f4401ce603da28044d12b5e90bea23"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/treasure-icons.png",
+   "bytes": 1541770,
+   "sha256": "b312426330079c1e53744549f844b2316f75cf0d896b506152b837cd9fa82eeb"
+  },
+  {
+   "path": "art-source/battle-actions-20260927/troops.png",
+   "bytes": 1058148,
+   "sha256": "2e2af1230e080e29d909c541f295ba7ab25438fdd4c57d0a1bc8e158558970a5"
+  },
+  {
+   "path": "AI_HANDOFF.md",
+   "bytes": 17167,
+   "sha256": "3c051b2b56a0d6247b08b62125d87492c7d343acd89bf309cc47241cd7a942ca"
+  },
+  {
+   "path": "AGENTS.md",
+   "bytes": 1540,
+   "sha256": "412c1ff7553adfbb92f6c7ae2e67686c220d9afea0053c63d645406ae8cbdc23"
+  },
+  {
+   "path": "CLAUDE.md",
+   "bytes": 138,
+   "sha256": "35718196e855ab68718a4e639a6c7524eb421eee2ef704791a06a6dfa3d02f4d"
+  }
+ ]
+}

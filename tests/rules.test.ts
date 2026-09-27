@@ -1,13 +1,16 @@
+import {assaultSteer} from '../tools/v07-policy';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {Journey,STEP,Level,Attack} from '../assets/scripts/core/model';
-import {LEVELS} from '../assets/scripts/core/levels';
+import {V07_LEVELS as LEVELS,LEGACY_LEVELS} from '../assets/scripts/core/levels';
 import {Book,KEY,LEGACY_KEY} from '../assets/scripts/core/save';
 import {formation,project} from '../assets/scripts/VisualConfig';
-const empty=(over:Partial<Level>={}):Level=>({...LEVELS[0],rows:[],obstacles:[],duration:1000,...over});
+// Static obstacle/warning fixtures retain legacy geometry and event ordering. Normal LEVELS route/save/formation checks still exercise horde-v06.
+const empty=(over:Partial<Level>={}):Level=>({...LEGACY_LEVELS[0],rows:[],obstacles:[],duration:1000,...over});
 function step(g:Journey,n:number){for(let i=0;i<n;i++){g.advance(STEP);g.drainFeedback();}}
 // Legal target-position controller, no count/HP/time mutation in route tests.
 export function steer(g:Journey,route='best'){
+ if(g.assault)return assaultSteer(g,route);
  if(g.phase==='boss'){const w=g.bossWarning;return w&&!w.hit&&Math.abs(w.x)<=w.width?(w.x<=0?.78:-.78):0;}
  const r=g.level.rows.find(r=>!g.usedRows.has(r.id)&&r.at-g.z<=7);
  let x=0;
@@ -19,10 +22,10 @@ export function steer(g:Journey,route='best'){
 }
 function bot(g:Journey,route='best'){g.move(steer(g,route));g.advance(STEP);g.drainFeedback();}
 test('R01 首关8兵、上下界、真实火力和主角计数',()=>{assert.deepEqual(LEVELS.map(l=>l.start),[8,12,16]);const g=new Journey(LEVELS[0]);assert.equal(g.count,8);g.count=200;g.choose({id:8,at:0,left:{kind:'double',value:2},right:{kind:'double',value:2}});assert.equal(g.count,256);assert.equal(g.visibleCount,48);assert.equal(g.damage,51);assert.equal(formation(256,.91).length,48);assert.equal(formation(1,0).length,1);g.hurt(999,'边界');assert.equal(g.phase,'lost');assert.equal(g.count,0);assert.equal(g.drainFeedback().at(-1)?.amount,256);});
-test('R02 同排中心选择一次，极速横移不重复加兵',()=>{const g=new Journey(LEVELS[0]);const r=g.level.rows[0];g.x=-.1;g.choose(r);assert.equal(g.count,20);for(let i=0;i<100;i++){g.x=i%2?-.9:.9;g.choose(r)}assert.equal(g.count,20);assert.equal(g.usedRows.size,1);});
-test('R02 穿门一次、正中归右、射击不改门值',()=>{const g=new Journey(empty({rows:[LEVELS[0].rows[0]]}));const original=JSON.stringify(g.level.rows);step(g,7*60);assert.equal(g.count,16);g.move(-.8);step(g,120);assert.equal(g.count,16);assert.equal(JSON.stringify(g.level.rows),original);});
-test('R02 受阻门先扣后加、两侧边界及0兵不复活',()=>{for(const x of [0,.0001,.9]){const g=new Journey(LEVELS[0]);g.count=44;g.x=x;g.choose(g.level.rows[2]);assert.equal(g.count,52);g.x=-.5;g.choose(g.level.rows[2]);assert.equal(g.count,52);}const safe=new Journey(LEVELS[0]);safe.count=44;safe.x=-.00001;safe.choose(safe.level.rows[2]);assert.equal(safe.count,56);const dead=new Journey(LEVELS[0]);dead.count=18;dead.choose(dead.level.rows[2]);assert.equal(dead.count,0);assert.equal(dead.phase,'lost');assert.equal(dead.usedRows.size,1);assert.equal(dead.drainFeedback().filter(e=>e.kind==='gather').length,0);});
-test('R02 清障后可换侧；无隐形重复接触',()=>{const g=new Journey(LEVELS[0]);g.count=44;g.obstacles.find(o=>o.rowId===3)!.dead=true;g.x=.5;g.choose(g.level.rows[2]);assert.equal(g.count,88);assert.ok(g.obstacles.filter(o=>o.rowId===3).every(o=>o.resolved));});
+test('R02 同排中心选择一次，极速横移不重复加兵',()=>{const g=new Journey(LEGACY_LEVELS[0]);const r=g.level.rows[0];g.x=-.1;g.choose(r);assert.equal(g.count,20);for(let i=0;i<100;i++){g.x=i%2?-.9:.9;g.choose(r)}assert.equal(g.count,20);assert.equal(g.usedRows.size,1);});
+test('R02 穿门一次、正中归右、射击不改门值',()=>{const g=new Journey(empty({rows:[LEGACY_LEVELS[0].rows[0]]}));const original=JSON.stringify(g.level.rows);step(g,7*60);assert.equal(g.count,16);g.move(-.8);step(g,120);assert.equal(g.count,16);assert.equal(JSON.stringify(g.level.rows),original);});
+test('R02 受阻门先扣后加、两侧边界及0兵不复活',()=>{for(const x of [0,.0001,.9]){const g=new Journey(LEGACY_LEVELS[0]);g.count=44;g.x=x;g.choose(g.level.rows[2]);assert.equal(g.count,52);g.x=-.5;g.choose(g.level.rows[2]);assert.equal(g.count,52);}const safe=new Journey(LEGACY_LEVELS[0]);safe.count=44;safe.x=-.00001;safe.choose(safe.level.rows[2]);assert.equal(safe.count,56);const dead=new Journey(LEGACY_LEVELS[0]);dead.count=18;dead.choose(dead.level.rows[2]);assert.equal(dead.count,0);assert.equal(dead.phase,'lost');assert.equal(dead.usedRows.size,1);assert.equal(dead.drainFeedback().filter(e=>e.kind==='gather').length,0);});
+test('R02 清障后可换侧；无隐形重复接触',()=>{const g=new Journey(LEGACY_LEVELS[0]);g.count=44;g.obstacles.find(o=>o.rowId===3)!.dead=true;g.x=.5;g.choose(g.level.rows[2]);assert.equal(g.count,88);assert.ok(g.obstacles.filter(o=>o.rowId===3).every(o=>o.resolved));});
 test('R03 箭发射冻结伤害及位置；最近对象优先，无穿透',()=>{const g=new Journey(empty({obstacles:[{id:2,at:2.1,x:0,width:.2,kind:'fighter',hp:100,loss:1},{id:1,at:2,x:0,width:.2,kind:'fighter',hp:100,loss:1}]}));g.advance(STEP);assert.equal(g.arrows[0].damage,7*.2);g.count=100;g.move(.9);step(g,12);assert.equal(g.obstacles[0].hp,100);assert.equal(g.obstacles[1].hp,98.6);});
 test('R03 射击通道、山石挡箭不毁、视野外无伤',()=>{const g=new Journey(empty({obstacles:[{id:1,at:2,x:0,width:.2,kind:'rock',hp:1,loss:4},{id:2,at:3,x:0,width:.2,kind:'fighter',hp:100,loss:1},{id:3,at:9,x:.5,width:.2,kind:'fighter',hp:100,loss:1}]}));step(g,60);assert.equal(g.obstacles[0].hp,1);assert.equal(g.obstacles[1].hp,100);assert.equal(g.obstacles[2].hp,100);const miss=new Journey(empty({obstacles:[{id:1,at:4,x:.5,width:.2,kind:'wood',hp:50,loss:12}]}));miss.move(-.5);step(miss,90);assert.equal(miss.obstacles[0].hp,50);});
 const attack:Attack={kind:'aimed',telegraphSeconds:1.25,halfWidth:.22,loss:8,impactSeconds:.12,recoverySeconds:1.5};
@@ -39,4 +42,4 @@ test('R09 稳定ID存档，只保留允许字段',()=>{let raw:string|null=null;
 test('R10 手机阵型有且仅有一个主角，48可见边界，中心投影一致',()=>{for(const n of [1,8,24,48,256])for(const x of [-.91,0,.91]){const units=formation(n,x);assert.equal(units.length,Math.min(n,48));assert.equal(units.filter(u=>u.hero).length,1);assert.equal(units[0].x,project(x,0).x);assert.ok(units.every(u=>Math.abs(u.x)+29<=360&&u.y>=-485));}});
 test('R11 十局对象有界，胜负无遗留箭或预告',()=>{for(let run=0;run<10;run++){const g=new Journey(LEVELS[run%3]);let max=0;for(let i=0;i<18000&&!g.finished;i++){bot(g);max=Math.max(max,g.arrows.length);assert.ok(g.visibleCount<=48);}assert.equal(g.phase,'won');assert.equal(g.arrows.length,0);assert.equal(g.warnings.length,0);assert.ok(max<35);}});
 
-test('R03 同步击杀与接触时先结算箭命中；半侧木障贴中线可射',()=>{const g=new Journey(empty({obstacles:[{id:1,at:2,x:0,width:.2,kind:'fighter',hp:1,loss:8}]}));g.z=1.99;g.arrows=[{x:0,z:1.9,damage:2}];g.advance(STEP);assert.ok(g.obstacles[0].dead);assert.equal(g.count,8);const guard=new Journey(LEVELS[0]);guard.z=28;guard.x=.00001;guard.target=.00001;step(guard,60);assert.ok(guard.obstacles.find(o=>o.rowId===3)!.hp<80);});
+test('R03 同步击杀与接触时先结算箭命中；半侧木障贴中线可射',()=>{const g=new Journey(empty({obstacles:[{id:1,at:2,x:0,width:.2,kind:'fighter',hp:1,loss:8}]}));g.z=1.99;g.arrows=[{x:0,z:1.9,damage:2}];g.advance(STEP);assert.ok(g.obstacles[0].dead);assert.equal(g.count,8);const guard=new Journey(LEGACY_LEVELS[0]);guard.z=28;guard.x=.00001;guard.target=.00001;step(guard,60);assert.ok(guard.obstacles.find(o=>o.rowId===3)!.hp<80);});

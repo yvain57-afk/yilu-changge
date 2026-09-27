@@ -1,0 +1,257 @@
+{
+  "status": "isolated review fixtures to implement; not completed game tests",
+  "viewports": [
+    {
+      "width": 360,
+      "height": 640
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "platformOverlays": "inject recorded local safe/capsule metrics; do not invent an exact device model",
+  "phoneReview": "actual user device captured separately from browser mocks",
+  "states": [
+    {
+      "id": "home-new",
+      "screen": "home",
+      "setup": "新玩家、只有长枪、无同袍",
+      "expect": [
+        "唯一主CTA出征",
+        "一个主将",
+        "无空功能菜单"
+      ]
+    },
+    {
+      "id": "home-pending",
+      "screen": "home",
+      "setup": "第一关已胜，整军尚未完成",
+      "expect": [
+        "主CTA继续整军",
+        "不越过未完成过渡"
+      ]
+    },
+    {
+      "id": "home-complete",
+      "screen": "home",
+      "setup": "三关与驻防已完成",
+      "expect": [
+        "返回白石/回营语义正确",
+        "不显示空第四关"
+      ]
+    },
+    {
+      "id": "loadout-empty",
+      "screen": "loadout",
+      "setup": "无队友，未解锁长刀",
+      "expect": [
+        "空态说明",
+        "不显示虚假选择",
+        "单独内容区域"
+      ]
+    },
+    {
+      "id": "loadout-full",
+      "screen": "loadout",
+      "setup": "枪刀已解锁，三个队友，陈应选中",
+      "expect": [
+        "主将与同袍可辨",
+        "选中态",
+        "不显示兵法旧提示",
+        "地图不叠在整备后"
+      ]
+    },
+    {
+      "id": "chapter-partial",
+      "screen": "chapters",
+      "setup": "只通第一关",
+      "expect": [
+        "下一关解锁",
+        "第三关锁定",
+        "runnerBest有效"
+      ]
+    },
+    {
+      "id": "battle-1",
+      "screen": "battle",
+      "setup": "1名真实/可见成员",
+      "expect": [
+        "无幽灵队友或弓兵",
+        "人数badge贴队",
+        "合法瞄准"
+      ]
+    },
+    {
+      "id": "battle-24",
+      "screen": "battle",
+      "setup": "24名，含主将与一个同袍",
+      "expect": [
+        "三类角色可辨",
+        "HUD不抢目标",
+        "标签不交叠"
+      ]
+    },
+    {
+      "id": "battle-48-edge",
+      "screen": "battle",
+      "setup": "48名，分别到两侧极限",
+      "expect": [
+        "人物在屏内",
+        "脚底风险真实",
+        "发射点对齐"
+      ]
+    },
+    {
+      "id": "battle-256",
+      "screen": "battle-fixture",
+      "setup": "256真实/48可见、64敌军",
+      "expect": [
+        "火力权重守恒",
+        "池有限",
+        "不凭空丢敌/弹/门"
+      ]
+    },
+    {
+      "id": "gate-convert",
+      "screen": "battle",
+      "setup": "连续打门-1→0→+1",
+      "expect": [
+        "状态颜色稳定",
+        "数字与模型一致",
+        "转换后才按实际接触领取"
+      ]
+    },
+    {
+      "id": "gate-saturation",
+      "screen": "battle",
+      "setup": "正门达到本关实际上限",
+      "expect": [
+        "轻量已满标识",
+        "命中仍有反馈",
+        "无隐形改值"
+      ]
+    },
+    {
+      "id": "crate-reward",
+      "screen": "battle",
+      "setup": "同袍+6、剩余耐久45",
+      "expect": [
+        "两种数字不混淆",
+        "击破一次奖励",
+        "并队可见"
+      ]
+    },
+    {
+      "id": "chain-contact",
+      "screen": "battle",
+      "setup": "多枚+1、部分领取部分错过",
+      "expect": [
+        "逐枚事务",
+        "错过不补发",
+        "间距与足点一致"
+      ]
+    },
+    {
+      "id": "contact-pressure",
+      "screen": "battle",
+      "setup": "敌军从侧前靠近",
+      "expect": [
+        "无单线堆叠",
+        "接触源可见",
+        "损兵与ledger一致",
+        "活敌不假消失"
+      ]
+    },
+    {
+      "id": "equipment-change",
+      "screen": "battle",
+      "setup": "基础弩→连弩→火矢",
+      "expect": [
+        "外观和真实弹同时更新",
+        "范围反馈不伪造伤害"
+      ]
+    },
+    {
+      "id": "boss-entry",
+      "screen": "battle",
+      "setup": "第三关大型敌将出现",
+      "expect": [
+        "敌将血条与距离独立",
+        "武器与角色对应",
+        "安全路径清楚"
+      ]
+    },
+    {
+      "id": "result-first",
+      "screen": "result",
+      "setup": "首次第二关胜利，陈应真实新解锁",
+      "expect": [
+        "一个结果主将",
+        "加入文案仅因真实新解锁",
+        "先保存后动画"
+      ]
+    },
+    {
+      "id": "result-replay",
+      "screen": "result",
+      "setup": "重复第二关胜利，最高身份白石驻将",
+      "expect": [
+        "不重复招募陈应",
+        "不降身份",
+        "本关runnerBest正确"
+      ]
+    },
+    {
+      "id": "result-fail",
+      "screen": "result",
+      "setup": "碰负门归零",
+      "expect": [
+        "实际最后损失原因",
+        "重开当前关",
+        "无假保存成功"
+      ]
+    },
+    {
+      "id": "transition-all",
+      "screen": "transition",
+      "setup": "整军/建营/驻防各自初次及恢复",
+      "expect": [
+        "旗帜和文案不压地图",
+        "等价按钮可点",
+        "完成幂等"
+      ]
+    },
+    {
+      "id": "camp-meeting",
+      "screen": "camp/meeting",
+      "setup": "驻防完成，赵云会面待看/已看",
+      "expect": [
+        "背景和人物只属当前页面",
+        "能返回营地",
+        "重复奖励不发"
+      ]
+    },
+    {
+      "id": "overlay-resume",
+      "screen": "pause/settings",
+      "setup": "战斗暂停→设置→返回→继续",
+      "expect": [
+        "冻结原场景",
+        "无双角色",
+        "音效恢复正常",
+        "音乐仍不加载"
+      ]
+    },
+    {
+      "id": "error-save",
+      "screen": "error",
+      "setup": "资源失败、坏档、存储写失败分别模拟",
+      "expect": [
+        "重试可达",
+        "提示在安全区",
+        "不静默丢旧数据"
+      ]
+    }
+  ]
+}

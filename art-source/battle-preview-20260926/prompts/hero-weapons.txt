@@ -1,0 +1,7 @@
+FILE NAME: hero-weapons.png   (landscape image, e.g. 1536x1024)
+Content: the SAME young hero as in the reference (seen from BEHIND, three-quarter top-down back view, running up/away from the camera): black topknot hair with a blue ribbon, dark blue-steel scale armor with bronze shoulder guards, long flowing royal-blue cape, dark boots. Layout: a strict grid of 3 rows x 4 columns, each figure centered in its cell, all figures the same size (full body, head-to-boots about 80% of cell height), feet on a consistent baseline in each cell.
+Row 1 weapon: Green Dragon Crescent Blade (青龙偃月刀) — long polearm with a large curved crescent blade and a bronze dragon-head guard.
+Row 2 weapon: Serpent Spear (丈八蛇矛) — very long polearm whose steel head is a long wavy snake-shaped blade.
+Row 3 weapon: Sky-Piercer Halberd (方天画戟) — long polearm with a spear point and two crescent moon side-blades, red tassel.
+Columns in every row (same pose logic as the reference sheet): (1) running, weapon held diagonally; (2) wind-up: body coiled, weapon pulled back/raised; (3) release: full strike forward/upward toward the top of the image (the weapon reaches far ahead of the body, blade clearly visible at its extreme); (4) recover: weapon brought back down, body settling.
+Weapon silhouettes must be very readable at small size and clearly different between rows.

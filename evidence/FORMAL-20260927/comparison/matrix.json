@@ -1,0 +1,246 @@
+{
+  "scope": "Read-only source preview and actual native Cocos rendered from identical deterministic fixture states. Fixture injections only in isolated screenshot harness, NOT natural ten-level verification. Different top OS decoration is intentional. No claim of pixel identity or user visual approval.",
+  "records": [
+    {
+      "name": "360x640-normal",
+      "state": "normal",
+      "weapon": "spear",
+      "time": 2,
+      "x": -0.35,
+      "result": {
+        "phase": "normal",
+        "t": 1.9999999999999978,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 360,
+        "H": 640
+      }
+    },
+    {
+      "name": "360x640-dense",
+      "state": "dense",
+      "weapon": "spear",
+      "time": 2.2,
+      "x": 0.4,
+      "result": {
+        "phase": "dense",
+        "t": 2.199999999999997,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 360,
+        "H": 640
+      }
+    },
+    {
+      "name": "360x640-general",
+      "state": "general",
+      "weapon": "spear",
+      "time": 1.75,
+      "x": -0.4,
+      "result": {
+        "phase": "general",
+        "t": 1.7499999999999987,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 360,
+        "H": 640
+      }
+    },
+    {
+      "name": "360x780-normal",
+      "state": "normal",
+      "weapon": "spear",
+      "time": 2,
+      "x": -0.35,
+      "result": {
+        "phase": "normal",
+        "t": 1.9999999999999978,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 360,
+        "H": 780
+      }
+    },
+    {
+      "name": "360x780-dense",
+      "state": "dense",
+      "weapon": "spear",
+      "time": 2.2,
+      "x": 0.4,
+      "result": {
+        "phase": "dense",
+        "t": 2.199999999999997,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 360,
+        "H": 780
+      }
+    },
+    {
+      "name": "360x780-general",
+      "state": "general",
+      "weapon": "spear",
+      "time": 1.75,
+      "x": -0.4,
+      "result": {
+        "phase": "general",
+        "t": 1.7499999999999987,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 360,
+        "H": 780
+      }
+    },
+    {
+      "name": "375x667-normal",
+      "state": "normal",
+      "weapon": "spear",
+      "time": 2,
+      "x": -0.35,
+      "result": {
+        "phase": "normal",
+        "t": 1.9999999999999978,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 375,
+        "H": 667
+      }
+    },
+    {
+      "name": "375x667-dense",
+      "state": "dense",
+      "weapon": "spear",
+      "time": 2.2,
+      "x": 0.4,
+      "result": {
+        "phase": "dense",
+        "t": 2.199999999999997,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 375,
+        "H": 667
+      }
+    },
+    {
+      "name": "375x667-general",
+      "state": "general",
+      "weapon": "spear",
+      "time": 1.75,
+      "x": -0.4,
+      "result": {
+        "phase": "general",
+        "t": 1.7499999999999987,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 375,
+        "H": 667
+      }
+    },
+    {
+      "name": "390x844-normal",
+      "state": "normal",
+      "weapon": "spear",
+      "time": 2,
+      "x": -0.35,
+      "result": {
+        "phase": "normal",
+        "t": 1.9999999999999978,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 390,
+        "H": 844
+      }
+    },
+    {
+      "name": "390x844-dense",
+      "state": "dense",
+      "weapon": "spear",
+      "time": 2.2,
+      "x": 0.4,
+      "result": {
+        "phase": "dense",
+        "t": 2.199999999999997,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 390,
+        "H": 844
+      }
+    },
+    {
+      "name": "390x844-general",
+      "state": "general",
+      "weapon": "spear",
+      "time": 1.75,
+      "x": -0.4,
+      "result": {
+        "phase": "general",
+        "t": 1.7499999999999987,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 390,
+        "H": 844
+      }
+    },
+    {
+      "name": "430x932-normal",
+      "state": "normal",
+      "weapon": "spear",
+      "time": 2,
+      "x": -0.35,
+      "result": {
+        "phase": "normal",
+        "t": 1.9999999999999978,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 430,
+        "H": 932
+      }
+    },
+    {
+      "name": "430x932-dense",
+      "state": "dense",
+      "weapon": "spear",
+      "time": 2.2,
+      "x": 0.4,
+      "result": {
+        "phase": "dense",
+        "t": 2.199999999999997,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 430,
+        "H": 932
+      }
+    },
+    {
+      "name": "430x932-general",
+      "state": "general",
+      "weapon": "spear",
+      "time": 1.75,
+      "x": -0.4,
+      "result": {
+        "phase": "general",
+        "t": 1.7499999999999987,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 430,
+        "H": 932
+      }
+    }
+  ],
+  "errors": []
+}

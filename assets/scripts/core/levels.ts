@@ -1,7 +1,7 @@
 import { Level } from './model';
 // v0.3: three complete levels, guarded by contiguous progress and ready resources.
 export const PLAYABLE_LEVELS = 3;
-export const LEVELS: Level[] = [
+export const LEGACY_LEVELS: Level[] = [
   {
     "id": "trial-01",
     "title": "拉起队伍",
@@ -541,14 +541,32 @@ export const LEVELS: Level[] = [
 
 // v04 presentation overlay; stable IDs, gate rules, HP and timing retained.
 import { CAMPAIGN } from './campaignData';
-LEVELS.forEach((l,i)=>{const c=CAMPAIGN.levels[i];l.title=c.title;l.scene=c.location;l.bossName=c.bossName;l.rankBefore=CAMPAIGN.rankLabels[i];l.rankAfter=CAMPAIGN.rankLabels[i+1];l.opening=c.opening.map(v=>v.speaker+'：'+v.line).join('\n');l.ending=c.ending;});
-LEVELS[0].obstacles.unshift({id:901,at:3,x:0,width:.20,kind:'fighter',hp:14,loss:4});
+LEGACY_LEVELS.forEach((l,i)=>{const c=CAMPAIGN.levels[i];l.title=c.title;l.scene=c.location;l.bossName=c.bossName;l.rankBefore=CAMPAIGN.rankLabels[i];l.rankAfter=CAMPAIGN.rankLabels[i+1];l.opening=c.opening.map(v=>v.speaker+'：'+v.line).join('\n');l.ending=c.ending;});
+LEGACY_LEVELS[0].obstacles.unshift({id:901,at:3,x:0,width:.20,kind:'fighter',hp:14,loss:4});
 
 // v05 fixed elite bindings. Original object positions / HP / gates are unchanged.
 import { CAST, CastId } from './weapons';
 const bosses:CastId[]=['xing_daorong','chen_ying','yang_ling'];
-LEVELS.forEach((l,i)=>{l.bossId=bosses[i];l.bossName=CAST[bosses[i]].name;l.scene=CAST[bosses[i]].region;l.eliteIds=[[1,3],[1,4],[1,4]][i];});
-const base0=LEVELS[0].bossAttacks[0],base1=LEVELS[1].bossAttacks[0],base2=LEVELS[2].bossAttacks[0];
-LEVELS[0].bossAttacks=[{...base0,weaponId:'great_axe',profile:'axe_sweep',halfWidth:.28},{...base0,weaponId:'great_axe',profile:'axe_ground_wave',halfWidth:.20}];
-LEVELS[1].bossAttacks=[{...base1,kind:'aimed',weaponId:'throwing_fork',profile:'single_fork',halfWidth:.18},{...base1,weaponId:'throwing_fork',profile:'staggered_fork',x:-.45,halfWidth:.18,recoverySeconds:.4},{...base1,weaponId:'throwing_fork',profile:'staggered_fork',x:.45,halfWidth:.18},{...base1,kind:'aimed',weaponId:'throwing_fork',profile:'close_fork_thrust',halfWidth:.20}];
-LEVELS[2].bossAttacks=[{...base2,weaponId:'spear',profile:'step_thrust',halfWidth:.18},{...base2,weaponId:'spear',profile:'lance_wave',halfWidth:.16}];
+LEGACY_LEVELS.forEach((l,i)=>{l.bossId=bosses[i];l.bossName=CAST[bosses[i]].name;l.scene=CAST[bosses[i]].region;l.eliteIds=[[1,3],[1,4],[1,4]][i];});
+const base0=LEGACY_LEVELS[0].bossAttacks[0],base1=LEGACY_LEVELS[1].bossAttacks[0],base2=LEGACY_LEVELS[2].bossAttacks[0];
+LEGACY_LEVELS[0].bossAttacks=[{...base0,weaponId:'great_axe',profile:'axe_sweep',halfWidth:.28},{...base0,weaponId:'great_axe',profile:'axe_ground_wave',halfWidth:.20}];
+LEGACY_LEVELS[1].bossAttacks=[{...base1,kind:'aimed',weaponId:'throwing_fork',profile:'single_fork',halfWidth:.18},{...base1,weaponId:'throwing_fork',profile:'staggered_fork',x:-.45,halfWidth:.18,recoverySeconds:.4},{...base1,weaponId:'throwing_fork',profile:'staggered_fork',x:.45,halfWidth:.18},{...base1,kind:'aimed',weaponId:'throwing_fork',profile:'close_fork_thrust',halfWidth:.20}];
+LEGACY_LEVELS[2].bossAttacks=[{...base2,weaponId:'spear',profile:'step_thrust',halfWidth:.18},{...base2,weaponId:'spear',profile:'lance_wave',halfWidth:.16}];
+
+import {HORDE_LEVELS} from './hordeConfig';
+/** Old gameplay remains an explicit diagnostic fixture; shipping uses the horde profile. */
+LEGACY_LEVELS.forEach(l=>l.profile='legacy-v051');
+export const V06_LEVELS:Level[]=LEGACY_LEVELS.map(l=>{const horde=HORDE_LEVELS.find(h=>h.id===l.id)!;return {...l,profile:'horde-v06',horde,title:horde.title,start:horde.startArmy,duration:horde.runDuration,rows:[],obstacles:[],eliteIds:[]};});
+
+// v0.7: manual aiming earns every reinforcement. Keep prior profiles for regression.
+import {assaultPlan} from './assault';
+export const V07_LEVELS:Level[]=V06_LEVELS.map((l,index)=>{
+ const horde=JSON.parse(JSON.stringify(l.horde)) as typeof HORDE_LEVELS[number];
+ horde.shootableSupplies=true;
+ for(const f of horde.forks){f.routes.safe.exitReinforcements=0;f.routes.hard.exitReinforcements=0;}
+ return {...l,profile:'assault-v07',horde,assault:assaultPlan(index,horde.forks.map(f=>f.commitAt))};
+});
+
+// v0.8 shipping profile: one road, individual shots, reward-led equipment.
+import {RUNNER_LEVELS} from './runnerConfig';
+export const LEVELS:Level[]=LEGACY_LEVELS.map((l,i)=>({...l,profile:'runnerVideoV2',runner:RUNNER_LEVELS[i],start:RUNNER_LEVELS[i].startCount,duration:RUNNER_LEVELS[i].routeEnd,bossHP:RUNNER_LEVELS[i].largeEnemy?.hp??0,rows:[],obstacles:[],eliteIds:[]}));

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "taskId": "UI-20260925",
+  "status": "proposal_not_runtime_verified",
+  "units": "logical_canvas_units",
+  "referenceCanvas": {
+    "width": 390,
+    "height": 844,
+    "orientation": "portrait"
+  },
+  "colors": {
+    "navy": "#1E2F46",
+    "background": "#142432",
+    "gold": "#D4B06A",
+    "ivory": "#F4EBDC",
+    "positive": "#2A94D6",
+    "negative": "#C94537",
+    "neutralGate": "#8494A2",
+    "textOnDark": "#F4EBDC",
+    "textOnLight": "#182939",
+    "textMuted": "#B8C5CF",
+    "outline": "#AF9364"
+  },
+  "typography": {
+    "title": 24,
+    "body": 16,
+    "caption": 14,
+    "label": 16,
+    "gateValue": 36,
+    "troopCount": 24,
+    "resultTitle": 52,
+    "bodyMinimum": 14,
+    "fontPolicy": "Use legally available project fonts; no bundled font files in this handoff."
+  },
+  "spacing": {
+    "pageX": 20,
+    "panelInner": 16,
+    "cardGap": 12,
+    "sectionGap": 24,
+    "small": 8
+  },
+  "components": {
+    "primaryButtonHeight": 56,
+    "secondaryButtonHeight": 48,
+    "minimumHitSize": 48,
+    "iconVisualSize": 26,
+    "panelRadius": 12,
+    "cardRadius": 8,
+    "titleRowHeight": 56,
+    "battleHudBaseHeight": 64,
+    "buttonBottomGap": 12
+  },
+  "durationsMs": {
+    "press": 100,
+    "screenTransition": 220,
+    "hitEdge": 80,
+    "valuePulse": 140,
+    "gateTurnsPositive": 220,
+    "boxBreak": 200,
+    "rewardFlight": 350,
+    "reform": 240,
+    "resultMax": 900
+  },
+  "visualRatios": {
+    "leaderToSoldier": 1.3,
+    "companionToSoldier": 1.15
+  },
+  "safeArea": {
+    "policy": "Convert viewport, safe rectangle and platform reserved rectangles into one canvas space. Avoid reserved regions; do not double count top insets.",
+    "backgroundBleed": true,
+    "fakeDeviceFrame": false,
+    "scrollContentBeforeShrinkingText": true
+  },
+  "audio": {
+    "bgmEnabled": false,
+    "loadBgm": false,
+    "separateSfxAndHaptics": true
+  },
+  "semantics": {
+    "allowPlaceholderStats": false,
+    "newCurrencies": false,
+    "newStarRating": false,
+    "newClosedLanes": false,
+    "fixedChestTierSidebar": false
+  },
+  "notes": [
+    "All values are implementation starting points. Verify against actual screens and update together.",
+    "Visual animation completion never applies damage or grants a reward."
+  ]
+}

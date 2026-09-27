@@ -1,5 +1,7 @@
+// Explicit legacy-v051 fixture: static gate timing, elite-direct tiers, and old Boss cadence are historical contracts.
+// Shipping horde-v06 behavior is tested in horde-v06.test.ts and the 24-run model matrix.
 import {test} from 'node:test';import assert from 'node:assert/strict';
-import {Journey,STEP,MELEE,Level} from '../assets/scripts/core/model';import {LEVELS} from '../assets/scripts/core/levels';
+import {Journey,STEP,MELEE,Level} from '../assets/scripts/core/model';import {LEGACY_LEVELS as LEVELS} from '../assets/scripts/core/levels';
 import {Book,KEY,defaults} from '../assets/scripts/core/save';import {Campaign} from '../assets/scripts/core/campaign';import {CAMPAIGN} from '../assets/scripts/core/campaignData';
 const level=(more:Partial<Level>={}):Level=>({...LEVELS[0],start:1,duration:100,rows:[],obstacles:[],...more});
 const foe=(id=1,at=.9,kind:any='fighter',hp=100)=>({id,at,x:0,width:.2,kind,hp,loss:1});

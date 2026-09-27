@@ -1,0 +1,403 @@
+{
+ "file": "battle-preview.mp4",
+ "generatedBy": "tools/video.mjs",
+ "size": "390×844",
+ "deviceScale": 2,
+ "fps": 30,
+ "frames": 2275,
+ "duration": 75.83,
+ "note": "浏览器 Canvas 预览逐帧录制，非 Cocos、非真机；触控、声音、背景、发热未验证。",
+ "segments": [
+  {
+   "key": "weapon-spear",
+   "caption": "兵器对比 2 阶　长枪 · 快、窄、远",
+   "bareCourse": true,
+   "start": 0,
+   "duration": 4,
+   "state": "normal",
+   "weapon": "spear",
+   "tier": 2,
+   "ctrl": "manual",
+   "control": "脚本 setX（模拟左右拖动）",
+   "events": [
+    {
+     "t": 0,
+     "kind": "treasure",
+     "msg": "传国玉玺 开局 +6"
+    }
+   ]
+  },
+  {
+   "key": "weapon-guandao",
+   "caption": "兵器对比 2 阶　偃月刀 · 蓄力长、横扫宽、近",
+   "bareCourse": true,
+   "start": 4,
+   "duration": 4,
+   "state": "normal",
+   "weapon": "guandao",
+   "tier": 2,
+   "ctrl": "manual",
+   "control": "脚本 setX（模拟左右拖动）",
+   "events": [
+    {
+     "t": 0,
+     "kind": "treasure",
+     "msg": "传国玉玺 开局 +6"
+    }
+   ]
+  },
+  {
+   "key": "weapon-shemao",
+   "caption": "兵器对比 2 阶　蛇矛 · 双刺蛇行、穿透",
+   "bareCourse": true,
+   "start": 8,
+   "duration": 4,
+   "state": "normal",
+   "weapon": "shemao",
+   "tier": 2,
+   "ctrl": "manual",
+   "control": "脚本 setX（模拟左右拖动）",
+   "events": [
+    {
+     "t": 0,
+     "kind": "treasure",
+     "msg": "传国玉玺 开局 +6"
+    },
+    {
+     "t": 0.75,
+     "kind": "resonance",
+     "msg": "张飞 共鸣技"
+    }
+   ]
+  },
+  {
+   "key": "weapon-huaji",
+   "caption": "兵器对比 2 阶　画戟 · 直刺＋侧扇两段",
+   "bareCourse": true,
+   "start": 12,
+   "duration": 4,
+   "state": "normal",
+   "weapon": "huaji",
+   "tier": 2,
+   "ctrl": "manual",
+   "control": "脚本 setX（模拟左右拖动）",
+   "events": [
+    {
+     "t": 0,
+     "kind": "treasure",
+     "msg": "传国玉玺 开局 +6"
+    }
+   ]
+  },
+  {
+   "key": "wall",
+   "caption": "固定墙段　接近 → 贴墙被挡 → 离开",
+   "bareCourse": true,
+   "start": 16,
+   "duration": 6,
+   "state": "normal",
+   "weapon": "spear",
+   "tier": 2,
+   "ctrl": "manual",
+   "control": "脚本 setX（模拟左右拖动）",
+   "events": [
+    {
+     "t": 0,
+     "kind": "treasure",
+     "msg": "传国玉玺 开局 +6"
+    },
+    {
+     "t": 4.55,
+     "kind": "gate",
+     "msg": "援兵门 +12 太平 +1"
+    }
+   ]
+  },
+  {
+   "key": "dense",
+   "caption": "密集连续门　数字停靠兵力牌后结算",
+   "bareCourse": false,
+   "start": 22,
+   "duration": 6.5,
+   "state": "dense",
+   "weapon": "huaji",
+   "tier": 2,
+   "ctrl": "auto",
+   "control": "自动选路 autopilot",
+   "events": [
+    {
+     "t": 0,
+     "kind": "treasure",
+     "msg": "传国玉玺 开局 +6"
+    },
+    {
+     "t": 1.28,
+     "kind": "gate",
+     "msg": "援兵门 +8 太平 +1"
+    },
+    {
+     "t": 2.1,
+     "kind": "gate",
+     "msg": "援兵门 +10 太平 +1"
+    },
+    {
+     "t": 2.92,
+     "kind": "gate",
+     "msg": "援兵门 +4 太平 +1"
+    },
+    {
+     "t": 3.73,
+     "kind": "gate",
+     "msg": "援兵门 +15 太平 +2"
+    },
+    {
+     "t": 4.55,
+     "kind": "gate",
+     "msg": "空营门 0"
+    },
+    {
+     "t": 5.37,
+     "kind": "gate",
+     "msg": "援兵门 +6 太平 +1"
+    }
+   ]
+  },
+  {
+   "key": "march",
+   "caption": "正常行军 长枪 1 阶起",
+   "bareCourse": false,
+   "start": 28.5,
+   "duration": 26,
+   "state": "normal",
+   "weapon": "spear",
+   "tier": 1,
+   "ctrl": "auto",
+   "control": "自动选路 autopilot",
+   "events": [
+    {
+     "t": 0,
+     "kind": "treasure",
+     "msg": "传国玉玺 开局 +6"
+    },
+    {
+     "t": 1.05,
+     "kind": "contact",
+     "msg": "敌兵接触 −1"
+    },
+    {
+     "t": 1.13,
+     "kind": "contact",
+     "msg": "敌兵接触 −1"
+    },
+    {
+     "t": 1.65,
+     "kind": "crate",
+     "msg": "粮车 +6"
+    },
+    {
+     "t": 2.03,
+     "kind": "support",
+     "msg": "华佗 +1"
+    },
+    {
+     "t": 2.63,
+     "kind": "weapon",
+     "msg": "长枪 → 2 阶"
+    },
+    {
+     "t": 4.55,
+     "kind": "gate",
+     "msg": "援兵门 +12 太平 +1"
+    },
+    {
+     "t": 4.88,
+     "kind": "arms",
+     "msg": "部曲 → 火箭"
+    },
+    {
+     "t": 8.95,
+     "kind": "treasure",
+     "msg": "赤兔马 本局试用"
+    },
+    {
+     "t": 10.73,
+     "kind": "weapon",
+     "msg": "长枪 → 偃月刀（本主未随军）"
+    },
+    {
+     "t": 12.52,
+     "kind": "weapon",
+     "msg": "偃月刀 → 蛇矛（共鸣 张飞）"
+    },
+    {
+     "t": 12.88,
+     "kind": "resonance",
+     "msg": "张飞 共鸣技"
+    },
+    {
+     "t": 12.92,
+     "kind": "gate",
+     "msg": "援兵门 +6 太平 +1"
+    },
+    {
+     "t": 15.6,
+     "kind": "weapon",
+     "msg": "蛇矛 → 3 阶"
+    },
+    {
+     "t": 16.42,
+     "kind": "arms",
+     "msg": "部曲 → 连弩"
+    },
+    {
+     "t": 18.97,
+     "kind": "weapon",
+     "msg": "蛇矛 满阶 溢出 +4"
+    },
+    {
+     "t": 19.47,
+     "kind": "gate",
+     "msg": "援兵门 +10 太平 +1"
+    },
+    {
+     "t": 21.23,
+     "kind": "crate",
+     "msg": "粮车 +6"
+    },
+    {
+     "t": 24.1,
+     "kind": "weapon",
+     "msg": "蛇矛 满阶 溢出 +4"
+    }
+   ]
+  },
+  {
+   "key": "boss-hit",
+   "caption": "敌将交锋 · 自动中招",
+   "bareCourse": false,
+   "start": 54.5,
+   "duration": 4.5,
+   "state": "general",
+   "weapon": "shemao",
+   "tier": 3,
+   "ctrl": "hit",
+   "control": "敌将判定核对：自动中招",
+   "events": [
+    {
+     "t": 0,
+     "kind": "treasure",
+     "msg": "传国玉玺 开局 +6"
+    },
+    {
+     "t": 0.75,
+     "kind": "resonance",
+     "msg": "张飞 共鸣技"
+    },
+    {
+     "t": 1.1,
+     "kind": "boss",
+     "msg": "预警 中"
+    },
+    {
+     "t": 2.72,
+     "kind": "boss",
+     "msg": "中招 −10"
+    },
+    {
+     "t": 3.18,
+     "kind": "boss",
+     "msg": "靠旗断 余 3"
+    },
+    {
+     "t": 3.7,
+     "kind": "support",
+     "msg": "华佗 +3"
+    }
+   ]
+  },
+  {
+   "key": "boss-dodge",
+   "caption": "敌将交锋 · 自动躲开",
+   "bareCourse": false,
+   "start": 59,
+   "duration": 16.83,
+   "state": "general",
+   "weapon": "shemao",
+   "tier": 3,
+   "ctrl": "dodge",
+   "control": "敌将判定核对：自动躲开",
+   "events": [
+    {
+     "t": 0,
+     "kind": "treasure",
+     "msg": "传国玉玺 开局 +6"
+    },
+    {
+     "t": 0.75,
+     "kind": "resonance",
+     "msg": "张飞 共鸣技"
+    },
+    {
+     "t": 1.1,
+     "kind": "boss",
+     "msg": "预警 中"
+    },
+    {
+     "t": 2.72,
+     "kind": "boss",
+     "msg": "闪开"
+    },
+    {
+     "t": 3.67,
+     "kind": "boss",
+     "msg": "靠旗断 余 3"
+    },
+    {
+     "t": 5.38,
+     "kind": "boss",
+     "msg": "预警 中"
+    },
+    {
+     "t": 7,
+     "kind": "boss",
+     "msg": "闪开"
+    },
+    {
+     "t": 7.58,
+     "kind": "boss",
+     "msg": "靠旗断 余 2"
+    },
+    {
+     "t": 9.67,
+     "kind": "boss",
+     "msg": "预警 中"
+    },
+    {
+     "t": 9.93,
+     "kind": "boss",
+     "msg": "靠旗断 余 1"
+    },
+    {
+     "t": 11.28,
+     "kind": "boss",
+     "msg": "闪开"
+    },
+    {
+     "t": 12.83,
+     "kind": "boss",
+     "msg": "靠旗断 余 0"
+    },
+    {
+     "t": 12.85,
+     "kind": "boss",
+     "msg": "力竭"
+    },
+    {
+     "t": 14.27,
+     "kind": "boss",
+     "msg": "收服"
+    }
+   ]
+  }
+ ]
+}

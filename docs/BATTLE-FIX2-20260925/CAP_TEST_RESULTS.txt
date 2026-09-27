@@ -1,0 +1,256 @@
+TAP version 13
+# Subtest: FIX2 window surpasses each old 4/8/12 cap with damage remainder and no premature troops
+ok 1 - FIX2 window surpasses each old 4/8/12 cap with damage remainder and no premature troops
+  ---
+  duration_ms: 0.750709
+  type: 'test'
+  ...
+# Subtest: FIX2 signed thresholds cross -1, zero and positive using real fractional damage
+ok 2 - FIX2 signed thresholds cross -1, zero and positive using real fractional damage
+  ---
+  duration_ms: 0.176583
+  type: 'test'
+  ...
+# Subtest: FIX2 explicit window ignores old/null/default cap; legacy capped configuration remains compatible
+ok 3 - FIX2 explicit window ignores old/null/default cap; legacy capped configuration remains compatible
+  ---
+  duration_ms: 0.2095
+  type: 'test'
+  ...
+# Subtest: FIX2 contact claims once past 256; missed token does not receive compensation
+ok 4 - FIX2 contact claims once past 256; missed token does not receive compensation
+  ---
+  duration_ms: 12.109166
+  type: 'test'
+  ...
+# Subtest: FIX2 high logical budget conserves weighted damage and occupied feet at 48 visible actors
+ok 5 - FIX2 high logical budget conserves weighted damage and occupied feet at 48 visible actors
+  ---
+  duration_ms: 0.7005
+  type: 'test'
+  ...
+# Subtest: FIX2 numeric guard lies above recomputed legal path bounds and reports invalid values without silent clipping
+ok 6 - FIX2 numeric guard lies above recomputed legal path bounds and reports invalid values without silent clipping
+  ---
+  duration_ms: 0.233
+  type: 'test'
+  ...
+# Subtest: FIX2 every issued fire retains frozen real weapon identity, including same-tick consumed shots
+ok 7 - FIX2 every issued fire retains frozen real weapon identity, including same-tick consumed shots
+  ---
+  duration_ms: 0.633292
+  type: 'test'
+  ...
+# Subtest: FIX2 pacing separates aligned-but-blocked aim from currently clear straight shot window
+ok 8 - FIX2 pacing separates aligned-but-blocked aim from currently clear straight shot window
+  ---
+  duration_ms: 0.452667
+  type: 'test'
+  ...
+# Subtest: FIX2 legal-bound premises track real formation and all actual gate positions
+ok 9 - FIX2 legal-bound premises track real formation and all actual gate positions
+  ---
+  duration_ms: 0.215708
+  type: 'test'
+  ...
+# Subtest: V2 01 signed damage thresholds carry fractions through -5, zero and +3
+ok 10 - V2 01 signed damage thresholds carry fractions through -5, zero and +3
+  ---
+  duration_ms: 0.779959
+  type: 'test'
+  ...
+# Subtest: V2 02 60 HP is exactly 3 troops, unopened crate grants nothing and cannot repeat
+ok 11 - V2 02 60 HP is exactly 3 troops, unopened crate grants nothing and cannot repeat
+  ---
+  duration_ms: 1.904084
+  type: 'test'
+  ...
+# Subtest: V2 03 weighted emitters preserve the budget at 1, 7, 48 and 256; special units count once
+ok 12 - V2 03 weighted emitters preserve the budget at 1, 7, 48 and 256; special units count once
+  ---
+  duration_ms: 0.291959
+  type: 'test'
+  ...
+# Subtest: V2 04 emitted arrows retain launch positions, owners, damage and stage through movement/upgrades
+ok 13 - V2 04 emitted arrows retain launch positions, owners, damage and stage through movement/upgrades
+  ---
+  duration_ms: 0.323708
+  type: 'test'
+  ...
+# Subtest: V2 05 different emitters hit independent columns; nearest crate consumes a shot before rear enemy
+ok 14 - V2 05 different emitters hit independent columns; nearest crate consumes a shot before rear enemy
+  ---
+  duration_ms: 5.178125
+  type: 'test'
+  ...
+# Subtest: V2 06 true feet union can touch a negative gate outside center; independent doors settle once
+ok 15 - V2 06 true feet union can touch a negative gate outside center; independent doors settle once
+  ---
+  duration_ms: 0.47875
+  type: 'test'
+  ...
+# Subtest: V2 07 TOI precedes IDs; zero ends the step and new members cannot retroactively collide
+ok 16 - V2 07 TOI precedes IDs; zero ends the step and new members cannot retroactively collide
+  ---
+  duration_ms: 0.301916
+  type: 'test'
+  ...
+# Subtest: V2 08 swept round feet do not collide through empty AABB corner; crossing cannot tunnel
+ok 17 - V2 08 swept round feet do not collide through empty AABB corner; crossing cannot tunnel
+  ---
+  duration_ms: 0.042
+  type: 'test'
+  ...
+# Subtest: V2 09 chain creates 6 independent tokens ahead; crossing only three grants three and misses never replay
+ok 18 - V2 09 chain creates 6 independent tokens ahead; crossing only three grants three and misses never replay
+  ---
+  duration_ms: 10.621167
+  type: 'test'
+  ...
+# Subtest: V2 10 troops do not upgrade, absolute equipment only advances; kills/elite/tactics never activate old systems
+ok 19 - V2 10 troops do not upgrade, absolute equipment only advances; kills/elite/tactics never activate old systems
+  ---
+  duration_ms: 0.447875
+  type: 'test'
+  ...
+# Subtest: V2 11 blast damages each enemy once, never changes nearby gate or crate
+ok 20 - V2 11 blast damages each enemy once, never changes nearby gate or crate
+  ---
+  duration_ms: 0.157333
+  type: 'test'
+  ...
+# Subtest: V2 12 forward divider absorbs crossing arrows while lateral player control remains open
+ok 21 - V2 12 forward divider absorbs crossing arrows while lateral player control remains open
+  ---
+  duration_ms: 0.397458
+  type: 'test'
+  ...
+# Subtest: V2 13 live enemies behind the formation pursue without teleport or breach kill credit
+ok 22 - V2 13 live enemies behind the formation pursue without teleport or breach kill credit
+  ---
+  duration_ms: 0.051125
+  type: 'test'
+  ...
+# Subtest: V2 14 field companion replaces appearance once, adds exactly one member and uses one budget
+ok 23 - V2 14 field companion replaces appearance once, adds exactly one member and uses one budget
+  ---
+  duration_ms: 0.081542
+  type: 'test'
+  ...
+# Subtest: V2 15 large enemy and distance are independent; arriving never deletes active combat
+ok 24 - V2 15 large enemy and distance are independent; arriving never deletes active combat
+  ---
+  duration_ms: 0.540625
+  type: 'test'
+  ...
+# Subtest: V2 16 old best/unlocks/settings survive separate new-profile scoring and reload
+ok 25 - V2 16 old best/unlocks/settings survive separate new-profile scoring and reload
+  ---
+  duration_ms: 0.5325
+  type: 'test'
+  ...
+# Subtest: V2 17 profile starts 1/1/3, old levels unchanged; equipment and reload are explicit
+ok 26 - V2 17 profile starts 1/1/3, old levels unchanged; equipment and reload are explicit
+  ---
+  duration_ms: 0.708958
+  type: 'test'
+  ...
+# Subtest: V2 18 new object pressure is bounded over 22 seconds; three clean retries reset state
+ok 27 - V2 18 new object pressure is bounded over 22 seconds; three clean retries reset state
+  ---
+  duration_ms: 128.5365
+  type: 'test'
+  ...
+# Subtest: V2 19 first-level legal input progresses from one member without hidden melee or injected damage
+ok 28 - V2 19 first-level legal input progresses from one member without hidden melee or injected damage
+  ---
+  duration_ms: 725.562584
+  type: 'test'
+  ...
+# Subtest: V2 20 actual projectile death names the ranged source and retains the precise loss ledger
+ok 29 - V2 20 actual projectile death names the ranged source and retains the precise loss ledger
+  ---
+  duration_ms: 0.424583
+  type: 'test'
+  ...
+# Subtest: v081 leaders have a dedicated rank; feet and frozen muzzle origins stay aligned
+ok 30 - v081 leaders have a dedicated rank; feet and frozen muzzle origins stay aligned
+  ---
+  duration_ms: 0.491209
+  type: 'test'
+  ...
+# Subtest: v09 bounded approach preserves enemies and actual damage identifies one attacker and victim
+ok 31 - v09 bounded approach preserves enemies and actual damage identifies one attacker and victim
+  ---
+  duration_ms: 1.742708
+  type: 'test'
+  ...
+# Subtest: v081 enemies approach the accessible front rank, not unreachable rear-member lanes
+ok 32 - v081 enemies approach the accessible front rank, not unreachable rear-member lanes
+  ---
+  duration_ms: 17.480375
+  type: 'test'
+  ...
+# Subtest: v09 count growth preserves existing soldier feet, identity, frozen arrows and fire clocks
+ok 33 - v09 count growth preserves existing soldier feet, identity, frozen arrows and fire clocks
+  ---
+  duration_ms: 2.088583
+  type: 'test'
+  ...
+# Subtest: v09 contact removes the exact model-selected slots; survivors and future recruits keep identities
+ok 34 - v09 contact removes the exact model-selected slots; survivors and future recruits keep identities
+  ---
+  duration_ms: 0.748125
+  type: 'test'
+  ...
+# Subtest: v09 256-to-255 loss reduces weighted budget without inventing a visible casualty
+ok 35 - v09 256-to-255 loss reduces weighted budget without inventing a visible casualty
+  ---
+  duration_ms: 0.72475
+  type: 'test'
+  ...
+# Subtest: v09 bounded approach cannot teleport; exposed attackers still inflict source-linked losses
+ok 36 - v09 bounded approach cannot teleport; exposed attackers still inflict source-linked losses
+  ---
+  duration_ms: 47.357125
+  type: 'test'
+  ...
+# Subtest: v09 actual swept enemy/member contact catches a crossing even with separated endpoints
+ok 37 - v09 actual swept enemy/member contact catches a crossing even with separated endpoints
+  ---
+  duration_ms: 0.137042
+  type: 'test'
+  ...
+# Subtest: v09 pacing is driven by real hit, cap, pass and claim events; unopened reward stays absent
+ok 38 - v09 pacing is driven by real hit, cap, pass and claim events; unopened reward stays absent
+  ---
+  duration_ms: 1.754458
+  type: 'test'
+  ...
+# Subtest: v09 leader-only count has exactly one muzzle after companion casualty, and slots remain bounded after churn
+ok 39 - v09 leader-only count has exactly one muzzle after companion casualty, and slots remain bounded after churn
+  ---
+  duration_ms: 0.433208
+  type: 'test'
+  ...
+# Subtest: v09 same-step removed foot cannot claim a later gate, while surviving touchers still can
+ok 40 - v09 same-step removed foot cannot claim a later gate, while surviving touchers still can
+  ---
+  duration_ms: 0.470625
+  type: 'test'
+  ...
+# Subtest: v09 steering checks the clamped input, not an unreachable safe enemy position
+ok 41 - v09 steering checks the clamped input, not an unreachable safe enemy position
+  ---
+  duration_ms: 0.647375
+  type: 'test'
+  ...
+1..41
+# tests 41
+# suites 0
+# pass 41
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1009.890167

@@ -1,0 +1,1931 @@
+{
+  "scope": "design-only, synthetic fixtures; no phone acceptance",
+  "errors": [],
+  "externalRequests": [],
+  "checks": 60,
+  "failed": [],
+  "findings": [
+    {
+      "fixture": "island-and-capsule",
+      "state": "home",
+      "failures": [],
+      "hits": [
+        {
+          "id": "start",
+          "x": 16,
+          "y": 678,
+          "width": 358,
+          "height": 56
+        },
+        {
+          "id": "loadout",
+          "x": 16,
+          "y": 750,
+          "width": 114,
+          "height": 44
+        },
+        {
+          "id": "chapters",
+          "x": 138,
+          "y": 750,
+          "width": 114,
+          "height": 44
+        },
+        {
+          "id": "settings",
+          "x": 260,
+          "y": 750,
+          "width": 114,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "chapter",
+          "x": 171,
+          "y": 110,
+          "width": 48,
+          "height": 17
+        },
+        {
+          "id": "wordmark",
+          "x": 101,
+          "y": 131,
+          "width": 188,
+          "height": 62
+        },
+        {
+          "id": "subtitle",
+          "x": 174,
+          "y": 199,
+          "width": 42,
+          "height": 25
+        },
+        {
+          "id": "identity",
+          "x": 16,
+          "y": 611,
+          "width": 86,
+          "height": 17
+        },
+        {
+          "id": "objective",
+          "x": 16,
+          "y": 635,
+          "width": 92,
+          "height": 32
+        },
+        {
+          "id": "chapter-counter",
+          "x": 338,
+          "y": 642,
+          "width": 36,
+          "height": 17
+        },
+        {
+          "id": "start-label",
+          "x": 157,
+          "y": 692,
+          "width": 76,
+          "height": 26
+        },
+        {
+          "id": "loadout-text",
+          "x": 49,
+          "y": 764,
+          "width": 48,
+          "height": 17
+        },
+        {
+          "id": "chapters-text",
+          "x": 171,
+          "y": 764,
+          "width": 48,
+          "height": 17
+        },
+        {
+          "id": "settings-text",
+          "x": 293,
+          "y": 764,
+          "width": 24,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "run",
+      "failures": [],
+      "hits": [
+        {
+          "id": "pause",
+          "x": 330,
+          "y": 107,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "troop-label",
+          "x": 26,
+          "y": 112,
+          "width": 24,
+          "height": 17
+        },
+        {
+          "id": "troop-count",
+          "x": 72,
+          "y": 115,
+          "width": 36,
+          "height": 42
+        },
+        {
+          "id": "stage-name",
+          "x": 138,
+          "y": 109,
+          "width": 52,
+          "height": 18
+        },
+        {
+          "id": "progress",
+          "x": 138,
+          "y": 131,
+          "width": 51.984375,
+          "height": 17
+        },
+        {
+          "id": "weapon",
+          "x": 45,
+          "y": 165,
+          "width": 40,
+          "height": 17
+        },
+        {
+          "id": "companion",
+          "x": 247,
+          "y": 165,
+          "width": 60,
+          "height": 17
+        },
+        {
+          "id": "loss-1",
+          "x": 235.2330322265625,
+          "y": 224.5650177001953,
+          "width": 45.09375,
+          "height": 17
+        },
+        {
+          "id": "elite-1",
+          "x": 236.77992248535156,
+          "y": 193,
+          "width": 23.999984741210938,
+          "height": 17
+        },
+        {
+          "id": "loss-2",
+          "x": 33.4609375,
+          "y": 209.4499969482422,
+          "width": 83.078125,
+          "height": 17
+        },
+        {
+          "id": "battle-notice",
+          "x": 167.359375,
+          "y": 736,
+          "width": 55.28125,
+          "height": 20
+        },
+        {
+          "id": "tutorial",
+          "x": 98,
+          "y": 770,
+          "width": 194,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "boss",
+      "failures": [],
+      "hits": [
+        {
+          "id": "pause",
+          "x": 330,
+          "y": 107,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "troop-label",
+          "x": 26,
+          "y": 112,
+          "width": 24,
+          "height": 17
+        },
+        {
+          "id": "troop-count",
+          "x": 72,
+          "y": 115,
+          "width": 36,
+          "height": 42
+        },
+        {
+          "id": "boss-name",
+          "x": 138,
+          "y": 109,
+          "width": 28,
+          "height": 20
+        },
+        {
+          "id": "boss-hp",
+          "x": 245.3125,
+          "y": 127,
+          "width": 64.6875,
+          "height": 17
+        },
+        {
+          "id": "weapon",
+          "x": 45,
+          "y": 165,
+          "width": 40,
+          "height": 17
+        },
+        {
+          "id": "companion",
+          "x": 247,
+          "y": 165,
+          "width": 60,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "awaken",
+      "failures": [],
+      "hits": [
+        {
+          "id": "pause",
+          "x": 330,
+          "y": 107,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "troop-label",
+          "x": 26,
+          "y": 112,
+          "width": 24,
+          "height": 17
+        },
+        {
+          "id": "troop-count",
+          "x": 54,
+          "y": 115,
+          "width": 54,
+          "height": 42
+        },
+        {
+          "id": "boss-name",
+          "x": 138,
+          "y": 109,
+          "width": 28,
+          "height": 20
+        },
+        {
+          "id": "boss-hp",
+          "x": 245.3125,
+          "y": 127,
+          "width": 64.6875,
+          "height": 17
+        },
+        {
+          "id": "weapon",
+          "x": 45,
+          "y": 165,
+          "width": 40,
+          "height": 17
+        },
+        {
+          "id": "auto-awaken",
+          "x": 133,
+          "y": 165,
+          "width": 57.703125,
+          "height": 17
+        },
+        {
+          "id": "companion",
+          "x": 241,
+          "y": 165,
+          "width": 72,
+          "height": 17
+        },
+        {
+          "id": "battle-notice",
+          "x": 129.6640625,
+          "y": 768,
+          "width": 130.671875,
+          "height": 20
+        }
+      ]
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "home",
+      "failures": [],
+      "hits": [
+        {
+          "id": "start",
+          "x": 16,
+          "y": 492,
+          "width": 328,
+          "height": 56
+        },
+        {
+          "id": "loadout",
+          "x": 16,
+          "y": 564,
+          "width": 104,
+          "height": 44
+        },
+        {
+          "id": "chapters",
+          "x": 128,
+          "y": 564,
+          "width": 104,
+          "height": 44
+        },
+        {
+          "id": "settings",
+          "x": 240,
+          "y": 564,
+          "width": 104,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "chapter",
+          "x": 16,
+          "y": 73,
+          "width": 48,
+          "height": 17
+        },
+        {
+          "id": "wordmark",
+          "x": 16,
+          "y": 98,
+          "width": 156,
+          "height": 50
+        },
+        {
+          "id": "subtitle",
+          "x": 16,
+          "y": 157,
+          "width": 42,
+          "height": 25
+        },
+        {
+          "id": "identity",
+          "x": 16,
+          "y": 425,
+          "width": 86,
+          "height": 17
+        },
+        {
+          "id": "objective",
+          "x": 16,
+          "y": 449,
+          "width": 92,
+          "height": 32
+        },
+        {
+          "id": "chapter-counter",
+          "x": 308,
+          "y": 456,
+          "width": 36,
+          "height": 17
+        },
+        {
+          "id": "start-label",
+          "x": 142,
+          "y": 506,
+          "width": 76,
+          "height": 26
+        },
+        {
+          "id": "loadout-text",
+          "x": 49,
+          "y": 578,
+          "width": 48,
+          "height": 17
+        },
+        {
+          "id": "chapters-text",
+          "x": 161,
+          "y": 578,
+          "width": 48,
+          "height": 17
+        },
+        {
+          "id": "settings-text",
+          "x": 273,
+          "y": 578,
+          "width": 24,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "run",
+      "failures": [],
+      "hits": [
+        {
+          "id": "pause",
+          "x": 300,
+          "y": 70,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "troop-label",
+          "x": 26,
+          "y": 75,
+          "width": 24,
+          "height": 17
+        },
+        {
+          "id": "troop-count",
+          "x": 72,
+          "y": 78,
+          "width": 36,
+          "height": 42
+        },
+        {
+          "id": "stage-name",
+          "x": 24,
+          "y": 126,
+          "width": 52,
+          "height": 18
+        },
+        {
+          "id": "progress",
+          "x": 24,
+          "y": 148,
+          "width": 51.984375,
+          "height": 17
+        },
+        {
+          "id": "weapon",
+          "x": 259,
+          "y": 128,
+          "width": 40,
+          "height": 17
+        },
+        {
+          "id": "companion",
+          "x": 241,
+          "y": 160,
+          "width": 60,
+          "height": 17
+        },
+        {
+          "id": "loss-1",
+          "x": 219.32687377929688,
+          "y": 216,
+          "width": 45.09375,
+          "height": 17
+        },
+        {
+          "id": "elite-1",
+          "x": 220.87376403808594,
+          "y": 186,
+          "width": 24,
+          "height": 17
+        },
+        {
+          "id": "loss-2",
+          "x": 33.4609375,
+          "y": 189,
+          "width": 83.078125,
+          "height": 17
+        },
+        {
+          "id": "battle-notice",
+          "x": 152.359375,
+          "y": 550,
+          "width": 55.28125,
+          "height": 20
+        },
+        {
+          "id": "tutorial",
+          "x": 83,
+          "y": 584,
+          "width": 194,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "boss",
+      "failures": [],
+      "hits": [
+        {
+          "id": "pause",
+          "x": 300,
+          "y": 70,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "troop-label",
+          "x": 26,
+          "y": 75,
+          "width": 24,
+          "height": 17
+        },
+        {
+          "id": "troop-count",
+          "x": 72,
+          "y": 78,
+          "width": 36,
+          "height": 42
+        },
+        {
+          "id": "boss-name",
+          "x": 138,
+          "y": 72,
+          "width": 28,
+          "height": 20
+        },
+        {
+          "id": "boss-hp",
+          "x": 215.3125,
+          "y": 90,
+          "width": 64.6875,
+          "height": 17
+        },
+        {
+          "id": "weapon",
+          "x": 45,
+          "y": 128,
+          "width": 40,
+          "height": 17
+        },
+        {
+          "id": "companion",
+          "x": 217,
+          "y": 128,
+          "width": 60,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "awaken",
+      "failures": [],
+      "hits": [
+        {
+          "id": "pause",
+          "x": 300,
+          "y": 70,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "troop-label",
+          "x": 26,
+          "y": 75,
+          "width": 24,
+          "height": 17
+        },
+        {
+          "id": "troop-count",
+          "x": 54,
+          "y": 78,
+          "width": 54,
+          "height": 42
+        },
+        {
+          "id": "boss-name",
+          "x": 138,
+          "y": 72,
+          "width": 28,
+          "height": 20
+        },
+        {
+          "id": "boss-hp",
+          "x": 215.3125,
+          "y": 90,
+          "width": 64.6875,
+          "height": 17
+        },
+        {
+          "id": "weapon",
+          "x": 45,
+          "y": 128,
+          "width": 40,
+          "height": 17
+        },
+        {
+          "id": "auto-awaken",
+          "x": 133,
+          "y": 128,
+          "width": 57.703125,
+          "height": 17
+        },
+        {
+          "id": "companion",
+          "x": 241,
+          "y": 128,
+          "width": 72,
+          "height": 17
+        },
+        {
+          "id": "battle-notice",
+          "x": 114.6640625,
+          "y": 582,
+          "width": 130.671875,
+          "height": 20
+        }
+      ]
+    },
+    {
+      "fixture": "short-web",
+      "state": "home",
+      "failures": [],
+      "hits": [
+        {
+          "id": "start",
+          "x": 16,
+          "y": 508,
+          "width": 328,
+          "height": 56
+        },
+        {
+          "id": "loadout",
+          "x": 16,
+          "y": 580,
+          "width": 104,
+          "height": 44
+        },
+        {
+          "id": "chapters",
+          "x": 128,
+          "y": 580,
+          "width": 104,
+          "height": 44
+        },
+        {
+          "id": "settings",
+          "x": 240,
+          "y": 580,
+          "width": 104,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "chapter",
+          "x": 16,
+          "y": 11,
+          "width": 48,
+          "height": 17
+        },
+        {
+          "id": "wordmark",
+          "x": 16,
+          "y": 36,
+          "width": 156,
+          "height": 50
+        },
+        {
+          "id": "subtitle",
+          "x": 16,
+          "y": 95,
+          "width": 42,
+          "height": 25
+        },
+        {
+          "id": "identity",
+          "x": 16,
+          "y": 441,
+          "width": 86,
+          "height": 17
+        },
+        {
+          "id": "objective",
+          "x": 16,
+          "y": 465,
+          "width": 92,
+          "height": 32
+        },
+        {
+          "id": "chapter-counter",
+          "x": 308,
+          "y": 472,
+          "width": 36,
+          "height": 17
+        },
+        {
+          "id": "start-label",
+          "x": 142,
+          "y": 522,
+          "width": 76,
+          "height": 26
+        },
+        {
+          "id": "loadout-text",
+          "x": 49,
+          "y": 594,
+          "width": 48,
+          "height": 17
+        },
+        {
+          "id": "chapters-text",
+          "x": 161,
+          "y": 594,
+          "width": 48,
+          "height": 17
+        },
+        {
+          "id": "settings-text",
+          "x": 273,
+          "y": 594,
+          "width": 24,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "fixture": "short-web",
+      "state": "run",
+      "failures": [],
+      "hits": [
+        {
+          "id": "pause",
+          "x": 300,
+          "y": 8,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "troop-label",
+          "x": 26,
+          "y": 13,
+          "width": 24,
+          "height": 17
+        },
+        {
+          "id": "troop-count",
+          "x": 72,
+          "y": 16,
+          "width": 36,
+          "height": 42
+        },
+        {
+          "id": "stage-name",
+          "x": 24,
+          "y": 64,
+          "width": 52,
+          "height": 18
+        },
+        {
+          "id": "progress",
+          "x": 24,
+          "y": 86,
+          "width": 51.984375,
+          "height": 17
+        },
+        {
+          "id": "weapon",
+          "x": 259,
+          "y": 66,
+          "width": 40,
+          "height": 17
+        },
+        {
+          "id": "companion",
+          "x": 241,
+          "y": 98,
+          "width": 60,
+          "height": 17
+        },
+        {
+          "id": "loss-1",
+          "x": 219.32687377929688,
+          "y": 154,
+          "width": 45.09375,
+          "height": 17
+        },
+        {
+          "id": "elite-1",
+          "x": 220.87376403808594,
+          "y": 124,
+          "width": 24,
+          "height": 17
+        },
+        {
+          "id": "loss-2",
+          "x": 33.4609375,
+          "y": 127,
+          "width": 83.078125,
+          "height": 17
+        },
+        {
+          "id": "battle-notice",
+          "x": 152.359375,
+          "y": 566,
+          "width": 55.28125,
+          "height": 20
+        },
+        {
+          "id": "tutorial",
+          "x": 83,
+          "y": 600,
+          "width": 194,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "fixture": "short-web",
+      "state": "boss",
+      "failures": [],
+      "hits": [
+        {
+          "id": "pause",
+          "x": 300,
+          "y": 8,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "troop-label",
+          "x": 26,
+          "y": 13,
+          "width": 24,
+          "height": 17
+        },
+        {
+          "id": "troop-count",
+          "x": 72,
+          "y": 16,
+          "width": 36,
+          "height": 42
+        },
+        {
+          "id": "boss-name",
+          "x": 138,
+          "y": 10,
+          "width": 28,
+          "height": 20
+        },
+        {
+          "id": "boss-hp",
+          "x": 215.3125,
+          "y": 28,
+          "width": 64.6875,
+          "height": 17
+        },
+        {
+          "id": "weapon",
+          "x": 45,
+          "y": 66,
+          "width": 40,
+          "height": 17
+        },
+        {
+          "id": "companion",
+          "x": 217,
+          "y": 66,
+          "width": 60,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "fixture": "short-web",
+      "state": "awaken",
+      "failures": [],
+      "hits": [
+        {
+          "id": "pause",
+          "x": 300,
+          "y": 8,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "troop-label",
+          "x": 26,
+          "y": 13,
+          "width": 24,
+          "height": 17
+        },
+        {
+          "id": "troop-count",
+          "x": 54,
+          "y": 16,
+          "width": 54,
+          "height": 42
+        },
+        {
+          "id": "boss-name",
+          "x": 138,
+          "y": 10,
+          "width": 28,
+          "height": 20
+        },
+        {
+          "id": "boss-hp",
+          "x": 215.3125,
+          "y": 28,
+          "width": 64.6875,
+          "height": 17
+        },
+        {
+          "id": "weapon",
+          "x": 45,
+          "y": 66,
+          "width": 40,
+          "height": 17
+        },
+        {
+          "id": "auto-awaken",
+          "x": 133,
+          "y": 66,
+          "width": 57.703125,
+          "height": 17
+        },
+        {
+          "id": "companion",
+          "x": 241,
+          "y": 66,
+          "width": 72,
+          "height": 17
+        },
+        {
+          "id": "battle-notice",
+          "x": 114.6640625,
+          "y": 598,
+          "width": 130.671875,
+          "height": 20
+        }
+      ]
+    },
+    {
+      "fixture": "user-image-aspect-synthetic",
+      "state": "home",
+      "failures": [],
+      "hits": [
+        {
+          "id": "start",
+          "x": 16,
+          "y": 683,
+          "width": 358,
+          "height": 56
+        },
+        {
+          "id": "loadout",
+          "x": 16,
+          "y": 755,
+          "width": 114,
+          "height": 44
+        },
+        {
+          "id": "chapters",
+          "x": 138,
+          "y": 755,
+          "width": 114,
+          "height": 44
+        },
+        {
+          "id": "settings",
+          "x": 260,
+          "y": 755,
+          "width": 114,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "chapter",
+          "x": 171.01556396484375,
+          "y": 112.9999771118164,
+          "width": 47.968875885009766,
+          "height": 17.000043869018555
+        },
+        {
+          "id": "wordmark",
+          "x": 101.01537322998047,
+          "y": 133.99989318847656,
+          "width": 187.96923828125,
+          "height": 62.00016403198242
+        },
+        {
+          "id": "subtitle",
+          "x": 174.0077667236328,
+          "y": 201.99996948242188,
+          "width": 41.9844856262207,
+          "height": 25.000064849853516
+        },
+        {
+          "id": "identity",
+          "x": 16,
+          "y": 616,
+          "width": 85.92210388183594,
+          "height": 17.000043869018555
+        },
+        {
+          "id": "objective",
+          "x": 16,
+          "y": 639.9999389648438,
+          "width": 91.968994140625,
+          "height": 32.000083923339844
+        },
+        {
+          "id": "chapter-counter",
+          "x": 338.01556396484375,
+          "y": 647,
+          "width": 35.98447036743164,
+          "height": 17.000043869018555
+        },
+        {
+          "id": "start-label",
+          "x": 157.01551818847656,
+          "y": 697,
+          "width": 75.96894836425781,
+          "height": 26.00006866455078
+        },
+        {
+          "id": "loadout-text",
+          "x": 49.000003814697266,
+          "y": 769,
+          "width": 47.96887969970703,
+          "height": 17.000043869018555
+        },
+        {
+          "id": "chapters-text",
+          "x": 171,
+          "y": 769,
+          "width": 47.968875885009766,
+          "height": 17.000043869018555
+        },
+        {
+          "id": "settings-text",
+          "x": 293,
+          "y": 769,
+          "width": 23.984437942504883,
+          "height": 17.000043869018555
+        }
+      ]
+    },
+    {
+      "fixture": "user-image-aspect-synthetic",
+      "state": "run",
+      "failures": [],
+      "hits": [
+        {
+          "id": "pause",
+          "x": 330,
+          "y": 110,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "troop-label",
+          "x": 26.000001907348633,
+          "y": 114.9999771118164,
+          "width": 23.98443603515625,
+          "height": 17.000036239624023
+        },
+        {
+          "id": "troop-count",
+          "x": 71.99991607666016,
+          "y": 117.99993133544922,
+          "width": 36.00009536743164,
+          "height": 42.0001106262207
+        },
+        {
+          "id": "stage-name",
+          "x": 138.00001525878906,
+          "y": 111.99996948242188,
+          "width": 51.96888732910156,
+          "height": 18.00004768371582
+        },
+        {
+          "id": "progress",
+          "x": 138.00001525878906,
+          "y": 133.99996948242188,
+          "width": 51.93763732910156,
+          "height": 17.000043869018555
+        },
+        {
+          "id": "weapon",
+          "x": 45.000003814697266,
+          "y": 167.99998474121094,
+          "width": 39.96885299682617,
+          "height": 17.000043869018555
+        },
+        {
+          "id": "companion",
+          "x": 247.00001525878906,
+          "y": 167.99998474121094,
+          "width": 59.95329666137695,
+          "height": 17.000043869018555
+        },
+        {
+          "id": "loss-1",
+          "x": 235.25640869140625,
+          "y": 227.06500244140625,
+          "width": 45.046993255615234,
+          "height": 17.000043869018555
+        },
+        {
+          "id": "elite-1",
+          "x": 236.77993774414062,
+          "y": 195.99998474121094,
+          "width": 23.98442268371582,
+          "height": 17.000043869018555
+        },
+        {
+          "id": "loss-2",
+          "x": 33.4920768737793,
+          "y": 211.94996643066406,
+          "width": 83.0158462524414,
+          "height": 17.000043869018555
+        },
+        {
+          "id": "battle-notice",
+          "x": 167.38275146484375,
+          "y": 741,
+          "width": 55.234519958496094,
+          "height": 20.00005340576172
+        },
+        {
+          "id": "tutorial",
+          "x": 98.07786560058594,
+          "y": 775,
+          "width": 193.84425354003906,
+          "height": 17.000043869018555
+        }
+      ]
+    },
+    {
+      "fixture": "user-image-aspect-synthetic",
+      "state": "boss",
+      "failures": [],
+      "hits": [
+        {
+          "id": "pause",
+          "x": 330,
+          "y": 110,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "troop-label",
+          "x": 26.000001907348633,
+          "y": 114.9999771118164,
+          "width": 23.98443603515625,
+          "height": 17.000036239624023
+        },
+        {
+          "id": "troop-count",
+          "x": 71.99991607666016,
+          "y": 117.99993133544922,
+          "width": 36.00009536743164,
+          "height": 42.0001106262207
+        },
+        {
+          "id": "boss-name",
+          "x": 138.00001525878906,
+          "y": 111.99996185302734,
+          "width": 27.984447479248047,
+          "height": 20.000043869018555
+        },
+        {
+          "id": "boss-hp",
+          "x": 245.35922241210938,
+          "y": 129.99996948242188,
+          "width": 64.64079284667969,
+          "height": 17.000043869018555
+        },
+        {
+          "id": "weapon",
+          "x": 45.000003814697266,
+          "y": 167.99998474121094,
+          "width": 39.96885299682617,
+          "height": 17.000043869018555
+        },
+        {
+          "id": "companion",
+          "x": 247.00001525878906,
+          "y": 167.99998474121094,
+          "width": 59.95329666137695,
+          "height": 17.000043869018555
+        }
+      ]
+    },
+    {
+      "fixture": "user-image-aspect-synthetic",
+      "state": "awaken",
+      "failures": [],
+      "hits": [
+        {
+          "id": "pause",
+          "x": 330,
+          "y": 110,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "troop-label",
+          "x": 26.000001907348633,
+          "y": 114.9999771118164,
+          "width": 23.98443603515625,
+          "height": 17.000036239624023
+        },
+        {
+          "id": "troop-count",
+          "x": 54.0154914855957,
+          "y": 117.99993133544922,
+          "width": 53.98451614379883,
+          "height": 42.0001106262207
+        },
+        {
+          "id": "boss-name",
+          "x": 138.00001525878906,
+          "y": 111.99996185302734,
+          "width": 27.984447479248047,
+          "height": 20.000043869018555
+        },
+        {
+          "id": "boss-hp",
+          "x": 245.35922241210938,
+          "y": 129.99996948242188,
+          "width": 64.64079284667969,
+          "height": 17.000043869018555
+        },
+        {
+          "id": "weapon",
+          "x": 45.000003814697266,
+          "y": 167.99998474121094,
+          "width": 39.96885299682617,
+          "height": 17.000043869018555
+        },
+        {
+          "id": "auto-awaken",
+          "x": 133.00001525878906,
+          "y": 167.99998474121094,
+          "width": 57.656402587890625,
+          "height": 17.000043869018555
+        },
+        {
+          "id": "companion",
+          "x": 241.00001525878906,
+          "y": 167.99998474121094,
+          "width": 71.95331573486328,
+          "height": 17.000043869018555
+        },
+        {
+          "id": "battle-notice",
+          "x": 129.71075439453125,
+          "y": 773,
+          "width": 130.57846069335938,
+          "height": 20.00005340576172
+        }
+      ]
+    },
+    {
+      "fixture": "narrow-long-host",
+      "state": "home",
+      "failures": [],
+      "hits": [
+        {
+          "id": "start",
+          "x": 16,
+          "y": 644,
+          "width": 328,
+          "height": 56
+        },
+        {
+          "id": "loadout",
+          "x": 16,
+          "y": 716,
+          "width": 104,
+          "height": 44
+        },
+        {
+          "id": "chapters",
+          "x": 128,
+          "y": 716,
+          "width": 104,
+          "height": 44
+        },
+        {
+          "id": "settings",
+          "x": 240,
+          "y": 716,
+          "width": 104,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "chapter",
+          "x": 156,
+          "y": 87,
+          "width": 48,
+          "height": 17
+        },
+        {
+          "id": "wordmark",
+          "x": 86,
+          "y": 108,
+          "width": 188,
+          "height": 62
+        },
+        {
+          "id": "subtitle",
+          "x": 159,
+          "y": 176,
+          "width": 42,
+          "height": 25
+        },
+        {
+          "id": "identity",
+          "x": 16,
+          "y": 577,
+          "width": 86,
+          "height": 17
+        },
+        {
+          "id": "objective",
+          "x": 16,
+          "y": 601,
+          "width": 92,
+          "height": 32
+        },
+        {
+          "id": "chapter-counter",
+          "x": 308,
+          "y": 608,
+          "width": 36,
+          "height": 17
+        },
+        {
+          "id": "start-label",
+          "x": 142,
+          "y": 658,
+          "width": 76,
+          "height": 26
+        },
+        {
+          "id": "loadout-text",
+          "x": 49,
+          "y": 730,
+          "width": 48,
+          "height": 17
+        },
+        {
+          "id": "chapters-text",
+          "x": 161,
+          "y": 730,
+          "width": 48,
+          "height": 17
+        },
+        {
+          "id": "settings-text",
+          "x": 273,
+          "y": 730,
+          "width": 24,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "fixture": "narrow-long-host",
+      "state": "run",
+      "failures": [],
+      "hits": [
+        {
+          "id": "pause",
+          "x": 300,
+          "y": 84,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "troop-label",
+          "x": 26,
+          "y": 89,
+          "width": 24,
+          "height": 17
+        },
+        {
+          "id": "troop-count",
+          "x": 72,
+          "y": 92,
+          "width": 36,
+          "height": 42
+        },
+        {
+          "id": "stage-name",
+          "x": 138,
+          "y": 86,
+          "width": 52,
+          "height": 18
+        },
+        {
+          "id": "progress",
+          "x": 138,
+          "y": 108,
+          "width": 51.984375,
+          "height": 17
+        },
+        {
+          "id": "weapon",
+          "x": 45,
+          "y": 142,
+          "width": 40,
+          "height": 17
+        },
+        {
+          "id": "companion",
+          "x": 217,
+          "y": 142,
+          "width": 60,
+          "height": 17
+        },
+        {
+          "id": "loss-1",
+          "x": 219.32687377929688,
+          "y": 218.29078674316406,
+          "width": 45.09375,
+          "height": 17
+        },
+        {
+          "id": "elite-1",
+          "x": 220.87376403808594,
+          "y": 181.29078674316406,
+          "width": 24,
+          "height": 17
+        },
+        {
+          "id": "loss-2",
+          "x": 33.4609375,
+          "y": 204.8000030517578,
+          "width": 83.078125,
+          "height": 17
+        },
+        {
+          "id": "battle-notice",
+          "x": 152.359375,
+          "y": 702,
+          "width": 55.28125,
+          "height": 20
+        },
+        {
+          "id": "tutorial",
+          "x": 83,
+          "y": 736,
+          "width": 194,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "fixture": "narrow-long-host",
+      "state": "boss",
+      "failures": [],
+      "hits": [
+        {
+          "id": "pause",
+          "x": 300,
+          "y": 84,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "troop-label",
+          "x": 26,
+          "y": 89,
+          "width": 24,
+          "height": 17
+        },
+        {
+          "id": "troop-count",
+          "x": 72,
+          "y": 92,
+          "width": 36,
+          "height": 42
+        },
+        {
+          "id": "boss-name",
+          "x": 138,
+          "y": 86,
+          "width": 28,
+          "height": 20
+        },
+        {
+          "id": "boss-hp",
+          "x": 215.3125,
+          "y": 104,
+          "width": 64.6875,
+          "height": 17
+        },
+        {
+          "id": "weapon",
+          "x": 45,
+          "y": 142,
+          "width": 40,
+          "height": 17
+        },
+        {
+          "id": "companion",
+          "x": 217,
+          "y": 142,
+          "width": 60,
+          "height": 17
+        }
+      ]
+    },
+    {
+      "fixture": "narrow-long-host",
+      "state": "awaken",
+      "failures": [],
+      "hits": [
+        {
+          "id": "pause",
+          "x": 300,
+          "y": 84,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "textBounds": [
+        {
+          "id": "troop-label",
+          "x": 26,
+          "y": 89,
+          "width": 24,
+          "height": 17
+        },
+        {
+          "id": "troop-count",
+          "x": 54,
+          "y": 92,
+          "width": 54,
+          "height": 42
+        },
+        {
+          "id": "boss-name",
+          "x": 138,
+          "y": 86,
+          "width": 28,
+          "height": 20
+        },
+        {
+          "id": "boss-hp",
+          "x": 215.3125,
+          "y": 104,
+          "width": 64.6875,
+          "height": 17
+        },
+        {
+          "id": "weapon",
+          "x": 45,
+          "y": 142,
+          "width": 40,
+          "height": 17
+        },
+        {
+          "id": "auto-awaken",
+          "x": 133,
+          "y": 142,
+          "width": 57.703125,
+          "height": 17
+        },
+        {
+          "id": "companion",
+          "x": 241,
+          "y": 142,
+          "width": 72,
+          "height": 17
+        },
+        {
+          "id": "battle-notice",
+          "x": 114.6640625,
+          "y": 734,
+          "width": 130.671875,
+          "height": 20
+        }
+      ]
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "dynamic",
+      "count": 1,
+      "companion": "xing",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "dynamic",
+      "count": 1,
+      "companion": "zhao",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "dynamic",
+      "count": 1,
+      "companion": "standby",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "dynamic",
+      "count": 1,
+      "companion": "none",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "dynamic",
+      "count": 24,
+      "companion": "xing",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "dynamic",
+      "count": 24,
+      "companion": "zhao",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "dynamic",
+      "count": 24,
+      "companion": "standby",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "dynamic",
+      "count": 24,
+      "companion": "none",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "dynamic",
+      "count": 48,
+      "companion": "xing",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "dynamic",
+      "count": 48,
+      "companion": "zhao",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "dynamic",
+      "count": 48,
+      "companion": "standby",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "dynamic",
+      "count": 48,
+      "companion": "none",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "dynamic",
+      "count": 256,
+      "companion": "xing",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "dynamic",
+      "count": 256,
+      "companion": "zhao",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "dynamic",
+      "count": 256,
+      "companion": "standby",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "dynamic",
+      "count": 256,
+      "companion": "none",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "dynamic",
+      "count": 1,
+      "companion": "xing",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "dynamic",
+      "count": 1,
+      "companion": "zhao",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "dynamic",
+      "count": 1,
+      "companion": "standby",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "dynamic",
+      "count": 1,
+      "companion": "none",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "dynamic",
+      "count": 24,
+      "companion": "xing",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "dynamic",
+      "count": 24,
+      "companion": "zhao",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "dynamic",
+      "count": 24,
+      "companion": "standby",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "dynamic",
+      "count": 24,
+      "companion": "none",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "dynamic",
+      "count": 48,
+      "companion": "xing",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "dynamic",
+      "count": 48,
+      "companion": "zhao",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "dynamic",
+      "count": 48,
+      "companion": "standby",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "dynamic",
+      "count": 48,
+      "companion": "none",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "dynamic",
+      "count": 256,
+      "companion": "xing",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "dynamic",
+      "count": 256,
+      "companion": "zhao",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "dynamic",
+      "count": 256,
+      "companion": "standby",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "dynamic",
+      "count": 256,
+      "companion": "none",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "home-save-failure",
+      "homeMode": "new",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "home-save-failure",
+      "homeMode": "resume",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "home-save-failure",
+      "homeMode": "pending",
+      "failures": []
+    },
+    {
+      "fixture": "island-and-capsule",
+      "state": "home-save-failure",
+      "homeMode": "completed",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "home-save-failure",
+      "homeMode": "new",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "home-save-failure",
+      "homeMode": "resume",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "home-save-failure",
+      "homeMode": "pending",
+      "failures": []
+    },
+    {
+      "fixture": "short-screen-with-host",
+      "state": "home-save-failure",
+      "homeMode": "completed",
+      "failures": []
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {Journey,STEP} from '../assets/scripts/core/model';
-import {LEVELS} from '../assets/scripts/core/levels';
+import {V07_LEVELS as LEVELS} from '../assets/scripts/core/levels';
 import {Volleys,VOLLEY_CAPACITY,bowMouth} from '../assets/scripts/Volley';
 import {formation,project} from '../assets/scripts/VisualConfig';
 import {worldStrip,gaitFrame} from '../assets/scripts/WorldScenery';

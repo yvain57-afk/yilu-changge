@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "status": "trial_geometry_requires_model_and_render_validation",
+  "coordinateSpace": "planar X=2.5*normalizedX, Z=relative world depth; facing initially toward negative Z",
+  "common": {
+    "entryObserveTicks": 120,
+    "onePrimaryAttackAtATime": true,
+    "lockAimAt": "telegraph_start",
+    "teamDamageAnchor": "unchanged logical team center",
+    "oneHurtPerAttackGroup": true,
+    "keepContactRecoveryDepthAtMost": 0.75,
+    "bgm": false,
+    "ordinaryMobsMustDrainBeforeFirstAttack": true,
+    "noEnrageOrInvulnerability": true,
+    "renderAndCollisionShareGeometry": true
+  },
+  "bosses": [
+    {
+      "id": "xing_daorong",
+      "name": "邢道荣",
+      "weapon": "great_axe",
+      "order": [
+        "axe_sweep",
+        "earth_split"
+      ],
+      "attacks": [
+        {
+          "id": "axe_sweep",
+          "label": "横扫",
+          "telegraphTicks": 78,
+          "activeTicks": 18,
+          "recoveryTicks": 96,
+          "loss": 6,
+          "motion": "lean and rotate shoulders; fixed-length axe sweep",
+          "geometry": {
+            "kind": "swept_sector",
+            "nearRadius": 0.22,
+            "farRadius": 1.12,
+            "angleDegrees": 90
+          },
+          "hint": "faint curved edge at the actual blade path; no full-screen red fill"
+        },
+        {
+          "id": "earth_split",
+          "label": "裂地",
+          "telegraphTicks": 78,
+          "recoveryTicks": 90,
+          "loss": 6,
+          "motion": "lift axe, slam; crack front propagates forward",
+          "geometry": {
+            "kind": "moving_capsule_front",
+            "radius": 0.16,
+            "frontLength": 0.3,
+            "speed": 5.2,
+            "maxDistance": 4.6
+          },
+          "hint": "thin jagged directional path; only the traveling front can hurt"
+        }
+      ]
+    },
+    {
+      "id": "chen_ying",
+      "name": "陈应",
+      "weapon": "throwing_fork",
+      "order": [
+        "single_fork",
+        "split_forks"
+      ],
+      "attacks": [
+        {
+          "id": "single_fork",
+          "label": "飞叉",
+          "telegraphTicks": 78,
+          "recoveryTicks": 90,
+          "loss": 8,
+          "motion": "draw hand back, release physical fork, empty-hand recovery",
+          "geometry": {
+            "kind": "swept_projectile",
+            "radius": 0.11,
+            "speed": 5.8,
+            "maxDistance": 4.8
+          },
+          "hint": "short aiming trace and real fork silhouette"
+        },
+        {
+          "id": "split_forks",
+          "label": "双叉",
+          "telegraphTicks": 78,
+          "recoveryTicks": 102,
+          "loss": 8,
+          "motion": "two forks released within 8 ticks; one shared damage group",
+          "geometry": {
+            "kind": "fork_pair",
+            "radius": 0.11,
+            "speed": 5.8,
+            "maxDistance": 4.8,
+            "landingOffsetsNormalized": [
+              -0.3,
+              0.3
+            ],
+            "gapCenterClampNormalized": [
+              -0.55,
+              0.55
+            ],
+            "releaseGapTicks": 8
+          },
+          "hint": "two narrow fork paths, clear middle and outer safe spaces"
+        }
+      ]
+    },
+    {
+      "id": "yang_ling",
+      "name": "杨龄",
+      "weapon": "spear",
+      "order": [
+        "spear_thrust",
+        "spear_wave"
+      ],
+      "attacks": [
+        {
+          "id": "spear_thrust",
+          "label": "突刺",
+          "telegraphTicks": 72,
+          "activeTicks": 18,
+          "recoveryTicks": 96,
+          "loss": 10,
+          "motion": "lower spear, step forward, thrust, withdraw; no extra invisible body-hit damage",
+          "geometry": {
+            "kind": "swept_weapon_segment",
+            "bladeRadius": 0.09,
+            "useExistingWeaponLength": true,
+            "endBossDepth": 0.38
+          },
+          "hint": "short pointed thrust corridor matching the spear tip"
+        },
+        {
+          "id": "spear_wave",
+          "label": "枪芒",
+          "telegraphTicks": 78,
+          "recoveryTicks": 96,
+          "loss": 10,
+          "motion": "send a narrow tapered wave toward locked position",
+          "geometry": {
+            "kind": "moving_capsule_front",
+            "radius": 0.12,
+            "frontLength": 0.35,
+            "speed": 6.2,
+            "maxDistance": 5.0
+          },
+          "hint": "tapered bright leading edge, translucent tail"
+        }
+      ]
+    }
+  ]
+}

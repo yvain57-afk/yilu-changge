@@ -1,0 +1,72 @@
+{
+  "baseline": "battle-rework-20260925 prior delivered working tree",
+  "checks": [
+    {
+      "path": "assets/scripts/core/runner.ts",
+      "before": "6be0bb945fd3f4debdc96061f191cfac36c6ed8cc034711c4c4bf6247eae4e83",
+      "after": "6be0bb945fd3f4debdc96061f191cfac36c6ed8cc034711c4c4bf6247eae4e83",
+      "unchanged": true
+    },
+    {
+      "path": "assets/scripts/core/runnerConfig.ts",
+      "before": "7118649805a5d6272b539e8cf46288f15b579d180089c5a6468dd16d796c0d42",
+      "after": "7118649805a5d6272b539e8cf46288f15b579d180089c5a6468dd16d796c0d42",
+      "unchanged": true
+    },
+    {
+      "path": "assets/scripts/core/model.ts",
+      "before": "882edfb7488c5f68402eef16e4dead53b69deed9833ef94b8dcb16b08efe7c65",
+      "after": "882edfb7488c5f68402eef16e4dead53b69deed9833ef94b8dcb16b08efe7c65",
+      "unchanged": true
+    },
+    {
+      "path": "assets/scripts/core/levels.ts",
+      "before": "946a4a8c1ddf9fb6c6cac497cd8b6f339aed7a2242c4fa878262ad63edd8fe17",
+      "after": "946a4a8c1ddf9fb6c6cac497cd8b6f339aed7a2242c4fa878262ad63edd8fe17",
+      "unchanged": true
+    },
+    {
+      "path": "assets/scripts/core/weapons.ts",
+      "before": "04cee0dab139a5fe1dfdea2029b72456d6f68776b8af6efabf5309c4c1dcfc37",
+      "after": "04cee0dab139a5fe1dfdea2029b72456d6f68776b8af6efabf5309c4c1dcfc37",
+      "unchanged": true
+    },
+    {
+      "path": "assets/scripts/core/save.ts",
+      "before": "341dd25e3861f2dee0e79a44bd09dd9f0d4bc52b38d9c1896b8810da5bebe4e4",
+      "after": "341dd25e3861f2dee0e79a44bd09dd9f0d4bc52b38d9c1896b8810da5bebe4e4",
+      "unchanged": true
+    },
+    {
+      "path": "assets/scripts/core/campaign.ts",
+      "before": "20d3885fc5a6010f1f07ad4f23713ddb467699471f6877c898f4934df9e7d455",
+      "after": "20d3885fc5a6010f1f07ad4f23713ddb467699471f6877c898f4934df9e7d455",
+      "unchanged": true
+    },
+    {
+      "path": "assets/scripts/core/growth.ts",
+      "before": "234c216eb449002c09da1177866901858946b33698e77cb703d9e29ef4f7032e",
+      "after": "234c216eb449002c09da1177866901858946b33698e77cb703d9e29ef4f7032e",
+      "unchanged": true
+    },
+    {
+      "path": "assets/scripts/VisualConfig.ts",
+      "before": "de0bfddf168987d597ffcaaef3a3302950977a78c5e3421bd88eaaf81424110f",
+      "after": "de0bfddf168987d597ffcaaef3a3302950977a78c5e3421bd88eaaf81424110f",
+      "unchanged": true
+    },
+    {
+      "path": "assets/scripts/ui/UiLayout.ts",
+      "before": "7708b1c9dda7bded8892d24de13e5905f0706f4d2f5fd742ab4b1bf6e54e9949",
+      "after": "7708b1c9dda7bded8892d24de13e5905f0706f4d2f5fd742ab4b1bf6e54e9949",
+      "unchanged": true
+    },
+    {
+      "path": "assets/scripts/ui/PresentationAssets.ts",
+      "before": "2bda6d3f8c6e8396bcd7e508e4a6108885ab6ffe9ca2c59e9630d598ab0d1744",
+      "after": "2bda6d3f8c6e8396bcd7e508e4a6108885ab6ffe9ca2c59e9630d598ab0d1744",
+      "unchanged": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "gate": "l1.g1",
+    "count": 1,
+    "stage": 0,
+    "path": "hold",
+    "A": {
+      "value": -4,
+      "claim": -1,
+      "plateau": 0
+    },
+    "B": {
+      "value": -4,
+      "claim": -1,
+      "plateau": 0
+    }
+  },
+  {
+    "gate": "l1.g1",
+    "count": 8,
+    "stage": 1,
+    "path": "hold",
+    "A": {
+      "value": 4,
+      "claim": 4,
+      "plateau": 5.033333333333321
+    },
+    "B": {
+      "value": 53,
+      "claim": 53,
+      "plateau": 0
+    }
+  },
+  {
+    "gate": "l2.g1",
+    "count": 8,
+    "stage": 1,
+    "path": "hold",
+    "A": {
+      "value": -3,
+      "claim": -3,
+      "plateau": 0
+    },
+    "B": {
+      "value": -3,
+      "claim": -3,
+      "plateau": 0
+    }
+  },
+  {
+    "gate": "l2.g1",
+    "count": 8,
+    "stage": 1,
+    "path": "late",
+    "A": {
+      "value": -26,
+      "claim": -8,
+      "plateau": 0
+    },
+    "B": {
+      "value": -26,
+      "claim": -8,
+      "plateau": 0
+    }
+  },
+  {
+    "gate": "l3.g1",
+    "count": 8,
+    "stage": 1,
+    "path": "hold",
+    "A": {
+      "value": 8,
+      "claim": 8,
+      "plateau": 2.366666666666663
+    },
+    "B": {
+      "value": 23,
+      "claim": 23,
+      "plateau": 0
+    }
+  },
+  {
+    "gate": "l3.g1",
+    "count": 48,
+    "stage": 2,
+    "path": "hold",
+    "A": {
+      "value": 8,
+      "claim": 8,
+      "plateau": 4.699999999999989
+    },
+    "B": {
+      "value": 157,
+      "claim": 157,
+      "plateau": 0
+    }
+  }
+]

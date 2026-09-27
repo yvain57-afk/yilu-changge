@@ -1,0 +1,90 @@
+{
+  "warning": "全部是人为合成布局条件；不是任何机型的API值。截图比例仅由图片宽高得到。",
+  "units": "window logical units, origin top-left",
+  "fixtures": [
+    {
+      "id": "island-and-capsule",
+      "width": 390,
+      "height": 844,
+      "safeArea": {
+        "left": 0,
+        "top": 59,
+        "right": 390,
+        "bottom": 810
+      },
+      "capsule": {
+        "left": 293,
+        "top": 67,
+        "right": 380,
+        "bottom": 99
+      }
+    },
+    {
+      "id": "short-screen-with-host",
+      "width": 360,
+      "height": 640,
+      "safeArea": {
+        "left": 0,
+        "top": 24,
+        "right": 360,
+        "bottom": 624
+      },
+      "capsule": {
+        "left": 266,
+        "top": 30,
+        "right": 350,
+        "bottom": 62
+      }
+    },
+    {
+      "id": "short-web",
+      "width": 360,
+      "height": 640,
+      "safeArea": {
+        "left": 0,
+        "top": 0,
+        "right": 360,
+        "bottom": 640
+      },
+      "capsule": null
+    },
+    {
+      "id": "user-image-aspect-synthetic",
+      "width": 390,
+      "height": 848.7991,
+      "safeArea": {
+        "left": 0,
+        "top": 59,
+        "right": 390,
+        "bottom": 815
+      },
+      "capsule": {
+        "left": 295,
+        "top": 69,
+        "right": 380,
+        "bottom": 102
+      },
+      "imageOriginSize": [
+        941,
+        2048
+      ]
+    },
+    {
+      "id": "narrow-long-host",
+      "width": 360,
+      "height": 800,
+      "safeArea": {
+        "left": 0,
+        "top": 36,
+        "right": 360,
+        "bottom": 776
+      },
+      "capsule": {
+        "left": 259,
+        "top": 44,
+        "right": 350,
+        "bottom": 76
+      }
+    }
+  ]
+}

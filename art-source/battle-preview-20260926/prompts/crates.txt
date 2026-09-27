@@ -1,0 +1,7 @@
+FILE NAME: crates2.png   (landscape image, e.g. 1536x1024)
+Content: four battlefield pickup objects, three-quarter top-down view like the reference chests, each shown twice: top row CLOSED/intact, bottom row OPENED (same object, same size and position in its column).
+Column 1: two-wheeled wooden grain supply cart loaded with tied burlap rice sacks (opened: sacks untied/spilling, cart tilted).
+Column 2: long rectangular wooden weapon case, about 1.8:1 wide, bronze corner plates, a polearm silhouette carved on the lid (opened: lid lifted, a gleaming polearm rising out of it).
+Column 3: square wooden ammunition crate with a thick bundle of arrows sticking up out of the top, rope tied (opened: arrows fanning out, some fire-tipped).
+Column 4: small black lacquer treasure box with gold painted cloud patterns and a gold clasp (opened: lid open, warm golden glow from inside, no visible object).
+Each object should read instantly by silhouette alone, distinctly different shapes.

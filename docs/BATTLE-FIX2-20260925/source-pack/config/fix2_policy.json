@@ -1,0 +1,50 @@
+{
+  "taskId": "BATTLE-FIX2-20260925",
+  "documentVersion": "1.0",
+  "status": "proposal_not_applied",
+  "baselineEvidenceBuild": "battle-rework-20260925-fix1",
+  "weaponPresentation": {
+    "identitySource": "actual_actor_weapon",
+    "stageSource": "actual_actor_inherited_firepower_stage",
+    "meleeNamedActors": "weapon_specific_wave",
+    "rangedSoldiers": "retain_legitimate_projectile",
+    "newWeapons": false,
+    "newDamageOrPierce": false,
+    "animationDrivenDamage": false
+  },
+  "gateGrowth": {
+    "targetKind": "mutableGate",
+    "defaultMode": "window",
+    "normalGameplayPositiveCapEnabled": false,
+    "thresholdPolicy": "keep_baseline_for_first_comparison_then_document_static_adjustments",
+    "damageRemainder": "preserve",
+    "claimPolicy": "actual_contact_once",
+    "missedClaim": "no_backfill",
+    "hideLabelWithoutRuleChange": false,
+    "numericGuard": {
+      "policy": "audit_existing_guard_and_legal_run_upper_bound",
+      "verifiedValue": null,
+      "mustNotActAsCommonGameplayCap": true
+    },
+    "visibleActorLimitControlsReward": false,
+    "squadCapacityValue": "must_be_verified_from_local_source"
+  },
+  "scenery": {
+    "removePersistentTopPairedForeground": true,
+    "preserveFunctionalObstacles": true,
+    "middleDivider": "world_anchored_wooden_wall_with_endcaps",
+    "newClosedLanes": false
+  },
+  "scope": {
+    "menuRewrite": false,
+    "newChapters": false,
+    "backgroundMusic": false,
+    "resetSave": false,
+    "publishOrPaidCalls": false
+  },
+  "notes": [
+    "这是待接入的意图合同，不是现有游戏配置文件。",
+    "window为建议新增明确策略分支；先核对源码再接入。",
+    "null表示尚未核实，不能当成运行默认值或数值0。"
+  ]
+}

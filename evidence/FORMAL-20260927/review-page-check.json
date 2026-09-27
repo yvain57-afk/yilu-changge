@@ -1,0 +1,44 @@
+{
+  "state": {
+    "videos": [
+      {
+        "url": "battle-short.mp4",
+        "duration": 46.833333,
+        "ready": 4
+      },
+      {
+        "url": "natural-ten.mp4",
+        "duration": 452.366667,
+        "ready": 4
+      },
+      {
+        "url": "final-ui-control.mp4",
+        "duration": 21.866667,
+        "ready": 4
+      }
+    ],
+    "images": [
+      {
+        "url": "comparison/normal-pair.jpg",
+        "loaded": true
+      },
+      {
+        "url": "comparison/dense-pair.jpg",
+        "loaded": true
+      },
+      {
+        "url": "comparison/general-pair.jpg",
+        "loaded": true
+      },
+      {
+        "url": "comparison/guandao-pair.jpg",
+        "loaded": true
+      },
+      {
+        "url": "video-ten-contact.jpg",
+        "loaded": true
+      }
+    ]
+  },
+  "errors": []
+}

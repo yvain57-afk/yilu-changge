@@ -1,0 +1,1743 @@
+{
+  "task_id": "BATTLE-REWORK-20260925",
+  "kind": "actual_asset_worklist",
+  "status": "assets_imported_function_checks_passed_parent_targeted_visual_passed",
+  "notes": "Groups share atlases; do not add group bytes to obtain package totals. build_bytes denotes shared native atlas bytes; texture estimates are width*height*4, not a measured GPU allocation.",
+  "groups": [
+    {
+      "id": "A01",
+      "title": "连续道路与路缘",
+      "work_items": "B01",
+      "deliverables": "可平铺道路、变化块、路缘；无角色/文字/交互物烘焙",
+      "status": "imported_function_passed_parent_targeted_visual_passed",
+      "source_paths": [
+        "art-source/battle-rework20260925/road-original-a39bd7bc2cc5.png",
+        "art-source/battle-rework20260925/grass-original-75522e805dbe.png"
+      ],
+      "runtime_paths": [
+        "assets/resources/battle20260925/road.jpg",
+        "assets/resources/battle20260925/grass.jpg"
+      ],
+      "loading_references": [
+        "assets/scripts/BattleAssets.ts static load",
+        "assets/scripts/ArtSprites.ts load",
+        "assets/scripts/BattleRoad.ts",
+        "assets/scripts/BattleView.ts renderRunner"
+      ],
+      "origin_and_license": "User-authorized built-in imagegen production; sources preserved with hashes. Existing code/atlas resources retained under project provenance. No third-party downloaded art or new font.",
+      "dimensions_and_anchors": [
+        {
+          "assetId": "road",
+          "source": [
+            1254,
+            1254
+          ],
+          "runtime": [
+            640,
+            640
+          ],
+          "keys": [
+            "roadStrip00",
+            "roadStrip01",
+            "roadStrip02",
+            "roadStrip03",
+            "roadStrip04",
+            "roadStrip05",
+            "roadStrip06",
+            "roadStrip07",
+            "roadStrip08",
+            "roadStrip09",
+            "roadStrip10",
+            "roadStrip11",
+            "roadStrip12",
+            "roadStrip13",
+            "roadStrip14",
+            "roadStrip15",
+            "roadStrip16",
+            "roadStrip17",
+            "roadStrip18",
+            "roadStrip19",
+            "roadStrip20",
+            "roadStrip21",
+            "roadStrip22",
+            "roadStrip23",
+            "roadStrip24",
+            "roadStrip25",
+            "roadStrip26",
+            "roadStrip27",
+            "roadStrip28",
+            "roadStrip29",
+            "roadStrip30",
+            "roadStrip31",
+            "roadFine000",
+            "roadFine001",
+            "roadFine002",
+            "roadFine003",
+            "roadFine004",
+            "roadFine005",
+            "roadFine006",
+            "roadFine007",
+            "roadFine008",
+            "roadFine009",
+            "roadFine010",
+            "roadFine011",
+            "roadFine012",
+            "roadFine013",
+            "roadFine014",
+            "roadFine015",
+            "roadFine016",
+            "roadFine017",
+            "roadFine018",
+            "roadFine019",
+            "roadFine020",
+            "roadFine021",
+            "roadFine022",
+            "roadFine023",
+            "roadFine024",
+            "roadFine025",
+            "roadFine026",
+            "roadFine027",
+            "roadFine028",
+            "roadFine029",
+            "roadFine030",
+            "roadFine031",
+            "roadFine032",
+            "roadFine033",
+            "roadFine034",
+            "roadFine035",
+            "roadFine036",
+            "roadFine037",
+            "roadFine038",
+            "roadFine039",
+            "roadFine040",
+            "roadFine041",
+            "roadFine042",
+            "roadFine043",
+            "roadFine044",
+            "roadFine045",
+            "roadFine046",
+            "roadFine047",
+            "roadFine048",
+            "roadFine049",
+            "roadFine050",
+            "roadFine051",
+            "roadFine052",
+            "roadFine053",
+            "roadFine054",
+            "roadFine055",
+            "roadFine056",
+            "roadFine057",
+            "roadFine058",
+            "roadFine059",
+            "roadFine060",
+            "roadFine061",
+            "roadFine062",
+            "roadFine063",
+            "roadFine064",
+            "roadFine065",
+            "roadFine066",
+            "roadFine067",
+            "roadFine068",
+            "roadFine069",
+            "roadFine070",
+            "roadFine071",
+            "roadFine072",
+            "roadFine073",
+            "roadFine074",
+            "roadFine075",
+            "roadFine076",
+            "roadFine077",
+            "roadFine078",
+            "roadFine079",
+            "roadFine080",
+            "roadFine081",
+            "roadFine082",
+            "roadFine083",
+            "roadFine084",
+            "roadFine085",
+            "roadFine086",
+            "roadFine087",
+            "roadFine088",
+            "roadFine089",
+            "roadFine090",
+            "roadFine091",
+            "roadFine092",
+            "roadFine093",
+            "roadFine094",
+            "roadFine095",
+            "roadFine096",
+            "roadFine097",
+            "roadFine098",
+            "roadFine099",
+            "roadFine100",
+            "roadFine101",
+            "roadFine102",
+            "roadFine103",
+            "roadFine104",
+            "roadFine105",
+            "roadFine106",
+            "roadFine107",
+            "roadFine108",
+            "roadFine109",
+            "roadFine110",
+            "roadFine111",
+            "roadFine112",
+            "roadFine113",
+            "roadFine114",
+            "roadFine115",
+            "roadFine116",
+            "roadFine117",
+            "roadFine118",
+            "roadFine119",
+            "roadFine120",
+            "roadFine121",
+            "roadFine122",
+            "roadFine123",
+            "roadFine124",
+            "roadFine125",
+            "roadFine126",
+            "roadFine127",
+            "roadGrassLeft",
+            "roadGrassRight"
+          ],
+          "frameMetadata": "assets/scripts/BattleAtlas.ts",
+          "spec": {
+            "type": "road",
+            "width": 640
+          }
+        },
+        {
+          "assetId": "grass",
+          "source": [
+            1254,
+            1254
+          ],
+          "runtime": [
+            512,
+            512
+          ],
+          "keys": [
+            "grassGround"
+          ],
+          "frameMetadata": "assets/scripts/BattleAtlas.ts",
+          "spec": {
+            "type": "image",
+            "width": 512,
+            "key": "grassGround",
+            "anchor": [
+              0.5,
+              0.5
+            ]
+          }
+        }
+      ],
+      "build_bytes": 157658,
+      "texture_memory_estimate_bytes": 2686976,
+      "production_method": [
+        {
+          "assetId": "road",
+          "encoding": "JPEG q86 4:4:4; source scaled only; renderer alternates vertical mirroring for same-endpoint repeat"
+        },
+        {
+          "assetId": "grass",
+          "encoding": "JPEG q86 4:4:4; full composition resize only"
+        }
+      ],
+      "attempted_actions": [
+        "Source and runtime hashes verified",
+        "Actual runtime atlas images viewed",
+        "Cocos web and WeChat compile passed",
+        "Historical R1 visual failure retained; R2 corrected assets subsequently passed parent targeted visual review",
+        "Added128 cached roadFine UV strips for horizon only; road texture SHA and main32 strips unchanged",
+        "Final WeChat build and repeated preparation passed; no official upload or device measurement"
+      ],
+      "blocker": null,
+      "evidence_paths": [
+        "evidence/BATTLE-REWORK-20260925/BATTLE_ASSET_BUDGET.json",
+        "evidence/BATTLE-REWORK-20260925/build-wechatgame-result.json",
+        "evidence/BATTLE-REWORK-20260925/ASSET_BUDGET-wechatgame.json",
+        "evidence/BATTLE-REWORK-20260925/road-fine-uv-check.json",
+        "evidence/BATTLE-REWORK-20260925/asset-loader-regression.json",
+        "evidence/BATTLE-REWORK-20260925/targeted-checks.json"
+      ]
+    },
+    {
+      "id": "A02",
+      "title": "远景与三关地标",
+      "work_items": "B01/B02",
+      "deliverables": "关口/山地/营寨等以真实配置为准，允许共享主体",
+      "status": "imported_function_passed_parent_targeted_visual_passed",
+      "source_paths": [
+        "art-source/battle-rework20260925/scenery-original-ce9ed7acc60f.png",
+        "art-source/battle-rework20260925/distant-original-926b0f78fdcc.png"
+      ],
+      "runtime_paths": [
+        "assets/resources/battle20260925/scenery.png",
+        "assets/resources/battle20260925/distant.png"
+      ],
+      "loading_references": [
+        "assets/scripts/BattleAssets.ts static load",
+        "assets/scripts/ArtSprites.ts load",
+        "assets/scripts/WorldScenery.ts",
+        "assets/scripts/BattleView.ts renderRunner"
+      ],
+      "origin_and_license": "User-authorized built-in imagegen production; sources preserved with hashes. Existing code/atlas resources retained under project provenance. No third-party downloaded art or new font.",
+      "dimensions_and_anchors": [
+        {
+          "assetId": "scenery",
+          "source": [
+            1536,
+            1024
+          ],
+          "runtime": [
+            792,
+            528
+          ],
+          "keys": [
+            "tower",
+            "palisade",
+            "tent",
+            "rocks",
+            "cityGate",
+            "granary"
+          ],
+          "frameMetadata": "assets/scripts/BattleAtlas.ts",
+          "spec": {
+            "columns": 3,
+            "rows": 2,
+            "height": 256,
+            "footY": 484,
+            "keys": [
+              "tower",
+              "palisade",
+              "tent",
+              "rocks",
+              "cityGate",
+              "granary"
+            ]
+          }
+        },
+        {
+          "assetId": "distant",
+          "source": [
+            1536,
+            1024
+          ],
+          "runtime": [
+            768,
+            512
+          ],
+          "keys": [
+            "distantBackdrop"
+          ],
+          "frameMetadata": "assets/scripts/BattleAtlas.ts",
+          "spec": {
+            "type": "image",
+            "width": 768,
+            "key": "distantBackdrop",
+            "alpha": true,
+            "anchor": [
+              0.5,
+              0
+            ]
+          }
+        }
+      ],
+      "build_bytes": 736807,
+      "texture_memory_estimate_bytes": 3245568,
+      "production_method": [
+        {
+          "assetId": "scenery",
+          "encoding": "RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to256px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5"
+        },
+        {
+          "assetId": "distant",
+          "encoding": "RGBA PNG lossless encoding after full composition resize; continuous source alpha retained"
+        }
+      ],
+      "attempted_actions": [
+        "Source and runtime hashes verified",
+        "Actual runtime atlas images viewed",
+        "Cocos web and WeChat compile passed",
+        "Historical R1 visual failure retained; R2 corrected assets subsequently passed parent targeted visual review",
+        "Final WeChat build and repeated preparation passed; no official upload or device measurement"
+      ],
+      "blocker": null,
+      "evidence_paths": [
+        "evidence/BATTLE-REWORK-20260925/BATTLE_ASSET_BUDGET.json",
+        "evidence/BATTLE-REWORK-20260925/build-wechatgame-result.json",
+        "evidence/BATTLE-REWORK-20260925/ASSET_BUDGET-wechatgame.json",
+        "evidence/BATTLE-REWORK-20260925/asset-loader-regression.json",
+        "evidence/BATTLE-REWORK-20260925/targeted-checks.json"
+      ]
+    },
+    {
+      "id": "A03",
+      "title": "路侧建筑与真实障碍",
+      "work_items": "B02",
+      "deliverables": "塔楼、木栅、营地道具、真实挡弹结构；可拆遮挡层",
+      "status": "imported_function_passed_parent_targeted_visual_passed",
+      "source_paths": [
+        "art-source/battle-rework20260925/scenery-original-ce9ed7acc60f.png"
+      ],
+      "runtime_paths": [
+        "assets/resources/battle20260925/scenery.png"
+      ],
+      "loading_references": [
+        "assets/scripts/BattleAssets.ts static load",
+        "assets/scripts/ArtSprites.ts load",
+        "assets/scripts/WorldScenery.ts",
+        "assets/scripts/BattleView.ts runner obstacle depth jobs"
+      ],
+      "origin_and_license": "User-authorized built-in imagegen production; sources preserved with hashes. Existing code/atlas resources retained under project provenance. No third-party downloaded art or new font.",
+      "dimensions_and_anchors": [
+        {
+          "assetId": "scenery",
+          "source": [
+            1536,
+            1024
+          ],
+          "runtime": [
+            792,
+            528
+          ],
+          "keys": [
+            "tower",
+            "palisade",
+            "tent",
+            "rocks",
+            "cityGate",
+            "granary"
+          ],
+          "frameMetadata": "assets/scripts/BattleAtlas.ts",
+          "spec": {
+            "columns": 3,
+            "rows": 2,
+            "height": 256,
+            "footY": 484,
+            "keys": [
+              "tower",
+              "palisade",
+              "tent",
+              "rocks",
+              "cityGate",
+              "granary"
+            ]
+          }
+        }
+      ],
+      "build_bytes": 180576,
+      "texture_memory_estimate_bytes": 1672704,
+      "production_method": [
+        {
+          "assetId": "scenery",
+          "encoding": "RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to256px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5"
+        }
+      ],
+      "attempted_actions": [
+        "Source and runtime hashes verified",
+        "Actual runtime atlas images viewed",
+        "Cocos web and WeChat compile passed",
+        "Final WeChat build and repeated preparation passed; no official upload or device measurement"
+      ],
+      "blocker": null,
+      "evidence_paths": [
+        "evidence/BATTLE-REWORK-20260925/BATTLE_ASSET_BUDGET.json",
+        "evidence/BATTLE-REWORK-20260925/build-wechatgame-result.json",
+        "evidence/BATTLE-REWORK-20260925/ASSET_BUDGET-wechatgame.json",
+        "evidence/BATTLE-REWORK-20260925/asset-loader-regression.json",
+        "evidence/BATTLE-REWORK-20260925/targeted-checks.json"
+      ]
+    },
+    {
+      "id": "A04",
+      "title": "主将与同袍战斗资产",
+      "work_items": "B03/B04",
+      "deliverables": "身份保持；统一材质与尺度；行军/出手/受击/退出",
+      "status": "imported_function_passed_parent_targeted_visual_passed",
+      "source_paths": [
+        "art-source/battle-rework20260925/heroes-original-2e7bed0f2c3f.png",
+        "art-source/battle-rework20260925/companions-original-4aab330ffdb6.png"
+      ],
+      "runtime_paths": [
+        "assets/resources/battle20260925/heroes.png",
+        "assets/resources/battle20260925/companions.png"
+      ],
+      "loading_references": [
+        "assets/scripts/BattleAssets.ts static load",
+        "assets/scripts/ArtSprites.ts load",
+        "assets/scripts/BattleView.ts runner team/casualty"
+      ],
+      "origin_and_license": "User-authorized built-in imagegen production; sources preserved with hashes. Existing code/atlas resources retained under project provenance. No third-party downloaded art or new font.",
+      "dimensions_and_anchors": [
+        {
+          "assetId": "heroes",
+          "source": [
+            1254,
+            1254
+          ],
+          "runtime": [
+            776,
+            591
+          ],
+          "keys": [
+            "heroSpearWalk0",
+            "heroSpearWalk1",
+            "heroSpearAttack",
+            "heroSpearHurt",
+            "heroBladeWalk0",
+            "heroBladeWalk1",
+            "heroBladeAttack",
+            "heroBladeHurt",
+            "xingWalk0",
+            "xingWalk1",
+            "xingAttack",
+            "xingHurt"
+          ],
+          "frameMetadata": "assets/scripts/BattleAtlas.ts",
+          "spec": {
+            "columns": 4,
+            "rows": 3,
+            "height": 192,
+            "footY": 400,
+            "keys": [
+              "heroSpearWalk0",
+              "heroSpearWalk1",
+              "heroSpearAttack",
+              "heroSpearHurt",
+              "heroBladeWalk0",
+              "heroBladeWalk1",
+              "heroBladeAttack",
+              "heroBladeHurt",
+              "xingWalk0",
+              "xingWalk1",
+              "xingAttack",
+              "xingHurt"
+            ],
+            "componentSeeds": [
+              79187,
+              24391,
+              88778,
+              78966,
+              563218,
+              579824,
+              566560,
+              607998,
+              1051026,
+              1066370,
+              1021641,
+              1093294
+            ],
+            "feet": [
+              [
+                175,
+                401
+              ],
+              [
+                156,
+                401
+              ],
+              [
+                100,
+                401
+              ],
+              [
+                180,
+                401
+              ],
+              [
+                170,
+                390
+              ],
+              [
+                156,
+                390
+              ],
+              [
+                100,
+                390
+              ],
+              [
+                160,
+                390
+              ],
+              [
+                180,
+                390
+              ],
+              [
+                156,
+                390
+              ],
+              [
+                120,
+                390
+              ],
+              [
+                180,
+                390
+              ]
+            ]
+          }
+        },
+        {
+          "assetId": "companions",
+          "source": [
+            1254,
+            1254
+          ],
+          "runtime": [
+            500,
+            344
+          ],
+          "keys": [
+            "panWalk0",
+            "panWalk1",
+            "panAttack",
+            "panHurt",
+            "zhaoWalk0",
+            "zhaoWalk1",
+            "zhaoAttack",
+            "zhaoHurt"
+          ],
+          "frameMetadata": "assets/scripts/BattleAtlas.ts",
+          "spec": {
+            "columns": 4,
+            "rows": 2,
+            "height": 192,
+            "footY": 575,
+            "keys": [
+              "panWalk0",
+              "panWalk1",
+              "panAttack",
+              "panHurt",
+              "zhaoWalk0",
+              "zhaoWalk1",
+              "zhaoAttack",
+              "zhaoHurt"
+            ],
+            "componentSeeds": [
+              114269,
+              119583,
+              142477,
+              191630,
+              830281,
+              826815,
+              849932,
+              877685
+            ],
+            "feet": [
+              [
+                125,
+                582
+              ],
+              [
+                156,
+                582
+              ],
+              [
+                100,
+                582
+              ],
+              [
+                180,
+                582
+              ],
+              [
+                125,
+                566
+              ],
+              [
+                156,
+                566
+              ],
+              [
+                100,
+                566
+              ],
+              [
+                180,
+                566
+              ]
+            ]
+          }
+        }
+      ],
+      "build_bytes": 186728,
+      "texture_memory_estimate_bytes": 2522464,
+      "production_method": [
+        {
+          "assetId": "heroes",
+          "encoding": "Explicit connected-component sprite selection (source RGBA retained) to avoid crossed grid weapon cuts; RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to192px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5"
+        },
+        {
+          "assetId": "companions",
+          "encoding": "Explicit connected-component sprite selection (source RGBA retained) to avoid crossed grid weapon cuts; RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to192px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5"
+        }
+      ],
+      "attempted_actions": [
+        "Source and runtime hashes verified",
+        "Actual runtime atlas images viewed",
+        "Cocos web and WeChat compile passed",
+        "Final WeChat build and repeated preparation passed; no official upload or device measurement"
+      ],
+      "blocker": null,
+      "evidence_paths": [
+        "evidence/BATTLE-REWORK-20260925/BATTLE_ASSET_BUDGET.json",
+        "evidence/BATTLE-REWORK-20260925/build-wechatgame-result.json",
+        "evidence/BATTLE-REWORK-20260925/ASSET_BUDGET-wechatgame.json",
+        "evidence/BATTLE-REWORK-20260925/asset-loader-regression.json",
+        "evidence/BATTLE-REWORK-20260925/targeted-checks.json"
+      ]
+    },
+    {
+      "id": "A05",
+      "title": "普通兵、敌军与敌将战斗资产",
+      "work_items": "B03/B04",
+      "deliverables": "当前三关实际参战角色；共享合格动作但保留轮廓差异",
+      "status": "imported_function_passed_parent_targeted_visual_passed",
+      "source_paths": [
+        "art-source/battle-rework20260925/soldiers-original-23fb54935dea.png",
+        "art-source/battle-rework20260925/bosses-original-3f019b68cab9.png"
+      ],
+      "runtime_paths": [
+        "assets/resources/battle20260925/soldiers.png",
+        "assets/resources/battle20260925/bosses.png"
+      ],
+      "loading_references": [
+        "assets/scripts/BattleAssets.ts static load",
+        "assets/scripts/ArtSprites.ts load",
+        "assets/scripts/BattleView.ts runner enemy/cast/casualty"
+      ],
+      "origin_and_license": "User-authorized built-in imagegen production; sources preserved with hashes. Existing code/atlas resources retained under project provenance. No third-party downloaded art or new font.",
+      "dimensions_and_anchors": [
+        {
+          "assetId": "soldiers",
+          "source": [
+            1536,
+            1024
+          ],
+          "runtime": [
+            424,
+            304
+          ],
+          "keys": [
+            "blueWalk0",
+            "blueWalk1",
+            "blueFire",
+            "blueHurt",
+            "redWalk0",
+            "redWalk1",
+            "redAttack",
+            "redHurt"
+          ],
+          "frameMetadata": "assets/scripts/BattleAtlas.ts",
+          "spec": {
+            "columns": 4,
+            "rows": 2,
+            "height": 160,
+            "footY": 474,
+            "keys": [
+              "blueWalk0",
+              "blueWalk1",
+              "blueFire",
+              "blueHurt",
+              "redWalk0",
+              "redWalk1",
+              "redAttack",
+              "redHurt"
+            ]
+          }
+        },
+        {
+          "assetId": "bosses",
+          "source": [
+            1254,
+            1254
+          ],
+          "runtime": [
+            716,
+            651
+          ],
+          "keys": [
+            "bossXingWalk0",
+            "bossXingWalk1",
+            "bossXingAttack",
+            "bossXingHurt",
+            "bossChenWalk0",
+            "bossChenWalk1",
+            "bossChenAttack",
+            "bossChenHurt",
+            "bossYangWalk0",
+            "bossYangWalk1",
+            "bossYangAttack",
+            "bossYangHurt"
+          ],
+          "frameMetadata": "assets/scripts/BattleAtlas.ts",
+          "spec": {
+            "columns": 4,
+            "rows": 3,
+            "height": 208,
+            "footY": 405,
+            "keys": [
+              "bossXingWalk0",
+              "bossXingWalk1",
+              "bossXingAttack",
+              "bossXingHurt",
+              "bossChenWalk0",
+              "bossChenWalk1",
+              "bossChenAttack",
+              "bossChenHurt",
+              "bossYangWalk0",
+              "bossYangWalk1",
+              "bossYangAttack",
+              "bossYangHurt"
+            ],
+            "componentSeeds": [
+              13965,
+              188580,
+              796,
+              75163,
+              531831,
+              752880,
+              547553,
+              545368,
+              1012150,
+              1254480,
+              1020285,
+              1039501
+            ],
+            "componentBounds": [
+              null,
+              [
+                347,
+                0,
+                687,
+                420
+              ],
+              [
+                687,
+                0,
+                935,
+                420
+              ],
+              null,
+              null,
+              [
+                313,
+                419,
+                635,
+                810
+              ],
+              null,
+              null,
+              null,
+              [
+                313,
+                810,
+                635,
+                1254
+              ]
+            ]
+          }
+        }
+      ],
+      "build_bytes": 229778,
+      "texture_memory_estimate_bytes": 2380048,
+      "production_method": [
+        {
+          "assetId": "soldiers",
+          "encoding": "RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to160px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5"
+        },
+        {
+          "assetId": "bosses",
+          "encoding": "Explicit connected-component sprite selection (source RGBA retained) to avoid crossed grid weapon cuts; RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to208px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5"
+        }
+      ],
+      "attempted_actions": [
+        "Source and runtime hashes verified",
+        "Actual runtime atlas images viewed",
+        "Cocos web and WeChat compile passed",
+        "Final WeChat build and repeated preparation passed; no official upload or device measurement"
+      ],
+      "blocker": null,
+      "evidence_paths": [
+        "evidence/BATTLE-REWORK-20260925/BATTLE_ASSET_BUDGET.json",
+        "evidence/BATTLE-REWORK-20260925/build-wechatgame-result.json",
+        "evidence/BATTLE-REWORK-20260925/ASSET_BUDGET-wechatgame.json",
+        "evidence/BATTLE-REWORK-20260925/asset-loader-regression.json",
+        "evidence/BATTLE-REWORK-20260925/targeted-checks.json"
+      ]
+    },
+    {
+      "id": "A06",
+      "title": "正负门与连续门",
+      "work_items": "B05",
+      "deliverables": "柱体、旗面、语义图标、状态反馈；数字独立绘制",
+      "status": "imported_function_passed_parent_targeted_visual_passed",
+      "source_paths": [
+        "art-source/battle-rework20260925/gate-parts-original-52dbd4bb868f.png"
+      ],
+      "runtime_paths": [
+        "assets/resources/battle20260925/gate-parts.png"
+      ],
+      "loading_references": [
+        "assets/scripts/BattleAssets.ts static load",
+        "assets/scripts/ArtSprites.ts load",
+        "assets/scripts/BattleView.ts runner gates"
+      ],
+      "origin_and_license": "User-authorized built-in imagegen production; sources preserved with hashes. Existing code/atlas resources retained under project provenance. No third-party downloaded art or new font.",
+      "dimensions_and_anchors": [
+        {
+          "assetId": "gate-parts",
+          "source": [
+            1536,
+            1024
+          ],
+          "runtime": [
+            1128,
+            948
+          ],
+          "keys": [
+            "gatePost",
+            "gateBlue",
+            "gateRed",
+            "gateNeutral",
+            "iconHelmet",
+            "iconSkull",
+            "weaponCrossbow",
+            "fireArrow",
+            "woodFragment0",
+            "woodFragment1",
+            "woodFragment2",
+            "boxLock"
+          ],
+          "frameMetadata": "assets/scripts/BattleAtlas.ts",
+          "spec": {
+            "columns": 4,
+            "rows": 3,
+            "height": 208,
+            "tight": true,
+            "keys": [
+              "gatePost",
+              "gateBlue",
+              "gateRed",
+              "gateNeutral",
+              "iconHelmet",
+              "iconSkull",
+              "weaponCrossbow",
+              "fireArrow",
+              "woodFragment0",
+              "woodFragment1",
+              "woodFragment2",
+              "boxLock"
+            ],
+            "componentSeeds": [
+              7853,
+              15782,
+              16185,
+              18127,
+              887957,
+              1083199,
+              788555,
+              739818,
+              885944,
+              852298,
+              1131861,
+              1305381
+            ],
+            "insets": {
+              "gateBlue": [
+                18,
+                18,
+                30,
+                36
+              ],
+              "gateRed": [
+                18,
+                18,
+                30,
+                36
+              ],
+              "gateNeutral": [
+                18,
+                18,
+                30,
+                36
+              ]
+            }
+          }
+        }
+      ],
+      "build_bytes": 180238,
+      "texture_memory_estimate_bytes": 4277376,
+      "production_method": [
+        {
+          "assetId": "gate-parts",
+          "encoding": "Explicit connected-component sprite selection (source RGBA retained) to avoid crossed grid weapon cuts; RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to208px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5"
+        }
+      ],
+      "attempted_actions": [
+        "Source and runtime hashes verified",
+        "Actual runtime atlas images viewed",
+        "Cocos web and WeChat compile passed",
+        "Final WeChat build and repeated preparation passed; no official upload or device measurement"
+      ],
+      "blocker": null,
+      "evidence_paths": [
+        "evidence/BATTLE-REWORK-20260925/BATTLE_ASSET_BUDGET.json",
+        "evidence/BATTLE-REWORK-20260925/build-wechatgame-result.json",
+        "evidence/BATTLE-REWORK-20260925/ASSET_BUDGET-wechatgame.json",
+        "evidence/BATTLE-REWORK-20260925/asset-loader-regression.json",
+        "evidence/BATTLE-REWORK-20260925/targeted-checks.json"
+      ]
+    },
+    {
+      "id": "A07",
+      "title": "四类奖励箱",
+      "work_items": "B06",
+      "deliverables": "兵员/武器/连续门/战地同袍；完整、受击、破裂及真实兑现表现",
+      "status": "imported_function_passed_parent_targeted_visual_passed",
+      "source_paths": [
+        "art-source/battle-rework20260925/crates-original-be2e67502a46.png",
+        "art-source/battle-rework20260925/gate-parts-original-52dbd4bb868f.png"
+      ],
+      "runtime_paths": [
+        "assets/resources/battle20260925/crates.png",
+        "assets/resources/battle20260925/gate-parts.png"
+      ],
+      "loading_references": [
+        "assets/scripts/BattleAssets.ts static load",
+        "assets/scripts/ArtSprites.ts load",
+        "assets/scripts/BattleView.ts runner crates/rewards"
+      ],
+      "origin_and_license": "User-authorized built-in imagegen production; sources preserved with hashes. Existing code/atlas resources retained under project provenance. No third-party downloaded art or new font.",
+      "dimensions_and_anchors": [
+        {
+          "assetId": "crates",
+          "source": [
+            1536,
+            1024
+          ],
+          "runtime": [
+            708,
+            436
+          ],
+          "keys": [
+            "boxTroops",
+            "boxEquipment",
+            "boxChain",
+            "boxCompanion",
+            "boxTroopsOpen",
+            "boxEquipmentOpen",
+            "boxChainOpen",
+            "boxCompanionOpen"
+          ],
+          "frameMetadata": "assets/scripts/BattleAtlas.ts",
+          "spec": {
+            "columns": 4,
+            "rows": 2,
+            "height": 224,
+            "footY": 490,
+            "keys": [
+              "boxTroops",
+              "boxEquipment",
+              "boxChain",
+              "boxCompanion",
+              "boxTroopsOpen",
+              "boxEquipmentOpen",
+              "boxChainOpen",
+              "boxCompanionOpen"
+            ],
+            "componentSeeds": [
+              210525,
+              146586,
+              22472,
+              124249,
+              823387,
+              834527,
+              828757,
+              839893
+            ]
+          }
+        },
+        {
+          "assetId": "gate-parts",
+          "source": [
+            1536,
+            1024
+          ],
+          "runtime": [
+            1128,
+            948
+          ],
+          "keys": [
+            "gatePost",
+            "gateBlue",
+            "gateRed",
+            "gateNeutral",
+            "iconHelmet",
+            "iconSkull",
+            "weaponCrossbow",
+            "fireArrow",
+            "woodFragment0",
+            "woodFragment1",
+            "woodFragment2",
+            "boxLock"
+          ],
+          "frameMetadata": "assets/scripts/BattleAtlas.ts",
+          "spec": {
+            "columns": 4,
+            "rows": 3,
+            "height": 208,
+            "tight": true,
+            "keys": [
+              "gatePost",
+              "gateBlue",
+              "gateRed",
+              "gateNeutral",
+              "iconHelmet",
+              "iconSkull",
+              "weaponCrossbow",
+              "fireArrow",
+              "woodFragment0",
+              "woodFragment1",
+              "woodFragment2",
+              "boxLock"
+            ],
+            "componentSeeds": [
+              7853,
+              15782,
+              16185,
+              18127,
+              887957,
+              1083199,
+              788555,
+              739818,
+              885944,
+              852298,
+              1131861,
+              1305381
+            ],
+            "insets": {
+              "gateBlue": [
+                18,
+                18,
+                30,
+                36
+              ],
+              "gateRed": [
+                18,
+                18,
+                30,
+                36
+              ],
+              "gateNeutral": [
+                18,
+                18,
+                30,
+                36
+              ]
+            }
+          }
+        }
+      ],
+      "build_bytes": 343752,
+      "texture_memory_estimate_bytes": 5512128,
+      "production_method": [
+        {
+          "assetId": "crates",
+          "encoding": "Explicit connected-component sprite selection (source RGBA retained) to avoid crossed grid weapon cuts; RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to224px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5"
+        },
+        {
+          "assetId": "gate-parts",
+          "encoding": "Explicit connected-component sprite selection (source RGBA retained) to avoid crossed grid weapon cuts; RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to208px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5"
+        }
+      ],
+      "attempted_actions": [
+        "Source and runtime hashes verified",
+        "Actual runtime atlas images viewed",
+        "Cocos web and WeChat compile passed",
+        "Final WeChat build and repeated preparation passed; no official upload or device measurement"
+      ],
+      "blocker": null,
+      "evidence_paths": [
+        "evidence/BATTLE-REWORK-20260925/BATTLE_ASSET_BUDGET.json",
+        "evidence/BATTLE-REWORK-20260925/build-wechatgame-result.json",
+        "evidence/BATTLE-REWORK-20260925/ASSET_BUDGET-wechatgame.json",
+        "evidence/BATTLE-REWORK-20260925/asset-loader-regression.json",
+        "evidence/BATTLE-REWORK-20260925/targeted-checks.json"
+      ]
+    },
+    {
+      "id": "A08",
+      "title": "弹道、命中、死亡、换装反馈",
+      "work_items": "B07",
+      "deliverables": "仅消费真实事件，不改变模型预算；原音效与震动限流",
+      "status": "imported_function_passed_parent_targeted_visual_passed",
+      "source_paths": [
+        "art-source/battle-rework20260925/soldiers-original-23fb54935dea.png",
+        "art-source/battle-rework20260925/gate-parts-original-52dbd4bb868f.png",
+        "art-source/battle-rework20260925/heroes-original-2e7bed0f2c3f.png",
+        "art-source/battle-rework20260925/bosses-original-3f019b68cab9.png",
+        "art-source/battle-rework20260925/companions-original-4aab330ffdb6.png"
+      ],
+      "runtime_paths": [
+        "assets/resources/battle20260925/soldiers.png",
+        "assets/resources/battle20260925/gate-parts.png",
+        "assets/resources/battle20260925/heroes.png",
+        "assets/resources/battle20260925/bosses.png",
+        "assets/resources/battle20260925/companions.png"
+      ],
+      "loading_references": [
+        "assets/scripts/BattleAssets.ts static load",
+        "assets/scripts/ArtSprites.ts load",
+        "assets/scripts/BattleView.ts projectile/hit/remove/equipment feedback",
+        "assets/scripts/Platform.ts sound/haptic rate limits"
+      ],
+      "origin_and_license": "User-authorized built-in imagegen production; sources preserved with hashes. Existing code/atlas resources retained under project provenance. No third-party downloaded art or new font.",
+      "dimensions_and_anchors": [
+        {
+          "assetId": "soldiers",
+          "source": [
+            1536,
+            1024
+          ],
+          "runtime": [
+            424,
+            304
+          ],
+          "keys": [
+            "blueWalk0",
+            "blueWalk1",
+            "blueFire",
+            "blueHurt",
+            "redWalk0",
+            "redWalk1",
+            "redAttack",
+            "redHurt"
+          ],
+          "frameMetadata": "assets/scripts/BattleAtlas.ts",
+          "spec": {
+            "columns": 4,
+            "rows": 2,
+            "height": 160,
+            "footY": 474,
+            "keys": [
+              "blueWalk0",
+              "blueWalk1",
+              "blueFire",
+              "blueHurt",
+              "redWalk0",
+              "redWalk1",
+              "redAttack",
+              "redHurt"
+            ]
+          }
+        },
+        {
+          "assetId": "gate-parts",
+          "source": [
+            1536,
+            1024
+          ],
+          "runtime": [
+            1128,
+            948
+          ],
+          "keys": [
+            "gatePost",
+            "gateBlue",
+            "gateRed",
+            "gateNeutral",
+            "iconHelmet",
+            "iconSkull",
+            "weaponCrossbow",
+            "fireArrow",
+            "woodFragment0",
+            "woodFragment1",
+            "woodFragment2",
+            "boxLock"
+          ],
+          "frameMetadata": "assets/scripts/BattleAtlas.ts",
+          "spec": {
+            "columns": 4,
+            "rows": 3,
+            "height": 208,
+            "tight": true,
+            "keys": [
+              "gatePost",
+              "gateBlue",
+              "gateRed",
+              "gateNeutral",
+              "iconHelmet",
+              "iconSkull",
+              "weaponCrossbow",
+              "fireArrow",
+              "woodFragment0",
+              "woodFragment1",
+              "woodFragment2",
+              "boxLock"
+            ],
+            "componentSeeds": [
+              7853,
+              15782,
+              16185,
+              18127,
+              887957,
+              1083199,
+              788555,
+              739818,
+              885944,
+              852298,
+              1131861,
+              1305381
+            ],
+            "insets": {
+              "gateBlue": [
+                18,
+                18,
+                30,
+                36
+              ],
+              "gateRed": [
+                18,
+                18,
+                30,
+                36
+              ],
+              "gateNeutral": [
+                18,
+                18,
+                30,
+                36
+              ]
+            }
+          }
+        },
+        {
+          "assetId": "heroes",
+          "source": [
+            1254,
+            1254
+          ],
+          "runtime": [
+            776,
+            591
+          ],
+          "keys": [
+            "heroSpearWalk0",
+            "heroSpearWalk1",
+            "heroSpearAttack",
+            "heroSpearHurt",
+            "heroBladeWalk0",
+            "heroBladeWalk1",
+            "heroBladeAttack",
+            "heroBladeHurt",
+            "xingWalk0",
+            "xingWalk1",
+            "xingAttack",
+            "xingHurt"
+          ],
+          "frameMetadata": "assets/scripts/BattleAtlas.ts",
+          "spec": {
+            "columns": 4,
+            "rows": 3,
+            "height": 192,
+            "footY": 400,
+            "keys": [
+              "heroSpearWalk0",
+              "heroSpearWalk1",
+              "heroSpearAttack",
+              "heroSpearHurt",
+              "heroBladeWalk0",
+              "heroBladeWalk1",
+              "heroBladeAttack",
+              "heroBladeHurt",
+              "xingWalk0",
+              "xingWalk1",
+              "xingAttack",
+              "xingHurt"
+            ],
+            "componentSeeds": [
+              79187,
+              24391,
+              88778,
+              78966,
+              563218,
+              579824,
+              566560,
+              607998,
+              1051026,
+              1066370,
+              1021641,
+              1093294
+            ],
+            "feet": [
+              [
+                175,
+                401
+              ],
+              [
+                156,
+                401
+              ],
+              [
+                100,
+                401
+              ],
+              [
+                180,
+                401
+              ],
+              [
+                170,
+                390
+              ],
+              [
+                156,
+                390
+              ],
+              [
+                100,
+                390
+              ],
+              [
+                160,
+                390
+              ],
+              [
+                180,
+                390
+              ],
+              [
+                156,
+                390
+              ],
+              [
+                120,
+                390
+              ],
+              [
+                180,
+                390
+              ]
+            ]
+          }
+        },
+        {
+          "assetId": "bosses",
+          "source": [
+            1254,
+            1254
+          ],
+          "runtime": [
+            716,
+            651
+          ],
+          "keys": [
+            "bossXingWalk0",
+            "bossXingWalk1",
+            "bossXingAttack",
+            "bossXingHurt",
+            "bossChenWalk0",
+            "bossChenWalk1",
+            "bossChenAttack",
+            "bossChenHurt",
+            "bossYangWalk0",
+            "bossYangWalk1",
+            "bossYangAttack",
+            "bossYangHurt"
+          ],
+          "frameMetadata": "assets/scripts/BattleAtlas.ts",
+          "spec": {
+            "columns": 4,
+            "rows": 3,
+            "height": 208,
+            "footY": 405,
+            "keys": [
+              "bossXingWalk0",
+              "bossXingWalk1",
+              "bossXingAttack",
+              "bossXingHurt",
+              "bossChenWalk0",
+              "bossChenWalk1",
+              "bossChenAttack",
+              "bossChenHurt",
+              "bossYangWalk0",
+              "bossYangWalk1",
+              "bossYangAttack",
+              "bossYangHurt"
+            ],
+            "componentSeeds": [
+              13965,
+              188580,
+              796,
+              75163,
+              531831,
+              752880,
+              547553,
+              545368,
+              1012150,
+              1254480,
+              1020285,
+              1039501
+            ],
+            "componentBounds": [
+              null,
+              [
+                347,
+                0,
+                687,
+                420
+              ],
+              [
+                687,
+                0,
+                935,
+                420
+              ],
+              null,
+              null,
+              [
+                313,
+                419,
+                635,
+                810
+              ],
+              null,
+              null,
+              null,
+              [
+                313,
+                810,
+                635,
+                1254
+              ]
+            ]
+          }
+        },
+        {
+          "assetId": "companions",
+          "source": [
+            1254,
+            1254
+          ],
+          "runtime": [
+            500,
+            344
+          ],
+          "keys": [
+            "panWalk0",
+            "panWalk1",
+            "panAttack",
+            "panHurt",
+            "zhaoWalk0",
+            "zhaoWalk1",
+            "zhaoAttack",
+            "zhaoHurt"
+          ],
+          "frameMetadata": "assets/scripts/BattleAtlas.ts",
+          "spec": {
+            "columns": 4,
+            "rows": 2,
+            "height": 192,
+            "footY": 575,
+            "keys": [
+              "panWalk0",
+              "panWalk1",
+              "panAttack",
+              "panHurt",
+              "zhaoWalk0",
+              "zhaoWalk1",
+              "zhaoAttack",
+              "zhaoHurt"
+            ],
+            "componentSeeds": [
+              114269,
+              119583,
+              142477,
+              191630,
+              830281,
+              826815,
+              849932,
+              877685
+            ],
+            "feet": [
+              [
+                125,
+                582
+              ],
+              [
+                156,
+                582
+              ],
+              [
+                100,
+                582
+              ],
+              [
+                180,
+                582
+              ],
+              [
+                125,
+                566
+              ],
+              [
+                156,
+                566
+              ],
+              [
+                100,
+                566
+              ],
+              [
+                180,
+                566
+              ]
+            ]
+          }
+        }
+      ],
+      "build_bytes": 596744,
+      "texture_memory_estimate_bytes": 9179888,
+      "production_method": [
+        {
+          "assetId": "soldiers",
+          "encoding": "RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to160px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5"
+        },
+        {
+          "assetId": "gate-parts",
+          "encoding": "Explicit connected-component sprite selection (source RGBA retained) to avoid crossed grid weapon cuts; RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to208px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5"
+        },
+        {
+          "assetId": "heroes",
+          "encoding": "Explicit connected-component sprite selection (source RGBA retained) to avoid crossed grid weapon cuts; RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to192px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5"
+        },
+        {
+          "assetId": "bosses",
+          "encoding": "Explicit connected-component sprite selection (source RGBA retained) to avoid crossed grid weapon cuts; RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to208px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5"
+        },
+        {
+          "assetId": "companions",
+          "encoding": "Explicit connected-component sprite selection (source RGBA retained) to avoid crossed grid weapon cuts; RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to192px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5"
+        }
+      ],
+      "attempted_actions": [
+        "Source and runtime hashes verified",
+        "Actual runtime atlas images viewed",
+        "Cocos web and WeChat compile passed",
+        "Final WeChat build and repeated preparation passed; no official upload or device measurement"
+      ],
+      "blocker": null,
+      "evidence_paths": [
+        "evidence/BATTLE-REWORK-20260925/BATTLE_ASSET_BUDGET.json",
+        "evidence/BATTLE-REWORK-20260925/build-wechatgame-result.json",
+        "evidence/BATTLE-REWORK-20260925/ASSET_BUDGET-wechatgame.json",
+        "evidence/BATTLE-REWORK-20260925/asset-loader-regression.json",
+        "evidence/BATTLE-REWORK-20260925/targeted-checks.json"
+      ]
+    },
+    {
+      "id": "A09",
+      "title": "战斗标签、脚影与共用遮挡支持",
+      "work_items": "B04/B08",
+      "deliverables": "安全区信息、世界标签、影子；从共用组件复用合格部分",
+      "status": "reused_function_passed_parent_targeted_visual_passed",
+      "source_paths": [],
+      "runtime_paths": [],
+      "loading_references": [
+        "assets/scripts/BattleAssets.ts static load",
+        "assets/scripts/ArtSprites.ts load",
+        "assets/scripts/ui/WorldLabels.ts",
+        "assets/scripts/BattleView.ts ellipse/depth jobs"
+      ],
+      "origin_and_license": "User-authorized built-in imagegen production; sources preserved with hashes. Existing code/atlas resources retained under project provenance. No third-party downloaded art or new font.",
+      "dimensions_and_anchors": [],
+      "build_bytes": 0,
+      "texture_memory_estimate_bytes": 0,
+      "production_method": "Existing Labels/Graphics/ellipse shapes, no new texture. Engine geometry/runtime buffers not measured.",
+      "attempted_actions": [
+        "Source and runtime hashes verified",
+        "Actual runtime atlas images viewed",
+        "Cocos web and WeChat compile passed",
+        "Final WeChat build and repeated preparation passed; no official upload or device measurement"
+      ],
+      "blocker": null,
+      "evidence_paths": [
+        "evidence/BATTLE-REWORK-20260925/BATTLE_ASSET_BUDGET.json",
+        "evidence/BATTLE-REWORK-20260925/build-wechatgame-result.json",
+        "evidence/BATTLE-REWORK-20260925/ASSET_BUDGET-wechatgame.json",
+        "evidence/BATTLE-REWORK-20260925/asset-loader-regression.json",
+        "evidence/BATTLE-REWORK-20260925/targeted-checks.json"
+      ]
+    }
+  ],
+  "actualWechatBuildBytes": 18472446,
+  "actualLocalMarginBytes": 2499074,
+  "acceptance": {
+    "sourceAssets": "imported_or_existing_native_components_reused",
+    "function": "passed",
+    "visual": "parent_targeted_visual_passed",
+    "source": "evidence/BATTLE-REWORK-20260925/targeted-checks.json",
+    "naturalRecording": "separate parent evidence",
+    "physicalDevice": "not-tested"
+  },
+  "runtimeTextureMeasurement": {
+    "status": "measured_desktop_cocos_engine_counter",
+    "source": "evidence/BATTLE-REWORK-20260925/targeted-checks.json",
+    "field": "density[].metrics.gpuTextures",
+    "counter": "engine.memoryStatus.textureSize",
+    "environment": "Desktop Chrome running actual Cocos build",
+    "minBytes": 107484888,
+    "maxBytes": 107499000,
+    "scope": "Whole runtime texture counter, including runtime/canvas textures; not exclusive to new battle art. Not a phone or OS/driver measurement.",
+    "comparison": "The90007336-byte estimate covers28 loaded image dimensions times4 only. Different coverage from the runtime/canvas engine counter; do not interpret their difference as a texture leak.",
+    "samples": [
+      {
+        "teamCount": 1,
+        "seconds": 1.8,
+        "gpuTextureBytes": 107484888
+      },
+      {
+        "teamCount": 8,
+        "seconds": 1.8,
+        "gpuTextureBytes": 107484888
+      },
+      {
+        "teamCount": 24,
+        "seconds": 1.9,
+        "gpuTextureBytes": 107491800
+      },
+      {
+        "teamCount": 48,
+        "seconds": 1.8,
+        "gpuTextureBytes": 107491800
+      },
+      {
+        "teamCount": 256,
+        "seconds": 1.8,
+        "gpuTextureBytes": 107499000
+      }
+    ],
+    "physicalDeviceMeasured": false
+  },
+  "shortDesktopPerformance": {
+    "source": "evidence/BATTLE-REWORK-20260925/targeted-checks.json",
+    "sampleCount": 5,
+    "teamCounts": [
+      1,
+      8,
+      24,
+      48,
+      256
+    ],
+    "durationSecondsMin": 1.8,
+    "durationSecondsMax": 1.9,
+    "maximumSampleP95Milliseconds": 18.6,
+    "maximumObservedFrameMilliseconds": 37.2,
+    "maximumDrawCalls": 249,
+    "scope": "Five isolated desktop samples, approximately1.8 seconds each (one1.9-second actual span). No full-run60FPS, sustained-load, leak-test or phone-performance claim."
+  }
+}

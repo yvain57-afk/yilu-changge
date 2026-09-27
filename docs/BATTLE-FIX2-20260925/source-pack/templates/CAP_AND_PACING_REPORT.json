@@ -1,0 +1,53 @@
+{
+  "taskId": "BATTLE-FIX2-20260925",
+  "status": "to_be_completed_by_codex",
+  "sourceAudit": {
+    "baselineBuild": null,
+    "localSourceFilesAndLines": [],
+    "oldGameplayCapByGate": [],
+    "oldRationaleFound": null,
+    "oldRationaleEvidence": [],
+    "numericSafetyGuard": null,
+    "logicalSquadCapacity": null,
+    "visibleActorBudget": null,
+    "fallbackPathsChecked": []
+  },
+  "newPolicy": {
+    "mode": "window",
+    "normalPositiveGameplayCap": false,
+    "actualImplementation": null,
+    "parameterChanges": [],
+    "newSaveCompatibility": null
+  },
+  "comparisons": [],
+  "sampleSchema": {
+    "gateId": null,
+    "runId": null,
+    "mode": "natural_or_fixture",
+    "inputPolicy": null,
+    "weapon": null,
+    "stage": null,
+    "initialSquadCount": null,
+    "firstReadableAt": null,
+    "firstHittableAt": null,
+    "firstHitAt": null,
+    "passAt": null,
+    "aimedSeconds": null,
+    "actualHitDamage": null,
+    "valuesOverTime": [],
+    "claimedCount": null,
+    "invalidPlateauSeconds": null,
+    "missReason": null
+  },
+  "outcomes": {
+    "shortWindowSolved": null,
+    "normalCapRemoved": null,
+    "runawayGrowthChecked": null,
+    "guardReachabilityChecked": null,
+    "observedRemainingProblems": []
+  },
+  "notes": [
+    "旧观察位于config/FIX1_CAP_OBSERVATIONS.json，不等于新测试。",
+    "所有null为待填写；不是已通过、零值或有效运行配置。"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "columns": 4,
+  "rows": 3,
+  "height": 192,
+  "footY": 400,
+  "keys": [
+    "heroSpearWalk0",
+    "heroSpearWalk1",
+    "heroSpearAttack",
+    "heroSpearHurt",
+    "heroBladeWalk0",
+    "heroBladeWalk1",
+    "heroBladeAttack",
+    "heroBladeHurt",
+    "xingWalk0",
+    "xingWalk1",
+    "xingAttack",
+    "xingHurt"
+  ],
+  "componentSeeds": [
+    79187,
+    24391,
+    88778,
+    78966,
+    563218,
+    579824,
+    566560,
+    607998,
+    1051026,
+    1066370,
+    1021641,
+    1093294
+  ],
+  "feet": [
+    [
+      175,
+      401
+    ],
+    [
+      156,
+      401
+    ],
+    [
+      100,
+      401
+    ],
+    [
+      180,
+      401
+    ],
+    [
+      170,
+      390
+    ],
+    [
+      156,
+      390
+    ],
+    [
+      100,
+      390
+    ],
+    [
+      160,
+      390
+    ],
+    [
+      180,
+      390
+    ],
+    [
+      156,
+      390
+    ],
+    [
+      120,
+      390
+    ],
+    [
+      180,
+      390
+    ]
+  ]
+}

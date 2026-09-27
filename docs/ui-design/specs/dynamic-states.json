@@ -1,0 +1,139 @@
+{
+  "scope": "Design contract only. Existing runtime events and timers are authoritative.",
+  "units": "window logical pixels",
+  "baseline": "7ee7685e4bcb4fb7aa67284e7b56692826b86675",
+  "states": [
+    {
+      "id": "home",
+      "variants": [
+        "new",
+        "resume",
+        "pending-transition",
+        "completed"
+      ],
+      "cta": [
+        "出征",
+        "继续征程",
+        "继续整军",
+        "返回驻地"
+      ],
+      "behavior": "Use existing save-dependent callbacks; pending transition takes priority. Loadout availability follows current unlocks. Replay opens existing chapters without deleting save."
+    },
+    {
+      "id": "troop",
+      "samples": [
+        1,
+        24,
+        48,
+        256
+      ],
+      "fontSize": 30,
+      "alignment": "right, tabular numbers",
+      "motion": "Optional 1.04 scale emphasis on text only, 120ms in and 160ms out; stable column and hit rectangles. Disable if reduced motion preferred. Read actual model count."
+    },
+    {
+      "id": "weapon",
+      "samples": [
+        "长枪 Ⅰ",
+        "长刀 Ⅲ"
+      ],
+      "fontSize": 12,
+      "interaction": false,
+      "behavior": "Read equipped weapon and tier; preserve weapon rules."
+    },
+    {
+      "id": "companion",
+      "variants": [
+        "邢道荣随军",
+        "赵云同行助阵",
+        "邢道荣 · 待命",
+        "none"
+      ],
+      "fontSize": 12,
+      "interaction": false,
+      "behavior": "Full name with army flag. Standby uses muted color and existing eligibility rule; none collapses label. Never add an unlock here."
+    },
+    {
+      "id": "boss",
+      "samples": [
+        "陈应",
+        "1361 / 1800"
+      ],
+      "fontSize": {
+        "name": 14,
+        "hp": 12
+      },
+      "behavior": "Name and bar share one compact region. Read true current/max HP; damage computation untouched."
+    },
+    {
+      "id": "awakening",
+      "sampleRemaining": 4.2,
+      "demoDurationSeconds": 6,
+      "fontSize": 12,
+      "interaction": false,
+      "behavior": "Read awakeningRemaining. Show ring and countdown while >0, remove at zero, freeze with existing pause behavior. Demo timer is not runtime logic."
+    },
+    {
+      "id": "battle-notice",
+      "samples": [
+        "飞叉将至 · 命中 −12",
+        "长刀升至 Ⅲ 阶",
+        "兵力 +12",
+        "碰撞山石 · 损失 12 人"
+      ],
+      "fontSize": 14,
+      "behavior": "Use existing BattleNotice priority and lifetime. Never queue/recompute rewards or damage in the UI. Optional visual fade 100ms in/140ms out inside existing lifetime, no event delay."
+    },
+    {
+      "id": "save-failure",
+      "copy": "本机暂时无法保存，本次仍可继续。",
+      "fontSize": {
+        "home": 13,
+        "battle": 14
+      },
+      "behavior": "Show existing platform/save notice; do not invent retry guarantees or block play."
+    },
+    {
+      "id": "world-label",
+      "sizes": {
+        "rock": [
+          118,
+          28
+        ],
+        "collision": [
+          82,
+          26
+        ],
+        "elite": [
+          58,
+          22
+        ]
+      },
+      "fontSize": 12,
+      "behavior": "Move display labels only with short leader line; stable anchor choice across frames. Preserve object position, scale, collision and HP. Loss and HP outrank decoration."
+    },
+    {
+      "id": "button",
+      "minHitSize": [
+        44,
+        44
+      ],
+      "primaryHeight": 56,
+      "states": {
+        "default": "theme ink/red",
+        "pressed": "darken fill and offset visible content down 1 logical unit; hit rectangle unchanged",
+        "disabled": "muted fill, no callback",
+        "focus": "visible outline for prototype keyboard navigation"
+      },
+      "behavior": "Use the same layout rectangles for visual and hit testing."
+    },
+    {
+      "id": "pause-settings-loadout",
+      "behavior": "Retain original callbacks. Pause has continue/restart/settings/return; settings retains sound and vibration only. Prototype toggles are local UI demonstrations."
+    },
+    {
+      "id": "transition-result",
+      "behavior": "Preserve existing flags, drag completion, next level, reward and replay branches. Reuse chrome and safe UI root; no new narrative or management system."
+    }
+  ]
+}

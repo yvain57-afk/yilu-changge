@@ -1,1 +1,14 @@
-{"extends":"./temp/tsconfig.cocos.json","compilerOptions":{"strict":true,"skipLibCheck":true},"include":["assets/scripts/**/*.ts"]}
+{
+  "extends": "./temp/tsconfig.cocos.json",
+  "compilerOptions": {
+    "strict": true,
+    "skipLibCheck": true,
+    "lib": [
+      "ES2019",
+      "DOM"
+    ]
+  },
+  "include": [
+    "assets/scripts/**/*.ts"
+  ]
+}

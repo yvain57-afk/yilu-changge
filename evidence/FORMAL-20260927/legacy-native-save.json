@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "scope": "Actual Cocos constructor/settings/pause/quit/reload, isolated fixture seeded with five legacy records; byte-exact originals and backup checked; no user save altered",
+  "result": {
+    "originals": {
+      "yilu-changge-v1": "{\"unknown\":\"older\",\"settings\":{\"music\":false,\"sfx\":true,\"vibration\":false}}",
+      "yilu-changge-prototype-v2": "{\"cleared\":{\"trial-01\":true,\"trial-02\":true,\"trial-03\":false},\"best\":{\"trial-01\":52,\"trial-02\":35,\"trial-03\":0},\"settings\":{\"music\":false,\"sfx\":true,\"vibration\":false,\"external\":\"keep\"},\"external\":{\"deep\":[1,2]}}",
+      "yilu-changge-campaign-v04": "{\"schema\":1,\"completed\":{\"rally\":true,\"camp\":true,\"garrison\":true,\"unknown\":7},\"seen\":{\"zhaoyunMeeting\":true,\"unknown\":8},\"foreign\":9}",
+      "yilu-changge-growth-v05": "{\"schemaVersion\":1,\"unlockedWeapons\":[\"spear\",\"blade\",\"foreign\"],\"unlockedCompanions\":[\"zhaoyun\"],\"claimedRewards\":[],\"future\":{\"x\":1}}",
+      "yilu-changge-tactics-v06": "{\"schemaVersion\":1,\"equipped\":\"zhenjun\",\"future\":true}"
+    },
+    "backup": {
+      "yilu-changge-v1": "{\"unknown\":\"older\",\"settings\":{\"music\":false,\"sfx\":true,\"vibration\":false}}",
+      "yilu-changge-prototype-v2": "{\"cleared\":{\"trial-01\":true,\"trial-02\":true,\"trial-03\":false},\"best\":{\"trial-01\":52,\"trial-02\":35,\"trial-03\":0},\"settings\":{\"music\":false,\"sfx\":true,\"vibration\":false,\"external\":\"keep\"},\"external\":{\"deep\":[1,2]}}",
+      "yilu-changge-growth-v05": "{\"schemaVersion\":1,\"unlockedWeapons\":[\"spear\",\"blade\",\"foreign\"],\"unlockedCompanions\":[\"zhaoyun\"],\"claimedRewards\":[],\"future\":{\"x\":1}}",
+      "yilu-changge-campaign-v04": "{\"schema\":1,\"completed\":{\"rally\":true,\"camp\":true,\"garrison\":true,\"unknown\":7},\"seen\":{\"zhaoyunMeeting\":true,\"unknown\":8},\"foreign\":9}",
+      "yilu-changge-tactics-v06": "{\"schemaVersion\":1,\"equipped\":\"zhenjun\",\"future\":true}"
+    },
+    "shadow": {
+      "cleared": {
+        "trial-01": true,
+        "trial-02": true,
+        "trial-03": false
+      },
+      "best": {
+        "trial-01": 52,
+        "trial-02": 35,
+        "trial-03": 0
+      },
+      "settings": {
+        "music": false,
+        "sfx": false,
+        "vibration": false,
+        "external": "keep"
+      },
+      "external": {
+        "deep": [
+          1,
+          2
+        ]
+      }
+    },
+    "save": {
+      "schemaVersion": 2,
+      "cleared": [],
+      "best": {},
+      "claimed": [],
+      "weapons": [
+        "spear"
+      ],
+      "weaponLevels": {
+        "spear": 1
+      },
+      "captures": [],
+      "visits": [],
+      "allies": [],
+      "treasures": [],
+      "companions": [],
+      "support": null,
+      "slots": {
+        "dian": null,
+        "qi": null,
+        "ma": null
+      },
+      "xp": 0,
+      "seen": [],
+      "legacy": {
+        "yilu-changge-v1": "{\"unknown\":\"older\",\"settings\":{\"music\":false,\"sfx\":true,\"vibration\":false}}",
+        "yilu-changge-prototype-v2": "{\"cleared\":{\"trial-01\":true,\"trial-02\":true,\"trial-03\":false},\"best\":{\"trial-01\":52,\"trial-02\":35,\"trial-03\":0},\"settings\":{\"music\":false,\"sfx\":true,\"vibration\":false,\"external\":\"keep\"},\"external\":{\"deep\":[1,2]}}",
+        "yilu-changge-growth-v05": "{\"schemaVersion\":1,\"unlockedWeapons\":[\"spear\",\"blade\",\"foreign\"],\"unlockedCompanions\":[\"zhaoyun\"],\"claimedRewards\":[],\"future\":{\"x\":1}}",
+        "yilu-changge-campaign-v04": "{\"schema\":1,\"completed\":{\"rally\":true,\"camp\":true,\"garrison\":true,\"unknown\":7},\"seen\":{\"zhaoyunMeeting\":true,\"unknown\":8},\"foreign\":9}",
+        "yilu-changge-tactics-v06": "{\"schemaVersion\":1,\"equipped\":\"zhenjun\",\"future\":true}"
+      }
+    },
+    "audio": {
+      "active": false,
+      "hidden": false,
+      "bgmEnabled": false,
+      "musicRequested": false,
+      "musicReady": false,
+      "musicTrack": null,
+      "musicPlaying": false,
+      "effectChannels": 5,
+      "playingEffects": [],
+      "limits": {
+        "perKind": 1,
+        "globalVoices": 3,
+        "globalVolume": 0.65,
+        "startsPerSecond": 12,
+        "minStartGapMs": 25
+      },
+      "counters": {
+        "played": 0,
+        "suppressedBusy": 0,
+        "suppressedRate": 0,
+        "suppressedBudget": 0,
+        "loadFailures": 0
+      },
+      "loading": false
+    }
+  },
+  "errors": []
+}

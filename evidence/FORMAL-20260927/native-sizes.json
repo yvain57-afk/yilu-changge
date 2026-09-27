@@ -1,0 +1,72 @@
+[
+  {
+    "width": 360,
+    "height": 640,
+    "passed": true,
+    "fps": 59.69911645321811,
+    "nodes": 151,
+    "gate": {
+      "unsettledHidden": 0,
+      "docked": 0
+    },
+    "pause": true,
+    "touchCancel": true,
+    "errors": []
+  },
+  {
+    "width": 360,
+    "height": 780,
+    "passed": true,
+    "fps": 59.70624527368059,
+    "nodes": 154,
+    "gate": {
+      "unsettledHidden": 0,
+      "docked": 0
+    },
+    "pause": true,
+    "touchCancel": true,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "height": 667,
+    "passed": true,
+    "fps": 31.524474196458282,
+    "nodes": 149,
+    "gate": {
+      "unsettledHidden": 0,
+      "docked": 0
+    },
+    "pause": true,
+    "touchCancel": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "passed": true,
+    "fps": 59.80384339324244,
+    "nodes": 160,
+    "gate": {
+      "unsettledHidden": 0,
+      "docked": 0
+    },
+    "pause": true,
+    "touchCancel": true,
+    "errors": []
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "passed": true,
+    "fps": 59.60896518751722,
+    "nodes": 166,
+    "gate": {
+      "unsettledHidden": 0,
+      "docked": 0
+    },
+    "pause": true,
+    "touchCancel": true,
+    "errors": []
+  }
+]

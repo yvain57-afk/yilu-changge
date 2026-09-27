@@ -1,0 +1,10 @@
+{
+  "changed": [
+    "assets/scripts/formal/FormalGame.ts",
+    "assets/scripts/formal/GroundMesh.ts",
+    "assets/scripts/formal/NativePaint.ts",
+    "assets/scripts/formal/battle.ts",
+    "assets/scripts/formal/store.ts"
+  ],
+  "scope": "Default-tactic battle flow retained; targeted final UI/control and atlas regressions cover changes. Full ten-level video does not claim to show final preparation layout/shock choice."
+}
