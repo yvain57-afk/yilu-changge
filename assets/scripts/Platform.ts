@@ -1,4 +1,4 @@
-import { game, Game as EngineGame, sys, resources, AudioClip, AudioSource, Node } from 'cc';
+import { game, Game as EngineGame, sys, resources, AudioClip, AudioSource, Node, view, screen, native } from 'cc';
 import { Tactics } from './core/tactics';
 import { WindowMetrics, UiRect } from './ui/UiLayout';
 import { Growth } from './core/growth';
@@ -26,6 +26,10 @@ export class Platform {
  get windowMetrics():WindowMetrics {
   if(this.metricsCache)return this.metricsCache;
   let info:any=null,source='browser-window',capsule:any=null,capsuleSource='not-available';
+  if(sys.isNative){
+   const pixels=screen.windowSize,ratio=screen.devicePixelRatio||1,v=view.getVisibleSize(),safe=sys.getSafeAreaRect(false),w=pixels.width/ratio,h=pixels.height/ratio;
+   info={windowWidth:w,windowHeight:h,safeArea:{left:safe.x/v.width*w,top:h-(safe.y+safe.height)/v.height*h,right:(safe.x+safe.width)/v.width*w,bottom:h-safe.y/v.height*h}};source='cocos-native';
+  }
   if(typeof wx!=='undefined'){
    try{info=typeof wx.getWindowInfo==='function'?wx.getWindowInfo():wx.getSystemInfoSync?.();source=info?'wechat-window':'wechat-fallback';}catch{source='wechat-fallback';}
    try{if(typeof wx.getMenuButtonBoundingClientRect==='function'){capsule=wx.getMenuButtonBoundingClientRect();capsuleSource='wechat-menu';}}catch{capsuleSource='invalid';}
@@ -33,7 +37,7 @@ export class Platform {
   const width=Number(info?.windowWidth)||(typeof window!=='undefined'?window.innerWidth:720),height=Number(info?.windowHeight)||(typeof window!=='undefined'?window.innerHeight:1280);
   const valid=(r:any):r is UiRect=>!!r&&[r.left,r.top,r.right,r.bottom].every(Number.isFinite)&&r.left>=0&&r.top>=0&&r.right>r.left&&r.bottom>r.top&&r.right<=width&&r.bottom<=height;
   let safeSource='full-window-fallback',safe:UiRect={left:0,top:0,right:width,bottom:height};
-  if(valid(info?.safeArea)){safe={left:info.safeArea.left,top:info.safeArea.top,right:info.safeArea.right,bottom:info.safeArea.bottom};safeSource='wechat-safe-area';}
+  if(valid(info?.safeArea)){safe={left:info.safeArea.left,top:info.safeArea.top,right:info.safeArea.right,bottom:info.safeArea.bottom};safeSource=sys.isNative?'cocos-native-safe-area':'wechat-safe-area';}
   else if(typeof document!=='undefined'){
    const probe=document.createElement('div');probe.style.cssText='position:fixed;visibility:hidden;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)';document.body.appendChild(probe);
    const c=getComputedStyle(probe);safeSource='browser-css-env';safe={left:parseFloat(c.paddingLeft)||0,top:parseFloat(c.paddingTop)||0,right:width-(parseFloat(c.paddingRight)||0),bottom:height-(parseFloat(c.paddingBottom)||0)};probe.remove();
@@ -73,6 +77,6 @@ export class Platform {
  }
  get audioState(){return {active:this.active,hidden:this.hidden,bgmEnabled:false,musicRequested:false,musicReady:false,musicTrack:null,musicPlaying:false,effectChannels:Object.keys(this.effects).length,playingEffects:Object.keys(this.effects).filter(k=>this.effects[k].playing),limits:{perKind:1,globalVoices:3,globalVolume:.65,startsPerSecond:12,minStartGapMs:25},counters:{...this.audioCounters},loading:!!this.loadPromise};}
 
- vibrate(){if(this.book.data.settings.vibration&&typeof wx!=='undefined'&&wx.vibrateShort)wx.vibrateShort({type:'light'});}
+ vibrate(){if(sys.isNative&&this.book.data.settings.vibration){native.reflection.callStaticMethod('YiluNativeBridge','impact:','light');return;}if(this.book.data.settings.vibration&&typeof wx!=='undefined'&&wx.vibrateShort)wx.vibrateShort({type:'light'});}
  destroy(){this.disposed=true;if(sys.isBrowser){window.removeEventListener('resize',this.windowChanged);document.removeEventListener('visibilitychange',this.visibility);window.removeEventListener('blur',this.blur);window.removeEventListener('focus',this.onShow);}if(typeof wx!=='undefined'){wx.offWindowResize?.(this.windowChanged);wx.offHide?.(this.onHide);wx.offShow?.(this.onShow);}game.off(EngineGame.EVENT_HIDE,this.onHide);game.off(EngineGame.EVENT_SHOW,this.onShow);this.active=false;this.music?.stop();this.stopEffects();}
 }

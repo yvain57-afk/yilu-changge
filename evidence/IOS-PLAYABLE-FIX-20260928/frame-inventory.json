@@ -1,0 +1,215 @@
+{
+  "totalFrames": 520,
+  "sheets": {
+    "battle20260925_bosses": [
+      716,
+      651
+    ],
+    "battle20260925_companions": [
+      500,
+      344
+    ],
+    "battle20260925_crates": [
+      708,
+      436
+    ],
+    "battle20260925_distant": [
+      768,
+      512
+    ],
+    "battle20260925_gate-parts": [
+      1128,
+      948
+    ],
+    "battle20260925_grass": [
+      512,
+      512
+    ],
+    "battle20260925_heroes": [
+      776,
+      591
+    ],
+    "battle20260925_road": [
+      640,
+      640
+    ],
+    "battle20260925_scenery": [
+      792,
+      528
+    ],
+    "battle20260925_soldiers": [
+      424,
+      304
+    ],
+    "battlefix2_actions": [
+      636,
+      980
+    ],
+    "battlefix2_blade": [
+      486,
+      202
+    ],
+    "battlefix2_environment": [
+      464,
+      394
+    ],
+    "battlefix2_shadow": [
+      512,
+      58
+    ],
+    "battlefix2_wall-middle": [
+      40,
+      328
+    ],
+    "battlefix2_waves": [
+      525,
+      366
+    ],
+    "battlefix2_zhao": [
+      573,
+      216
+    ],
+    "gen_hero_weapons": [
+      1966,
+      722
+    ],
+    "gen_enemy_lubu": [
+      2039,
+      572
+    ],
+    "gen_gate_parts2": [
+      1761,
+      1008
+    ],
+    "gen_wall_parts": [
+      2011,
+      834
+    ],
+    "gen_crates2": [
+      1766,
+      835
+    ],
+    "gen_weapon_icons": [
+      1798,
+      1049
+    ],
+    "gen_hero_run": [
+      2032,
+      565
+    ],
+    "gen_hero_spear": [
+      1804,
+      906
+    ],
+    "gen_troops": [
+      1934,
+      680
+    ],
+    "gen_companions": [
+      1719,
+      954
+    ],
+    "gen_lubu2": [
+      2026,
+      803
+    ],
+    "gen_treasure_icons": [
+      1756,
+      855
+    ],
+    "gen_props2": [
+      1857,
+      880
+    ],
+    "formal_enemies": [
+      1024,
+      1607
+    ],
+    "formal_props": [
+      1536,
+      992
+    ],
+    "gate_digits": [
+      1024,
+      128
+    ],
+    "formal_heroes": [
+      2048,
+      792
+    ],
+    "formal_companions": [
+      2048,
+      963
+    ],
+    "formal_owners": [
+      2048,
+      1035
+    ],
+    "formal_mounted": [
+      2048,
+      968
+    ],
+    "formal_runs": [
+      2048,
+      792
+    ],
+    "formal_fronts": [
+      2048,
+      966
+    ],
+    "formal_bossactions": [
+      2048,
+      989
+    ],
+    "pr2_officers": [
+      2048,
+      675
+    ],
+    "pr2_portraits": [
+      2048,
+      785
+    ],
+    "ios_companions": [
+      2048,
+      1147
+    ],
+    "ios_fronts": [
+      2048,
+      829
+    ],
+    "ios_heroes": [
+      2048,
+      835
+    ],
+    "ios_runs": [
+      2048,
+      850
+    ],
+    "ios_owners": [
+      2048,
+      1131
+    ],
+    "ios_bossactions": [
+      2048,
+      1154
+    ],
+    "ios_enemies": [
+      2048,
+      798
+    ],
+    "ios_added": [
+      2048,
+      1937
+    ],
+    "ios_map": [
+      768,
+      1152
+    ],
+    "ios_details": [
+      1050,
+      1590
+    ]
+  },
+  "invalidRects": [],
+  "scope": "static source rectangle bounds only, not universal visual acceptance"
+}

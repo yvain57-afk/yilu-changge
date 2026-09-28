@@ -2,14 +2,15 @@
 /** Port of approved preview state and projection to the real Cocos scene.
  * Native renderer is injected; no DOM, Canvas, demo lineup, autopilot or debug progression.
  * Source provenance: docs/BATTLE-PREVIEW-20260926/preview.js. */
-import {WEAPON_DATA,PEOPLE,TREASURES,CHAPTERS,TUNING,routeFor,requiredOfficers,BOSS_PATTERNS} from './data';
+import {WEAPON_DATA,PEOPLE,TREASURES,CHAPTERS,TUNING,routeFor,requiredOfficers,BOSS_PATTERNS,PACING,marchSpeed,COMPANION_STYLE} from './data';
 import {MANIFEST} from './manifest';
 export function createBattle(options){
-const M=MANIFEST;const IMG=Object.fromEntries(Object.keys(M.sheets).map(k=>[k,k]));function tinted(k,color){return {sheet:M.frames[k].s,frame:k,tint:color};}let ctx=options.renderer;let activeSource='hero';const ledger=[];const totals={damage:0,gate:0,troops:0};
-function record(kind,source,target,amount){if(totals[kind]!==undefined)totals[kind]+=amount;ledger.push({tick:Math.round((S?.t||0)*60),kind,source,target,amount});if(ledger.length>1200)ledger.shift();}
+const M=MANIFEST;const IMG=Object.fromEntries(Object.keys(M.sheets).map(k=>[k,k]));function tinted(k,color){return {sheet:M.frames[k].s,frame:k,tint:color};}let ctx=options.renderer;let activeSource='hero';let projectileId=0;const ledger=[];const totals={damage:0,gate:0,troops:0};
+function record(kind,source,target,amount,detail={}){if(totals[kind]!==undefined)totals[kind]+=amount;ledger.push({tick:Math.round((S?.t||0)*60),kind,source,target,amount,...detail});if(ledger.length>1200)ledger.shift();}
 function bossWeapon(){const id=CHAPTERS[options.chapter].boss;const w=Object.values(WEAPON_DATA).find(w=>w.owner===id);return w?.label||'兵阵';}
-function gateHit(e,source){if(e.fixed||e.passed||e.d-S.dist<=0||e.d-S.dist>TUNING.gateHitWindow)return;e.val=Math.min(TUNING.gateSafetyLimit,e.val+TUNING.gateHitStep);e.flip=.15;record('gate',source,e.id,1);}
-function extraSupport(dt){if(S.ended||!S.support.id||S.support.id==='hua')return;const sp=S.support;sp.cd=Math.max(0,sp.cd-dt);if(sp.cd>0)return;sp.cd=12;sp.uses++;sp.flash=1;const id=sp.id;activeSource='support';if(['diao','xun','sunjian'].includes(id)){addTroops(2,'support');toast(PEOPLE[id]+' · 鼓舞 +2','good');}else{wave({k:'f2_bladeWave',x:S.heroX,z:.5,speed:40,range:40,hw:.5,pierce:6,dmg:4,h:.4,wide:2});toast(PEOPLE[id]+' · 策应','gold');}const res=resonance(S.weapon);if(res.state==='on'&&res.who===id&&!S.resUsed[id]){S.resUsed[id]=true;S.resFlash=1.2;wave({k:'f2_bladeWave',x:S.heroX,z:.5,speed:50,range:45,hw:.6,pierce:99,dmg:9,h:.5,wide:2.2});record('resonance',id,'team',1);}record('support',id,'team',1);}
+function shootableGate(e){const z=e.d-S.dist;return !S.encounterStop&&!e.fixed&&!e.passed&&z>0&&z<=Math.min(TUNING.gateHitWindow,marchSpeed(options.chapter)*4.5);}
+function gateHit(e,source){if(!shootableGate(e))return;e.val=Math.min(TUNING.gateSafetyLimit,e.val+TUNING.gateHitStep);e.flip=.15;record('gate',source,e.id,1);}
+function extraSupport(dt){if(S.ended||!S.support.id||S.support.id==='hua')return;const sp=S.support;sp.cd=Math.max(0,sp.cd-dt);if(sp.cd>0)return;sp.cd=12;sp.uses++;sp.flash=1;const id=sp.id;activeSource='support:'+id;if(['diao','xun','sunjian'].includes(id)){addTroops(2,'support');toast(PEOPLE[id]+' · 鼓舞 +2','good');}else{const p=({guo:['spear','料敌穿阵','#A9CEE7'],zhou:['guandao','风火策应','#EFAB6D'],zhuge:['shemao','连弩策应','#B6DFB6'],pang:['huaji','连环策应','#D8BE91'],sima:['guandao','破阵策应','#CAB9E3']})[id]||['spear','策应','#E6CD93'];wave({k:'g_wave_'+p[0],x:S.heroX,z:.5,speed:40,range:40,hw:.5,pierce:6,dmg:4,h:.4,wide:id==='zhuge'?.8:2,color:p[2],snake:id==='zhuge'?.5:0});toast(PEOPLE[id]+' · '+p[1],'gold');}const res=resonance(S.weapon);if(res.state==='on'&&res.who===id&&!S.resUsed[id]){S.resUsed[id]=true;S.resFlash=1.2;wave({k:'f2_bladeWave',x:S.heroX,z:.5,speed:50,range:45,hw:.6,pierce:99,dmg:9,h:.5,wide:2.2});record('resonance',id,'team',1);}record('support',id,'team',1);}
 // ───────────────────────── 尺寸与分区 ─────────────────────────
 const SIZES = {
   '360×640': {W: 360, H: 640, top: 20, bottom: 0, label: '360×640 小屏'},
@@ -128,17 +129,17 @@ const SUPPORT = {cd: 12, delay: 1.0, share: .30}; // 华佗：减员 1 秒后救
 function newWorld(state) {
   seed = 7;
   const L0 = options.lineup;
-  S = {state, t: 0, dist: 0, speed: state === 'general' ? 0 : 11, heroX: -.45, targetX: -.45, heroV: 0,
+  S = {state, t: 0, dist: 0, speed: state === 'general' ? 0 : marchSpeed(options.chapter), heroX: -.45, targetX: -.45, heroV: 0,
     weapon:'spear',tier:1,
     atkT: 0, atkN: 0, troops: BASE_TROOPS, troopShown: BASE_TROOPS, deltas: [], ents: [], waves: [], arrows: [], fx: [], toasts: [], toast: null,
     shake: 0, redFlash: 0, hitStop: 0, courseLen: 0, nextSpawn: 0, boss: null, stage: '第'+(options.chapter+1)+'关 · '+CHAPTERS[options.chapter].place, progress: 0,
-    companions: L0.companions.map((id, i) => ({id, dx: i ? -.30 : .30, t: i ? .9 : .3, pose: 0, fired: true})),
+    companions: L0.companions.map((id, i) => ({id, dx: (i?-1:1)*(L0.treasures.ma?.48:.34), t: i ? .9 : .3, pose: 0, fired: true})),
     support: {id: L0.support, cd: 0, pending: null, uses: 0},
     slots: {dian: {id: L0.treasures.dian, st: L0.treasures.dian?'worn':'empty', n: 0, flash: 0}, qi: {id: L0.treasures.qi, st: L0.treasures.qi?'worn':'empty', n: 0, flash: 0, used: false}, ma: {id: L0.treasures.ma, st: L0.treasures.ma ? 'worn' : 'empty', n: 0, flash: 0}},
     runGot: [], storage: [], defeatedOfficerIds: [], defeatedBossId: null,
     arms: 'bow', volleyT: 1.0, volleyPose: 0, burstLeft: 0, burstT: 0,
     resUsed: {}, resFlash: 0, chipFlash: 0, pipFlash: -1, pipT: 0, show: 0, seal: null,
-    stats: {bossStrikes: 0, dodged: 0, hitTaken: 0, volleys: 0, arrowsHit: 0, taiping: 0, supportSaved: 0, crates: {}},
+    timing:{march:0,officer:0,boss:0,intentionalHitStop:0},stats: {bossStrikes: 0, dodged: 0, hitTaken: 0, volleys: 0, arrowsHit: 0, taiping: 0, supportSaved: 0, crates: {}},
     scen: [], wall: null, bumped: 0, ended: false, ctrl: 'manual', log: []};
   // 传国玉玺：开局兵力 +20%，每局 1 次（开局即结算，槽显示“已用”）
   if (S.slots.qi.id === 'yuxi') {
@@ -168,7 +169,7 @@ function spawnCourse(){while(S.ci<S.course.length&&S.course[S.ci].d<=S.dist+SPAW
 let EID = 1;
 function spawn(e, d) {
   if(e.type==='cameo'){S.ents.push({id:EID++,type:'cameo',person:e.person,x:e.x,d});}
-  else if(e.type==='officer'){const hp=18+options.chapter*3;S.ents.push({id:EID++,type:'officer',person:e.person,x:e.x,d,hp,max:hp,walk:0,dead:0,phase:'approach',pt:0,band:[-.3,.3]});}
+  else if(e.type==='officer'){const hp=PACING.officerHP[options.chapter];S.ents.push({id:EID++,type:'officer',person:e.person,x:e.x,d,hp,max:hp,walk:0,dead:0,phase:'approach',pt:0,band:[-.3,.3]});}
   else if (e.type === 'squad') {
     for (let i = 0; i < e.n; i++) S.ents.push({id: EID++, type: 'enemy', x: e.x + (i % 3 - 1) * .2 + (rnd() - .5) * .06, d: d + Math.floor(i / 3) * 1.1, hp: 1, walk: rnd(), dead: 0});
   } else if (e.type === 'crate') {
@@ -183,7 +184,7 @@ function spawn(e, d) {
 }
 function setupGeneral() {
   S.progress=1;S.speed=0;S.state='general';
-  S.boss = {name: PEOPLE[CHAPTERS[options.chapter].boss], person:CHAPTERS[options.chapter].boss,weapon: bossWeapon(),z:17,hp:CHAPTERS[options.chapter].bossHP,max:CHAPTERS[options.chapter].bossHP,trail:CHAPTERS[options.chapter].bossHP, phase: 'idle', pt: 0, band: [-1, 0], hit: 0, cycleN: 0, down: 0, flags: 4, flagFx: []};
+  S.boss = {name: PEOPLE[CHAPTERS[options.chapter].boss], person:CHAPTERS[options.chapter].boss,weapon: bossWeapon(),z:17,hp:PACING.bossHP[options.chapter],max:PACING.bossHP[options.chapter],trail:PACING.bossHP[options.chapter], phase: 'idle', pt: 0, band: [-1, 0], hit: 0, cycleN: 0, down: 0, flags: 4, flagFx: []};
   S.minT = 1.5;
 }
 
@@ -191,8 +192,13 @@ function setupGeneral() {
 const DT = 1 / 60;
 let speedScale = 1, paused = false, showZones = false, companionsOn = true;
 function step(dt) {
-  if(S.ended)return;
-  if (S.hitStop > 0) { S.hitStop -= dt; return; }
+  if(S.ended){
+    // Presentation continues after the authoritative outcome; no further combat or rewards.
+    if(S.boss?.phase==='yield'){S.boss.pt+=dt;for(const f of S.boss.flagFx)f.t+=dt;}
+    if(S.seal)S.seal.t+=dt;
+    return;
+  }
+  S.hitStop=0; // No global simulation pause. Heavy impacts hold only the attacker pose.
   S.t += dt;
   
   // 横移：追随拖动目标，但受最大横移速度限制（赤兔 ×1.25，本局生效）
@@ -213,6 +219,7 @@ function step(dt) {
   const encounter=S.ents.find(e=>e.type==='officer'&&!e.dead&&e.d-S.dist<=12);
   if(encounter&&!S.encounterStop){S.resumeSpeed=S.speed;S.encounterStop=true;}
   if(S.encounterStop){S.speed=0;if(!encounter){S.speed=S.resumeSpeed;S.encounterStop=false;}}
+  S.timing[S.boss?'boss':S.encounterStop?'officer':'march']+=dt;
   S.dist += S.speed * dt;
   if(S.state!=='general'){S.progress=Math.min(1,S.dist/S.courseLen);if(S.dist>=S.courseLen+5&&requiredOfficers(options.chapter).every(id=>S.defeatedOfficerIds.includes(id)))setupGeneral();}
   spawnCourse();
@@ -280,7 +287,7 @@ function heroAttack(dt) {
   if (family === 'guandao' && crossed(rel0)) {
     const wide = [1.4, 1.9, 2.4][T - 1];
     wave({k: 'f2_bladeWave', x, z: .6, speed: 36, range: 22, hw: wide * .23, pierce: 99, dmg: 7 * D, h: .46, wide, color: W.color, grow: .5});
-    S.hitStop = .05; S.shake = .35;
+    // A missed swing must not shake or stop the world.
     fx('arc', x, .2, .5, .22);
   }
   if (family === 'shemao') for (let i = 0; i < T; i++) if (crossed(rel0 + i * .10)) {
@@ -297,24 +304,24 @@ function heroAttack(dt) {
   if (S.atkT >= W.cycle) { S.atkT -= W.cycle; S.atkN++; }
 }
 // 随军：每 1.5 秒一次，蓄 .15 → 出手（此刻发出攻击）→ 收 .2
-const COMP = {lubu:{k:'g_wave_huaji',speed:48,range:36,hw:.2,dmg:3,h:.4,pierce:2},dian:{k:'g_wave_huaji',speed:40,range:28,hw:.19,dmg:2,h:.34,pierce:2},zhao: {k: 'f2_spearWave', speed: 50, range: 30, hw: .09, dmg: 2, h: .26}, zhang: {k: 'f2_spearWave', speed: 60, range: 34, hw: .10, dmg: 2, h: .28, snake: 1}};
+const COMP = {...Object.fromEntries(Object.entries(COMPANION_STYLE).map(([id,p])=>[id,{k:'g_wave_'+p.family,speed:50,range:30,hw:.1,dmg:2,h:.28,wide:p.wide,color:p.color,snake:p.snake}])),lubu:{k:'g_wave_huaji',speed:48,range:36,hw:.2,dmg:3,h:.4,pierce:2},dian:{k:'g_wave_huaji',speed:40,range:28,hw:.19,dmg:2,h:.34,pierce:2},zhao: {k: 'f2_spearWave', speed: 50, range: 30, hw: .09, dmg: 2, h: .26}, zhang: {k: 'f2_spearWave', speed: 60, range: 34, hw: .10, dmg: 2, h: .28, snake: 1}};
 function companionsAttack(dt) {
   for (const c of S.companions) {
     c.t += dt;
     if (c.t > 1.5) { c.t = 0; c.pose = .35; c.fired = false; }
     c.pose = Math.max(0, c.pose - dt);
     if (!c.fired && c.pose <= .20) {
-      c.fired = true;activeSource='companion:'+c.id;
+      c.fired = true;c.attackN=(c.attackN||0)+1;activeSource='companion:'+c.id;
       const P = COMP[c.id]||{k:"f2_spearWave",speed:50,range:30,hw:.1,dmg:2,h:.28}, x = S.heroX + c.dx;
       const res = resonance(S.weapon); const boosted = res.state === 'on' && res.who === c.id;
       // 本主共鸣：本局首次出手放一次专属大招（宽蛇行），之后出手伤害 ×1.5
       if(['lubu','dian'].includes(c.id)){const special=boosted&&!S.resUsed[c.id];if(special){S.resUsed[c.id]=true;S.resFlash=1.2;logEv('resonance',PEOPLE[c.id]+' 共鸣技');}const mult=boosted?1.5:1;for(const side of [-1,1])wave({k:P.k,x:x+side*.12,z:.3,speed:P.speed,range:P.range,hw:special?.30:P.hw,pierce:special?4:P.pierce,dmg:P.dmg*mult,h:P.h,wide:c.id==='lubu'?1.5:1.1,color:c.id==='lubu'?'#F2A57A':'#D9B997'});continue;}
       if (boosted && !S.resUsed[c.id]) {
         S.resUsed[c.id] = true; S.resFlash = 1.2;
-        wave({k: 'f2_bladeWave', x, z: .3, speed: 40, range: 30, hw: .5, pierce: 99, dmg: 6, h: .5, wide: 2.2, color: '#F0D38A', grow: .3});
-        for (const sn of [1, -1]) wave({k: 'f2_spearWave', x: x + sn * .06, z: .3, speed: 70, range: 50, hw: .12, pierce: 5, dmg: 3, h: .36, snake: sn});
-        S.shake = .5; logEv('resonance', PEOPLE[c.id] + ' 共鸣技');
-      } else wave({k: P.k, x, z: .2, speed: P.speed, range: P.range, hw: P.hw, pierce: 1, dmg: P.dmg * (boosted ? 1.5 : 1), h: P.h * (boosted ? 1.2 : 1), alpha: .85, snake: P.snake ? (S.atkN % 2 ? 1 : -1) * .6 : 0});
+        wave({k:P.k,x,z:.3,speed:40,range:30,hw:.5,pierce:99,dmg:6,h:.5,wide:(P.wide||1)*1.8,color:P.color||'#F0D38A',grow:.3});
+        for (const sn of [1, -1]) wave({k:P.k, x: x + sn * .06, z: .3, speed: 70, range: 50, hw: .12, pierce: 5, dmg: 3, h: .36, snake: sn});
+        logEv('resonance', PEOPLE[c.id] + ' 共鸣技');
+      } else wave({k: P.k, x, z: .2, speed: P.speed, range: P.range, hw: P.hw, pierce: 1, wide:P.wide||1,color:P.color,dmg: P.dmg * (boosted ? 1.5 : 1), h: P.h * (boosted ? 1.2 : 1), alpha: .85, snake: P.snake ? (S.atkN % 2 ? 1 : -1) * .6 : 0});
     }
   }
 }
@@ -328,17 +335,17 @@ function troopVolley(dt) {
     if (S.burstT <= 0) {
       S.burstLeft--; S.burstT = .12;
       const n = Math.min(8, Math.max(2, Math.ceil(S.troops / 5)));
-      const tg = S.ents.filter(e => (((e.type === 'enemy'||e.type==='officer') && !e.dead) || (e.type === 'crate' && !e.open)) && e.d - S.dist > 9 && e.d - S.dist < 30).sort((a, b) => a.d - b.d);
+      const tg = S.ents.filter(e => (((e.type === 'enemy'||e.type==='officer') && !e.dead) || (e.type === 'crate' && !e.open&&!S.encounterStop&&e.d-S.dist<=marchSpeed(options.chapter)*4.5)) && e.d - S.dist > 9 && e.d - S.dist < 30).sort((a, b) => a.d - b.d);
       const bossT = S.boss && S.boss.phase !== 'spent' && S.boss.phase !== 'yield' ? {x: 0, z: S.boss.z} : null;
       for (let i = 0; i < n; i++) {
         const e = tg[i % Math.max(1, tg.length)];
         const tx = e ? e.x + (rnd() - .5) * .08 : bossT ? (rnd() - .5) * .3 : S.heroX + (rnd() - .5) * .6;
-        const sx = S.heroX + ((i % 4) - 1.5) * .17, sz = -.7 - Math.floor(i / 4) * .45;
+        const sx = S.heroX + ((i % 4) - 1.5) * .17, sz = -1.5 - Math.floor(i / 4) * .6;
         // 提前量：目标以相对速度 v 逼近，按飞行时间 dur = .5 + (tz − sz)·.012 反解落点
         const v = e ? S.speed + (e.type === 'enemy' ? 2.2 : 0) : 0, z0 = e ? e.d - S.dist : 0;
         const tz = e ? (z0 - .5 * v + .012 * v * sz) / (1 + .012 * v) : bossT ? bossT.z : 14 + rnd() * 6;
         const dur = .5 + (tz - sz) * .012;
-        S.arrows.push({x: sx, z: sz, sx, sz, tx, tz, t: 0, dur, arms: S.arms, dmg: A.dmg, splash: A.splash, target: e ? e.id : bossT ? 'boss' : null});
+        S.arrows.push({projectileId:++projectileId,source:'troop',attackId:'volley:'+S.stats.volleys,x: sx, z: sz, sx, sz, tx, tz, t: 0, dur, arms: S.arms, dmg: A.dmg, splash: A.splash, target: e ? e.id : bossT ? 'boss' : null});
       }
     }
   }
@@ -349,15 +356,15 @@ function updateArrows(dt) {
     a.x = a.sx + (a.tx - a.sx) * k; a.z = a.sz + (a.tz - a.sz) * k; a.hgt = Math.sin(k * Math.PI) * (.6 + (a.tz - a.sz) * .02);
     if (k >= 1 && !a.done) {
       a.done = true;
-      const hitList = S.ents.filter(e => (((e.type === 'enemy'||e.type==='officer') && !e.dead) || (e.type === 'crate' && !e.open)) && Math.abs(e.d - S.dist - a.z) < .9 && Math.abs(e.x - a.x) < .12 + a.splash);
-      for (const e of hitList) { hitEnt(e, a.dmg, null); S.stats.arrowsHit++; }
-      if (a.target === 'boss' && S.boss && !['spent', 'yield'].includes(S.boss.phase)) bossDamage(a.dmg * .5, a.x);
+      const hitList = S.ents.filter(e => (((e.type === 'enemy'||e.type==='officer') && !e.dead) || (e.type === 'crate' && !e.open&&!S.encounterStop)) && Math.abs(e.d - S.dist - a.z) < .9 && Math.abs(e.x - a.x) < .12 + a.splash);
+      for (const e of hitList) { hitEnt(e, a.dmg, a); S.stats.arrowsHit++; }
+      if (a.target === 'boss' && S.boss && !['spent', 'yield'].includes(S.boss.phase)) bossDamage(a.dmg * .5, a.x, a);
       if (a.arms !== 'bow') fx('burst', a.x, a.z, .2 + a.splash, .3);
     }
   }
   S.arrows = S.arrows.filter(a => !a.done || a.t < a.dur + .05);
 }
-function wave(o) {if(activeSource==='hero'){o.k='g_wave_'+WEAPONS[S.weapon].family;if(options.lineup.tactic==='zhenjun'){o.control=true;o.pierce=1;}}S.waves.push({source:activeSource,...o, z0: o.z, prevZ: o.z, t: 0, hits: new Set(), x0: o.x, alpha: o.alpha || 1}); }
+function wave(o) {if(activeSource==='hero'){o.k='g_wave_'+WEAPONS[S.weapon].family;if(options.lineup.tactic==='zhenjun'){o.control=true;o.pierce=1;}}S.waves.push({projectileId:++projectileId,attackId:activeSource+':'+(activeSource.startsWith('companion:')?S.companions.find(c=>activeSource==='companion:'+c.id)?.attackN:activeSource.startsWith('support:')?S.support.uses:S.atkN),source:activeSource,...o, z0: o.z, prevZ: o.z, t: 0, hits: new Set(), x0: o.x, alpha: o.alpha || 1}); }
 function fx(k, x, z, h, life, extra = {}) { S.fx.push({k, x, z, h, life, t: 0, ...extra}); }
 function updateWaves(dt) {
   for (const w of S.waves) {
@@ -367,7 +374,7 @@ function updateWaves(dt) {
     if(w.boss)continue;
     // One swept segment and one shared hit budget, including the general.
     const end=Math.min(w.z,w.z0+w.range),dz=end-w.prevZ;if(dz<0)continue;
-    const targets=S.ents.filter(e=>((e.type==='enemy'||e.type==='officer')&&!e.dead)||(e.type==='crate'&&!e.open)||(e.type==='gate'&&!e.passed&&e.d-S.dist>0&&e.d-S.dist<=TUNING.gateHitWindow)).map(e=>({id:e.id,e,z:e.d-S.dist,x:e.x,half:e.type==='crate'?.2:.1}));
+    const targets=S.ents.filter(e=>((e.type==='enemy'||e.type==='officer')&&!e.dead)||(e.type==='crate'&&!e.open&&!S.encounterStop&&e.d-S.dist<=marchSpeed(options.chapter)*4.5)||(e.type==='gate'&&shootableGate(e))).map(e=>({id:e.id,e,z:e.d-S.dist,x:e.x,half:e.type==='crate'?.2:.1}));
     if(S.boss&&!['spent','yield'].includes(S.boss.phase))targets.push({id:'boss',z:S.boss.z,x:0,half:.35});
     const hits=targets.filter(q=>!w.hits.has(q.id)).map(q=>{
       const entry=q.z-.3,exit=q.z+.3,t=Math.max(0,(entry-w.prevZ)/(dz||1));
@@ -376,25 +383,34 @@ function updateWaves(dt) {
     }).filter(q=>q.valid).sort((a,b)=>a.t-b.t||String(a.id).localeCompare(String(b.id)));
     for(const q of hits){
       if(w.spent||w.hits.size>=w.pierce)break;
-      w.hits.add(q.id);if(q.id==='boss')bossDamage(w.dmg,q.xAt);else if(q.e.type==='gate')gateHit(q.e,w.source);else hitEnt(q.e,w.dmg,w);
+      w.hits.add(q.id);if(q.id==='boss')bossDamage(w.dmg,q.xAt,w);else if(q.e.type==='gate')gateHit(q.e,w.source);else hitEnt(q.e,w.dmg,w);
       if(w.hits.size>=w.pierce)w.spent=true;
     }
   }
   S.waves=S.waves.filter(w=>!w.spent&&(w.boss||w.z-w.z0<w.range));
 }
-function bossDamage(dmg, x) {
+function impact(w,target,actual,x,z){
+  if(!(actual>0))return;
+  const source=w?.source||'troop';
+  record('damage',source,target,actual,{projectileId:w?.projectileId??null,attackId:w?.attackId??null,x,z,sourceActorId:source,targetId:target,heavy:source==='hero'&&actual>=2,recovery:target===S.boss?.person?S.boss.phase==='rec':S.ents.find(e=>e.id===target)?.phase==='rec',weapon:source==='hero'?S.weapon:null});
+  if(source==='hero'&&actual>=2&&S.t>=(S.nextHeavyHold||0)){
+    S.poseHoldUntil=S.t+.04;S.poseHoldAtk=S.atkT;S.nextHeavyHold=S.t+.6;
+    S.shake=Math.max(S.shake,.22);
+  }
+}
+function bossDamage(dmg, x, w) {
   const b = S.boss; const mul = b.phase === 'rec' ? 2 : 1;
-  const actual=Math.min(b.hp,dmg*mul*BOSS_DMG);b.hp-=actual;record("damage","boss-hit",b.person,actual);b.hit=.12;
+  const actual=Math.min(b.hp,dmg*mul*BOSS_DMG);b.hp-=actual;if(actual<=0)return;impact(w,b.person,actual,x,b.z);b.hit=.08;
   if (mul > 1 && dmg >= 2) b.bigHit = .22; // 收势中挨重击：切受创帧
   fx('f2_hitFlash', x * .5, b.z - .2, .28 * mul, .16);
-  if (mul > 1) S.fx.push({k: 'crit', x: x * .4, z: b.z, life: .5, t: 0, v: Math.round(dmg * mul)});
+  if(mul>1){const source=w?.source||'troop',group=S.fx.find(f=>f.k==='crit'&&f.source===source&&f.t<.25);if(group)group.v+=actual;else S.fx.push({k:'crit',source,x:x*.4,z:b.z,life:.55,t:0,v:actual});}
   // 靠旗：每失 25% 血断一面，断旗从背后飘落
   const flags = Math.ceil(b.hp / b.max * 4);
   while (b.flags > flags) { b.flags--; b.flagFx.push({i: b.flags, t: 0}); logEv('boss', '靠旗断 余 ' + b.flags); }
 }
 // 开箱：状态在开箱这一刻改变，表现（飞入、闪光、亮兵、提示）随后播放
 function hitEnt(e, dmg, w) {
-  const actual=Math.min(Math.max(0,e.hp),dmg*(e.type==='officer'?(e.phase==='rec'?1:.45):1));e.hp-=actual;e.hitT=.12;record("damage",w?.source||"troop",e.id,actual);
+  const actual=Math.min(Math.max(0,e.hp),dmg*(e.type==='officer'?(e.phase==='rec'?1:.45):1));e.hp-=actual;if(actual<=0)return;e.hitT=.08;impact(w,e.id,actual,e.x,e.d-S.dist);
   if(e.type==='enemy'&&e.hp>0&&w?.control){e.slow=.65;e.d+=1;record('control','zhenjun',e.id,.65);}
   const z = e.d - S.dist;
   fx('f2_hitFlash', e.x, z, e.type === 'crate' ? .3 : .22, .16);
@@ -520,6 +536,7 @@ function officerStep(e,dt){
   if(e.dead){e.dead+=dt;return;}
   const z=e.d-S.dist;
   if(e.phase==='approach'){
+    if(z>16||S.inWall)return;
     if(z>12){e.d-=dt*2.2;return;}
     e.d=S.dist+12;e.phase='idle';e.pt=0;logEv('officer',PEOPLE[e.person]+' 拦阵');
   }
@@ -532,8 +549,8 @@ function officerStep(e,dt){
 
 // ───────────────────────── 敌将 ─────────────────────────
 // 对峙 → 预警 → 出招 → 收势 循环；血尽 → 力竭（spent）→ 收服（yield）。收服后战斗结束，不再重置。
-const BOSS_DMG = .30; // 敌将承伤系数（调试初值）：约三轮攻防后力竭
-const BOSS_T = {idle: 1.1, warn: 1.2, strike: .45, rec: 1.5, spent: 1.4};
+const BOSS_DMG = .30; // Explicit project tuning; actual damage still decides defeat.
+const BOSS_T = {idle: 2.0, warn: 1.4, strike: .5, rec: 2.2, spent: 1.4};
 function bossStep(dt) {
   const b=S.boss,pattern=BOSS_PATTERNS[b.person]||{name:'锁定横扫',warn:BOSS_T.warn,speed:40,damage:10,style:'sweep'};b.pattern=pattern.name;b.pt+=dt; b.hit = Math.max(0, b.hit - dt); b.bigHit = Math.max(0, (b.bigHit || 0) - dt);
   b.trail += (b.hp - b.trail) * Math.min(1, dt * (b.trail > b.hp + .5 && b.trailWait <= 0 ? 3 : 0));
@@ -553,13 +570,14 @@ function bossStep(dt) {
   } else if (b.phase === 'warn' && b.pt > pattern.warn) {
     next('strike');
     for(const band of b.bands||[b.band])for(let n=0;n<(pattern.style==='double'?2:1);n++)S.waves.push({boss:true,band:[...band],damage:pattern.damage,k:pattern.style==='sides'?'g_wave_shemao':pattern.style==='fire'?'g_wave_guandao':'g_wave_huaji',x:(band[0]+band[1])/2,z:b.z-.6+n*9,z0:b.z,prevZ:b.z,speed:-pattern.speed,t:0,hits:new Set(),x0:0,alpha:1,hw:(band[1]-band[0])/2,h:.5,wide:(band[1]-band[0])*1.4,range:99,dmg:0,pierce:0});
-    S.shake = .5;
+    // Telegraph alone does not generate an impact shake.
   } else if (b.phase === 'strike' && b.pt > BOSS_T.strike) next('rec');
-  else if (b.phase === 'rec' && b.pt > BOSS_T.rec) next('idle');
+  else if (b.phase === 'rec' && b.pt > BOSS_T.rec) next('reposition');
+  else if(b.phase==='reposition'&&b.pt>1.1)next('idle');
   else if (b.phase === 'spent' && b.pt > BOSS_T.spent) {
     next('yield');S.defeatedBossId=b.person;S.ended=true; S.seal={t:0,life:2.2,who:b.person,ch:CHAPTERS[options.chapter].allies.includes(b.person)?'盟':CHAPTERS[options.chapter].visit.includes(b.person)?'访':CHAPTERS[options.chapter].capture.includes(b.person)?'降':'胜'};
     b.flagFx.push({i: -1, t: 0, white: true});
-    toast(b.name+' · '+(CHAPTERS[options.chapter].capture.includes(b.person)?'已收服':'胜利'),'gold'); logEv('boss', '收服');
+    const relation=({降:'已收服',访:'寻访达成',盟:'结盟达成',胜:'已击败'})[S.seal.ch];toast(b.name+' · '+relation,'gold');logEv('boss',relation);
   }
   // 敌将刀气（向主将）；判定在刀气到达主将深度的一帧
   for (const w of S.waves) if (w.boss) {
@@ -828,11 +846,11 @@ function drawArrows() {
     const p = proj(a.x, a.z), q = proj(x2, z2);
     const A = {x: p.x, y: p.y - a.hgt * L.ppu * p.s}, B = {x: q.x, y: q.y - h2 * L.ppu * q.s};
     if (A.y < L.P0) continue;
-    const ang = Math.atan2(B.y - A.y, B.x - A.x), len = Math.max(6, 16 * p.s);
-    ctx.save(); ctx.translate(A.x, A.y); ctx.rotate(ang);
-    if (a.arms !== 'bow') { ctx.globalCompositeOperation = 'lighter'; ctx.fillStyle = 'rgba(255,150,60,.55)'; ctx.beginPath(); ctx.ellipse(len * .5, 0, len * .55, 3 * p.s + 1.5, 0, 0, 7); ctx.fill(); ctx.globalCompositeOperation = 'source-over'; }
+    const ang = Math.atan2(B.y - A.y, B.x - A.x), len = Math.max(5, 11 * p.s);
+    ctx.save(); ctx.translate(A.x, A.y); ctx.rotate(ang);ctx.globalAlpha=.82;
+    if (a.arms !== 'bow') { ctx.globalCompositeOperation = 'lighter'; ctx.fillStyle = 'rgba(255,150,60,.28)'; ctx.beginPath(); ctx.ellipse(len * .5, 0, len * .55, 1.2 * p.s + .6, 0, 0, 7); ctx.fill(); ctx.globalCompositeOperation = 'source-over'; }
     ctx.strokeStyle = '#3a2a18'; ctx.lineWidth = Math.max(1, 1.6 * p.s); ctx.beginPath(); ctx.moveTo(-len * .5, 0); ctx.lineTo(len * .5, 0); ctx.stroke();
-    ctx.fillStyle = a.arms === 'bow' ? '#DDE6F0' : '#FFB25A'; ctx.beginPath(); ctx.moveTo(len * .5 + 4 * p.s + 2, 0); ctx.lineTo(len * .5, -2.2 * p.s - 1); ctx.lineTo(len * .5, 2.2 * p.s + 1); ctx.fill();
+    ctx.fillStyle = a.arms === 'bow' ? '#DDE6F0' : '#FFB25A'; ctx.beginPath(); ctx.moveTo(len * .5 + 2 * p.s + 1, 0); ctx.lineTo(len * .5, -1.2 * p.s - .5); ctx.lineTo(len * .5, 1.2 * p.s + .5); ctx.fill();
     ctx.fillStyle = '#E6CD93'; ctx.fillRect(-len * .5, -1.5, 3, 3);
     ctx.restore();
   }
@@ -843,7 +861,7 @@ function drawHeroGroup() {
   // 部曲（身后，背向镜头的弓手）：齐射时 张弓 → 放箭
   const n = Math.min(12, Math.round(S.troopShown / 3));
   const slots = [];
-  for (let i = 0; i < n; i++) { const row = Math.floor(i / 4), col = i % 4; slots.push({x: hx + (col - 1.5) * .17 + (row % 2) * .08, z: -.7 - row * .45}); }
+  for (let i = 0; i < n; i++) { const row = Math.floor(i / 4), col = i % 4; slots.push({x: hx + (col - 1.5) * .17 + (row % 2) * .08, z: -1.5 - row * .6}); }
   slots.sort((a, b) => b.z - a.z);
   const aw = [use('己方弓手·行进1', 'g_archerWalk0', 'blueWalk0'), use('己方弓手·行进2', 'g_archerWalk1', 'blueWalk1')];
   const aDraw = use('己方弓手·张弓', 'g_archerDraw', 'blueWalk0'), aRel = use('己方弓手·放箭', 'g_archerRel', 'blueWalk1');
@@ -869,9 +887,11 @@ function drawHeroGroup() {
   }
   // 主将：四帧跑步（按行进距离推进）/ 蓄势 / 出招 / 收势 / 亮兵（取得兵器时）
   const F = heroFrames(S.weapon);
-  const [ph, pr] = heroPhase();
+  const savedAtk=S.atkT;if(S.t<S.poseHoldUntil)S.atkT=S.poseHoldAtk;const [ph, pr] = heroPhase();S.atkT=savedAtk;
   const p = proj(hx, 0);
   let k = ph === 'run' ? F.run[Math.floor(cyc * 1.7) % 4] || F.run[0] : F[ph];
+  if(ph==='wind'&&pr>.45)k='g_mid_'+S.weapon+'_0';if(ph==='rec'&&pr<.65)k='g_mid_'+S.weapon+'_1';
+  const gaitIndex=Math.floor(cyc*1.7)%4,derivedRun=ph==='run'&&!['spear','guandao','shemao','huaji'].includes(S.weapon);if(derivedRun)k='g_ios_gait'+gaitIndex;
   let ref=heroRef(k);const mounted=S.slots.ma.id;if(mounted){k='g_ride_'+mounted+'_'+(ph==='run'?'run'+(Math.floor(cyc*1.7)%2):ph==='wind'?'wind':ph==='rel'?'rel':'run0');ref=M.frames[k]?.bh||ref;}
   const runBob = ph === 'run' ? Math.abs(Math.sin(cyc * 1.7 * Math.PI / 2)) * 1.5 : 0;
   const lunge = ph === 'rel' ? -6 * Math.sin(pr * Math.PI) : ph === 'wind' ? 2 * pr : ph === 'show' ? -3 * Math.sin(pr * Math.PI) : 0;
@@ -882,9 +902,11 @@ function drawHeroGroup() {
   ctx.save(); ctx.strokeStyle = mount ? 'rgba(242,165,122,.8)' : 'rgba(230,205,147,.55)'; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.ellipse(p.x, p.y, .2 * L.ppu, .055 * L.ppu, 0, 0, Math.PI * 2); ctx.stroke(); ctx.restore();
   const bump = S.bumped > 0 ? Math.sin(S.bumped * 60) * 2 : 0;
   const H=(mounted?.90:BODY.hero)*L.ppu;
+  const dual=['shuanggu','shuangji'].includes(S.weapon),partGrip=S.weapon==='shuanggu'?[.42,.73]:[.49,.70];if(dual&&(mounted||derivedRun))drawFrame('g_part_'+S.weapon,p.x-.11*L.ppu,p.y-runBob+lunge-H*.65,.35*L.ppu,{grip:partGrip,rot:ph==='rel'?-.6:-.28});
   const r = drawFrame(k, p.x + bump, p.y - runBob + lunge, H, {refH: ref});
   if (ph === 'show' && r) { ctx.save(); ctx.globalAlpha = .5 * (1 - pr); drawFrame(k, p.x + bump, p.y + lunge, H, {refH: ref, tint: '#FFE6A6', comp: 'lighter'}); ctx.restore(); }
-  if(mounted){const ik='g_icon_'+S.weapon,f=M.frames[k],hand=({g_ride_chitu_run0:[.9429,.3874],g_ride_chitu_run1:[.9483,.389],g_ride_chitu_wind:[.9465,.084],g_ride_chitu_rel:[.9485,.0966],g_ride_dilu_run0:[.9502,.3924],g_ride_dilu_run1:[.952,.3996],g_ride_dilu_wind:[.9437,.0819],g_ride_dilu_rel:[.9309,.0799]})[k];const grip=({spear:[.26,.73],guandao:[.26,.78],shemao:[.30,.72],huaji:[.25,.75],guding:[.85,.78],shuangji:[.5,.64],yitian:[.5,.83],qinggang:[.48,.85],shuanggu:[.5,.70],liannu:[.65,.55]})[S.weapon];const sc=H/ref,handX=p.x+bump+(hand[0]-.5)*f.r[2]*sc,handY=p.y-runBob+lunge+(hand[1]-1)*f.r[3]*sc;drawFrame(ik,handX,handY,(['spear','guandao','shemao','huaji'].includes(S.weapon)?.56:.34)*L.ppu,{grip,rot:ph==='rel'?.55:ph==='wind'?-.2:.9});}S.heroRect = r;
+  if(derivedRun&&!mounted){const f=M.frames[k],hand=[[.947,.352],[.955,.44],[.953,.307],[.954,.357]][gaitIndex],scale=H/ref;drawFrame((dual?'g_part_':'g_icon_')+S.weapon,p.x+(hand[0]-.5)*f.r[2]*scale,p.y-runBob+lunge+(hand[1]-1)*f.r[3]*scale,.34*L.ppu,{grip:dual?partGrip:[.5,.8],rot:.45});}
+  if(mounted){const ik=(dual?'g_part_':'g_icon_')+S.weapon,f=M.frames[k],hand=({g_ride_chitu_run0:[.9429,.3874],g_ride_chitu_run1:[.9483,.389],g_ride_chitu_wind:[.9465,.084],g_ride_chitu_rel:[.9485,.0966],g_ride_dilu_run0:[.9502,.3924],g_ride_dilu_run1:[.952,.3996],g_ride_dilu_wind:[.9437,.0819],g_ride_dilu_rel:[.9309,.0799]})[k];const grip=({spear:[.26,.73],guandao:[.26,.78],shemao:[.30,.72],huaji:[.25,.75],guding:[.85,.78],shuangji:[.5,.64],yitian:[.5,.83],qinggang:[.48,.85],shuanggu:[.5,.70],liannu:[.65,.55]})[S.weapon];const sc=H/ref,handX=p.x+bump+(hand[0]-.5)*f.r[2]*sc,handY=p.y-runBob+lunge+(hand[1]-1)*f.r[3]*sc;drawFrame(ik,handX,handY,(['spear','guandao','shemao','huaji'].includes(S.weapon)?.56:.34)*L.ppu,{grip:dual?partGrip:grip,rot:ph==='rel'?.55:ph==='wind'?-.2:.9});const fingers=M.frames[k+'_fingers'];if(fingers)drawFrame(k+'_fingers',handX,handY,fingers.r[3]*sc,{center:true});}S.heroRect = r;
   // 部曲兵力牌 → L6：固定在主将躯干上方
   const ty = p.y - H - 26; LABELS.push({kind: 'troop', x: p.x, y: ty}); S.troopY = ty; S.troopX = p.x;
 }
@@ -941,7 +963,8 @@ function drawBoss() {
     spent: use('吕布·力竭', 'g_lubuSpent', 'g_lubuDown'), yield: use('吕布·收服(献戟)', 'g_lubuYield', 'g_lubuDown')};
   const hitK = use('吕布·重击受创', 'g_lubuHit', 'g_lubuRec');
   if(b.person!=='lubu'){for(const phase of Object.keys(K))K[phase]='g_boss_'+b.person+'_'+(['spent','yield'].includes(phase)?'spent':phase==='strike'?'strike':phase==='warn'?'wind':phase==='rec'?'rec':'idle');}
-  let k = K[b.phase];
+  let k = K[b.phase]||K.idle;
+  if(b.person!=='lubu'&&['spent','yield'].includes(b.phase))k='g_end_'+b.person+'_'+(b.phase==='yield'&&b.pt>.35?2:0);
   if(b.bigHit>0&&(b.phase==='idle'||b.phase==='rec'))k=b.person==='lubu'?hitK:'g_boss_'+b.person+'_hit';
   const f = M.frames[k];
   const flagK = use('将台·帅旗', 'g_warBanner'); const drumK = use('将台·战鼓', 'g_warDrum');
@@ -997,11 +1020,11 @@ function drawWaves() {
     if (w.snake) { drawSnakeTrail(w); const dx = w.snake * SNAKE.amp * SNAKE.k * Math.cos((w.z - w.z0) * SNAKE.k); rot = Math.atan2(dx * L.ppu * p.s, 1 * u * .3) * .8; }
     const hh = w.h * u * (w.grow ? 1 + age * w.grow * 3 : 1);
     if (w.wide) {
-      const ww = w.wide * u * (w.grow ? 1 + age * w.grow * 3 : 1); const sc = ww / f.r[2];
+      const ww = w.wide * u * (w.grow ? 1 + age * w.grow * 3 : 1); const sc = Math.min(ww / f.r[2], hh*1.5/f.r[3]),drawW=f.r[2]*sc;
       ctx.translate(p.x, p.y - .18 * u); if (w.boss) ctx.scale(1, -1);
       const img = w.boss ? tinted(w.k, '#ff5a3c') : IMG[f.s];
       const [sx, sy] = w.boss ? [0, 0] : f.r;
-      ctx.drawImage(img, sx, sy, f.r[2], f.r[3], -ww / 2, -f.r[3] * sc * .6, ww, f.r[3] * sc * .75);
+      ctx.drawImage(img, sx, sy, f.r[2], f.r[3], -drawW / 2, -f.r[3] * sc * .6, drawW, f.r[3] * sc * .75);
     } else {
       ctx.translate(p.x, p.y - .2 * u); ctx.rotate(rot);
       const sc = hh / f.r[3];
@@ -1076,7 +1099,7 @@ function drawHUD() {
   const res = resonance(S.weapon);
   if (res.state !== 'none') {
     const nm = PEOPLE[res.who];
-    const [str, col] = res.state === 'on' ? ['共鸣·' + nm, S.resFlash > 0 ? '#E8FFF0' : '#9FE0B8'] : res.state === 'pact' ? ['盟约·' + nm, '#E6CD93'] : [nm + '未随军', '#87847C'];
+    const [str, col] = res.state === 'on' ? ['共鸣·' + nm, S.resFlash > 0 ? '#E8FFF0' : '#9FE0B8'] : res.state === 'pact' ? ['盟约·' + nm, '#E6CD93'] : [nm + '未随军', '#C5C3BC'];
     text(str, chipX + chipW - 8, y1 + 29, TYPE.caption, {align: 'right', color: col});
   }
   hudRect('兵器', chipX, y1, chipW, 32);
@@ -1127,13 +1150,17 @@ function drawHUD() {
     if (trial || used) { ctx.save(); ctx.beginPath(); ctx.arc(34, sy + 2, 7, 0, 7); ctx.fillStyle = trial ? '#2F66A3' : '#4a4a4a'; ctx.fill(); ctx.restore(); text(trial ? '试' : '用', 34, sy + 2, TYPE.caption, {align: 'center', color: '#fff', layer: 'L7'}); }
     hudRect('宝物槽·' + SLOT_CN[key], 8, sy, 28, 28); S.slotPos[key] = {x: 22, y: sy + 14}; sy += 34;
   }
-  // 支援位（华佗）：冷却环
-  const sp = S.support, cdk = sp.cd / SUPPORT.cd;
+  // Actual support identity and cooldown; never a generic faint glyph for an equipped actor.
+  const sp = S.support, cdk = Math.min(1,Math.max(0,sp.cd / (sp.id==='hua'?SUPPORT.cd:12)));
   sy += 4;
-  panel(8, sy, 28, 28, {r: 14, fill: sp.flash > 0 ? 'rgba(63,140,100,.9)' : 'rgba(21,36,58,.8)', stroke: cdk > 0 ? 'rgba(135,132,124,.6)' : '#9FE0B8'});
-  text(sp.id?'援':'锁', 22, sy + 14, TYPE.caption, {align: 'center', color: cdk > 0 ? '#87847C' : '#9FE0B8', layer: 'L7'});
+  panel(4, sy, 36, 44, {r: 7, fill: sp.flash > 0 ? 'rgba(63,140,100,.9)' : 'rgba(21,36,58,.92)', stroke: cdk > 0 ? '#AAA89F' : '#9FE0B8'});
+  const supportPortrait='g_portrait_'+sp.id;
+  if(sp.id&&has(supportPortrait))drawFrame(supportPortrait,22,sy+15,25,{center:true});
+  else text('锁',22,sy+15,TYPE.caption,{align:'center',color:'#C8C7C0',layer:'L7'});
+  text(sp.id?PEOPLE[sp.id]:'支援',22,sy+35,9,{align:'center',color:'#F5EFE2',stroke:'#142334',layer:'L7'});
+  if(cdk>0)text(String(Math.ceil(sp.cd)),35,sy+5,9,{align:'center',color:'#FFF1BE',stroke:'#142334',layer:'L7'});
   if (cdk > 0) { ctx.save(); ctx.strokeStyle = '#9FE0B8'; ctx.lineWidth = 2.5; ctx.beginPath(); ctx.arc(22, sy + 14, 12, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * (1 - cdk)); ctx.stroke(); ctx.restore(); }
-  hudRect('支援·' + PEOPLE[sp.id], 8, sy, 28, 28);
+  hudRect('支援·' + (PEOPLE[sp.id]||'未编入'), 4, sy, 36, 44);
 }
 
 function measure(str, size, fam = FONT) { return ctx.measure(str,size); }
@@ -1165,7 +1192,7 @@ function drawOverlayFx() {
   roundRect(-sz / 2, -sz / 2, sz, sz, 6); ctx.fillStyle = 'rgba(160,36,24,.92)'; ctx.fill(); ctx.strokeStyle = '#FFE6A6'; ctx.lineWidth = 2; ctx.stroke();
   ctx.restore();
   ctx.save(); ctx.globalAlpha = a; text(sl.ch || '归', cx, cy + 1, 48, {kind: 'seal', family: SERIF, weight: 900, align: 'center', color: '#FFF6DA', layer: 'L8'}); ctx.restore();
-  const sub = sl.ch === '降' ? '收服 ' + PEOPLE[sl.who] : '神兵归主 · ' + PEOPLE[sl.who];
+  const sub=(({降:'收服',访:'寻访',盟:'结盟',胜:'击败'})[sl.ch]||'神兵归主')+' · '+PEOPLE[sl.who];
   const sw = measure(sub, TYPE.body) + 20;
   ctx.save(); ctx.globalAlpha = a; roundRect(cx - sw / 2, cy + 40, sw, 24, 12); ctx.fillStyle = 'rgba(14,24,38,.85)'; ctx.fill(); ctx.restore();
   ctx.save(); ctx.globalAlpha = a; text(sub, cx, cy + 52, TYPE.body, {align: 'center', color: '#FFE6A6', layer: 'L8'}); ctx.restore();
@@ -1179,7 +1206,7 @@ function drawNotice() {
   if (!b || !(b.phase === 'warn' || b.phase === 'strike')) return;
   const t = b.phase === 'warn' ? b.pt : BOSS_T.warn;
   const inK = Math.min(1, t / .2);
-  const w = 56, h = 200, x = L.W - w * inK, y = Math.max(L.Z2[0], L.Z2[0] + (L.Z2[1] - L.Z2[0] - h) * .5);
+  const w = 56, h = 200, x = L.W - 8 - (w+8) * inK, y = Math.max(L.Z2[0], L.Z2[0] + (L.Z2[1] - L.Z2[0] - h) * .5);
   ctx.save(); roundRect(x, y, w + 8, h, 6); ctx.fillStyle = 'rgba(122,36,25,.94)'; ctx.fill(); ctx.strokeStyle = '#E6CD93'; ctx.lineWidth = 1.5; ctx.stroke();
   ctx.fillStyle = '#E6CD93'; ctx.fillRect(x + 6, y + 8, 2, h - 16); ctx.restore();
   vtext(S.boss.name, x + w / 2 + 3, y + 22, TYPE.title, {family: SERIF, weight: 900, color: '#FFF6DA', layer: 'L8'});
@@ -1218,7 +1245,7 @@ let LABELS_DRAWN = [];
 function render() {
   TXT = []; LABELS = []; LABELS_DRAWN = []; GATE_STAT = {unsettledHidden: 0, docked: 0}; SEALR = null;
   ctx.save();
-  if (S.shake > 0) ctx.translate((rnd() - .5) * 6 * S.shake, (rnd() - .5) * 4 * S.shake);
+  if (S.shake > 0) ctx.translate((rnd() - .5) * 4 * S.shake, (rnd() - .5) * 4 * S.shake);
   drawBackdrop(); drawGround(); drawWorld(); drawWaves(); drawArrows();
   // L6 世界标签（高于特效）
   for (const l of LABELS) {
@@ -1227,7 +1254,7 @@ function render() {
     else if (l.kind === 'troop') drawTroopLabel(l);
     else if (l.kind === 'boss') drawBossLabel(l);
   }
-  for (const f of S.fx) if (f.k === 'crit') { const p = proj(f.x, f.z); ctx.save(); ctx.globalAlpha = 1 - f.t / f.life; text('−' + f.v, p.x + 30, p.y - 60 * p.s * 2 - f.t * 30, NUM.delta, {kind: 'delta', family: NUMF, weight: 800, color: '#FFE6A6', stroke: 'rgba(60,20,10,.9)', strokeW: 3, layer: 'L6'}); ctx.restore(); }
+  for (const [i,f] of S.fx.filter(f=>f.k==='crit').slice(-3).entries()) { const p = proj(f.x, f.z); ctx.save(); ctx.globalAlpha = 1 - f.t / f.life; text('−' + Number(f.v.toFixed(1)), p.x + 48, p.y - 60 * p.s * 2 - f.t * 30-i*22, NUM.delta, {kind: 'delta', family: NUMF, weight: 800, color: '#FFE6A6', stroke: 'rgba(60,20,10,.9)', strokeW: 3, layer: 'L6'}); ctx.restore(); }
   ctx.restore();
   if (S.redFlash > 0) { const g = ctx.createRadialGradient(L.W / 2, L.H / 2, L.W * .3, L.W / 2, L.H / 2, L.H * .7); g.addColorStop(0, 'rgba(178,58,43,0)'); g.addColorStop(1, `rgba(178,58,43,${S.redFlash * .55})`); ctx.fillStyle = g; ctx.fillRect(0, 0, L.W, L.H); }
   drawHUD(); drawOverlayFx(); drawNotice(); drawToast();
@@ -1238,8 +1265,8 @@ function render() {
 L=layout({W:390,H:844,top:0,bottom:0});newWorld('normal');
 return {get state(){return S;},get ledger(){return ledger;},get totals(){return {...totals};},
  move(x){if(Number.isFinite(x))S.targetX=Math.max(-.82,Math.min(.82,x));},cancel(){S.targetX=S.heroX;},
- step(dt=DT){if(paused||S.ended)return;step(Math.min(DT,Math.max(0,dt)));},pause(value){paused=!!value;},
+ step(dt=DT){if(paused)return;step(Math.min(DT,Math.max(0,dt)));},pause(value){paused=!!value;},
  render(sz){if(!ctx)return;L=layout(sz);L.capsule=sz.capsule||{x:L.W-8,y:0,w:0,h:0};const simSeed=seed;ctx.begin(L);render();ctx.end();seed=simSeed;},
- snapshot(){return {chapter:options.chapter,t:S.t,dist:S.dist,phase:S.ended?(S.troops>0?'won':'lost'):S.boss?'boss':'run',x:S.heroX,target:S.targetX,troops:S.troops,weapon:S.weapon,tier:S.tier,arms:S.arms,companions:S.companions.map(c=>c.id),support:{...S.support},slots:S.slots,boss:S.boss?{...S.boss}:null,entities:S.ents.map(e=>({...e,z:e.d-S.dist})),stats:S.stats,totals:{...totals},paused,threatBands:S.waves.filter(w=>w.boss&&!w.hitDone&&!w.spent).map(w=>w.band||S.boss?.band),runGot:[...S.runGot],defeatedOfficerIds:[...S.defeatedOfficerIds],defeatedBossId:S.defeatedBossId,log:[...S.log]};},
+ snapshot(){return {chapter:options.chapter,t:S.t,dist:S.dist,phase:S.ended?(S.troops>0?'won':'lost'):S.boss?'boss':'run',x:S.heroX,target:S.targetX,troops:S.troops,weapon:S.weapon,tier:S.tier,arms:S.arms,companions:S.companions.map(c=>c.id),support:{...S.support},slots:S.slots,boss:S.boss?{...S.boss}:null,entities:S.ents.map(e=>({...e,z:e.d-S.dist})),timing:{...S.timing},stats:S.stats,totals:{...totals},paused,threatBands:S.waves.filter(w=>w.boss&&!w.hitDone&&!w.spent).map(w=>w.band||S.boss?.band),runGot:[...S.runGot],defeatedOfficerIds:[...S.defeatedOfficerIds],defeatedBossId:S.defeatedBossId,log:[...S.log]};},
  get diagnostics(){return {texts:TXT,hud:HUDR,gate:GATE_STAT,used:Array.from(USED.entries())};}};
 }

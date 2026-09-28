@@ -12,7 +12,7 @@ test('F1 named officer contact and missed viewport both retain life and start an
  for(const d of [.2,-5]){const {b,s}=make();s.course=[{d,type:'officer',person:'xu',x:0}];tick(b);const e=s.ents[0];assert.equal(e.type,'officer');assert.equal(e.dead,0);assert.equal(s.troops,30);assert.equal(e.hp,e.max);assert.equal(e.d-s.dist,12);tick(b,40);assert.equal(e.phase,'warn');tick(b,60);assert.equal(s.troops,26);tick(b,10);assert.equal(e.phase,'rec');}
 });
 test('F1/F2 only actual attacks defeat officers, recorded once, road resumes and settlement requires proof',()=>{
- const {b,s}=make();s.speed=11;s.course=[{d:8,type:'officer',person:'xu',x:0}];tick(b,4);const e=s.ents[0];assert.equal(s.speed,0);e.phase='rec';e.pt=0;s.waves=[{...shot(10,1),speed:200,dmg:100}];tick(b,2);assert.equal(e.hp,0);assert.deepEqual(s.defeatedOfficerIds,['xu']);tick(b,100);assert.equal(s.ents.length,0);assert.equal(s.speed,11);
+ const {b,s}=make();s.speed=11;s.course=[{d:8,type:'officer',person:'xu',x:0}];tick(b,4);const e=s.ents[0];assert.equal(s.speed,0);e.phase='rec';e.pt=0;s.waves=[{...shot(10,1),speed:200,dmg:e.max+1}];tick(b,2);assert.equal(e.hp,0);assert.deepEqual(s.defeatedOfficerIds,['xu']);tick(b,100);assert.equal(s.ents.length,0);assert.equal(s.speed,11);
  const store=new FormalStore(memory());store.data.cleared=CHAPTERS.slice(0,3).map(c=>c.id);
  const run={id:'r4',chapter:3,won:true,troops:20,treasures:[],defeatedBossId:'dian',defeatedOfficerIds:[]};
  assert.equal(store.settle(run),false);assert.deepEqual(store.data.captures,[]);assert.equal(store.data.claimed.length,0);

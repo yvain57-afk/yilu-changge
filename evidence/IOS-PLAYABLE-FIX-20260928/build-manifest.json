@@ -1,0 +1,18 @@
+[
+  {
+    "artifact": "iOS模拟器构建.zip",
+    "sha256": "d786c52a8f83097fd8ffc1f955b8bac9dc08a7ecb827829e8a6694c8347526c2",
+    "appContentFingerprint": "3ce5d345c022b01782c6212216f3b8aa99c3a95f708af015d1c09ef992488b8a",
+    "executableSHA256": "a4982eb0fa9ffad72d3365fcfeb2c2940350c3f430e858d50d580c0b9f6fe44a",
+    "bundleId": "com.yvainair.yiluchangge",
+    "signingScope": "simulator unsigned"
+  },
+  {
+    "artifact": "iPhone开发签名构建.zip",
+    "sha256": "55efb1fd32969d067a34c49dd1703afc5a9e4e184a8a4f1353d273bf7a107c73",
+    "appContentFingerprint": "11951152ef26003dc38e8bd59a8f1bd6e8db93679dc46321b23f5c015a1c602b",
+    "executableSHA256": "16f447b0ba7bfd4ca4cd769f0bebb77d3e08e21462a94a3bfc8f83e58f8385c4",
+    "bundleId": "com.yvainair.yiluchangge",
+    "signingScope": "development Release; install blocked by free provisioning app limit"
+  }
+]

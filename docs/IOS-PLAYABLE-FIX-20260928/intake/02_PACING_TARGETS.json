@@ -1,0 +1,246 @@
+{
+  "taskId": "IOS-PLAYABLE-FIX-20260928",
+  "schemaVersion": 1,
+  "status": "DESIGN_TARGETS_NOT_MEASURED_NOT_ENGINE_CONFIG",
+  "priority": "90-120秒为用户目标；分段秒数为可调初值。不得通过无敌、倒计时锁胜或空路凑时长。",
+  "timing": {
+    "unit": "foreground_elapsed_seconds",
+    "start": "player_control_enabled",
+    "end": "authoritative_victory_or_defeat",
+    "exclude": [
+      "loading",
+      "prebattle_loadout",
+      "manual_pause",
+      "background",
+      "result_screen",
+      "reward_reading"
+    ],
+    "mustReportSeparately": [
+      "foregroundElapsedSeconds",
+      "simulationSeconds",
+      "marchSeconds",
+      "officerEncounterSeconds",
+      "bossSeconds",
+      "intentionalHitStopSeconds",
+      "resultReadyLatencySeconds"
+    ],
+    "baselineFirstClearTarget": [
+      90,
+      120
+    ],
+    "overlevelReplay": "allow_faster_no_artificial_wait",
+    "failure": "may_end_early"
+  },
+  "mount": {
+    "forwardSpeedMultiplier": 1,
+    "roadScrollMultiplier": 1,
+    "globalTimeScaleMultiplier": 1,
+    "attackClockMultiplier": 1,
+    "lateralBonusPolicy": "保留当前已采纳赤兔横移加成；先核查独立轴与手感，不据主观速度感篡改为纵向加速。"
+  },
+  "windows": {
+    "firstGrowthOpportunitySeconds": [
+      8,
+      12
+    ],
+    "primaryGrowthOpportunityBandsSeconds": [
+      [
+        8,
+        12
+      ],
+      [
+        24,
+        36
+      ],
+      [
+        48,
+        65
+      ]
+    ],
+    "rewardReadableBeforeArrivalSeconds": [
+      4,
+      6
+    ],
+    "directFireWindowSeconds": [
+      3,
+      5
+    ],
+    "postFinalUpgradePlayableSecondsAtLeast": 15,
+    "targetEmptyMarchGapMaxSeconds": 6,
+    "ordinaryEnemyForwardSpeed": "retune_with_route_not_global_timeScale"
+  },
+  "boss": {
+    "firstClearMainBossTargetSeconds": [
+      28,
+      40
+    ],
+    "telegraphSeconds": [
+      1.2,
+      1.6
+    ],
+    "attackMotionSeconds": [
+      0.35,
+      0.6
+    ],
+    "recoverySeconds": [
+      1.6,
+      2.2
+    ],
+    "repositionSeconds": [
+      0.8,
+      1.2
+    ],
+    "avoidance": "危险锁定后不追踪；按实际安全距离和横移上限检查可达性；多将关的途中交锋时间单独记入总时长。"
+  },
+  "hitFeedback": {
+    "globalHitStopDefaultMs": 0,
+    "confirmedHeavyHitLocalPoseHoldMs": [
+      35,
+      50
+    ],
+    "minSpacingBetweenLocalHeavyHitHoldsMs": 600,
+    "hitFlashMs": [
+      60,
+      100
+    ],
+    "healthTrailSeconds": [
+      0.25,
+      0.4
+    ],
+    "cameraShakeLogicalPointsMax": 2,
+    "rule": "反馈绑定真实伤害事件；不得每次出手停整个模拟；局部表现停顿不改变判定时钟。"
+  },
+  "performance": {
+    "profile": "project_acceptance_targets_not_apple_requirements",
+    "device": "actual_available_iPhone_record_model_OS",
+    "targetFps": 60,
+    "steadyForegroundAverageFpsMin": 58,
+    "steadyFrameTimeP95MsMax": 20,
+    "steadyFrameTimeP99MsMax": 33.4,
+    "unexplainedActiveFrameOver100msAllowed": 0,
+    "soakMinutesMin": 20,
+    "capture": "主性能测量不录屏，实录另采；报告未剪裁全程与阶段统计。"
+  },
+  "levels": [
+    {
+      "chapter": 1,
+      "id": "c01",
+      "boss": "张角",
+      "marchAndGrowthSeconds": 65,
+      "officerEncounterSeconds": 0,
+      "mainBossSeconds": 30,
+      "targetSeconds": 95,
+      "measuredSeconds": null,
+      "status": "not_run",
+      "note": "首通推荐配装初值；按真实目标可读性和战斗结果调参；沿用最新生产关卡名称。"
+    },
+    {
+      "chapter": 2,
+      "id": "c02",
+      "boss": "董卓",
+      "marchAndGrowthSeconds": 66,
+      "officerEncounterSeconds": 0,
+      "mainBossSeconds": 32,
+      "targetSeconds": 98,
+      "measuredSeconds": null,
+      "status": "not_run",
+      "note": "首通推荐配装初值；按真实目标可读性和战斗结果调参；沿用最新生产关卡名称。"
+    },
+    {
+      "chapter": 3,
+      "id": "c03",
+      "boss": "吕布",
+      "marchAndGrowthSeconds": 64,
+      "officerEncounterSeconds": 0,
+      "mainBossSeconds": 36,
+      "targetSeconds": 100,
+      "measuredSeconds": null,
+      "status": "not_run",
+      "note": "首通推荐配装初值；按真实目标可读性和战斗结果调参；沿用最新生产关卡名称。"
+    },
+    {
+      "chapter": 4,
+      "id": "c04",
+      "boss": "典韦",
+      "marchAndGrowthSeconds": 51,
+      "officerEncounterSeconds": 20,
+      "mainBossSeconds": 33,
+      "targetSeconds": 104,
+      "measuredSeconds": null,
+      "status": "not_run",
+      "note": "首通推荐配装初值；按真实目标可读性和战斗结果调参；沿用最新生产关卡名称。"
+    },
+    {
+      "chapter": 5,
+      "id": "c05",
+      "boss": "曹操",
+      "marchAndGrowthSeconds": 49,
+      "officerEncounterSeconds": 27,
+      "mainBossSeconds": 34,
+      "targetSeconds": 110,
+      "measuredSeconds": null,
+      "status": "not_run",
+      "note": "首通推荐配装初值；按真实目标可读性和战斗结果调参；沿用最新生产关卡名称。"
+    },
+    {
+      "chapter": 6,
+      "id": "c06",
+      "boss": "孙策",
+      "marchAndGrowthSeconds": 57,
+      "officerEncounterSeconds": 18,
+      "mainBossSeconds": 35,
+      "targetSeconds": 110,
+      "measuredSeconds": null,
+      "status": "not_run",
+      "note": "首通推荐配装初值；按真实目标可读性和战斗结果调参；沿用最新生产关卡名称。"
+    },
+    {
+      "chapter": 7,
+      "id": "c07",
+      "boss": "周瑜",
+      "marchAndGrowthSeconds": 56,
+      "officerEncounterSeconds": 22,
+      "mainBossSeconds": 36,
+      "targetSeconds": 114,
+      "measuredSeconds": null,
+      "status": "not_run",
+      "note": "首通推荐配装初值；按真实目标可读性和战斗结果调参；沿用最新生产关卡名称。"
+    },
+    {
+      "chapter": 8,
+      "id": "c08",
+      "boss": "张飞",
+      "marchAndGrowthSeconds": 54,
+      "officerEncounterSeconds": 23,
+      "mainBossSeconds": 37,
+      "targetSeconds": 114,
+      "measuredSeconds": null,
+      "status": "not_run",
+      "note": "首通推荐配装初值；按真实目标可读性和战斗结果调参；沿用最新生产关卡名称。"
+    },
+    {
+      "chapter": 9,
+      "id": "c09",
+      "boss": "关羽",
+      "marchAndGrowthSeconds": 56,
+      "officerEncounterSeconds": 22,
+      "mainBossSeconds": 38,
+      "targetSeconds": 116,
+      "measuredSeconds": null,
+      "status": "not_run",
+      "note": "首通推荐配装初值；按真实目标可读性和战斗结果调参；沿用最新生产关卡名称。"
+    },
+    {
+      "chapter": 10,
+      "id": "c10",
+      "boss": "诸葛亮",
+      "marchAndGrowthSeconds": 46,
+      "officerEncounterSeconds": 34,
+      "mainBossSeconds": 40,
+      "targetSeconds": 120,
+      "measuredSeconds": null,
+      "status": "not_run",
+      "note": "首通推荐配装初值；按真实目标可读性和战斗结果调参；沿用最新生产关卡名称。"
+    }
+  ]
+}

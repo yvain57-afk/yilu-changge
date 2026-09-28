@@ -1,0 +1,26 @@
+{
+  "iOS模拟器构建.zip": {
+    "bytes": 112892007,
+    "sha256": "d786c52a8f83097fd8ffc1f955b8bac9dc08a7ecb827829e8a6694c8347526c2",
+    "entries": 603,
+    "zipCRC": "pass"
+  },
+  "iPhone开发签名构建.zip": {
+    "bytes": 9266601,
+    "sha256": "55efb1fd32969d067a34c49dd1703afc5a9e4e184a8a4f1353d273bf7a107c73",
+    "entries": 289,
+    "zipCRC": "pass"
+  },
+  "核验小包.zip": {
+    "bytes": 1080781404,
+    "sha256": "d152f249f1a5e3a32999cd30e3e21d5607215c3da0820a803e34e970b6ccf479",
+    "entries": 370,
+    "zipCRC": "pass"
+  },
+  "源码开发包.zip": {
+    "bytes": 441528682,
+    "sha256": "4a4a8e586b20d93d3c3bd7f526a3fc054fddc30dce6624e69c3d276e1a12701f",
+    "entries": 2057,
+    "zipCRC": "pass"
+  }
+}

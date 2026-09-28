@@ -1,0 +1,619 @@
+{
+  "taskId": "IOS-PLAYABLE-FIX-20260928",
+  "status": "PARTIAL_NATIVE_CANDIDATE_NOT_ACCEPTED",
+  "count": 46,
+  "allowedStatus": [
+    "not_run",
+    "pass",
+    "fail",
+    "blocked"
+  ],
+  "requiredEvidenceScope": "模型/夹具/原生模拟器/原生真机/真人/合法脚本输入分开记录",
+  "cases": [
+    {
+      "id": "SRC-01",
+      "group": "素材链",
+      "priority": "P0",
+      "scenario": "全部可达frameKey与texture尺寸/矩形核对",
+      "expected": "无越界、错表、串帧；差异有原图到原生逐层证据",
+      "evidenceRequired": "frame inventory + 原生帧页",
+      "status": "not_run",
+      "actual": "520帧矩形无越界；168帧重切，原生十关及详情无invalidRects。尚缺完整原图→独立PNG→标准Sprite→生产渲染逐层诊断页和全部帧动态核对。",
+      "evidencePaths": [
+        "frame-inventory.json"
+      ]
+    },
+    {
+      "id": "SRC-02",
+      "group": "素材链",
+      "priority": "P0",
+      "scenario": "S01的三张图鉴卡与对应详情",
+      "expected": "脸与主体完整，卡片有意半身与错误截断区分",
+      "evidenceRequired": "S01前后图",
+      "status": "pass",
+      "actual": "S01末页三卡完整；马超、庞统、姜维详情已改完整立绘，并在最终原生构建分别截图。卡片保留有意半身构图。",
+      "evidencePaths": [
+        "comparison/"
+      ]
+    },
+    {
+      "id": "SRC-03",
+      "group": "素材链",
+      "priority": "P0",
+      "scenario": "S05/S06配队、翻页、返回再进入",
+      "expected": "完整角色，无旧节点残片；全局两槽姓名/计数一致",
+      "evidenceRequired": "两种配队前后图 + 短片",
+      "status": "not_run",
+      "actual": "S05/S06两种配队最终原生图无残片；十关中实际翻页换人已录。尚未做两配队反复返回重入的独立连续核验。",
+      "evidencePaths": [
+        "comparison/"
+      ]
+    },
+    {
+      "id": "SRC-04",
+      "group": "素材链",
+      "priority": "P0",
+      "scenario": "S02/S03/S04敌将所有可达姿态",
+      "expected": "原生下全身/兵器完整，正常将台遮挡不吞主体",
+      "evidenceRequired": "逐帧状态矩阵",
+      "status": "not_run",
+      "actual": "S02/S03/S04已补原生idle/warn/strike/rec/spent/yield静态状态图；受击及连续切换全矩阵尚未逐帧验收。",
+      "evidencePaths": [
+        "comparison/"
+      ]
+    },
+    {
+      "id": "SRC-05",
+      "group": "素材链",
+      "priority": "P0",
+      "scenario": "同一atlas跨贴图/节点类型复用、冷启动与重进",
+      "expected": "无旧UV/alpha/Mask/offset残留",
+      "evidenceRequired": "诊断数值和原生连续片",
+      "status": "not_run",
+      "actual": "类型独立池、frame/texture/UV更新与原生冷启动已验证无报告错误；跨全部图集的alpha/offset残留专项未齐。",
+      "evidencePaths": [
+        "native-calibrated-natural/"
+      ]
+    },
+    {
+      "id": "SRC-06",
+      "group": "素材链",
+      "priority": "P0",
+      "scenario": "步行/骑乘及全部武器跑攻伤转换",
+      "expected": "脚锚/握柄稳定、朝向与身份一致",
+      "evidenceRequired": "接触表 + 原速片",
+      "status": "not_run",
+      "actual": "补双持分层、骑乘手指遮挡、有效四帧步态与兵器rig；全部武器×骑乘×跑攻伤连续转换仍待专项。",
+      "evidencePaths": [
+        "character-state-matrix.json"
+      ]
+    },
+    {
+      "id": "ACT-01",
+      "group": "动作",
+      "priority": "P1",
+      "scenario": "六兵器有效跑步，补拒绝稿缺口",
+      "expected": "连续同向有效步态或合格rig，不靠整图上下起伏",
+      "evidenceRequired": "素材清单+循环片",
+      "status": "not_run",
+      "actual": "六派生兵器拒绝稿已替换为四有效步态+独立兵器rig；源稿和切片已交付。全部连续循环的脚锚/握柄核对未齐，不凭帧数判完成。",
+      "evidencePaths": [
+        "character-state-matrix.json"
+      ]
+    },
+    {
+      "id": "ACT-02",
+      "group": "动作",
+      "priority": "P1",
+      "scenario": "主角四家族及派生兵器攻击",
+      "expected": "有有效过渡姿态，武器出口与实际出弹对应",
+      "evidenceRequired": "动作/发射事件对照",
+      "status": "not_run",
+      "actual": "十兵器20个中间帧接入蓄势/收势；自然十关覆盖主要已解锁兵器。全部兵器发射出口与动作逐帧对照未完成。",
+      "evidencePaths": [
+        "character-state-matrix.json"
+      ]
+    },
+    {
+      "id": "ACT-03",
+      "group": "动作",
+      "priority": "P1",
+      "scenario": "九统帅与各类结束关系",
+      "expected": "力竭到胜/降/访/盟合理，不统一强制投降",
+      "evidenceRequired": "终态矩阵",
+      "status": "not_run",
+      "actual": "九统帅新增结束帧与胜/降/访/盟文本已接入；十关yield/结果实录俱全。尚未对每个结束帧的交械姿态逐项视觉确认。",
+      "evidencePaths": [
+        "native-calibrated-natural/"
+      ]
+    },
+    {
+      "id": "ACT-04",
+      "group": "动作",
+      "priority": "P1",
+      "scenario": "实际轻击、重击、空挥、免伤、击败",
+      "expected": "反馈按实际事件，血条/飘字/受击一致",
+      "evidenceRequired": "原生伤害账本+片段",
+      "status": "not_run",
+      "actual": "实际扣血账本、零伤害不闪、同源250ms飘字聚合已通过回归并录原生短片；轻击/重击/免伤全部指定状态尚缺一一对照。",
+      "evidencePaths": [
+        "native-github-audit-fixture-original-speed.mp4"
+      ]
+    },
+    {
+      "id": "ACT-05",
+      "group": "动作",
+      "priority": "P0",
+      "scenario": "偃月刀连续空挥与实际重击",
+      "expected": "空挥无全局hitStop；重击仅局部限频",
+      "evidenceRequired": "帧时间+hitStop诊断",
+      "status": "pass",
+      "actual": "无条件全局hitStop已删除；空挥世界时钟继续的模型回归通过，原生十关intentionalHitStop均0。真实重击只停主将局部姿态40ms且间隔至少600ms。",
+      "evidencePaths": [
+        "native-calibrated-natural/results.json"
+      ]
+    },
+    {
+      "id": "ACT-06",
+      "group": "动作",
+      "priority": "P1",
+      "scenario": "名将/支援专属效果与共鸣开关",
+      "expected": "保留最新关系，角色作用有辨识，不幽灵加成",
+      "evidenceRequired": "逐角色效果清单+专项片",
+      "status": "not_run",
+      "actual": "随军/支援按兵器家族显示波形与专属用途，四角色来源模型通过；最终支援头像、姓名、冷却已接入。全部合法配队/共鸣开关专项仍待。",
+      "evidencePaths": [
+        "full-tests.log"
+      ]
+    },
+    {
+      "id": "GROW-01",
+      "group": "成长",
+      "priority": "P1",
+      "scenario": "开匣换型、同型升阶、满阶溢出",
+      "expected": "实际攻击/阶位变化，溢出可读且一次结算",
+      "evidenceRequired": "账本与HUD对照",
+      "status": "not_run",
+      "actual": "实际十关录到兵器换型、阶位增长与HUD变化，模型含溢出和单次结算；满阶溢出的原生定向片尚未单独补齐。",
+      "evidencePaths": [
+        "native-calibrated-natural/"
+      ]
+    },
+    {
+      "id": "GROW-02",
+      "group": "成长",
+      "priority": "P1",
+      "scenario": "军械换装与密集齐射",
+      "expected": "主将身份不变，箭雨不盖目标，真实命中保留",
+      "evidenceRequired": "原生密集片",
+      "status": "pass",
+      "actual": "原生十关军械换装与密集齐射可见；箭从真实队伍位置出发，减小箭头不改命中规则，主将身份保持；账本可追踪。",
+      "evidencePaths": [
+        "native-calibrated-ten-review.mp4"
+      ]
+    },
+    {
+      "id": "GROW-03",
+      "group": "成长",
+      "priority": "P1",
+      "scenario": "宝物试用/已佩戴/重复、共鸣触发",
+      "expected": "沿用现行规则，效果/冷却/次数与状态一致",
+      "evidenceRequired": "定向测试+实录",
+      "status": "not_run",
+      "actual": "三槽、试用/重复、共鸣/次数现行规则回归通过；原生自然过程覆盖部分，全部组合原生定向验证未齐。",
+      "evidencePaths": [
+        "full-tests.log"
+      ]
+    },
+    {
+      "id": "PACE-01",
+      "group": "节奏",
+      "priority": "P1",
+      "scenario": "十关普通首通合法配装",
+      "expected": "每关前台有效90—120秒，未用高等级/作弊夹具",
+      "evidenceRequired": "逐关测量+完整原速流程",
+      "status": "fail",
+      "actual": "第二轮真实首通前9关在90–120秒，第10关120.98秒。末次仅调低第7/10关Boss血量后模型全部达标，但最终两关原生重测被锁屏阻塞。保留最后实测失败，不用模型覆盖。",
+      "evidencePaths": [
+        "TIMINGS.md"
+      ]
+    },
+    {
+      "id": "PACE-02",
+      "group": "节奏",
+      "priority": "P1",
+      "scenario": "首、中、末成长与奖励窗口",
+      "expected": "看见、决定、瞄准、击破可完成；末次升级后可玩≥15秒",
+      "evidenceRequired": "带事件时间戳的窗口记录",
+      "status": "not_run",
+      "actual": "重排十关行军、名将、关底预算与4.5秒有效门窗口，事件时间戳保留；全部奖励的决定/瞄准时间及末次升级后≥15秒未逐关专项确认。",
+      "evidencePaths": [
+        "model-pacing.json"
+      ]
+    },
+    {
+      "id": "PACE-03",
+      "group": "节奏",
+      "priority": "P0",
+      "scenario": "步行/赤兔/的卢同进度固定横坐标A/B",
+      "expected": "同一阶段纵向速度与道路时钟一致，横移加成独立",
+      "evidenceRequired": "distance/time trace",
+      "status": "not_run",
+      "actual": "赤兔只影响横移的确定性模型检查通过；步行/赤兔/的卢完整固定横坐标原生A/B trace未执行。",
+      "evidencePaths": [
+        "full-tests.log"
+      ]
+    },
+    {
+      "id": "PACE-04",
+      "group": "节奏",
+      "priority": "P1",
+      "scenario": "Boss三个典型招式及全部首通关底",
+      "expected": "预警可读、安全区可达，普通配装约28—40秒有来回",
+      "evidenceRequired": "boss timeline+原速片",
+      "status": "fail",
+      "actual": "第二轮原生第7/10关关底44.25/45.60秒超过28–40秒；最终HP修正模型28.25/28.52秒，原生复测未执行。其余八关在目标区间。",
+      "evidencePaths": [
+        "TIMINGS.md"
+      ]
+    },
+    {
+      "id": "PACE-05",
+      "group": "节奏",
+      "priority": "P1",
+      "scenario": "高配回刷、低兵力失败",
+      "expected": "允许更快胜利/失败，无90秒锁胜或120秒强判",
+      "evidenceRequired": "两种合法配装结果",
+      "status": "not_run",
+      "actual": "无90秒锁胜/120秒强判，模型失败/复玩回归保留；高配快通与低兵力失败两种原生专项未执行。",
+      "evidencePaths": [
+        "full-tests.log"
+      ]
+    },
+    {
+      "id": "PACE-06",
+      "group": "节奏",
+      "priority": "P0",
+      "scenario": "名将接战暂停前进与可改值门共存边界",
+      "expected": "不存在无限射击增援窗口，不暗删合法奖励",
+      "evidenceRequired": "model trace+场景证据",
+      "status": "pass",
+      "actual": "名将接战暂停前进时门不再无限改值，时间/射击窗口模型边界回归通过；原生十关保留合法门和名将接战。",
+      "evidencePaths": [
+        "full-tests.log"
+      ]
+    },
+    {
+      "id": "PERF-01",
+      "group": "性能",
+      "priority": "P0",
+      "scenario": "实际iPhone标准画质前台战斗",
+      "expected": "目标60fps，均值≥58/P95≤20ms/P99≤33.4ms，无未解释>100ms",
+      "evidenceRequired": "Release profile机型/系统/全程统计",
+      "status": "blocked",
+      "actual": "Release已签名，但iPhone返回免费开发应用3个名额已满。Debug模拟器34–49fps且有长帧，不能代替真机60fps达标。",
+      "evidencePaths": [
+        "device-install-result.txt"
+      ]
+    },
+    {
+      "id": "PERF-02",
+      "group": "性能",
+      "priority": "P1",
+      "scenario": "完整十关+接续重玩至少20分钟",
+      "expected": "不持续节点/内存上涨；报告热状态与首尾差异",
+      "evidenceRequired": "soak log",
+      "status": "blocked",
+      "actual": "完整原生模拟器十关已录；真实iPhone未安装，20分钟热态、内存首尾、充电/温升实测缺失。",
+      "evidencePaths": [
+        "device-install-result.txt"
+      ]
+    },
+    {
+      "id": "PERF-03",
+      "group": "性能",
+      "priority": "P1",
+      "scenario": "30/60/120Hz输入回放",
+      "expected": "行进、时序和结算一致；插值不更改事实",
+      "evidenceRequired": "determinism trace",
+      "status": "pass",
+      "actual": "30/60/120Hz输入回放模型通过，距离/时序/结算一致；这是确定性回放，不是三种刷新率真机录制。",
+      "evidencePaths": [
+        "full-tests.log"
+      ]
+    },
+    {
+      "id": "PERF-04",
+      "group": "性能",
+      "priority": "P1",
+      "scenario": "首次取武器、骑乘、Boss、翻页与转场",
+      "expected": "无操作中解码/节点重建尖峰；初始化单列",
+      "evidenceRequired": "spike trace+原因",
+      "status": "not_run",
+      "actual": "节点池消除按类型销毁重建；原生逐关记录节点数与长帧。Debug仍有未细分CPU/GPU来源的>100ms帧，首次武器/转场尖峰未全归因。",
+      "evidencePaths": [
+        "native-calibrated-natural/results.json"
+      ]
+    },
+    {
+      "id": "END-01",
+      "group": "结算",
+      "priority": "P0",
+      "scenario": "第7关正常胜利并下一关",
+      "expected": "终态、保存、UI和按钮依次完成，不能无限停住",
+      "evidenceRequired": "状态日志+专项片",
+      "status": "pass",
+      "actual": "两次自然原生第7关均正常结算，第二轮约1.6秒进入结果，实际进入第8关并继续通关。最终HP修正未改结算逻辑，但其时长复测单列待验。",
+      "evidencePaths": [
+        "native-final-natural/c07-to-c08-prepare.png"
+      ]
+    },
+    {
+      "id": "END-02",
+      "group": "结算",
+      "priority": "P0",
+      "scenario": "保存失败/回调缺失/快速点击/后台中断",
+      "expected": "有限等待、可重试简化结算、无重复发奖",
+      "evidenceRequired": "fault fixture+store test",
+      "status": "not_run",
+      "actual": "存档暂存/原字节备份/校验/失败重试/幂等模型通过；原生后台快速点击与故障注入组合未齐。",
+      "evidencePaths": [
+        "full-tests.log"
+      ]
+    },
+    {
+      "id": "END-03",
+      "group": "结算",
+      "priority": "P0",
+      "scenario": "旧风险调查结果",
+      "expected": "区分根因已复现/未定位+防护，无把复录通过当根因已解",
+      "evidenceRequired": "root cause note",
+      "status": "pass",
+      "actual": "没有重新复现旧版本第7关唯一根因。已加终态继续演出、1.6秒有限等待、保存重试；新版本复录通过只是防护有效证据。",
+      "evidencePaths": [
+        "implementation-notes.md"
+      ]
+    },
+    {
+      "id": "UI-01",
+      "group": "页面",
+      "priority": "P1",
+      "scenario": "地图S07与所有区域解锁",
+      "expected": "地图底/柔边雾清楚，当前点/路径/奖励可读且可点",
+      "evidenceRequired": "地图前后+解锁片",
+      "status": "not_run",
+      "actual": "S07实际地形地图、城池/路线/区域雾；自然十关逐步解锁并继续出征。全城回点/奖励详情专项未齐。",
+      "evidencePaths": [
+        "comparison/S07-after.png"
+      ]
+    },
+    {
+      "id": "UI-02",
+      "group": "页面",
+      "priority": "P1",
+      "scenario": "图鉴/整备长短屏与稀疏末页",
+      "expected": "内容和分页合理、人物完整、页签说明正确",
+      "evidenceRequired": "多尺寸前后图",
+      "status": "not_run",
+      "actual": "原生402宽末页/整备与30人详情已取图；360/375/390/430宽及短屏专项缺失。",
+      "evidencePaths": [
+        "comparison/"
+      ]
+    },
+    {
+      "id": "UI-03",
+      "group": "页面",
+      "priority": "P1",
+      "scenario": "战斗武器名、共鸣、Boss与支援图标",
+      "expected": "高对比且不重叠，危险优先，未领门值持续可读",
+      "evidenceRequired": "密集态截图",
+      "status": "not_run",
+      "actual": "武器名、共鸣、敌将牌分层；支援头像/姓名/数字冷却替换泛用援字。最终密集夹具已截图，连续门/升级/预警全部重叠组合未齐。",
+      "evidencePaths": [
+        "comparison/S04-after.png"
+      ]
+    },
+    {
+      "id": "UI-04",
+      "group": "页面",
+      "priority": "P0",
+      "scenario": "360/375/390/430宽连续门",
+      "expected": "每个有效小门数值独立可读，不隐藏/合并奖励",
+      "evidenceRequired": "布局夹具+相关测试",
+      "status": "not_run",
+      "actual": "保留每个小门独立数值和奖励，没有隐藏合并；四指定宽度原生连续门矩阵未执行。",
+      "evidencePaths": [
+        "implementation-notes.md"
+      ]
+    },
+    {
+      "id": "IOS-01",
+      "group": "原生",
+      "priority": "P0",
+      "scenario": "Creator到Xcode原生构建进入战斗",
+      "expected": "非WKWebView/Canvas；记录scheme/工具链与版本",
+      "evidenceRequired": "原生构建日志+运行截图",
+      "status": "pass",
+      "actual": "Cocos3.8.8→Xcode27原生Sprite/Graphics/Label，实际模拟器完整十关；scheme CocosGame，非WebView。",
+      "evidencePaths": [
+        "ios-simulator-build.log"
+      ]
+    },
+    {
+      "id": "IOS-02",
+      "group": "原生",
+      "priority": "P0",
+      "scenario": "原生入口在无wx/DOM/window时",
+      "expected": "无未守护浏览器API调用，加载与渲染正确",
+      "evidenceRequired": "启动日志",
+      "status": "pass",
+      "actual": "无wx/DOM Canvas/window的原生JS入口已启动、加载、战斗和十关结算。",
+      "evidencePaths": [
+        "native-calibrated-natural/results.json"
+      ]
+    },
+    {
+      "id": "IOS-03",
+      "group": "原生",
+      "priority": "P0",
+      "scenario": "实际iPhone安装与覆盖安装",
+      "expected": "签名合法，Bundle ID稳定，收藏与设置保留",
+      "evidenceRequired": "安装记录+前后存档",
+      "status": "blocked",
+      "actual": "开发签名Release构建/严格codesign通过；iPhone安装被免费开发名额限制拒绝，未卸载现有应用，覆盖安装保档未验。",
+      "evidencePaths": [
+        "device-install-result.txt"
+      ]
+    },
+    {
+      "id": "IOS-04",
+      "group": "原生",
+      "priority": "P1",
+      "scenario": "实际安全区与屏幕坐标映射",
+      "expected": "无假微信胶囊，按钮/数字避开系统区；横移映射一致",
+      "evidenceRequired": "机型safeInsets+全页面截图",
+      "status": "not_run",
+      "actual": "原生模拟器402×874、安全区顶62底34及真实触控映射已运行；实际iPhone各页面安全区待验。",
+      "evidencePaths": [
+        "native-calibrated-natural/c01-result.json"
+      ]
+    },
+    {
+      "id": "IOS-05",
+      "group": "原生",
+      "priority": "P0",
+      "scenario": "失活/控制中心/锁屏/音频中断/前台恢复",
+      "expected": "暂停清触摸，手动继续，无补跑/多扣兵",
+      "evidenceRequired": "设备生命周期片",
+      "status": "not_run",
+      "actual": "模拟器实际暂停后Home切后台并重开，战斗时间保持9.55秒，手动继续后推进；控制中心、设备锁屏和音频打断组合仍未验。",
+      "evidencePaths": [
+        "native-pause-after-background.json"
+      ]
+    },
+    {
+      "id": "IOS-06",
+      "group": "原生",
+      "priority": "P1",
+      "scenario": "声音/震动开关与限频",
+      "expected": "听得见命中差异，关闭有效，BGM保持关闭",
+      "evidenceRequired": "可听设备实录+设置证据",
+      "status": "blocked",
+      "actual": "实际UI关闭/开启音效与震动设置有截图；代码事件限频、BGM关闭。真机未安装，听觉差异与触感无法验证，录像无音轨。",
+      "evidencePaths": [
+        "native-settings-both-off.png"
+      ]
+    },
+    {
+      "id": "IOS-07",
+      "group": "原生",
+      "priority": "P0",
+      "scenario": "源端存档与新iOS沙盒",
+      "expected": "原档保留，不伪称自动互通；有合法导出才校验导入",
+      "evidenceRequired": "migration note+backup",
+      "status": "pass",
+      "actual": "不清源端存档；独立测试模拟器有完整十关档和SQLite备份，夹具只用内存。iOS新沙盒不冒称与Web/微信自动互通。",
+      "evidencePaths": [
+        "implementation-notes.md"
+      ]
+    },
+    {
+      "id": "REG-01",
+      "group": "已修逻辑",
+      "priority": "P0",
+      "scenario": "途中名将接触/错过/收服",
+      "expected": "不接触即死，收服核对真实战胜，例外明确",
+      "evidenceRequired": "原F1/F2回归",
+      "status": "pass",
+      "actual": "原F1/F2模型回归通过，名将接触/错过/独立战胜与收服规则保持；正式原生十关实际运行。",
+      "evidencePaths": [
+        "full-tests.log"
+      ]
+    },
+    {
+      "id": "REG-02",
+      "group": "已修逻辑",
+      "priority": "P0",
+      "scenario": "2兵−12+七星灯+华佗",
+      "expected": "实损2、灯5、华佗1，最终6；按当前规则回归",
+      "evidenceRequired": "原F3回归",
+      "status": "pass",
+      "actual": "原F3实际战损2、七星灯5、华佗1、最终6兵回归通过，没有恢复按名义伤害治疗。",
+      "evidencePaths": [
+        "full-tests.log"
+      ]
+    },
+    {
+      "id": "REG-03",
+      "group": "已修逻辑",
+      "priority": "P0",
+      "scenario": "穿透1耗尽与Boss及越过Boss",
+      "expected": "统一交点排序和预算，无额外伤害",
+      "evidenceRequired": "原F4回归",
+      "status": "pass",
+      "actual": "原F4统一交点排序、穿透预算耗尽和越过Boss不额外扣血回归通过。",
+      "evidencePaths": [
+        "full-tests.log"
+      ]
+    },
+    {
+      "id": "REG-04",
+      "group": "已修逻辑",
+      "priority": "P0",
+      "scenario": "首通/复玩/新旧成绩/未知字段/保存重试",
+      "expected": "一次发奖、旧收藏完整、rulesVersion区分、不重复治疗",
+      "evidenceRequired": "store tests",
+      "status": "pass",
+      "actual": "一次发奖、原字节备份、未知字段保留、暂存校验重试、rulesVersion成绩隔离均回归通过。",
+      "evidencePaths": [
+        "full-tests.log"
+      ]
+    },
+    {
+      "id": "DEL-01",
+      "group": "交付",
+      "priority": "P1",
+      "scenario": "最终媒体/源码/纹理/产物版本",
+      "expected": "同一SHA或明确dirty指纹；差异补录，不混旧片",
+      "evidenceRequired": "BUILD_ID+manifest",
+      "status": "pass",
+      "actual": "最终源码dirty指纹、最终构建哈希、最终七组/详情及短片随包。完整十关录像明确属于末次HP/详情/HUD与门/入库修复前版本；参数差异与当时代码保留，不混称最终完整十关。",
+      "evidencePaths": [
+        "media-provenance.json"
+      ]
+    },
+    {
+      "id": "DEL-02",
+      "group": "交付",
+      "priority": "P1",
+      "scenario": "所有旧欠项与本单状态",
+      "expected": "逐项真实pass/fail/blocked/not_run，关键未完成不报完成",
+      "evidenceRequired": "acceptance result",
+      "status": "pass",
+      "actual": "46项原始要求保留，逐项写真实状态与具体缺口；未全绿，不将未完成动作/设备项归为审美待验。",
+      "evidencePaths": [
+        "ACCEPTANCE.md"
+      ]
+    },
+    {
+      "id": "DEL-03",
+      "group": "交付",
+      "priority": "P1",
+      "scenario": "分发与权限",
+      "expected": "本地测试；未授权不上传TestFlight/商店/微信，不合并main",
+      "evidenceRequired": "delivery note",
+      "status": "pass",
+      "actual": "GitHub源码审查与授权合并单列；未上传TestFlight/商店/微信。",
+      "evidencePaths": [
+        "implementation-notes.md"
+      ]
+    }
+  ],
+  "evidenceBoundary": "模型、静态/动态夹具、原生模拟器自然操作、iPhone未安装分开记录。最后实测失败保留，最终模型不能覆盖。",
+  "summary": {
+    "not_run": 23,
+    "pass": 17,
+    "fail": 2,
+    "blocked": 4
+  }
+}

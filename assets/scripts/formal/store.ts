@@ -1,8 +1,9 @@
 import {Storage} from '../core/save';
 import {CHAPTERS,PEOPLE,TREASURES,WEAPON_DATA,WeaponId,Slot,TUNING,requiredOfficers} from './data';
+export const RULES_VERSION='ios-playable-20260928';
 export const FORMAL_KEY='yilu-changge-formal-v2';
 export interface FormalSave {schemaVersion:2;cleared:string[];best:Record<string,number>;claimed:string[];weapons:string[];weaponLevels:Record<string,number>;captures:string[];visits:string[];allies:string[];treasures:string[];companions:string[];support:string|null;slots:Record<Slot,string|null>;xp:number;seen:string[];[key:string]:unknown}
-const fresh=():FormalSave=>({schemaVersion:2,cleared:[],best:{},claimed:[],weapons:['spear'],weaponLevels:{spear:1},captures:[],visits:[],allies:[],treasures:[],companions:[],support:null,slots:{dian:null,qi:null,ma:null},xp:0,seen:[]});
+const fresh=():FormalSave=>({schemaVersion:2,rulesVersion:RULES_VERSION,ruleBests:{},cleared:[],best:{},claimed:[],weapons:['spear'],weaponLevels:{spear:1},captures:[],visits:[],allies:[],treasures:[],companions:[],support:null,slots:{dian:null,qi:null,ma:null},xp:0,seen:[]});
 const uniq=(v:unknown):string[]=>Array.isArray(v)?Array.from(new Set(v.filter((x):x is string=>typeof x==='string'))):[];
 export class FormalStore {
  data:FormalSave=fresh();notice='';private blocked=false;
@@ -18,7 +19,17 @@ export class FormalStore {
  get companionLimit(){return this.completed>=3?2:1;}
  slotOpen(slot:Slot){return this.completed>=({dian:1,qi:2,ma:3}[slot]);}
  loadout(){const d=this.data;return {tactic:d.mainTactic==='zhenjun'?'zhenjun':'guanzhen',companions:d.companions.filter(x=>d.captures.includes(x)&&PEOPLE[x]).slice(0,this.companionLimit),support:this.completed>=2&&d.visits.includes(d.support||'')?d.support:null,allies:d.allies.filter(x=>PEOPLE[x]),treasures:Object.fromEntries((['dian','qi','ma'] as Slot[]).map(k=>[k,this.slotOpen(k)&&d.treasures.includes(d.slots[k]||'')&&TREASURES[d.slots[k]!]?.slot===k?d.slots[k]:null])),weapons:d.weapons.filter(x=>WEAPON_DATA[x as WeaponId]),treasurePool:d.treasures.filter(x=>TREASURES[x]),weaponLevels:{...d.weaponLevels}};}
- save(){if(this.blocked)return false;try{this.storage.setItem(FORMAL_KEY,JSON.stringify(this.data));this.notice='';return true;}catch{this.notice='保存失败，成长仍保留在本次会话；请重试保存。';return false;}}
+ save(){if(this.blocked)return false;try{
+  // Retain the exact prior committed record before staging a new one.
+  const old=this.storage.getItem(FORMAL_KEY),raw=JSON.stringify({...this.data,rulesVersion:RULES_VERSION});
+  if(old!==null)this.storage.setItem(FORMAL_KEY+'-previous',old);
+  this.storage.setItem(FORMAL_KEY+'-pending',raw);
+  if(this.storage.getItem(FORMAL_KEY+'-pending')!==raw)throw Error('staging readback failed');
+  this.storage.setItem(FORMAL_KEY,raw);
+  if(this.storage.getItem(FORMAL_KEY)!==raw)throw Error('committed readback failed');
+  this.data.rulesVersion=RULES_VERSION;this.notice='';return true;
+ }catch{this.notice='保存失败，成长仍保留在本次会话；请重试保存。';return false;}}
+
  retry(){if(this.blocked){const next=new FormalStore(this.storage);if(next.blocked){this.notice=next.notice;return false;}this.data=next.data;this.blocked=false;}return this.save();}
  equipTactic(){this.data.mainTactic=this.data.mainTactic==='zhenjun'?'guanzhen':'zhenjun';return this.save();}
  equipCompanion(id:string){if(!this.data.captures.includes(id))return false;const a=this.data.companions;if(a.includes(id))this.data.companions=a.filter(x=>x!==id);else this.data.companions=[...a.slice(-(this.companionLimit-1)||a.length),id].slice(-this.companionLimit);return this.save();}
@@ -29,11 +40,15 @@ export class FormalStore {
   if(this.blocked||this.data.claimed.includes('run:'+run.id))return false;
   const c=CHAPTERS[run.chapter];if(!c||!this.unlocked(run.chapter)||!Number.isFinite(run.troops)||run.troops<0||(run.won&&run.troops<1))return false;
   if(run.won&&(run.defeatedBossId!==c.boss||!requiredOfficers(run.chapter).every(id=>run.defeatedOfficerIds?.includes(id))))return false;
+  const ruleBests=(this.data.ruleBests||{}) as Record<string,Record<string,number>>;
+  this.data.ruleBests=ruleBests;
+  if(run.won){ruleBests[RULES_VERSION]??={};ruleBests[RULES_VERSION][c.id]=Math.max(ruleBests[RULES_VERSION][c.id]||0,Math.floor(run.troops));}
   this.data.claimed.push('run:'+run.id);if(!run.won)return this.save();
   const first=!this.data.cleared.includes(c.id);
   this.data.best[c.id]=Math.max(this.data.best[c.id]||0,Math.floor(run.troops));this.data.xp+=first?TUNING.clearXP:TUNING.replayXP;
   if(first){this.data.cleared.push(c.id);this.data.captures=uniq([...this.data.captures,...c.capture]);this.data.visits=uniq([...this.data.visits,...c.visit]);this.data.allies=uniq([...this.data.allies,...c.allies]);this.data.seen=uniq([...this.data.seen,c.boss,...c.enemy,...c.capture,...c.visit,...c.allies]);if(c.weapon){this.data.weapons=uniq([...this.data.weapons,c.weapon]);this.data.weaponLevels[c.weapon]??=1;}if(c.treasure)this.data.treasures=uniq([...this.data.treasures,c.treasure]);}
-  this.data.treasures=uniq([...this.data.treasures,...run.treasures.filter(x=>TREASURES[x]&&this.data.treasures.includes(x))]);
+  // Both trial and occupied-slot finds enter the collection only after a win.
+  this.data.treasures=uniq([...this.data.treasures,...run.treasures.filter(x=>TREASURES[x])]);
   return this.save();
  }
 }

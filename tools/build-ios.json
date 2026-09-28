@@ -1,0 +1,38 @@
+{
+  "name": "一路长歌",
+  "platform": "ios",
+  "buildPath": "project://build",
+  "outputName": "ios-simulator",
+  "debug": true,
+  "startScene": "752d3aa0-8b82-4e8e-a6d4-c6587c90bcf2",
+  "scenes": [
+    {
+      "url": "db://assets/scenes/Journey.scene",
+      "uuid": "752d3aa0-8b82-4e8e-a6d4-c6587c90bcf2"
+    }
+  ],
+  "packages": {
+    "ios": {
+      "packageName": "com.yvainair.yiluchangge",
+      "orientation": {
+        "portrait": true,
+        "landscapeLeft": false,
+        "landscapeRight": false
+      },
+      "renderBackEnd": {
+        "metal": true
+      },
+      "targetVersion": "16.0",
+      "skipUpdateXcodeProject": false
+    },
+    "native": {
+      "polyfills": {
+        "asyncFunctions": true
+      },
+      "encrypted": false,
+      "compressZip": false,
+      "makeAfterBuild": false
+    }
+  },
+  "sourceMaps": false
+}

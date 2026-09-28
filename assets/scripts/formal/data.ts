@@ -45,7 +45,10 @@ export const BOSS_PATTERNS:Record<string,{name:string;warn:number;speed:number;d
  lubu:{name:'画戟追斩',warn:1.2,speed:40,damage:10,style:'double'},
  zhou:{name:'风火换阵',warn:1.6,speed:22,damage:6,style:'fire'}
 };
-export const TUNING={version:'formal-pr2-fix-20260927.2',startTroops:30,tier:[1,1.35,1.75],overflow:4,weaponMaxLevel:5,weaponLevelDamage:.12,upgradeCost:(level:number)=>level*60,clearXP:30,replayXP:10,gateHitStep:1,gateHitWindow:30,gateSafetyLimit:9999};
+// Explicit project balancing values; not claimed as original-game formulas.
+export const PACING={marchSeconds:[65,66,64,54,52,56,56,54,54,50],bossHP:[270,200,240,220,185,250,225,235,240,190],officerHP:[0,0,0,165,95,170,180,190,195,115]};
+export const marchSpeed=(chapter:number)=>(CHAPTERS[chapter].length+5)/PACING.marchSeconds[chapter];
+export const TUNING={version:'ios-playable-20260928',startTroops:30,tier:[1,1.35,1.75],overflow:4,weaponMaxLevel:5,weaponLevelDamage:.12,upgradeCost:(level:number)=>level*60,clearXP:30,replayXP:10,gateHitStep:1,gateHitWindow:30,gateSafetyLimit:9999};
 export type RouteEvent={d:number;type:string;x?:number;kind?:string;gives?:string;vals?:number[];n?:number;len?:number;side?:number;person?:string;fixed?:boolean};
 /** Finite authored route, seeded per chapter; all crate contents must come from unlocked pools. */
 export function routeFor(chapter:number,weapons:string[],treasures:string[]):RouteEvent[]{
@@ -56,20 +59,21 @@ export function routeFor(chapter:number,weapons:string[],treasures:string[]):Rou
   '吴':{name:'水寨连桥',walls:[[60,12,-1],[101,10,1],[151,12,-1]],gates:[[45,-8,12],[125,10,-12]],arms:[80,168],weapons:[28,92,139],grain:[[30,.5],[144,-.5]],squads:[[15,.5],[76,-.5],[116,.5]],chain:177},
   '蜀':{name:'山道回折',walls:[[49,25,1],[128,24,-1]],gates:[[94,14,-12],[169,-10,12]],arms:[82,178],weapons:[28,112,159],grain:[[32,-.5],[119,.5]],squads:[[15,-.5],[77,.5],[155,-.5]],chain:184}
  };
- const q=layouts[l.faction],route:RouteEvent[]=[];
- q.squads.forEach(([d,x])=>route.push({d,type:'squad',x,n:5+chapter}));
- q.grain.forEach(([d,x])=>route.push({d,type:'crate',x,kind:'grain'}));
- q.weapons.forEach((d,i)=>route.push({d,type:'crate',x:i?0:.45,kind:'weapon',gives:i?w:'spear'}));
- q.arms.forEach(d=>route.push({d,type:'crate',x:0,kind:'arms'}));
- q.walls.forEach(([d,len,side])=>route.push({d,type:'wall',len,side}));
- q.gates.forEach(([d,a,b])=>route.push({d,type:'gates',vals:[a,b]}));
- for(let i=0;i<3;i++)route.push({d:q.chain+i*5,type:'gates',vals:[1,-5],fixed:true});
- if(treasures.length)route.push({d:122,type:'crate',x:-.5,kind:'treasure',gives:treasures[(chapter+treasures.length-1)%treasures.length]});
- if(chapter===1)route.push({d:162,type:'cameo',x:1.1,person:'lubu'});
- if(chapter===8)['xing','chen','yang'].forEach((person,i)=>route.push({d:213+i*17,type:'cameo',x:i%2?-1.15:1.15,person}));
- if(chapter>1)route.push({d:207,type:'crate',x:0,kind:'weapon',gives:w});
- requiredOfficers(chapter).forEach((person,i)=>route.push({d:Math.max(174,...q.walls.map(([d,len])=>d+len+28))+i*24,type:'officer',x:i%2?.48:-.48,person,n:1}));
- for(let d=217;d<l.length-8;d+=20)route.push({d,type:'squad',x:d%3?.4:-.4,n:5+chapter});
+ const q=layouts[l.faction],route:RouteEvent[]=[],speed=marchSpeed(chapter),duration=PACING.marchSeconds[chapter];
+ const at=(seconds:number)=>seconds*speed;
+ // World-distance positions are authored from marching time, not global timeScale.
+ for(let t=5;t<duration-3;t+=4.8)route.push({d:at(t),type:'squad',x:(Math.floor(t)%3-1)*.45,n:5+chapter});
+ [13,34,chapter<3?55:46].forEach((t,i)=>route.push({d:at(t),type:'crate',x:i?0:.45,kind:'weapon',gives:i?w:'spear'}));
+ [22,chapter<3?60:duration-2].forEach(t=>route.push({d:at(t),type:'crate',x:0,kind:'arms'}));
+ [13,28].forEach((t,i)=>route.push({d:at(t),type:'crate',x:i?.5:-.5,kind:'grain'}));
+ q.walls.slice(0,2).forEach(([,len,side],i)=>route.push({d:at(i?32:19),type:'wall',len:at(i?3:4),side}));
+ q.gates.forEach(([,a,b],i)=>route.push({d:at(i?30:17),type:'gates',vals:[a,b]}));
+ for(let i=0;i<3;i++)route.push({d:at(duration-5+i*1.4),type:'gates',vals:[1,-5],fixed:true});
+ if(treasures.length)route.push({d:at(27),type:'crate',x:-.5,kind:'treasure',gives:treasures[(chapter+treasures.length-1)%treasures.length]});
+ if(chapter===1)route.push({d:at(45),type:'cameo',x:1.1,person:'lubu'});
+ if(chapter===8)['xing','chen','yang'].forEach((person,i)=>route.push({d:at(12+i*14),type:'cameo',x:i%2?-1.15:1.15,person}));
+ requiredOfficers(chapter).forEach((person,i)=>route.push({d:at(40+i*6),type:'officer',x:i%2?.48:-.48,person,n:1}));
+
  return route.sort((a,b)=>a.d-b.d);
 }
 
@@ -78,12 +82,25 @@ export const FACTIONS=[{name:'群雄',color:'#A8844A',start:0,end:3},{name:'魏'
 export const PERSON_PROFILES:Record<string,[string,string,string,string]>={
  jiao:['','天公将军','史载','太平道首领，发动黄巾起义。'],dong:['仲颖','西凉权臣','史载','入京掌权，后迁都长安。'],yuan:['本初','河北盟主','史载','据有河北，与曹操决战官渡。'],hua:['元化','神医','史载','以医术著称，后世尊为外科先驱。'],lubu:['奉先','飞将','演义','虎牢关前迎战诸侯，方天画戟名震天下。'],diao:['','闭月','演义','连环计中周旋于董卓与吕布之间。'],dian:['','古之恶来','史载','曹操帐前猛将，宛城力战护主。'],xu:['仲康','虎痴','史载','以勇力著称，任曹操宿卫。'],cao:['孟德','魏武','史载','官渡破袁绍，逐步统一北方。'],liao:['文远','合肥名将','史载','合肥迎击孙权，以少击众。'],xiahou:['元让','独眼将军','史载','随曹操征战，亦担负屯田与后方事务。'],guo:['奉孝','奇谋之士','史载','为曹操献策，参与平定北方的谋划。'],xun:['文若','王佐之才','史载','辅佐曹操，主持中枢事务。'],sunjian:['文台','江东猛虎','史载','讨董卓时进军洛阳。'],sunce:['伯符','小霸王','演义','以勇武创业，奠定江东基业。'],sunquan:['仲谋','江东之主','史载','继承江东基业，联合刘备抗曹。'],lumeng:['子明','白衣渡江','演义','以白衣渡江之计夺取荆州。'],zhou:['公瑾','江东都督','史载','与程普督军，在赤壁抗击曹操。'],luxun:['伯言','儒将','史载','夷陵统军，以火攻击败刘备。'],sunxiang:['','弓腰姬','演义题材','以尚武的孙夫人为原型；孙尚香为后世通行名。'],zhao:['子龙','常山赵子龙','演义','长坂单骑救主，护送幼主脱险。'],zhang:['翼德','万人敌','演义','当阳桥头喝退追兵。'],guan:['云长','美髯公','演义','过五关斩六将，千里寻兄。'],huang:['汉升','老将','史载','定军山战役中阵斩夏侯渊。'],liu:['玄德','昭烈','史载','辗转创业，后据益州建蜀汉。'],zhuge:['孔明','卧龙','演义','隆中论天下，借东风助赤壁火攻。'],sima:['仲达','鹰视之士','史载','与诸葛亮对垒，后掌握曹魏大权。'],machao:['孟起','锦马超','演义','潼关战曹操，勇武闻名。'],pang:['士元','凤雏','史载','辅佐刘备入蜀，攻雒城时战死。'],jiang:['伯约','麒麟儿','史载','继承北伐事业，多次出兵陇右。']
 };
+/** Existing companion attacks, presented by their actual weapon family. Explicit tuning, not historical formulas. */
+export const COMPANION_STYLE:Record<string,{family:string;label:string;color:string;wide:number;snake?:number}>={
+ xu:{family:'guandao',label:'重刀横扫',color:'#D9B997',wide:1.4},
+ liao:{family:'huaji',label:'月牙戟突进',color:'#A8C7DD',wide:1.2},
+ xiahou:{family:'guandao',label:'斩阵刀弧',color:'#BBD0DF',wide:1.25},
+ lumeng:{family:'spear',label:'白衣快刺',color:'#E7DDD0',wide:.7},
+ luxun:{family:'guandao',label:'风火扇弧',color:'#EFAB6D',wide:1.25},
+ sunxiang:{family:'spear',label:'弓腰劲矢',color:'#F3BB91',wide:.45},
+ guan:{family:'guandao',label:'青龙横斩',color:'#9FE0B8',wide:1.5},
+ huang:{family:'spear',label:'老将穿杨',color:'#F0D38A',wide:.45},
+ machao:{family:'spear',label:'银枪突刺',color:'#DDE6F0',wide:.7},
+ jiang:{family:'shemao',label:'回锋连刺',color:'#AFCDB9',wide:.8,snake:.5}
+};
 export function personRole(id:string){
  if(id==='hua')return '支援：实际减员后救回30%，冷却12秒';
  if(id==='lubu')return '随军：画戟双路穿刺，本主共鸣扩散';
  if(id==='dian')return '随军：双铁戟左右齐出，各穿透2人';
  if(id==='zhang')return '随军：蛇矛曲线连刺';if(id==='zhao')return '随军：长枪直刺';
- const c=CHAPTERS.find(c=>c.capture.includes(id));if(c)return '随军：持械出手，可与本主兵器共鸣';
+ if(COMPANION_STYLE[id])return '随军：'+COMPANION_STYLE[id].label+'，可与本主兵器共鸣';
  if(CHAPTERS.some(c=>c.allies.includes(id)))return '盟约：本主兵器伤害×1.5，无需上阵';
  if(CHAPTERS.some(c=>c.visit.includes(id)))return ['diao','xun','sunjian'].includes(id)?'支援：每12秒鼓舞援兵+2':'支援：每12秒自动策应';return '敌将：只交锋，不编入己方';
 }

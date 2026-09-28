@@ -1,0 +1,133 @@
+{
+  "taskId": "IOS-PLAYABLE-FIX-20260928",
+  "createdAt": "2026-09-28",
+  "kind": "development_handoff_not_implemented_game",
+  "referencePR": 2,
+  "referenceHead": "a7e34fddb2da0eae179368897bb44e230c10344a",
+  "acceptanceCount": 46,
+  "screenshots": [
+    {
+      "id": "S01",
+      "file": "evidence/IMG_4291.PNG",
+      "width": 941,
+      "height": 2048,
+      "sha256": "ace86d0b162e7d691083aad167348684ff88d3e25414a68c8a22749bb17727da",
+      "caption": "军中图鉴，第4/4页"
+    },
+    {
+      "id": "S02",
+      "file": "evidence/IMG_4289.PNG",
+      "width": 941,
+      "height": 2048,
+      "sha256": "ca69860d9c8de6110dd674fad7d3a62a5571f21590f9009f7641ecf6d8bee15a",
+      "caption": "诸葛亮交锋／双股剑／骑乘"
+    },
+    {
+      "id": "S03",
+      "file": "evidence/IMG_4288.PNG",
+      "width": 941,
+      "height": 2048,
+      "sha256": "d4897efa26b1ef1c9fc3fec1d3feb55124b2320de2d99e8a5cab39ab38f77d9f",
+      "caption": "张飞预警／青釭剑／骑乘"
+    },
+    {
+      "id": "S04",
+      "file": "evidence/IMG_4284.PNG",
+      "width": 941,
+      "height": 2048,
+      "sha256": "39e73142b1bc0196aa0576a493603a2e4168a2b10f912bf23ef281b39b1b7379",
+      "caption": "周瑜收势／蛇矛／骑乘"
+    },
+    {
+      "id": "S05",
+      "file": "evidence/IMG_4283.PNG",
+      "width": 941,
+      "height": 2048,
+      "sha256": "ba7db642bc65f69607a129c309bbfdd23cbc1ff698db26e7373003b085168f5e",
+      "caption": "赤壁整备／随军列表第2/2页"
+    },
+    {
+      "id": "S06",
+      "file": "evidence/IMG_4282.PNG",
+      "width": 941,
+      "height": 2048,
+      "sha256": "8b41647772f8ed25a3638156b829845cc36718d8c0df101ee2209e39e6de193c",
+      "caption": "赤壁整备／另一配队状态"
+    },
+    {
+      "id": "S07",
+      "file": "evidence/IMG_4281.PNG",
+      "width": 941,
+      "height": 2048,
+      "sha256": "bec795dee9516a6647197f1f196bfa90136b0692a1eb21e4481fb19a262ed588",
+      "caption": "天下地图／6/10已克"
+    }
+  ],
+  "files": [
+    {
+      "path": "00_START_HERE_CODEX.md",
+      "bytes": 1832,
+      "sha256": "1c0156cbf8bc4ca72d1af39d5eb606f8d2dba2d417b2746b756faad4c14b1f37"
+    },
+    {
+      "path": "01_IOS_FIX_SPEC.md",
+      "bytes": 32442,
+      "sha256": "6bd1ca2e085b8bfadb70e2398564c2ee32b3919d632c06c2d16f24e1b067e629"
+    },
+    {
+      "path": "02_PACING_TARGETS.json",
+      "bytes": 7050,
+      "sha256": "354108ba1fca60c9b3f09dfc969c53c9eda5391d31c212431bac13af0cce58be"
+    },
+    {
+      "path": "03_ACCEPTANCE.json",
+      "bytes": 16481,
+      "sha256": "20a612f0a2f3827c45553a9e11a70e9c7c65238e8a2d09b58e52f8e18502eb2d"
+    },
+    {
+      "path": "04_SOURCES_AND_SCREENSHOTS.md",
+      "bytes": 5687,
+      "sha256": "46a3e640f71d256075ebbeb201c50d92b938d5a901eb08a4e2efa8d7c2034637"
+    },
+    {
+      "path": "evidence/IMG_4281.PNG",
+      "bytes": 2404747,
+      "sha256": "bec795dee9516a6647197f1f196bfa90136b0692a1eb21e4481fb19a262ed588"
+    },
+    {
+      "path": "evidence/IMG_4282.PNG",
+      "bytes": 2596582,
+      "sha256": "8b41647772f8ed25a3638156b829845cc36718d8c0df101ee2209e39e6de193c"
+    },
+    {
+      "path": "evidence/IMG_4283.PNG",
+      "bytes": 2589063,
+      "sha256": "ba7db642bc65f69607a129c309bbfdd23cbc1ff698db26e7373003b085168f5e"
+    },
+    {
+      "path": "evidence/IMG_4284.PNG",
+      "bytes": 3284101,
+      "sha256": "39e73142b1bc0196aa0576a493603a2e4168a2b10f912bf23ef281b39b1b7379"
+    },
+    {
+      "path": "evidence/IMG_4288.PNG",
+      "bytes": 3211815,
+      "sha256": "d4897efa26b1ef1c9fc3fec1d3feb55124b2320de2d99e8a5cab39ab38f77d9f"
+    },
+    {
+      "path": "evidence/IMG_4289.PNG",
+      "bytes": 3263501,
+      "sha256": "ca69860d9c8de6110dd674fad7d3a62a5571f21590f9009f7641ecf6d8bee15a"
+    },
+    {
+      "path": "evidence/IMG_4291.PNG",
+      "bytes": 2572872,
+      "sha256": "ace86d0b162e7d691083aad167348684ff88d3e25414a68c8a22749bb17727da"
+    },
+    {
+      "path": "evidence/index.html",
+      "bytes": 3950,
+      "sha256": "7c2520bd33e731a11ba69e88e06572b6469404d264fc38d53a30b5d1858cd9ec"
+    }
+  ]
+}

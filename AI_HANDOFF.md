@@ -1,3 +1,11 @@
+## 当前接续更新 · IOS-PLAYABLE-FIX-20260928
+
+当前GitHub独立GPT核查入口：[docs/IOS-PLAYABLE-FIX-20260928/GITHUB_REVIEW.md](docs/IOS-PLAYABLE-FIX-20260928/GITHUB_REVIEW.md)。
+
+2026-09-28 Codex已在`codex/ios-playable-fix-20260928`实施原生iOS修复；当前真实状态以[本轮接续文档](docs/IOS-PLAYABLE-FIX-20260928/HANDOFF.md)及[交付入口](deliverables/IOS-PLAYABLE-FIX-20260928/README.md)为准。下文预览时代“未改Cocos/只第一关”等旧阶段状态不能当实时结论。打包时改动保留在独立分支，旧dirty成果保持；GitHub提交与合并状态以远端记录为准。iOS商店发布仍未执行。
+
+已实际两次完整原生十关；最终第7/10关HP小修尚未正常原生复测，真机安装被免费签名3应用限额阻塞，Mac锁屏阻塞UI操作。46项17通过/23未完整执行/2失败/4阻塞，不宣称全部完成。
+
 # AI_HANDOFF｜一路长歌当前交接入口
 
 > 由 Claude 在用户项目中实际工作后填写。本文件不是系统锁，也不证明 Codex 已经读取。凡写「未验证」的，均无实际证据。

@@ -1,0 +1,3570 @@
+{
+  "capturedAt": "2026-09-28T06:27:26.537836+00:00",
+  "branch": "codex/ios-playable-fix-20260928",
+  "baseHead": "a7e34fddb2da0eae179368897bb44e230c10344a",
+  "uncommitted": true,
+  "files": {
+    "art-source/ios-fix20260928/added-ledger.json": {
+      "bytes": 10164,
+      "sha256": "b378a55a852c01ffc9999a48b2f5da4f013ec175969a4976269a143045a0420b"
+    },
+    "art-source/ios-fix20260928/attack-mid-source.png": {
+      "bytes": 2114373,
+      "sha256": "5e86cd11338f566192991d3ba9e0d9cbb601cde407752b331ad675c4d5846487"
+    },
+    "art-source/ios-fix20260928/boss-ending-source.png": {
+      "bytes": 2480687,
+      "sha256": "7c44fd174d3b0d90c4255e51428e96e77a8a64a134542034b92329b6712cb32a"
+    },
+    "art-source/ios-fix20260928/campaign-map-source.png": {
+      "bytes": 3680237,
+      "sha256": "8a4a6bad6b3f8dcaf3215abb1e57808008b9616fa8b6afe9ebf94c80c3acb8bb"
+    },
+    "art-source/ios-fix20260928/crossbow-mid-source.png": {
+      "bytes": 1760555,
+      "sha256": "4ff6d8f108b36b5e427c46047df5b38e7c82d0a5d62ba7440f841d6f76554860"
+    },
+    "art-source/ios-fix20260928/derived-mid-source.png": {
+      "bytes": 2178631,
+      "sha256": "203d299ec2fa963a47400649d6b64a9496a7bcef388bcce82260a5b5d4b7c8cd"
+    },
+    "art-source/ios-fix20260928/derived-runs-candidate-rejected.png": {
+      "bytes": 1760966,
+      "sha256": "79369d28e6bd520e792071520780106b52bc23fac44a7c5601f1ab4fe204dc3d"
+    },
+    "art-source/ios-fix20260928/dual-parts-source.png": {
+      "bytes": 1556189,
+      "sha256": "0315f00811af53e14fb111f2b1282d0e453b0b342f7f6aaae2e007dcc56d725e"
+    },
+    "art-source/ios-fix20260928/front-additions-source.png": {
+      "bytes": 2387176,
+      "sha256": "cc355bad5204cb3db2008dbe2b7e2a16e2d8f2dda3feaac8240eb9cd43d53bba"
+    },
+    "art-source/ios-fix20260928/g_boss_cao_hit.png": {
+      "bytes": 85317,
+      "sha256": "5faa1b53c33cc54cb21bb3acaa4c0952765ade7ae2b979a386f3b1043b470668"
+    },
+    "art-source/ios-fix20260928/g_boss_cao_idle.png": {
+      "bytes": 74330,
+      "sha256": "cbe4cffdb4b122610ad020932e2ea3540f13afd2465376e96c52a345d174d29e"
+    },
+    "art-source/ios-fix20260928/g_boss_cao_rec.png": {
+      "bytes": 77534,
+      "sha256": "37250bb7473dcbaeee1fa8633c3155476b72667b4f2028c36a10a12842e6fbc2"
+    },
+    "art-source/ios-fix20260928/g_boss_cao_spent.png": {
+      "bytes": 67329,
+      "sha256": "a7a3be8d4598322aba4fdccb3774075a25521711826ade39039c827f325c4b9c"
+    },
+    "art-source/ios-fix20260928/g_boss_cao_strike.png": {
+      "bytes": 88990,
+      "sha256": "0ac1053bd1f4e1f9274856279f4cc64586319764bfaa2e13adb0b8b96f0dc8de"
+    },
+    "art-source/ios-fix20260928/g_boss_cao_wind.png": {
+      "bytes": 99925,
+      "sha256": "a7876040a365cb9d06f074cd469a81e059554acb7957698cac560a0d73b057f5"
+    },
+    "art-source/ios-fix20260928/g_boss_dian_hit.png": {
+      "bytes": 81281,
+      "sha256": "7d4aebbdff85393855fd1416f4a8f5de6b9e94c316aab0add306e3de2d54ab3f"
+    },
+    "art-source/ios-fix20260928/g_boss_dian_idle.png": {
+      "bytes": 98695,
+      "sha256": "4a897b24d3eec3e56e3c0160edf3dd72fe933522f197710961819acbc92a071b"
+    },
+    "art-source/ios-fix20260928/g_boss_dian_rec.png": {
+      "bytes": 78135,
+      "sha256": "74ca5039ac2747ab9534381266fc07608b4fa361e815cd0eba338fd189ae5f1f"
+    },
+    "art-source/ios-fix20260928/g_boss_dian_spent.png": {
+      "bytes": 73590,
+      "sha256": "1a18b86453c2c4092b3213f936a1e0b9e4b331fc68647ee290bf51698385afb9"
+    },
+    "art-source/ios-fix20260928/g_boss_dian_strike.png": {
+      "bytes": 117149,
+      "sha256": "988090a82ca278df74d429723d16d02b8c2283b686900d9e33c38f36abbbcb29"
+    },
+    "art-source/ios-fix20260928/g_boss_dian_wind.png": {
+      "bytes": 95264,
+      "sha256": "37e6824cdd9d9389b60e819dadcdb1eb43d70908d259ed047f7177d0653ecdea"
+    },
+    "art-source/ios-fix20260928/g_boss_dong_hit.png": {
+      "bytes": 83010,
+      "sha256": "acc4d0e72808e4345257fd2894db3a8a2e67af10bc9eacf79292b308fcf7c796"
+    },
+    "art-source/ios-fix20260928/g_boss_dong_idle.png": {
+      "bytes": 107761,
+      "sha256": "76c8760c24c265c213bda3b1a4684c64dfb6c5cabb8f170ce9397a54065ba037"
+    },
+    "art-source/ios-fix20260928/g_boss_dong_rec.png": {
+      "bytes": 83448,
+      "sha256": "e426035b76784b8a067595333309155379c3ffbf693ce2f166fc275ea15701e6"
+    },
+    "art-source/ios-fix20260928/g_boss_dong_spent.png": {
+      "bytes": 91607,
+      "sha256": "8ecd95a3661b7f14d631040af00b08680dc80c5a3cb9a8744349c97e4177fea9"
+    },
+    "art-source/ios-fix20260928/g_boss_dong_strike.png": {
+      "bytes": 136598,
+      "sha256": "a6d2621a513c26024c898ab7e2355b5921b1d5847b3e0b63a3941333de700f08"
+    },
+    "art-source/ios-fix20260928/g_boss_dong_wind.png": {
+      "bytes": 92887,
+      "sha256": "aa9321bf2b86e6713625334a724b8c1132660997c64a17eb37ec6ba93abe9d1f"
+    },
+    "art-source/ios-fix20260928/g_boss_guan_hit.png": {
+      "bytes": 106021,
+      "sha256": "ea8610579f2f2d86909891d75c96997ae663f0e1665b85e7dd330970e4477260"
+    },
+    "art-source/ios-fix20260928/g_boss_guan_idle.png": {
+      "bytes": 90390,
+      "sha256": "d71e4ef04a670ee97201a31df574d458827f29edb273666b00aee68dd93c9962"
+    },
+    "art-source/ios-fix20260928/g_boss_guan_rec.png": {
+      "bytes": 106549,
+      "sha256": "3cb9dd13a722f6304015a74a92cfa1002da0ebde033ffaf80a89653ea062b73d"
+    },
+    "art-source/ios-fix20260928/g_boss_guan_spent.png": {
+      "bytes": 63111,
+      "sha256": "c23b6a0a03ac67071c6eac1d407e4e2a6376a00444a9960f3ee44888b4fad5e6"
+    },
+    "art-source/ios-fix20260928/g_boss_guan_strike.png": {
+      "bytes": 105101,
+      "sha256": "e46793d47edc568e45a782d603a31345a44d2460004255bfb97bb2a69a84b6c2"
+    },
+    "art-source/ios-fix20260928/g_boss_guan_wind.png": {
+      "bytes": 122813,
+      "sha256": "43d7422a7e474c88ea72fdb0cd1af93366a0c8057ae1fd673fe070be25b7d578"
+    },
+    "art-source/ios-fix20260928/g_boss_jiao_hit.png": {
+      "bytes": 83169,
+      "sha256": "02edeee9b81bd2d93e70b87c6ad2b30e1f9f7ebebebcc2c4422c9e84536ce8f4"
+    },
+    "art-source/ios-fix20260928/g_boss_jiao_idle.png": {
+      "bytes": 95858,
+      "sha256": "21d73d2a088f1ebe7cfa44356fccc518ff7a98c7d54f519871042432185e4b35"
+    },
+    "art-source/ios-fix20260928/g_boss_jiao_rec.png": {
+      "bytes": 72302,
+      "sha256": "1567e9f8975a4d4525027e471b6e52dd97b46a646e94f42ab651bdc4f3a7c2ae"
+    },
+    "art-source/ios-fix20260928/g_boss_jiao_spent.png": {
+      "bytes": 67904,
+      "sha256": "b02d7a4b3f90ad3c921ecab07b5ca6fb1988397ea5b50f1bae364c94e1ccb245"
+    },
+    "art-source/ios-fix20260928/g_boss_jiao_strike.png": {
+      "bytes": 116276,
+      "sha256": "f6ce6e6042c0514273f1000fecab7425c0c16be5edfd9160addf9e77de1285ee"
+    },
+    "art-source/ios-fix20260928/g_boss_jiao_wind.png": {
+      "bytes": 85753,
+      "sha256": "ea0873d6e90eab12d9032bda45f2bf87a73c2af4c8becf2c8f7eb166dc34ae51"
+    },
+    "art-source/ios-fix20260928/g_boss_sunce_hit.png": {
+      "bytes": 84205,
+      "sha256": "74a3e6ca846d41c78958ce96745291e3a23ddfbacd610c2e423822301b61f8e4"
+    },
+    "art-source/ios-fix20260928/g_boss_sunce_idle.png": {
+      "bytes": 70972,
+      "sha256": "f4baccd854dd8709cbaa49b26db97f8fbdb9b2506b9d1f5cb8970e6ba4ce4602"
+    },
+    "art-source/ios-fix20260928/g_boss_sunce_rec.png": {
+      "bytes": 75861,
+      "sha256": "80fccd49976e9dc38058a3030cd77274b8c7e84626405cc5875b7cab8d069908"
+    },
+    "art-source/ios-fix20260928/g_boss_sunce_spent.png": {
+      "bytes": 68862,
+      "sha256": "103da1d83a71a18db75e010e949fa00e5c22eea10f0fb1775b6598e9cbe9be94"
+    },
+    "art-source/ios-fix20260928/g_boss_sunce_strike.png": {
+      "bytes": 102174,
+      "sha256": "2f2a8e4c980cf8dcd85869f36593c59ee41cfa8071ffcc492d59e2392472591a"
+    },
+    "art-source/ios-fix20260928/g_boss_sunce_wind.png": {
+      "bytes": 97554,
+      "sha256": "b69a3279b4eba3e40cf61f90a6957b7d64f3088c3a653620e6ac9b6cc21b4b78"
+    },
+    "art-source/ios-fix20260928/g_boss_zhang_hit.png": {
+      "bytes": 103872,
+      "sha256": "1858ef4518a4b7c7c4321a6d9685fd63a258e4c149f17101349839e85d059c72"
+    },
+    "art-source/ios-fix20260928/g_boss_zhang_idle.png": {
+      "bytes": 79229,
+      "sha256": "b51f325e2b02db538465d1b2384797597bde84c859b81f146f5b4b859dd43f2a"
+    },
+    "art-source/ios-fix20260928/g_boss_zhang_rec.png": {
+      "bytes": 99840,
+      "sha256": "f7af5ac5c0cc8eecd4806a633b03edb650c5feb4aae359c36c03a3e8fccc1e84"
+    },
+    "art-source/ios-fix20260928/g_boss_zhang_spent.png": {
+      "bytes": 67495,
+      "sha256": "10a8adade9fb3de790157dcf26c54dc42e68e95ac5ccd80f60e694087a5dc314"
+    },
+    "art-source/ios-fix20260928/g_boss_zhang_strike.png": {
+      "bytes": 112067,
+      "sha256": "7e323d9ec9791c0c74d3d3f81f794a338710f41ddba147c5c253a1cdfd912888"
+    },
+    "art-source/ios-fix20260928/g_boss_zhang_wind.png": {
+      "bytes": 130885,
+      "sha256": "f728c22a5730164b9049ef31c6ecd6e03c464493346eb7c4b08dfaa3db7de10b"
+    },
+    "art-source/ios-fix20260928/g_boss_zhou_hit.png": {
+      "bytes": 85054,
+      "sha256": "7390f8c2f2dbf3f6c362a3dbe76719d4898285ebf31fd33fd322f1b48c95a94a"
+    },
+    "art-source/ios-fix20260928/g_boss_zhou_idle.png": {
+      "bytes": 74986,
+      "sha256": "32961f9fa5fb5d2f8aacd5b4379899a50fc2831d99d4785904c072a05206aaea"
+    },
+    "art-source/ios-fix20260928/g_boss_zhou_rec.png": {
+      "bytes": 81852,
+      "sha256": "c23e474207b646136bbf2a57f6d765fde43ae5c9da127d96e3cecc7f4d3e259c"
+    },
+    "art-source/ios-fix20260928/g_boss_zhou_spent.png": {
+      "bytes": 64860,
+      "sha256": "e52d8618e43b463de5d1b855ad9395042dcb6e3eed51b78f27c96e5ae24eea39"
+    },
+    "art-source/ios-fix20260928/g_boss_zhou_strike.png": {
+      "bytes": 107690,
+      "sha256": "5d7c96d08ab1f6aa16e879671984ba8513ce643e5abd255a6ae3bafd0b949537"
+    },
+    "art-source/ios-fix20260928/g_boss_zhou_wind.png": {
+      "bytes": 94210,
+      "sha256": "2e1062b550778976022b906bec76b5322340e6b8153741fd6f8a4676228f086d"
+    },
+    "art-source/ios-fix20260928/g_boss_zhuge_hit.png": {
+      "bytes": 103206,
+      "sha256": "10ddce0d0d95aad0ff5fe32bd5433613fcad9257b14c42d52cc0929a587ff893"
+    },
+    "art-source/ios-fix20260928/g_boss_zhuge_idle.png": {
+      "bytes": 56359,
+      "sha256": "8be7a8702ed315b5588387a3f53e59f7a3c5d67a281f6d828c7c27abb0a5c892"
+    },
+    "art-source/ios-fix20260928/g_boss_zhuge_rec.png": {
+      "bytes": 103021,
+      "sha256": "a8970a154313a96a227355d82942dad2387839dfaf0e1e31268632de54167850"
+    },
+    "art-source/ios-fix20260928/g_boss_zhuge_spent.png": {
+      "bytes": 53007,
+      "sha256": "27e086ac2204c410edd6de596596760daa7ea5a4ceaf03aa37b904c7cde0292f"
+    },
+    "art-source/ios-fix20260928/g_boss_zhuge_strike.png": {
+      "bytes": 86423,
+      "sha256": "6634973c1b65968efce4ea1386880baa620845e7ed8b5adc4486904780952984"
+    },
+    "art-source/ios-fix20260928/g_boss_zhuge_wind.png": {
+      "bytes": 115549,
+      "sha256": "b67cd5a070e4537bd11b5890b82463adae12ce0c609a05143101a01f4022acc0"
+    },
+    "art-source/ios-fix20260928/g_dianRun0.png": {
+      "bytes": 162230,
+      "sha256": "5701f6a5a16629752be8b555f66026d102d3f9bc5d0215dff44992eefd433329"
+    },
+    "art-source/ios-fix20260928/g_dianRun1.png": {
+      "bytes": 146271,
+      "sha256": "dd84930564340fcc0265e9f66e434ce084c61ccb7024243870e199f50291b150"
+    },
+    "art-source/ios-fix20260928/g_dianThrust.png": {
+      "bytes": 162581,
+      "sha256": "c40962690838421fe7bc96543286eae25ea8cffcb80062d2853dca6166d8e7a3"
+    },
+    "art-source/ios-fix20260928/g_dianWind.png": {
+      "bytes": 189432,
+      "sha256": "61b3ce81309e965521b52d144bd181a8ba2cffa9f774dfeba4c0554ea95288f6"
+    },
+    "art-source/ios-fix20260928/g_end_cao_0.png": {
+      "bytes": 76802,
+      "sha256": "a1793b7817ad6162dd2cb2195bcfc992770aefde7f482fc035080cce7ca3403d"
+    },
+    "art-source/ios-fix20260928/g_end_cao_2.png": {
+      "bytes": 67111,
+      "sha256": "b4e7b357a1d12e26efe4effec2add0dbd137cc6e9fe84c0fb5b09029da08caed"
+    },
+    "art-source/ios-fix20260928/g_end_dian_0.png": {
+      "bytes": 91041,
+      "sha256": "4e5043c6cd2f78fc38d1842abe8b53a16f2c889334371326cd652d1678c500d5"
+    },
+    "art-source/ios-fix20260928/g_end_dian_2.png": {
+      "bytes": 66758,
+      "sha256": "d085216bdd4e987f875326e659175471ebd849cfa6d670543cb01c3ebaa5a43a"
+    },
+    "art-source/ios-fix20260928/g_end_dong_0.png": {
+      "bytes": 100559,
+      "sha256": "d4b521d4fca4e50245b09715bb4c81edb5bee9e39d71e64fcc88d654e8a3884f"
+    },
+    "art-source/ios-fix20260928/g_end_dong_2.png": {
+      "bytes": 76722,
+      "sha256": "26e4277ed16d7d5abcf7cb06a59929bf98cb5ab66729f05425a2b8396a89eaf5"
+    },
+    "art-source/ios-fix20260928/g_end_guan_0.png": {
+      "bytes": 99439,
+      "sha256": "e80f23fea06e21be57a16e73fb33717088958cf264aed71739071076e3c8c372"
+    },
+    "art-source/ios-fix20260928/g_end_guan_2.png": {
+      "bytes": 74771,
+      "sha256": "8494693a6f38bbf5673d7385ced1d2f7740e64852e6b278f5656a8f4c8e80377"
+    },
+    "art-source/ios-fix20260928/g_end_jiao_0.png": {
+      "bytes": 64931,
+      "sha256": "486327995b07c668deb6239c1aa7c0f894b82b7a647886a1e1e59dedd7db01ce"
+    },
+    "art-source/ios-fix20260928/g_end_jiao_2.png": {
+      "bytes": 47121,
+      "sha256": "9581a583899ad41173dce260cd7dc87676c53059e72cfb1fb276e443c039d7a8"
+    },
+    "art-source/ios-fix20260928/g_end_sunce_0.png": {
+      "bytes": 78229,
+      "sha256": "34ddf236572ee593952e1ffe1b4fd263712125088573e97abafbd7ca18895226"
+    },
+    "art-source/ios-fix20260928/g_end_sunce_2.png": {
+      "bytes": 60324,
+      "sha256": "72e938295f993635226f3c179c438f35333f9402d629233df871cfcd9f20d6d3"
+    },
+    "art-source/ios-fix20260928/g_end_zhang_0.png": {
+      "bytes": 86007,
+      "sha256": "444251fac4d67968168364a289005801314715102e6c880ce7f5fec77971e903"
+    },
+    "art-source/ios-fix20260928/g_end_zhang_2.png": {
+      "bytes": 72418,
+      "sha256": "7d98eb9a8a60c830d5e2d9a00798112dacc6fb8d0736a19f0254f578b93206d6"
+    },
+    "art-source/ios-fix20260928/g_end_zhou_0.png": {
+      "bytes": 81191,
+      "sha256": "85da4f95013524804abcb3df621f26c21a71d4fd9fbe9fa975b4fad9b39609bc"
+    },
+    "art-source/ios-fix20260928/g_end_zhou_2.png": {
+      "bytes": 71809,
+      "sha256": "4ff5ab97bf38ea3304c3f31c4f15349e189167635d06e082fe384fb54a5be329"
+    },
+    "art-source/ios-fix20260928/g_end_zhuge_0.png": {
+      "bytes": 73830,
+      "sha256": "09a83d1c71af41d6f57474995d7920b2cef955cd66fdf0b40f15f3f95ab356b7"
+    },
+    "art-source/ios-fix20260928/g_end_zhuge_2.png": {
+      "bytes": 64292,
+      "sha256": "7ea6df363e5f5270e4663ba6f3cee4a741399291724c84c0f6a9f8ecce2bf6ce"
+    },
+    "art-source/ios-fix20260928/g_front_huangHurt.png": {
+      "bytes": 70968,
+      "sha256": "e50c30f0c1866f00481ae5941598543e7d36a7645c3444753331fb49035b8d13"
+    },
+    "art-source/ios-fix20260928/g_front_huangRun0.png": {
+      "bytes": 69654,
+      "sha256": "32b821f0968d4a35508ea6aac86b8297dee364b98ef0ea996e8d1b9ad163948b"
+    },
+    "art-source/ios-fix20260928/g_front_huangRun1.png": {
+      "bytes": 73316,
+      "sha256": "8f99f0f4c8e9401b77ebf85cbfd6a61b01014aac6f741ee9464fd2fb3bd19d85"
+    },
+    "art-source/ios-fix20260928/g_front_jiangRun0.png": {
+      "bytes": 90729,
+      "sha256": "a939bdf99b57f56bb074bbb35c6fb6f9123f03ea58c076d9df6b5943c1179396"
+    },
+    "art-source/ios-fix20260928/g_front_liaoHurt.png": {
+      "bytes": 64754,
+      "sha256": "4153a6787bd6008e20d98ce7785eb460d5adba52eca867172a8f1396a8660f13"
+    },
+    "art-source/ios-fix20260928/g_front_liaoRun0.png": {
+      "bytes": 74246,
+      "sha256": "3e1020ff724952eba6954080c2c48da3cf90be99a2654005ea3bc9de648a384f"
+    },
+    "art-source/ios-fix20260928/g_front_liaoRun1.png": {
+      "bytes": 70480,
+      "sha256": "43aeb50a020f165f46d1aa4f0e157cadcd490b3796ff4e421e7d8a9437aa9e06"
+    },
+    "art-source/ios-fix20260928/g_front_lumengHurt.png": {
+      "bytes": 62630,
+      "sha256": "a4896439db84f6a96fb9d6a7d290b1022b7a715e5ef85c75c77e3bcda8872b3e"
+    },
+    "art-source/ios-fix20260928/g_front_lumengRun0.png": {
+      "bytes": 74013,
+      "sha256": "e35ddee831033eade279f53b298399a5d503a9fb0a0b34ef351b85452ef81f5e"
+    },
+    "art-source/ios-fix20260928/g_front_lumengRun1.png": {
+      "bytes": 74892,
+      "sha256": "da34d8c379f91e81ce271d7f204b6cd4042c5e0522eb703a78cf32957fe6122b"
+    },
+    "art-source/ios-fix20260928/g_front_luxunHurt.png": {
+      "bytes": 63676,
+      "sha256": "98c8783bb6f4a1eb6e3de7c5083e2a1f5d224e48ffb5d18139e99f9035afc5eb"
+    },
+    "art-source/ios-fix20260928/g_front_luxunRun0.png": {
+      "bytes": 68073,
+      "sha256": "fbb8314188c5bf94ad3abcca4f762fe067e76d692fcb9d2409eb4f9aedbe125a"
+    },
+    "art-source/ios-fix20260928/g_front_luxunRun1.png": {
+      "bytes": 66636,
+      "sha256": "1d2e28b901da29f8eda5c6918bd8db897e9d9a22331b0460e9519df00ee5724c"
+    },
+    "art-source/ios-fix20260928/g_front_machaoHurt.png": {
+      "bytes": 91224,
+      "sha256": "4b78111b84692a53e1cb8f8a71dff78c6171ed5aad95a366d43a56be37165737"
+    },
+    "art-source/ios-fix20260928/g_front_machaoRun0.png": {
+      "bytes": 92675,
+      "sha256": "0bc68bb242dc7a46678185a36e70f28163435a4bebb32523c3029747002e5a63"
+    },
+    "art-source/ios-fix20260928/g_front_machaoRun1.png": {
+      "bytes": 96502,
+      "sha256": "b7940175f4859f574c4ccd9d5d37f07aa98d4796498f081c3ef64c1c7eed270c"
+    },
+    "art-source/ios-fix20260928/g_front_pangHurt.png": {
+      "bytes": 79076,
+      "sha256": "37a5ad066ec091e767e60a00f1d66e9e95a4a7e66064823f20bcc94cff883f0d"
+    },
+    "art-source/ios-fix20260928/g_front_pangRun0.png": {
+      "bytes": 71535,
+      "sha256": "a626c923a60e5596b2dbba89425c2da42d00b46cb8e6dd7f645caa2fad867b8f"
+    },
+    "art-source/ios-fix20260928/g_front_pangRun1.png": {
+      "bytes": 76174,
+      "sha256": "cc8bbcef5151bd39184b15b9cc66ca1a8fb08881a13a5a767ea763dc2898beb4"
+    },
+    "art-source/ios-fix20260928/g_front_sunxiangRun0.png": {
+      "bytes": 89778,
+      "sha256": "6c3ab4f25db8752c0b598c631ca07696e8062df784ad85916fd81c930caff195"
+    },
+    "art-source/ios-fix20260928/g_front_xiahouHurt.png": {
+      "bytes": 70190,
+      "sha256": "796866ae67640371e1b4572c44db8ba4958e72da9ff9305e6200d196db000c4b"
+    },
+    "art-source/ios-fix20260928/g_front_xiahouRun0.png": {
+      "bytes": 73437,
+      "sha256": "df3d73cddc26732543a948990528c9afa15dc3b89607f0889547500d04a81903"
+    },
+    "art-source/ios-fix20260928/g_front_xiahouRun1.png": {
+      "bytes": 72294,
+      "sha256": "d60eb727182dbdced9765457428de687e6a91e56fd0e57d783a789f7c92a71da"
+    },
+    "art-source/ios-fix20260928/g_front_xuHurt.png": {
+      "bytes": 66793,
+      "sha256": "9cb47c7e40dc13c4f7eee62e8532c6c89a0fac5474d1b3fb541ef39e1e2e78a3"
+    },
+    "art-source/ios-fix20260928/g_front_xuRun0.png": {
+      "bytes": 70036,
+      "sha256": "6d728ce0fbf5448a49da120662089d615dc8928141bd3f68edd915ef2a0c7773"
+    },
+    "art-source/ios-fix20260928/g_front_xuRun1.png": {
+      "bytes": 72765,
+      "sha256": "be6e3cb65ba8cb37f030679414d0ec4715896c0df2ec1823de120c1db79a286a"
+    },
+    "art-source/ios-fix20260928/g_front_zhaoHurt.png": {
+      "bytes": 71858,
+      "sha256": "0222fae83e93553a83ca36fd74a37a6da948d7867c9b7d49cd8c101b4f8d5b44"
+    },
+    "art-source/ios-fix20260928/g_front_zhaoRun0.png": {
+      "bytes": 81001,
+      "sha256": "958a553eafc2a535ac812b55d2b38fc0e47bf73ba0da347aa216018dba80844c"
+    },
+    "art-source/ios-fix20260928/g_front_zhaoRun1.png": {
+      "bytes": 82319,
+      "sha256": "9175dec6ff0167dbf18565f41b33ded87f02ffe7a99ffd5b27b39a73a8b665a4"
+    },
+    "art-source/ios-fix20260928/g_guanRun0.png": {
+      "bytes": 172448,
+      "sha256": "80bb144512415a61833bd7d1138f7f26f18f4246095345c6f35ba3876962495c"
+    },
+    "art-source/ios-fix20260928/g_guanRun1.png": {
+      "bytes": 177557,
+      "sha256": "96520224994a3167e5158d6d1b8d13fd610b0cafc93300cf18a57bbee2a5782d"
+    },
+    "art-source/ios-fix20260928/g_guanThrust.png": {
+      "bytes": 184032,
+      "sha256": "911ce0c17a52210cf9698af31380302293c11d7befac1567d3d4c5dea7b7bb18"
+    },
+    "art-source/ios-fix20260928/g_guanWind.png": {
+      "bytes": 224851,
+      "sha256": "3bd1b45952b2a8bfaee74164a771dbdb90fedd2e3975ec93d4131becd546d341"
+    },
+    "art-source/ios-fix20260928/g_hero_guding_rec.png": {
+      "bytes": 82825,
+      "sha256": "caa156438005168b9c7203d94f6f9475785b94212f28c8b7eccb97541f896b7b"
+    },
+    "art-source/ios-fix20260928/g_hero_guding_rel.png": {
+      "bytes": 97581,
+      "sha256": "c10668e28afba11269053af25b5fa19dc01ad4bd7069496141f0be038c4e1d12"
+    },
+    "art-source/ios-fix20260928/g_hero_guding_run.png": {
+      "bytes": 90219,
+      "sha256": "411183fbeb532c5f59146db649841425e4681a2f08bbcfdbe2269abfdbb98c7a"
+    },
+    "art-source/ios-fix20260928/g_hero_guding_run0.png": {
+      "bytes": 105725,
+      "sha256": "3aa0bdcaf58c6f5764dc37b74b3c5c8cb78a19b299160cd69644207c30994307"
+    },
+    "art-source/ios-fix20260928/g_hero_guding_run1.png": {
+      "bytes": 87172,
+      "sha256": "a87ea836ac7e6a9f6b53976653d7d0490a46248f78bb81e1f8df51547000f5ac"
+    },
+    "art-source/ios-fix20260928/g_hero_guding_run2.png": {
+      "bytes": 95866,
+      "sha256": "237d6058c3eafe7c08072f923153cee81719d491219d380cee2eca0f882ffc2f"
+    },
+    "art-source/ios-fix20260928/g_hero_guding_run3.png": {
+      "bytes": 85673,
+      "sha256": "a0c3626b2efd8e13169329b148828ecd86361450a2935db3ccbea4dfb46c90a3"
+    },
+    "art-source/ios-fix20260928/g_hero_guding_wind.png": {
+      "bytes": 85861,
+      "sha256": "70a9f6fbea0cbb860315515de585a2cb9e8daeaf14926ea2bf5a06095bb7576a"
+    },
+    "art-source/ios-fix20260928/g_hero_liannu_rec.png": {
+      "bytes": 94732,
+      "sha256": "89e6b69f7b6a60f8ff3cfab495e3c590427fef18c14319388e5ced63732fa188"
+    },
+    "art-source/ios-fix20260928/g_hero_liannu_rel.png": {
+      "bytes": 117916,
+      "sha256": "cdc8bfea1b9a2bd0e72c97ecde5df169e24f687be700fbec578c3d2d9b374d9d"
+    },
+    "art-source/ios-fix20260928/g_hero_liannu_run.png": {
+      "bytes": 102996,
+      "sha256": "536de91ff42f00e356f02713866fa74cb56f2d2e286dda4c66a4fbf3031bd08f"
+    },
+    "art-source/ios-fix20260928/g_hero_liannu_run0.png": {
+      "bytes": 108708,
+      "sha256": "73b4438676d46b91b0109b1d182bf33a1d47f775652da6933721da708f56104b"
+    },
+    "art-source/ios-fix20260928/g_hero_liannu_run1.png": {
+      "bytes": 112522,
+      "sha256": "7ba6362fcf80d76aec62f09cba8df1d24295605505adb349a5aa7b5272a7efe8"
+    },
+    "art-source/ios-fix20260928/g_hero_liannu_run2.png": {
+      "bytes": 114727,
+      "sha256": "972af82a53b4eff8d76115ace8391daeb4b80f296083f3e36374f84c3ac34767"
+    },
+    "art-source/ios-fix20260928/g_hero_liannu_run3.png": {
+      "bytes": 97650,
+      "sha256": "bbe9432abb0b90a7dc9f4dc235955ad7f7ccf149578538e573060bb2707e036c"
+    },
+    "art-source/ios-fix20260928/g_hero_liannu_wind.png": {
+      "bytes": 112101,
+      "sha256": "f2b38b3e61018fb2bd7fffcf922c8825f129b87ae7e4eb0a15036dd64bba7473"
+    },
+    "art-source/ios-fix20260928/g_hero_qinggang_rec.png": {
+      "bytes": 86682,
+      "sha256": "119b2bf5ab04762599beef83d0bf523c777b1eb66bb5275a510ceca44a9d92ee"
+    },
+    "art-source/ios-fix20260928/g_hero_qinggang_rel.png": {
+      "bytes": 104294,
+      "sha256": "ac3e879ce85bea7dfd1d0a90644da3de3c009e0b0538c4b2db8507fdb77ded54"
+    },
+    "art-source/ios-fix20260928/g_hero_qinggang_run.png": {
+      "bytes": 100357,
+      "sha256": "7fa99b79a1b7187accdb1d004d3f08f99fff5c8083d9777e5e06ca4563c2f395"
+    },
+    "art-source/ios-fix20260928/g_hero_qinggang_run0.png": {
+      "bytes": 104145,
+      "sha256": "2967a128825dbb91ca08af58cd3175689a98c65a0c5837dab35a16765cffccbb"
+    },
+    "art-source/ios-fix20260928/g_hero_qinggang_run1.png": {
+      "bytes": 103886,
+      "sha256": "120e29ce8e63bdb6179a8cc9b28d196cd97203df45b416c1184270d3fbd2e05d"
+    },
+    "art-source/ios-fix20260928/g_hero_qinggang_run2.png": {
+      "bytes": 113360,
+      "sha256": "82d974de1ffe4ba1e72ffa2849e374bfdb397b8a9848d5028d32860d22f81e07"
+    },
+    "art-source/ios-fix20260928/g_hero_qinggang_run3.png": {
+      "bytes": 93374,
+      "sha256": "ce76fd5dfc83a3859b0f40476435f99de009064f623ad53bcc8018c0541f564c"
+    },
+    "art-source/ios-fix20260928/g_hero_qinggang_wind.png": {
+      "bytes": 100532,
+      "sha256": "8a98629ebcba4a8a794f15d08b020a8995af7925d52f361b1fdf18aa69a0e78b"
+    },
+    "art-source/ios-fix20260928/g_hero_shuanggu_rec.png": {
+      "bytes": 96043,
+      "sha256": "d485d3a37f7723aace343c350c5ba4bd5c60451a4e9898c76f158d0b482c6a3c"
+    },
+    "art-source/ios-fix20260928/g_hero_shuanggu_rel.png": {
+      "bytes": 114871,
+      "sha256": "ae0c2117790992a5d9b2809c0a5662887a753fa0ebf9365e462ef8083b0ac5fb"
+    },
+    "art-source/ios-fix20260928/g_hero_shuanggu_run.png": {
+      "bytes": 102765,
+      "sha256": "5cd2c4beb72a0c4e14e55e398d3befedba8269984d84e744ad044219925bdb5e"
+    },
+    "art-source/ios-fix20260928/g_hero_shuanggu_run0.png": {
+      "bytes": 108602,
+      "sha256": "7f10e729a9ed1a6b9fc8df5e1ff1602321cecda272527532f5a936d1bcdfac0b"
+    },
+    "art-source/ios-fix20260928/g_hero_shuanggu_run1.png": {
+      "bytes": 104520,
+      "sha256": "6276a358cc7080e3873e91de6165ef28038adfe2463055c65c6b0564d44e25b8"
+    },
+    "art-source/ios-fix20260928/g_hero_shuanggu_run2.png": {
+      "bytes": 122624,
+      "sha256": "c6a1e2eb77298fbec57ff0a26d7912bc747cd158aa367dcfd3a33cfd934fb569"
+    },
+    "art-source/ios-fix20260928/g_hero_shuanggu_run3.png": {
+      "bytes": 102846,
+      "sha256": "deb74bbff63c5e0bdac6d2ade8522745aafbaa158e00df89bf6c661037aaf6e3"
+    },
+    "art-source/ios-fix20260928/g_hero_shuanggu_wind.png": {
+      "bytes": 105915,
+      "sha256": "b6f8d36bcf846e6e0a0a4d2b4013d1880e7050cdb2dc34e37fead6ed2153ede7"
+    },
+    "art-source/ios-fix20260928/g_hero_shuangji_rec.png": {
+      "bytes": 92757,
+      "sha256": "afd8d906e0b2a95d0baa98b970190cb70c6cdd2d7f1f84bd238e7a07eb4f0507"
+    },
+    "art-source/ios-fix20260928/g_hero_shuangji_rel.png": {
+      "bytes": 104786,
+      "sha256": "3d63748430221609c88ab94d5268d25173f3d25e1a82bc65727edab217fcb9b3"
+    },
+    "art-source/ios-fix20260928/g_hero_shuangji_run.png": {
+      "bytes": 96651,
+      "sha256": "f3cd155726b6e24411b0fb020830b0248d8e440614bbe2ca548daa3b8553e08a"
+    },
+    "art-source/ios-fix20260928/g_hero_shuangji_run0.png": {
+      "bytes": 106315,
+      "sha256": "aa1650dae2a1c0d88acce582a0a9b7a54e2237b2f7d9c8c68c666e821443dafa"
+    },
+    "art-source/ios-fix20260928/g_hero_shuangji_run1.png": {
+      "bytes": 114242,
+      "sha256": "9e07587fcf8bde07be1a9ac1d34e51b598b29312427e33ff7c9cb503cca6dee5"
+    },
+    "art-source/ios-fix20260928/g_hero_shuangji_run2.png": {
+      "bytes": 104526,
+      "sha256": "25de6237513f83de369e4e9bca65a5226a6283cefeeb99552beba938f7cb1184"
+    },
+    "art-source/ios-fix20260928/g_hero_shuangji_run3.png": {
+      "bytes": 98611,
+      "sha256": "a345b0ebb64bfd37f0ea03503cec10c0ad42c1de0ce6899c9ff8571d1c2321ce"
+    },
+    "art-source/ios-fix20260928/g_hero_shuangji_wind.png": {
+      "bytes": 115370,
+      "sha256": "5eba0cdec7ee4ca85bc1e2109c24f49499dc973927d3fd36d36f442c20e9ecde"
+    },
+    "art-source/ios-fix20260928/g_hero_yitian_rec.png": {
+      "bytes": 83774,
+      "sha256": "a4a6f8d926634d604a986812a89f1ceeb16faf6d2e5ecbf007b5e2155828eede"
+    },
+    "art-source/ios-fix20260928/g_hero_yitian_rel.png": {
+      "bytes": 109325,
+      "sha256": "a5f14d490b42cfd3da99aaf05f5f9be6e7ad3abc8b2425d652e9049927d5b184"
+    },
+    "art-source/ios-fix20260928/g_hero_yitian_run.png": {
+      "bytes": 96465,
+      "sha256": "cc603b1f807106b3bc4c9d48fba7c8ab189f2ce22d218824ddb998e527cf177e"
+    },
+    "art-source/ios-fix20260928/g_hero_yitian_run0.png": {
+      "bytes": 100463,
+      "sha256": "e6287f65dd97728302e995a9c3edcbeffca7022e1ede88c5260f7bfa49fdf1bc"
+    },
+    "art-source/ios-fix20260928/g_hero_yitian_run1.png": {
+      "bytes": 101543,
+      "sha256": "1b196953dc087154987ed24c68021bf05d2825e14af9cc6641e0f12e1deea487"
+    },
+    "art-source/ios-fix20260928/g_hero_yitian_run2.png": {
+      "bytes": 110896,
+      "sha256": "1138c4cd1ac68563e9b1df904aeb403a79bbab78f5768646a2abc2d84108a6ad"
+    },
+    "art-source/ios-fix20260928/g_hero_yitian_run3.png": {
+      "bytes": 86055,
+      "sha256": "9044d4ebdf8c47197f2a0333b8456da602b7ef6b4aac7609a5b8d15623c3a6d5"
+    },
+    "art-source/ios-fix20260928/g_hero_yitian_wind.png": {
+      "bytes": 96999,
+      "sha256": "de51cb33ea901fd2150a214b1c7b44410376fe1ef24efc6a370cdec52ce381c4"
+    },
+    "art-source/ios-fix20260928/g_huangRun0.png": {
+      "bytes": 59354,
+      "sha256": "da806ce5c740835ecfb5afa266ca0fdfa19e113a1db1f3e6ed8b1d42b37d0b71"
+    },
+    "art-source/ios-fix20260928/g_huangRun1.png": {
+      "bytes": 64778,
+      "sha256": "f3e3f132f5bc72ba943472696991eaaa549de3bc2a7a3d4097898d632c0a7b46"
+    },
+    "art-source/ios-fix20260928/g_huangThrust.png": {
+      "bytes": 68579,
+      "sha256": "011b4db775b023768c449df2e2516c06b36beb3cc662bf164e017862ee302b2c"
+    },
+    "art-source/ios-fix20260928/g_ios_gait0.png": {
+      "bytes": 92569,
+      "sha256": "a378777c05319f3c394874d8bbecfbb206af7fb3691e55af30928a304ee70f19"
+    },
+    "art-source/ios-fix20260928/g_ios_gait1.png": {
+      "bytes": 88306,
+      "sha256": "8cde72d751541700e6e1b79f3808afbed0dc5d8ebfc9b7326ab4cf49527f6bba"
+    },
+    "art-source/ios-fix20260928/g_ios_gait2.png": {
+      "bytes": 91966,
+      "sha256": "9ded542a06c4e549984c4534e5e7566fd47d2047cab6e08493a55024af4ad747"
+    },
+    "art-source/ios-fix20260928/g_ios_gait3.png": {
+      "bytes": 88108,
+      "sha256": "fad752a216b1c0703cc0a71e6598364ada3df66b823c253c719a22ecda03f67d"
+    },
+    "art-source/ios-fix20260928/g_jiangRun0.png": {
+      "bytes": 72852,
+      "sha256": "8d2c129c0335bd8520c536622d6cbbb016057245e19a908e7cdd8f23002f7740"
+    },
+    "art-source/ios-fix20260928/g_jiangRun1.png": {
+      "bytes": 77984,
+      "sha256": "cf29812356eca1249c32aee72f3e90a6c93a18386d012b505e8fb750d0365df7"
+    },
+    "art-source/ios-fix20260928/g_jiangThrust.png": {
+      "bytes": 76252,
+      "sha256": "d46221b9871c25d13f34aa4d90695d782126c1f9f749857f455a70caf4e7f278"
+    },
+    "art-source/ios-fix20260928/g_liaoRun0.png": {
+      "bytes": 52523,
+      "sha256": "9abc681be868cb56e1ed17d40fb4dbe78d5718c116918813af564fde38ffa684"
+    },
+    "art-source/ios-fix20260928/g_liaoRun1.png": {
+      "bytes": 53485,
+      "sha256": "995bebe511d8e022568a69d4f37cd7a495b3fced7baa326f4482f251ac9370f1"
+    },
+    "art-source/ios-fix20260928/g_liaoThrust.png": {
+      "bytes": 56300,
+      "sha256": "2309c22e7b92972146bcdd9214eaa6df2eee31e975d624b1cab75944ed3605fd"
+    },
+    "art-source/ios-fix20260928/g_lubuRun0.png": {
+      "bytes": 179763,
+      "sha256": "b1080852d967e409e7e55776db2f9ca286805fa2e5408233701e69ac17b748e5"
+    },
+    "art-source/ios-fix20260928/g_lubuRun1.png": {
+      "bytes": 181301,
+      "sha256": "25caf5ceb11f1e611e43afd583a915cc085fa25d709a68893c68b90accb47925"
+    },
+    "art-source/ios-fix20260928/g_lubuThrust.png": {
+      "bytes": 189118,
+      "sha256": "4b5242bca8afcda9b7ed597a237921d4bbde142fab5b0de85af1f434289aec66"
+    },
+    "art-source/ios-fix20260928/g_lubuWind.png": {
+      "bytes": 198526,
+      "sha256": "141c825f75fcdb07a615a6f0f292c271db07023a1b2ebe686e335830c86e924f"
+    },
+    "art-source/ios-fix20260928/g_lumengRun0.png": {
+      "bytes": 51616,
+      "sha256": "59277205dc67db667a64003e83d87e0edd901d61c5368b66e1bfd519dca439ed"
+    },
+    "art-source/ios-fix20260928/g_lumengRun1.png": {
+      "bytes": 55948,
+      "sha256": "77ce3906dac566b03918d00a10a3ff9853ba544e8abc56dfc13a38d71e4b9922"
+    },
+    "art-source/ios-fix20260928/g_lumengThrust.png": {
+      "bytes": 56217,
+      "sha256": "4e854b4abb304ba2104a5fff0db77f252c627dc388ce4298b8926b735811db39"
+    },
+    "art-source/ios-fix20260928/g_luxunRun0.png": {
+      "bytes": 60565,
+      "sha256": "ce18feb2e712e1ad85acfa33fca239839c9819a03560d65d94016f20de69c3fc"
+    },
+    "art-source/ios-fix20260928/g_luxunRun1.png": {
+      "bytes": 60872,
+      "sha256": "11c0e65ba95b071417c2d21030cbd0a8a5bcb05e2c16bb09c8601622d2e26c7c"
+    },
+    "art-source/ios-fix20260928/g_luxunThrust.png": {
+      "bytes": 66195,
+      "sha256": "a762e1b04727a60550fb119416576eccf90b15b709e2c5d7d301ee5c127fb354"
+    },
+    "art-source/ios-fix20260928/g_machaoRun0.png": {
+      "bytes": 71622,
+      "sha256": "bc71752eeb806ae5ac7b69b11b90b724dcf644fc02bfbcb26cffaed161166456"
+    },
+    "art-source/ios-fix20260928/g_machaoRun1.png": {
+      "bytes": 71284,
+      "sha256": "3fbf9de7b3b4e0e19935b1f20cc1dbab399e25244c9cc33e5d90bd204efca101"
+    },
+    "art-source/ios-fix20260928/g_machaoThrust.png": {
+      "bytes": 71666,
+      "sha256": "1de60b79d57b51e3a0949c1e43b1afd94795d4a3a955841ee233cfeb1c4613ad"
+    },
+    "art-source/ios-fix20260928/g_mid_guandao_0.png": {
+      "bytes": 65190,
+      "sha256": "5e89e9805a4d847955914ff258c14db003ea48b9c42315058c06ddd61a43f729"
+    },
+    "art-source/ios-fix20260928/g_mid_guandao_1.png": {
+      "bytes": 77427,
+      "sha256": "243c88a925af61eb6e3f7ffef4631155e97beca756829cbd2c40ecc9b68a25d0"
+    },
+    "art-source/ios-fix20260928/g_mid_guding_0.png": {
+      "bytes": 80572,
+      "sha256": "8f4ec5157c321af34dc43a2b5ac1069583ebc4330b936f3f424027b16e9d29aa"
+    },
+    "art-source/ios-fix20260928/g_mid_guding_1.png": {
+      "bytes": 118334,
+      "sha256": "2a5df854c685929aa316f5a5b194087a8eba27c3f504737eb727641c49b8f9ca"
+    },
+    "art-source/ios-fix20260928/g_mid_huaji_0.png": {
+      "bytes": 67976,
+      "sha256": "8ec0066e57dbf016df15220d2c85d76a59fb422a6f3b2b63cf18a361fcecb6b3"
+    },
+    "art-source/ios-fix20260928/g_mid_huaji_1.png": {
+      "bytes": 87620,
+      "sha256": "d6c8e455dcec755be1f5633b9b73abeab3e50743218588c8d986651a14f8773e"
+    },
+    "art-source/ios-fix20260928/g_mid_liannu_0.png": {
+      "bytes": 106157,
+      "sha256": "ebdf7de6ed01c4830551e7ba2bced0ef831027eec219abf45f8db73bcaa69be9"
+    },
+    "art-source/ios-fix20260928/g_mid_liannu_1.png": {
+      "bytes": 103750,
+      "sha256": "ff93d516c4f5154b5ce5169cc3332f3d05bcc3e50d27de33e0cff1aa78c2b016"
+    },
+    "art-source/ios-fix20260928/g_mid_qinggang_0.png": {
+      "bytes": 72498,
+      "sha256": "82f9a89cb82083f0aa5de7ff44ba2e4ad5c34ca538af2ca3255958cb8e2b8a6b"
+    },
+    "art-source/ios-fix20260928/g_mid_qinggang_1.png": {
+      "bytes": 132061,
+      "sha256": "5d666d18131ba2e4f03a7aad2f89c2d814d8c3ad89c8e8c92497daedd4be9c5b"
+    },
+    "art-source/ios-fix20260928/g_mid_shemao_0.png": {
+      "bytes": 66293,
+      "sha256": "2e381265501281d4fa864181c1ec793c2ba7ab1375e7fb4ba210e2cfb66f7d13"
+    },
+    "art-source/ios-fix20260928/g_mid_shemao_1.png": {
+      "bytes": 79341,
+      "sha256": "2686eb2c807b931942d8df772e0cce277e8216280b403eed46775c2503fd550a"
+    },
+    "art-source/ios-fix20260928/g_mid_shuanggu_0.png": {
+      "bytes": 78919,
+      "sha256": "ead56b3e4c6cfab8a1223135d7949eab2355b989df4c4dbc89217ac4bfd7b8ab"
+    },
+    "art-source/ios-fix20260928/g_mid_shuanggu_1.png": {
+      "bytes": 97649,
+      "sha256": "bd185ade285054054a8f87afbc2f1697d824f095b88e539042cecb65147b7b63"
+    },
+    "art-source/ios-fix20260928/g_mid_shuangji_0.png": {
+      "bytes": 87936,
+      "sha256": "2883e6752c780fdb2d02db44fc2d45ed8f81add7af19c89906478d35d86023d3"
+    },
+    "art-source/ios-fix20260928/g_mid_shuangji_1.png": {
+      "bytes": 133813,
+      "sha256": "f611ed3936b28ffad7e5d8e085302e4a4c536cd072808aabf2e5eaaec9af1058"
+    },
+    "art-source/ios-fix20260928/g_mid_spear_0.png": {
+      "bytes": 62187,
+      "sha256": "30fa6d300d716f229edb4c0baa1851c094a8441f89cbcfa41789d0683dab5087"
+    },
+    "art-source/ios-fix20260928/g_mid_spear_1.png": {
+      "bytes": 82732,
+      "sha256": "10d4826719d13a591967f6a3a6ead3d0f76e379fed70407c3469dec392ab6f0a"
+    },
+    "art-source/ios-fix20260928/g_mid_yitian_0.png": {
+      "bytes": 68283,
+      "sha256": "ea23949bb66a0eb6f501dba5114a4dc57ef5328d1d3085960006256b6034264e"
+    },
+    "art-source/ios-fix20260928/g_mid_yitian_1.png": {
+      "bytes": 125358,
+      "sha256": "ca51e1d6e4d5262b240e6d9ae51d9f9d8209fbea64eff8754e4fbfb0c90b26ae"
+    },
+    "art-source/ios-fix20260928/g_part_shuanggu.png": {
+      "bytes": 17770,
+      "sha256": "52e5b9b5af81155e35a534ad729237c4974d6a325064e8f5ad26b758a769c8a5"
+    },
+    "art-source/ios-fix20260928/g_part_shuangji.png": {
+      "bytes": 35606,
+      "sha256": "1bb02dfa5954e15b8c07baa2a07eced903e65de2a41ec05ce879146336ba513d"
+    },
+    "art-source/ios-fix20260928/g_portrait_cao.png": {
+      "bytes": 14891,
+      "sha256": "c22b34b5d5bf8eca0e2391f76a3315d8141d84c012ce972826cc6a1f9e24c458"
+    },
+    "art-source/ios-fix20260928/g_portrait_dian.png": {
+      "bytes": 12660,
+      "sha256": "eec7bb9c465a0fbd8e4b0d52aab6d835b078734cd4fe4f4269dc3641419b4ef0"
+    },
+    "art-source/ios-fix20260928/g_portrait_dong.png": {
+      "bytes": 19165,
+      "sha256": "2c3e21d684f2032ea3104143689a21c52b8497902d3f3afdf620f0e8ec75d208"
+    },
+    "art-source/ios-fix20260928/g_portrait_guan.png": {
+      "bytes": 14564,
+      "sha256": "baddddd0dea51d692332cbb4493a107572b2612f91513ce29d8b7bce397362a0"
+    },
+    "art-source/ios-fix20260928/g_portrait_huang.png": {
+      "bytes": 25798,
+      "sha256": "e70ed2c230e07de06c665dfca5904fbcdc148ece89f27729f927c98bb4576eeb"
+    },
+    "art-source/ios-fix20260928/g_portrait_jiang.png": {
+      "bytes": 15043,
+      "sha256": "8db0a2a0acd9aabb1c73e3d358a132d7d8a07312cda830b0002e4390ab236348"
+    },
+    "art-source/ios-fix20260928/g_portrait_jiao.png": {
+      "bytes": 13390,
+      "sha256": "1d70d8f2d1f4dfdd5d24d27e2a9cf3b35a9f468fdef9de2c63f8ecf0007ec68e"
+    },
+    "art-source/ios-fix20260928/g_portrait_liao.png": {
+      "bytes": 20331,
+      "sha256": "c42aba2d08456a5cf96bbef7defc7278bb75134c67d7184b7d56ac85f6178689"
+    },
+    "art-source/ios-fix20260928/g_portrait_lubu.png": {
+      "bytes": 23528,
+      "sha256": "d8b118baced9766fd161c7748ce73d4467002ca5998d43d89f9c0c26f8ab3012"
+    },
+    "art-source/ios-fix20260928/g_portrait_lumeng.png": {
+      "bytes": 19781,
+      "sha256": "4b2cdc42c9ab1e3eaf2205713899c8916a622cf7964116373f6e98342ebd3f87"
+    },
+    "art-source/ios-fix20260928/g_portrait_luxun.png": {
+      "bytes": 21741,
+      "sha256": "5812fd832a669112d97f97d582686477e6d5063df0173a3765f4a6fd86572936"
+    },
+    "art-source/ios-fix20260928/g_portrait_machao.png": {
+      "bytes": 28631,
+      "sha256": "c6203b4e22dcb2a8c04f0cb5cb11a0dd9cc1a0abe00866a03257c07eaa300a91"
+    },
+    "art-source/ios-fix20260928/g_portrait_pang.png": {
+      "bytes": 36798,
+      "sha256": "e0557935173e28e6aece36f7fdcf7da25c68dc68a878a6ac5a9a017551d82f03"
+    },
+    "art-source/ios-fix20260928/g_portrait_sunce.png": {
+      "bytes": 25703,
+      "sha256": "b3d6865636ddb633d313285c3987b744119f42d7e03e7996804d2ab9c82680be"
+    },
+    "art-source/ios-fix20260928/g_portrait_sunxiang.png": {
+      "bytes": 18463,
+      "sha256": "f602bef9f49a9e5e6f1bbaf2213b32cf847c900213c7baf1254376f0458eb6eb"
+    },
+    "art-source/ios-fix20260928/g_portrait_xiahou.png": {
+      "bytes": 20342,
+      "sha256": "cd4a2d401b7a5e2ae39026797ad596b871d5b0f4086e82f8dd05657336a10248"
+    },
+    "art-source/ios-fix20260928/g_portrait_xu.png": {
+      "bytes": 19514,
+      "sha256": "2da7666dae3e0f27b4893e8fdd31ee61ed1faca1c990c669d9dd74cb428fc87f"
+    },
+    "art-source/ios-fix20260928/g_portrait_zhang.png": {
+      "bytes": 18021,
+      "sha256": "b076c03c8a60b50d760a5ee4bdffaecd7b8584069c3486dc9c7e913284793ea3"
+    },
+    "art-source/ios-fix20260928/g_portrait_zhao.png": {
+      "bytes": 24200,
+      "sha256": "2bdbb4833807e968ac8ebe908330b277d501a19982cf0c58298e812d3ef164e0"
+    },
+    "art-source/ios-fix20260928/g_portrait_zhou.png": {
+      "bytes": 19393,
+      "sha256": "712ac8cfb88d4310373ec24f38e0341227389144c9049a0fae5dec6b720e93cf"
+    },
+    "art-source/ios-fix20260928/g_portrait_zhuge.png": {
+      "bytes": 19904,
+      "sha256": "8470bc1250581981783b837edb0d83235637d800a70ee8516f0c2aa698606b4c"
+    },
+    "art-source/ios-fix20260928/g_sunxiangRun0.png": {
+      "bytes": 57300,
+      "sha256": "a6197d716b8195e2c23b4ca025bb37b82c6f4759d9c4912ddf77b5db6cedad14"
+    },
+    "art-source/ios-fix20260928/g_sunxiangRun1.png": {
+      "bytes": 51182,
+      "sha256": "81b453e8e9486724dcd8166e10cfe63f75d5615f34fdd4d4aafadf739ee115f4"
+    },
+    "art-source/ios-fix20260928/g_sunxiangThrust.png": {
+      "bytes": 54043,
+      "sha256": "cf7bdab772083f27a9e05d627cc8aed3e0ed51d19c0e7151add493bee5564d2a"
+    },
+    "art-source/ios-fix20260928/g_xiahouRun0.png": {
+      "bytes": 60407,
+      "sha256": "3816ebab19fd8d1ca01fe9aa61fbde605502163a65367981da997e81d9792ca6"
+    },
+    "art-source/ios-fix20260928/g_xiahouRun1.png": {
+      "bytes": 57943,
+      "sha256": "b3aada0c00810c8be9302fa320d96a832da67a294dc6423d33881eb4bf27d1e3"
+    },
+    "art-source/ios-fix20260928/g_xiahouThrust.png": {
+      "bytes": 61686,
+      "sha256": "017c2a3ced2a7ad33987d82759d91ed7df606cd0c8297fd990a269f9b4369548"
+    },
+    "art-source/ios-fix20260928/g_xuRun0.png": {
+      "bytes": 55730,
+      "sha256": "6c66fcd5dee2c0416f356c2d3fbe306d9bd9f8bee9883636aaa4ed384ed43dd1"
+    },
+    "art-source/ios-fix20260928/g_xuRun1.png": {
+      "bytes": 54814,
+      "sha256": "f904be2e224ec3d44842149d68de874c9e35c76c3748dacff836459df3a12ded"
+    },
+    "art-source/ios-fix20260928/g_xuThrust.png": {
+      "bytes": 59579,
+      "sha256": "f6ba857a4a6e692097c01c3c3c50b87413f33851aec36bbdcffbbcaddd38e914"
+    },
+    "art-source/ios-fix20260928/hero-gait-source.png": {
+      "bytes": 1103753,
+      "sha256": "ab6d50fa3afb3915e57a62f0e5f44e54adce156274a90b0aa34dd70f0efe6fea"
+    },
+    "art-source/ios-fix20260928/slice-ledger.json": {
+      "bytes": 59561,
+      "sha256": "86beaa7d1814d1d1a25d2871d416f2c5414a13a44942d6adbae7e421b03fc3e5"
+    },
+    "assets/resources.meta": {
+      "bytes": 276,
+      "sha256": "67938b644d5ab66b6f7d33cd6e5e200dc467753233e90ff141f028fe95bc6c1f"
+    },
+    "assets/resources/art.meta": {
+      "bytes": 169,
+      "sha256": "89a49ed80346a0839f0d1fab0d58add3551aa981f4eb2a4bc0d7a31b118e0057"
+    },
+    "assets/resources/art/cart.png": {
+      "bytes": 1416,
+      "sha256": "075d160e3d6c9fe04d27d8127444a3a35c174a080025762026e59766ffc755af"
+    },
+    "assets/resources/art/cart.png.meta": {
+      "bytes": 974,
+      "sha256": "6dac9039412e6d313715c820db4f9d22c9ba88211396197cded50e5c37fa00a7"
+    },
+    "assets/resources/art/ink.png": {
+      "bytes": 2472,
+      "sha256": "826eb3326c6c0f4e186254e4b3c801f1cbd529e982d7f5342a7434269c8a0a6e"
+    },
+    "assets/resources/art/ink.png.meta": {
+      "bytes": 973,
+      "sha256": "0b028455d2808707a76cd5f1321dfa33594dc50b66501e6152996bb7494ccf5f"
+    },
+    "assets/resources/art/landscape-0.png": {
+      "bytes": 88827,
+      "sha256": "af5d4ceeef1d216e67bd64b4c2ce7069ff3c93f7b7b145ef7c897dc53ed8847a"
+    },
+    "assets/resources/art/landscape-0.png.meta": {
+      "bytes": 982,
+      "sha256": "ca64f7428c25dbc484de695f443b15d7a8f22ac094497654ce9fda3381fc488d"
+    },
+    "assets/resources/art/landscape-1.png": {
+      "bytes": 88751,
+      "sha256": "f9f117132c7e68aafc7468359946dd1b11bd77e1b4d2dfd0dfb9049be1d5ebaa"
+    },
+    "assets/resources/art/landscape-1.png.meta": {
+      "bytes": 982,
+      "sha256": "f00f77c26611e47efb2e6ccf22e5c32c67dda63c752357f6e43b296cccad76ce"
+    },
+    "assets/resources/art/landscape-2.png": {
+      "bytes": 33101,
+      "sha256": "e78749684a44fe3483dd85eb6d12dbc9371d4e77a62b41143b0389af9fe33dd1"
+    },
+    "assets/resources/art/landscape-2.png.meta": {
+      "bytes": 982,
+      "sha256": "2e1330f4b7becc4691502258880d0f84d6ca7dd4bf87b3dde6d528b73393bd89"
+    },
+    "assets/resources/art/rock.png": {
+      "bytes": 1778,
+      "sha256": "221f5e99d9f6fb334b6ee3ed13c85aec07676dfe80e06dec9ebec30e05602261"
+    },
+    "assets/resources/art/rock.png.meta": {
+      "bytes": 974,
+      "sha256": "5162d8f6f1629a1dfe61d7b689bc7d41c7756ae7d8aedfd7dad343d98ddddcb9"
+    },
+    "assets/resources/art/soldier.png": {
+      "bytes": 1135,
+      "sha256": "b9725188c0a3b4ca6bff9eda5fa8ec3e737addca1876e1dd8d12c5b9b84eec03"
+    },
+    "assets/resources/art/soldier.png.meta": {
+      "bytes": 977,
+      "sha256": "ee29871c788554fceff6d8e9432ffd8984afd7cca77e4d0a2cda08480f3ee594"
+    },
+    "assets/resources/art/sparrow.png": {
+      "bytes": 1279,
+      "sha256": "b36191d8f0b6dc9aad09da2e9dc6f47512ae4867ad75e9527224a3bde2d3b53c"
+    },
+    "assets/resources/art/sparrow.png.meta": {
+      "bytes": 977,
+      "sha256": "7a8ae20642d6dbdb00eb203ba980256b4315978641371274f8f3f2d060771f6a"
+    },
+    "assets/resources/art/traveler.png": {
+      "bytes": 2167,
+      "sha256": "bec457421097c5857390946bf9f18b204d206fc283cb23592349da00b0e022b4"
+    },
+    "assets/resources/art/traveler.png.meta": {
+      "bytes": 978,
+      "sha256": "734312fe3b1a1d55b420fb4cccf267596e8982c1cd7badd8c5ae7545d6a5f3c4"
+    },
+    "assets/resources/art/wood.png": {
+      "bytes": 2467,
+      "sha256": "06609d423832ab28d4e83108e3a465104a49ce99791baa7580e284021897f01b"
+    },
+    "assets/resources/art/wood.png.meta": {
+      "bytes": 974,
+      "sha256": "074fd42d1f462cae1e62cd3f8d12305c8bc1e6bcb3f5705556263c90defeb168"
+    },
+    "assets/resources/audio-v031.meta": {
+      "bytes": 169,
+      "sha256": "bfa61f5dd91bf94b86e21594013d552fb4140415acf4c8177e0b564ebdaf749f"
+    },
+    "assets/resources/audio-v031/music-battle.m4a": {
+      "bytes": 1865512,
+      "sha256": "91b99afa2695415731820e9e8a1b13de0ea1511a2dd08dbbdfd554cd51d2bae1"
+    },
+    "assets/resources/audio-v031/music-battle.m4a.meta": {
+      "bytes": 222,
+      "sha256": "3f5d8ce6ec3b04994eee3ef53754feb886b79cd43d6edbb57370400680a42202"
+    },
+    "assets/resources/audio.meta": {
+      "bytes": 169,
+      "sha256": "dce6278ba176b2dba82dc61770982bfd5e238483f2ad1e60311b3cdb883e343b"
+    },
+    "assets/resources/audio/break.mp3": {
+      "bytes": 2759,
+      "sha256": "a792daf8c80a915f089ef8dd69c7b991ddd82af115062f7300d0e45f69c2bbf7"
+    },
+    "assets/resources/audio/break.mp3.meta": {
+      "bytes": 222,
+      "sha256": "190348fa5a69c4183a16c75a8ab4c9d9100d8318f06db50fe97ae988e831a8d5"
+    },
+    "assets/resources/audio/gather.mp3": {
+      "bytes": 6312,
+      "sha256": "31bbdad4a26a001e9ce7b360dacb1d2617c2a52861194dca7317c8a61f40bf66"
+    },
+    "assets/resources/audio/gather.mp3.meta": {
+      "bytes": 222,
+      "sha256": "9af3dfcebc5d0f4ff500953bacc2901a0d9b0ea398c4f55cddf85f8c1b7b6715"
+    },
+    "assets/resources/audio/hit.mp3": {
+      "bytes": 1505,
+      "sha256": "e0c56190020ae7be5bdb329b79a810e9761c4ae038212d84564af0c5dba087c1"
+    },
+    "assets/resources/audio/hit.mp3.meta": {
+      "bytes": 222,
+      "sha256": "923cf0d76a8a87ad0753ada40e0132a8fce1ecc9b68847f83c5545b36d7a0f90"
+    },
+    "assets/resources/audio/hurt.mp3": {
+      "bytes": 3595,
+      "sha256": "16c55c77040394c5e5cd68959350db3510d9ac9b3bd7d3e0f4cf1c5757a33423"
+    },
+    "assets/resources/audio/hurt.mp3.meta": {
+      "bytes": 222,
+      "sha256": "716eb48ca2cfc63d388d83ba264a59261b44a590960ff81a4ba5bcf5df37850a"
+    },
+    "assets/resources/audio/music.mp3": {
+      "bytes": 128774,
+      "sha256": "b16ba541ef475d7c4d3917f103671e0f4deeb518a5196b1abd752527e8a10f67"
+    },
+    "assets/resources/audio/music.mp3.meta": {
+      "bytes": 222,
+      "sha256": "7cd99befe7f17a1a8604dda3533c5b766da28d306eb901824348fe3788bcece6"
+    },
+    "assets/resources/audio/warn.mp3": {
+      "bytes": 4013,
+      "sha256": "99a7ac1ef3e111cd697e45bf2266447f6e01a95395f1aba472419fdafd143fce"
+    },
+    "assets/resources/audio/warn.mp3.meta": {
+      "bytes": 222,
+      "sha256": "664fe80c54524a3ce930938a564746b17be46cba0e49ce270c53d0a802430707"
+    },
+    "assets/resources/battle20260925.meta": {
+      "bytes": 169,
+      "sha256": "2d33964723d00d2ef49fc8962566182d73fc93870a3731baaee0a4041c5966ea"
+    },
+    "assets/resources/battle20260925/bosses.png": {
+      "bytes": 180156,
+      "sha256": "9d2806319b2ea7455d86b5352f671fff4fcf9e617d52b46209ceb0537a05f3c4"
+    },
+    "assets/resources/battle20260925/bosses.png.meta": {
+      "bytes": 990,
+      "sha256": "dda28e4afba395bf19c4a0130fe56bd2ed227e74d50f69061f03d5426de6d793"
+    },
+    "assets/resources/battle20260925/companions.png": {
+      "bytes": 59330,
+      "sha256": "b16215f180ddf0d4c5405b62df784754dcf2408d98fd32e23324b175ce9cea0c"
+    },
+    "assets/resources/battle20260925/companions.png.meta": {
+      "bytes": 994,
+      "sha256": "7dbb793e0ff2f9ba10f4259d7dce21e4b6abeb606bc406dbe94835a4a9d3e91f"
+    },
+    "assets/resources/battle20260925/crates.png": {
+      "bytes": 163514,
+      "sha256": "1245b890834f166b6e7205a1f8b58ef546d6830eafb6d0b5c77b00a33c821a07"
+    },
+    "assets/resources/battle20260925/crates.png.meta": {
+      "bytes": 990,
+      "sha256": "e6586a1d1fd33c4c3d82141f895d7fee33f0bf0b7fae3d8fe90f3f49d22b1846"
+    },
+    "assets/resources/battle20260925/distant.png": {
+      "bytes": 556231,
+      "sha256": "54f39a89b76cdaad57563d630b5583ffa8fbfde30b26ca130070db47e78ff08b"
+    },
+    "assets/resources/battle20260925/distant.png.meta": {
+      "bytes": 991,
+      "sha256": "f0b06055eaeffd11c8496916efa8c31f81a27239c055b58bd54360b75c8a2386"
+    },
+    "assets/resources/battle20260925/gate-parts.png": {
+      "bytes": 180238,
+      "sha256": "c0c972921bfa114447e2a1a649fe3c5d5af4a955be4c53be782a8b62467450fb"
+    },
+    "assets/resources/battle20260925/gate-parts.png.meta": {
+      "bytes": 994,
+      "sha256": "15428f8f07f669c929756604fb6f77de4bceccd9e9e89a9ff978742e333774d5"
+    },
+    "assets/resources/battle20260925/grass.jpg": {
+      "bytes": 64361,
+      "sha256": "9366a85600a192c13fafb4052a8d2bd5eca9ad157e9db38e32c56c457a094cc6"
+    },
+    "assets/resources/battle20260925/grass.jpg.meta": {
+      "bytes": 990,
+      "sha256": "7e22d6c6ba8f195ddb320c323b9e3d28c45799c5a1371753b6f64061ed4d7d8d"
+    },
+    "assets/resources/battle20260925/heroes.png": {
+      "bytes": 127398,
+      "sha256": "d1ca90e59597dae7c3f6cf0721faa46bd736b1785f502b44a37ac97a84f09af3"
+    },
+    "assets/resources/battle20260925/heroes.png.meta": {
+      "bytes": 990,
+      "sha256": "1277e2dffc499987a3f2f4df6b5111cb21f80584be2ee3b769a1d1c4dcf4a2b2"
+    },
+    "assets/resources/battle20260925/road.jpg": {
+      "bytes": 93297,
+      "sha256": "e5aab5c57d636c3b357523382666d7cbe4738bdb89fdf32f2b278509a07701e2"
+    },
+    "assets/resources/battle20260925/road.jpg.meta": {
+      "bytes": 989,
+      "sha256": "2f48832a39bec49eaa9403061cf64bf1441e08354bb893eb200c8be6b636499b"
+    },
+    "assets/resources/battle20260925/scenery.png": {
+      "bytes": 180576,
+      "sha256": "ce5025c52e170050bc209ff8ac4e4b024c867295ce0625bb2b4ae54a21c70405"
+    },
+    "assets/resources/battle20260925/scenery.png.meta": {
+      "bytes": 991,
+      "sha256": "0ef526b949502e904ae8fb3932710ad7285f6cbc54be03e8c54fe161ea586591"
+    },
+    "assets/resources/battle20260925/soldiers.png": {
+      "bytes": 49622,
+      "sha256": "df9cab6da83288b57544c7f54190f4ad60046c2d6f4403c43d11f9e0ea92f8f3"
+    },
+    "assets/resources/battle20260925/soldiers.png.meta": {
+      "bytes": 992,
+      "sha256": "2eb4a1ef3f3571f5562c1bdbda54a4f00a108a1ee5994da9608da122df524009"
+    },
+    "assets/resources/battlefix2.meta": {
+      "bytes": 169,
+      "sha256": "1d2e5733c8e13a50b9c631be8362186966aaf0796dfc6644c29f76e3f1f449ee"
+    },
+    "assets/resources/battlefix2/actions.png": {
+      "bytes": 206823,
+      "sha256": "a6d06f6e3c24cf63ddb5cc91953a03a825ed8b4620bcc427fdb0e0effb2fb792"
+    },
+    "assets/resources/battlefix2/actions.png.meta": {
+      "bytes": 991,
+      "sha256": "bf49d6a183698cfd1dd1d61aa1d3607c362a772376f43a538da595f123e17162"
+    },
+    "assets/resources/battlefix2/blade.png": {
+      "bytes": 41610,
+      "sha256": "a52b78f8bd38ae891f2f09a8639e00d552350f2b69d87467427709ba6fa39c04"
+    },
+    "assets/resources/battlefix2/blade.png.meta": {
+      "bytes": 989,
+      "sha256": "bf4ec9e303694f871d6545935b8db2a803846b1c1f5d123c13aa645465042544"
+    },
+    "assets/resources/battlefix2/environment.png": {
+      "bytes": 71539,
+      "sha256": "4516ba1f3f2297e8db2d61063cd5a0007ec97848bc4543c2c0f48e8999e1ac2d"
+    },
+    "assets/resources/battlefix2/environment.png.meta": {
+      "bytes": 995,
+      "sha256": "5441ea1ad007beba465509de7caec243ad1ac9ed0d691f4853ca6d79b9732c1b"
+    },
+    "assets/resources/battlefix2/shadow.png": {
+      "bytes": 5753,
+      "sha256": "0bb08d11f55a63498d8198e9c4ce515bd51cc60cd7b80d96c4565f3bd8728aef"
+    },
+    "assets/resources/battlefix2/shadow.png.meta": {
+      "bytes": 990,
+      "sha256": "59fe194c5f25efa562126d96d70fe44c5fa559c9e0309234435576f5fde098c0"
+    },
+    "assets/resources/battlefix2/wall-middle.png": {
+      "bytes": 19486,
+      "sha256": "28c546a36894c2e29eca4fb8f2d70d75e78243c161fc33fab29023ae8ce550f2"
+    },
+    "assets/resources/battlefix2/wall-middle.png.meta": {
+      "bytes": 995,
+      "sha256": "bdb1b5f1c1efd13ddb0801f1c6cf8913d987cd461f74cc3ba03839208cb49a4d"
+    },
+    "assets/resources/battlefix2/waves.png": {
+      "bytes": 135803,
+      "sha256": "b181f20e0583dcfcac4e292c14efe450640dfc9c626c6998dabb143d7e46e033"
+    },
+    "assets/resources/battlefix2/waves.png.meta": {
+      "bytes": 989,
+      "sha256": "ed5fe962d7c9d1a92529a95331ca4d28e38264c3103baa91e8a4111337125d16"
+    },
+    "assets/resources/battlefix2/zhao.png": {
+      "bytes": 43639,
+      "sha256": "42db3e0609240f7ef2360a2be86eaf60cb9d9ee2c21adc12adaef14c90c38f5d"
+    },
+    "assets/resources/battlefix2/zhao.png.meta": {
+      "bytes": 988,
+      "sha256": "c65378149aaca60118b8dc7743d3528be209bdbe908b9b8cc4bd65a123255895"
+    },
+    "assets/resources/formal20260927.meta": {
+      "bytes": 169,
+      "sha256": "6fbbf0bd8386381afea97d09a09adcb91ef4a2ddd4affa23c2bec5a1e754ce95"
+    },
+    "assets/resources/formal20260927/battle20260925_bosses.png": {
+      "bytes": 180156,
+      "sha256": "9d2806319b2ea7455d86b5352f671fff4fcf9e617d52b46209ceb0537a05f3c4"
+    },
+    "assets/resources/formal20260927/battle20260925_bosses.png.meta": {
+      "bytes": 991,
+      "sha256": "357c5ddd2e7f1e203ddf4eb865f40bc8bd5408612cb97c5d9a3c8ad8dee3e472"
+    },
+    "assets/resources/formal20260927/battle20260925_companions.png": {
+      "bytes": 59330,
+      "sha256": "b16215f180ddf0d4c5405b62df784754dcf2408d98fd32e23324b175ce9cea0c"
+    },
+    "assets/resources/formal20260927/battle20260925_companions.png.meta": {
+      "bytes": 995,
+      "sha256": "8a4809c4fb84690a5842c24d7a5e8ddc053e67564c7cf9c809fc60385dc32884"
+    },
+    "assets/resources/formal20260927/battle20260925_crates.png": {
+      "bytes": 163514,
+      "sha256": "1245b890834f166b6e7205a1f8b58ef546d6830eafb6d0b5c77b00a33c821a07"
+    },
+    "assets/resources/formal20260927/battle20260925_crates.png.meta": {
+      "bytes": 991,
+      "sha256": "d5cdd69e713236b35266f35582d3b37983045ebcb10650de8990d9bfeab8a07a"
+    },
+    "assets/resources/formal20260927/battle20260925_distant.png": {
+      "bytes": 556231,
+      "sha256": "54f39a89b76cdaad57563d630b5583ffa8fbfde30b26ca130070db47e78ff08b"
+    },
+    "assets/resources/formal20260927/battle20260925_distant.png.meta": {
+      "bytes": 992,
+      "sha256": "29ebb3292031dc29e1a8dea12fe7257e400babd77f081c3e49772d7e62d5e1e6"
+    },
+    "assets/resources/formal20260927/battle20260925_gate-parts.png": {
+      "bytes": 180238,
+      "sha256": "c0c972921bfa114447e2a1a649fe3c5d5af4a955be4c53be782a8b62467450fb"
+    },
+    "assets/resources/formal20260927/battle20260925_gate-parts.png.meta": {
+      "bytes": 995,
+      "sha256": "3765f4ec6d13e0f2e147f198ca5570e1da5202816bf19e676edf7bca4e109c18"
+    },
+    "assets/resources/formal20260927/battle20260925_grass.png": {
+      "bytes": 64361,
+      "sha256": "9366a85600a192c13fafb4052a8d2bd5eca9ad157e9db38e32c56c457a094cc6"
+    },
+    "assets/resources/formal20260927/battle20260925_grass.png.meta": {
+      "bytes": 991,
+      "sha256": "7edc38a485d5196fba74360c7140040155fd0a8dfe0b205a179949aa6f44032f"
+    },
+    "assets/resources/formal20260927/battle20260925_heroes.png": {
+      "bytes": 127398,
+      "sha256": "d1ca90e59597dae7c3f6cf0721faa46bd736b1785f502b44a37ac97a84f09af3"
+    },
+    "assets/resources/formal20260927/battle20260925_heroes.png.meta": {
+      "bytes": 991,
+      "sha256": "da3f6e333875d5f2f7a8e4d0711747100087d10708f73dafde12e95d1539e7ac"
+    },
+    "assets/resources/formal20260927/battle20260925_road.png": {
+      "bytes": 93297,
+      "sha256": "e5aab5c57d636c3b357523382666d7cbe4738bdb89fdf32f2b278509a07701e2"
+    },
+    "assets/resources/formal20260927/battle20260925_road.png.meta": {
+      "bytes": 990,
+      "sha256": "284ea3945ba8c94299e78419e1b12b3dc24f9984634a381b2fb8050a48e502aa"
+    },
+    "assets/resources/formal20260927/battle20260925_scenery.png": {
+      "bytes": 180576,
+      "sha256": "ce5025c52e170050bc209ff8ac4e4b024c867295ce0625bb2b4ae54a21c70405"
+    },
+    "assets/resources/formal20260927/battle20260925_scenery.png.meta": {
+      "bytes": 992,
+      "sha256": "a41eb40bf647be1487e1a20e95088889653bbd0f4985ad4c854a1086df727306"
+    },
+    "assets/resources/formal20260927/battle20260925_soldiers.png": {
+      "bytes": 49622,
+      "sha256": "df9cab6da83288b57544c7f54190f4ad60046c2d6f4403c43d11f9e0ea92f8f3"
+    },
+    "assets/resources/formal20260927/battle20260925_soldiers.png.meta": {
+      "bytes": 993,
+      "sha256": "69c050bdf1545effb412464795ba3939a9bd5fe2e8f5480c54fe107b41532fd2"
+    },
+    "assets/resources/formal20260927/battlefix2_actions.png": {
+      "bytes": 206823,
+      "sha256": "a6d06f6e3c24cf63ddb5cc91953a03a825ed8b4620bcc427fdb0e0effb2fb792"
+    },
+    "assets/resources/formal20260927/battlefix2_actions.png.meta": {
+      "bytes": 988,
+      "sha256": "1acef2102bb717b1adad2b8c9c3c9c270580364587309284082a100a4704ed33"
+    },
+    "assets/resources/formal20260927/battlefix2_blade.png": {
+      "bytes": 41610,
+      "sha256": "a52b78f8bd38ae891f2f09a8639e00d552350f2b69d87467427709ba6fa39c04"
+    },
+    "assets/resources/formal20260927/battlefix2_blade.png.meta": {
+      "bytes": 986,
+      "sha256": "7d3e530a15ba846b47f74c179623ba4358982ccb4f16625a03ca5bc5d9bfc50f"
+    },
+    "assets/resources/formal20260927/battlefix2_environment.png": {
+      "bytes": 71539,
+      "sha256": "4516ba1f3f2297e8db2d61063cd5a0007ec97848bc4543c2c0f48e8999e1ac2d"
+    },
+    "assets/resources/formal20260927/battlefix2_environment.png.meta": {
+      "bytes": 992,
+      "sha256": "a46388ab97815d56f6712efca8cb356c94f1373ab5cd55ad308249c4be5c3d77"
+    },
+    "assets/resources/formal20260927/battlefix2_shadow.png": {
+      "bytes": 5753,
+      "sha256": "0bb08d11f55a63498d8198e9c4ce515bd51cc60cd7b80d96c4565f3bd8728aef"
+    },
+    "assets/resources/formal20260927/battlefix2_shadow.png.meta": {
+      "bytes": 987,
+      "sha256": "342c256466da91af488acc386fd7f5f49f39ddb7df0d27a48ab1045179bb393a"
+    },
+    "assets/resources/formal20260927/battlefix2_wall-middle.png": {
+      "bytes": 19486,
+      "sha256": "28c546a36894c2e29eca4fb8f2d70d75e78243c161fc33fab29023ae8ce550f2"
+    },
+    "assets/resources/formal20260927/battlefix2_wall-middle.png.meta": {
+      "bytes": 992,
+      "sha256": "e170d1ae8661c0132da9cfe6a76480c7896b37ef8d7973436480ed3f0712bdac"
+    },
+    "assets/resources/formal20260927/battlefix2_waves.png": {
+      "bytes": 135803,
+      "sha256": "b181f20e0583dcfcac4e292c14efe450640dfc9c626c6998dabb143d7e46e033"
+    },
+    "assets/resources/formal20260927/battlefix2_waves.png.meta": {
+      "bytes": 986,
+      "sha256": "46f8083d50f6184aeac27258c15fe29f1b5a0e70b56bee794579ac768fce78de"
+    },
+    "assets/resources/formal20260927/battlefix2_zhao.png": {
+      "bytes": 43639,
+      "sha256": "42db3e0609240f7ef2360a2be86eaf60cb9d9ee2c21adc12adaef14c90c38f5d"
+    },
+    "assets/resources/formal20260927/battlefix2_zhao.png.meta": {
+      "bytes": 985,
+      "sha256": "fd8da351ae72d9346449a8bd6a639d0866f78208424e49c9a54cc69a01d90f96"
+    },
+    "assets/resources/formal20260927/formal-bossactions.png": {
+      "bytes": 2579334,
+      "sha256": "e86f166df15599aa1066b9c857ad693c297da086a9f09dd9853d505a3c085ddd"
+    },
+    "assets/resources/formal20260927/formal-bossactions.png.meta": {
+      "bytes": 988,
+      "sha256": "fcdca15a295a1248d635a81a6f0fe7e45d9c63e8793f77fbafeb05ceca473022"
+    },
+    "assets/resources/formal20260927/formal-companions.png": {
+      "bytes": 1703181,
+      "sha256": "3f780eed572e03dfb64e025512a083ffc790b92632c462d5f9131ae8c61e7a1e"
+    },
+    "assets/resources/formal20260927/formal-companions.png.meta": {
+      "bytes": 987,
+      "sha256": "59834639af8b307a3765d53138f49cef002b3806e83de8e9394f1f359e7104af"
+    },
+    "assets/resources/formal20260927/formal-enemies.png": {
+      "bytes": 2393456,
+      "sha256": "2e3a635e9b2d07426f52d109cd1da9e5cbb5948e1fac312e9fa1f6ad56c55c41"
+    },
+    "assets/resources/formal20260927/formal-enemies.png.meta": {
+      "bytes": 984,
+      "sha256": "08de53e5d72e1937ad57c6fb40a4b947b7c87f6f15a45421c8d41baa711a6bdd"
+    },
+    "assets/resources/formal20260927/formal-fronts.png": {
+      "bytes": 2066792,
+      "sha256": "2d83179a1fdb1f7a761673c1fb98576e438927cac83f7b7e8a9cb97ed564f32e"
+    },
+    "assets/resources/formal20260927/formal-fronts.png.meta": {
+      "bytes": 983,
+      "sha256": "695b0aed99936c8f333973033835d73435ebf0a1843fceb1d4af801b24e79023"
+    },
+    "assets/resources/formal20260927/formal-heroes.png": {
+      "bytes": 2474842,
+      "sha256": "91cc523d84d07062a5762eb6564cb474cd50ad1dbfbe905703b43cfaf4f5ca8b"
+    },
+    "assets/resources/formal20260927/formal-heroes.png.meta": {
+      "bytes": 983,
+      "sha256": "c58ca106831446d890c6b49dc1027a88580863fb0903bf368f1fc2b56dd9b181"
+    },
+    "assets/resources/formal20260927/formal-mounted.png": {
+      "bytes": 2125583,
+      "sha256": "fc58d6b6d1a131557f48d565117c870a9ef2b6854aa6140029747fc5ef733d9d"
+    },
+    "assets/resources/formal20260927/formal-mounted.png.meta": {
+      "bytes": 984,
+      "sha256": "98cd54fd298977e41d19dbf9bc2faa58a23e49cad949604089b52ec8365d2510"
+    },
+    "assets/resources/formal20260927/formal-owners.png": {
+      "bytes": 2273482,
+      "sha256": "727c96875b081bfaacbae20000f2fd543d1e47b3881a1f4c934775fb1fd3881f"
+    },
+    "assets/resources/formal20260927/formal-owners.png.meta": {
+      "bytes": 983,
+      "sha256": "075a4e6f899b2e0cb50156495c903058c8c68eba2a7e239c21360a521748ae9b"
+    },
+    "assets/resources/formal20260927/formal-props.png": {
+      "bytes": 2200907,
+      "sha256": "8e15c82b0ba7f8450694f3136d0c3a4b4b0047661246884c9e848fe377b9295d"
+    },
+    "assets/resources/formal20260927/formal-props.png.meta": {
+      "bytes": 982,
+      "sha256": "db00bd52f000aea129c45a9a5e405c8d747927fd5fc6034f59e70fa2f375384a"
+    },
+    "assets/resources/formal20260927/formal-runs.png": {
+      "bytes": 2536197,
+      "sha256": "01920ebc16f23de529945044e26fbaf9e26c6471cbb86fbea27e82b9e535b5d0"
+    },
+    "assets/resources/formal20260927/formal-runs.png.meta": {
+      "bytes": 981,
+      "sha256": "978096225a3c35951fc8eca8dc12ababa63a3a44e831bd63aea38888f2127afd"
+    },
+    "assets/resources/formal20260927/gate-digits.fnt": {
+      "bytes": 1374,
+      "sha256": "5ed97f3c7573be9e9d33b444e08287bacb5c29c421f505908cd022dcc99a5d5a"
+    },
+    "assets/resources/formal20260927/gate-digits.fnt.meta": {
+      "bytes": 3365,
+      "sha256": "fa1bd08022f8d62693318e7bace2461a91242dc8588b66d0a4ef05b4169d8f06"
+    },
+    "assets/resources/formal20260927/gate-digits.png": {
+      "bytes": 17848,
+      "sha256": "5a092898411e20acb39f378971bc7db6ff1b65a5d9a98e706a9e6c0c4ace3eae"
+    },
+    "assets/resources/formal20260927/gate-digits.png.meta": {
+      "bytes": 2926,
+      "sha256": "594c82fff721bb3a08774c5af57b457fe793afabf7186e5065cc66b077c77c1d"
+    },
+    "assets/resources/formal20260927/gen_companions.png": {
+      "bytes": 1247476,
+      "sha256": "3d4b7d84b7d12050a7c6798192fa00cd92b33372a9d79843db90d3ea51d04e3b"
+    },
+    "assets/resources/formal20260927/gen_companions.png.meta": {
+      "bytes": 984,
+      "sha256": "1155f93ab0cc93cae13e7d54c14185d00271e98a8c2b58f3308b06a0101a8efb"
+    },
+    "assets/resources/formal20260927/gen_crates2.png": {
+      "bytes": 1929209,
+      "sha256": "b547d5db069b40deb23812b09f559f32bb10ed22c8a611de29b3f1ee01838bc9"
+    },
+    "assets/resources/formal20260927/gen_crates2.png.meta": {
+      "bytes": 981,
+      "sha256": "ac3866b08b75ca3ecf784e17de683b3f3538720078cdbb1fa0fbbfc3f59aa6c4"
+    },
+    "assets/resources/formal20260927/gen_enemy_lubu.png": {
+      "bytes": 1058081,
+      "sha256": "54910582b7e960cd1561c9a8e5f616f1a57cd9fd7bf0a416d92d008207cd295b"
+    },
+    "assets/resources/formal20260927/gen_enemy_lubu.png.meta": {
+      "bytes": 984,
+      "sha256": "a0079cebfddbe8f53bdb338d91b6722f5c99c9c32b4102112aafce277fb4e8a2"
+    },
+    "assets/resources/formal20260927/gen_gate_parts2.png": {
+      "bytes": 1244035,
+      "sha256": "f849472b1b2a3488c5eafb2fe5c307d8dad2242a448d9defd37ca63080ae613a"
+    },
+    "assets/resources/formal20260927/gen_gate_parts2.png.meta": {
+      "bytes": 985,
+      "sha256": "1733823f32a889592736fc9592b6f36b72bb03f5775d139f86859125023560af"
+    },
+    "assets/resources/formal20260927/gen_hero_run.png": {
+      "bytes": 1478594,
+      "sha256": "3ac8791bf51c412a8ea54201b3be52fb84796869e4ff862e14b37dff891f6c7e"
+    },
+    "assets/resources/formal20260927/gen_hero_run.png.meta": {
+      "bytes": 982,
+      "sha256": "dc58ecc89977a442839e58d5386023103d62478c035394652a58a1284ff575b6"
+    },
+    "assets/resources/formal20260927/gen_hero_spear.png": {
+      "bytes": 970850,
+      "sha256": "64cef7d0f0cfe5d9d9b67b9a6b2d5015ef9288fcf7f413a138c97083ddb9e4e7"
+    },
+    "assets/resources/formal20260927/gen_hero_spear.png.meta": {
+      "bytes": 984,
+      "sha256": "dceafce73baf62232e043d429fe206b1af212d4e4d13065b3555eae2b2615d59"
+    },
+    "assets/resources/formal20260927/gen_hero_weapons.png": {
+      "bytes": 1577310,
+      "sha256": "0fa1244dca747815001ae66847c108214b9d5277a9044974b5e435ac6b33329c"
+    },
+    "assets/resources/formal20260927/gen_hero_weapons.png.meta": {
+      "bytes": 986,
+      "sha256": "a00923d5bf5c14213c28fb75337ffd9118e43aa22c7da1fa4513b3be51106120"
+    },
+    "assets/resources/formal20260927/gen_lubu2.png": {
+      "bytes": 1002062,
+      "sha256": "72d3a16de529e75639a47f63868937eccc4324e661aa41cd5a8269d6b51e22a5"
+    },
+    "assets/resources/formal20260927/gen_lubu2.png.meta": {
+      "bytes": 979,
+      "sha256": "b75050fb352c71b61abfc29a6ea8e6a9d29edb1b7e35d49f37430241fe22af2c"
+    },
+    "assets/resources/formal20260927/gen_props2.png": {
+      "bytes": 1527655,
+      "sha256": "901eb2e2ebdfdf9186199421d8d35c453df784488e3ebc1d55dabc6c274aa19c"
+    },
+    "assets/resources/formal20260927/gen_props2.png.meta": {
+      "bytes": 980,
+      "sha256": "66935ab5d9006016f9f929db838579acf6aebbaeff147e1c21aac549640ec4cd"
+    },
+    "assets/resources/formal20260927/gen_treasure_icons.png": {
+      "bytes": 1732542,
+      "sha256": "21757f580f3e4a0b065cfbde5f9a43d416d7cbd092e3e30fa1ea4fccabfb391d"
+    },
+    "assets/resources/formal20260927/gen_treasure_icons.png.meta": {
+      "bytes": 988,
+      "sha256": "9cd5f439970b2c91c8edc172b2a1e0cae5b36fdbdc2cf037e62c37143a64bdef"
+    },
+    "assets/resources/formal20260927/gen_troops.png": {
+      "bytes": 1037720,
+      "sha256": "8448af5e2961edf4d808fec05ac9305e2a2d06a485ab8a3f8c5aca02eda40446"
+    },
+    "assets/resources/formal20260927/gen_troops.png.meta": {
+      "bytes": 980,
+      "sha256": "4f75b6e1b709acbec68caf8b2caa0075c8a69f8e40de6181b37121ac6109365c"
+    },
+    "assets/resources/formal20260927/gen_wall_parts.png": {
+      "bytes": 1318556,
+      "sha256": "d3dc836bdae16865eb0a24dbe10de9f5606b3890fc00a5b60382ca4c99a4a8da"
+    },
+    "assets/resources/formal20260927/gen_wall_parts.png.meta": {
+      "bytes": 984,
+      "sha256": "6bf856aee5168a256c040e7e1a5deba8404aa757adab14a1afe7fb4eabd0795d"
+    },
+    "assets/resources/formal20260927/gen_weapon_icons.png": {
+      "bytes": 1187380,
+      "sha256": "62642eb67d72f65242b6d16f45aa22c9c57fc7691a6160a5bc6e8ff798fab611"
+    },
+    "assets/resources/formal20260927/gen_weapon_icons.png.meta": {
+      "bytes": 986,
+      "sha256": "c99ccbbf7f865d2e89ae9bfafae7e2c094b08f24128e0b3bcabaa423de532dfb"
+    },
+    "assets/resources/formal20260927/ios-added.png": {
+      "bytes": 4292289,
+      "sha256": "2b758e760823a7a29cdf748ce82469aa73c4faeb45ac3ef7028288ca284407e8"
+    },
+    "assets/resources/formal20260927/ios-added.png.meta": {
+      "bytes": 979,
+      "sha256": "d9ab12dafe5698b23e781b16d25ab60c5219e2f7cfc26c3640af0bff6a6d6d98"
+    },
+    "assets/resources/formal20260927/ios-bossactions.png": {
+      "bytes": 2571150,
+      "sha256": "4336f7d9275b13fec611f0a9a2d6e1ff40d607ec32b3202b0ecf039ad7613bcb"
+    },
+    "assets/resources/formal20260927/ios-bossactions.png.meta": {
+      "bytes": 985,
+      "sha256": "0747085d997b996a64f3ecd8e1e83aec231f2ad0af99a72b13d30a6cf98c4b68"
+    },
+    "assets/resources/formal20260927/ios-companions.png": {
+      "bytes": 1682765,
+      "sha256": "c05e0c8ec6730d2677b024006a2c850a269cc5c00eec1f02d273dd73a05c316b"
+    },
+    "assets/resources/formal20260927/ios-companions.png.meta": {
+      "bytes": 984,
+      "sha256": "fe9d36bcee34d35a243b332e0bf22a6324fe3749af0a33dee1aa026ce185aa98"
+    },
+    "assets/resources/formal20260927/ios-enemies.png": {
+      "bytes": 2376351,
+      "sha256": "f91bd162ba042641cfcbd2b0a386a2542108af7af00ad98ef0b879f582f432f4"
+    },
+    "assets/resources/formal20260927/ios-enemies.png.meta": {
+      "bytes": 981,
+      "sha256": "a8f5523e980c862db0da7a0921de30ebcfd1a5e2c509fe820d8677c59cc3be91"
+    },
+    "assets/resources/formal20260927/ios-fronts.png": {
+      "bytes": 2010058,
+      "sha256": "acad08095f267bd3c46c3522b38addea5f8bf8aed138a556d6f73d796fd20acf"
+    },
+    "assets/resources/formal20260927/ios-fronts.png.meta": {
+      "bytes": 980,
+      "sha256": "e6c029a635852b1a4b421f62f0f299fc032a738c5e302eb174a220ecf16e3394"
+    },
+    "assets/resources/formal20260927/ios-heroes.png": {
+      "bytes": 2412779,
+      "sha256": "d4a640a004323fa357ecd152f4fdd90297d9f0b92fa30affe963d6156f2e6786"
+    },
+    "assets/resources/formal20260927/ios-heroes.png.meta": {
+      "bytes": 980,
+      "sha256": "dfbde2ad6d63a908ca22690488fc55b6f88b972804340b8bc02faab586fad4fd"
+    },
+    "assets/resources/formal20260927/ios-map.png": {
+      "bytes": 1838780,
+      "sha256": "07afa76c9b8d575e7d3cf165d13b0eaa385c99a6fde4ef4594953b439c2eeb0f"
+    },
+    "assets/resources/formal20260927/ios-map.png.meta": {
+      "bytes": 978,
+      "sha256": "465123b2ecabc6ea119dc856357bd302c7ed27db895488b9e4e8879fd303a484"
+    },
+    "assets/resources/formal20260927/ios-owners.png": {
+      "bytes": 2224446,
+      "sha256": "bc8b793cf3e11c692871106a2a696f6a0fad885d36fd6450ca56995956ac9a1f"
+    },
+    "assets/resources/formal20260927/ios-owners.png.meta": {
+      "bytes": 980,
+      "sha256": "825f560377f216aba13a5537a7dbdd286a1946bd449301b04bd1ce577efb12a1"
+    },
+    "assets/resources/formal20260927/ios-runs.png": {
+      "bytes": 2508600,
+      "sha256": "be119123565a77ed4be62ec95b9c33f2406c58c1b52398316560d036aa561ee3"
+    },
+    "assets/resources/formal20260927/ios-runs.png.meta": {
+      "bytes": 978,
+      "sha256": "df124509f985e68a7f70cc004d891f81a25d92c0e03ad142185a2af50078262f"
+    },
+    "assets/resources/formal20260927/pr2-officers.png": {
+      "bytes": 1543428,
+      "sha256": "c993abf74d92931bacdb7bbfb1c4127102ec6b9118f6d8e45b992c24bbccd3ac"
+    },
+    "assets/resources/formal20260927/pr2-officers.png.meta": {
+      "bytes": 982,
+      "sha256": "e060aacb85ef2d8b7b8a815892740009ce27f8cba1074686d5f227860745d4e2"
+    },
+    "assets/resources/formal20260927/pr2-portraits.png": {
+      "bytes": 1682403,
+      "sha256": "fa9c4f0f4fbcbe8bebc565c235816a8abd1bf5d508b54782b9ea9ebdaf2a7f01"
+    },
+    "assets/resources/formal20260927/pr2-portraits.png.meta": {
+      "bytes": 983,
+      "sha256": "313acc3d8e1872715c98557363947245be00894b9c930e0933b259aec2608fea"
+    },
+    "assets/resources/ui20260925.meta": {
+      "bytes": 169,
+      "sha256": "f04683036af3f6ae5fc3eab05dfe2ffab43e03d7c6f9c134cf2fa859a315a49a"
+    },
+    "assets/resources/ui20260925/brand-title.png": {
+      "bytes": 71342,
+      "sha256": "ae443fe6e88ca66ca236a11f60f7908c03dc1844ad34ee1df11c7c9d18b842f1"
+    },
+    "assets/resources/ui20260925/brand-title.png.meta": {
+      "bytes": 995,
+      "sha256": "2b89cb9e0e842af281cb5376331f0dc3ce8e73efc7b4dddffbdfe645ebf0dbc8"
+    },
+    "assets/resources/ui20260925/camp-bg.jpg": {
+      "bytes": 104052,
+      "sha256": "77caaacc066beda98480c258bc28d0bfca9c5d755bc91691ada045217c86bec7"
+    },
+    "assets/resources/ui20260925/camp-bg.jpg.meta": {
+      "bytes": 992,
+      "sha256": "deee291d5a642db9ba571889ad4e573c4143ff6095375d2c1e41a68f2a130f02"
+    },
+    "assets/resources/ui20260925/gold-button.png": {
+      "bytes": 55357,
+      "sha256": "9463f58d27c241fd05521dc8bdba6e486fef8392aef1fcf8c74ab53cab88ccb3"
+    },
+    "assets/resources/ui20260925/gold-button.png.meta": {
+      "bytes": 995,
+      "sha256": "2cdcc72a5f900f3e442d2f905bcc45da1d855ea96ad3ec064b91ac46470c6208"
+    },
+    "assets/resources/ui20260925/hero-blade.png": {
+      "bytes": 125712,
+      "sha256": "e6f32dedc3dcda3e287105dd7981b57b16893fd329a35d9d7723c68270dda5a6"
+    },
+    "assets/resources/ui20260925/hero-blade.png.meta": {
+      "bytes": 994,
+      "sha256": "52a407ad5c4ba285e9a53a2032ce47be4307a8406cd42ccf667b2f5f9415609f"
+    },
+    "assets/resources/ui20260925/hero-home.png": {
+      "bytes": 120503,
+      "sha256": "e6a93eca7ed89b971dd16b868322272080df0f6b56fe6926b423a40f6c8f97ac"
+    },
+    "assets/resources/ui20260925/hero-home.png.meta": {
+      "bytes": 993,
+      "sha256": "612b62cc0fca696ad8140d27293f2e1a10369977706065c30497cf03cc699e8e"
+    },
+    "assets/resources/ui20260925/home-bg.jpg": {
+      "bytes": 110316,
+      "sha256": "946a66ff5a8c4c3d7a4c27fdf3914f1fcabbf15a7741c480ac1aac233fed316e"
+    },
+    "assets/resources/ui20260925/home-bg.jpg.meta": {
+      "bytes": 992,
+      "sha256": "7aa7135985de86f1f965d1e70bb489243d4a42d0b08d6a9302b2e6804fa43f28"
+    },
+    "assets/resources/ui20260925/map-bg.jpg": {
+      "bytes": 183733,
+      "sha256": "277eca86476d2eb40dce4da7bae8f07d4f7d99791e4ff67c0318120a6a96e6e6"
+    },
+    "assets/resources/ui20260925/map-bg.jpg.meta": {
+      "bytes": 991,
+      "sha256": "69222b35a3291c94edf01883fcf231be757df517817e350eac93835f8fb9fd25"
+    },
+    "assets/resources/ui20260925/result-bg.jpg": {
+      "bytes": 97141,
+      "sha256": "7646938e30c42955c7ad94d0a49fca521eedc571cdd9c17ca2b2f5b77d09e107"
+    },
+    "assets/resources/ui20260925/result-bg.jpg.meta": {
+      "bytes": 994,
+      "sha256": "07cf59e209e81b55939e1386535897c9308161687d2c98db136bacae45cbfa25"
+    },
+    "assets/resources/v031.meta": {
+      "bytes": 169,
+      "sha256": "4db96489c2727044f2a3b26cb9c6759875fad4395ec4ae49cb073170e1e1a3ca"
+    },
+    "assets/resources/v031/archers.png": {
+      "bytes": 2126374,
+      "sha256": "79c0b60a5558a3169713b9300055cda41c316475569a05d248e4e375f765b393"
+    },
+    "assets/resources/v031/archers.png.meta": {
+      "bytes": 977,
+      "sha256": "7026d65c33d8d9e8d2911cccec8180ca5cfac0a68772b1951fec6876d44cf624"
+    },
+    "assets/resources/v04.meta": {
+      "bytes": 169,
+      "sha256": "3d5948214560c54cc392c1cce29d8ccf2b604153286c966f570140788c3a34c1"
+    },
+    "assets/resources/v04/spear-hero.png": {
+      "bytes": 1949290,
+      "sha256": "c066db628f8a493c1c8ed500e58e1472e5bc3328cc18c3699c0b71a16a8aec00"
+    },
+    "assets/resources/v04/spear-hero.png.meta": {
+      "bytes": 980,
+      "sha256": "6fbbb0aacafa1786d2c4d39d7c4eaedfcbc03a958fdc2fc05cd4a7ccce445307"
+    },
+    "assets/resources/v04/spear.png": {
+      "bytes": 146434,
+      "sha256": "bb021f81546acd5d0045371933d6a0852409b004d0adc6c31e1cf930a6537f0d"
+    },
+    "assets/resources/v04/spear.png.meta": {
+      "bytes": 975,
+      "sha256": "07c69e29a90f3ffa893397bf47c0f4d1eec14479f7ac3fb1fcea7b234d0e6a9c"
+    },
+    "assets/resources/v04/zhaoyun.png": {
+      "bytes": 1748995,
+      "sha256": "dfa0a0321d0070d79ef3ff754a2ad50707dbab4938927c5cbf06ad3e27e0c76a"
+    },
+    "assets/resources/v04/zhaoyun.png.meta": {
+      "bytes": 977,
+      "sha256": "3ddf8f6ea9de529656fa8813dd9bba4c1cdbd74b374339addce20d4e76460cf9"
+    },
+    "assets/resources/v05.meta": {
+      "bytes": 169,
+      "sha256": "2f68c92a18f18e6fc2b729e639e59142aebd003639bb850b68cd970699fda1a4"
+    },
+    "assets/resources/v05/cast.png": {
+      "bytes": 1081095,
+      "sha256": "e550fe48982205119c67991d50529738971093215691f59aaf97df329593c951"
+    },
+    "assets/resources/v05/cast.png.meta": {
+      "bytes": 974,
+      "sha256": "311da152dc74b20f82efab443de8b7339d5761d81bc686752bc9dd9fce343f44"
+    },
+    "assets/resources/v05/weapons.png": {
+      "bytes": 1534361,
+      "sha256": "84b3409aeac0fc0db506bf9624789b4e32a55c76b32f1405bf8faab78a84b284"
+    },
+    "assets/resources/v05/weapons.png.meta": {
+      "bytes": 977,
+      "sha256": "bd116d3978118aa5cc4cd82a9dd8b5e6e72e97b4d15b958c07d8a2664acc4f2d"
+    },
+    "assets/resources/v051.meta": {
+      "bytes": 169,
+      "sha256": "702e5bc070f66763d13484af75710b2753d803b8be3d7c8068c756dcc4c10fb0"
+    },
+    "assets/resources/v051/allies.png": {
+      "bytes": 1354438,
+      "sha256": "5614d21e445536a40cc15d58e9de92e64d81900c33ccaa23681a4fb3a70278fd"
+    },
+    "assets/resources/v051/allies.png.meta": {
+      "bytes": 976,
+      "sha256": "ab93d57d1df93a3bfce488f97f695da1ecc15574d4099c4443308dd1ac935f44"
+    },
+    "assets/resources/v051/blade-hero.png": {
+      "bytes": 1409633,
+      "sha256": "e8c24a5ce8d318a7dc449242c00f95c24ba4cf36bf4957ff0e3e025fa05a8b66"
+    },
+    "assets/resources/v051/blade-hero.png.meta": {
+      "bytes": 980,
+      "sha256": "3d1f9773814cef75add9b390b11f41e08bbad7f25c577ade96826f88df061607"
+    },
+    "assets/resources/v2.meta": {
+      "bytes": 169,
+      "sha256": "95c477e46d84d02e72c264bddf405cfc84ad1b3b933d09381dc7e47b0d372cc8"
+    },
+    "assets/resources/v2/hero-a-rig.png": {
+      "bytes": 827673,
+      "sha256": "7d9d85ad6a5c378a66ca6fbfe4d05ecaf89ac0e91568d8819a9ef60384957a01"
+    },
+    "assets/resources/v2/hero-a-rig.png.meta": {
+      "bytes": 980,
+      "sha256": "3db343dc8351b6ca6244d9290377ed63a7581afd869050f24697c3b71cf1c455"
+    },
+    "assets/resources/v3.meta": {
+      "bytes": 169,
+      "sha256": "536664659ad1e4bbc48450c87157d9d0f0d8d2916f8196f6924e7fc531d56e20"
+    },
+    "assets/resources/v3/actors.png": {
+      "bytes": 1388058,
+      "sha256": "14dcb6d5692d39709710d135db0b37d066cd7548a5b9933dd9385c1ba6941e1a"
+    },
+    "assets/resources/v3/actors.png.meta": {
+      "bytes": 976,
+      "sha256": "a5f90328e61bd797e6e662cbce438afca0acc1b239633301fbe0ca23db43c688"
+    },
+    "assets/resources/v3/scenery.png": {
+      "bytes": 1784681,
+      "sha256": "e55c72f08ce0f74f736c147479dbc257e9f4e942f95b676026f7da4a595a1080"
+    },
+    "assets/resources/v3/scenery.png.meta": {
+      "bytes": 977,
+      "sha256": "81f63e243121e76c07f9fdb7e2bddc65814077f5f72b43cca601511f5d1ad96b"
+    },
+    "assets/resources/v4.meta": {
+      "bytes": 169,
+      "sha256": "422de8bc70efcf073a9d03423693a161700aa8b2ee5d650c50b08769ad71cd3d"
+    },
+    "assets/resources/v4/enemies.png": {
+      "bytes": 1883386,
+      "sha256": "1743774f0a20a11661c4244f7df112a12bd688baceee43267599322802e6da6e"
+    },
+    "assets/resources/v4/enemies.png.meta": {
+      "bytes": 977,
+      "sha256": "12915e322c19b4294e844326202f98db20707296601a2d043b0113688a0077aa"
+    },
+    "assets/resources/v4/heroes.png": {
+      "bytes": 1571126,
+      "sha256": "3678351c4166367ef40f6682eecba8432bde1bd9795a56273b956c5648f9932a"
+    },
+    "assets/resources/v4/heroes.png.meta": {
+      "bytes": 976,
+      "sha256": "2d9d281dd8614c2a6c57b7db3fda2fbaf35848b0b9e487741e8b1abc428c006a"
+    },
+    "assets/resources/v4/scenery.png": {
+      "bytes": 2483733,
+      "sha256": "dba799d87f5a2f120649cdb3e9669a6a7fedd053f00118417669d0e83955cf2a"
+    },
+    "assets/resources/v4/scenery.png.meta": {
+      "bytes": 977,
+      "sha256": "34f36e812a46b2cdb8de812df57d919ce2d6a691294b34a1ccbfdc3c0e654b1c"
+    },
+    "assets/scenes.meta": {
+      "bytes": 169,
+      "sha256": "9fc30687c4c8d33bd85f20b5f4f4987163536fec3453b61beef80ea5c5fdd1bf"
+    },
+    "assets/scenes/Journey.scene": {
+      "bytes": 6771,
+      "sha256": "94fc6549e7c4083b86d46bde680749e3feeed32814397777230f03acbbff7f3b"
+    },
+    "assets/scenes/Journey.scene.meta": {
+      "bytes": 181,
+      "sha256": "5b181a12aebf114734071eae6bdbf81d34c3cfc586ebe7007c5c9c91f8f023dd"
+    },
+    "assets/scripts.meta": {
+      "bytes": 169,
+      "sha256": "ee54e50d46330f40297bdb5fde37a32bc6bda5993f21bfcfebbfbc7ea2f69571"
+    },
+    "assets/scripts/ArtAtlas.ts": {
+      "bytes": 3373,
+      "sha256": "e58c34aee420b6a61775eccc0c10b0b0a74863af9e44c18100f8f77b87962623"
+    },
+    "assets/scripts/ArtAtlas.ts.meta": {
+      "bytes": 171,
+      "sha256": "2686835ab4ab505e1c0c689afbdf12ac7b0aad0fe5a56ab1cf2c6222e2d95684"
+    },
+    "assets/scripts/ArtAtlasV03.ts": {
+      "bytes": 5798,
+      "sha256": "8a60884c5249c19a934e58d490d7c4e8ca2795ac1c860475cc7a73f67408a28c"
+    },
+    "assets/scripts/ArtAtlasV03.ts.meta": {
+      "bytes": 171,
+      "sha256": "c8a10b8b5fbaa0c949f528455c652ce4ca8f8c56d92bec23fde6fdfbd12662a5"
+    },
+    "assets/scripts/ArtAtlasV031.ts": {
+      "bytes": 7756,
+      "sha256": "712f9c309dc654ad7faf87a524f336024f9e5abde539278008e871486b1d7fbc"
+    },
+    "assets/scripts/ArtAtlasV031.ts.meta": {
+      "bytes": 171,
+      "sha256": "2cf3de364b38901c25d7f6f12c01f34eabb4c3e64add69b9c62ed3d5c75c4a7d"
+    },
+    "assets/scripts/ArtAtlasV04.ts": {
+      "bytes": 2376,
+      "sha256": "63d95e98b7cfe93df5a48df86c6e25b091daf2a281af19a6b97da9bf73d3e9f2"
+    },
+    "assets/scripts/ArtAtlasV04.ts.meta": {
+      "bytes": 171,
+      "sha256": "74bc7412509e5778aec4f7c937fc5cc94ea8e84fc7d39e171b3b13ad4e9e0fce"
+    },
+    "assets/scripts/ArtAtlasV05.ts": {
+      "bytes": 3280,
+      "sha256": "1d11c9deac04af702aded51c33979ca15113e0e90c5e8b3a42b200abc2d747de"
+    },
+    "assets/scripts/ArtAtlasV05.ts.meta": {
+      "bytes": 171,
+      "sha256": "c47e5a5c238010e5d4eacb46229f4413d633df8c219883566e5dde59c0da6d50"
+    },
+    "assets/scripts/ArtAtlasV051.ts": {
+      "bytes": 4061,
+      "sha256": "ac05dbffb65aef2f6eec94326124d8cdd5a0797d75f66add5112aa56323201aa"
+    },
+    "assets/scripts/ArtAtlasV051.ts.meta": {
+      "bytes": 171,
+      "sha256": "36e6259c85b238034d02c13dcf3f8b01fa38a1192e2e5355f0f9da39eaa69f27"
+    },
+    "assets/scripts/ArtSprites.ts": {
+      "bytes": 3756,
+      "sha256": "64bbfcfd46773deda8c4e1ef597847dcff066021b258947ce38230bd82ba2c06"
+    },
+    "assets/scripts/ArtSprites.ts.meta": {
+      "bytes": 171,
+      "sha256": "2160aa22cf5a75422c7a6a1c000c526a40a8facb8fa2c3c25a5794efc82b4317"
+    },
+    "assets/scripts/BattleAssets.ts": {
+      "bytes": 4328,
+      "sha256": "6bcc57ab07cc953526553ebf604864a92ac3550df25c0f12b107c425e212f49d"
+    },
+    "assets/scripts/BattleAssets.ts.meta": {
+      "bytes": 171,
+      "sha256": "12e9918f514e4d3751323cabb04585110aac68533d33c273368c1ba17e2e7bab"
+    },
+    "assets/scripts/BattleAtlas.ts": {
+      "bytes": 64862,
+      "sha256": "457a18b5551b30500fd8257c066f22e5f3dd20fbeef3ce0956b6fde2765d6747"
+    },
+    "assets/scripts/BattleAtlas.ts.meta": {
+      "bytes": 171,
+      "sha256": "4aa11999a4e4bee583111c7099b63a38ef6f97b5a017825f901ff9fc6d75037a"
+    },
+    "assets/scripts/BattleRoad.ts": {
+      "bytes": 3273,
+      "sha256": "47fc1a88bfc795a257327e64f4edd3db2226ac690c8a661a89d94827db57028a"
+    },
+    "assets/scripts/BattleRoad.ts.meta": {
+      "bytes": 142,
+      "sha256": "18bb33fd2120c849e96647f4f403395fdb0b7da894a3debd54b42d284c4822a2"
+    },
+    "assets/scripts/BattleView.ts": {
+      "bytes": 65716,
+      "sha256": "27d670034268c6aba768ccc01857b4d6f00c13f243f023a2fd3b1a2ce5e66267"
+    },
+    "assets/scripts/BattleView.ts.meta": {
+      "bytes": 171,
+      "sha256": "8ec45178e413473014018366ff4d3394625aff46babeb5cbb7525a7ab4a7fca0"
+    },
+    "assets/scripts/Game.ts": {
+      "bytes": 49117,
+      "sha256": "6adb9b5ccf375048bc80ee49cce55a8bdfa31dca6f5026d4d7157a0f61c8e634"
+    },
+    "assets/scripts/Game.ts.meta": {
+      "bytes": 171,
+      "sha256": "bf0772e55a8a2426aff3be95a521241acc63cc782ee067db4ab05ebeaa3e68ff"
+    },
+    "assets/scripts/HeroAtlas.ts": {
+      "bytes": 751,
+      "sha256": "01914b76930d8a6f6b27fb87d8960f592d366396fff23aa624639379ac981507"
+    },
+    "assets/scripts/HeroAtlas.ts.meta": {
+      "bytes": 171,
+      "sha256": "427442c4521007459192fdf776647ead6d0fe508e50b6a1692c2008e82ef2d4d"
+    },
+    "assets/scripts/HeroRig.ts": {
+      "bytes": 3939,
+      "sha256": "0132d48b8f32cee62db02fe4e4cb86dc02e0e9ce274c86bbe12092e1d7bc094a"
+    },
+    "assets/scripts/HeroRig.ts.meta": {
+      "bytes": 171,
+      "sha256": "54a5ed82727c414b1da9ad97b1cf6a4c3cc45e66076e3d274bcd80d3de1835ec"
+    },
+    "assets/scripts/Platform.ts": {
+      "bytes": 9076,
+      "sha256": "f603337c68dc30a83ddb7cfc1772b5bd0378bee7ddbb1538e2ba6d86710d63d0"
+    },
+    "assets/scripts/Platform.ts.meta": {
+      "bytes": 171,
+      "sha256": "c3dd28d973d6978a1ab0d309b12833cf9dbb71bfff760b266891a062ebe3e2cd"
+    },
+    "assets/scripts/Presentation.ts": {
+      "bytes": 1392,
+      "sha256": "1390e696e8e3fad2f3cbd871f20a904c8bac353f258ce30f0518b213600b3b82"
+    },
+    "assets/scripts/Presentation.ts.meta": {
+      "bytes": 171,
+      "sha256": "7ab4eb700f5056a58eb142e0b6f6fc05ccee927ba7a6c129e433261301a2b87c"
+    },
+    "assets/scripts/VisualConfig.ts": {
+      "bytes": 1033,
+      "sha256": "de0bfddf168987d597ffcaaef3a3302950977a78c5e3421bd88eaaf81424110f"
+    },
+    "assets/scripts/VisualConfig.ts.meta": {
+      "bytes": 171,
+      "sha256": "e97eac2a2be8edaee1fb1a40087513377bf5f9969a7c5457d652091b81b3d8e6"
+    },
+    "assets/scripts/Volley.ts": {
+      "bytes": 1800,
+      "sha256": "5aedcdc9294f8a3f29d7138b8f83cb6d86d960c2f52d25876a915793829752f4"
+    },
+    "assets/scripts/Volley.ts.meta": {
+      "bytes": 171,
+      "sha256": "03159b2d1fa5c90b483506f1aef40125970e9c8eedb689b50e3f66eeee002023"
+    },
+    "assets/scripts/WorldScenery.ts": {
+      "bytes": 1543,
+      "sha256": "34471becd3a620146d3c792c2cfe880aed2ae8ac8ea7e1e913c5763369b7e3bd"
+    },
+    "assets/scripts/WorldScenery.ts.meta": {
+      "bytes": 171,
+      "sha256": "4046bf81fee93bdc3a98d958283110e5d4e34f092980ebe5acfc8d546c2eeaaa"
+    },
+    "assets/scripts/core.meta": {
+      "bytes": 169,
+      "sha256": "d80b878b2b24c6e2803c5f44688f0596f2bf5c901f7e67f390b24a2463211f1a"
+    },
+    "assets/scripts/core/artSockets.ts": {
+      "bytes": 2491,
+      "sha256": "04ba8a67bd5658137af3e52581a1e4046da37a67333ba2da86d6add31a6a4d73"
+    },
+    "assets/scripts/core/artSockets.ts.meta": {
+      "bytes": 171,
+      "sha256": "4a9f1c5c4a54b254383e8a37cbd3a731fa210eb065acd25e2837ee37f0009cfb"
+    },
+    "assets/scripts/core/assault.ts": {
+      "bytes": 3551,
+      "sha256": "8f0a4e7e9cbd2a14704bbaa2b63035f499d2dae06338d8fa9ac5233266547c78"
+    },
+    "assets/scripts/core/assault.ts.meta": {
+      "bytes": 171,
+      "sha256": "4225957fb4d6d2a057363cdce47e4d53fd1337a42fb2ee7e07e4871b96cdf67d"
+    },
+    "assets/scripts/core/battleNotices.ts": {
+      "bytes": 535,
+      "sha256": "43a69f058175ceeeceb1c11443a8509cbc507f0aea738bfc224e007d9163550c"
+    },
+    "assets/scripts/core/battleNotices.ts.meta": {
+      "bytes": 171,
+      "sha256": "4c5c6da9aa093187f6b39593b5f530e4a4ba8114ed412ed42d9b297052163423"
+    },
+    "assets/scripts/core/campaign.ts": {
+      "bytes": 1975,
+      "sha256": "20d3885fc5a6010f1f07ad4f23713ddb467699471f6877c898f4934df9e7d455"
+    },
+    "assets/scripts/core/campaign.ts.meta": {
+      "bytes": 171,
+      "sha256": "56d5c9fc0fefff9561504da2858f75d377055dfd99668431b6857877f46738f0"
+    },
+    "assets/scripts/core/campaignData.ts": {
+      "bytes": 5915,
+      "sha256": "f3522d4f86cec3b7641c0983774ceeebe527754da407f15a72d91470f7a040fb"
+    },
+    "assets/scripts/core/campaignData.ts.meta": {
+      "bytes": 171,
+      "sha256": "ecc303d34f778d4dd48d0e058f5b322c368ae5598b7256ad96a8a32e54142f5f"
+    },
+    "assets/scripts/core/combatGeometry.ts": {
+      "bytes": 5253,
+      "sha256": "23c641c4c212c055b33ba73214fc623735fb8d06d4a833ee32a1034f4df9f5b0"
+    },
+    "assets/scripts/core/combatGeometry.ts.meta": {
+      "bytes": 171,
+      "sha256": "779a28f8c8b0bfe3c6da8aeeff6b1c18047fa43e8c4de1a9d94ff46353e4990f"
+    },
+    "assets/scripts/core/growth.ts": {
+      "bytes": 2676,
+      "sha256": "234c216eb449002c09da1177866901858946b33698e77cb703d9e29ef4f7032e"
+    },
+    "assets/scripts/core/growth.ts.meta": {
+      "bytes": 171,
+      "sha256": "76802a52ed796064dbfc0e9b75056b8686614ef55d32a446fe6d0a2f6283239d"
+    },
+    "assets/scripts/core/hazards.ts": {
+      "bytes": 11714,
+      "sha256": "1ab02d5389392ddf3e41d0e4b1a5d063d02505abc6e86cd5f9728572514f1fec"
+    },
+    "assets/scripts/core/hazards.ts.meta": {
+      "bytes": 171,
+      "sha256": "88865f6ab010539660bf6cfc3c2e9e714bca73ed472c0eca63c0ad4f9bcee17b"
+    },
+    "assets/scripts/core/horde.ts": {
+      "bytes": 9430,
+      "sha256": "06d81bf0af382231f72f7aafe34befa89e9cb65c4a1373968682b57f41fb569f"
+    },
+    "assets/scripts/core/horde.ts.meta": {
+      "bytes": 171,
+      "sha256": "da72f8243f131f6efa8a9fb6b50fda29aad06f5d1b5d22bf3ab12623a5929004"
+    },
+    "assets/scripts/core/hordeConfig.ts": {
+      "bytes": 26412,
+      "sha256": "916a515313cc5118b6af60fe2d44541d6d0d3e1503ca8ac5592a8cc553e19dfd"
+    },
+    "assets/scripts/core/hordeConfig.ts.meta": {
+      "bytes": 171,
+      "sha256": "b5e57fc67baaa93badc35d8914dff55ac6f02026f3bf59bf32c84a3b7a4a0746"
+    },
+    "assets/scripts/core/levels.ts": {
+      "bytes": 13454,
+      "sha256": "946a4a8c1ddf9fb6c6cac497cd8b6f339aed7a2242c4fa878262ad63edd8fe17"
+    },
+    "assets/scripts/core/levels.ts.meta": {
+      "bytes": 171,
+      "sha256": "a154e35c3e392ae9fca44cd390f57556fac40e5290bb132568c1276006f9effb"
+    },
+    "assets/scripts/core/model.ts": {
+      "bytes": 28088,
+      "sha256": "882edfb7488c5f68402eef16e4dead53b69deed9833ef94b8dcb16b08efe7c65"
+    },
+    "assets/scripts/core/model.ts.meta": {
+      "bytes": 171,
+      "sha256": "abe345cdc72df2e64eca0c908d56b050b1b9f1f5edab8ca8003120a347894964"
+    },
+    "assets/scripts/core/progression.ts": {
+      "bytes": 684,
+      "sha256": "5115f60d42e96b4ed39b15cbae436b633be2e33215db1aa724c36e414c0cf442"
+    },
+    "assets/scripts/core/progression.ts.meta": {
+      "bytes": 171,
+      "sha256": "9a83f48b6babca38d3ee57bdd658ad3ee6aaf018951cf27a9e014ce4ea751e19"
+    },
+    "assets/scripts/core/runner.ts": {
+      "bytes": 33586,
+      "sha256": "0c13a1750bff6c1208545a194bcb4a15d35b0167949ffd2423a5406fa9dce1ed"
+    },
+    "assets/scripts/core/runner.ts.meta": {
+      "bytes": 171,
+      "sha256": "b46280f0e95775ee90816b014dc7be4237dbccca29e9a2c1d5a04d421e17e38d"
+    },
+    "assets/scripts/core/runnerConfig.ts": {
+      "bytes": 20863,
+      "sha256": "3bd24ede32edafbcd0ce6880f52272e369ab7cc602c3963eec14538bf50732c8"
+    },
+    "assets/scripts/core/runnerConfig.ts.meta": {
+      "bytes": 171,
+      "sha256": "df418093c14e19cd4a8535814a65c8ccace8de1500b9f3e2e3201077b91d1df0"
+    },
+    "assets/scripts/core/save.ts": {
+      "bytes": 3552,
+      "sha256": "6716d70159796d38045a6c7caa5c2e07c249aa56b7083adfce8714185831ade6"
+    },
+    "assets/scripts/core/save.ts.meta": {
+      "bytes": 171,
+      "sha256": "ea5e67ba8687f633f9f12ec6d3408e9c9645ce4222b03189f973aa1a7d9ff20a"
+    },
+    "assets/scripts/core/tactics.ts": {
+      "bytes": 1157,
+      "sha256": "8f927e2722dec957915502ee68786635756662408ffdb59816954154fb69dcd4"
+    },
+    "assets/scripts/core/tactics.ts.meta": {
+      "bytes": 171,
+      "sha256": "37a9a79d432c63db041bd98b1fd4ff3c8b633664fad3cc7d77147f69c4866f4e"
+    },
+    "assets/scripts/core/weapons.ts": {
+      "bytes": 3260,
+      "sha256": "04cee0dab139a5fe1dfdea2029b72456d6f68776b8af6efabf5309c4c1dcfc37"
+    },
+    "assets/scripts/core/weapons.ts.meta": {
+      "bytes": 171,
+      "sha256": "46efba27facfccd20ad6d8034a6e4c120bbba458769d2adbae1aff0c320f614b"
+    },
+    "assets/scripts/formal.meta": {
+      "bytes": 169,
+      "sha256": "18aae9f4ab6a56fda0987f2e367307a5adb9d04cd2116f6225d45a5576172298"
+    },
+    "assets/scripts/formal/FormalGame.ts": {
+      "bytes": 30511,
+      "sha256": "161a384a14294253c159be42a69a3624b3903cf58a900f1934949771c6749e8d"
+    },
+    "assets/scripts/formal/FormalGame.ts.meta": {
+      "bytes": 171,
+      "sha256": "b77424c120645e7f302b1a217aa21f73a1575f73724694979f315f2d22ebdcc0"
+    },
+    "assets/scripts/formal/GroundMesh.ts": {
+      "bytes": 2798,
+      "sha256": "f8f786080dcc8475894170e13d213471efc981041ee983243553262b6778c73b"
+    },
+    "assets/scripts/formal/GroundMesh.ts.meta": {
+      "bytes": 171,
+      "sha256": "84a6fbf163f41f64e65773803ac88c283db291abb28bd8ff20b203a6924e9819"
+    },
+    "assets/scripts/formal/NativePaint.ts": {
+      "bytes": 11682,
+      "sha256": "65f07883b0a5df06c55ac084ab0879bd244bc2703998733d76a909d13a2ab2d0"
+    },
+    "assets/scripts/formal/NativePaint.ts.meta": {
+      "bytes": 171,
+      "sha256": "c27d47c0662e6ddad2ac040c74516894161fda11b26ca6de8b8f3abaf13732f7"
+    },
+    "assets/scripts/formal/battle.ts": {
+      "bytes": 95854,
+      "sha256": "ece58a0bf4a9f925ec8811c956c9886d3f67a0f736a720ae4779d0ec09409e39"
+    },
+    "assets/scripts/formal/battle.ts.meta": {
+      "bytes": 171,
+      "sha256": "af1cdef2885da404e7a4b5bdc7ea7d0f65be374154facf9d7c4022335118664b"
+    },
+    "assets/scripts/formal/data.ts": {
+      "bytes": 13799,
+      "sha256": "c7db3e106c621049a38ef86a6bac6a718ded524772e16cbe9b59c32e8c2c7a61"
+    },
+    "assets/scripts/formal/data.ts.meta": {
+      "bytes": 171,
+      "sha256": "bc3e5f42acdec32d572a89057abf8fb2dc350c6309ce347931c1e372ba07f1fe"
+    },
+    "assets/scripts/formal/manifest.ts": {
+      "bytes": 47080,
+      "sha256": "a023daac0401515a741dc7eb74c4b056702967dd39cd3ec68095968b01a267a6"
+    },
+    "assets/scripts/formal/manifest.ts.meta": {
+      "bytes": 171,
+      "sha256": "e84cb4163d680a43c0303c9b670ad9ff69acf200129b3e16746389b714c76da5"
+    },
+    "assets/scripts/formal/store.ts": {
+      "bytes": 6827,
+      "sha256": "2fd69f5ad444707cb54298ba5ccdb7e0ad8450b75314644ca80d60e0c75b8958"
+    },
+    "assets/scripts/formal/store.ts.meta": {
+      "bytes": 171,
+      "sha256": "d4edaf44f13ca541871daced07570c566f2322dd9cb1a4447ec497cc04cb9969"
+    },
+    "assets/scripts/ui.meta": {
+      "bytes": 169,
+      "sha256": "0bd79e54c2b11edda7f330b0d75290d8061acdfd13d943e98ca5ea5d9f7027ad"
+    },
+    "assets/scripts/ui/BattleFix2Assets.ts": {
+      "bytes": 22027,
+      "sha256": "2d29de20535e615d3126cc5531b6e289522678feeeb4da11769dacf4db916672"
+    },
+    "assets/scripts/ui/BattleFix2Assets.ts.meta": {
+      "bytes": 171,
+      "sha256": "0f772dbd74e0fcb7435a74b5731d1e995e6b0eebfa86215b7a75f7552c734aca"
+    },
+    "assets/scripts/ui/OrnamentPanel.ts": {
+      "bytes": 2724,
+      "sha256": "5928e2c260716711504bb1770b84dde181a092fcc39ad3eb7b8d8b67cd4fb8c4"
+    },
+    "assets/scripts/ui/OrnamentPanel.ts.meta": {
+      "bytes": 171,
+      "sha256": "a7dc56e91660d52ae57e23f2a8ad023ad2564e28b0617f72d5aa4426753c6981"
+    },
+    "assets/scripts/ui/PresentationAssets.ts": {
+      "bytes": 5883,
+      "sha256": "2bda6d3f8c6e8396bcd7e508e4a6108885ab6ffe9ca2c59e9630d598ab0d1744"
+    },
+    "assets/scripts/ui/PresentationAssets.ts.meta": {
+      "bytes": 171,
+      "sha256": "ae1c971416786c057ce727b1dcebd28bb33fa5d223dc57655af8d1344feee987"
+    },
+    "assets/scripts/ui/ScreenPresenter.ts": {
+      "bytes": 1932,
+      "sha256": "506915cc87efcfe1d2632cf21ebb3f44f497a91356c37d398a812963c091a392"
+    },
+    "assets/scripts/ui/ScreenPresenter.ts.meta": {
+      "bytes": 170,
+      "sha256": "8b9810ef8f752c5adce438759ebf5788dcac22cc8a9cc85e7bf3be183f7b5a7d"
+    },
+    "assets/scripts/ui/UiLayout.ts": {
+      "bytes": 1295,
+      "sha256": "7708b1c9dda7bded8892d24de13e5905f0706f4d2f5fd742ab4b1bf6e54e9949"
+    },
+    "assets/scripts/ui/UiLayout.ts.meta": {
+      "bytes": 171,
+      "sha256": "5f77e109d33645cc37607520a5d5d82a08baac11247cff7c0fda42cc13c52737"
+    },
+    "assets/scripts/ui/WeaponPresentation.ts": {
+      "bytes": 2551,
+      "sha256": "89c460bf6fb37dea85fcf049eae893078a2f38a86cd09928e1ba8b0c28268e71"
+    },
+    "assets/scripts/ui/WeaponPresentation.ts.meta": {
+      "bytes": 171,
+      "sha256": "3639957fa14d15d5e7a673753391b2a003cd005c94013bffab3b0d4502c05447"
+    },
+    "assets/scripts/ui/WorldLabels.ts": {
+      "bytes": 3073,
+      "sha256": "d1085e330b09f3823f121a9cc8017432e4fe1bd5505f24bd5847653cee74d9a3"
+    },
+    "assets/scripts/ui/WorldLabels.ts.meta": {
+      "bytes": 171,
+      "sha256": "dcf6f621b51192c6016b8c4e0abfbd7afbb31714f59f5d1e01003aede6edc806"
+    },
+    "native/engine/common/CMakeLists.txt": {
+      "bytes": 2728,
+      "sha256": "6b86792686cf2df851d20273d421f03ca923a7c248afabcfba30d532719eb291"
+    },
+    "native/engine/common/Classes/Game.cpp": {
+      "bytes": 2124,
+      "sha256": "dc4fbbae4d4929f400735345923db1b44ce5f6f40e52818e602d3cf96cd78835"
+    },
+    "native/engine/common/Classes/Game.h": {
+      "bytes": 1744,
+      "sha256": "c73390dcc9992b57b96a6e0ddc30d242a1ce7896c786cb5bab2af909c001d874"
+    },
+    "native/engine/common/cocos-version.json": {
+      "bytes": 38,
+      "sha256": "8a44835d3facfcd099677439f5d44c2ce00864028e4f1efeb791bf7c98154693"
+    },
+    "native/engine/common/localCfg.cmake": {
+      "bytes": 110,
+      "sha256": "e6da1c338880b82bb2649563eacf431551e7cd26882c099ae3b43ef0cd64c065"
+    },
+    "native/engine/common/xr.cmake": {
+      "bytes": 464,
+      "sha256": "2a3c48b85b4086f4dcca522070ab4b6a45c558a6964fef1db722beadbd37a9d8"
+    },
+    "native/engine/ios/AppDelegate.h": {
+      "bytes": 1775,
+      "sha256": "c2f9ddede385748191aaae571359214409eb548c6667c890bd4c88b27c21e267"
+    },
+    "native/engine/ios/AppDelegate.mm": {
+      "bytes": 10154,
+      "sha256": "ae6dee30b3bd37bfad4b480c2742aad577784228af899b9eab9ee0c43ef1f273"
+    },
+    "native/engine/ios/Base.lproj/LaunchScreen.storyboard": {
+      "bytes": 3141,
+      "sha256": "5e50d59c6b1dc1095585e36dd7b3997e10ea6cce144d668381da92c9aff59406"
+    },
+    "native/engine/ios/Base.lproj/Localizable.strings": {
+      "bytes": 114,
+      "sha256": "3c7d6ae2570ac36d85254bd488d147513f6ea63fdc968a4393c1cd78e3597cc1"
+    },
+    "native/engine/ios/CMakeLists.txt": {
+      "bytes": 643,
+      "sha256": "641dcd48315baaee5c765365d43baa139d0375789139ef675301cbcaaa2d83b2"
+    },
+    "native/engine/ios/Images.xcassets/AppIcon.appiconset/1024.png": {
+      "bytes": 221549,
+      "sha256": "888bde91d275f72f1b14737fc59a595e8bcad2f8dfa5388b9a9d083077552340"
+    },
+    "native/engine/ios/Images.xcassets/AppIcon.appiconset/114.png": {
+      "bytes": 12320,
+      "sha256": "0ae523f54d2636dcf40f2510cbd247c07e918d63880b97bdf246769c067a1d90"
+    },
+    "native/engine/ios/Images.xcassets/AppIcon.appiconset/120.png": {
+      "bytes": 13324,
+      "sha256": "764be1dc90028a105e3b933344a44736ba13fcc0667c84390aa919e1f092f0c0"
+    },
+    "native/engine/ios/Images.xcassets/AppIcon.appiconset/180.png": {
+      "bytes": 23145,
+      "sha256": "a097245e46baa1666ce1d023d0beba94aa1f949f514ca340875f934418be0924"
+    },
+    "native/engine/ios/Images.xcassets/AppIcon.appiconset/29.png": {
+      "bytes": 1754,
+      "sha256": "7fa5d987e391c8a1adbc6102ef9cdbfa40ed86caadfeeebb0a6bb170e152d5a6"
+    },
+    "native/engine/ios/Images.xcassets/AppIcon.appiconset/40.png": {
+      "bytes": 2763,
+      "sha256": "4c90f4b2ca2ebaf0e8747b1fe869960caff6f18771a7904bdf71d91067bc5510"
+    },
+    "native/engine/ios/Images.xcassets/AppIcon.appiconset/57.png": {
+      "bytes": 4698,
+      "sha256": "a690491ad14ecef7300f145be5979a92c3b5ce2c4e7fda1e6feedddcd69870f5"
+    },
+    "native/engine/ios/Images.xcassets/AppIcon.appiconset/58.png": {
+      "bytes": 4821,
+      "sha256": "be28e10013e9ff2b89ff1a641ade09f7f7b2d75a0f9308153c5cf79d85e6792c"
+    },
+    "native/engine/ios/Images.xcassets/AppIcon.appiconset/60.png": {
+      "bytes": 5058,
+      "sha256": "1d324c3d1ec49c8b7af0b1cb75fc475f6fb29213ed6a795b986c14540326bedd"
+    },
+    "native/engine/ios/Images.xcassets/AppIcon.appiconset/80.png": {
+      "bytes": 7545,
+      "sha256": "8ce3ab560af84e032ff3db6adc82e364c7d0bf315f92efab41b84fa31cb925f8"
+    },
+    "native/engine/ios/Images.xcassets/AppIcon.appiconset/87.png": {
+      "bytes": 8507,
+      "sha256": "89549c1f6dec201f2df5ebe8f5ebf684ed8d399b546bacd8306131cd4df1c18b"
+    },
+    "native/engine/ios/Images.xcassets/AppIcon.appiconset/Contents.json": {
+      "bytes": 1655,
+      "sha256": "eb58f836a1ae5cdb9b42d5f6877f76ba678bf7310ffe1e0478bb39530c7425f6"
+    },
+    "native/engine/ios/Images.xcassets/Contents.json": {
+      "bytes": 63,
+      "sha256": "0fd49ba3c3585c709678e0046a821c3c60685ec7063720d30d3a3448be3a208b"
+    },
+    "native/engine/ios/Info.plist": {
+      "bytes": 1731,
+      "sha256": "74d17c292f8ae156d5c96d191229c65a222322a871c0fc98bccd758d61139004"
+    },
+    "native/engine/ios/LaunchScreenBackground.png": {
+      "bytes": 131005,
+      "sha256": "558bc886b81589cfa062950d64749bbcdca2db61df0ab281a62b1d9b07b89c61"
+    },
+    "native/engine/ios/LaunchScreenBackgroundLandscape.png": {
+      "bytes": 90914,
+      "sha256": "46a96f70c752468753844cf9b1c3d11caf031c01c6b2ed49796f61ddc1ed13a4"
+    },
+    "native/engine/ios/LaunchScreenBackgroundPortrait.png": {
+      "bytes": 131005,
+      "sha256": "558bc886b81589cfa062950d64749bbcdca2db61df0ab281a62b1d9b07b89c61"
+    },
+    "native/engine/ios/Prefix.pch": {
+      "bytes": 193,
+      "sha256": "6374a7361b90be6179ab1bf9067d71b25ccb89f9c997352b2e5ad76f658f4801"
+    },
+    "native/engine/ios/ViewController.h": {
+      "bytes": 1554,
+      "sha256": "5167ff9588c7fe2c6a14e5c7e0167587622be9cc7570e42358f18f3dbc491416"
+    },
+    "native/engine/ios/ViewController.mm": {
+      "bytes": 2930,
+      "sha256": "f5dc66c7e9146d5b0d939fac40231c3913c31e96a2d2c75c084b89be489295f1"
+    },
+    "native/engine/ios/main.mm": {
+      "bytes": 1985,
+      "sha256": "cf90b09065ad6e1b9e26c92b6cc82a667894995ddca21bfbe22b47a99dbe6e77"
+    },
+    "native/engine/ios/service/SDKWrapper.h": {
+      "bytes": 2693,
+      "sha256": "b926c3f7e753637a04102377800b7397d905cd095da0ea4bd9971b1cbef93f46"
+    },
+    "native/engine/ios/service/SDKWrapper.m": {
+      "bytes": 5254,
+      "sha256": "fd97f667bf04409437d991395cc49eca108ba201e30f3e0116a89c2303f271a9"
+    },
+    "native/engine/ios/zh-Hans.lproj/Localizable.strings": {
+      "bytes": 127,
+      "sha256": "e2e5232f1563895dbc859fdbd93d6e4c1fb9d6f80a91d50fa5c6fe2e14b7ce5b"
+    },
+    "package-lock.json": {
+      "bytes": 35979,
+      "sha256": "1d016c5f482f0f4e43b42839f9c4d8ca28e8f0aef2dfbcb11f049ea49d01e7f6"
+    },
+    "package.json": {
+      "bytes": 2259,
+      "sha256": "9aac3bd07b16e29e004b1dbfa4330d9f7c567ae84991c04fbf53b9425e4c5df2"
+    },
+    "settings/v2/packages/builder.json": {
+      "bytes": 1113,
+      "sha256": "ab6009a527c824151b1336a2e4afc090f990f0e654242f86627d46fbd0562ceb"
+    },
+    "settings/v2/packages/device.json": {
+      "bytes": 29,
+      "sha256": "93af91e0b90038cedc84d08651f845e1c2e2ae460321c19f083c27a178e451f8"
+    },
+    "settings/v2/packages/engine.json": {
+      "bytes": 4879,
+      "sha256": "850ee9b4d65d837b124534bf5d299f26f2122e4707b06b1ba67b6306d98c2bfa"
+    },
+    "settings/v2/packages/information.json": {
+      "bytes": 518,
+      "sha256": "cbb733c8bf691ac9d561469cf945b21a23328e68fa694d75ab9f844f1866d754"
+    },
+    "settings/v2/packages/program.json": {
+      "bytes": 29,
+      "sha256": "d914f9f19ffe02724337936d8c7907798c8666566902b78243eb1aa8da0baedd"
+    },
+    "settings/v2/packages/project.json": {
+      "bytes": 243,
+      "sha256": "5763bb1dc8b36edf7e7540ca8f49070e9f17da05084adfda196438bc10b34ddd"
+    },
+    "tests/assault-v07.test.ts": {
+      "bytes": 5629,
+      "sha256": "40c22f919ecee1f279174a826a621a54e004131adc981a563b87bc0d016003a5"
+    },
+    "tests/balance.test.ts": {
+      "bytes": 809,
+      "sha256": "69d871f20b00eb548c611dbac298d0f0c521e01629c638a461003d5a46985b29"
+    },
+    "tests/combat-v04.test.ts": {
+      "bytes": 7003,
+      "sha256": "9805e2f0a9a907b8abf84a93cc19411d468f3b4229ace05b0394096e058e5445"
+    },
+    "tests/combat-v05.test.ts": {
+      "bytes": 7460,
+      "sha256": "9c618aa70cd73b661866f212982fc07f8663328a83d2b9f8712129e5278c9163"
+    },
+    "tests/contact-v051.contract.test.ts": {
+      "bytes": 3544,
+      "sha256": "adefac71abd0e075e23161466ed69f5e912aaf6d08411424490715f0f7d066e1"
+    },
+    "tests/feel.test.ts": {
+      "bytes": 3372,
+      "sha256": "25f042db22d10f6e0360cbba40e2de031c88c7fd57f4fcbc9348be2fff9e3bb5"
+    },
+    "tests/fixtures/s1-model.ts": {
+      "bytes": 7881,
+      "sha256": "99eef23da6747b9a48e3c9e040cfe8090e36c4bcb8c37bf237cf9aceac72d90b"
+    },
+    "tests/fixtures/v03-model.ts": {
+      "bytes": 8927,
+      "sha256": "e5fe33902bf5f5c19ae49ae112397fcb68a765d1922b989c9bc0c2f727759f12"
+    },
+    "tests/fixtures/v031/feel.test.ts.txt": {
+      "bytes": 3186,
+      "sha256": "6864f87107760d8fb01523328790fa19399bab7c3d86d2364602fe05cd7ebcd4"
+    },
+    "tests/fixtures/v031/presentation.test.ts.txt": {
+      "bytes": 4160,
+      "sha256": "e4177cc210b3359aca4102b115e53649a693ef120297c289b50bbd036f14df10"
+    },
+    "tests/fixtures/v031/progression.test.ts.txt": {
+      "bytes": 3437,
+      "sha256": "944364d5f79f6bff4ea88c9e421680250f2da7440541e5093c7fc7959d5266de"
+    },
+    "tests/fixtures/v031/rules.test.ts.txt": {
+      "bytes": 9943,
+      "sha256": "d643893289b160a891dfe00d61e65dcee78c03a3d8cb3c43ca9845411b2c7689"
+    },
+    "tests/fixtures/v04/combat-v04.test.ts.txt": {
+      "bytes": 6525,
+      "sha256": "0f4a2b2dd9dd7b1fd0f134c1d6473ae6195513e797047aff7e3db1833ea233cb"
+    },
+    "tests/fixtures/v04/progression.test.ts.txt": {
+      "bytes": 3469,
+      "sha256": "df995cf49e97b825bba5ad6014f3b07150c68abc30dc8408adcf7f934da543ad"
+    },
+    "tests/fixtures/v05/combat-v05.test.ts.txt": {
+      "bytes": 7187,
+      "sha256": "8a7ff87d1bc960f1bd5b9b2cfb4f5282120822a35e41d8fa27840c9349ae0a7c"
+    },
+    "tests/formal.test.ts": {
+      "bytes": 12443,
+      "sha256": "f0850ad485bcdbc0b96f18e53fdcb24398e1066b50d0e2f8221258b53ab6b4d2"
+    },
+    "tests/formation.test.ts": {
+      "bytes": 574,
+      "sha256": "7898829f7636782780b43152f8b7f678b04ca0529319eae0731feba780263c46"
+    },
+    "tests/geometry-v051.test.ts": {
+      "bytes": 2324,
+      "sha256": "716d62fb8059f5262b49346b526e2558451997c4bf6c0d16f58bbc88c13779a1"
+    },
+    "tests/hazards-v06.test.ts": {
+      "bytes": 6190,
+      "sha256": "0c7ec8a3a36784e668b25a977066c3da8b5bb71795989f2aa7dc2a4d8116992a"
+    },
+    "tests/horde-v06.test.ts": {
+      "bytes": 11389,
+      "sha256": "50f7f43ea9e59bd2ee9b282ab869f53391ed6f0040e9b5a9d4298c69c6e9fa0c"
+    },
+    "tests/ios-playable.test.ts": {
+      "bytes": 6503,
+      "sha256": "63f3114f1d8c1122cbd355f4b13cc09175eb25bd511d8073f15901f04596f0cf"
+    },
+    "tests/pr2-regression.test.ts": {
+      "bytes": 6035,
+      "sha256": "14cd36918be48a2b0b6dbb6b8a431071f48284e41e1dd36df5767846538176a4"
+    },
+    "tests/presentation.test.ts": {
+      "bytes": 4206,
+      "sha256": "a3c685cf2620fd0353345f667e17236ad8672547f60072492531a5eb2a1d0ed9"
+    },
+    "tests/progression.test.ts": {
+      "bytes": 3626,
+      "sha256": "ffe926f0e2f1c798a80adef214b8e718e6bf708aa151139658072d714e718d5b"
+    },
+    "tests/rules.test.ts": {
+      "bytes": 10302,
+      "sha256": "486ee78c0d754e1f9e706d6bb57bfca752d10eeda0ef7ee2df911fc650a99e05"
+    },
+    "tests/runner-fix2.test.ts": {
+      "bytes": 7057,
+      "sha256": "fb772bc0e4a380748edccb8b90f71fe49fc6fa01feec609094d1e06e2c223ef4"
+    },
+    "tests/runner-v08.test.ts": {
+      "bytes": 13397,
+      "sha256": "0a88962d4712b8b2c004bba39a63c06022b16b16d102cda1dd7a4ec92cd94ad3"
+    },
+    "tests/runner-v09.test.ts": {
+      "bytes": 6915,
+      "sha256": "bcdf5aac2596b26915c9c008207b4809a7f5d41245e6ea4592fd6c15e922dc40"
+    },
+    "tests/save-fix2.test.ts": {
+      "bytes": 1141,
+      "sha256": "80b7db853672f7f119242f1dc79003597ff75f429bec1f764b0171ebacfd6616"
+    },
+    "tests/ui-v06.test.ts": {
+      "bytes": 3156,
+      "sha256": "271c31c87cc949a5c0ad0d15090117ece9a3e63e755664ea517a0461d2fe1bbf"
+    },
+    "tests/ui-v09.test.ts": {
+      "bytes": 1584,
+      "sha256": "de5f53579812242862daa7d1402e58727e48dc51851b0c3cf4418aeb2a659e10"
+    },
+    "tests/ui20260925-save.test.ts": {
+      "bytes": 5253,
+      "sha256": "16bb657919b4f2d116183224abe11932054cb4b5070f4195b4762dea4b2bc699"
+    },
+    "tests/weapon-presentation-fix2.test.ts": {
+      "bytes": 1515,
+      "sha256": "a6ece5a041bb9cc3401145414f0f0c9ab37127eee025c143aa7aca14144f1d83"
+    },
+    "tools/art.mjs": {
+      "bytes": 8960,
+      "sha256": "d2a3a77dd0ea658329e32cbc7e99e224fcfdf87eb18bfec6696199329dea8569"
+    },
+    "tools/audio.py": {
+      "bytes": 1358,
+      "sha256": "6b77f360c8daf8d14fd9c1b24cdabf1eee5410065f276190855af1362740a1d5"
+    },
+    "tools/balance-v03.ts": {
+      "bytes": 2842,
+      "sha256": "b40ddcc8eac7fcc43717d0cd208dcdace478006b7ea30938b315d9214927fc9b"
+    },
+    "tools/battle-assets-check.mjs": {
+      "bytes": 4174,
+      "sha256": "0e03c8a9dfa0ceea88f23b98dabd94b86eaffcc4b9443898d466aab71f0294e1"
+    },
+    "tools/battle-fix-report.py": {
+      "bytes": 9541,
+      "sha256": "e7e299bb7c461d25f04532239e61af9de7e6074c14402f59839d478a30decb83"
+    },
+    "tools/battle-fix2-fingerprint.mjs": {
+      "bytes": 4269,
+      "sha256": "22a1c1ca3adee527f7e1c8375415ce5517a34c57722f1237774db32d5cccab8b"
+    },
+    "tools/battle-rework-assets.mjs": {
+      "bytes": 11348,
+      "sha256": "4d81b7f7ec53e6107c5f070d598eca611992a9b6aab9ccfcb00131e480096af8"
+    },
+    "tools/battle-rework-review-page.py": {
+      "bytes": 3967,
+      "sha256": "6e081eb294c2c482929fbcfdaa3731080ef0aed43a25b7b2243aee30901f3ea8"
+    },
+    "tools/battle-rework-video.mjs": {
+      "bytes": 2166,
+      "sha256": "392f0c4bee8acd5ed0d14a6097e1e1ef1a296830296bdb099286ff8981d4728c"
+    },
+    "tools/browser-battle-fix-checks.mjs": {
+      "bytes": 5772,
+      "sha256": "83f1d71e44d13e4eb93e4938e2c7fd774e97d157b7acba6cf804dcd7394a5480"
+    },
+    "tools/browser-battle-fix-deliverable.mjs": {
+      "bytes": 1798,
+      "sha256": "1749e01adf3386f2392730f070d8ff43939fce536c7bfb93a0b9fff07e873256"
+    },
+    "tools/browser-battle-rework-baseline-server.mjs": {
+      "bytes": 1115,
+      "sha256": "cc5357078d956e5674713abbef7f43806fe655c10751f7467acb9e2d6c2c83bd"
+    },
+    "tools/browser-battle-rework-baseline.mjs": {
+      "bytes": 1664,
+      "sha256": "b3347ff9b72a7d0f5f09e3b8abc0a9a56a4dc55bfea6864e3fb995f626e6ace9"
+    },
+    "tools/browser-battle-rework-common.mjs": {
+      "bytes": 3384,
+      "sha256": "95a8a54c72afb2e5571aa0858498d255c5b307f141a3161b2ba1e2ea103dd595"
+    },
+    "tools/browser-battle-rework-compare.mjs": {
+      "bytes": 1877,
+      "sha256": "2a6c3055c24e3b36e868abddee39cd638a90faab23349de579ec2b093cecd414"
+    },
+    "tools/browser-battle-rework-deliverable.mjs": {
+      "bytes": 2375,
+      "sha256": "975bd795eb5c9bb5a8f63e5af7410e83a5ca927988642bfe658434f18cd39de0"
+    },
+    "tools/browser-battle-rework-delivery.mjs": {
+      "bytes": 6450,
+      "sha256": "4638920a2fd5e8ce8ff867d1b90dfd8da8f8ab67e3dac12996e3f7a4d66c270c"
+    },
+    "tools/browser-battle-rework-package.mjs": {
+      "bytes": 2330,
+      "sha256": "dfca5b136c672a5d045afaddfcbd511e7633712aa6f939d98464b66234697c4b"
+    },
+    "tools/browser-battle-rework-r1.mjs": {
+      "bytes": 3261,
+      "sha256": "a2670a257b4fcc0e3e0c162e9df482a964a6e4a8ed722722bcbc619360026cef"
+    },
+    "tools/browser-battle-rework-targeted.mjs": {
+      "bytes": 10393,
+      "sha256": "0c183d4cbb78bba41082c9275ef666bf15ddc7900651151091b2871515e1ddbd"
+    },
+    "tools/browser-edge.mjs": {
+      "bytes": 4809,
+      "sha256": "4ed3bbc74dc6fab42400f3596b864a65138dbd762c24eff5fb06a8c3e096c65c"
+    },
+    "tools/browser-failure.mjs": {
+      "bytes": 2707,
+      "sha256": "3d4d1d449361194c3f8c08dd44e205d5083837e0d9060c52e10f268933a305b4"
+    },
+    "tools/browser-fix2-baseline.mjs": {
+      "bytes": 2118,
+      "sha256": "cf86b9f6699d8e670675858f98f7544cc23e49a10ae5add53ebc2bc3db269eee"
+    },
+    "tools/browser-fix2-common.mjs": {
+      "bytes": 4823,
+      "sha256": "4d8987bd7e5e6bdbe093f0ef23f8efce9744d40d61cd222e8ea6da123eef626d"
+    },
+    "tools/browser-fix2-compare.mjs": {
+      "bytes": 2387,
+      "sha256": "0a93f0b74871f81f806e724a609176c291e47b7f75b8aed890b68ade171d2d37"
+    },
+    "tools/browser-fix2-delivery.mjs": {
+      "bytes": 7146,
+      "sha256": "f4cf9252a32339afae8583220dc9a980db430f5a92c66e62090a4b3f579569a2"
+    },
+    "tools/browser-fix2-fixtures.mjs": {
+      "bytes": 2392,
+      "sha256": "5f903fe4de010a1d273040bbc1ae2a330681eaa667060b8a49506125d8217885"
+    },
+    "tools/browser-fix2-layout-recheck.mjs": {
+      "bytes": 2993,
+      "sha256": "a17e3557d7acc463166e65283ad76f4d73e1df8296893643f1f1379a79cce967"
+    },
+    "tools/browser-fix2-readable.mjs": {
+      "bytes": 5928,
+      "sha256": "43d18d1c5086becda383de161922b3ffbe327fe4a027b88950e94b14c057a337"
+    },
+    "tools/browser-fix2-segment.mjs": {
+      "bytes": 2871,
+      "sha256": "ee8a98004b704cdf9a3639edb41c5e4fe18abbfa365ab371555eb34a5a34a308"
+    },
+    "tools/browser-fix2-targeted.mjs": {
+      "bytes": 13542,
+      "sha256": "75ca4353e57b16e220b201bdab86515a090751578116f7ec91a23b5cbf02f29e"
+    },
+    "tools/browser-fix2-weapon-clips.mjs": {
+      "bytes": 7044,
+      "sha256": "ae401deb95ec30fe781cdb9d42d4b7793f9c2fe6b1258036756d48c98fb1a9d0"
+    },
+    "tools/browser-fix2-weapon-frames.mjs": {
+      "bytes": 2250,
+      "sha256": "90421c2ca27aeac47aa854f915778fc8b75ef292ec25ef684e6e6eca1fcd6196"
+    },
+    "tools/browser-inspect.mjs": {
+      "bytes": 945,
+      "sha256": "25eaee4aa25c9f111614e90f78fb328a58cb0fb470adfc07c94ad2d706413a63"
+    },
+    "tools/browser-lifecycle.mjs": {
+      "bytes": 4446,
+      "sha256": "fb9884ed9422ccfdcc91afdde1d243dc0c62c68bd093d912a7745de427c5d77a"
+    },
+    "tools/browser-play.mjs": {
+      "bytes": 5409,
+      "sha256": "984367c09f1084b6d3213b2d630eccbc6d62fbdc6caaac0e4cefcb3e109253fe"
+    },
+    "tools/browser-s2-audio.mjs": {
+      "bytes": 113,
+      "sha256": "6875920733bb71d1af09e39820e1977701b15368e775c6d50c39544847ff2f54"
+    },
+    "tools/browser-s2-preview.mjs": {
+      "bytes": 115,
+      "sha256": "6c61698ab6835e9cb49e9fd9bef0691285643c4a9b8bf822760bc55f28cbe7d8"
+    },
+    "tools/browser-s2-soak.mjs": {
+      "bytes": 112,
+      "sha256": "0bdb239080a6ced7c59c2e283d669f3c885798bb0dec62fc993f448c1fd93402"
+    },
+    "tools/browser-s2-sound-pause.mjs": {
+      "bytes": 119,
+      "sha256": "1b194f3e6503c882a8f64392cd7f5fcc9a203cd44798cae1917ece664a8ae9b4"
+    },
+    "tools/browser-s2b-audio.mjs": {
+      "bytes": 4936,
+      "sha256": "2f532064b88578fc6cd1290367facdd5919a89f95cc03fe5514fa21c869e2088"
+    },
+    "tools/browser-s2b-comparison.mjs": {
+      "bytes": 3964,
+      "sha256": "3fada767f07769ce1950eb95f2d08031ac7a9939d18d0895bb1b101cb0a17492"
+    },
+    "tools/browser-s2b-edge.mjs": {
+      "bytes": 3121,
+      "sha256": "83c6d6c51ee3bb594c6106e728a6ee89903483f48b06320ed1abf9e9370ed301"
+    },
+    "tools/browser-s2b-failure.mjs": {
+      "bytes": 2727,
+      "sha256": "71b0750b423c063975b89078a8c2aaad64903627eb23b73fceef5147b7d0881e"
+    },
+    "tools/browser-s2b-lifecycle.mjs": {
+      "bytes": 4432,
+      "sha256": "f1b75c072b7b3bffe5f19d66a53bc63d88fb1ceacc95c24d893cd9cd09e4a87c"
+    },
+    "tools/browser-s2b-preview.mjs": {
+      "bytes": 2241,
+      "sha256": "160a05713a783c558e5bd1062024bc55d6626390b22149a73adc7aab38941463"
+    },
+    "tools/browser-s2b-soak.mjs": {
+      "bytes": 4110,
+      "sha256": "3e5fc92cdec176e04eda9b4d34ea447b9fa8d11679a49ac496447e0f53eaf110"
+    },
+    "tools/browser-s2b-sound-pause.mjs": {
+      "bytes": 3846,
+      "sha256": "761d94ccf1a7bbea4792b9473950dc5d7c0c054f88337c7aa2b2023cd75b93e9"
+    },
+    "tools/browser-s2b.mjs": {
+      "bytes": 6974,
+      "sha256": "165eb72791d6983203e9e673216fe6f6189e6d8957dcc55a0308f27c7591cc29"
+    },
+    "tools/browser-ui20260925-background.mjs": {
+      "bytes": 5709,
+      "sha256": "581ae62448a8da9dd21d7108d41bbc8ccfcbb88e6a5bab6029f39e6714adc8eb"
+    },
+    "tools/browser-ui20260925-baseline-server.mjs": {
+      "bytes": 1107,
+      "sha256": "537c487d619c300cfab6928e2d2e7d45ee4d45f782539a63a23950f31e8ee7d4"
+    },
+    "tools/browser-ui20260925-before.mjs": {
+      "bytes": 1828,
+      "sha256": "777f2f196096d632b44e4477931cbe0cfa725880eaef59194377f6dbdebe67d1"
+    },
+    "tools/browser-ui20260925-common.mjs": {
+      "bytes": 6985,
+      "sha256": "0517769b3a95fd65b4b4172da8b88c35271d1a748c65b40373c523293799f98a"
+    },
+    "tools/browser-ui20260925-deliverable.mjs": {
+      "bytes": 2359,
+      "sha256": "fb472fd7f6e4d1803021581db43d61a74b599ef08eaa50a32593742b2c482992"
+    },
+    "tools/browser-ui20260925-delivery.mjs": {
+      "bytes": 6455,
+      "sha256": "f5479b1bfe09a1cbcc0def52e6154b7ead0a8c6f10adc2ab2860e88b51724849"
+    },
+    "tools/browser-ui20260925-errors.mjs": {
+      "bytes": 3483,
+      "sha256": "0d3d96fad23d9085fe2938350305a06691027aee70815bc32a7c9dee4ff78873"
+    },
+    "tools/browser-ui20260925-final-refresh.mjs": {
+      "bytes": 2504,
+      "sha256": "8db6938ce9f9e77c6a92d01f4254b15322c355dfac027cdbf438f3b0fc93d9a0"
+    },
+    "tools/browser-ui20260925-interactions.mjs": {
+      "bytes": 12477,
+      "sha256": "da4753eb9b835dde17665bc5c8e98dbf79382a11b5f4b576415e6977a104a66a"
+    },
+    "tools/browser-ui20260925-matrix.mjs": {
+      "bytes": 4032,
+      "sha256": "df9599afd5dd67ca8a6d27cc304a008ca6355f227b4785b7b326dd20df2c6bb1"
+    },
+    "tools/browser-ui20260925-native-common.mjs": {
+      "bytes": 4634,
+      "sha256": "5a360d084ec8f154283a8ec7d9fbde44aa924de0979e87549263865ec9871185"
+    },
+    "tools/browser-ui20260925-reentry-only.mjs": {
+      "bytes": 2066,
+      "sha256": "5595f537da38fcc24e2aa3bae7679a3342d214613284ded1f507788e515f7dc7"
+    },
+    "tools/browser-v02-edge.mjs": {
+      "bytes": 112,
+      "sha256": "755417e596ed8649879c6574250a5eb39cb28496e5c828f44604269d8d0ccd06"
+    },
+    "tools/browser-v02-failure.mjs": {
+      "bytes": 115,
+      "sha256": "3ef4f7c4383b6ca5cc9c4557771be96848935c9c2ab82bf5a846e92ee25b2157"
+    },
+    "tools/browser-v02-lifecycle.mjs": {
+      "bytes": 4429,
+      "sha256": "d76f372482893e9dfc30c04d6b106c75613880718e3224fab25e73df8643dc5a"
+    },
+    "tools/browser-v02.mjs": {
+      "bytes": 107,
+      "sha256": "5a185880871b620f54b9f286670a447e4dc7bea57a3fda6254f2782037f9e714"
+    },
+    "tools/browser-v03-common.mjs": {
+      "bytes": 5363,
+      "sha256": "ff7440efff15a7b3f975f3fa20f18b83111c2b95cabaa5ec3a886bf553f885e8"
+    },
+    "tools/browser-v03-delivery.mjs": {
+      "bytes": 4567,
+      "sha256": "e449426e372b3d3e5bb41b69079fec1cea2034b15859b7bb66aadcfaa3919d3a"
+    },
+    "tools/browser-v03-edges.mjs": {
+      "bytes": 4272,
+      "sha256": "bac7686e3149194de4eb7b1fe520f7efbbd4585e3b3f9fda118eccb5592a90e2"
+    },
+    "tools/browser-v03-failures.mjs": {
+      "bytes": 1605,
+      "sha256": "c864ee7f758c32a3c510d4a3faa3c595203b5cb991130303a5666b3441c5f257"
+    },
+    "tools/browser-v03-lifecycle.mjs": {
+      "bytes": 5220,
+      "sha256": "fd422b531ebc5b20b41d0563c04d61287446f4e0862847405bc0d7c8b621b2c4"
+    },
+    "tools/browser-v03-preview.mjs": {
+      "bytes": 856,
+      "sha256": "91ff27e86482f8e42d3327eb652538383c1c2a8c5a01083db07b6a5c13e31ded"
+    },
+    "tools/browser-v03-probe.mjs": {
+      "bytes": 423,
+      "sha256": "f299ccfb6ac792ca2f351c8aed2e176bfe14af428ed5ddaaaa444fd38c6b56f8"
+    },
+    "tools/browser-v03-resource.mjs": {
+      "bytes": 1204,
+      "sha256": "826b91c70b99558aae375064d39beacfd96309a0123f75b1a24dcf25d5b418b9"
+    },
+    "tools/browser-v03-sound-pause.mjs": {
+      "bytes": 4127,
+      "sha256": "362c394fdede5d6125bdf5ad13b90c8f93f90237aeaaed0a38dcd73b14f3bb1e"
+    },
+    "tools/browser-v03-transition.mjs": {
+      "bytes": 2124,
+      "sha256": "44a62c30312660d95fc099bc588357fee1a5e0cef6c3f7bed17c4be91e248575"
+    },
+    "tools/browser-v03-warm-soak.mjs": {
+      "bytes": 3713,
+      "sha256": "0a15533af37b55f4f83025cf3868d56cbc57b052bed3c481d790953af9e73890"
+    },
+    "tools/browser-v031-delivery.mjs": {
+      "bytes": 4431,
+      "sha256": "3a74b8eeee3ab94a677ce92a617b9f7064c2ac1381a113354c90f69f5fa16b0e"
+    },
+    "tools/browser-v031-fixture.mjs": {
+      "bytes": 4520,
+      "sha256": "1e3e04c31579b864b944ab30928bbdf0f3410ad05ec937d12ce704790ae5d57e"
+    },
+    "tools/browser-v031-music.mjs": {
+      "bytes": 1895,
+      "sha256": "22f94e85b4a6d3fd90f20661bbde7149c23b44ebb59f8e55aeb0e36893ddc5d3"
+    },
+    "tools/browser-v04-delivery.mjs": {
+      "bytes": 6368,
+      "sha256": "36b762865c4b12d9ce2c7f3d94623aeb6728d05601e8332bcfd02a4e5ca8e527"
+    },
+    "tools/browser-v04-fixture.mjs": {
+      "bytes": 5990,
+      "sha256": "909ac43e203e4848ef464e61058bcb2918393cab07e98b9961a22d2b92ca2e10"
+    },
+    "tools/browser-v04-layout-final.mjs": {
+      "bytes": 1060,
+      "sha256": "418b448a1a026c67eaaaf965352115644ea9686f610c59cb0f0a1cfa98e96e40"
+    },
+    "tools/browser-v04-smoke.mjs": {
+      "bytes": 566,
+      "sha256": "1e849c78faa0f276230e1b165a244598605c5238d6b75a07605350c824ccd105"
+    },
+    "tools/browser-v05-delivery.mjs": {
+      "bytes": 7542,
+      "sha256": "9af73f5d3956a84a454bb4e325b6fd13922a2fc8903adbce2846c007c86e782c"
+    },
+    "tools/browser-v05-fixture.mjs": {
+      "bytes": 6816,
+      "sha256": "9ed9c5a77a4cc7839a6d3e5dfc9d9e060a8f685ee24b454887029100c983020e"
+    },
+    "tools/browser-v05-visual.mjs": {
+      "bytes": 1661,
+      "sha256": "3633de1da7de359984c805967f5480d8cc0bacd37326cb52174268baaa59f1e0"
+    },
+    "tools/browser-v05-zhao.mjs": {
+      "bytes": 2380,
+      "sha256": "d22ccf5d68bcb0ebac51d4978622d0ccbef2fae35324064d17b87e576a3b9ab9"
+    },
+    "tools/browser-v051-contact.mjs": {
+      "bytes": 2816,
+      "sha256": "cfb3aab67f6e62da2a2bfec2d2f27792dfb90e9ea22ca07f331f89cb535cd90d"
+    },
+    "tools/browser-v051-delivery.mjs": {
+      "bytes": 8147,
+      "sha256": "1ab2d5ef83293e484ebc3ffc1eb3676bf574477a841ea27953b8c134c1bd8259"
+    },
+    "tools/browser-v051-fixture.mjs": {
+      "bytes": 6819,
+      "sha256": "dd6bb2b0f2da3131391edd47e234677201f5e4ac935cec96b05c0fa9c73a266e"
+    },
+    "tools/browser-v051-zhao.mjs": {
+      "bytes": 2383,
+      "sha256": "9c395459a3f0c8f4653878c4d7d251dc4d0d2ee486cdbe19609dc4228c123b03"
+    },
+    "tools/browser-v06-common.mjs": {
+      "bytes": 3521,
+      "sha256": "b92f93e87bb1a0ebf81d7ae6d080d5aebee2a07836d1214507e34c96c7545042"
+    },
+    "tools/browser-v06-comparison.mjs": {
+      "bytes": 3385,
+      "sha256": "5034c81c24eea2207384a36dd3b4cc02764afc039f446d42ee3bdc4f2abf410f"
+    },
+    "tools/browser-v06-delivery.mjs": {
+      "bytes": 5168,
+      "sha256": "cb31cb21e580f0823fac26c0804c9df3779e69dd56461bcb9453a1101adee777"
+    },
+    "tools/browser-v06-fixture.mjs": {
+      "bytes": 5273,
+      "sha256": "a092244a16e4ba16dce6679ae9d683b94039b2ac65942422f1b6cf581716de71"
+    },
+    "tools/browser-v06-safearea.mjs": {
+      "bytes": 2547,
+      "sha256": "fdd1b7a40c4ef21961d4b31406020be0c46a64a0d86da6d9630975ffa8525190"
+    },
+    "tools/browser-v07-common.mjs": {
+      "bytes": 1869,
+      "sha256": "a3398421d663797c7378776d401b701b67a3b9a19ec43e01bf12d0a32f9fc863"
+    },
+    "tools/browser-v07-delivery.mjs": {
+      "bytes": 5479,
+      "sha256": "fb00814747d139348ff53c034922c1d95369d58238d32491fe898324ede1228c"
+    },
+    "tools/browser-v07-final.mjs": {
+      "bytes": 1901,
+      "sha256": "57aa2259f38dd2c21892f61c920755f2eaa1a859dd3c8dcf6dfb2eabbd33f56d"
+    },
+    "tools/browser-v07-look.mjs": {
+      "bytes": 773,
+      "sha256": "e2370c4755e5bd94e57007ff015d97992fce3bef6c9dc605436791af2099d78c"
+    },
+    "tools/browser-v07-mobile.mjs": {
+      "bytes": 2997,
+      "sha256": "3b11800a904ecb8fa0581dc2bd558f05aee58565da18c385bf71eeeeeec5c2d4"
+    },
+    "tools/browser-v08-common.mjs": {
+      "bytes": 481,
+      "sha256": "b3f7bd00230b2dd1a75ff327d2280ad2b515d515891bce175062b723c81f26e0"
+    },
+    "tools/browser-v08-delivery.mjs": {
+      "bytes": 5740,
+      "sha256": "53d711b9517f5ce0b61187d88057b05b6f3f05469cafc44f77b4d0b9045b8f09"
+    },
+    "tools/browser-v08-fixtures.mjs": {
+      "bytes": 4535,
+      "sha256": "77efd2c2a4a2c4f2d28c36e64377d6b69a49dfb600ce374e6fa28995c69e037e"
+    },
+    "tools/browser-v081-final.mjs": {
+      "bytes": 1508,
+      "sha256": "bc101638e8c5f5faca8602cd8eeca5df09abdb4b7a15cbc215e980ee99297f04"
+    },
+    "tools/browser-v081-review.mjs": {
+      "bytes": 9393,
+      "sha256": "cdc147ea1a3712bc149df19174c2af04131e0f488b108003959d42a5d1315937"
+    },
+    "tools/browser-v09-before.mjs": {
+      "bytes": 1858,
+      "sha256": "2efe909778cb7265d29fc02d88ab90c5ab8909008bcf8e9e2e69095abb572e5e"
+    },
+    "tools/browser-v09-common.mjs": {
+      "bytes": 481,
+      "sha256": "58eee43b81a6466ca17a9013d38d681a960b7b115db0a291fb8f731a1b4dabf5"
+    },
+    "tools/browser-v09-delivery.mjs": {
+      "bytes": 6065,
+      "sha256": "b95897de4735d516e80ead0cd76580194f777eb50c93cf41f792ac9bc078c62b"
+    },
+    "tools/browser-v09-errors.mjs": {
+      "bytes": 2633,
+      "sha256": "66feca1c84246a09a342f59b25b2a4ea89d978758e2b43ebd85264d30fb7bf39"
+    },
+    "tools/browser-v09-final.mjs": {
+      "bytes": 1826,
+      "sha256": "dabc9657cbe44357a75a085e002ef3b468ce60ad1b67f3d8de5d9d4ac644010e"
+    },
+    "tools/browser-v09-kite-segment.mjs": {
+      "bytes": 2114,
+      "sha256": "fe186d293818b6e817bb9dbe761f17a8a1f4d834f6d76411f40cf238eb516355"
+    },
+    "tools/browser-v09-matrix.mjs": {
+      "bytes": 16656,
+      "sha256": "389df62de4b51149506f083f24bf67d8383c34b4c98eb7f560115d7fe714070d"
+    },
+    "tools/build-ios.json": {
+      "bytes": 850,
+      "sha256": "85bd3ecb43db5133afda0f45fa60716d0ccc7bca4e6a7dd2d15c3a9d09cb50d8"
+    },
+    "tools/build-ios.py": {
+      "bytes": 4688,
+      "sha256": "1b33626ae9f8e394aa0f4de6331c4f62df867ca81f3dfc0041c15f4175a64f6b"
+    },
+    "tools/build-web-mobile.json": {
+      "bytes": 519,
+      "sha256": "35d158b6f2a605b519841e8048e0a5bb0a03da060bbc80010ff4135f56818f58"
+    },
+    "tools/build-wechatgame.json": {
+      "bytes": 519,
+      "sha256": "57dece2230f43823c4e87a41c352f2daa7d353765cdb6cf509a0df51f9acf9c7"
+    },
+    "tools/build.mjs": {
+      "bytes": 4304,
+      "sha256": "ea1ea0e8b315bf06df3b2fa12238fcc83e977499ebcdd97c9724097b366e98e1"
+    },
+    "tools/capture-v02-gallery.mjs": {
+      "bytes": 1429,
+      "sha256": "5d5a04cb82a615284b258d6873280358103f57703740cb890cb9334f49927858"
+    },
+    "tools/check-s2-alpha.mjs": {
+      "bytes": 1622,
+      "sha256": "202e78266511082224220cc84472931c94c35fdd32ad47b33586794bdbd54dc3"
+    },
+    "tools/check-s2-preview.mjs": {
+      "bytes": 1340,
+      "sha256": "374e18a19c13ab662e83dbe4d590ff975dbf879891ed0289e3c79abec57f9e8b"
+    },
+    "tools/check-s2-review.mjs": {
+      "bytes": 1927,
+      "sha256": "d5d39527ef65bba2e0bbb3f71f0101c664b8a278008123c307056d6bffd568af"
+    },
+    "tools/check-s2b-review.mjs": {
+      "bytes": 2057,
+      "sha256": "3f86f71f79c9ab0d7e0e3f4872972ca59b601125d804a5fe87efc53c3daeb663"
+    },
+    "tools/check-v03-art.mjs": {
+      "bytes": 1289,
+      "sha256": "0a846e465c6d9264b341ef71442ef3d3b6be09fb880ce6018a630a2597cf1024"
+    },
+    "tools/check-v03-package.mjs": {
+      "bytes": 2016,
+      "sha256": "3e9ef9b88b50ca26a82ccd06befdf4a52f2ac0e1cb5befbdbcf0a0820bd4fa51"
+    },
+    "tools/check-v03-review.mjs": {
+      "bytes": 1482,
+      "sha256": "b6a7080ef6d27b32efb89f56eb5e55df9ce9c3d63af6e4b3f585a7e2fb53401e"
+    },
+    "tools/complete-v03-verification.mjs": {
+      "bytes": 2807,
+      "sha256": "d55828438f681c1e051eb5d936762bdd69c12deedf52760ce5bd777e6d5a9468"
+    },
+    "tools/downloads/CocosCreator-v3.8.8-mac-121518.zip": {
+      "bytes": 1181883559,
+      "sha256": "cc65c3665539e996c076fa8202dee8531b8770e7e956f0c68f610537735d640c"
+    },
+    "tools/downloads/creator-download.html": {
+      "bytes": 2152526,
+      "sha256": "194b2080d59412b0f9aef10f8a27e1cd4632adbfe3c78d76563bb314c4ae204f"
+    },
+    "tools/encode-v06.mjs": {
+      "bytes": 2917,
+      "sha256": "842f0e70bd128ee1f54d60da43135f15ffa9d6712bf5a28b709b2ad28c47a29a"
+    },
+    "tools/encode-v08.py": {
+      "bytes": 1719,
+      "sha256": "28d22f7305fc7152badc7dde595e86f3a71f5193abbd63feb6217d500edb3e88"
+    },
+    "tools/export-v02-video.mjs": {
+      "bytes": 1072,
+      "sha256": "0e1a60bf1bcc3c0ec243ae3bc4c2381b81bb40dcbaf51f8c75d2b4aec88116df"
+    },
+    "tools/finalize-s2b.mjs": {
+      "bytes": 6573,
+      "sha256": "293bd5e1196ca6eebc201b4388bdd5c593c706a501ed915577a81bb022a30935"
+    },
+    "tools/finalize-v03.mjs": {
+      "bytes": 4642,
+      "sha256": "bfc5c1ac5f941a54d2a2843ea4717adea5c2f0729ff35958ca41eef619ed7214"
+    },
+    "tools/fingerprint-v04.mjs": {
+      "bytes": 1084,
+      "sha256": "dd5b5063f4fdebd5cd727fcac9277ad3fa71238aea41062580d4128f372e027b"
+    },
+    "tools/fingerprint-v05.mjs": {
+      "bytes": 1116,
+      "sha256": "746946d5cc17ee14b0684a51f979e9c824bbf9e8ceb1b1c5fb7f32751e7ebe40"
+    },
+    "tools/fingerprint-v051.mjs": {
+      "bytes": 1102,
+      "sha256": "b19c11061e998d44af2fff91c072e6441bec90de6024b5aed5f63fbbbc048473"
+    },
+    "tools/fingerprint-v06.mjs": {
+      "bytes": 1100,
+      "sha256": "24c584a043c475be748ac5f071f6164a25f7280a3fd9ff6c7d074eb3bc3a5a98"
+    },
+    "tools/fix2-art-assets.mjs": {
+      "bytes": 8646,
+      "sha256": "07eae3a6c3cdd94ac3a39c2a6843516918d1264f1defc3c011e489feca4f02c7"
+    },
+    "tools/fix2-cap-audit-baseline.tgz": {
+      "bytes": 49700,
+      "sha256": "a2f5729004fddcdf9c1951d5db76783bd97f898eb4e60744419ee763f3f8c02c"
+    },
+    "tools/fix2-cap-audit-preflight.ts": {
+      "bytes": 2386,
+      "sha256": "3e83f0873220b0acc2e8e25f51126a7822a3db2182cd05a883a62dfe71e63d8f"
+    },
+    "tools/fix2-cap-audit.mjs": {
+      "bytes": 697,
+      "sha256": "9af6929b35bfadf38c522401e68f50234c4fc9f9f82eb7adabfc7edeb317604d"
+    },
+    "tools/fix2-cap-audit.ts": {
+      "bytes": 9166,
+      "sha256": "65cb638611e990db2ac609f666c96b8d72c6efa717ec89a2ba00a34a051a539b"
+    },
+    "tools/fix2-review-page.py": {
+      "bytes": 7706,
+      "sha256": "ef832e4c3d98bd8c1f8a48b4b4a504289799ebf659460329e471ff1492d9a33e"
+    },
+    "tools/fix2-review-report.py": {
+      "bytes": 9657,
+      "sha256": "5dcbeeb54fbb697cfac9b2c1473891c8fedeeddfc1b0f68558c006879b562a4a"
+    },
+    "tools/fix2-video.mjs": {
+      "bytes": 2748,
+      "sha256": "cc10136496578a8e758f6ad8110e9b8da414ad7ca82607e0f38f8a1c4e2c9d7f"
+    },
+    "tools/fix2-weapon-video.mjs": {
+      "bytes": 2201,
+      "sha256": "ee453b3bfc6092db5ad9c8d0664994784161576a0355915dd2312c2d8236b598"
+    },
+    "tools/formal-browser.mjs": {
+      "bytes": 3445,
+      "sha256": "74a6fe33bcb699c3fc9db8c7329d0482dd46be086135dfe4db58bf6ac1bd4b07"
+    },
+    "tools/formal-compare.mjs": {
+      "bytes": 2812,
+      "sha256": "aa252cb66fcbc37da2d20f83938eba39c25d356a5aae5c402760e7bb75d644cd"
+    },
+    "tools/formal-extra-slice.py": {
+      "bytes": 2281,
+      "sha256": "a78d14b291563a35ee36b7b754302d7b5560ea8c51a5b96ca89d37b64ac98b0e"
+    },
+    "tools/formal-final-ui.mjs": {
+      "bytes": 3645,
+      "sha256": "6f4793b200f4b1ce7dd180cf64d46c87aa6ca60e61efddea751c535f394d4d9c"
+    },
+    "tools/formal-ground-check.mjs": {
+      "bytes": 1359,
+      "sha256": "07fa16fddbb05603274c85f712cb8ab63b8bc6f4f71b2eb4639026bd0a87a04a"
+    },
+    "tools/formal-media.py": {
+      "bytes": 1401,
+      "sha256": "548b2f38656bd61a9f759a79208c5e163f943e84225d9f20243b3bad9296f65a"
+    },
+    "tools/formal-model-check.ts": {
+      "bytes": 2598,
+      "sha256": "44261b1e2c1b47b929866a76e20f68a4f0eeabfb988082fd9fbd4347ba1bed54"
+    },
+    "tools/formal-native-check.mjs": {
+      "bytes": 1649,
+      "sha256": "81fcda8dc147680d183873e462994b1c39ed4067634c5db67c5c6713159e3e77"
+    },
+    "tools/formal-package.py": {
+      "bytes": 5448,
+      "sha256": "f0a7e0786e951cfaffcd27d22690781d89066475ad049f07ddab9325ee1017d7"
+    },
+    "tools/formal-port.mjs": {
+      "bytes": 12511,
+      "sha256": "cd0a0154a9d65abe822aa526aa8f235b93eff4654fb921eee10736ce5df2930c"
+    },
+    "tools/formal-props.py": {
+      "bytes": 1594,
+      "sha256": "9a0fe73aa3853ab8d4af4fa97d9772af751bf210f284a03ca91d2d863dc72a08"
+    },
+    "tools/formal-save-browser.mjs": {
+      "bytes": 2936,
+      "sha256": "ef14c80928978c08e5c9201ad1066375e6a14f2d47bdb17c559bd93a5f2a2bbf"
+    },
+    "tools/formal-slice.py": {
+      "bytes": 1872,
+      "sha256": "c264bc044ff3de5bf271e9f92ed2d73a238c91530cf24e76c668b4178b56f2da"
+    },
+    "tools/formal-ten-record.mjs": {
+      "bytes": 5883,
+      "sha256": "0a5ce9ac677303848458a5e8be27818c8349048f6e98217523aae30f7d02c750"
+    },
+    "tools/formal-verify-reload.mjs": {
+      "bytes": 1450,
+      "sha256": "e1e788a1183452ba77a83398efd64717423c146987623af85451acc700be1dfd"
+    },
+    "tools/formal-wechat-optimize.mjs": {
+      "bytes": 3807,
+      "sha256": "772e1f88fa57aed1b1daa8d279654d7a3cadc6c2f725a8936c19969188505bf7"
+    },
+    "tools/import-history-notes.py": {
+      "bytes": 6499,
+      "sha256": "d6923b4b79780964d26e50bbadd3d7270d71ee7cf1e718606f0e17c5b25f7ef2"
+    },
+    "tools/ios-add-assets.py": {
+      "bytes": 6229,
+      "sha256": "966646f0a290e82fa0f299e3ef9bfc9ab89a54d76488449b862cbd8aea8f3ac9"
+    },
+    "tools/ios-evidence.py": {
+      "bytes": 2547,
+      "sha256": "0477e180c64ed70f6d82d6b96c7a00a4b8ecb99eca1beefdf48e320e7a37155d"
+    },
+    "tools/ios-fixture-capture.py": {
+      "bytes": 1344,
+      "sha256": "1a09910a2427f60a1b9d6d530c3b7bfc9b2f32246746626c5d3f62d631b5330e"
+    },
+    "tools/ios-pacing.ts": {
+      "bytes": 2183,
+      "sha256": "d35c4be91730bc00a1eae2ef54af98ba5cd70459714c1302eca7ce601016932d"
+    },
+    "tools/ios-report.py": {
+      "bytes": 12816,
+      "sha256": "206a3db72c20806dfda445270344ef9e22ec68aaba535618d1ef383a6532d27f"
+    },
+    "tools/ios-slice-repair.py": {
+      "bytes": 4938,
+      "sha256": "7469157b0e9bae34e036f2410bccbf8468599067919ff1f1c0a81ba977727e1f"
+    },
+    "tools/ios-steer.ts": {
+      "bytes": 1017,
+      "sha256": "baac26c21bad4470bb7051e44bf9c11eb81f12e610906f415b1074349f9dc3d1"
+    },
+    "tools/launch.mjs": {
+      "bytes": 1940,
+      "sha256": "8f39efeeab37ef684d024e510d7ae52805db6767be86561e7a4e51c53f622c9b"
+    },
+    "tools/make-review-packet.mjs": {
+      "bytes": 2143,
+      "sha256": "ec880904ecaf0964ccf9fd16902d43705dffba00828af38fbbe7945f8dced6f1"
+    },
+    "tools/mutation.mjs": {
+      "bytes": 1663,
+      "sha256": "aa50d2255e1f7c5147481982cc490eef48200f27f44c80d7726bbb0cfcf9c38d"
+    },
+    "tools/package-battle-evidence.py": {
+      "bytes": 5289,
+      "sha256": "54aa0132513bbffed5de9194cb4c80f1da32edf0bcce191de6a7129933c40c38"
+    },
+    "tools/package-battle-fix.py": {
+      "bytes": 16330,
+      "sha256": "682a383eecf2549b852920d43d715ac60717909291f0752e25484dcd8e88ce73"
+    },
+    "tools/package-battle-fix2.py": {
+      "bytes": 32343,
+      "sha256": "9ff3e1d0dd5f6a087539940ce59b14758212b731810453e606fd776b531c9bcf"
+    },
+    "tools/package-battle-rework.py": {
+      "bytes": 5636,
+      "sha256": "8bae272da6e08f3fbefd133e26710944a44a314497778db0ed493d92b53edf9d"
+    },
+    "tools/package-release.py": {
+      "bytes": 2867,
+      "sha256": "7097744108d09769eae2ca6381d50b50ce69204bb018797456f9180c203e4b64"
+    },
+    "tools/package-ui20260925.py": {
+      "bytes": 5486,
+      "sha256": "9fc2d90d32accd5331b346f50af3412f5748258d5f12babe5fcdb4da2b451887"
+    },
+    "tools/package-v03.py": {
+      "bytes": 1263,
+      "sha256": "709762e042cb01417f6aea86c9e3cd9ba689ad4cc3c5dd7e47d0acb10beba4bb"
+    },
+    "tools/package-v07.py": {
+      "bytes": 5567,
+      "sha256": "942178125057bf2fd52ecf00fbd46bd94e5995406447674c96a865437ae9d9b5"
+    },
+    "tools/package-v08.py": {
+      "bytes": 5641,
+      "sha256": "e5b700eb4ee4c9e973581d94a4bf9e3cb69cc99d2199b8382ad4ff95b56ddf27"
+    },
+    "tools/package-v081.py": {
+      "bytes": 5330,
+      "sha256": "ffee7aeea8dddbd82a51908eb2deaeea92e3c35a8737a02d91207ac873deb258"
+    },
+    "tools/package-v09.py": {
+      "bytes": 6304,
+      "sha256": "66deb1fac075a9cd91066b529dd67839d7d774a5186d219490a614689335af79"
+    },
+    "tools/play-formal.py": {
+      "bytes": 713,
+      "sha256": "eb2935338e19ff444c434d36fa825944a274f0513665ca40ac18781c7f9ab29e"
+    },
+    "tools/pr2-art-slice.py": {
+      "bytes": 4461,
+      "sha256": "4c3df8438ed9a69d50494196766ebb095c82e42fb0ecfa7408834ea214250cd1"
+    },
+    "tools/pr2-flow-record.mjs": {
+      "bytes": 3307,
+      "sha256": "d4f49751c5191333ea0f33e2e86dd0e96d0a9adb3014aae0f7d4cb06c1195796"
+    },
+    "tools/pr2-officer-record.mjs": {
+      "bytes": 2308,
+      "sha256": "1f5a57b2c16ec7be5d7a760e7421f29c944752bec9e9b58d1027a1b80529ccce"
+    },
+    "tools/pr2-regression.mjs": {
+      "bytes": 2763,
+      "sha256": "fd366084ac1896c18e419139ebe37c74d0f87ad200204d45eee1c202c7d9485e"
+    },
+    "tools/pr2-ui-check.mjs": {
+      "bytes": 1640,
+      "sha256": "e2819122e877ddb700954ad7b36d662c98a549669b58d1b568fac466b872d7e5"
+    },
+    "tools/prepare-s2b-atlas.mjs": {
+      "bytes": 2299,
+      "sha256": "c6f0e36872b032079479f31286bdf1aa25eff4341bb9b827ab407dbdb0c75b33"
+    },
+    "tools/prepare-v03-atlas.mjs": {
+      "bytes": 3613,
+      "sha256": "bfc53804aa68283f32181a83ebfbaecd13f6af0a46766f94703be5816c3a20e5"
+    },
+    "tools/prepare-v031-atlas.mjs": {
+      "bytes": 981,
+      "sha256": "5157ebfe5e215e69bd5c327eaba630bf2eebb25f0baad4e88ebf4e681be70f5e"
+    },
+    "tools/prepare-v04-atlas.mjs": {
+      "bytes": 1241,
+      "sha256": "f17501ce0324935e13d69d49a5bfbd115a60e4882f557bc2584d826e4328b112"
+    },
+    "tools/prepare-v05-atlas.mjs": {
+      "bytes": 1915,
+      "sha256": "3c117b80c1905476790c833edd98d8cb619f1f3f0d7d8df59fbfe8de1c1230dc"
+    },
+    "tools/prepare-v051-atlas.mjs": {
+      "bytes": 2979,
+      "sha256": "63fe83becccaca57a78fe08b9893c6cae386e8dac6a551dc057a675a321ba6e1"
+    },
+    "tools/prepare-wechat-package.mjs": {
+      "bytes": 1532,
+      "sha256": "a78bd54fbba2b306317280368ca78b8f32d79a98fd8233ecee906db4a09f5cb8"
+    },
+    "tools/run-local.mjs": {
+      "bytes": 664,
+      "sha256": "21c23891f2e08893ca9b52b7915486919d2e8574761f40abeb942ec997062da2"
+    },
+    "tools/serve.mjs": {
+      "bytes": 2952,
+      "sha256": "8b7302482397eabd47a4f1aed0d90690dfc47bd2cc72dd360af141bd1eb5cb2d"
+    },
+    "tools/ui20260925-assets.mjs": {
+      "bytes": 11996,
+      "sha256": "eaa19dee22f79d59e8b37ce282e5de635c834389b0d8cc46aa6bbbab593e30b1"
+    },
+    "tools/ui20260925-video.mjs": {
+      "bytes": 2131,
+      "sha256": "8014cd6df728808eabdc5460b98e88d7528fef863e640c9efe12031c11536e4c"
+    },
+    "tools/v06-model-matrix.ts": {
+      "bytes": 2134,
+      "sha256": "2157b2542087c569d15a6925cecc2c8243e4c8a999ad183db0bef62ae3c81209"
+    },
+    "tools/v06-model-probe.ts": {
+      "bytes": 3823,
+      "sha256": "2864a70578584917e936057e0ba882136f773741800170cf8d36b940b142c7ca"
+    },
+    "tools/v07-policy.ts": {
+      "bytes": 1696,
+      "sha256": "785c404512d5d236037cc891959760d3d1ec514050f0dae5c0851477654ecfd7"
+    },
+    "tools/v07-review-page.py": {
+      "bytes": 4943,
+      "sha256": "5b04cbf917d46cc02786288c6ff83f5eec364f195320f2e007575b620745156a"
+    },
+    "tools/v08-policy.ts": {
+      "bytes": 1862,
+      "sha256": "f4e51f16b6ba03fae802d105cfbf45f6706b444d6bb0c459f18863808660a329"
+    },
+    "tools/v08-probe.ts": {
+      "bytes": 1062,
+      "sha256": "79af14dd579abd06e494de5c2994d8321ba2b0164a8fbbc48039dd886caba3bc"
+    },
+    "tools/v081-probe.ts": {
+      "bytes": 1063,
+      "sha256": "dcd708798ad2b117d5d0f7b0b85fc99070c3a5c84c85e3dbe93610feab6ecdaa"
+    },
+    "tools/v09-assets.mjs": {
+      "bytes": 11609,
+      "sha256": "2300249225a591770b7006ea0ffbdbc08da1bc8206edb95b3f113deaee88fcac"
+    },
+    "tools/v09-contact-sheet.mjs": {
+      "bytes": 769,
+      "sha256": "72ed0d87cf44dfa75f7a09f4f5701ded6379450db0397ec3e3665d0f2b7d0381"
+    },
+    "tools/v09-fingerprint.mjs": {
+      "bytes": 831,
+      "sha256": "c9a25662614a1cc116b90cb6013368cf4f4f5e7502b5c651ff31db5266b7df17"
+    },
+    "tools/v09-model-input-hold.ts": {
+      "bytes": 1398,
+      "sha256": "7080f6fd8fb3b8d3d179feecd7b25b413f6b8747527a6bcd217af73bef957247"
+    },
+    "tools/v09-model-kite-segment.ts": {
+      "bytes": 1814,
+      "sha256": "e53e4a67adcfda30d48619ea0741a5633c81b803948b491ecc1d1a67fde8973e"
+    },
+    "tools/v09-model-pacing.ts": {
+      "bytes": 2167,
+      "sha256": "8b782216224fbb4ac24316d64f53b4f84d1026e7bc1ab601150d74c3057e4f1f"
+    },
+    "tools/v09-model-policy.ts": {
+      "bytes": 4634,
+      "sha256": "26aa9d7cdff5f28f045dd7d815d3b96ac3ee5000c6337ca549b881493b7bbd64"
+    },
+    "tools/v09-platform-check.mjs": {
+      "bytes": 4384,
+      "sha256": "67e8c1fe1ea6cb0afc249488d64e273b7449a52d305f1f8edeaecf0bd477437f"
+    },
+    "tools/v09-report.py": {
+      "bytes": 3715,
+      "sha256": "fdee872f7be1c6ff71a16c7f2449da8b90255cfc8c23623102eb47228e4576f5"
+    },
+    "tools/v09-video.mjs": {
+      "bytes": 2124,
+      "sha256": "cc912ebd3d0b5736ae77554170a0231d3f771886494885843961ea403034fe39"
+    },
+    "tools/verification-report.py": {
+      "bytes": 5545,
+      "sha256": "8bf50ca99c7053fc8f82054f4b8ce427934bde3d5cb221077760657a7a7d828f"
+    },
+    "tools/verify-s2b.mjs": {
+      "bytes": 2161,
+      "sha256": "232a3b54fb20c9f16b06ef26bbc84909846cadf5052e4fb9200511c96c43a9d5"
+    },
+    "tools/verify-v02-video.mjs": {
+      "bytes": 994,
+      "sha256": "1741026478002b78dfeaee568961107054df060ca01888bb999a6bd593aa2c64"
+    },
+    "tools/verify-v03.mjs": {
+      "bytes": 2495,
+      "sha256": "7d4d071f9590ed74c2b59b8a01b4a84123c987a18fe763c716c79f13b6d17ea1"
+    },
+    "tools/visual-drafts.mjs": {
+      "bytes": 1812,
+      "sha256": "9588a2429336b20852444f0bd6994017a899aa6b265f2a39309bab1cfd773ff8"
+    },
+    "tsconfig.core.json": {
+      "bytes": 160,
+      "sha256": "44a8b1a55a9b7508221590f327a92bef6307110edf59fd575d79504a69b06c6e"
+    },
+    "tsconfig.json": {
+      "bytes": 216,
+      "sha256": "0d917ef4f156d92a665bde0697e681fe7d755976158f77275ed29c7a9da757dc"
+    }
+  },
+  "simulator": {
+    "app": "build/ios-simulator/proj/Debug-iphonesimulator/CocosGame.app",
+    "executableSha256": "a4982eb0fa9ffad72d3365fcfeb2c2940350c3f430e858d50d580c0b9f6fe44a",
+    "infoPlistSha256": "80a00c2913e2300742ea4a9a048c67bb85274db795a8a4898735ee6d9821f324"
+  },
+  "device": {
+    "app": "build/ios-device/proj/Release-iphoneos/CocosGame.app",
+    "executableSha256": "21aca8225ebad16239c27a96b758bf2cae74b20df06f12995c15ca27edea8005",
+    "infoPlistSha256": "9f03f828651e2703043310cfdb150a09b82718dc3daf725b4e72c0f18949837c"
+  }
+}
