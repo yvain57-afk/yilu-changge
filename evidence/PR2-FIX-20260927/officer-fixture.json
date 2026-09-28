@@ -1,0 +1,5091 @@
+{
+  "passed": true,
+  "scope": "Explicit single-officer/5-troop fixture in real Cocos, then real time input; no HP edits after setup. Natural chapter4 reward evidence is separate.",
+  "phases": [
+    "idle",
+    "warn",
+    "strike",
+    "rec",
+    "defeated"
+  ],
+  "states": [
+    {
+      "version": "formal-pr2-fix-20260927.2",
+      "engine": "Cocos native Sprite/Graphics/Label",
+      "screen": "battle",
+      "chapter": 0,
+      "runId": "mujfzz5t-zauy1hwsj8l",
+      "revision": 4,
+      "save": {
+        "schemaVersion": 2,
+        "cleared": [],
+        "best": {},
+        "claimed": [],
+        "weapons": [
+          "spear"
+        ],
+        "weaponLevels": {
+          "spear": 1
+        },
+        "captures": [],
+        "visits": [],
+        "allies": [],
+        "treasures": [],
+        "companions": [],
+        "support": null,
+        "slots": {
+          "dian": null,
+          "qi": null,
+          "ma": null
+        },
+        "xp": 0,
+        "seen": []
+      },
+      "saveNotice": "",
+      "battle": {
+        "chapter": 0,
+        "t": 0.13333333333333333,
+        "dist": 1.2833333333333332,
+        "phase": "run",
+        "x": -0.45,
+        "target": -0.45,
+        "troops": 5,
+        "weapon": "spear",
+        "tier": 1,
+        "arms": "bow",
+        "companions": [],
+        "support": {
+          "id": null,
+          "cd": 0,
+          "pending": null,
+          "uses": 0,
+          "flash": 0
+        },
+        "slots": {
+          "dian": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          },
+          "qi": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0,
+            "used": false
+          },
+          "ma": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          }
+        },
+        "boss": null,
+        "entities": [
+          {
+            "id": 18,
+            "type": "officer",
+            "person": "xu",
+            "x": 0,
+            "d": 13.283333333333333,
+            "hp": 18,
+            "max": 18,
+            "walk": 0.043333333333333335,
+            "dead": 0,
+            "phase": "idle",
+            "pt": 0.016666666666666666,
+            "band": [
+              -0.3,
+              0.3
+            ],
+            "hitT": 0,
+            "z": 12
+          }
+        ],
+        "stats": {
+          "bossStrikes": 0,
+          "dodged": 0,
+          "hitTaken": 0,
+          "volleys": 0,
+          "arrowsHit": 0,
+          "taiping": 0,
+          "supportSaved": 0,
+          "crates": {}
+        },
+        "totals": {
+          "damage": 0,
+          "gate": 0,
+          "troops": 0
+        },
+        "paused": false,
+        "threatBands": [],
+        "runGot": [],
+        "defeatedOfficerIds": [],
+        "defeatedBossId": null,
+        "log": [
+          {
+            "t": 0.13,
+            "kind": "officer",
+            "msg": "许褚 拦阵"
+          }
+        ]
+      },
+      "ledger": [],
+      "diagnostics": {
+        "texts": [
+          {
+            "str": "许褚 · 对峙",
+            "size": 12,
+            "kind": "ui",
+            "x": 165.06,
+            "y": 366.83061790281334,
+            "w": 59.88,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "26",
+            "size": 24,
+            "kind": "troop",
+            "x": 113.64,
+            "y": 539.5400000000001,
+            "w": 28.32,
+            "h": 24,
+            "layer": "L6",
+            "claim": false
+          },
+          {
+            "str": "弓",
+            "size": 12,
+            "kind": "ui",
+            "x": 79.64,
+            "y": 544.5400000000001,
+            "w": 12,
+            "h": 12,
+            "layer": "L6",
+            "claim": false
+          },
+          {
+            "str": "长枪",
+            "size": 14,
+            "kind": "ui",
+            "x": 88,
+            "y": 19,
+            "w": 28,
+            "h": 14,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "第1关 · 广宗",
+            "size": 14,
+            "kind": "ui",
+            "x": 22,
+            "y": 67,
+            "w": 74.47999999999999,
+            "h": 14,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "典",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 114,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "器",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 148,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "骑",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 182,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "锁",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 220,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          }
+        ],
+        "hud": [
+          {
+            "name": "暂停",
+            "x": 12,
+            "y": 14,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "name": "兵器",
+            "x": 52,
+            "y": 14,
+            "w": 300,
+            "h": 32
+          },
+          {
+            "name": "行军条",
+            "x": 12,
+            "y": 58,
+            "w": 366,
+            "h": 32
+          },
+          {
+            "name": "宝物槽·典",
+            "x": 8,
+            "y": 106,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "name": "宝物槽·器",
+            "x": 8,
+            "y": 140,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "name": "宝物槽·骑",
+            "x": 8,
+            "y": 174,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "name": "支援·undefined",
+            "x": 8,
+            "y": 212,
+            "w": 28,
+            "h": 28
+          }
+        ],
+        "gate": {
+          "unsettledHidden": 0,
+          "docked": 0
+        },
+        "used": [
+          [
+            "墙·尖桩A",
+            {
+              "key": "g_stake0",
+              "gen": true,
+              "want": "g_stake0"
+            }
+          ],
+          [
+            "墙·尖桩B",
+            {
+              "key": "g_stake1",
+              "gen": true,
+              "want": "g_stake1"
+            }
+          ],
+          [
+            "墙·尖桩C",
+            {
+              "key": "g_stake2",
+              "gen": true,
+              "want": "g_stake2"
+            }
+          ],
+          [
+            "墙·横木",
+            {
+              "key": "g_rail",
+              "gen": true,
+              "want": "g_rail"
+            }
+          ],
+          [
+            "墙·石墩端头",
+            {
+              "key": "g_pier0",
+              "gen": true,
+              "want": "g_pier0"
+            }
+          ],
+          [
+            "场景·tent",
+            {
+              "key": "g_tent",
+              "gen": true,
+              "want": "g_tent"
+            }
+          ],
+          [
+            "场景·granary",
+            {
+              "key": "g_granary",
+              "gen": true,
+              "want": "g_granary"
+            }
+          ],
+          [
+            "场景·木栅",
+            {
+              "key": "g_juma",
+              "gen": true,
+              "want": "g_juma"
+            }
+          ],
+          [
+            "场景·tower",
+            {
+              "key": "g_tower",
+              "gen": true,
+              "want": "g_tower"
+            }
+          ],
+          [
+            "门箱·兵器匣",
+            {
+              "key": "g_weaponCase",
+              "gen": true,
+              "want": "g_weaponCase"
+            }
+          ],
+          [
+            "敌兵·行进1",
+            {
+              "key": "g_redWalk0",
+              "gen": true,
+              "want": "g_redWalk0"
+            }
+          ],
+          [
+            "敌兵·行进2",
+            {
+              "key": "g_redWalk1",
+              "gen": true,
+              "want": "g_redWalk1"
+            }
+          ],
+          [
+            "敌兵·受击",
+            {
+              "key": "g_redHit",
+              "gen": true,
+              "want": "g_redHit"
+            }
+          ],
+          [
+            "敌兵·倒地",
+            {
+              "key": "g_redFallen",
+              "gen": true,
+              "want": "g_redFallen"
+            }
+          ],
+          [
+            "场景·rocks",
+            {
+              "key": "g_rocks",
+              "gen": true,
+              "want": "g_rocks"
+            }
+          ],
+          [
+            "门箱·军械箱",
+            {
+              "key": "g_arrowCrate",
+              "gen": true,
+              "want": "g_arrowCrate"
+            }
+          ],
+          [
+            "辕门·立柱",
+            {
+              "key": "g_gatePost0",
+              "gen": true,
+              "want": "g_gatePost0"
+            }
+          ],
+          [
+            "辕门·横梁",
+            {
+              "key": "g_beam",
+              "gen": true,
+              "want": "g_beam"
+            }
+          ],
+          [
+            "辕门·援兵旗",
+            {
+              "key": "g_bannerBlue",
+              "gen": true,
+              "want": "g_bannerBlue"
+            }
+          ],
+          [
+            "辕门·伏兵旗",
+            {
+              "key": "g_bannerRed",
+              "gen": true,
+              "want": "g_bannerRed"
+            }
+          ],
+          [
+            "门箱·粮车",
+            {
+              "key": "g_grainCart",
+              "gen": true,
+              "want": "g_grainCart"
+            }
+          ],
+          [
+            "己方弓手·行进1",
+            {
+              "key": "g_archerWalk0",
+              "gen": true,
+              "want": "g_archerWalk0"
+            }
+          ],
+          [
+            "己方弓手·行进2",
+            {
+              "key": "g_archerWalk1",
+              "gen": true,
+              "want": "g_archerWalk1"
+            }
+          ],
+          [
+            "己方弓手·张弓",
+            {
+              "key": "g_archerDraw",
+              "gen": true,
+              "want": "g_archerDraw"
+            }
+          ],
+          [
+            "己方弓手·放箭",
+            {
+              "key": "g_archerRel",
+              "gen": true,
+              "want": "g_archerRel"
+            }
+          ],
+          [
+            "主将·长枪·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·长枪·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·长枪·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·长枪·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·长枪·蓄势",
+            {
+              "key": "g_spearWind",
+              "gen": true,
+              "want": "g_spearWind"
+            }
+          ],
+          [
+            "主将·长枪·出招",
+            {
+              "key": "g_spearRel",
+              "gen": true,
+              "want": "g_spearRel"
+            }
+          ],
+          [
+            "主将·长枪·收势",
+            {
+              "key": "g_spearRec",
+              "gen": true,
+              "want": "g_spearRec"
+            }
+          ],
+          [
+            "主将·偃月刀·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·偃月刀·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·偃月刀·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·偃月刀·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·偃月刀·蓄势",
+            {
+              "key": "g_guandaoWind",
+              "gen": true,
+              "want": "g_guandaoWind"
+            }
+          ],
+          [
+            "主将·偃月刀·出招",
+            {
+              "key": "g_guandaoRel",
+              "gen": true,
+              "want": "g_guandaoRel"
+            }
+          ],
+          [
+            "主将·偃月刀·收势",
+            {
+              "key": "g_guandaoRec",
+              "gen": true,
+              "want": "g_guandaoRec"
+            }
+          ],
+          [
+            "主将·蛇矛·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·蛇矛·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·蛇矛·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·蛇矛·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·蛇矛·蓄势",
+            {
+              "key": "g_shemaoWind",
+              "gen": true,
+              "want": "g_shemaoWind"
+            }
+          ],
+          [
+            "主将·蛇矛·出招",
+            {
+              "key": "g_shemaoRel",
+              "gen": true,
+              "want": "g_shemaoRel"
+            }
+          ],
+          [
+            "主将·蛇矛·收势",
+            {
+              "key": "g_shemaoRec",
+              "gen": true,
+              "want": "g_shemaoRec"
+            }
+          ],
+          [
+            "主将·画戟·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·画戟·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·画戟·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·画戟·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·画戟·蓄势",
+            {
+              "key": "g_huajiWind",
+              "gen": true,
+              "want": "g_huajiWind"
+            }
+          ],
+          [
+            "主将·画戟·出招",
+            {
+              "key": "g_huajiRel",
+              "gen": true,
+              "want": "g_huajiRel"
+            }
+          ],
+          [
+            "主将·画戟·收势",
+            {
+              "key": "g_huajiRec",
+              "gen": true,
+              "want": "g_huajiRec"
+            }
+          ],
+          [
+            "主将·长枪·亮兵",
+            {
+              "key": "g_brandish_spear",
+              "gen": true,
+              "want": "g_brandish_spear"
+            }
+          ],
+          [
+            "图标·长枪",
+            {
+              "key": "g_icon_spear",
+              "gen": true,
+              "want": "g_icon_spear"
+            }
+          ]
+        ]
+      },
+      "buttons": [
+        {
+          "id": "pause",
+          "x": 4,
+          "y": 8,
+          "w": 48,
+          "h": 48
+        }
+      ],
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "safe": {
+          "left": 0,
+          "top": 0,
+          "right": 390,
+          "bottom": 844
+        },
+        "capsule": null,
+        "source": "browser-window",
+        "safeSource": "browser-css-env",
+        "capsuleSource": "not-available",
+        "revision": 0
+      },
+      "nativeNodes": 100,
+      "missingArt": [],
+      "fps": 58.05515241486419,
+      "audio": {
+        "active": true,
+        "hidden": false,
+        "bgmEnabled": false,
+        "musicRequested": false,
+        "musicReady": false,
+        "musicTrack": null,
+        "musicPlaying": false,
+        "effectChannels": 5,
+        "playingEffects": [],
+        "limits": {
+          "perKind": 1,
+          "globalVoices": 3,
+          "globalVolume": 0.65,
+          "startsPerSecond": 12,
+          "minStartGapMs": 25
+        },
+        "counters": {
+          "played": 0,
+          "suppressedBusy": 0,
+          "suppressedRate": 0,
+          "suppressedBudget": 0,
+          "loadFailures": 0
+        },
+        "loading": false
+      },
+      "error": ""
+    },
+    {
+      "version": "formal-pr2-fix-20260927.2",
+      "engine": "Cocos native Sprite/Graphics/Label",
+      "screen": "battle",
+      "chapter": 0,
+      "runId": "mujfzz5t-zauy1hwsj8l",
+      "revision": 4,
+      "save": {
+        "schemaVersion": 2,
+        "cleared": [],
+        "best": {},
+        "claimed": [],
+        "weapons": [
+          "spear"
+        ],
+        "weaponLevels": {
+          "spear": 1
+        },
+        "captures": [],
+        "visits": [],
+        "allies": [],
+        "treasures": [],
+        "companions": [],
+        "support": null,
+        "slots": {
+          "dian": null,
+          "qi": null,
+          "ma": null
+        },
+        "xp": 0,
+        "seen": []
+      },
+      "saveNotice": "",
+      "battle": {
+        "chapter": 0,
+        "t": 0.7500000000000007,
+        "dist": 1.2833333333333332,
+        "phase": "run",
+        "x": -0.0016747193022030081,
+        "target": 7.825020031937413e-8,
+        "troops": 5,
+        "weapon": "spear",
+        "tier": 1,
+        "arms": "bow",
+        "companions": [],
+        "support": {
+          "id": null,
+          "cd": 0,
+          "pending": null,
+          "uses": 0,
+          "flash": 0
+        },
+        "slots": {
+          "dian": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          },
+          "qi": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0,
+            "used": false
+          },
+          "ma": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          }
+        },
+        "boss": null,
+        "entities": [
+          {
+            "id": 18,
+            "type": "officer",
+            "person": "xu",
+            "x": 0,
+            "d": 13.283333333333333,
+            "hp": 18,
+            "max": 18,
+            "walk": 1.6466666666666683,
+            "dead": 0,
+            "phase": "warn",
+            "pt": 0.03333333333333333,
+            "band": [
+              -0.302849293767121,
+              0.297150706232879
+            ],
+            "hitT": 0,
+            "z": 12
+          }
+        ],
+        "stats": {
+          "bossStrikes": 0,
+          "dodged": 0,
+          "hitTaken": 0,
+          "volleys": 0,
+          "arrowsHit": 0,
+          "taiping": 0,
+          "supportSaved": 0,
+          "crates": {}
+        },
+        "totals": {
+          "damage": 0,
+          "gate": 0,
+          "troops": 0
+        },
+        "paused": false,
+        "threatBands": [],
+        "runGot": [],
+        "defeatedOfficerIds": [],
+        "defeatedBossId": null,
+        "log": [
+          {
+            "t": 0.13,
+            "kind": "officer",
+            "msg": "许褚 拦阵"
+          },
+          {
+            "t": 0.72,
+            "kind": "officer",
+            "msg": "许褚 预警"
+          }
+        ]
+      },
+      "ledger": [],
+      "diagnostics": {
+        "texts": [
+          {
+            "str": "许褚 · 蓄势",
+            "size": 12,
+            "kind": "ui",
+            "x": 165.06,
+            "y": 366.83061790281334,
+            "w": 59.88,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "5",
+            "size": 24,
+            "kind": "troop",
+            "x": 190.65874378885633,
+            "y": 539.5400000000001,
+            "w": 14.16,
+            "h": 24,
+            "layer": "L6",
+            "claim": false
+          },
+          {
+            "str": "弓",
+            "size": 12,
+            "kind": "ui",
+            "x": 154.73874378885634,
+            "y": 544.5400000000001,
+            "w": 12,
+            "h": 12,
+            "layer": "L6",
+            "claim": false
+          },
+          {
+            "str": "长枪",
+            "size": 14,
+            "kind": "ui",
+            "x": 88,
+            "y": 19,
+            "w": 28,
+            "h": 14,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "第1关 · 广宗",
+            "size": 14,
+            "kind": "ui",
+            "x": 22,
+            "y": 67,
+            "w": 74.47999999999999,
+            "h": 14,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "典",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 114,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "器",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 148,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "骑",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 182,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "锁",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 220,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          }
+        ],
+        "hud": [
+          {
+            "name": "暂停",
+            "x": 12,
+            "y": 14,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "name": "兵器",
+            "x": 52,
+            "y": 14,
+            "w": 300,
+            "h": 32
+          },
+          {
+            "name": "行军条",
+            "x": 12,
+            "y": 58,
+            "w": 366,
+            "h": 32
+          },
+          {
+            "name": "宝物槽·典",
+            "x": 8,
+            "y": 106,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "name": "宝物槽·器",
+            "x": 8,
+            "y": 140,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "name": "宝物槽·骑",
+            "x": 8,
+            "y": 174,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "name": "支援·undefined",
+            "x": 8,
+            "y": 212,
+            "w": 28,
+            "h": 28
+          }
+        ],
+        "gate": {
+          "unsettledHidden": 0,
+          "docked": 0
+        },
+        "used": [
+          [
+            "墙·尖桩A",
+            {
+              "key": "g_stake0",
+              "gen": true,
+              "want": "g_stake0"
+            }
+          ],
+          [
+            "墙·尖桩B",
+            {
+              "key": "g_stake1",
+              "gen": true,
+              "want": "g_stake1"
+            }
+          ],
+          [
+            "墙·尖桩C",
+            {
+              "key": "g_stake2",
+              "gen": true,
+              "want": "g_stake2"
+            }
+          ],
+          [
+            "墙·横木",
+            {
+              "key": "g_rail",
+              "gen": true,
+              "want": "g_rail"
+            }
+          ],
+          [
+            "墙·石墩端头",
+            {
+              "key": "g_pier0",
+              "gen": true,
+              "want": "g_pier0"
+            }
+          ],
+          [
+            "场景·tent",
+            {
+              "key": "g_tent",
+              "gen": true,
+              "want": "g_tent"
+            }
+          ],
+          [
+            "场景·granary",
+            {
+              "key": "g_granary",
+              "gen": true,
+              "want": "g_granary"
+            }
+          ],
+          [
+            "场景·木栅",
+            {
+              "key": "g_juma",
+              "gen": true,
+              "want": "g_juma"
+            }
+          ],
+          [
+            "场景·tower",
+            {
+              "key": "g_tower",
+              "gen": true,
+              "want": "g_tower"
+            }
+          ],
+          [
+            "门箱·兵器匣",
+            {
+              "key": "g_weaponCase",
+              "gen": true,
+              "want": "g_weaponCase"
+            }
+          ],
+          [
+            "敌兵·行进1",
+            {
+              "key": "g_redWalk0",
+              "gen": true,
+              "want": "g_redWalk0"
+            }
+          ],
+          [
+            "敌兵·行进2",
+            {
+              "key": "g_redWalk1",
+              "gen": true,
+              "want": "g_redWalk1"
+            }
+          ],
+          [
+            "敌兵·受击",
+            {
+              "key": "g_redHit",
+              "gen": true,
+              "want": "g_redHit"
+            }
+          ],
+          [
+            "敌兵·倒地",
+            {
+              "key": "g_redFallen",
+              "gen": true,
+              "want": "g_redFallen"
+            }
+          ],
+          [
+            "场景·rocks",
+            {
+              "key": "g_rocks",
+              "gen": true,
+              "want": "g_rocks"
+            }
+          ],
+          [
+            "门箱·军械箱",
+            {
+              "key": "g_arrowCrate",
+              "gen": true,
+              "want": "g_arrowCrate"
+            }
+          ],
+          [
+            "辕门·立柱",
+            {
+              "key": "g_gatePost0",
+              "gen": true,
+              "want": "g_gatePost0"
+            }
+          ],
+          [
+            "辕门·横梁",
+            {
+              "key": "g_beam",
+              "gen": true,
+              "want": "g_beam"
+            }
+          ],
+          [
+            "辕门·援兵旗",
+            {
+              "key": "g_bannerBlue",
+              "gen": true,
+              "want": "g_bannerBlue"
+            }
+          ],
+          [
+            "辕门·伏兵旗",
+            {
+              "key": "g_bannerRed",
+              "gen": true,
+              "want": "g_bannerRed"
+            }
+          ],
+          [
+            "门箱·粮车",
+            {
+              "key": "g_grainCart",
+              "gen": true,
+              "want": "g_grainCart"
+            }
+          ],
+          [
+            "己方弓手·行进1",
+            {
+              "key": "g_archerWalk0",
+              "gen": true,
+              "want": "g_archerWalk0"
+            }
+          ],
+          [
+            "己方弓手·行进2",
+            {
+              "key": "g_archerWalk1",
+              "gen": true,
+              "want": "g_archerWalk1"
+            }
+          ],
+          [
+            "己方弓手·张弓",
+            {
+              "key": "g_archerDraw",
+              "gen": true,
+              "want": "g_archerDraw"
+            }
+          ],
+          [
+            "己方弓手·放箭",
+            {
+              "key": "g_archerRel",
+              "gen": true,
+              "want": "g_archerRel"
+            }
+          ],
+          [
+            "主将·长枪·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·长枪·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·长枪·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·长枪·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·长枪·蓄势",
+            {
+              "key": "g_spearWind",
+              "gen": true,
+              "want": "g_spearWind"
+            }
+          ],
+          [
+            "主将·长枪·出招",
+            {
+              "key": "g_spearRel",
+              "gen": true,
+              "want": "g_spearRel"
+            }
+          ],
+          [
+            "主将·长枪·收势",
+            {
+              "key": "g_spearRec",
+              "gen": true,
+              "want": "g_spearRec"
+            }
+          ],
+          [
+            "主将·偃月刀·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·偃月刀·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·偃月刀·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·偃月刀·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·偃月刀·蓄势",
+            {
+              "key": "g_guandaoWind",
+              "gen": true,
+              "want": "g_guandaoWind"
+            }
+          ],
+          [
+            "主将·偃月刀·出招",
+            {
+              "key": "g_guandaoRel",
+              "gen": true,
+              "want": "g_guandaoRel"
+            }
+          ],
+          [
+            "主将·偃月刀·收势",
+            {
+              "key": "g_guandaoRec",
+              "gen": true,
+              "want": "g_guandaoRec"
+            }
+          ],
+          [
+            "主将·蛇矛·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·蛇矛·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·蛇矛·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·蛇矛·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·蛇矛·蓄势",
+            {
+              "key": "g_shemaoWind",
+              "gen": true,
+              "want": "g_shemaoWind"
+            }
+          ],
+          [
+            "主将·蛇矛·出招",
+            {
+              "key": "g_shemaoRel",
+              "gen": true,
+              "want": "g_shemaoRel"
+            }
+          ],
+          [
+            "主将·蛇矛·收势",
+            {
+              "key": "g_shemaoRec",
+              "gen": true,
+              "want": "g_shemaoRec"
+            }
+          ],
+          [
+            "主将·画戟·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·画戟·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·画戟·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·画戟·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·画戟·蓄势",
+            {
+              "key": "g_huajiWind",
+              "gen": true,
+              "want": "g_huajiWind"
+            }
+          ],
+          [
+            "主将·画戟·出招",
+            {
+              "key": "g_huajiRel",
+              "gen": true,
+              "want": "g_huajiRel"
+            }
+          ],
+          [
+            "主将·画戟·收势",
+            {
+              "key": "g_huajiRec",
+              "gen": true,
+              "want": "g_huajiRec"
+            }
+          ],
+          [
+            "主将·长枪·亮兵",
+            {
+              "key": "g_brandish_spear",
+              "gen": true,
+              "want": "g_brandish_spear"
+            }
+          ],
+          [
+            "图标·长枪",
+            {
+              "key": "g_icon_spear",
+              "gen": true,
+              "want": "g_icon_spear"
+            }
+          ]
+        ]
+      },
+      "buttons": [
+        {
+          "id": "pause",
+          "x": 4,
+          "y": 8,
+          "w": 48,
+          "h": 48
+        }
+      ],
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "safe": {
+          "left": 0,
+          "top": 0,
+          "right": 390,
+          "bottom": 844
+        },
+        "capsule": null,
+        "source": "browser-window",
+        "safeSource": "browser-css-env",
+        "capsuleSource": "not-available",
+        "revision": 0
+      },
+      "nativeNodes": 88,
+      "missingArt": [],
+      "fps": 45.333333333333336,
+      "audio": {
+        "active": true,
+        "hidden": false,
+        "bgmEnabled": false,
+        "musicRequested": false,
+        "musicReady": false,
+        "musicTrack": null,
+        "musicPlaying": false,
+        "effectChannels": 5,
+        "playingEffects": [],
+        "limits": {
+          "perKind": 1,
+          "globalVoices": 3,
+          "globalVolume": 0.65,
+          "startsPerSecond": 12,
+          "minStartGapMs": 25
+        },
+        "counters": {
+          "played": 0,
+          "suppressedBusy": 0,
+          "suppressedRate": 0,
+          "suppressedBudget": 0,
+          "loadFailures": 0
+        },
+        "loading": false
+      },
+      "error": ""
+    },
+    {
+      "version": "formal-pr2-fix-20260927.2",
+      "engine": "Cocos native Sprite/Graphics/Label",
+      "screen": "battle",
+      "chapter": 0,
+      "runId": "mujfzz5t-zauy1hwsj8l",
+      "revision": 4,
+      "save": {
+        "schemaVersion": 2,
+        "cleared": [],
+        "best": {},
+        "claimed": [],
+        "weapons": [
+          "spear"
+        ],
+        "weaponLevels": {
+          "spear": 1
+        },
+        "captures": [],
+        "visits": [],
+        "allies": [],
+        "treasures": [],
+        "companions": [],
+        "support": null,
+        "slots": {
+          "dian": null,
+          "qi": null,
+          "ma": null
+        },
+        "xp": 0,
+        "seen": []
+      },
+      "saveNotice": "",
+      "battle": {
+        "chapter": 0,
+        "t": 1.6999999999999988,
+        "dist": 1.2833333333333332,
+        "phase": "run",
+        "x": -0.779972039793495,
+        "target": -0.7800000704251803,
+        "troops": 5,
+        "weapon": "spear",
+        "tier": 1,
+        "arms": "bow",
+        "companions": [],
+        "support": {
+          "id": null,
+          "cd": 0,
+          "pending": null,
+          "uses": 0,
+          "flash": 0
+        },
+        "slots": {
+          "dian": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          },
+          "qi": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0,
+            "used": false
+          },
+          "ma": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          }
+        },
+        "boss": null,
+        "entities": [
+          {
+            "id": 18,
+            "type": "officer",
+            "person": "xu",
+            "x": 0,
+            "d": 13.283333333333333,
+            "hp": 15.75,
+            "max": 18,
+            "walk": 4.116666666666673,
+            "dead": 0,
+            "phase": "strike",
+            "pt": 0.08333333333333333,
+            "band": [
+              -0.302849293767121,
+              0.297150706232879
+            ],
+            "hitT": 0.07,
+            "z": 12
+          }
+        ],
+        "stats": {
+          "bossStrikes": 0,
+          "dodged": 0,
+          "hitTaken": 0,
+          "volleys": 1,
+          "arrowsHit": 2,
+          "taiping": 0,
+          "supportSaved": 0,
+          "crates": {}
+        },
+        "totals": {
+          "damage": 2.25,
+          "gate": 0,
+          "troops": 0
+        },
+        "paused": false,
+        "threatBands": [],
+        "runGot": [],
+        "defeatedOfficerIds": [],
+        "defeatedBossId": null,
+        "log": [
+          {
+            "t": 0.13,
+            "kind": "officer",
+            "msg": "许褚 拦阵"
+          },
+          {
+            "t": 0.72,
+            "kind": "officer",
+            "msg": "许褚 预警"
+          },
+          {
+            "t": 1.62,
+            "kind": "officer",
+            "msg": "许褚 出招闪过"
+          }
+        ]
+      },
+      "ledger": [
+        {
+          "tick": 56,
+          "kind": "damage",
+          "source": "hero",
+          "target": 18,
+          "amount": 1.35
+        },
+        {
+          "tick": 99,
+          "kind": "damage",
+          "source": "troop",
+          "target": 18,
+          "amount": 0.45
+        },
+        {
+          "tick": 99,
+          "kind": "damage",
+          "source": "troop",
+          "target": 18,
+          "amount": 0.45
+        }
+      ],
+      "diagnostics": {
+        "texts": [
+          {
+            "str": "许褚 · 出招",
+            "size": 12,
+            "kind": "ui",
+            "x": 165.06,
+            "y": 366.83061790281334,
+            "w": 59.88,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "5",
+            "size": 24,
+            "kind": "troop",
+            "x": 69.24436179221478,
+            "y": 539.5400000000001,
+            "w": 14.16,
+            "h": 24,
+            "layer": "L6",
+            "claim": false
+          },
+          {
+            "str": "弓",
+            "size": 12,
+            "kind": "ui",
+            "x": 33.32436179221477,
+            "y": 544.5400000000001,
+            "w": 12,
+            "h": 12,
+            "layer": "L6",
+            "claim": false
+          },
+          {
+            "str": "长枪",
+            "size": 14,
+            "kind": "ui",
+            "x": 88,
+            "y": 19,
+            "w": 28,
+            "h": 14,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "第1关 · 广宗",
+            "size": 14,
+            "kind": "ui",
+            "x": 22,
+            "y": 67,
+            "w": 74.47999999999999,
+            "h": 14,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "典",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 114,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "器",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 148,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "骑",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 182,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "锁",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 220,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          }
+        ],
+        "hud": [
+          {
+            "name": "暂停",
+            "x": 12,
+            "y": 14,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "name": "兵器",
+            "x": 52,
+            "y": 14,
+            "w": 300,
+            "h": 32
+          },
+          {
+            "name": "行军条",
+            "x": 12,
+            "y": 58,
+            "w": 366,
+            "h": 32
+          },
+          {
+            "name": "宝物槽·典",
+            "x": 8,
+            "y": 106,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "name": "宝物槽·器",
+            "x": 8,
+            "y": 140,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "name": "宝物槽·骑",
+            "x": 8,
+            "y": 174,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "name": "支援·undefined",
+            "x": 8,
+            "y": 212,
+            "w": 28,
+            "h": 28
+          }
+        ],
+        "gate": {
+          "unsettledHidden": 0,
+          "docked": 0
+        },
+        "used": [
+          [
+            "墙·尖桩A",
+            {
+              "key": "g_stake0",
+              "gen": true,
+              "want": "g_stake0"
+            }
+          ],
+          [
+            "墙·尖桩B",
+            {
+              "key": "g_stake1",
+              "gen": true,
+              "want": "g_stake1"
+            }
+          ],
+          [
+            "墙·尖桩C",
+            {
+              "key": "g_stake2",
+              "gen": true,
+              "want": "g_stake2"
+            }
+          ],
+          [
+            "墙·横木",
+            {
+              "key": "g_rail",
+              "gen": true,
+              "want": "g_rail"
+            }
+          ],
+          [
+            "墙·石墩端头",
+            {
+              "key": "g_pier0",
+              "gen": true,
+              "want": "g_pier0"
+            }
+          ],
+          [
+            "场景·tent",
+            {
+              "key": "g_tent",
+              "gen": true,
+              "want": "g_tent"
+            }
+          ],
+          [
+            "场景·granary",
+            {
+              "key": "g_granary",
+              "gen": true,
+              "want": "g_granary"
+            }
+          ],
+          [
+            "场景·木栅",
+            {
+              "key": "g_juma",
+              "gen": true,
+              "want": "g_juma"
+            }
+          ],
+          [
+            "场景·tower",
+            {
+              "key": "g_tower",
+              "gen": true,
+              "want": "g_tower"
+            }
+          ],
+          [
+            "门箱·兵器匣",
+            {
+              "key": "g_weaponCase",
+              "gen": true,
+              "want": "g_weaponCase"
+            }
+          ],
+          [
+            "敌兵·行进1",
+            {
+              "key": "g_redWalk0",
+              "gen": true,
+              "want": "g_redWalk0"
+            }
+          ],
+          [
+            "敌兵·行进2",
+            {
+              "key": "g_redWalk1",
+              "gen": true,
+              "want": "g_redWalk1"
+            }
+          ],
+          [
+            "敌兵·受击",
+            {
+              "key": "g_redHit",
+              "gen": true,
+              "want": "g_redHit"
+            }
+          ],
+          [
+            "敌兵·倒地",
+            {
+              "key": "g_redFallen",
+              "gen": true,
+              "want": "g_redFallen"
+            }
+          ],
+          [
+            "场景·rocks",
+            {
+              "key": "g_rocks",
+              "gen": true,
+              "want": "g_rocks"
+            }
+          ],
+          [
+            "门箱·军械箱",
+            {
+              "key": "g_arrowCrate",
+              "gen": true,
+              "want": "g_arrowCrate"
+            }
+          ],
+          [
+            "辕门·立柱",
+            {
+              "key": "g_gatePost0",
+              "gen": true,
+              "want": "g_gatePost0"
+            }
+          ],
+          [
+            "辕门·横梁",
+            {
+              "key": "g_beam",
+              "gen": true,
+              "want": "g_beam"
+            }
+          ],
+          [
+            "辕门·援兵旗",
+            {
+              "key": "g_bannerBlue",
+              "gen": true,
+              "want": "g_bannerBlue"
+            }
+          ],
+          [
+            "辕门·伏兵旗",
+            {
+              "key": "g_bannerRed",
+              "gen": true,
+              "want": "g_bannerRed"
+            }
+          ],
+          [
+            "门箱·粮车",
+            {
+              "key": "g_grainCart",
+              "gen": true,
+              "want": "g_grainCart"
+            }
+          ],
+          [
+            "己方弓手·行进1",
+            {
+              "key": "g_archerWalk0",
+              "gen": true,
+              "want": "g_archerWalk0"
+            }
+          ],
+          [
+            "己方弓手·行进2",
+            {
+              "key": "g_archerWalk1",
+              "gen": true,
+              "want": "g_archerWalk1"
+            }
+          ],
+          [
+            "己方弓手·张弓",
+            {
+              "key": "g_archerDraw",
+              "gen": true,
+              "want": "g_archerDraw"
+            }
+          ],
+          [
+            "己方弓手·放箭",
+            {
+              "key": "g_archerRel",
+              "gen": true,
+              "want": "g_archerRel"
+            }
+          ],
+          [
+            "主将·长枪·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·长枪·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·长枪·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·长枪·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·长枪·蓄势",
+            {
+              "key": "g_spearWind",
+              "gen": true,
+              "want": "g_spearWind"
+            }
+          ],
+          [
+            "主将·长枪·出招",
+            {
+              "key": "g_spearRel",
+              "gen": true,
+              "want": "g_spearRel"
+            }
+          ],
+          [
+            "主将·长枪·收势",
+            {
+              "key": "g_spearRec",
+              "gen": true,
+              "want": "g_spearRec"
+            }
+          ],
+          [
+            "主将·偃月刀·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·偃月刀·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·偃月刀·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·偃月刀·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·偃月刀·蓄势",
+            {
+              "key": "g_guandaoWind",
+              "gen": true,
+              "want": "g_guandaoWind"
+            }
+          ],
+          [
+            "主将·偃月刀·出招",
+            {
+              "key": "g_guandaoRel",
+              "gen": true,
+              "want": "g_guandaoRel"
+            }
+          ],
+          [
+            "主将·偃月刀·收势",
+            {
+              "key": "g_guandaoRec",
+              "gen": true,
+              "want": "g_guandaoRec"
+            }
+          ],
+          [
+            "主将·蛇矛·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·蛇矛·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·蛇矛·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·蛇矛·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·蛇矛·蓄势",
+            {
+              "key": "g_shemaoWind",
+              "gen": true,
+              "want": "g_shemaoWind"
+            }
+          ],
+          [
+            "主将·蛇矛·出招",
+            {
+              "key": "g_shemaoRel",
+              "gen": true,
+              "want": "g_shemaoRel"
+            }
+          ],
+          [
+            "主将·蛇矛·收势",
+            {
+              "key": "g_shemaoRec",
+              "gen": true,
+              "want": "g_shemaoRec"
+            }
+          ],
+          [
+            "主将·画戟·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·画戟·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·画戟·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·画戟·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·画戟·蓄势",
+            {
+              "key": "g_huajiWind",
+              "gen": true,
+              "want": "g_huajiWind"
+            }
+          ],
+          [
+            "主将·画戟·出招",
+            {
+              "key": "g_huajiRel",
+              "gen": true,
+              "want": "g_huajiRel"
+            }
+          ],
+          [
+            "主将·画戟·收势",
+            {
+              "key": "g_huajiRec",
+              "gen": true,
+              "want": "g_huajiRec"
+            }
+          ],
+          [
+            "主将·长枪·亮兵",
+            {
+              "key": "g_brandish_spear",
+              "gen": true,
+              "want": "g_brandish_spear"
+            }
+          ],
+          [
+            "图标·长枪",
+            {
+              "key": "g_icon_spear",
+              "gen": true,
+              "want": "g_icon_spear"
+            }
+          ]
+        ]
+      },
+      "buttons": [
+        {
+          "id": "pause",
+          "x": 4,
+          "y": 8,
+          "w": 48,
+          "h": 48
+        }
+      ],
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "safe": {
+          "left": 0,
+          "top": 0,
+          "right": 390,
+          "bottom": 844
+        },
+        "capsule": null,
+        "source": "browser-window",
+        "safeSource": "browser-css-env",
+        "capsuleSource": "not-available",
+        "revision": 0
+      },
+      "nativeNodes": 91,
+      "missingArt": [],
+      "fps": 41.644671242297434,
+      "audio": {
+        "active": true,
+        "hidden": false,
+        "bgmEnabled": false,
+        "musicRequested": false,
+        "musicReady": false,
+        "musicTrack": null,
+        "musicPlaying": false,
+        "effectChannels": 5,
+        "playingEffects": [
+          "hit"
+        ],
+        "limits": {
+          "perKind": 1,
+          "globalVoices": 3,
+          "globalVolume": 0.65,
+          "startsPerSecond": 12,
+          "minStartGapMs": 25
+        },
+        "counters": {
+          "played": 2,
+          "suppressedBusy": 0,
+          "suppressedRate": 0,
+          "suppressedBudget": 0,
+          "loadFailures": 0
+        },
+        "loading": false
+      },
+      "error": ""
+    },
+    {
+      "version": "formal-pr2-fix-20260927.2",
+      "engine": "Cocos native Sprite/Graphics/Label",
+      "screen": "battle",
+      "chapter": 0,
+      "runId": "mujfzz5t-zauy1hwsj8l",
+      "revision": 4,
+      "save": {
+        "schemaVersion": 2,
+        "cleared": [],
+        "best": {},
+        "claimed": [],
+        "weapons": [
+          "spear"
+        ],
+        "weaponLevels": {
+          "spear": 1
+        },
+        "captures": [],
+        "visits": [],
+        "allies": [],
+        "treasures": [],
+        "companions": [],
+        "support": null,
+        "slots": {
+          "dian": null,
+          "qi": null,
+          "ma": null
+        },
+        "xp": 0,
+        "seen": []
+      },
+      "saveNotice": "",
+      "battle": {
+        "chapter": 0,
+        "t": 1.949999999999998,
+        "dist": 1.2833333333333332,
+        "phase": "run",
+        "x": -0.779999495817043,
+        "target": -0.7799999726124297,
+        "troops": 5,
+        "weapon": "spear",
+        "tier": 1,
+        "arms": "bow",
+        "companions": [],
+        "support": {
+          "id": null,
+          "cd": 0,
+          "pending": null,
+          "uses": 0,
+          "flash": 0
+        },
+        "slots": {
+          "dian": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          },
+          "qi": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0,
+            "used": false
+          },
+          "ma": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          }
+        },
+        "boss": null,
+        "entities": [
+          {
+            "id": 18,
+            "type": "officer",
+            "person": "xu",
+            "x": 0,
+            "d": 13.283333333333333,
+            "hp": 15.75,
+            "max": 18,
+            "walk": 4.766666666666668,
+            "dead": 0,
+            "phase": "rec",
+            "pt": 0.06666666666666667,
+            "band": [
+              -0.302849293767121,
+              0.297150706232879
+            ],
+            "hitT": 0,
+            "z": 12
+          }
+        ],
+        "stats": {
+          "bossStrikes": 0,
+          "dodged": 0,
+          "hitTaken": 0,
+          "volleys": 1,
+          "arrowsHit": 2,
+          "taiping": 0,
+          "supportSaved": 0,
+          "crates": {}
+        },
+        "totals": {
+          "damage": 2.25,
+          "gate": 0,
+          "troops": 0
+        },
+        "paused": false,
+        "threatBands": [],
+        "runGot": [],
+        "defeatedOfficerIds": [],
+        "defeatedBossId": null,
+        "log": [
+          {
+            "t": 0.13,
+            "kind": "officer",
+            "msg": "许褚 拦阵"
+          },
+          {
+            "t": 0.72,
+            "kind": "officer",
+            "msg": "许褚 预警"
+          },
+          {
+            "t": 1.62,
+            "kind": "officer",
+            "msg": "许褚 出招闪过"
+          },
+          {
+            "t": 1.88,
+            "kind": "officer",
+            "msg": "许褚 收势"
+          }
+        ]
+      },
+      "ledger": [
+        {
+          "tick": 56,
+          "kind": "damage",
+          "source": "hero",
+          "target": 18,
+          "amount": 1.35
+        },
+        {
+          "tick": 99,
+          "kind": "damage",
+          "source": "troop",
+          "target": 18,
+          "amount": 0.45
+        },
+        {
+          "tick": 99,
+          "kind": "damage",
+          "source": "troop",
+          "target": 18,
+          "amount": 0.45
+        }
+      ],
+      "diagnostics": {
+        "texts": [
+          {
+            "str": "许褚 · 收势",
+            "size": 12,
+            "kind": "ui",
+            "x": 165.06,
+            "y": 366.83061790281334,
+            "w": 59.88,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "5",
+            "size": 24,
+            "kind": "troop",
+            "x": 69.2400786525413,
+            "y": 539.5400000000001,
+            "w": 14.16,
+            "h": 24,
+            "layer": "L6",
+            "claim": false
+          },
+          {
+            "str": "弓",
+            "size": 12,
+            "kind": "ui",
+            "x": 33.3200786525413,
+            "y": 544.5400000000001,
+            "w": 12,
+            "h": 12,
+            "layer": "L6",
+            "claim": false
+          },
+          {
+            "str": "长枪",
+            "size": 14,
+            "kind": "ui",
+            "x": 88,
+            "y": 19,
+            "w": 28,
+            "h": 14,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "第1关 · 广宗",
+            "size": 14,
+            "kind": "ui",
+            "x": 22,
+            "y": 67,
+            "w": 74.47999999999999,
+            "h": 14,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "典",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 114,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "器",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 148,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "骑",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 182,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "锁",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 220,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          }
+        ],
+        "hud": [
+          {
+            "name": "暂停",
+            "x": 12,
+            "y": 14,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "name": "兵器",
+            "x": 52,
+            "y": 14,
+            "w": 300,
+            "h": 32
+          },
+          {
+            "name": "行军条",
+            "x": 12,
+            "y": 58,
+            "w": 366,
+            "h": 32
+          },
+          {
+            "name": "宝物槽·典",
+            "x": 8,
+            "y": 106,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "name": "宝物槽·器",
+            "x": 8,
+            "y": 140,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "name": "宝物槽·骑",
+            "x": 8,
+            "y": 174,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "name": "支援·undefined",
+            "x": 8,
+            "y": 212,
+            "w": 28,
+            "h": 28
+          }
+        ],
+        "gate": {
+          "unsettledHidden": 0,
+          "docked": 0
+        },
+        "used": [
+          [
+            "墙·尖桩A",
+            {
+              "key": "g_stake0",
+              "gen": true,
+              "want": "g_stake0"
+            }
+          ],
+          [
+            "墙·尖桩B",
+            {
+              "key": "g_stake1",
+              "gen": true,
+              "want": "g_stake1"
+            }
+          ],
+          [
+            "墙·尖桩C",
+            {
+              "key": "g_stake2",
+              "gen": true,
+              "want": "g_stake2"
+            }
+          ],
+          [
+            "墙·横木",
+            {
+              "key": "g_rail",
+              "gen": true,
+              "want": "g_rail"
+            }
+          ],
+          [
+            "墙·石墩端头",
+            {
+              "key": "g_pier0",
+              "gen": true,
+              "want": "g_pier0"
+            }
+          ],
+          [
+            "场景·tent",
+            {
+              "key": "g_tent",
+              "gen": true,
+              "want": "g_tent"
+            }
+          ],
+          [
+            "场景·granary",
+            {
+              "key": "g_granary",
+              "gen": true,
+              "want": "g_granary"
+            }
+          ],
+          [
+            "场景·木栅",
+            {
+              "key": "g_juma",
+              "gen": true,
+              "want": "g_juma"
+            }
+          ],
+          [
+            "场景·tower",
+            {
+              "key": "g_tower",
+              "gen": true,
+              "want": "g_tower"
+            }
+          ],
+          [
+            "门箱·兵器匣",
+            {
+              "key": "g_weaponCase",
+              "gen": true,
+              "want": "g_weaponCase"
+            }
+          ],
+          [
+            "敌兵·行进1",
+            {
+              "key": "g_redWalk0",
+              "gen": true,
+              "want": "g_redWalk0"
+            }
+          ],
+          [
+            "敌兵·行进2",
+            {
+              "key": "g_redWalk1",
+              "gen": true,
+              "want": "g_redWalk1"
+            }
+          ],
+          [
+            "敌兵·受击",
+            {
+              "key": "g_redHit",
+              "gen": true,
+              "want": "g_redHit"
+            }
+          ],
+          [
+            "敌兵·倒地",
+            {
+              "key": "g_redFallen",
+              "gen": true,
+              "want": "g_redFallen"
+            }
+          ],
+          [
+            "场景·rocks",
+            {
+              "key": "g_rocks",
+              "gen": true,
+              "want": "g_rocks"
+            }
+          ],
+          [
+            "门箱·军械箱",
+            {
+              "key": "g_arrowCrate",
+              "gen": true,
+              "want": "g_arrowCrate"
+            }
+          ],
+          [
+            "辕门·立柱",
+            {
+              "key": "g_gatePost0",
+              "gen": true,
+              "want": "g_gatePost0"
+            }
+          ],
+          [
+            "辕门·横梁",
+            {
+              "key": "g_beam",
+              "gen": true,
+              "want": "g_beam"
+            }
+          ],
+          [
+            "辕门·援兵旗",
+            {
+              "key": "g_bannerBlue",
+              "gen": true,
+              "want": "g_bannerBlue"
+            }
+          ],
+          [
+            "辕门·伏兵旗",
+            {
+              "key": "g_bannerRed",
+              "gen": true,
+              "want": "g_bannerRed"
+            }
+          ],
+          [
+            "门箱·粮车",
+            {
+              "key": "g_grainCart",
+              "gen": true,
+              "want": "g_grainCart"
+            }
+          ],
+          [
+            "己方弓手·行进1",
+            {
+              "key": "g_archerWalk0",
+              "gen": true,
+              "want": "g_archerWalk0"
+            }
+          ],
+          [
+            "己方弓手·行进2",
+            {
+              "key": "g_archerWalk1",
+              "gen": true,
+              "want": "g_archerWalk1"
+            }
+          ],
+          [
+            "己方弓手·张弓",
+            {
+              "key": "g_archerDraw",
+              "gen": true,
+              "want": "g_archerDraw"
+            }
+          ],
+          [
+            "己方弓手·放箭",
+            {
+              "key": "g_archerRel",
+              "gen": true,
+              "want": "g_archerRel"
+            }
+          ],
+          [
+            "主将·长枪·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·长枪·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·长枪·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·长枪·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·长枪·蓄势",
+            {
+              "key": "g_spearWind",
+              "gen": true,
+              "want": "g_spearWind"
+            }
+          ],
+          [
+            "主将·长枪·出招",
+            {
+              "key": "g_spearRel",
+              "gen": true,
+              "want": "g_spearRel"
+            }
+          ],
+          [
+            "主将·长枪·收势",
+            {
+              "key": "g_spearRec",
+              "gen": true,
+              "want": "g_spearRec"
+            }
+          ],
+          [
+            "主将·偃月刀·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·偃月刀·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·偃月刀·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·偃月刀·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·偃月刀·蓄势",
+            {
+              "key": "g_guandaoWind",
+              "gen": true,
+              "want": "g_guandaoWind"
+            }
+          ],
+          [
+            "主将·偃月刀·出招",
+            {
+              "key": "g_guandaoRel",
+              "gen": true,
+              "want": "g_guandaoRel"
+            }
+          ],
+          [
+            "主将·偃月刀·收势",
+            {
+              "key": "g_guandaoRec",
+              "gen": true,
+              "want": "g_guandaoRec"
+            }
+          ],
+          [
+            "主将·蛇矛·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·蛇矛·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·蛇矛·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·蛇矛·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·蛇矛·蓄势",
+            {
+              "key": "g_shemaoWind",
+              "gen": true,
+              "want": "g_shemaoWind"
+            }
+          ],
+          [
+            "主将·蛇矛·出招",
+            {
+              "key": "g_shemaoRel",
+              "gen": true,
+              "want": "g_shemaoRel"
+            }
+          ],
+          [
+            "主将·蛇矛·收势",
+            {
+              "key": "g_shemaoRec",
+              "gen": true,
+              "want": "g_shemaoRec"
+            }
+          ],
+          [
+            "主将·画戟·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·画戟·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·画戟·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·画戟·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·画戟·蓄势",
+            {
+              "key": "g_huajiWind",
+              "gen": true,
+              "want": "g_huajiWind"
+            }
+          ],
+          [
+            "主将·画戟·出招",
+            {
+              "key": "g_huajiRel",
+              "gen": true,
+              "want": "g_huajiRel"
+            }
+          ],
+          [
+            "主将·画戟·收势",
+            {
+              "key": "g_huajiRec",
+              "gen": true,
+              "want": "g_huajiRec"
+            }
+          ],
+          [
+            "主将·长枪·亮兵",
+            {
+              "key": "g_brandish_spear",
+              "gen": true,
+              "want": "g_brandish_spear"
+            }
+          ],
+          [
+            "图标·长枪",
+            {
+              "key": "g_icon_spear",
+              "gen": true,
+              "want": "g_icon_spear"
+            }
+          ]
+        ]
+      },
+      "buttons": [
+        {
+          "id": "pause",
+          "x": 4,
+          "y": 8,
+          "w": 48,
+          "h": 48
+        }
+      ],
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "safe": {
+          "left": 0,
+          "top": 0,
+          "right": 390,
+          "bottom": 844
+        },
+        "capsule": null,
+        "source": "browser-window",
+        "safeSource": "browser-css-env",
+        "capsuleSource": "not-available",
+        "revision": 0
+      },
+      "nativeNodes": 87,
+      "missingArt": [],
+      "fps": 40.17289600813629,
+      "audio": {
+        "active": true,
+        "hidden": false,
+        "bgmEnabled": false,
+        "musicRequested": false,
+        "musicReady": false,
+        "musicTrack": null,
+        "musicPlaying": false,
+        "effectChannels": 5,
+        "playingEffects": [],
+        "limits": {
+          "perKind": 1,
+          "globalVoices": 3,
+          "globalVolume": 0.65,
+          "startsPerSecond": 12,
+          "minStartGapMs": 25
+        },
+        "counters": {
+          "played": 2,
+          "suppressedBusy": 0,
+          "suppressedRate": 0,
+          "suppressedBudget": 0,
+          "loadFailures": 0
+        },
+        "loading": false
+      },
+      "error": ""
+    },
+    {
+      "version": "formal-pr2-fix-20260927.2",
+      "engine": "Cocos native Sprite/Graphics/Label",
+      "screen": "battle",
+      "chapter": 0,
+      "runId": "mujfzz5t-zauy1hwsj8l",
+      "revision": 4,
+      "save": {
+        "schemaVersion": 2,
+        "cleared": [],
+        "best": {},
+        "claimed": [],
+        "weapons": [
+          "spear"
+        ],
+        "weaponLevels": {
+          "spear": 1
+        },
+        "captures": [],
+        "visits": [],
+        "allies": [],
+        "treasures": [],
+        "companions": [],
+        "support": null,
+        "slots": {
+          "dian": null,
+          "qi": null,
+          "ma": null
+        },
+        "xp": 0,
+        "seen": []
+      },
+      "saveNotice": "",
+      "battle": {
+        "chapter": 0,
+        "t": 8.399999999999997,
+        "dist": 1.2833333333333332,
+        "phase": "run",
+        "x": -0.002564329313672433,
+        "target": 7.825020031937413e-8,
+        "troops": 5,
+        "weapon": "spear",
+        "tier": 1,
+        "arms": "bow",
+        "companions": [],
+        "support": {
+          "id": null,
+          "cd": 0,
+          "pending": null,
+          "uses": 0,
+          "flash": 0
+        },
+        "slots": {
+          "dian": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          },
+          "qi": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0,
+            "used": false
+          },
+          "ma": {
+            "id": null,
+            "st": "empty",
+            "n": 0,
+            "flash": 0
+          }
+        },
+        "boss": null,
+        "entities": [
+          {
+            "id": 18,
+            "type": "officer",
+            "person": "xu",
+            "x": 0,
+            "d": 13.283333333333333,
+            "hp": 0,
+            "max": 18,
+            "walk": 21.53666666666654,
+            "dead": 0.043333333333333335,
+            "phase": "defeated",
+            "pt": 0.55,
+            "band": [
+              -0.3000000144368582,
+              0.2999999855631418
+            ],
+            "hitT": 0.08666666666666667,
+            "fallDir": 1,
+            "z": 12
+          }
+        ],
+        "stats": {
+          "bossStrikes": 0,
+          "dodged": 0,
+          "hitTaken": 0,
+          "volleys": 5,
+          "arrowsHit": 10,
+          "taiping": 0,
+          "supportSaved": 0,
+          "crates": {}
+        },
+        "totals": {
+          "damage": 18,
+          "gate": 0,
+          "troops": 0
+        },
+        "paused": false,
+        "threatBands": [],
+        "runGot": [],
+        "defeatedOfficerIds": [
+          "xu"
+        ],
+        "defeatedBossId": null,
+        "log": [
+          {
+            "t": 0.13,
+            "kind": "officer",
+            "msg": "许褚 拦阵"
+          },
+          {
+            "t": 0.72,
+            "kind": "officer",
+            "msg": "许褚 预警"
+          },
+          {
+            "t": 1.62,
+            "kind": "officer",
+            "msg": "许褚 出招闪过"
+          },
+          {
+            "t": 1.88,
+            "kind": "officer",
+            "msg": "许褚 收势"
+          },
+          {
+            "t": 3.68,
+            "kind": "officer",
+            "msg": "许褚 预警"
+          },
+          {
+            "t": 4.58,
+            "kind": "officer",
+            "msg": "许褚 出招闪过"
+          },
+          {
+            "t": 4.85,
+            "kind": "officer",
+            "msg": "许褚 收势"
+          },
+          {
+            "t": 6.65,
+            "kind": "officer",
+            "msg": "许褚 预警"
+          },
+          {
+            "t": 7.55,
+            "kind": "officer",
+            "msg": "许褚 出招闪过"
+          },
+          {
+            "t": 7.82,
+            "kind": "officer",
+            "msg": "许褚 收势"
+          },
+          {
+            "t": 8.37,
+            "kind": "officer",
+            "msg": "许褚 交锋败北"
+          }
+        ]
+      },
+      "ledger": [
+        {
+          "tick": 56,
+          "kind": "damage",
+          "source": "hero",
+          "target": 18,
+          "amount": 1.35
+        },
+        {
+          "tick": 99,
+          "kind": "damage",
+          "source": "troop",
+          "target": 18,
+          "amount": 0.45
+        },
+        {
+          "tick": 99,
+          "kind": "damage",
+          "source": "troop",
+          "target": 18,
+          "amount": 0.45
+        },
+        {
+          "tick": 168,
+          "kind": "damage",
+          "source": "hero",
+          "target": 18,
+          "amount": 3
+        },
+        {
+          "tick": 196,
+          "kind": "damage",
+          "source": "troop",
+          "target": 18,
+          "amount": 0.45
+        },
+        {
+          "tick": 196,
+          "kind": "damage",
+          "source": "troop",
+          "target": 18,
+          "amount": 0.45
+        },
+        {
+          "tick": 205,
+          "kind": "damage",
+          "source": "hero",
+          "target": 18,
+          "amount": 1.35
+        },
+        {
+          "tick": 293,
+          "kind": "damage",
+          "source": "troop",
+          "target": 18,
+          "amount": 1
+        },
+        {
+          "tick": 293,
+          "kind": "damage",
+          "source": "troop",
+          "target": 18,
+          "amount": 1
+        },
+        {
+          "tick": 354,
+          "kind": "damage",
+          "source": "hero",
+          "target": 18,
+          "amount": 3
+        },
+        {
+          "tick": 390,
+          "kind": "damage",
+          "source": "troop",
+          "target": 18,
+          "amount": 0.45
+        },
+        {
+          "tick": 390,
+          "kind": "damage",
+          "source": "troop",
+          "target": 18,
+          "amount": 0.45
+        },
+        {
+          "tick": 391,
+          "kind": "damage",
+          "source": "hero",
+          "target": 18,
+          "amount": 1.35
+        },
+        {
+          "tick": 487,
+          "kind": "damage",
+          "source": "troop",
+          "target": 18,
+          "amount": 1
+        },
+        {
+          "tick": 487,
+          "kind": "damage",
+          "source": "troop",
+          "target": 18,
+          "amount": 1
+        },
+        {
+          "tick": 502,
+          "kind": "damage",
+          "source": "hero",
+          "target": 18,
+          "amount": 1.2500000000000013
+        },
+        {
+          "tick": 502,
+          "kind": "officer-defeated",
+          "source": "hero",
+          "target": "xu",
+          "amount": 1
+        }
+      ],
+      "diagnostics": {
+        "texts": [
+          {
+            "str": "许褚 · 败北",
+            "size": 12,
+            "kind": "ui",
+            "x": 165.06,
+            "y": 366.83061790281334,
+            "w": 59.88,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "5",
+            "size": 24,
+            "kind": "troop",
+            "x": 190.51996462706708,
+            "y": 539.5400000000001,
+            "w": 14.16,
+            "h": 24,
+            "layer": "L6",
+            "claim": false
+          },
+          {
+            "str": "弓",
+            "size": 12,
+            "kind": "ui",
+            "x": 154.5999646270671,
+            "y": 544.5400000000001,
+            "w": 12,
+            "h": 12,
+            "layer": "L6",
+            "claim": false
+          },
+          {
+            "str": "长枪",
+            "size": 14,
+            "kind": "ui",
+            "x": 88,
+            "y": 19,
+            "w": 28,
+            "h": 14,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "第1关 · 广宗",
+            "size": 14,
+            "kind": "ui",
+            "x": 22,
+            "y": 67,
+            "w": 74.47999999999999,
+            "h": 14,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "典",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 114,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "器",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 148,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "骑",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 182,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "锁",
+            "size": 12,
+            "kind": "ui",
+            "x": 16,
+            "y": 220,
+            "w": 12,
+            "h": 12,
+            "layer": "L7",
+            "claim": false
+          },
+          {
+            "str": "许褚 · 交锋败北，胜后归队",
+            "size": 14,
+            "kind": "ui",
+            "x": 111.07000000000001,
+            "y": 805,
+            "w": 167.85999999999999,
+            "h": 14,
+            "layer": "L8",
+            "claim": false
+          }
+        ],
+        "hud": [
+          {
+            "name": "暂停",
+            "x": 12,
+            "y": 14,
+            "w": 32,
+            "h": 32
+          },
+          {
+            "name": "兵器",
+            "x": 52,
+            "y": 14,
+            "w": 300,
+            "h": 32
+          },
+          {
+            "name": "行军条",
+            "x": 12,
+            "y": 58,
+            "w": 366,
+            "h": 32
+          },
+          {
+            "name": "宝物槽·典",
+            "x": 8,
+            "y": 106,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "name": "宝物槽·器",
+            "x": 8,
+            "y": 140,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "name": "宝物槽·骑",
+            "x": 8,
+            "y": 174,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "name": "支援·undefined",
+            "x": 8,
+            "y": 212,
+            "w": 28,
+            "h": 28
+          }
+        ],
+        "gate": {
+          "unsettledHidden": 0,
+          "docked": 0
+        },
+        "used": [
+          [
+            "墙·尖桩A",
+            {
+              "key": "g_stake0",
+              "gen": true,
+              "want": "g_stake0"
+            }
+          ],
+          [
+            "墙·尖桩B",
+            {
+              "key": "g_stake1",
+              "gen": true,
+              "want": "g_stake1"
+            }
+          ],
+          [
+            "墙·尖桩C",
+            {
+              "key": "g_stake2",
+              "gen": true,
+              "want": "g_stake2"
+            }
+          ],
+          [
+            "墙·横木",
+            {
+              "key": "g_rail",
+              "gen": true,
+              "want": "g_rail"
+            }
+          ],
+          [
+            "墙·石墩端头",
+            {
+              "key": "g_pier0",
+              "gen": true,
+              "want": "g_pier0"
+            }
+          ],
+          [
+            "场景·tent",
+            {
+              "key": "g_tent",
+              "gen": true,
+              "want": "g_tent"
+            }
+          ],
+          [
+            "场景·granary",
+            {
+              "key": "g_granary",
+              "gen": true,
+              "want": "g_granary"
+            }
+          ],
+          [
+            "场景·木栅",
+            {
+              "key": "g_juma",
+              "gen": true,
+              "want": "g_juma"
+            }
+          ],
+          [
+            "场景·tower",
+            {
+              "key": "g_tower",
+              "gen": true,
+              "want": "g_tower"
+            }
+          ],
+          [
+            "门箱·兵器匣",
+            {
+              "key": "g_weaponCase",
+              "gen": true,
+              "want": "g_weaponCase"
+            }
+          ],
+          [
+            "敌兵·行进1",
+            {
+              "key": "g_redWalk0",
+              "gen": true,
+              "want": "g_redWalk0"
+            }
+          ],
+          [
+            "敌兵·行进2",
+            {
+              "key": "g_redWalk1",
+              "gen": true,
+              "want": "g_redWalk1"
+            }
+          ],
+          [
+            "敌兵·受击",
+            {
+              "key": "g_redHit",
+              "gen": true,
+              "want": "g_redHit"
+            }
+          ],
+          [
+            "敌兵·倒地",
+            {
+              "key": "g_redFallen",
+              "gen": true,
+              "want": "g_redFallen"
+            }
+          ],
+          [
+            "场景·rocks",
+            {
+              "key": "g_rocks",
+              "gen": true,
+              "want": "g_rocks"
+            }
+          ],
+          [
+            "门箱·军械箱",
+            {
+              "key": "g_arrowCrate",
+              "gen": true,
+              "want": "g_arrowCrate"
+            }
+          ],
+          [
+            "辕门·立柱",
+            {
+              "key": "g_gatePost0",
+              "gen": true,
+              "want": "g_gatePost0"
+            }
+          ],
+          [
+            "辕门·横梁",
+            {
+              "key": "g_beam",
+              "gen": true,
+              "want": "g_beam"
+            }
+          ],
+          [
+            "辕门·援兵旗",
+            {
+              "key": "g_bannerBlue",
+              "gen": true,
+              "want": "g_bannerBlue"
+            }
+          ],
+          [
+            "辕门·伏兵旗",
+            {
+              "key": "g_bannerRed",
+              "gen": true,
+              "want": "g_bannerRed"
+            }
+          ],
+          [
+            "门箱·粮车",
+            {
+              "key": "g_grainCart",
+              "gen": true,
+              "want": "g_grainCart"
+            }
+          ],
+          [
+            "己方弓手·行进1",
+            {
+              "key": "g_archerWalk0",
+              "gen": true,
+              "want": "g_archerWalk0"
+            }
+          ],
+          [
+            "己方弓手·行进2",
+            {
+              "key": "g_archerWalk1",
+              "gen": true,
+              "want": "g_archerWalk1"
+            }
+          ],
+          [
+            "己方弓手·张弓",
+            {
+              "key": "g_archerDraw",
+              "gen": true,
+              "want": "g_archerDraw"
+            }
+          ],
+          [
+            "己方弓手·放箭",
+            {
+              "key": "g_archerRel",
+              "gen": true,
+              "want": "g_archerRel"
+            }
+          ],
+          [
+            "主将·长枪·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·长枪·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·长枪·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·长枪·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·长枪·蓄势",
+            {
+              "key": "g_spearWind",
+              "gen": true,
+              "want": "g_spearWind"
+            }
+          ],
+          [
+            "主将·长枪·出招",
+            {
+              "key": "g_spearRel",
+              "gen": true,
+              "want": "g_spearRel"
+            }
+          ],
+          [
+            "主将·长枪·收势",
+            {
+              "key": "g_spearRec",
+              "gen": true,
+              "want": "g_spearRec"
+            }
+          ],
+          [
+            "主将·偃月刀·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·偃月刀·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·偃月刀·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·偃月刀·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·偃月刀·蓄势",
+            {
+              "key": "g_guandaoWind",
+              "gen": true,
+              "want": "g_guandaoWind"
+            }
+          ],
+          [
+            "主将·偃月刀·出招",
+            {
+              "key": "g_guandaoRel",
+              "gen": true,
+              "want": "g_guandaoRel"
+            }
+          ],
+          [
+            "主将·偃月刀·收势",
+            {
+              "key": "g_guandaoRec",
+              "gen": true,
+              "want": "g_guandaoRec"
+            }
+          ],
+          [
+            "主将·蛇矛·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·蛇矛·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·蛇矛·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·蛇矛·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·蛇矛·蓄势",
+            {
+              "key": "g_shemaoWind",
+              "gen": true,
+              "want": "g_shemaoWind"
+            }
+          ],
+          [
+            "主将·蛇矛·出招",
+            {
+              "key": "g_shemaoRel",
+              "gen": true,
+              "want": "g_shemaoRel"
+            }
+          ],
+          [
+            "主将·蛇矛·收势",
+            {
+              "key": "g_shemaoRec",
+              "gen": true,
+              "want": "g_shemaoRec"
+            }
+          ],
+          [
+            "主将·画戟·跑1",
+            {
+              "key": "g_run_spear0",
+              "gen": true,
+              "want": "g_run_spear0"
+            }
+          ],
+          [
+            "主将·画戟·跑2",
+            {
+              "key": "g_run_spear1",
+              "gen": true,
+              "want": "g_run_spear1"
+            }
+          ],
+          [
+            "主将·画戟·跑3",
+            {
+              "key": "g_run_spear2",
+              "gen": true,
+              "want": "g_run_spear2"
+            }
+          ],
+          [
+            "主将·画戟·跑4",
+            {
+              "key": "g_run_spear3",
+              "gen": true,
+              "want": "g_run_spear3"
+            }
+          ],
+          [
+            "主将·画戟·蓄势",
+            {
+              "key": "g_huajiWind",
+              "gen": true,
+              "want": "g_huajiWind"
+            }
+          ],
+          [
+            "主将·画戟·出招",
+            {
+              "key": "g_huajiRel",
+              "gen": true,
+              "want": "g_huajiRel"
+            }
+          ],
+          [
+            "主将·画戟·收势",
+            {
+              "key": "g_huajiRec",
+              "gen": true,
+              "want": "g_huajiRec"
+            }
+          ],
+          [
+            "主将·长枪·亮兵",
+            {
+              "key": "g_brandish_spear",
+              "gen": true,
+              "want": "g_brandish_spear"
+            }
+          ],
+          [
+            "图标·长枪",
+            {
+              "key": "g_icon_spear",
+              "gen": true,
+              "want": "g_icon_spear"
+            }
+          ]
+        ]
+      },
+      "buttons": [
+        {
+          "id": "pause",
+          "x": 4,
+          "y": 8,
+          "w": 48,
+          "h": 48
+        }
+      ],
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "safe": {
+          "left": 0,
+          "top": 0,
+          "right": 390,
+          "bottom": 844
+        },
+        "capsule": null,
+        "source": "browser-window",
+        "safeSource": "browser-css-env",
+        "capsuleSource": "not-available",
+        "revision": 0
+      },
+      "nativeNodes": 89,
+      "missingArt": [],
+      "fps": 48.54195666902753,
+      "audio": {
+        "active": true,
+        "hidden": false,
+        "bgmEnabled": false,
+        "musicRequested": false,
+        "musicReady": false,
+        "musicTrack": null,
+        "musicPlaying": false,
+        "effectChannels": 5,
+        "playingEffects": [
+          "hit"
+        ],
+        "limits": {
+          "perKind": 1,
+          "globalVoices": 3,
+          "globalVolume": 0.65,
+          "startsPerSecond": 12,
+          "minStartGapMs": 25
+        },
+        "counters": {
+          "played": 10,
+          "suppressedBusy": 1,
+          "suppressedRate": 0,
+          "suppressedBudget": 0,
+          "loadFailures": 0
+        },
+        "loading": false
+      },
+      "error": ""
+    }
+  ],
+  "final": {
+    "version": "formal-pr2-fix-20260927.2",
+    "engine": "Cocos native Sprite/Graphics/Label",
+    "screen": "battle",
+    "chapter": 0,
+    "runId": "mujfzz5t-zauy1hwsj8l",
+    "revision": 4,
+    "save": {
+      "schemaVersion": 2,
+      "cleared": [],
+      "best": {},
+      "claimed": [],
+      "weapons": [
+        "spear"
+      ],
+      "weaponLevels": {
+        "spear": 1
+      },
+      "captures": [],
+      "visits": [],
+      "allies": [],
+      "treasures": [],
+      "companions": [],
+      "support": null,
+      "slots": {
+        "dian": null,
+        "qi": null,
+        "ma": null
+      },
+      "xp": 0,
+      "seen": []
+    },
+    "saveNotice": "",
+    "battle": {
+      "chapter": 0,
+      "t": 10.100000000000081,
+      "dist": 1.2833333333333332,
+      "phase": "run",
+      "x": 7.825019596567571e-8,
+      "target": 7.825019596567571e-8,
+      "troops": 5,
+      "weapon": "spear",
+      "tier": 1,
+      "arms": "bow",
+      "companions": [],
+      "support": {
+        "id": null,
+        "cd": 0,
+        "pending": null,
+        "uses": 0,
+        "flash": 0
+      },
+      "slots": {
+        "dian": {
+          "id": null,
+          "st": "empty",
+          "n": 0,
+          "flash": 0
+        },
+        "qi": {
+          "id": null,
+          "st": "empty",
+          "n": 0,
+          "flash": 0,
+          "used": false
+        },
+        "ma": {
+          "id": null,
+          "st": "empty",
+          "n": 0,
+          "flash": 0
+        }
+      },
+      "boss": null,
+      "entities": [],
+      "stats": {
+        "bossStrikes": 0,
+        "dodged": 0,
+        "hitTaken": 0,
+        "volleys": 6,
+        "arrowsHit": 10,
+        "taiping": 0,
+        "supportSaved": 0,
+        "crates": {}
+      },
+      "totals": {
+        "damage": 18,
+        "gate": 0,
+        "troops": 0
+      },
+      "paused": false,
+      "threatBands": [],
+      "runGot": [],
+      "defeatedOfficerIds": [
+        "xu"
+      ],
+      "defeatedBossId": null,
+      "log": [
+        {
+          "t": 0.13,
+          "kind": "officer",
+          "msg": "许褚 拦阵"
+        },
+        {
+          "t": 0.72,
+          "kind": "officer",
+          "msg": "许褚 预警"
+        },
+        {
+          "t": 1.62,
+          "kind": "officer",
+          "msg": "许褚 出招闪过"
+        },
+        {
+          "t": 1.88,
+          "kind": "officer",
+          "msg": "许褚 收势"
+        },
+        {
+          "t": 3.68,
+          "kind": "officer",
+          "msg": "许褚 预警"
+        },
+        {
+          "t": 4.58,
+          "kind": "officer",
+          "msg": "许褚 出招闪过"
+        },
+        {
+          "t": 4.85,
+          "kind": "officer",
+          "msg": "许褚 收势"
+        },
+        {
+          "t": 6.65,
+          "kind": "officer",
+          "msg": "许褚 预警"
+        },
+        {
+          "t": 7.55,
+          "kind": "officer",
+          "msg": "许褚 出招闪过"
+        },
+        {
+          "t": 7.82,
+          "kind": "officer",
+          "msg": "许褚 收势"
+        },
+        {
+          "t": 8.37,
+          "kind": "officer",
+          "msg": "许褚 交锋败北"
+        }
+      ]
+    },
+    "ledger": [
+      {
+        "tick": 56,
+        "kind": "damage",
+        "source": "hero",
+        "target": 18,
+        "amount": 1.35
+      },
+      {
+        "tick": 99,
+        "kind": "damage",
+        "source": "troop",
+        "target": 18,
+        "amount": 0.45
+      },
+      {
+        "tick": 99,
+        "kind": "damage",
+        "source": "troop",
+        "target": 18,
+        "amount": 0.45
+      },
+      {
+        "tick": 168,
+        "kind": "damage",
+        "source": "hero",
+        "target": 18,
+        "amount": 3
+      },
+      {
+        "tick": 196,
+        "kind": "damage",
+        "source": "troop",
+        "target": 18,
+        "amount": 0.45
+      },
+      {
+        "tick": 196,
+        "kind": "damage",
+        "source": "troop",
+        "target": 18,
+        "amount": 0.45
+      },
+      {
+        "tick": 205,
+        "kind": "damage",
+        "source": "hero",
+        "target": 18,
+        "amount": 1.35
+      },
+      {
+        "tick": 293,
+        "kind": "damage",
+        "source": "troop",
+        "target": 18,
+        "amount": 1
+      },
+      {
+        "tick": 293,
+        "kind": "damage",
+        "source": "troop",
+        "target": 18,
+        "amount": 1
+      },
+      {
+        "tick": 354,
+        "kind": "damage",
+        "source": "hero",
+        "target": 18,
+        "amount": 3
+      },
+      {
+        "tick": 390,
+        "kind": "damage",
+        "source": "troop",
+        "target": 18,
+        "amount": 0.45
+      },
+      {
+        "tick": 390,
+        "kind": "damage",
+        "source": "troop",
+        "target": 18,
+        "amount": 0.45
+      },
+      {
+        "tick": 391,
+        "kind": "damage",
+        "source": "hero",
+        "target": 18,
+        "amount": 1.35
+      },
+      {
+        "tick": 487,
+        "kind": "damage",
+        "source": "troop",
+        "target": 18,
+        "amount": 1
+      },
+      {
+        "tick": 487,
+        "kind": "damage",
+        "source": "troop",
+        "target": 18,
+        "amount": 1
+      },
+      {
+        "tick": 502,
+        "kind": "damage",
+        "source": "hero",
+        "target": 18,
+        "amount": 1.2500000000000013
+      },
+      {
+        "tick": 502,
+        "kind": "officer-defeated",
+        "source": "hero",
+        "target": "xu",
+        "amount": 1
+      }
+    ],
+    "diagnostics": {
+      "texts": [
+        {
+          "str": "5",
+          "size": 24,
+          "kind": "troop",
+          "x": 190.92001220703057,
+          "y": 539.5400000000001,
+          "w": 14.16,
+          "h": 24,
+          "layer": "L6",
+          "claim": false
+        },
+        {
+          "str": "弓",
+          "size": 12,
+          "kind": "ui",
+          "x": 155.00001220703058,
+          "y": 544.5400000000001,
+          "w": 12,
+          "h": 12,
+          "layer": "L6",
+          "claim": false
+        },
+        {
+          "str": "长枪",
+          "size": 14,
+          "kind": "ui",
+          "x": 88,
+          "y": 19,
+          "w": 28,
+          "h": 14,
+          "layer": "L7",
+          "claim": false
+        },
+        {
+          "str": "第1关 · 广宗",
+          "size": 14,
+          "kind": "ui",
+          "x": 22,
+          "y": 67,
+          "w": 74.47999999999999,
+          "h": 14,
+          "layer": "L7",
+          "claim": false
+        },
+        {
+          "str": "典",
+          "size": 12,
+          "kind": "ui",
+          "x": 16,
+          "y": 114,
+          "w": 12,
+          "h": 12,
+          "layer": "L7",
+          "claim": false
+        },
+        {
+          "str": "器",
+          "size": 12,
+          "kind": "ui",
+          "x": 16,
+          "y": 148,
+          "w": 12,
+          "h": 12,
+          "layer": "L7",
+          "claim": false
+        },
+        {
+          "str": "骑",
+          "size": 12,
+          "kind": "ui",
+          "x": 16,
+          "y": 182,
+          "w": 12,
+          "h": 12,
+          "layer": "L7",
+          "claim": false
+        },
+        {
+          "str": "锁",
+          "size": 12,
+          "kind": "ui",
+          "x": 16,
+          "y": 220,
+          "w": 12,
+          "h": 12,
+          "layer": "L7",
+          "claim": false
+        }
+      ],
+      "hud": [
+        {
+          "name": "暂停",
+          "x": 12,
+          "y": 14,
+          "w": 32,
+          "h": 32
+        },
+        {
+          "name": "兵器",
+          "x": 52,
+          "y": 14,
+          "w": 300,
+          "h": 32
+        },
+        {
+          "name": "行军条",
+          "x": 12,
+          "y": 58,
+          "w": 366,
+          "h": 32
+        },
+        {
+          "name": "宝物槽·典",
+          "x": 8,
+          "y": 106,
+          "w": 28,
+          "h": 28
+        },
+        {
+          "name": "宝物槽·器",
+          "x": 8,
+          "y": 140,
+          "w": 28,
+          "h": 28
+        },
+        {
+          "name": "宝物槽·骑",
+          "x": 8,
+          "y": 174,
+          "w": 28,
+          "h": 28
+        },
+        {
+          "name": "支援·undefined",
+          "x": 8,
+          "y": 212,
+          "w": 28,
+          "h": 28
+        }
+      ],
+      "gate": {
+        "unsettledHidden": 0,
+        "docked": 0
+      },
+      "used": [
+        [
+          "墙·尖桩A",
+          {
+            "key": "g_stake0",
+            "gen": true,
+            "want": "g_stake0"
+          }
+        ],
+        [
+          "墙·尖桩B",
+          {
+            "key": "g_stake1",
+            "gen": true,
+            "want": "g_stake1"
+          }
+        ],
+        [
+          "墙·尖桩C",
+          {
+            "key": "g_stake2",
+            "gen": true,
+            "want": "g_stake2"
+          }
+        ],
+        [
+          "墙·横木",
+          {
+            "key": "g_rail",
+            "gen": true,
+            "want": "g_rail"
+          }
+        ],
+        [
+          "墙·石墩端头",
+          {
+            "key": "g_pier0",
+            "gen": true,
+            "want": "g_pier0"
+          }
+        ],
+        [
+          "场景·tent",
+          {
+            "key": "g_tent",
+            "gen": true,
+            "want": "g_tent"
+          }
+        ],
+        [
+          "场景·granary",
+          {
+            "key": "g_granary",
+            "gen": true,
+            "want": "g_granary"
+          }
+        ],
+        [
+          "场景·木栅",
+          {
+            "key": "g_juma",
+            "gen": true,
+            "want": "g_juma"
+          }
+        ],
+        [
+          "场景·tower",
+          {
+            "key": "g_tower",
+            "gen": true,
+            "want": "g_tower"
+          }
+        ],
+        [
+          "门箱·兵器匣",
+          {
+            "key": "g_weaponCase",
+            "gen": true,
+            "want": "g_weaponCase"
+          }
+        ],
+        [
+          "敌兵·行进1",
+          {
+            "key": "g_redWalk0",
+            "gen": true,
+            "want": "g_redWalk0"
+          }
+        ],
+        [
+          "敌兵·行进2",
+          {
+            "key": "g_redWalk1",
+            "gen": true,
+            "want": "g_redWalk1"
+          }
+        ],
+        [
+          "敌兵·受击",
+          {
+            "key": "g_redHit",
+            "gen": true,
+            "want": "g_redHit"
+          }
+        ],
+        [
+          "敌兵·倒地",
+          {
+            "key": "g_redFallen",
+            "gen": true,
+            "want": "g_redFallen"
+          }
+        ],
+        [
+          "场景·rocks",
+          {
+            "key": "g_rocks",
+            "gen": true,
+            "want": "g_rocks"
+          }
+        ],
+        [
+          "门箱·军械箱",
+          {
+            "key": "g_arrowCrate",
+            "gen": true,
+            "want": "g_arrowCrate"
+          }
+        ],
+        [
+          "辕门·立柱",
+          {
+            "key": "g_gatePost0",
+            "gen": true,
+            "want": "g_gatePost0"
+          }
+        ],
+        [
+          "辕门·横梁",
+          {
+            "key": "g_beam",
+            "gen": true,
+            "want": "g_beam"
+          }
+        ],
+        [
+          "辕门·援兵旗",
+          {
+            "key": "g_bannerBlue",
+            "gen": true,
+            "want": "g_bannerBlue"
+          }
+        ],
+        [
+          "辕门·伏兵旗",
+          {
+            "key": "g_bannerRed",
+            "gen": true,
+            "want": "g_bannerRed"
+          }
+        ],
+        [
+          "门箱·粮车",
+          {
+            "key": "g_grainCart",
+            "gen": true,
+            "want": "g_grainCart"
+          }
+        ],
+        [
+          "己方弓手·行进1",
+          {
+            "key": "g_archerWalk0",
+            "gen": true,
+            "want": "g_archerWalk0"
+          }
+        ],
+        [
+          "己方弓手·行进2",
+          {
+            "key": "g_archerWalk1",
+            "gen": true,
+            "want": "g_archerWalk1"
+          }
+        ],
+        [
+          "己方弓手·张弓",
+          {
+            "key": "g_archerDraw",
+            "gen": true,
+            "want": "g_archerDraw"
+          }
+        ],
+        [
+          "己方弓手·放箭",
+          {
+            "key": "g_archerRel",
+            "gen": true,
+            "want": "g_archerRel"
+          }
+        ],
+        [
+          "主将·长枪·跑1",
+          {
+            "key": "g_run_spear0",
+            "gen": true,
+            "want": "g_run_spear0"
+          }
+        ],
+        [
+          "主将·长枪·跑2",
+          {
+            "key": "g_run_spear1",
+            "gen": true,
+            "want": "g_run_spear1"
+          }
+        ],
+        [
+          "主将·长枪·跑3",
+          {
+            "key": "g_run_spear2",
+            "gen": true,
+            "want": "g_run_spear2"
+          }
+        ],
+        [
+          "主将·长枪·跑4",
+          {
+            "key": "g_run_spear3",
+            "gen": true,
+            "want": "g_run_spear3"
+          }
+        ],
+        [
+          "主将·长枪·蓄势",
+          {
+            "key": "g_spearWind",
+            "gen": true,
+            "want": "g_spearWind"
+          }
+        ],
+        [
+          "主将·长枪·出招",
+          {
+            "key": "g_spearRel",
+            "gen": true,
+            "want": "g_spearRel"
+          }
+        ],
+        [
+          "主将·长枪·收势",
+          {
+            "key": "g_spearRec",
+            "gen": true,
+            "want": "g_spearRec"
+          }
+        ],
+        [
+          "主将·偃月刀·跑1",
+          {
+            "key": "g_run_spear0",
+            "gen": true,
+            "want": "g_run_spear0"
+          }
+        ],
+        [
+          "主将·偃月刀·跑2",
+          {
+            "key": "g_run_spear1",
+            "gen": true,
+            "want": "g_run_spear1"
+          }
+        ],
+        [
+          "主将·偃月刀·跑3",
+          {
+            "key": "g_run_spear2",
+            "gen": true,
+            "want": "g_run_spear2"
+          }
+        ],
+        [
+          "主将·偃月刀·跑4",
+          {
+            "key": "g_run_spear3",
+            "gen": true,
+            "want": "g_run_spear3"
+          }
+        ],
+        [
+          "主将·偃月刀·蓄势",
+          {
+            "key": "g_guandaoWind",
+            "gen": true,
+            "want": "g_guandaoWind"
+          }
+        ],
+        [
+          "主将·偃月刀·出招",
+          {
+            "key": "g_guandaoRel",
+            "gen": true,
+            "want": "g_guandaoRel"
+          }
+        ],
+        [
+          "主将·偃月刀·收势",
+          {
+            "key": "g_guandaoRec",
+            "gen": true,
+            "want": "g_guandaoRec"
+          }
+        ],
+        [
+          "主将·蛇矛·跑1",
+          {
+            "key": "g_run_spear0",
+            "gen": true,
+            "want": "g_run_spear0"
+          }
+        ],
+        [
+          "主将·蛇矛·跑2",
+          {
+            "key": "g_run_spear1",
+            "gen": true,
+            "want": "g_run_spear1"
+          }
+        ],
+        [
+          "主将·蛇矛·跑3",
+          {
+            "key": "g_run_spear2",
+            "gen": true,
+            "want": "g_run_spear2"
+          }
+        ],
+        [
+          "主将·蛇矛·跑4",
+          {
+            "key": "g_run_spear3",
+            "gen": true,
+            "want": "g_run_spear3"
+          }
+        ],
+        [
+          "主将·蛇矛·蓄势",
+          {
+            "key": "g_shemaoWind",
+            "gen": true,
+            "want": "g_shemaoWind"
+          }
+        ],
+        [
+          "主将·蛇矛·出招",
+          {
+            "key": "g_shemaoRel",
+            "gen": true,
+            "want": "g_shemaoRel"
+          }
+        ],
+        [
+          "主将·蛇矛·收势",
+          {
+            "key": "g_shemaoRec",
+            "gen": true,
+            "want": "g_shemaoRec"
+          }
+        ],
+        [
+          "主将·画戟·跑1",
+          {
+            "key": "g_run_spear0",
+            "gen": true,
+            "want": "g_run_spear0"
+          }
+        ],
+        [
+          "主将·画戟·跑2",
+          {
+            "key": "g_run_spear1",
+            "gen": true,
+            "want": "g_run_spear1"
+          }
+        ],
+        [
+          "主将·画戟·跑3",
+          {
+            "key": "g_run_spear2",
+            "gen": true,
+            "want": "g_run_spear2"
+          }
+        ],
+        [
+          "主将·画戟·跑4",
+          {
+            "key": "g_run_spear3",
+            "gen": true,
+            "want": "g_run_spear3"
+          }
+        ],
+        [
+          "主将·画戟·蓄势",
+          {
+            "key": "g_huajiWind",
+            "gen": true,
+            "want": "g_huajiWind"
+          }
+        ],
+        [
+          "主将·画戟·出招",
+          {
+            "key": "g_huajiRel",
+            "gen": true,
+            "want": "g_huajiRel"
+          }
+        ],
+        [
+          "主将·画戟·收势",
+          {
+            "key": "g_huajiRec",
+            "gen": true,
+            "want": "g_huajiRec"
+          }
+        ],
+        [
+          "主将·长枪·亮兵",
+          {
+            "key": "g_brandish_spear",
+            "gen": true,
+            "want": "g_brandish_spear"
+          }
+        ],
+        [
+          "图标·长枪",
+          {
+            "key": "g_icon_spear",
+            "gen": true,
+            "want": "g_icon_spear"
+          }
+        ]
+      ]
+    },
+    "buttons": [
+      {
+        "id": "pause",
+        "x": 4,
+        "y": 8,
+        "w": 48,
+        "h": 48
+      }
+    ],
+    "viewport": {
+      "width": 390,
+      "height": 844,
+      "safe": {
+        "left": 0,
+        "top": 0,
+        "right": 390,
+        "bottom": 844
+      },
+      "capsule": null,
+      "source": "browser-window",
+      "safeSource": "browser-css-env",
+      "capsuleSource": "not-available",
+      "revision": 0
+    },
+    "nativeNodes": 86,
+    "missingArt": [],
+    "fps": 45.866571770527564,
+    "audio": {
+      "active": true,
+      "hidden": false,
+      "bgmEnabled": false,
+      "musicRequested": false,
+      "musicReady": false,
+      "musicTrack": null,
+      "musicPlaying": false,
+      "effectChannels": 5,
+      "playingEffects": [],
+      "limits": {
+        "perKind": 1,
+        "globalVoices": 3,
+        "globalVolume": 0.65,
+        "startsPerSecond": 12,
+        "minStartGapMs": 25
+      },
+      "counters": {
+        "played": 10,
+        "suppressedBusy": 1,
+        "suppressedRate": 0,
+        "suppressedBudget": 0,
+        "loadFailures": 0
+      },
+      "loading": false
+    },
+    "error": ""
+  },
+  "errors": []
+}

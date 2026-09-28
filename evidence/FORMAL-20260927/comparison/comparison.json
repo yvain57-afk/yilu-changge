@@ -1,0 +1,70 @@
+{
+  "scope": "Read-only source preview and actual native Cocos rendered from identical deterministic fixture states. Fixture injections only in isolated screenshot harness, NOT natural ten-level verification. Different top OS decoration is intentional. No claim of pixel identity or user visual approval.",
+  "records": [
+    {
+      "name": "normal",
+      "state": "normal",
+      "weapon": "spear",
+      "time": 2,
+      "x": -0.35,
+      "result": {
+        "phase": "normal",
+        "t": 1.9999999999999978,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 390,
+        "H": 844
+      }
+    },
+    {
+      "name": "dense",
+      "state": "dense",
+      "weapon": "spear",
+      "time": 2.2,
+      "x": 0.4,
+      "result": {
+        "phase": "dense",
+        "t": 2.199999999999997,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 390,
+        "H": 844
+      }
+    },
+    {
+      "name": "general",
+      "state": "general",
+      "weapon": "spear",
+      "time": 1.75,
+      "x": -0.4,
+      "result": {
+        "phase": "general",
+        "t": 1.7499999999999987,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 390,
+        "H": 844
+      }
+    },
+    {
+      "name": "guandao",
+      "state": "normal",
+      "weapon": "guandao",
+      "time": 1.1,
+      "x": 0,
+      "result": {
+        "phase": "normal",
+        "t": 1.0333333333333345,
+        "missing": []
+      },
+      "sourceLayout": {
+        "W": 390,
+        "H": 844
+      }
+    }
+  ],
+  "errors": []
+}

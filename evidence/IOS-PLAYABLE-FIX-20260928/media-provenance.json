@@ -1,0 +1,120 @@
+{
+  "note": "Full second ten-level run predates the final Boss7 260→225 and Boss10 220→190 correction, full-body detail art/UI, support HUD, gate window and treasure collection fixes. Final seven pairs, all30 detail captures and final fixture video use the delivered final build. Natural final c7/c10 retest was not executed. Model cannot replace it. Raw video remains local; review ZIP includes compressed full ten and final35s excerpt.",
+  "screenshots": "comparison/S01..S07-after plus S01-person-after and Boss phase captures: post-review native Debug memory fixtures, no persistent save writes.",
+  "video": [
+    {
+      "file": "native-calibrated-ten-original-speed.mp4",
+      "bytes": 4614578145,
+      "sha256": "0bde9431d0774bb5ad5fe840a4d33faa84aad01671bfe905965bdb16da222962",
+      "scope": "full actual native ten first clears, raw uncut",
+      "version": "calibration-round2-before/",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1206,
+            "height": 2622,
+            "avg_frame_rate": "843330/17687"
+          }
+        ],
+        "format": {
+          "duration": "1768.700000"
+        }
+      },
+      "speedChanged": false,
+      "audioVerified": false
+    },
+    {
+      "file": "native-calibrated-ten-review.mp4",
+      "bytes": 819414530,
+      "sha256": "1c8ebf448f1f402593bbd36c6ce2c8d26c99fc89c77c387488ad79417d65a27e",
+      "scope": "same full ten; 780-wide compressed original speed, uncut",
+      "version": "calibration-round2-before/",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 780,
+            "height": 1696,
+            "avg_frame_rate": "25069200/526099"
+          }
+        ],
+        "format": {
+          "duration": "1753.663333"
+        }
+      },
+      "speedChanged": false,
+      "audioVerified": false
+    },
+    {
+      "file": "native-github-audit-fixture-full-original-speed.mp4",
+      "bytes": 334758014,
+      "sha256": "b738575c30f0f217d2b0959d4e34fe5927de01cbab50621caef09b9669b295f9",
+      "scope": "post-review isolated native fixture, raw; no input; not first clear; recording has a long simulator frame gap before the active segment",
+      "version": "source-fingerprint.json",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1206,
+            "height": 2622,
+            "avg_frame_rate": "509940/14369"
+          }
+        ],
+        "format": {
+          "duration": "239.463333"
+        }
+      },
+      "speedChanged": false,
+      "audioVerified": false
+    },
+    {
+      "file": "native-github-audit-fixture-original-speed.mp4",
+      "bytes": 6531564,
+      "sha256": "17d3efab223ba473707fc175747b6fba29da32c1b0fcd521797bda19980a9101",
+      "scope": "post-review final native fixture, original-speed source seconds70–105; no gameplay input",
+      "version": "source-fingerprint.json",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 780,
+            "height": 1696,
+            "avg_frame_rate": "31411200/672157"
+          }
+        ],
+        "format": {
+          "duration": "35.008177"
+        }
+      },
+      "speedChanged": false,
+      "audioVerified": false
+    }
+  ],
+  "builds": [
+    {
+      "artifact": "iOS模拟器构建.zip",
+      "sha256": "d786c52a8f83097fd8ffc1f955b8bac9dc08a7ecb827829e8a6694c8347526c2",
+      "appContentFingerprint": "3ce5d345c022b01782c6212216f3b8aa99c3a95f708af015d1c09ef992488b8a",
+      "executableSHA256": "a4982eb0fa9ffad72d3365fcfeb2c2940350c3f430e858d50d580c0b9f6fe44a",
+      "bundleId": "com.yvainair.yiluchangge",
+      "signingScope": "simulator unsigned"
+    },
+    {
+      "artifact": "iPhone开发签名构建.zip",
+      "sha256": "55efb1fd32969d067a34c49dd1703afc5a9e4e184a8a4f1353d273bf7a107c73",
+      "appContentFingerprint": "11951152ef26003dc38e8bd59a8f1bd6e8db93679dc46321b23f5c015a1c602b",
+      "executableSHA256": "16f447b0ba7bfd4ca4cd769f0bebb77d3e08e21462a94a3bfc8f83e58f8385c4",
+      "bundleId": "com.yvainair.yiluchangge",
+      "signingScope": "development Release; install blocked by free provisioning app limit"
+    }
+  ]
+}

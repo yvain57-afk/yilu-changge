@@ -1,0 +1,160 @@
+TAP version 13
+# Subtest: fresh formal save is one hero, fixed spear, no unlocked fixtures
+ok 1 - fresh formal save is one hero, fixed spear, no unlocked fixtures
+  ---
+  duration_ms: 1.364834
+  type: 'test'
+  ...
+# Subtest: legacy originals and unknown fields survive exact backup and reload
+ok 2 - legacy originals and unknown fields survive exact backup and reload
+  ---
+  duration_ms: 0.152042
+  type: 'test'
+  ...
+# Subtest: corrupt formal save is protected, never overwritten on retry
+ok 3 - corrupt formal save is protected, never overwritten on retry
+  ---
+  duration_ms: 0.059292
+  type: 'test'
+  ...
+# Subtest: failed save retries the same settlement without duplicating rewards
+ok 4 - failed save retries the same settlement without duplicating rewards
+  ---
+  duration_ms: 0.18725
+  type: 'test'
+  ...
+# Subtest: ten chapters reward once, separate bests and correct deployment permissions
+ok 5 - ten chapters reward once, separate bests and correct deployment permissions
+  ---
+  duration_ms: 0.755625
+  type: 'test'
+  ...
+# Subtest: route drops only unlocked weapon and treasure IDs, finite events and valid references
+ok 6 - route drops only unlocked weapon and treasure IDs, finite events and valid references
+  ---
+  duration_ms: 0.226958
+  type: 'test'
+  ...
+# Subtest: weapon switch retains tier, same weapon upgrades and cap overflows, arms are separate
+ok 7 - weapon switch retains tier, same weapon upgrades and cap overflows, arms are separate
+  ---
+  duration_ms: 1.238334
+  type: 'test'
+  ...
+# Subtest: treasure trial, duplicate overflow and occupied storage are real distinct states
+ok 8 - treasure trial, duplicate overflow and occupied storage are real distinct states
+  ---
+  duration_ms: 0.281916
+  type: 'test'
+  ...
+# Subtest: pause freezes model and cancel stops target chasing
+ok 9 - pause freezes model and cancel stops target chasing
+  ---
+  duration_ms: 0.679208
+  type: 'test'
+  ...
+# Subtest: wall constrains people but projectile passes and actually damages target
+ok 10 - wall constrains people but projectile passes and actually damages target
+  ---
+  duration_ms: 0.345208
+  type: 'test'
+  ...
+# Subtest: shot gate changes signed value, respects window, no hidden low cap
+ok 11 - shot gate changes signed value, respects window, no hidden low cap
+  ---
+  duration_ms: 0.131667
+  type: 'test'
+  ...
+# Subtest: Qixing rescues zero once, Hua cannot revive terminal defeat
+ok 12 - Qixing rescues zero once, Hua cannot revive terminal defeat
+  ---
+  duration_ms: 0.206542
+  type: 'test'
+  ...
+# Subtest: failed run cannot award treasure or first clear
+ok 13 - failed run cannot award treasure or first clear
+  ---
+  duration_ms: 0.232458
+  type: 'test'
+  ...
+# Subtest: three fixed +1 gates each settle once and are not inflated by waves
+ok 14 - three fixed +1 gates each settle once and are not inflated by waves
+  ---
+  duration_ms: 0.146
+  type: 'test'
+  ...
+# Subtest: Hua delayed healing uses actual damage and obeys cooldown
+ok 15 - Hua delayed healing uses actual damage and obeys cooldown
+  ---
+  duration_ms: 0.730458
+  type: 'test'
+  ...
+# Subtest: Mengde halves only the next eligible negative gate until cooldown
+ok 16 - Mengde halves only the next eligible negative gate until cooldown
+  ---
+  duration_ms: 0.263416
+  type: 'test'
+  ...
+# Subtest: army volleys originate behind hero, use own armament and real damage
+ok 17 - army volleys originate behind hero, use own armament and real damage
+  ---
+  duration_ms: 1.014959
+  type: 'test'
+  ...
+# Subtest: no unearned support, ally or locked treasure can be deployed from corrupt selections
+ok 18 - no unearned support, ally or locked treasure can be deployed from corrupt selections
+  ---
+  duration_ms: 0.103834
+  type: 'test'
+  ...
+# Subtest: replay routes keep every unlocked weapon reachable after chapter ten
+ok 19 - replay routes keep every unlocked weapon reachable after chapter ten
+  ---
+  duration_ms: 0.735458
+  type: 'test'
+  ...
+# Subtest: owner resonance activates once per run and does not rearm after weapon swaps
+ok 20 - owner resonance activates once per run and does not rearm after weapon swaps
+  ---
+  duration_ms: 1.514209
+  type: 'test'
+  ...
+# Subtest: alliance weapon bonus works with no companion or support deployment
+ok 21 - alliance weapon bonus works with no companion or support deployment
+  ---
+  duration_ms: 0.295583
+  type: 'test'
+  ...
+# Subtest: boss recovery takes double actual damage without overkill
+ok 22 - boss recovery takes double actual damage without overkill
+  ---
+  duration_ms: 0.335375
+  type: 'test'
+  ...
+# Subtest: Dilu edge evade prevents a hit once and respects fifteen second cooldown
+ok 23 - Dilu edge evade prevents a hit once and respects fifteen second cooldown
+  ---
+  duration_ms: 0.146958
+  type: 'test'
+  ...
+# Subtest: treasure bonuses affect starting army, grain and healing by explicit initial values
+ok 24 - treasure bonuses affect starting army, grain and healing by explicit initial values
+  ---
+  duration_ms: 0.329
+  type: 'test'
+  ...
+# Subtest: main-hero tactic persists independently; shock trades piercing for real enemy control
+ok 25 - main-hero tactic persists independently; shock trades piercing for real enemy control
+  ---
+  duration_ms: 0.203542
+  type: 'test'
+  ...
+1..25
+# tests 25
+# suites 0
+# pass 25
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 205.784333

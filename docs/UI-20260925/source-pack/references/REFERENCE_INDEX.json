@@ -1,0 +1,93 @@
+{
+  "source_dimensions": [
+    1448,
+    1086
+  ],
+  "meaning": "视觉参考；不是真实游戏截图；不可作为运行贴图",
+  "original_files": [
+    {
+      "source_name": "三国手游界面设计展示.png",
+      "package_path": "references/01_approved_visual_target.png"
+    },
+    {
+      "source_name": "截屏2026-09-25 18.52.02.png",
+      "package_path": "references/02_user_selected_battle.png"
+    },
+    {
+      "source_name": "截屏2026-09-25 18.52.35.png",
+      "package_path": "references/03_user_selected_flow.png"
+    },
+    {
+      "source_name": "截屏2026-09-25 18.52.57.png",
+      "package_path": "references/04_user_selected_result.png"
+    },
+    {
+      "source_name": "截屏2026-09-25 18.53.12.png",
+      "package_path": "references/05_user_selected_gates.png"
+    },
+    {
+      "source_name": "三国策略手游ui重构设计板.png",
+      "package_path": "references/06_prior_planning_board.png"
+    },
+    {
+      "source_name": "三国ui重构开发板海报.png",
+      "package_path": "references/07_prior_battle_board.png"
+    }
+  ],
+  "crops": {
+    "home": {
+      "path": "references/crops/home.png",
+      "box_xyxy": [
+        18,
+        134,
+        294,
+        704
+      ]
+    },
+    "chapters": {
+      "path": "references/crops/chapters.png",
+      "box_xyxy": [
+        301,
+        134,
+        580,
+        704
+      ]
+    },
+    "loadout": {
+      "path": "references/crops/loadout.png",
+      "box_xyxy": [
+        586,
+        134,
+        862,
+        704
+      ]
+    },
+    "battle": {
+      "path": "references/crops/battle.png",
+      "box_xyxy": [
+        869,
+        134,
+        1147,
+        704
+      ]
+    },
+    "result": {
+      "path": "references/crops/result.png",
+      "box_xyxy": [
+        1154,
+        134,
+        1431,
+        704
+      ]
+    },
+    "gates": {
+      "path": "references/crops/gates.png",
+      "box_xyxy": [
+        299,
+        718,
+        976,
+        1045
+      ]
+    }
+  }
+}

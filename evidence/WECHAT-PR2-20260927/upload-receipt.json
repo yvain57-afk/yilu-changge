@@ -1,0 +1,22 @@
+{
+  "version": "1.0.1",
+  "date": "2026-09-27",
+  "appIdSuffix": "049b",
+  "sourceBase": "d427ea2bc79833db1e44740d96ba45d5adbf43e1",
+  "entrySourceSha256": "6adb9b5ccf375048bc80ee49cce55a8bdfa31dca6f5026d4d7157a0f61c8e634",
+  "upload": "success (official DevTools CLI exit 0, upload acknowledgement)",
+  "preview": "success (official DevTools CLI exit 0, local QR generated)",
+  "bytes": {
+    "total": 14090794,
+    "main": 2246608,
+    "resources": 11844186
+  },
+  "validation": {
+    "typecheck": "passed",
+    "wechatBuild": "passed",
+    "simulator": "home, loadout and first battle rendered; startup ReferenceError eliminated",
+    "device": "pending user scan"
+  },
+  "release": "not submitted for review or released",
+  "experienceVersion": "not selected in backend"
+}

@@ -1,0 +1,9 @@
+FILE NAME: enemy-lubu.png   (landscape image, e.g. 1536x1024)
+Content: enemy general Lü Bu (吕布), FRONT three-quarter top-down view facing the camera (he stands at the far end of the road facing the player), same style and camera as the enemy generals in the reference, but larger presence and more imposing: tall muscular build, ornate crimson-and-gold armor with a beast-face belt buckle, dark red cloak, helmet with two very long pheasant tail feathers curving backward (his iconic silhouette), wielding the Sky-Piercer Halberd (方天画戟: spear point plus two crescent side blades, red tassel).
+Layout: one row of 5 poses, each centered in equal-width cells, same figure size, feet on one shared baseline:
+(1) idle stance: halberd planted upright, chest out, intimidating;
+(2) wind-up: halberd raised high over the right shoulder, body twisted;
+(3) strike: huge horizontal sweep toward the camera, halberd extended to his left, cloak flaring;
+(4) recover: halberd lowered, tip touching the ground, shoulders heaving (vulnerable);
+(5) defeated: kneeling on one knee, halberd planted beside him, head bowed.
+Below the row (second row, separated by empty space), draw 2 items: (a) a tall crimson war banner on a pole (blank cloth, no text, gold trim), (b) a round war drum on a wooden stand.

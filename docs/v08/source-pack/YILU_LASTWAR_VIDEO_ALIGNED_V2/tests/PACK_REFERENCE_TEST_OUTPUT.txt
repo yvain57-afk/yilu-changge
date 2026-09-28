@@ -1,0 +1,100 @@
+TAP version 13
+# Subtest: negative gate can cross zero into positive through real damage
+ok 1 - negative gate can cross zero into positive through real damage
+  ---
+  duration_ms: 1.705898
+  type: 'test'
+  ...
+# Subtest: positive gates improve; fractional progress is retained
+ok 2 - positive gates improve; fractional progress is retained
+  ---
+  duration_ms: 0.293082
+  type: 'test'
+  ...
+# Subtest: duplicate rendering/hit event cannot grow a gate again
+ok 3 - duplicate rendering/hit event cannot grow a gate again
+  ---
+  duration_ms: 0.119161
+  type: 'test'
+  ...
+# Subtest: gate grants only once on actual caller-established contact
+ok 4 - gate grants only once on actual caller-established contact
+  ---
+  duration_ms: 0.19223
+  type: 'test'
+  ...
+# Subtest: different gates do not share an invented whole-row mutex
+ok 5 - different gates do not share an invented whole-row mutex
+  ---
+  duration_ms: 0.133412
+  type: 'test'
+  ...
+# Subtest: lethal negative gate ends run and positive gate cannot resurrect
+ok 6 - lethal negative gate ends run and positive gate cannot resurrect
+  ---
+  duration_ms: 0.100382
+  type: 'test'
+  ...
+# Subtest: positive gain respects explicit prototype cap
+ok 7 - positive gain respects explicit prototype cap
+  ---
+  duration_ms: 0.199952
+  type: 'test'
+  ...
+# Subtest: 60 durability is not 60 reward soldiers
+ok 8 - 60 durability is not 60 reward soldiers
+  ---
+  duration_ms: 0.37699
+  type: 'test'
+  ...
+# Subtest: unfinished crate does not grant reward; duplicate hits are not new damage
+ok 9 - unfinished crate does not grant reward; duplicate hits are not new damage
+  ---
+  duration_ms: 0.25161
+  type: 'test'
+  ...
+# Subtest: equipment rewards use absolute stage, never repeated free increments
+ok 10 - equipment rewards use absolute stage, never repeated free increments
+  ---
+  duration_ms: 0.346814
+  type: 'test'
+  ...
+# Subtest: chain has unique nonshootable +1 tokens and only crossed tokens count
+ok 11 - chain has unique nonshootable +1 tokens and only crossed tokens count
+  ---
+  duration_ms: 0.274995
+  type: 'test'
+  ...
+# Subtest: real member edge overlap is checked, not only leader center or empty bounding box
+ok 12 - real member edge overlap is checked, not only leader center or empty bounding box
+  ---
+  duration_ms: 0.170167
+  type: 'test'
+  ...
+# Subtest: capped visual soldiers preserve 256-unit fire budget and count special roles once
+ok 13 - capped visual soldiers preserve 256-unit fire budget and count special roles once
+  ---
+  duration_ms: 0.393414
+  type: 'test'
+  ...
+# Subtest: first impact takes priority independent of array order; shot snapshot cannot follow player
+ok 14 - first impact takes priority independent of array order; shot snapshot cannot follow player
+  ---
+  duration_ms: 0.159691
+  type: 'test'
+  ...
+# Subtest: invalid data fails explicitly
+ok 15 - invalid data fails explicitly
+  ---
+  duration_ms: 0.296148
+  type: 'test'
+  ...
+1..15
+# tests 15
+# suites 0
+# pass 15
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 69.939942

@@ -1,0 +1,983 @@
+{
+  "scope": "exact actor-key inventory, static validation and explicitly scoped native observations",
+  "rows": [
+    {
+      "actorId": "jiao",
+      "detailFullBodyKey": "g_boss_jiao_idle",
+      "actualFrameKeys": [
+        "g_boss_jiao_idle",
+        "g_boss_jiao_strike",
+        "g_boss_jiao_spent",
+        "g_boss_jiao_wind",
+        "g_boss_jiao_rec",
+        "g_boss_jiao_hit",
+        "g_end_jiao_0",
+        "g_end_jiao_2",
+        "g_portrait_jiao"
+      ],
+      "sourceSheets": [
+        "ios_added",
+        "ios_bossactions",
+        "ios_enemies"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-jiao-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "dong",
+      "detailFullBodyKey": "g_boss_dong_idle",
+      "actualFrameKeys": [
+        "g_boss_dong_idle",
+        "g_boss_dong_strike",
+        "g_boss_dong_spent",
+        "g_boss_dong_wind",
+        "g_boss_dong_rec",
+        "g_boss_dong_hit",
+        "g_end_dong_0",
+        "g_end_dong_2",
+        "g_portrait_dong"
+      ],
+      "sourceSheets": [
+        "ios_added",
+        "ios_bossactions",
+        "ios_enemies"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-dong-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "yuan",
+      "detailFullBodyKey": "g_detail_yuan",
+      "actualFrameKeys": [
+        "g_portrait_yuan",
+        "g_detail_yuan"
+      ],
+      "sourceSheets": [
+        "ios_details",
+        "pr2_portraits"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-yuan-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "hua",
+      "detailFullBodyKey": "g_detail_hua",
+      "actualFrameKeys": [
+        "g_portrait_hua",
+        "g_detail_hua"
+      ],
+      "sourceSheets": [
+        "ios_details",
+        "pr2_portraits"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-hua-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "lubu",
+      "detailFullBodyKey": "g_lubuIdle",
+      "actualFrameKeys": [
+        "g_lubuHit",
+        "g_lubuSpent",
+        "g_lubuYield",
+        "g_lubuIdle",
+        "g_lubuWind",
+        "g_lubuStrike",
+        "g_lubuRec",
+        "g_lubuDown",
+        "g_lubuRun0",
+        "g_lubuRun1",
+        "g_lubuThrust",
+        "g_portrait_lubu"
+      ],
+      "sourceSheets": [
+        "gen_enemy_lubu",
+        "gen_lubu2",
+        "ios_added",
+        "ios_owners"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-lubu-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "diao",
+      "detailFullBodyKey": "g_detail_diao",
+      "actualFrameKeys": [
+        "g_portrait_diao",
+        "g_detail_diao"
+      ],
+      "sourceSheets": [
+        "ios_details",
+        "pr2_portraits"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-diao-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "dian",
+      "detailFullBodyKey": "g_boss_dian_idle",
+      "actualFrameKeys": [
+        "g_boss_dian_idle",
+        "g_boss_dian_strike",
+        "g_boss_dian_spent",
+        "g_dianRun0",
+        "g_dianRun1",
+        "g_dianWind",
+        "g_dianThrust",
+        "g_boss_dian_wind",
+        "g_boss_dian_rec",
+        "g_boss_dian_hit",
+        "g_end_dian_0",
+        "g_end_dian_2",
+        "g_portrait_dian"
+      ],
+      "sourceSheets": [
+        "ios_added",
+        "ios_bossactions",
+        "ios_enemies",
+        "ios_owners"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-dian-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "xu",
+      "detailFullBodyKey": "g_front_xuRun0",
+      "actualFrameKeys": [
+        "g_xuRun0",
+        "g_xuRun1",
+        "g_xuThrust",
+        "g_front_xuRun0",
+        "g_front_xuRun1",
+        "g_front_xuHurt",
+        "g_front_xuWind",
+        "g_front_xuStrike",
+        "g_front_xuRec",
+        "g_portrait_xu"
+      ],
+      "sourceSheets": [
+        "ios_added",
+        "ios_companions",
+        "ios_fronts",
+        "pr2_officers"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-xu-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "cao",
+      "detailFullBodyKey": "g_boss_cao_idle",
+      "actualFrameKeys": [
+        "g_boss_cao_idle",
+        "g_boss_cao_strike",
+        "g_boss_cao_spent",
+        "g_boss_cao_wind",
+        "g_boss_cao_rec",
+        "g_boss_cao_hit",
+        "g_end_cao_0",
+        "g_end_cao_2",
+        "g_portrait_cao"
+      ],
+      "sourceSheets": [
+        "ios_added",
+        "ios_bossactions",
+        "ios_enemies"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-cao-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "liao",
+      "detailFullBodyKey": "g_front_liaoRun0",
+      "actualFrameKeys": [
+        "g_liaoRun0",
+        "g_liaoRun1",
+        "g_liaoThrust",
+        "g_front_liaoRun0",
+        "g_front_liaoRun1",
+        "g_front_liaoHurt",
+        "g_front_liaoWind",
+        "g_front_liaoStrike",
+        "g_front_liaoRec",
+        "g_portrait_liao"
+      ],
+      "sourceSheets": [
+        "ios_added",
+        "ios_companions",
+        "ios_fronts",
+        "pr2_officers"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-liao-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "xiahou",
+      "detailFullBodyKey": "g_front_xiahouRun0",
+      "actualFrameKeys": [
+        "g_xiahouRun0",
+        "g_xiahouRun1",
+        "g_xiahouThrust",
+        "g_front_xiahouRun0",
+        "g_front_xiahouRun1",
+        "g_front_xiahouHurt",
+        "g_front_xiahouWind",
+        "g_front_xiahouStrike",
+        "g_front_xiahouRec",
+        "g_portrait_xiahou"
+      ],
+      "sourceSheets": [
+        "ios_added",
+        "ios_companions",
+        "ios_fronts",
+        "pr2_officers"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-xiahou-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "guo",
+      "detailFullBodyKey": "g_detail_guo",
+      "actualFrameKeys": [
+        "g_portrait_guo",
+        "g_detail_guo"
+      ],
+      "sourceSheets": [
+        "ios_details",
+        "pr2_portraits"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-guo-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "xun",
+      "detailFullBodyKey": "g_detail_xun",
+      "actualFrameKeys": [
+        "g_portrait_xun",
+        "g_detail_xun"
+      ],
+      "sourceSheets": [
+        "ios_details",
+        "pr2_portraits"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-xun-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "sunjian",
+      "detailFullBodyKey": "g_detail_sunjian",
+      "actualFrameKeys": [
+        "g_portrait_sunjian",
+        "g_detail_sunjian"
+      ],
+      "sourceSheets": [
+        "ios_details",
+        "pr2_portraits"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-sunjian-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "sunce",
+      "detailFullBodyKey": "g_boss_sunce_idle",
+      "actualFrameKeys": [
+        "g_boss_sunce_idle",
+        "g_boss_sunce_strike",
+        "g_boss_sunce_spent",
+        "g_boss_sunce_wind",
+        "g_boss_sunce_rec",
+        "g_boss_sunce_hit",
+        "g_end_sunce_0",
+        "g_end_sunce_2",
+        "g_portrait_sunce"
+      ],
+      "sourceSheets": [
+        "ios_added",
+        "ios_bossactions",
+        "ios_enemies"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-sunce-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "sunquan",
+      "detailFullBodyKey": "g_detail_sunquan",
+      "actualFrameKeys": [
+        "g_portrait_sunquan",
+        "g_detail_sunquan"
+      ],
+      "sourceSheets": [
+        "ios_details",
+        "pr2_portraits"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-sunquan-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "lumeng",
+      "detailFullBodyKey": "g_front_lumengRun0",
+      "actualFrameKeys": [
+        "g_lumengRun0",
+        "g_lumengRun1",
+        "g_lumengThrust",
+        "g_front_lumengRun0",
+        "g_front_lumengRun1",
+        "g_front_lumengHurt",
+        "g_front_lumengWind",
+        "g_front_lumengStrike",
+        "g_front_lumengRec",
+        "g_portrait_lumeng"
+      ],
+      "sourceSheets": [
+        "ios_added",
+        "ios_companions",
+        "ios_fronts",
+        "pr2_officers"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-lumeng-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "zhou",
+      "detailFullBodyKey": "g_boss_zhou_idle",
+      "actualFrameKeys": [
+        "g_boss_zhou_idle",
+        "g_boss_zhou_strike",
+        "g_boss_zhou_spent",
+        "g_boss_zhou_wind",
+        "g_boss_zhou_rec",
+        "g_boss_zhou_hit",
+        "g_end_zhou_0",
+        "g_end_zhou_2",
+        "g_portrait_zhou"
+      ],
+      "sourceSheets": [
+        "ios_added",
+        "ios_bossactions",
+        "ios_enemies"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-zhou-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "luxun",
+      "detailFullBodyKey": "g_front_luxunRun0",
+      "actualFrameKeys": [
+        "g_luxunRun0",
+        "g_luxunRun1",
+        "g_luxunThrust",
+        "g_front_luxunRun0",
+        "g_front_luxunRun1",
+        "g_front_luxunHurt",
+        "g_front_luxunWind",
+        "g_front_luxunStrike",
+        "g_front_luxunRec",
+        "g_portrait_luxun"
+      ],
+      "sourceSheets": [
+        "ios_added",
+        "ios_companions",
+        "ios_fronts",
+        "pr2_officers"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-luxun-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "sunxiang",
+      "detailFullBodyKey": "g_front_sunxiangRun0",
+      "actualFrameKeys": [
+        "g_sunxiangRun0",
+        "g_sunxiangRun1",
+        "g_sunxiangThrust",
+        "g_portrait_sunxiang",
+        "g_front_sunxiangRun0"
+      ],
+      "sourceSheets": [
+        "ios_added",
+        "ios_companions"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-sunxiang-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "zhao",
+      "detailFullBodyKey": "g_front_zhaoRun0",
+      "actualFrameKeys": [
+        "g_zhaoRun0",
+        "g_zhaoRun1",
+        "g_zhaoWind",
+        "g_zhaoThrust",
+        "g_front_zhaoRun0",
+        "g_front_zhaoRun1",
+        "g_front_zhaoHurt",
+        "g_front_zhaoWind",
+        "g_front_zhaoStrike",
+        "g_front_zhaoRec",
+        "g_portrait_zhao"
+      ],
+      "sourceSheets": [
+        "gen_companions",
+        "ios_added",
+        "ios_fronts",
+        "pr2_officers"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-zhao-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "zhang",
+      "detailFullBodyKey": "g_boss_zhang_idle",
+      "actualFrameKeys": [
+        "g_zhangRun0",
+        "g_zhangRun1",
+        "g_zhangWind",
+        "g_zhangThrust",
+        "g_boss_zhang_idle",
+        "g_boss_zhang_strike",
+        "g_boss_zhang_spent",
+        "g_boss_zhang_wind",
+        "g_boss_zhang_rec",
+        "g_boss_zhang_hit",
+        "g_end_zhang_0",
+        "g_end_zhang_2",
+        "g_portrait_zhang"
+      ],
+      "sourceSheets": [
+        "gen_companions",
+        "ios_added",
+        "ios_bossactions",
+        "ios_enemies"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-zhang-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "guan",
+      "detailFullBodyKey": "g_boss_guan_idle",
+      "actualFrameKeys": [
+        "g_boss_guan_idle",
+        "g_boss_guan_strike",
+        "g_boss_guan_spent",
+        "g_guanRun0",
+        "g_guanRun1",
+        "g_guanWind",
+        "g_guanThrust",
+        "g_boss_guan_wind",
+        "g_boss_guan_rec",
+        "g_boss_guan_hit",
+        "g_end_guan_0",
+        "g_end_guan_2",
+        "g_portrait_guan"
+      ],
+      "sourceSheets": [
+        "ios_added",
+        "ios_bossactions",
+        "ios_enemies",
+        "ios_owners"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-guan-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "huang",
+      "detailFullBodyKey": "g_front_huangRun0",
+      "actualFrameKeys": [
+        "g_huangRun0",
+        "g_huangRun1",
+        "g_huangThrust",
+        "g_front_huangRun0",
+        "g_front_huangRun1",
+        "g_front_huangHurt",
+        "g_front_huangWind",
+        "g_front_huangStrike",
+        "g_front_huangRec",
+        "g_portrait_huang"
+      ],
+      "sourceSheets": [
+        "ios_added",
+        "ios_companions",
+        "ios_fronts",
+        "pr2_officers"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-huang-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "liu",
+      "detailFullBodyKey": "g_detail_liu",
+      "actualFrameKeys": [
+        "g_portrait_liu",
+        "g_detail_liu"
+      ],
+      "sourceSheets": [
+        "ios_details",
+        "pr2_portraits"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-liu-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "zhuge",
+      "detailFullBodyKey": "g_boss_zhuge_idle",
+      "actualFrameKeys": [
+        "g_boss_zhuge_idle",
+        "g_boss_zhuge_strike",
+        "g_boss_zhuge_spent",
+        "g_boss_zhuge_wind",
+        "g_boss_zhuge_rec",
+        "g_boss_zhuge_hit",
+        "g_end_zhuge_0",
+        "g_end_zhuge_2",
+        "g_portrait_zhuge"
+      ],
+      "sourceSheets": [
+        "ios_added",
+        "ios_bossactions",
+        "ios_enemies"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-zhuge-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "sima",
+      "detailFullBodyKey": "g_detail_sima",
+      "actualFrameKeys": [
+        "g_portrait_sima",
+        "g_detail_sima"
+      ],
+      "sourceSheets": [
+        "ios_details",
+        "pr2_portraits"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-sima-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "machao",
+      "detailFullBodyKey": "g_front_machaoRun0",
+      "actualFrameKeys": [
+        "g_machaoRun0",
+        "g_machaoRun1",
+        "g_machaoThrust",
+        "g_front_machaoRun0",
+        "g_front_machaoRun1",
+        "g_front_machaoHurt",
+        "g_front_machaoWind",
+        "g_front_machaoStrike",
+        "g_front_machaoRec",
+        "g_portrait_machao"
+      ],
+      "sourceSheets": [
+        "ios_added",
+        "ios_companions",
+        "ios_fronts",
+        "pr2_officers"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-machao-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "pang",
+      "detailFullBodyKey": "g_front_pangRun0",
+      "actualFrameKeys": [
+        "g_front_pangRun0",
+        "g_front_pangRun1",
+        "g_front_pangHurt",
+        "g_front_pangWind",
+        "g_front_pangStrike",
+        "g_front_pangRec",
+        "g_portrait_pang"
+      ],
+      "sourceSheets": [
+        "ios_added",
+        "ios_fronts",
+        "pr2_officers"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-pang-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    },
+    {
+      "actorId": "jiang",
+      "detailFullBodyKey": "g_front_jiangRun0",
+      "actualFrameKeys": [
+        "g_jiangRun0",
+        "g_jiangRun1",
+        "g_jiangThrust",
+        "g_portrait_jiang",
+        "g_front_jiangRun0"
+      ],
+      "sourceSheets": [
+        "ios_added",
+        "ios_companions"
+      ],
+      "staticGeometry": "all frame rectangles checked; alpha masters and slice ledger retained",
+      "nativeEvidence": "native-calibrated-natural chapter/phase images for reached actors; final detail fixtures recorded separately",
+      "remaining": "all-pose visual transition matrix, all support/companion combinations and device acceptance remain pending",
+      "nativeDetail": {
+        "evidence": "comparison/S01-jiang-after.json",
+        "screen": "person",
+        "invalidRects": [],
+        "renderErrors": [],
+        "missingArt": []
+      }
+    }
+  ],
+  "notProof": "Do not infer visual or animation completion from file existence.",
+  "weaponRows": [
+    {
+      "weaponId": "spear",
+      "middleFrames": [
+        "g_mid_spear_0",
+        "g_mid_spear_1"
+      ],
+      "weaponSpecificFrames": [
+        "g_spearWind",
+        "g_spearRel",
+        "g_spearRec"
+      ],
+      "scope": "Static frame inventory; runtime mapping is battle.ts; running uses original family frames or new gait plus weapon rig. This inventory is not proof of all transitions.",
+      "remaining": "all weapon/mount running-attack-hit transition videos and emit-point alignment checks"
+    },
+    {
+      "weaponId": "guandao",
+      "middleFrames": [
+        "g_mid_guandao_0",
+        "g_mid_guandao_1"
+      ],
+      "weaponSpecificFrames": [
+        "g_guandaoRun",
+        "g_guandaoWind",
+        "g_guandaoRel",
+        "g_guandaoRec"
+      ],
+      "scope": "Static frame inventory; runtime mapping is battle.ts; running uses original family frames or new gait plus weapon rig. This inventory is not proof of all transitions.",
+      "remaining": "all weapon/mount running-attack-hit transition videos and emit-point alignment checks"
+    },
+    {
+      "weaponId": "shemao",
+      "middleFrames": [
+        "g_mid_shemao_0",
+        "g_mid_shemao_1"
+      ],
+      "weaponSpecificFrames": [
+        "g_shemaoRun",
+        "g_shemaoWind",
+        "g_shemaoRel",
+        "g_shemaoRec"
+      ],
+      "scope": "Static frame inventory; runtime mapping is battle.ts; running uses original family frames or new gait plus weapon rig. This inventory is not proof of all transitions.",
+      "remaining": "all weapon/mount running-attack-hit transition videos and emit-point alignment checks"
+    },
+    {
+      "weaponId": "huaji",
+      "middleFrames": [
+        "g_mid_huaji_0",
+        "g_mid_huaji_1"
+      ],
+      "weaponSpecificFrames": [
+        "g_huajiRun",
+        "g_huajiWind",
+        "g_huajiRel",
+        "g_huajiRec"
+      ],
+      "scope": "Static frame inventory; runtime mapping is battle.ts; running uses original family frames or new gait plus weapon rig. This inventory is not proof of all transitions.",
+      "remaining": "all weapon/mount running-attack-hit transition videos and emit-point alignment checks"
+    },
+    {
+      "weaponId": "guding",
+      "middleFrames": [
+        "g_mid_guding_0",
+        "g_mid_guding_1"
+      ],
+      "weaponSpecificFrames": [],
+      "scope": "Static frame inventory; runtime mapping is battle.ts; running uses original family frames or new gait plus weapon rig. This inventory is not proof of all transitions.",
+      "remaining": "all weapon/mount running-attack-hit transition videos and emit-point alignment checks"
+    },
+    {
+      "weaponId": "shuangji",
+      "middleFrames": [
+        "g_mid_shuangji_0",
+        "g_mid_shuangji_1"
+      ],
+      "weaponSpecificFrames": [
+        "g_part_shuangji"
+      ],
+      "scope": "Static frame inventory; runtime mapping is battle.ts; running uses original family frames or new gait plus weapon rig. This inventory is not proof of all transitions.",
+      "remaining": "all weapon/mount running-attack-hit transition videos and emit-point alignment checks"
+    },
+    {
+      "weaponId": "yitian",
+      "middleFrames": [
+        "g_mid_yitian_0",
+        "g_mid_yitian_1"
+      ],
+      "weaponSpecificFrames": [],
+      "scope": "Static frame inventory; runtime mapping is battle.ts; running uses original family frames or new gait plus weapon rig. This inventory is not proof of all transitions.",
+      "remaining": "all weapon/mount running-attack-hit transition videos and emit-point alignment checks"
+    },
+    {
+      "weaponId": "qinggang",
+      "middleFrames": [
+        "g_mid_qinggang_0",
+        "g_mid_qinggang_1"
+      ],
+      "weaponSpecificFrames": [],
+      "scope": "Static frame inventory; runtime mapping is battle.ts; running uses original family frames or new gait plus weapon rig. This inventory is not proof of all transitions.",
+      "remaining": "all weapon/mount running-attack-hit transition videos and emit-point alignment checks"
+    },
+    {
+      "weaponId": "shuanggu",
+      "middleFrames": [
+        "g_mid_shuanggu_0",
+        "g_mid_shuanggu_1"
+      ],
+      "weaponSpecificFrames": [
+        "g_part_shuanggu"
+      ],
+      "scope": "Static frame inventory; runtime mapping is battle.ts; running uses original family frames or new gait plus weapon rig. This inventory is not proof of all transitions.",
+      "remaining": "all weapon/mount running-attack-hit transition videos and emit-point alignment checks"
+    },
+    {
+      "weaponId": "liannu",
+      "middleFrames": [
+        "g_mid_liannu_0",
+        "g_mid_liannu_1"
+      ],
+      "weaponSpecificFrames": [],
+      "scope": "Static frame inventory; runtime mapping is battle.ts; running uses original family frames or new gait plus weapon rig. This inventory is not proof of all transitions.",
+      "remaining": "all weapon/mount running-attack-hit transition videos and emit-point alignment checks"
+    }
+  ]
+}

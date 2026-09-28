@@ -1,5 +1,5 @@
 import {realpathSync,existsSync,mkdirSync,openSync} from 'node:fs';import {fileURLToPath} from 'node:url';import {dirname,resolve} from 'node:path';import {createHash} from 'node:crypto';import {spawn,execFileSync} from 'node:child_process';import {createConnection} from 'node:net';
-const project=realpathSync(resolve(dirname(fileURLToPath(import.meta.url)),'..'));process.chdir(project);const port=Number(process.env.PORT||43187),url=`http://127.0.0.1:${port}/`,identity=createHash('sha256').update(project).digest('hex');
+const project=realpathSync(resolve(dirname(fileURLToPath(import.meta.url)),'..'));process.chdir(project);const port=Number(process.env.PORT||43198),url=`http://127.0.0.1:${port}/`,identity=createHash('sha256').update(project).digest('hex');
 if(Number(process.versions.node.split('.')[0])<18)throw Error('需要 Node.js 18 或更新版本');if(!existsSync('build/web-mobile/index.html'))throw Error('缺少预构建试玩包。请使用完整交付包；源码开发者可运行 npm run build:web。');
 async function health(){try{return await(await fetch(url+'__yilu_health',{signal:AbortSignal.timeout(1000)})).json();}catch{return null;}}
 const occupied=()=>new Promise(resolve=>{const s=createConnection({host:'127.0.0.1',port});s.on('connect',()=>{s.destroy();resolve(true)});s.on('error',()=>resolve(false));});

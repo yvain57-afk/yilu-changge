@@ -1,0 +1,96 @@
+{
+  "package": "YILU_V06_HORDE_BRANCH_CODEX",
+  "version": "0.6.0-playtest1",
+  "created": "2026-09-23",
+  "baseReadCommit": "7ee7685e4bcb4fb7aa67284e7b56692826b86675",
+  "artifactType": "development_handoff_not_a_built_game",
+  "checks": {
+    "configuration": "pass",
+    "standaloneReferenceContracts": "16/16 pass",
+    "cocosBuild": "not_run",
+    "gameplay": "not_run",
+    "phone": "not_run"
+  },
+  "files": [
+    {
+      "path": "00_START_WITH_CODEX.md",
+      "bytes": 3491,
+      "sha256": "b5713da85e6ae61959d65675dfbac909854f7ef3d6540884ad773585429833a1"
+    },
+    {
+      "path": "01_SPEC.md",
+      "bytes": 9406,
+      "sha256": "5a7be363b104958ba8150ad9907b17e848043ce827a4db17cb8d43c149e99d5b"
+    },
+    {
+      "path": "02_ENGINE_CONTRACTS.md",
+      "bytes": 8770,
+      "sha256": "56cff4fb8808cc44f628e2303db7fa12ab942e063124cfbc230a4ee53625c0b2"
+    },
+    {
+      "path": "03_BOSS_AND_VISUAL.md",
+      "bytes": 5123,
+      "sha256": "ad1023bb101e5b86fd6e3eb4d98789b5abc3c7adb7353adc2bce9b3a6e50838d"
+    },
+    {
+      "path": "04_ACCEPTANCE.md",
+      "bytes": 5543,
+      "sha256": "fe729251655254f272d66cf31a995b16a70905f0b4ca90dc1c2d412b3ad7ea66"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2387,
+      "sha256": "f2ecb2fd6e5fe89e36ff8b1ebf7810a6a3e96c0bd3733728a8a3f0e7a87484d1"
+    },
+    {
+      "path": "config/boss_v06.json",
+      "bytes": 4482,
+      "sha256": "05df3f644ad64032743606801d7261dfc522f018902a6590bb79e33f2cbc32f8"
+    },
+    {
+      "path": "config/horde_v06.json",
+      "bytes": 41173,
+      "sha256": "a0fb9231a9ec94f4a2c63a1f5056fe75fc7046c6c7ee87c21c4e87bdbd06388c"
+    },
+    {
+      "path": "contracts/reference.mjs",
+      "bytes": 6523,
+      "sha256": "9de1dff1b356a6de79c3cd247eebc2c88d5616588bba1acbbe851c4da88d4b94"
+    },
+    {
+      "path": "contracts/reference.test.mjs",
+      "bytes": 5002,
+      "sha256": "920b47bd129ff93dc54e571dbc64651eeb7e254a7d68df76fbfb01b38a5ac9a0"
+    },
+    {
+      "path": "evidence/package-check-output.txt",
+      "bytes": 873,
+      "sha256": "88392084738a342f704ee616b586674f53126d690615e797dc8d9043daabd75b"
+    },
+    {
+      "path": "evidence/package-check.json",
+      "bytes": 873,
+      "sha256": "88392084738a342f704ee616b586674f53126d690615e797dc8d9043daabd75b"
+    },
+    {
+      "path": "evidence/reference-tests.txt",
+      "bytes": 2943,
+      "sha256": "e4684c807bbb525c1e1fd3afc6e05de1dd9139bf03a662792e599dd252d92f7e"
+    },
+    {
+      "path": "references/PRIOR_DIRECTION_V1.md",
+      "bytes": 12182,
+      "sha256": "d085f2639e8e4010bc5c4a299edc439180179de39bf865a4b512a57c2d10bcd4"
+    },
+    {
+      "path": "references/SOURCE_AND_SCOPE.md",
+      "bytes": 1564,
+      "sha256": "19cd9e1f0ec37774858dfabac405a03507f2d6855320c47199951756e68965be"
+    },
+    {
+      "path": "tools/check_package.mjs",
+      "bytes": 3688,
+      "sha256": "e10662200df62bfbd8601bc7aaf088bc892497322ec050e2044ee73140f95617"
+    }
+  ]
+}

@@ -1,0 +1,1072 @@
+{
+  "review_commit": "c6aa92cf26b22a6682099c26e9203b70b6d14f6f",
+  "scope": "Node isolated function/data/store execution; NOT Cocos execution or a natural playthrough",
+  "sourceHashes": {
+    "data.ts": {
+      "expected": "9104dabdbaafcec9b7a3f68b5e8868e826ed1b57",
+      "actual": "9104dabdbaafcec9b7a3f68b5e8868e826ed1b57",
+      "match": true
+    },
+    "store.ts": {
+      "expected": "b293703fea3755c6572fe961b60cdf46a14b5334",
+      "actual": "b293703fea3755c6572fe961b60cdf46a14b5334",
+      "match": true
+    }
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "case": "许褚满血接触",
+      "before": {
+        "hp": 18,
+        "troops": 30
+      },
+      "after": {
+        "hp": 18,
+        "dead": 0.01,
+        "troops": 29
+      },
+      "observed": "elite officer follows ordinary enemy contact exit, losing one troop without defeating its HP"
+    },
+    {
+      "id": "F2",
+      "case": "绕过满血许褚后提交第四关胜利",
+      "hpOnRemoval": 18,
+      "officerRemoved": true,
+      "settlementAcceptsNoOfficerDefeatFacts": true,
+      "captures": [
+        "lubu",
+        "dian",
+        "xu"
+      ],
+      "observed": "rule functions permit the missed officer to leave while first-clear settlement grants its capture; engine should prove actual defeat in the revised path"
+    },
+    {
+      "id": "F3",
+      "case": "剩2兵、−12门、七星灯与华佗",
+      "actualTroopsLost": 2,
+      "healingLossRecorded": 12,
+      "qixingRestored": 5,
+      "healed": 4,
+      "finalTroops": 9,
+      "healingAt30PercentOfActualLoss": 1,
+      "records": [
+        [
+          "troops",
+          "gate",
+          "team",
+          -2
+        ],
+        [
+          "revive",
+          "qixing",
+          "team",
+          5
+        ],
+        [
+          "troops",
+          "hua",
+          "team",
+          4
+        ]
+      ],
+      "observed": "healing uses nominal requested loss, not actual casualties"
+    },
+    {
+      "id": "F4",
+      "case": "同帧穿透1波先撞敌兵再到Boss",
+      "pierce": 1,
+      "hits": [
+        9,
+        "boss"
+      ],
+      "enemyDamage": 10,
+      "bossDamage": 3,
+      "observed": "spent wave proceeds into separate boss branch",
+      "boundary": "controlled collision-function case, not claimed observed in the recorded ten-level run"
+    },
+    {
+      "id": "D1",
+      "case": "十关模板深度检查",
+      "classification": "design completeness, not a runtime crash",
+      "wallAtAndLengthAllEqual": true,
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "黄巾初阵",
+          "faction": "群雄",
+          "boss": "张角",
+          "walls": [
+            {
+              "d": 83,
+              "type": "wall",
+              "len": 23,
+              "side": 1
+            }
+          ],
+          "events": [
+            {
+              "d": 14,
+              "type": "squad"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "grain"
+            },
+            {
+              "d": 50,
+              "type": "gates"
+            },
+            {
+              "d": 68,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 83,
+              "type": "wall"
+            },
+            {
+              "d": 92,
+              "type": "squad"
+            },
+            {
+              "d": 115,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 132,
+              "type": "gates"
+            },
+            {
+              "d": 149,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 168,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 185,
+              "type": "gates"
+            },
+            {
+              "d": 190,
+              "type": "gates"
+            },
+            {
+              "d": 195,
+              "type": "gates"
+            }
+          ]
+        },
+        {
+          "chapter": 2,
+          "title": "讨董联军",
+          "faction": "群雄",
+          "boss": "董卓",
+          "walls": [
+            {
+              "d": 83,
+              "type": "wall",
+              "len": 23,
+              "side": -1
+            }
+          ],
+          "events": [
+            {
+              "d": 14,
+              "type": "squad"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "grain"
+            },
+            {
+              "d": 50,
+              "type": "gates"
+            },
+            {
+              "d": 68,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 83,
+              "type": "wall"
+            },
+            {
+              "d": 92,
+              "type": "squad"
+            },
+            {
+              "d": 115,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 132,
+              "type": "gates"
+            },
+            {
+              "d": 149,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 162,
+              "type": "cameo",
+              "person": "lubu"
+            },
+            {
+              "d": 168,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 185,
+              "type": "gates"
+            },
+            {
+              "d": 190,
+              "type": "gates"
+            },
+            {
+              "d": 195,
+              "type": "gates"
+            }
+          ]
+        },
+        {
+          "chapter": 3,
+          "title": "白门收戟",
+          "faction": "群雄",
+          "boss": "吕布",
+          "walls": [
+            {
+              "d": 83,
+              "type": "wall",
+              "len": 23,
+              "side": 1
+            }
+          ],
+          "events": [
+            {
+              "d": 14,
+              "type": "squad"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "grain"
+            },
+            {
+              "d": 50,
+              "type": "gates"
+            },
+            {
+              "d": 68,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 83,
+              "type": "wall"
+            },
+            {
+              "d": 92,
+              "type": "squad"
+            },
+            {
+              "d": 115,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 132,
+              "type": "gates"
+            },
+            {
+              "d": 149,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 168,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 185,
+              "type": "gates"
+            },
+            {
+              "d": 190,
+              "type": "gates"
+            },
+            {
+              "d": 195,
+              "type": "gates"
+            },
+            {
+              "d": 207,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 217,
+              "type": "squad"
+            }
+          ]
+        },
+        {
+          "chapter": 4,
+          "title": "帐前双戟",
+          "faction": "魏",
+          "boss": "典韦",
+          "walls": [
+            {
+              "d": 83,
+              "type": "wall",
+              "len": 23,
+              "side": -1
+            }
+          ],
+          "events": [
+            {
+              "d": 14,
+              "type": "squad"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "grain"
+            },
+            {
+              "d": 50,
+              "type": "gates"
+            },
+            {
+              "d": 68,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 83,
+              "type": "wall"
+            },
+            {
+              "d": 92,
+              "type": "squad"
+            },
+            {
+              "d": 115,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 132,
+              "type": "gates"
+            },
+            {
+              "d": 149,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 155,
+              "type": "officer",
+              "person": "xu"
+            },
+            {
+              "d": 168,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 185,
+              "type": "gates"
+            },
+            {
+              "d": 190,
+              "type": "gates"
+            },
+            {
+              "d": 195,
+              "type": "gates"
+            },
+            {
+              "d": 207,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 217,
+              "type": "squad"
+            }
+          ]
+        },
+        {
+          "chapter": 5,
+          "title": "魏武会盟",
+          "faction": "魏",
+          "boss": "曹操",
+          "walls": [
+            {
+              "d": 83,
+              "type": "wall",
+              "len": 23,
+              "side": 1
+            }
+          ],
+          "events": [
+            {
+              "d": 14,
+              "type": "squad"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "grain"
+            },
+            {
+              "d": 50,
+              "type": "gates"
+            },
+            {
+              "d": 68,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 83,
+              "type": "wall"
+            },
+            {
+              "d": 92,
+              "type": "squad"
+            },
+            {
+              "d": 115,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 132,
+              "type": "gates"
+            },
+            {
+              "d": 149,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 155,
+              "type": "officer",
+              "person": "xiahou"
+            },
+            {
+              "d": 168,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 185,
+              "type": "gates"
+            },
+            {
+              "d": 190,
+              "type": "gates"
+            },
+            {
+              "d": 195,
+              "type": "gates"
+            },
+            {
+              "d": 195,
+              "type": "officer",
+              "person": "liao"
+            },
+            {
+              "d": 207,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 217,
+              "type": "squad"
+            },
+            {
+              "d": 237,
+              "type": "squad"
+            }
+          ]
+        },
+        {
+          "chapter": 6,
+          "title": "江东破阵",
+          "faction": "吴",
+          "boss": "孙策",
+          "walls": [
+            {
+              "d": 83,
+              "type": "wall",
+              "len": 23,
+              "side": -1
+            }
+          ],
+          "events": [
+            {
+              "d": 14,
+              "type": "squad"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "grain"
+            },
+            {
+              "d": 50,
+              "type": "gates"
+            },
+            {
+              "d": 68,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 83,
+              "type": "wall"
+            },
+            {
+              "d": 92,
+              "type": "squad"
+            },
+            {
+              "d": 115,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 132,
+              "type": "gates"
+            },
+            {
+              "d": 149,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 155,
+              "type": "officer",
+              "person": "lumeng"
+            },
+            {
+              "d": 168,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 185,
+              "type": "gates"
+            },
+            {
+              "d": 190,
+              "type": "gates"
+            },
+            {
+              "d": 195,
+              "type": "gates"
+            },
+            {
+              "d": 207,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 217,
+              "type": "squad"
+            },
+            {
+              "d": 237,
+              "type": "squad"
+            }
+          ]
+        },
+        {
+          "chapter": 7,
+          "title": "赤壁风火",
+          "faction": "吴",
+          "boss": "周瑜",
+          "walls": [
+            {
+              "d": 83,
+              "type": "wall",
+              "len": 23,
+              "side": 1
+            }
+          ],
+          "events": [
+            {
+              "d": 14,
+              "type": "squad"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "grain"
+            },
+            {
+              "d": 50,
+              "type": "gates"
+            },
+            {
+              "d": 68,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 83,
+              "type": "wall"
+            },
+            {
+              "d": 92,
+              "type": "squad"
+            },
+            {
+              "d": 115,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 132,
+              "type": "gates"
+            },
+            {
+              "d": 149,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 155,
+              "type": "officer",
+              "person": "luxun"
+            },
+            {
+              "d": 168,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 185,
+              "type": "gates"
+            },
+            {
+              "d": 190,
+              "type": "gates"
+            },
+            {
+              "d": 195,
+              "type": "gates"
+            },
+            {
+              "d": 207,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 217,
+              "type": "squad"
+            },
+            {
+              "d": 237,
+              "type": "squad"
+            },
+            {
+              "d": 257,
+              "type": "squad"
+            }
+          ]
+        },
+        {
+          "chapter": 8,
+          "title": "长坂同袍",
+          "faction": "蜀",
+          "boss": "张飞",
+          "walls": [
+            {
+              "d": 83,
+              "type": "wall",
+              "len": 23,
+              "side": -1
+            }
+          ],
+          "events": [
+            {
+              "d": 14,
+              "type": "squad"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "grain"
+            },
+            {
+              "d": 50,
+              "type": "gates"
+            },
+            {
+              "d": 68,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 83,
+              "type": "wall"
+            },
+            {
+              "d": 92,
+              "type": "squad"
+            },
+            {
+              "d": 115,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 132,
+              "type": "gates"
+            },
+            {
+              "d": 149,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 155,
+              "type": "officer",
+              "person": "zhao"
+            },
+            {
+              "d": 168,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 185,
+              "type": "gates"
+            },
+            {
+              "d": 190,
+              "type": "gates"
+            },
+            {
+              "d": 195,
+              "type": "gates"
+            },
+            {
+              "d": 207,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 217,
+              "type": "squad"
+            },
+            {
+              "d": 237,
+              "type": "squad"
+            },
+            {
+              "d": 257,
+              "type": "squad"
+            }
+          ]
+        },
+        {
+          "chapter": 9,
+          "title": "荆襄归心",
+          "faction": "蜀",
+          "boss": "关羽",
+          "walls": [
+            {
+              "d": 83,
+              "type": "wall",
+              "len": 23,
+              "side": 1
+            }
+          ],
+          "events": [
+            {
+              "d": 14,
+              "type": "squad"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "grain"
+            },
+            {
+              "d": 50,
+              "type": "gates"
+            },
+            {
+              "d": 68,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 83,
+              "type": "wall"
+            },
+            {
+              "d": 92,
+              "type": "squad"
+            },
+            {
+              "d": 115,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 132,
+              "type": "gates"
+            },
+            {
+              "d": 149,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 155,
+              "type": "officer",
+              "person": "huang"
+            },
+            {
+              "d": 168,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 185,
+              "type": "gates"
+            },
+            {
+              "d": 190,
+              "type": "gates"
+            },
+            {
+              "d": 195,
+              "type": "gates"
+            },
+            {
+              "d": 207,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 213,
+              "type": "cameo",
+              "person": "xing"
+            },
+            {
+              "d": 217,
+              "type": "squad"
+            },
+            {
+              "d": 230,
+              "type": "cameo",
+              "person": "chen"
+            },
+            {
+              "d": 237,
+              "type": "squad"
+            },
+            {
+              "d": 247,
+              "type": "cameo",
+              "person": "yang"
+            },
+            {
+              "d": 257,
+              "type": "squad"
+            }
+          ]
+        },
+        {
+          "chapter": 10,
+          "title": "隆中长歌",
+          "faction": "蜀",
+          "boss": "诸葛亮",
+          "walls": [
+            {
+              "d": 83,
+              "type": "wall",
+              "len": 23,
+              "side": -1
+            }
+          ],
+          "events": [
+            {
+              "d": 14,
+              "type": "squad"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 30,
+              "type": "crate",
+              "kind": "grain"
+            },
+            {
+              "d": 50,
+              "type": "gates"
+            },
+            {
+              "d": 68,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 83,
+              "type": "wall"
+            },
+            {
+              "d": 92,
+              "type": "squad"
+            },
+            {
+              "d": 115,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 132,
+              "type": "gates"
+            },
+            {
+              "d": 149,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 155,
+              "type": "officer",
+              "person": "pang"
+            },
+            {
+              "d": 168,
+              "type": "crate",
+              "kind": "arms"
+            },
+            {
+              "d": 185,
+              "type": "gates"
+            },
+            {
+              "d": 190,
+              "type": "gates"
+            },
+            {
+              "d": 195,
+              "type": "gates"
+            },
+            {
+              "d": 195,
+              "type": "officer",
+              "person": "machao"
+            },
+            {
+              "d": 207,
+              "type": "crate",
+              "kind": "weapon"
+            },
+            {
+              "d": 217,
+              "type": "squad"
+            },
+            {
+              "d": 237,
+              "type": "squad"
+            },
+            {
+              "d": 257,
+              "type": "squad"
+            },
+            {
+              "d": 277,
+              "type": "squad"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sanity": [
+    {
+      "name": "store-only sequential10 / reload / legacy raw preservation / idempotency",
+      "passed": true,
+      "weaponCount": 10,
+      "treasureCount": 8,
+      "relations": {
+        "captures": 14,
+        "visits": 9,
+        "allies": 5
+      },
+      "note": "does not simulate the gameplay that precedes settlement"
+    }
+  ]
+}

@@ -1,0 +1,1793 @@
+{
+  "task": "BATTLE-REWORK-20260925",
+  "status": "assets_imported_function_checks_passed_parent_targeted_visual_passed",
+  "baseline": {
+    "localWechatBuildBytes": 19777710,
+    "source": "evidence/UI-20260925/ASSET_BUDGET-wechatgame.json",
+    "limitBytes": 20971520,
+    "thresholdSource": "Existing local project budget, not a claim of official platform limit",
+    "marginBytes": 1193810,
+    "historical": true,
+    "note": "Historical UI baseline used only for before/after byte comparison; current actual package is actualWechatBuild."
+  },
+  "legacyAtlases": [
+    {
+      "source": "assets/resources/v031/archers.png",
+      "compiledPath": "build/wechatgame/subpackages/resources/native/07/079a184f-d120-4a14-ba21-e137ff8cdb86.png",
+      "runtimeBytes": 1500511,
+      "width": 1536,
+      "height": 1024,
+      "estimatedRgbaTextureBytes": 6291456,
+      "frames": 48,
+      "sourcePixelContract": "Current optimized used-frame RGBA exact; preserve menu uses",
+      "sharingAudit": "candidate battle replacement; final frame alias audit required"
+    },
+    {
+      "source": "assets/resources/v04/spear-hero.png",
+      "compiledPath": "build/wechatgame/subpackages/resources/native/df/dff5a617-2f8b-4767-807b-ab290886caff.png",
+      "runtimeBytes": 1640527,
+      "width": 1536,
+      "height": 1024,
+      "estimatedRgbaTextureBytes": 6291456,
+      "frames": 12,
+      "sourcePixelContract": "Current optimized used-frame RGBA exact; preserve menu uses",
+      "sharingAudit": "candidate battle replacement; final frame alias audit required"
+    },
+    {
+      "source": "assets/resources/v04/spear.png",
+      "compiledPath": "build/wechatgame/subpackages/resources/native/92/9268763b-05be-48b6-a2be-24a25f8532d2.png",
+      "runtimeBytes": 122895,
+      "width": 1254,
+      "height": 1254,
+      "estimatedRgbaTextureBytes": 6290064,
+      "frames": 1,
+      "sourcePixelContract": "Current optimized used-frame RGBA exact; preserve menu uses",
+      "sharingAudit": "menu-shared"
+    },
+    {
+      "source": "assets/resources/v04/zhaoyun.png",
+      "compiledPath": "build/wechatgame/subpackages/resources/native/db/db0d01b5-2581-4f79-b9a6-7eec8f4d8381.png",
+      "runtimeBytes": 1682401,
+      "width": 1254,
+      "height": 1254,
+      "estimatedRgbaTextureBytes": 6290064,
+      "frames": 1,
+      "sourcePixelContract": "Current optimized used-frame RGBA exact; preserve menu uses",
+      "sharingAudit": "candidate battle replacement; final frame alias audit required"
+    },
+    {
+      "source": "assets/resources/v05/cast.png",
+      "compiledPath": "build/wechatgame/subpackages/resources/native/2d/2dd04d23-56ff-4b1d-b60a-04820e67cf28.png",
+      "runtimeBytes": 1055164,
+      "width": 1254,
+      "height": 1254,
+      "estimatedRgbaTextureBytes": 6290064,
+      "frames": 16,
+      "sourcePixelContract": "Current optimized used-frame RGBA exact; preserve menu uses",
+      "sharingAudit": "menu-shared"
+    },
+    {
+      "source": "assets/resources/v05/weapons.png",
+      "compiledPath": "build/wechatgame/subpackages/resources/native/fd/fd3303dc-1047-4e3e-83ab-9f346876e32e.png",
+      "runtimeBytes": 1038959,
+      "width": 1536,
+      "height": 1024,
+      "estimatedRgbaTextureBytes": 6291456,
+      "frames": 3,
+      "sourcePixelContract": "Current optimized used-frame RGBA exact; preserve menu uses",
+      "sharingAudit": "menu-shared"
+    },
+    {
+      "source": "assets/resources/v051/allies.png",
+      "compiledPath": "build/wechatgame/subpackages/resources/native/da/daddd450-ea58-4380-8fd3-f89e803ca338.png",
+      "runtimeBytes": 1325924,
+      "width": 1254,
+      "height": 1254,
+      "estimatedRgbaTextureBytes": 6290064,
+      "frames": 12,
+      "sourcePixelContract": "Current optimized used-frame RGBA exact; preserve menu uses",
+      "sharingAudit": "candidate battle replacement; final frame alias audit required"
+    },
+    {
+      "source": "assets/resources/v051/blade-hero.png",
+      "compiledPath": "build/wechatgame/subpackages/resources/native/c4/c4f2fd53-2936-4484-9409-6332d0eee16b.png",
+      "runtimeBytes": 1374167,
+      "width": 1448,
+      "height": 1086,
+      "estimatedRgbaTextureBytes": 6290112,
+      "frames": 12,
+      "sourcePixelContract": "Current optimized used-frame RGBA exact; preserve menu uses",
+      "sharingAudit": "candidate battle replacement; final frame alias audit required"
+    },
+    {
+      "source": "assets/resources/v3/actors.png",
+      "compiledPath": "build/wechatgame/subpackages/resources/native/74/74ea62e0-29e8-4760-a973-1500b899b8c7.png",
+      "runtimeBytes": 1356030,
+      "width": 1254,
+      "height": 1254,
+      "estimatedRgbaTextureBytes": 6290064,
+      "frames": 16,
+      "sourcePixelContract": "Current optimized used-frame RGBA exact; preserve menu uses",
+      "sharingAudit": "candidate battle replacement; final frame alias audit required"
+    },
+    {
+      "source": "assets/resources/v3/scenery.png",
+      "compiledPath": "build/wechatgame/subpackages/resources/native/78/78e14d24-08d4-48b7-8ef7-dee292d5c033.png",
+      "runtimeBytes": 1747328,
+      "width": 1226,
+      "height": 1283,
+      "estimatedRgbaTextureBytes": 6291832,
+      "frames": 6,
+      "sourcePixelContract": "Current optimized used-frame RGBA exact; preserve menu uses",
+      "sharingAudit": "candidate battle replacement; final frame alias audit required"
+    },
+    {
+      "source": "assets/resources/v4/enemies.png",
+      "compiledPath": "build/wechatgame/subpackages/resources/native/02/02b99c7d-dec3-4346-b692-ca9aaadbf696.png",
+      "runtimeBytes": 1856928,
+      "width": 1254,
+      "height": 1254,
+      "estimatedRgbaTextureBytes": 6290064,
+      "frames": 12,
+      "sourcePixelContract": "Current optimized used-frame RGBA exact; preserve menu uses",
+      "sharingAudit": "candidate battle replacement; final frame alias audit required"
+    },
+    {
+      "source": "assets/resources/v4/scenery.png",
+      "compiledPath": "build/wechatgame/subpackages/resources/native/15/15aec887-a6bb-4792-a785-0aea83036ae7.png",
+      "runtimeBytes": 2128425,
+      "width": 1536,
+      "height": 1024,
+      "estimatedRgbaTextureBytes": 6291456,
+      "frames": 9,
+      "sourcePixelContract": "Current optimized used-frame RGBA exact; preserve menu uses",
+      "sharingAudit": "menu-shared"
+    }
+  ],
+  "newAssets": [
+    {
+      "assetId": "soldiers",
+      "sourcePath": "art-source/battle-rework20260925/soldiers-original-23fb54935dea.png",
+      "sourceSha256": "23fb54935deae61c04e40b4c8e1e5ac44364f17968731a48cb4a414cbaf2b2c4",
+      "sourceBytes": 2124567,
+      "sourceDimensions": [
+        1536,
+        1024
+      ],
+      "runtimePath": "assets/resources/battle20260925/soldiers.png",
+      "runtimeSha256": "df9cab6da83288b57544c7f54190f4ad60046c2d6f4403c43d11f9e0ea92f8f3",
+      "runtimeDimensions": [
+        424,
+        304
+      ],
+      "runtimeBytes": 49622,
+      "estimatedDecodedRgbaBytes": 515584,
+      "encoding": "RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to160px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5",
+      "spec": {
+        "columns": 4,
+        "rows": 2,
+        "height": 160,
+        "footY": 474,
+        "keys": [
+          "blueWalk0",
+          "blueWalk1",
+          "blueFire",
+          "blueHurt",
+          "redWalk0",
+          "redWalk1",
+          "redAttack",
+          "redHurt"
+        ]
+      },
+      "keys": [
+        "blueWalk0",
+        "blueWalk1",
+        "blueFire",
+        "blueHurt",
+        "redWalk0",
+        "redWalk1",
+        "redAttack",
+        "redHurt"
+      ]
+    },
+    {
+      "assetId": "scenery",
+      "sourcePath": "art-source/battle-rework20260925/scenery-original-ce9ed7acc60f.png",
+      "sourceSha256": "ce9ed7acc60f1960bc2cf91532c618ddc29b078eca527b1c8ee194f64e201a39",
+      "sourceBytes": 2554849,
+      "sourceDimensions": [
+        1536,
+        1024
+      ],
+      "runtimePath": "assets/resources/battle20260925/scenery.png",
+      "runtimeSha256": "ce5025c52e170050bc209ff8ac4e4b024c867295ce0625bb2b4ae54a21c70405",
+      "runtimeDimensions": [
+        792,
+        528
+      ],
+      "runtimeBytes": 180576,
+      "estimatedDecodedRgbaBytes": 1672704,
+      "encoding": "RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to256px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5",
+      "spec": {
+        "columns": 3,
+        "rows": 2,
+        "height": 256,
+        "footY": 484,
+        "keys": [
+          "tower",
+          "palisade",
+          "tent",
+          "rocks",
+          "cityGate",
+          "granary"
+        ]
+      },
+      "keys": [
+        "tower",
+        "palisade",
+        "tent",
+        "rocks",
+        "cityGate",
+        "granary"
+      ]
+    },
+    {
+      "assetId": "crates",
+      "sourcePath": "art-source/battle-rework20260925/crates-original-be2e67502a46.png",
+      "sourceSha256": "be2e67502a462877818a6b8e36dfc818ece58a3cdf5634cccbf4bff745deb5a5",
+      "sourceBytes": 2992493,
+      "sourceDimensions": [
+        1536,
+        1024
+      ],
+      "runtimePath": "assets/resources/battle20260925/crates.png",
+      "runtimeSha256": "1245b890834f166b6e7205a1f8b58ef546d6830eafb6d0b5c77b00a33c821a07",
+      "runtimeDimensions": [
+        708,
+        436
+      ],
+      "runtimeBytes": 163514,
+      "estimatedDecodedRgbaBytes": 1234752,
+      "encoding": "Explicit connected-component sprite selection (source RGBA retained) to avoid crossed grid weapon cuts; RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to224px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5",
+      "spec": {
+        "columns": 4,
+        "rows": 2,
+        "height": 224,
+        "footY": 490,
+        "keys": [
+          "boxTroops",
+          "boxEquipment",
+          "boxChain",
+          "boxCompanion",
+          "boxTroopsOpen",
+          "boxEquipmentOpen",
+          "boxChainOpen",
+          "boxCompanionOpen"
+        ],
+        "componentSeeds": [
+          210525,
+          146586,
+          22472,
+          124249,
+          823387,
+          834527,
+          828757,
+          839893
+        ]
+      },
+      "keys": [
+        "boxTroops",
+        "boxEquipment",
+        "boxChain",
+        "boxCompanion",
+        "boxTroopsOpen",
+        "boxEquipmentOpen",
+        "boxChainOpen",
+        "boxCompanionOpen"
+      ]
+    },
+    {
+      "assetId": "gate-parts",
+      "sourcePath": "art-source/battle-rework20260925/gate-parts-original-52dbd4bb868f.png",
+      "sourceSha256": "52dbd4bb868f0ca59da5c78aad98911369ad7b9c7b90770c7e4c52e28c6c85ce",
+      "sourceBytes": 2193772,
+      "sourceDimensions": [
+        1536,
+        1024
+      ],
+      "runtimePath": "assets/resources/battle20260925/gate-parts.png",
+      "runtimeSha256": "c0c972921bfa114447e2a1a649fe3c5d5af4a955be4c53be782a8b62467450fb",
+      "runtimeDimensions": [
+        1128,
+        948
+      ],
+      "runtimeBytes": 180238,
+      "estimatedDecodedRgbaBytes": 4277376,
+      "encoding": "Explicit connected-component sprite selection (source RGBA retained) to avoid crossed grid weapon cuts; RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to208px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5",
+      "spec": {
+        "columns": 4,
+        "rows": 3,
+        "height": 208,
+        "tight": true,
+        "keys": [
+          "gatePost",
+          "gateBlue",
+          "gateRed",
+          "gateNeutral",
+          "iconHelmet",
+          "iconSkull",
+          "weaponCrossbow",
+          "fireArrow",
+          "woodFragment0",
+          "woodFragment1",
+          "woodFragment2",
+          "boxLock"
+        ],
+        "componentSeeds": [
+          7853,
+          15782,
+          16185,
+          18127,
+          887957,
+          1083199,
+          788555,
+          739818,
+          885944,
+          852298,
+          1131861,
+          1305381
+        ],
+        "insets": {
+          "gateBlue": [
+            18,
+            18,
+            30,
+            36
+          ],
+          "gateRed": [
+            18,
+            18,
+            30,
+            36
+          ],
+          "gateNeutral": [
+            18,
+            18,
+            30,
+            36
+          ]
+        }
+      },
+      "keys": [
+        "gatePost",
+        "gateBlue",
+        "gateRed",
+        "gateNeutral",
+        "iconHelmet",
+        "iconSkull",
+        "weaponCrossbow",
+        "fireArrow",
+        "woodFragment0",
+        "woodFragment1",
+        "woodFragment2",
+        "boxLock"
+      ]
+    },
+    {
+      "assetId": "heroes",
+      "previousVersions": [
+        {
+          "assetId": "heroes",
+          "sourcePath": "art-source/battle-rework20260925/heroes-original-f5bf29678f2f.png",
+          "sourceSha256": "f5bf29678f2fa0bce402e8e3826b992963f90be64f7262ecae2b418a03ed8a35",
+          "sourceBytes": 1553617,
+          "sourceDimensions": [
+            1254,
+            1254
+          ],
+          "runtimePath": "assets/resources/battle20260925/heroes.png",
+          "runtimeSha256": "aa81a477a786ac835944c8abe5385bd8db380aafee8a77883fa1b3ed791f076f",
+          "runtimeDimensions": [
+            768,
+            588
+          ],
+          "runtimeBytes": 120035,
+          "estimatedDecodedRgbaBytes": 1806336,
+          "encoding": "Explicit connected-component sprite selection (source RGBA retained) to avoid crossed grid weapon cuts; RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to192px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5",
+          "spec": {
+            "columns": 4,
+            "rows": 3,
+            "height": 192,
+            "footY": 400,
+            "keys": [
+              "heroSpearWalk0",
+              "heroSpearWalk1",
+              "heroSpearAttack",
+              "heroSpearHurt",
+              "heroBladeWalk0",
+              "heroBladeWalk1",
+              "heroBladeAttack",
+              "heroBladeHurt",
+              "xingWalk0",
+              "xingWalk1",
+              "xingAttack",
+              "xingHurt"
+            ],
+            "componentSeeds": [
+              77782,
+              24377,
+              90031,
+              76458,
+              564472,
+              577307,
+              562800,
+              607994,
+              1052282,
+              1058847,
+              1022903,
+              1097058
+            ],
+            "feet": [
+              [
+                175,
+                400
+              ],
+              [
+                152,
+                400
+              ],
+              [
+                100,
+                400
+              ],
+              [
+                180,
+                400
+              ],
+              [
+                170,
+                386
+              ],
+              [
+                145,
+                386
+              ],
+              [
+                100,
+                386
+              ],
+              [
+                160,
+                386
+              ],
+              [
+                180,
+                390
+              ],
+              [
+                180,
+                390
+              ],
+              [
+                120,
+                390
+              ],
+              [
+                180,
+                390
+              ]
+            ]
+          },
+          "keys": [
+            "heroSpearWalk0",
+            "heroSpearWalk1",
+            "heroSpearAttack",
+            "heroSpearHurt",
+            "heroBladeWalk0",
+            "heroBladeWalk1",
+            "heroBladeAttack",
+            "heroBladeHurt",
+            "xingWalk0",
+            "xingWalk1",
+            "xingAttack",
+            "xingHurt"
+          ],
+          "runtimeBackup": "art-source/battle-rework20260925/heroes-previous-aa81a477a786.png"
+        }
+      ],
+      "sourcePath": "art-source/battle-rework20260925/heroes-original-2e7bed0f2c3f.png",
+      "sourceSha256": "2e7bed0f2c3f2e3bff6e8c63a71ff821948efd9d9c9c3e635ff1b053c5fe5d27",
+      "sourceBytes": 1601724,
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "runtimePath": "assets/resources/battle20260925/heroes.png",
+      "runtimeSha256": "d1ca90e59597dae7c3f6cf0721faa46bd736b1785f502b44a37ac97a84f09af3",
+      "runtimeDimensions": [
+        776,
+        591
+      ],
+      "runtimeBytes": 127398,
+      "estimatedDecodedRgbaBytes": 1834464,
+      "encoding": "Explicit connected-component sprite selection (source RGBA retained) to avoid crossed grid weapon cuts; RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to192px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5",
+      "spec": {
+        "columns": 4,
+        "rows": 3,
+        "height": 192,
+        "footY": 400,
+        "keys": [
+          "heroSpearWalk0",
+          "heroSpearWalk1",
+          "heroSpearAttack",
+          "heroSpearHurt",
+          "heroBladeWalk0",
+          "heroBladeWalk1",
+          "heroBladeAttack",
+          "heroBladeHurt",
+          "xingWalk0",
+          "xingWalk1",
+          "xingAttack",
+          "xingHurt"
+        ],
+        "componentSeeds": [
+          79187,
+          24391,
+          88778,
+          78966,
+          563218,
+          579824,
+          566560,
+          607998,
+          1051026,
+          1066370,
+          1021641,
+          1093294
+        ],
+        "feet": [
+          [
+            175,
+            401
+          ],
+          [
+            156,
+            401
+          ],
+          [
+            100,
+            401
+          ],
+          [
+            180,
+            401
+          ],
+          [
+            170,
+            390
+          ],
+          [
+            156,
+            390
+          ],
+          [
+            100,
+            390
+          ],
+          [
+            160,
+            390
+          ],
+          [
+            180,
+            390
+          ],
+          [
+            156,
+            390
+          ],
+          [
+            120,
+            390
+          ],
+          [
+            180,
+            390
+          ]
+        ]
+      },
+      "keys": [
+        "heroSpearWalk0",
+        "heroSpearWalk1",
+        "heroSpearAttack",
+        "heroSpearHurt",
+        "heroBladeWalk0",
+        "heroBladeWalk1",
+        "heroBladeAttack",
+        "heroBladeHurt",
+        "xingWalk0",
+        "xingWalk1",
+        "xingAttack",
+        "xingHurt"
+      ]
+    },
+    {
+      "assetId": "bosses",
+      "previousVersions": [
+        {
+          "assetId": "bosses",
+          "sourcePath": "art-source/battle-rework20260925/bosses-original-4e817a370d0b.png",
+          "sourceSha256": "4e817a370d0b58e99d93e9f545a2d22364ae150481b797b0d16865cb942bc527",
+          "sourceBytes": 2002211,
+          "sourceDimensions": [
+            1254,
+            1254
+          ],
+          "runtimePath": "assets/resources/battle20260925/bosses.png",
+          "runtimeSha256": "f36e4d3d0ede97ca5e2ee71c8369a0461bd0db9aff78076dad814c0a717e9d65",
+          "runtimeDimensions": [
+            712,
+            651
+          ],
+          "runtimeBytes": 172755,
+          "estimatedDecodedRgbaBytes": 1854048,
+          "encoding": "Explicit connected-component sprite selection (source RGBA retained) to avoid crossed grid weapon cuts; RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to208px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5",
+          "spec": {
+            "columns": 4,
+            "rows": 3,
+            "height": 208,
+            "footY": 405,
+            "keys": [
+              "bossXingWalk0",
+              "bossXingWalk1",
+              "bossXingAttack",
+              "bossXingHurt",
+              "bossChenWalk0",
+              "bossChenWalk1",
+              "bossChenAttack",
+              "bossChenHurt",
+              "bossYangWalk0",
+              "bossYangWalk1",
+              "bossYangAttack",
+              "bossYangHurt"
+            ],
+            "componentSeeds": [
+              15216,
+              188580,
+              797,
+              78916,
+              529323,
+              534707,
+              550066,
+              545368,
+              1018418,
+              1013735,
+              1024048,
+              1045767
+            ],
+            "componentBounds": [
+              null,
+              [
+                349,
+                0,
+                687,
+                418
+              ],
+              [
+                687,
+                0,
+                930,
+                418
+              ]
+            ]
+          },
+          "keys": [
+            "bossXingWalk0",
+            "bossXingWalk1",
+            "bossXingAttack",
+            "bossXingHurt",
+            "bossChenWalk0",
+            "bossChenWalk1",
+            "bossChenAttack",
+            "bossChenHurt",
+            "bossYangWalk0",
+            "bossYangWalk1",
+            "bossYangAttack",
+            "bossYangHurt"
+          ],
+          "runtimeBackup": "art-source/battle-rework20260925/bosses-previous-f36e4d3d0ede.png"
+        }
+      ],
+      "sourcePath": "art-source/battle-rework20260925/bosses-original-3f019b68cab9.png",
+      "sourceSha256": "3f019b68cab9416e525a5d3443222399275c3dd57ff4fd0f6ebafc340bbc1ee3",
+      "sourceBytes": 1994548,
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "runtimePath": "assets/resources/battle20260925/bosses.png",
+      "runtimeSha256": "9d2806319b2ea7455d86b5352f671fff4fcf9e617d52b46209ceb0537a05f3c4",
+      "runtimeDimensions": [
+        716,
+        651
+      ],
+      "runtimeBytes": 180156,
+      "estimatedDecodedRgbaBytes": 1864464,
+      "encoding": "Explicit connected-component sprite selection (source RGBA retained) to avoid crossed grid weapon cuts; RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to208px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5",
+      "spec": {
+        "columns": 4,
+        "rows": 3,
+        "height": 208,
+        "footY": 405,
+        "keys": [
+          "bossXingWalk0",
+          "bossXingWalk1",
+          "bossXingAttack",
+          "bossXingHurt",
+          "bossChenWalk0",
+          "bossChenWalk1",
+          "bossChenAttack",
+          "bossChenHurt",
+          "bossYangWalk0",
+          "bossYangWalk1",
+          "bossYangAttack",
+          "bossYangHurt"
+        ],
+        "componentSeeds": [
+          13965,
+          188580,
+          796,
+          75163,
+          531831,
+          752880,
+          547553,
+          545368,
+          1012150,
+          1254480,
+          1020285,
+          1039501
+        ],
+        "componentBounds": [
+          null,
+          [
+            347,
+            0,
+            687,
+            420
+          ],
+          [
+            687,
+            0,
+            935,
+            420
+          ],
+          null,
+          null,
+          [
+            313,
+            419,
+            635,
+            810
+          ],
+          null,
+          null,
+          null,
+          [
+            313,
+            810,
+            635,
+            1254
+          ]
+        ]
+      },
+      "keys": [
+        "bossXingWalk0",
+        "bossXingWalk1",
+        "bossXingAttack",
+        "bossXingHurt",
+        "bossChenWalk0",
+        "bossChenWalk1",
+        "bossChenAttack",
+        "bossChenHurt",
+        "bossYangWalk0",
+        "bossYangWalk1",
+        "bossYangAttack",
+        "bossYangHurt"
+      ]
+    },
+    {
+      "assetId": "companions",
+      "previousVersions": [
+        {
+          "assetId": "companions",
+          "sourcePath": "art-source/battle-rework20260925/companions-original-5cc77ead5e52.png",
+          "sourceSha256": "5cc77ead5e52a29df5d60e6f3668f5a62292c0a84aefd7d96c030ea6785ff560",
+          "sourceBytes": 1533271,
+          "sourceDimensions": [
+            1254,
+            1254
+          ],
+          "runtimePath": "assets/resources/battle20260925/companions.png",
+          "runtimeSha256": "0326ce5f159238cd6cf87fb293ef82f0ef6c9a28e306aeb6abd0fb7938f17bf4",
+          "runtimeDimensions": [
+            496,
+            342
+          ],
+          "runtimeBytes": 57083,
+          "estimatedDecodedRgbaBytes": 678528,
+          "encoding": "Explicit connected-component sprite selection (source RGBA retained) to avoid crossed grid weapon cuts; RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to192px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5",
+          "spec": {
+            "columns": 4,
+            "rows": 2,
+            "height": 192,
+            "footY": 575,
+            "keys": [
+              "panWalk0",
+              "panWalk1",
+              "panAttack",
+              "panHurt",
+              "zhaoWalk0",
+              "zhaoWalk1",
+              "zhaoAttack",
+              "zhaoHurt"
+            ],
+            "componentSeeds": [
+              113016,
+              112061,
+              142476,
+              191629,
+              832773,
+              828051,
+              851185,
+              878939
+            ]
+          },
+          "keys": [
+            "panWalk0",
+            "panWalk1",
+            "panAttack",
+            "panHurt",
+            "zhaoWalk0",
+            "zhaoWalk1",
+            "zhaoAttack",
+            "zhaoHurt"
+          ],
+          "runtimeBackup": "art-source/battle-rework20260925/companions-previous-0326ce5f1592.png"
+        }
+      ],
+      "sourcePath": "art-source/battle-rework20260925/companions-original-4aab330ffdb6.png",
+      "sourceSha256": "4aab330ffdb679063806918430dc96b8db5720e8bf00ef067d0d9a4c02849d1f",
+      "sourceBytes": 1591068,
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "runtimePath": "assets/resources/battle20260925/companions.png",
+      "runtimeSha256": "b16215f180ddf0d4c5405b62df784754dcf2408d98fd32e23324b175ce9cea0c",
+      "runtimeDimensions": [
+        500,
+        344
+      ],
+      "runtimeBytes": 59330,
+      "estimatedDecodedRgbaBytes": 688000,
+      "encoding": "Explicit connected-component sprite selection (source RGBA retained) to avoid crossed grid weapon cuts; RGBA source cell bbox alpha>=2 plus2px guard; uniform grid scale to192px cell height; atlas4px gutters; PNG palette256 quality95 dither0.5",
+      "spec": {
+        "columns": 4,
+        "rows": 2,
+        "height": 192,
+        "footY": 575,
+        "keys": [
+          "panWalk0",
+          "panWalk1",
+          "panAttack",
+          "panHurt",
+          "zhaoWalk0",
+          "zhaoWalk1",
+          "zhaoAttack",
+          "zhaoHurt"
+        ],
+        "componentSeeds": [
+          114269,
+          119583,
+          142477,
+          191630,
+          830281,
+          826815,
+          849932,
+          877685
+        ],
+        "feet": [
+          [
+            125,
+            582
+          ],
+          [
+            156,
+            582
+          ],
+          [
+            100,
+            582
+          ],
+          [
+            180,
+            582
+          ],
+          [
+            125,
+            566
+          ],
+          [
+            156,
+            566
+          ],
+          [
+            100,
+            566
+          ],
+          [
+            180,
+            566
+          ]
+        ]
+      },
+      "keys": [
+        "panWalk0",
+        "panWalk1",
+        "panAttack",
+        "panHurt",
+        "zhaoWalk0",
+        "zhaoWalk1",
+        "zhaoAttack",
+        "zhaoHurt"
+      ]
+    },
+    {
+      "assetId": "grass",
+      "previousVersions": [],
+      "sourcePath": "art-source/battle-rework20260925/grass-original-75522e805dbe.png",
+      "sourceSha256": "75522e805dbe6741da42ef7fff8b4147fb48f0a2de7b464bfc64773292e08e48",
+      "sourceBytes": 2743515,
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "runtimePath": "assets/resources/battle20260925/grass.jpg",
+      "runtimeSha256": "9366a85600a192c13fafb4052a8d2bd5eca9ad157e9db38e32c56c457a094cc6",
+      "runtimeDimensions": [
+        512,
+        512
+      ],
+      "runtimeBytes": 64361,
+      "estimatedDecodedRgbaBytes": 1048576,
+      "encoding": "JPEG q86 4:4:4; full composition resize only",
+      "spec": {
+        "type": "image",
+        "width": 512,
+        "key": "grassGround",
+        "anchor": [
+          0.5,
+          0.5
+        ]
+      },
+      "keys": [
+        "grassGround"
+      ]
+    },
+    {
+      "assetId": "distant",
+      "previousVersions": [
+        {
+          "assetId": "distant",
+          "sourcePath": "art-source/battle-rework20260925/distant-original-926b0f78fdcc.png",
+          "sourceSha256": "926b0f78fdcc408a7b5eae96327091f32e5c9ad15ee80e118a322d7dbbc4434a",
+          "sourceBytes": 2113205,
+          "sourceDimensions": [
+            1536,
+            1024
+          ],
+          "runtimePath": "assets/resources/battle20260925/distant.png",
+          "runtimeSha256": "a06c22358b9382dc661d788ae08fdfdfdfeef904af9f7edca7a57ff773dfb9a3",
+          "runtimeDimensions": [
+            768,
+            512
+          ],
+          "runtimeBytes": 151937,
+          "estimatedDecodedRgbaBytes": 1572864,
+          "encoding": "PNG palette256 q95 dither.5; full composition resize only",
+          "spec": {
+            "type": "image",
+            "width": 768,
+            "key": "distantBackdrop",
+            "alpha": true,
+            "anchor": [
+              0.5,
+              0
+            ]
+          },
+          "keys": [
+            "distantBackdrop"
+          ],
+          "runtimeBackup": "art-source/battle-rework20260925/distant-previous-a06c22358b93.png"
+        }
+      ],
+      "sourcePath": "art-source/battle-rework20260925/distant-original-926b0f78fdcc.png",
+      "sourceSha256": "926b0f78fdcc408a7b5eae96327091f32e5c9ad15ee80e118a322d7dbbc4434a",
+      "sourceBytes": 2113205,
+      "sourceDimensions": [
+        1536,
+        1024
+      ],
+      "runtimePath": "assets/resources/battle20260925/distant.png",
+      "runtimeSha256": "54f39a89b76cdaad57563d630b5583ffa8fbfde30b26ca130070db47e78ff08b",
+      "runtimeDimensions": [
+        768,
+        512
+      ],
+      "runtimeBytes": 556231,
+      "estimatedDecodedRgbaBytes": 1572864,
+      "encoding": "RGBA PNG lossless encoding after full composition resize; continuous source alpha retained",
+      "spec": {
+        "type": "image",
+        "width": 768,
+        "key": "distantBackdrop",
+        "alpha": true,
+        "anchor": [
+          0.5,
+          0
+        ]
+      },
+      "keys": [
+        "distantBackdrop"
+      ]
+    },
+    {
+      "assetId": "road",
+      "previousVersions": [
+        {
+          "assetId": "road",
+          "sourcePath": "art-source/battle-rework20260925/road-original-fe0d713b9fdb.png",
+          "sourceSha256": "fe0d713b9fdba896407254ab27eb9a6021373ca1a6852b4cc13f1ea4d64332bf",
+          "sourceBytes": 3066382,
+          "sourceDimensions": [
+            1254,
+            1254
+          ],
+          "runtimePath": "assets/resources/battle20260925/road.jpg",
+          "runtimeSha256": "f6c53e633ccab337f9b2fb26ab2eab42dd5afbcc0ab1d377923b167144b21163",
+          "runtimeDimensions": [
+            640,
+            640
+          ],
+          "runtimeBytes": 132483,
+          "estimatedDecodedRgbaBytes": 1638400,
+          "encoding": "JPEG q86 4:4:4; source scaled only; renderer alternates vertical mirroring for same-endpoint repeat",
+          "spec": {
+            "type": "road",
+            "width": 640
+          },
+          "keys": [
+            "roadStrip00",
+            "roadStrip01",
+            "roadStrip02",
+            "roadStrip03",
+            "roadStrip04",
+            "roadStrip05",
+            "roadStrip06",
+            "roadStrip07",
+            "roadStrip08",
+            "roadStrip09",
+            "roadStrip10",
+            "roadStrip11",
+            "roadStrip12",
+            "roadStrip13",
+            "roadStrip14",
+            "roadStrip15",
+            "roadStrip16",
+            "roadStrip17",
+            "roadStrip18",
+            "roadStrip19",
+            "roadStrip20",
+            "roadStrip21",
+            "roadStrip22",
+            "roadStrip23",
+            "roadStrip24",
+            "roadStrip25",
+            "roadStrip26",
+            "roadStrip27",
+            "roadStrip28",
+            "roadStrip29",
+            "roadStrip30",
+            "roadStrip31",
+            "roadGrassLeft",
+            "roadGrassRight"
+          ],
+          "seam": {
+            "endpointMeanAbsoluteRgbError": 10.353645833333333,
+            "blendPixels": 0,
+            "repeatStrategy": "renderer alternate vertical mirror"
+          },
+          "runtimeBackup": "art-source/battle-rework20260925/road-previous-f6c53e633cca.jpg"
+        }
+      ],
+      "sourcePath": "art-source/battle-rework20260925/road-original-a39bd7bc2cc5.png",
+      "sourceSha256": "a39bd7bc2cc5b741ce4b30108298065fbec2bc88329b6262f9eb565a8ca3de6d",
+      "sourceBytes": 2579306,
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "runtimePath": "assets/resources/battle20260925/road.jpg",
+      "runtimeSha256": "e5aab5c57d636c3b357523382666d7cbe4738bdb89fdf32f2b278509a07701e2",
+      "runtimeDimensions": [
+        640,
+        640
+      ],
+      "runtimeBytes": 93297,
+      "estimatedDecodedRgbaBytes": 1638400,
+      "encoding": "JPEG q86 4:4:4; source scaled only; renderer alternates vertical mirroring for same-endpoint repeat",
+      "spec": {
+        "type": "road",
+        "width": 640
+      },
+      "keys": [
+        "roadStrip00",
+        "roadStrip01",
+        "roadStrip02",
+        "roadStrip03",
+        "roadStrip04",
+        "roadStrip05",
+        "roadStrip06",
+        "roadStrip07",
+        "roadStrip08",
+        "roadStrip09",
+        "roadStrip10",
+        "roadStrip11",
+        "roadStrip12",
+        "roadStrip13",
+        "roadStrip14",
+        "roadStrip15",
+        "roadStrip16",
+        "roadStrip17",
+        "roadStrip18",
+        "roadStrip19",
+        "roadStrip20",
+        "roadStrip21",
+        "roadStrip22",
+        "roadStrip23",
+        "roadStrip24",
+        "roadStrip25",
+        "roadStrip26",
+        "roadStrip27",
+        "roadStrip28",
+        "roadStrip29",
+        "roadStrip30",
+        "roadStrip31",
+        "roadFine000",
+        "roadFine001",
+        "roadFine002",
+        "roadFine003",
+        "roadFine004",
+        "roadFine005",
+        "roadFine006",
+        "roadFine007",
+        "roadFine008",
+        "roadFine009",
+        "roadFine010",
+        "roadFine011",
+        "roadFine012",
+        "roadFine013",
+        "roadFine014",
+        "roadFine015",
+        "roadFine016",
+        "roadFine017",
+        "roadFine018",
+        "roadFine019",
+        "roadFine020",
+        "roadFine021",
+        "roadFine022",
+        "roadFine023",
+        "roadFine024",
+        "roadFine025",
+        "roadFine026",
+        "roadFine027",
+        "roadFine028",
+        "roadFine029",
+        "roadFine030",
+        "roadFine031",
+        "roadFine032",
+        "roadFine033",
+        "roadFine034",
+        "roadFine035",
+        "roadFine036",
+        "roadFine037",
+        "roadFine038",
+        "roadFine039",
+        "roadFine040",
+        "roadFine041",
+        "roadFine042",
+        "roadFine043",
+        "roadFine044",
+        "roadFine045",
+        "roadFine046",
+        "roadFine047",
+        "roadFine048",
+        "roadFine049",
+        "roadFine050",
+        "roadFine051",
+        "roadFine052",
+        "roadFine053",
+        "roadFine054",
+        "roadFine055",
+        "roadFine056",
+        "roadFine057",
+        "roadFine058",
+        "roadFine059",
+        "roadFine060",
+        "roadFine061",
+        "roadFine062",
+        "roadFine063",
+        "roadFine064",
+        "roadFine065",
+        "roadFine066",
+        "roadFine067",
+        "roadFine068",
+        "roadFine069",
+        "roadFine070",
+        "roadFine071",
+        "roadFine072",
+        "roadFine073",
+        "roadFine074",
+        "roadFine075",
+        "roadFine076",
+        "roadFine077",
+        "roadFine078",
+        "roadFine079",
+        "roadFine080",
+        "roadFine081",
+        "roadFine082",
+        "roadFine083",
+        "roadFine084",
+        "roadFine085",
+        "roadFine086",
+        "roadFine087",
+        "roadFine088",
+        "roadFine089",
+        "roadFine090",
+        "roadFine091",
+        "roadFine092",
+        "roadFine093",
+        "roadFine094",
+        "roadFine095",
+        "roadFine096",
+        "roadFine097",
+        "roadFine098",
+        "roadFine099",
+        "roadFine100",
+        "roadFine101",
+        "roadFine102",
+        "roadFine103",
+        "roadFine104",
+        "roadFine105",
+        "roadFine106",
+        "roadFine107",
+        "roadFine108",
+        "roadFine109",
+        "roadFine110",
+        "roadFine111",
+        "roadFine112",
+        "roadFine113",
+        "roadFine114",
+        "roadFine115",
+        "roadFine116",
+        "roadFine117",
+        "roadFine118",
+        "roadFine119",
+        "roadFine120",
+        "roadFine121",
+        "roadFine122",
+        "roadFine123",
+        "roadFine124",
+        "roadFine125",
+        "roadFine126",
+        "roadFine127",
+        "roadGrassLeft",
+        "roadGrassRight"
+      ],
+      "seam": {
+        "endpointMeanAbsoluteRgbError": 8.118229166666667,
+        "blendPixels": 0,
+        "repeatStrategy": "renderer alternate vertical mirror"
+      }
+    }
+  ],
+  "removedBuildAssets": [
+    {
+      "source": "assets/resources/art/cart.png",
+      "path": "subpackages/resources/native/4f/4f92e73c-2162-4816-9b0f-46698f695b22.png",
+      "bytes": 1416,
+      "sha256": "075d160e3d6c9fe04d27d8127444a3a35c174a080025762026e59766ffc755af",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/ink.png",
+      "path": "subpackages/resources/native/b6/b6462068-5533-4bba-bcce-2ec2b27e63b4.png",
+      "bytes": 2472,
+      "sha256": "826eb3326c6c0f4e186254e4b3c801f1cbd529e982d7f5342a7434269c8a0a6e",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/landscape-0.png",
+      "path": "subpackages/resources/native/84/84b49c27-f7c3-44c9-ba83-ec58dcbc9845.png",
+      "bytes": 88827,
+      "sha256": "af5d4ceeef1d216e67bd64b4c2ce7069ff3c93f7b7b145ef7c897dc53ed8847a",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/landscape-1.png",
+      "path": "subpackages/resources/native/1a/1ae912b9-7822-44b2-9311-df40a35f8c47.png",
+      "bytes": 88751,
+      "sha256": "f9f117132c7e68aafc7468359946dd1b11bd77e1b4d2dfd0dfb9049be1d5ebaa",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/landscape-2.png",
+      "path": "subpackages/resources/native/69/69356416-2560-4f5c-ba5c-2f0654a3a6b4.png",
+      "bytes": 33101,
+      "sha256": "e78749684a44fe3483dd85eb6d12dbc9371d4e77a62b41143b0389af9fe33dd1",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/rock.png",
+      "path": "subpackages/resources/native/77/770fdb90-6908-4b59-93c4-b38460585467.png",
+      "bytes": 1778,
+      "sha256": "221f5e99d9f6fb334b6ee3ed13c85aec07676dfe80e06dec9ebec30e05602261",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/soldier.png",
+      "path": "subpackages/resources/native/46/4628b3c8-68ed-4eed-9804-c8ab8369fd53.png",
+      "bytes": 1135,
+      "sha256": "b9725188c0a3b4ca6bff9eda5fa8ec3e737addca1876e1dd8d12c5b9b84eec03",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/sparrow.png",
+      "path": "subpackages/resources/native/4e/4ed9d725-538e-4ca9-81ed-c68712e75a10.png",
+      "bytes": 1279,
+      "sha256": "b36191d8f0b6dc9aad09da2e9dc6f47512ae4867ad75e9527224a3bde2d3b53c",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/traveler.png",
+      "path": "subpackages/resources/native/dc/dc300c8e-7d11-44de-bc19-fd31941b6c65.png",
+      "bytes": 2167,
+      "sha256": "bec457421097c5857390946bf9f18b204d206fc283cb23592349da00b0e022b4",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/art/wood.png",
+      "path": "subpackages/resources/native/91/917f855e-aaec-4589-8545-8364bfefbf8d.png",
+      "bytes": 2467,
+      "sha256": "06609d423832ab28d4e83108e3a465104a49ce99791baa7580e284021897f01b",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/audio/music.mp3",
+      "path": "subpackages/resources/native/a8/a88269ff-c70b-4c3c-b7f1-b56c58916218.mp3",
+      "bytes": 128774,
+      "sha256": "b16ba541ef475d7c4d3917f103671e0f4deeb518a5196b1abd752527e8a10f67",
+      "reason": "BGM disabled: no load request"
+    },
+    {
+      "source": "assets/resources/audio-v031/music-battle.m4a",
+      "path": "subpackages/resources/native/c6/c6018ba7-e96b-44a7-8085-79fe615cca75.m4a",
+      "bytes": 1865512,
+      "sha256": "91b99afa2695415731820e9e8a1b13de0ea1511a2dd08dbbdfd554cd51d2bae1",
+      "reason": "BGM disabled: no load request"
+    },
+    {
+      "source": "assets/resources/v04/zhaoyun.png",
+      "path": "subpackages/resources/native/db/db0d01b5-2581-4f79-b9a6-7eec8f4d8381.png",
+      "bytes": 1748995,
+      "sha256": "dfa0a0321d0070d79ef3ff754a2ad50707dbab4938927c5cbf06ad3e27e0c76a",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/v051/allies.png",
+      "path": "subpackages/resources/native/da/daddd450-ea58-4380-8fd3-f89e803ca338.png",
+      "bytes": 1354438,
+      "sha256": "5614d21e445536a40cc15d58e9de92e64d81900c33ccaa23681a4fb3a70278fd",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    },
+    {
+      "source": "assets/resources/v2/hero-a-rig.png",
+      "path": "subpackages/resources/native/99/9905285d-3e53-4f9e-8507-3e7a3c04cf3f.png",
+      "bytes": 827673,
+      "sha256": "7d9d85ad6a5c378a66ca6fbfe4d05ecaf89ac0e91568d8819a9ef60384957a01",
+      "reason": "HeroRig has no runtime load/constructor call; Pose is a type only"
+    },
+    {
+      "source": "assets/resources/v4/heroes.png",
+      "path": "subpackages/resources/native/c6/c698781f-f9ba-45fc-ae45-8ead3fdf5c34.png",
+      "bytes": 1571126,
+      "sha256": "3678351c4166367ef40f6682eecba8432bde1bd9795a56273b956c5648f9932a",
+      "reason": "Absent from merged runtime sheets and SFX whitelist"
+    }
+  ],
+  "newBuildBytes": 18472446,
+  "differenceBytes": -1305264,
+  "runtimeTextureMeasurement": {
+    "status": "measured_desktop_cocos_engine_counter",
+    "source": "evidence/BATTLE-REWORK-20260925/targeted-checks.json",
+    "field": "density[].metrics.gpuTextures",
+    "counter": "engine.memoryStatus.textureSize",
+    "environment": "Desktop Chrome running actual Cocos build",
+    "minBytes": 107484888,
+    "maxBytes": 107499000,
+    "scope": "Whole runtime texture counter, including runtime/canvas textures; not exclusive to new battle art. Not a phone or OS/driver measurement.",
+    "comparison": "The90007336-byte estimate covers28 loaded image dimensions times4 only. Different coverage from the runtime/canvas engine counter; do not interpret their difference as a texture leak.",
+    "samples": [
+      {
+        "teamCount": 1,
+        "seconds": 1.8,
+        "gpuTextureBytes": 107484888
+      },
+      {
+        "teamCount": 8,
+        "seconds": 1.8,
+        "gpuTextureBytes": 107484888
+      },
+      {
+        "teamCount": 24,
+        "seconds": 1.9,
+        "gpuTextureBytes": 107491800
+      },
+      {
+        "teamCount": 48,
+        "seconds": 1.8,
+        "gpuTextureBytes": 107491800
+      },
+      {
+        "teamCount": 256,
+        "seconds": 1.8,
+        "gpuTextureBytes": 107499000
+      }
+    ],
+    "physicalDeviceMeasured": false
+  },
+  "notes": [
+    "All production images imported;14 imagegen outputs and superseded attempts preserved. No placeholder art.",
+    "Menu resources frozen;12 source hashes and22 shared frame descriptors checked unchanged.",
+    "Old native exclusion follows active frame metadata aliases; original source art is retained.",
+    "Parent targeted fixture functionality and visual review passed. Natural recording and physical-device acceptance are separate evidence.",
+    "Desktop GPU texture counter measured as documented; memory estimates are not a phone measurement."
+  ],
+  "generatedAt": "2026-09-25T13:58:31.403Z",
+  "newRuntimeBytes": 1654723,
+  "newEstimatedDecodedRgbaBytes": 16347184,
+  "sourcePreserved": true,
+  "legacyAliases": {
+    "zhaoyun": "zhaoWalk0",
+    "companion0Pose0": "xingWalk0",
+    "companion0Pose1": "xingWalk1",
+    "companion0Pose2": "xingAttack",
+    "companion0Pose3": "xingHurt",
+    "companion1Pose0": "panWalk0",
+    "companion1Pose1": "panWalk1",
+    "companion1Pose2": "panAttack",
+    "companion1Pose3": "panHurt",
+    "companion2Pose0": "zhaoWalk0",
+    "companion2Pose1": "zhaoWalk1",
+    "companion2Pose2": "zhaoAttack",
+    "companion2Pose3": "zhaoHurt"
+  },
+  "actualBuildPending": false,
+  "frozenMenuTextures": [
+    {
+      "source": "assets/resources/ui20260925/brand-title.png",
+      "compiledPath": "build/wechatgame/subpackages/resources/native/90/90d6679e-ab10-42d6-b446-35b8481a2834.png",
+      "runtimeBytes": 71342,
+      "width": 600,
+      "height": 200,
+      "estimatedRgbaTextureBytes": 480000,
+      "frames": 0,
+      "sourcePixelContract": "Current optimized used-frame RGBA exact; preserve menu uses",
+      "sharingAudit": "Frozen menu resource; excluded from battle replacement"
+    },
+    {
+      "source": "assets/resources/ui20260925/gold-button.png",
+      "compiledPath": "build/wechatgame/subpackages/resources/native/a6/a65a6514-ff8e-4507-aed1-d8a3926c6461.png",
+      "runtimeBytes": 55357,
+      "width": 400,
+      "height": 80,
+      "estimatedRgbaTextureBytes": 128000,
+      "frames": 0,
+      "sourcePixelContract": "Current optimized used-frame RGBA exact; preserve menu uses",
+      "sharingAudit": "Frozen menu resource; excluded from battle replacement"
+    },
+    {
+      "source": "assets/resources/ui20260925/hero-blade.png",
+      "compiledPath": "build/wechatgame/subpackages/resources/native/58/583fb5e8-96d8-4a58-a33c-8e71e8bb2caf.png",
+      "runtimeBytes": 125712,
+      "width": 512,
+      "height": 768,
+      "estimatedRgbaTextureBytes": 1572864,
+      "frames": 0,
+      "sourcePixelContract": "Current optimized used-frame RGBA exact; preserve menu uses",
+      "sharingAudit": "Frozen menu resource; excluded from battle replacement"
+    },
+    {
+      "source": "assets/resources/ui20260925/hero-home.png",
+      "compiledPath": "build/wechatgame/subpackages/resources/native/cd/cda34036-3556-49eb-9742-a2109e835549.png",
+      "runtimeBytes": 120503,
+      "width": 512,
+      "height": 768,
+      "estimatedRgbaTextureBytes": 1572864,
+      "frames": 0,
+      "sourcePixelContract": "Current optimized used-frame RGBA exact; preserve menu uses",
+      "sharingAudit": "Frozen menu resource; excluded from battle replacement"
+    }
+  ],
+  "estimatedReplacedOldNativeBytes": 3008325,
+  "estimateNote": "Historical prebuild estimate retained separately; current final WeChat package is18472446B, margin2499074B. Image dimension estimates and measured desktop runtime texture counter have different scopes.",
+  "legacyAtlasCompiledBytes": 16829259,
+  "legacyAtlasEstimatedRgbaBytes": 75488152,
+  "sourceRuntimeManifest": "art-source/battle-rework20260925/runtime-manifest.json",
+  "frozenMenuCheck": "evidence/BATTLE-REWORK-20260925/frozen-menu-art-check.json",
+  "validation": {
+    "sourceRuntimeHashCheck": true,
+    "frameBoundsCheck": true,
+    "typecheck": true,
+    "actualAtlasViews": [
+      "road",
+      "soldiers",
+      "scenery",
+      "heroes-corrected-gait",
+      "companions-corrected-gait",
+      "bosses-corrected-spear",
+      "crates",
+      "gate-parts"
+    ],
+    "realBrowser": "Parent targeted-checks.json function passed and visualStatus passed; isolated fixtures, not natural recording",
+    "physicalDevice": "not-tested",
+    "actualWebBuild": true,
+    "actualWechatBuild": true,
+    "localPackageMargin": true,
+    "loaderRegression": "evidence/BATTLE-REWORK-20260925/asset-loader-regression.json",
+    "frozenMenuDescriptorCount": 22,
+    "frozenMenuSourceCount": 12,
+    "roadFinePixelIdentity": "evidence/BATTLE-REWORK-20260925/road-fine-uv-check.json"
+  },
+  "actualWechatBuild": {
+    "date": "2026-09-25T13:58:50.406Z",
+    "beforeOptimizationBytes": 28158468,
+    "afterOptimizationBytes": 18472446,
+    "localMarginBytes": 2499074,
+    "targetMarginBytes": 1048576,
+    "meetsMargin": true,
+    "evidence": "evidence/BATTLE-REWORK-20260925/ASSET_BUDGET-wechatgame.json",
+    "officialUploadBytes": null
+  },
+  "actualWebBuild": {
+    "bytes": 18576090,
+    "evidence": "evidence/BATTLE-REWORK-20260925/ASSET_BUDGET-web-mobile.json",
+    "note": "Final parent unified web build, includes roadFine UV metadata"
+  },
+  "measuredCompiledNewNativeBytes": 1654723,
+  "frozenMeetingAudit": {
+    "game": "assets/scripts/Game.ts:64 invokes pageScene with externalBackdrop/externalHero",
+    "pageScene": "assets/scripts/BattleView.ts:213 invokes cast for menu companion without Journey",
+    "castBranch": "assets/scripts/BattleView.ts:77 uses cast row Pose3 with existing weapon and blueFlag for ally without Journey",
+    "legacyMethods": "camp/older page methods retain zhaoyun references but Game has no calls; production meeting does not use replaced zhaoyun/companion alias",
+    "pixelEvidence": "evidence/BATTLE-REWORK-20260925/frozen-menu-art-check.json"
+  },
+  "previousVerifiedBuild": {
+    "round": "R1",
+    "beforeOptimizationBytes": 27563170,
+    "afterOptimizationBytes": 17877148,
+    "localMarginBytes": 3094372,
+    "targetMarginBytes": 1048576,
+    "meetsMargin": true,
+    "evidence": "evidence/BATTLE-REWORK-20260925/ASSET_BUDGET-wechatgame.json",
+    "officialUploadBytes": null,
+    "historical": true,
+    "status": "R1 build-only receipt; R1 visual review failed, superseded by current final build"
+  },
+  "totalLoadedTextureEstimate": {
+    "count": 28,
+    "rgbaBytes": 90007336,
+    "method": "Unique loaded texture width*height*4. Excludes SpriteFrames, geometry, mipmaps, driver overhead and compression; not measured GPU/device memory.",
+    "textures": [
+      {
+        "path": "assets/resources/battle20260925/bosses.png",
+        "width": 716,
+        "height": 651,
+        "estimatedRgbaBytes": 1864464
+      },
+      {
+        "path": "assets/resources/battle20260925/companions.png",
+        "width": 500,
+        "height": 344,
+        "estimatedRgbaBytes": 688000
+      },
+      {
+        "path": "assets/resources/battle20260925/crates.png",
+        "width": 708,
+        "height": 436,
+        "estimatedRgbaBytes": 1234752
+      },
+      {
+        "path": "assets/resources/battle20260925/distant.png",
+        "width": 768,
+        "height": 512,
+        "estimatedRgbaBytes": 1572864
+      },
+      {
+        "path": "assets/resources/battle20260925/gate-parts.png",
+        "width": 1128,
+        "height": 948,
+        "estimatedRgbaBytes": 4277376
+      },
+      {
+        "path": "assets/resources/battle20260925/grass.jpg",
+        "width": 512,
+        "height": 512,
+        "estimatedRgbaBytes": 1048576
+      },
+      {
+        "path": "assets/resources/battle20260925/heroes.png",
+        "width": 776,
+        "height": 591,
+        "estimatedRgbaBytes": 1834464
+      },
+      {
+        "path": "assets/resources/battle20260925/road.jpg",
+        "width": 640,
+        "height": 640,
+        "estimatedRgbaBytes": 1638400
+      },
+      {
+        "path": "assets/resources/battle20260925/scenery.png",
+        "width": 792,
+        "height": 528,
+        "estimatedRgbaBytes": 1672704
+      },
+      {
+        "path": "assets/resources/battle20260925/soldiers.png",
+        "width": 424,
+        "height": 304,
+        "estimatedRgbaBytes": 515584
+      },
+      {
+        "path": "assets/resources/ui20260925/brand-title.png",
+        "width": 600,
+        "height": 200,
+        "estimatedRgbaBytes": 480000
+      },
+      {
+        "path": "assets/resources/ui20260925/camp-bg.jpg",
+        "width": 540,
+        "height": 810,
+        "estimatedRgbaBytes": 1749600
+      },
+      {
+        "path": "assets/resources/ui20260925/gold-button.png",
+        "width": 400,
+        "height": 80,
+        "estimatedRgbaBytes": 128000
+      },
+      {
+        "path": "assets/resources/ui20260925/hero-blade.png",
+        "width": 512,
+        "height": 768,
+        "estimatedRgbaBytes": 1572864
+      },
+      {
+        "path": "assets/resources/ui20260925/hero-home.png",
+        "width": 512,
+        "height": 768,
+        "estimatedRgbaBytes": 1572864
+      },
+      {
+        "path": "assets/resources/ui20260925/home-bg.jpg",
+        "width": 540,
+        "height": 810,
+        "estimatedRgbaBytes": 1749600
+      },
+      {
+        "path": "assets/resources/ui20260925/map-bg.jpg",
+        "width": 540,
+        "height": 810,
+        "estimatedRgbaBytes": 1749600
+      },
+      {
+        "path": "assets/resources/ui20260925/result-bg.jpg",
+        "width": 540,
+        "height": 810,
+        "estimatedRgbaBytes": 1749600
+      },
+      {
+        "path": "assets/resources/v031/archers.png",
+        "width": 1536,
+        "height": 1024,
+        "estimatedRgbaBytes": 6291456
+      },
+      {
+        "path": "assets/resources/v04/spear-hero.png",
+        "width": 1536,
+        "height": 1024,
+        "estimatedRgbaBytes": 6291456
+      },
+      {
+        "path": "assets/resources/v04/spear.png",
+        "width": 1254,
+        "height": 1254,
+        "estimatedRgbaBytes": 6290064
+      },
+      {
+        "path": "assets/resources/v05/cast.png",
+        "width": 1254,
+        "height": 1254,
+        "estimatedRgbaBytes": 6290064
+      },
+      {
+        "path": "assets/resources/v05/weapons.png",
+        "width": 1536,
+        "height": 1024,
+        "estimatedRgbaBytes": 6291456
+      },
+      {
+        "path": "assets/resources/v051/blade-hero.png",
+        "width": 1448,
+        "height": 1086,
+        "estimatedRgbaBytes": 6290112
+      },
+      {
+        "path": "assets/resources/v3/actors.png",
+        "width": 1254,
+        "height": 1254,
+        "estimatedRgbaBytes": 6290064
+      },
+      {
+        "path": "assets/resources/v3/scenery.png",
+        "width": 1226,
+        "height": 1283,
+        "estimatedRgbaBytes": 6291832
+      },
+      {
+        "path": "assets/resources/v4/enemies.png",
+        "width": 1254,
+        "height": 1254,
+        "estimatedRgbaBytes": 6290064
+      },
+      {
+        "path": "assets/resources/v4/scenery.png",
+        "width": 1536,
+        "height": 1024,
+        "estimatedRgbaBytes": 6291456
+      }
+    ]
+  },
+  "shortDesktopPerformance": {
+    "source": "evidence/BATTLE-REWORK-20260925/targeted-checks.json",
+    "sampleCount": 5,
+    "teamCounts": [
+      1,
+      8,
+      24,
+      48,
+      256
+    ],
+    "durationSecondsMin": 1.8,
+    "durationSecondsMax": 1.9,
+    "maximumSampleP95Milliseconds": 18.6,
+    "maximumObservedFrameMilliseconds": 37.2,
+    "maximumDrawCalls": 249,
+    "scope": "Five isolated desktop samples, approximately1.8 seconds each (one1.9-second actual span). No full-run60FPS, sustained-load, leak-test or phone-performance claim."
+  },
+  "historicalPrebuildEstimate": {
+    "estimatedWechatBytes": 18458554,
+    "estimatedMarginBytes": 2512966,
+    "note": "R1 package plus R2 image delta estimate, made before final code/metadata build; superseded by actualWechatBuild."
+  }
+}

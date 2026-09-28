@@ -1,5 +1,7 @@
+// Explicit legacy-v051 fixture: static gate timing, elite-direct tiers, and old Boss cadence are historical contracts.
+// Shipping horde-v06 behavior is tested in horde-v06.test.ts and the 24-run model matrix.
 import {test} from 'node:test';import assert from 'node:assert/strict';
-import {Journey,STEP,MELEE,Level} from '../assets/scripts/core/model';import {LEVELS} from '../assets/scripts/core/levels';
+import {Journey,STEP,MELEE,Level} from '../assets/scripts/core/model';import {LEGACY_LEVELS as LEVELS} from '../assets/scripts/core/levels';
 import {Book,KEY,defaults} from '../assets/scripts/core/save';import {Campaign} from '../assets/scripts/core/campaign';import {CAMPAIGN} from '../assets/scripts/core/campaignData';
 const level=(more:Partial<Level>={}):Level=>({...LEVELS[0],start:1,duration:100,rows:[],obstacles:[],...more});
 const foe=(id=1,at=.9,kind:any='fighter',hp=100)=>({id,at,x:0,width:.2,kind,hp,loss:1});
@@ -23,5 +25,5 @@ const db=()=>{const map=new Map<string,string>();return{map,getItem:(k:string)=>
 test('old base saves migrate idempotently; achievements/settings unmodified',()=>{for(let n=0;n<4;n++){const s=db(),base=defaults();for(let i=0;i<n;i++){base.cleared[LEVELS[i].id]=true;base.best[LEVELS[i].id]=42;}base.settings.music=false;s.map.set(KEY,JSON.stringify(base));const b=new Book(s),c=new Campaign(s,b);assert.equal(c.pending,null);assert.deepEqual(b.data,base);assert.equal(c.data.completed.garrison,n===3);assert.equal(c.data.seen.zhaoyunMeeting,n===3);assert.deepEqual(new Campaign(s,b).data,c.data);}});
 test('pending survives reload; cannot complete locked transition; repeat does not reward',()=>{const s=db(),b=new Book(s),c=new Campaign(s,b);assert.equal(c.complete('camp'),false);b.win(0,25);assert.equal(new Campaign(s,new Book(s)).pending,'rally');assert.equal(c.complete('rally'),true);const raw=s.getItem(KEY);assert.equal(c.complete('rally'),true);assert.equal(s.getItem(KEY),raw);assert.equal(c.pending,null);});
 test('corrupt sidecar recovers from base, failed storage allows progress and meeting',()=>{const s=db(),b=new Book(s);b.win(0,45);s.map.set(CAMPAIGN.sidecarSaveKey,'bad');const c=new Campaign(s,b);assert.equal(c.data.completed.rally,true);assert.equal(b.data.best['trial-01'],45);
- const fail={getItem:()=>null,setItem:()=>{throw Error('quota')}};const fb=new Book(fail),fc=new Campaign(fail,fb);for(let i=0;i<3;i++){fb.win(i,8);assert.equal(fc.complete(CAMPAIGN.transitions[i].id),true);}assert.equal(fc.meet(),true);assert.ok(fc.notice);assert.equal(fb.unlock(3),false);
+ let blocked=true;const fail={getItem:()=>null,setItem:()=>{if(blocked)throw Error('quota')}};const fb=new Book(fail),fc=new Campaign(fail,fb);for(let i=0;i<3;i++){fb.win(i,8);const id=CAMPAIGN.transitions[i].id;assert.equal(fc.complete(id),false);assert.equal(fc.data.completed[id],true);}assert.equal(fc.meet(),false);assert.equal(fc.data.seen.zhaoyunMeeting,true);assert.ok(fc.notice);blocked=false;assert.equal(fc.persist(),true);assert.equal(fc.notice,'');assert.equal(fb.unlock(3),false);
 });

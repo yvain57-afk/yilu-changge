@@ -1,12 +1,13 @@
-import{readFileSync,writeFileSync,readdirSync,statSync,mkdirSync,renameSync,existsSync}from'node:fs';
-const root='build/wechatgame',read=p=>JSON.parse(readFileSync(p,'utf8'));
+import {spawnSync} from 'node:child_process';
+import {readFileSync,writeFileSync,mkdirSync,readdirSync,statSync} from 'node:fs';
+const evidence=process.env.YILU_EVIDENCE_DIR||'evidence/v09';mkdirSync(evidence,{recursive:true});
+// The same deterministic build hook is safe to rerun: excluded files are absent and encoded pixels identical.
+const result=spawnSync(process.execPath,['tools/v09-assets.mjs','wechatgame'],{stdio:'inherit',env:{...process.env,YILU_EVIDENCE_DIR:evidence}});
+if(result.status!==0)process.exit(result.status||1);
 const walk=p=>readdirSync(p,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(p+'/'+e.name):[p+'/'+e.name]);
-const obsolete=walk('assets/resources').filter(p=>!p.endsWith('.meta')&&(/\/art\/|\/v2\/|\/audio-v031\//.test(p)||p.endsWith('/audio/music.mp3')||p.endsWith('/v4/heroes.png')));
-const uuids=new Set(obsolete.map(p=>read(p+'.meta').uuid));
-const excluded=walk(root+'/subpackages/resources/native').filter(p=>uuids.has(p.split('/').pop().split('.')[0]));
-const config=read(root+'/project.config.json');const prior=(config.packOptions?.ignore??[]).filter(e=>!excluded.some(p=>p.slice(root.length+1)===e.value));
-config.packOptions={...config.packOptions,ignore:[...prior,...excluded.map(p=>({type:'file',value:p.slice(root.length+1)}))]};writeFileSync(root+'/project.config.json',JSON.stringify(config,null,2));
-const total=walk(root).reduce((n,p)=>n+statSync(p).size,0),excludedBytes=excluded.reduce((n,p)=>n+statSync(p).size,0);
-const report={totalBytes:total,excludedBytes,uploadBytes:total-excludedBytes,limitBytes:20*1024*1024,excludedSource:obsolete,excluded:excluded.map(p=>p.slice(root.length+1)),reason:'Unused historical art and disabled music only; source files preserved, current art unchanged.'};if(report.uploadBytes>=report.limitBytes)throw Error('Package still over WeChat limit');
-const backup='.cache/v051-wechat-unused-native-'+Date.now();for(const p of excluded){const to=backup+'/'+p.slice(root.length+1);mkdirSync(to.slice(0,to.lastIndexOf('/')),{recursive:true});if(existsSync(to))throw Error('Existing exclusion backup; rebuild needs a fresh backup directory');renameSync(p,to);}
-writeFileSync('evidence/v051/wechat-package.json',JSON.stringify(report,null,2));console.log({uploadBytes:report.uploadBytes,excludedBytes});
+const root='build/wechatgame',report=JSON.parse(readFileSync(`${evidence}/ASSET_BUDGET-wechatgame.json`,'utf8'));
+const bytes=walk(root).reduce((n,p)=>n+statSync(p).size,0),limit=report.budget.limitBytes;
+const summary={totalBytes:bytes,uploadBytes:bytes,limitBytes:limit,marginBytes:limit-bytes,targetMarginBytes:report.budget.targetMarginBytes,meetsLocalMargin:limit-bytes>=report.budget.targetMarginBytes,thresholdSource:report.budget.thresholdSource,officialUploadBytes:null,reason:'Build-only removal from verified runtime whitelist and exact used-frame RGBA preservation; original source art and private local config unchanged.'};
+writeFileSync(`${evidence}/wechat-package.json`,JSON.stringify(summary,null,2)+'\n');
+console.log(summary);
+if(!summary.meetsLocalMargin)throw Error('Local package needs at least 1 MiB headroom; inspect ASSET_BUDGET before official preview.');

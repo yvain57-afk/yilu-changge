@@ -1,0 +1,2219 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "assetId": "blade",
+      "sourcePath": "art-source/battle-fix2-20260925/blade-original-0abcd529ef04.png",
+      "sourceInput": "art-source/battle-fix2-20260925/blade-center-release-source.png",
+      "sourceSha256": "0abcd529ef04aa24054fd8d23545360f307c8dcfedf0a09f7ef6a5d6f2ccf98c",
+      "sourceBytes": 1004375,
+      "sourceDimensions": [
+        2172,
+        724
+      ],
+      "runtimePath": "assets/resources/battlefix2/blade.png",
+      "runtimeSha256": "a52b78f8bd38ae891f2f09a8639e00d552350f2b69d87467427709ba6fa39c04",
+      "runtimeBytes": 41610,
+      "runtimeDimensions": [
+        486,
+        202
+      ],
+      "estimatedDecodedRgbaBytes": 392688,
+      "keys": [
+        "bladeWindup",
+        "bladeRelease",
+        "bladeRecover"
+      ],
+      "encoding": "PNG palette256 quality95 dither.5 after explicit production crop/resize",
+      "spec": {
+        "columns": 3,
+        "rows": 1,
+        "height": 224,
+        "logicalHeight": 680,
+        "keys": [
+          "bladeWindup",
+          "bladeRelease",
+          "bladeRecover"
+        ],
+        "feet": [
+          [
+            375,
+            701
+          ],
+          [
+            396,
+            701
+          ],
+          [
+            402,
+            701
+          ]
+        ],
+        "grips": [
+          [
+            497,
+            254
+          ],
+          [
+            485,
+            287
+          ],
+          [
+            483,
+            363
+          ]
+        ],
+        "muzzles": [
+          null,
+          [
+            396,
+            274
+          ],
+          null
+        ],
+        "weapons": [
+          "blade",
+          "blade",
+          "blade"
+        ],
+        "phases": [
+          "windup",
+          "release",
+          "recover"
+        ]
+      },
+      "previousVersions": [],
+      "origin": "Built-in imagegen generated for this FIX2 task; all attempts preserved",
+      "status": "imported; source and frame integrity checked; final scene visual acceptance pending parent"
+    },
+    {
+      "assetId": "waves",
+      "sourcePath": "art-source/battle-fix2-20260925/waves-original-958ffc021d24.png",
+      "sourceInput": "art-source/battle-fix2-20260925/waves-source.png",
+      "sourceSha256": "958ffc021d24dff4ae4a16a763e3aa37951fb3f1ec5b42e7218c361fe2849c96",
+      "sourceBytes": 1707463,
+      "sourceDimensions": [
+        1536,
+        1024
+      ],
+      "runtimePath": "assets/resources/battlefix2/waves.png",
+      "runtimeSha256": "b181f20e0583dcfcac4e292c14efe450640dfc9c626c6998dabb143d7e46e033",
+      "runtimeBytes": 135803,
+      "runtimeDimensions": [
+        525,
+        366
+      ],
+      "estimatedDecodedRgbaBytes": 768600,
+      "keys": [
+        "bladeWave",
+        "spearWave",
+        "axeWave",
+        "forkWave",
+        "muzzleFlash",
+        "hitFlash"
+      ],
+      "encoding": "RGBA PNG lossless after explicit production crop/resize",
+      "spec": {
+        "columns": 3,
+        "rows": 2,
+        "height": 192,
+        "tight": true,
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "rgba": true,
+        "keys": [
+          "bladeWave",
+          "spearWave",
+          "axeWave",
+          "forkWave",
+          "muzzleFlash",
+          "hitFlash"
+        ]
+      },
+      "previousVersions": [],
+      "origin": "Built-in imagegen generated for this FIX2 task; all attempts preserved",
+      "status": "imported; source and frame integrity checked; final scene visual acceptance pending parent"
+    },
+    {
+      "assetId": "environment",
+      "sourcePath": "art-source/battle-fix2-20260925/environment-original-0309d02aaa3b.png",
+      "sourceInput": "art-source/battle-fix2-20260925/environment-parent-attempt.png",
+      "sourceSha256": "0309d02aaa3b4d8564a4eb11753f753648fea8b2628872a17e1b7ed9043eff4a",
+      "sourceBytes": 1645165,
+      "sourceDimensions": [
+        1536,
+        1024
+      ],
+      "runtimePath": "assets/resources/battlefix2/environment.png",
+      "runtimeSha256": "4516ba1f3f2297e8db2d61063cd5a0007ec97848bc4543c2c0f48e8999e1ac2d",
+      "runtimeBytes": 71539,
+      "runtimeDimensions": [
+        464,
+        394
+      ],
+      "estimatedDecodedRgbaBytes": 731264,
+      "keys": [
+        "wallStart",
+        "wallEnd",
+        "gateBlue",
+        "gateRed",
+        "gateNeutral"
+      ],
+      "encoding": "RGBA PNG lossless after explicit production crop/resize",
+      "spec": {
+        "columns": 4,
+        "rows": 2,
+        "height": 160,
+        "tight": true,
+        "rgba": true,
+        "keys": [
+          "wallMiddle",
+          "wallStart",
+          "wallEnd",
+          "gateBlue",
+          "gateRed",
+          "gateNeutral"
+        ],
+        "cells": [
+          [
+            110,
+            10,
+            175,
+            635
+          ],
+          [
+            510,
+            300,
+            145,
+            335
+          ],
+          [
+            890,
+            300,
+            145,
+            335
+          ],
+          [
+            15,
+            700,
+            355,
+            235
+          ],
+          [
+            400,
+            700,
+            355,
+            235
+          ],
+          [
+            780,
+            700,
+            355,
+            235
+          ]
+        ],
+        "insets": {
+          "gateBlue": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "gateRed": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "gateNeutral": [
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      },
+      "previousVersions": [],
+      "origin": "Built-in imagegen generated for this FIX2 task; all attempts preserved",
+      "status": "imported; source and frame integrity checked; final scene visual acceptance pending parent",
+      "retainedUnusedKeys": [
+        "wallMiddle"
+      ]
+    },
+    {
+      "assetId": "shadow",
+      "sourcePath": "art-source/battle-fix2-20260925/shadow-original-ba6aa302b60c.png",
+      "sourceInput": "art-source/battle-fix2-20260925/environment-source.png",
+      "sourceSha256": "ba6aa302b60cdcb76f2aed1d605e8f1e9e208aacca141ce697e33a0176c63422",
+      "sourceBytes": 902143,
+      "sourceDimensions": [
+        1774,
+        887
+      ],
+      "runtimePath": "assets/resources/battlefix2/shadow.png",
+      "runtimeSha256": "0bb08d11f55a63498d8198e9c4ce515bd51cc60cd7b80d96c4565f3bd8728aef",
+      "runtimeBytes": 5753,
+      "runtimeDimensions": [
+        512,
+        58
+      ],
+      "estimatedDecodedRgbaBytes": 118784,
+      "keys": [
+        "wallShadow"
+      ],
+      "encoding": "RGBA PNG lossless after explicit production crop/resize",
+      "spec": {
+        "columns": 4,
+        "rows": 2,
+        "height": 128,
+        "tight": true,
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "rgba": true,
+        "keys": [
+          "wallShadow"
+        ],
+        "cells": [
+          [
+            1330,
+            0,
+            444,
+            443
+          ]
+        ]
+      },
+      "previousVersions": [],
+      "origin": "Built-in imagegen generated for this FIX2 task; all attempts preserved",
+      "status": "imported; source and frame integrity checked; final scene visual acceptance pending parent"
+    },
+    {
+      "assetId": "actions",
+      "sourcePath": "art-source/battle-fix2-20260925/actions-original-ad6c34f33481.png",
+      "sourceInput": "art-source/battle-fix2-20260925/actions-centered-attempt.png",
+      "sourceSha256": "ad6c34f33481bce58b9983d01ee6aa0f904b3c3206075c361e1431b7cb1c94d1",
+      "sourceBytes": 1564309,
+      "sourceDimensions": [
+        1086,
+        1448
+      ],
+      "runtimePath": "assets/resources/battlefix2/actions.png",
+      "runtimeSha256": "a6d06f6e3c24cf63ddb5cc91953a03a825ed8b4620bcc427fdb0e0effb2fb792",
+      "runtimeBytes": 206823,
+      "runtimeDimensions": [
+        636,
+        980
+      ],
+      "estimatedDecodedRgbaBytes": 2493120,
+      "keys": [
+        "spearWindup",
+        "spearRelease",
+        "spearRecover",
+        "xingWindup",
+        "xingRelease",
+        "xingRecover",
+        "chenWindup",
+        "chenRelease",
+        "chenRecover"
+      ],
+      "encoding": "PNG palette256 quality95 dither.5 after explicit production crop/resize",
+      "spec": {
+        "columns": 3,
+        "rows": 4,
+        "height": 224,
+        "keys": [
+          "spearWindup",
+          "spearRelease",
+          "spearRecover",
+          "xingWindup",
+          "xingRelease",
+          "xingRecover",
+          "chenWindup",
+          "chenRelease",
+          "chenRecover",
+          "zhaoWindup",
+          "zhaoRelease",
+          "zhaoRecover"
+        ],
+        "phases": [
+          "windup",
+          "release",
+          "recover",
+          "windup",
+          "release",
+          "recover",
+          "windup",
+          "release",
+          "recover",
+          "windup",
+          "release",
+          "recover"
+        ],
+        "weapons": [
+          "spear",
+          "spear",
+          "spear",
+          "great_axe",
+          "great_axe",
+          "great_axe",
+          "throwing_fork",
+          "throwing_fork",
+          "throwing_fork",
+          "spear",
+          "spear",
+          "spear"
+        ],
+        "cells": [
+          [
+            0,
+            0,
+            362,
+            380
+          ],
+          [
+            362,
+            0,
+            362,
+            380
+          ],
+          [
+            724,
+            0,
+            362,
+            380
+          ],
+          [
+            0,
+            370,
+            362,
+            390
+          ],
+          [
+            362,
+            370,
+            362,
+            390
+          ],
+          [
+            724,
+            370,
+            362,
+            390
+          ],
+          [
+            0,
+            745,
+            362,
+            385
+          ],
+          [
+            362,
+            745,
+            362,
+            385
+          ],
+          [
+            724,
+            745,
+            362,
+            385
+          ],
+          [
+            0,
+            1100,
+            362,
+            348
+          ],
+          [
+            362,
+            1100,
+            362,
+            348
+          ],
+          [
+            724,
+            1100,
+            362,
+            348
+          ]
+        ],
+        "logicalHeight": 362,
+        "alphaThreshold": 1,
+        "componentSeeds": [
+          [
+            260,
+            150
+          ],
+          [
+            550,
+            150
+          ],
+          [
+            900,
+            180
+          ],
+          [
+            180,
+            520
+          ],
+          [
+            550,
+            520
+          ],
+          [
+            920,
+            570
+          ],
+          [
+            180,
+            910
+          ],
+          [
+            550,
+            920
+          ],
+          [
+            950,
+            910
+          ],
+          [
+            200,
+            1280
+          ],
+          [
+            550,
+            1270
+          ],
+          [
+            950,
+            1260
+          ]
+        ],
+        "feet": [
+          [
+            248,
+            329
+          ],
+          [
+            188,
+            337
+          ],
+          [
+            172,
+            329
+          ],
+          [
+            205,
+            339
+          ],
+          [
+            184,
+            347
+          ],
+          [
+            213,
+            348
+          ],
+          [
+            211,
+            350
+          ],
+          [
+            188,
+            350
+          ],
+          [
+            209,
+            345
+          ],
+          [
+            226,
+            330
+          ],
+          [
+            188,
+            324
+          ],
+          [
+            214,
+            330
+          ]
+        ],
+        "grips": [
+          null,
+          [
+            190,
+            103
+          ],
+          null,
+          null,
+          [
+            184,
+            111
+          ],
+          null,
+          null,
+          [
+            188,
+            60
+          ],
+          null,
+          null,
+          [
+            188,
+            74
+          ],
+          null
+        ],
+        "muzzles": [
+          null,
+          [
+            188,
+            42
+          ],
+          null,
+          null,
+          [
+            184,
+            62
+          ],
+          null,
+          null,
+          [
+            188,
+            32
+          ],
+          null,
+          null,
+          [
+            188,
+            30
+          ],
+          null
+        ]
+      },
+      "previousVersions": [
+        {
+          "assetId": "actions",
+          "sourcePath": "art-source/battle-fix2-20260925/actions-original-0fd5b844d1dc.png",
+          "sourceInput": "art-source/battle-fix2-20260925/actions-source.png",
+          "sourceSha256": "0fd5b844d1dc71b37eb63826b3574063f3c951a55bb03fd92790789ba7feed7a",
+          "sourceBytes": 1638337,
+          "sourceDimensions": [
+            1086,
+            1448
+          ],
+          "runtimePath": "assets/resources/battlefix2/actions.png",
+          "runtimeSha256": "430698ec47589a2dcdaa6f1a219558b815ca334f1817681058b1182a09cc10be",
+          "runtimeBytes": 211433,
+          "runtimeDimensions": [
+            666,
+            928
+          ],
+          "estimatedDecodedRgbaBytes": 2472192,
+          "keys": [
+            "spearWindup",
+            "spearRelease",
+            "spearRecover",
+            "xingWindup",
+            "xingRelease",
+            "xingRecover",
+            "chenWindup",
+            "chenRelease",
+            "chenRecover",
+            "zhaoWindup",
+            "zhaoRelease",
+            "zhaoRecover"
+          ],
+          "encoding": "PNG palette256 quality95 dither.5 after explicit production crop/resize",
+          "spec": {
+            "columns": 3,
+            "rows": 4,
+            "height": 224,
+            "keys": [
+              "spearWindup",
+              "spearRelease",
+              "spearRecover",
+              "xingWindup",
+              "xingRelease",
+              "xingRecover",
+              "chenWindup",
+              "chenRelease",
+              "chenRecover",
+              "zhaoWindup",
+              "zhaoRelease",
+              "zhaoRecover"
+            ],
+            "phases": [
+              "windup",
+              "release",
+              "recover",
+              "windup",
+              "release",
+              "recover",
+              "windup",
+              "release",
+              "recover",
+              "windup",
+              "release",
+              "recover"
+            ],
+            "weapons": [
+              "spear",
+              "spear",
+              "spear",
+              "great_axe",
+              "great_axe",
+              "great_axe",
+              "throwing_fork",
+              "throwing_fork",
+              "throwing_fork",
+              "spear",
+              "spear",
+              "spear"
+            ]
+          },
+          "origin": "Built-in imagegen generated for this FIX2 task; all attempts preserved",
+          "status": "imported; actual build/visual acceptance pending",
+          "runtimeBackup": "art-source/battle-fix2-20260925/actions-runtime-before-430698ec4758.png"
+        }
+      ],
+      "origin": "Built-in imagegen generated for this FIX2 task; all attempts preserved",
+      "status": "imported; source and frame integrity checked; final scene visual acceptance pending parent",
+      "retainedUnusedKeys": [
+        "zhaoWindup",
+        "zhaoRelease",
+        "zhaoRecover"
+      ]
+    },
+    {
+      "assetId": "zhao",
+      "sourcePath": "art-source/battle-fix2-20260925/zhao-original-5ba7e755672d.png",
+      "sourceInput": "art-source/battle-fix2-20260925/zhao-complete-source.png",
+      "sourceSha256": "5ba7e755672da5730e2eb181fe4e3f3a8598eae91e50eab7d145588b4e376b0d",
+      "sourceBytes": 1095876,
+      "sourceDimensions": [
+        2172,
+        724
+      ],
+      "runtimePath": "assets/resources/battlefix2/zhao.png",
+      "runtimeSha256": "42db3e0609240f7ef2360a2be86eaf60cb9d9ee2c21adc12adaef14c90c38f5d",
+      "runtimeBytes": 43639,
+      "runtimeDimensions": [
+        573,
+        216
+      ],
+      "estimatedDecodedRgbaBytes": 495072,
+      "keys": [
+        "zhaoWindup",
+        "zhaoRelease",
+        "zhaoRecover"
+      ],
+      "encoding": "PNG palette256 quality95 dither.5 after explicit production crop/resize",
+      "spec": {
+        "columns": 3,
+        "rows": 1,
+        "height": 224,
+        "logicalHeight": 680,
+        "alphaThreshold": 1,
+        "keys": [
+          "zhaoWindup",
+          "zhaoRelease",
+          "zhaoRecover"
+        ],
+        "componentSeeds": [
+          [
+            430,
+            250
+          ],
+          [
+            1086,
+            300
+          ],
+          [
+            1810,
+            290
+          ]
+        ],
+        "feet": [
+          [
+            452,
+            627
+          ],
+          [
+            362,
+            644
+          ],
+          [
+            363,
+            635
+          ]
+        ],
+        "grips": [
+          null,
+          [
+            369,
+            183
+          ],
+          null
+        ],
+        "muzzles": [
+          null,
+          [
+            362,
+            82
+          ],
+          null
+        ],
+        "weapons": [
+          "spear",
+          "spear",
+          "spear"
+        ],
+        "phases": [
+          "windup",
+          "release",
+          "recover"
+        ],
+        "footMeasurement": {
+          "method": "Manual source pixel readback of projected sole centers; midpoint of fore/rear foot contacts, not lowest single foot edge",
+          "contacts": [
+            [
+              [
+                398,
+                578
+              ],
+              [
+                506,
+                676
+              ]
+            ],
+            [
+              [
+                982,
+                685
+              ],
+              [
+                1190,
+                603
+              ]
+            ],
+            [
+              [
+                1740,
+                588
+              ],
+              [
+                1882,
+                682
+              ]
+            ]
+          ],
+          "coordinateSpace": "global source pixels"
+        }
+      },
+      "previousVersions": [],
+      "origin": "Built-in imagegen generated for this FIX2 task; all attempts preserved",
+      "status": "imported; actual build/visual acceptance pending"
+    },
+    {
+      "assetId": "wall-middle",
+      "sourcePath": "art-source/battle-fix2-20260925/wall-middle-original-cac2df4fb4e0.png",
+      "sourceInput": "art-source/battle-fix2-20260925/wall-middle-straight-source.png",
+      "sourceSha256": "cac2df4fb4e04814f08b4c56fd3425020bb43db5767dcea30a2d24a79b1a8b23",
+      "sourceBytes": 487622,
+      "sourceDimensions": [
+        887,
+        1774
+      ],
+      "runtimePath": "assets/resources/battlefix2/wall-middle.png",
+      "runtimeSha256": "28c546a36894c2e29eca4fb8f2d70d75e78243c161fc33fab29023ae8ce550f2",
+      "runtimeBytes": 19486,
+      "runtimeDimensions": [
+        40,
+        328
+      ],
+      "estimatedDecodedRgbaBytes": 52480,
+      "keys": [
+        "wallMiddle"
+      ],
+      "encoding": "RGBA PNG lossless after explicit production crop/resize",
+      "spec": {
+        "columns": 1,
+        "rows": 1,
+        "height": 320,
+        "tight": true,
+        "rgba": true,
+        "keys": [
+          "wallMiddle"
+        ],
+        "alphaThreshold": 2
+      },
+      "previousVersions": [
+        {
+          "assetId": "wall-middle",
+          "sourcePath": "art-source/battle-fix2-20260925/wall-middle-original-cac2df4fb4e0.png",
+          "sourceInput": "art-source/battle-fix2-20260925/wall-middle-straight-source.png",
+          "sourceSha256": "cac2df4fb4e04814f08b4c56fd3425020bb43db5767dcea30a2d24a79b1a8b23",
+          "sourceBytes": 487622,
+          "sourceDimensions": [
+            887,
+            1774
+          ],
+          "runtimePath": "assets/resources/battlefix2/wall-middle.png",
+          "runtimeSha256": "02bea4ec556df0b259a2ab28b7e0f018aeabf85529453bb3b420ee6b7e1c1d3f",
+          "runtimeBytes": 20511,
+          "runtimeDimensions": [
+            136,
+            328
+          ],
+          "estimatedDecodedRgbaBytes": 178432,
+          "keys": [
+            "wallMiddle"
+          ],
+          "encoding": "RGBA PNG lossless after explicit production crop/resize",
+          "spec": {
+            "columns": 1,
+            "rows": 1,
+            "height": 320,
+            "tight": true,
+            "rgba": true,
+            "keys": [
+              "wallMiddle"
+            ],
+            "alphaThreshold": 1
+          },
+          "origin": "Built-in imagegen generated for this FIX2 task; all attempts preserved",
+          "status": "imported; actual build/visual acceptance pending",
+          "runtimeBackup": "art-source/battle-fix2-20260925/wall-middle-runtime-before-02bea4ec556d.png"
+        }
+      ],
+      "origin": "Built-in imagegen generated for this FIX2 task; all attempts preserved",
+      "status": "imported; actual build/visual acceptance pending"
+    }
+  ],
+  "frames": {
+    "bladeWindup": {
+      "sheet": "battlefix2/blade",
+      "rect": [
+        4,
+        4,
+        153,
+        194
+      ],
+      "logicalSize": [
+        224,
+        210.3867403314917
+      ],
+      "anchor": [
+        0.5801217038539553,
+        0.012779552715654952
+      ],
+      "sourceCell": [
+        0,
+        0,
+        724,
+        724
+      ],
+      "sourceCrop": [
+        89,
+        83,
+        493,
+        626
+      ],
+      "foot": [
+        0.5179558011049724,
+        1.0308823529411764
+      ],
+      "grip": [
+        0.68646408839779,
+        0.3735294117647059
+      ],
+      "weapon": "blade",
+      "phase": "windup"
+    },
+    "bladeRelease": {
+      "sheet": "battlefix2/blade",
+      "rect": [
+        166,
+        4,
+        145,
+        164
+      ],
+      "logicalSize": [
+        224,
+        210.3867403314917
+      ],
+      "anchor": [
+        0.5906183368869936,
+        0.016981132075471698
+      ],
+      "sourceCell": [
+        724,
+        0,
+        724,
+        724
+      ],
+      "sourceCrop": [
+        843,
+        180,
+        469,
+        530
+      ],
+      "foot": [
+        0.5469613259668509,
+        1.0308823529411764
+      ],
+      "grip": [
+        0.669889502762431,
+        0.42205882352941176
+      ],
+      "muzzle": [
+        0.5469613259668509,
+        0.40294117647058825
+      ],
+      "muzzleSourceSample": {
+        "pixel": [
+          1120,
+          274
+        ],
+        "rgba": [
+          59,
+          52,
+          49,
+          253
+        ],
+        "review": "Manually selected visible weapon metal/edge in source; screenshot visual verification still required"
+      },
+      "weapon": "blade",
+      "phase": "release"
+    },
+    "bladeRecover": {
+      "sheet": "battlefix2/blade",
+      "rect": [
+        328,
+        4,
+        154,
+        160
+      ],
+      "logicalSize": [
+        224,
+        210.3867403314917
+      ],
+      "anchor": [
+        0.6156941649899397,
+        0.015503875968992248
+      ],
+      "sourceCell": [
+        1448,
+        0,
+        724,
+        724
+      ],
+      "sourceCrop": [
+        1544,
+        193,
+        497,
+        516
+      ],
+      "foot": [
+        0.5552486187845304,
+        1.0308823529411764
+      ],
+      "grip": [
+        0.6671270718232044,
+        0.5338235294117647
+      ],
+      "weapon": "blade",
+      "phase": "recover"
+    },
+    "bladeWave": {
+      "sheet": "battlefix2/waves",
+      "rect": [
+        4,
+        4,
+        167,
+        142
+      ],
+      "logicalSize": [
+        167,
+        142
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sourceCell": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceCrop": [
+        45,
+        103,
+        444,
+        378
+      ],
+      "foot": [
+        0.5,
+        1
+      ]
+    },
+    "spearWave": {
+      "sheet": "battlefix2/waves",
+      "rect": [
+        179,
+        4,
+        62,
+        175
+      ],
+      "logicalSize": [
+        62,
+        175
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sourceCell": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sourceCrop": [
+        687,
+        32,
+        165,
+        466
+      ],
+      "foot": [
+        0.5,
+        1
+      ]
+    },
+    "axeWave": {
+      "sheet": "battlefix2/waves",
+      "rect": [
+        354,
+        4,
+        138,
+        155
+      ],
+      "logicalSize": [
+        138,
+        155
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sourceCell": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sourceCrop": [
+        1082,
+        71,
+        368,
+        413
+      ],
+      "foot": [
+        0.5,
+        1
+      ]
+    },
+    "forkWave": {
+      "sheet": "battlefix2/waves",
+      "rect": [
+        4,
+        187,
+        81,
+        169
+      ],
+      "logicalSize": [
+        81,
+        169
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sourceCell": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sourceCrop": [
+        155,
+        541,
+        215,
+        451
+      ],
+      "foot": [
+        0.5,
+        1
+      ]
+    },
+    "muzzleFlash": {
+      "sheet": "battlefix2/waves",
+      "rect": [
+        179,
+        187,
+        126,
+        133
+      ],
+      "logicalSize": [
+        126,
+        133
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sourceCell": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sourceCrop": [
+        599,
+        558,
+        335,
+        354
+      ],
+      "foot": [
+        0.5,
+        1
+      ]
+    },
+    "hitFlash": {
+      "sheet": "battlefix2/waves",
+      "rect": [
+        354,
+        187,
+        121,
+        111
+      ],
+      "logicalSize": [
+        121,
+        111
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sourceCell": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sourceCrop": [
+        1115,
+        591,
+        323,
+        297
+      ],
+      "foot": [
+        0.5,
+        1
+      ]
+    },
+    "wallStart": {
+      "sheet": "battlefix2/environment",
+      "rect": [
+        120,
+        4,
+        39,
+        96
+      ],
+      "logicalSize": [
+        39,
+        96
+      ],
+      "anchor": [
+        0.5,
+        0
+      ],
+      "sourceCell": [
+        510,
+        300,
+        145,
+        335
+      ],
+      "sourceCrop": [
+        516,
+        319,
+        125,
+        306
+      ],
+      "foot": [
+        0.5,
+        1
+      ]
+    },
+    "wallEnd": {
+      "sheet": "battlefix2/environment",
+      "rect": [
+        236,
+        4,
+        36,
+        96
+      ],
+      "logicalSize": [
+        36,
+        96
+      ],
+      "anchor": [
+        0.5,
+        0
+      ],
+      "sourceCell": [
+        890,
+        300,
+        145,
+        335
+      ],
+      "sourceCrop": [
+        901,
+        319,
+        116,
+        307
+      ],
+      "foot": [
+        0.5,
+        1
+      ]
+    },
+    "gateBlue": {
+      "sheet": "battlefix2/environment",
+      "rect": [
+        352,
+        4,
+        108,
+        70
+      ],
+      "logicalSize": [
+        108,
+        70
+      ],
+      "anchor": [
+        0.5,
+        0
+      ],
+      "sourceCell": [
+        15,
+        700,
+        355,
+        235
+      ],
+      "sourceCrop": [
+        20,
+        705,
+        345,
+        225
+      ],
+      "foot": [
+        0.5,
+        1
+      ],
+      "insets": [
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    "gateRed": {
+      "sheet": "battlefix2/environment",
+      "rect": [
+        4,
+        201,
+        108,
+        69
+      ],
+      "logicalSize": [
+        108,
+        69
+      ],
+      "anchor": [
+        0.5,
+        0
+      ],
+      "sourceCell": [
+        400,
+        700,
+        355,
+        235
+      ],
+      "sourceCrop": [
+        406,
+        708,
+        346,
+        222
+      ],
+      "foot": [
+        0.5,
+        1
+      ],
+      "insets": [
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    "gateNeutral": {
+      "sheet": "battlefix2/environment",
+      "rect": [
+        120,
+        201,
+        108,
+        69
+      ],
+      "logicalSize": [
+        108,
+        69
+      ],
+      "anchor": [
+        0.5,
+        0
+      ],
+      "sourceCell": [
+        780,
+        700,
+        355,
+        235
+      ],
+      "sourceCrop": [
+        788,
+        708,
+        346,
+        222
+      ],
+      "foot": [
+        0.5,
+        1
+      ],
+      "insets": [
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    "wallShadow": {
+      "sheet": "battlefix2/shadow",
+      "rect": [
+        4,
+        4,
+        120,
+        50
+      ],
+      "logicalSize": [
+        120,
+        50
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "sourceCell": [
+        1330,
+        0,
+        444,
+        443
+      ],
+      "sourceCrop": [
+        1347,
+        243,
+        417,
+        174
+      ],
+      "foot": [
+        0.5,
+        1
+      ]
+    },
+    "spearWindup": {
+      "sheet": "battlefix2/actions",
+      "rect": [
+        4,
+        4,
+        204,
+        208
+      ],
+      "logicalSize": [
+        224,
+        224
+      ],
+      "anchor": [
+        0.7142857142857143,
+        0.13988095238095238
+      ],
+      "sourceCell": [
+        0,
+        0,
+        362,
+        380
+      ],
+      "sourceCrop": [
+        13,
+        40,
+        329,
+        336
+      ],
+      "foot": [
+        0.6850828729281768,
+        0.9088397790055248
+      ],
+      "extraction": "Alpha>0 connected component from explicit source seed; retained RGBA untouched before production resize",
+      "weapon": "spear",
+      "phase": "windup"
+    },
+    "spearRelease": {
+      "sheet": "battlefix2/actions",
+      "rect": [
+        216,
+        4,
+        126,
+        230
+      ],
+      "logicalSize": [
+        224,
+        224
+      ],
+      "anchor": [
+        0.5960591133004927,
+        0.11290322580645161
+      ],
+      "sourceCell": [
+        362,
+        0,
+        362,
+        380
+      ],
+      "sourceCrop": [
+        429,
+        7,
+        203,
+        372
+      ],
+      "foot": [
+        0.5193370165745856,
+        0.930939226519337
+      ],
+      "extraction": "Alpha>0 connected component from explicit source seed; retained RGBA untouched before production resize",
+      "grip": [
+        0.5248618784530387,
+        0.2845303867403315
+      ],
+      "muzzle": [
+        0.5193370165745856,
+        0.11602209944751381
+      ],
+      "muzzleSourceSample": {
+        "pixel": [
+          550,
+          42
+        ],
+        "rgba": [
+          144,
+          134,
+          138,
+          252
+        ],
+        "review": "Manually selected visible weapon metal/edge in source; screenshot visual verification still required"
+      },
+      "weapon": "spear",
+      "phase": "release"
+    },
+    "spearRecover": {
+      "sheet": "battlefix2/actions",
+      "rect": [
+        428,
+        4,
+        201,
+        225
+      ],
+      "logicalSize": [
+        224,
+        224
+      ],
+      "anchor": [
+        0.4153846153846154,
+        0.1322314049586777
+      ],
+      "sourceCell": [
+        724,
+        0,
+        362,
+        380
+      ],
+      "sourceCrop": [
+        761,
+        14,
+        325,
+        363
+      ],
+      "foot": [
+        0.47513812154696133,
+        0.9088397790055248
+      ],
+      "extraction": "Alpha>0 connected component from explicit source seed; retained RGBA untouched before production resize",
+      "weapon": "spear",
+      "phase": "recover"
+    },
+    "xingWindup": {
+      "sheet": "battlefix2/actions",
+      "rect": [
+        4,
+        249,
+        176,
+        230
+      ],
+      "logicalSize": [
+        224,
+        224
+      ],
+      "anchor": [
+        0.6091549295774648,
+        0.08870967741935484
+      ],
+      "sourceCell": [
+        0,
+        370,
+        362,
+        390
+      ],
+      "sourceCrop": [
+        32,
+        370,
+        284,
+        372
+      ],
+      "foot": [
+        0.5662983425414365,
+        0.93646408839779
+      ],
+      "extraction": "Alpha>0 connected component from explicit source seed; retained RGBA untouched before production resize",
+      "weapon": "great_axe",
+      "phase": "windup"
+    },
+    "xingRelease": {
+      "sheet": "battlefix2/actions",
+      "rect": [
+        216,
+        249,
+        137,
+        233
+      ],
+      "logicalSize": [
+        224,
+        224
+      ],
+      "anchor": [
+        0.5765765765765766,
+        0.08244680851063829
+      ],
+      "sourceCell": [
+        362,
+        370,
+        362,
+        390
+      ],
+      "sourceCrop": [
+        418,
+        372,
+        222,
+        376
+      ],
+      "foot": [
+        0.5082872928176796,
+        0.9585635359116023
+      ],
+      "extraction": "Alpha>0 connected component from explicit source seed; retained RGBA untouched before production resize",
+      "grip": [
+        0.5082872928176796,
+        0.30662983425414364
+      ],
+      "muzzle": [
+        0.5082872928176796,
+        0.1712707182320442
+      ],
+      "muzzleSourceSample": {
+        "pixel": [
+          546,
+          432
+        ],
+        "rgba": [
+          91,
+          86,
+          88,
+          252
+        ],
+        "review": "Manually selected visible weapon metal/edge in source; screenshot visual verification still required"
+      },
+      "weapon": "great_axe",
+      "phase": "release"
+    },
+    "xingRecover": {
+      "sheet": "battlefix2/actions",
+      "rect": [
+        428,
+        249,
+        190,
+        214
+      ],
+      "logicalSize": [
+        224,
+        224
+      ],
+      "anchor": [
+        0.5146579804560261,
+        0.12138728323699421
+      ],
+      "sourceCell": [
+        724,
+        370,
+        362,
+        390
+      ],
+      "sourceCrop": [
+        779,
+        414,
+        307,
+        346
+      ],
+      "foot": [
+        0.5883977900552486,
+        0.9613259668508287
+      ],
+      "extraction": "Alpha>0 connected component from explicit source seed; retained RGBA untouched before production resize",
+      "weapon": "great_axe",
+      "phase": "recover"
+    },
+    "chenWindup": {
+      "sheet": "battlefix2/actions",
+      "rect": [
+        4,
+        494,
+        157,
+        225
+      ],
+      "logicalSize": [
+        224,
+        224
+      ],
+      "anchor": [
+        0.5866141732283464,
+        0.06336088154269973
+      ],
+      "sourceCell": [
+        0,
+        745,
+        362,
+        385
+      ],
+      "sourceCrop": [
+        62,
+        755,
+        254,
+        363
+      ],
+      "foot": [
+        0.5828729281767956,
+        0.9668508287292817
+      ],
+      "extraction": "Alpha>0 connected component from explicit source seed; retained RGBA untouched before production resize",
+      "weapon": "throwing_fork",
+      "phase": "windup"
+    },
+    "chenRelease": {
+      "sheet": "battlefix2/actions",
+      "rect": [
+        216,
+        494,
+        128,
+        237
+      ],
+      "logicalSize": [
+        224,
+        224
+      ],
+      "anchor": [
+        0.5845410628019324,
+        0.08616187989556136
+      ],
+      "sourceCell": [
+        362,
+        745,
+        362,
+        385
+      ],
+      "sourceCrop": [
+        429,
+        745,
+        207,
+        383
+      ],
+      "foot": [
+        0.5193370165745856,
+        0.9668508287292817
+      ],
+      "extraction": "Alpha>0 connected component from explicit source seed; retained RGBA untouched before production resize",
+      "grip": [
+        0.5193370165745856,
+        0.16574585635359115
+      ],
+      "muzzle": [
+        0.5193370165745856,
+        0.08839779005524862
+      ],
+      "muzzleSourceSample": {
+        "pixel": [
+          550,
+          777
+        ],
+        "rgba": [
+          110,
+          110,
+          131,
+          252
+        ],
+        "review": "Manually selected visible weapon metal/edge in source; screenshot visual verification still required"
+      },
+      "weapon": "throwing_fork",
+      "phase": "release"
+    },
+    "chenRecover": {
+      "sheet": "battlefix2/actions",
+      "rect": [
+        428,
+        494,
+        166,
+        218
+      ],
+      "logicalSize": [
+        224,
+        224
+      ],
+      "anchor": [
+        0.4664179104477612,
+        0.07954545454545454
+      ],
+      "sourceCell": [
+        724,
+        745,
+        362,
+        385
+      ],
+      "sourceCrop": [
+        808,
+        766,
+        268,
+        352
+      ],
+      "foot": [
+        0.5773480662983426,
+        0.9530386740331491
+      ],
+      "extraction": "Alpha>0 connected component from explicit source seed; retained RGBA untouched before production resize",
+      "weapon": "throwing_fork",
+      "phase": "recover"
+    },
+    "zhaoWindup": {
+      "sheet": "battlefix2/zhao",
+      "rect": [
+        4,
+        4,
+        183,
+        186
+      ],
+      "logicalSize": [
+        224,
+        210.3867403314917
+      ],
+      "anchor": [
+        0.6976351351351351,
+        0.10963455149501661
+      ],
+      "sourceCell": [
+        0,
+        0,
+        724,
+        724
+      ],
+      "sourceCrop": [
+        39,
+        91,
+        592,
+        602
+      ],
+      "foot": [
+        0.6243093922651933,
+        0.9220588235294118
+      ],
+      "extraction": "Alpha>0 connected component from explicit source seed; retained RGBA untouched before production resize",
+      "weapon": "spear",
+      "phase": "windup"
+    },
+    "zhaoRelease": {
+      "sheet": "battlefix2/zhao",
+      "rect": [
+        195,
+        4,
+        121,
+        208
+      ],
+      "logicalSize": [
+        224,
+        210.3867403314917
+      ],
+      "anchor": [
+        0.5615384615384615,
+        0.07578008915304606
+      ],
+      "sourceCell": [
+        724,
+        0,
+        724,
+        724
+      ],
+      "sourceCrop": [
+        867,
+        22,
+        390,
+        673
+      ],
+      "foot": [
+        0.5,
+        0.9470588235294117
+      ],
+      "extraction": "Alpha>0 connected component from explicit source seed; retained RGBA untouched before production resize",
+      "grip": [
+        0.5096685082872928,
+        0.2691176470588235
+      ],
+      "muzzle": [
+        0.5,
+        0.12058823529411765
+      ],
+      "muzzleSourceSample": {
+        "pixel": [
+          1086,
+          82
+        ],
+        "rgba": [
+          238,
+          234,
+          232,
+          253
+        ],
+        "review": "Manually selected visible weapon metal/edge in source; screenshot visual verification still required"
+      },
+      "weapon": "spear",
+      "phase": "release"
+    },
+    "zhaoRecover": {
+      "sheet": "battlefix2/zhao",
+      "rect": [
+        386,
+        4,
+        168,
+        200
+      ],
+      "logicalSize": [
+        224,
+        210.3867403314917
+      ],
+      "anchor": [
+        0.43462246777163904,
+        0.08837209302325581
+      ],
+      "sourceCell": [
+        1448,
+        0,
+        724,
+        724
+      ],
+      "sourceCrop": [
+        1575,
+        47,
+        543,
+        645
+      ],
+      "foot": [
+        0.5013812154696132,
+        0.9338235294117647
+      ],
+      "extraction": "Alpha>0 connected component from explicit source seed; retained RGBA untouched before production resize",
+      "weapon": "spear",
+      "phase": "recover"
+    },
+    "wallMiddle": {
+      "sheet": "battlefix2/wall-middle",
+      "rect": [
+        4,
+        4,
+        32,
+        320
+      ],
+      "logicalSize": [
+        32,
+        320
+      ],
+      "anchor": [
+        0.5,
+        0
+      ],
+      "sourceCell": [
+        0,
+        0,
+        887,
+        1774
+      ],
+      "sourceCrop": [
+        357,
+        0,
+        176,
+        1774
+      ],
+      "foot": [
+        0.5,
+        1
+      ]
+    }
+  },
+  "requiredKeyCount": 27,
+  "optionalKeys": [
+    "hitFlash"
+  ],
+  "scope": "Presentation only; no physics, projectile x/z, damage or collision changes",
+  "attempts": [
+    {
+      "path": "art-source/battle-fix2-20260925/blade-attempt1.png",
+      "sha256": "886e99599f9a12e17243c6f6c0d8a6be6b64261ada3a211595f6d00b837c4dd1",
+      "review": "Original generation; release overhead rather than forward; rejected"
+    },
+    {
+      "path": "art-source/battle-fix2-20260925/blade-attempt2.png",
+      "sha256": "d6cb9ff371b28140c9ab153adc51db2524ffb875460cc7c7033bc1236c7a8f3a",
+      "review": "Release edit; not sufficient force; rejected"
+    },
+    {
+      "path": "art-source/battle-fix2-20260925/blade-attempt3.png",
+      "sha256": "40d6761e5e8fd4efd59e7971f9ced00b8bb7652fb5883d876ff6cd0896fc0222",
+      "review": "Release edit; sword still vertical; rejected"
+    },
+    {
+      "path": "art-source/battle-fix2-20260925/blade-source.png",
+      "sha256": "5bfd2c0c271da9701fe49ffe89c59ee92a96b5b761a44812247e3b3f2281247e",
+      "review": "Cross-body release; metal left of body axis; superseded"
+    },
+    {
+      "path": "art-source/battle-fix2-20260925/blade-center-release-source.png",
+      "sha256": "0abcd529ef04aa24054fd8d23545360f307c8dcfedf0a09f7ef6a5d6f2ccf98c",
+      "review": "Centered metal blade release; imported"
+    },
+    {
+      "path": "art-source/battle-fix2-20260925/actions-source.png",
+      "sha256": "0fd5b844d1dc71b37eb63826b3574063f3c951a55bb03fd92790789ba7feed7a",
+      "review": "Four actor action sheet; release weapons off-axis; retained historical working runtime only"
+    },
+    {
+      "path": "art-source/battle-fix2-20260925/actions-centered-attempt.png",
+      "sha256": "ad6c34f33481bce58b9983d01ee6aa0f904b3c3206075c361e1431b7cb1c94d1",
+      "review": "Only release-column correction; imported after parent visual review"
+    },
+    {
+      "path": "art-source/battle-fix2-20260925/environment-source.png",
+      "sha256": "ba6aa302b60cdcb76f2aed1d605e8f1e9e208aacca141ce697e33a0176c63422",
+      "review": "Environment generation; shadow used; diagonal wall superseded"
+    },
+    {
+      "path": "art-source/battle-fix2-20260925/environment-parent-attempt.png",
+      "sha256": "0309d02aaa3b4d8564a4eb11753f753648fea8b2628872a17e1b7ed9043eff4a",
+      "review": "Parent built-in generation; straight wall and three low-noise flags imported"
+    },
+    {
+      "path": "art-source/battle-fix2-20260925/waves-source.png",
+      "sha256": "958ffc021d24dff4ae4a16a763e3aa37951fb3f1ec5b42e7218c361fe2849c96",
+      "review": "Independent four weapon waves plus muzzle/impact flash; imported"
+    },
+    {
+      "path": "art-source/battle-fix2-20260925/zhao-complete-source.png",
+      "sha256": "5ba7e755672da5730e2eb181fe4e3f3a8598eae91e50eab7d145588b4e376b0d",
+      "review": "Dedicated Zhao Yun 3-pose repair; complete boot soles and transparent margins; imported to own atlas, replacing three active frame keys"
+    },
+    {
+      "path": "art-source/battle-fix2-20260925/wall-middle-straight-source.png",
+      "sha256": "cac2df4fb4e04814f08b4c56fd3425020bb43db5767dcea30a2d24a79b1a8b23",
+      "review": "Independent constant-width vertical three-post middle after actual screenshot found repeated perspective staircase; imported replacing wallMiddle only"
+    }
+  ],
+  "generationCount": 12,
+  "knownLimitations": [
+    "No physical-device visual/performance acceptance claimed. Actual runtime rendering is verified by parent separately.",
+    "Foot anchors and sockets manually measured from generated source, not a reconstruction of reference-game formulas."
+  ],
+  "socketMeasurements": [
+    {
+      "key": "bladeRelease",
+      "displayHeight": 140,
+      "x": 0,
+      "y": 87.91176470588233,
+      "sourceSample": {
+        "pixel": [
+          1120,
+          274
+        ],
+        "rgba": [
+          59,
+          52,
+          49,
+          253
+        ],
+        "review": "Manually selected visible weapon metal/edge in source; screenshot visual verification still required"
+      },
+      "meaning": "Only release has emitting socket; windup/recover deliberately not applicable"
+    },
+    {
+      "key": "spearRelease",
+      "displayHeight": 140,
+      "x": 0,
+      "y": 114.08839779005524,
+      "sourceSample": {
+        "pixel": [
+          550,
+          42
+        ],
+        "rgba": [
+          144,
+          134,
+          138,
+          252
+        ],
+        "review": "Manually selected visible weapon metal/edge in source; screenshot visual verification still required"
+      },
+      "meaning": "Only release has emitting socket; windup/recover deliberately not applicable"
+    },
+    {
+      "key": "xingRelease",
+      "displayHeight": 126,
+      "x": 0,
+      "y": 99.19889502762432,
+      "sourceSample": {
+        "pixel": [
+          546,
+          432
+        ],
+        "rgba": [
+          91,
+          86,
+          88,
+          252
+        ],
+        "review": "Manually selected visible weapon metal/edge in source; screenshot visual verification still required"
+      },
+      "meaning": "Only release has emitting socket; windup/recover deliberately not applicable"
+    },
+    {
+      "key": "chenRelease",
+      "displayHeight": 126,
+      "x": 0,
+      "y": 110.68508287292818,
+      "sourceSample": {
+        "pixel": [
+          550,
+          777
+        ],
+        "rgba": [
+          110,
+          110,
+          131,
+          252
+        ],
+        "review": "Manually selected visible weapon metal/edge in source; screenshot visual verification still required"
+      },
+      "meaning": "Only release has emitting socket; windup/recover deliberately not applicable"
+    },
+    {
+      "key": "zhaoRelease",
+      "displayHeight": 126,
+      "x": 0,
+      "y": 104.13529411764705,
+      "sourceSample": {
+        "pixel": [
+          1086,
+          82
+        ],
+        "rgba": [
+          238,
+          234,
+          232,
+          253
+        ],
+        "review": "Manually selected visible weapon metal/edge in source; screenshot visual verification still required"
+      },
+      "meaning": "Only release has emitting socket; windup/recover deliberately not applicable"
+    }
+  ],
+  "budget": {
+    "runtimeBytes": 524653,
+    "estimatedDecodedRgbaBytes": 5052008,
+    "runtimeTargetBytes": 1572864,
+    "measuredPackageBytes": null,
+    "notes": "Runtime PNG file sums measured on disk; decoded RGBA is dimensions×4 estimate, not actual GPU measurement. Final compiled package measured by parent."
+  },
+  "resolvedLimitations": [
+    {
+      "issue": "Zhao Yun old actions sheet clipped boot soles at source lower boundary",
+      "resolution": "Independent generated full-body 3-frame repair zhao-complete-source.png; runtime zhao.png; previous attempts/runtime retained, old frame keys inactive",
+      "sourceMainComponentBounds": [
+        [
+          41,
+          93,
+          588,
+          598
+        ],
+        [
+          869,
+          24,
+          386,
+          669
+        ],
+        [
+          1577,
+          49,
+          539,
+          641
+        ]
+      ],
+      "minimumBottomTransparentPixels": 31
+    },
+    {
+      "issue": "Old oblique wallMiddle had per-module lateral drift/taper causing repeating staircase visible at all 3 viewport sizes",
+      "resolution": "New generated orthographic constant-axis middle; same key independent atlas; old source/runtime kept",
+      "sourceTopSolidRange": [
+        395,
+        493
+      ],
+      "sourceBottomSolidRange": [
+        393,
+        494
+      ],
+      "sourceAxisDeltaPixels": -0.5,
+      "notes": "This verifies source geometry only; assembled in-game seam awaits screenshot verification. Source alpha1 speckles excluded by normal alpha2 bounding crop, no hand-drawn pixels."
+    }
+  ]
+}

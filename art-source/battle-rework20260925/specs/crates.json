@@ -1,0 +1,26 @@
+{
+  "columns": 4,
+  "rows": 2,
+  "height": 224,
+  "footY": 490,
+  "keys": [
+    "boxTroops",
+    "boxEquipment",
+    "boxChain",
+    "boxCompanion",
+    "boxTroopsOpen",
+    "boxEquipmentOpen",
+    "boxChainOpen",
+    "boxCompanionOpen"
+  ],
+  "componentSeeds": [
+    210525,
+    146586,
+    22472,
+    124249,
+    823387,
+    834527,
+    828757,
+    839893
+  ]
+}

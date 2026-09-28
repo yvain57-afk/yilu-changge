@@ -1,0 +1,164 @@
+[
+  {
+    "id": "yuan",
+    "key": "g_detail_yuan",
+    "source": "detail-fullbody-cutout-candidate.png",
+    "sourceBox": [
+      20,
+      6,
+      355,
+      502
+    ],
+    "atlasRect": [
+      3,
+      3,
+      335,
+      496
+    ],
+    "inspection": "whole body, feet and headgear retained; source gutters alpha zero"
+  },
+  {
+    "id": "hua",
+    "key": "g_detail_hua",
+    "source": "detail-fullbody-cutout-candidate.png",
+    "sourceBox": [
+      396,
+      12,
+      617,
+      503
+    ],
+    "atlasRect": [
+      353,
+      3,
+      221,
+      491
+    ],
+    "inspection": "whole body, feet and headgear retained; source gutters alpha zero"
+  },
+  {
+    "id": "diao",
+    "key": "g_detail_diao",
+    "source": "detail-fullbody-cutout-candidate.png",
+    "sourceBox": [
+      695,
+      13,
+      1003,
+      498
+    ],
+    "atlasRect": [
+      703,
+      3,
+      308,
+      485
+    ],
+    "inspection": "whole body, feet and headgear retained; source gutters alpha zero"
+  },
+  {
+    "id": "guo",
+    "key": "g_detail_guo",
+    "source": "detail-fullbody-cutout-candidate.png",
+    "sourceBox": [
+      52,
+      519,
+      317,
+      1003
+    ],
+    "atlasRect": [
+      3,
+      533,
+      265,
+      484
+    ],
+    "inspection": "whole body, feet and headgear retained; source gutters alpha zero"
+  },
+  {
+    "id": "xun",
+    "key": "g_detail_xun",
+    "source": "detail-fullbody-cutout-candidate.png",
+    "sourceBox": [
+      399,
+      516,
+      618,
+      1013
+    ],
+    "atlasRect": [
+      353,
+      533,
+      219,
+      497
+    ],
+    "inspection": "whole body, feet and headgear retained; source gutters alpha zero"
+  },
+  {
+    "id": "sunjian",
+    "key": "g_detail_sunjian",
+    "source": "detail-fullbody-cutout-candidate.png",
+    "sourceBox": [
+      674,
+      512,
+      1017,
+      1011
+    ],
+    "atlasRect": [
+      703,
+      533,
+      343,
+      499
+    ],
+    "inspection": "whole body, feet and headgear retained; source gutters alpha zero"
+  },
+  {
+    "id": "sunquan",
+    "key": "g_detail_sunquan",
+    "source": "detail-fullbody-cutout-candidate.png",
+    "sourceBox": [
+      13,
+      1009,
+      354,
+      1527
+    ],
+    "atlasRect": [
+      3,
+      1063,
+      341,
+      518
+    ],
+    "inspection": "whole body, feet and headgear retained; source gutters alpha zero"
+  },
+  {
+    "id": "liu",
+    "key": "g_detail_liu",
+    "source": "detail-fullbody-cutout-candidate.png",
+    "sourceBox": [
+      387,
+      1019,
+      638,
+      1520
+    ],
+    "atlasRect": [
+      353,
+      1063,
+      251,
+      501
+    ],
+    "inspection": "whole body, feet and headgear retained; source gutters alpha zero"
+  },
+  {
+    "id": "sima",
+    "key": "g_detail_sima",
+    "source": "detail-fullbody-cutout-candidate.png",
+    "sourceBox": [
+      726,
+      1020,
+      1001,
+      1525
+    ],
+    "atlasRect": [
+      703,
+      1063,
+      275,
+      505
+    ],
+    "inspection": "whole body, feet and headgear retained; source gutters alpha zero"
+  }
+]

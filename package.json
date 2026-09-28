@@ -1,18 +1,18 @@
 {
   "name": "yilu-changge",
-  "version": "0.5.1-rc1",
+  "version": "1.0.0-formal20260927",
   "private": true,
   "creator": {
     "version": "3.8.8"
   },
-  "description": "一路长歌：三国 — 三关完整试玩",
+  "description": "一路长歌：三国 — 十关 Cocos 集成测试版",
   "scripts": {
     "test": "node tools/run-local.mjs tsx --test tests/*.test.ts",
     "typecheck:core": "node tools/run-local.mjs tsc -p tsconfig.core.json --noEmit",
     "typecheck": "node tools/run-local.mjs tsc --noEmit -p tsconfig.json",
     "art": "node tools/art.mjs && python3 tools/audio.py",
     "build:web": "node tools/build.mjs web-mobile",
-    "build:wechat": "node tools/build.mjs wechatgame",
+    "build:wechat": "node tools/build.mjs wechatgame && node tools/formal-wechat-optimize.mjs",
     "serve": "node tools/serve.mjs",
     "test:negative": "node tools/run-local.mjs node tools/mutation.mjs",
     "test:browser": "node tools/run-local.mjs node tools/browser-v03-delivery.mjs",
@@ -26,7 +26,10 @@
     "test:feel": "node tools/run-local.mjs tsx --test tests/feel.test.ts tests/presentation.test.ts",
     "check:fixture": "node tools/run-local.mjs node tools/browser-v031-fixture.mjs",
     "check:music": "node tools/run-local.mjs node tools/browser-v031-music.mjs",
-    "record:three": "node tools/run-local.mjs node tools/browser-v031-delivery.mjs"
+    "record:three": "node tools/run-local.mjs node tools/browser-v031-delivery.mjs",
+    "check:v09": "npm run typecheck && node tools/run-local.mjs tsx --test tests/runner-v08.test.ts tests/runner-v09.test.ts tests/progression.test.ts tests/ui-v06.test.ts tests/ui-v09.test.ts tests/combat-v05.test.ts",
+    "review:v09": "node tools/browser-v09-matrix.mjs",
+    "record:v09": "node tools/browser-v09-delivery.mjs"
   },
   "devDependencies": {
     "playwright": "^1.55.1",

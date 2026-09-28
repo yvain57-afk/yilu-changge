@@ -1,0 +1,7 @@
+FILE NAME: weapon-icons.png   (landscape image, e.g. 1536x1024)
+Content: four legendary polearm weapons as clean inventory icons, each laid DIAGONALLY (tip to upper-right, butt to lower-left), same painted metal style as the reference weapon art, arranged in a 2x2 grid with big spacing:
+(1) plain iron long spear (长枪) — simple leaf-shaped spearhead, red tassel, wooden shaft;
+(2) Green Dragon Crescent Blade (青龙偃月刀) — large crescent blade, bronze dragon head at the joint, dark green accents;
+(3) Serpent Spear (丈八蛇矛) — long wavy snake-shaped blade, dark shaft;
+(4) Sky-Piercer Halberd (方天画戟) — spear point with two crescent side blades, gold fittings, red tassel.
+Very readable silhouettes when shrunk to 48px. No glow halo around them (transparent background).

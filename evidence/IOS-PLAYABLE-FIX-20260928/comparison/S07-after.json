@@ -1,0 +1,222 @@
+{
+  "verificationScope": "isolated-native-visual-fixture:S07",
+  "version": "ios-playable-20260928",
+  "engine": "Cocos native Sprite/Graphics/Label",
+  "screen": "chapters",
+  "chapter": 0,
+  "runId": "",
+  "revision": 3,
+  "save": {
+    "schemaVersion": 2,
+    "rulesVersion": "ios-playable-20260928",
+    "ruleBests": {},
+    "cleared": [
+      "c01",
+      "c02",
+      "c03",
+      "c04",
+      "c05",
+      "c06"
+    ],
+    "best": {},
+    "claimed": [],
+    "weapons": [
+      "spear",
+      "guding",
+      "huaji",
+      "shuangji",
+      "yitian",
+      "shemao"
+    ],
+    "weaponLevels": {
+      "spear": 1
+    },
+    "captures": [
+      "lubu",
+      "dian",
+      "xu",
+      "liao",
+      "xiahou",
+      "lumeng"
+    ],
+    "visits": [
+      "hua",
+      "sunjian",
+      "diao",
+      "xun",
+      "guo"
+    ],
+    "allies": [
+      "yuan",
+      "cao",
+      "sunce"
+    ],
+    "treasures": [
+      "taiping",
+      "yuxi",
+      "chitu",
+      "mengde"
+    ],
+    "companions": [
+      "liao",
+      "xiahou"
+    ],
+    "support": "xun",
+    "slots": {
+      "dian": "mengde",
+      "qi": "yuxi",
+      "ma": "chitu"
+    },
+    "xp": 0,
+    "seen": [
+      "jiao",
+      "dong",
+      "hua",
+      "sunjian",
+      "yuan",
+      "lubu",
+      "lubu",
+      "diao",
+      "dian",
+      "xu",
+      "dian",
+      "xu",
+      "xun",
+      "cao",
+      "xiahou",
+      "liao",
+      "liao",
+      "xiahou",
+      "guo",
+      "cao",
+      "sunce",
+      "lumeng",
+      "lumeng",
+      "sunce"
+    ]
+  },
+  "saveNotice": "",
+  "buttons": [
+    {
+      "id": "level0",
+      "x": 189.68,
+      "y": 185.6,
+      "w": 50,
+      "h": 50
+    },
+    {
+      "id": "level1",
+      "x": 114.44,
+      "y": 237.92000000000002,
+      "w": 50,
+      "h": 50
+    },
+    {
+      "id": "level2",
+      "x": 268.34000000000003,
+      "y": 259.72,
+      "w": 50,
+      "h": 50
+    },
+    {
+      "id": "level3",
+      "x": 121.28000000000003,
+      "y": 316.4,
+      "w": 50,
+      "h": 50
+    },
+    {
+      "id": "level4",
+      "x": 217.04,
+      "y": 316.4,
+      "w": 50,
+      "h": 50
+    },
+    {
+      "id": "level5",
+      "x": 285.44,
+      "y": 386.16,
+      "w": 50,
+      "h": 50
+    },
+    {
+      "id": "level6",
+      "x": 206.78,
+      "y": 407.96,
+      "w": 50,
+      "h": 50
+    },
+    {
+      "id": "back",
+      "x": 12,
+      "y": 782,
+      "w": 76,
+      "h": 48
+    },
+    {
+      "id": "map-depart",
+      "x": 100,
+      "y": 782,
+      "w": 286,
+      "h": 48
+    }
+  ],
+  "viewport": {
+    "width": 402,
+    "height": 874,
+    "safe": {
+      "left": 0,
+      "top": 62,
+      "right": 402,
+      "bottom": 840
+    },
+    "capsule": null,
+    "source": "cocos-native",
+    "safeSource": "cocos-native-safe-area",
+    "capsuleSource": "not-available",
+    "revision": 0
+  },
+  "nativeNodes": 0,
+  "createdNodes": 0,
+  "invalidRects": [],
+  "renderErrors": [],
+  "foregroundElapsedSeconds": 0,
+  "resultReadyLatencySeconds": 0,
+  "resultError": "",
+  "missingArt": [],
+  "performance": {
+    "sampleCount": 0,
+    "over50ms": 0,
+    "over100ms": 0,
+    "p95ms": 0,
+    "scope": "foreground battle render intervals, native host dependent"
+  },
+  "fps": 0,
+  "audio": {
+    "active": false,
+    "hidden": false,
+    "bgmEnabled": false,
+    "musicRequested": false,
+    "musicReady": false,
+    "musicTrack": null,
+    "musicPlaying": false,
+    "effectChannels": 5,
+    "playingEffects": [],
+    "limits": {
+      "perKind": 1,
+      "globalVoices": 3,
+      "globalVolume": 0.65,
+      "startsPerSecond": 12,
+      "minStartGapMs": 25
+    },
+    "counters": {
+      "played": 0,
+      "suppressedBusy": 0,
+      "suppressedRate": 0,
+      "suppressedBudget": 0,
+      "loadFailures": 0
+    },
+    "loading": false
+  },
+  "error": ""
+}

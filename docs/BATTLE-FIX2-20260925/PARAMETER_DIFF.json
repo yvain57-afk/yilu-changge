@@ -1,0 +1,122 @@
+{
+  "taskId": "BATTLE-FIX2-20260925",
+  "gates": [
+    {
+      "id": "l1.g0.left",
+      "field": "growthStrategy",
+      "old": "implicit capped",
+      "new": "window",
+      "retainedLegacyMaxPositive": 8
+    },
+    {
+      "id": "l1.g0.right",
+      "field": "growthStrategy",
+      "old": "implicit capped",
+      "new": "window",
+      "retainedLegacyMaxPositive": 8
+    },
+    {
+      "id": "l1.g1",
+      "field": "growthStrategy",
+      "old": "implicit capped",
+      "new": "window",
+      "retainedLegacyMaxPositive": 4
+    },
+    {
+      "id": "l1.g2",
+      "field": "growthStrategy",
+      "old": "implicit capped",
+      "new": "window",
+      "retainedLegacyMaxPositive": 4
+    },
+    {
+      "id": "l1.g3",
+      "field": "growthStrategy",
+      "old": "implicit capped",
+      "new": "window",
+      "retainedLegacyMaxPositive": 4
+    },
+    {
+      "id": "l2.g0.left",
+      "field": "growthStrategy",
+      "old": "implicit capped",
+      "new": "window",
+      "retainedLegacyMaxPositive": 8
+    },
+    {
+      "id": "l2.g0.right",
+      "field": "growthStrategy",
+      "old": "implicit capped",
+      "new": "window",
+      "retainedLegacyMaxPositive": 8
+    },
+    {
+      "id": "l2.g1",
+      "field": "growthStrategy",
+      "old": "implicit capped",
+      "new": "window",
+      "retainedLegacyMaxPositive": 12
+    },
+    {
+      "id": "l2.g2",
+      "field": "growthStrategy",
+      "old": "implicit capped",
+      "new": "window",
+      "retainedLegacyMaxPositive": 12
+    },
+    {
+      "id": "l3.g0.left",
+      "field": "growthStrategy",
+      "old": "implicit capped",
+      "new": "window",
+      "retainedLegacyMaxPositive": 8
+    },
+    {
+      "id": "l3.g0.right",
+      "field": "growthStrategy",
+      "old": "implicit capped",
+      "new": "window",
+      "retainedLegacyMaxPositive": 8
+    },
+    {
+      "id": "l3.g1",
+      "field": "growthStrategy",
+      "old": "implicit capped",
+      "new": "window",
+      "retainedLegacyMaxPositive": 8
+    },
+    {
+      "id": "l3.g2",
+      "field": "growthStrategy",
+      "old": "implicit capped",
+      "new": "window",
+      "retainedLegacyMaxPositive": 8
+    },
+    {
+      "id": "l3.g3",
+      "field": "growthStrategy",
+      "old": "implicit capped",
+      "new": "window",
+      "retainedLegacyMaxPositive": 8
+    },
+    {
+      "id": "l3.g4",
+      "field": "growthStrategy",
+      "old": "implicit capped",
+      "new": "window",
+      "retainedLegacyMaxPositive": 8
+    }
+  ],
+  "squad": {
+    "oldGameCapacity": 256,
+    "newGameplayCapacity": "none",
+    "numericGuard": 4398046511104,
+    "visibleBudget": 48
+  },
+  "damagePerPoint": "unchanged",
+  "forwardSpeed": "unchanged",
+  "targetCoordinates": "unchanged",
+  "enemyHealth": "unchanged",
+  "weapons": "no new weapon identities",
+  "save": "parent integrates runnerBest guard separately"
+}

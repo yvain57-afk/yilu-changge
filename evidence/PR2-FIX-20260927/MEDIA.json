@@ -1,0 +1,78 @@
+[
+  {
+    "path": "evidence/PR2-FIX-20260927/officer-fixture.mp4",
+    "sha256": "2082c4891f0b3ad5a3ca3048aa8f56778e0f558e8be9b950225179b3cde06989",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 780,
+          "height": 1688,
+          "r_frame_rate": "30/1"
+        }
+      ],
+      "format": {
+        "duration": "9.933333",
+        "size": "2050275"
+      }
+    }
+  },
+  {
+    "path": "evidence/PR2-FIX-20260927/natural-ten.mp4",
+    "sha256": "4c451d5c3ea72083e228086de26a3bf518a2496b231c01080956c3af7c9ea2d2",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 390,
+          "height": 844,
+          "r_frame_rate": "30/1"
+        }
+      ],
+      "format": {
+        "duration": "457.233333",
+        "size": "43547827"
+      }
+    }
+  },
+  {
+    "path": "evidence/PR2-FIX-20260927/flow-fixtures.mp4",
+    "sha256": "d58850fb20fd92f3f16651c117e70b42d77aff0b4568b7322a1eb8cdcdfabf3e",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 780,
+          "height": 1688,
+          "r_frame_rate": "30/1"
+        }
+      ],
+      "format": {
+        "duration": "12.533333",
+        "size": "3687116"
+      }
+    }
+  },
+  {
+    "path": "evidence/PR2-FIX-20260927/chapter4-natural.mp4",
+    "sha256": "9be0b1986104cef0afac6ba5798e03a2d697a36b530218f024f11273ad0ba891",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 390,
+          "height": 844,
+          "r_frame_rate": "30/1"
+        }
+      ],
+      "format": {
+        "duration": "42.633333",
+        "size": "8045980"
+      }
+    }
+  }
+]

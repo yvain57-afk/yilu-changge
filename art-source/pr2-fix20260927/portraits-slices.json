@@ -1,0 +1,137 @@
+[
+  {
+    "key": "g_portrait_yuan",
+    "sourceBox": [
+      62,
+      45,
+      411,
+      387
+    ],
+    "runtimeRect": [
+      4,
+      4,
+      349,
+      342
+    ]
+  },
+  {
+    "key": "g_portrait_hua",
+    "sourceBox": [
+      473,
+      54,
+      796,
+      387
+    ],
+    "runtimeRect": [
+      361,
+      4,
+      323,
+      333
+    ]
+  },
+  {
+    "key": "g_portrait_diao",
+    "sourceBox": [
+      884,
+      64,
+      1203,
+      386
+    ],
+    "runtimeRect": [
+      692,
+      4,
+      319,
+      322
+    ]
+  },
+  {
+    "key": "g_portrait_guo",
+    "sourceBox": [
+      44,
+      442,
+      400,
+      827
+    ],
+    "runtimeRect": [
+      1019,
+      4,
+      356,
+      385
+    ]
+  },
+  {
+    "key": "g_portrait_xun",
+    "sourceBox": [
+      469,
+      443,
+      804,
+      827
+    ],
+    "runtimeRect": [
+      1383,
+      4,
+      335,
+      384
+    ]
+  },
+  {
+    "key": "g_portrait_sunjian",
+    "sourceBox": [
+      873,
+      443,
+      1233,
+      827
+    ],
+    "runtimeRect": [
+      4,
+      397,
+      360,
+      384
+    ]
+  },
+  {
+    "key": "g_portrait_sunquan",
+    "sourceBox": [
+      50,
+      827,
+      408,
+      1163
+    ],
+    "runtimeRect": [
+      372,
+      397,
+      358,
+      336
+    ]
+  },
+  {
+    "key": "g_portrait_liu",
+    "sourceBox": [
+      455,
+      827,
+      813,
+      1163
+    ],
+    "runtimeRect": [
+      738,
+      397,
+      358,
+      336
+    ]
+  },
+  {
+    "key": "g_portrait_sima",
+    "sourceBox": [
+      870,
+      827,
+      1223,
+      1163
+    ],
+    "runtimeRect": [
+      1104,
+      397,
+      353,
+      336
+    ]
+  }
+]

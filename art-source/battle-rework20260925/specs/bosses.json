@@ -1,0 +1,66 @@
+{
+  "columns": 4,
+  "rows": 3,
+  "height": 208,
+  "footY": 405,
+  "keys": [
+    "bossXingWalk0",
+    "bossXingWalk1",
+    "bossXingAttack",
+    "bossXingHurt",
+    "bossChenWalk0",
+    "bossChenWalk1",
+    "bossChenAttack",
+    "bossChenHurt",
+    "bossYangWalk0",
+    "bossYangWalk1",
+    "bossYangAttack",
+    "bossYangHurt"
+  ],
+  "componentSeeds": [
+    13965,
+    188580,
+    796,
+    75163,
+    531831,
+    752880,
+    547553,
+    545368,
+    1012150,
+    1254480,
+    1020285,
+    1039501
+  ],
+  "componentBounds": [
+    null,
+    [
+      347,
+      0,
+      687,
+      420
+    ],
+    [
+      687,
+      0,
+      935,
+      420
+    ],
+    null,
+    null,
+    [
+      313,
+      419,
+      635,
+      810
+    ],
+    null,
+    null,
+    null,
+    [
+      313,
+      810,
+      635,
+      1254
+    ]
+  ]
+}

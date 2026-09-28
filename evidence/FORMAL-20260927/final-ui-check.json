@@ -1,0 +1,2310 @@
+{
+  "passed": true,
+  "scope": "Final build, 360x640 populated preparation fixture, ordinary UI pagination/tactic/depart/pause/quit/reload; 19s real-time native battle plus one explicitly injected durable officer target for control branch verification, actual control ledger. Completed-save fixture, not natural progression.",
+  "controlLedgerSamples": 3,
+  "buttons": [
+    {
+      "id": "tab-companions",
+      "x": 12,
+      "y": 104,
+      "w": 106.66666666666667,
+      "h": 48
+    },
+    {
+      "id": "tab-support",
+      "x": 126.66666666666667,
+      "y": 104,
+      "w": 106.66666666666667,
+      "h": 48
+    },
+    {
+      "id": "tab-treasures",
+      "x": 241.33333333333334,
+      "y": 104,
+      "w": 106.66666666666667,
+      "h": 48
+    },
+    {
+      "id": "treasure-taiping",
+      "x": 16,
+      "y": 162,
+      "w": 125,
+      "h": 48
+    },
+    {
+      "id": "tactic",
+      "x": 114,
+      "y": 439,
+      "w": 132,
+      "h": 48
+    },
+    {
+      "id": "prev-page",
+      "x": 85,
+      "y": 226,
+      "w": 48,
+      "h": 48
+    },
+    {
+      "id": "next-page",
+      "x": 227,
+      "y": 226,
+      "w": 48,
+      "h": 48
+    },
+    {
+      "id": "back",
+      "x": 12,
+      "y": 574,
+      "w": 76,
+      "h": 48
+    },
+    {
+      "id": "depart",
+      "x": 100,
+      "y": 574,
+      "w": 244,
+      "h": 48
+    }
+  ],
+  "state": {
+    "version": "formal-20260927.1",
+    "engine": "Cocos native Sprite/Graphics/Label",
+    "screen": "battle",
+    "chapter": 9,
+    "runId": "muj9lvw8-j3y70e80di",
+    "revision": 4,
+    "save": {
+      "schemaVersion": 2,
+      "cleared": [
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c06",
+        "c07",
+        "c08",
+        "c09",
+        "c10"
+      ],
+      "best": {
+        "c01": 59,
+        "c02": 70,
+        "c03": 82,
+        "c04": 83,
+        "c05": 81,
+        "c06": 73,
+        "c07": 76,
+        "c08": 72,
+        "c09": 71,
+        "c10": 61
+      },
+      "claimed": [
+        "run:check-0",
+        "run:check-1",
+        "run:check-2",
+        "run:check-3",
+        "run:check-4",
+        "run:check-5",
+        "run:check-6",
+        "run:check-7",
+        "run:check-8",
+        "run:check-9"
+      ],
+      "weapons": [
+        "spear",
+        "guding",
+        "huaji",
+        "shuangji",
+        "yitian",
+        "shemao",
+        "qinggang",
+        "guandao",
+        "shuanggu",
+        "liannu"
+      ],
+      "weaponLevels": {
+        "spear": 1,
+        "guding": 1,
+        "huaji": 1,
+        "shuangji": 1,
+        "yitian": 1,
+        "shemao": 1,
+        "qinggang": 1,
+        "guandao": 1,
+        "shuanggu": 1,
+        "liannu": 1
+      },
+      "captures": [
+        "lubu",
+        "dian",
+        "xu",
+        "liao",
+        "xiahou",
+        "lumeng",
+        "sunxiang",
+        "luxun",
+        "zhao",
+        "zhang",
+        "guan",
+        "huang",
+        "machao",
+        "jiang"
+      ],
+      "visits": [
+        "hua",
+        "sunjian",
+        "diao",
+        "xun",
+        "guo",
+        "zhou",
+        "zhuge",
+        "pang",
+        "sima"
+      ],
+      "allies": [
+        "yuan",
+        "cao",
+        "sunce",
+        "sunquan",
+        "liu"
+      ],
+      "treasures": [
+        "taiping",
+        "yuxi",
+        "chitu",
+        "mengde",
+        "muniu",
+        "dilu",
+        "qingnang",
+        "qixing"
+      ],
+      "companions": [
+        "lubu",
+        "guan"
+      ],
+      "support": "hua",
+      "slots": {
+        "dian": "taiping",
+        "qi": "yuxi",
+        "ma": "chitu"
+      },
+      "xp": 300,
+      "seen": [
+        "jiao",
+        "dong",
+        "hua",
+        "sunjian",
+        "yuan",
+        "lubu",
+        "diao",
+        "dian",
+        "xu",
+        "xun",
+        "cao",
+        "xiahou",
+        "liao",
+        "guo",
+        "sunce",
+        "lumeng",
+        "zhou",
+        "luxun",
+        "sunxiang",
+        "sunquan",
+        "zhang",
+        "zhao",
+        "guan",
+        "huang",
+        "zhuge",
+        "pang",
+        "machao",
+        "jiang",
+        "sima",
+        "liu"
+      ],
+      "mainTactic": "zhenjun"
+    },
+    "saveNotice": "",
+    "battle": {
+      "chapter": 9,
+      "t": 20.150000000000137,
+      "dist": 221.6500000000027,
+      "phase": "run",
+      "x": 2.0831972354891547e-8,
+      "target": 2.0831972354891547e-8,
+      "troops": 82,
+      "weapon": "liannu",
+      "tier": 3,
+      "arms": "repeater",
+      "companions": [
+        "lubu",
+        "guan"
+      ],
+      "support": {
+        "id": "hua",
+        "cd": 0.03333333333315863,
+        "pending": null,
+        "uses": 1,
+        "flash": 0
+      },
+      "slots": {
+        "dian": {
+          "id": "taiping",
+          "st": "worn",
+          "n": 5,
+          "flash": 0
+        },
+        "qi": {
+          "id": "yuxi",
+          "st": "worn",
+          "n": 1,
+          "flash": 0,
+          "used": true
+        },
+        "ma": {
+          "id": "chitu",
+          "st": "worn",
+          "n": 0,
+          "flash": 0
+        }
+      },
+      "boss": null,
+      "entities": [
+        {
+          "id": 68,
+          "type": "enemy",
+          "x": -0.5825635968393478,
+          "d": 225.89000000000163,
+          "hp": 0,
+          "walk": 15.157132018062736,
+          "dead": 0.9100000000000011,
+          "slow": 0,
+          "hitT": 0.12,
+          "fallDir": -1,
+          "z": 4.239999999998929
+        },
+        {
+          "id": 70,
+          "type": "enemy",
+          "x": -0.21858432899628968,
+          "d": 225.96333333333496,
+          "hp": 0,
+          "walk": 15.063042655990557,
+          "dead": 0.9433333333333346,
+          "slow": 0,
+          "hitT": 0.12,
+          "fallDir": -1,
+          "z": 4.3133333333322526
+        },
+        {
+          "id": 71,
+          "type": "enemy",
+          "x": -0.6207248459247523,
+          "d": 226.95333333333497,
+          "hp": 0,
+          "walk": 14.598575711488609,
+          "dead": 0.8933333333333344,
+          "slow": 0,
+          "hitT": 0.12,
+          "fallDir": -1,
+          "z": 5.303333333332262
+        },
+        {
+          "id": 72,
+          "type": "enemy",
+          "x": -0.3730810205839021,
+          "d": 226.95333333333497,
+          "hp": 0,
+          "walk": 15.428117439309732,
+          "dead": 0.8933333333333344,
+          "slow": 0,
+          "hitT": 0.12,
+          "fallDir": -1,
+          "z": 5.303333333332262
+        },
+        {
+          "id": 73,
+          "type": "enemy",
+          "x": -0.2266118512007463,
+          "d": 226.95333333333497,
+          "hp": 0,
+          "walk": 14.550281150948004,
+          "dead": 0.8933333333333344,
+          "slow": 0,
+          "hitT": 0.12,
+          "fallDir": -1,
+          "z": 5.303333333332262
+        },
+        {
+          "id": 74,
+          "type": "enemy",
+          "x": -0.6142817609404595,
+          "d": 228.01666666666833,
+          "hp": 0,
+          "walk": 15.45739789496823,
+          "dead": 0.8766666666666677,
+          "slow": 0,
+          "hitT": 0.12,
+          "fallDir": -1,
+          "z": 6.366666666665623
+        },
+        {
+          "id": 75,
+          "type": "enemy",
+          "x": -0.37781475605807024,
+          "d": 228.01666666666833,
+          "hp": 0,
+          "walk": 15.473248866894163,
+          "dead": 0.8766666666666677,
+          "slow": 0,
+          "hitT": 0.12,
+          "fallDir": -1,
+          "z": 6.366666666665623
+        },
+        {
+          "id": 76,
+          "type": "enemy",
+          "x": -0.2133776465074055,
+          "d": 226.11000000000192,
+          "hp": 1,
+          "walk": 16.968252500592758,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 4.459999999999212
+        },
+        {
+          "id": 77,
+          "type": "enemy",
+          "x": -0.6282133521596964,
+          "d": 227.2100000000019,
+          "hp": 1,
+          "walk": 17.23983753306309,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 5.5599999999992065
+        },
+        {
+          "id": 78,
+          "type": "enemy",
+          "x": -0.39643490842843193,
+          "d": 227.2100000000019,
+          "hp": 1,
+          "walk": 16.91156738908094,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 5.5599999999992065
+        },
+        {
+          "id": 80,
+          "type": "enemy",
+          "x": 0.41880540529676036,
+          "d": 248.64000000000036,
+          "hp": 0,
+          "walk": 10.087447044182273,
+          "dead": 0.8433333333333343,
+          "slow": 0,
+          "hitT": 0.12,
+          "fallDir": 1,
+          "z": 26.98999999999765
+        },
+        {
+          "id": 81,
+          "type": "enemy",
+          "x": 0.6037482943263597,
+          "d": 246.80666666666727,
+          "hp": 1,
+          "walk": 12.506379052080645,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 25.156666666664563
+        },
+        {
+          "id": 83,
+          "type": "enemy",
+          "x": 0.4150652142730845,
+          "d": 248.0533333333331,
+          "hp": 0,
+          "walk": 12.390938128858876,
+          "dead": 0.07666666666666666,
+          "slow": 0,
+          "hitT": 0.12,
+          "fallDir": 1,
+          "z": 26.40333333333038
+        },
+        {
+          "id": 84,
+          "type": "enemy",
+          "x": 0.5930279039233123,
+          "d": 247.90666666666644,
+          "hp": 1,
+          "walk": 12.546353985123755,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 26.256666666663733
+        },
+        {
+          "id": 85,
+          "type": "enemy",
+          "x": 0.1846856785540868,
+          "d": 249.00666666666555,
+          "hp": 1,
+          "walk": 12.749990975613022,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 27.356666666662846
+        },
+        {
+          "id": 86,
+          "type": "enemy",
+          "x": 0.41629962774286966,
+          "d": 249.00666666666555,
+          "hp": 1,
+          "walk": 12.344057906824446,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 27.356666666662846
+        },
+        {
+          "id": 87,
+          "type": "enemy",
+          "x": 0.585274399963801,
+          "d": 249.00666666666555,
+          "hp": 1,
+          "walk": 12.660669860051579,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 27.356666666662846
+        },
+        {
+          "id": 88,
+          "type": "enemy",
+          "x": 0.20310027327067232,
+          "d": 250.10666666666472,
+          "hp": 1,
+          "walk": 12.984881003159758,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 28.456666666662016
+        },
+        {
+          "id": 89,
+          "type": "enemy",
+          "x": 0.4041012064246932,
+          "d": 250.10666666666472,
+          "hp": 1,
+          "walk": 12.362939663645573,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 28.456666666662016
+        },
+        {
+          "id": 90,
+          "type": "enemy",
+          "x": 0.6060156135242506,
+          "d": 250.10666666666472,
+          "hp": 1,
+          "walk": 12.62027503463757,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 28.456666666662016
+        },
+        {
+          "id": 91,
+          "type": "enemy",
+          "x": 0.20815042927775088,
+          "d": 251.20666666666384,
+          "hp": 1,
+          "walk": 12.61774785264595,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 29.55666666666113
+        },
+        {
+          "id": 92,
+          "type": "enemy",
+          "x": 0.37968956528682707,
+          "d": 251.20666666666384,
+          "hp": 1,
+          "walk": 12.255396261709716,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 29.55666666666113
+        },
+        {
+          "id": 93,
+          "type": "enemy",
+          "x": 0.2048959994664863,
+          "d": 270.80333333332936,
+          "hp": 1,
+          "walk": 8.274383887247026,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 49.15333333332666
+        },
+        {
+          "id": 94,
+          "type": "enemy",
+          "x": 0.38839957767091676,
+          "d": 270.80333333332936,
+          "hp": 1,
+          "walk": 7.3516985849547165,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 49.15333333332666
+        },
+        {
+          "id": 95,
+          "type": "enemy",
+          "x": 0.6140870400537212,
+          "d": 270.80333333332936,
+          "hp": 1,
+          "walk": 7.838036381500458,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 49.15333333332666
+        },
+        {
+          "id": 96,
+          "type": "enemy",
+          "x": 0.20684783271367096,
+          "d": 271.9033333333294,
+          "hp": 1,
+          "walk": 8.015406977794456,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 50.25333333332668
+        },
+        {
+          "id": 97,
+          "type": "enemy",
+          "x": 0.4109045475073646,
+          "d": 271.9033333333294,
+          "hp": 1,
+          "walk": 7.368832604602039,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 50.25333333332668
+        },
+        {
+          "id": 98,
+          "type": "enemy",
+          "x": 0.6123751328058425,
+          "d": 271.9033333333294,
+          "hp": 1,
+          "walk": 8.304284463248944,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 50.25333333332668
+        },
+        {
+          "id": 99,
+          "type": "enemy",
+          "x": 0.22073842952527964,
+          "d": 273.00333333332935,
+          "hp": 1,
+          "walk": 8.003083856248468,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 51.353333333326646
+        },
+        {
+          "id": 100,
+          "type": "enemy",
+          "x": 0.4040223181033611,
+          "d": 273.00333333332935,
+          "hp": 1,
+          "walk": 7.541672719831096,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 51.353333333326646
+        },
+        {
+          "id": 101,
+          "type": "enemy",
+          "x": 0.6078041320935843,
+          "d": 273.00333333332935,
+          "hp": 1,
+          "walk": 7.890801614501554,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 51.353333333326646
+        },
+        {
+          "id": 102,
+          "type": "enemy",
+          "x": 0.19636409567965388,
+          "d": 274.1033333333294,
+          "hp": 1,
+          "walk": 7.345934799038447,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 52.45333333332667
+        },
+        {
+          "id": 103,
+          "type": "enemy",
+          "x": 0.42177004636813425,
+          "d": 274.1033333333294,
+          "hp": 1,
+          "walk": 7.976155153866596,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 52.45333333332667
+        },
+        {
+          "id": 104,
+          "type": "enemy",
+          "x": 0.6285802621760315,
+          "d": 274.1033333333294,
+          "hp": 1,
+          "walk": 7.63110654265359,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 52.45333333332667
+        },
+        {
+          "id": 105,
+          "type": "enemy",
+          "x": 0.21465974275239733,
+          "d": 275.20333333332934,
+          "hp": 1,
+          "walk": 8.261607325694007,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 53.553333333326634
+        },
+        {
+          "id": 106,
+          "type": "enemy",
+          "x": 0.4042593763741941,
+          "d": 275.20333333332934,
+          "hp": 1,
+          "walk": 7.945645351339564,
+          "dead": 0,
+          "slow": 0,
+          "hitT": 0,
+          "z": 53.553333333326634
+        },
+        {
+          "id": 90909,
+          "type": "enemy",
+          "person": "xu",
+          "elite": true,
+          "x": 2.0831972354891547e-8,
+          "d": 227.61500000000223,
+          "hp": 985,
+          "walk": 2.686666666666671,
+          "dead": 0,
+          "slow": 0.283333333333333,
+          "hitT": 0,
+          "z": 5.96499999999952
+        }
+      ],
+      "stats": {
+        "bossStrikes": 0,
+        "dodged": 0,
+        "hitTaken": 0,
+        "volleys": 12,
+        "arrowsHit": 41,
+        "taiping": 5,
+        "supportSaved": 1,
+        "crates": {
+          "weapon": 4,
+          "grain": 1,
+          "arms": 2,
+          "treasure": 1
+        },
+        "gates": 5
+      },
+      "totals": {
+        "damage": 130,
+        "gate": 8,
+        "troops": 46
+      },
+      "paused": false,
+      "runGot": [
+        "taiping"
+      ],
+      "log": [
+        {
+          "t": 0,
+          "kind": "treasure",
+          "msg": "传国玉玺 开局 +6"
+        },
+        {
+          "t": 1.65,
+          "kind": "weapon",
+          "msg": "长枪 → 2 阶"
+        },
+        {
+          "t": 2.33,
+          "kind": "crate",
+          "msg": "粮车 +6"
+        },
+        {
+          "t": 3.62,
+          "kind": "arms",
+          "msg": "部曲 → 火箭"
+        },
+        {
+          "t": 4.55,
+          "kind": "gate",
+          "msg": "援兵门 +14 太平 +1"
+        },
+        {
+          "t": 6.9,
+          "kind": "weapon",
+          "msg": "长枪 → 诸葛连弩（本主未随军）"
+        },
+        {
+          "t": 7.2,
+          "kind": "contact",
+          "msg": "敌兵接触 −1"
+        },
+        {
+          "t": 7.28,
+          "kind": "contact",
+          "msg": "敌兵接触 −1"
+        },
+        {
+          "t": 8.18,
+          "kind": "support",
+          "msg": "华佗 +1"
+        },
+        {
+          "t": 10.52,
+          "kind": "treasure",
+          "msg": "太平要术 重复 溢出"
+        },
+        {
+          "t": 12,
+          "kind": "gate",
+          "msg": "援兵门 +11 太平 +1"
+        },
+        {
+          "t": 12.72,
+          "kind": "weapon",
+          "msg": "诸葛连弩 → 3 阶"
+        },
+        {
+          "t": 13.6,
+          "kind": "arms",
+          "msg": "部曲 → 连弩"
+        },
+        {
+          "t": 14.68,
+          "kind": "weapon",
+          "msg": "诸葛连弩 满阶 溢出 +4"
+        },
+        {
+          "t": 16.83,
+          "kind": "gate",
+          "msg": "援兵门 +1 太平 +1"
+        },
+        {
+          "t": 17.28,
+          "kind": "gate",
+          "msg": "援兵门 +1 太平 +1"
+        },
+        {
+          "t": 17.73,
+          "kind": "gate",
+          "msg": "援兵门 +1 太平 +1"
+        }
+      ]
+    },
+    "ledger": [
+      {
+        "tick": 99,
+        "kind": "damage",
+        "source": "troop",
+        "target": 16,
+        "amount": 1
+      },
+      {
+        "tick": 99,
+        "kind": "damage",
+        "source": "troop",
+        "target": 16,
+        "amount": 1
+      },
+      {
+        "tick": 140,
+        "kind": "damage",
+        "source": "companion",
+        "target": 16,
+        "amount": 2
+      },
+      {
+        "tick": 140,
+        "kind": "troops",
+        "source": "event",
+        "target": "team",
+        "amount": 6
+      },
+      {
+        "tick": 185,
+        "kind": "damage",
+        "source": "hero",
+        "target": 19,
+        "amount": 4.050000000000001
+      },
+      {
+        "tick": 207,
+        "kind": "damage",
+        "source": "companion",
+        "target": 19,
+        "amount": 2
+      },
+      {
+        "tick": 217,
+        "kind": "damage",
+        "source": "hero",
+        "target": 19,
+        "amount": 1.9499999999999993
+      },
+      {
+        "tick": 234,
+        "kind": "gate",
+        "source": "companion",
+        "target": 17,
+        "amount": 1
+      },
+      {
+        "tick": 265,
+        "kind": "gate",
+        "source": "hero",
+        "target": 17,
+        "amount": 1
+      },
+      {
+        "tick": 273,
+        "kind": "troops",
+        "source": "gate",
+        "target": "team",
+        "amount": 14
+      },
+      {
+        "tick": 273,
+        "kind": "troops",
+        "source": "taiping",
+        "target": "team",
+        "amount": 1
+      },
+      {
+        "tick": 350,
+        "kind": "damage",
+        "source": "hero",
+        "target": 36,
+        "amount": 4.050000000000001
+      },
+      {
+        "tick": 367,
+        "kind": "damage",
+        "source": "companion",
+        "target": 21,
+        "amount": 1
+      },
+      {
+        "tick": 376,
+        "kind": "damage",
+        "source": "troop",
+        "target": 22,
+        "amount": 1
+      },
+      {
+        "tick": 376,
+        "kind": "damage",
+        "source": "troop",
+        "target": 23,
+        "amount": 1
+      },
+      {
+        "tick": 376,
+        "kind": "damage",
+        "source": "troop",
+        "target": 24,
+        "amount": 1
+      },
+      {
+        "tick": 376,
+        "kind": "damage",
+        "source": "troop",
+        "target": 25,
+        "amount": 1
+      },
+      {
+        "tick": 377,
+        "kind": "damage",
+        "source": "troop",
+        "target": 26,
+        "amount": 1
+      },
+      {
+        "tick": 377,
+        "kind": "damage",
+        "source": "troop",
+        "target": 27,
+        "amount": 1
+      },
+      {
+        "tick": 377,
+        "kind": "damage",
+        "source": "troop",
+        "target": 28,
+        "amount": 1
+      },
+      {
+        "tick": 377,
+        "kind": "damage",
+        "source": "troop",
+        "target": 29,
+        "amount": 1
+      },
+      {
+        "tick": 381,
+        "kind": "damage",
+        "source": "hero",
+        "target": 36,
+        "amount": 4.050000000000001
+      },
+      {
+        "tick": 414,
+        "kind": "damage",
+        "source": "hero",
+        "target": 36,
+        "amount": 1.8999999999999986
+      },
+      {
+        "tick": 432,
+        "kind": "troops",
+        "source": "event",
+        "target": "team",
+        "amount": -1
+      },
+      {
+        "tick": 437,
+        "kind": "troops",
+        "source": "event",
+        "target": "team",
+        "amount": -1
+      },
+      {
+        "tick": 491,
+        "kind": "troops",
+        "source": "hua",
+        "target": "team",
+        "amount": 1
+      },
+      {
+        "tick": 563,
+        "kind": "gate",
+        "source": "hero",
+        "target": 39,
+        "amount": 1
+      },
+      {
+        "tick": 568,
+        "kind": "gate",
+        "source": "hero",
+        "target": 39,
+        "amount": 1
+      },
+      {
+        "tick": 575,
+        "kind": "damage",
+        "source": "troop",
+        "target": 37,
+        "amount": 1.5
+      },
+      {
+        "tick": 575,
+        "kind": "damage",
+        "source": "troop",
+        "target": 37,
+        "amount": 1.5
+      },
+      {
+        "tick": 575,
+        "kind": "damage",
+        "source": "troop",
+        "target": 37,
+        "amount": 1.5
+      },
+      {
+        "tick": 575,
+        "kind": "damage",
+        "source": "troop",
+        "target": 37,
+        "amount": 1.5
+      },
+      {
+        "tick": 575,
+        "kind": "damage",
+        "source": "troop",
+        "target": 37,
+        "amount": 1.5
+      },
+      {
+        "tick": 575,
+        "kind": "damage",
+        "source": "troop",
+        "target": 37,
+        "amount": 1.5
+      },
+      {
+        "tick": 575,
+        "kind": "damage",
+        "source": "troop",
+        "target": 37,
+        "amount": 1.5
+      },
+      {
+        "tick": 575,
+        "kind": "damage",
+        "source": "troop",
+        "target": 37,
+        "amount": 1.5
+      },
+      {
+        "tick": 601,
+        "kind": "gate",
+        "source": "hero",
+        "target": 39,
+        "amount": 1
+      },
+      {
+        "tick": 606,
+        "kind": "gate",
+        "source": "hero",
+        "target": 39,
+        "amount": 1
+      },
+      {
+        "tick": 631,
+        "kind": "damage",
+        "source": "hero",
+        "target": 37,
+        "amount": 2
+      },
+      {
+        "tick": 631,
+        "kind": "troops",
+        "source": "event",
+        "target": "team",
+        "amount": 4
+      },
+      {
+        "tick": 660,
+        "kind": "damage",
+        "source": "companion",
+        "target": 40,
+        "amount": 2
+      },
+      {
+        "tick": 688,
+        "kind": "damage",
+        "source": "hero",
+        "target": 40,
+        "amount": 2.7
+      },
+      {
+        "tick": 705,
+        "kind": "damage",
+        "source": "companion",
+        "target": 40,
+        "amount": 2
+      },
+      {
+        "tick": 714,
+        "kind": "gate",
+        "source": "hero",
+        "target": 39,
+        "amount": 1
+      },
+      {
+        "tick": 720,
+        "kind": "troops",
+        "source": "gate",
+        "target": "team",
+        "amount": 11
+      },
+      {
+        "tick": 720,
+        "kind": "troops",
+        "source": "taiping",
+        "target": "team",
+        "amount": 1
+      },
+      {
+        "tick": 763,
+        "kind": "damage",
+        "source": "hero",
+        "target": 40,
+        "amount": 2.7
+      },
+      {
+        "tick": 763,
+        "kind": "damage",
+        "source": "troop",
+        "target": 40,
+        "amount": 0.5999999999999996
+      },
+      {
+        "tick": 782,
+        "kind": "damage",
+        "source": "hero",
+        "target": 42,
+        "amount": 2.7
+      },
+      {
+        "tick": 798,
+        "kind": "damage",
+        "source": "companion",
+        "target": 42,
+        "amount": 2
+      },
+      {
+        "tick": 816,
+        "kind": "damage",
+        "source": "hero",
+        "target": 42,
+        "amount": 3.3
+      },
+      {
+        "tick": 870,
+        "kind": "damage",
+        "source": "hero",
+        "target": 50,
+        "amount": 3.5
+      },
+      {
+        "tick": 876,
+        "kind": "damage",
+        "source": "hero",
+        "target": 50,
+        "amount": 3.5
+      },
+      {
+        "tick": 881,
+        "kind": "damage",
+        "source": "hero",
+        "target": 50,
+        "amount": 3
+      },
+      {
+        "tick": 881,
+        "kind": "troops",
+        "source": "event",
+        "target": "team",
+        "amount": 4
+      },
+      {
+        "tick": 910,
+        "kind": "damage",
+        "source": "hero",
+        "target": 51,
+        "amount": 1
+      },
+      {
+        "tick": 919,
+        "kind": "gate",
+        "source": "companion",
+        "target": 44,
+        "amount": 1
+      },
+      {
+        "tick": 943,
+        "kind": "damage",
+        "source": "hero",
+        "target": 52,
+        "amount": 1
+      },
+      {
+        "tick": 976,
+        "kind": "damage",
+        "source": "hero",
+        "target": 54,
+        "amount": 1
+      },
+      {
+        "tick": 983,
+        "kind": "damage",
+        "source": "hero",
+        "target": 60,
+        "amount": 1
+      },
+      {
+        "tick": 987,
+        "kind": "damage",
+        "source": "hero",
+        "target": 57,
+        "amount": 1
+      },
+      {
+        "tick": 1010,
+        "kind": "troops",
+        "source": "gate",
+        "target": "team",
+        "amount": 1
+      },
+      {
+        "tick": 1010,
+        "kind": "troops",
+        "source": "taiping",
+        "target": "team",
+        "amount": 1
+      },
+      {
+        "tick": 1037,
+        "kind": "troops",
+        "source": "gate",
+        "target": "team",
+        "amount": 1
+      },
+      {
+        "tick": 1037,
+        "kind": "troops",
+        "source": "taiping",
+        "target": "team",
+        "amount": 1
+      },
+      {
+        "tick": 1056,
+        "kind": "damage",
+        "source": "troop",
+        "target": 53,
+        "amount": 1
+      },
+      {
+        "tick": 1056,
+        "kind": "damage",
+        "source": "troop",
+        "target": 55,
+        "amount": 1
+      },
+      {
+        "tick": 1056,
+        "kind": "damage",
+        "source": "troop",
+        "target": 56,
+        "amount": 1
+      },
+      {
+        "tick": 1057,
+        "kind": "damage",
+        "source": "troop",
+        "target": 58,
+        "amount": 1
+      },
+      {
+        "tick": 1057,
+        "kind": "damage",
+        "source": "troop",
+        "target": 59,
+        "amount": 1
+      },
+      {
+        "tick": 1058,
+        "kind": "damage",
+        "source": "troop",
+        "target": 61,
+        "amount": 1
+      },
+      {
+        "tick": 1058,
+        "kind": "damage",
+        "source": "troop",
+        "target": 62,
+        "amount": 1
+      },
+      {
+        "tick": 1059,
+        "kind": "damage",
+        "source": "troop",
+        "target": 63,
+        "amount": 1
+      },
+      {
+        "tick": 1059,
+        "kind": "damage",
+        "source": "troop",
+        "target": 64,
+        "amount": 1
+      },
+      {
+        "tick": 1064,
+        "kind": "troops",
+        "source": "gate",
+        "target": "team",
+        "amount": 1
+      },
+      {
+        "tick": 1064,
+        "kind": "troops",
+        "source": "taiping",
+        "target": "team",
+        "amount": 1
+      },
+      {
+        "tick": 1080,
+        "kind": "damage",
+        "source": "companion",
+        "target": 65,
+        "amount": 1
+      },
+      {
+        "tick": 1106,
+        "kind": "damage",
+        "source": "hero",
+        "target": 67,
+        "amount": 1
+      },
+      {
+        "tick": 1118,
+        "kind": "damage",
+        "source": "hero",
+        "target": 79,
+        "amount": 1
+      },
+      {
+        "tick": 1129,
+        "kind": "damage",
+        "source": "hero",
+        "target": 82,
+        "amount": 1
+      },
+      {
+        "tick": 1138,
+        "kind": "damage",
+        "source": "hero",
+        "target": 66,
+        "amount": 1
+      },
+      {
+        "tick": 1149,
+        "kind": "damage",
+        "source": "hero",
+        "target": 69,
+        "amount": 1
+      },
+      {
+        "tick": 1153,
+        "kind": "damage",
+        "source": "companion",
+        "target": 70,
+        "amount": 1
+      },
+      {
+        "tick": 1155,
+        "kind": "damage",
+        "source": "troop",
+        "target": 68,
+        "amount": 1
+      },
+      {
+        "tick": 1155,
+        "kind": "damage",
+        "source": "troop",
+        "target": 90909,
+        "amount": 1.5
+      },
+      {
+        "tick": 1156,
+        "kind": "damage",
+        "source": "troop",
+        "target": 71,
+        "amount": 1
+      },
+      {
+        "tick": 1156,
+        "kind": "damage",
+        "source": "troop",
+        "target": 72,
+        "amount": 1
+      },
+      {
+        "tick": 1156,
+        "kind": "damage",
+        "source": "troop",
+        "target": 73,
+        "amount": 1
+      },
+      {
+        "tick": 1157,
+        "kind": "damage",
+        "source": "troop",
+        "target": 74,
+        "amount": 1
+      },
+      {
+        "tick": 1157,
+        "kind": "damage",
+        "source": "troop",
+        "target": 75,
+        "amount": 1
+      },
+      {
+        "tick": 1159,
+        "kind": "damage",
+        "source": "hero",
+        "target": 80,
+        "amount": 1
+      },
+      {
+        "tick": 1162,
+        "kind": "damage",
+        "source": "troop",
+        "target": 90909,
+        "amount": 1.5
+      },
+      {
+        "tick": 1169,
+        "kind": "damage",
+        "source": "troop",
+        "target": 90909,
+        "amount": 1.5
+      },
+      {
+        "tick": 1176,
+        "kind": "damage",
+        "source": "hero",
+        "target": 90909,
+        "amount": 3.5
+      },
+      {
+        "tick": 1176,
+        "kind": "control",
+        "source": "zhenjun",
+        "target": 90909,
+        "amount": 0.65
+      },
+      {
+        "tick": 1182,
+        "kind": "damage",
+        "source": "hero",
+        "target": 90909,
+        "amount": 3.5
+      },
+      {
+        "tick": 1182,
+        "kind": "control",
+        "source": "zhenjun",
+        "target": 90909,
+        "amount": 0.65
+      },
+      {
+        "tick": 1187,
+        "kind": "damage",
+        "source": "hero",
+        "target": 90909,
+        "amount": 3.5
+      },
+      {
+        "tick": 1187,
+        "kind": "control",
+        "source": "zhenjun",
+        "target": 90909,
+        "amount": 0.65
+      },
+      {
+        "tick": 1205,
+        "kind": "damage",
+        "source": "companion",
+        "target": 83,
+        "amount": 1
+      }
+    ],
+    "diagnostics": {
+      "texts": [
+        {
+          "str": "许褚",
+          "size": 12,
+          "kind": "ui",
+          "x": 168.00000243769762,
+          "y": 336.7655494619552,
+          "w": 24,
+          "h": 12,
+          "layer": "L7",
+          "claim": false
+        },
+        {
+          "str": "82",
+          "size": 24,
+          "kind": "troop",
+          "x": 176.84000299980403,
+          "y": 325.82000000000005,
+          "w": 28.32,
+          "h": 24,
+          "layer": "L6",
+          "claim": false
+        },
+        {
+          "str": "连弩",
+          "size": 12,
+          "kind": "ui",
+          "x": 114.84000299980403,
+          "y": 330.82000000000005,
+          "w": 24,
+          "h": 12,
+          "layer": "L6",
+          "claim": false
+        },
+        {
+          "str": "诸葛连弩",
+          "size": 14,
+          "kind": "ui",
+          "x": 88,
+          "y": 19,
+          "w": 56,
+          "h": 14,
+          "layer": "L7",
+          "claim": false
+        },
+        {
+          "str": "诸葛亮未随军",
+          "size": 12,
+          "kind": "ui",
+          "x": 264,
+          "y": 37,
+          "w": 72,
+          "h": 12,
+          "layer": "L7",
+          "claim": false
+        },
+        {
+          "str": "第10关 · 隆中",
+          "size": 14,
+          "kind": "ui",
+          "x": 22,
+          "y": 67,
+          "w": 82.74,
+          "h": 14,
+          "layer": "L7",
+          "claim": false
+        },
+        {
+          "str": "用",
+          "size": 12,
+          "kind": "ui",
+          "x": 28,
+          "y": 136,
+          "w": 12,
+          "h": 12,
+          "layer": "L7",
+          "claim": false
+        },
+        {
+          "str": "援",
+          "size": 12,
+          "kind": "ui",
+          "x": 16,
+          "y": 220,
+          "w": 12,
+          "h": 12,
+          "layer": "L7",
+          "claim": false
+        }
+      ],
+      "hud": [
+        {
+          "name": "暂停",
+          "x": 12,
+          "y": 14,
+          "w": 32,
+          "h": 32
+        },
+        {
+          "name": "兵器",
+          "x": 52,
+          "y": 14,
+          "w": 292,
+          "h": 32
+        },
+        {
+          "name": "行军条",
+          "x": 12,
+          "y": 58,
+          "w": 336,
+          "h": 32
+        },
+        {
+          "name": "宝物槽·典",
+          "x": 8,
+          "y": 106,
+          "w": 28,
+          "h": 28
+        },
+        {
+          "name": "宝物槽·器",
+          "x": 8,
+          "y": 140,
+          "w": 28,
+          "h": 28
+        },
+        {
+          "name": "宝物槽·骑",
+          "x": 8,
+          "y": 174,
+          "w": 28,
+          "h": 28
+        },
+        {
+          "name": "支援·华佗",
+          "x": 8,
+          "y": 212,
+          "w": 28,
+          "h": 28
+        }
+      ],
+      "gate": {
+        "unsettledHidden": 0,
+        "docked": 0
+      },
+      "used": [
+        [
+          "墙·尖桩A",
+          {
+            "key": "g_stake0",
+            "gen": true,
+            "want": "g_stake0"
+          }
+        ],
+        [
+          "墙·尖桩B",
+          {
+            "key": "g_stake1",
+            "gen": true,
+            "want": "g_stake1"
+          }
+        ],
+        [
+          "墙·尖桩C",
+          {
+            "key": "g_stake2",
+            "gen": true,
+            "want": "g_stake2"
+          }
+        ],
+        [
+          "墙·横木",
+          {
+            "key": "g_rail",
+            "gen": true,
+            "want": "g_rail"
+          }
+        ],
+        [
+          "墙·石墩端头",
+          {
+            "key": "g_pier0",
+            "gen": true,
+            "want": "g_pier0"
+          }
+        ],
+        [
+          "场景·rocks",
+          {
+            "key": "g_rocks",
+            "gen": true,
+            "want": "g_rocks"
+          }
+        ],
+        [
+          "场景·木栅",
+          {
+            "key": "g_juma",
+            "gen": true,
+            "want": "g_juma"
+          }
+        ],
+        [
+          "门箱·兵器匣",
+          {
+            "key": "g_weaponCase",
+            "gen": true,
+            "want": "g_weaponCase"
+          }
+        ],
+        [
+          "场景·granary",
+          {
+            "key": "g_granary",
+            "gen": true,
+            "want": "g_granary"
+          }
+        ],
+        [
+          "场景·tent",
+          {
+            "key": "g_tent",
+            "gen": true,
+            "want": "g_tent"
+          }
+        ],
+        [
+          "敌兵·行进1",
+          {
+            "key": "g_redWalk0",
+            "gen": true,
+            "want": "g_redWalk0"
+          }
+        ],
+        [
+          "敌兵·行进2",
+          {
+            "key": "g_redWalk1",
+            "gen": true,
+            "want": "g_redWalk1"
+          }
+        ],
+        [
+          "敌兵·受击",
+          {
+            "key": "g_redHit",
+            "gen": true,
+            "want": "g_redHit"
+          }
+        ],
+        [
+          "敌兵·倒地",
+          {
+            "key": "g_redFallen",
+            "gen": true,
+            "want": "g_redFallen"
+          }
+        ],
+        [
+          "场景·tower",
+          {
+            "key": "g_tower",
+            "gen": true,
+            "want": "g_tower"
+          }
+        ],
+        [
+          "门箱·军械箱",
+          {
+            "key": "g_arrowCrate",
+            "gen": true,
+            "want": "g_arrowCrate"
+          }
+        ],
+        [
+          "辕门·立柱",
+          {
+            "key": "g_gatePost0",
+            "gen": true,
+            "want": "g_gatePost0"
+          }
+        ],
+        [
+          "辕门·横梁",
+          {
+            "key": "g_beam",
+            "gen": true,
+            "want": "g_beam"
+          }
+        ],
+        [
+          "辕门·援兵旗",
+          {
+            "key": "g_bannerBlue",
+            "gen": true,
+            "want": "g_bannerBlue"
+          }
+        ],
+        [
+          "辕门·伏兵旗",
+          {
+            "key": "g_bannerRed",
+            "gen": true,
+            "want": "g_bannerRed"
+          }
+        ],
+        [
+          "门箱·粮车",
+          {
+            "key": "g_grainCart",
+            "gen": true,
+            "want": "g_grainCart"
+          }
+        ],
+        [
+          "己方弓手·行进1",
+          {
+            "key": "g_archerWalk0",
+            "gen": true,
+            "want": "g_archerWalk0"
+          }
+        ],
+        [
+          "己方弓手·行进2",
+          {
+            "key": "g_archerWalk1",
+            "gen": true,
+            "want": "g_archerWalk1"
+          }
+        ],
+        [
+          "己方弓手·张弓",
+          {
+            "key": "g_archerDraw",
+            "gen": true,
+            "want": "g_archerDraw"
+          }
+        ],
+        [
+          "己方弓手·放箭",
+          {
+            "key": "g_archerRel",
+            "gen": true,
+            "want": "g_archerRel"
+          }
+        ],
+        [
+          "随军·吕布·跑1",
+          {
+            "key": "g_lubuRun0",
+            "gen": true,
+            "want": "g_lubuRun0"
+          }
+        ],
+        [
+          "随军·吕布·跑2",
+          {
+            "key": "g_lubuRun1",
+            "gen": true,
+            "want": "g_lubuRun1"
+          }
+        ],
+        [
+          "随军·吕布·蓄势",
+          {
+            "key": "g_lubuWind",
+            "gen": true,
+            "want": "g_lubuWind"
+          }
+        ],
+        [
+          "随军·吕布·出手",
+          {
+            "key": "g_lubuThrust",
+            "gen": true,
+            "want": "g_lubuThrust"
+          }
+        ],
+        [
+          "随军·关羽·跑1",
+          {
+            "key": "g_guanRun0",
+            "gen": true,
+            "want": "g_guanRun0"
+          }
+        ],
+        [
+          "随军·关羽·跑2",
+          {
+            "key": "g_guanRun1",
+            "gen": true,
+            "want": "g_guanRun1"
+          }
+        ],
+        [
+          "随军·关羽·蓄势",
+          {
+            "key": "g_guanWind",
+            "gen": true,
+            "want": "g_guanWind"
+          }
+        ],
+        [
+          "随军·关羽·出手",
+          {
+            "key": "g_guanThrust",
+            "gen": true,
+            "want": "g_guanThrust"
+          }
+        ],
+        [
+          "主将·长枪·跑1",
+          {
+            "key": "g_run_spear0",
+            "gen": true,
+            "want": "g_run_spear0"
+          }
+        ],
+        [
+          "主将·长枪·跑2",
+          {
+            "key": "g_run_spear1",
+            "gen": true,
+            "want": "g_run_spear1"
+          }
+        ],
+        [
+          "主将·长枪·跑3",
+          {
+            "key": "g_run_spear2",
+            "gen": true,
+            "want": "g_run_spear2"
+          }
+        ],
+        [
+          "主将·长枪·跑4",
+          {
+            "key": "g_run_spear3",
+            "gen": true,
+            "want": "g_run_spear3"
+          }
+        ],
+        [
+          "主将·长枪·蓄势",
+          {
+            "key": "g_spearWind",
+            "gen": true,
+            "want": "g_spearWind"
+          }
+        ],
+        [
+          "主将·长枪·出招",
+          {
+            "key": "g_spearRel",
+            "gen": true,
+            "want": "g_spearRel"
+          }
+        ],
+        [
+          "主将·长枪·收势",
+          {
+            "key": "g_spearRec",
+            "gen": true,
+            "want": "g_spearRec"
+          }
+        ],
+        [
+          "主将·偃月刀·跑1",
+          {
+            "key": "g_run_spear0",
+            "gen": true,
+            "want": "g_run_spear0"
+          }
+        ],
+        [
+          "主将·偃月刀·跑2",
+          {
+            "key": "g_run_spear1",
+            "gen": true,
+            "want": "g_run_spear1"
+          }
+        ],
+        [
+          "主将·偃月刀·跑3",
+          {
+            "key": "g_run_spear2",
+            "gen": true,
+            "want": "g_run_spear2"
+          }
+        ],
+        [
+          "主将·偃月刀·跑4",
+          {
+            "key": "g_run_spear3",
+            "gen": true,
+            "want": "g_run_spear3"
+          }
+        ],
+        [
+          "主将·偃月刀·蓄势",
+          {
+            "key": "g_guandaoWind",
+            "gen": true,
+            "want": "g_guandaoWind"
+          }
+        ],
+        [
+          "主将·偃月刀·出招",
+          {
+            "key": "g_guandaoRel",
+            "gen": true,
+            "want": "g_guandaoRel"
+          }
+        ],
+        [
+          "主将·偃月刀·收势",
+          {
+            "key": "g_guandaoRec",
+            "gen": true,
+            "want": "g_guandaoRec"
+          }
+        ],
+        [
+          "主将·蛇矛·跑1",
+          {
+            "key": "g_run_spear0",
+            "gen": true,
+            "want": "g_run_spear0"
+          }
+        ],
+        [
+          "主将·蛇矛·跑2",
+          {
+            "key": "g_run_spear1",
+            "gen": true,
+            "want": "g_run_spear1"
+          }
+        ],
+        [
+          "主将·蛇矛·跑3",
+          {
+            "key": "g_run_spear2",
+            "gen": true,
+            "want": "g_run_spear2"
+          }
+        ],
+        [
+          "主将·蛇矛·跑4",
+          {
+            "key": "g_run_spear3",
+            "gen": true,
+            "want": "g_run_spear3"
+          }
+        ],
+        [
+          "主将·蛇矛·蓄势",
+          {
+            "key": "g_shemaoWind",
+            "gen": true,
+            "want": "g_shemaoWind"
+          }
+        ],
+        [
+          "主将·蛇矛·出招",
+          {
+            "key": "g_shemaoRel",
+            "gen": true,
+            "want": "g_shemaoRel"
+          }
+        ],
+        [
+          "主将·蛇矛·收势",
+          {
+            "key": "g_shemaoRec",
+            "gen": true,
+            "want": "g_shemaoRec"
+          }
+        ],
+        [
+          "主将·画戟·跑1",
+          {
+            "key": "g_run_spear0",
+            "gen": true,
+            "want": "g_run_spear0"
+          }
+        ],
+        [
+          "主将·画戟·跑2",
+          {
+            "key": "g_run_spear1",
+            "gen": true,
+            "want": "g_run_spear1"
+          }
+        ],
+        [
+          "主将·画戟·跑3",
+          {
+            "key": "g_run_spear2",
+            "gen": true,
+            "want": "g_run_spear2"
+          }
+        ],
+        [
+          "主将·画戟·跑4",
+          {
+            "key": "g_run_spear3",
+            "gen": true,
+            "want": "g_run_spear3"
+          }
+        ],
+        [
+          "主将·画戟·蓄势",
+          {
+            "key": "g_huajiWind",
+            "gen": true,
+            "want": "g_huajiWind"
+          }
+        ],
+        [
+          "主将·画戟·出招",
+          {
+            "key": "g_huajiRel",
+            "gen": true,
+            "want": "g_huajiRel"
+          }
+        ],
+        [
+          "主将·画戟·收势",
+          {
+            "key": "g_huajiRec",
+            "gen": true,
+            "want": "g_huajiRec"
+          }
+        ],
+        [
+          "主将·长枪·亮兵",
+          {
+            "key": "g_brandish_spear",
+            "gen": true,
+            "want": "g_brandish_spear"
+          }
+        ],
+        [
+          "坐骑徽记·赤兔马",
+          {
+            "key": "g_tr_chitu",
+            "gen": true,
+            "want": "g_tr_chitu"
+          }
+        ],
+        [
+          "图标·长枪",
+          {
+            "key": "g_icon_spear",
+            "gen": true,
+            "want": "g_icon_spear"
+          }
+        ],
+        [
+          "门箱·兵器匣·开",
+          {
+            "key": "g_weaponCaseOpen",
+            "gen": true,
+            "want": "g_weaponCaseOpen"
+          }
+        ],
+        [
+          "门箱·粮车·开",
+          {
+            "key": "g_grainCartOpen",
+            "gen": true,
+            "want": "g_grainCartOpen"
+          }
+        ],
+        [
+          "门箱·宝匣",
+          {
+            "key": "g_treasureBox",
+            "gen": true,
+            "want": "g_treasureBox"
+          }
+        ],
+        [
+          "门箱·军械箱·开",
+          {
+            "key": "g_arrowCrateOpen",
+            "gen": true,
+            "want": "g_arrowCrateOpen"
+          }
+        ],
+        [
+          "图标·诸葛连弩",
+          {
+            "key": "g_icon_liannu",
+            "gen": true,
+            "want": "g_icon_liannu"
+          }
+        ],
+        [
+          "门箱·宝匣·开",
+          {
+            "key": "g_treasureBoxOpen",
+            "gen": true,
+            "want": "g_treasureBoxOpen"
+          }
+        ]
+      ]
+    },
+    "buttons": [
+      {
+        "id": "pause",
+        "x": 4,
+        "y": 8,
+        "w": 48,
+        "h": 48
+      }
+    ],
+    "viewport": {
+      "width": 360,
+      "height": 640,
+      "safe": {
+        "left": 0,
+        "top": 0,
+        "right": 360,
+        "bottom": 640
+      },
+      "capsule": null,
+      "source": "browser-window",
+      "safeSource": "browser-css-env",
+      "capsuleSource": "not-available",
+      "revision": 0
+    },
+    "nativeNodes": 178,
+    "missingArt": [],
+    "fps": 44.73639081718973,
+    "audio": {
+      "active": true,
+      "hidden": false,
+      "bgmEnabled": false,
+      "musicRequested": false,
+      "musicReady": false,
+      "musicTrack": null,
+      "musicPlaying": false,
+      "effectChannels": 5,
+      "playingEffects": [],
+      "limits": {
+        "perKind": 1,
+        "globalVoices": 3,
+        "globalVolume": 0.65,
+        "startsPerSecond": 12,
+        "minStartGapMs": 25
+      },
+      "counters": {
+        "played": 42,
+        "suppressedBusy": 16,
+        "suppressedRate": 4,
+        "suppressedBudget": 0,
+        "loadFailures": 0
+      },
+      "loading": false
+    },
+    "error": ""
+  },
+  "errors": []
+}

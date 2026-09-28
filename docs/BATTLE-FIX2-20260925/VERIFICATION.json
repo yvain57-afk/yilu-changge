@@ -1,0 +1,60 @@
+{
+  "task": "BATTLE-FIX2-20260925",
+  "runtime": "battle-fix2-20260925",
+  "sourceAndBuildSha256": "fee06efe1dd9a74248c5c3470b5532a3c4bbecb2ca3af51e261cd38043d45624",
+  "typecheck": "passed",
+  "relatedTests": {
+    "passed": 84,
+    "failed": 0
+  },
+  "originalTargeted": {
+    "passed": 39,
+    "failed": 3,
+    "failuresResolvedBy": "layout-recheck-latest.json"
+  },
+  "layoutRecheck": {
+    "passed": 27,
+    "failed": 0
+  },
+  "sameStateComparisons": {
+    "passed": 12,
+    "failed": 0
+  },
+  "matchedReadability": {
+    "passed": 36,
+    "failed": 0
+  },
+  "weaponClips": {
+    "passed": 10,
+    "maxOutletErrorDesignUnits": 0.38025000000000375
+  },
+  "natural": {
+    "passed": true,
+    "runs": [
+      {
+        "level": 1,
+        "seconds": 36.016666666665905,
+        "count": 607
+      },
+      {
+        "level": 2,
+        "seconds": 52.16666666666499,
+        "count": 11
+      },
+      {
+        "level": 3,
+        "seconds": 56.01666666666477,
+        "count": 121
+      }
+    ]
+  },
+  "packaging": "passed",
+  "physicalDevice": "not performed",
+  "userAestheticApproval": "not inferred",
+  "uploaded": false,
+  "packageVerification": {
+    "path": "evidence/BATTLE-FIX2-20260925/PACKAGE_VERIFICATION.json",
+    "runtime": "battle-fix2-20260925",
+    "sourceAndBuildSha256": "fee06efe1dd9a74248c5c3470b5532a3c4bbecb2ca3af51e261cd38043d45624"
+  }
+}

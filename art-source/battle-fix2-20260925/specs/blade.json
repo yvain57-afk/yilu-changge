@@ -1,0 +1,1 @@
+{"columns":3,"rows":1,"height":224,"logicalHeight":680,"keys":["bladeWindup","bladeRelease","bladeRecover"],"feet":[[375,701],[396,701],[402,701]],"grips":[[497,254],[485,287],[483,363]],"muzzles":[null,[396,274],null],"weapons":["blade","blade","blade"],"phases":["windup","release","recover"]}

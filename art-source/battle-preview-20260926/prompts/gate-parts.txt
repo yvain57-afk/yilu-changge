@@ -1,0 +1,8 @@
+FILE NAME: gate-parts2.png   (landscape image, e.g. 1536x1024)
+Content: separate parts to assemble a Chinese army camp gate (辕门) in-engine, same style as the reference parts sheet, front view, all cloth BLANK (no text or symbols in the middle area):
+Row 1: (a) one tall thick wooden gate post with bronze bands and a small round bronze finial, upright; (b) one long horizontal wooden crossbeam with bronze end caps and hanging iron rings underneath, wide aspect (about 6:1); (c) a small triangular golden-yellow pennant on a short pole; (d) a single broken arrow stuck upright (snapped shaft, dark fletching).
+Row 2: three hanging banners of identical size and shape at the top (hung from rings), each tall rectangle about 3:4:
+ (e) ROYAL BLUE cloth with a thin gold key-fret border, bottom edge perfectly STRAIGHT and neat with a gold fringe;
+ (f) CRIMSON RED cloth with dark iron-grey trim, bottom edge TORN into ragged jagged points, a few frayed holes;
+ (g) pale PARCHMENT/beige cloth with a thin brown border, straight bottom edge.
+Keep cloth fairly flat and evenly lit (numbers will be printed on top later), subtle fabric texture only.

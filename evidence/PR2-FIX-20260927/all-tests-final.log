@@ -1,0 +1,1520 @@
+
+> yilu-changge@1.0.0-formal20260927 test
+> node tools/run-local.mjs tsx --test tests/*.test.ts
+
+TAP version 13
+# Subtest: A01 shoot negative gate through zero, cap and exact once conversion; configured values immutable
+ok 1 - A01 shoot negative gate through zero, cap and exact once conversion; configured values immutable
+  ---
+  duration_ms: 0.515792
+  type: 'test'
+  ...
+# Subtest: A02 gate crossing uses visible anchor boundary, exactly once, skipping never rewards
+ok 2 - A02 gate crossing uses visible anchor boundary, exactly once, skipping never rewards
+  ---
+  duration_ms: 0.104708
+  type: 'test'
+  ...
+# Subtest: A03 arrow hits nearest reward before enemy; enemy and stone can screen rewards
+ok 3 - A03 arrow hits nearest reward before enemy; enemy and stone can screen rewards
+  ---
+  duration_ms: 0.856208
+  type: 'test'
+  ...
+# Subtest: A04 supply hit countdown, one reward, no kill credit; late unopened cache grants nothing
+ok 4 - A04 supply hit countdown, one reward, no kill credit; late unopened cache grants nothing
+  ---
+  duration_ms: 0.25475
+  type: 'test'
+  ...
+# Subtest: A05 negative gate loses actual troops and can kill; later positive gate cannot resurrect
+ok 5 - A05 negative gate loses actual troops and can kill; later positive gate cannot resurrect
+  ---
+  duration_ms: 0.206833
+  type: 'test'
+  ...
+# Subtest: A06 shooting weapon box upgrades real volley damage, flying arrow remains frozen and repeated lower kit cannot downgrade
+ok 6 - A06 shooting weapon box upgrades real volley damage, flying arrow remains frozen and repeated lower kit cannot downgrade
+  ---
+  duration_ms: 0.09825
+  type: 'test'
+  ...
+# Subtest: A07 chain cache spawns real spaced +1 gates, late break keeps them ahead, no instant army gift
+ok 7 - A07 chain cache spawns real spaced +1 gates, late break keeps them ahead, no instant army gift
+  ---
+  duration_ms: 0.178125
+  type: 'test'
+  ...
+# Subtest: A08 pause freezes new objects, dispose/terminal never grant late supply rewards, retry pristine
+ok 8 - A08 pause freezes new objects, dispose/terminal never grant late supply rewards, retry pristine
+  ---
+  duration_ms: 0.142917
+  type: 'test'
+  ...
+# Subtest: A09 live rules level 1 spear/guanzhen legal inputs earn growth and reach victory
+ok 9 - A09 live rules level 1 spear/guanzhen legal inputs earn growth and reach victory
+  ---
+  duration_ms: 150.9845
+  type: 'test'
+  ...
+# Subtest: A09 live rules level 1 spear/zhenjun legal inputs earn growth and reach victory
+ok 10 - A09 live rules level 1 spear/zhenjun legal inputs earn growth and reach victory
+  ---
+  duration_ms: 251.549792
+  type: 'test'
+  ...
+# Subtest: A09 live rules level 1 blade/guanzhen legal inputs earn growth and reach victory
+ok 11 - A09 live rules level 1 blade/guanzhen legal inputs earn growth and reach victory
+  ---
+  duration_ms: 252.343958
+  type: 'test'
+  ...
+# Subtest: A09 live rules level 1 blade/zhenjun legal inputs earn growth and reach victory
+ok 12 - A09 live rules level 1 blade/zhenjun legal inputs earn growth and reach victory
+  ---
+  duration_ms: 172.423
+  type: 'test'
+  ...
+# Subtest: A09 live rules level 2 spear/guanzhen legal inputs earn growth and reach victory
+ok 13 - A09 live rules level 2 spear/guanzhen legal inputs earn growth and reach victory
+  ---
+  duration_ms: 86.47425
+  type: 'test'
+  ...
+# Subtest: A09 live rules level 2 spear/zhenjun legal inputs earn growth and reach victory
+ok 14 - A09 live rules level 2 spear/zhenjun legal inputs earn growth and reach victory
+  ---
+  duration_ms: 97.178167
+  type: 'test'
+  ...
+# Subtest: A09 live rules level 2 blade/guanzhen legal inputs earn growth and reach victory
+ok 15 - A09 live rules level 2 blade/guanzhen legal inputs earn growth and reach victory
+  ---
+  duration_ms: 48.973958
+  type: 'test'
+  ...
+# Subtest: A09 live rules level 2 blade/zhenjun legal inputs earn growth and reach victory
+ok 16 - A09 live rules level 2 blade/zhenjun legal inputs earn growth and reach victory
+  ---
+  duration_ms: 36.367
+  type: 'test'
+  ...
+# Subtest: A09 live rules level 3 spear/guanzhen legal inputs earn growth and reach victory
+ok 17 - A09 live rules level 3 spear/guanzhen legal inputs earn growth and reach victory
+  ---
+  duration_ms: 33.59425
+  type: 'test'
+  ...
+# Subtest: A09 live rules level 3 spear/zhenjun legal inputs earn growth and reach victory
+ok 18 - A09 live rules level 3 spear/zhenjun legal inputs earn growth and reach victory
+  ---
+  duration_ms: 40.501875
+  type: 'test'
+  ...
+# Subtest: A09 live rules level 3 blade/guanzhen legal inputs earn growth and reach victory
+ok 19 - A09 live rules level 3 blade/guanzhen legal inputs earn growth and reach victory
+  ---
+  duration_ms: 49.639041
+  type: 'test'
+  ...
+# Subtest: A09 live rules level 3 blade/zhenjun legal inputs earn growth and reach victory
+ok 20 - A09 live rules level 3 blade/zhenjun legal inputs earn growth and reach victory
+  ---
+  duration_ms: 47.081042
+  type: 'test'
+  ...
+# Subtest: A10 piercing weapon wave hits front enemy then gate, never damages rear enemy through the gate
+ok 21 - A10 piercing weapon wave hits front enemy then gate, never damages rear enemy through the gate
+  ---
+  duration_ms: 0.384167
+  type: 'test'
+  ...
+# Subtest: v03 measured static timing level2/best
+ok 22 - v03 measured static timing level2/best
+  ---
+  duration_ms: 53.791167
+  type: 'test'
+  ...
+# Subtest: v03 measured static timing level2/safe
+ok 23 - v03 measured static timing level2/safe
+  ---
+  duration_ms: 177.156209
+  type: 'test'
+  ...
+# Subtest: v03 measured static timing level2/late
+ok 24 - v03 measured static timing level2/late
+  ---
+  duration_ms: 20.635459
+  type: 'test'
+  ...
+# Subtest: v03 measured static timing level3/best
+ok 25 - v03 measured static timing level3/best
+  ---
+  duration_ms: 19.913541
+  type: 'test'
+  ...
+# Subtest: v03 measured static timing level3/safe
+ok 26 - v03 measured static timing level3/safe
+  ---
+  duration_ms: 23.821875
+  type: 'test'
+  ...
+# Subtest: v03 measured static timing level3/late
+ok 27 - v03 measured static timing level3/late
+  ---
+  duration_ms: 220.693959
+  type: 'test'
+  ...
+# {"solo":"trial-01","seconds":91.9833333333294,"hits":130}
+# {"solo":"trial-02","seconds":241.38333333341757,"hits":360}
+# {"solo":"trial-03","seconds":379.9833333333164,"hits":520}
+# Subtest: one spear and N-1 archers; frozen 256-count damage; no new arrows at one
+ok 28 - one spear and N-1 archers; frozen 256-count damage; no new arrows at one
+  ---
+  duration_ms: 4.064042
+  type: 'test'
+  ...
+# Subtest: 10/5/21 spear phases, one hit per ID and real damage, no projectile ID
+ok 29 - 10/5/21 spear phases, one hit per ID and real damage, no projectile ID
+  ---
+  duration_ms: 1.3215
+  type: 'test'
+  ...
+# Subtest: live spear follows lateral input; misses do not damage; nearest stable ID rock blocks
+ok 30 - live spear follows lateral input; misses do not damage; nearest stable ID rock blocks
+  ---
+  duration_ms: 0.822709
+  type: 'test'
+  ...
+# Subtest: full half-side gate wood hit, gate arithmetic unchanged
+ok 31 - full half-side gate wood hit, gate arithmetic unchanged
+  ---
+  duration_ms: 0.788916
+  type: 'test'
+  ...
+# Subtest: same-tick melee kill precedes contact and boss win precedes hostile impact
+ok 32 - same-tick melee kill precedes contact and boss win precedes hostile impact
+  ---
+  duration_ms: 0.851667
+  type: 'test'
+  ...
+# Subtest: boss approach takes 60 ticks, arrow swept relative collision, first warning at tick120
+ok 33 - boss approach takes 60 ticks, arrow swept relative collision, first warning at tick120
+  ---
+  duration_ms: 1.249708
+  type: 'test'
+  ...
+# Subtest: pause freezes melee / boss / warnings and dispose clears phase
+ok 34 - pause freezes melee / boss / warnings and dispose clears phase
+  ---
+  duration_ms: 0.685667
+  type: 'test'
+  ...
+# Subtest: opening 901 receives an actual spear/wave hit on default center before first gate
+ok 35 - opening 901 receives an actual spear/wave hit on default center before first gate
+  ---
+  duration_ms: 16.2675
+  type: 'test'
+  ...
+# Subtest: trial-01: sole hero wins boss using legal lateral movement, no reinforcement
+ok 36 - trial-01: sole hero wins boss using legal lateral movement, no reinforcement
+  ---
+  duration_ms: 43.423458
+  type: 'test'
+  ...
+# Subtest: trial-02: sole hero wins boss using legal lateral movement, no reinforcement
+ok 37 - trial-02: sole hero wins boss using legal lateral movement, no reinforcement
+  ---
+  duration_ms: 38.723
+  type: 'test'
+  ...
+# Subtest: trial-03: sole hero wins boss using legal lateral movement, no reinforcement
+ok 38 - trial-03: sole hero wins boss using legal lateral movement, no reinforcement
+  ---
+  duration_ms: 104.123
+  type: 'test'
+  ...
+# Subtest: old base saves migrate idempotently; achievements/settings unmodified
+ok 39 - old base saves migrate idempotently; achievements/settings unmodified
+  ---
+  duration_ms: 0.679458
+  type: 'test'
+  ...
+# Subtest: pending survives reload; cannot complete locked transition; repeat does not reward
+ok 40 - pending survives reload; cannot complete locked transition; repeat does not reward
+  ---
+  duration_ms: 0.244791
+  type: 'test'
+  ...
+# Subtest: corrupt sidecar recovers from base, failed storage allows progress and meeting
+ok 41 - corrupt sidecar recovers from base, failed storage allows progress and meeting
+  ---
+  duration_ms: 0.142458
+  type: 'test'
+  ...
+# Subtest: near and swept wave share unique attack ledger, tier three hits at most two
+ok 42 - near and swept wave share unique attack ledger, tier three hits at most two
+  ---
+  duration_ms: 3.751625
+  type: 'test'
+  ...
+# Subtest: rock always blocks; surviving wood blocks; killed wood only passes with spare budget
+ok 43 - rock always blocks; surviving wood blocks; killed wood only passes with spare budget
+  ---
+  duration_ms: 0.750459
+  type: 'test'
+  ...
+# Subtest: weapon, tier, damage and lane frozen per attack; upgrade cannot retrofit wave
+ok 44 - weapon, tier, damage and lane frozen per attack; upgrade cannot retrofit wave
+  ---
+  duration_ms: 0.332
+  type: 'test'
+  ...
+# Subtest: two fixed unique elite kills count once in reverse order, bypass does not upgrade
+ok 45 - two fixed unique elite kills count once in reverse order, bypass does not upgrade
+  ---
+  duration_ms: 0.93
+  type: 'test'
+  ...
+# Subtest: awakening begins on actual hero boss hit, does not retrofit trigger, freezes paused, expires once
+ok 46 - awakening begins on actual hero boss hit, does not retrofit trigger, freezes paused, expires once
+  ---
+  duration_ms: 1.060834
+  type: 'test'
+  ...
+# Subtest: N includes companion, bow sources exclude both leaders, one troop stops new ally and bow attacks
+ok 47 - N includes companion, bow sources exclude both leaders, one troop stops new ally and bow attacks
+  ---
+  duration_ms: 2.116583
+  type: 'test'
+  ...
+# Subtest: matching boss stands ally down for that run, selection survives; companion DPS = 20%
+ok 48 - matching boss stands ally down for that run, selection survives; companion DPS = 20%
+  ---
+  duration_ms: 0.238125
+  type: 'test'
+  ...
+# Subtest: all boss attacks lock direction and hurt only at physical arrival, lateral dodge works
+ok 49 - all boss attacks lock direction and hurt only at physical arrival, lateral dodge works
+  ---
+  duration_ms: 10.45875
+  type: 'test'
+  ...
+# Subtest: wave lifetime/cadence has bounded pools without dropping active projectiles; clear on exit
+ok 50 - wave lifetime/cadence has bounded pools without dropping active projectiles; clear on exit
+  ---
+  duration_ms: 69.90625
+  type: 'test'
+  ...
+# Subtest: legacy clears backfill rewards idempotently, selection and unknown save fields survive reload
+ok 51 - legacy clears backfill rewards idempotently, selection and unknown save fields survive reload
+  ---
+  duration_ms: 0.724791
+  type: 'test'
+  ...
+# Subtest: storage failure does not prevent current-session rewards or equipment
+ok 52 - storage failure does not prevent current-session rewards or equipment
+  ---
+  duration_ms: 0.090041
+  type: 'test'
+  ...
+# Subtest: v051 blade reaches Boss 1 by MELEE, not only wave
+ok 53 - v051 blade reaches Boss 1 by MELEE, not only wave
+  ---
+  duration_ms: 22.977625
+  type: 'test'
+  ...
+# Subtest: v051 blade reaches Boss 2 by MELEE, not only wave
+ok 54 - v051 blade reaches Boss 2 by MELEE, not only wave
+  ---
+  duration_ms: 19.202667
+  type: 'test'
+  ...
+# Subtest: v051 blade reaches Boss 3 by MELEE, not only wave
+ok 55 - v051 blade reaches Boss 3 by MELEE, not only wave
+  ---
+  duration_ms: 3.523125
+  type: 'test'
+  ...
+# Subtest: v051 xing_daorong can physically contact the second Boss
+ok 56 - v051 xing_daorong can physically contact the second Boss
+  ---
+  duration_ms: 1.616375
+  type: 'test'
+  ...
+# Subtest: v051 zhao_yun_guest can physically contact the second Boss
+ok 57 - v051 zhao_yun_guest can physically contact the second Boss
+  ---
+  duration_ms: 2.220792
+  type: 'test'
+  ...
+# Subtest: v051 off-axis blade misses; do not globally widen the arena to pass
+ok 58 - v051 off-axis blade misses; do not globally widen the arena to pass
+  ---
+  duration_ms: 1.555208
+  type: 'test'
+  ...
+# Subtest: v051 contact and wave retain one per-source per-attack target ledger
+ok 59 - v051 contact and wave retain one per-source per-attack target ledger
+  ---
+  duration_ms: 11.917959
+  type: 'test'
+  ...
+# Subtest: v051 pause still freezes approach, contact cycle and traveling waves
+ok 60 - v051 pause still freezes approach, contact cycle and traveling waves
+  ---
+  duration_ms: 0.910125
+  type: 'test'
+  ...
+# Subtest: volley 1: own bow mouths, frozen launch, v04 archer-only damage
+ok 61 - volley 1: own bow mouths, frozen launch, v04 archer-only damage
+  ---
+  duration_ms: 2.173334
+  type: 'test'
+  ...
+# Subtest: volley 8: own bow mouths, frozen launch, v04 archer-only damage
+ok 62 - volley 8: own bow mouths, frozen launch, v04 archer-only damage
+  ---
+  duration_ms: 1.428375
+  type: 'test'
+  ...
+# Subtest: volley 24: own bow mouths, frozen launch, v04 archer-only damage
+ok 63 - volley 24: own bow mouths, frozen launch, v04 archer-only damage
+  ---
+  duration_ms: 0.42
+  type: 'test'
+  ...
+# Subtest: volley 48: own bow mouths, frozen launch, v04 archer-only damage
+ok 64 - volley 48: own bow mouths, frozen launch, v04 archer-only damage
+  ---
+  duration_ms: 0.450459
+  type: 'test'
+  ...
+# Subtest: volley 256: own bow mouths, frozen launch, v04 archer-only damage
+ok 65 - volley 256: own bow mouths, frozen launch, v04 archer-only damage
+  ---
+  duration_ms: 0.846041
+  type: 'test'
+  ...
+# Subtest: rock consumes the whole visual volley; no repeated damage or surviving cosmetic arrows
+ok 66 - rock consumes the whole visual volley; no repeated damage or surviving cosmetic arrows
+  ---
+  duration_ms: 0.804916
+  type: 'test'
+  ...
+# Subtest: bounded high density volley fixture, camera travel and boss stop
+ok 67 - bounded high density volley fixture, camera travel and boss stop
+  ---
+  duration_ms: 127.36775
+  type: 'test'
+  ...
+# Subtest: world strip recycles only offscreen and retained objects keep identity and continuous projection
+ok 68 - world strip recycles only offscreen and retained objects keep identity and continuous projection
+  ---
+  duration_ms: 125.799708
+  type: 'test'
+  ...
+# Subtest: six distinct gait keys with phase offset between soldiers
+ok 69 - six distinct gait keys with phase offset between soldiers
+  ---
+  duration_ms: 0.263833
+  type: 'test'
+  ...
+# Subtest: fresh formal save is one hero, fixed spear, no unlocked fixtures
+ok 70 - fresh formal save is one hero, fixed spear, no unlocked fixtures
+  ---
+  duration_ms: 2.459709
+  type: 'test'
+  ...
+# Subtest: legacy originals and unknown fields survive exact backup and reload
+ok 71 - legacy originals and unknown fields survive exact backup and reload
+  ---
+  duration_ms: 0.380375
+  type: 'test'
+  ...
+# Subtest: corrupt formal save is protected, never overwritten on retry
+ok 72 - corrupt formal save is protected, never overwritten on retry
+  ---
+  duration_ms: 0.128375
+  type: 'test'
+  ...
+# Subtest: failed save retries the same settlement without duplicating rewards
+ok 73 - failed save retries the same settlement without duplicating rewards
+  ---
+  duration_ms: 0.380375
+  type: 'test'
+  ...
+# Subtest: ten chapters reward once, separate bests and correct deployment permissions
+ok 74 - ten chapters reward once, separate bests and correct deployment permissions
+  ---
+  duration_ms: 0.910791
+  type: 'test'
+  ...
+# Subtest: route drops only unlocked weapon and treasure IDs, finite events and valid references
+ok 75 - route drops only unlocked weapon and treasure IDs, finite events and valid references
+  ---
+  duration_ms: 0.835166
+  type: 'test'
+  ...
+# Subtest: weapon switch retains tier, same weapon upgrades and cap overflows, arms are separate
+ok 76 - weapon switch retains tier, same weapon upgrades and cap overflows, arms are separate
+  ---
+  duration_ms: 20.086917
+  type: 'test'
+  ...
+# Subtest: treasure trial, duplicate overflow and occupied storage are real distinct states
+ok 77 - treasure trial, duplicate overflow and occupied storage are real distinct states
+  ---
+  duration_ms: 2.5095
+  type: 'test'
+  ...
+# Subtest: pause freezes model and cancel stops target chasing
+ok 78 - pause freezes model and cancel stops target chasing
+  ---
+  duration_ms: 5.107458
+  type: 'test'
+  ...
+# Subtest: wall constrains people but projectile passes and actually damages target
+ok 79 - wall constrains people but projectile passes and actually damages target
+  ---
+  duration_ms: 0.539084
+  type: 'test'
+  ...
+# Subtest: shot gate changes signed value, respects window, no hidden low cap
+ok 80 - shot gate changes signed value, respects window, no hidden low cap
+  ---
+  duration_ms: 0.582625
+  type: 'test'
+  ...
+# Subtest: Qixing rescues zero once, Hua cannot revive terminal defeat
+ok 81 - Qixing rescues zero once, Hua cannot revive terminal defeat
+  ---
+  duration_ms: 0.4425
+  type: 'test'
+  ...
+# Subtest: failed run cannot award treasure or first clear
+ok 82 - failed run cannot award treasure or first clear
+  ---
+  duration_ms: 0.674083
+  type: 'test'
+  ...
+# Subtest: three fixed +1 gates each settle once and are not inflated by waves
+ok 83 - three fixed +1 gates each settle once and are not inflated by waves
+  ---
+  duration_ms: 0.226458
+  type: 'test'
+  ...
+# Subtest: Hua delayed healing uses actual damage and obeys cooldown
+ok 84 - Hua delayed healing uses actual damage and obeys cooldown
+  ---
+  duration_ms: 0.857792
+  type: 'test'
+  ...
+# Subtest: Mengde halves only the next eligible negative gate until cooldown
+ok 85 - Mengde halves only the next eligible negative gate until cooldown
+  ---
+  duration_ms: 0.184542
+  type: 'test'
+  ...
+# Subtest: army volleys originate behind hero, use own armament and real damage
+ok 86 - army volleys originate behind hero, use own armament and real damage
+  ---
+  duration_ms: 1.661125
+  type: 'test'
+  ...
+# Subtest: no unearned support, ally or locked treasure can be deployed from corrupt selections
+ok 87 - no unearned support, ally or locked treasure can be deployed from corrupt selections
+  ---
+  duration_ms: 0.237167
+  type: 'test'
+  ...
+# Subtest: replay routes keep every unlocked weapon reachable after chapter ten
+ok 88 - replay routes keep every unlocked weapon reachable after chapter ten
+  ---
+  duration_ms: 0.518167
+  type: 'test'
+  ...
+# Subtest: owner resonance activates once per run and does not rearm after weapon swaps
+ok 89 - owner resonance activates once per run and does not rearm after weapon swaps
+  ---
+  duration_ms: 4.112708
+  type: 'test'
+  ...
+# Subtest: alliance weapon bonus works with no companion or support deployment
+ok 90 - alliance weapon bonus works with no companion or support deployment
+  ---
+  duration_ms: 0.477792
+  type: 'test'
+  ...
+# Subtest: boss recovery takes double actual damage without overkill
+ok 91 - boss recovery takes double actual damage without overkill
+  ---
+  duration_ms: 0.536333
+  type: 'test'
+  ...
+# Subtest: Dilu edge evade prevents a hit once and respects fifteen second cooldown
+ok 92 - Dilu edge evade prevents a hit once and respects fifteen second cooldown
+  ---
+  duration_ms: 0.209834
+  type: 'test'
+  ...
+# Subtest: treasure bonuses affect starting army, grain and healing by explicit initial values
+ok 93 - treasure bonuses affect starting army, grain and healing by explicit initial values
+  ---
+  duration_ms: 0.399167
+  type: 'test'
+  ...
+# Subtest: main-hero tactic persists independently; shock trades piercing for real enemy control
+ok 94 - main-hero tactic persists independently; shock trades piercing for real enemy control
+  ---
+  duration_ms: 0.237042
+  type: 'test'
+  ...
+# Subtest: S2 lateral formation translates whole rows without stacking edge units
+ok 95 - S2 lateral formation translates whole rows without stacking edge units
+  ---
+  duration_ms: 1.413166
+  type: 'test'
+  ...
+# Subtest: rigid weapon keeps length across phase, motion and Boss distance; feet move with companion origin
+ok 96 - rigid weapon keeps length across phase, motion and Boss distance; feet move with companion origin
+  ---
+  duration_ms: 10.023459
+  type: 'test'
+  ...
+# Subtest: actual damage aggregates by source and never counts overkill
+ok 97 - actual damage aggregates by source and never counts overkill
+  ---
+  duration_ms: 0.998
+  type: 'test'
+  ...
+# Subtest: growth is not overwritten by recruitment; danger wins; expired notices clear
+ok 98 - growth is not overwritten by recruitment; danger wins; expired notices clear
+  ---
+  duration_ms: 0.135417
+  type: 'test'
+  ...
+# Subtest: H09: all six attacks freeze aim and wait 78 ticks; residual enemies/arrows block entry
+ok 99 - H09: all six attacks freeze aim and wait 78 ticks; residual enemies/arrows block entry
+  ---
+  duration_ms: 3.162916
+  type: 'test'
+  ...
+# Subtest: H09: 0.25s reaction delay then legal 2.7/s movement has an actual moving-geometry escape for all 30 start/attack pairs
+ok 100 - H09: 0.25s reaction delay then legal 2.7/s movement has an actual moving-geometry escape for all 30 start/attack pairs
+  ---
+  duration_ms: 43.470292
+  type: 'test'
+  ...
+# Subtest: H09: axe damages only current angular sweep, not the whole telegraph at once
+ok 101 - H09: axe damages only current angular sweep, not the whole telegraph at once
+  ---
+  duration_ms: 0.298792
+  type: 'test'
+  ...
+# Subtest: H09: crack front travels forward and spent trail no longer damages
+ok 102 - H09: crack front travels forward and spent trail no longer damages
+  ---
+  duration_ms: 0.527917
+  type: 'test'
+  ...
+# Subtest: H09: split forks are physically staggered, share group, and can hurt team only once
+ok 103 - H09: split forks are physically staggered, share group, and can hurt team only once
+  ---
+  duration_ms: 1.438083
+  type: 'test'
+  ...
+# Subtest: H09: fixed spear length, body reaches .38, no independent body-hit volume; .75 contact recovery and groups serialize
+ok 104 - H09: fixed spear length, body reaches .38, no independent body-hit volume; .75 contact recovery and groups serialize
+  ---
+  duration_ms: 1.376292
+  type: 'test'
+  ...
+# Subtest: H09 analytic shapes reject bounding box corners and sector inner hole
+ok 105 - H09 analytic shapes reject bounding box corners and sector inner hole
+  ---
+  duration_ms: 0.078
+  type: 'test'
+  ...
+# Subtest: H09: spear wave departs from rigid tip after backswing and returns to contact range
+ok 106 - H09: spear wave departs from rigid tip after backswing and returns to contact range
+  ---
+  duration_ms: 0.928459
+  type: 'test'
+  ...
+# Subtest: H09: off-center thrust warning contains the entire actual parallel-translating shaft sweep
+ok 107 - H09: off-center thrust warning contains the entire actual parallel-translating shaft sweep
+  ---
+  duration_ms: 8.691209
+  type: 'test'
+  ...
+# Subtest: H01 shipping profile spawns actual planned bodies, counts replacements and reuses bounded slots with unique identities
+ok 108 - H01 shipping profile spawns actual planned bodies, counts replacements and reuses bounded slots with unique identities
+  ---
+  duration_ms: 512.5995
+  type: 'test'
+  ...
+# Subtest: H01 overload expires only unborn queue, hard cap and six births per tick; no fictional death credit
+ok 109 - H01 overload expires only unborn queue, hard cap and six births per tick; no fictional death credit
+  ---
+  duration_ms: 0.30525
+  type: 'test'
+  ...
+# Subtest: H02 relative arrow collision hits approaching fast bodies and rejects rounded capsule corners
+ok 110 - H02 relative arrow collision hits approaching fast bodies and rejects rounded capsule corners
+  ---
+  duration_ms: 0.201709
+  type: 'test'
+  ...
+# Subtest: H03 route commits once at x zero to right, remains full width, creates chosen-only waves and independent gate
+ok 111 - H03 route commits once at x zero to right, remains full width, creates chosen-only waves and independent gate
+  ---
+  duration_ms: 13.586125
+  type: 'test'
+  ...
+# Subtest: H04 exit reward once, paused replay cannot duplicate, zero cannot resurrect, cap remains256
+ok 112 - H04 exit reward once, paused replay cannot duplicate, zero cannot resurrect, cap remains256
+  ---
+  duration_ms: 0.441417
+  type: 'test'
+  ...
+# Subtest: H05 spear and blade hit real multiple targets with shared near/wave ledger and independent special budgets
+ok 113 - H05 spear and blade hit real multiple targets with shared near/wave ledger and independent special budgets
+  ---
+  duration_ms: 1.069
+  type: 'test'
+  ...
+# Subtest: H05 nearest rock stops moving wave before farther enemy independent of obstacle array order
+ok 114 - H05 nearest rock stops moving wave before farther enemy independent of obstacle array order
+  ---
+  duration_ms: 0.292292
+  type: 'test'
+  ...
+# Subtest: H06 29/79 real deaths upgrade once, old wave tier/damage frozen, elite direct upgrade disabled and retries reset
+ok 115 - H06 29/79 real deaths upgrade once, old wave tier/damage frozen, elite direct upgrade disabled and retries reset
+  ---
+  duration_ms: 0.983208
+  type: 'test'
+  ...
+# Subtest: H06 all three actual damage sources share one death exit, objects and breached enemies give no kill
+ok 116 - H06 all three actual damage sources share one death exit, objects and breached enemies give no kill
+  ---
+  duration_ms: 1.122875
+  type: 'test'
+  ...
+# Subtest: H07 guanzhen changes ordinary budget only; zhenjun hero-only cooldown does not move Boss or strengthen damage
+ok 117 - H07 guanzhen changes ordinary budget only; zhenjun hero-only cooldown does not move Boss or strengthen damage
+  ---
+  duration_ms: 0.940417
+  type: 'test'
+  ...
+# Subtest: H08 collision rolling12tick cap2, each enemy once, breach is not kill and N1 still fails
+ok 118 - H08 collision rolling12tick cap2, each enemy once, breach is not kill and N1 still fails
+  ---
+  duration_ms: 0.178583
+  type: 'test'
+  ...
+# Subtest: H10 isolated tactic key persists selection, corrupt tactic leaves old campaign saves intact and run freezes choice
+ok 119 - H10 isolated tactic key persists selection, corrupt tactic leaves old campaign saves intact and run freezes choice
+  ---
+  duration_ms: 0.272084
+  type: 'test'
+  ...
+# Subtest: H01 same-tick mass deaths keep only16 corpses without erasing kill accounting
+ok 120 - H01 same-tick mass deaths keep only16 corpses without erasing kill accounting
+  ---
+  duration_ms: 0.243875
+  type: 'test'
+  ...
+# Subtest: F1 named officer contact and missed viewport both retain life and start an encounter
+ok 121 - F1 named officer contact and missed viewport both retain life and start an encounter
+  ---
+  duration_ms: 7.539958
+  type: 'test'
+  ...
+# Subtest: F1/F2 only actual attacks defeat officers, recorded once, road resumes and settlement requires proof
+ok 122 - F1/F2 only actual attacks defeat officers, recorded once, road resumes and settlement requires proof
+  ---
+  duration_ms: 3.00075
+  type: 'test'
+  ...
+# Subtest: F3 Qixing rescue and Hua record only two real casualties, never twelve intended casualties
+ok 123 - F3 Qixing rescue and Hua record only two real casualties, never twelve intended casualties
+  ---
+  duration_ms: 1.186
+  type: 'test'
+  ...
+# Subtest: F3 no rescue or used rescue ends defeat; pending healing cannot resurrect it
+ok 124 - F3 no rescue or used rescue ends defeat; pending healing cannot resurrect it
+  ---
+  duration_ms: 0.441959
+  type: 'test'
+  ...
+# Subtest: F3 continuous loss, Qingnang and cooldown use actual casualties once
+ok 125 - F3 continuous loss, Qingnang and cooldown use actual casualties once
+  ---
+  duration_ms: 0.450125
+  type: 'test'
+  ...
+# Subtest: F4 one budget covers enemy and boss; behind or beyond-range waves never hit
+ok 126 - F4 one budget covers enemy and boss; behind or beyond-range waves never hit
+  ---
+  duration_ms: 3.123167
+  type: 'test'
+  ...
+# Subtest: D1 four faction routes differ and every required officer is beyond blocking walls
+ok 127 - D1 four faction routes differ and every required officer is beyond blocking walls
+  ---
+  duration_ms: 0.927625
+  type: 'test'
+  ...
+# Subtest: D1 boss patterns launch distinct immutable attack bands
+ok 128 - D1 boss patterns launch distinct immutable attack bands
+  ---
+  duration_ms: 8.43125
+  type: 'test'
+  ...
+# Subtest: D3 Lu Bu and Dian Wei fire actual paired halberd projectiles
+ok 129 - D3 Lu Bu and Dian Wei fire actual paired halberd projectiles
+  ---
+  duration_ms: 0.548125
+  type: 'test'
+  ...
+# Subtest: v04 presentation is read-only: trial-01/best
+ok 130 - v04 presentation is read-only: trial-01/best
+  ---
+  duration_ms: 694.130083
+  type: 'test'
+  ...
+# Subtest: v04 presentation is read-only: trial-01/late
+ok 131 - v04 presentation is read-only: trial-01/late
+  ---
+  duration_ms: 211.323125
+  type: 'test'
+  ...
+# Subtest: v04 presentation is read-only: trial-01/failure
+ok 132 - v04 presentation is read-only: trial-01/failure
+  ---
+  duration_ms: 207.502167
+  type: 'test'
+  ...
+# Subtest: v04 presentation is read-only: trial-02/best
+ok 133 - v04 presentation is read-only: trial-02/best
+  ---
+  duration_ms: 236.902833
+  type: 'test'
+  ...
+# Subtest: v04 presentation is read-only: trial-02/late
+ok 134 - v04 presentation is read-only: trial-02/late
+  ---
+  duration_ms: 151.584542
+  type: 'test'
+  ...
+# Subtest: v04 presentation is read-only: trial-02/failure
+ok 135 - v04 presentation is read-only: trial-02/failure
+  ---
+  duration_ms: 180.914958
+  type: 'test'
+  ...
+# Subtest: v04 presentation is read-only: trial-03/best
+ok 136 - v04 presentation is read-only: trial-03/best
+  ---
+  duration_ms: 133.398
+  type: 'test'
+  ...
+# Subtest: v04 presentation is read-only: trial-03/late
+ok 137 - v04 presentation is read-only: trial-03/late
+  ---
+  duration_ms: 130.159917
+  type: 'test'
+  ...
+# Subtest: v04 presentation is read-only: trial-03/failure
+ok 138 - v04 presentation is read-only: trial-03/failure
+  ---
+  duration_ms: 158.562958
+  type: 'test'
+  ...
+# Subtest: S2 rock loss is data-driven, including actual loss when insufficient troops
+ok 139 - S2 rock loss is data-driven, including actual loss when insufficient troops
+  ---
+  duration_ms: 0.344208
+  type: 'test'
+  ...
+# Subtest: S2 shared boss target and hit events at center/edges/outside
+ok 140 - S2 shared boss target and hit events at center/edges/outside
+  ---
+  duration_ms: 0.33225
+  type: 'test'
+  ...
+# Subtest: S2 event metadata identifies arrow, target and tick without driving gameplay
+ok 141 - S2 event metadata identifies arrow, target and tick without driving gameplay
+  ---
+  duration_ms: 0.448875
+  type: 'test'
+  ...
+# Subtest: v03 fresh scope, every ordinary entry guard, invalid IDs and missing assets
+ok 142 - v03 fresh scope, every ordinary entry guard, invalid IDs and missing assets
+  ---
+  duration_ms: 0.713583
+  type: 'test'
+  ...
+# Subtest: v03 immediate persisted next, contiguous rank, end/replay without downgrade
+ok 143 - v03 immediate persisted next, contiguous rank, end/replay without downgrade
+  ---
+  duration_ms: 0.954875
+  type: 'test'
+  ...
+# Subtest: v03 S2-B same-key save continues camp; gaps cannot unlock city
+ok 144 - v03 S2-B same-key save continues camp; gaps cannot unlock city
+  ---
+  duration_ms: 0.338542
+  type: 'test'
+  ...
+# Subtest: v03 candidate A gate arithmetic across reachable counts; no resurrection
+ok 145 - v03 candidate A gate arithmetic across reachable counts; no resurrection
+  ---
+  duration_ms: 0.939916
+  type: 'test'
+  ...
+# Subtest: v03 scene/weapon identities and static first-level contract
+ok 146 - v03 scene/weapon identities and static first-level contract
+  ---
+  duration_ms: 0.824042
+  type: 'test'
+  ...
+# Subtest: v03 all Bosses share exact center/edge target, frozen projectile damage
+ok 147 - v03 all Bosses share exact center/edge target, frozen projectile damage
+  ---
+  duration_ms: 32.86075
+  type: 'test'
+  ...
+# {"level":"trial-01","route":"best","count":187,"seconds":44.29999999999877,"bossSeconds":2.299999999998768,"losses":[1,1,1,1]}
+# {"level":"trial-01","route":"safe","count":145,"seconds":45.049999999998725,"bossSeconds":3.0499999999987253,"losses":[1,1,1,1]}
+# {"level":"trial-01","route":"late","count":174,"seconds":44.549999999998754,"bossSeconds":2.5499999999987537,"losses":[1,1,1]}
+# {"level":"trial-02","route":"best","count":224,"seconds":59.299999999997915,"bossSeconds":5.299999999997915,"losses":[1,1,1,1,1,1,1]}
+# {"level":"trial-02","route":"safe","count":170,"seconds":60.79999999999783,"bossSeconds":6.79999999999783,"losses":[1,1,1,1,2,1,1,1,1,1,1,1]}
+# {"level":"trial-02","route":"late","count":209,"seconds":59.5499999999979,"bossSeconds":5.549999999997901,"losses":[1,1,1,2,1,1]}
+# {"level":"trial-03","route":"best","count":247,"seconds":72.89999999999715,"bossSeconds":6.899999999997149,"losses":[1,2,1,1,1,1,1,1,1,1,1,1,1]}
+# {"level":"trial-03","route":"safe","count":226,"seconds":73.56666666666378,"bossSeconds":7.566666666663778,"losses":[2,1,1,1,1,1,1,1,1,1,1,1]}
+# {"level":"trial-03","route":"late","count":243,"seconds":73.14999999999714,"bossSeconds":7.149999999997135,"losses":[1,2,1,1,1,1,1,1,1,1,1,1,1]}
+# Subtest: R01 首关8兵、上下界、真实火力和主角计数
+ok 148 - R01 首关8兵、上下界、真实火力和主角计数
+  ---
+  duration_ms: 15.885667
+  type: 'test'
+  ...
+# Subtest: R02 同排中心选择一次，极速横移不重复加兵
+ok 149 - R02 同排中心选择一次，极速横移不重复加兵
+  ---
+  duration_ms: 1.230209
+  type: 'test'
+  ...
+# Subtest: R02 穿门一次、正中归右、射击不改门值
+ok 150 - R02 穿门一次、正中归右、射击不改门值
+  ---
+  duration_ms: 11.820709
+  type: 'test'
+  ...
+# Subtest: R02 受阻门先扣后加、两侧边界及0兵不复活
+ok 151 - R02 受阻门先扣后加、两侧边界及0兵不复活
+  ---
+  duration_ms: 0.236916
+  type: 'test'
+  ...
+# Subtest: R02 清障后可换侧；无隐形重复接触
+ok 152 - R02 清障后可换侧；无隐形重复接触
+  ---
+  duration_ms: 2.799833
+  type: 'test'
+  ...
+# Subtest: R03 箭发射冻结伤害及位置；最近对象优先，无穿透
+ok 153 - R03 箭发射冻结伤害及位置；最近对象优先，无穿透
+  ---
+  duration_ms: 0.522625
+  type: 'test'
+  ...
+# Subtest: R03 射击通道、山石挡箭不毁、视野外无伤
+ok 154 - R03 射击通道、山石挡箭不毁、视野外无伤
+  ---
+  duration_ms: 0.680541
+  type: 'test'
+  ...
+# Subtest: R04 弩手完整预告、锁定不追踪、躲开不损兵
+ok 155 - R04 弩手完整预告、锁定不追踪、躲开不损兵
+  ---
+  duration_ms: 1.5555
+  type: 'test'
+  ...
+# Subtest: R04 蓄力可打断，已出手箭不撤回，一箭只伤一次
+ok 156 - R04 蓄力可打断，已出手箭不撤回，一箭只伤一次
+  ---
+  duration_ms: 4.32075
+  type: 'test'
+  ...
+# Subtest: R05 Boss入场2秒、1.4秒锁定、触发恢复独立，无幽灵攻击
+ok 157 - R05 Boss入场2秒、1.4秒锁定、触发恢复独立，无幽灵攻击
+  ---
+  duration_ms: 10.439875
+  type: 'test'
+  ...
+# Subtest: R05 低兵力无超时，HP归零才胜
+ok 158 - R05 低兵力无超时，HP归零才胜
+  ---
+  duration_ms: 142.716166
+  type: 'test'
+  ...
+# Subtest: R06 乱军突围 best 合法路线
+ok 159 - R06 乱军突围 best 合法路线
+  ---
+  duration_ms: 148.738
+  type: 'test'
+  ...
+# Subtest: R06 乱军突围 safe 合法路线
+ok 160 - R06 乱军突围 safe 合法路线
+  ---
+  duration_ms: 61.332167
+  type: 'test'
+  ...
+# Subtest: R06 乱军突围 late 合法路线
+ok 161 - R06 乱军突围 late 合法路线
+  ---
+  duration_ms: 48.912083
+  type: 'test'
+  ...
+# Subtest: R06 乱军突围 真实失败与配置重开
+ok 162 - R06 乱军突围 真实失败与配置重开
+  ---
+  duration_ms: 77.41775
+  type: 'test'
+  ...
+# Subtest: R06 夺粮立营 best 合法路线
+ok 163 - R06 夺粮立营 best 合法路线
+  ---
+  duration_ms: 57.910958
+  type: 'test'
+  ...
+# Subtest: R06 夺粮立营 safe 合法路线
+ok 164 - R06 夺粮立营 safe 合法路线
+  ---
+  duration_ms: 79.982416
+  type: 'test'
+  ...
+# Subtest: R06 夺粮立营 late 合法路线
+ok 165 - R06 夺粮立营 late 合法路线
+  ---
+  duration_ms: 42.919083
+  type: 'test'
+  ...
+# Subtest: R06 夺粮立营 真实失败与配置重开
+ok 166 - R06 夺粮立营 真实失败与配置重开
+  ---
+  duration_ms: 59.774208
+  type: 'test'
+  ...
+# Subtest: R06 白石解围 best 合法路线
+ok 167 - R06 白石解围 best 合法路线
+  ---
+  duration_ms: 29.148458
+  type: 'test'
+  ...
+# Subtest: R06 白石解围 safe 合法路线
+ok 168 - R06 白石解围 safe 合法路线
+  ---
+  duration_ms: 25.03
+  type: 'test'
+  ...
+# Subtest: R06 白石解围 late 合法路线
+ok 169 - R06 白石解围 late 合法路线
+  ---
+  duration_ms: 26.148042
+  type: 'test'
+  ...
+# Subtest: R06 白石解围 真实失败与配置重开
+ok 170 - R06 白石解围 真实失败与配置重开
+  ---
+  duration_ms: 78.508625
+  type: 'test'
+  ...
+# Subtest: R07 暂停冻结预告和射击、取消输入不再横移
+ok 171 - R07 暂停冻结预告和射击、取消输入不再横移
+  ---
+  duration_ms: 0.39725
+  type: 'test'
+  ...
+# Subtest: R08 旧档保留，只迁移设置；新关不解锁
+ok 172 - R08 旧档保留，只迁移设置；新关不解锁
+  ---
+  duration_ms: 0.745
+  type: 'test'
+  ...
+# Subtest: R08 坏档及存储失败仍可玩；保存先于画面且成绩不降
+ok 173 - R08 坏档及存储失败仍可玩；保存先于画面且成绩不降
+  ---
+  duration_ms: 0.542625
+  type: 'test'
+  ...
+# Subtest: R09 稳定ID存档，只保留允许字段
+ok 174 - R09 稳定ID存档，只保留允许字段
+  ---
+  duration_ms: 0.217041
+  type: 'test'
+  ...
+# Subtest: R10 手机阵型有且仅有一个主角，48可见边界，中心投影一致
+ok 175 - R10 手机阵型有且仅有一个主角，48可见边界，中心投影一致
+  ---
+  duration_ms: 0.652167
+  type: 'test'
+  ...
+# Subtest: R11 十局对象有界，胜负无遗留箭或预告
+ok 176 - R11 十局对象有界，胜负无遗留箭或预告
+  ---
+  duration_ms: 364.381959
+  type: 'test'
+  ...
+# Subtest: R03 同步击杀与接触时先结算箭命中；半侧木障贴中线可射
+ok 177 - R03 同步击杀与接触时先结算箭命中；半侧木障贴中线可射
+  ---
+  duration_ms: 0.655709
+  type: 'test'
+  ...
+# Subtest: FIX2 window surpasses each old 4/8/12 cap with damage remainder and no premature troops
+ok 178 - FIX2 window surpasses each old 4/8/12 cap with damage remainder and no premature troops
+  ---
+  duration_ms: 1.486209
+  type: 'test'
+  ...
+# Subtest: FIX2 signed thresholds cross -1, zero and positive using real fractional damage
+ok 179 - FIX2 signed thresholds cross -1, zero and positive using real fractional damage
+  ---
+  duration_ms: 0.309209
+  type: 'test'
+  ...
+# Subtest: FIX2 explicit window ignores old/null/default cap; legacy capped configuration remains compatible
+ok 180 - FIX2 explicit window ignores old/null/default cap; legacy capped configuration remains compatible
+  ---
+  duration_ms: 0.292667
+  type: 'test'
+  ...
+# Subtest: FIX2 contact claims once past 256; missed token does not receive compensation
+ok 181 - FIX2 contact claims once past 256; missed token does not receive compensation
+  ---
+  duration_ms: 50.809
+  type: 'test'
+  ...
+# Subtest: FIX2 high logical budget conserves weighted damage and occupied feet at 48 visible actors
+ok 182 - FIX2 high logical budget conserves weighted damage and occupied feet at 48 visible actors
+  ---
+  duration_ms: 1.323666
+  type: 'test'
+  ...
+# Subtest: FIX2 numeric guard lies above recomputed legal path bounds and reports invalid values without silent clipping
+ok 183 - FIX2 numeric guard lies above recomputed legal path bounds and reports invalid values without silent clipping
+  ---
+  duration_ms: 0.419541
+  type: 'test'
+  ...
+# Subtest: FIX2 every issued fire retains frozen real weapon identity, including same-tick consumed shots
+ok 184 - FIX2 every issued fire retains frozen real weapon identity, including same-tick consumed shots
+  ---
+  duration_ms: 0.85025
+  type: 'test'
+  ...
+# Subtest: FIX2 pacing separates aligned-but-blocked aim from currently clear straight shot window
+ok 185 - FIX2 pacing separates aligned-but-blocked aim from currently clear straight shot window
+  ---
+  duration_ms: 0.548417
+  type: 'test'
+  ...
+# Subtest: FIX2 legal-bound premises track real formation and all actual gate positions
+ok 186 - FIX2 legal-bound premises track real formation and all actual gate positions
+  ---
+  duration_ms: 0.237
+  type: 'test'
+  ...
+# Subtest: V2 01 signed damage thresholds carry fractions through -5, zero and +3
+ok 187 - V2 01 signed damage thresholds carry fractions through -5, zero and +3
+  ---
+  duration_ms: 1.295208
+  type: 'test'
+  ...
+# Subtest: V2 02 60 HP is exactly 3 troops, unopened crate grants nothing and cannot repeat
+ok 188 - V2 02 60 HP is exactly 3 troops, unopened crate grants nothing and cannot repeat
+  ---
+  duration_ms: 4.186125
+  type: 'test'
+  ...
+# Subtest: V2 03 weighted emitters preserve the budget at 1, 7, 48 and 256; special units count once
+ok 189 - V2 03 weighted emitters preserve the budget at 1, 7, 48 and 256; special units count once
+  ---
+  duration_ms: 0.680292
+  type: 'test'
+  ...
+# Subtest: V2 04 emitted arrows retain launch positions, owners, damage and stage through movement/upgrades
+ok 190 - V2 04 emitted arrows retain launch positions, owners, damage and stage through movement/upgrades
+  ---
+  duration_ms: 0.751
+  type: 'test'
+  ...
+# Subtest: V2 05 different emitters hit independent columns; nearest crate consumes a shot before rear enemy
+ok 191 - V2 05 different emitters hit independent columns; nearest crate consumes a shot before rear enemy
+  ---
+  duration_ms: 30.657459
+  type: 'test'
+  ...
+# Subtest: V2 06 true feet union can touch a negative gate outside center; independent doors settle once
+ok 192 - V2 06 true feet union can touch a negative gate outside center; independent doors settle once
+  ---
+  duration_ms: 25.1175
+  type: 'test'
+  ...
+# Subtest: V2 07 TOI precedes IDs; zero ends the step and new members cannot retroactively collide
+ok 193 - V2 07 TOI precedes IDs; zero ends the step and new members cannot retroactively collide
+  ---
+  duration_ms: 0.437125
+  type: 'test'
+  ...
+# Subtest: V2 08 swept round feet do not collide through empty AABB corner; crossing cannot tunnel
+ok 194 - V2 08 swept round feet do not collide through empty AABB corner; crossing cannot tunnel
+  ---
+  duration_ms: 0.050917
+  type: 'test'
+  ...
+# Subtest: V2 09 chain creates 6 independent tokens ahead; crossing only three grants three and misses never replay
+ok 195 - V2 09 chain creates 6 independent tokens ahead; crossing only three grants three and misses never replay
+  ---
+  duration_ms: 68.17725
+  type: 'test'
+  ...
+# Subtest: V2 10 troops do not upgrade, absolute equipment only advances; kills/elite/tactics never activate old systems
+ok 196 - V2 10 troops do not upgrade, absolute equipment only advances; kills/elite/tactics never activate old systems
+  ---
+  duration_ms: 7.323625
+  type: 'test'
+  ...
+# Subtest: V2 11 blast damages each enemy once, never changes nearby gate or crate
+ok 197 - V2 11 blast damages each enemy once, never changes nearby gate or crate
+  ---
+  duration_ms: 0.603959
+  type: 'test'
+  ...
+# Subtest: V2 12 forward divider absorbs crossing arrows while lateral player control remains open
+ok 198 - V2 12 forward divider absorbs crossing arrows while lateral player control remains open
+  ---
+  duration_ms: 11.508792
+  type: 'test'
+  ...
+# Subtest: V2 13 live enemies behind the formation pursue without teleport or breach kill credit
+ok 199 - V2 13 live enemies behind the formation pursue without teleport or breach kill credit
+  ---
+  duration_ms: 0.151917
+  type: 'test'
+  ...
+# Subtest: V2 14 field companion replaces appearance once, adds exactly one member and uses one budget
+ok 200 - V2 14 field companion replaces appearance once, adds exactly one member and uses one budget
+  ---
+  duration_ms: 0.127333
+  type: 'test'
+  ...
+# Subtest: V2 15 large enemy and distance are independent; arriving never deletes active combat
+ok 201 - V2 15 large enemy and distance are independent; arriving never deletes active combat
+  ---
+  duration_ms: 13.859208
+  type: 'test'
+  ...
+# Subtest: V2 16 old best/unlocks/settings survive separate new-profile scoring and reload
+ok 202 - V2 16 old best/unlocks/settings survive separate new-profile scoring and reload
+  ---
+  duration_ms: 0.602834
+  type: 'test'
+  ...
+# Subtest: V2 17 profile starts 1/1/3, old levels unchanged; equipment and reload are explicit
+ok 203 - V2 17 profile starts 1/1/3, old levels unchanged; equipment and reload are explicit
+  ---
+  duration_ms: 0.748458
+  type: 'test'
+  ...
+# Subtest: V2 18 new object pressure is bounded over 22 seconds; three clean retries reset state
+ok 204 - V2 18 new object pressure is bounded over 22 seconds; three clean retries reset state
+  ---
+  duration_ms: 360.885042
+  type: 'test'
+  ...
+# Subtest: V2 19 first-level legal input progresses from one member without hidden melee or injected damage
+ok 205 - V2 19 first-level legal input progresses from one member without hidden melee or injected damage
+  ---
+  duration_ms: 1259.059791
+  type: 'test'
+  ...
+# Subtest: V2 20 actual projectile death names the ranged source and retains the precise loss ledger
+ok 206 - V2 20 actual projectile death names the ranged source and retains the precise loss ledger
+  ---
+  duration_ms: 0.354
+  type: 'test'
+  ...
+# Subtest: v081 leaders have a dedicated rank; feet and frozen muzzle origins stay aligned
+ok 207 - v081 leaders have a dedicated rank; feet and frozen muzzle origins stay aligned
+  ---
+  duration_ms: 0.542708
+  type: 'test'
+  ...
+# Subtest: v09 bounded approach preserves enemies and actual damage identifies one attacker and victim
+ok 208 - v09 bounded approach preserves enemies and actual damage identifies one attacker and victim
+  ---
+  duration_ms: 1.004292
+  type: 'test'
+  ...
+# Subtest: v081 enemies approach the accessible front rank, not unreachable rear-member lanes
+ok 209 - v081 enemies approach the accessible front rank, not unreachable rear-member lanes
+  ---
+  duration_ms: 23.967
+  type: 'test'
+  ...
+# Subtest: v09 count growth preserves existing soldier feet, identity, frozen arrows and fire clocks
+ok 210 - v09 count growth preserves existing soldier feet, identity, frozen arrows and fire clocks
+  ---
+  duration_ms: 4.917708
+  type: 'test'
+  ...
+# Subtest: v09 contact removes the exact model-selected slots; survivors and future recruits keep identities
+ok 211 - v09 contact removes the exact model-selected slots; survivors and future recruits keep identities
+  ---
+  duration_ms: 2.239667
+  type: 'test'
+  ...
+# Subtest: v09 256-to-255 loss reduces weighted budget without inventing a visible casualty
+ok 212 - v09 256-to-255 loss reduces weighted budget without inventing a visible casualty
+  ---
+  duration_ms: 1.811875
+  type: 'test'
+  ...
+# Subtest: v09 bounded approach cannot teleport; exposed attackers still inflict source-linked losses
+ok 213 - v09 bounded approach cannot teleport; exposed attackers still inflict source-linked losses
+  ---
+  duration_ms: 260.2235
+  type: 'test'
+  ...
+# Subtest: v09 actual swept enemy/member contact catches a crossing even with separated endpoints
+ok 214 - v09 actual swept enemy/member contact catches a crossing even with separated endpoints
+  ---
+  duration_ms: 0.2055
+  type: 'test'
+  ...
+# Subtest: v09 pacing is driven by real hit, cap, pass and claim events; unopened reward stays absent
+ok 215 - v09 pacing is driven by real hit, cap, pass and claim events; unopened reward stays absent
+  ---
+  duration_ms: 7.431917
+  type: 'test'
+  ...
+# Subtest: v09 leader-only count has exactly one muzzle after companion casualty, and slots remain bounded after churn
+ok 216 - v09 leader-only count has exactly one muzzle after companion casualty, and slots remain bounded after churn
+  ---
+  duration_ms: 6.603666
+  type: 'test'
+  ...
+# Subtest: v09 same-step removed foot cannot claim a later gate, while surviving touchers still can
+ok 217 - v09 same-step removed foot cannot claim a later gate, while surviving touchers still can
+  ---
+  duration_ms: 21.567167
+  type: 'test'
+  ...
+# Subtest: v09 steering checks the clamped input, not an unreachable safe enemy position
+ok 218 - v09 steering checks the clamped input, not an unreachable safe enemy position
+  ---
+  duration_ms: 6.160917
+  type: 'test'
+  ...
+# Subtest: FIX2 runner best above256 roundtrips without changing schema, legacy score or unknown fields
+ok 219 - FIX2 runner best above256 roundtrips without changing schema, legacy score or unknown fields
+  ---
+  duration_ms: 0.7605
+  type: 'test'
+  ...
+# Subtest: UI v06 island-and-capsule: host exclusion is maximum, never doubled padding
+ok 220 - UI v06 island-and-capsule: host exclusion is maximum, never doubled padding
+  ---
+  duration_ms: 1.249166
+  type: 'test'
+  ...
+# Subtest: UI v06 island-and-capsule: 48 logical hit stays 48 at both safe edges and maps back
+ok 221 - UI v06 island-and-capsule: 48 logical hit stays 48 at both safe edges and maps back
+  ---
+  duration_ms: 0.285083
+  type: 'test'
+  ...
+# Subtest: UI v06 short-screen-with-host: host exclusion is maximum, never doubled padding
+ok 222 - UI v06 short-screen-with-host: host exclusion is maximum, never doubled padding
+  ---
+  duration_ms: 0.076583
+  type: 'test'
+  ...
+# Subtest: UI v06 short-screen-with-host: 48 logical hit stays 48 at both safe edges and maps back
+ok 223 - UI v06 short-screen-with-host: 48 logical hit stays 48 at both safe edges and maps back
+  ---
+  duration_ms: 0.223125
+  type: 'test'
+  ...
+# Subtest: UI v06 short-web: host exclusion is maximum, never doubled padding
+ok 224 - UI v06 short-web: host exclusion is maximum, never doubled padding
+  ---
+  duration_ms: 0.06825
+  type: 'test'
+  ...
+# Subtest: UI v06 short-web: 48 logical hit stays 48 at both safe edges and maps back
+ok 225 - UI v06 short-web: 48 logical hit stays 48 at both safe edges and maps back
+  ---
+  duration_ms: 0.072209
+  type: 'test'
+  ...
+# Subtest: UI v06 user-image-aspect-synthetic: host exclusion is maximum, never doubled padding
+ok 226 - UI v06 user-image-aspect-synthetic: host exclusion is maximum, never doubled padding
+  ---
+  duration_ms: 0.124542
+  type: 'test'
+  ...
+# Subtest: UI v06 user-image-aspect-synthetic: 48 logical hit stays 48 at both safe edges and maps back
+ok 227 - UI v06 user-image-aspect-synthetic: 48 logical hit stays 48 at both safe edges and maps back
+  ---
+  duration_ms: 0.126541
+  type: 'test'
+  ...
+# Subtest: UI v06 narrow-long-host: host exclusion is maximum, never doubled padding
+ok 228 - UI v06 narrow-long-host: host exclusion is maximum, never doubled padding
+  ---
+  duration_ms: 0.263833
+  type: 'test'
+  ...
+# Subtest: UI v06 narrow-long-host: 48 logical hit stays 48 at both safe edges and maps back
+ok 229 - UI v06 narrow-long-host: 48 logical hit stays 48 at both safe edges and maps back
+  ---
+  duration_ms: 0.246792
+  type: 'test'
+  ...
+# Subtest: UI v06 uses real horizontal safe edges and ignores capsule above safe top
+ok 230 - UI v06 uses real horizontal safe edges and ignores capsule above safe top
+  ---
+  duration_ms: 0.0685
+  type: 'test'
+  ...
+# Subtest: v081 preparation regions stay separate: island-and-capsule
+ok 231 - v081 preparation regions stay separate: island-and-capsule
+  ---
+  duration_ms: 0.075542
+  type: 'test'
+  ...
+# Subtest: v081 preparation regions stay separate: short-screen-with-host
+ok 232 - v081 preparation regions stay separate: short-screen-with-host
+  ---
+  duration_ms: 0.029792
+  type: 'test'
+  ...
+# Subtest: v081 preparation regions stay separate: short-web
+ok 233 - v081 preparation regions stay separate: short-web
+  ---
+  duration_ms: 0.059
+  type: 'test'
+  ...
+# Subtest: v081 preparation regions stay separate: user-image-aspect-synthetic
+ok 234 - v081 preparation regions stay separate: user-image-aspect-synthetic
+  ---
+  duration_ms: 0.026416
+  type: 'test'
+  ...
+# Subtest: v081 preparation regions stay separate: narrow-long-host
+ok 235 - v081 preparation regions stay separate: narrow-long-host
+  ---
+  duration_ms: 0.024875
+  type: 'test'
+  ...
+# Subtest: v09 shared regions 640/0
+ok 236 - v09 shared regions 640/0
+  ---
+  duration_ms: 0.819584
+  type: 'test'
+  ...
+# Subtest: v09 shared regions 640/62
+ok 237 - v09 shared regions 640/62
+  ---
+  duration_ms: 0.277583
+  type: 'test'
+  ...
+# Subtest: v09 shared regions 844/0
+ok 238 - v09 shared regions 844/0
+  ---
+  duration_ms: 0.086416
+  type: 'test'
+  ...
+# Subtest: v09 shared regions 844/62
+ok 239 - v09 shared regions 844/62
+  ---
+  duration_ms: 0.054792
+  type: 'test'
+  ...
+# Subtest: pending transitions take priority over completion CTA
+ok 240 - pending transitions take priority over completion CTA
+  ---
+  duration_ms: 0.137417
+  type: 'test'
+  ...
+# Subtest: replay preserves highest rank and failed save never claims success
+ok 241 - replay preserves highest rank and failed save never claims success
+  ---
+  duration_ms: 0.190083
+  type: 'test'
+  ...
+# Subtest: UI25 Book failed write keeps prior bytes and current results, recovery clears notice and preserves unknown fields
+ok 242 - UI25 Book failed write keeps prior bytes and current results, recovery clears notice and preserves unknown fields
+  ---
+  duration_ms: 1.435959
+  type: 'test'
+  ...
+# Subtest: UI25 equipment selections report actual storage failure, retry same selection persists without replaying unlocks
+ok 243 - UI25 equipment selections report actual storage failure, retry same selection persists without replaying unlocks
+  ---
+  duration_ms: 0.447791
+  type: 'test'
+  ...
+# Subtest: UI25 locked choices neither mutate selection nor attempt a write
+ok 244 - UI25 locked choices neither mutate selection nor attempt a write
+  ---
+  duration_ms: 0.108209
+  type: 'test'
+  ...
+# Subtest: UI25 transition failure returns false and same completed in-memory transition retries storage
+ok 245 - UI25 transition failure returns false and same completed in-memory transition retries storage
+  ---
+  duration_ms: 0.419417
+  type: 'test'
+  ...
+# Subtest: UI25 meeting failure keeps saved seen flag false and retries without granting any reward
+ok 246 - UI25 meeting failure keeps saved seen flag false and retries without granting any reward
+  ---
+  duration_ms: 0.199
+  type: 'test'
+  ...
+# Subtest: FIX2 actual issued events all observed once at firepower0; pose states do not schedule damage
+ok 247 - FIX2 actual issued events all observed once at firepower0; pose states do not schedule damage
+  ---
+  duration_ms: 12.802875
+  type: 'test'
+  ...
+# Subtest: FIX2 actual issued events all observed once at firepower1; pose states do not schedule damage
+ok 248 - FIX2 actual issued events all observed once at firepower1; pose states do not schedule damage
+  ---
+  duration_ms: 5.922167
+  type: 'test'
+  ...
+# Subtest: FIX2 actual issued events all observed once at firepower2; pose states do not schedule damage
+ok 249 - FIX2 actual issued events all observed once at firepower2; pose states do not schedule damage
+  ---
+  duration_ms: 4.7465
+  type: 'test'
+  ...
+1..249
+# tests 249
+# suites 0
+# pass 249
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2714.333291

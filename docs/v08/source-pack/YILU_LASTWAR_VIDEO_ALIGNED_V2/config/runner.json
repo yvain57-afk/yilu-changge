@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "profileId": "runnerVideoV2",
+  "status": "IMPLEMENTATION_DEFAULTS_NOT_ORIGINAL_GAME_VALUES",
+  "basedOn": "user last-war-video-study.zip/玩法拆解.md + supplied visual frames",
+  "simulation": {
+    "stepSeconds": 0.016666666666666666,
+    "playerForwardSpeed": 1,
+    "horizonWorldUnits": 8,
+    "maxSquadCount": 256,
+    "maxVisibleSquad": 48,
+    "maxEnemies": 64,
+    "maxLargeEnemies": 1,
+    "maxProjectiles": 512,
+    "maxChainTokens": 24
+  },
+  "input": {
+    "continuousLateral": true,
+    "routeLock": false,
+    "latMoveLimit": 0.91,
+    "retainCurrentTouchTuning": true
+  },
+  "gates": {
+    "operations": [
+      "signedAdd"
+    ],
+    "mutableDamageThreshold": true,
+    "zeroStyle": "safeBlue",
+    "contactPolicy": "sweptVisibleFeetUnion",
+    "oneShotPerGate": true,
+    "rowMutex": false,
+    "resurrectAfterZero": false,
+    "impactBeforeContactIfEarlier": true,
+    "defaultMaxPositive": 64
+  },
+  "formation": {
+    "minColumns": 1,
+    "maxColumns": 7,
+    "maxHalfWidthWorld": 0.44,
+    "memberFootRadiusWorld": 0.025,
+    "newMemberCollisionStartsNextStep": true
+  },
+  "equipment": [
+    {
+      "id": "standard",
+      "stage": 0,
+      "intervalSeconds": 0.25,
+      "damagePerUnit": 1,
+      "speed": 9,
+      "range": 8,
+      "directPiercingTargets": 1,
+      "splashRadius": 0,
+      "visual": "基础箭/窄枪芒/单刀气"
+    },
+    {
+      "id": "repeater",
+      "stage": 1,
+      "intervalSeconds": 0.2,
+      "damagePerUnit": 1,
+      "speed": 9,
+      "range": 8,
+      "directPiercingTargets": 1,
+      "splashRadius": 0,
+      "visual": "连发军械与密集弹幕，士兵装备简化换装"
+    },
+    {
+      "id": "explosive",
+      "stage": 2,
+      "intervalSeconds": 0.45,
+      "damagePerUnit": 2.5,
+      "speed": 7.5,
+      "range": 8,
+      "directPiercingTargets": 1,
+      "splashRadius": 0.16,
+      "visual": "实体火矢/军械弹与局部爆裂",
+      "splashAffects": [
+        "enemy",
+        "largeEnemy"
+      ],
+      "splashDoesNotAffect": [
+        "mutableGate",
+        "rewardCrate",
+        "chainCrate"
+      ]
+    }
+  ],
+  "growth": {
+    "source": "rewardCrate",
+    "killXp": false,
+    "eliteAutoUpgrade": false,
+    "oldAwakening": false,
+    "oldTacticBonus": false,
+    "resetEquipmentEachRun": true
+  },
+  "chain": {
+    "tokenValue": 1,
+    "tokenSpacing": 0.5,
+    "minimumAhead": 1.4,
+    "maximumPerGenerator": 12,
+    "tokenShootable": false
+  },
+  "unverifiedDefaults": {
+    "crateReward": "grantOnceOnBreak",
+    "crateContactDamage": 0,
+    "normalEnemyContactLoss": 1,
+    "normalEnemyAttackInterval": 0.8,
+    "contactGraceSeconds": 0.2,
+    "largeStageWin": "distanceReachedAndBossDefeated",
+    "dividers": "forwardTargetAreaOnlyWithOpenManeuverBand"
+  },
+  "audio": {
+    "bgmEnabled": false,
+    "reuseCurrentSfx": true,
+    "rateLimitHits": true
+  },
+  "preserve": [
+    "localWork",
+    "uiAgentUpdates",
+    "safeAreas",
+    "permanentUnlocks",
+    "campaignTransitions",
+    "squadVolleyVisuals",
+    "worldSceneryContinuity"
+  ],
+  "disableInProfile": [
+    "fixedMultiplyGates",
+    "branchEasyHard",
+    "kill30_80Upgrade",
+    "automaticTier3Awakening",
+    "hardWeaponLock",
+    "forcedBossMeleeArena",
+    "fakePercentileRanking"
+  ]
+}

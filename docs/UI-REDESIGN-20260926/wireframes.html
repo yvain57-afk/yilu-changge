@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>一路长歌 · UI 重构 · 6 张关键界面中保真线框</title>
+<style>
+:root{
+ --ink9:#0E1826;--ink8:#15243A;--ink7:#1E3350;--slate:#2C3E4A;
+ --g3:#E6CD93;--g5:#C9A45C;--g7:#8A6630;
+ --p1:#F3EAD6;--p3:#DCCBA6;--pink:#2A2016;
+ --r6:#B23A2B;--r8:#7A2419;--b4:#6FA3D8;--b6:#2F66A3;--jade:#3E8C7A;
+ --hi:#F5EFE2;--mid:#C4BEB0;--low:#87847C;
+ --iron:#8A9099;--bronze:#B0773F;--silver:#C9D1DA;--tgold:#D9B25A;
+ --serif:"Source Han Serif SC","Noto Serif SC","Songti SC","STSong",serif;
+ --sans:"PingFang SC","Source Han Sans SC","Noto Sans SC",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#1a1a1a;color:#ddd;font-family:var(--sans);padding:24px}
+header{max-width:1200px;margin:0 auto 20px}
+header h1{font-family:var(--serif);font-size:22px;color:var(--g3)}
+header p{font-size:13px;color:#aaa;margin-top:6px;line-height:1.6}
+header label{font-size:13px;color:var(--g3);cursor:pointer;display:inline-block;margin-top:8px}
+.grid{display:flex;flex-wrap:wrap;gap:36px;justify-content:center}
+figure{width:360px}
+figcaption{font-size:13px;color:var(--g3);margin-bottom:8px;font-family:var(--serif)}
+figcaption small{display:block;color:#999;font-family:var(--sans);font-size:11px;margin-top:2px;line-height:1.5}
+.phone{position:relative;width:360px;height:780px;overflow:hidden;border-radius:28px;background:#222;box-shadow:0 0 0 2px #333,0 10px 30px #000a}
+.abs{position:absolute}
+.statusbar{left:0;top:0;width:100%;height:44px;font-size:12px;color:#fff;padding:14px 24px;z-index:50;text-shadow:0 1px 2px #0008}
+.capsule{right:8px;top:48px;width:88px;height:32px;border-radius:16px;background:#0006;border:1px solid #fff5;z-index:50;display:flex;align-items:center;justify-content:space-around;color:#fff;font-size:14px}
+/* ---- world ---- */
+.sky{inset:0 0 auto 0;height:170px;background:linear-gradient(#9fb3b8,#c9cdb9 60%,#b9b596)}
+.mount{top:70px;left:-20px;width:400px;height:110px;background:linear-gradient(#5f7672,#8a9a88);clip-path:polygon(0 70%,12% 30%,22% 55%,35% 10%,48% 50%,60% 25%,72% 60%,85% 20%,100% 55%,100% 100%,0 100%)}
+.grass{top:150px;left:0;width:100%;height:630px;background:linear-gradient(#8f9a78,#7d8a64)}
+.road{top:150px;left:0;width:100%;height:630px;background:
+ repeating-linear-gradient(0deg,#0000 0 38px,#0000000a 38px 40px),
+ linear-gradient(#cdb993,#d9c49c 50%,#d4bc92);clip-path:polygon(40% 0,60% 0,100% 100%,0 100%)}
+.rut{top:150px;width:2px;height:630px;background:#a8906c55;transform-origin:top}
+.city{top:150px;left:150px;width:60px;height:34px;background:#6d6150;clip-path:polygon(0 30%,15% 30%,15% 0,35% 0,35% 30%,65% 30%,65% 0,85% 0,85% 30%,100% 30%,100% 100%,0 100%)}
+.fence{left:178px;width:4px;background:repeating-linear-gradient(#6b4a2a 0 10px,#8a6238 10px 14px);z-index:5}
+.fence::before,.fence::after{content:"";position:absolute;left:-5px;width:14px;height:12px;background:#8d8a80;border-radius:3px}
+.fence::before{top:-8px}.fence::after{bottom:-6px}
+.fence .fl{position:absolute;left:4px;top:-26px;width:14px;height:10px;background:var(--g5);clip-path:polygon(0 0,100% 20%,70% 50%,100% 80%,0 100%)}
+.fence .fl:before{content:"";position:absolute}
+.fencePosts{left:170px;width:20px;z-index:5;background:repeating-linear-gradient(90deg,#0000 0 8px,#0000 8px 12px),repeating-linear-gradient(#0000 0 12px,#7a5530 12px 16px);}
+.prop{background:#6a5a44;border-radius:3px}
+.hint-zone{left:0;width:100%;border-top:1px dashed #ff4d8d;z-index:80;pointer-events:none;display:none}
+.hint-zone span{position:absolute;left:4px;top:2px;font-size:10px;color:#ff4d8d;background:#000a;padding:0 4px;border-radius:2px}
+body.zones .hint-zone{display:block}
+/* ---- gate ---- */
+.gate{z-index:10;display:flex;flex-direction:column;align-items:center}
+.gate .beam{width:100%;height:6px;background:#5b3d22;border-radius:2px;position:relative}
+.gate .post{position:absolute;top:-10px;width:6px;height:96px;background:linear-gradient(90deg,#4a311b,#7a5530,#4a311b);border-radius:2px}
+.gate .post.l{left:-2px}.gate .post.r{right:-2px}
+.gate .post i{position:absolute;left:-1px;width:8px;height:4px;background:#b0773f}
+.gate .ban{margin-top:2px;width:84%;height:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;position:relative}
+.gate.plus .ban{background:var(--b6);border-bottom:3px solid var(--g5);box-shadow:inset 0 -6px 0 #0002}
+.gate.minus .ban{background:var(--r6);clip-path:polygon(0 0,100% 0,100% 88%,88% 100%,76% 90%,62% 100%,50% 90%,38% 100%,24% 90%,12% 100%,0 90%)}
+.gate.zero .ban{background:var(--p3);color:var(--pink)}
+.num{font-family:"DIN Alternate","Arial Black",var(--sans);font-weight:900;font-variant-numeric:tabular-nums;letter-spacing:.5px}
+.gate .num{font-size:30px;line-height:1;-webkit-text-stroke:0;text-shadow:0 2px 0 #0006,1.5px 0 0 #0005,-1.5px 0 0 #0005}
+.gate.plus .num{text-shadow:0 2px 0 #123a66,2px 0 0 #123a66,-2px 0 0 #123a66,0 -2px 0 #123a66}
+.gate.minus .num{text-shadow:0 2px 0 #5a160e,2px 0 0 #5a160e,-2px 0 0 #5a160e,0 -2px 0 #5a160e}
+.gate .sub{font-size:11px;font-family:var(--serif);opacity:.92;margin-top:3px;letter-spacing:2px}
+.gate .grow{position:absolute;left:8%;bottom:6px;width:84%;height:3px;background:#0004}
+.gate .grow b{display:block;height:100%;background:var(--g3);width:60%}
+.gate .topflag{position:absolute;top:-24px;width:12px;height:10px;background:var(--g5);clip-path:polygon(0 0,100% 20%,70% 50%,100% 80%,0 100%)}
+.gate.minus .topflag{background:none;width:3px;height:16px;top:-26px;border-left:3px solid #3a2a1a;transform:rotate(25deg)}
+/* ---- crates ---- */
+.crate{z-index:9;display:flex;flex-direction:column;align-items:center}
+.tag{background:var(--p1);color:var(--pink);font-size:12px;padding:3px 7px;border-radius:3px;display:flex;align-items:center;gap:4px;box-shadow:0 1px 2px #0005;white-space:nowrap;font-family:var(--serif);font-weight:700}
+.tag.blue{background:var(--b6);color:#fff}
+.tag.gold{border:1.5px solid var(--g5)}
+.rope{width:1px;height:8px;background:#5b3d22}
+.ico{display:inline-block;width:14px;height:14px;border-radius:2px;background:currentColor;opacity:.8}
+.wbox{width:58px;height:34px;background:linear-gradient(#7a5530,#5b3d22);border:2px solid var(--bronze);border-radius:3px;position:relative}
+.wbox::after{content:"";position:absolute;left:8px;right:8px;top:14px;height:3px;background:#2a1a0e;box-shadow:0 0 0 1px #b0773f55}
+.cart{width:52px;height:30px;background:#8a6a44;border-radius:4px 4px 0 0;position:relative}
+.cart::before,.cart::after{content:"";position:absolute;bottom:-9px;width:16px;height:16px;border-radius:50%;border:3px solid #4a311b;background:#6b4a2a}
+.cart::before{left:2px}.cart::after{right:2px}
+.cart i{position:absolute;top:-10px;left:10px;width:30px;height:14px;background:#c9b48a;border-radius:8px}
+.dur{display:flex;gap:2px;margin-top:10px}
+.dur b{width:8px;height:4px;background:var(--g3)}
+.dur b.off{background:#0005}
+.lacq{width:36px;height:30px;background:linear-gradient(#2a1a14,#120a08);border:2px solid var(--g5);border-radius:3px;position:relative}
+.lacq::after{content:"";position:absolute;left:13px;top:10px;width:6px;height:8px;background:var(--g5);border-radius:1px}
+/* ---- units ---- */
+.u{position:absolute;border-radius:50% 50% 40% 40%;z-index:20}
+.soldier{width:13px;height:18px;background:#4f6078;box-shadow:0 0 0 1px #1a2230}
+.esoldier{width:13px;height:18px;background:#8a4a3a;box-shadow:0 0 0 1px #2a1410}
+.hero{width:24px;height:34px;background:#e8e0cc;box-shadow:0 0 0 1.5px #1a2230;z-index:25}
+.hero::after{content:"";position:absolute;left:-6px;top:8px;width:36px;height:24px;background:#2f5fb3;clip-path:polygon(20% 0,80% 0,100% 100%,0 100%);z-index:-1}
+.ring{position:absolute;border-radius:50%;z-index:19}
+.ring.gold{border:2px solid var(--g5);background:#c9a45c22}
+.ring.silver{border:1.5px solid var(--silver)}
+.comp{width:20px;height:28px;background:#6a7690;box-shadow:0 0 0 1.5px #1a2230;z-index:24}
+.backflag{position:absolute;width:12px;height:18px;font-size:9px;color:#fff;text-align:center;line-height:18px;font-family:var(--serif);z-index:26}
+.troop{z-index:40;display:flex;align-items:center;gap:3px;background:var(--ink8);border:1px solid var(--g5);padding:2px 8px 2px 8px;border-radius:2px;color:#fff}
+.troop .num{font-size:22px}
+.troop small{font-size:11px;color:var(--g3);font-family:var(--serif)}
+.pole{width:2px;background:#5b3d22;z-index:39}
+.delta{z-index:41;font-size:18px;color:var(--b4);text-shadow:0 1px 0 #123a66,1px 0 0 #123a66,-1px 0 0 #123a66}
+.delta.neg{color:#ff8a78;text-shadow:0 1px 0 #5a160e,1px 0 0 #5a160e,-1px 0 0 #5a160e}
+/* ---- HUD ---- */
+.hud{z-index:60}
+.ibtn{width:32px;height:32px;background:rgba(21,36,58,.82);border:1px solid #c9a45c55;border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--hi);font-size:12px;letter-spacing:-1px}
+.pill{height:28px;background:rgba(21,36,58,.82);border-radius:14px;color:var(--hi);font-family:var(--serif);font-size:14px;display:flex;align-items:center;padding:0 12px;gap:6px}
+.pill em{font-style:normal;color:var(--g3)}
+.march{height:20px}
+.march .track{position:absolute;left:0;right:0;top:8px;height:4px;background:rgba(21,36,58,.7);border-radius:2px}
+.march .done{position:absolute;left:0;top:8px;height:4px;background:var(--g5);border-radius:2px}
+.march .node{position:absolute;top:3px;width:12px;height:12px;transform:rotate(45deg);background:var(--r6);border:1.5px solid var(--p1)}
+.march .end{position:absolute;right:-4px;top:0;width:20px;height:18px;background:#6d6150;border:1.5px solid var(--p1);border-radius:3px;font-size:10px;color:#fff;text-align:center;line-height:15px;font-family:var(--serif)}
+.march .me{position:absolute;top:-2px;width:10px;height:14px;background:var(--b6);border:1.5px solid var(--g3);clip-path:polygon(0 0,100% 0,100% 70%,50% 100%,0 70%)}
+.march .cnt{position:absolute;right:26px;top:-16px;font-size:11px;color:var(--hi);text-shadow:0 1px 2px #000}
+.wchip{display:flex;gap:6px;align-items:center;background:rgba(21,36,58,.82);border-radius:6px;padding:4px 10px 4px 4px}
+.well{width:32px;height:32px;border-radius:6px;background:var(--ink7);border:2px solid var(--tgold);display:flex;align-items:center;justify-content:center;color:var(--g3);font-family:var(--serif);font-size:13px}
+.wchip .n{font-family:var(--serif);font-size:13px;color:var(--hi);line-height:1.1}
+.wchip .pips{color:var(--g5);font-size:10px;letter-spacing:1px}
+.wchip .pips i{color:#fff3;font-style:normal}
+.wchip .sub{font-size:10px;color:var(--mid)}
+.tslots{display:flex;gap:6px}
+.ts{width:32px;height:32px;border-radius:6px;background:rgba(21,36,58,.82);border:1.5px solid var(--g5);position:relative;color:var(--g3);font-size:11px;font-family:var(--serif);display:flex;align-items:center;justify-content:center}
+.ts b{position:absolute;right:-4px;bottom:-4px;min-width:14px;height:14px;border-radius:7px;background:var(--r6);color:#fff;font-size:10px;line-height:14px;text-align:center;font-family:var(--sans)}
+.ts.round{border-radius:50%;border-color:var(--jade)}
+.ts.cd::after{content:"";position:absolute;inset:0;border-radius:inherit;background:conic-gradient(#0009 0 70%,#0000 70%)}
+.toast{z-index:70;height:32px;background:rgba(21,36,58,.9);border-left:3px solid var(--g5);border-radius:0 16px 16px 0;color:var(--hi);font-size:14px;display:flex;align-items:center;padding:0 14px;font-family:var(--serif)}
+.toast.danger{border-left-color:var(--r6)}
+.hand{z-index:70;width:44px;height:44px;border-radius:50%;border:2px dashed #fff8}
+/* ---- boss ---- */
+.bossplate{display:flex;gap:8px;align-items:center;background:rgba(21,36,58,.86);border-radius:6px;padding:4px 10px 4px 4px}
+.bossplate .av{width:40px;height:40px;border-radius:50%;border:2px solid var(--r6);background:radial-gradient(#8a4a3a,#3a1a14);color:#fff;font-family:var(--serif);display:flex;align-items:center;justify-content:center;font-size:16px}
+.bossplate .nm{font-family:var(--serif);color:var(--hi);font-size:16px}
+.bossplate .nm small{color:var(--g3);font-size:11px;margin-left:4px}
+.bossplate .bar{position:relative;height:8px;background:var(--ink9);border-radius:1px;margin-top:4px;overflow:hidden}
+.bossplate .bar .trail{position:absolute;left:0;top:0;bottom:0;width:72%;background:var(--p3)}
+.bossplate .bar .hp{position:absolute;left:0;top:0;bottom:0;width:64%;background:var(--r6)}
+.bossplate .bar .tick{position:absolute;top:0;bottom:0;width:2px;background:var(--ink9)}
+.bossplate .ph{font-family:var(--serif);color:var(--g3);font-size:12px;align-self:flex-end}
+.warn{z-index:65;width:56px;background:var(--r8);color:var(--g3);display:flex;flex-direction:column;align-items:center;padding:12px 0;box-shadow:-4px 0 12px #0006;clip-path:polygon(0 0,100% 0,100% 100%,50% 94%,0 100%)}
+.warn .v{writing-mode:vertical-rl;font-family:var(--serif);font-size:26px;font-weight:900;letter-spacing:6px;color:var(--g3)}
+.warn .s{writing-mode:vertical-rl;font-size:11px;color:var(--p1);margin-top:10px;letter-spacing:2px}
+.dais{z-index:8;border-radius:50%;border:2px solid #b23a2b99;background:repeating-conic-gradient(#b23a2b33 0 22.5deg,#0000 22.5deg 45deg)}
+.egen{width:30px;height:42px;background:#a0503c;box-shadow:0 0 0 1.5px #2a1410;z-index:22}
+.boss{width:44px;height:62px;background:#9a3a2c;box-shadow:0 0 0 2px #2a1410;z-index:22}
+.bigflag{z-index:21;width:16px;height:30px;background:var(--r8);border-left:2px solid #3a2a1a}
+.nameplate{z-index:30;background:var(--r8);color:var(--p1);font-family:var(--serif);font-size:12px;padding:1px 6px;border-radius:2px}
+.ebar{z-index:30;height:5px;width:48px;background:var(--ink9)}
+.ebar b{display:block;height:100%;width:70%;background:var(--r6)}
+.tele{z-index:7;border-radius:50%;border:2px dashed var(--r6);background:#b23a2b22}
+.tele.lock{border-style:solid;background:#b23a2b44}
+/* ---- pages ---- */
+.page{background:linear-gradient(#15243A,#0E1826)}
+.paper{background:var(--p1);color:var(--pink);border-radius:4px}
+.btnP{height:56px;border-radius:6px;background:linear-gradient(#d3b068,#b8914a);color:var(--ink9);font-family:var(--serif);font-size:19px;font-weight:900;display:flex;align-items:center;justify-content:center;letter-spacing:4px;clip-path:polygon(8px 0,calc(100% - 8px) 0,100% 8px,100% calc(100% - 8px),calc(100% - 8px) 100%,8px 100%,0 calc(100% - 8px),0 8px)}
+.btnS{height:48px;border-radius:6px;border:1px solid var(--g5);color:var(--hi);font-size:15px;display:flex;align-items:center;justify-content:center;background:var(--ink8)}
+.btnT{color:var(--g3);font-size:13px;text-decoration:underline;text-underline-offset:3px}
+.ttl{font-family:var(--serif);color:var(--hi);font-size:18px}
+.lbl{font-size:11px;color:var(--mid)}
+.card{background:var(--ink7);border-radius:4px;border:1px solid #c9a45c44;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:6px;color:var(--hi);font-family:var(--serif)}
+.card.sel{border:2px solid var(--g5)}
+.card:not(.abs){position:relative}
+.portrait{width:100%;flex:1;border-radius:3px;background:linear-gradient(#3a4a60,#1e2a3a);position:relative}
+.portrait::after{content:"";position:absolute;left:30%;right:30%;top:18%;bottom:0;background:#8b93a3;border-radius:40% 40% 0 0}
+.seal{position:absolute;width:20px;height:20px;border-radius:3px;font-size:11px;font-family:var(--serif);color:#fff;display:flex;align-items:center;justify-content:center}
+.slot{border:1.5px dashed #c9a45c88;border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--g3);font-family:var(--serif);font-size:13px;flex-direction:column;gap:2px;background:#0003}
+.slot.full{border:1.5px solid var(--g5);background:var(--ink7)}
+.slot.lock{border-color:#87847c66;color:var(--low)}
+.mini{width:30px;height:30px;border-radius:6px;background:var(--ink7);border:1.5px solid var(--bronze);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--g3);font-family:var(--serif);position:relative}
+.mini .gui{position:absolute;right:-5px;top:-5px;width:14px;height:14px;background:var(--g5);color:var(--ink9);font-size:9px;border-radius:2px;line-height:14px;text-align:center}
+/* map */
+.fog{background:radial-gradient(ellipse at center,#1a2432ee,#0e1826f5);backdrop-filter:blur(1px)}
+.cnode{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:13px;color:#fff;flex-direction:column;z-index:10}
+.cnode.done{background:#6d6150;border:2px solid var(--p3)}
+.cnode.done::after{content:"克";position:absolute;right:-6px;top:-6px;width:22px;height:22px;background:var(--r6);color:#fff;font-size:12px;border-radius:3px;display:flex;align-items:center;justify-content:center;transform:rotate(-8deg)}
+.cnode.cur{background:#8a6a44;border:3px solid var(--g5);box-shadow:0 0 0 6px #c9a45c33,0 0 20px #c9a45c88}
+.cnode.lock{background:#2a3440;border:2px solid #87847c55;color:var(--low)}
+.path{z-index:5;border-left:3px dashed #b23a2b99}
+.region{font-family:var(--serif);color:#f3ead6aa;font-size:14px;letter-spacing:6px;z-index:11}
+.fseal{width:40px;height:40px;border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--serif);color:#fff;font-size:14px;line-height:1.1}
+.fseal small{font-size:9px;font-family:var(--sans);opacity:.85}
+</style>
+</head>
+<body>
+<header>
+ <h1>一路长歌：三国 · UI 重构 · 6 张关键界面中保真线框</h1>
+ <p>画框 360×780pt（@2x = 720×1560，与工程 720 设计宽一致）。色值、字号、间距与 <code>tokens.json</code> 一致；人物与场景以色块占位，高保真时在真实战斗截图上替换 UI 与目标元素。右上半透明胶囊为微信系统胶囊占位。配套说明见 <code>UI重构方案.md</code> Part 3 / 5.3。</p>
+ <label><input type="checkbox" id="z" onchange="document.body.classList.toggle('zones',this.checked)"> 显示战斗五区参考线（Z1–Z4）</label>
+</header>
+
+<div class="grid">
+
+<!-- ===================== 1 战斗 · 常规行军态 ===================== -->
+<figure>
+<figcaption>图1 · 战斗 · 常规行军态<small>HUD 三行（暂停/关名 · 行军条 · 兵器签/宝物位）；左增右减两扇辕门，中间矮木栅带端头；兵器匣与粮车；兵力帅旗只在己方区。</small></figcaption>
+<div class="phone" id="f1">
+ <div class="abs sky"></div><div class="abs mount"></div><div class="abs grass"></div><div class="abs road"></div>
+ <div class="abs city"></div>
+ <div class="abs prop" style="left:14px;top:300px;width:40px;height:34px"></div>
+ <div class="abs prop" style="left:318px;top:420px;width:30px;height:48px;background:#5b4a38"></div>
+ <div class="abs statusbar">9:41</div><div class="abs capsule">··· ◉</div>
+
+ <!-- center fence -->
+ <div class="abs fence" style="top:206px;height:270px"><span class="fl"></span></div>
+
+ <!-- gates (Z2) -->
+ <div class="abs gate plus" style="left:70px;top:236px;width:104px">
+  <div class="beam"><span class="post l"><i style="top:20px"></i><i style="top:70px"></i></span><span class="post r"><i style="top:20px"></i><i style="top:70px"></i></span></div>
+  <span class="topflag" style="left:-4px"></span>
+  <div class="ban"><span class="num">+24</span><span class="sub">援兵</span><span class="grow"><b></b></span></div>
+ </div>
+ <div class="abs gate minus" style="left:186px;top:236px;width:104px">
+  <div class="beam"><span class="post l"><i style="top:20px"></i><i style="top:70px"></i></span><span class="post r"><i style="top:20px"></i><i style="top:70px"></i></span></div>
+  <span class="topflag" style="right:6px"></span>
+  <div class="ban"><span class="num">−94</span><span class="sub">伏兵</span></div>
+ </div>
+
+ <!-- crates -->
+ <div class="abs crate" style="left:84px;top:356px">
+  <div class="tag gold"><span class="ico" style="color:var(--tgold);transform:rotate(45deg);width:10px;height:10px"></span>方天画戟</div>
+  <div class="rope"></div><div class="wbox"></div>
+  <div class="dur"><b></b><b></b><b></b><b class="off"></b><b class="off"></b></div>
+ </div>
+ <div class="abs crate" style="left:218px;top:382px">
+  <div class="tag blue"><span class="ico" style="width:9px;height:12px;border-radius:5px 5px 2px 2px"></span><span class="num" style="font-size:14px">+12</span></div>
+  <div class="rope"></div><div class="cart"><i></i></div>
+  <div class="dur" style="margin-top:14px"><b></b><b></b><b></b><b></b><b class="off"></b></div>
+ </div>
+
+ <!-- army (Z3) -->
+ <div class="abs pole" style="left:171px;top:486px;height:40px"></div>
+ <div class="abs troop" style="left:142px;top:470px"><span class="num">86</span><small>兵</small></div>
+ <div class="abs delta" style="left:206px;top:452px"><span class="num">+12</span></div>
+ <div class="abs ring gold" style="left:156px;top:560px;width:48px;height:16px"></div>
+ <div class="u hero" style="left:168px;top:532px"></div>
+ <div class="u comp" style="left:132px;top:552px"></div><div class="abs ring silver" style="left:124px;top:574px;width:36px;height:10px"></div>
+ <div class="backflag" style="left:126px;top:530px;background:#a8844a">吕</div>
+ <div class="u comp" style="left:210px;top:552px"></div><div class="abs ring silver" style="left:202px;top:574px;width:36px;height:10px"></div>
+ <div class="backflag" style="left:226px;top:530px;background:#3b5c7a">典</div>
+ <div id="sq1"></div>
+
+ <!-- HUD -->
+ <div class="abs hud ibtn" style="left:12px;top:48px">❚❚</div>
+ <div class="abs hud pill" style="left:52px;top:50px">第三关<em>｜</em>白门楼</div>
+ <div class="abs hud march" style="left:12px;top:88px;width:336px">
+  <div class="track"></div><div class="done" style="width:38%"></div>
+  <div class="node" style="left:62%"></div>
+  <div class="me" style="left:37%"></div>
+  <div class="end">城</div>
+ </div>
+ <div class="abs hud wchip" style="left:12px;top:112px">
+  <div class="well">戟</div>
+  <div><div class="n">方天画戟 <span class="pips">◆◆<i>◇</i></span></div><div class="sub">军械 · 火矢</div></div>
+ </div>
+ <div class="abs hud tslots" style="right:12px;top:116px">
+  <div class="ts">典</div><div class="ts">玺</div><div class="ts">马</div><div class="ts round cd">佗</div>
+ </div>
+
+ <div class="abs toast" style="left:40px;top:724px">左路援兵 · 右路伏兵</div>
+
+ <div class="abs hint-zone" style="top:86px"><span>Z1 远景预告 11%</span></div>
+ <div class="abs hint-zone" style="top:218px"><span>Z2 决策区 28%</span></div>
+ <div class="abs hint-zone" style="top:452px"><span>Z3 己方区 58%</span></div>
+ <div class="abs hint-zone" style="top:686px"><span>Z4 底部 88%</span></div>
+</div>
+</figure>
+
+<!-- ===================== 2 战斗 · 名将登场 / Boss ===================== -->
+<figure>
+<figcaption>图2 · 战斗 · 名将登场与 Boss 交战<small>行军条被 Boss 牌替换（分段血条 + 残血缓降）；右缘名将竖幅；Boss 立于阵台、旗阵在后，敌兵两侧列阵；地面投矛预警（虚线=预告，实线=已锁定）。</small></figcaption>
+<div class="phone">
+ <div class="abs sky"></div><div class="abs mount"></div><div class="abs grass"></div><div class="abs road"></div>
+ <div class="abs city" style="top:152px"></div>
+ <div class="abs statusbar">9:41</div><div class="abs capsule">··· ◉</div>
+
+ <!-- boss stage Z1/Z2 -->
+ <div class="abs dais" style="left:120px;top:222px;width:120px;height:40px"></div>
+ <div class="abs bigflag" style="left:122px;top:178px"></div><div class="abs bigflag" style="left:146px;top:170px"></div>
+ <div class="abs bigflag" style="left:198px;top:170px"></div><div class="abs bigflag" style="left:222px;top:178px"></div>
+ <div class="u boss" style="left:158px;top:186px"></div>
+ <!-- enemy flanks -->
+ <div id="eq"></div>
+ <!-- telegraphs -->
+ <div class="abs tele" style="left:74px;top:360px;width:70px;height:26px"></div>
+ <div class="abs tele lock" style="left:176px;top:400px;width:80px;height:30px"></div>
+ <div class="abs" style="left:190px;top:376px;font-size:11px;color:#fff;background:#7a2419;padding:1px 6px;border-radius:2px;z-index:30;font-family:var(--serif)">锁定</div>
+
+ <!-- army -->
+ <div class="abs pole" style="left:143px;top:516px;height:22px"></div>
+ <div class="abs troop" style="left:114px;top:500px"><span class="num">142</span><small>兵</small></div>
+ <div class="abs delta neg" style="left:186px;top:480px"><span class="num">−18</span></div>
+ <div class="abs ring gold" style="left:128px;top:572px;width:48px;height:16px"></div>
+ <div class="u hero" style="left:140px;top:544px"></div>
+ <div class="u comp" style="left:104px;top:562px"></div><div class="backflag" style="left:98px;top:540px;background:#a8844a">吕</div>
+ <div class="u comp" style="left:182px;top:562px"></div><div class="backflag" style="left:198px;top:540px;background:#3b5c7a">典</div>
+ <div id="sq2"></div>
+
+ <!-- HUD -->
+ <div class="abs hud ibtn" style="left:12px;top:48px">❚❚</div>
+ <div class="abs hud pill" style="left:52px;top:50px">第三关<em>｜</em>白门楼</div>
+ <div class="abs hud bossplate" style="left:12px;top:88px;width:336px">
+  <div class="av">吕</div>
+  <div style="flex:1">
+   <div class="nm">吕布<small>飞将</small></div>
+   <div class="bar"><div class="trail"></div><div class="hp"></div><div class="tick" style="left:33%"></div><div class="tick" style="left:66%"></div></div>
+  </div>
+  <div class="ph">二阶</div>
+ </div>
+ <div class="abs hud wchip" style="left:12px;top:144px">
+  <div class="well">戟</div>
+  <div><div class="n">方天画戟 <span class="pips">◆◆◆</span></div><div class="sub">军械 · 火矢</div></div>
+ </div>
+ <div class="abs hud tslots" style="right:12px;top:148px">
+  <div class="ts">典</div><div class="ts">玺</div><div class="ts">马</div><div class="ts round">佗</div>
+ </div>
+
+ <div class="abs warn" style="right:0;top:232px;height:210px"><span class="v">吕布</span><span class="s">方天画戟·横扫</span></div>
+
+ <div class="abs toast danger" style="left:40px;top:724px">投矛锁定 · 速离红圈</div>
+
+ <div class="abs hint-zone" style="top:86px"><span>Z1</span></div><div class="abs hint-zone" style="top:218px"><span>Z2</span></div>
+ <div class="abs hint-zone" style="top:452px"><span>Z3</span></div><div class="abs hint-zone" style="top:686px"><span>Z4</span></div>
+</div>
+</figure>
+
+<!-- ===================== 3 战斗 · 获得与升级状态表 ===================== -->
+<figure>
+<figcaption>图3 · 战斗 · 获得与升级瞬间（状态表）<small>A 门负转正翻幡；B 兵器匣开出 → 飞入兵器签 → 升阶；C 神兵归主；D 宝物近身提示。给美术与动效对齐帧，时长见方案 5.2。</small></figcaption>
+<div class="phone page" style="padding:16px">
+ <div class="ttl" style="font-size:15px;margin-top:30px">A · 门负转正（0.25s）</div>
+ <div style="display:flex;gap:10px;margin-top:10px;align-items:flex-end">
+  <div class="gate minus" style="position:relative;width:96px"><div class="beam"></div><div class="ban" style="height:58px"><span class="num">−3</span><span class="sub">伏兵</span></div></div>
+  <div class="gate minus" style="position:relative;width:96px"><div class="beam"></div><div class="ban" style="height:58px;width:22%;margin:2px auto 0"><span class="num" style="font-size:16px">0</span></div></div>
+  <div class="gate plus" style="position:relative;width:96px"><div class="beam"></div><div class="ban" style="height:58px;box-shadow:0 0 12px #e6cd93"><span class="num">+6</span><span class="sub">援兵</span></div></div>
+ </div>
+ <div class="lbl" style="margin-top:6px">数字过 0 时 scaleX 1→0→1，红→蓝、锯齿→整齐、伏兵→援兵，金尘 ≤12 粒</div>
+
+ <div class="ttl" style="font-size:15px;margin-top:22px">B · 兵器飞入与升阶（0.9s）</div>
+ <div style="position:relative;height:140px;margin-top:8px;background:#cdb993;border-radius:4px;overflow:hidden">
+  <div class="abs wchip" style="left:8px;top:8px;box-shadow:0 0 0 2px var(--g3),0 0 14px var(--g5)"><div class="well">刀</div><div><div class="n">偃月刀 <span class="pips">◆◆◆</span></div><div class="sub">一阶 → 三阶</div></div></div>
+  <svg class="abs" style="left:0;top:0" width="328" height="140"><path d="M230 100 Q 230 30 162 30" stroke="#C9A45C" stroke-width="2" fill="none" stroke-dasharray="4 4"/><polygon points="156,30 168,24 168,36" fill="#C9A45C"/></svg>
+  <div class="abs wbox" style="left:210px;top:98px;transform:scale(.8)"></div>
+  <div class="abs" style="left:218px;top:62px;width:6px;height:36px;background:linear-gradient(#e6cd93,#8a6630);transform:rotate(20deg)"></div>
+  <div class="abs ring gold" style="left:110px;top:112px;width:60px;height:18px;box-shadow:0 0 10px #c9a45c"></div>
+  <div class="abs toast" style="left:8px;top:100px;height:26px;font-size:12px;transform:scale(.9);transform-origin:left">偃月刀 · 三阶</div>
+ </div>
+
+ <div class="ttl" style="font-size:15px;margin-top:22px">C · 神兵归主（每局每位本主一次）</div>
+ <div style="position:relative;height:120px;margin-top:8px;background:#cdb993;border-radius:4px;overflow:hidden">
+  <div class="u comp" style="left:150px;top:62px;width:26px;height:36px"></div>
+  <div class="backflag" style="left:170px;top:36px;width:14px;height:22px;line-height:22px;background:#4e7a4a;box-shadow:0 0 0 2px var(--g5)">关</div>
+  <div class="abs" style="left:118px;top:6px;font-family:var(--serif);font-size:48px;font-weight:900;color:var(--g3);text-shadow:0 0 12px #c9a45c,0 2px 0 #8a6630">归</div>
+  <div class="abs" style="left:40px;top:92px;width:250px;height:10px;border-radius:50%;background:linear-gradient(90deg,#0000,#e6cd93,#0000)"></div>
+  <div class="abs toast" style="left:8px;top:8px;height:26px;font-size:12px">关羽 · 青龙偃月</div>
+ </div>
+
+ <div class="ttl" style="font-size:15px;margin-top:22px">D · 宝物近身提示（不占提示条）</div>
+ <div style="display:flex;gap:12px;align-items:center;margin-top:10px">
+  <div class="ts" style="box-shadow:0 0 0 3px #3e8c7a,0 0 12px #3e8c7a">囊</div>
+  <div class="troop" style="position:relative"><span class="num">64</span><small>兵</small></div>
+  <div style="font-size:12px;color:#8fd1bf;font-family:var(--serif)">青囊书 · 回复 16</div>
+ </div>
+</div>
+</figure>
+
+<!-- ===================== 4 战前整备 ===================== -->
+<figure>
+<figcaption>图4 · 战前整备<small>一屏完成：敌将预告 · 主角(含兵法) · 随军×2 · 支援×1 · 宝物三类型槽 · 本关兵器预告（"归"角标=本主在阵）· 出征。无兵器选择器、无战力总和。</small></figcaption>
+<div class="phone page">
+ <div class="abs statusbar">9:41</div><div class="abs capsule">··· ◉</div>
+ <div class="abs ibtn" style="left:12px;top:48px">‹</div>
+ <div class="abs ttl" style="left:52px;top:52px">整备</div>
+
+ <div class="abs" style="left:16px;top:92px;width:328px;height:64px;background:var(--ink7);border-radius:4px;border-left:3px solid var(--r6);display:flex;align-items:center;padding:0 10px;gap:10px">
+  <div><div style="font-family:var(--serif);color:var(--hi);font-size:16px">第三关 · 白门楼 · 下邳</div><div class="lbl" style="margin-top:3px">敌将横扫，宜分散阵型</div></div>
+  <div style="margin-left:auto;text-align:center"><div class="bossplate" style="padding:0;background:none"><div class="av" style="width:40px;height:40px">吕</div></div><div style="font-size:10px;color:#ff9c8c;margin-top:2px">Boss 吕布</div></div>
+ </div>
+
+ <!-- formation board -->
+ <div class="abs paper" style="left:16px;top:168px;width:328px;height:300px;background:linear-gradient(#efe4cc,#e2d3b0)">
+  <div class="abs lbl" style="left:10px;top:8px;color:#6b5a40">阵容</div>
+  <div class="abs card" style="left:12px;top:44px;width:90px;height:124px;background:#2a3e5a"><div class="portrait"></div><div style="font-size:14px;margin-top:4px">吕布</div>
+   <span class="seal" style="left:4px;top:4px;background:#a8844a">群</span><span class="seal" style="right:4px;top:4px;background:var(--r6)">收</span></div>
+  <div class="abs card sel" style="left:112px;top:28px;width:104px;height:170px;background:#20344f"><div class="portrait" style="background:linear-gradient(#2f5fb3,#1e2a3a)"></div><div style="font-size:15px;margin-top:4px">主角 · 屯长</div></div>
+  <div class="abs card" style="left:226px;top:44px;width:90px;height:124px;background:#2a3e5a;border-style:dashed"><div style="flex:1;display:flex;align-items:center;color:var(--g3);font-size:26px">+</div><div style="font-size:13px">随军</div></div>
+  <div class="abs" style="left:112px;top:206px;width:104px;display:flex;border:1px solid #8a6630;border-radius:14px;overflow:hidden;font-size:12px;font-family:var(--serif)">
+   <div style="flex:1;text-align:center;padding:4px 0;background:var(--ink8);color:var(--g3)">贯阵</div><div style="flex:1;text-align:center;padding:4px 0;color:#6b5a40">震军</div></div>
+  <div class="abs lbl" style="left:112px;top:236px;width:104px;text-align:center;color:#6b5a40">主角兵法</div>
+  <div class="abs" style="left:236px;top:196px;width:64px;height:64px;border-radius:50%;background:var(--ink7);border:2px solid var(--jade);display:flex;align-items:center;justify-content:center;color:var(--hi);font-family:var(--serif)">华佗</div>
+  <div class="abs lbl" style="left:224px;top:266px;width:90px;text-align:center;color:#3e6c5f">支援 · 减员回春</div>
+  <div class="abs lbl" style="left:14px;top:176px;width:86px;color:#6b5a40;line-height:1.4">随军：<br>画戟横扫</div>
+ </div>
+
+ <div class="abs lbl" style="left:16px;top:480px">宝物</div>
+ <div class="abs" style="left:16px;top:498px;display:flex;gap:12px">
+  <div><div class="slot full" style="width:64px;height:64px">太平<br>要术</div><div class="lbl" style="text-align:center;margin-top:3px">典籍</div></div>
+  <div><div class="slot full" style="width:64px;height:64px">传国<br>玉玺</div><div class="lbl" style="text-align:center;margin-top:3px">器物</div></div>
+  <div><div class="slot" style="width:64px;height:64px"><span style="font-size:22px">+</span></div><div class="lbl" style="text-align:center;margin-top:3px">坐骑</div></div>
+ </div>
+ <div class="abs" style="left:250px;top:504px;width:94px;font-size:11px;color:var(--g3);line-height:1.5;font-family:var(--serif)">新得「赤兔马」<br>可佩戴 <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--r6)"></span></div>
+
+ <div class="abs lbl" style="left:16px;top:592px">本关可能出现的兵器</div>
+ <div class="abs" style="left:16px;top:612px;display:flex;gap:10px;align-items:center;width:328px">
+  <div class="mini" style="border-color:var(--iron)">枪</div>
+  <div class="mini">刀</div>
+  <div class="mini" style="border-color:var(--tgold)">戟<span class="gui">归</span></div>
+  <span class="btnT" style="margin-left:auto">军械图鉴 ›</span>
+ </div>
+
+ <div class="abs btnP" style="left:16px;top:690px;width:328px">出征</div>
+</div>
+</figure>
+
+<!-- ===================== 5 胜利结算 + 收服弹窗 ===================== -->
+<figure>
+<figcaption>图5 · 胜利结算（左）与收服名将展卷（下方叠层示意）<small>大捷朱印 → 晋升 → 三项战绩 → 获得卡逐张翻出 → 继续征程。首次获得自动依次弹出展卷；0.8s 后才可点击继续。</small></figcaption>
+<div class="phone" style="background:#6b6450">
+ <div class="abs" style="inset:0;background:rgba(14,24,38,.62)"></div>
+ <div class="abs statusbar">9:41</div><div class="abs capsule">··· ◉</div>
+ <div class="abs" style="left:112px;top:92px;width:136px;height:136px;border:5px solid var(--r6);border-radius:10px;transform:rotate(-6deg);display:flex;align-items:center;justify-content:center;color:var(--r6);font-family:var(--serif);font-size:52px;font-weight:900;letter-spacing:4px;background:#b23a2b14;writing-mode:vertical-rl">大捷</div>
+ <div class="abs ttl" style="left:0;width:100%;text-align:center;top:250px">第三关 · 白门楼 · 已克</div>
+ <div class="abs" style="left:0;width:100%;text-align:center;top:280px;font-family:var(--serif);color:var(--g3);font-size:15px">屯长 → <b style="font-size:18px">军侯</b></div>
+ <div class="abs paper" style="left:16px;top:316px;width:328px;height:64px;display:flex">
+  <div style="flex:1;text-align:center;padding-top:10px"><div class="num" style="font-size:22px">312</div><div class="lbl" style="color:#6b5a40">最高兵力</div></div>
+  <div style="width:1px;background:#dccba6;margin:10px 0"></div>
+  <div style="flex:1;text-align:center;padding-top:10px"><div class="num" style="font-size:22px">186</div><div class="lbl" style="color:#6b5a40">生还兵力</div></div>
+  <div style="width:1px;background:#dccba6;margin:10px 0"></div>
+  <div style="flex:1;text-align:center;padding-top:10px"><div style="font-family:var(--serif);font-size:18px;line-height:26px">吕布</div><div class="lbl" style="color:#6b5a40">击破敌将</div></div>
+ </div>
+ <div class="abs lbl" style="left:16px;top:396px">获得</div>
+ <div class="abs" style="left:16px;top:414px;display:flex;gap:10px">
+  <div class="card" style="width:74px;height:100px;border-color:var(--g5)"><div class="portrait"></div><div style="font-size:12px;margin-top:3px">吕布</div><span class="seal" style="left:3px;top:3px;background:var(--r6);width:16px;height:16px;font-size:10px">收</span></div>
+  <div class="card" style="width:74px;height:100px"><div class="portrait" style="background:linear-gradient(#4e3a5a,#1e2a3a)"></div><div style="font-size:12px;margin-top:3px">貂蝉</div><span class="seal" style="left:3px;top:3px;background:var(--jade);width:16px;height:16px;font-size:10px">访</span></div>
+  <div class="card" style="width:74px;height:100px;justify-content:center"><div style="width:10px;height:56px;background:linear-gradient(var(--g3),var(--g7));transform:rotate(30deg)"></div><div style="font-size:12px;margin-top:8px">方天画戟</div></div>
+  <div class="card" style="width:74px;height:100px;justify-content:center"><div style="width:44px;height:30px;background:#8a2a1a;border-radius:40% 50% 30% 30%"></div><div style="font-size:12px;margin-top:10px">赤兔马</div></div>
+ </div>
+ <div class="abs btnP" style="left:16px;top:600px;width:328px">继续征程</div>
+ <div class="abs btnS" style="left:16px;top:666px;width:160px">再战此关</div>
+ <div class="abs" style="left:184px;top:666px;width:160px;height:48px;display:flex;align-items:center;justify-content:center"><span class="btnT">返回首页</span></div>
+</div>
+<div class="phone" style="margin-top:24px;background:#6b6450">
+ <div class="abs" style="inset:0;background:rgba(14,24,38,.72)"></div>
+ <div class="abs statusbar">9:41</div><div class="abs capsule">··· ◉</div>
+ <div class="abs paper" style="left:20px;top:110px;width:320px;height:560px;background:linear-gradient(#f3ead6,#e6d8b8);box-shadow:0 -6px 0 #8a6630,0 6px 0 #8a6630">
+  <div class="abs" style="left:0;top:0;width:100%;height:300px;background:linear-gradient(#a8844a,#6d5530);clip-path:polygon(0 0,100% 0,100% 92%,50% 100%,0 92%)"></div>
+  <div class="abs" style="left:96px;top:30px;width:128px;height:260px;background:#3a2a24;border-radius:45% 45% 10% 10%"></div>
+  <span class="seal" style="left:14px;top:14px;width:32px;height:32px;font-size:18px;background:var(--r6)">收</span>
+  <div class="abs" style="left:0;width:100%;top:306px;text-align:center;font-family:var(--serif);font-size:44px;font-weight:900;color:var(--pink);letter-spacing:10px">吕布</div>
+  <div class="abs" style="left:0;width:100%;top:366px;text-align:center;font-family:var(--serif);font-size:14px;color:#6b5a40">字奉先 · 飞将 · 群雄</div>
+  <div class="abs" style="left:24px;top:400px;width:272px;height:1px;background:#c9a45c"></div>
+  <div class="abs" style="left:24px;top:414px;width:272px;font-size:14px;line-height:1.7;color:var(--pink)">随军：画戟横扫前方扇形<br><span style="color:var(--g7);font-family:var(--serif)">本主兵器：方天画戟（已有）→ 可归主</span></div>
+  <div class="abs btnP" style="left:24px;top:480px;width:180px;height:48px;font-size:16px">编入随军</div>
+  <div class="abs" style="left:212px;top:480px;width:84px;height:48px;display:flex;align-items:center;justify-content:center"><span class="btnT" style="color:var(--g7)">稍后</span></div>
+ </div>
+ <div class="abs lbl" style="left:0;width:100%;text-align:center;top:700px">点击任意处继续（0.8s 后生效）</div>
+ <div class="abs btnT" style="right:16px;top:92px">全部跳过</div>
+</div>
+</figure>
+
+<!-- ===================== 6 天下地图 ===================== -->
+<figure>
+<figcaption>图6 · 天下地图（竖向长卷，第一屏）<small>自下而上推进；顶部四势力印进度；已克朱印"克"、当前金圈呼吸+主角旗、未开墨云；点节点弹出底部抽屉选关。</small></figcaption>
+<div class="phone" style="background:linear-gradient(#b9ad8a,#d6c9a3 40%,#c9b98f)">
+ <div class="abs" style="left:0;top:0;width:100%;height:330px" ></div>
+ <!-- fog over Wei upper -->
+ <div class="abs fog" style="left:0;top:110px;width:100%;height:180px;z-index:12;clip-path:polygon(0 0,100% 0,100% 82%,80% 94%,60% 86%,40% 98%,20% 88%,0 96%)"></div>
+ <div class="abs region" style="left:40px;top:196px;z-index:13;color:#c4beb0aa">魏 · 许洛（未开）</div>
+ <div class="abs region" style="left:22px;top:500px;color:#6b5a40;font-size:13px">群雄 · 中原</div>
+ <svg class="abs" style="left:0;top:0;z-index:6" width="360" height="780"><polyline points="228,498 118,418 208,328 214,178" fill="none" stroke="#b23a2b" stroke-opacity=".7" stroke-width="3" stroke-dasharray="6 6"/></svg>
+ <div class="abs cnode done" style="left:200px;top:470px">广宗</div>
+ <div class="abs cnode done" style="left:90px;top:390px">洛阳</div>
+ <div class="abs cnode cur" style="left:180px;top:300px">下邳</div>
+ <div class="abs" style="left:236px;top:290px;width:12px;height:18px;background:var(--b6);border:1.5px solid var(--g3);clip-path:polygon(0 0,100% 0,100% 70%,50% 100%,0 70%);z-index:13"></div>
+ <div class="abs cnode lock" style="left:186px;top:150px;z-index:13;opacity:.75">？</div>
+ <!-- top bar -->
+ <div class="abs" style="left:0;top:0;width:100%;height:120px;background:linear-gradient(#0e1826,#0e1826ee 70%,#0e182600);z-index:20"></div>
+ <div class="abs statusbar">9:41</div><div class="abs capsule">··· ◉</div>
+ <div class="abs ibtn" style="left:12px;top:48px;z-index:30">‹</div>
+ <div class="abs ttl" style="left:52px;top:52px;z-index:30">天下</div>
+ <div class="abs" style="left:16px;top:86px;display:flex;gap:8px;z-index:30">
+  <div class="fseal" style="background:#a8844a">群<small>2/3</small></div>
+  <div class="fseal" style="background:#2a3440;color:var(--low)">魏<small>0/2</small></div>
+  <div class="fseal" style="background:#2a3440;color:var(--low)">吴<small>—</small></div>
+  <div class="fseal" style="background:#2a3440;color:var(--low)">蜀<small>—</small></div>
+ </div>
+ <!-- bottom sheet -->
+ <div class="abs" style="left:0;bottom:0;width:100%;height:226px;background:var(--ink8);border-radius:14px 14px 0 0;z-index:40;box-shadow:0 -6px 20px #0008">
+  <div style="width:40px;height:4px;background:var(--g5);border-radius:2px;margin:8px auto"></div>
+  <div style="padding:0 16px">
+   <div style="display:flex;align-items:center;gap:10px">
+    <div class="bossplate" style="padding:0;background:none"><div class="av">吕</div></div>
+    <div><div class="ttl">第三关 · 白门楼</div><div class="lbl">下邳 · Boss 吕布</div></div>
+   </div>
+   <div class="lbl" style="margin-top:14px">本关可得</div>
+   <div style="display:flex;gap:10px;margin-top:6px">
+    <div class="mini" style="width:44px;height:44px;border-color:var(--r6)">吕布</div>
+    <div class="mini" style="width:44px;height:44px;border-color:var(--jade)">？</div>
+    <div class="mini" style="width:44px;height:44px;border-color:var(--tgold)">戟</div>
+    <div class="mini" style="width:44px;height:44px">马</div>
+   </div>
+   <div class="btnP" style="margin-top:14px">整备出征</div>
+  </div>
+ </div>
+</div>
+</figure>
+
+</div>
+
+<script>
+// soldier grids (placeholders only)
+function grid(id,x0,y0,cols,rows,dx,dy,cls){const h=document.getElementById(id);let s='';for(let r=0;r<rows;r++)for(let c=0;c<cols;c++){s+=`<div class="u ${cls}" style="left:${x0+c*dx+(r%2?dx/2:0)}px;top:${y0+r*dy}px"></div>`}h.outerHTML=s}
+grid('sq1',108,592,8,5,17,18,'soldier');
+grid('sq2',80,604,8,5,17,18,'soldier');
+(function(){const h=document.getElementById('eq');let s='';for(let r=0;r<3;r++)for(let c=0;c<4;c++){s+=`<div class="u esoldier" style="left:${78+c*14}px;top:${270+r*16}px"></div><div class="u esoldier" style="left:${230+c*14}px;top:${270+r*16}px"></div>`}h.outerHTML=s})();
+</script>
+</body>
+</html>

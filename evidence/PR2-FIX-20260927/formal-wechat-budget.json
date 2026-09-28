@@ -1,0 +1,692 @@
+{
+  "scope": "WeChat build only. Palette color reduction, identical dimensions and frame coordinates, NOT pixel-exact. Web/source/frozen preview untouched. Unreachable old-mode art removed only from this build.",
+  "beforeBytes": 61479083,
+  "afterBytes": 14114952,
+  "localBudgetBytes": 20971520,
+  "localBudgetPassed": true,
+  "officialPreview": "not performed",
+  "device": "not tested",
+  "backup": ".cache/formal-wechat-assets/1790484959833",
+  "ops": [
+    {
+      "source": "assets/resources/formal20260927/battle20260925_bosses.png",
+      "path": "subpackages/resources/native/83/83c9a4dd-9f04-41e1-8567-34fcc3004cd3.png",
+      "before": 180156,
+      "after": 161891,
+      "width": 716,
+      "height": 651,
+      "visibleRGBMeanAbsoluteError": 0.8398184679603112,
+      "alphaMeanAbsoluteError": 0.07949737833500674,
+      "beforeSha256": "9d2806319b2ea7455d86b5352f671fff4fcf9e617d52b46209ceb0537a05f3c4",
+      "afterSha256": "c2567719836dfa989d5e7b21e1df6c0a38998207535182f983d3d0e797a4674b"
+    },
+    {
+      "source": "assets/resources/formal20260927/battle20260925_companions.png",
+      "path": "subpackages/resources/native/7c/7cee4664-6005-4b33-9aeb-2fc17597356e.png",
+      "before": 59330,
+      "after": 52594,
+      "width": 500,
+      "height": 344,
+      "visibleRGBMeanAbsoluteError": 0.7647414453266697,
+      "alphaMeanAbsoluteError": 0.06019186046511628,
+      "beforeSha256": "b16215f180ddf0d4c5405b62df784754dcf2408d98fd32e23324b175ce9cea0c",
+      "afterSha256": "494eb16edbb856e83440c193ad93fe00a51745b8f3990cabb54a452455edce04"
+    },
+    {
+      "source": "assets/resources/formal20260927/battle20260925_crates.png",
+      "path": "subpackages/resources/native/bc/bcf1cbfd-c355-4d0d-a13f-61a3c7755499.png",
+      "before": 163514,
+      "after": 142672,
+      "width": 708,
+      "height": 436,
+      "visibleRGBMeanAbsoluteError": 0.8496335754266581,
+      "alphaMeanAbsoluteError": 0.013709635619136474,
+      "beforeSha256": "1245b890834f166b6e7205a1f8b58ef546d6830eafb6d0b5c77b00a33c821a07",
+      "afterSha256": "ef4c831c0e037015b77dc80a285726eaf604894ee3c6099d4901499f2e4f0a96"
+    },
+    {
+      "source": "assets/resources/formal20260927/battle20260925_distant.png",
+      "path": "subpackages/resources/native/47/478c0fe8-e085-4bfc-a2f7-be922d7c0a8e.png",
+      "before": 556231,
+      "after": 155698,
+      "width": 768,
+      "height": 512,
+      "visibleRGBMeanAbsoluteError": 1.416392355287719,
+      "alphaMeanAbsoluteError": 0.8297704060872396,
+      "beforeSha256": "54f39a89b76cdaad57563d630b5583ffa8fbfde30b26ca130070db47e78ff08b",
+      "afterSha256": "3ccea750306d0cb2ce280b2005d883a19d00fb6d7239c3d4653499856270a4bd"
+    },
+    {
+      "source": "assets/resources/formal20260927/battle20260925_gate-parts.png",
+      "path": "subpackages/resources/native/2c/2c00620a-f19d-44c7-a4db-5dc5c84cc5bf.png",
+      "before": 180238,
+      "after": 160691,
+      "width": 1128,
+      "height": 948,
+      "visibleRGBMeanAbsoluteError": 0.5343828791883107,
+      "alphaMeanAbsoluteError": 0.03334848280815154,
+      "beforeSha256": "c0c972921bfa114447e2a1a649fe3c5d5af4a955be4c53be782a8b62467450fb",
+      "afterSha256": "1b14097cdb94f823a579e0d57b560f3395c9f956d0c8edb50ac3045ab781a270"
+    },
+    {
+      "source": "assets/resources/formal20260927/battle20260925_heroes.png",
+      "path": "subpackages/resources/native/d5/d548155a-a542-4334-bdbe-272beffc21f2.png",
+      "before": 127398,
+      "after": 109930,
+      "width": 776,
+      "height": 591,
+      "visibleRGBMeanAbsoluteError": 1.0825463387130876,
+      "alphaMeanAbsoluteError": 0.06330132398346329,
+      "beforeSha256": "d1ca90e59597dae7c3f6cf0721faa46bd736b1785f502b44a37ac97a84f09af3",
+      "afterSha256": "bc276a6e1ced6e040cbb9a838984210075e1d71994671d8700149aeb9d48c5ec"
+    },
+    {
+      "source": "assets/resources/formal20260927/battle20260925_scenery.png",
+      "path": "subpackages/resources/native/5a/5a4715de-3583-4eed-a37c-3cc377d2852c.png",
+      "before": 180576,
+      "after": 152513,
+      "width": 792,
+      "height": 528,
+      "visibleRGBMeanAbsoluteError": 0.796671484065596,
+      "alphaMeanAbsoluteError": 0.07297645010713193,
+      "beforeSha256": "ce5025c52e170050bc209ff8ac4e4b024c867295ce0625bb2b4ae54a21c70405",
+      "afterSha256": "0b619efc3ed963dfbb0a98aec3ee7e52f1b385580f3479870b2500a89972b4c2"
+    },
+    {
+      "source": "assets/resources/formal20260927/battle20260925_soldiers.png",
+      "path": "subpackages/resources/native/33/33d18b3a-3c80-425a-9969-4a801f78e41f.png",
+      "before": 49622,
+      "after": 43578,
+      "width": 424,
+      "height": 304,
+      "visibleRGBMeanAbsoluteError": 0.7800587204621868,
+      "alphaMeanAbsoluteError": 0.061623324230387286,
+      "beforeSha256": "df9cab6da83288b57544c7f54190f4ad60046c2d6f4403c43d11f9e0ea92f8f3",
+      "afterSha256": "473f4b9ecbc6d04f60a769abd2ee9594dd997a79da72e4cd36084769c3d818ca"
+    },
+    {
+      "source": "assets/resources/formal20260927/battlefix2_actions.png",
+      "path": "subpackages/resources/native/d5/d5fc09d7-3bc4-4d83-b964-2e72c183fe2f.png",
+      "before": 206823,
+      "after": 181121,
+      "width": 636,
+      "height": 980,
+      "visibleRGBMeanAbsoluteError": 0.6323467737103828,
+      "alphaMeanAbsoluteError": 0.043840649467334104,
+      "beforeSha256": "a6d06f6e3c24cf63ddb5cc91953a03a825ed8b4620bcc427fdb0e0effb2fb792",
+      "afterSha256": "fe0eb88eac54ca40706b27282d6fe941b2172c1dc2ce98f06a4cf04078b6f130"
+    },
+    {
+      "source": "assets/resources/formal20260927/battlefix2_blade.png",
+      "path": "subpackages/resources/native/36/36c0ed24-0ab1-4088-9eba-dfb36ca7fe56.png",
+      "before": 41610,
+      "after": 35720,
+      "width": 486,
+      "height": 202,
+      "visibleRGBMeanAbsoluteError": 0.9403267426857761,
+      "alphaMeanAbsoluteError": 0.03690461638756468,
+      "beforeSha256": "a52b78f8bd38ae891f2f09a8639e00d552350f2b69d87467427709ba6fa39c04",
+      "afterSha256": "5f0b1e36dea7e8516178479293f55ac9afe7255a6cf2fcc054ba9ac76044a8a0"
+    },
+    {
+      "source": "assets/resources/formal20260927/battlefix2_environment.png",
+      "path": "subpackages/resources/native/9e/9e02798c-a4de-49e0-8f01-3098e2ead811.png",
+      "before": 58336,
+      "after": 22428,
+      "width": 464,
+      "height": 394,
+      "visibleRGBMeanAbsoluteError": 1.3014068844234101,
+      "alphaMeanAbsoluteError": 0.11767022580080518,
+      "beforeSha256": "2f527d085e6e98f06596092cfa5374677a77af31a5c99ed1c5725983b3855d29",
+      "afterSha256": "0f1e607ea4378c35ba246635ff66b152f27e54e274c36993764111aacfafc88f"
+    },
+    {
+      "source": "assets/resources/formal20260927/battlefix2_shadow.png",
+      "path": "subpackages/resources/native/10/10b8bb69-c03e-410e-bc3f-b13e9d676971.png",
+      "before": 5753,
+      "after": 895,
+      "width": 512,
+      "height": 58,
+      "visibleRGBMeanAbsoluteError": 1.6176470588235294,
+      "alphaMeanAbsoluteError": 0.2968413254310345,
+      "beforeSha256": "0bb08d11f55a63498d8198e9c4ce515bd51cc60cd7b80d96c4565f3bd8728aef",
+      "afterSha256": "dbf259b1cc22efbc9e9a99cb03123b6e56d1a29949d6e925e2902cc4b98a34fd"
+    },
+    {
+      "source": "assets/resources/formal20260927/battlefix2_wall-middle.png",
+      "path": "subpackages/resources/native/a3/a35666fe-6bd3-4d52-a3da-1126689191b5.png",
+      "before": 19486,
+      "after": 7699,
+      "width": 40,
+      "height": 328,
+      "visibleRGBMeanAbsoluteError": 1.5223880597014925,
+      "alphaMeanAbsoluteError": 0.41227134146341465,
+      "beforeSha256": "28c546a36894c2e29eca4fb8f2d70d75e78243c161fc33fab29023ae8ce550f2",
+      "afterSha256": "78b3da1efdd78e3da34785b390f49b21acfbd843a6dbfcf8981737b3b24c8b85"
+    },
+    {
+      "source": "assets/resources/formal20260927/battlefix2_waves.png",
+      "path": "subpackages/resources/native/b5/b5e72f0c-825c-4f9c-a209-28b7b06bbe09.png",
+      "before": 135803,
+      "after": 43001,
+      "width": 525,
+      "height": 366,
+      "visibleRGBMeanAbsoluteError": 4.062289258188825,
+      "alphaMeanAbsoluteError": 0.5429456154046318,
+      "beforeSha256": "b181f20e0583dcfcac4e292c14efe450640dfc9c626c6998dabb143d7e46e033",
+      "afterSha256": "02db880c2448f28c65ad1ce99583ff37de74e0b520123fd79f194edb1f70509e"
+    },
+    {
+      "source": "assets/resources/formal20260927/battlefix2_zhao.png",
+      "path": "subpackages/resources/native/39/39b82b94-dfc8-4667-920c-1f1d7988e8e0.png",
+      "before": 43639,
+      "after": 38522,
+      "width": 573,
+      "height": 216,
+      "visibleRGBMeanAbsoluteError": 0.7141278956999857,
+      "alphaMeanAbsoluteError": 0.03609979962510503,
+      "beforeSha256": "42db3e0609240f7ef2360a2be86eaf60cb9d9ee2c21adc12adaef14c90c38f5d",
+      "afterSha256": "2e66db8699881f2d75327aa49796f75f428342d49cdb9ca33193a8b2a0381d4e"
+    },
+    {
+      "source": "assets/resources/formal20260927/formal-bossactions.png",
+      "path": "subpackages/resources/native/b5/b5639eb2-6604-4eb1-9601-f7107b07900b.png",
+      "before": 2555068,
+      "after": 610041,
+      "width": 2048,
+      "height": 989,
+      "visibleRGBMeanAbsoluteError": 6.102741036553532,
+      "alphaMeanAbsoluteError": 1.368242562721183,
+      "beforeSha256": "86e9aa4c8898ae20f2c8e79a3526f495b484386b2349ca16a45e54d9ec266f29",
+      "afterSha256": "0dd660d5e952231e64b1c064bf2b2c1f3c46005f29ccce70e8196855065f81eb"
+    },
+    {
+      "source": "assets/resources/formal20260927/formal-companions.png",
+      "path": "subpackages/resources/native/85/85c3e5e4-8294-42d4-99c1-90798476681a.png",
+      "before": 1688581,
+      "after": 451141,
+      "width": 2048,
+      "height": 963,
+      "visibleRGBMeanAbsoluteError": 4.004439919628517,
+      "alphaMeanAbsoluteError": 0.64429141923027,
+      "beforeSha256": "07905c93703d637ce12fc48f5d49fa349d94a07359a6288a52e92b281d0fa6c3",
+      "afterSha256": "40bd1b44fdaecce141f4c893fe5c94aca1c72285578854d935afd87233d0ae32"
+    },
+    {
+      "source": "assets/resources/formal20260927/formal-enemies.png",
+      "path": "subpackages/resources/native/dd/dd5f78e6-402d-446b-aa15-a2ee82194537.png",
+      "before": 2318423,
+      "after": 472038,
+      "width": 1024,
+      "height": 1607,
+      "visibleRGBMeanAbsoluteError": 5.838501229386499,
+      "alphaMeanAbsoluteError": 1.058137980320473,
+      "beforeSha256": "32b610cc4f212d5ece2a5150221f7c16b66e67e3c2c0e465dd7e3b7f49332f01",
+      "afterSha256": "86f6f5ba400c3df3fd54fb951ad9a6ae4296a9c905d470a58e47a969bd0a66a1"
+    },
+    {
+      "source": "assets/resources/formal20260927/formal-fronts.png",
+      "path": "subpackages/resources/native/bc/bcc9ba0f-1264-4639-9027-dda886902df8.png",
+      "before": 2052606,
+      "after": 553734,
+      "width": 2048,
+      "height": 966,
+      "visibleRGBMeanAbsoluteError": 3.6773392882547813,
+      "alphaMeanAbsoluteError": 0.7126303094267599,
+      "beforeSha256": "4dc763742a4d7547050921fe30623b7fabbca2357f185ba556cdf22eee7c2c56",
+      "afterSha256": "908e6b740cb84bb90ec70b539e5de153e1146a885149e0d73d2b44dc601ce85c"
+    },
+    {
+      "source": "assets/resources/formal20260927/formal-heroes.png",
+      "path": "subpackages/resources/native/13/1327adbe-be08-4d7e-b46c-0d919a42186c.png",
+      "before": 2362093,
+      "after": 488445,
+      "width": 2048,
+      "height": 792,
+      "visibleRGBMeanAbsoluteError": 3.993129557016057,
+      "alphaMeanAbsoluteError": 0.6580847537878788,
+      "beforeSha256": "3c9da244d142376d8d74b4c174ca86a0adcae9067fe816eb96ec9fbef8fde583",
+      "afterSha256": "465ee65761bf6cba875af4e1f67a46f80821d9aab3ace145024f2e9c73f561c4"
+    },
+    {
+      "source": "assets/resources/formal20260927/formal-mounted.png",
+      "path": "subpackages/resources/native/e9/e91feed4-76f5-4881-9e92-21a4372bb42f.png",
+      "before": 2044945,
+      "after": 423499,
+      "width": 2048,
+      "height": 968,
+      "visibleRGBMeanAbsoluteError": 4.114853023023883,
+      "alphaMeanAbsoluteError": 0.45922902004777894,
+      "beforeSha256": "eb1a19a8453e53de5eb6afa1fdd534cfb7c35b46c9521d4e3eb51b4b13b9ded6",
+      "afterSha256": "ff61579b897459249b31caaf91d79697ceaedd0c7bb253846a9077ab9636e8e0"
+    },
+    {
+      "source": "assets/resources/formal20260927/formal-owners.png",
+      "path": "subpackages/resources/native/36/360ef606-4f0e-4d77-9928-6c2f2558b97e.png",
+      "before": 2174087,
+      "after": 433090,
+      "width": 2048,
+      "height": 1035,
+      "visibleRGBMeanAbsoluteError": 4.0442412132390615,
+      "alphaMeanAbsoluteError": 0.42321718372584544,
+      "beforeSha256": "176d1611b2623952ef2859ef3941081ece53dff12dddfd22e2a7e465d6995402",
+      "afterSha256": "3641ca9789d8767d9eb3277a11e8613582e5c48e2c99b67a25496505ef90c511"
+    },
+    {
+      "source": "assets/resources/formal20260927/formal-props.png",
+      "path": "subpackages/resources/native/4a/4adb6a44-0868-486e-bc6d-4869e9941e2b.png",
+      "before": 2176447,
+      "after": 459339,
+      "width": 1536,
+      "height": 992,
+      "visibleRGBMeanAbsoluteError": 6.8722034543129595,
+      "alphaMeanAbsoluteError": 1.6422821373067877,
+      "beforeSha256": "7b1a45413980fccd5fd3f96857ae03592f6e90d07f5403b3c42aea2a4c2ba913",
+      "afterSha256": "991f0a282cdfffd61fdf155906ccabeb8b96d43febb9a51e4a2a7c44c1c865f3"
+    },
+    {
+      "source": "assets/resources/formal20260927/formal-runs.png",
+      "path": "subpackages/resources/native/c9/c92e74b9-9254-4eaf-901f-83fee6d20efd.png",
+      "before": 2414625,
+      "after": 486773,
+      "width": 2048,
+      "height": 792,
+      "visibleRGBMeanAbsoluteError": 4.547406300309855,
+      "alphaMeanAbsoluteError": 0.7038339942392676,
+      "beforeSha256": "65f167093d7b0390b0ea23b8bf6a0475c23da67ca253e9f8f0331b9ccbfa5b65",
+      "afterSha256": "41207be24b54546ea81376dc1dba79d4e21aa3be0a1340276ca39b82cf075bd6"
+    },
+    {
+      "source": "assets/resources/formal20260927/gen_companions.png",
+      "path": "subpackages/resources/native/89/89731906-038a-4389-a3ea-e210dc618eec.png",
+      "before": 1247476,
+      "after": 355868,
+      "width": 1719,
+      "height": 954,
+      "visibleRGBMeanAbsoluteError": 2.8555594403896487,
+      "alphaMeanAbsoluteError": 0,
+      "beforeSha256": "3d4b7d84b7d12050a7c6798192fa00cd92b33372a9d79843db90d3ea51d04e3b",
+      "afterSha256": "e1367b4cf440a50a34c6b70847725720f4a7fb1b65edafa2287b446c45e65449"
+    },
+    {
+      "source": "assets/resources/formal20260927/gen_crates2.png",
+      "path": "subpackages/resources/native/4c/4cd98acd-d1bc-4e70-99fd-0b783deb84b8.png",
+      "before": 1929209,
+      "after": 470422,
+      "width": 1766,
+      "height": 835,
+      "visibleRGBMeanAbsoluteError": 2.722262758285219,
+      "alphaMeanAbsoluteError": 0,
+      "beforeSha256": "b547d5db069b40deb23812b09f559f32bb10ed22c8a611de29b3f1ee01838bc9",
+      "afterSha256": "669ae4a550327364549f9269d43fbf3473e74ac511040af4247b98e2382b16f4"
+    },
+    {
+      "source": "assets/resources/formal20260927/gen_enemy_lubu.png",
+      "path": "subpackages/resources/native/1f/1fb09807-8a23-49f4-9e21-3d6995b1ac78.png",
+      "before": 880604,
+      "after": 258730,
+      "width": 2039,
+      "height": 572,
+      "visibleRGBMeanAbsoluteError": 2.244137069855678,
+      "alphaMeanAbsoluteError": 0,
+      "beforeSha256": "fc18569187d3c52ca1bb950b78133f1134ee0b8f806b22c7eb1b838d7482724a",
+      "afterSha256": "6d3b0ba37b6f50ddf1d4f818d05473e7dc82f8556a9ebd75f273850a2234046d"
+    },
+    {
+      "source": "assets/resources/formal20260927/gen_gate_parts2.png",
+      "path": "subpackages/resources/native/cb/cb6caae4-64be-4823-829c-5f65355d83ed.png",
+      "before": 1244035,
+      "after": 381058,
+      "width": 1761,
+      "height": 1008,
+      "visibleRGBMeanAbsoluteError": 1.8129259865284573,
+      "alphaMeanAbsoluteError": 0,
+      "beforeSha256": "f849472b1b2a3488c5eafb2fe5c307d8dad2242a448d9defd37ca63080ae613a",
+      "afterSha256": "56e1e784e53f5c2fc7a231eb9d8ba5128df552ce03104511b0c31d312ba89884"
+    },
+    {
+      "source": "assets/resources/formal20260927/gen_hero_run.png",
+      "path": "subpackages/resources/native/81/817fd376-3750-4cc1-84f9-484abf7615f6.png",
+      "before": 1478594,
+      "after": 253507,
+      "width": 2032,
+      "height": 565,
+      "visibleRGBMeanAbsoluteError": 3.67917268394134,
+      "alphaMeanAbsoluteError": 0,
+      "beforeSha256": "3ac8791bf51c412a8ea54201b3be52fb84796869e4ff862e14b37dff891f6c7e",
+      "afterSha256": "e7ed9f15e7e023859c6b101b6f058a1bc1541b31b7d7ccd8231450f22bee2677"
+    },
+    {
+      "source": "assets/resources/formal20260927/gen_hero_spear.png",
+      "path": "subpackages/resources/native/6f/6fe65e98-2066-4bc3-afea-0d0f906c5f58.png",
+      "before": 970850,
+      "after": 277630,
+      "width": 1804,
+      "height": 906,
+      "visibleRGBMeanAbsoluteError": 3.5756301921556157,
+      "alphaMeanAbsoluteError": 0,
+      "beforeSha256": "64cef7d0f0cfe5d9d9b67b9a6b2d5015ef9288fcf7f413a138c97083ddb9e4e7",
+      "afterSha256": "37bdb741930a3e477092012c60e0e3879ff365f9c88ffcf5680d214f0c58ad3b"
+    },
+    {
+      "source": "assets/resources/formal20260927/gen_hero_weapons.png",
+      "path": "subpackages/resources/native/1b/1b0a94d1-a989-46d5-a8f3-ba95ec61e858.png",
+      "before": 1577310,
+      "after": 324655,
+      "width": 1966,
+      "height": 722,
+      "visibleRGBMeanAbsoluteError": 3.0621614460073383,
+      "alphaMeanAbsoluteError": 0.37606907454426075,
+      "beforeSha256": "0fa1244dca747815001ae66847c108214b9d5277a9044974b5e435ac6b33329c",
+      "afterSha256": "efa9b2dc924d12d4eb6f240c830e574f1219cd0e467a3238fce9ba3d0b2f241a"
+    },
+    {
+      "source": "assets/resources/formal20260927/gen_lubu2.png",
+      "path": "subpackages/resources/native/16/16e71985-42f8-446e-882b-c3e143b61fe9.png",
+      "before": 1002062,
+      "after": 283273,
+      "width": 2026,
+      "height": 803,
+      "visibleRGBMeanAbsoluteError": 3.2590944159440824,
+      "alphaMeanAbsoluteError": 0,
+      "beforeSha256": "72d3a16de529e75639a47f63868937eccc4324e661aa41cd5a8269d6b51e22a5",
+      "afterSha256": "323efec2fed94bae4377a300ed3c72d3e6841a7a7706dfae3bbe7defe36e4497"
+    },
+    {
+      "source": "assets/resources/formal20260927/gen_props2.png",
+      "path": "subpackages/resources/native/4f/4f58171a-1a66-4b8d-b520-eea694d270ff.png",
+      "before": 1527655,
+      "after": 460445,
+      "width": 1857,
+      "height": 880,
+      "visibleRGBMeanAbsoluteError": 2.7299156083916922,
+      "alphaMeanAbsoluteError": 0,
+      "beforeSha256": "901eb2e2ebdfdf9186199421d8d35c453df784488e3ebc1d55dabc6c274aa19c",
+      "afterSha256": "3d77ce4e837b074b300b105967a51866c5a216318715dddb710fa4b61bf526f0"
+    },
+    {
+      "source": "assets/resources/formal20260927/gen_treasure_icons.png",
+      "path": "subpackages/resources/native/89/89934004-b0d5-47b1-a8a4-b2894fb131a5.png",
+      "before": 1732542,
+      "after": 481005,
+      "width": 1756,
+      "height": 855,
+      "visibleRGBMeanAbsoluteError": 2.8009240945606724,
+      "alphaMeanAbsoluteError": 0,
+      "beforeSha256": "21757f580f3e4a0b065cfbde5f9a43d416d7cbd092e3e30fa1ea4fccabfb391d",
+      "afterSha256": "b5f724b3e9487ded1d54b135d1be0533392466044142ec1fe8749616baaf64e0"
+    },
+    {
+      "source": "assets/resources/formal20260927/gen_troops.png",
+      "path": "subpackages/resources/native/61/61c23474-a7a9-4330-bf01-6068cb5a6337.png",
+      "before": 1037720,
+      "after": 337627,
+      "width": 1934,
+      "height": 680,
+      "visibleRGBMeanAbsoluteError": 2.048614894960345,
+      "alphaMeanAbsoluteError": 0,
+      "beforeSha256": "8448af5e2961edf4d808fec05ac9305e2a2d06a485ab8a3f8c5aca02eda40446",
+      "afterSha256": "a78b2dbf61f75d49d30f985da2a01eec52ea59e7688f6f6dda0565a30fc2df2f"
+    },
+    {
+      "source": "assets/resources/formal20260927/gen_wall_parts.png",
+      "path": "subpackages/resources/native/5b/5bcb27f3-5d16-4ed3-978e-a8336e4ed380.png",
+      "before": 1318556,
+      "after": 348840,
+      "width": 2011,
+      "height": 834,
+      "visibleRGBMeanAbsoluteError": 1.649568502078992,
+      "alphaMeanAbsoluteError": 0,
+      "beforeSha256": "d3dc836bdae16865eb0a24dbe10de9f5606b3890fc00a5b60382ca4c99a4a8da",
+      "afterSha256": "c27bd05ae9c4dc566679f66a268318f56135f2e0d32233925e8dbab656ba6763"
+    },
+    {
+      "source": "assets/resources/formal20260927/gen_weapon_icons.png",
+      "path": "subpackages/resources/native/f4/f4183437-aa02-4c3f-a09b-c268a8627ef3.png",
+      "before": 1187380,
+      "after": 129185,
+      "width": 1798,
+      "height": 1049,
+      "visibleRGBMeanAbsoluteError": 2.738189312620242,
+      "alphaMeanAbsoluteError": 0.0005630660483897477,
+      "beforeSha256": "62642eb67d72f65242b6d16f45aa22c9c57fc7691a6160a5bc6e8ff798fab611",
+      "afterSha256": "9fc453e94c69fe98e7d06e29641b19284bff9349415a9291565ebb95b6bcceca"
+    },
+    {
+      "source": "assets/resources/formal20260927/pr2-officers.png",
+      "path": "subpackages/resources/native/58/5813fafb-9ed9-433f-80f2-d0f0368b537e.png",
+      "before": 1536613,
+      "after": 395152,
+      "width": 2048,
+      "height": 675,
+      "visibleRGBMeanAbsoluteError": 3.8413183359534275,
+      "alphaMeanAbsoluteError": 0.67294921875,
+      "beforeSha256": "bf501fe25cb25d799a7b983319126c9c2c73821d43f33007e95da7740c861566",
+      "afterSha256": "3fee95820b8447b1d93bb6255aa39b63a4af379e7789831a00de61144ec12323"
+    },
+    {
+      "source": "assets/resources/formal20260927/pr2-portraits.png",
+      "path": "subpackages/resources/native/00/007d51e1-9007-4a6d-9aac-fe7a60351247.png",
+      "before": 1652586,
+      "after": 441674,
+      "width": 2048,
+      "height": 785,
+      "visibleRGBMeanAbsoluteError": 3.7996273744865334,
+      "alphaMeanAbsoluteError": 0.4324946506767516,
+      "beforeSha256": "c7c039ca90a1c91cbf398933f9eb032287a70e04498d70d4454e27ea4419d7b9",
+      "afterSha256": "4650f263d96d84bfc81368063a9e365ae67f818e082c6a9e59b75abe83a1b174"
+    },
+    {
+      "source": "assets/resources/ui20260925/brand-title.png",
+      "path": "subpackages/resources/native/90/90d6679e-ab10-42d6-b446-35b8481a2834.png",
+      "before": 71342,
+      "after": 17297,
+      "width": 600,
+      "height": 200,
+      "visibleRGBMeanAbsoluteError": 0.8817831330476712,
+      "alphaMeanAbsoluteError": 0.42495,
+      "beforeSha256": "ae443fe6e88ca66ca236a11f60f7908c03dc1844ad34ee1df11c7c9d18b842f1",
+      "afterSha256": "20ee9a01af02d40c9e7049ccf4c87a8fd4fe6236272c8ffb8943ecdf2210b94a"
+    },
+    {
+      "source": "assets/resources/ui20260925/gold-button.png",
+      "path": "subpackages/resources/native/a6/a65a6514-ff8e-4507-aed1-d8a3926c6461.png",
+      "before": 55357,
+      "after": 19857,
+      "width": 400,
+      "height": 80,
+      "visibleRGBMeanAbsoluteError": 1.2798171801490719,
+      "alphaMeanAbsoluteError": 0.72746875,
+      "beforeSha256": "9463f58d27c241fd05521dc8bdba6e486fef8392aef1fcf8c74ab53cab88ccb3",
+      "afterSha256": "2ecd971c09df61f3f91f8b43d2f38bc74292d397a44e098020fe9cb53b299792"
+    },
+    {
+      "source": "assets/resources/ui20260925/hero-blade.png",
+      "path": "subpackages/resources/native/58/583fb5e8-96d8-4a58-a33c-8e71e8bb2caf.png",
+      "before": 125712,
+      "after": 105910,
+      "width": 512,
+      "height": 768,
+      "visibleRGBMeanAbsoluteError": 0.7534138590955478,
+      "alphaMeanAbsoluteError": 0.0501861572265625,
+      "beforeSha256": "e6f32dedc3dcda3e287105dd7981b57b16893fd329a35d9d7723c68270dda5a6",
+      "afterSha256": "e6bfde0be8b2004c48a7bbbeb36b1657352829389383f11fda49c79017ca8597"
+    },
+    {
+      "source": "assets/resources/ui20260925/hero-home.png",
+      "path": "subpackages/resources/native/cd/cda34036-3556-49eb-9742-a2109e835549.png",
+      "before": 120503,
+      "after": 98487,
+      "width": 512,
+      "height": 768,
+      "visibleRGBMeanAbsoluteError": 0.728352380952381,
+      "alphaMeanAbsoluteError": 0.06427510579427083,
+      "beforeSha256": "e6a93eca7ed89b971dd16b868322272080df0f6b56fe6926b423a40f6c8f97ac",
+      "afterSha256": "a1a8029488cad8d4a4468ae46df169bcd662f23cd111728cb356fc897f69e424"
+    }
+  ],
+  "removed": [
+    {
+      "source": "assets/resources/battle20260925/bosses.png",
+      "bytes": 180156,
+      "sha256": "9d2806319b2ea7455d86b5352f671fff4fcf9e617d52b46209ceb0537a05f3c4",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/battle20260925/companions.png",
+      "bytes": 59330,
+      "sha256": "b16215f180ddf0d4c5405b62df784754dcf2408d98fd32e23324b175ce9cea0c",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/battle20260925/crates.png",
+      "bytes": 163514,
+      "sha256": "1245b890834f166b6e7205a1f8b58ef546d6830eafb6d0b5c77b00a33c821a07",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/battle20260925/distant.png",
+      "bytes": 556231,
+      "sha256": "54f39a89b76cdaad57563d630b5583ffa8fbfde30b26ca130070db47e78ff08b",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/battle20260925/gate-parts.png",
+      "bytes": 180238,
+      "sha256": "c0c972921bfa114447e2a1a649fe3c5d5af4a955be4c53be782a8b62467450fb",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/battle20260925/grass.jpg",
+      "bytes": 64361,
+      "sha256": "9366a85600a192c13fafb4052a8d2bd5eca9ad157e9db38e32c56c457a094cc6",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/battle20260925/heroes.png",
+      "bytes": 127398,
+      "sha256": "d1ca90e59597dae7c3f6cf0721faa46bd736b1785f502b44a37ac97a84f09af3",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/battle20260925/road.jpg",
+      "bytes": 93297,
+      "sha256": "e5aab5c57d636c3b357523382666d7cbe4738bdb89fdf32f2b278509a07701e2",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/battle20260925/scenery.png",
+      "bytes": 180576,
+      "sha256": "ce5025c52e170050bc209ff8ac4e4b024c867295ce0625bb2b4ae54a21c70405",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/battle20260925/soldiers.png",
+      "bytes": 49622,
+      "sha256": "df9cab6da83288b57544c7f54190f4ad60046c2d6f4403c43d11f9e0ea92f8f3",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/battlefix2/actions.png",
+      "bytes": 206823,
+      "sha256": "a6d06f6e3c24cf63ddb5cc91953a03a825ed8b4620bcc427fdb0e0effb2fb792",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/battlefix2/blade.png",
+      "bytes": 41610,
+      "sha256": "a52b78f8bd38ae891f2f09a8639e00d552350f2b69d87467427709ba6fa39c04",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/battlefix2/environment.png",
+      "bytes": 71539,
+      "sha256": "4516ba1f3f2297e8db2d61063cd5a0007ec97848bc4543c2c0f48e8999e1ac2d",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/battlefix2/shadow.png",
+      "bytes": 5753,
+      "sha256": "0bb08d11f55a63498d8198e9c4ce515bd51cc60cd7b80d96c4565f3bd8728aef",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/battlefix2/wall-middle.png",
+      "bytes": 19486,
+      "sha256": "28c546a36894c2e29eca4fb8f2d70d75e78243c161fc33fab29023ae8ce550f2",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/battlefix2/waves.png",
+      "bytes": 135803,
+      "sha256": "b181f20e0583dcfcac4e292c14efe450640dfc9c626c6998dabb143d7e46e033",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/battlefix2/zhao.png",
+      "bytes": 43639,
+      "sha256": "42db3e0609240f7ef2360a2be86eaf60cb9d9ee2c21adc12adaef14c90c38f5d",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/v031/archers.png",
+      "bytes": 1500511,
+      "sha256": "c91ee0688be6ce87912afdc49ebb2f1f96405925c328fc6dbd88a60bb45bb3ac",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/v04/spear-hero.png",
+      "bytes": 1640527,
+      "sha256": "c862d943d08689c0ca0b21bc53d0f9aff2747c5062d7cb4c8e60eb5d112be08c",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/v04/spear.png",
+      "bytes": 122895,
+      "sha256": "e421c8687b64fa8fd638bc02a22bf55fbac62c32be237af5c0d3958554fee485",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/v05/cast.png",
+      "bytes": 1055164,
+      "sha256": "0c8eef850a46cdfe7f0844618afc07a6ac83b0c4041c61eecb69d29db7c51c33",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/v05/weapons.png",
+      "bytes": 1038959,
+      "sha256": "61ca98403a5470d0954478203007fd07ecb56f8d12a68680d736c95b754e31fe",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/v051/blade-hero.png",
+      "bytes": 1374167,
+      "sha256": "948710cc1c9b308431f0ae13011a1268ac56af508ef4918ebc4a33a2f83b0dff",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/v3/actors.png",
+      "bytes": 1356030,
+      "sha256": "8b8b02993f1504ac28ddef424d783855af2cb05441ff4162c490fd07a89f1aff",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/v3/scenery.png",
+      "bytes": 1747328,
+      "sha256": "11ff1536f17e5ca3711ae59c046be787fcc239657abfa01a5d2d4f7122d0fdd6",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/v4/enemies.png",
+      "bytes": 1856928,
+      "sha256": "2c5cb918b234e582c02356311396a93f45c400fe48e9f4a41d7671503a6a21b1",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    },
+    {
+      "source": "assets/resources/v4/scenery.png",
+      "bytes": 2128425,
+      "sha256": "39766cf6dadd2186aa67dbf7fb1432b750cff22691731d727f813add6b805915",
+      "reason": "Unreachable legacy-only resource: WeChat formal entry loads NativePaint + PresentationAssets + five SFX."
+    }
+  ]
+}

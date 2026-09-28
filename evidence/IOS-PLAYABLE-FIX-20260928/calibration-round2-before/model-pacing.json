@@ -1,0 +1,973 @@
+{
+  "scope": "model-only, automatic legal lateral controls, not native/device elapsed evidence",
+  "results": [
+    {
+      "chapter": 1,
+      "won": true,
+      "simulationSeconds": 97.57,
+      "march": 65.02,
+      "officer": 0,
+      "boss": 32.55,
+      "troops": 48,
+      "cycles": 5,
+      "growth": [
+        {
+          "t": 10.200000000000086,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 11.300000000000141,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 18.23333333333358,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 24.41666666666656,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 30.61666666666621,
+          "weapon": "spear",
+          "tier": 3,
+          "arms": "fire"
+        },
+        {
+          "t": 51.03333333333172,
+          "weapon": "spear",
+          "tier": 3,
+          "arms": "fire"
+        },
+        {
+          "t": 55.93333333333144,
+          "weapon": "spear",
+          "tier": 3,
+          "arms": "repeater"
+        }
+      ],
+      "weapon": "spear",
+      "tier": 3,
+      "arms": "repeater",
+      "loadout": {
+        "tactic": "guanzhen",
+        "companions": [],
+        "support": null,
+        "allies": [],
+        "treasures": {
+          "dian": null,
+          "qi": null,
+          "ma": null
+        },
+        "weapons": [
+          "spear"
+        ],
+        "treasurePool": [],
+        "weaponLevels": {
+          "spear": 1
+        }
+      }
+    },
+    {
+      "chapter": 2,
+      "won": true,
+      "simulationSeconds": 95.23,
+      "march": 66,
+      "officer": 0,
+      "boss": 29.23,
+      "troops": 54,
+      "cycles": 4,
+      "growth": [
+        {
+          "t": 10.200000000000086,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 11.300000000000141,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 18.23333333333358,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 24.133333333333244,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 25.616666666666493,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 31.216666666666175,
+          "weapon": "spear",
+          "tier": 3,
+          "arms": "fire"
+        },
+        {
+          "t": 51.049999999998384,
+          "weapon": "spear",
+          "tier": 3,
+          "arms": "fire"
+        },
+        {
+          "t": 55.93333333333144,
+          "weapon": "spear",
+          "tier": 3,
+          "arms": "repeater"
+        }
+      ],
+      "weapon": "spear",
+      "tier": 3,
+      "arms": "repeater",
+      "loadout": {
+        "tactic": "guanzhen",
+        "companions": [],
+        "support": null,
+        "allies": [],
+        "treasures": {
+          "dian": "taiping",
+          "qi": null,
+          "ma": null
+        },
+        "weapons": [
+          "spear"
+        ],
+        "treasurePool": [
+          "taiping"
+        ],
+        "weaponLevels": {
+          "spear": 1
+        }
+      }
+    },
+    {
+      "chapter": 3,
+      "won": true,
+      "simulationSeconds": 95.87,
+      "march": 64.02,
+      "officer": 0,
+      "boss": 31.85,
+      "troops": 56,
+      "cycles": 5,
+      "growth": [
+        {
+          "t": 10.216666666666754,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 11.316666666666809,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 18.26666666666691,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 23.79999999999993,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 25.04999999999986,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 30.633333333332875,
+          "weapon": "guding",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 51.14999999999838,
+          "weapon": "guding",
+          "tier": 3,
+          "arms": "fire"
+        },
+        {
+          "t": 56.11666666666476,
+          "weapon": "guding",
+          "tier": 3,
+          "arms": "repeater"
+        }
+      ],
+      "weapon": "guding",
+      "tier": 3,
+      "arms": "repeater",
+      "loadout": {
+        "tactic": "guanzhen",
+        "companions": [],
+        "support": "hua",
+        "allies": [
+          "yuan"
+        ],
+        "treasures": {
+          "dian": "taiping",
+          "qi": "yuxi",
+          "ma": null
+        },
+        "weapons": [
+          "spear",
+          "guding"
+        ],
+        "treasurePool": [
+          "taiping",
+          "yuxi"
+        ],
+        "weaponLevels": {
+          "spear": 1,
+          "guding": 1
+        }
+      }
+    },
+    {
+      "chapter": 4,
+      "won": true,
+      "simulationSeconds": 106.55,
+      "march": 54.02,
+      "officer": 17.83,
+      "boss": 34.7,
+      "troops": 58,
+      "cycles": 5,
+      "growth": [
+        {
+          "t": 9.683333333333394,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 10.766666666666781,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 18.300000000000242,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 23.266666666666627,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 24.283333333333236,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 30.716666666666203,
+          "weapon": "huaji",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 59.86666666666455,
+          "weapon": "huaji",
+          "tier": 3,
+          "arms": "fire"
+        },
+        {
+          "t": 65.44999999999757,
+          "weapon": "huaji",
+          "tier": 3,
+          "arms": "repeater"
+        }
+      ],
+      "weapon": "huaji",
+      "tier": 3,
+      "arms": "repeater",
+      "loadout": {
+        "tactic": "guanzhen",
+        "companions": [
+          "lubu"
+        ],
+        "support": "hua",
+        "allies": [
+          "yuan"
+        ],
+        "treasures": {
+          "dian": "taiping",
+          "qi": "yuxi",
+          "ma": "chitu"
+        },
+        "weapons": [
+          "spear",
+          "guding",
+          "huaji"
+        ],
+        "treasurePool": [
+          "taiping",
+          "yuxi",
+          "chitu"
+        ],
+        "weaponLevels": {
+          "spear": 1,
+          "guding": 1,
+          "huaji": 1
+        }
+      }
+    },
+    {
+      "chapter": 5,
+      "won": true,
+      "simulationSeconds": 106.32,
+      "march": 52.02,
+      "officer": 19.72,
+      "boss": 34.58,
+      "troops": 58,
+      "cycles": 5,
+      "growth": [
+        {
+          "t": 9.700000000000061,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 10.116666666666749,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 18.316666666666908,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 23.866666666666593,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 24.49999999999989,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 30.749999999999535,
+          "weapon": "shuangji",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 54.11666666666488,
+          "weapon": "shuangji",
+          "tier": 3,
+          "arms": "fire"
+        },
+        {
+          "t": 66.33333333333086,
+          "weapon": "shuangji",
+          "tier": 3,
+          "arms": "repeater"
+        }
+      ],
+      "weapon": "shuangji",
+      "tier": 3,
+      "arms": "repeater",
+      "loadout": {
+        "tactic": "guanzhen",
+        "companions": [
+          "dian",
+          "xu"
+        ],
+        "support": "hua",
+        "allies": [
+          "yuan"
+        ],
+        "treasures": {
+          "dian": "taiping",
+          "qi": "yuxi",
+          "ma": "chitu"
+        },
+        "weapons": [
+          "spear",
+          "guding",
+          "huaji",
+          "shuangji"
+        ],
+        "treasurePool": [
+          "taiping",
+          "yuxi",
+          "chitu"
+        ],
+        "weaponLevels": {
+          "spear": 1,
+          "guding": 1,
+          "huaji": 1,
+          "shuangji": 1
+        }
+      }
+    },
+    {
+      "chapter": 6,
+      "won": true,
+      "simulationSeconds": 101.4,
+      "march": 56.02,
+      "officer": 14.62,
+      "boss": 30.77,
+      "troops": 58,
+      "cycles": 4,
+      "growth": [
+        {
+          "t": 9.783333333333399,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 10.766666666666781,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 18.316666666666908,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 25.016666666666527,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 25.833333333333147,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 30.749999999999535,
+          "weapon": "yitian",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 56.94999999999805,
+          "weapon": "yitian",
+          "tier": 3,
+          "arms": "fire"
+        },
+        {
+          "t": 66.2666666666642,
+          "weapon": "yitian",
+          "tier": 3,
+          "arms": "repeater"
+        }
+      ],
+      "weapon": "yitian",
+      "tier": 3,
+      "arms": "repeater",
+      "loadout": {
+        "tactic": "guanzhen",
+        "companions": [
+          "liao",
+          "xiahou"
+        ],
+        "support": "hua",
+        "allies": [
+          "yuan",
+          "cao"
+        ],
+        "treasures": {
+          "dian": "taiping",
+          "qi": "yuxi",
+          "ma": "chitu"
+        },
+        "weapons": [
+          "spear",
+          "guding",
+          "huaji",
+          "shuangji",
+          "yitian"
+        ],
+        "treasurePool": [
+          "taiping",
+          "yuxi",
+          "chitu",
+          "mengde"
+        ],
+        "weaponLevels": {
+          "spear": 1,
+          "guding": 1,
+          "huaji": 1,
+          "shuangji": 1,
+          "yitian": 1
+        }
+      }
+    },
+    {
+      "chapter": 7,
+      "won": true,
+      "simulationSeconds": 104.83,
+      "march": 56,
+      "officer": 17.23,
+      "boss": 31.6,
+      "troops": 58,
+      "cycles": 4,
+      "growth": [
+        {
+          "t": 9.783333333333399,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 10.116666666666749,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 18.316666666666908,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 25.58333333333316,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 26.233333333333125,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 30.749999999999535,
+          "weapon": "shemao",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 59.71666666666456,
+          "weapon": "shemao",
+          "tier": 3,
+          "arms": "fire"
+        },
+        {
+          "t": 67.93333333333076,
+          "weapon": "shemao",
+          "tier": 3,
+          "arms": "repeater"
+        }
+      ],
+      "weapon": "shemao",
+      "tier": 3,
+      "arms": "repeater",
+      "loadout": {
+        "tactic": "guanzhen",
+        "companions": [
+          "xiahou",
+          "lumeng"
+        ],
+        "support": "hua",
+        "allies": [
+          "yuan",
+          "cao",
+          "sunce"
+        ],
+        "treasures": {
+          "dian": "taiping",
+          "qi": "yuxi",
+          "ma": "chitu"
+        },
+        "weapons": [
+          "spear",
+          "guding",
+          "huaji",
+          "shuangji",
+          "yitian",
+          "shemao"
+        ],
+        "treasurePool": [
+          "taiping",
+          "yuxi",
+          "chitu",
+          "mengde"
+        ],
+        "weaponLevels": {
+          "spear": 1,
+          "guding": 1,
+          "huaji": 1,
+          "shuangji": 1,
+          "yitian": 1,
+          "shemao": 1
+        }
+      }
+    },
+    {
+      "chapter": 8,
+      "won": true,
+      "simulationSeconds": 108,
+      "march": 54,
+      "officer": 22.35,
+      "boss": 31.65,
+      "troops": 99,
+      "cycles": 4,
+      "growth": [
+        {
+          "t": 11.316666666666809,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 12.5000000000002,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 18.333333333333574,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 24.283333333333236,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 25.099999999999856,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 31.283333333332838,
+          "weapon": "qinggang",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 64.74999999999761,
+          "weapon": "qinggang",
+          "tier": 3,
+          "arms": "fire"
+        },
+        {
+          "t": 71.18333333333058,
+          "weapon": "qinggang",
+          "tier": 3,
+          "arms": "repeater"
+        }
+      ],
+      "weapon": "qinggang",
+      "tier": 3,
+      "arms": "repeater",
+      "loadout": {
+        "tactic": "guanzhen",
+        "companions": [
+          "sunxiang",
+          "luxun"
+        ],
+        "support": "hua",
+        "allies": [
+          "yuan",
+          "cao",
+          "sunce",
+          "sunquan"
+        ],
+        "treasures": {
+          "dian": "taiping",
+          "qi": "yuxi",
+          "ma": "chitu"
+        },
+        "weapons": [
+          "spear",
+          "guding",
+          "huaji",
+          "shuangji",
+          "yitian",
+          "shemao",
+          "qinggang"
+        ],
+        "treasurePool": [
+          "taiping",
+          "yuxi",
+          "chitu",
+          "mengde",
+          "muniu"
+        ],
+        "weaponLevels": {
+          "spear": 1,
+          "guding": 1,
+          "huaji": 1,
+          "shuangji": 1,
+          "yitian": 1,
+          "shemao": 1,
+          "qinggang": 1
+        }
+      }
+    },
+    {
+      "chapter": 9,
+      "won": true,
+      "simulationSeconds": 100.88,
+      "march": 54,
+      "officer": 17.65,
+      "boss": 29.23,
+      "troops": 99,
+      "cycles": 4,
+      "growth": [
+        {
+          "t": 11.416666666666814,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 12.5000000000002,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 18.35000000000024,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 24.2999999999999,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 25.11666666666652,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 31.299999999999503,
+          "weapon": "guandao",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 59.93333333333121,
+          "weapon": "guandao",
+          "tier": 3,
+          "arms": "fire"
+        },
+        {
+          "t": 65.71666666666422,
+          "weapon": "guandao",
+          "tier": 3,
+          "arms": "repeater"
+        }
+      ],
+      "weapon": "guandao",
+      "tier": 3,
+      "arms": "repeater",
+      "loadout": {
+        "tactic": "guanzhen",
+        "companions": [
+          "zhao",
+          "zhang"
+        ],
+        "support": "hua",
+        "allies": [
+          "yuan",
+          "cao",
+          "sunce",
+          "sunquan"
+        ],
+        "treasures": {
+          "dian": "taiping",
+          "qi": "yuxi",
+          "ma": "chitu"
+        },
+        "weapons": [
+          "spear",
+          "guding",
+          "huaji",
+          "shuangji",
+          "yitian",
+          "shemao",
+          "qinggang",
+          "guandao"
+        ],
+        "treasurePool": [
+          "taiping",
+          "yuxi",
+          "chitu",
+          "mengde",
+          "muniu",
+          "dilu"
+        ],
+        "weaponLevels": {
+          "spear": 1,
+          "guding": 1,
+          "huaji": 1,
+          "shuangji": 1,
+          "yitian": 1,
+          "shemao": 1,
+          "qinggang": 1,
+          "guandao": 1
+        }
+      }
+    },
+    {
+      "chapter": 10,
+      "won": true,
+      "simulationSeconds": 104.45,
+      "march": 50.02,
+      "officer": 22.52,
+      "boss": 31.92,
+      "troops": 99,
+      "cycles": 4,
+      "growth": [
+        {
+          "t": 11.433333333333481,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 12.516666666666868,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "bow"
+        },
+        {
+          "t": 18.38333333333357,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 24.333333333333233,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 24.399999999999896,
+          "weapon": "spear",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 31.31666666666617,
+          "weapon": "shuanggu",
+          "tier": 2,
+          "arms": "fire"
+        },
+        {
+          "t": 55.03333333333149,
+          "weapon": "shuanggu",
+          "tier": 3,
+          "arms": "fire"
+        },
+        {
+          "t": 67.9666666666641,
+          "weapon": "shuanggu",
+          "tier": 3,
+          "arms": "repeater"
+        }
+      ],
+      "weapon": "shuanggu",
+      "tier": 3,
+      "arms": "repeater",
+      "loadout": {
+        "tactic": "guanzhen",
+        "companions": [
+          "guan",
+          "huang"
+        ],
+        "support": "hua",
+        "allies": [
+          "yuan",
+          "cao",
+          "sunce",
+          "sunquan"
+        ],
+        "treasures": {
+          "dian": "taiping",
+          "qi": "yuxi",
+          "ma": "chitu"
+        },
+        "weapons": [
+          "spear",
+          "guding",
+          "huaji",
+          "shuangji",
+          "yitian",
+          "shemao",
+          "qinggang",
+          "guandao",
+          "shuanggu"
+        ],
+        "treasurePool": [
+          "taiping",
+          "yuxi",
+          "chitu",
+          "mengde",
+          "muniu",
+          "dilu",
+          "qingnang"
+        ],
+        "weaponLevels": {
+          "spear": 1,
+          "guding": 1,
+          "huaji": 1,
+          "shuangji": 1,
+          "yitian": 1,
+          "shemao": 1,
+          "qinggang": 1,
+          "guandao": 1,
+          "shuanggu": 1
+        }
+      }
+    }
+  ]
+}

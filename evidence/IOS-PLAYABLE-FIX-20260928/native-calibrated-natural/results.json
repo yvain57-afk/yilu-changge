@@ -1,0 +1,1368 @@
+[
+  {
+    "chapter": 1,
+    "runId": "mukwpi2c-qchlk8fx0cp",
+    "scope": "actual native simulator, external accessibility touch controls",
+    "won": true,
+    "foregroundSeconds": 97.64733300000023,
+    "simulationSeconds": 97.49999999999575,
+    "phaseSeconds": {
+      "march": 65.01666666666426,
+      "officer": 0,
+      "boss": 32.48333333333277,
+      "intentionalHitStop": 0
+    },
+    "resultLatencySeconds": 1.6390859999999523,
+    "fps": 34.28464873932048,
+    "performance": {
+      "sampleCount": 3404,
+      "over50ms": 190,
+      "over100ms": 16,
+      "p95ms": 50.023999999975786,
+      "scope": "foreground battle render intervals, native host dependent"
+    },
+    "renderErrors": [],
+    "invalidRects": [],
+    "createdNodes": 279,
+    "troops": 67,
+    "crates": {
+      "grain": 2,
+      "arms": 2,
+      "weapon": 2
+    },
+    "cycles": 4,
+    "save": {
+      "schemaVersion": 2,
+      "rulesVersion": "ios-playable-20260928",
+      "ruleBests": {
+        "ios-playable-20260928": {
+          "c01": 67
+        }
+      },
+      "cleared": [
+        "c01"
+      ],
+      "best": {
+        "c01": 67
+      },
+      "claimed": [
+        "run:mukwpi2c-qchlk8fx0cp"
+      ],
+      "weapons": [
+        "spear"
+      ],
+      "weaponLevels": {
+        "spear": 1
+      },
+      "captures": [],
+      "visits": [],
+      "allies": [],
+      "treasures": [
+        "taiping"
+      ],
+      "companions": [],
+      "support": null,
+      "slots": {
+        "dian": null,
+        "qi": null,
+        "ma": null
+      },
+      "xp": 30,
+      "seen": [
+        "jiao"
+      ]
+    }
+  },
+  {
+    "chapter": 2,
+    "runId": "mukwutpx-81ba1wkcjl6",
+    "scope": "actual native simulator, external accessibility touch controls",
+    "won": true,
+    "foregroundSeconds": 100.89970999999994,
+    "simulationSeconds": 100.79999999999556,
+    "phaseSeconds": {
+      "march": 65.99999999999754,
+      "officer": 0,
+      "boss": 34.79999999999931,
+      "intentionalHitStop": 0
+    },
+    "resultLatencySeconds": 1.6331499999999652,
+    "fps": 47.145861336551086,
+    "performance": {
+      "sampleCount": 4834,
+      "over50ms": 67,
+      "over100ms": 5,
+      "p95ms": 37.97299999999814,
+      "scope": "foreground battle render intervals, native host dependent"
+    },
+    "renderErrors": [],
+    "invalidRects": [],
+    "createdNodes": 287,
+    "troops": 26,
+    "crates": {
+      "weapon": 3,
+      "grain": 2,
+      "arms": 2,
+      "treasure": 1
+    },
+    "cycles": 5,
+    "save": {
+      "schemaVersion": 2,
+      "rulesVersion": "ios-playable-20260928",
+      "ruleBests": {
+        "ios-playable-20260928": {
+          "c01": 67,
+          "c02": 26
+        }
+      },
+      "cleared": [
+        "c01",
+        "c02"
+      ],
+      "best": {
+        "c01": 67,
+        "c02": 26
+      },
+      "claimed": [
+        "run:mukwpi2c-qchlk8fx0cp",
+        "run:mukwutpx-81ba1wkcjl6"
+      ],
+      "weapons": [
+        "spear",
+        "guding"
+      ],
+      "weaponLevels": {
+        "spear": 1,
+        "guding": 1
+      },
+      "captures": [],
+      "visits": [
+        "hua",
+        "sunjian"
+      ],
+      "allies": [
+        "yuan"
+      ],
+      "treasures": [
+        "taiping",
+        "yuxi"
+      ],
+      "companions": [],
+      "support": null,
+      "slots": {
+        "dian": "taiping",
+        "qi": null,
+        "ma": null
+      },
+      "xp": 60,
+      "seen": [
+        "jiao",
+        "dong",
+        "hua",
+        "sunjian",
+        "yuan"
+      ]
+    }
+  },
+  {
+    "chapter": 3,
+    "runId": "mukwxyd0-1gbarwgu8zkj",
+    "scope": "actual native simulator, external accessibility touch controls",
+    "won": true,
+    "foregroundSeconds": 97.19937299999988,
+    "simulationSeconds": 97.19999999999577,
+    "phaseSeconds": {
+      "march": 64.01666666666432,
+      "officer": 0,
+      "boss": 33.18333333333273,
+      "intentionalHitStop": 0
+    },
+    "resultLatencySeconds": 1.6172469999999735,
+    "fps": 51.28691914376352,
+    "performance": {
+      "sampleCount": 5068,
+      "over50ms": 12,
+      "over100ms": 0,
+      "p95ms": 33.35400000005029,
+      "scope": "foreground battle render intervals, native host dependent"
+    },
+    "renderErrors": [],
+    "invalidRects": [],
+    "createdNodes": 309,
+    "troops": 12,
+    "crates": {
+      "weapon": 3,
+      "grain": 2,
+      "arms": 2,
+      "treasure": 1
+    },
+    "cycles": 5,
+    "save": {
+      "schemaVersion": 2,
+      "rulesVersion": "ios-playable-20260928",
+      "ruleBests": {
+        "ios-playable-20260928": {
+          "c01": 67,
+          "c02": 26,
+          "c03": 12
+        }
+      },
+      "cleared": [
+        "c01",
+        "c02",
+        "c03"
+      ],
+      "best": {
+        "c01": 67,
+        "c02": 26,
+        "c03": 12
+      },
+      "claimed": [
+        "run:mukwpi2c-qchlk8fx0cp",
+        "run:mukwutpx-81ba1wkcjl6",
+        "run:mukwxyd0-1gbarwgu8zkj"
+      ],
+      "weapons": [
+        "spear",
+        "guding",
+        "huaji"
+      ],
+      "weaponLevels": {
+        "spear": 1,
+        "guding": 1,
+        "huaji": 1
+      },
+      "captures": [
+        "lubu"
+      ],
+      "visits": [
+        "hua",
+        "sunjian",
+        "diao"
+      ],
+      "allies": [
+        "yuan"
+      ],
+      "treasures": [
+        "taiping",
+        "yuxi",
+        "chitu"
+      ],
+      "companions": [],
+      "support": "hua",
+      "slots": {
+        "dian": "taiping",
+        "qi": "yuxi",
+        "ma": null
+      },
+      "xp": 90,
+      "seen": [
+        "jiao",
+        "dong",
+        "hua",
+        "sunjian",
+        "yuan",
+        "lubu",
+        "diao"
+      ]
+    }
+  },
+  {
+    "chapter": 4,
+    "runId": "mukx0tr8-24s8oo0wfv5",
+    "scope": "actual native simulator, external accessibility touch controls",
+    "won": true,
+    "foregroundSeconds": 106.77354400000021,
+    "simulationSeconds": 106.78333333332856,
+    "phaseSeconds": {
+      "march": 54.01666666666488,
+      "officer": 17.350000000000296,
+      "boss": 35.41666666666594,
+      "intentionalHitStop": 0
+    },
+    "resultLatencySeconds": 1.6180090000000782,
+    "fps": 49.98544489901335,
+    "performance": {
+      "sampleCount": 5418,
+      "over50ms": 5,
+      "over100ms": 0,
+      "p95ms": 36.462999999988824,
+      "scope": "foreground battle render intervals, native host dependent"
+    },
+    "renderErrors": [],
+    "invalidRects": [],
+    "createdNodes": 363,
+    "troops": 32,
+    "crates": {
+      "weapon": 3,
+      "grain": 2,
+      "arms": 2,
+      "treasure": 1
+    },
+    "cycles": 5,
+    "save": {
+      "schemaVersion": 2,
+      "rulesVersion": "ios-playable-20260928",
+      "ruleBests": {
+        "ios-playable-20260928": {
+          "c01": 67,
+          "c02": 26,
+          "c03": 12,
+          "c04": 32
+        }
+      },
+      "cleared": [
+        "c01",
+        "c02",
+        "c03",
+        "c04"
+      ],
+      "best": {
+        "c01": 67,
+        "c02": 26,
+        "c03": 12,
+        "c04": 32
+      },
+      "claimed": [
+        "run:mukwpi2c-qchlk8fx0cp",
+        "run:mukwutpx-81ba1wkcjl6",
+        "run:mukwxyd0-1gbarwgu8zkj",
+        "run:mukx0tr8-24s8oo0wfv5"
+      ],
+      "weapons": [
+        "spear",
+        "guding",
+        "huaji",
+        "shuangji"
+      ],
+      "weaponLevels": {
+        "spear": 1,
+        "guding": 1,
+        "huaji": 1,
+        "shuangji": 1
+      },
+      "captures": [
+        "lubu",
+        "dian",
+        "xu"
+      ],
+      "visits": [
+        "hua",
+        "sunjian",
+        "diao",
+        "xun"
+      ],
+      "allies": [
+        "yuan"
+      ],
+      "treasures": [
+        "taiping",
+        "yuxi",
+        "chitu"
+      ],
+      "companions": [
+        "lubu"
+      ],
+      "support": "hua",
+      "slots": {
+        "dian": "taiping",
+        "qi": "yuxi",
+        "ma": "chitu"
+      },
+      "xp": 120,
+      "seen": [
+        "jiao",
+        "dong",
+        "hua",
+        "sunjian",
+        "yuan",
+        "lubu",
+        "diao",
+        "dian",
+        "xu",
+        "xun"
+      ]
+    }
+  },
+  {
+    "chapter": 5,
+    "runId": "mukx4b5m-wwtmvkc4xqq",
+    "scope": "actual native simulator, external accessibility touch controls",
+    "won": true,
+    "foregroundSeconds": 118.81581300000028,
+    "simulationSeconds": 118.8166666666612,
+    "phaseSeconds": {
+      "march": 52.016666666664996,
+      "officer": 31.099999999999515,
+      "boss": 35.69999999999926,
+      "intentionalHitStop": 0
+    },
+    "resultLatencySeconds": 1.6005870000000582,
+    "fps": 48.74751279726001,
+    "performance": {
+      "sampleCount": 5870,
+      "over50ms": 39,
+      "over100ms": 0,
+      "p95ms": 36.42499999993015,
+      "scope": "foreground battle render intervals, native host dependent"
+    },
+    "renderErrors": [],
+    "invalidRects": [],
+    "createdNodes": 378,
+    "troops": 7,
+    "crates": {
+      "weapon": 3,
+      "grain": 2,
+      "arms": 2,
+      "treasure": 1
+    },
+    "cycles": 5,
+    "save": {
+      "schemaVersion": 2,
+      "rulesVersion": "ios-playable-20260928",
+      "ruleBests": {
+        "ios-playable-20260928": {
+          "c01": 67,
+          "c02": 26,
+          "c03": 12,
+          "c04": 32,
+          "c05": 7
+        }
+      },
+      "cleared": [
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05"
+      ],
+      "best": {
+        "c01": 67,
+        "c02": 26,
+        "c03": 12,
+        "c04": 32,
+        "c05": 7
+      },
+      "claimed": [
+        "run:mukwpi2c-qchlk8fx0cp",
+        "run:mukwutpx-81ba1wkcjl6",
+        "run:mukwxyd0-1gbarwgu8zkj",
+        "run:mukx0tr8-24s8oo0wfv5",
+        "run:mukx4b5m-wwtmvkc4xqq"
+      ],
+      "weapons": [
+        "spear",
+        "guding",
+        "huaji",
+        "shuangji",
+        "yitian"
+      ],
+      "weaponLevels": {
+        "spear": 1,
+        "guding": 1,
+        "huaji": 1,
+        "shuangji": 1,
+        "yitian": 1
+      },
+      "captures": [
+        "lubu",
+        "dian",
+        "xu",
+        "liao",
+        "xiahou"
+      ],
+      "visits": [
+        "hua",
+        "sunjian",
+        "diao",
+        "xun",
+        "guo"
+      ],
+      "allies": [
+        "yuan",
+        "cao"
+      ],
+      "treasures": [
+        "taiping",
+        "yuxi",
+        "chitu",
+        "mengde"
+      ],
+      "companions": [
+        "dian",
+        "xu"
+      ],
+      "support": "hua",
+      "slots": {
+        "dian": "taiping",
+        "qi": "yuxi",
+        "ma": "chitu"
+      },
+      "xp": 150,
+      "seen": [
+        "jiao",
+        "dong",
+        "hua",
+        "sunjian",
+        "yuan",
+        "lubu",
+        "diao",
+        "dian",
+        "xu",
+        "xun",
+        "cao",
+        "xiahou",
+        "liao",
+        "guo"
+      ]
+    }
+  },
+  {
+    "chapter": 6,
+    "runId": "mukx7lus-0u6xwqjprs9i",
+    "scope": "actual native simulator, external accessibility touch controls",
+    "won": true,
+    "foregroundSeconds": 119.11714899999951,
+    "simulationSeconds": 119.13333333332785,
+    "phaseSeconds": {
+      "march": 56.01666666666477,
+      "officer": 25.883333333333145,
+      "boss": 37.2333333333325,
+      "intentionalHitStop": 0
+    },
+    "resultLatencySeconds": 1.6165180000001564,
+    "fps": 50.16827659181442,
+    "performance": {
+      "sampleCount": 6057,
+      "over50ms": 47,
+      "over100ms": 0,
+      "p95ms": 36.260999999940395,
+      "scope": "foreground battle render intervals, native host dependent"
+    },
+    "renderErrors": [],
+    "invalidRects": [],
+    "createdNodes": 382,
+    "troops": 9,
+    "crates": {
+      "weapon": 3,
+      "grain": 2,
+      "arms": 2
+    },
+    "cycles": 5,
+    "save": {
+      "schemaVersion": 2,
+      "rulesVersion": "ios-playable-20260928",
+      "ruleBests": {
+        "ios-playable-20260928": {
+          "c01": 67,
+          "c02": 26,
+          "c03": 12,
+          "c04": 32,
+          "c05": 7,
+          "c06": 9
+        }
+      },
+      "cleared": [
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c06"
+      ],
+      "best": {
+        "c01": 67,
+        "c02": 26,
+        "c03": 12,
+        "c04": 32,
+        "c05": 7,
+        "c06": 9
+      },
+      "claimed": [
+        "run:mukwpi2c-qchlk8fx0cp",
+        "run:mukwutpx-81ba1wkcjl6",
+        "run:mukwxyd0-1gbarwgu8zkj",
+        "run:mukx0tr8-24s8oo0wfv5",
+        "run:mukx4b5m-wwtmvkc4xqq",
+        "run:mukx7lus-0u6xwqjprs9i"
+      ],
+      "weapons": [
+        "spear",
+        "guding",
+        "huaji",
+        "shuangji",
+        "yitian",
+        "shemao"
+      ],
+      "weaponLevels": {
+        "spear": 1,
+        "guding": 1,
+        "huaji": 1,
+        "shuangji": 1,
+        "yitian": 1,
+        "shemao": 1
+      },
+      "captures": [
+        "lubu",
+        "dian",
+        "xu",
+        "liao",
+        "xiahou",
+        "lumeng"
+      ],
+      "visits": [
+        "hua",
+        "sunjian",
+        "diao",
+        "xun",
+        "guo"
+      ],
+      "allies": [
+        "yuan",
+        "cao",
+        "sunce"
+      ],
+      "treasures": [
+        "taiping",
+        "yuxi",
+        "chitu",
+        "mengde"
+      ],
+      "companions": [
+        "liao",
+        "xiahou"
+      ],
+      "support": "hua",
+      "slots": {
+        "dian": "taiping",
+        "qi": "yuxi",
+        "ma": "chitu"
+      },
+      "xp": 180,
+      "seen": [
+        "jiao",
+        "dong",
+        "hua",
+        "sunjian",
+        "yuan",
+        "lubu",
+        "diao",
+        "dian",
+        "xu",
+        "xun",
+        "cao",
+        "xiahou",
+        "liao",
+        "guo",
+        "sunce",
+        "lumeng"
+      ]
+    }
+  },
+  {
+    "chapter": 7,
+    "runId": "mukxbqx3-xadgwej3b2q",
+    "scope": "actual native simulator, external accessibility touch controls",
+    "won": true,
+    "foregroundSeconds": 114.23294699999988,
+    "simulationSeconds": 114.23333333332813,
+    "phaseSeconds": {
+      "march": 55.9999999999981,
+      "officer": 13.983333333333608,
+      "boss": 44.24999999999877,
+      "intentionalHitStop": 0
+    },
+    "resultLatencySeconds": 1.610673999999883,
+    "fps": 39.88998237546467,
+    "performance": {
+      "sampleCount": 4621,
+      "over50ms": 16,
+      "over100ms": 0,
+      "p95ms": 39.256999999983236,
+      "scope": "foreground battle render intervals, native host dependent"
+    },
+    "renderErrors": [],
+    "invalidRects": [],
+    "createdNodes": 417,
+    "troops": 72,
+    "crates": {
+      "weapon": 3,
+      "grain": 2,
+      "arms": 2,
+      "treasure": 1
+    },
+    "cycles": 6,
+    "save": {
+      "schemaVersion": 2,
+      "rulesVersion": "ios-playable-20260928",
+      "ruleBests": {
+        "ios-playable-20260928": {
+          "c01": 67,
+          "c02": 26,
+          "c03": 12,
+          "c04": 32,
+          "c05": 7,
+          "c06": 9,
+          "c07": 72
+        }
+      },
+      "cleared": [
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c06",
+        "c07"
+      ],
+      "best": {
+        "c01": 67,
+        "c02": 26,
+        "c03": 12,
+        "c04": 32,
+        "c05": 7,
+        "c06": 9,
+        "c07": 72
+      },
+      "claimed": [
+        "run:mukwpi2c-qchlk8fx0cp",
+        "run:mukwutpx-81ba1wkcjl6",
+        "run:mukwxyd0-1gbarwgu8zkj",
+        "run:mukx0tr8-24s8oo0wfv5",
+        "run:mukx4b5m-wwtmvkc4xqq",
+        "run:mukx7lus-0u6xwqjprs9i",
+        "run:mukxbqx3-xadgwej3b2q"
+      ],
+      "weapons": [
+        "spear",
+        "guding",
+        "huaji",
+        "shuangji",
+        "yitian",
+        "shemao",
+        "qinggang"
+      ],
+      "weaponLevels": {
+        "spear": 1,
+        "guding": 1,
+        "huaji": 1,
+        "shuangji": 1,
+        "yitian": 1,
+        "shemao": 1,
+        "qinggang": 1
+      },
+      "captures": [
+        "lubu",
+        "dian",
+        "xu",
+        "liao",
+        "xiahou",
+        "lumeng",
+        "sunxiang",
+        "luxun"
+      ],
+      "visits": [
+        "hua",
+        "sunjian",
+        "diao",
+        "xun",
+        "guo",
+        "zhou"
+      ],
+      "allies": [
+        "yuan",
+        "cao",
+        "sunce",
+        "sunquan"
+      ],
+      "treasures": [
+        "taiping",
+        "yuxi",
+        "chitu",
+        "mengde",
+        "muniu"
+      ],
+      "companions": [
+        "xiahou",
+        "lumeng"
+      ],
+      "support": "hua",
+      "slots": {
+        "dian": "taiping",
+        "qi": "yuxi",
+        "ma": "chitu"
+      },
+      "xp": 210,
+      "seen": [
+        "jiao",
+        "dong",
+        "hua",
+        "sunjian",
+        "yuan",
+        "lubu",
+        "diao",
+        "dian",
+        "xu",
+        "xun",
+        "cao",
+        "xiahou",
+        "liao",
+        "guo",
+        "sunce",
+        "lumeng",
+        "zhou",
+        "luxun",
+        "sunxiang",
+        "sunquan"
+      ]
+    }
+  },
+  {
+    "chapter": 8,
+    "runId": "mukxf7s1-28zccq9k1yt",
+    "scope": "actual native simulator, external accessibility touch controls",
+    "won": true,
+    "foregroundSeconds": 119.50044699999924,
+    "simulationSeconds": 119.51666666666117,
+    "phaseSeconds": {
+      "march": 53.99999999999822,
+      "officer": 30.44999999999955,
+      "boss": 35.06666666666596,
+      "intentionalHitStop": 0
+    },
+    "resultLatencySeconds": 1.6166049999999819,
+    "fps": 49.67095797543056,
+    "performance": {
+      "sampleCount": 6016,
+      "over50ms": 39,
+      "over100ms": 0,
+      "p95ms": 37.15800000005402,
+      "scope": "foreground battle render intervals, native host dependent"
+    },
+    "renderErrors": [],
+    "invalidRects": [],
+    "createdNodes": 418,
+    "troops": 15,
+    "crates": {
+      "weapon": 3,
+      "grain": 2,
+      "arms": 2,
+      "treasure": 1
+    },
+    "cycles": 5,
+    "save": {
+      "schemaVersion": 2,
+      "rulesVersion": "ios-playable-20260928",
+      "ruleBests": {
+        "ios-playable-20260928": {
+          "c01": 67,
+          "c02": 26,
+          "c03": 12,
+          "c04": 32,
+          "c05": 7,
+          "c06": 9,
+          "c07": 72,
+          "c08": 15
+        }
+      },
+      "cleared": [
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c06",
+        "c07",
+        "c08"
+      ],
+      "best": {
+        "c01": 67,
+        "c02": 26,
+        "c03": 12,
+        "c04": 32,
+        "c05": 7,
+        "c06": 9,
+        "c07": 72,
+        "c08": 15
+      },
+      "claimed": [
+        "run:mukwpi2c-qchlk8fx0cp",
+        "run:mukwutpx-81ba1wkcjl6",
+        "run:mukwxyd0-1gbarwgu8zkj",
+        "run:mukx0tr8-24s8oo0wfv5",
+        "run:mukx4b5m-wwtmvkc4xqq",
+        "run:mukx7lus-0u6xwqjprs9i",
+        "run:mukxbqx3-xadgwej3b2q",
+        "run:mukxf7s1-28zccq9k1yt"
+      ],
+      "weapons": [
+        "spear",
+        "guding",
+        "huaji",
+        "shuangji",
+        "yitian",
+        "shemao",
+        "qinggang",
+        "guandao"
+      ],
+      "weaponLevels": {
+        "spear": 1,
+        "guding": 1,
+        "huaji": 1,
+        "shuangji": 1,
+        "yitian": 1,
+        "shemao": 1,
+        "qinggang": 1,
+        "guandao": 1
+      },
+      "captures": [
+        "lubu",
+        "dian",
+        "xu",
+        "liao",
+        "xiahou",
+        "lumeng",
+        "sunxiang",
+        "luxun",
+        "zhao",
+        "zhang"
+      ],
+      "visits": [
+        "hua",
+        "sunjian",
+        "diao",
+        "xun",
+        "guo",
+        "zhou"
+      ],
+      "allies": [
+        "yuan",
+        "cao",
+        "sunce",
+        "sunquan"
+      ],
+      "treasures": [
+        "taiping",
+        "yuxi",
+        "chitu",
+        "mengde",
+        "muniu",
+        "dilu"
+      ],
+      "companions": [
+        "sunxiang",
+        "luxun"
+      ],
+      "support": "hua",
+      "slots": {
+        "dian": "taiping",
+        "qi": "yuxi",
+        "ma": "chitu"
+      },
+      "xp": 240,
+      "seen": [
+        "jiao",
+        "dong",
+        "hua",
+        "sunjian",
+        "yuan",
+        "lubu",
+        "diao",
+        "dian",
+        "xu",
+        "xun",
+        "cao",
+        "xiahou",
+        "liao",
+        "guo",
+        "sunce",
+        "lumeng",
+        "zhou",
+        "luxun",
+        "sunxiang",
+        "sunquan",
+        "zhang",
+        "zhao"
+      ]
+    }
+  },
+  {
+    "chapter": 9,
+    "runId": "mukxitif-tnyewew63af",
+    "scope": "actual native simulator, external accessibility touch controls",
+    "won": true,
+    "foregroundSeconds": 108.59286799999977,
+    "simulationSeconds": 108.59999999999512,
+    "phaseSeconds": {
+      "march": 53.99999999999822,
+      "officer": 18.533333333333562,
+      "boss": 36.0666666666659,
+      "intentionalHitStop": 0
+    },
+    "resultLatencySeconds": 1.6071129999998959,
+    "fps": 49.16516274172514,
+    "performance": {
+      "sampleCount": 5418,
+      "over50ms": 19,
+      "over100ms": 0,
+      "p95ms": 37.58599999989383,
+      "scope": "foreground battle render intervals, native host dependent"
+    },
+    "renderErrors": [],
+    "invalidRects": [],
+    "createdNodes": 441,
+    "troops": 22,
+    "crates": {
+      "weapon": 3,
+      "arms": 2,
+      "treasure": 1,
+      "grain": 1
+    },
+    "cycles": 5,
+    "save": {
+      "schemaVersion": 2,
+      "rulesVersion": "ios-playable-20260928",
+      "ruleBests": {
+        "ios-playable-20260928": {
+          "c01": 67,
+          "c02": 26,
+          "c03": 12,
+          "c04": 32,
+          "c05": 7,
+          "c06": 9,
+          "c07": 72,
+          "c08": 15,
+          "c09": 22
+        }
+      },
+      "cleared": [
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c06",
+        "c07",
+        "c08",
+        "c09"
+      ],
+      "best": {
+        "c01": 67,
+        "c02": 26,
+        "c03": 12,
+        "c04": 32,
+        "c05": 7,
+        "c06": 9,
+        "c07": 72,
+        "c08": 15,
+        "c09": 22
+      },
+      "claimed": [
+        "run:mukwpi2c-qchlk8fx0cp",
+        "run:mukwutpx-81ba1wkcjl6",
+        "run:mukwxyd0-1gbarwgu8zkj",
+        "run:mukx0tr8-24s8oo0wfv5",
+        "run:mukx4b5m-wwtmvkc4xqq",
+        "run:mukx7lus-0u6xwqjprs9i",
+        "run:mukxbqx3-xadgwej3b2q",
+        "run:mukxf7s1-28zccq9k1yt",
+        "run:mukxitif-tnyewew63af"
+      ],
+      "weapons": [
+        "spear",
+        "guding",
+        "huaji",
+        "shuangji",
+        "yitian",
+        "shemao",
+        "qinggang",
+        "guandao",
+        "shuanggu"
+      ],
+      "weaponLevels": {
+        "spear": 1,
+        "guding": 1,
+        "huaji": 1,
+        "shuangji": 1,
+        "yitian": 1,
+        "shemao": 1,
+        "qinggang": 1,
+        "guandao": 1,
+        "shuanggu": 1
+      },
+      "captures": [
+        "lubu",
+        "dian",
+        "xu",
+        "liao",
+        "xiahou",
+        "lumeng",
+        "sunxiang",
+        "luxun",
+        "zhao",
+        "zhang",
+        "guan",
+        "huang"
+      ],
+      "visits": [
+        "hua",
+        "sunjian",
+        "diao",
+        "xun",
+        "guo",
+        "zhou"
+      ],
+      "allies": [
+        "yuan",
+        "cao",
+        "sunce",
+        "sunquan"
+      ],
+      "treasures": [
+        "taiping",
+        "yuxi",
+        "chitu",
+        "mengde",
+        "muniu",
+        "dilu",
+        "qingnang"
+      ],
+      "companions": [
+        "zhao",
+        "zhang"
+      ],
+      "support": "hua",
+      "slots": {
+        "dian": "taiping",
+        "qi": "yuxi",
+        "ma": "chitu"
+      },
+      "xp": 270,
+      "seen": [
+        "jiao",
+        "dong",
+        "hua",
+        "sunjian",
+        "yuan",
+        "lubu",
+        "diao",
+        "dian",
+        "xu",
+        "xun",
+        "cao",
+        "xiahou",
+        "liao",
+        "guo",
+        "sunce",
+        "lumeng",
+        "zhou",
+        "luxun",
+        "sunxiang",
+        "sunquan",
+        "zhang",
+        "zhao",
+        "guan",
+        "huang"
+      ]
+    }
+  },
+  {
+    "chapter": 10,
+    "runId": "mukxlxvt-dgc0nzwfmzl",
+    "scope": "actual native simulator, external accessibility touch controls",
+    "won": true,
+    "foregroundSeconds": 120.97500400000044,
+    "simulationSeconds": 120.98333333332775,
+    "phaseSeconds": {
+      "march": 50.01666666666511,
+      "officer": 25.366666666666507,
+      "boss": 45.599999999998694,
+      "intentionalHitStop": 0
+    },
+    "resultLatencySeconds": 1.608360000000102,
+    "fps": 42.70563173645634,
+    "performance": {
+      "sampleCount": 5235,
+      "over50ms": 31,
+      "over100ms": 0,
+      "p95ms": 38.782000000122935,
+      "scope": "foreground battle render intervals, native host dependent"
+    },
+    "renderErrors": [],
+    "invalidRects": [],
+    "createdNodes": 441,
+    "troops": 14,
+    "crates": {
+      "weapon": 3,
+      "grain": 2,
+      "arms": 2,
+      "treasure": 1
+    },
+    "cycles": 6,
+    "save": {
+      "schemaVersion": 2,
+      "rulesVersion": "ios-playable-20260928",
+      "ruleBests": {
+        "ios-playable-20260928": {
+          "c01": 67,
+          "c02": 26,
+          "c03": 12,
+          "c04": 32,
+          "c05": 7,
+          "c06": 9,
+          "c07": 72,
+          "c08": 15,
+          "c09": 22,
+          "c10": 14
+        }
+      },
+      "cleared": [
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c06",
+        "c07",
+        "c08",
+        "c09",
+        "c10"
+      ],
+      "best": {
+        "c01": 67,
+        "c02": 26,
+        "c03": 12,
+        "c04": 32,
+        "c05": 7,
+        "c06": 9,
+        "c07": 72,
+        "c08": 15,
+        "c09": 22,
+        "c10": 14
+      },
+      "claimed": [
+        "run:mukwpi2c-qchlk8fx0cp",
+        "run:mukwutpx-81ba1wkcjl6",
+        "run:mukwxyd0-1gbarwgu8zkj",
+        "run:mukx0tr8-24s8oo0wfv5",
+        "run:mukx4b5m-wwtmvkc4xqq",
+        "run:mukx7lus-0u6xwqjprs9i",
+        "run:mukxbqx3-xadgwej3b2q",
+        "run:mukxf7s1-28zccq9k1yt",
+        "run:mukxitif-tnyewew63af",
+        "run:mukxlxvt-dgc0nzwfmzl"
+      ],
+      "weapons": [
+        "spear",
+        "guding",
+        "huaji",
+        "shuangji",
+        "yitian",
+        "shemao",
+        "qinggang",
+        "guandao",
+        "shuanggu",
+        "liannu"
+      ],
+      "weaponLevels": {
+        "spear": 1,
+        "guding": 1,
+        "huaji": 1,
+        "shuangji": 1,
+        "yitian": 1,
+        "shemao": 1,
+        "qinggang": 1,
+        "guandao": 1,
+        "shuanggu": 1,
+        "liannu": 1
+      },
+      "captures": [
+        "lubu",
+        "dian",
+        "xu",
+        "liao",
+        "xiahou",
+        "lumeng",
+        "sunxiang",
+        "luxun",
+        "zhao",
+        "zhang",
+        "guan",
+        "huang",
+        "machao",
+        "jiang"
+      ],
+      "visits": [
+        "hua",
+        "sunjian",
+        "diao",
+        "xun",
+        "guo",
+        "zhou",
+        "zhuge",
+        "pang",
+        "sima"
+      ],
+      "allies": [
+        "yuan",
+        "cao",
+        "sunce",
+        "sunquan",
+        "liu"
+      ],
+      "treasures": [
+        "taiping",
+        "yuxi",
+        "chitu",
+        "mengde",
+        "muniu",
+        "dilu",
+        "qingnang",
+        "qixing"
+      ],
+      "companions": [
+        "guan",
+        "huang"
+      ],
+      "support": "hua",
+      "slots": {
+        "dian": "taiping",
+        "qi": "yuxi",
+        "ma": "chitu"
+      },
+      "xp": 300,
+      "seen": [
+        "jiao",
+        "dong",
+        "hua",
+        "sunjian",
+        "yuan",
+        "lubu",
+        "diao",
+        "dian",
+        "xu",
+        "xun",
+        "cao",
+        "xiahou",
+        "liao",
+        "guo",
+        "sunce",
+        "lumeng",
+        "zhou",
+        "luxun",
+        "sunxiang",
+        "sunquan",
+        "zhang",
+        "zhao",
+        "guan",
+        "huang",
+        "zhuge",
+        "pang",
+        "machao",
+        "jiang",
+        "sima",
+        "liu"
+      ]
+    }
+  }
+]

@@ -1,0 +1,407 @@
+[
+  {
+    "key": "g_front_xuWind",
+    "sourceBox": [
+      65,
+      26,
+      238,
+      220
+    ],
+    "runtimeRect": [
+      4,
+      4,
+      173,
+      194
+    ]
+  },
+  {
+    "key": "g_front_liaoWind",
+    "sourceBox": [
+      43,
+      230,
+      254,
+      414
+    ],
+    "runtimeRect": [
+      185,
+      4,
+      211,
+      184
+    ]
+  },
+  {
+    "key": "g_front_xiahouWind",
+    "sourceBox": [
+      60,
+      417,
+      247,
+      620
+    ],
+    "runtimeRect": [
+      404,
+      4,
+      187,
+      203
+    ]
+  },
+  {
+    "key": "g_front_lumengWind",
+    "sourceBox": [
+      36,
+      638,
+      245,
+      832
+    ],
+    "runtimeRect": [
+      599,
+      4,
+      209,
+      194
+    ]
+  },
+  {
+    "key": "g_front_luxunWind",
+    "sourceBox": [
+      51,
+      835,
+      246,
+      1051
+    ],
+    "runtimeRect": [
+      816,
+      4,
+      195,
+      216
+    ]
+  },
+  {
+    "key": "g_front_zhaoWind",
+    "sourceBox": [
+      35,
+      1057,
+      244,
+      1251
+    ],
+    "runtimeRect": [
+      1019,
+      4,
+      209,
+      194
+    ]
+  },
+  {
+    "key": "g_front_huangWind",
+    "sourceBox": [
+      42,
+      1247,
+      235,
+      1450
+    ],
+    "runtimeRect": [
+      1236,
+      4,
+      193,
+      203
+    ]
+  },
+  {
+    "key": "g_front_pangWind",
+    "sourceBox": [
+      63,
+      1451,
+      223,
+      1668
+    ],
+    "runtimeRect": [
+      1437,
+      4,
+      160,
+      217
+    ]
+  },
+  {
+    "key": "g_front_machaoWind",
+    "sourceBox": [
+      29,
+      1678,
+      244,
+      1906
+    ],
+    "runtimeRect": [
+      1605,
+      4,
+      215,
+      228
+    ]
+  },
+  {
+    "key": "g_front_xuStrike",
+    "sourceBox": [
+      311,
+      58,
+      489,
+      220
+    ],
+    "runtimeRect": [
+      1828,
+      4,
+      178,
+      162
+    ]
+  },
+  {
+    "key": "g_front_liaoStrike",
+    "sourceBox": [
+      319,
+      244,
+      498,
+      417
+    ],
+    "runtimeRect": [
+      4,
+      240,
+      179,
+      173
+    ]
+  },
+  {
+    "key": "g_front_xiahouStrike",
+    "sourceBox": [
+      310,
+      440,
+      460,
+      621
+    ],
+    "runtimeRect": [
+      191,
+      240,
+      150,
+      181
+    ]
+  },
+  {
+    "key": "g_front_lumengStrike",
+    "sourceBox": [
+      304,
+      649,
+      508,
+      835
+    ],
+    "runtimeRect": [
+      349,
+      240,
+      204,
+      186
+    ]
+  },
+  {
+    "key": "g_front_luxunStrike",
+    "sourceBox": [
+      307,
+      865,
+      488,
+      1052
+    ],
+    "runtimeRect": [
+      561,
+      240,
+      181,
+      187
+    ]
+  },
+  {
+    "key": "g_front_zhaoStrike",
+    "sourceBox": [
+      303,
+      1074,
+      498,
+      1250
+    ],
+    "runtimeRect": [
+      750,
+      240,
+      195,
+      176
+    ]
+  },
+  {
+    "key": "g_front_huangStrike",
+    "sourceBox": [
+      303,
+      1255,
+      492,
+      1440
+    ],
+    "runtimeRect": [
+      953,
+      240,
+      189,
+      185
+    ]
+  },
+  {
+    "key": "g_front_pangStrike",
+    "sourceBox": [
+      314,
+      1449,
+      479,
+      1668
+    ],
+    "runtimeRect": [
+      1150,
+      240,
+      165,
+      219
+    ]
+  },
+  {
+    "key": "g_front_machaoStrike",
+    "sourceBox": [
+      279,
+      1687,
+      505,
+      1907
+    ],
+    "runtimeRect": [
+      1323,
+      240,
+      226,
+      220
+    ]
+  },
+  {
+    "key": "g_front_xuRec",
+    "sourceBox": [
+      564,
+      54,
+      762,
+      220
+    ],
+    "runtimeRect": [
+      1557,
+      240,
+      198,
+      166
+    ]
+  },
+  {
+    "key": "g_front_liaoRec",
+    "sourceBox": [
+      559,
+      240,
+      769,
+      412
+    ],
+    "runtimeRect": [
+      1763,
+      240,
+      210,
+      172
+    ]
+  },
+  {
+    "key": "g_front_xiahouRec",
+    "sourceBox": [
+      553,
+      447,
+      762,
+      618
+    ],
+    "runtimeRect": [
+      4,
+      468,
+      209,
+      171
+    ]
+  },
+  {
+    "key": "g_front_lumengRec",
+    "sourceBox": [
+      553,
+      654,
+      762,
+      833
+    ],
+    "runtimeRect": [
+      221,
+      468,
+      209,
+      179
+    ]
+  },
+  {
+    "key": "g_front_luxunRec",
+    "sourceBox": [
+      557,
+      868,
+      755,
+      1050
+    ],
+    "runtimeRect": [
+      438,
+      468,
+      198,
+      182
+    ]
+  },
+  {
+    "key": "g_front_zhaoRec",
+    "sourceBox": [
+      552,
+      1078,
+      766,
+      1258
+    ],
+    "runtimeRect": [
+      644,
+      468,
+      214,
+      180
+    ]
+  },
+  {
+    "key": "g_front_huangRec",
+    "sourceBox": [
+      558,
+      1259,
+      733,
+      1451
+    ],
+    "runtimeRect": [
+      866,
+      468,
+      175,
+      192
+    ]
+  },
+  {
+    "key": "g_front_pangRec",
+    "sourceBox": [
+      570,
+      1465,
+      728,
+      1668
+    ],
+    "runtimeRect": [
+      1049,
+      468,
+      158,
+      203
+    ]
+  },
+  {
+    "key": "g_front_machaoRec",
+    "sourceBox": [
+      548,
+      1701,
+      774,
+      1903
+    ],
+    "runtimeRect": [
+      1215,
+      468,
+      226,
+      202
+    ]
+  }
+]

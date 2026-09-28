@@ -1,0 +1,271 @@
+{
+  "verificationScope": "isolated-native-visual-fixture:S01",
+  "version": "ios-playable-20260928",
+  "engine": "Cocos native Sprite/Graphics/Label",
+  "screen": "collection",
+  "chapter": 0,
+  "runId": "",
+  "revision": 3,
+  "save": {
+    "schemaVersion": 2,
+    "rulesVersion": "ios-playable-20260928",
+    "ruleBests": {},
+    "cleared": [
+      "c01",
+      "c02",
+      "c03",
+      "c04",
+      "c05",
+      "c06",
+      "c07",
+      "c08",
+      "c09",
+      "c10"
+    ],
+    "best": {},
+    "claimed": [],
+    "weapons": [
+      "spear",
+      "guding",
+      "huaji",
+      "shuangji",
+      "yitian",
+      "shemao",
+      "qinggang",
+      "guandao",
+      "shuanggu",
+      "liannu"
+    ],
+    "weaponLevels": {
+      "spear": 1
+    },
+    "captures": [
+      "lubu",
+      "dian",
+      "xu",
+      "liao",
+      "xiahou",
+      "lumeng",
+      "sunxiang",
+      "luxun",
+      "zhao",
+      "zhang",
+      "guan",
+      "huang",
+      "machao",
+      "jiang"
+    ],
+    "visits": [
+      "hua",
+      "sunjian",
+      "diao",
+      "xun",
+      "guo",
+      "zhou",
+      "zhuge",
+      "pang",
+      "sima"
+    ],
+    "allies": [
+      "yuan",
+      "cao",
+      "sunce",
+      "sunquan",
+      "liu"
+    ],
+    "treasures": [
+      "taiping",
+      "yuxi",
+      "chitu",
+      "mengde",
+      "muniu",
+      "dilu",
+      "qingnang",
+      "qixing"
+    ],
+    "companions": [
+      "liao",
+      "xiahou"
+    ],
+    "support": "xun",
+    "slots": {
+      "dian": "mengde",
+      "qi": "yuxi",
+      "ma": "chitu"
+    },
+    "xp": 0,
+    "seen": [
+      "jiao",
+      "dong",
+      "hua",
+      "sunjian",
+      "yuan",
+      "lubu",
+      "lubu",
+      "diao",
+      "dian",
+      "xu",
+      "dian",
+      "xu",
+      "xun",
+      "cao",
+      "xiahou",
+      "liao",
+      "liao",
+      "xiahou",
+      "guo",
+      "cao",
+      "sunce",
+      "lumeng",
+      "lumeng",
+      "sunce",
+      "zhou",
+      "luxun",
+      "sunxiang",
+      "luxun",
+      "zhou",
+      "sunquan",
+      "zhang",
+      "zhao",
+      "zhao",
+      "zhang",
+      "guan",
+      "huang",
+      "guan",
+      "huang",
+      "zhuge",
+      "pang",
+      "machao",
+      "machao",
+      "jiang",
+      "zhuge",
+      "pang",
+      "sima",
+      "liu"
+    ]
+  },
+  "saveNotice": "",
+  "buttons": [
+    {
+      "id": "tab-people",
+      "x": 12,
+      "y": 158,
+      "w": 120.66666666666667,
+      "h": 48
+    },
+    {
+      "id": "tab-weapons",
+      "x": 140.66666666666669,
+      "y": 158,
+      "w": 120.66666666666667,
+      "h": 48
+    },
+    {
+      "id": "tab-treasures",
+      "x": 269.33333333333337,
+      "y": 158,
+      "w": 120.66666666666667,
+      "h": 48
+    },
+    {
+      "id": "person-machao",
+      "x": 18,
+      "y": 216,
+      "w": 120,
+      "h": 99
+    },
+    {
+      "id": "person-pang",
+      "x": 142,
+      "y": 216,
+      "w": 120,
+      "h": 99
+    },
+    {
+      "id": "person-jiang",
+      "x": 266,
+      "y": 216,
+      "w": 120,
+      "h": 99
+    },
+    {
+      "id": "prev-page",
+      "x": 105,
+      "y": 724,
+      "w": 48,
+      "h": 48
+    },
+    {
+      "id": "next-page",
+      "x": 249,
+      "y": 724,
+      "w": 48,
+      "h": 48
+    },
+    {
+      "id": "back",
+      "x": 12,
+      "y": 782,
+      "w": 76,
+      "h": 48
+    }
+  ],
+  "viewport": {
+    "width": 402,
+    "height": 874,
+    "safe": {
+      "left": 0,
+      "top": 62,
+      "right": 402,
+      "bottom": 840
+    },
+    "capsule": null,
+    "source": "cocos-native",
+    "safeSource": "cocos-native-safe-area",
+    "capsuleSource": "not-available",
+    "revision": 0
+  },
+  "nativeNodes": 0,
+  "createdNodes": 0,
+  "invalidRects": [],
+  "renderErrors": [],
+  "foregroundElapsedSeconds": 0,
+  "resultReadyLatencySeconds": 0,
+  "resultError": "",
+  "missingArt": [],
+  "performance": {
+    "sampleCount": 0,
+    "over50ms": 0,
+    "over100ms": 0,
+    "p95ms": 0,
+    "scope": "foreground battle render intervals, native host dependent"
+  },
+  "fps": 0,
+  "audio": {
+    "active": false,
+    "hidden": false,
+    "bgmEnabled": false,
+    "musicRequested": false,
+    "musicReady": false,
+    "musicTrack": null,
+    "musicPlaying": false,
+    "effectChannels": 5,
+    "playingEffects": [],
+    "limits": {
+      "perKind": 1,
+      "globalVoices": 3,
+      "globalVolume": 0.65,
+      "startsPerSecond": 12,
+      "minStartGapMs": 25
+    },
+    "counters": {
+      "played": 0,
+      "suppressedBusy": 0,
+      "suppressedRate": 0,
+      "suppressedBudget": 0,
+      "loadFailures": 0
+    },
+    "loading": false
+  },
+  "error": ""
+}

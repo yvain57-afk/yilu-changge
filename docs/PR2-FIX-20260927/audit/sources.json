@@ -1,0 +1,62 @@
+{
+  "commit": "c6aa92cf26b22a6682099c26e9203b70b6d14f6f",
+  "pr": "https://github.com/yvain57-afk/yilu-changge/pull/2",
+  "sources": {
+    "entry": {
+      "path": "docs/FORMAL-20260927/GITHUB_REVIEW.md",
+      "url": "https://github.com/yvain57-afk/yilu-changge/blob/c6aa92cf26b22a6682099c26e9203b70b6d14f6f/docs/FORMAL-20260927/GITHUB_REVIEW.md"
+    },
+    "acceptance": {
+      "path": "docs/FORMAL-20260927/ACCEPTANCE.md",
+      "url": "https://github.com/yvain57-afk/yilu-changge/blob/c6aa92cf26b22a6682099c26e9203b70b6d14f6f/docs/FORMAL-20260927/ACCEPTANCE.md"
+    },
+    "parameters": {
+      "path": "docs/FORMAL-20260927/PARAMETERS.md",
+      "url": "https://github.com/yvain57-afk/yilu-changge/blob/c6aa92cf26b22a6682099c26e9203b70b6d14f6f/docs/FORMAL-20260927/PARAMETERS.md"
+    },
+    "art": {
+      "path": "docs/FORMAL-20260927/ART_STATUS.md",
+      "url": "https://github.com/yvain57-afk/yilu-changge/blob/c6aa92cf26b22a6682099c26e9203b70b6d14f6f/docs/FORMAL-20260927/ART_STATUS.md"
+    },
+    "current_rules": {
+      "path": "docs/BATTLE-PREVIEW-20260926/统一玩法规则-20260927.md",
+      "url": "https://github.com/yvain57-afk/yilu-changge/blob/c6aa92cf26b22a6682099c26e9203b70b6d14f6f/docs/BATTLE-PREVIEW-20260926/统一玩法规则-20260927.md"
+    },
+    "data": {
+      "path": "assets/scripts/formal/data.ts",
+      "url": "https://github.com/yvain57-afk/yilu-changge/blob/c6aa92cf26b22a6682099c26e9203b70b6d14f6f/assets/scripts/formal/data.ts"
+    },
+    "store": {
+      "path": "assets/scripts/formal/store.ts",
+      "url": "https://github.com/yvain57-afk/yilu-changge/blob/c6aa92cf26b22a6682099c26e9203b70b6d14f6f/assets/scripts/formal/store.ts"
+    },
+    "battle": {
+      "path": "assets/scripts/formal/battle.ts",
+      "url": "https://github.com/yvain57-afk/yilu-changge/blob/c6aa92cf26b22a6682099c26e9203b70b6d14f6f/assets/scripts/formal/battle.ts"
+    },
+    "formal_ui": {
+      "path": "assets/scripts/formal/FormalGame.ts",
+      "url": "https://github.com/yvain57-afk/yilu-changge/blob/c6aa92cf26b22a6682099c26e9203b70b6d14f6f/assets/scripts/formal/FormalGame.ts"
+    },
+    "entry_code": {
+      "path": "assets/scripts/Game.ts",
+      "url": "https://github.com/yvain57-afk/yilu-changge/blob/c6aa92cf26b22a6682099c26e9203b70b6d14f6f/assets/scripts/Game.ts"
+    },
+    "formal_tests": {
+      "path": "tests/formal.test.ts",
+      "url": "https://github.com/yvain57-afk/yilu-changge/blob/c6aa92cf26b22a6682099c26e9203b70b6d14f6f/tests/formal.test.ts"
+    },
+    "recording_delta": {
+      "path": "evidence/FORMAL-20260927/AFTER_RECORDING_DIFF.json",
+      "url": "https://github.com/yvain57-afk/yilu-changge/blob/c6aa92cf26b22a6682099c26e9203b70b6d14f6f/evidence/FORMAL-20260927/AFTER_RECORDING_DIFF.json"
+    },
+    "old_failure_baseline": {
+      "path": "evidence/FORMAL-20260927/baseline-failures.log",
+      "url": "https://github.com/yvain57-afk/yilu-changge/blob/c6aa92cf26b22a6682099c26e9203b70b6d14f6f/evidence/FORMAL-20260927/baseline-failures.log"
+    },
+    "natural_result": {
+      "path": "evidence/FORMAL-20260927/natural-ten-result.json",
+      "url": "https://github.com/yvain57-afk/yilu-changge/blob/c6aa92cf26b22a6682099c26e9203b70b6d14f6f/evidence/FORMAL-20260927/natural-ten-result.json"
+    }
+  }
+}

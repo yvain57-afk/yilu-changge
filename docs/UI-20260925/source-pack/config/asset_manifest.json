@@ -1,0 +1,835 @@
+{
+  "schemaVersion": 1,
+  "status": "production_plan_only",
+  "assetCount": 42,
+  "assets": [
+    {
+      "assetId": "home-bg-far",
+      "group": "home",
+      "role": "远山城墙",
+      "sourceSizeSuggestion": [
+        1170,
+        2532
+      ],
+      "transparent": false,
+      "consumers": [
+        "home"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "No hero/text/UI baked in; runtime output size audited."
+    },
+    {
+      "assetId": "home-bg-mid",
+      "group": "home",
+      "role": "城寨中景",
+      "sourceSizeSuggestion": [
+        1170,
+        2532
+      ],
+      "transparent": true,
+      "consumers": [
+        "home"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Layer with subtle parallax only if it does not distract."
+    },
+    {
+      "assetId": "home-bg-near",
+      "group": "home",
+      "role": "近景装饰",
+      "sourceSizeSuggestion": [
+        1170,
+        2532
+      ],
+      "transparent": true,
+      "consumers": [
+        "home"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Must not obscure hero, title, buttons."
+    },
+    {
+      "assetId": "hero-home",
+      "group": "characters",
+      "role": "当前主角独立主视觉",
+      "sourceSizeSuggestion": [
+        900,
+        1400
+      ],
+      "transparent": true,
+      "consumers": [
+        "home"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Use existing identity and gear; approved back/side-back pose."
+    },
+    {
+      "assetId": "brand-title",
+      "group": "ui",
+      "role": "品牌独立字标",
+      "sourceSizeSuggestion": [
+        1000,
+        360
+      ],
+      "transparent": true,
+      "consumers": [
+        "home"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Review Chinese strokes; no decorative English required."
+    },
+    {
+      "assetId": "map-bg",
+      "group": "map",
+      "role": "三关地图底图",
+      "sourceSizeSuggestion": [
+        1170,
+        2200
+      ],
+      "transparent": false,
+      "consumers": [
+        "chapters"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "No baked nodes/numbers/labels; one contiguous area."
+    },
+    {
+      "assetId": "map-scroll",
+      "group": "map",
+      "role": "空卷轴标题框",
+      "sourceSizeSuggestion": [
+        720,
+        260
+      ],
+      "transparent": true,
+      "consumers": [
+        "chapters"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Stretchable center; title rendered separately."
+    },
+    {
+      "assetId": "map-node-current",
+      "group": "map",
+      "role": "节点 current",
+      "sourceSizeSuggestion": [
+        160,
+        160
+      ],
+      "transparent": true,
+      "consumers": [
+        "chapters"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "48 logical minimum touch area; symbol+color distinction."
+    },
+    {
+      "assetId": "map-node-cleared",
+      "group": "map",
+      "role": "节点 cleared",
+      "sourceSizeSuggestion": [
+        160,
+        160
+      ],
+      "transparent": true,
+      "consumers": [
+        "chapters"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "48 logical minimum touch area; symbol+color distinction."
+    },
+    {
+      "assetId": "map-node-locked",
+      "group": "map",
+      "role": "节点 locked",
+      "sourceSizeSuggestion": [
+        160,
+        160
+      ],
+      "transparent": true,
+      "consumers": [
+        "chapters"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "48 logical minimum touch area; symbol+color distinction."
+    },
+    {
+      "assetId": "map-node-available",
+      "group": "map",
+      "role": "节点 available",
+      "sourceSizeSuggestion": [
+        160,
+        160
+      ],
+      "transparent": true,
+      "consumers": [
+        "chapters"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "48 logical minimum touch area; symbol+color distinction."
+    },
+    {
+      "assetId": "camp-bg",
+      "group": "camp",
+      "role": "静止营地",
+      "sourceSizeSuggestion": [
+        1170,
+        2532
+      ],
+      "transparent": false,
+      "consumers": [
+        "camp",
+        "transition",
+        "meeting"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "No fake economy or enemy actors."
+    },
+    {
+      "assetId": "result-bg",
+      "group": "result",
+      "role": "战后旗帜舞台",
+      "sourceSizeSuggestion": [
+        1170,
+        2532
+      ],
+      "transparent": false,
+      "consumers": [
+        "result"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "No numbers, rewards or static duplicate hero."
+    },
+    {
+      "assetId": "button-primary",
+      "group": "ui",
+      "role": "按钮 primary",
+      "sourceSizeSuggestion": [
+        600,
+        120
+      ],
+      "transparent": true,
+      "consumers": [
+        "all_ui"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Nine-slice/shape component; separate text and state overlay."
+    },
+    {
+      "assetId": "button-secondary",
+      "group": "ui",
+      "role": "按钮 secondary",
+      "sourceSizeSuggestion": [
+        600,
+        120
+      ],
+      "transparent": true,
+      "consumers": [
+        "all_ui"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Nine-slice/shape component; separate text and state overlay."
+    },
+    {
+      "assetId": "ui-panel",
+      "group": "ui",
+      "role": "panel",
+      "sourceSizeSuggestion": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "consumers": [
+        "all_ui"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Actual dimensions and slicing selected per role at import."
+    },
+    {
+      "assetId": "ui-portrait-frame",
+      "group": "ui",
+      "role": "portrait-frame",
+      "sourceSizeSuggestion": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "consumers": [
+        "all_ui"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Actual dimensions and slicing selected per role at import."
+    },
+    {
+      "assetId": "ui-equipment-frame",
+      "group": "ui",
+      "role": "equipment-frame",
+      "sourceSizeSuggestion": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "consumers": [
+        "all_ui"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Actual dimensions and slicing selected per role at import."
+    },
+    {
+      "assetId": "ui-reward-frame",
+      "group": "ui",
+      "role": "reward-frame",
+      "sourceSizeSuggestion": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "consumers": [
+        "all_ui"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Actual dimensions and slicing selected per role at import."
+    },
+    {
+      "assetId": "ui-modal",
+      "group": "ui",
+      "role": "modal",
+      "sourceSizeSuggestion": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "consumers": [
+        "all_ui"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Actual dimensions and slicing selected per role at import."
+    },
+    {
+      "assetId": "ui-selection-mark",
+      "group": "ui",
+      "role": "selection-mark",
+      "sourceSizeSuggestion": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "consumers": [
+        "all_ui"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Actual dimensions and slicing selected per role at import."
+    },
+    {
+      "assetId": "ui-lock-mark",
+      "group": "ui",
+      "role": "lock-mark",
+      "sourceSizeSuggestion": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "consumers": [
+        "all_ui"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Actual dimensions and slicing selected per role at import."
+    },
+    {
+      "assetId": "ui-navigation-icons",
+      "group": "ui",
+      "role": "navigation-icons",
+      "sourceSizeSuggestion": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "consumers": [
+        "all_ui"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Actual dimensions and slicing selected per role at import."
+    },
+    {
+      "assetId": "portrait-set",
+      "group": "characters",
+      "role": "现有人物头像集",
+      "sourceSizeSuggestion": [
+        512,
+        512
+      ],
+      "transparent": true,
+      "consumers": [
+        "home",
+        "loadout",
+        "meeting"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Per actual character ID; size is per portrait."
+    },
+    {
+      "assetId": "battle-actor-set",
+      "group": "characters",
+      "role": "真实人物动作集",
+      "sourceSizeSuggestion": null,
+      "transparent": true,
+      "consumers": [
+        "battle"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Per-actor frames/rig and foot/muzzle anchors; not a single army image."
+    },
+    {
+      "assetId": "weapon-icon-set",
+      "group": "icons",
+      "role": "现有兵器图标",
+      "sourceSizeSuggestion": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "consumers": [
+        "loadout",
+        "battle"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Actual gear IDs only."
+    },
+    {
+      "assetId": "reward-icon-set",
+      "group": "icons",
+      "role": "真实奖项图标",
+      "sourceSizeSuggestion": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "consumers": [
+        "battle",
+        "result"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "No virtual money or fake rewards."
+    },
+    {
+      "assetId": "road-tile",
+      "group": "world",
+      "role": "连续路面",
+      "sourceSizeSuggestion": [
+        1024,
+        1024
+      ],
+      "transparent": false,
+      "consumers": [
+        "battle"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Seamless longitudinal motion; no baked actors/targets."
+    },
+    {
+      "assetId": "roadside-set",
+      "group": "world",
+      "role": "路缘/塔楼/帐篷/岩岸",
+      "sourceSizeSuggestion": null,
+      "transparent": true,
+      "consumers": [
+        "battle"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Individual props; fully offscreen before recycling."
+    },
+    {
+      "assetId": "actual-divider-set",
+      "group": "world",
+      "role": "第二关实际隔离结构",
+      "sourceSizeSuggestion": null,
+      "transparent": true,
+      "consumers": [
+        "battle"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Open lower route; exact rendered blocking geometry alignment."
+    },
+    {
+      "assetId": "gate-posts",
+      "group": "gates",
+      "role": "门柱",
+      "sourceSizeSuggestion": [
+        256,
+        512
+      ],
+      "transparent": true,
+      "consumers": [
+        "battle"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Foot anchors and shadow separate from value text."
+    },
+    {
+      "assetId": "gate-face-positive",
+      "group": "gates",
+      "role": "门面 positive",
+      "sourceSizeSuggestion": [
+        512,
+        320
+      ],
+      "transparent": true,
+      "consumers": [
+        "battle"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Numbers/signs rendered separately; state reflects true value."
+    },
+    {
+      "assetId": "gate-face-negative",
+      "group": "gates",
+      "role": "门面 negative",
+      "sourceSizeSuggestion": [
+        512,
+        320
+      ],
+      "transparent": true,
+      "consumers": [
+        "battle"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Numbers/signs rendered separately; state reflects true value."
+    },
+    {
+      "assetId": "gate-face-neutral",
+      "group": "gates",
+      "role": "门面 neutral",
+      "sourceSizeSuggestion": [
+        512,
+        320
+      ],
+      "transparent": true,
+      "consumers": [
+        "battle"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Numbers/signs rendered separately; state reflects true value."
+    },
+    {
+      "assetId": "gate-symbol-set",
+      "group": "gates",
+      "role": "门增减语义图标",
+      "sourceSizeSuggestion": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "consumers": [
+        "battle"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Do not rely only on color."
+    },
+    {
+      "assetId": "continuous-one-gate",
+      "group": "gates",
+      "role": "连续+1实体",
+      "sourceSizeSuggestion": null,
+      "transparent": true,
+      "consumers": [
+        "battle"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Each independently rendered/collected; no group auto-grant."
+    },
+    {
+      "assetId": "reward-box-body-set",
+      "group": "boxes",
+      "role": "木/金属箱体与破裂态",
+      "sourceSizeSuggestion": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "consumers": [
+        "battle"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "No new tier gameplay; material only."
+    },
+    {
+      "assetId": "box-type-icons",
+      "group": "boxes",
+      "role": "兵员/武器/连门/援手",
+      "sourceSizeSuggestion": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "consumers": [
+        "battle"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Four actual reward classes."
+    },
+    {
+      "assetId": "projectile-set",
+      "group": "effects",
+      "role": "弩/连弩/火矢",
+      "sourceSizeSuggestion": null,
+      "transparent": true,
+      "consumers": [
+        "battle"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Match true projectile paths; no extra damage."
+    },
+    {
+      "assetId": "hit-and-reward-fx",
+      "group": "effects",
+      "role": "命中/改值/领奖特效",
+      "sourceSizeSuggestion": null,
+      "transparent": true,
+      "consumers": [
+        "battle"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Short pooled FX; cannot write model."
+    },
+    {
+      "assetId": "shadow-set",
+      "group": "world",
+      "role": "脚底与物件阴影",
+      "sourceSizeSuggestion": [
+        128,
+        64
+      ],
+      "transparent": true,
+      "consumers": [
+        "battle"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "Anchor at actual projected foot point."
+    },
+    {
+      "assetId": "result-title-set",
+      "group": "result",
+      "role": "胜利/失利独立标题",
+      "sourceSizeSuggestion": [
+        900,
+        400
+      ],
+      "transparent": true,
+      "consumers": [
+        "result"
+      ],
+      "status": "audit_then_reuse_modify_or_create",
+      "runtimePath": null,
+      "sourcePath": null,
+      "licenseNote": null,
+      "anchor": null,
+      "sliceInsets": null,
+      "notes": "No rating stars or sample rewards baked in."
+    }
+  ]
+}

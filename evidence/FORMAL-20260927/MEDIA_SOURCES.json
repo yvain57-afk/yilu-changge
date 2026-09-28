@@ -1,0 +1,28 @@
+{
+  "naturalVideo": "natural-ten.mp4",
+  "scope": "Original-speed silent canvas capture. No time acceleration. No audio verification. Final UI/tactic/atlas follow-up is separate and explicitly fixture-based.",
+  "clips": [
+    {
+      "file": "battle-short.mp4",
+      "source": "natural-ten.mp4",
+      "start": 112.71,
+      "end": 159.56,
+      "speed": 1,
+      "purpose": "continuous chapter 4 sample"
+    },
+    {
+      "file": "natural-three.mp4",
+      "source": "natural-ten.mp4",
+      "start": 0,
+      "end": 110.89,
+      "speed": 1,
+      "purpose": "reuse first three chapters of full continuous run"
+    },
+    {
+      "file": "final-ui-control.mp4",
+      "source": "final-ui-control.webm",
+      "speed": 1,
+      "purpose": "final mobile UI and explicit control target fixture; not natural progression"
+    }
+  ]
+}

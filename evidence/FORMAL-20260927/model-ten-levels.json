@@ -1,0 +1,451 @@
+{
+  "scope": "Fixed-step production model, scripted steering; not Cocos or device evidence",
+  "runs": [
+    {
+      "chapter": 1,
+      "phase": "won",
+      "t": 29.56666666666627,
+      "troops": 59,
+      "weapon": "spear",
+      "tier": 3,
+      "arms": "repeater",
+      "stats": {
+        "bossStrikes": 2,
+        "dodged": 2,
+        "hitTaken": 0,
+        "volleys": 19,
+        "arrowsHit": 29,
+        "taiping": 0,
+        "supportSaved": 0,
+        "crates": {
+          "weapon": 3,
+          "arms": 2
+        },
+        "gates": 5
+      },
+      "totals": {
+        "damage": 142.9999999999997,
+        "gate": 6,
+        "troops": 29
+      }
+    },
+    {
+      "chapter": 2,
+      "phase": "won",
+      "t": 34.48333333333266,
+      "troops": 70,
+      "weapon": "spear",
+      "tier": 3,
+      "arms": "repeater",
+      "stats": {
+        "bossStrikes": 3,
+        "dodged": 3,
+        "hitTaken": 0,
+        "volleys": 22,
+        "arrowsHit": 41,
+        "taiping": 5,
+        "supportSaved": 0,
+        "crates": {
+          "weapon": 3,
+          "arms": 2,
+          "treasure": 1
+        },
+        "gates": 5
+      },
+      "totals": {
+        "damage": 173.99999999999963,
+        "gate": 7,
+        "troops": 40
+      }
+    },
+    {
+      "chapter": 3,
+      "phase": "won",
+      "t": 35.29999999999928,
+      "troops": 82,
+      "weapon": "guding",
+      "tier": 3,
+      "arms": "repeater",
+      "stats": {
+        "bossStrikes": 3,
+        "dodged": 3,
+        "hitTaken": 0,
+        "volleys": 22,
+        "arrowsHit": 33,
+        "taiping": 6,
+        "supportSaved": 0,
+        "crates": {
+          "weapon": 4,
+          "grain": 1,
+          "arms": 2,
+          "treasure": 1
+        },
+        "gates": 5
+      },
+      "totals": {
+        "damage": 214.99999999999932,
+        "gate": 11,
+        "troops": 46
+      }
+    },
+    {
+      "chapter": 4,
+      "phase": "won",
+      "t": 41.44999999999893,
+      "troops": 83,
+      "weapon": "huaji",
+      "tier": 3,
+      "arms": "repeater",
+      "stats": {
+        "bossStrikes": 4,
+        "dodged": 4,
+        "hitTaken": 0,
+        "volleys": 26,
+        "arrowsHit": 42,
+        "taiping": 6,
+        "supportSaved": 0,
+        "crates": {
+          "weapon": 4,
+          "grain": 1,
+          "arms": 2,
+          "treasure": 1
+        },
+        "gates": 5
+      },
+      "totals": {
+        "damage": 227.99999999999886,
+        "gate": 8,
+        "troops": 47
+      }
+    },
+    {
+      "chapter": 5,
+      "phase": "won",
+      "t": 45.749999999998685,
+      "troops": 81,
+      "weapon": "shuangji",
+      "tier": 3,
+      "arms": "repeater",
+      "stats": {
+        "bossStrikes": 5,
+        "dodged": 5,
+        "hitTaken": 0,
+        "volleys": 28,
+        "arrowsHit": 32,
+        "taiping": 6,
+        "supportSaved": 0,
+        "crates": {
+          "weapon": 4,
+          "grain": 1,
+          "arms": 2,
+          "treasure": 1
+        },
+        "gates": 5
+      },
+      "totals": {
+        "damage": 255.99999999999838,
+        "gate": 6,
+        "troops": 45
+      }
+    },
+    {
+      "chapter": 6,
+      "phase": "won",
+      "t": 39.64999999999903,
+      "troops": 73,
+      "weapon": "yitian",
+      "tier": 3,
+      "arms": "repeater",
+      "stats": {
+        "bossStrikes": 4,
+        "dodged": 3,
+        "hitTaken": 0,
+        "volleys": 25,
+        "arrowsHit": 49,
+        "taiping": 0,
+        "supportSaved": 1,
+        "crates": {
+          "weapon": 4,
+          "grain": 1,
+          "arms": 2,
+          "treasure": 1
+        },
+        "gates": 5
+      },
+      "totals": {
+        "damage": 243.99999999999952,
+        "gate": 6,
+        "troops": 37
+      }
+    },
+    {
+      "chapter": 7,
+      "phase": "won",
+      "t": 39.96666666666568,
+      "troops": 76,
+      "weapon": "shemao",
+      "tier": 3,
+      "arms": "repeater",
+      "stats": {
+        "bossStrikes": 3,
+        "dodged": 3,
+        "hitTaken": 0,
+        "volleys": 25,
+        "arrowsHit": 31,
+        "taiping": 0,
+        "supportSaved": 0,
+        "crates": {
+          "weapon": 4,
+          "grain": 1,
+          "arms": 2,
+          "treasure": 1
+        },
+        "gates": 5
+      },
+      "totals": {
+        "damage": 265.0000000000001,
+        "gate": 8,
+        "troops": 40
+      }
+    },
+    {
+      "chapter": 8,
+      "phase": "won",
+      "t": 40.23333333333233,
+      "troops": 72,
+      "weapon": "qinggang",
+      "tier": 3,
+      "arms": "repeater",
+      "stats": {
+        "bossStrikes": 3,
+        "dodged": 3,
+        "hitTaken": 0,
+        "volleys": 26,
+        "arrowsHit": 48,
+        "taiping": 0,
+        "supportSaved": 1,
+        "crates": {
+          "weapon": 4,
+          "grain": 1,
+          "arms": 2,
+          "treasure": 1
+        },
+        "gates": 5
+      },
+      "totals": {
+        "damage": 270.9999999999988,
+        "gate": 9,
+        "troops": 42
+      }
+    },
+    {
+      "chapter": 9,
+      "phase": "won",
+      "t": 46.416666666665314,
+      "troops": 71,
+      "weapon": "guandao",
+      "tier": 3,
+      "arms": "repeater",
+      "stats": {
+        "bossStrikes": 5,
+        "dodged": 4,
+        "hitTaken": 0,
+        "volleys": 29,
+        "arrowsHit": 39,
+        "taiping": 0,
+        "supportSaved": 0,
+        "crates": {
+          "weapon": 4,
+          "grain": 1,
+          "arms": 2,
+          "treasure": 1
+        },
+        "gates": 5
+      },
+      "totals": {
+        "damage": 294,
+        "gate": 15,
+        "troops": 41
+      }
+    },
+    {
+      "chapter": 10,
+      "phase": "won",
+      "t": 44.94999999999873,
+      "troops": 61,
+      "weapon": "shuanggu",
+      "tier": 3,
+      "arms": "repeater",
+      "stats": {
+        "bossStrikes": 4,
+        "dodged": 4,
+        "hitTaken": 0,
+        "volleys": 28,
+        "arrowsHit": 52,
+        "taiping": 0,
+        "supportSaved": 1,
+        "crates": {
+          "weapon": 4,
+          "arms": 2,
+          "treasure": 1
+        },
+        "gates": 5
+      },
+      "totals": {
+        "damage": 304.99999999999994,
+        "gate": 9,
+        "troops": 31
+      }
+    }
+  ],
+  "save": {
+    "schemaVersion": 2,
+    "cleared": [
+      "c01",
+      "c02",
+      "c03",
+      "c04",
+      "c05",
+      "c06",
+      "c07",
+      "c08",
+      "c09",
+      "c10"
+    ],
+    "best": {
+      "c01": 59,
+      "c02": 70,
+      "c03": 82,
+      "c04": 83,
+      "c05": 81,
+      "c06": 73,
+      "c07": 76,
+      "c08": 72,
+      "c09": 71,
+      "c10": 61
+    },
+    "claimed": [
+      "run:check-0",
+      "run:check-1",
+      "run:check-2",
+      "run:check-3",
+      "run:check-4",
+      "run:check-5",
+      "run:check-6",
+      "run:check-7",
+      "run:check-8",
+      "run:check-9"
+    ],
+    "weapons": [
+      "spear",
+      "guding",
+      "huaji",
+      "shuangji",
+      "yitian",
+      "shemao",
+      "qinggang",
+      "guandao",
+      "shuanggu",
+      "liannu"
+    ],
+    "weaponLevels": {
+      "spear": 1,
+      "guding": 1,
+      "huaji": 1,
+      "shuangji": 1,
+      "yitian": 1,
+      "shemao": 1,
+      "qinggang": 1,
+      "guandao": 1,
+      "shuanggu": 1,
+      "liannu": 1
+    },
+    "captures": [
+      "lubu",
+      "dian",
+      "xu",
+      "liao",
+      "xiahou",
+      "lumeng",
+      "sunxiang",
+      "luxun",
+      "zhao",
+      "zhang",
+      "guan",
+      "huang",
+      "machao",
+      "jiang"
+    ],
+    "visits": [
+      "hua",
+      "sunjian",
+      "diao",
+      "xun",
+      "guo",
+      "zhou",
+      "zhuge",
+      "pang",
+      "sima"
+    ],
+    "allies": [
+      "yuan",
+      "cao",
+      "sunce",
+      "sunquan",
+      "liu"
+    ],
+    "treasures": [
+      "taiping",
+      "yuxi",
+      "chitu",
+      "mengde",
+      "muniu",
+      "dilu",
+      "qingnang",
+      "qixing"
+    ],
+    "companions": [
+      "huang",
+      "jiang"
+    ],
+    "support": "hua",
+    "slots": {
+      "dian": "qingnang",
+      "qi": "qixing",
+      "ma": "dilu"
+    },
+    "xp": 300,
+    "seen": [
+      "jiao",
+      "dong",
+      "hua",
+      "sunjian",
+      "yuan",
+      "lubu",
+      "diao",
+      "dian",
+      "xu",
+      "xun",
+      "cao",
+      "xiahou",
+      "liao",
+      "guo",
+      "sunce",
+      "lumeng",
+      "zhou",
+      "luxun",
+      "sunxiang",
+      "sunquan",
+      "zhang",
+      "zhao",
+      "guan",
+      "huang",
+      "zhuge",
+      "pang",
+      "machao",
+      "jiang",
+      "sima",
+      "liu"
+    ]
+  }
+}

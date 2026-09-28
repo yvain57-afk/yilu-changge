@@ -1,0 +1,6 @@
+FILE NAME: wall-parts.png   (landscape image, e.g. 1536x1024)
+Content: separate parts for a LOW wooden palisade divider that runs down the middle of a dirt road, same style as the reference props, three-quarter top-down camera (looking down about 50 degrees):
+(a) a single short sharpened wooden stake/post, about knee height relative to a soldier, rope binding near the top; draw 3 slightly different variants side by side;
+(b) one horizontal rough wooden rail log with rope lashings at both ends, long thin (about 8:1);
+(c) a squat square stone pier / block (end cap of the palisade) with a small neutral earth-yellow triangular flag on a short pole planted on top; draw 2 variants (one slightly damaged);
+(d) a small pile of broken splintered stakes (debris after the palisade is destroyed).

@@ -1,0 +1,607 @@
+[
+  {
+    "key": "g_ios_gait0",
+    "source": "hero-gait-source.png",
+    "box": [
+      91,
+      58,
+      523,
+      604
+    ]
+  },
+  {
+    "key": "g_ios_gait1",
+    "source": "hero-gait-source.png",
+    "box": [
+      668,
+      64,
+      1099,
+      602
+    ]
+  },
+  {
+    "key": "g_ios_gait2",
+    "source": "hero-gait-source.png",
+    "box": [
+      94,
+      678,
+      541,
+      1222
+    ]
+  },
+  {
+    "key": "g_ios_gait3",
+    "source": "hero-gait-source.png",
+    "box": [
+      693,
+      683,
+      1126,
+      1221
+    ]
+  },
+  {
+    "key": "g_end_jiao_0",
+    "source": "boss-ending-source.png",
+    "box": [
+      117,
+      2,
+      288,
+      175
+    ]
+  },
+  {
+    "key": "g_end_dong_0",
+    "source": "boss-ending-source.png",
+    "box": [
+      83,
+      174,
+      328,
+      350
+    ]
+  },
+  {
+    "key": "g_end_dian_0",
+    "source": "boss-ending-source.png",
+    "box": [
+      87,
+      348,
+      323,
+      529
+    ]
+  },
+  {
+    "key": "g_end_cao_0",
+    "source": "boss-ending-source.png",
+    "box": [
+      97,
+      509,
+      304,
+      686
+    ]
+  },
+  {
+    "key": "g_end_sunce_0",
+    "source": "boss-ending-source.png",
+    "box": [
+      104,
+      675,
+      298,
+      863
+    ]
+  },
+  {
+    "key": "g_end_zhou_0",
+    "source": "boss-ending-source.png",
+    "box": [
+      105,
+      837,
+      310,
+      1027
+    ]
+  },
+  {
+    "key": "g_end_zhang_0",
+    "source": "boss-ending-source.png",
+    "box": [
+      104,
+      1008,
+      319,
+      1195
+    ]
+  },
+  {
+    "key": "g_end_guan_0",
+    "source": "boss-ending-source.png",
+    "box": [
+      96,
+      1157,
+      332,
+      1360
+    ]
+  },
+  {
+    "key": "g_end_zhuge_0",
+    "source": "boss-ending-source.png",
+    "box": [
+      106,
+      1350,
+      309,
+      1531
+    ]
+  },
+  {
+    "key": "g_end_jiao_2",
+    "source": "boss-ending-source.png",
+    "box": [
+      762,
+      9,
+      927,
+      175
+    ]
+  },
+  {
+    "key": "g_end_dong_2",
+    "source": "boss-ending-source.png",
+    "box": [
+      710,
+      188,
+      978,
+      346
+    ]
+  },
+  {
+    "key": "g_end_dian_2",
+    "source": "boss-ending-source.png",
+    "box": [
+      776,
+      352,
+      944,
+      526
+    ]
+  },
+  {
+    "key": "g_end_cao_2",
+    "source": "boss-ending-source.png",
+    "box": [
+      767,
+      518,
+      958,
+      690
+    ]
+  },
+  {
+    "key": "g_end_sunce_2",
+    "source": "boss-ending-source.png",
+    "box": [
+      790,
+      683,
+      928,
+      866
+    ]
+  },
+  {
+    "key": "g_end_zhou_2",
+    "source": "boss-ending-source.png",
+    "box": [
+      774,
+      853,
+      956,
+      1037
+    ]
+  },
+  {
+    "key": "g_end_zhang_2",
+    "source": "boss-ending-source.png",
+    "box": [
+      773,
+      1012,
+      942,
+      1198
+    ]
+  },
+  {
+    "key": "g_end_guan_2",
+    "source": "boss-ending-source.png",
+    "box": [
+      772,
+      1187,
+      956,
+      1368
+    ]
+  },
+  {
+    "key": "g_end_zhuge_2",
+    "source": "boss-ending-source.png",
+    "box": [
+      779,
+      1359,
+      957,
+      1532
+    ]
+  },
+  {
+    "key": "g_portrait_jiao",
+    "sourceFrame": "g_boss_jiao_idle",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_dong",
+    "sourceFrame": "g_boss_dong_idle",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_dian",
+    "sourceFrame": "g_boss_dian_idle",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_cao",
+    "sourceFrame": "g_boss_cao_idle",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_sunce",
+    "sourceFrame": "g_boss_sunce_idle",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_zhou",
+    "sourceFrame": "g_boss_zhou_idle",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_zhang",
+    "sourceFrame": "g_boss_zhang_idle",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_guan",
+    "sourceFrame": "g_boss_guan_idle",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_zhuge",
+    "sourceFrame": "g_boss_zhuge_idle",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_lubu",
+    "sourceFrame": "g_lubuIdle",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_xu",
+    "sourceFrame": "g_front_xuRun0",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_liao",
+    "sourceFrame": "g_front_liaoRun0",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_xiahou",
+    "sourceFrame": "g_front_xiahouRun0",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_lumeng",
+    "sourceFrame": "g_front_lumengRun0",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_luxun",
+    "sourceFrame": "g_front_luxunRun0",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_zhao",
+    "sourceFrame": "g_front_zhaoRun0",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_huang",
+    "sourceFrame": "g_front_huangRun0",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_pang",
+    "sourceFrame": "g_front_pangRun0",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_machao",
+    "sourceFrame": "g_front_machaoRun0",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_sunxiang",
+    "sourceFrame": "g_front_sunxiangRun0",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_portrait_jiang",
+    "sourceFrame": "g_front_jiangRun0",
+    "region": "upper 62 percent, front only"
+  },
+  {
+    "key": "g_mid_spear_0",
+    "source": "attack-mid-source.png",
+    "box": [
+      40,
+      28,
+      539,
+      375
+    ]
+  },
+  {
+    "key": "g_mid_guandao_0",
+    "source": "attack-mid-source.png",
+    "box": [
+      37,
+      418,
+      533,
+      736
+    ]
+  },
+  {
+    "key": "g_mid_shemao_0",
+    "source": "attack-mid-source.png",
+    "box": [
+      42,
+      766,
+      536,
+      1114
+    ]
+  },
+  {
+    "key": "g_mid_huaji_0",
+    "source": "attack-mid-source.png",
+    "box": [
+      39,
+      1100,
+      562,
+      1494
+    ]
+  },
+  {
+    "key": "g_mid_spear_1",
+    "source": "attack-mid-source.png",
+    "box": [
+      588,
+      79,
+      994,
+      375
+    ]
+  },
+  {
+    "key": "g_mid_guandao_1",
+    "source": "attack-mid-source.png",
+    "box": [
+      586,
+      439,
+      1012,
+      737
+    ]
+  },
+  {
+    "key": "g_mid_shemao_1",
+    "source": "attack-mid-source.png",
+    "box": [
+      584,
+      804,
+      1002,
+      1113
+    ]
+  },
+  {
+    "key": "g_mid_huaji_1",
+    "source": "attack-mid-source.png",
+    "box": [
+      583,
+      1179,
+      1011,
+      1497
+    ]
+  },
+  {
+    "key": "g_mid_guding_0",
+    "source": "derived-mid-source.png",
+    "box": [
+      191,
+      19,
+      551,
+      273
+    ]
+  },
+  {
+    "key": "g_mid_shuangji_0",
+    "source": "derived-mid-source.png",
+    "box": [
+      183,
+      273,
+      554,
+      526
+    ]
+  },
+  {
+    "key": "g_mid_yitian_0",
+    "source": "derived-mid-source.png",
+    "box": [
+      176,
+      525,
+      566,
+      774
+    ]
+  },
+  {
+    "key": "g_mid_qinggang_0",
+    "source": "derived-mid-source.png",
+    "box": [
+      178,
+      771,
+      566,
+      1027
+    ]
+  },
+  {
+    "key": "g_mid_shuanggu_0",
+    "source": "derived-mid-source.png",
+    "box": [
+      171,
+      1004,
+      560,
+      1287
+    ]
+  },
+  {
+    "key": "g_mid_guding_1",
+    "source": "derived-mid-source.png",
+    "box": [
+      620,
+      28,
+      896,
+      275
+    ]
+  },
+  {
+    "key": "g_mid_shuangji_1",
+    "source": "derived-mid-source.png",
+    "box": [
+      600,
+      284,
+      902,
+      536
+    ]
+  },
+  {
+    "key": "g_mid_yitian_1",
+    "source": "derived-mid-source.png",
+    "box": [
+      621,
+      543,
+      931,
+      786
+    ]
+  },
+  {
+    "key": "g_mid_qinggang_1",
+    "source": "derived-mid-source.png",
+    "box": [
+      620,
+      783,
+      931,
+      1038
+    ]
+  },
+  {
+    "key": "g_mid_shuanggu_1",
+    "source": "derived-mid-source.png",
+    "box": [
+      618,
+      1042,
+      952,
+      1291
+    ]
+  },
+  {
+    "key": "g_mid_liannu_0",
+    "source": "crossbow-mid-source.png",
+    "box": [
+      59,
+      205,
+      772,
+      813
+    ]
+  },
+  {
+    "key": "g_mid_liannu_1",
+    "source": "crossbow-mid-source.png",
+    "box": [
+      815,
+      202,
+      1496,
+      822
+    ]
+  },
+  {
+    "key": "g_portrait_sunxiang",
+    "source": "front-additions-source.png",
+    "box": [
+      37,
+      38,
+      776,
+      998
+    ]
+  },
+  {
+    "key": "g_portrait_jiang",
+    "source": "front-additions-source.png",
+    "box": [
+      744,
+      16,
+      1515,
+      1002
+    ]
+  },
+  {
+    "key": "g_part_shuanggu",
+    "source": "dual-parts-source.png",
+    "box": [
+      342,
+      14,
+      578,
+      1017
+    ]
+  },
+  {
+    "key": "g_part_shuangji",
+    "source": "dual-parts-source.png",
+    "box": [
+      878,
+      14,
+      1321,
+      947
+    ]
+  },
+  {
+    "key": "g_ride_chitu_run0_fingers",
+    "sourceFrame": "g_ride_chitu_run0",
+    "purpose": "near fingers occlude real weapon grip"
+  },
+  {
+    "key": "g_ride_chitu_run1_fingers",
+    "sourceFrame": "g_ride_chitu_run1",
+    "purpose": "near fingers occlude real weapon grip"
+  },
+  {
+    "key": "g_ride_chitu_wind_fingers",
+    "sourceFrame": "g_ride_chitu_wind",
+    "purpose": "near fingers occlude real weapon grip"
+  },
+  {
+    "key": "g_ride_chitu_rel_fingers",
+    "sourceFrame": "g_ride_chitu_rel",
+    "purpose": "near fingers occlude real weapon grip"
+  },
+  {
+    "key": "g_ride_dilu_run0_fingers",
+    "sourceFrame": "g_ride_dilu_run0",
+    "purpose": "near fingers occlude real weapon grip"
+  },
+  {
+    "key": "g_ride_dilu_run1_fingers",
+    "sourceFrame": "g_ride_dilu_run1",
+    "purpose": "near fingers occlude real weapon grip"
+  },
+  {
+    "key": "g_ride_dilu_wind_fingers",
+    "sourceFrame": "g_ride_dilu_wind",
+    "purpose": "near fingers occlude real weapon grip"
+  },
+  {
+    "key": "g_ride_dilu_rel_fingers",
+    "sourceFrame": "g_ride_dilu_rel",
+    "purpose": "near fingers occlude real weapon grip"
+  }
+]

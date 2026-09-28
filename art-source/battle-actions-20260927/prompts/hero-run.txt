@@ -1,0 +1,10 @@
+FILE NAME: hero-run.png   (landscape image, e.g. 1536x1024)
+Content: a RUN CYCLE sprite sheet of the SAME young hero as in the reference image (seen from BEHIND, three-quarter top-down back view, running up/away from the camera): black topknot hair with a blue ribbon, dark blue-steel scale armor with bronze shoulder guards, long royal-blue cape, dark boots. Keep the character identical in every cell (same size, same colors, same proportions, same camera).
+Layout: strict grid of 4 rows x 4 columns, each figure centered in its cell, full body visible (head to boots about 78% of cell height), feet on one consistent baseline per row. Nothing cropped.
+Row 1 weapon: plain iron long spear with leaf-shaped head and red tassel.
+Row 2 weapon: Green Dragon Crescent Blade (large curved crescent blade, bronze dragon guard) — same weapon as reference row 1.
+Row 3 weapon: Serpent Spear (long wavy snake-shaped blade) — same weapon as reference row 2.
+Row 4 weapon: Sky-Piercer Halberd (spear point + two crescent side blades, red tassel) — same weapon as reference row 3.
+Columns = the 4 frames of one running loop, in this order: (1) LEFT foot forward planted, right foot pushing off behind; (2) passing pose, left leg supporting, right knee lifted under the body; (3) RIGHT foot forward planted, left foot pushing off behind; (4) passing pose, right leg supporting, left knee lifted.
+Across the 4 frames of a row ONLY the legs, the free arm swing and the cape flutter change; the weapon is carried in the right hand at the SAME diagonal angle (tip up and to the upper-right, above the shoulder) and the SAME grip position in all 4 frames, so the weapon stays stable while running. Body bob is subtle. Clear readable leg alternation.
+CRITICAL: The background MUST be one perfectly flat solid pure magenta #FF00FF over the whole canvas — no gradient, no vignette, no glow, no shadow halo, no dark backdrop. Figures/objects must not contain magenta or pink. Only call image generation once; if the background is not flat magenta, post-process so every background pixel is exactly #FF00FF before saving.
