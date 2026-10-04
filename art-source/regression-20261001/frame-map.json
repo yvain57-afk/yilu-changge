@@ -1,0 +1,386 @@
+{
+  "sheets": {
+    "regression_mount_sockets": "formal20260927/regression-mount-sockets",
+    "regression_held_parts": "formal20260927/regression-held-parts"
+  },
+  "frames": {
+    "r26_ride_jingfan_single": {
+      "s": "regression_mount_sockets",
+      "r": [
+        8,
+        8,
+        349,
+        447
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 393.36
+    },
+    "r26_ride_jingfan_crossbow": {
+      "s": "regression_mount_sockets",
+      "r": [
+        373,
+        8,
+        361,
+        421
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 370.48
+    },
+    "r26_ride_jingfan_bow": {
+      "s": "regression_mount_sockets",
+      "r": [
+        750,
+        8,
+        422,
+        437
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 384.56
+    },
+    "r26_ride_jingfan_dual": {
+      "s": "regression_mount_sockets",
+      "r": [
+        1188,
+        8,
+        346,
+        447
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 393.36
+    },
+    "r26_ride_jueying_single": {
+      "s": "regression_mount_sockets",
+      "r": [
+        1550,
+        8,
+        353,
+        446
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 392.48
+    },
+    "r26_ride_jueying_crossbow": {
+      "s": "regression_mount_sockets",
+      "r": [
+        8,
+        471,
+        361,
+        421
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 370.48
+    },
+    "r26_ride_jueying_bow": {
+      "s": "regression_mount_sockets",
+      "r": [
+        385,
+        471,
+        422,
+        437
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 384.56
+    },
+    "r26_ride_jueying_dual": {
+      "s": "regression_mount_sockets",
+      "r": [
+        823,
+        471,
+        345,
+        447
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 393.36
+    },
+    "r26_ride_jingfan_single_right_fingers": {
+      "s": "regression_mount_sockets",
+      "r": [
+        8,
+        930,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r26_ride_jingfan_single_left_fingers": {
+      "s": "regression_mount_sockets",
+      "r": [
+        36,
+        930,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r26_ride_jingfan_crossbow_right_fingers": {
+      "s": "regression_mount_sockets",
+      "r": [
+        64,
+        930,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r26_ride_jingfan_crossbow_left_fingers": {
+      "s": "regression_mount_sockets",
+      "r": [
+        92,
+        930,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r26_ride_jingfan_bow_right_fingers": {
+      "s": "regression_mount_sockets",
+      "r": [
+        120,
+        930,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r26_ride_jingfan_bow_left_fingers": {
+      "s": "regression_mount_sockets",
+      "r": [
+        148,
+        930,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r26_ride_jingfan_dual_right_fingers": {
+      "s": "regression_mount_sockets",
+      "r": [
+        176,
+        930,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r26_ride_jingfan_dual_left_fingers": {
+      "s": "regression_mount_sockets",
+      "r": [
+        204,
+        930,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r26_ride_jueying_single_right_fingers": {
+      "s": "regression_mount_sockets",
+      "r": [
+        232,
+        930,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r26_ride_jueying_single_left_fingers": {
+      "s": "regression_mount_sockets",
+      "r": [
+        260,
+        930,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r26_ride_jueying_crossbow_right_fingers": {
+      "s": "regression_mount_sockets",
+      "r": [
+        288,
+        930,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r26_ride_jueying_crossbow_left_fingers": {
+      "s": "regression_mount_sockets",
+      "r": [
+        316,
+        930,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r26_ride_jueying_bow_right_fingers": {
+      "s": "regression_mount_sockets",
+      "r": [
+        344,
+        930,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r26_ride_jueying_bow_left_fingers": {
+      "s": "regression_mount_sockets",
+      "r": [
+        372,
+        930,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r26_ride_jueying_dual_right_fingers": {
+      "s": "regression_mount_sockets",
+      "r": [
+        400,
+        930,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r26_ride_jueying_dual_left_fingers": {
+      "s": "regression_mount_sockets",
+      "r": [
+        428,
+        930,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r26_part_duanji": {
+      "s": "regression_held_parts",
+      "r": [
+        8,
+        8,
+        247,
+        460
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 460
+    },
+    "r26_part_dundao_shield": {
+      "s": "regression_held_parts",
+      "r": [
+        275,
+        8,
+        287,
+        460
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 460
+    },
+    "r26_part_dundao_blade": {
+      "s": "regression_held_parts",
+      "r": [
+        582,
+        8,
+        300,
+        306
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 306
+    }
+  }
+}

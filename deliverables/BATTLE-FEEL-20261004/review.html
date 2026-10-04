@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>一路长歌 · 战斗表现核验 0.12.6</title>
+<style>
+:root{color-scheme:dark;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;background:#10171d;color:#eee9dc}*{box-sizing:border-box}body{margin:0}main{max-width:1160px;padding:28px 22px 48px;margin:auto}h1{font-size:28px;line-height:1.35;margin:12px 0}h2{font-size:21px;margin:0 0 12px}p{line-height:1.7;margin:8px 0;color:#c9d0d0}.eyebrow{font-size:13px;color:#cfb36d}.actions,.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:18px 0}a{color:#a9dce3;text-underline-offset:3px}.button,button{border:1px solid #546068;border-radius:7px;background:#1e2a33;color:#efe9dc;padding:11px 16px;font:inherit;cursor:pointer;text-decoration:none}.primary,button[aria-pressed=true]{background:#c9ad68;border-color:#c9ad68;color:#172027}button:hover,.button:hover{filter:brightness(1.1)}button:focus-visible,a:focus-visible{outline:3px solid #91cedd;outline-offset:3px}section{padding-top:27px;margin-top:24px;border-top:1px solid #36424a}.changes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.changes b{display:block;margin:6px 0}.changes p{font-size:14px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:18px}.pair.single{grid-template-columns:1fr;max-width:490px;margin:auto}figure{margin:0;min-width:0;background:#1a242c;border:1px solid #36424a;border-radius:8px;overflow:hidden}figcaption{padding:11px 13px;color:#e9dfc7;font-size:14px;display:flex;justify-content:space-between;gap:12px}figure img{display:block;width:100%;height:auto}.image-link{display:block}figure video{display:block;width:100%;max-height:680px;background:#000}.meta{font-size:13px;line-height:1.6;color:#9caaad;overflow-wrap:anywhere}.spacer{flex:1}.checks{padding:15px 18px;border-left:3px solid #b69d63;background:#1b262d}.checks p{margin:6px 0}.small-links{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;margin-top:12px}[hidden]{display:none!important}@media(min-width:800px){.comparison img{max-height:760px;object-fit:contain;background:#0c1318}}@media(max-width:650px){main{padding:20px 14px}h1{font-size:25px}.changes{grid-template-columns:1fr;gap:4px}.pair{gap:8px}figcaption{font-size:12px;padding:9px 8px;flex-direction:column;gap:3px}.video-pair{grid-template-columns:1fr}.controls{gap:7px}button{padding:10px 12px}}
+</style>
+<main>
+ <header>
+  <div class="eyebrow">BATTLE-FEEL-20261004 · 0.12.6 / 2026100401</div>
+  <h1>向前行军，命中后看得见减员</h1>
+  <p>下面是正式 Cocos 场景中的实际前后截图和原速片。二十关、规则、装备、存档及既有音效继续保留。</p>
+  <nav class="actions"><a class="button primary" href="http://127.0.0.1:43219/">打开可玩版本</a><a class="button" href="#comparison">看同状态前后</a><a class="button" href="#video">看原速战斗</a><a href="REPORT.md">完整报告与手机状态</a></nav>
+  <div class="changes">
+   <div><b>主将回到队伍里</b><p>侧身大幅骑马立绘改为后背朝前行军，缩小人物比例；四匹坐骑使用真实独立行进帧。</p></div>
+   <div><b>伤害变得可读</b><p>受击有局部反冲和真实血量削减；敌军倒地后失去站立体积，队列留下缺口。</p></div>
+   <div><b>我方减员也有过程</b><p>损耗对应兵位倒地和短暂缺员，再由后排补位。血量、伤害和命中判定沿用既有规则。</p></div>
+  </div>
+ </header>
+ <section id="comparison">
+  <h2>四组同状态前后对照</h2>
+  <p>第17关 · 方天画戟一阶 · 惊帆 · 同种子、同编组、同站定输入、402×874 逻辑尺寸。截图按固定模拟 tick 采集，点击图片可看原图。</p>
+  <div class="controls" aria-label="选择同状态时间">
+   <button data-time="4" aria-pressed="false">4 秒</button><button data-time="6" aria-pressed="true">6 秒</button><button data-time="8" aria-pressed="false">8 秒</button><button data-time="10" aria-pressed="false">10 秒</button>
+   <span class="spacer"></span><button data-mode="before" aria-pressed="false">只看旧版</button><button data-mode="after" aria-pressed="false">只看新版</button><button data-mode="pair" aria-pressed="true">左右对照</button>
+  </div>
+  <p class="meta" id="comparison-state" aria-live="polite">6 秒 / 360 ticks · 前后兵力均为 12</p>
+  <div class="pair comparison" id="comparison-pair">
+   <figure data-figure="before"><figcaption><b>修复前 · 0.12.5</b><span>2026100304</span></figcaption><a class="image-link" id="before-link" href="images/before-fixed-6s.png" target="_blank" rel="noopener"><img id="before-img" src="images/before-fixed-6s.png" alt="第17关旧版6秒实际 Cocos 运行截图"></a></figure>
+   <figure data-figure="after"><figcaption><b>本轮 · 0.12.6</b><span>2026100401</span></figcaption><a class="image-link" id="after-link" href="images/after-fixed-6s.png" target="_blank" rel="noopener"><img id="after-img" src="images/after-fixed-6s.png" alt="第17关新版6秒实际 Cocos 运行截图"></a></figure>
+  </div>
+  <div class="small-links"><a id="before-state" href="images/before-fixed-6s.json">旧版运行状态 JSON</a><a id="after-state" href="images/after-fixed-6s.json">新版运行状态 JSON</a><a href="media/manifest.json">媒体来源与 SHA-256</a></div>
+ </section>
+ <section id="video">
+  <h2>35 秒连续原速战斗</h2>
+  <p>实际 Cocos WebGL，自动提供合法移动输入；1× 原速、无声音。两段均为连续战斗片段，不是真机录像，也不是音效或性能证明。</p>
+  <div class="controls"><button id="play-both">从头同步播放两段</button><button id="pause-both">暂停两段</button><span class="meta" id="video-state" aria-live="polite">可分别拖动进度查看出手、受击和减员。</span></div>
+  <div class="pair video-pair">
+   <figure><figcaption><b>旧版原速片</b><a href="media/before-normal-35s.mp4" download>下载</a></figcaption><video id="before-video" controls playsinline preload="metadata" poster="images/before-fixed-6s.png" src="media/before-normal-35s.mp4"></video></figure>
+   <figure><figcaption><b>新版原速片</b><a href="media/after-normal-35s.mp4" download>下载</a></figcaption><video id="after-video" controls playsinline preload="metadata" poster="images/after-fixed-6s.png" src="media/after-normal-35s.mp4"></video></figure>
+  </div>
+ </section>
+ <section>
+  <h2>完成范围与待验</h2>
+  <div class="checks"><p>iOS Release 构建已完成；手机安装与启动的实际状态请以 <a href="REPORT.md">REPORT.md</a> 为准。</p><p>主将诸葛连弩、雁翎弓、机关弩三类目前各只有 1 张独立行进身体帧，四相步态与专用受击源图尚未补齐；部分特殊敌军也保留旧行走动作。</p><p>真机触控、持续帧率、发热与后台恢复仍待验。这里的浏览器录制不能替代这些检查。</p></div>
+  <p class="meta">新版代码指纹：9262d33ad5370693eb90a2a70a23b8a40622c509989c970546f6a1ae57253b53<br>旧版代码指纹：434495b2036b2458f1a9914cc7e2bc18c7db92f23eebeaeab2e93ce8438a00a5</p>
+ </section>
+</main>
+<script>
+const times={4:23,6:12,8:8,10:8};let selected=6;
+document.querySelectorAll('[data-time]').forEach(button=>button.addEventListener('click',()=>{
+ selected=Number(button.dataset.time);document.querySelectorAll('[data-time]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.time)===selected)));
+ for(const side of ['before','after']){const base='images/'+side+'-fixed-'+selected+'s';document.getElementById(side+'-img').src=base+'.png';document.getElementById(side+'-img').alt='第17关'+(side==='before'?'旧版':'新版')+selected+'秒实际 Cocos 运行截图';document.getElementById(side+'-link').href=base+'.png';document.getElementById(side+'-state').href=base+'.json';}
+ document.getElementById('comparison-state').textContent=selected+' 秒 / '+selected*60+' ticks · 前后兵力均为 '+times[selected];
+}));
+document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener('click',()=>{
+ const mode=button.dataset.mode;document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));document.getElementById('comparison-pair').classList.toggle('single',mode!=='pair');document.querySelectorAll('[data-figure]').forEach(f=>f.hidden=mode!=='pair'&&f.dataset.figure!==mode);
+}));
+const videos=[document.getElementById('before-video'),document.getElementById('after-video')];
+document.getElementById('play-both').addEventListener('click',async()=>{videos.forEach(v=>{v.currentTime=0;v.playbackRate=1;});const results=await Promise.allSettled(videos.map(v=>v.play()));document.getElementById('video-state').textContent=results.every(r=>r.status==='fulfilled')?'两段正在以 1× 原速播放。':'浏览器限制了自动播放，请点视频各自的播放键。';});
+document.getElementById('pause-both').addEventListener('click',()=>{videos.forEach(v=>v.pause());document.getElementById('video-state').textContent='已暂停两段。';});
+</script>
+</html>

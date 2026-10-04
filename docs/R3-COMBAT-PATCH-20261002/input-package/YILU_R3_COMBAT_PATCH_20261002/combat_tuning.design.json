@@ -1,0 +1,542 @@
+{
+  "task_id": "YILU_R3_COMBAT_PATCH",
+  "baseline_snapshot": "s_20261002T140020_2551691b",
+  "baseline_code_fingerprint": "cb6842dee7e9b609ae7d840dbaf3133c9fc9bd4678187537c042f47bf2bb4527",
+  "status": "proposal_not_applied_or_tested",
+  "units": "Existing game world units and simulation seconds; not real metres",
+  "application_order": [
+    "fix spawn/despawn conflict",
+    "fix real range and projectile fairness",
+    "run old numbers with restored threats",
+    "apply bounded wave and speed design",
+    "measure with legal policies and calibrate"
+  ],
+  "first_candidate_hp_damage_policy": "retain existing enemy base HP/damage and current chapter multipliers until lifecycle correctness is verified",
+  "do_not_stack_speed_multipliers": true,
+  "preserve_friendly_base_dps_and_attack_count_first_candidate": true,
+  "no_hidden_player_scaling": true,
+  "no_forced_casualties": true,
+  "existing_special_species": [
+    "guard",
+    "shield",
+    "archer",
+    "cavalry",
+    "banner",
+    "mechanism"
+  ],
+  "ranged_proposal": {
+    "first_visible_acquisition_delay_seconds": [
+      0.25,
+      0.45
+    ],
+    "fire_range_world": [
+      28,
+      36
+    ],
+    "full_initial_cooldown_not_required": true,
+    "lock_at_warning": true,
+    "require_visible_source": true
+  },
+  "chapters": [
+    {
+      "chapter_id": "c01",
+      "chapter_number": 1,
+      "place": "广宗",
+      "pair": 1,
+      "initial_wave_size_range": [
+        8,
+        12
+      ],
+      "initial_light_self_speed": 2.8,
+      "initial_wave_interval_seconds": 3.5,
+      "initial_archer_share_target": 0.0,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 24,
+      "minimum_prominent_telegraph_seconds": 1.6,
+      "max_prominent_threats": 1,
+      "boss_id": "jiao",
+      "boss_pattern_design": [
+        "side_squeeze"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c02",
+      "chapter_number": 2,
+      "place": "虎牢",
+      "pair": 1,
+      "initial_wave_size_range": [
+        8,
+        12
+      ],
+      "initial_light_self_speed": 3.0,
+      "initial_wave_interval_seconds": 3.5,
+      "initial_archer_share_target": 0.0,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 24,
+      "minimum_prominent_telegraph_seconds": 1.6,
+      "max_prominent_threats": 1,
+      "boss_id": "dong",
+      "boss_pattern_design": [
+        "locked_sweep",
+        "guard_window"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c03",
+      "chapter_number": 3,
+      "place": "下邳",
+      "pair": 2,
+      "initial_wave_size_range": [
+        12,
+        16
+      ],
+      "initial_light_self_speed": 3.2,
+      "initial_wave_interval_seconds": 3.3,
+      "initial_archer_share_target": 0.12,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 32,
+      "minimum_prominent_telegraph_seconds": 1.45,
+      "max_prominent_threats": 1,
+      "boss_id": "lubu",
+      "boss_pattern_design": [
+        "alternating_double",
+        "locked_sweep"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c04",
+      "chapter_number": 4,
+      "place": "宛城",
+      "pair": 2,
+      "initial_wave_size_range": [
+        12,
+        16
+      ],
+      "initial_light_self_speed": 3.4,
+      "initial_wave_interval_seconds": 3.3,
+      "initial_archer_share_target": 0.12,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 32,
+      "minimum_prominent_telegraph_seconds": 1.45,
+      "max_prominent_threats": 1,
+      "boss_id": "dian",
+      "boss_pattern_design": [
+        "dual_short_lanes",
+        "guard_window"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c05",
+      "chapter_number": 5,
+      "place": "官渡",
+      "pair": 3,
+      "initial_wave_size_range": [
+        14,
+        18
+      ],
+      "initial_light_self_speed": 3.4,
+      "initial_wave_interval_seconds": 3.1,
+      "initial_archer_share_target": 0.12,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 38,
+      "minimum_prominent_telegraph_seconds": 1.4,
+      "max_prominent_threats": 2,
+      "boss_id": "cao",
+      "boss_pattern_design": [
+        "banner_formation",
+        "locked_thrust"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c06",
+      "chapter_number": 6,
+      "place": "曲阿",
+      "pair": 3,
+      "initial_wave_size_range": [
+        14,
+        18
+      ],
+      "initial_light_self_speed": 3.6,
+      "initial_wave_interval_seconds": 3.1,
+      "initial_archer_share_target": 0.12,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 38,
+      "minimum_prominent_telegraph_seconds": 1.4,
+      "max_prominent_threats": 2,
+      "boss_id": "sunce",
+      "boss_pattern_design": [
+        "locked_charge",
+        "sweep_after_recover"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c07",
+      "chapter_number": 7,
+      "place": "赤壁",
+      "pair": 4,
+      "initial_wave_size_range": [
+        16,
+        20
+      ],
+      "initial_light_self_speed": 3.6,
+      "initial_wave_interval_seconds": 3.0,
+      "initial_archer_share_target": 0.14,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 42,
+      "minimum_prominent_telegraph_seconds": 1.3,
+      "max_prominent_threats": 2,
+      "boss_id": "zhou",
+      "boss_pattern_design": [
+        "alternating_fire_zones",
+        "arrow_window"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c08",
+      "chapter_number": 8,
+      "place": "长坂",
+      "pair": 4,
+      "initial_wave_size_range": [
+        16,
+        20
+      ],
+      "initial_light_self_speed": 3.8,
+      "initial_wave_interval_seconds": 3.0,
+      "initial_archer_share_target": 0.14,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 42,
+      "minimum_prominent_telegraph_seconds": 1.3,
+      "max_prominent_threats": 2,
+      "boss_id": "zhang",
+      "boss_pattern_design": [
+        "roar_then_thrust",
+        "cross_lane_sweep"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c09",
+      "chapter_number": 9,
+      "place": "荆州",
+      "pair": 5,
+      "initial_wave_size_range": [
+        18,
+        22
+      ],
+      "initial_light_self_speed": 3.8,
+      "initial_wave_interval_seconds": 2.9,
+      "initial_archer_share_target": 0.14,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 48,
+      "minimum_prominent_telegraph_seconds": 1.25,
+      "max_prominent_threats": 2,
+      "boss_id": "guan",
+      "boss_pattern_design": [
+        "wide_sweep",
+        "locked_thrust"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c10",
+      "chapter_number": 10,
+      "place": "隆中",
+      "pair": 5,
+      "initial_wave_size_range": [
+        18,
+        22
+      ],
+      "initial_light_self_speed": 4.0,
+      "initial_wave_interval_seconds": 2.9,
+      "initial_archer_share_target": 0.14,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 48,
+      "minimum_prominent_telegraph_seconds": 1.25,
+      "max_prominent_threats": 2,
+      "boss_id": "zhuge",
+      "boss_pattern_design": [
+        "arrow_fan",
+        "sequential_lanes"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c11",
+      "chapter_number": 11,
+      "place": "神亭",
+      "pair": 6,
+      "initial_wave_size_range": [
+        18,
+        24
+      ],
+      "initial_light_self_speed": 4.0,
+      "initial_wave_interval_seconds": 2.8,
+      "initial_archer_share_target": 0.16,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 50,
+      "minimum_prominent_telegraph_seconds": 1.25,
+      "max_prominent_threats": 2,
+      "boss_id": "taishici",
+      "boss_pattern_design": [
+        "short_double",
+        "locked_thrust"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c12",
+      "chapter_number": 12,
+      "place": "濡须",
+      "pair": 6,
+      "initial_wave_size_range": [
+        18,
+        24
+      ],
+      "initial_light_self_speed": 4.3,
+      "initial_wave_interval_seconds": 2.8,
+      "initial_archer_share_target": 0.16,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 50,
+      "minimum_prominent_telegraph_seconds": 1.25,
+      "max_prominent_threats": 2,
+      "boss_id": "ganning",
+      "boss_pattern_design": [
+        "chain_sweep",
+        "charge_window"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c13",
+      "chapter_number": 13,
+      "place": "街亭",
+      "pair": 7,
+      "initial_wave_size_range": [
+        20,
+        24
+      ],
+      "initial_light_self_speed": 4.2,
+      "initial_wave_interval_seconds": 2.7,
+      "initial_archer_share_target": 0.16,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 54,
+      "minimum_prominent_telegraph_seconds": 1.2,
+      "max_prominent_threats": 2,
+      "boss_id": "zhanghe",
+      "boss_pattern_design": [
+        "hook_thrust",
+        "shield_window"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c14",
+      "chapter_number": 14,
+      "place": "樊城",
+      "pair": 7,
+      "initial_wave_size_range": [
+        20,
+        24
+      ],
+      "initial_light_self_speed": 4.5,
+      "initial_wave_interval_seconds": 2.7,
+      "initial_archer_share_target": 0.16,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 54,
+      "minimum_prominent_telegraph_seconds": 1.2,
+      "max_prominent_threats": 2,
+      "boss_id": "caoren",
+      "boss_pattern_design": [
+        "shield_slam",
+        "guard_window"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c15",
+      "chapter_number": 15,
+      "place": "阳平",
+      "pair": 8,
+      "initial_wave_size_range": [
+        22,
+        26
+      ],
+      "initial_light_self_speed": 4.6,
+      "initial_wave_interval_seconds": 2.6,
+      "initial_archer_share_target": 0.18,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 56,
+      "minimum_prominent_telegraph_seconds": 1.2,
+      "max_prominent_threats": 2,
+      "boss_id": "xiahouyuan",
+      "boss_pattern_design": [
+        "aimed_arrow",
+        "arrow_fan"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c16",
+      "chapter_number": 16,
+      "place": "定军山",
+      "pair": 8,
+      "initial_wave_size_range": [
+        22,
+        26
+      ],
+      "initial_light_self_speed": 4.8,
+      "initial_wave_interval_seconds": 2.6,
+      "initial_archer_share_target": 0.18,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 56,
+      "minimum_prominent_telegraph_seconds": 1.2,
+      "max_prominent_threats": 2,
+      "boss_id": "weiyan",
+      "boss_pattern_design": [
+        "heavy_sweep",
+        "locked_overhead"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c17",
+      "chapter_number": 17,
+      "place": "雒城",
+      "pair": 9,
+      "initial_wave_size_range": [
+        24,
+        28
+      ],
+      "initial_light_self_speed": 4.8,
+      "initial_wave_interval_seconds": 2.5,
+      "initial_archer_share_target": 0.18,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 60,
+      "minimum_prominent_telegraph_seconds": 1.15,
+      "max_prominent_threats": 3,
+      "boss_id": "zhangren",
+      "boss_pattern_design": [
+        "trap_lanes",
+        "aimed_arrow"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c18",
+      "chapter_number": 18,
+      "place": "剑阁",
+      "pair": 9,
+      "initial_wave_size_range": [
+        24,
+        28
+      ],
+      "initial_light_self_speed": 5.0,
+      "initial_wave_interval_seconds": 2.5,
+      "initial_archer_share_target": 0.18,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 60,
+      "minimum_prominent_telegraph_seconds": 1.15,
+      "max_prominent_threats": 3,
+      "boss_id": "dengai",
+      "boss_pattern_design": [
+        "mechanism_rotation",
+        "locked_thrust"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c19",
+      "chapter_number": 19,
+      "place": "天水",
+      "pair": 10,
+      "initial_wave_size_range": [
+        24,
+        30
+      ],
+      "initial_light_self_speed": 5.0,
+      "initial_wave_interval_seconds": 2.5,
+      "initial_archer_share_target": 0.2,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 64,
+      "minimum_prominent_telegraph_seconds": 1.1,
+      "max_prominent_threats": 3,
+      "boss_id": "zhonghui",
+      "boss_pattern_design": [
+        "visible_order_rotation",
+        "guard_window"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    },
+    {
+      "chapter_id": "c20",
+      "chapter_number": 20,
+      "place": "洛阳",
+      "pair": 10,
+      "initial_wave_size_range": [
+        24,
+        30
+      ],
+      "initial_light_self_speed": 5.2,
+      "initial_wave_interval_seconds": 2.5,
+      "initial_archer_share_target": 0.2,
+      "share_basis": "ordinary mixed encounter heads across a whole march, not every wave; leave safe windows",
+      "initial_active_enemy_cap": 64,
+      "minimum_prominent_telegraph_seconds": 1.1,
+      "max_prominent_threats": 3,
+      "boss_id": "lukang",
+      "boss_pattern_design": [
+        "phase1_formation",
+        "phase2_duel",
+        "phase3_mixed_decisive"
+      ],
+      "keep_existing_boss_hp_first_candidate": true,
+      "keep_chapter_rewards_and_ids": true,
+      "status": "design_not_run"
+    }
+  ]
+}

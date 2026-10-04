@@ -1,0 +1,280 @@
+{
+  "frames": [
+    {
+      "key": "r3_hero_guandao_ready",
+      "sourceGridCell": 0,
+      "sourceRect": [
+        0,
+        0,
+        500,
+        500
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        500.0,
+        500.0
+      ],
+      "canonicalBodyHeight": 286,
+      "targetRect": [
+        0,
+        0,
+        500,
+        500
+      ]
+    },
+    {
+      "key": "r3_hero_guandao_run0",
+      "sourceGridCell": 1,
+      "sourceRect": [
+        500,
+        0,
+        500,
+        500
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        500.0,
+        500.0
+      ],
+      "canonicalBodyHeight": 286,
+      "targetRect": [
+        500,
+        0,
+        500,
+        500
+      ]
+    },
+    {
+      "key": "r3_hero_guandao_run1",
+      "sourceGridCell": 2,
+      "sourceRect": [
+        1000,
+        0,
+        500,
+        500
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        500.0,
+        500.0
+      ],
+      "canonicalBodyHeight": 286,
+      "targetRect": [
+        1000,
+        0,
+        500,
+        500
+      ]
+    },
+    {
+      "key": "r3_hero_guandao_run2",
+      "sourceGridCell": 3,
+      "sourceRect": [
+        1500,
+        0,
+        500,
+        500
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        500.0,
+        500.0
+      ],
+      "canonicalBodyHeight": 286,
+      "targetRect": [
+        1500,
+        0,
+        500,
+        500
+      ]
+    },
+    {
+      "key": "r3_hero_guandao_run3",
+      "sourceGridCell": 4,
+      "sourceRect": [
+        0,
+        500,
+        500,
+        500
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        500.0,
+        500.0
+      ],
+      "canonicalBodyHeight": 286,
+      "targetRect": [
+        0,
+        500,
+        500,
+        500
+      ]
+    },
+    {
+      "key": "r3_hero_guandao_wind",
+      "sourceGridCell": 5,
+      "sourceRect": [
+        500,
+        500,
+        500,
+        500
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        500.0,
+        500.0
+      ],
+      "canonicalBodyHeight": 286,
+      "targetRect": [
+        500,
+        500,
+        500,
+        500
+      ]
+    },
+    {
+      "key": "r3_hero_guandao_rel",
+      "sourceGridCell": 6,
+      "sourceRect": [
+        1000,
+        500,
+        500,
+        500
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        500.0,
+        500.0
+      ],
+      "canonicalBodyHeight": 286,
+      "targetRect": [
+        1000,
+        500,
+        500,
+        500
+      ]
+    },
+    {
+      "key": "r3_hero_guandao_rec",
+      "sourceGridCell": 7,
+      "sourceRect": [
+        1500,
+        500,
+        500,
+        500
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        500.0,
+        500.0
+      ],
+      "canonicalBodyHeight": 286,
+      "targetRect": [
+        1500,
+        500,
+        500,
+        500
+      ]
+    },
+    {
+      "key": "r3_hero_guandao_show",
+      "sourceGridCell": 8,
+      "sourceRect": [
+        0,
+        1000,
+        500,
+        500
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        500.0,
+        500.0
+      ],
+      "canonicalBodyHeight": 286,
+      "targetRect": [
+        0,
+        1000,
+        500,
+        500
+      ]
+    },
+    {
+      "key": "r3_hero_guandao_hit",
+      "sourceGridCell": 9,
+      "sourceRect": [
+        500,
+        1000,
+        500,
+        500
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        500.0,
+        500.0
+      ],
+      "canonicalBodyHeight": 286,
+      "targetRect": [
+        500,
+        1000,
+        500,
+        500
+      ]
+    },
+    {
+      "key": "r3_hero_guandao_defeat",
+      "sourceGridCell": 10,
+      "sourceRect": [
+        1000,
+        1000,
+        500,
+        500
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        500.0,
+        500.0
+      ],
+      "canonicalBodyHeight": 286,
+      "targetRect": [
+        1000,
+        1000,
+        500,
+        500
+      ]
+    }
+  ],
+  "sourceComponents": []
+}

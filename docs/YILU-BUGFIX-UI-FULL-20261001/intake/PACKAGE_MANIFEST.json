@@ -1,0 +1,100 @@
+{
+  "contents": [
+    {
+      "path": "ACCEPTANCE_PLAN.md",
+      "bytes": 9271,
+      "sha256": "bd9ee8a677788ce7a73446496ebbeae72f3bb58de889e0209049019a76cbcc69"
+    },
+    {
+      "path": "ACCEPTANCE_TEMPLATE.json",
+      "bytes": 4406,
+      "sha256": "d7f11f340300758b2881f0e1a19615d6d5575c4115195965b701c855bd9459d7"
+    },
+    {
+      "path": "BASELINE.json",
+      "bytes": 1304,
+      "sha256": "e727864015a92cc16a9cdea4df2b9a3cf031a736185e8238057f94186d74601c"
+    },
+    {
+      "path": "BUG_ANALYSIS.md",
+      "bytes": 10321,
+      "sha256": "5de0d07e272337f676f0f4267eb28b312164f1264fee63242bf8cfd5b5307ab1"
+    },
+    {
+      "path": "BUG_REGISTER.json",
+      "bytes": 5908,
+      "sha256": "cdd02c997e883aec86ed1b5b2544518ea9cca9acd29dfecc2ddfbd3576806abb"
+    },
+    {
+      "path": "CODEX_TASK.md",
+      "bytes": 15378,
+      "sha256": "43cd4ed67e50d7965cfda9820fb51b341976647a3e634b74130a5102881ac429"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1549,
+      "sha256": "6dcf388739f9b6c1d9be826f3a48b9b38c233247e1e28ad90d14b203b2935034"
+    },
+    {
+      "path": "SCREENSHOT_MANIFEST.json",
+      "bytes": 3056,
+      "sha256": "5266d144a87ec8013e83cb43231c44a17cbffdeaba6eca70e7fd4662e6fd0eff"
+    },
+    {
+      "path": "SOURCE_EVIDENCE.json",
+      "bytes": 2324,
+      "sha256": "3d5cb56566013b2f2022a6ac645bc4552f8be441c94bb4c10ebdeb5c78368ddf"
+    },
+    {
+      "path": "UI_ASSET_PLAN.json",
+      "bytes": 5884,
+      "sha256": "42a404b5e23ce323cda7e593124e505f9e1473b33289a2d406066e67146c2291"
+    },
+    {
+      "path": "UI_FULL_PLAN.md",
+      "bytes": 16912,
+      "sha256": "adccaa92c45561c5ec304e82a07c39131b1238e88ce4c2ef15ad7c55cc8486bf"
+    },
+    {
+      "path": "index.html",
+      "bytes": 62567,
+      "sha256": "46cca135026987c1df759f0de272c9b50c210bc6a21f48d04b53ec81e0e7273c"
+    },
+    {
+      "path": "reference/IMG_4392.jpeg",
+      "bytes": 421575,
+      "sha256": "5be7c18dccdaee495b8dfd5d571ff4e73f509e1c18d114008ee4a1fabb641c87"
+    },
+    {
+      "path": "reference/IMG_4393.jpeg",
+      "bytes": 480113,
+      "sha256": "c4ca15873b2641b56a7f326d3695cf2298e325277bcdf861e000c7f4da582f90"
+    },
+    {
+      "path": "reference/IMG_4394.jpeg",
+      "bytes": 467040,
+      "sha256": "0550a77af1906c866b8544cc564c1238e1278ea3b4ddeae4caf047adc279f65e"
+    },
+    {
+      "path": "reference/IMG_4395.jpeg",
+      "bytes": 465006,
+      "sha256": "009116693d44eea7c88349dfa06ad98b9df0f46165628866bf2a9f4097b35f83"
+    },
+    {
+      "path": "reference/IMG_4396.jpeg",
+      "bytes": 462573,
+      "sha256": "7832bbb39c1613618ad007680bc93a0ab9d2f1ec9f72298960d7d9cc77b1446d"
+    },
+    {
+      "path": "reference/IMG_4397.jpeg",
+      "bytes": 453042,
+      "sha256": "929c2ff3397dc82c36c7ea4afe87bcf4e6d69e534e1d8b8ea6c101a9040b7f08"
+    },
+    {
+      "path": "reference/IMG_4399.jpeg",
+      "bytes": 357403,
+      "sha256": "c4acd75f9c46fa9fac051a920787bc9ec947c6f83cb1ba9065f64e5c4c0a69cb"
+    }
+  ],
+  "note": "Packaging hashes only, not game execution evidence."
+}

@@ -1,0 +1,1 @@
+旧皮肤修复版 0.12.1 / 2026100102；已同bundle覆盖安装并回读。原生CocosGame-unsigned.zip是完整未签名Release .app，需本机开发签名，不是可直接点装IPA。已签名副本保留本机私有目录，不外发profile/设备信息。Web辅助包解压后用 python3 -m http.server 43212 --bind 127.0.0.1 启动，打开 http://127.0.0.1:43212/；不作为原生验收。

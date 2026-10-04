@@ -1,0 +1,1461 @@
+{
+  "task": "YILU-CAMPAIGN20-20260930",
+  "status": "DESIGN_NOT_IMPLEMENTED",
+  "project_id": "yilu-changge",
+  "baseline_snapshot_id": "s_20260930T064642_f17b30f3",
+  "baseline_code_fingerprint": "8525932e2ffff8b84ac41c6ce90a1f1ec48edd5abf1c87687b613626dd5be73a",
+  "baseline_evidence_fingerprint": "d17495910adda3778e8ad8790010b325c1e38ded0277aacc4eb22f6daa72c3a6",
+  "schema": "planning specification, not direct runtime replacement",
+  "target_counts": {
+    "chapters": 20,
+    "people": 42,
+    "weapons": 16,
+    "treasures": 18
+  },
+  "retained_counts": {
+    "chapters": 10,
+    "people": 30,
+    "weapons": 10,
+    "treasures": 8
+  },
+  "new_people": [
+    {
+      "id": "taishici",
+      "label": "太史慈",
+      "relation": "capture",
+      "unlock_chapter": 11,
+      "role": "双短戟追击",
+      "ability_design": "每1.5秒一组两次近程光刃；命中同一目标的第二击伤害为首击60%；清理破盾后的近身敌军。",
+      "lore_basis": "本作架空玩法设定；不将兵器归属/经历宣传为史实"
+    },
+    {
+      "id": "ganning",
+      "label": "甘宁",
+      "relation": "capture",
+      "unlock_chapter": 12,
+      "role": "铁索横扫",
+      "ability_design": "宽弧清扫轻兵，较低单体伤害；两条侧路出现轻兵时有价值。",
+      "lore_basis": "本作架空玩法设定；不将兵器归属/经历宣传为史实"
+    },
+    {
+      "id": "lusu",
+      "label": "鲁肃",
+      "relation": "visit",
+      "unlock_chapter": 12,
+      "role": "整军策应",
+      "ability_design": "每12秒救回最近周期实际损失中的至多3人；无战损时不凭空生兵。",
+      "lore_basis": "本作架空玩法设定；不将兵器归属/经历宣传为史实"
+    },
+    {
+      "id": "zhanghe",
+      "label": "张郃",
+      "relation": "capture",
+      "unlock_chapter": 13,
+      "role": "钩镰破盾",
+      "ability_design": "优先攻击自己所在侧路可见盾兵；破甲标记持续2秒、同目标不叠加。",
+      "lore_basis": "本作架空玩法设定；不将兵器归属/经历宣传为史实"
+    },
+    {
+      "id": "caoren",
+      "label": "曹仁",
+      "relation": "allies",
+      "unlock_chapter": 14,
+      "role": "守垒盟约",
+      "ability_design": "与盾刀形成共鸣；额外防护只在佩戴该兵器时触发，受总减伤上限约束。",
+      "lore_basis": "本作架空玩法设定；不将兵器归属/经历宣传为史实"
+    },
+    {
+      "id": "xiahouyuan",
+      "label": "夏侯渊",
+      "relation": "capture",
+      "unlock_chapter": 15,
+      "role": "急射点杀",
+      "ability_design": "瞄准当前侧路可见远程/旗手目标，实际箭矢命中才伤害，不能穿过不可通行遮挡凭空命中。",
+      "lore_basis": "本作架空玩法设定；不将兵器归属/经历宣传为史实"
+    },
+    {
+      "id": "weiyan",
+      "label": "魏延",
+      "relation": "capture",
+      "unlock_chapter": 16,
+      "role": "重刃破阵",
+      "ability_design": "较慢重击，对护甲露出窗口的精英有额外收益，空挥不触发重击反馈。",
+      "lore_basis": "本作架空玩法设定；不将兵器归属/经历宣传为史实"
+    },
+    {
+      "id": "zhangren",
+      "label": "张任",
+      "relation": "capture",
+      "unlock_chapter": 17,
+      "role": "守隘反击",
+      "ability_design": "敌军进入近身预警区时释放一次窄幅反击；冷却4秒，不能持续打断Boss。",
+      "lore_basis": "本作架空玩法设定；不将兵器归属/经历宣传为史实"
+    },
+    {
+      "id": "dengai",
+      "label": "邓艾",
+      "relation": "capture",
+      "unlock_chapter": 18,
+      "role": "侧路突进",
+      "ability_design": "沿玩家选中的侧路对一条直线进攻；不自动横移主将，不越过玩家移动上限。",
+      "lore_basis": "本作架空玩法设定；不将兵器归属/经历宣传为史实"
+    },
+    {
+      "id": "huangyueying",
+      "label": "黄月英",
+      "relation": "visit",
+      "unlock_chapter": 18,
+      "role": "机巧策应",
+      "ability_design": "每12秒使下一次机关弩爆裂矢附带一次破盾标记；没有机关弩时提供一次普通策应矢。",
+      "lore_basis": "本作架空玩法设定；不将兵器归属/经历宣传为史实"
+    },
+    {
+      "id": "zhonghui",
+      "label": "钟会",
+      "relation": "allies",
+      "unlock_chapter": 19,
+      "role": "应变军令",
+      "ability_design": "完成一次真实闪避后，下一次主将攻击对精英伤害+10%；冷却8秒，多盟约加成进入统一上限。",
+      "lore_basis": "本作架空玩法设定；不将兵器归属/经历宣传为史实"
+    },
+    {
+      "id": "lukang",
+      "label": "陆抗",
+      "relation": "allies",
+      "unlock_chapter": 20,
+      "role": "九州协守",
+      "ability_design": "每局首次大额战损抵消至多3人；仅作后续重游能力，不让终局获奖反向影响本场胜负。",
+      "lore_basis": "本作架空玩法设定；不将兵器归属/经历宣传为史实"
+    }
+  ],
+  "new_weapons": [
+    {
+      "id": "duanji",
+      "label": "双短戟",
+      "owner": "taishici",
+      "unlock_chapter": 11,
+      "role": "较窄二连、近距拆盾后的追击",
+      "constraint": "全程有效攻击判定依旧由光刃/投射物承担",
+      "sound_design": "短而硬的两次刃口破风；区别于原双铁戟的厚重音色",
+      "release_variants": 3,
+      "tier_max": 3,
+      "permanent_level_max": 5,
+      "requires_distinct_icon_and_attack_frames": true
+    },
+    {
+      "id": "tiesuodao",
+      "label": "铁索刀",
+      "owner": "ganning",
+      "unlock_chapter": 12,
+      "role": "宽弧覆盖侧路、较低单体输出",
+      "constraint": "不能拉动主将或虚构无法闪避的控制",
+      "sound_design": "短铁链抖动叠加刀刃横扫；收尾迅速，无持续金属噪声",
+      "release_variants": 3,
+      "tier_max": 3,
+      "permanent_level_max": 5,
+      "requires_distinct_icon_and_attack_frames": true
+    },
+    {
+      "id": "goulianqiang",
+      "label": "钩镰枪",
+      "owner": "zhanghe",
+      "unlock_chapter": 13,
+      "role": "直线穿刺兼破盾、对散兵不占优势",
+      "constraint": "破甲窗口持续2秒，重复命中刷新不叠层",
+      "sound_design": "集中枪刺中带短促钩刃擦碰；保持与长枪可辨",
+      "release_variants": 3,
+      "tier_max": 3,
+      "permanent_level_max": 5,
+      "requires_distinct_icon_and_attack_frames": true
+    },
+    {
+      "id": "dundao",
+      "label": "玄甲盾刀",
+      "owner": "caoren",
+      "unlock_chapter": 14,
+      "role": "牺牲输出获得一次有冷却的防御收益",
+      "constraint": "成功闪避后8秒内首个小额冲撞减伤，冷却12秒；全局减伤不超过50%",
+      "sound_design": "短刀挥砍与实际格挡的木革/金属闷响分开；未格挡不能播撞盾声",
+      "release_variants": 3,
+      "tier_max": 3,
+      "permanent_level_max": 5,
+      "requires_distinct_icon_and_attack_frames": true
+    },
+    {
+      "id": "yanlinggong",
+      "label": "雁翎弓",
+      "owner": "xiahouyuan",
+      "unlock_chapter": 15,
+      "role": "较慢蓄力、单线远程点杀",
+      "constraint": "主将仍可骑乘/换其他兵器，不把整个游戏改为弓箭手玩法",
+      "sound_design": "较厚弓弦弹动＋单支箭羽尾音；与部曲齐射区分",
+      "release_variants": 3,
+      "tier_max": 3,
+      "permanent_level_max": 5,
+      "requires_distinct_icon_and_attack_frames": true
+    },
+    {
+      "id": "jiguannu",
+      "label": "机关弩",
+      "owner": "huangyueying",
+      "unlock_chapter": 18,
+      "role": "慢节奏机括发射、第三发小范围破阵",
+      "constraint": "不同于诸葛连弩的连续刺击：保留明显装填间隔，无现代爆炸/枪械",
+      "sound_design": "木机括上弦、一次短弦、弹体离弦；三阶段事件匹配真实动作",
+      "release_variants": 3,
+      "tier_max": 3,
+      "permanent_level_max": 5,
+      "requires_distinct_icon_and_attack_frames": true
+    }
+  ],
+  "new_treasures": [
+    {
+      "id": "huxinjing",
+      "label": "护心镜",
+      "slot": "qi",
+      "unlock_chapter": 11,
+      "effect": "每12秒抵消下一次精英重击的至多3名战损；不作用于伏兵门。",
+      "lore_basis": "本作架空道具/玩法，不声称全部为历史宝物"
+    },
+    {
+      "id": "jinfanling",
+      "label": "锦帆令",
+      "slot": "dian",
+      "unlock_chapter": 12,
+      "effect": "粮车额外援兵+2；与木牛流马按先基础倍率、后固定加成结算。",
+      "lore_basis": "本作架空道具/玩法，不声称全部为历史宝物"
+    },
+    {
+      "id": "fengshitu",
+      "label": "锋矢图",
+      "slot": "dian",
+      "unlock_chapter": 13,
+      "effect": "主将穿透类攻击命中第二个及后续目标时伤害+15%；不增加命中次数。",
+      "lore_basis": "本作架空道具/玩法，不声称全部为历史宝物"
+    },
+    {
+      "id": "tiebifu",
+      "label": "铁壁符",
+      "slot": "qi",
+      "unlock_chapter": 14,
+      "effect": "骑兵冲撞造成的实际兵损降低25%；不降低地面机关或Boss横扫伤害。",
+      "lore_basis": "本作架空道具/玩法，不声称全部为历史宝物"
+    },
+    {
+      "id": "jingfan",
+      "label": "惊帆",
+      "slot": "ma",
+      "unlock_chapter": 15,
+      "effect": "横移速度+15%，脱离真实攻击预警后返还本次攻击前最近战损中的至多1人，冷却10秒。",
+      "lore_basis": "本作架空道具/玩法，不声称全部为历史宝物"
+    },
+    {
+      "id": "pozhengu",
+      "label": "破阵鼓",
+      "slot": "qi",
+      "unlock_chapter": 16,
+      "effect": "主将重击有效命中精英后令其护甲效果削弱20%，持续2秒，冷却8秒；不作用于无敌演出。",
+      "lore_basis": "本作架空道具/玩法，不声称全部为历史宝物"
+    },
+    {
+      "id": "xingjunyaolue",
+      "label": "行军要略",
+      "slot": "dian",
+      "unlock_chapter": 17,
+      "effect": "固定机关攻击的预警增加0.20秒，实际执行时间同步延后；不伪造提前可见数据。",
+      "lore_basis": "本作架空道具/玩法，不声称全部为历史宝物"
+    },
+    {
+      "id": "jueying",
+      "label": "绝影",
+      "slot": "ma",
+      "unlock_chapter": 18,
+      "effect": "机关与箭雨的实际兵损降低20%；不影响Boss近战，和其他减伤按乘法合并且封顶50%。",
+      "lore_basis": "本作架空道具/玩法，不声称全部为历史宝物"
+    },
+    {
+      "id": "yingbianbingshu",
+      "label": "应变兵书",
+      "slot": "dian",
+      "unlock_chapter": 19,
+      "effect": "完成真实闪避后，下一次穿透类主将攻击穿透数+1，冷却8秒，不触发无限穿透。",
+      "lore_basis": "本作架空道具/玩法，不声称全部为历史宝物"
+    },
+    {
+      "id": "jiuzhouyin",
+      "label": "九州印",
+      "slot": "qi",
+      "unlock_chapter": 20,
+      "effect": "开局兵力+8、每局首次Boss伤害降低20%；奖励在胜利后入库，只对后续重游生效。",
+      "lore_basis": "本作架空道具/玩法，不声称全部为历史宝物"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "c01",
+      "index": 0,
+      "display_number": 1,
+      "title": "黄巾初阵",
+      "place": "广宗",
+      "faction": "群雄",
+      "boss": "jiao",
+      "required_officers": [],
+      "capture": [],
+      "visit": [],
+      "allies": [],
+      "first_clear_weapon": null,
+      "first_clear_treasure": "taiping",
+      "preserve_existing_identity_and_first_clear_reward": true,
+      "first_clear_xp": 30,
+      "replay_xp": 10,
+      "difficulty_pair": 1,
+      "map_panel": 1,
+      "is_milestone": false,
+      "milestone_id": null,
+      "target_active_seconds": [
+        90,
+        115
+      ],
+      "key_mechanic": "正负门与单线预警",
+      "encounter_design": "一条可躲直线；首次选对门后给清楚兵力增量",
+      "player_learning_goal": "熟悉横移，普通轻兵保持容易击败",
+      "unlock_requires": "new_save",
+      "expected_first_clear_main_weapon_level": 1,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c02",
+      "index": 1,
+      "display_number": 2,
+      "title": "讨董联军",
+      "place": "虎牢",
+      "faction": "群雄",
+      "boss": "dong",
+      "required_officers": [],
+      "capture": [],
+      "visit": [
+        "hua",
+        "sunjian"
+      ],
+      "allies": [
+        "yuan"
+      ],
+      "first_clear_weapon": "guding",
+      "first_clear_treasure": "yuxi",
+      "preserve_existing_identity_and_first_clear_reward": true,
+      "first_clear_xp": 30,
+      "replay_xp": 10,
+      "difficulty_pair": 1,
+      "map_panel": 1,
+      "is_milestone": true,
+      "milestone_id": "m01",
+      "target_active_seconds": [
+        90,
+        115
+      ],
+      "key_mechanic": "第一场两段式考核",
+      "encounter_design": "两次预警间保留恢复窗口",
+      "player_learning_goal": "让选门和闪避共同影响结算兵力",
+      "unlock_requires": "clear:c01",
+      "expected_first_clear_main_weapon_level": 1,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c03",
+      "index": 2,
+      "display_number": 3,
+      "title": "白门收戟",
+      "place": "下邳",
+      "faction": "群雄",
+      "boss": "lubu",
+      "required_officers": [],
+      "capture": [
+        "lubu"
+      ],
+      "visit": [
+        "diao"
+      ],
+      "allies": [],
+      "first_clear_weapon": "huaji",
+      "first_clear_treasure": "chitu",
+      "preserve_existing_identity_and_first_clear_reward": true,
+      "first_clear_xp": 30,
+      "replay_xp": 10,
+      "difficulty_pair": 2,
+      "map_panel": 1,
+      "is_milestone": false,
+      "milestone_id": null,
+      "target_active_seconds": [
+        90,
+        115
+      ],
+      "key_mechanic": "弓手点射",
+      "encounter_design": "弓手抬弓后锁定射线；锁定后不追踪",
+      "player_learning_goal": "先认识后排远程威胁",
+      "unlock_requires": "clear:c02",
+      "expected_first_clear_main_weapon_level": 2,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c04",
+      "index": 3,
+      "display_number": 4,
+      "title": "帐前双戟",
+      "place": "宛城",
+      "faction": "魏",
+      "boss": "dian",
+      "required_officers": [
+        "xu"
+      ],
+      "capture": [
+        "dian",
+        "xu"
+      ],
+      "visit": [
+        "xun"
+      ],
+      "allies": [],
+      "first_clear_weapon": "shuangji",
+      "first_clear_treasure": null,
+      "preserve_existing_identity_and_first_clear_reward": true,
+      "first_clear_xp": 30,
+      "replay_xp": 10,
+      "difficulty_pair": 2,
+      "map_panel": 1,
+      "is_milestone": true,
+      "milestone_id": "m02",
+      "target_active_seconds": [
+        90,
+        115
+      ],
+      "key_mechanic": "盾兵掩护弓手",
+      "encounter_design": "盾兵出手时露出破绽；所有武器都能突破",
+      "player_learning_goal": "用走位找攻击窗口，禁止全程无敌盾",
+      "unlock_requires": "clear:c03",
+      "expected_first_clear_main_weapon_level": 2,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c05",
+      "index": 4,
+      "display_number": 5,
+      "title": "魏武会盟",
+      "place": "官渡",
+      "faction": "魏",
+      "boss": "cao",
+      "required_officers": [
+        "xiahou",
+        "liao"
+      ],
+      "capture": [
+        "liao",
+        "xiahou"
+      ],
+      "visit": [
+        "guo"
+      ],
+      "allies": [
+        "cao"
+      ],
+      "first_clear_weapon": "yitian",
+      "first_clear_treasure": "mengde",
+      "preserve_existing_identity_and_first_clear_reward": true,
+      "first_clear_xp": 30,
+      "replay_xp": 10,
+      "difficulty_pair": 3,
+      "map_panel": 2,
+      "is_milestone": false,
+      "milestone_id": null,
+      "target_active_seconds": [
+        100,
+        135
+      ],
+      "key_mechanic": "旗手增益",
+      "encounter_design": "旗手位置与增益范围可见，击破立即解除",
+      "player_learning_goal": "选择先打谁",
+      "unlock_requires": "clear:c04",
+      "expected_first_clear_main_weapon_level": 2,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c06",
+      "index": 5,
+      "display_number": 6,
+      "title": "江东破阵",
+      "place": "曲阿",
+      "faction": "吴",
+      "boss": "sunce",
+      "required_officers": [
+        "lumeng"
+      ],
+      "capture": [
+        "lumeng"
+      ],
+      "visit": [],
+      "allies": [
+        "sunce"
+      ],
+      "first_clear_weapon": "shemao",
+      "first_clear_treasure": null,
+      "preserve_existing_identity_and_first_clear_reward": true,
+      "first_clear_xp": 30,
+      "replay_xp": 10,
+      "difficulty_pair": 3,
+      "map_panel": 2,
+      "is_milestone": true,
+      "milestone_id": "m03",
+      "target_active_seconds": [
+        100,
+        135
+      ],
+      "key_mechanic": "左右夹击",
+      "encounter_design": "两侧危险错峰，不形成无解同屏覆盖",
+      "player_learning_goal": "在高收益路与安全路之间取舍",
+      "unlock_requires": "clear:c05",
+      "expected_first_clear_main_weapon_level": 2,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c07",
+      "index": 6,
+      "display_number": 7,
+      "title": "赤壁风火",
+      "place": "赤壁",
+      "faction": "吴",
+      "boss": "zhou",
+      "required_officers": [
+        "luxun"
+      ],
+      "capture": [
+        "sunxiang",
+        "luxun"
+      ],
+      "visit": [
+        "zhou"
+      ],
+      "allies": [
+        "sunquan"
+      ],
+      "first_clear_weapon": "qinggang",
+      "first_clear_treasure": "muniu",
+      "preserve_existing_identity_and_first_clear_reward": true,
+      "first_clear_xp": 30,
+      "replay_xp": 10,
+      "difficulty_pair": 4,
+      "map_panel": 2,
+      "is_milestone": false,
+      "milestone_id": null,
+      "target_active_seconds": [
+        100,
+        135
+      ],
+      "key_mechanic": "火区与粮车护卫",
+      "encounter_design": "火区先预警，粮车高收益附带可见守军",
+      "player_learning_goal": "有意冒险才获得额外收益",
+      "unlock_requires": "clear:c06",
+      "expected_first_clear_main_weapon_level": 2,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c08",
+      "index": 7,
+      "display_number": 8,
+      "title": "长坂同袍",
+      "place": "长坂",
+      "faction": "蜀",
+      "boss": "zhang",
+      "required_officers": [
+        "zhao"
+      ],
+      "capture": [
+        "zhao",
+        "zhang"
+      ],
+      "visit": [],
+      "allies": [],
+      "first_clear_weapon": "guandao",
+      "first_clear_treasure": "dilu",
+      "preserve_existing_identity_and_first_clear_reward": true,
+      "first_clear_xp": 30,
+      "replay_xp": 10,
+      "difficulty_pair": 4,
+      "map_panel": 2,
+      "is_milestone": true,
+      "milestone_id": "m04",
+      "target_active_seconds": [
+        100,
+        135
+      ],
+      "key_mechanic": "敌将停步交锋",
+      "encounter_design": "左右扫击轮换，收势可追击；每段保留安全路",
+      "player_learning_goal": "验收走位与破绽输出",
+      "unlock_requires": "clear:c07",
+      "expected_first_clear_main_weapon_level": 2,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c09",
+      "index": 8,
+      "display_number": 9,
+      "title": "荆襄归心",
+      "place": "荆州",
+      "faction": "蜀",
+      "boss": "guan",
+      "required_officers": [
+        "huang"
+      ],
+      "capture": [
+        "guan",
+        "huang"
+      ],
+      "visit": [],
+      "allies": [],
+      "first_clear_weapon": "shuanggu",
+      "first_clear_treasure": "qingnang",
+      "preserve_existing_identity_and_first_clear_reward": true,
+      "first_clear_xp": 30,
+      "replay_xp": 10,
+      "difficulty_pair": 5,
+      "map_panel": 3,
+      "is_milestone": false,
+      "milestone_id": null,
+      "target_active_seconds": [
+        100,
+        135
+      ],
+      "key_mechanic": "骑兵冲线",
+      "encounter_design": "蓄势锁定路线，再冲锋；侧移避开",
+      "player_learning_goal": "识别大伤害而非站桩换血",
+      "unlock_requires": "clear:c08",
+      "expected_first_clear_main_weapon_level": 3,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c10",
+      "index": 9,
+      "display_number": 10,
+      "title": "隆中长歌",
+      "place": "隆中",
+      "faction": "蜀",
+      "boss": "zhuge",
+      "required_officers": [
+        "pang",
+        "machao"
+      ],
+      "capture": [
+        "machao",
+        "jiang"
+      ],
+      "visit": [
+        "zhuge",
+        "pang",
+        "sima"
+      ],
+      "allies": [
+        "liu"
+      ],
+      "first_clear_weapon": "liannu",
+      "first_clear_treasure": "qixing",
+      "preserve_existing_identity_and_first_clear_reward": true,
+      "first_clear_xp": 30,
+      "replay_xp": 10,
+      "difficulty_pair": 5,
+      "map_panel": 3,
+      "is_milestone": true,
+      "milestone_id": "m05",
+      "target_active_seconds": [
+        100,
+        135
+      ],
+      "key_mechanic": "上篇综合战",
+      "encounter_design": "轮换盾、远程和冲线，至多两类同时形成主要威胁",
+      "player_learning_goal": "原十关末关改为上篇里程碑",
+      "unlock_requires": "clear:c09",
+      "expected_first_clear_main_weapon_level": 3,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c11",
+      "index": 10,
+      "display_number": 11,
+      "title": "神亭试锋",
+      "place": "神亭",
+      "faction": "吴",
+      "boss": "taishici",
+      "required_officers": [],
+      "capture": [
+        "taishici"
+      ],
+      "visit": [],
+      "allies": [],
+      "first_clear_weapon": "duanji",
+      "first_clear_treasure": "huxinjing",
+      "preserve_existing_identity_and_first_clear_reward": false,
+      "first_clear_xp": 80,
+      "replay_xp": 10,
+      "difficulty_pair": 6,
+      "map_panel": 3,
+      "is_milestone": false,
+      "milestone_id": null,
+      "target_active_seconds": [
+        110,
+        145
+      ],
+      "key_mechanic": "双短戟快速二连",
+      "encounter_design": "每次攻击独立预警/动作节拍；第二击不瞬间改全屏",
+      "player_learning_goal": "学习两次移动与回击",
+      "unlock_requires": "clear:c10",
+      "expected_first_clear_main_weapon_level": 3,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c12",
+      "index": 11,
+      "display_number": 12,
+      "title": "濡须破浪",
+      "place": "濡须",
+      "faction": "吴",
+      "boss": "ganning",
+      "required_officers": [],
+      "capture": [
+        "ganning"
+      ],
+      "visit": [
+        "lusu"
+      ],
+      "allies": [],
+      "first_clear_weapon": "tiesuodao",
+      "first_clear_treasure": "jinfanling",
+      "preserve_existing_identity_and_first_clear_reward": false,
+      "first_clear_xp": 80,
+      "replay_xp": 10,
+      "difficulty_pair": 6,
+      "map_panel": 3,
+      "is_milestone": true,
+      "milestone_id": "m06",
+      "target_active_seconds": [
+        110,
+        145
+      ],
+      "key_mechanic": "水寨交错冲线",
+      "encounter_design": "骑兵/突进与箭雨错峰；高收益路径有额外护卫",
+      "player_learning_goal": "水陆军阵综合考核",
+      "unlock_requires": "clear:c11",
+      "expected_first_clear_main_weapon_level": 3,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c13",
+      "index": 12,
+      "display_number": 13,
+      "title": "街亭列阵",
+      "place": "街亭",
+      "faction": "魏",
+      "boss": "zhanghe",
+      "required_officers": [],
+      "capture": [
+        "zhanghe"
+      ],
+      "visit": [],
+      "allies": [],
+      "first_clear_weapon": "goulianqiang",
+      "first_clear_treasure": "fengshitu",
+      "preserve_existing_identity_and_first_clear_reward": false,
+      "first_clear_xp": 90,
+      "replay_xp": 10,
+      "difficulty_pair": 7,
+      "map_panel": 4,
+      "is_milestone": false,
+      "milestone_id": null,
+      "target_active_seconds": [
+        110,
+        145
+      ],
+      "key_mechanic": "钩镰阵与旗手",
+      "encounter_design": "侧路破盾，旗手解除强化；控制效果对敌我均有明示",
+      "player_learning_goal": "先拆阵再推进",
+      "unlock_requires": "clear:c12",
+      "expected_first_clear_main_weapon_level": 3,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c14",
+      "index": 13,
+      "display_number": 14,
+      "title": "樊城破垒",
+      "place": "樊城",
+      "faction": "魏",
+      "boss": "caoren",
+      "required_officers": [],
+      "capture": [],
+      "visit": [],
+      "allies": [
+        "caoren"
+      ],
+      "first_clear_weapon": "dundao",
+      "first_clear_treasure": "tiebifu",
+      "preserve_existing_identity_and_first_clear_reward": false,
+      "first_clear_xp": 90,
+      "replay_xp": 10,
+      "difficulty_pair": 7,
+      "map_panel": 4,
+      "is_milestone": true,
+      "milestone_id": "m07",
+      "target_active_seconds": [
+        110,
+        145
+      ],
+      "key_mechanic": "重甲守垒",
+      "encounter_design": "两侧战旗/掩护可依次击破；曹仁露出收势窗口",
+      "player_learning_goal": "护甲有解，不能只堆总血量",
+      "unlock_requires": "clear:c13",
+      "expected_first_clear_main_weapon_level": 3,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c15",
+      "index": 14,
+      "display_number": 15,
+      "title": "阳平争先",
+      "place": "阳平",
+      "faction": "魏",
+      "boss": "xiahouyuan",
+      "required_officers": [],
+      "capture": [
+        "xiahouyuan"
+      ],
+      "visit": [],
+      "allies": [],
+      "first_clear_weapon": "yanlinggong",
+      "first_clear_treasure": "jingfan",
+      "preserve_existing_identity_and_first_clear_reward": false,
+      "first_clear_xp": 100,
+      "replay_xp": 10,
+      "difficulty_pair": 8,
+      "map_panel": 4,
+      "is_milestone": false,
+      "milestone_id": null,
+      "target_active_seconds": [
+        110,
+        145
+      ],
+      "key_mechanic": "高台射手与扇形箭雨",
+      "encounter_design": "箭雨各带独立预警，保留走位通道",
+      "player_learning_goal": "远程优先级与持续移动",
+      "unlock_requires": "clear:c14",
+      "expected_first_clear_main_weapon_level": 4,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c16",
+      "index": 15,
+      "display_number": 16,
+      "title": "定军破阵",
+      "place": "定军山",
+      "faction": "蜀",
+      "boss": "weiyan",
+      "required_officers": [],
+      "capture": [
+        "weiyan"
+      ],
+      "visit": [],
+      "allies": [],
+      "first_clear_weapon": null,
+      "first_clear_treasure": "pozhengu",
+      "preserve_existing_identity_and_first_clear_reward": false,
+      "first_clear_xp": 100,
+      "replay_xp": 10,
+      "difficulty_pair": 8,
+      "map_panel": 4,
+      "is_milestone": true,
+      "milestone_id": "m08",
+      "target_active_seconds": [
+        110,
+        145
+      ],
+      "key_mechanic": "重刃压阵",
+      "encounter_design": "重击预警较长、威胁较高；打断机会明确",
+      "player_learning_goal": "风险回报明显的破阵战",
+      "unlock_requires": "clear:c15",
+      "expected_first_clear_main_weapon_level": 4,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c17",
+      "index": 16,
+      "display_number": 17,
+      "title": "雒城伏道",
+      "place": "雒城",
+      "faction": "蜀",
+      "boss": "zhangren",
+      "required_officers": [],
+      "capture": [
+        "zhangren"
+      ],
+      "visit": [],
+      "allies": [],
+      "first_clear_weapon": null,
+      "first_clear_treasure": "xingjunyaolue",
+      "preserve_existing_identity_and_first_clear_reward": false,
+      "first_clear_xp": 110,
+      "replay_xp": 10,
+      "difficulty_pair": 9,
+      "map_panel": 5,
+      "is_milestone": false,
+      "milestone_id": null,
+      "target_active_seconds": [
+        120,
+        160
+      ],
+      "key_mechanic": "机关伏道",
+      "encounter_design": "固定陷阱节拍＋少量活动敌军；不隐藏地面提示",
+      "player_learning_goal": "看地形与敌人两类信号",
+      "unlock_requires": "clear:c16",
+      "expected_first_clear_main_weapon_level": 4,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c18",
+      "index": 17,
+      "display_number": 18,
+      "title": "剑阁奇门",
+      "place": "剑阁",
+      "faction": "蜀",
+      "boss": "dengai",
+      "required_officers": [],
+      "capture": [
+        "dengai"
+      ],
+      "visit": [
+        "huangyueying"
+      ],
+      "allies": [],
+      "first_clear_weapon": "jiguannu",
+      "first_clear_treasure": "jueying",
+      "preserve_existing_identity_and_first_clear_reward": false,
+      "first_clear_xp": 110,
+      "replay_xp": 10,
+      "difficulty_pair": 9,
+      "map_panel": 5,
+      "is_milestone": true,
+      "milestone_id": "m09",
+      "target_active_seconds": [
+        120,
+        160
+      ],
+      "key_mechanic": "机关轮替",
+      "encounter_design": "机关、盾阵、远程顺序组合；至多三威胁且通道可达",
+      "player_learning_goal": "战术搭配开始改变解题方式",
+      "unlock_requires": "clear:c17",
+      "expected_first_clear_main_weapon_level": 4,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c19",
+      "index": 18,
+      "display_number": 19,
+      "title": "天水决胜",
+      "place": "天水",
+      "faction": "魏",
+      "boss": "zhonghui",
+      "required_officers": [],
+      "capture": [],
+      "visit": [],
+      "allies": [
+        "zhonghui"
+      ],
+      "first_clear_weapon": null,
+      "first_clear_treasure": "yingbianbingshu",
+      "preserve_existing_identity_and_first_clear_reward": false,
+      "first_clear_xp": 120,
+      "replay_xp": 10,
+      "difficulty_pair": 10,
+      "map_panel": 5,
+      "is_milestone": false,
+      "milestone_id": null,
+      "target_active_seconds": [
+        120,
+        160
+      ],
+      "key_mechanic": "军令轮换",
+      "encounter_design": "定时可见军令切换，切换前提示，清除旧危险残留",
+      "player_learning_goal": "考核此前学过的组合，不突塞新规则",
+      "unlock_requires": "clear:c18",
+      "expected_first_clear_main_weapon_level": 4,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    },
+    {
+      "id": "c20",
+      "index": 19,
+      "display_number": 20,
+      "title": "洛阳长歌",
+      "place": "洛阳",
+      "faction": "吴",
+      "boss": "lukang",
+      "required_officers": [],
+      "capture": [],
+      "visit": [],
+      "allies": [
+        "lukang"
+      ],
+      "first_clear_weapon": null,
+      "first_clear_treasure": "jiuzhouyin",
+      "preserve_existing_identity_and_first_clear_reward": false,
+      "first_clear_xp": 150,
+      "replay_xp": 10,
+      "difficulty_pair": 10,
+      "map_panel": 5,
+      "is_milestone": true,
+      "milestone_id": "m10",
+      "target_active_seconds": [
+        150,
+        180
+      ],
+      "key_mechanic": "三段终局",
+      "encounter_design": "破阵、交锋、决胜三阶段；阶段间清弹幕和短整军",
+      "player_learning_goal": "最长180秒目标，靠组合与操作获胜",
+      "unlock_requires": "clear:c19",
+      "expected_first_clear_main_weapon_level": 4,
+      "new_content_claim": "first clear only; idempotent; no random draw"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "m01",
+      "chapter": 2,
+      "title": "初立军功",
+      "xp_bonus": 60,
+      "unlock_badge": "badge_m01",
+      "map_change": "点亮对应城寨旗帜并显露下一段已绘地形",
+      "ceremony_seconds": [
+        3,
+        5
+      ],
+      "presentation_skip_allowed_after_seconds": 0.8,
+      "primary_new_content": "guding",
+      "grants_primary_content_again": false,
+      "special": "展示下一目标与下一关可用的新能力"
+    },
+    {
+      "id": "m02",
+      "chapter": 4,
+      "title": "帐前立威",
+      "xp_bonus": 60,
+      "unlock_badge": "badge_m02",
+      "map_change": "点亮对应城寨旗帜并显露下一段已绘地形",
+      "ceremony_seconds": [
+        3,
+        5
+      ],
+      "presentation_skip_allowed_after_seconds": 0.8,
+      "primary_new_content": "shuangji",
+      "grants_primary_content_again": false,
+      "special": "展示下一目标与下一关可用的新能力"
+    },
+    {
+      "id": "m03",
+      "chapter": 6,
+      "title": "江东立足",
+      "xp_bonus": 60,
+      "unlock_badge": "badge_m03",
+      "map_change": "点亮对应城寨旗帜并显露下一段已绘地形",
+      "ceremony_seconds": [
+        3,
+        5
+      ],
+      "presentation_skip_allowed_after_seconds": 0.8,
+      "primary_new_content": "shemao",
+      "grants_primary_content_again": false,
+      "special": "展示下一目标与下一关可用的新能力"
+    },
+    {
+      "id": "m04",
+      "chapter": 8,
+      "title": "同袍成军",
+      "xp_bonus": 60,
+      "unlock_badge": "badge_m04",
+      "map_change": "点亮对应城寨旗帜并显露下一段已绘地形",
+      "ceremony_seconds": [
+        3,
+        5
+      ],
+      "presentation_skip_allowed_after_seconds": 0.8,
+      "primary_new_content": "guandao",
+      "grants_primary_content_again": false,
+      "special": "展示下一目标与下一关可用的新能力"
+    },
+    {
+      "id": "m05",
+      "chapter": 10,
+      "title": "半壁已定",
+      "xp_bonus": 60,
+      "unlock_badge": "badge_m05",
+      "map_change": "点亮对应城寨旗帜并显露下一段已绘地形",
+      "ceremony_seconds": [
+        3,
+        5
+      ],
+      "presentation_skip_allowed_after_seconds": 0.8,
+      "primary_new_content": "liannu",
+      "grants_primary_content_again": false,
+      "special": "开启下篇第11关，原第10关奖励保留"
+    },
+    {
+      "id": "m06",
+      "chapter": 12,
+      "title": "水陆扬名",
+      "xp_bonus": 60,
+      "unlock_badge": "badge_m06",
+      "map_change": "点亮对应城寨旗帜并显露下一段已绘地形",
+      "ceremony_seconds": [
+        3,
+        5
+      ],
+      "presentation_skip_allowed_after_seconds": 0.8,
+      "primary_new_content": "tiesuodao",
+      "grants_primary_content_again": false,
+      "special": "展示下一目标与下一关可用的新能力"
+    },
+    {
+      "id": "m07",
+      "chapter": 14,
+      "title": "破坚开道",
+      "xp_bonus": 60,
+      "unlock_badge": "badge_m07",
+      "map_change": "点亮对应城寨旗帜并显露下一段已绘地形",
+      "ceremony_seconds": [
+        3,
+        5
+      ],
+      "presentation_skip_allowed_after_seconds": 0.8,
+      "primary_new_content": "dundao",
+      "grants_primary_content_again": false,
+      "special": "展示下一目标与下一关可用的新能力"
+    },
+    {
+      "id": "m08",
+      "chapter": 16,
+      "title": "汉中立营",
+      "xp_bonus": 60,
+      "unlock_badge": "badge_m08",
+      "map_change": "点亮对应城寨旗帜并显露下一段已绘地形",
+      "ceremony_seconds": [
+        3,
+        5
+      ],
+      "presentation_skip_allowed_after_seconds": 0.8,
+      "primary_new_content": "pozhengu",
+      "grants_primary_content_again": false,
+      "special": "展示下一目标与下一关可用的新能力"
+    },
+    {
+      "id": "m09",
+      "chapter": 18,
+      "title": "奇门洞开",
+      "xp_bonus": 60,
+      "unlock_badge": "badge_m09",
+      "map_change": "点亮对应城寨旗帜并显露下一段已绘地形",
+      "ceremony_seconds": [
+        3,
+        5
+      ],
+      "presentation_skip_allowed_after_seconds": 0.8,
+      "primary_new_content": "jiguannu",
+      "grants_primary_content_again": false,
+      "special": "展示下一目标与下一关可用的新能力"
+    },
+    {
+      "id": "m10",
+      "chapter": 20,
+      "title": "九州长歌",
+      "xp_bonus": 60,
+      "unlock_badge": "badge_m10",
+      "map_change": "点亮对应城寨旗帜并显露下一段已绘地形",
+      "ceremony_seconds": [
+        3,
+        5
+      ],
+      "presentation_skip_allowed_after_seconds": 0.8,
+      "primary_new_content": "jiuzhouyin",
+      "grants_primary_content_again": false,
+      "special": "完成二十关；开放不加新主线关卡的重游军令"
+    }
+  ],
+  "difficulty_profiles": [
+    {
+      "pair": 1,
+      "chapters": [
+        1,
+        2
+      ],
+      "ordinary_hp_multiplier": 1,
+      "incoming_damage_multiplier": 1,
+      "nominal_wave_interval_seconds": 4.0,
+      "elite_budget_fraction": 0,
+      "minimum_major_telegraph_seconds": 1.6,
+      "simultaneous_major_threats": 1,
+      "visible_enemy_design_cap": 24,
+      "major_warning_reachable_safety_required": true,
+      "runtime_player_power_scaling": false,
+      "status": "设计初值；需以真实战斗模型校准，未验证通过"
+    },
+    {
+      "pair": 2,
+      "chapters": [
+        3,
+        4
+      ],
+      "ordinary_hp_multiplier": 1.05,
+      "incoming_damage_multiplier": 1,
+      "nominal_wave_interval_seconds": 3.8,
+      "elite_budget_fraction": 0.05,
+      "minimum_major_telegraph_seconds": 1.5,
+      "simultaneous_major_threats": 1,
+      "visible_enemy_design_cap": 28,
+      "major_warning_reachable_safety_required": true,
+      "runtime_player_power_scaling": false,
+      "status": "设计初值；需以真实战斗模型校准，未验证通过"
+    },
+    {
+      "pair": 3,
+      "chapters": [
+        5,
+        6
+      ],
+      "ordinary_hp_multiplier": 1.1,
+      "incoming_damage_multiplier": 1.05,
+      "nominal_wave_interval_seconds": 3.6,
+      "elite_budget_fraction": 0.08,
+      "minimum_major_telegraph_seconds": 1.4,
+      "simultaneous_major_threats": 2,
+      "visible_enemy_design_cap": 32,
+      "major_warning_reachable_safety_required": true,
+      "runtime_player_power_scaling": false,
+      "status": "设计初值；需以真实战斗模型校准，未验证通过"
+    },
+    {
+      "pair": 4,
+      "chapters": [
+        7,
+        8
+      ],
+      "ordinary_hp_multiplier": 1.2,
+      "incoming_damage_multiplier": 1.1,
+      "nominal_wave_interval_seconds": 3.4,
+      "elite_budget_fraction": 0.12,
+      "minimum_major_telegraph_seconds": 1.3,
+      "simultaneous_major_threats": 2,
+      "visible_enemy_design_cap": 36,
+      "major_warning_reachable_safety_required": true,
+      "runtime_player_power_scaling": false,
+      "status": "设计初值；需以真实战斗模型校准，未验证通过"
+    },
+    {
+      "pair": 5,
+      "chapters": [
+        9,
+        10
+      ],
+      "ordinary_hp_multiplier": 1.3,
+      "incoming_damage_multiplier": 1.2,
+      "nominal_wave_interval_seconds": 3.2,
+      "elite_budget_fraction": 0.18,
+      "minimum_major_telegraph_seconds": 1.2,
+      "simultaneous_major_threats": 2,
+      "visible_enemy_design_cap": 40,
+      "major_warning_reachable_safety_required": true,
+      "runtime_player_power_scaling": false,
+      "status": "设计初值；需以真实战斗模型校准，未验证通过"
+    },
+    {
+      "pair": 6,
+      "chapters": [
+        11,
+        12
+      ],
+      "ordinary_hp_multiplier": 1.45,
+      "incoming_damage_multiplier": 1.3,
+      "nominal_wave_interval_seconds": 3.0,
+      "elite_budget_fraction": 0.22,
+      "minimum_major_telegraph_seconds": 1.15,
+      "simultaneous_major_threats": 2,
+      "visible_enemy_design_cap": 44,
+      "major_warning_reachable_safety_required": true,
+      "runtime_player_power_scaling": false,
+      "status": "设计初值；需以真实战斗模型校准，未验证通过"
+    },
+    {
+      "pair": 7,
+      "chapters": [
+        13,
+        14
+      ],
+      "ordinary_hp_multiplier": 1.6,
+      "incoming_damage_multiplier": 1.35,
+      "nominal_wave_interval_seconds": 2.9,
+      "elite_budget_fraction": 0.26,
+      "minimum_major_telegraph_seconds": 1.1,
+      "simultaneous_major_threats": 2,
+      "visible_enemy_design_cap": 48,
+      "major_warning_reachable_safety_required": true,
+      "runtime_player_power_scaling": false,
+      "status": "设计初值；需以真实战斗模型校准，未验证通过"
+    },
+    {
+      "pair": 8,
+      "chapters": [
+        15,
+        16
+      ],
+      "ordinary_hp_multiplier": 1.7,
+      "incoming_damage_multiplier": 1.45,
+      "nominal_wave_interval_seconds": 2.8,
+      "elite_budget_fraction": 0.3,
+      "minimum_major_telegraph_seconds": 1.05,
+      "simultaneous_major_threats": 2,
+      "visible_enemy_design_cap": 52,
+      "major_warning_reachable_safety_required": true,
+      "runtime_player_power_scaling": false,
+      "status": "设计初值；需以真实战斗模型校准，未验证通过"
+    },
+    {
+      "pair": 9,
+      "chapters": [
+        17,
+        18
+      ],
+      "ordinary_hp_multiplier": 1.85,
+      "incoming_damage_multiplier": 1.55,
+      "nominal_wave_interval_seconds": 2.7,
+      "elite_budget_fraction": 0.34,
+      "minimum_major_telegraph_seconds": 1,
+      "simultaneous_major_threats": 3,
+      "visible_enemy_design_cap": 60,
+      "major_warning_reachable_safety_required": true,
+      "runtime_player_power_scaling": false,
+      "status": "设计初值；需以真实战斗模型校准，未验证通过"
+    },
+    {
+      "pair": 10,
+      "chapters": [
+        19,
+        20
+      ],
+      "ordinary_hp_multiplier": 2,
+      "incoming_damage_multiplier": 1.65,
+      "nominal_wave_interval_seconds": 2.6,
+      "elite_budget_fraction": 0.38,
+      "minimum_major_telegraph_seconds": 0.95,
+      "simultaneous_major_threats": 3,
+      "visible_enemy_design_cap": 64,
+      "major_warning_reachable_safety_required": true,
+      "runtime_player_power_scaling": false,
+      "status": "设计初值；需以真实战斗模型校准，未验证通过"
+    }
+  ],
+  "boss_hp_rule": "离线使用固定参考阵容的真实伤害模型与25–45秒有效Boss交锋目标校准；终局45–60秒。产出固定数值写入配置；运行时不得按当前玩家攻击力偷偷匹配。前十关现有两套bossHP字段合并为一个运行权威来源。",
+  "party_limits": {
+    "active_companions": 2,
+    "support": 1,
+    "treasure_slots": [
+      "dian",
+      "qi",
+      "ma"
+    ],
+    "weapon_tier": 3,
+    "weapon_permanent_level": 5
+  },
+  "economy": {
+    "old_chapter_first_xp": 30,
+    "new_chapter_first_xp": [
+      80,
+      80,
+      90,
+      90,
+      100,
+      100,
+      110,
+      110,
+      120,
+      150
+    ],
+    "replay_xp": 10,
+    "milestone_bonus": 60,
+    "weapon_upgrade_cost": "current_level * 60, unchanged",
+    "new_currency": false,
+    "fail_practice": "首次达到本章25/50/75%进度以及首次到达Boss各得2军功，每规则版本每关总计最多8；同一里程段重试不重复领；不授予未击败Boss的首通人物/装备"
+  },
+  "map": {
+    "mode": "竖向山河长卷，5个资源分段，每段4关；可连续拖动并定位当前关",
+    "geometry_is_illustrative": true,
+    "minimum_touch_points": 48,
+    "visible_nodes_target": [
+      3,
+      5
+    ],
+    "top_logical_height": 72,
+    "collapsed_bottom_logical_height": 136,
+    "virtualized_panels_max": 3,
+    "panels": [
+      {
+        "id": 1,
+        "chapters": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "name": "群雄初起"
+      },
+      {
+        "id": 2,
+        "chapters": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "name": "江河进军"
+      },
+      {
+        "id": 3,
+        "chapters": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "name": "荆楚东行"
+      },
+      {
+        "id": 4,
+        "chapters": [
+          13,
+          14,
+          15,
+          16
+        ],
+        "name": "中原争雄"
+      },
+      {
+        "id": 5,
+        "chapters": [
+          17,
+          18,
+          19,
+          20
+        ],
+        "name": "西关归一"
+      }
+    ]
+  },
+  "acceptance_boundary": "本文件中的数值、动画时长、难度阈值均为设计和验收目标，不是当前项目实测结果。",
+  "loadout_extension": {
+    "selectedWeaponId": "owned WeaponId, default spear for missing/invalid old saves",
+    "start_tier": 1,
+    "preserve_permanent_level": true,
+    "guarantee_same_weapon_upgrade_crate": true,
+    "next_level_try_button": true,
+    "auto_replace_existing_companions_or_treasures": false
+  }
+}

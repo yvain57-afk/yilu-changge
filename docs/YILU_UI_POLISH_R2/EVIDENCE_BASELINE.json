@@ -1,0 +1,86 @@
+{
+  "project_id": "yilu-changge",
+  "snapshot_id": "s_20261001T152208_616b4696",
+  "observed_at": "2026-10-01T15:22:08.848047+00:00",
+  "previous_review_snapshot_id": "s_20261001T144313_9120222a",
+  "code_fingerprint": "c7fb089bcf3a305939d0139276ca8b1a078c93cf58165b3c95f96444554eec94",
+  "changes_since_previous": "9 evidence/receipt/media records; no captured game source change",
+  "native_candidate": {
+    "version": "0.12.2",
+    "build_number": "2026100103",
+    "build_id": "ios-06aabe7cdc074b4b",
+    "signed": false,
+    "installed": false
+  },
+  "phone_last_recorded": {
+    "version": "0.12.1",
+    "build_number": "2026100102",
+    "type": "FIX_ONLY; record, not live device access"
+  },
+  "web_build": "ui-dev-02c7c4cc21bc",
+  "this_delivery": "planning_and_acceptance_package_only; no game writes, builds, tests, installs or Codex launch",
+  "sources": [
+    {
+      "id": "f_d63f019fc04101f2a6ee5e51",
+      "path": "assets/scripts/formal/FullMenu.ts",
+      "sha256": "3dd2174876146d1f18955a29e64f783be628f2b265e878ebab520b8a550cae47",
+      "lines": "25-49, 57-58, 84-141, 155-159",
+      "finding": "Full-containment culling; return-scroll reset; fixed padding; blank reward banner; session-only reduced motion."
+    },
+    {
+      "id": "f_1b6ec394a8a327b11bb796c1",
+      "path": "assets/scripts/formal/NativePaint.ts",
+      "sha256": "6367d8be1bfb4a76f890e90c9fe84aed42cdad3a3994baf87317ec1cc6250075",
+      "lines": "20-31, 49-53",
+      "finding": "Retained pools and begin/end/abort; no public general clipping API in this source."
+    },
+    {
+      "id": "f_b24528ef35533a9f45258c66",
+      "path": "assets/scripts/formal/UIComponents.ts",
+      "sha256": "f296496778c245da237eaf77a7ff45e2a9aaf7ab4e0be3e1a4fc002c8cc4edfd",
+      "lines": "29-31, 58-66, 87-94",
+      "finding": "Components return content rect; existing banner renderer does not draw text."
+    },
+    {
+      "id": "f_120e058638fecf2251867a24",
+      "path": "assets/scripts/formal/FormalGame.ts",
+      "sha256": "5b805cb99e92414bc0d5cd52215bc930dbd419d5a3a0294d7bee1e945e9cf9f2",
+      "lines": "63-77, 78-132, 138-159",
+      "finding": "Menu input and scene roots; menu begin/end has no encompassing transaction abort guard; map chrome offsets."
+    },
+    {
+      "id": "f_039153a3cc936857bde5ec44",
+      "path": "deliverables/YILU-REGRESSION-FIRST-UI-FULL-20261001/REPORT.md",
+      "sha256": "16322c53dd1125a989b77be48df1bb01eff93b1778c9044cb8d12385b712bd9a",
+      "lines": "35-53",
+      "finding": "Build/device boundary and remaining concrete asset/performance gaps."
+    },
+    {
+      "id": "f_66ad9ad98bbc175c4c98a89f",
+      "path": "UI-FINAL/media/U03-375x667.jpg",
+      "read_media_this_turn": true,
+      "capture_type": "browser",
+      "finding": "Support line touches decorative bottom; only one list item on first screen."
+    },
+    {
+      "id": "f_6d9e81a125fd5a01348aa631",
+      "path": "UI-FINAL/media/U04-375x667.jpg",
+      "read_media_this_turn": true,
+      "capture_type": "browser",
+      "finding": "Relation glyphs at card bottom border."
+    },
+    {
+      "id": "f_b579c0e3d6887fe933ab2ebd",
+      "path": "UI-FINAL/media/U09-upper-375x667.jpg",
+      "read_media_this_turn": true,
+      "capture_type": "browser",
+      "finding": "Blank banner; large reward framing limits first-screen summary."
+    }
+  ],
+  "evidence_boundary": [
+    "Images are existing captured WebGL frames, not new runtime captures produced here.",
+    "Scroll disappearance is code-confirmed behavior; no new interactive run was performed by this assistant.",
+    "Menu render-failure propagation is a source risk; targeted fault reproduction required before claiming an observed incident.",
+    "Past device/asset failures remain open unless new evidence closes them."
+  ]
+}

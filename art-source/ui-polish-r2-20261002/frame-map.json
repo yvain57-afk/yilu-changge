@@ -1,0 +1,176 @@
+{
+  "sheets": {
+    "r2_chitu_crossbow": "formal20260927/r2-chitu-crossbow",
+    "r2_dilu_crossbow": "formal20260927/r2-dilu-crossbow"
+  },
+  "frames": {
+    "r2_ride_chitu_crossbow_run0": {
+      "s": "r2_chitu_crossbow",
+      "r": [
+        8,
+        8,
+        271,
+        475
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 475
+    },
+    "r2_ride_chitu_crossbow_run1": {
+      "s": "r2_chitu_crossbow",
+      "r": [
+        308,
+        8,
+        271,
+        475
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 475
+    },
+    "r2_ride_chitu_crossbow_run0_right_fingers": {
+      "s": "r2_chitu_crossbow",
+      "r": [
+        8,
+        540,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r2_ride_chitu_crossbow_run0_left_fingers": {
+      "s": "r2_chitu_crossbow",
+      "r": [
+        36,
+        540,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r2_ride_chitu_crossbow_run1_right_fingers": {
+      "s": "r2_chitu_crossbow",
+      "r": [
+        64,
+        540,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r2_ride_chitu_crossbow_run1_left_fingers": {
+      "s": "r2_chitu_crossbow",
+      "r": [
+        92,
+        540,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r2_ride_dilu_crossbow_run0": {
+      "s": "r2_dilu_crossbow",
+      "r": [
+        8,
+        8,
+        273,
+        474
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 474
+    },
+    "r2_ride_dilu_crossbow_run1": {
+      "s": "r2_dilu_crossbow",
+      "r": [
+        308,
+        8,
+        277,
+        474
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 474
+    },
+    "r2_ride_dilu_crossbow_run0_right_fingers": {
+      "s": "r2_dilu_crossbow",
+      "r": [
+        8,
+        540,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r2_ride_dilu_crossbow_run0_left_fingers": {
+      "s": "r2_dilu_crossbow",
+      "r": [
+        36,
+        540,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r2_ride_dilu_crossbow_run1_right_fingers": {
+      "s": "r2_dilu_crossbow",
+      "r": [
+        64,
+        540,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r2_ride_dilu_crossbow_run1_left_fingers": {
+      "s": "r2_dilu_crossbow",
+      "r": [
+        92,
+        540,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    }
+  }
+}

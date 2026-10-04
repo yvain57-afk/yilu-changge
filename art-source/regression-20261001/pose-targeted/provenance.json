@@ -1,0 +1,230 @@
+[
+  {
+    "key": "r27_char_taishici_run0",
+    "source": "art-source/regression-20261001/pose-targeted/taishici-run-reference.png",
+    "sha256": "3792a740b6cfd782303c344fb59f146985075a7afce790d3eae7ed4412904bde",
+    "method": "existing approved run",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_taishici_run1",
+    "source": "art-source/regression-20261001/pose-targeted/taishici-opposite-source.png",
+    "sha256": "5ef619fe71d113b1a03df67857aacd72310ab0ed264895b2bf8b0fd808653093",
+    "method": "single character leg-only image edit",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_ganning_run0",
+    "source": "art-source/regression-20261001/pose-targeted/ganning-run-reference.png",
+    "sha256": "a3299232388887f39819cf2ac491a1330ed9f4aba9e563f7798d2f9c7c6c4350",
+    "method": "existing approved run",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_ganning_run1",
+    "source": "art-source/regression-20261001/pose-targeted/ganning-opposite-source.png",
+    "sha256": "00b857780c2a36585cb25c04b047ddaace3de48334d975b659809576c302568a",
+    "method": "single character leg-only image edit",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_zhanghe_run0",
+    "source": "art-source/regression-20261001/pose-targeted/zhanghe-run-reference.png",
+    "sha256": "e95877a73b8c36b11ceec1902e0c26ee5b6e32169545ff85acd721852a01aa15",
+    "method": "existing approved run",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_zhanghe_run1",
+    "source": "art-source/regression-20261001/pose-targeted/zhanghe-opposite-source.png",
+    "sha256": "fecccdff455a690d57fe754cbc85431ce739ab5e113853d0a68ab00c8e2a413a",
+    "method": "single character leg-only image edit",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_xiahouyuan_run0",
+    "source": "art-source/regression-20261001/pose-targeted/xiahouyuan-run-reference.png",
+    "sha256": "36dd2dd4400d3a95cf61577adb561931508ada67fc3fd1ca3dc22f3e706bcaf2",
+    "method": "existing approved run",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_xiahouyuan_run1",
+    "source": "art-source/regression-20261001/pose-targeted/xiahouyuan-opposite-source.png",
+    "sha256": "83e3ef79403d60cfeff5d4113e1304cf1a0f791deaa12648c196e223028e774f",
+    "method": "single character leg-only image edit",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_weiyan_run0",
+    "source": "art-source/regression-20261001/pose-targeted/weiyan-run-reference.png",
+    "sha256": "4aa37cecb012eff2432efd876a598c1c4a9288e21dca886624e8cabe12a1c4fe",
+    "method": "existing approved run",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_weiyan_run1",
+    "source": "art-source/regression-20261001/pose-targeted/weiyan-opposite-source.png",
+    "sha256": "9fe043c6d207d69ab678f340c9e99439004f6ccbd446596f6d4fef7a0ef12610",
+    "method": "single character leg-only image edit",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_zhangren_run0",
+    "source": "art-source/regression-20261001/pose-targeted/zhangren-run-reference.png",
+    "sha256": "28972440922bc9fff26f29ea3344d740509207571b5d26ee58f05be799e4f847",
+    "method": "existing approved run",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_zhangren_run1",
+    "source": "art-source/regression-20261001/pose-targeted/zhangren-opposite-source.png",
+    "sha256": "0364900602eed6070633ef1bec0eca68626bc5bfd5efe5250606c6b923b7bb25",
+    "method": "single character leg-only image edit",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_dengai_run0",
+    "source": "art-source/regression-20261001/pose-targeted/dengai-run-reference.png",
+    "sha256": "c230d467e2bc3cf841721461f91328d18c475821c2e49e261a3c4f5f6832623c",
+    "method": "existing approved run",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_dengai_run1",
+    "source": "art-source/regression-20261001/pose-targeted/dengai-opposite-source.png",
+    "sha256": "ea8e1a2e8543d739ca1c4de5e812bef86e7665bbca7ad3565b3ab09bfeb77f32",
+    "method": "single character leg-only image edit",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_lusu_run0",
+    "source": "art-source/regression-20261001/pose-targeted/lusu-run-reference.png",
+    "sha256": "ceba9acc4cfc622f2fd7887761849d31d3d55784fece6582be8739cf1e9e1a5f",
+    "method": "existing approved run",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_lusu_run1",
+    "source": "art-source/regression-20261001/pose-targeted/lusu-opposite-source.png",
+    "sha256": "a4ce68a3f5d50fcd67a42bde38547b47bbc6d1335f3290d7bd169ed2b7868c2b",
+    "method": "single character leg-only image edit",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_huangyueying_run0",
+    "source": "art-source/regression-20261001/pose-targeted/huangyueying-run-reference.png",
+    "sha256": "43ace1b4dde56e9a893ac4ec974ba28189af8152c8c0a5f6ff95f4291effbed6",
+    "method": "existing approved run",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_huangyueying_run1",
+    "source": "art-source/regression-20261001/pose-targeted/huangyueying-opposite-source.png",
+    "sha256": "38ffa13784ed88243e212d6381d6ce64b77b075ec84f20f5376bfdeb037cc978",
+    "method": "single character leg-only image edit",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_caoren_run0",
+    "source": "art-source/regression-20261001/pose-targeted/caoren-run-reference.png",
+    "sha256": "c13a05c73cab3c178fc5369ec2c776592835cfca8c246ae72b22e2a4366c0b7c",
+    "method": "existing approved run",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_caoren_run1",
+    "source": "art-source/regression-20261001/pose-targeted/caoren-opposite-source.png",
+    "sha256": "f04c519f927a95f54e8892fbe8a68e012fc95678b2a3deadaeb63cfaced026ea",
+    "method": "single character leg-only image edit",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_zhonghui_run0",
+    "source": "art-source/regression-20261001/pose-targeted/zhonghui-run-reference.png",
+    "sha256": "fdb4129c348860dec6322fddd459745abca8c0f503271a3974bbda9eb785aceb",
+    "method": "existing approved run",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_zhonghui_run1",
+    "source": "art-source/regression-20261001/pose-targeted/zhonghui-opposite-source.png",
+    "sha256": "47aeef8d12aa2650a7cc75fa113f369c5a2b952f48910633c896fa079753dc77",
+    "method": "single character leg-only image edit",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_lukang_run0",
+    "source": "art-source/regression-20261001/pose-targeted/lukang-run-reference.png",
+    "sha256": "0ece4dffa5c169f9c1d2e7da2fab917cf792115d38781612b3d7d4590e8601d9",
+    "method": "existing approved run",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_char_lukang_run1",
+    "source": "art-source/regression-20261001/pose-targeted/lukang-opposite-source.png",
+    "sha256": "37d3b037b8e70da3ed7425331be28c3370e67babf23114c91f29db94fb5f2cd1",
+    "method": "single character leg-only image edit",
+    "bodyContainsWeapon": true
+  },
+  {
+    "key": "r27_held_liannu",
+    "source": "art-source/regression-20261001/pose-targeted/two-hand-crossbows-source.png",
+    "sha256": "5611c942505cf1700477013d5300679a13b9507eaa8258e9f2a17931df5de228",
+    "method": "generated independent held prop, alpha-seam crop"
+  },
+  {
+    "key": "r27_held_jiguannu",
+    "source": "art-source/regression-20261001/pose-targeted/two-hand-crossbows-source.png",
+    "sha256": "5611c942505cf1700477013d5300679a13b9507eaa8258e9f2a17931df5de228",
+    "method": "generated independent held prop, alpha-seam crop"
+  },
+  {
+    "key": "r27_held_yanlinggong",
+    "source": "art-source/regression-20261001/pose-targeted/held-bow-source.png",
+    "sha256": "5a88634e2eb47ee9abd39204d7d0b14f7059971343d01b8b32a0b61e614b8b5f",
+    "method": "generated right-facing drawn bow with one nocked arrow"
+  },
+  {
+    "key": "r27_body_crossbow0",
+    "source": "art-source/regression-20261001/pose-targeted/crossbow-body0-source.png",
+    "sha256": "1c32bb83a20cf634d93f77282234f6fcf3203a83519f4e262313f10de7311d23",
+    "method": "arms-only edit of original verified gait0",
+    "bodyContainsWeapon": false
+  },
+  {
+    "key": "r27_body_crossbow1",
+    "source": "art-source/regression-20261001/pose-targeted/crossbow-body1-source.png",
+    "sha256": "f55162b2379f56cf86a5696a66e9e8adfaf59ad85c65f9a6002908b5aa155974",
+    "method": "arms-only edit of original verified gait1",
+    "bodyContainsWeapon": false
+  },
+  {
+    "key": "r27_body_dual0",
+    "source": "art-source/regression-20261001/pose-targeted/dual-body0-source.png",
+    "sha256": "cf97f438020f042ac268f5498230714fcc658a3f839378bbc851d53a7447e8ce",
+    "method": "arms-only edit of original verified gait0",
+    "bodyContainsWeapon": false
+  },
+  {
+    "key": "r27_body_dual1",
+    "source": "art-source/regression-20261001/pose-targeted/dual-body1-source.png",
+    "sha256": "e2763a940f86880de5520c7c9f1410796398d8a0a14bde8318c6401f505c889b",
+    "method": "arms-only edit of original verified gait1",
+    "bodyContainsWeapon": false
+  },
+  {
+    "key": "r27_body_bow0",
+    "source": "art-source/regression-20261001/pose-targeted/bow-body0-source.png",
+    "sha256": "a8690fd35b6e02c910518c478977cc4c2fd3b5320256fd89149d60b9c13059f7",
+    "method": "arms-only edit of original verified gait0",
+    "bodyContainsWeapon": false
+  },
+  {
+    "key": "r27_body_bow1",
+    "source": "art-source/regression-20261001/pose-targeted/bow-body1-source.png",
+    "sha256": "06a34a041174fd0ad1e8fe45702d2c3348f0c766b939c7dc77e9cacc34a03ddb",
+    "method": "arms-only edit of original verified gait1",
+    "bodyContainsWeapon": false
+  }
+]

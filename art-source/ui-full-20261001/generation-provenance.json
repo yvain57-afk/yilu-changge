@@ -1,0 +1,52 @@
+[
+  {
+    "local_file": "source/buttons-primary.png",
+    "sha256": "b52d339116a1228e9a35324874431014f6c6beed88f0685e56b2f6239f22f4ec",
+    "tool": "image_gen.imagegen",
+    "original_output": "/Users/yvainair/.codex/generated_images/01a0f749-35ae-7b01-8cc3-37c1c289ffd2/exec-64fd78ee-af00-4caf-8db0-09983fe61571.png",
+    "transparent_background": true,
+    "prompt": "Production 2D game UI texture atlas, exactly 3 columns by 3 rows of NINE individual blank horizontal buttons on transparent background. Canvas 1536x1024. Each cell 512x341; each button centered with safe transparent padding and occupies 440x180 pixels. No labels, no text, no numbers, no icons anywhere. Three Kingdoms mobile game tactile 2.5D bronze bevel, subtle silk grain, carved rounded corners, restrained warm gold trim, light upper-left, thick dark bottom edge, absolutely front-facing orthographic rectangular shape, no perspective. Row 1 warm gold buttons normal, pressed, disabled in that order. Row 2 ink navy buttons normal, pressed, disabled. Row 3 dark red buttons normal, pressed, disabled. Palette gold #D7B363, highlight #F4E0A3, navy #101D2B/#1B3248, red #8F3028. Pressed looks recessed and less high; disabled muted blue-gray/bronze low contrast but opaque. All nine precisely same size and silhouette, modest rounded corners, corner ornament confined 32px from edges, center must remain plain and stretchable. Each piece fully disconnected by transparent gutters. These are real nine-slice UI sprite components, NOT a screenshot or full page. Transparent exterior.",
+    "selected": true,
+    "api_key_required": false
+  },
+  {
+    "local_file": "source/buttons-key.png",
+    "sha256": "fd2a5dd830542a9c4005951c8387132bbb520e04b89e2297b243be779653e3bb",
+    "tool": "image_gen.imagegen",
+    "original_output": "/Users/yvainair/.codex/generated_images/01a0f749-35ae-7b01-8cc3-37c1c289ffd2/exec-1b132193-4b73-441f-91ae-00322652b77d.png",
+    "transparent_background": true,
+    "prompt": "Keep the nine existing UI buttons exactly as composed, same material/color/state and layout, but replace ALL backdrop and outside shadows with perfectly flat solid chroma green #00FF00. No backdrop gradient, no cast shadows outside button silhouettes, no reflections. The green must be absolutely flat uniform #00FF00 throughout all space outside the 9 rounded rectangles. Do not use green within buttons. Preserve each whole button outline. No text. This is a texture atlas for automatic chromakey cutout.",
+    "selected": false,
+    "api_key_required": false
+  },
+  {
+    "local_file": "source/panels.png",
+    "sha256": "cb4205ed77e5964aebc2091010453a6be48f562ce0cd592337f768ece5e5a12a",
+    "tool": "image_gen.imagegen",
+    "original_output": "/Users/yvainair/.codex/generated_images/01a0f749-35ae-7b01-8cc3-37c1c289ffd2/exec-5bd05116-9135-4bb9-8450-3d380ba789c0.png",
+    "transparent_background": true,
+    "prompt": "Production UI COMPONENT ATLAS for Three Kingdoms mobile game, exactly 3 columns x 3 rows, 1536x1536. NINE fully separate square navy silk/leather plates, front-facing orthographic, upper-left light, subtle carved bronze corner bevel, dark bottom thickness, restrained gold rim. Each cell512x512 contains ONE square component400x400, 56px surrounding perfectly FLAT SOLID CHROMA GREEN #00FF00. No gradients, shadows or objects anywhere outside components. Row1 PANEL states normal muted ink navy #101D2B, raised brighter navy #1B3248, muted desaturated slate. Row2 ITEM CARD normal navy bronze, selected navy warm gold rim, locked muted charcoal pewter rim. Row3 three OTHER COMPONENTS: normal dialog large plain navy interior bronze rim, warning dialog navy interior dark red inner rim, reward socket recessed circular-square tray with bronze edge. Center interiors smooth plain slightly textured and stretchable, decorations confined32px corners. No text, no letters, no symbols, no numbers. No characters or entire page. Preserve each full square silhouette isolated. Green only background; absolutely not inside navy components.",
+    "selected": true,
+    "api_key_required": false
+  },
+  {
+    "local_file": "source/misc.png",
+    "sha256": "25d2d623d54bee70e4b4c9f3b8a592f082e865d0119aafc3570d39fb6065e2fd",
+    "tool": "image_gen.imagegen",
+    "original_output": "/Users/yvainair/.codex/generated_images/01a0f749-35ae-7b01-8cc3-37c1c289ffd2/exec-52bf0cda-14c1-4281-aa9a-68523958fdf9.png",
+    "transparent_background": true,
+    "prompt": "Production Three Kingdoms UI texture atlas, exactly THREE COLUMNS and FOUR ROWS of twelve isolated objects. Square canvas 1536x1536. Every cell512x384 generous padding. TOP ROW three blank short rectangular tab plates: navy normal, gold-rim selected, gray disabled, all same size400x160. SECOND ROW: red-and-gold blank victory cloth ribbon with folded side tails, navy-and-gold blank milestone cloth ribbon with folded side tails, round dark bronze medal base with restrained sunburst edge and blank center. THIRD ROW: gold-highlight square reward tray with a recessed SQUARE center, long empty navy progress track with bronze edge, plain warm gold progress fill capsule with beveled ends. BOTTOM ROW: small bronze padlock icon, small bronze empty open tray icon, circular loading arrow with clear head. Real tactile matte silk leather bronze and jade materials, front orthographic, upper-left highlights, thick bottom edges. Exactly12 objects, no extra objects, no text, letters, words or numerals. Flat solid #00FF00 background all around each piece, no outside shadow or gradient; no green within pieces. All silhouettes complete separated, no overlap. Clean mobile game components only, not a screen.",
+    "selected": true,
+    "api_key_required": false
+  },
+  {
+    "local_file": "source/addons.png",
+    "sha256": "b0698a7effccedcfb77dfc566ecb5fb03e21e3ad19df0ff105fc45e5dad66740",
+    "tool": "image_gen.imagegen",
+    "original_output": "/Users/yvainair/.codex/generated_images/01a0f749-35ae-7b01-8cc3-37c1c289ffd2/exec-70269043-3c93-4468-b594-7b2fd266e163.png",
+    "transparent_background": true,
+    "prompt": "A production game UI SPRITE ATLAS of exactly FOUR individual objects in a 2x2 grid with very generous transparent gutters. Square1536x1536. Three Kingdoms tasteful warm bronze, matte navy, silk fabric material; upper-left light, front orthographic, thick dark lower edge. TOP LEFT a SQUARE recessed navy reward item tray bronze rim, no circular center, very plain square center, restrained corner cloud carvings confined50px. TOP RIGHT same exact square tray but brighter warmgold selected rim, plain square center. BOTTOM LEFT compact dark red octagonal error shield with only a raised gold X cross (no text/no exclamation mark), bold silhouette easy identify at24px. BOTTOM RIGHT small polished gold circular progress indicator cap with subtle ring edge and plain face. Blank objects only; no letters, words, numerals, reward art or characters. Perfect flat solid #00FF00 exterior all around the four detached silhouettes, no outside shadows or gradients. Each occupies less than75 percent cell width, complete silhouettes, no overlaps. This is transparent UI component art, not a page.",
+    "selected": true,
+    "api_key_required": false
+  }
+]

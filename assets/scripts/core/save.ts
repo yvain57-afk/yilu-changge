@@ -1,6 +1,6 @@
 import {RUNNER_NUMERIC_LIMIT} from './runnerConfig';
 export const IDS = ['trial-01','trial-02','trial-03'] as const;
-export interface Save { cleared: Record<string,boolean>; best: Record<string,number>; settings: {music:boolean; sfx:boolean; vibration:boolean} }
+export interface Save { cleared: Record<string,boolean>; best: Record<string,number>; settings: {music:boolean; sfx:boolean; vibration:boolean; reducedMotion?:boolean; musicVolume?:number} }
 export interface Storage { getItem(key:string):string|null; setItem(key:string,value:string):void }
 export const KEY='yilu-changge-prototype-v2';
 export const LEGACY_KEY='yilu-changge-v1';
@@ -15,7 +15,7 @@ export class Book {
  constructor(private storage:Storage) {
   try {
    const raw=storage.getItem(KEY);
-   if(raw!==null){const parsed=JSON.parse(raw);if(!valid(parsed))throw Error('bad save');this.extras={...parsed};const best=(parsed as any).runnerVideoV2?.best;for(const id of IDS)if(Number.isInteger(best?.[id])&&best[id]>=0&&best[id]<=RUNNER_NUMERIC_LIMIT)this.runnerBest[id]=best[id];for(const id of IDS){this.data.cleared[id]=parsed.cleared[id];this.data.best[id]=parsed.best[id];}this.data.settings={music:parsed.settings.music,sfx:parsed.settings.sfx,vibration:parsed.settings.vibration};}
+   if(raw!==null){const parsed=JSON.parse(raw);if(!valid(parsed))throw Error('bad save');this.extras={...parsed};const best=(parsed as any).runnerVideoV2?.best;for(const id of IDS)if(Number.isInteger(best?.[id])&&best[id]>=0&&best[id]<=RUNNER_NUMERIC_LIMIT)this.runnerBest[id]=best[id];for(const id of IDS){this.data.cleared[id]=parsed.cleared[id];this.data.best[id]=parsed.best[id];}this.data.settings={music:parsed.settings.music,sfx:parsed.settings.sfx,vibration:parsed.settings.vibration,...(typeof parsed.settings.reducedMotion==='boolean'?{reducedMotion:parsed.settings.reducedMotion}:{}),...(typeof parsed.settings.musicVolume==='number'&&Number.isFinite(parsed.settings.musicVolume)?{musicVolume:Math.max(0,Math.min(1,parsed.settings.musicVolume))}:{})};}
    else {const old=storage.getItem(LEGACY_KEY);if(old!==null){try{const parsed=JSON.parse(old);if(settingsValid(parsed.settings))this.data.settings={music:parsed.settings.music,sfx:parsed.settings.sfx,vibration:parsed.settings.vibration};}catch{/* Keep unreadable legacy data untouched. */}if(this.persist())this.notice='旧版记录已保留，新试玩从第一关开始';}}
   }catch{this.notice='存档无法读取，已恢复默认；仍可继续游玩。';}
  }

@@ -1,0 +1,57 @@
+{
+  "path": "/Users/yvainair/Code/游戏-左右滑古代史/evidence/BATTLE-FEEL-20261004/final/media/after-normal-raw.mp4",
+  "sha256": "cfb3134f4c1b87655958f190bedaaa611740a1732c6bd32f692c56656dfc9bf7",
+  "source": "/Users/yvainair/Code/游戏-左右滑古代史/evidence/BATTLE-FEEL-20261004/final/video-raw/d7771b6b4af3b77bd5f107fb2385e112.webm",
+  "source_sha256": "0b3dc86a9ac085376ee453b67027bcd2229afc74d91f6fea007be6914aebefbb",
+  "build": {
+    "build_id": "battle-feel-78845c12d27a",
+    "code_fingerprint": "9262d33ad5370693eb90a2a70a23b8a40622c509989c970546f6a1ae57253b53",
+    "produced_at": "2026-10-03T17:13:03.606587+00:00",
+    "target": "browser_isolated",
+    "configuration": "Debug",
+    "app_version": "0.12.6",
+    "build_number": "2026100401"
+  },
+  "scene": {
+    "chapter": 16,
+    "weapon": "huaji",
+    "level": 1,
+    "companions": [
+      "lubu",
+      "machao"
+    ],
+    "support": "diao",
+    "slots": {
+      "dian": "taiping",
+      "qi": "huxinjing",
+      "ma": "jingfan"
+    },
+    "seed": 71
+  },
+  "speed": "original wall time; continuous full capture including scene-entry, no speed change",
+  "audio": "silent Playwright capture, not sound evidence",
+  "scope": "Actual Cocos WebGL chapter17 authored route, isolated memory save with legitimate prior-unlocked loadout. Friendly attacks active. Only normal game movement supplied by stationary/current-visible-policy/alternating lateral input. No altered route, time acceleration, extra health, injected damage or invulnerability. Not a native or human input performance claim.",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 402,
+        "height": 874
+      }
+    ],
+    "format": {
+      "duration": "45.000000"
+    }
+  },
+  "continuous_scene_clip": {
+    "path": "/Users/yvainair/Code/游戏-左右滑古代史/evidence/BATTLE-FEEL-20261004/final/media/after-normal-35s.mp4",
+    "sha256": "a6d4f9167fe0ba3939d20df12f15f64f7abca84a3672aa74d1c19fe682a53170",
+    "source": "/Users/yvainair/Code/游戏-左右滑古代史/evidence/BATTLE-FEEL-20261004/final/media/after-normal-raw.mp4",
+    "start_seconds": 6.6,
+    "duration_seconds": 35,
+    "first_screenshot_match_mse": 344.36940366972476,
+    "speed": "original wall time, contiguous trim only"
+  }
+}

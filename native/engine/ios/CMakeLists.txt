@@ -19,3 +19,9 @@ set(EXECUTABLE_NAME ${APP_NAME}-mobile)
 cc_ios_before_target(${EXECUTABLE_NAME})
 add_executable(${EXECUTABLE_NAME} ${CC_ALL_SOURCES})
 cc_ios_after_target(${EXECUTABLE_NAME})
+
+# Required-reason APIs in the statically linked engine belong to the app bundle.
+set(CC_PRIVACY_MANIFEST "${CC_PROJECT_DIR}/PrivacyInfo.xcprivacy")
+target_sources(${EXECUTABLE_NAME} PRIVATE "${CC_PRIVACY_MANIFEST}")
+set_source_files_properties("${CC_PRIVACY_MANIFEST}" PROPERTIES
+    MACOSX_PACKAGE_LOCATION Resources)

@@ -1,0 +1,44 @@
+[
+  {
+    "key": "r27_ride_chitu_crossbow",
+    "source": "art-source/regression-20261001/oldmounts-targeted/chitu-crossbow-source.png",
+    "sha256": "65beb8ce0cce3bf9cfa98d55f39ef661dda26fe462a5a6c759e0e6789590097f",
+    "method": "arms-only edit of same original red/white mounted unit",
+    "horseColorPreserved": true
+  },
+  {
+    "key": "r27_ride_chitu_dual",
+    "source": "art-source/regression-20261001/oldmounts-targeted/chitu-dual-source.png",
+    "sha256": "12a2cb353c107147729e5c9acb6d54499a8e837ca5ed72665de9919c679a82bb",
+    "method": "arms-only edit of same original red/white mounted unit",
+    "horseColorPreserved": true
+  },
+  {
+    "key": "r27_ride_chitu_bow",
+    "source": "art-source/regression-20261001/oldmounts-targeted/chitu-bow-source.png",
+    "sha256": "96863f8d08c717f2e185f63708bd05f27cfbcc0fb0fbbc9e042bf9b0d86d1f11",
+    "method": "arms-only edit of same original red/white mounted unit",
+    "horseColorPreserved": true
+  },
+  {
+    "key": "r27_ride_dilu_crossbow",
+    "source": "art-source/regression-20261001/oldmounts-targeted/dilu-crossbow-source.png",
+    "sha256": "eec228ea9544ffe41dd576b5cbbf84229a391e69d7738ad7b20e146c07345e6d",
+    "method": "arms-only edit of same original red/white mounted unit",
+    "horseColorPreserved": true
+  },
+  {
+    "key": "r27_ride_dilu_dual",
+    "source": "art-source/regression-20261001/oldmounts-targeted/dilu-dual-source.png",
+    "sha256": "bb481c600e949ad120d9fd7a6e0e951043cdaf4e78e0b91a2d864cd377318cef",
+    "method": "arms-only edit of same original red/white mounted unit",
+    "horseColorPreserved": true
+  },
+  {
+    "key": "r27_ride_dilu_bow",
+    "source": "art-source/regression-20261001/oldmounts-targeted/dilu-bow-source.png",
+    "sha256": "f1c665c59532d38b3414d9bbbf8ce3731ec3c6a49f676b69296301e98eaf9bae",
+    "method": "arms-only edit of same original red/white mounted unit",
+    "horseColorPreserved": true
+  }
+]

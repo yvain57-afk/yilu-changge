@@ -1,0 +1,170 @@
+{
+  "taishici": {
+    "run": [
+      "r27_char_taishici_run0",
+      "r27_char_taishici_run1"
+    ],
+    "cycle": [
+      0,
+      1
+    ],
+    "distinct_leg_poses": 2,
+    "four_distinct_phases": false,
+    "source_original": "c20_char_taishici_run",
+    "bodyContainsWeapon": true
+  },
+  "ganning": {
+    "run": [
+      "r27_char_ganning_run0",
+      "r27_char_ganning_run1"
+    ],
+    "cycle": [
+      0,
+      1
+    ],
+    "distinct_leg_poses": 2,
+    "four_distinct_phases": false,
+    "source_original": "c20_char_ganning_run",
+    "bodyContainsWeapon": true
+  },
+  "zhanghe": {
+    "run": [
+      "r27_char_zhanghe_run0",
+      "r27_char_zhanghe_run1"
+    ],
+    "cycle": [
+      0,
+      1
+    ],
+    "distinct_leg_poses": 2,
+    "four_distinct_phases": false,
+    "source_original": "c20_char_zhanghe_run",
+    "bodyContainsWeapon": true
+  },
+  "xiahouyuan": {
+    "run": [
+      "r27_char_xiahouyuan_run0",
+      "r27_char_xiahouyuan_run1"
+    ],
+    "cycle": [
+      0,
+      1
+    ],
+    "distinct_leg_poses": 2,
+    "four_distinct_phases": false,
+    "source_original": "c20_char_xiahouyuan_run",
+    "bodyContainsWeapon": true
+  },
+  "weiyan": {
+    "run": [
+      "r27_char_weiyan_run0",
+      "r27_char_weiyan_run1"
+    ],
+    "cycle": [
+      0,
+      1
+    ],
+    "distinct_leg_poses": 2,
+    "four_distinct_phases": false,
+    "source_original": "c20_char_weiyan_run",
+    "bodyContainsWeapon": true
+  },
+  "zhangren": {
+    "run": [
+      "r27_char_zhangren_run0",
+      "r27_char_zhangren_run1"
+    ],
+    "cycle": [
+      0,
+      1
+    ],
+    "distinct_leg_poses": 2,
+    "four_distinct_phases": false,
+    "source_original": "c20_char_zhangren_run",
+    "bodyContainsWeapon": true
+  },
+  "dengai": {
+    "run": [
+      "r27_char_dengai_run0",
+      "r27_char_dengai_run1"
+    ],
+    "cycle": [
+      0,
+      1
+    ],
+    "distinct_leg_poses": 2,
+    "four_distinct_phases": false,
+    "source_original": "c20_char_dengai_run",
+    "bodyContainsWeapon": true
+  },
+  "lusu": {
+    "run": [
+      "r27_char_lusu_run0",
+      "r27_char_lusu_run1"
+    ],
+    "cycle": [
+      0,
+      1
+    ],
+    "distinct_leg_poses": 2,
+    "four_distinct_phases": false,
+    "source_original": "c20_char_lusu_run",
+    "bodyContainsWeapon": true
+  },
+  "huangyueying": {
+    "run": [
+      "r27_char_huangyueying_run0",
+      "r27_char_huangyueying_run1"
+    ],
+    "cycle": [
+      0,
+      1
+    ],
+    "distinct_leg_poses": 2,
+    "four_distinct_phases": false,
+    "source_original": "c20_char_huangyueying_run",
+    "bodyContainsWeapon": true
+  },
+  "caoren": {
+    "run": [
+      "r27_char_caoren_run0",
+      "r27_char_caoren_run1"
+    ],
+    "cycle": [
+      0,
+      1
+    ],
+    "distinct_leg_poses": 2,
+    "four_distinct_phases": false,
+    "source_original": "c20_char_caoren_run",
+    "bodyContainsWeapon": true
+  },
+  "zhonghui": {
+    "run": [
+      "r27_char_zhonghui_run0",
+      "r27_char_zhonghui_run1"
+    ],
+    "cycle": [
+      0,
+      1
+    ],
+    "distinct_leg_poses": 2,
+    "four_distinct_phases": false,
+    "source_original": "c20_char_zhonghui_run",
+    "bodyContainsWeapon": true
+  },
+  "lukang": {
+    "run": [
+      "r27_char_lukang_run0",
+      "r27_char_lukang_run1"
+    ],
+    "cycle": [
+      0,
+      1
+    ],
+    "distinct_leg_poses": 2,
+    "four_distinct_phases": false,
+    "source_original": "c20_char_lukang_run",
+    "bodyContainsWeapon": true
+  }
+}

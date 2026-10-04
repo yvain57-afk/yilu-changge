@@ -1,0 +1,259 @@
+{
+  "sheets": {
+    "r27_oldmounts": "formal20260927/r27-oldmounts"
+  },
+  "frames": {
+    "r27_ride_chitu_crossbow": {
+      "s": "r27_oldmounts",
+      "r": [
+        8,
+        8,
+        271,
+        475
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 475
+    },
+    "r27_ride_chitu_dual": {
+      "s": "r27_oldmounts",
+      "r": [
+        520,
+        8,
+        279,
+        475
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 475
+    },
+    "r27_ride_chitu_bow": {
+      "s": "r27_oldmounts",
+      "r": [
+        1032,
+        8,
+        275,
+        475
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 475
+    },
+    "r27_ride_dilu_crossbow": {
+      "s": "r27_oldmounts",
+      "r": [
+        8,
+        500,
+        273,
+        474
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 474
+    },
+    "r27_ride_dilu_dual": {
+      "s": "r27_oldmounts",
+      "r": [
+        520,
+        500,
+        278,
+        474
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 474
+    },
+    "r27_ride_dilu_bow": {
+      "s": "r27_oldmounts",
+      "r": [
+        1032,
+        500,
+        276,
+        474
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 474
+    },
+    "r27_ride_chitu_crossbow_right_fingers": {
+      "s": "r27_oldmounts",
+      "r": [
+        8,
+        992,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r27_ride_chitu_crossbow_left_fingers": {
+      "s": "r27_oldmounts",
+      "r": [
+        36,
+        992,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r27_ride_chitu_dual_right_fingers": {
+      "s": "r27_oldmounts",
+      "r": [
+        64,
+        992,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r27_ride_chitu_dual_left_fingers": {
+      "s": "r27_oldmounts",
+      "r": [
+        92,
+        992,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r27_ride_chitu_bow_right_fingers": {
+      "s": "r27_oldmounts",
+      "r": [
+        120,
+        992,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r27_ride_chitu_bow_left_fingers": {
+      "s": "r27_oldmounts",
+      "r": [
+        148,
+        992,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r27_ride_dilu_crossbow_right_fingers": {
+      "s": "r27_oldmounts",
+      "r": [
+        176,
+        992,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r27_ride_dilu_crossbow_left_fingers": {
+      "s": "r27_oldmounts",
+      "r": [
+        204,
+        992,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r27_ride_dilu_dual_right_fingers": {
+      "s": "r27_oldmounts",
+      "r": [
+        232,
+        992,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r27_ride_dilu_dual_left_fingers": {
+      "s": "r27_oldmounts",
+      "r": [
+        260,
+        992,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r27_ride_dilu_bow_right_fingers": {
+      "s": "r27_oldmounts",
+      "r": [
+        288,
+        992,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    },
+    "r27_ride_dilu_bow_left_fingers": {
+      "s": "r27_oldmounts",
+      "r": [
+        316,
+        992,
+        20,
+        20
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 20
+    }
+  }
+}

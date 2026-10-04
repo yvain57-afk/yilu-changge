@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-01",
+  "method": "built-in image_gen.imagegen reference editing; original campaign20 sources kept",
+  "external_paid_api": false,
+  "sources": [
+    {
+      "path": "art-source/regression-20261001/characters-a-contact-source.png",
+      "sha256": "f54230ce27a43145e5428788a1c048c0e8a252379f55db2ba3538a40480b6e0a",
+      "bytes": 2812215,
+      "accepted": false
+    },
+    {
+      "path": "art-source/regression-20261001/characters-a-gaits-source.png",
+      "sha256": "1833e599107eb2fbfffd91eb23ab083cda902361f01673e1b200c84e6bbb5958",
+      "bytes": 2422850,
+      "accepted": false
+    },
+    {
+      "path": "art-source/regression-20261001/characters-b-gaits-source.png",
+      "sha256": "fefb1dcf7416c595b7dc89005e5713f7fa5db739f45f3989a33ef77be59dcdc6",
+      "bytes": 2911861,
+      "accepted": false
+    },
+    {
+      "path": "art-source/regression-20261001/hero-gaits-source.png",
+      "sha256": "15311c4199617c859731c4e6831dd6c117ed154e88897231b842696174924bbc",
+      "bytes": 2629163,
+      "accepted": false
+    },
+    {
+      "path": "art-source/regression-20261001/mount-sockets-source.png",
+      "sha256": "9e18ab909b3620bf5c2836add1ab0458596c81d3d6bf1c5d78c70b0df9ca6dde",
+      "bytes": 2753181,
+      "accepted": true
+    },
+    {
+      "path": "art-source/regression-20261001/held-parts-source.png",
+      "sha256": "82afc03d1d92acb638205e3006a38c2e0e2b1dd5d0a67bb34b0df638742096cf",
+      "bytes": 1188699,
+      "accepted": true
+    }
+  ],
+  "runtime_verified": false,
+  "B11_status": "twelve_characters_two_phase_assets_ready_runtime_not_verified",
+  "B11_reason": "Single character leg-only editing succeeded after sheet method failed; 12 distinct opposite support-leg frames inspected. Only two independent phases per character.",
+  "accepted_resources": [
+    "assets/resources/formal20260927/regression-mount-sockets.png",
+    "assets/resources/formal20260927/regression-held-parts.png"
+  ],
+  "frame_count": 27,
+  "gait_attempt_count": 4,
+  "B10_status": "assets_ready_runtime_not_verified",
+  "historical_first_attempt": {
+    "B11_status": "blocked_asset",
+    "reason": "Generated new-character gait attempts failed near/far leg alternation and some weapon identity preservation; rejected rather than renaming copies.",
+    "attempts": 4
+  },
+  "current_increment": "art-source/regression-20261001/pose-targeted/frame-map.json",
+  "current_validation": "art-source/regression-20261001/pose-targeted/validation.json"
+}

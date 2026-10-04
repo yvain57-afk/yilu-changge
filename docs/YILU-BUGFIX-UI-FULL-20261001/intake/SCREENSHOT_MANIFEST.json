@@ -1,0 +1,93 @@
+[
+  {
+    "id": "S01",
+    "filename": "IMG_4392.jpeg",
+    "path": "reference/IMG_4392.jpeg",
+    "sha256": "5be7c18dccdaee495b8dfd5d571ff4e73f509e1c18d114008ee4a1fabb641c87",
+    "dimensions": [
+      1206,
+      2622
+    ],
+    "role": "user_gameplay_screenshot_build_unknown",
+    "frame_timestamp_seconds": null,
+    "notes": "截图中的界面文字是观察证据；文件名和发送时间不证明运行版本或帧时间。"
+  },
+  {
+    "id": "S02",
+    "filename": "IMG_4393.jpeg",
+    "path": "reference/IMG_4393.jpeg",
+    "sha256": "c4ca15873b2641b56a7f326d3695cf2298e325277bcdf861e000c7f4da582f90",
+    "dimensions": [
+      706,
+      1536
+    ],
+    "role": "user_gameplay_screenshot_build_unknown",
+    "frame_timestamp_seconds": null,
+    "notes": "截图中的界面文字是观察证据；文件名和发送时间不证明运行版本或帧时间。"
+  },
+  {
+    "id": "S03",
+    "filename": "IMG_4394.jpeg",
+    "path": "reference/IMG_4394.jpeg",
+    "sha256": "0550a77af1906c866b8544cc564c1238e1278ea3b4ddeae4caf047adc279f65e",
+    "dimensions": [
+      706,
+      1536
+    ],
+    "role": "user_gameplay_screenshot_build_unknown",
+    "frame_timestamp_seconds": null,
+    "notes": "截图中的界面文字是观察证据；文件名和发送时间不证明运行版本或帧时间。"
+  },
+  {
+    "id": "S04",
+    "filename": "IMG_4395.jpeg",
+    "path": "reference/IMG_4395.jpeg",
+    "sha256": "009116693d44eea7c88349dfa06ad98b9df0f46165628866bf2a9f4097b35f83",
+    "dimensions": [
+      706,
+      1536
+    ],
+    "role": "user_gameplay_screenshot_build_unknown",
+    "frame_timestamp_seconds": null,
+    "notes": "截图中的界面文字是观察证据；文件名和发送时间不证明运行版本或帧时间。"
+  },
+  {
+    "id": "S05",
+    "filename": "IMG_4396.jpeg",
+    "path": "reference/IMG_4396.jpeg",
+    "sha256": "7832bbb39c1613618ad007680bc93a0ab9d2f1ec9f72298960d7d9cc77b1446d",
+    "dimensions": [
+      706,
+      1536
+    ],
+    "role": "user_gameplay_screenshot_build_unknown",
+    "frame_timestamp_seconds": null,
+    "notes": "截图中的界面文字是观察证据；文件名和发送时间不证明运行版本或帧时间。"
+  },
+  {
+    "id": "S06",
+    "filename": "IMG_4397.jpeg",
+    "path": "reference/IMG_4397.jpeg",
+    "sha256": "929c2ff3397dc82c36c7ea4afe87bcf4e6d69e534e1d8b8ea6c101a9040b7f08",
+    "dimensions": [
+      706,
+      1536
+    ],
+    "role": "user_gameplay_screenshot_build_unknown",
+    "frame_timestamp_seconds": null,
+    "notes": "截图中的界面文字是观察证据；文件名和发送时间不证明运行版本或帧时间。"
+  },
+  {
+    "id": "S07",
+    "filename": "IMG_4399.jpeg",
+    "path": "reference/IMG_4399.jpeg",
+    "sha256": "c4acd75f9c46fa9fac051a920787bc9ec947c6f83cb1ba9065f64e5c4c0a69cb",
+    "dimensions": [
+      706,
+      1536
+    ],
+    "role": "external_visual_reference_only",
+    "frame_timestamp_seconds": null,
+    "notes": "只借鉴体积、分层、按钮与庆祝构图；不复制角色、商标、素材、规则。"
+  }
+]

@@ -1,0 +1,7 @@
+import {open,E} from './browser.mjs';import fs from 'node:fs';import assert from 'node:assert/strict';
+const t=await open('roles',402,874),rows=[];
+try{await t.goto('new');await t.command('r3-scene',{chapter:19,weapon:'guandao',level:3,companions:['machao','lubu'],seed:71});await t.command('r3-actor-cycle');await t.command('r3-pause',true);
+ const ids=await t.p.evaluate(async()=>{const cc=await System.import('cc'),g=cc.director.getScene().getChildByName('Canvas').components.find(c=>c.constructor.name==='FormalGame');globalThis.__R3_GAME=g;return g.store.data.captures;});
+ for(const id of ids)for(const [pose,value] of [['run',0],['wind',.25],['rel',.15],['rec',.05]]){
+ await t.p.evaluate(({id,value})=>{const g=__R3_GAME,s=g.battle.state;s.companions=[{id,dx:-.6,t:0,pose:value,cd:2,fired:true,attackN:0}];}, {id,value});await t.p.waitForTimeout(26);const s=await t.p.evaluate(()=>__YLCG__.snapshot());assert.equal(s.screen,'battle',id+' '+pose);assert.deepEqual(s.renderErrors,[]);assert.deepEqual(s.missingArt,[]);const a=s.diagnostics.actorPoses.find(a=>a.role==='ally');assert.equal(a.actorId,id);assert.equal(a.pose,pose);rows.push({id,pose,build:s.build,actor:a,scope:'Actual Cocos controlled fixed pose. Does not prove independent gait or normal course.'});if(pose==='rec')await t.capture('role-ally-'+id+'-rec');}
+}finally{await t.close();fs.writeFileSync(E+'/roles-runtime.json',JSON.stringify({rows,pageErrors:t.errors},null,2));}
