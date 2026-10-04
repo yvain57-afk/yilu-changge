@@ -1,3 +1,7 @@
+# 最新 TestFlight 安装诊断（2026-10-04 19:53）
+
+邀请接受、当前0.12.8可见，但实际安装失败。实体手机仍0.12.5/2026100304；Console捕获获取安装数据失败 `Error Downloading Install Data` / serverCode200，未进入下载或安装。设备符合iOS16+/arm64/Metal，免费App协议有效。具体服务端原因仍未暴露，不将类似Beta contract案例冒称已确认。Apple支持工单已准备、等待用户授权；本地同版覆盖安装亦等待用户选择，不卸载清档。详见 `deliverables/TESTFLIGHT-20261004/INSTALL-DIAGNOSIS.md`，下方上传/邀请历史有效，但不能当安装成功。游戏源、指纹、dirty、存档未改。
+
 ## 2026-10-04 GitHub / TestFlight 更新（当前）
 
 用户明确授权“上传git并且覆盖到testflight”。正式源与必要资产已提交推送 `e0e88e9`，草稿 PR #4：https://github.com/yvain57-afk/yilu-changge/pull/4，未合并main。0.12.8 /2026100403，代码指纹 `0f9797bb89081d2980e7d59794eef69108bc18c22bc169daf69f97a6512a221c`，Release Archive、严格签名、包内指纹/两首PCM哈希通过；18:53:55 Apple上传成功，后台处理完成，内部“开发自测”新构建正在测试。旧构建保留；本轮未安装手机、不访问摄像头。

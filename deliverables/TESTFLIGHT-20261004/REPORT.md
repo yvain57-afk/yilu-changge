@@ -1,5 +1,7 @@
 # TestFlight 0.12.8 更新实际结果
 
+**最新安装事实（19:53）：TestFlight 新版可见，但无法安装。** 实体 iPhone 实际回读仍为 0.12.5 /2026100304。Console 捕获失败发生在 `Downloading Install Data`，返回 `Error Downloading Install Data`，尚未下载或安装新版；详情见 [INSTALL-DIAGNOSIS.md](INSTALL-DIAGNOSIS.md)。邀请接受与后台测试状态不代表安装成功。下方构建、上传和邀请事实仍有效。
+
 2026-10-04：已提交并推送正式源代码，Release Archive 与 App Store Connect 上传成功；Apple 处理完成，内部“开发自测”组的 **0.12.8（2026100403）正在测试**。外部“朋友体验”组尚未加入新版，Beta 审核未提交成功。
 
 | 项目 | 实际结果 |

@@ -45,5 +45,6 @@
   "external_auto_notify": false,
   "internal_tester_status": "ACCEPTED: live App Store Connect readback 2026-10-04",
   "user_testflight_visibility": "CONFIRMED_BY_USER: 已接受，看到一路长歌了",
-  "user_testflight_installation": "NOT_CONFIRMED"
+  "user_testflight_installation": "FAILED: 2026-10-04 19:53 Console captured Error Downloading Install Data; requested app unavailable; device remains 0.12.5/2026100304",
+  "installation_diagnosis": "deliverables/TESTFLIGHT-20261004/INSTALL-DIAGNOSIS.md"
 }
