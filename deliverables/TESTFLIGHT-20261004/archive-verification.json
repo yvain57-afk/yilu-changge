@@ -1,0 +1,20 @@
+{
+  "archive": "/Users/yvainair/Code/游戏-左右滑古代史/release/testflight-20261004/Yilu-0.12.8-2026100403.xcarchive",
+  "bundle_id": "com.yvainair.yiluchangge",
+  "version": "0.12.8",
+  "build_number": "2026100403",
+  "code_fingerprint": "0f9797bb89081d2980e7d59794eef69108bc18c22bc169daf69f97a6512a221c",
+  "embedded_fingerprint": "MATCH",
+  "embedded_script": [
+    "assets/main/index.js"
+  ],
+  "privacy_manifest": "PRESENT",
+  "codesign_verification": "PASS",
+  "music_pcm_hashes": {
+    "menu": "3ee1ff76be90b41eb75f856594a7accbd217540f9d76f861b57453913b175d70",
+    "battle": "a8bbd8bc16d6cc1c47f0021cb9dd400e5478236ede61071ea291287b91054c50"
+  },
+  "music_in_archive": "MATCH",
+  "source_commit": "e0e88e931de2d58283aa22937ad1a47a6b2b23c3",
+  "configuration": "Release"
+}

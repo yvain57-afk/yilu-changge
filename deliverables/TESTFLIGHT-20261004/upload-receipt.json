@@ -1,0 +1,46 @@
+{
+  "archive": "/Users/yvainair/Code/游戏-左右滑古代史/release/testflight-20261004/Yilu-0.12.8-2026100403.xcarchive",
+  "bundle_id": "com.yvainair.yiluchangge",
+  "version": "0.12.8",
+  "build_number": "2026100403",
+  "code_fingerprint": "0f9797bb89081d2980e7d59794eef69108bc18c22bc169daf69f97a6512a221c",
+  "embedded_fingerprint": "MATCH",
+  "embedded_script": [
+    "assets/main/index.js"
+  ],
+  "privacy_manifest": "PRESENT",
+  "codesign_verification": "PASS",
+  "music_pcm_hashes": {
+    "menu": "3ee1ff76be90b41eb75f856594a7accbd217540f9d76f861b57453913b175d70",
+    "battle": "a8bbd8bc16d6cc1c47f0021cb9dd400e5478236ede61071ea291287b91054c50"
+  },
+  "music_in_archive": "MATCH",
+  "source_commit": "e0e88e931de2d58283aa22937ad1a47a6b2b23c3",
+  "configuration": "Release",
+  "uploaded": true,
+  "upload_result": "Upload succeeded; EXPORT SUCCEEDED",
+  "upload_completed_local": "2026-10-04 18:53:55 Asia/Shanghai",
+  "apple_app_id": "6818429253",
+  "apple_team_id": "325CW4AZ5L",
+  "testflight_processing_status": "COMPLETE",
+  "internal_group": "开发自测: 0.12.8 (2026100403), TESTING, verified in actual App Store Connect",
+  "external_group": "朋友体验: 0 testers, 0 builds; Beta review submission failed twice through two UI entrances",
+  "upload_warning": "CocosGame dSYM missing at upload. Installation package upload succeeded; crash-symbol upload did not.",
+  "github_pr": "https://github.com/yvain57-afk/yilu-changge/pull/4",
+  "github_remote_commit": "e0e88e931de2d58283aa22937ad1a47a6b2b23c3",
+  "checks": {
+    "typecheck": "PASS",
+    "tests_passed": 452,
+    "tests_failed": 1,
+    "tests_skipped": 0,
+    "failure_scope": "Model timing below minimum: chapter 2 87.8 vs 90s; chapter 11 108.75 vs 110s"
+  },
+  "export_compliance": "Saved: None of the listed encryption algorithms",
+  "apple_build_id": "5e72372d-ab74-4ad7-9c8d-6506b0b0db9a",
+  "internal_testers": 1,
+  "what_to_test": "Saved for current build with changes and known verification limits",
+  "external_review": "NOT_SUBMITTED: Apple returned 处理你的请求时出错。请稍后再试。 after updating current review notes and reconciling actual group state. Root cause not exposed by UI.",
+  "dsym_local_attempt": "dsymutil produced matching UUID but warned no debug symbols in executable; symbol upload remains unresolved",
+  "backend_evidence": "evidence/TESTFLIGHT-20261004/testflight-internal-0.12.8.pdf and .png; actual Safari exported page, not recreated UI",
+  "external_auto_notify": false
+}
