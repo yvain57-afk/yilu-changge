@@ -1,0 +1,56 @@
+{
+  "snapshot_id": "s_20261002T140020_2551691b",
+  "code_fingerprint": "cb6842dee7e9b609ae7d840dbaf3133c9fc9bd4678187537c042f47bf2bb4527",
+  "execution": "read_only_audit_and_planning",
+  "images": [
+    {
+      "path": "input/IMG_4431.PNG",
+      "sha256": "a9ec77486ab87828398b67bb13466e71c7911cc56e4ca15107fde45be01e0411",
+      "role": "user-provided annotated/native-gameplay feedback; not newly rendered acceptance image",
+      "version_binding": "user_provided_session_context_not_embedded",
+      "source_snapshot_linkage": "code inspected separately; screenshot has no embedded fingerprint"
+    },
+    {
+      "path": "input/IMG_4432.jpg",
+      "sha256": "73a0b3af1016af61430d50efe2bad0cbcdd28a845522d7f48f88f8a248fd10f7",
+      "role": "user-provided annotated/native-gameplay feedback; not newly rendered acceptance image",
+      "version_binding": "user_provided_session_context_not_embedded",
+      "source_snapshot_linkage": "code inspected separately; screenshot has no embedded fingerprint"
+    },
+    {
+      "path": "input/IMG_4435.jpg",
+      "sha256": "bd32ff892f53dc5edf3f8a6bf642125550793edb3671584b28037952a9a47c84",
+      "role": "user-provided annotated/native-gameplay feedback; not newly rendered acceptance image",
+      "version_binding": "user_provided_session_context_not_embedded",
+      "source_snapshot_linkage": "code inspected separately; screenshot has no embedded fingerprint"
+    }
+  ],
+  "preserved_phone_state": "0.12.3/2026100201 already installed and launched; new user c16 battle image observed; full device acceptance pending",
+  "sources": [
+    {
+      "id": "f_bfaaedb97a83b6da0967cae5",
+      "path": "assets/scripts/formal/battle.ts",
+      "sha256": "d45459db004cf5a448023c6e8d4868792df596d031b0cec47dab7efd6092ea3c"
+    },
+    {
+      "id": "f_3c36e89f42b09e8d27fcf455",
+      "path": "assets/scripts/formal/EnemyProfiles.ts",
+      "sha256": "f9ca655a35d2f6e0679a90a7a0a442bcf02b254843c07fa577aaac781b1d33f3"
+    },
+    {
+      "id": "f_096492c2a36a53c8c1118cbb",
+      "path": "assets/scripts/formal/EncounterDirector.ts",
+      "sha256": "2bebc2e04afedf75e450a89252206eacefa0540111521dea8c79053eaf63ee7b"
+    },
+    {
+      "id": "f_10d7c235139fd21ee0611021",
+      "path": "assets/scripts/formal/data.ts",
+      "sha256": "fd2b48efe889254980cb4e62727101650d23103655866e05b637799062f05342"
+    },
+    {
+      "id": "f_378bb198f51b72aba693177c",
+      "path": "assets/scripts/formal/WeaponPresentation.ts",
+      "sha256": "a430de8cfad7a4d56ec343977e5d4105a4cf51d70cd62968fb6b2996ec8270f5"
+    }
+  ]
+}

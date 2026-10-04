@@ -1,0 +1,173 @@
+{
+  "notice": "TEMPLATE ONLY. All results must be populated from real execution. No tests/build/install done by generating this file.",
+  "task": "YILU-REGRESSION-FIRST-UI-FULL-20261001",
+  "baseline_snapshot_id": "s_20261001T105238_c4420b2c",
+  "gate_A": {
+    "status": "not_run",
+    "build_id": null,
+    "code_fingerprint": null,
+    "device_build": null,
+    "receipt": null,
+    "passed_bug_ids": [],
+    "blocking_bug_ids": []
+  },
+  "gate_B": {
+    "status": "not_run",
+    "build_id": null,
+    "code_fingerprint": null,
+    "requires": "gate_A passed before integration",
+    "device_build": null,
+    "receipt": null
+  },
+  "test_runs": [],
+  "videos": [],
+  "known_failures": [],
+  "blocked_actions": [],
+  "ui_pages": [
+    {
+      "id": "U01",
+      "name": "首页营地",
+      "implemented": false,
+      "data_bound": false,
+      "interactive": false,
+      "small_screen_verified": false,
+      "actual_image_ids": [],
+      "actual_device_verified": false
+    },
+    {
+      "id": "U02",
+      "name": "山河地图与转场",
+      "implemented": false,
+      "data_bound": false,
+      "interactive": false,
+      "small_screen_verified": false,
+      "actual_image_ids": [],
+      "actual_device_verified": false
+    },
+    {
+      "id": "U03",
+      "name": "整备四页签",
+      "implemented": false,
+      "data_bound": false,
+      "interactive": false,
+      "small_screen_verified": false,
+      "actual_image_ids": [],
+      "actual_device_verified": false
+    },
+    {
+      "id": "U04",
+      "name": "图鉴三分类",
+      "implemented": false,
+      "data_bound": false,
+      "interactive": false,
+      "small_screen_verified": false,
+      "actual_image_ids": [],
+      "actual_device_verified": false
+    },
+    {
+      "id": "U05",
+      "name": "人物详情",
+      "implemented": false,
+      "data_bound": false,
+      "interactive": false,
+      "small_screen_verified": false,
+      "actual_image_ids": [],
+      "actual_device_verified": false
+    },
+    {
+      "id": "U06",
+      "name": "兵器/宝物详情",
+      "implemented": false,
+      "data_bound": false,
+      "interactive": false,
+      "small_screen_verified": false,
+      "actual_image_ids": [],
+      "actual_device_verified": false
+    },
+    {
+      "id": "U07",
+      "name": "首通/重游结算",
+      "implemented": false,
+      "data_bound": false,
+      "interactive": false,
+      "small_screen_verified": false,
+      "actual_image_ids": [],
+      "actual_device_verified": false
+    },
+    {
+      "id": "U08",
+      "name": "武将/兵器/宝物获得",
+      "implemented": false,
+      "data_bound": false,
+      "interactive": false,
+      "small_screen_verified": false,
+      "actual_image_ids": [],
+      "actual_device_verified": false
+    },
+    {
+      "id": "U09",
+      "name": "双关里程碑与终局",
+      "implemented": false,
+      "data_bound": false,
+      "interactive": false,
+      "small_screen_verified": false,
+      "actual_image_ids": [],
+      "actual_device_verified": false
+    },
+    {
+      "id": "U10",
+      "name": "战败复盘",
+      "implemented": false,
+      "data_bound": false,
+      "interactive": false,
+      "small_screen_verified": false,
+      "actual_image_ids": [],
+      "actual_device_verified": false
+    },
+    {
+      "id": "U11",
+      "name": "暂停与退出确认",
+      "implemented": false,
+      "data_bound": false,
+      "interactive": false,
+      "small_screen_verified": false,
+      "actual_image_ids": [],
+      "actual_device_verified": false
+    },
+    {
+      "id": "U12",
+      "name": "设置与运行版本",
+      "implemented": false,
+      "data_bound": false,
+      "interactive": false,
+      "small_screen_verified": false,
+      "actual_image_ids": [],
+      "actual_device_verified": false
+    },
+    {
+      "id": "U13",
+      "name": "加载/异常/存档迁移",
+      "implemented": false,
+      "data_bound": false,
+      "interactive": false,
+      "small_screen_verified": false,
+      "actual_image_ids": [],
+      "actual_device_verified": false
+    }
+  ],
+  "media_fields": [
+    "evidence_id",
+    "path",
+    "sha256",
+    "capture_type",
+    "build_id",
+    "code_fingerprint",
+    "run_id",
+    "frame_timestamps_seconds",
+    "source_audio_origin",
+    "scope",
+    "limitations"
+  ],
+  "final_snapshot_id": null,
+  "chatgpt_actual_read_of_final_snapshot": "not_run"
+}

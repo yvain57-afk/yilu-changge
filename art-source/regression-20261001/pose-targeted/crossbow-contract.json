@@ -1,0 +1,78 @@
+{
+  "r27_held_liannu": {
+    "rearGrip": [
+      0.21645021645021645,
+      0.43006993006993005
+    ],
+    "supportGrip": [
+      0.6486291486291487,
+      0.6223776223776224
+    ],
+    "sourceBox": [
+      69,
+      14,
+      1455,
+      586
+    ],
+    "points_source_px": [
+      [
+        369,
+        260
+      ],
+      [
+        968,
+        370
+      ]
+    ],
+    "bodyContainsWeapon": false,
+    "runtimeVerified": false
+  },
+  "r27_held_jiguannu": {
+    "rearGrip": [
+      0.20904729266620972,
+      0.5
+    ],
+    "supportGrip": [
+      0.5853324194653873,
+      0.5854166666666667
+    ],
+    "sourceBox": [
+      46,
+      530,
+      1505,
+      1010
+    ],
+    "points_source_px": [
+      [
+        351,
+        770
+      ],
+      [
+        900,
+        811
+      ]
+    ],
+    "bodyContainsWeapon": false,
+    "runtimeVerified": false
+  },
+  "r27_held_yanlinggong": {
+    "rearGrip": [
+      0.037,
+      0.485
+    ],
+    "supportGrip": [
+      0.797,
+      0.485
+    ],
+    "drawStringGrip": [
+      0.037,
+      0.485
+    ],
+    "bowGrip": [
+      0.797,
+      0.485
+    ],
+    "bodyContainsWeapon": false,
+    "runtimeVerified": false
+  }
+}

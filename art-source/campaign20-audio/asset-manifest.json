@@ -1,0 +1,834 @@
+{
+  "task": "YILU-CAMPAIGN20-20260930",
+  "license": "CC0 1.0",
+  "sources": [
+    {
+      "author": "Still North Media: Ben Jaszczak and Brian Nelson, mirror MedicineStorm",
+      "url": "https://opengameart.org/content/medieval-sound-effects-weapon-textures",
+      "license": "CC0 1.0",
+      "use": "recorded weapon movement, bow and crossbow gestures"
+    }
+  ],
+  "process": "Recorded gestures only; separate transient selections, layered, filtered, short fades; never copy/rename old clips. Chain-like moving-metal accent uses sword drawing foley, not falsely described as an authentic chain recording.",
+  "files": [
+    {
+      "id": "duanji-0",
+      "path": "assets/resources/audio/weapons/duanji-0.wav",
+      "sha256": "da161be77831f8693376272fdfef8c51ab1853c1b4555b2d013ae1bf7a486db9",
+      "bytes": 14156,
+      "seconds": 0.16,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -26.581500616303053,
+      "sources": [
+        {
+          "file": "raw/Dagger Swing.wav",
+          "start": 1.035,
+          "duration": 0.16,
+          "sha256": "6503fce6a10700242e6a82c79914ce874564760dedfaac1abce46a85e4b0f8c2",
+          "delay": 0,
+          "gain": 1
+        },
+        {
+          "file": "raw/Seax Swing.wav",
+          "start": 3.325,
+          "duration": 0.12,
+          "sha256": "2fdf7688ce88a105393fe2b1f3b3f14dbe80e42708d2e2e46246d9d40bb2a151",
+          "delay": 0.015,
+          "gain": 0.28
+        }
+      ],
+      "edit": {
+        "lowpass": 8500,
+        "highpass": 420,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "duanji-1",
+      "path": "assets/resources/audio/weapons/duanji-1.wav",
+      "sha256": "503b15fca72bbad5c695df089cd5328873aea316003d4527257770de05cdd984",
+      "bytes": 14156,
+      "seconds": 0.16,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -21.00032935626869,
+      "sources": [
+        {
+          "file": "raw/Dagger Swing.wav",
+          "start": 1.575,
+          "duration": 0.16,
+          "sha256": "6503fce6a10700242e6a82c79914ce874564760dedfaac1abce46a85e4b0f8c2",
+          "delay": 0,
+          "gain": 1
+        },
+        {
+          "file": "raw/Seax Swing.wav",
+          "start": 4.055,
+          "duration": 0.12,
+          "sha256": "2fdf7688ce88a105393fe2b1f3b3f14dbe80e42708d2e2e46246d9d40bb2a151",
+          "delay": 0.015,
+          "gain": 0.28
+        }
+      ],
+      "edit": {
+        "lowpass": 8500,
+        "highpass": 420,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "duanji-2",
+      "path": "assets/resources/audio/weapons/duanji-2.wav",
+      "sha256": "b38980e2cda6051bbffd455770f4b4d96ad98fd00c84a47cd23118274f003aa8",
+      "bytes": 14156,
+      "seconds": 0.16,
+      "peak_dBFS": -3.324457721821219,
+      "rms_dBFS": -21.0,
+      "sources": [
+        {
+          "file": "raw/Dagger Swing.wav",
+          "start": 2.635,
+          "duration": 0.16,
+          "sha256": "6503fce6a10700242e6a82c79914ce874564760dedfaac1abce46a85e4b0f8c2",
+          "delay": 0,
+          "gain": 1
+        },
+        {
+          "file": "raw/Seax Swing.wav",
+          "start": 6.955,
+          "duration": 0.12,
+          "sha256": "2fdf7688ce88a105393fe2b1f3b3f14dbe80e42708d2e2e46246d9d40bb2a151",
+          "delay": 0.015,
+          "gain": 0.28
+        }
+      ],
+      "edit": {
+        "lowpass": 8500,
+        "highpass": 420,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "tiesuodao-0",
+      "path": "assets/resources/audio/weapons/tiesuodao-0.wav",
+      "sha256": "a3b0175f3cd9779b072196dbaa724b9f1a19ff16e727d37cd1a8979ff1969669",
+      "bytes": 28268,
+      "seconds": 0.32,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -23.660437862917313,
+      "sources": [
+        {
+          "file": "raw/Sabre Swing.wav",
+          "start": 20.635,
+          "duration": 0.3,
+          "sha256": "bf6edd6317805e5579c58fc6ed5c52df917e6a3ebdb0b11cd7027684adaf4d04",
+          "delay": 0,
+          "gain": 1
+        },
+        {
+          "file": "raw/Sabre Draw Fast.wav",
+          "start": 8.985,
+          "duration": 0.11,
+          "sha256": "50b4cdef2a5d3b22ebd17c8a0483e9ea35056574d7c5336e6d6303db34506133",
+          "delay": 0.015,
+          "gain": 0.35
+        },
+        {
+          "file": "raw/Sabre Draw Slow.wav",
+          "start": 9.075,
+          "duration": 0.1,
+          "sha256": "442107a5af0803ba3571d6589c0df72d5772bb1b3a5471e2413e11bd3b0c6d4b",
+          "delay": 0.075,
+          "gain": 0.2
+        }
+      ],
+      "edit": {
+        "lowpass": 6200,
+        "highpass": 230,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "tiesuodao-1",
+      "path": "assets/resources/audio/weapons/tiesuodao-1.wav",
+      "sha256": "dbc9d9d5b0510cbd67998d653d5a838cb58d8354af8d6cb1144f5b3f93d343e4",
+      "bytes": 28268,
+      "seconds": 0.32,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -23.479927957749183,
+      "sources": [
+        {
+          "file": "raw/Sabre Swing.wav",
+          "start": 21.435,
+          "duration": 0.3,
+          "sha256": "bf6edd6317805e5579c58fc6ed5c52df917e6a3ebdb0b11cd7027684adaf4d04",
+          "delay": 0,
+          "gain": 1
+        },
+        {
+          "file": "raw/Sabre Draw Fast.wav",
+          "start": 10.375,
+          "duration": 0.11,
+          "sha256": "50b4cdef2a5d3b22ebd17c8a0483e9ea35056574d7c5336e6d6303db34506133",
+          "delay": 0.015,
+          "gain": 0.35
+        },
+        {
+          "file": "raw/Sabre Draw Slow.wav",
+          "start": 11.145,
+          "duration": 0.1,
+          "sha256": "442107a5af0803ba3571d6589c0df72d5772bb1b3a5471e2413e11bd3b0c6d4b",
+          "delay": 0.075,
+          "gain": 0.2
+        }
+      ],
+      "edit": {
+        "lowpass": 6200,
+        "highpass": 230,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "tiesuodao-2",
+      "path": "assets/resources/audio/weapons/tiesuodao-2.wav",
+      "sha256": "96915e29ae0e5b4510725e18d04a35af733be8d7fdf2e7ef6c4e8c046ba25566",
+      "bytes": 28268,
+      "seconds": 0.32,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -23.84660892947784,
+      "sources": [
+        {
+          "file": "raw/Sabre Swing.wav",
+          "start": 21.935,
+          "duration": 0.3,
+          "sha256": "bf6edd6317805e5579c58fc6ed5c52df917e6a3ebdb0b11cd7027684adaf4d04",
+          "delay": 0,
+          "gain": 1
+        },
+        {
+          "file": "raw/Sabre Draw Fast.wav",
+          "start": 11.695,
+          "duration": 0.11,
+          "sha256": "50b4cdef2a5d3b22ebd17c8a0483e9ea35056574d7c5336e6d6303db34506133",
+          "delay": 0.015,
+          "gain": 0.35
+        },
+        {
+          "file": "raw/Sabre Draw Slow.wav",
+          "start": 12.205,
+          "duration": 0.1,
+          "sha256": "442107a5af0803ba3571d6589c0df72d5772bb1b3a5471e2413e11bd3b0c6d4b",
+          "delay": 0.075,
+          "gain": 0.2
+        }
+      ],
+      "edit": {
+        "lowpass": 6200,
+        "highpass": 230,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "goulianqiang-0",
+      "path": "assets/resources/audio/weapons/goulianqiang-0.wav",
+      "sha256": "669609bc200736c66656267863db94b7d03fddaa184d11a50e1d8132ef86b025",
+      "bytes": 22976,
+      "seconds": 0.26,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -27.03643144511586,
+      "sources": [
+        {
+          "file": "raw/Spear Swing.wav",
+          "start": 0.275,
+          "duration": 0.24,
+          "sha256": "a6faa99aa8d9a020b14f3ea27e422921c9fc336ff4d5870a14bf24a94bc0d016",
+          "delay": 0,
+          "gain": 1
+        },
+        {
+          "file": "raw/Dagger Draw Fast.wav",
+          "start": 0.565,
+          "duration": 0.1,
+          "sha256": "76aa638694419b8ba8c0795adc1806045af19b8fd92fdff90e9aa4485e09478b",
+          "delay": 0.06,
+          "gain": 0.26
+        }
+      ],
+      "edit": {
+        "lowpass": 7600,
+        "highpass": 280,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "goulianqiang-1",
+      "path": "assets/resources/audio/weapons/goulianqiang-1.wav",
+      "sha256": "1b611d1ff4a7871a787cfa8f839e1bdcda4d4c5e57d7a86e573e83315d09b980",
+      "bytes": 22976,
+      "seconds": 0.26,
+      "peak_dBFS": -3.298020878258352,
+      "rms_dBFS": -21.0,
+      "sources": [
+        {
+          "file": "raw/Spear Swing.wav",
+          "start": 1.565,
+          "duration": 0.24,
+          "sha256": "a6faa99aa8d9a020b14f3ea27e422921c9fc336ff4d5870a14bf24a94bc0d016",
+          "delay": 0,
+          "gain": 1
+        },
+        {
+          "file": "raw/Dagger Draw Fast.wav",
+          "start": 1.945,
+          "duration": 0.1,
+          "sha256": "76aa638694419b8ba8c0795adc1806045af19b8fd92fdff90e9aa4485e09478b",
+          "delay": 0.06,
+          "gain": 0.26
+        }
+      ],
+      "edit": {
+        "lowpass": 7600,
+        "highpass": 280,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "goulianqiang-2",
+      "path": "assets/resources/audio/weapons/goulianqiang-2.wav",
+      "sha256": "01c6271aac0f78c6c282cd3068787458f6fa9b18553011889171a8b2d7e28d91",
+      "bytes": 22976,
+      "seconds": 0.26,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -21.15819314293436,
+      "sources": [
+        {
+          "file": "raw/Spear Swing.wav",
+          "start": 2.355,
+          "duration": 0.24,
+          "sha256": "a6faa99aa8d9a020b14f3ea27e422921c9fc336ff4d5870a14bf24a94bc0d016",
+          "delay": 0,
+          "gain": 1
+        },
+        {
+          "file": "raw/Dagger Draw Fast.wav",
+          "start": 3.555,
+          "duration": 0.1,
+          "sha256": "76aa638694419b8ba8c0795adc1806045af19b8fd92fdff90e9aa4485e09478b",
+          "delay": 0.06,
+          "gain": 0.26
+        }
+      ],
+      "edit": {
+        "lowpass": 7600,
+        "highpass": 280,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "dundao-0",
+      "path": "assets/resources/audio/weapons/dundao-0.wav",
+      "sha256": "aff2a91ba6f0530ea52b283e9db33c475ddb2d67294bc3bc47f3b7315fce1dd3",
+      "bytes": 19448,
+      "seconds": 0.22,
+      "peak_dBFS": -3.1404999938029055,
+      "rms_dBFS": -21.0,
+      "sources": [
+        {
+          "file": "raw/Seax Swing.wav",
+          "start": 3.325,
+          "duration": 0.22,
+          "sha256": "2fdf7688ce88a105393fe2b1f3b3f14dbe80e42708d2e2e46246d9d40bb2a151",
+          "delay": 0,
+          "gain": 1
+        },
+        {
+          "file": "raw/Dagger Swing.wav",
+          "start": 1.035,
+          "duration": 0.14,
+          "sha256": "6503fce6a10700242e6a82c79914ce874564760dedfaac1abce46a85e4b0f8c2",
+          "delay": 0.02,
+          "gain": 0.23
+        }
+      ],
+      "edit": {
+        "lowpass": 4000,
+        "highpass": 170,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "dundao-1",
+      "path": "assets/resources/audio/weapons/dundao-1.wav",
+      "sha256": "2e393cb9f336a58499cef313f2105803cb0cb2ebe9fa3deeb69699d70daf0745",
+      "bytes": 19448,
+      "seconds": 0.22,
+      "peak_dBFS": -4.587157248610431,
+      "rms_dBFS": -21.0,
+      "sources": [
+        {
+          "file": "raw/Seax Swing.wav",
+          "start": 4.055,
+          "duration": 0.22,
+          "sha256": "2fdf7688ce88a105393fe2b1f3b3f14dbe80e42708d2e2e46246d9d40bb2a151",
+          "delay": 0,
+          "gain": 1
+        },
+        {
+          "file": "raw/Dagger Swing.wav",
+          "start": 1.575,
+          "duration": 0.14,
+          "sha256": "6503fce6a10700242e6a82c79914ce874564760dedfaac1abce46a85e4b0f8c2",
+          "delay": 0.02,
+          "gain": 0.23
+        }
+      ],
+      "edit": {
+        "lowpass": 4000,
+        "highpass": 170,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "dundao-2",
+      "path": "assets/resources/audio/weapons/dundao-2.wav",
+      "sha256": "92cc8165b502ce72f57bbee2b3e438c7c4a88a4cf62aab6c5164a4cc0c4fdc32",
+      "bytes": 19448,
+      "seconds": 0.22,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -22.062465973757877,
+      "sources": [
+        {
+          "file": "raw/Seax Swing.wav",
+          "start": 6.955,
+          "duration": 0.22,
+          "sha256": "2fdf7688ce88a105393fe2b1f3b3f14dbe80e42708d2e2e46246d9d40bb2a151",
+          "delay": 0,
+          "gain": 1
+        },
+        {
+          "file": "raw/Dagger Swing.wav",
+          "start": 2.635,
+          "duration": 0.14,
+          "sha256": "6503fce6a10700242e6a82c79914ce874564760dedfaac1abce46a85e4b0f8c2",
+          "delay": 0.02,
+          "gain": 0.23
+        }
+      ],
+      "edit": {
+        "lowpass": 4000,
+        "highpass": 170,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "yanlinggong-0",
+      "path": "assets/resources/audio/weapons/yanlinggong-0.wav",
+      "sha256": "515a71eb076bf28d7caff52b9b52266b23050bf65e521d76bb87d1785fe435b6",
+      "bytes": 32678,
+      "seconds": 0.37,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -27.773191055040026,
+      "sources": [
+        {
+          "file": "raw/English Longbow Shoot.wav",
+          "start": 0.105,
+          "duration": 0.28,
+          "sha256": "c25684ccdab3eb13f17a0ffa637fbd175659d092665f16c0bce8510d46c4fbee",
+          "delay": 0,
+          "gain": 1
+        },
+        {
+          "file": "raw/Scythian Recurve Heavy Arrow Pass.wav",
+          "start": 2.255,
+          "duration": 0.2,
+          "sha256": "331f53a2e9ac334bca10bf80f5fc4fe51065ddeece3cc4ec3b231fcf9a7f25ec",
+          "delay": 0.14,
+          "gain": 0.32
+        },
+        {
+          "file": "raw/Arrow Fletching.wav",
+          "start": 9.125,
+          "duration": 0.1,
+          "sha256": "d19db022f47e4d038b09ac68a9f43b1468bd831b14419219bf6b32cea93a7d9d",
+          "delay": 0.26,
+          "gain": 0.12
+        }
+      ],
+      "edit": {
+        "lowpass": 4700,
+        "highpass": 90,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "yanlinggong-1",
+      "path": "assets/resources/audio/weapons/yanlinggong-1.wav",
+      "sha256": "f38c51b382f4bdd58b512e44a18771d8e82d4630ea89c0b2e5510314140e2dd2",
+      "bytes": 32678,
+      "seconds": 0.37,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -24.919415645621314,
+      "sources": [
+        {
+          "file": "raw/English Longbow Shoot.wav",
+          "start": 0.775,
+          "duration": 0.28,
+          "sha256": "c25684ccdab3eb13f17a0ffa637fbd175659d092665f16c0bce8510d46c4fbee",
+          "delay": 0,
+          "gain": 1
+        },
+        {
+          "file": "raw/Scythian Recurve Heavy Arrow Pass.wav",
+          "start": 2.885,
+          "duration": 0.2,
+          "sha256": "331f53a2e9ac334bca10bf80f5fc4fe51065ddeece3cc4ec3b231fcf9a7f25ec",
+          "delay": 0.14,
+          "gain": 0.32
+        },
+        {
+          "file": "raw/Arrow Fletching.wav",
+          "start": 11.315,
+          "duration": 0.1,
+          "sha256": "d19db022f47e4d038b09ac68a9f43b1468bd831b14419219bf6b32cea93a7d9d",
+          "delay": 0.26,
+          "gain": 0.12
+        }
+      ],
+      "edit": {
+        "lowpass": 4700,
+        "highpass": 90,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "yanlinggong-2",
+      "path": "assets/resources/audio/weapons/yanlinggong-2.wav",
+      "sha256": "778b92323154359b5957b4e91d295544367b5b02e4203b2d70d95591ec76e764",
+      "bytes": 32678,
+      "seconds": 0.37,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -27.618041771347876,
+      "sources": [
+        {
+          "file": "raw/English Longbow Shoot.wav",
+          "start": 1.255,
+          "duration": 0.28,
+          "sha256": "c25684ccdab3eb13f17a0ffa637fbd175659d092665f16c0bce8510d46c4fbee",
+          "delay": 0,
+          "gain": 1
+        },
+        {
+          "file": "raw/Scythian Recurve Heavy Arrow Pass.wav",
+          "start": 3.565,
+          "duration": 0.2,
+          "sha256": "331f53a2e9ac334bca10bf80f5fc4fe51065ddeece3cc4ec3b231fcf9a7f25ec",
+          "delay": 0.14,
+          "gain": 0.32
+        },
+        {
+          "file": "raw/Arrow Fletching.wav",
+          "start": 19.345,
+          "duration": 0.1,
+          "sha256": "d19db022f47e4d038b09ac68a9f43b1468bd831b14419219bf6b32cea93a7d9d",
+          "delay": 0.26,
+          "gain": 0.12
+        }
+      ],
+      "edit": {
+        "lowpass": 4700,
+        "highpass": 90,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "jiguannu-0",
+      "path": "assets/resources/audio/weapons/jiguannu-0.wav",
+      "sha256": "5100f653eb0d0caece53c9bd9b1ad9fe81f3e9217fcbf4d2e87c8d5d5c6785e7",
+      "bytes": 28268,
+      "seconds": 0.32,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -27.19752717437352,
+      "sources": [
+        {
+          "file": "raw/Crossbow Set Nut Against Sear.wav",
+          "start": 1.145,
+          "duration": 0.08,
+          "sha256": "089d092a9002f9949c32dd0972012adb3e25647f37649c8d1196281482101f81",
+          "delay": 0,
+          "gain": 0.35
+        },
+        {
+          "file": "raw/Crossbow Shoot.wav",
+          "start": 0.315,
+          "duration": 0.24,
+          "sha256": "d8c68f970540d73ab6fe2db5309166e6dd911876501a16bb4df43498247e19b2",
+          "delay": 0.025,
+          "gain": 1
+        },
+        {
+          "file": "raw/Crossbow Bolt Pass.wav",
+          "start": 0.535,
+          "duration": 0.18,
+          "sha256": "ac98202fddf710e0a503e8a86aca358845d4d51eb20d832bff3144655ffc8bb9",
+          "delay": 0.13,
+          "gain": 0.3
+        }
+      ],
+      "edit": {
+        "lowpass": 5400,
+        "highpass": 140,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "jiguannu-1",
+      "path": "assets/resources/audio/weapons/jiguannu-1.wav",
+      "sha256": "003f3daf21826eb9c79ec1ca69b75c7d0a7fa75b4b8ad22f13990b56533d71b8",
+      "bytes": 28268,
+      "seconds": 0.32,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -26.672443063525698,
+      "sources": [
+        {
+          "file": "raw/Crossbow Set Nut Against Sear.wav",
+          "start": 1.905,
+          "duration": 0.08,
+          "sha256": "089d092a9002f9949c32dd0972012adb3e25647f37649c8d1196281482101f81",
+          "delay": 0,
+          "gain": 0.35
+        },
+        {
+          "file": "raw/Crossbow Shoot.wav",
+          "start": 2.475,
+          "duration": 0.24,
+          "sha256": "d8c68f970540d73ab6fe2db5309166e6dd911876501a16bb4df43498247e19b2",
+          "delay": 0.025,
+          "gain": 1
+        },
+        {
+          "file": "raw/Crossbow Bolt Pass.wav",
+          "start": 1.395,
+          "duration": 0.18,
+          "sha256": "ac98202fddf710e0a503e8a86aca358845d4d51eb20d832bff3144655ffc8bb9",
+          "delay": 0.13,
+          "gain": 0.3
+        }
+      ],
+      "edit": {
+        "lowpass": 5400,
+        "highpass": 140,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "jiguannu-2",
+      "path": "assets/resources/audio/weapons/jiguannu-2.wav",
+      "sha256": "931ce26317f9473a5b47a260a8d07a65f6b6df20b38be4a90baa9cdacdf6ab09",
+      "bytes": 28268,
+      "seconds": 0.32,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -27.084406956146513,
+      "sources": [
+        {
+          "file": "raw/Crossbow Set Nut Against Sear.wav",
+          "start": 3.135,
+          "duration": 0.08,
+          "sha256": "089d092a9002f9949c32dd0972012adb3e25647f37649c8d1196281482101f81",
+          "delay": 0,
+          "gain": 0.35
+        },
+        {
+          "file": "raw/Crossbow Shoot.wav",
+          "start": 2.965,
+          "duration": 0.24,
+          "sha256": "d8c68f970540d73ab6fe2db5309166e6dd911876501a16bb4df43498247e19b2",
+          "delay": 0.025,
+          "gain": 1
+        },
+        {
+          "file": "raw/Crossbow Bolt Pass.wav",
+          "start": 2.315,
+          "duration": 0.18,
+          "sha256": "ac98202fddf710e0a503e8a86aca358845d4d51eb20d832bff3144655ffc8bb9",
+          "delay": 0.13,
+          "gain": 0.3
+        }
+      ],
+      "edit": {
+        "lowpass": 5400,
+        "highpass": 140,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "jiguannu-load-0",
+      "path": "assets/resources/audio/weapons/jiguannu-load-0.wav",
+      "sha256": "ee5f65753c8cc540a9b7bbdd2f7f14acf2a7034b6ee587c53ab203149a3ccd0e",
+      "bytes": 19448,
+      "seconds": 0.22,
+      "peak_dBFS": -2.9999999999999987,
+      "rms_dBFS": -26.60909802887761,
+      "sources": [
+        {
+          "file": "raw/Crossbow Place Bolt.wav",
+          "start": 0.365,
+          "duration": 0.14,
+          "sha256": "24b8d06db71d2f3b9acac0e4cf53c0561f2a6f41758da3ac74434f3cb69d0460",
+          "delay": 0,
+          "gain": 0.6
+        },
+        {
+          "file": "raw/Crossbow Lever Trigger.wav",
+          "start": 2.345,
+          "duration": 0.1,
+          "sha256": "607b6398e35d14d9c9633d047fa0dbf7e8e5a3ffee13bdeddc8dba41320c960a",
+          "delay": 0.11,
+          "gain": 0.45
+        }
+      ],
+      "edit": {
+        "lowpass": 4300,
+        "highpass": 180,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "jiguannu-load-1",
+      "path": "assets/resources/audio/weapons/jiguannu-load-1.wav",
+      "sha256": "6cc4453d98e26c28405933006d2c2b17c24714f627f242290f5aa660012faecd",
+      "bytes": 19448,
+      "seconds": 0.22,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -26.67606772426683,
+      "sources": [
+        {
+          "file": "raw/Crossbow Place Bolt.wav",
+          "start": 1.485,
+          "duration": 0.14,
+          "sha256": "24b8d06db71d2f3b9acac0e4cf53c0561f2a6f41758da3ac74434f3cb69d0460",
+          "delay": 0,
+          "gain": 0.6
+        },
+        {
+          "file": "raw/Crossbow Lever Trigger.wav",
+          "start": 4.295,
+          "duration": 0.1,
+          "sha256": "607b6398e35d14d9c9633d047fa0dbf7e8e5a3ffee13bdeddc8dba41320c960a",
+          "delay": 0.11,
+          "gain": 0.45
+        }
+      ],
+      "edit": {
+        "lowpass": 4300,
+        "highpass": 180,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    },
+    {
+      "id": "jiguannu-load-2",
+      "path": "assets/resources/audio/weapons/jiguannu-load-2.wav",
+      "sha256": "fff63297dbfab0cab762a92568aae5906be9a04431e0577a1af7ef4be0070c8a",
+      "bytes": 19448,
+      "seconds": 0.22,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -24.271923192665735,
+      "sources": [
+        {
+          "file": "raw/Crossbow Place Bolt.wav",
+          "start": 2.375,
+          "duration": 0.14,
+          "sha256": "24b8d06db71d2f3b9acac0e4cf53c0561f2a6f41758da3ac74434f3cb69d0460",
+          "delay": 0,
+          "gain": 0.6
+        },
+        {
+          "file": "raw/Crossbow Lever Trigger.wav",
+          "start": 4.895,
+          "duration": 0.1,
+          "sha256": "607b6398e35d14d9c9633d047fa0dbf7e8e5a3ffee13bdeddc8dba41320c960a",
+          "delay": 0.11,
+          "gain": 0.45
+        }
+      ],
+      "edit": {
+        "lowpass": 4300,
+        "highpass": 180,
+        "fade_ms": 6
+      },
+      "listen_status": "human listening pending"
+    }
+  ],
+  "baseline_preserved_sha256": {
+    "assets/resources/audio/weapons/spear-0.wav": "36d42e4f8b71e3e9a27b6a700b88802c0c28acd30afd41a14eb2bfa7479f47c8",
+    "assets/resources/audio/weapons/spear-1.wav": "955355e1302608be7c0b72814e19e8f15458f2bc20cf54fd3c8fafb848b3bbab",
+    "assets/resources/audio/weapons/spear-2.wav": "28da4cdb43ea1e8111dba94fdf6814531c63f95582f5f5fc8bbf334952cbd7ab",
+    "assets/resources/audio/weapons/guandao-0.wav": "334fb8d8c993fcece66e332537f9a7087f6ab30957489937a01f6979a6a639de",
+    "assets/resources/audio/weapons/guandao-1.wav": "d15851f0893f141b3fb5b8091799d37422f327c2ead9efc6fe7a2b385316eff9",
+    "assets/resources/audio/weapons/guandao-2.wav": "64273768363550a5c47d8f658cb0676442812c76db41a5fb420981204e1eddda",
+    "assets/resources/audio/weapons/shemao-0.wav": "1a4d440038b6789e618c39bdb70bfb2487858bd42ae4872935145b457fece095",
+    "assets/resources/audio/weapons/shemao-1.wav": "8a95be52e561b7283ea010611c070d66c10bad43df324291ec3898cbc7c2f36f",
+    "assets/resources/audio/weapons/shemao-2.wav": "3ae3044460f7093e30bcf786d784f0f3b94d342d6198d16e01150c05f7ecf1ef",
+    "assets/resources/audio/weapons/huaji-0.wav": "54986e59630b0f14da94a2bd50830667a3cb5f7abec2b22b917dfaa99e902084",
+    "assets/resources/audio/weapons/huaji-1.wav": "5c583c6cd48c1d959ac0e074e70d33b242fdffe77dec6413057663e4bdae6671",
+    "assets/resources/audio/weapons/huaji-2.wav": "2bd706187ee0b406aa4dab4ea8e9e1673685321e5277318c86640cee8254478d",
+    "assets/resources/audio/weapons/guding-0.wav": "cf9f7580bbb41cdf31df37564ace5d0fe81207b313c30d8620cd71cd9d6632f2",
+    "assets/resources/audio/weapons/guding-1.wav": "d4b2a38e1d117e0a6d89d52665cb1dc74af610f8a114ec82bc61a4c3768ae8a4",
+    "assets/resources/audio/weapons/guding-2.wav": "3d9c839420ea21148638b72651b64988382246c3537fa22ee8e72fdc6cc47b82",
+    "assets/resources/audio/weapons/shuangji-0.wav": "0599ffc56d8ca4429c24794674fea0282cf2251fbf0d9185f02a85a259a0dcd6",
+    "assets/resources/audio/weapons/shuangji-1.wav": "4aaf4f015a69068536f9125bb47caa27e1b08a31baad6fef2e436baedc42d3cb",
+    "assets/resources/audio/weapons/shuangji-2.wav": "b19113f1d87580d0d52b63bdef61a9526bff3590629f6710c3d4e588f200dfc5",
+    "assets/resources/audio/weapons/yitian-0.wav": "038738528ec3c7bbd32b443c7cc430cb07d24159f39593faf0819922a89dab7c",
+    "assets/resources/audio/weapons/yitian-1.wav": "5f79fa12087b7d0e2561cfc80c3557640922f83a40bf66dfe0de51c2d6a20a25",
+    "assets/resources/audio/weapons/yitian-2.wav": "8780899abd0bf31787a114cf44f9c893653de030f51ca08d6df496ca99e66653",
+    "assets/resources/audio/weapons/qinggang-0.wav": "d27d66b790de0b390f9cf79972efe41297ab0f33c66be2c792c5621d717a6f4c",
+    "assets/resources/audio/weapons/qinggang-1.wav": "947dc88b99dff418c6ac016c8ec48255ad790b1b1bf3c38441ac28da4ce46b6a",
+    "assets/resources/audio/weapons/qinggang-2.wav": "2612c8dff7cc19d6a7baaf984c1a7ab7cfb92171b876d02d37f67ff4f51deed2",
+    "assets/resources/audio/weapons/shuanggu-0.wav": "889a9984c454a907eff2472be4ed2176a451c3f48e91b1b74f2c47e4d51a4f88",
+    "assets/resources/audio/weapons/shuanggu-1.wav": "8e3b235c09188b7a70533cde38b6fbf33b884a38bbc81f77d0c4a6b9bf53649c",
+    "assets/resources/audio/weapons/shuanggu-2.wav": "2aae2823d1844385aa221937bce9df93987d5f0fc4dee1e0e567203e3f9ca5b8",
+    "assets/resources/audio/weapons/liannu-0.wav": "071d15b2f3e7d2fae434b614e88e154b707314ddb58951f1e88907836a9e8325",
+    "assets/resources/audio/weapons/liannu-1.wav": "596d2030d26e5de755f756ef03cb65bf3412a36a28ccac04709268be6a4b1e3a",
+    "assets/resources/audio/weapons/liannu-2.wav": "67e43c66d2ca9f77133246e3c74f7d64650f52a1e51a469ce22b4fd7709bdd06",
+    "assets/resources/audio/weapons/army-bow-0.wav": "7a3d74ed213443fc189d6ed6f9ac8d00445efa0b69df5d101f8f27acc3735707",
+    "assets/resources/audio/weapons/army-bow-1.wav": "174ab6a30b94a8b020e36a110c546d0fbff54a46a389d1dff15f7f3da1a136bc",
+    "assets/resources/audio/weapons/army-bow-2.wav": "34c625879ef71fca5aa615754790de41aa8cb16de887875903da7239e6a8847a",
+    "assets/resources/audio/weapons/army-fire-0.wav": "b94dc707d72b0ce06be99a868585effb8aaf108537cf7e99e4885fcc06eedd74",
+    "assets/resources/audio/weapons/army-fire-1.wav": "1a241645b4e44d16eb76a613c50d037d2c6a130a03ecd7500f3ebd9363840fa6",
+    "assets/resources/audio/weapons/army-fire-2.wav": "e66ffb004a83e9779154316a9f343d204a9b44abe81ff46ed17c45c3c56bc6bf",
+    "assets/resources/audio/weapons/army-repeater-0.wav": "47535c8b17df12a93a0c68f5d8f24e6f0605ba74d7fe51c37325c77d0c8ae96b",
+    "assets/resources/audio/weapons/army-repeater-1.wav": "28d801bccb9d246ee64c9a579c07316f590e70cc04fee0adf15f91e3ae90db70",
+    "assets/resources/audio/weapons/army-repeater-2.wav": "76ac39786182836b784c5e6ca88d60c886420b101019856d30baa97a7c408f94",
+    "assets/resources/audio/weapons/impact-soft-0.wav": "54cce2ab3b21146aa330c6c34544e29e0fe4bd0b2f3fc306c78cbbc19fcfc118",
+    "assets/resources/audio/weapons/impact-soft-1.wav": "137273fc9f12b96137b7aac1802dee124ed3b5128643f961dc7f176f14959c37",
+    "assets/resources/audio/weapons/impact-soft-2.wav": "06a5aaffdcbc465fcf1ec17d0331b64a8194dd55d6209463e074c543d4b8cf79",
+    "assets/resources/audio/weapons/impact-metal-0.wav": "88559cfbd96be2d99f99764aa6ffb98a1988997ec314a6392e820658e4ea57c3",
+    "assets/resources/audio/weapons/impact-metal-1.wav": "4002bf6073e442af37d176a7121335b8e484323b533d6089ec7cd31e493f055b",
+    "assets/resources/audio/weapons/impact-metal-2.wav": "214dbf8627dd0eba81a73a7e1462e21d4ce94f0acdad7536591b0e10bb0d5a1c",
+    "assets/resources/audio/weapons/impact-wood-0.wav": "82a65fdf643e7549eb11cceaa6f4aeec7b07c004d79676bd10ac43cdcf5611da",
+    "assets/resources/audio/weapons/impact-wood-1.wav": "6769bbaf1cce82a2479819871bcf96d878126a159a23843f9d78286132ad56e8",
+    "assets/resources/audio/weapons/impact-wood-2.wav": "3cac103f49e640831e4dc1eaa7d285a64b2ab7f351b77544821c2bf6792184cb",
+    "assets/resources/audio/weapons/impact-generic-0.wav": "96edd415cc04200065c35679fe99bd1bed65bf9ddc08f497be44766f2814215f",
+    "assets/resources/audio/weapons/impact-generic-1.wav": "1f65bbf0fa0759338b10cf2e61756d62c71cd3029da648bb85368e9ebf7ac148",
+    "assets/resources/audio/weapons/impact-generic-2.wav": "e7ffaabc0e7baa7742addebce3558f04d19f8e66b6acc6cb1af60cf8f55fb3ff"
+  },
+  "total_bytes": 495726
+}

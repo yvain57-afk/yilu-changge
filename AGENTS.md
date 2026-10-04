@@ -20,3 +20,7 @@
 - 工作树含大量此前已有的未提交 / 未跟踪工作；不得 reset、clean、stash 或覆盖。提交、合并、发布按用户明确授权执行。
 - 预览中的 `DEMO_LINEUP`、`autopilot`、调试按钮只用于演示，不作为正式数据或功能。
 - 源素材在 `art-source/`，切片由 `art-source/battle-preview-20260926/slice.py` 生成到 `docs/BATTLE-PREVIEW-20260926/assets/gen/`；不要把必要资源只留在临时目录。
+
+## 项目只读 MCP 开发交接
+
+接到用户主动交来的 ChatGPT 任务书，先核对 `project_id=yilu-changge`、`baseline_snapshot_id`、HEAD 和 `code_fingerprint`；只比较本任务相关的新差异，不回滚现有 dirty 或无目的重新研究全仓。按已授权范围实现并记录实际检查／证据，最后用 `./tools/project-reader/yilu-bridge finalize --task 任务编号 --result 项目内结果文档.md` 更新快照。入口见 `docs/ai-bridge/RUNBOOK.md`。这属于 Codex 项目操作约定，不表示 ChatGPT 可自动执行本地 Skill、命令或写任务。

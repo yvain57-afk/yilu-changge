@@ -1,0 +1,140 @@
+{
+  "r27_body_crossbow0": {
+    "bodyContainsWeapon": false,
+    "sockets": {
+      "right": {
+        "normalized": [
+          0.84,
+          0.28
+        ],
+        "occlusion_frame": "r27_body_crossbow0_right_fingers"
+      },
+      "left": {
+        "normalized": [
+          0.959,
+          0.31
+        ],
+        "occlusion_frame": "r27_body_crossbow0_left_fingers"
+      }
+    },
+    "gaitPhase": 0,
+    "stance": "crossbow",
+    "refH": 280,
+    "runtimeVerified": false
+  },
+  "r27_body_crossbow1": {
+    "bodyContainsWeapon": false,
+    "sockets": {
+      "right": {
+        "normalized": [
+          0.85,
+          0.246
+        ],
+        "occlusion_frame": "r27_body_crossbow1_right_fingers"
+      },
+      "left": {
+        "normalized": [
+          0.954,
+          0.309
+        ],
+        "occlusion_frame": "r27_body_crossbow1_left_fingers"
+      }
+    },
+    "gaitPhase": 1,
+    "stance": "crossbow",
+    "refH": 280,
+    "runtimeVerified": false
+  },
+  "r27_body_dual0": {
+    "bodyContainsWeapon": false,
+    "sockets": {
+      "right": {
+        "normalized": [
+          0.947,
+          0.331
+        ],
+        "occlusion_frame": "r27_body_dual0_right_fingers"
+      },
+      "left": {
+        "normalized": [
+          0.206,
+          0.357
+        ],
+        "occlusion_frame": "r27_body_dual0_left_fingers"
+      }
+    },
+    "gaitPhase": 0,
+    "stance": "dual",
+    "refH": 280,
+    "runtimeVerified": false
+  },
+  "r27_body_dual1": {
+    "bodyContainsWeapon": false,
+    "sockets": {
+      "right": {
+        "normalized": [
+          0.961,
+          0.417
+        ],
+        "occlusion_frame": "r27_body_dual1_right_fingers"
+      },
+      "left": {
+        "normalized": [
+          0.214,
+          0.36
+        ],
+        "occlusion_frame": "r27_body_dual1_left_fingers"
+      }
+    },
+    "gaitPhase": 1,
+    "stance": "dual",
+    "refH": 280,
+    "runtimeVerified": false
+  },
+  "r27_body_bow0": {
+    "bodyContainsWeapon": false,
+    "sockets": {
+      "right": {
+        "normalized": [
+          0.52,
+          0.195
+        ],
+        "occlusion_frame": "r27_body_bow0_right_fingers"
+      },
+      "left": {
+        "normalized": [
+          0.96,
+          0.221
+        ],
+        "occlusion_frame": "r27_body_bow0_left_fingers"
+      }
+    },
+    "gaitPhase": 0,
+    "stance": "bow",
+    "refH": 280,
+    "runtimeVerified": false
+  },
+  "r27_body_bow1": {
+    "bodyContainsWeapon": false,
+    "sockets": {
+      "right": {
+        "normalized": [
+          0.513,
+          0.183
+        ],
+        "occlusion_frame": "r27_body_bow1_right_fingers"
+      },
+      "left": {
+        "normalized": [
+          0.95,
+          0.216
+        ],
+        "occlusion_frame": "r27_body_bow1_left_fingers"
+      }
+    },
+    "gaitPhase": 1,
+    "stance": "bow",
+    "refH": 280,
+    "runtimeVerified": false
+  }
+}

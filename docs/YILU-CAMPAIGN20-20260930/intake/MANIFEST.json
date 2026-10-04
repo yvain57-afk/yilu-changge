@@ -1,0 +1,25 @@
+{
+  "status": "planning_files_only",
+  "files": [
+    {
+      "name": "AUDIO_SNAPSHOT_REVIEW.md",
+      "bytes": 5324,
+      "sha256": "6edc2ec8f175ce04ae4107482efb8c29def7d922a4b43c8f9fd0c63b3911c6d5"
+    },
+    {
+      "name": "CODEX_TASK.md",
+      "bytes": 34756,
+      "sha256": "535f1c0495d47929ceb89309c5c9c4065f27747ff6547a2717ead459b9d9ec60"
+    },
+    {
+      "name": "README.md",
+      "bytes": 1165,
+      "sha256": "60a7aa8baa0be81d5bd1c0210759b45eb765fcc91fa924370a2ad84d6116468a"
+    },
+    {
+      "name": "campaign20.design.json",
+      "bytes": 45476,
+      "sha256": "0e2a9baae073d25dc58e78c4ea32b82998cac5892a600bba9e7a4da914890d18"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+#!/bin/sh
+# Resolve this checkout, not a globally configured Codex/Claude command.
+HERE=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd -P)
+if [ ! -x "$HERE/.venv/bin/python" ]; then
+  echo '首次安装：在 tools/project-reader 运行 uv sync --frozen --python python3.12' >&2
+  exit 1
+fi
+exec "$HERE/.venv/bin/python" "$HERE/cli.py" "$@"

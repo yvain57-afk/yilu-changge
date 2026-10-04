@@ -1,0 +1,69 @@
+{
+  "atlasBounds": "pass",
+  "bodies": 4,
+  "frames": 12,
+  "distinctGaitPhasesPerMount": 2,
+  "noMirroring": true,
+  "attackPosesAccepted": 0,
+  "runtimeVerified": false,
+  "deviceVerified": false,
+  "fits": [
+    {
+      "key": "r2_ride_chitu_crossbow_run0",
+      "prop": "r27_held_liannu",
+      "gripSpanPx": 57.80858110177069,
+      "scale": 0.26850106912068766
+    },
+    {
+      "key": "r2_ride_chitu_crossbow_run1",
+      "prop": "r27_held_liannu",
+      "gripSpanPx": 60.88568715223634,
+      "scale": 0.28279317331354525
+    },
+    {
+      "key": "r2_ride_dilu_crossbow_run0",
+      "prop": "r27_held_liannu",
+      "gripSpanPx": 52.435285257162434,
+      "scale": 0.243543949407973
+    },
+    {
+      "key": "r2_ride_dilu_crossbow_run1",
+      "prop": "r27_held_liannu",
+      "gripSpanPx": 48.83488343387339,
+      "scale": 0.22682131549458723
+    },
+    {
+      "key": "r2_ride_chitu_crossbow_run0",
+      "prop": "r27_held_jiguannu",
+      "gripSpanPx": 57.80858110177069,
+      "scale": 0.3126615886071214
+    },
+    {
+      "key": "r2_ride_chitu_crossbow_run1",
+      "prop": "r27_held_jiguannu",
+      "gripSpanPx": 60.88568715223634,
+      "scale": 0.3293043230890045
+    },
+    {
+      "key": "r2_ride_dilu_crossbow_run0",
+      "prop": "r27_held_jiguannu",
+      "gripSpanPx": 52.435285257162434,
+      "scale": 0.28359975759844086
+    },
+    {
+      "key": "r2_ride_dilu_crossbow_run1",
+      "prop": "r27_held_jiguannu",
+      "gripSpanPx": 48.83488343387339,
+      "scale": 0.2641267428272991
+    }
+  ],
+  "inspectedQa": [
+    "people42-fullbody-qa.jpg",
+    "chitu-accepted-sockets-qa.jpg",
+    "dilu-accepted-sockets-qa.jpg",
+    "mounted-crossbow-composite-qa.jpg",
+    "chitu-source-grid-qa.jpg",
+    "dilu-source-grid-qa.jpg",
+    "attack-v2-grid-qa.jpg"
+  ]
+}

@@ -1,0 +1,458 @@
+[
+  {
+    "key": "r2_ride_chitu_crossbow_wind",
+    "status": "rejected-generated-candidates",
+    "reason": "rigid crossbow grip span varies excessively or hidden rear hand; would cause prop scaling jump/guessed socket",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_chitu_crossbow_rel",
+    "status": "rejected-generated-candidates",
+    "reason": "rigid crossbow grip span varies excessively or hidden rear hand; would cause prop scaling jump/guessed socket",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_chitu_crossbow_rec",
+    "status": "rejected-generated-candidates",
+    "reason": "rigid crossbow grip span varies excessively or hidden rear hand; would cause prop scaling jump/guessed socket",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_chitu_bow_run1",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_chitu_bow_wind",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_chitu_bow_rel",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_chitu_bow_rec",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_chitu_dual_run1",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_chitu_dual_wind",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_chitu_dual_rel",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_chitu_dual_rec",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_dilu_crossbow_wind",
+    "status": "rejected-generated-candidates",
+    "reason": "rigid crossbow grip span varies excessively or hidden rear hand; would cause prop scaling jump/guessed socket",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_dilu_crossbow_rel",
+    "status": "rejected-generated-candidates",
+    "reason": "rigid crossbow grip span varies excessively or hidden rear hand; would cause prop scaling jump/guessed socket",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_dilu_crossbow_rec",
+    "status": "rejected-generated-candidates",
+    "reason": "rigid crossbow grip span varies excessively or hidden rear hand; would cause prop scaling jump/guessed socket",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_dilu_bow_run1",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_dilu_bow_wind",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_dilu_bow_rel",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_dilu_bow_rec",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_dilu_dual_run1",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_dilu_dual_wind",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_dilu_dual_rel",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_dilu_dual_rec",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jingfan_crossbow_run1",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jingfan_crossbow_wind",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jingfan_crossbow_rel",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jingfan_crossbow_rec",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jingfan_bow_run1",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jingfan_bow_wind",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jingfan_bow_rel",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jingfan_bow_rec",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jingfan_dual_run1",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jingfan_dual_wind",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jingfan_dual_rel",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jingfan_dual_rec",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jueying_crossbow_run1",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jueying_crossbow_wind",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jueying_crossbow_rel",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jueying_crossbow_rec",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jueying_bow_run1",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jueying_bow_wind",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jueying_bow_rel",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jueying_bow_rec",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jueying_dual_run1",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jueying_dual_wind",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jueying_dual_rel",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_ride_jueying_dual_rec",
+    "status": "not-produced",
+    "reason": "No matching identity-preserving generated frame exists; cannot reuse other horse or grip stance",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_taishici_pass0",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_taishici_pass1",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_ganning_pass0",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_ganning_pass1",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_zhanghe_pass0",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_zhanghe_pass1",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_xiahouyuan_pass0",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_xiahouyuan_pass1",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_weiyan_pass0",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_weiyan_pass1",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_zhangren_pass0",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_zhangren_pass1",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_dengai_pass0",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_dengai_pass1",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_lusu_pass0",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_lusu_pass1",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_huangyueying_pass0",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_huangyueying_pass1",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_caoren_pass0",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_caoren_pass1",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_zhonghui_pass0",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_zhonghui_pass1",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_lukang_pass0",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_char_lukang_pass1",
+    "status": "not-produced",
+    "reason": "Only original two true support phases exist; missing distinct passing pose",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_body_crossbow_pass0",
+    "status": "not-produced",
+    "reason": "Ground body has two true phases, intermediate not generated",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_body_crossbow_pass1",
+    "status": "not-produced",
+    "reason": "Ground body has two true phases, intermediate not generated",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_body_dual_pass0",
+    "status": "not-produced",
+    "reason": "Ground body has two true phases, intermediate not generated",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_body_dual_pass1",
+    "status": "not-produced",
+    "reason": "Ground body has two true phases, intermediate not generated",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_body_bow_pass0",
+    "status": "not-produced",
+    "reason": "Ground body has two true phases, intermediate not generated",
+    "runtimeReady": false
+  },
+  {
+    "key": "r2_body_bow_pass1",
+    "status": "not-produced",
+    "reason": "Ground body has two true phases, intermediate not generated",
+    "runtimeReady": false
+  }
+]

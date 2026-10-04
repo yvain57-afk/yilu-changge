@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {mapMetrics,mapPosition,mapScrollFor,visibleMapPanels,marchPath} from '../assets/scripts/formal/CampaignMap';
+import {nextMilestoneHint,canSkipPresentation} from '../assets/scripts/formal/RewardFlow';
+test('20 map destinations can be centered at both supported phone sizes with at most 3 panels',()=>{for(const [W,H,top,bottom] of [[402,874,62,34],[375,667,20,8]]){const m=mapMetrics({W,H,top,bottom});assert.ok(m.height/(H-top-bottom)>.64);for(let i=0;i<20;i++){const at=mapPosition(i,m,W),scroll=mapScrollFor(i,m);assert.ok(at.y-scroll>=0&&at.y-scroll<=m.height);assert.ok(at.x-66>=0&&at.x+66<=W);assert.ok(visibleMapPanels(scroll,m).length<=3);}}});
+test('curved footsteps preserve endpoints and do not turn map into straight node links',()=>{const a={x:50,y:80},b={x:270,y:270},p=marchPath(a,b);assert.deepEqual(p[0],a);assert.notEqual(p[2].x,a.x+(b.x-a.x)*2/12);});
+test('odd clear announces named milestone and actual primary reward; skip timing is bounded',()=>{assert.match(nextMilestoneHint(1),/初立军功.*古锭刀/);assert.match(nextMilestoneHint(9),/半壁已定/);assert.match(nextMilestoneHint(20),/九州长歌/);assert.equal(canSkipPresentation(.79),false);assert.equal(canSkipPresentation(.8),true);});

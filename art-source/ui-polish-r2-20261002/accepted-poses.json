@@ -1,0 +1,66 @@
+[
+  {
+    "mount": "chitu",
+    "phase": "run0",
+    "source": "chitu-crossbow-run0-source.png",
+    "sockets": {
+      "right": [
+        0.731,
+        0.189
+      ],
+      "left": [
+        0.939,
+        0.216
+      ]
+    },
+    "method": "existing verified source reused as phase 0"
+  },
+  {
+    "mount": "chitu",
+    "phase": "run1",
+    "source": "chitu-crossbow-run1-source.png",
+    "sockets": {
+      "right": [
+        0.74,
+        0.19
+      ],
+      "left": [
+        0.96,
+        0.216
+      ]
+    },
+    "method": "built-in imagegen lower-horse-leg edit: actual opposite hind-leg support"
+  },
+  {
+    "mount": "dilu",
+    "phase": "run0",
+    "source": "dilu-crossbow-run0-source.png",
+    "sockets": {
+      "right": [
+        0.77,
+        0.183
+      ],
+      "left": [
+        0.962,
+        0.18
+      ]
+    },
+    "method": "existing verified source reused as phase 0"
+  },
+  {
+    "mount": "dilu",
+    "phase": "run1",
+    "source": "dilu-crossbow-run1-source.png",
+    "sockets": {
+      "right": [
+        0.776,
+        0.182
+      ],
+      "left": [
+        0.952,
+        0.176
+      ]
+    },
+    "method": "built-in imagegen lower-horse-leg edit: actual opposite hind-leg support"
+  }
+]

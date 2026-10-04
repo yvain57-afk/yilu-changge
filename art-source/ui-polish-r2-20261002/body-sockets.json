@@ -1,0 +1,98 @@
+{
+  "r2_ride_chitu_crossbow_run0": {
+    "bodyContainsWeapon": false,
+    "mountId": "chitu",
+    "stance": "crossbow",
+    "refH": 475,
+    "phase": "run0",
+    "sockets": {
+      "right": {
+        "normalized": [
+          0.731,
+          0.189
+        ],
+        "occlusion_frame": "r2_ride_chitu_crossbow_run0_right_fingers"
+      },
+      "left": {
+        "normalized": [
+          0.939,
+          0.216
+        ],
+        "occlusion_frame": "r2_ride_chitu_crossbow_run0_left_fingers"
+      }
+    },
+    "runtimeVerified": false
+  },
+  "r2_ride_chitu_crossbow_run1": {
+    "bodyContainsWeapon": false,
+    "mountId": "chitu",
+    "stance": "crossbow",
+    "refH": 475,
+    "phase": "run1",
+    "sockets": {
+      "right": {
+        "normalized": [
+          0.74,
+          0.19
+        ],
+        "occlusion_frame": "r2_ride_chitu_crossbow_run1_right_fingers"
+      },
+      "left": {
+        "normalized": [
+          0.96,
+          0.216
+        ],
+        "occlusion_frame": "r2_ride_chitu_crossbow_run1_left_fingers"
+      }
+    },
+    "runtimeVerified": false
+  },
+  "r2_ride_dilu_crossbow_run0": {
+    "bodyContainsWeapon": false,
+    "mountId": "dilu",
+    "stance": "crossbow",
+    "refH": 474,
+    "phase": "run0",
+    "sockets": {
+      "right": {
+        "normalized": [
+          0.77,
+          0.183
+        ],
+        "occlusion_frame": "r2_ride_dilu_crossbow_run0_right_fingers"
+      },
+      "left": {
+        "normalized": [
+          0.962,
+          0.18
+        ],
+        "occlusion_frame": "r2_ride_dilu_crossbow_run0_left_fingers"
+      }
+    },
+    "runtimeVerified": false
+  },
+  "r2_ride_dilu_crossbow_run1": {
+    "bodyContainsWeapon": false,
+    "mountId": "dilu",
+    "stance": "crossbow",
+    "refH": 474,
+    "phase": "run1",
+    "sockets": {
+      "right": {
+        "normalized": [
+          0.776,
+          0.182
+        ],
+        "occlusion_frame": "r2_ride_dilu_crossbow_run1_right_fingers"
+      },
+      "left": {
+        "normalized": [
+          0.952,
+          0.176
+        ],
+        "occlusion_frame": "r2_ride_dilu_crossbow_run1_left_fingers"
+      }
+    },
+    "runtimeVerified": false
+  }
+}

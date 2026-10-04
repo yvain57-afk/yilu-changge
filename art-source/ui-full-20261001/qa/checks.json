@@ -1,0 +1,21 @@
+{
+  "frames": 32,
+  "component_families": 15,
+  "required_family_count": 13,
+  "additional_progress_parts": [
+    "ui_progress_fill",
+    "ui_progress_cap"
+  ],
+  "all_alpha": true,
+  "rects_within_atlas": true,
+  "nine_slice_bounds": true,
+  "runtime_verified": false,
+  "expected_required_states": 30,
+  "required_states_present": 30,
+  "missing_required_states": [],
+  "actual_visual_inspection": [
+    "contact-dark.jpg",
+    "contact-light.jpg",
+    "nine-slice-stretch.jpg"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "mounts": [
+    "jingfan",
+    "jueying"
+  ],
+  "weapons": {
+    "spear": {
+      "pose": "single",
+      "hand": "right",
+      "iconCandidate": "g_icon_spear"
+    },
+    "guandao": {
+      "pose": "single",
+      "hand": "right",
+      "iconCandidate": "g_icon_guandao"
+    },
+    "shemao": {
+      "pose": "single",
+      "hand": "right",
+      "iconCandidate": "g_icon_shemao"
+    },
+    "huaji": {
+      "pose": "single",
+      "hand": "right",
+      "iconCandidate": "g_icon_huaji"
+    },
+    "guding": {
+      "pose": "single",
+      "hand": "right",
+      "iconCandidate": "g_icon_guding"
+    },
+    "yitian": {
+      "pose": "single",
+      "hand": "right",
+      "iconCandidate": "g_icon_yitian"
+    },
+    "qinggang": {
+      "pose": "single",
+      "hand": "right",
+      "iconCandidate": "g_icon_qinggang"
+    },
+    "tiesuodao": {
+      "pose": "single",
+      "hand": "right",
+      "iconCandidate": "c20_icon_tiesuodao"
+    },
+    "goulianqiang": {
+      "pose": "single",
+      "hand": "right",
+      "iconCandidate": "c20_icon_goulianqiang"
+    },
+    "liannu": {
+      "pose": "crossbow",
+      "hand": "right",
+      "supportHand": "left",
+      "iconCandidate": "g_icon_liannu"
+    },
+    "jiguannu": {
+      "pose": "crossbow",
+      "hand": "right",
+      "supportHand": "left",
+      "iconCandidate": "c20_icon_jiguannu"
+    },
+    "yanlinggong": {
+      "pose": "bow",
+      "hand": "left",
+      "drawHand": "right",
+      "iconCandidate": "c20_icon_yanlinggong"
+    },
+    "shuangji": {
+      "pose": "dual",
+      "parts": [
+        {
+          "key": "g_part_shuangji",
+          "hand": "right"
+        },
+        {
+          "key": "g_part_shuangji",
+          "hand": "left"
+        }
+      ]
+    },
+    "shuanggu": {
+      "pose": "dual",
+      "parts": [
+        {
+          "key": "g_part_shuanggu",
+          "hand": "right"
+        },
+        {
+          "key": "g_part_shuanggu",
+          "hand": "left"
+        }
+      ]
+    },
+    "duanji": {
+      "pose": "dual",
+      "parts": [
+        {
+          "key": "r26_part_duanji",
+          "hand": "right"
+        },
+        {
+          "key": "r26_part_duanji",
+          "hand": "left"
+        }
+      ]
+    },
+    "dundao": {
+      "pose": "dual",
+      "parts": [
+        {
+          "key": "r26_part_dundao_blade",
+          "hand": "right"
+        },
+        {
+          "key": "r26_part_dundao_shield",
+          "hand": "left"
+        }
+      ]
+    }
+  },
+  "status": "asset_ready_runtime_not_verified",
+  "frameRule": "r26_ride_{mount}_{pose}",
+  "rules": [
+    "bodyContainsWeapon=false",
+    "use normalized source-pixel sockets; transform through body frame scale and anchor",
+    "grip is normalized within weapon frame; NOT a second body",
+    "keep existing collision/attack/audio timing",
+    "draw hand occlusion cap only for fingers at exact same body scale",
+    "crossbow support-hand and bow string endpoint need runtime pose fitting before all combinations pass",
+    "single polearm pose is mounted one-hand grip; do not claim two-hand contact"
+  ]
+}

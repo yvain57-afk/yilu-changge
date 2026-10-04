@@ -1,0 +1,1698 @@
+{
+  "sheets": {
+    "c20_characters_a": "formal20260927/campaign20-characters-a",
+    "c20_characters_b": "formal20260927/campaign20-characters-b",
+    "c20_hero_weapons": "formal20260927/campaign20-hero-weapons",
+    "c20_enemies": "formal20260927/campaign20-enemies",
+    "c20_mounts": "formal20260927/campaign20-mounts",
+    "c20_icons": "formal20260927/campaign20-icons",
+    "c20_sites": "formal20260927/campaign20-sites",
+    "c20_map_0": "formal20260927/campaign20-map0",
+    "c20_map_1": "formal20260927/campaign20-map1",
+    "c20_map_2": "formal20260927/campaign20-map2",
+    "c20_map_3": "formal20260927/campaign20-map3",
+    "c20_map_4": "formal20260927/campaign20-map4"
+  },
+  "frames": [
+    {
+      "key": "c20_char_taishici_run",
+      "source": "characters-a.png",
+      "box": [
+        38,
+        12,
+        309,
+        211
+      ],
+      "alpha_pixels": 22802,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_taishici_wind",
+      "source": "characters-a.png",
+      "box": [
+        364,
+        7,
+        643,
+        210
+      ],
+      "alpha_pixels": 22311,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_taishici_rel",
+      "source": "characters-a.png",
+      "box": [
+        641,
+        19,
+        988,
+        221
+      ],
+      "alpha_pixels": 28037,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_taishici_rec",
+      "source": "characters-a.png",
+      "box": [
+        986,
+        13,
+        1244,
+        228
+      ],
+      "alpha_pixels": 24822,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_ganning_run",
+      "source": "characters-a.png",
+      "box": [
+        9,
+        212,
+        297,
+        417
+      ],
+      "alpha_pixels": 22537,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_ganning_wind",
+      "source": "characters-a.png",
+      "box": [
+        347,
+        217,
+        601,
+        415
+      ],
+      "alpha_pixels": 24670,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_ganning_rel",
+      "source": "characters-a.png",
+      "box": [
+        647,
+        229,
+        1009,
+        419
+      ],
+      "alpha_pixels": 24942,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_ganning_rec",
+      "source": "characters-a.png",
+      "box": [
+        1028,
+        230,
+        1242,
+        419
+      ],
+      "alpha_pixels": 22113,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_zhanghe_run",
+      "source": "characters-a.png",
+      "box": [
+        26,
+        417,
+        295,
+        635
+      ],
+      "alpha_pixels": 25409,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_zhanghe_wind",
+      "source": "characters-a.png",
+      "box": [
+        374,
+        412,
+        647,
+        637
+      ],
+      "alpha_pixels": 28341,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_zhanghe_rel",
+      "source": "characters-a.png",
+      "box": [
+        655,
+        423,
+        1057,
+        636
+      ],
+      "alpha_pixels": 28979,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_zhanghe_rec",
+      "source": "characters-a.png",
+      "box": [
+        959,
+        418,
+        1247,
+        637
+      ],
+      "alpha_pixels": 24933,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_xiahouyuan_run",
+      "source": "characters-a.png",
+      "box": [
+        60,
+        626,
+        284,
+        843
+      ],
+      "alpha_pixels": 23296,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_xiahouyuan_wind",
+      "source": "characters-a.png",
+      "box": [
+        372,
+        606,
+        609,
+        856
+      ],
+      "alpha_pixels": 26534,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_xiahouyuan_rel",
+      "source": "characters-a.png",
+      "box": [
+        651,
+        611,
+        918,
+        858
+      ],
+      "alpha_pixels": 29817,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_xiahouyuan_rec",
+      "source": "characters-a.png",
+      "box": [
+        917,
+        632,
+        1249,
+        851
+      ],
+      "alpha_pixels": 21358,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_weiyan_run",
+      "source": "characters-a.png",
+      "box": [
+        14,
+        827,
+        285,
+        1066
+      ],
+      "alpha_pixels": 31552,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_weiyan_wind",
+      "source": "characters-a.png",
+      "box": [
+        344,
+        824,
+        597,
+        1075
+      ],
+      "alpha_pixels": 32732,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_weiyan_rel",
+      "source": "characters-a.png",
+      "box": [
+        637,
+        862,
+        1011,
+        1076
+      ],
+      "alpha_pixels": 34053,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_weiyan_rec",
+      "source": "characters-a.png",
+      "box": [
+        1030,
+        840,
+        1238,
+        1054
+      ],
+      "alpha_pixels": 25711,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_zhangren_run",
+      "source": "characters-a.png",
+      "box": [
+        47,
+        1062,
+        332,
+        1242
+      ],
+      "alpha_pixels": 17658,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_zhangren_wind",
+      "source": "characters-a.png",
+      "box": [
+        332,
+        1073,
+        631,
+        1248
+      ],
+      "alpha_pixels": 17523,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_zhangren_rel",
+      "source": "characters-a.png",
+      "box": [
+        651,
+        1077,
+        1005,
+        1249
+      ],
+      "alpha_pixels": 18446,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_zhangren_rec",
+      "source": "characters-a.png",
+      "box": [
+        979,
+        1059,
+        1230,
+        1244
+      ],
+      "alpha_pixels": 16733,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_dengai_run",
+      "source": "characters-b.png",
+      "box": [
+        10,
+        5,
+        232,
+        223
+      ],
+      "alpha_pixels": 19290,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_dengai_wind",
+      "source": "characters-b.png",
+      "box": [
+        253,
+        6,
+        516,
+        216
+      ],
+      "alpha_pixels": 21116,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_dengai_rel",
+      "source": "characters-b.png",
+      "box": [
+        514,
+        11,
+        821,
+        219
+      ],
+      "alpha_pixels": 20960,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_dengai_rec",
+      "source": "characters-b.png",
+      "box": [
+        818,
+        6,
+        1021,
+        223
+      ],
+      "alpha_pixels": 19889,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_lusu_run",
+      "source": "characters-b.png",
+      "box": [
+        29,
+        226,
+        198,
+        472
+      ],
+      "alpha_pixels": 22704,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_lusu_wind",
+      "source": "characters-b.png",
+      "box": [
+        277,
+        224,
+        454,
+        472
+      ],
+      "alpha_pixels": 24120,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_lusu_rel",
+      "source": "characters-b.png",
+      "box": [
+        531,
+        226,
+        759,
+        474
+      ],
+      "alpha_pixels": 27718,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_lusu_rec",
+      "source": "characters-b.png",
+      "box": [
+        869,
+        226,
+        994,
+        475
+      ],
+      "alpha_pixels": 19625,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_huangyueying_run",
+      "source": "characters-b.png",
+      "box": [
+        11,
+        479,
+        231,
+        721
+      ],
+      "alpha_pixels": 22675,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_huangyueying_wind",
+      "source": "characters-b.png",
+      "box": [
+        281,
+        479,
+        481,
+        723
+      ],
+      "alpha_pixels": 24206,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_huangyueying_rel",
+      "source": "characters-b.png",
+      "box": [
+        529,
+        476,
+        803,
+        717
+      ],
+      "alpha_pixels": 26898,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_huangyueying_rec",
+      "source": "characters-b.png",
+      "box": [
+        829,
+        479,
+        1019,
+        723
+      ],
+      "alpha_pixels": 22015,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_caoren_run",
+      "source": "characters-b.png",
+      "box": [
+        10,
+        702,
+        225,
+        963
+      ],
+      "alpha_pixels": 33054,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_caoren_wind",
+      "source": "characters-b.png",
+      "box": [
+        275,
+        706,
+        477,
+        963
+      ],
+      "alpha_pixels": 32771,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_caoren_rel",
+      "source": "characters-b.png",
+      "box": [
+        524,
+        697,
+        748,
+        957
+      ],
+      "alpha_pixels": 36684,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_caoren_rec",
+      "source": "characters-b.png",
+      "box": [
+        826,
+        710,
+        1015,
+        964
+      ],
+      "alpha_pixels": 28910,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_zhonghui_run",
+      "source": "characters-b.png",
+      "box": [
+        13,
+        959,
+        211,
+        1233
+      ],
+      "alpha_pixels": 27111,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_zhonghui_wind",
+      "source": "characters-b.png",
+      "box": [
+        259,
+        957,
+        519,
+        1236
+      ],
+      "alpha_pixels": 29603,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_zhonghui_rel",
+      "source": "characters-b.png",
+      "box": [
+        527,
+        959,
+        820,
+        1237
+      ],
+      "alpha_pixels": 31764,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_zhonghui_rec",
+      "source": "characters-b.png",
+      "box": [
+        850,
+        956,
+        1008,
+        1236
+      ],
+      "alpha_pixels": 23853,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_lukang_run",
+      "source": "characters-b.png",
+      "box": [
+        10,
+        1220,
+        237,
+        1524
+      ],
+      "alpha_pixels": 33435,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_lukang_wind",
+      "source": "characters-b.png",
+      "box": [
+        270,
+        1202,
+        479,
+        1529
+      ],
+      "alpha_pixels": 33778,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_lukang_rel",
+      "source": "characters-b.png",
+      "box": [
+        494,
+        1220,
+        813,
+        1528
+      ],
+      "alpha_pixels": 35373,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_char_lukang_rec",
+      "source": "characters-b.png",
+      "box": [
+        824,
+        1219,
+        1007,
+        1532
+      ],
+      "alpha_pixels": 29115,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_duanji_run",
+      "source": "hero-weapons.png",
+      "box": [
+        32,
+        32,
+        237,
+        242
+      ],
+      "alpha_pixels": 16378,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_duanji_wind",
+      "source": "hero-weapons.png",
+      "box": [
+        279,
+        10,
+        465,
+        241
+      ],
+      "alpha_pixels": 18220,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_duanji_rel",
+      "source": "hero-weapons.png",
+      "box": [
+        534,
+        10,
+        768,
+        247
+      ],
+      "alpha_pixels": 19324,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_duanji_rec",
+      "source": "hero-weapons.png",
+      "box": [
+        794,
+        32,
+        980,
+        245
+      ],
+      "alpha_pixels": 17288,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_tiesuodao_run",
+      "source": "hero-weapons.png",
+      "box": [
+        24,
+        275,
+        253,
+        490
+      ],
+      "alpha_pixels": 17206,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_tiesuodao_wind",
+      "source": "hero-weapons.png",
+      "box": [
+        274,
+        256,
+        509,
+        492
+      ],
+      "alpha_pixels": 19103,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_tiesuodao_rel",
+      "source": "hero-weapons.png",
+      "box": [
+        524,
+        249,
+        805,
+        499
+      ],
+      "alpha_pixels": 19918,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_tiesuodao_rec",
+      "source": "hero-weapons.png",
+      "box": [
+        789,
+        277,
+        1013,
+        492
+      ],
+      "alpha_pixels": 18621,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_goulianqiang_run",
+      "source": "hero-weapons.png",
+      "box": [
+        22,
+        524,
+        256,
+        743
+      ],
+      "alpha_pixels": 17045,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_goulianqiang_wind",
+      "source": "hero-weapons.png",
+      "box": [
+        268,
+        495,
+        508,
+        752
+      ],
+      "alpha_pixels": 19770,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_goulianqiang_rel",
+      "source": "hero-weapons.png",
+      "box": [
+        509,
+        493,
+        775,
+        749
+      ],
+      "alpha_pixels": 20183,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_goulianqiang_rec",
+      "source": "hero-weapons.png",
+      "box": [
+        783,
+        529,
+        1009,
+        751
+      ],
+      "alpha_pixels": 21092,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_dundao_run",
+      "source": "hero-weapons.png",
+      "box": [
+        22,
+        779,
+        243,
+        993
+      ],
+      "alpha_pixels": 19500,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_dundao_wind",
+      "source": "hero-weapons.png",
+      "box": [
+        275,
+        756,
+        467,
+        991
+      ],
+      "alpha_pixels": 20268,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_dundao_rel",
+      "source": "hero-weapons.png",
+      "box": [
+        524,
+        759,
+        766,
+        1001
+      ],
+      "alpha_pixels": 22397,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_dundao_rec",
+      "source": "hero-weapons.png",
+      "box": [
+        793,
+        781,
+        1000,
+        998
+      ],
+      "alpha_pixels": 18678,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_yanlinggong_run",
+      "source": "hero-weapons.png",
+      "box": [
+        27,
+        1030,
+        221,
+        1247
+      ],
+      "alpha_pixels": 17396,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_yanlinggong_wind",
+      "source": "hero-weapons.png",
+      "box": [
+        274,
+        978,
+        495,
+        1248
+      ],
+      "alpha_pixels": 21068,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_yanlinggong_rel",
+      "source": "hero-weapons.png",
+      "box": [
+        524,
+        992,
+        778,
+        1262
+      ],
+      "alpha_pixels": 21481,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_yanlinggong_rec",
+      "source": "hero-weapons.png",
+      "box": [
+        786,
+        1034,
+        992,
+        1253
+      ],
+      "alpha_pixels": 18945,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_jiguannu_run",
+      "source": "hero-weapons.png",
+      "box": [
+        26,
+        1281,
+        236,
+        1503
+      ],
+      "alpha_pixels": 19946,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_jiguannu_wind",
+      "source": "hero-weapons.png",
+      "box": [
+        269,
+        1276,
+        496,
+        1505
+      ],
+      "alpha_pixels": 22723,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_jiguannu_rel",
+      "source": "hero-weapons.png",
+      "box": [
+        522,
+        1275,
+        781,
+        1508
+      ],
+      "alpha_pixels": 23414,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_hero_jiguannu_rec",
+      "source": "hero-weapons.png",
+      "box": [
+        783,
+        1273,
+        993,
+        1505
+      ],
+      "alpha_pixels": 21612,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_shield_run",
+      "source": "enemies.png",
+      "box": [
+        62,
+        3,
+        249,
+        198
+      ],
+      "alpha_pixels": 15521,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_shield_wind",
+      "source": "enemies.png",
+      "box": [
+        401,
+        0,
+        580,
+        199
+      ],
+      "alpha_pixels": 16627,
+      "source_edge_contact": true
+    },
+    {
+      "key": "c20_enemy_shield_rel",
+      "source": "enemies.png",
+      "box": [
+        688,
+        8,
+        934,
+        206
+      ],
+      "alpha_pixels": 19878,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_shield_rec",
+      "source": "enemies.png",
+      "box": [
+        1038,
+        7,
+        1239,
+        197
+      ],
+      "alpha_pixels": 15853,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_archer_run",
+      "source": "enemies.png",
+      "box": [
+        109,
+        211,
+        237,
+        400
+      ],
+      "alpha_pixels": 10878,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_archer_wind",
+      "source": "enemies.png",
+      "box": [
+        423,
+        194,
+        592,
+        393
+      ],
+      "alpha_pixels": 14139,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_archer_rel",
+      "source": "enemies.png",
+      "box": [
+        744,
+        202,
+        1005,
+        399
+      ],
+      "alpha_pixels": 13701,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_archer_rec",
+      "source": "enemies.png",
+      "box": [
+        1119,
+        209,
+        1236,
+        396
+      ],
+      "alpha_pixels": 11482,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_cavalry_run",
+      "source": "enemies.png",
+      "box": [
+        65,
+        405,
+        321,
+        623
+      ],
+      "alpha_pixels": 22185,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_cavalry_wind",
+      "source": "enemies.png",
+      "box": [
+        408,
+        387,
+        623,
+        626
+      ],
+      "alpha_pixels": 21138,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_cavalry_rel",
+      "source": "enemies.png",
+      "box": [
+        717,
+        411,
+        1003,
+        624
+      ],
+      "alpha_pixels": 22480,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_cavalry_rec",
+      "source": "enemies.png",
+      "box": [
+        1054,
+        405,
+        1255,
+        619
+      ],
+      "alpha_pixels": 21553,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_banner_run",
+      "source": "enemies.png",
+      "box": [
+        66,
+        623,
+        226,
+        838
+      ],
+      "alpha_pixels": 15011,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_banner_wind",
+      "source": "enemies.png",
+      "box": [
+        424,
+        620,
+        643,
+        835
+      ],
+      "alpha_pixels": 16297,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_banner_rel",
+      "source": "enemies.png",
+      "box": [
+        717,
+        617,
+        974,
+        830
+      ],
+      "alpha_pixels": 16194,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_banner_rec",
+      "source": "enemies.png",
+      "box": [
+        1069,
+        622,
+        1207,
+        834
+      ],
+      "alpha_pixels": 14701,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_guard_run",
+      "source": "enemies.png",
+      "box": [
+        101,
+        839,
+        292,
+        1025
+      ],
+      "alpha_pixels": 18200,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_guard_wind",
+      "source": "enemies.png",
+      "box": [
+        422,
+        823,
+        579,
+        1026
+      ],
+      "alpha_pixels": 16514,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_guard_rel",
+      "source": "enemies.png",
+      "box": [
+        722,
+        851,
+        990,
+        1026
+      ],
+      "alpha_pixels": 21694,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_guard_rec",
+      "source": "enemies.png",
+      "box": [
+        1079,
+        838,
+        1289,
+        1022
+      ],
+      "alpha_pixels": 18928,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_mechanism_run",
+      "source": "enemies.png",
+      "box": [
+        67,
+        1026,
+        290,
+        1188
+      ],
+      "alpha_pixels": 17424,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_mechanism_wind",
+      "source": "enemies.png",
+      "box": [
+        390,
+        1031,
+        606,
+        1190
+      ],
+      "alpha_pixels": 19148,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_mechanism_rel",
+      "source": "enemies.png",
+      "box": [
+        713,
+        1030,
+        1030,
+        1188
+      ],
+      "alpha_pixels": 17834,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_enemy_mechanism_rec",
+      "source": "enemies.png",
+      "box": [
+        1069,
+        1027,
+        1277,
+        1189
+      ],
+      "alpha_pixels": 18622,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_ride_jingfan_run",
+      "source": "mounts.png",
+      "box": [
+        6,
+        44,
+        348,
+        482
+      ],
+      "alpha_pixels": 81163,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_ride_jingfan_wind",
+      "source": "mounts.png",
+      "box": [
+        367,
+        33,
+        724,
+        488
+      ],
+      "alpha_pixels": 82191,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_ride_jingfan_rel",
+      "source": "mounts.png",
+      "box": [
+        725,
+        58,
+        1272,
+        474
+      ],
+      "alpha_pixels": 98620,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_ride_jingfan_rec",
+      "source": "mounts.png",
+      "box": [
+        1190,
+        52,
+        1525,
+        488
+      ],
+      "alpha_pixels": 77077,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_ride_jueying_run",
+      "source": "mounts.png",
+      "box": [
+        4,
+        532,
+        356,
+        983
+      ],
+      "alpha_pixels": 85725,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_ride_jueying_wind",
+      "source": "mounts.png",
+      "box": [
+        359,
+        519,
+        724,
+        981
+      ],
+      "alpha_pixels": 84736,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_ride_jueying_rel",
+      "source": "mounts.png",
+      "box": [
+        719,
+        550,
+        1268,
+        964
+      ],
+      "alpha_pixels": 100890,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_ride_jueying_rec",
+      "source": "mounts.png",
+      "box": [
+        1191,
+        537,
+        1529,
+        983
+      ],
+      "alpha_pixels": 79049,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_weapon_duanji",
+      "source": "icons.png",
+      "box": [
+        10,
+        19,
+        280,
+        317
+      ],
+      "alpha_pixels": 26567,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_weapon_tiesuodao",
+      "source": "icons.png",
+      "box": [
+        317,
+        48,
+        616,
+        312
+      ],
+      "alpha_pixels": 32851,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_weapon_goulianqiang",
+      "source": "icons.png",
+      "box": [
+        637,
+        11,
+        915,
+        335
+      ],
+      "alpha_pixels": 17941,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_weapon_dundao",
+      "source": "icons.png",
+      "box": [
+        965,
+        26,
+        1248,
+        334
+      ],
+      "alpha_pixels": 55368,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_weapon_yanlinggong",
+      "source": "icons.png",
+      "box": [
+        41,
+        324,
+        296,
+        687
+      ],
+      "alpha_pixels": 16350,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_weapon_jiguannu",
+      "source": "icons.png",
+      "box": [
+        294,
+        396,
+        613,
+        612
+      ],
+      "alpha_pixels": 39491,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_tr_huxinjing",
+      "source": "icons.png",
+      "box": [
+        658,
+        353,
+        918,
+        635
+      ],
+      "alpha_pixels": 58490,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_tr_jinfanling",
+      "source": "icons.png",
+      "box": [
+        972,
+        338,
+        1249,
+        645
+      ],
+      "alpha_pixels": 54034,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_tr_fengshitu",
+      "source": "icons.png",
+      "box": [
+        4,
+        684,
+        318,
+        916
+      ],
+      "alpha_pixels": 57830,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_tr_tiebifu",
+      "source": "icons.png",
+      "box": [
+        342,
+        674,
+        651,
+        915
+      ],
+      "alpha_pixels": 47721,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_tr_jingfan",
+      "source": "icons.png",
+      "box": [
+        620,
+        647,
+        951,
+        941
+      ],
+      "alpha_pixels": 42523,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_tr_pozhengu",
+      "source": "icons.png",
+      "box": [
+        972,
+        660,
+        1237,
+        928
+      ],
+      "alpha_pixels": 54444,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_tr_xingjunyaolue",
+      "source": "icons.png",
+      "box": [
+        15,
+        950,
+        312,
+        1224
+      ],
+      "alpha_pixels": 40071,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_tr_jueying",
+      "source": "icons.png",
+      "box": [
+        295,
+        933,
+        607,
+        1232
+      ],
+      "alpha_pixels": 45430,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_tr_yingbianbingshu",
+      "source": "icons.png",
+      "box": [
+        618,
+        956,
+        964,
+        1214
+      ],
+      "alpha_pixels": 62422,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_tr_jiuzhouyin",
+      "source": "icons.png",
+      "box": [
+        981,
+        944,
+        1247,
+        1222
+      ],
+      "alpha_pixels": 48767,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_site_city",
+      "source": "sites.png",
+      "box": [
+        7,
+        34,
+        285,
+        275
+      ],
+      "alpha_pixels": 44214,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_site_pass",
+      "source": "sites.png",
+      "box": [
+        299,
+        30,
+        581,
+        295
+      ],
+      "alpha_pixels": 56255,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_site_water",
+      "source": "sites.png",
+      "box": [
+        595,
+        55,
+        847,
+        278
+      ],
+      "alpha_pixels": 36193,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_site_camp",
+      "source": "sites.png",
+      "box": [
+        867,
+        42,
+        1176,
+        275
+      ],
+      "alpha_pixels": 41602,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_garrison",
+      "source": "sites.png",
+      "box": [
+        1229,
+        8,
+        1392,
+        291
+      ],
+      "alpha_pixels": 21252,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_flag_locked",
+      "source": "sites.png",
+      "box": [
+        76,
+        286,
+        237,
+        604
+      ],
+      "alpha_pixels": 23190,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_flag_open",
+      "source": "sites.png",
+      "box": [
+        311,
+        287,
+        571,
+        585
+      ],
+      "alpha_pixels": 33955,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_flag_done",
+      "source": "sites.png",
+      "box": [
+        624,
+        286,
+        863,
+        621
+      ],
+      "alpha_pixels": 35986,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_flag_current",
+      "source": "sites.png",
+      "box": [
+        934,
+        286,
+        1175,
+        622
+      ],
+      "alpha_pixels": 35308,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_flag_defeated",
+      "source": "sites.png",
+      "box": [
+        1213,
+        290,
+        1376,
+        621
+      ],
+      "alpha_pixels": 24610,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_stamp_1",
+      "source": "sites.png",
+      "box": [
+        23,
+        610,
+        240,
+        858
+      ],
+      "alpha_pixels": 33276,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_stamp_2",
+      "source": "sites.png",
+      "box": [
+        306,
+        605,
+        519,
+        853
+      ],
+      "alpha_pixels": 32262,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_stamp_3",
+      "source": "sites.png",
+      "box": [
+        592,
+        610,
+        801,
+        850
+      ],
+      "alpha_pixels": 32158,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_stamp_4",
+      "source": "sites.png",
+      "box": [
+        885,
+        621,
+        1096,
+        847
+      ],
+      "alpha_pixels": 34665,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_stamp_5",
+      "source": "sites.png",
+      "box": [
+        1154,
+        618,
+        1386,
+        856
+      ],
+      "alpha_pixels": 35428,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_stamp_6",
+      "source": "sites.png",
+      "box": [
+        26,
+        864,
+        246,
+        1090
+      ],
+      "alpha_pixels": 34240,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_stamp_7",
+      "source": "sites.png",
+      "box": [
+        307,
+        864,
+        525,
+        1089
+      ],
+      "alpha_pixels": 34415,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_stamp_8",
+      "source": "sites.png",
+      "box": [
+        580,
+        865,
+        817,
+        1089
+      ],
+      "alpha_pixels": 34651,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_stamp_9",
+      "source": "sites.png",
+      "box": [
+        874,
+        861,
+        1108,
+        1090
+      ],
+      "alpha_pixels": 37111,
+      "source_edge_contact": false
+    },
+    {
+      "key": "c20_stamp_10",
+      "source": "sites.png",
+      "box": [
+        1155,
+        860,
+        1380,
+        1092
+      ],
+      "alpha_pixels": 37450,
+      "source_edge_contact": false
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "frames": [
+    {
+      "key": "r3_boss_jiao_rec",
+      "sourceGridCell": 0,
+      "sourceRect": [
+        -2,
+        -19,
+        401,
+        435
+      ],
+      "padding": [
+        2,
+        19
+      ],
+      "originalUntrimmedSize": [
+        396.6,
+        396.5
+      ],
+      "canonicalBodyHeight": 333.06,
+      "targetRect": [
+        0,
+        0,
+        401,
+        435
+      ]
+    },
+    {
+      "key": "r3_boss_dong_rec",
+      "sourceGridCell": 1,
+      "sourceRect": [
+        395,
+        -19,
+        401,
+        435
+      ],
+      "padding": [
+        2,
+        19
+      ],
+      "originalUntrimmedSize": [
+        396.6,
+        396.5
+      ],
+      "canonicalBodyHeight": 333.06,
+      "targetRect": [
+        401,
+        0,
+        401,
+        435
+      ]
+    },
+    {
+      "key": "r3_boss_lubu_rec",
+      "sourceGridCell": 2,
+      "sourceRect": [
+        791,
+        -19,
+        401,
+        435
+      ],
+      "padding": [
+        2,
+        19
+      ],
+      "originalUntrimmedSize": [
+        396.6,
+        396.5
+      ],
+      "canonicalBodyHeight": 333.06,
+      "targetRect": [
+        802,
+        0,
+        401,
+        435
+      ]
+    },
+    {
+      "key": "r3_boss_dian_rec",
+      "sourceGridCell": 3,
+      "sourceRect": [
+        1188,
+        -19,
+        401,
+        435
+      ],
+      "padding": [
+        2,
+        19
+      ],
+      "originalUntrimmedSize": [
+        396.6,
+        396.5
+      ],
+      "canonicalBodyHeight": 333.06,
+      "targetRect": [
+        1203,
+        0,
+        401,
+        435
+      ]
+    },
+    {
+      "key": "r3_boss_cao_rec",
+      "sourceGridCell": 4,
+      "sourceRect": [
+        1584,
+        -19,
+        401,
+        435
+      ],
+      "padding": [
+        2,
+        19
+      ],
+      "originalUntrimmedSize": [
+        396.6,
+        396.5
+      ],
+      "canonicalBodyHeight": 333.06,
+      "targetRect": [
+        1604,
+        0,
+        401,
+        435
+      ]
+    },
+    {
+      "key": "r3_boss_sunce_rec",
+      "sourceGridCell": 5,
+      "sourceRect": [
+        -2,
+        377,
+        401,
+        435
+      ],
+      "padding": [
+        2,
+        19
+      ],
+      "originalUntrimmedSize": [
+        396.6,
+        396.5
+      ],
+      "canonicalBodyHeight": 333.06,
+      "targetRect": [
+        0,
+        435,
+        401,
+        435
+      ]
+    },
+    {
+      "key": "r3_boss_zhou_rec",
+      "sourceGridCell": 6,
+      "sourceRect": [
+        395,
+        377,
+        401,
+        435
+      ],
+      "padding": [
+        2,
+        19
+      ],
+      "originalUntrimmedSize": [
+        396.6,
+        396.5
+      ],
+      "canonicalBodyHeight": 333.06,
+      "targetRect": [
+        401,
+        435,
+        401,
+        435
+      ]
+    },
+    {
+      "key": "r3_boss_zhang_rec",
+      "sourceGridCell": 7,
+      "sourceRect": [
+        791,
+        377,
+        401,
+        435
+      ],
+      "padding": [
+        2,
+        19
+      ],
+      "originalUntrimmedSize": [
+        396.6,
+        396.5
+      ],
+      "canonicalBodyHeight": 333.06,
+      "targetRect": [
+        802,
+        435,
+        401,
+        435
+      ]
+    },
+    {
+      "key": "r3_boss_guan_rec",
+      "sourceGridCell": 8,
+      "sourceRect": [
+        1188,
+        377,
+        401,
+        435
+      ],
+      "padding": [
+        2,
+        19
+      ],
+      "originalUntrimmedSize": [
+        396.6,
+        396.5
+      ],
+      "canonicalBodyHeight": 333.06,
+      "targetRect": [
+        1203,
+        435,
+        401,
+        435
+      ]
+    },
+    {
+      "key": "r3_boss_zhuge_rec",
+      "sourceGridCell": 9,
+      "sourceRect": [
+        1584,
+        377,
+        401,
+        435
+      ],
+      "padding": [
+        2,
+        19
+      ],
+      "originalUntrimmedSize": [
+        396.6,
+        396.5
+      ],
+      "canonicalBodyHeight": 333.06,
+      "targetRect": [
+        1604,
+        435,
+        401,
+        435
+      ]
+    }
+  ],
+  "sourceComponents": [
+    {
+      "pixels": 63905,
+      "owner": 2,
+      "bounds": [
+        822,
+        9,
+        1164,
+        394
+      ]
+    },
+    {
+      "pixels": 64429,
+      "owner": 0,
+      "bounds": [
+        31,
+        21,
+        340,
+        393
+      ]
+    },
+    {
+      "pixels": 72787,
+      "owner": 1,
+      "bounds": [
+        399,
+        39,
+        771,
+        393
+      ]
+    },
+    {
+      "pixels": 57554,
+      "owner": 4,
+      "bounds": [
+        1631,
+        41,
+        1952,
+        394
+      ]
+    },
+    {
+      "pixels": 20,
+      "owner": 4,
+      "bounds": [
+        1757,
+        58,
+        1769,
+        63
+      ]
+    },
+    {
+      "pixels": 20,
+      "owner": 4,
+      "bounds": [
+        1793,
+        60,
+        1802,
+        64
+      ]
+    },
+    {
+      "pixels": 52279,
+      "owner": 3,
+      "bounds": [
+        1225,
+        71,
+        1516,
+        394
+      ]
+    },
+    {
+      "pixels": 14,
+      "owner": 0,
+      "bounds": [
+        123,
+        101,
+        127,
+        105
+      ]
+    },
+    {
+      "pixels": 17,
+      "owner": 0,
+      "bounds": [
+        113,
+        104,
+        121,
+        109
+      ]
+    },
+    {
+      "pixels": 5,
+      "owner": 0,
+      "bounds": [
+        75,
+        147,
+        77,
+        150
+      ]
+    },
+    {
+      "pixels": 4,
+      "owner": 3,
+      "bounds": [
+        1465,
+        202,
+        1467,
+        204
+      ]
+    },
+    {
+      "pixels": 37,
+      "owner": 0,
+      "bounds": [
+        73,
+        209,
+        79,
+        217
+      ]
+    },
+    {
+      "pixels": 70217,
+      "owner": 8,
+      "bounds": [
+        1213,
+        380,
+        1549,
+        777
+      ]
+    },
+    {
+      "pixels": 65179,
+      "owner": 7,
+      "bounds": [
+        807,
+        394,
+        1144,
+        777
+      ]
+    },
+    {
+      "pixels": 58444,
+      "owner": 5,
+      "bounds": [
+        32,
+        408,
+        353,
+        777
+      ]
+    },
+    {
+      "pixels": 55595,
+      "owner": 6,
+      "bounds": [
+        426,
+        421,
+        716,
+        777
+      ]
+    },
+    {
+      "pixels": 46135,
+      "owner": 9,
+      "bounds": [
+        1673,
+        423,
+        1890,
+        776
+      ]
+    },
+    {
+      "pixels": 3,
+      "owner": 7,
+      "bounds": [
+        998,
+        434,
+        1000,
+        436
+      ]
+    },
+    {
+      "pixels": 7,
+      "owner": 9,
+      "bounds": [
+        1760,
+        442,
+        1763,
+        445
+      ]
+    },
+    {
+      "pixels": 5,
+      "owner": 5,
+      "bounds": [
+        145,
+        460,
+        148,
+        462
+      ]
+    }
+  ]
+}

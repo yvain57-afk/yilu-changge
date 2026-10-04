@@ -1,0 +1,33 @@
+{
+  "snapshot_id": "s_20261004T084945_417a638f",
+  "code_fingerprint": "0f9797bb89081d2980e7d59794eef69108bc18c22bc169daf69f97a6512a221c",
+  "finalized": {
+    "code_fingerprint": "0f9797bb89081d2980e7d59794eef69108bc18c22bc169daf69f97a6512a221c",
+    "meaning": "records facts in existing result; no tests executed",
+    "produced_at": "2026-10-04T08:49:57.196222+00:00",
+    "result_path": "deliverables/MUSIC-SHANHE-20261004/REPORT.md",
+    "result_sha256": "f322df3d80c821fa03f463cc6201aaeabc6ea84f81d45d8cc24ffe94a1a940f9",
+    "task": "MUSIC-SHANHE-20261004"
+  },
+  "snapshot_manifest_keys": [
+    "build_entry",
+    "changes",
+    "code_files",
+    "code_fingerprint",
+    "completeness",
+    "evidence_files",
+    "evidence_fingerprint",
+    "exclusions",
+    "files",
+    "git",
+    "index_version",
+    "observed_at",
+    "platform",
+    "project_id",
+    "schema_version",
+    "snapshot_id",
+    "started_at",
+    "status",
+    "tool_fingerprint"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "frames": 18,
+  "bodies": 6,
+  "handCaps": 12,
+  "rectErrors": [],
+  "textureSha256": "945722774f9fabf0ebc67b66ba8f00d6b8e1517f763b1f4bf1e7981b13213766",
+  "sourceMethod": "arms only image edits of each actual old mount",
+  "sourceHorseIdentityInspected": true,
+  "poseQaRead": true,
+  "socketQaRead": true,
+  "horseGaitPhasesPerStyle": 1,
+  "windRelRecVariants": false,
+  "runtimeVerified": false,
+  "deviceVerified": false
+}

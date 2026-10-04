@@ -1,0 +1,146 @@
+{
+  "r27_ride_chitu_crossbow": {
+    "bodyContainsWeapon": false,
+    "mountId": "chitu",
+    "stance": "crossbow",
+    "refH": 475,
+    "sockets": {
+      "right": {
+        "normalized": [
+          0.731,
+          0.189
+        ],
+        "occlusion_frame": "r27_ride_chitu_crossbow_right_fingers"
+      },
+      "left": {
+        "normalized": [
+          0.939,
+          0.216
+        ],
+        "occlusion_frame": "r27_ride_chitu_crossbow_left_fingers"
+      }
+    },
+    "horseGaitPhases": 1,
+    "runtimeVerified": false
+  },
+  "r27_ride_chitu_dual": {
+    "bodyContainsWeapon": false,
+    "mountId": "chitu",
+    "stance": "dual",
+    "refH": 475,
+    "sockets": {
+      "right": {
+        "normalized": [
+          0.955,
+          0.386
+        ],
+        "occlusion_frame": "r27_ride_chitu_dual_right_fingers"
+      },
+      "left": {
+        "normalized": [
+          0.133,
+          0.278
+        ],
+        "occlusion_frame": "r27_ride_chitu_dual_left_fingers"
+      }
+    },
+    "horseGaitPhases": 1,
+    "runtimeVerified": false
+  },
+  "r27_ride_chitu_bow": {
+    "bodyContainsWeapon": false,
+    "mountId": "chitu",
+    "stance": "bow",
+    "refH": 475,
+    "sockets": {
+      "right": {
+        "normalized": [
+          0.496,
+          0.184
+        ],
+        "occlusion_frame": "r27_ride_chitu_bow_right_fingers"
+      },
+      "left": {
+        "normalized": [
+          0.962,
+          0.136
+        ],
+        "occlusion_frame": "r27_ride_chitu_bow_left_fingers"
+      }
+    },
+    "horseGaitPhases": 1,
+    "runtimeVerified": false
+  },
+  "r27_ride_dilu_crossbow": {
+    "bodyContainsWeapon": false,
+    "mountId": "dilu",
+    "stance": "crossbow",
+    "refH": 474,
+    "sockets": {
+      "right": {
+        "normalized": [
+          0.77,
+          0.183
+        ],
+        "occlusion_frame": "r27_ride_dilu_crossbow_right_fingers"
+      },
+      "left": {
+        "normalized": [
+          0.962,
+          0.18
+        ],
+        "occlusion_frame": "r27_ride_dilu_crossbow_left_fingers"
+      }
+    },
+    "horseGaitPhases": 1,
+    "runtimeVerified": false
+  },
+  "r27_ride_dilu_dual": {
+    "bodyContainsWeapon": false,
+    "mountId": "dilu",
+    "stance": "dual",
+    "refH": 474,
+    "sockets": {
+      "right": {
+        "normalized": [
+          0.955,
+          0.388
+        ],
+        "occlusion_frame": "r27_ride_dilu_dual_right_fingers"
+      },
+      "left": {
+        "normalized": [
+          0.139,
+          0.296
+        ],
+        "occlusion_frame": "r27_ride_dilu_dual_left_fingers"
+      }
+    },
+    "horseGaitPhases": 1,
+    "runtimeVerified": false
+  },
+  "r27_ride_dilu_bow": {
+    "bodyContainsWeapon": false,
+    "mountId": "dilu",
+    "stance": "bow",
+    "refH": 474,
+    "sockets": {
+      "right": {
+        "normalized": [
+          0.479,
+          0.187
+        ],
+        "occlusion_frame": "r27_ride_dilu_bow_right_fingers"
+      },
+      "left": {
+        "normalized": [
+          0.958,
+          0.145
+        ],
+        "occlusion_frame": "r27_ride_dilu_bow_left_fingers"
+      }
+    },
+    "horseGaitPhases": 1,
+    "runtimeVerified": false
+  }
+}

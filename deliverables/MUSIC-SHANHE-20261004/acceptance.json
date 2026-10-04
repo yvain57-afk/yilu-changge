@@ -1,0 +1,63 @@
+{
+  "task": "MUSIC-SHANHE-20261004",
+  "code_fingerprint": "0f9797bb89081d2980e7d59794eef69108bc18c22bc169daf69f97a6512a221c",
+  "build": "ios-6dafc87b64f1473e",
+  "version": "0.12.8 / 2026100403",
+  "tests": {
+    "passed": 38,
+    "failed": 0
+  },
+  "typecheck": "PASS",
+  "web_export": "PASS",
+  "native_simulator_build": "PASS",
+  "native_ui_interaction": "PASS",
+  "native_actual_audio": "NOT_PASSED: scoped process recordings all zero; player time advances, volume >0, speaker route, no silenced hint; afplay calibration nonzero",
+  "physical_device": "NOT_TESTED_OR_INSTALLED",
+  "web_audio_user_listening": "PENDING",
+  "ui_transitions": [
+    {
+      "screen": "home",
+      "enabled": true,
+      "volume": 0.3,
+      "playing": [
+        "menu"
+      ]
+    },
+    {
+      "screen": "settings",
+      "enabled": true,
+      "volume": 0.3,
+      "playing": [
+        "menu"
+      ]
+    },
+    {
+      "screen": "settings",
+      "enabled": false,
+      "volume": 0.3,
+      "playing": []
+    }
+  ],
+  "preservation": {
+    "checked_files": 322,
+    "changed_existing": [
+      "assets/scripts/Platform.ts",
+      "assets/scripts/core/save.ts",
+      "assets/scripts/formal/FormalGame.ts",
+      "assets/scripts/formal/FullMenu.ts",
+      "assets/scripts/formal/BridgeBuild.ts"
+    ],
+    "approved_effects_unchanged": true,
+    "battle_data_store_unchanged": true,
+    "native_added": "audioSessionState read-only query; original backed up in before-source/AppDelegate.mm"
+  },
+  "ui_after_operation": {
+    "screen": "home",
+    "music": true,
+    "volume": 0.6,
+    "playing": [
+      "menu"
+    ]
+  },
+  "video_scope": "Captured home -> settings -> music off; on/volume/back actions occurred after recording and have screenshot/state evidence"
+}

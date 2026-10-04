@@ -9,7 +9,7 @@ const tick=(b:any,n=1)=>{for(let i=0;i<n;i++)b.step();};
 const shot=(z=1,pierce=1)=>({source:'test',x:0,x0:0,z,prevZ:z,z0:z,speed:100,range:50,t:0,hits:new Set(),pierce,dmg:10,hw:.2});
 const general=(z=17)=>({person:'dian',name:'典韦',hp:100,max:100,trail:100,phase:'idle',pt:0,band:[-1,0],z,hit:0,flags:4,flagFx:[],cycleN:0});
 test('F1 named officer contact and missed viewport both retain life and start an encounter',()=>{
- for(const d of [.2,-5]){const {b,s}=make();s.course=[{d,type:'officer',person:'xu',x:0}];tick(b);const e=s.ents[0];assert.equal(e.type,'officer');assert.equal(e.dead,0);assert.equal(s.troops,30);assert.equal(e.hp,e.max);assert.equal(e.d-s.dist,12);tick(b,40);assert.equal(e.phase,'warn');tick(b,60);assert.equal(s.troops,26);tick(b,10);assert.equal(e.phase,'rec');}
+ for(const d of [.2,-5]){const {b,s}=make();s.course=[{d,type:'officer',person:'xu',x:0}];tick(b);const e=s.ents[0];assert.equal(e.type,'officer');assert.equal(e.dead,0);assert.equal(s.troops,30);assert.equal(e.hp,e.max);assert.equal(e.d-s.dist,12);tick(b,40);assert.equal(e.phase,'warn');while(s.t<e.telegraph.execute+.05)tick(b);assert.equal(s.troops,26);tick(b,20);assert.equal(e.phase,'rec');}
 });
 test('F1/F2 only actual attacks defeat officers, recorded once, road resumes and settlement requires proof',()=>{
  const {b,s}=make();s.speed=11;s.course=[{d:8,type:'officer',person:'xu',x:0}];tick(b,4);const e=s.ents[0];assert.equal(s.speed,0);e.phase='rec';e.pt=0;s.waves=[{...shot(10,1),speed:200,dmg:e.max+1}];tick(b,2);assert.equal(e.hp,0);assert.deepEqual(s.defeatedOfficerIds,['xu']);tick(b,100);assert.equal(s.ents.length,0);assert.equal(s.speed,11);

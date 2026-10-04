@@ -1,0 +1,114 @@
+[
+  {
+    "cell": 0,
+    "sourceBounds": [
+      16,
+      72,
+      445,
+      440
+    ],
+    "fixedSourceAnchor": [
+      230.62,
+      432.41249999999997
+    ],
+    "alphaComponent": 3
+  },
+  {
+    "cell": 1,
+    "sourceBounds": [
+      439,
+      10,
+      789,
+      440
+    ],
+    "fixedSourceAnchor": [
+      674.12,
+      432.41249999999997
+    ],
+    "alphaComponent": 0
+  },
+  {
+    "cell": 2,
+    "sourceBounds": [
+      892,
+      10,
+      1410,
+      440
+    ],
+    "fixedSourceAnchor": [
+      1117.6200000000001,
+      432.41249999999997
+    ],
+    "alphaComponent": 1
+  },
+  {
+    "cell": 3,
+    "sourceBounds": [
+      1343,
+      31,
+      1747,
+      439
+    ],
+    "fixedSourceAnchor": [
+      1561.1200000000001,
+      432.41249999999997
+    ],
+    "alphaComponent": 2
+  },
+  {
+    "cell": 4,
+    "sourceBounds": [
+      7,
+      501,
+      443,
+      873
+    ],
+    "fixedSourceAnchor": [
+      230.62,
+      875.9125
+    ],
+    "alphaComponent": 7
+  },
+  {
+    "cell": 5,
+    "sourceBounds": [
+      450,
+      438,
+      824,
+      875
+    ],
+    "fixedSourceAnchor": [
+      674.12,
+      875.9125
+    ],
+    "alphaComponent": 4
+  },
+  {
+    "cell": 6,
+    "sourceBounds": [
+      892,
+      445,
+      1413,
+      875
+    ],
+    "fixedSourceAnchor": [
+      1117.6200000000001,
+      875.9125
+    ],
+    "alphaComponent": 5
+  },
+  {
+    "cell": 7,
+    "sourceBounds": [
+      1353,
+      454,
+      1751,
+      875
+    ],
+    "fixedSourceAnchor": [
+      1561.1200000000001,
+      875.9125
+    ],
+    "alphaComponent": 6
+  }
+]

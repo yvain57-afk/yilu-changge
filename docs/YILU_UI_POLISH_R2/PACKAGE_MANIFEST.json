@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "path": "CODEX_TASK.md",
+      "sha256": "00d0adf3c4da30a0046f78bb582af3418429f618f295519366cb436d9c216429",
+      "bytes": 17277
+    },
+    {
+      "path": "UI_LAYOUT_SPEC.md",
+      "sha256": "020c44a55df159afd08654e7d81147ed9b92bb50c6333c02f95e84674413e600",
+      "bytes": 6115
+    },
+    {
+      "path": "REGRESSION_CASES.json",
+      "sha256": "9c25090dbd72dc1109dff6b1e509bf69ada22e214d082cec3bfe87bacb5147aa",
+      "bytes": 6489
+    },
+    {
+      "path": "EVIDENCE_BASELINE.json",
+      "sha256": "aae7b118f09cdff5c35959e6fb56e6b91ae8209d8edcb0a394945266941516f7",
+      "bytes": 3788
+    },
+    {
+      "path": "README.md",
+      "sha256": "fb4fa31af172b684b80567e112fb75cb00e9ba24200c386de5b2957dfb5e8628",
+      "bytes": 684
+    }
+  ]
+}
