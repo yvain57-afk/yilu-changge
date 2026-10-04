@@ -42,5 +42,8 @@
   "external_review": "NOT_SUBMITTED: Apple returned 处理你的请求时出错。请稍后再试。 after updating current review notes and reconciling actual group state. Root cause not exposed by UI.",
   "dsym_local_attempt": "dsymutil produced matching UUID but warned no debug symbols in executable; symbol upload remains unresolved",
   "backend_evidence": "evidence/TESTFLIGHT-20261004/testflight-internal-0.12.8.pdf and .png; actual Safari exported page, not recreated UI",
-  "external_auto_notify": false
+  "external_auto_notify": false,
+  "internal_tester_status": "ACCEPTED: live App Store Connect readback 2026-10-04",
+  "user_testflight_visibility": "CONFIRMED_BY_USER: 已接受，看到一路长歌了",
+  "user_testflight_installation": "NOT_CONFIRMED"
 }

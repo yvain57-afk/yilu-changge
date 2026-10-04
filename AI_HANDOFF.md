@@ -2,7 +2,7 @@
 
 用户明确授权“上传git并且覆盖到testflight”。正式源与必要资产已提交推送 `e0e88e9`，草稿 PR #4：https://github.com/yvain57-afk/yilu-changge/pull/4，未合并main。0.12.8 /2026100403，代码指纹 `0f9797bb89081d2980e7d59794eef69108bc18c22bc169daf69f97a6512a221c`，Release Archive、严格签名、包内指纹/两首PCM哈希通过；18:53:55 Apple上传成功，后台处理完成，内部“开发自测”新构建正在测试。旧构建保留；本轮未安装手机、不访问摄像头。
 
-外部“朋友体验”0测试员/0构建，Beta审核两次提交均返回通用处理错误，未提交成功；不要写成等待审核。原生实际音乐发声仍未通过，452/453回归（模型2/11关时长略短）和dSYM缺失警告如实保留。完整回执 `deliverables/TESTFLIGHT-20261004/REPORT.md`、`upload-receipt.json`、`archive-verification.json`，后台实际导出图/PDF留在 `evidence/TESTFLIGHT-20261004`。保护其余dirty/历史原始录像/存档；不为发布放宽检查或改数值。此前“未提交/发布”字样是历史阶段状态。
+内部邀请补验：用户曾反馈手机无本App，已重发同一内部邀请，用户确认接受且看到一路长歌，后台实际回读“已接受 /2026-10-04”；TestFlight安装/实际玩验仍未确认。外部“朋友体验”0测试员/0构建，Beta审核两次提交均返回通用处理错误，未提交成功；不要写成等待审核。原生实际音乐发声仍未通过，452/453回归（模型2/11关时长略短）和dSYM缺失警告如实保留。完整回执 `deliverables/TESTFLIGHT-20261004/REPORT.md`、`upload-receipt.json`、`archive-verification.json`，后台实际导出图/PDF留在 `evidence/TESTFLIGHT-20261004`。保护其余dirty/历史原始录像/存档；不为发布放宽检查或改数值。此前“未提交/发布”字样是历史阶段状态。
 
 ## 2026-10-04 山河长歌音乐（当前）
 
