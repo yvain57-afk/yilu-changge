@@ -58,8 +58,10 @@ function emit(p:UIPaint,patches:UIPatch[],clip?:UIRect){
 export function drawNineSlice(p:UIPaint,key:UIFrameKey,r:UIRect):UIResult {
  emit(p,planNineSlice(key,r));return{bounds:copy(r),content:content(get(key),r),enabled:true};
 }
+function glyphWidth(text:string,size:number){let w=0;for(const c of text)w+=/[\u2e80-\u9fff]/.test(c)?size:/[A-Za-z0-9]/.test(c)?size*.56:size*.35;return w;}
+function fitSize(text:string,width:number,size:number){let n=size;while(n>12&&glyphWidth(text,n)>Math.max(8,width-4))n-=1;return n;}
 function label(p:UIPaint,text:string,r:UIRect,size:number,color:string){
- if(!text)return;p.save();p.font=`700 ${size}px sans-serif`;p.fillStyle=color;p.textAlign='center';p.textBaseline='middle';p.fillText(text,r.x+r.w/2,r.y+r.h/2);p.restore();
+ if(!text)return;const n=fitSize(text,r.w,size);p.save();p.font=`700 ${n}px Arial`;p.fillStyle=color;p.textAlign='center';p.textBaseline='middle';p.fillText(text,r.x+r.w/2,r.y+r.h/2);p.restore();
 }
 export function drawPanel(p:UIPaint,r:UIRect,state:PanelState='normal'):UIResult {
  return drawNineSlice(p,`ui_panel_navy__${state}`,r);
