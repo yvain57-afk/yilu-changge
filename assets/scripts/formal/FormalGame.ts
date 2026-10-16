@@ -10,7 +10,7 @@ import {DEBUG} from 'cc/env';
 import {BridgeDiagnostics} from './BridgeDiagnostics';
 import {MANIFEST} from './manifest';
 import {prepareLayout} from './presentation';
-import {mapMetrics,mapPosition,mapScrollFor,visibleMapPanels,marchPath,mapPanelNames,chapterThreats} from './CampaignMap';
+import {mapMetrics,mapPosition,mapScrollFor,visibleMapPanels,marchPath,mapPanelNames,chapterThreats,layoutMapChrome,mapHeaderCopy} from './CampaignMap';
 import {RewardItem,RewardPresentation,rewardLabel,presentationDuration,canSkipPresentation,nextMilestoneHint} from './RewardFlow';
 import {reviewTarget} from './NativeReview';
 import {configureCampaignReference} from './CampaignReference';
@@ -67,7 +67,7 @@ export class FormalGame extends Component {
  }
  private at(e:EventTouch){const p=e.getUILocation(),u=this.node.getComponent(UITransform)!,v=u.convertToNodeSpaceAR({x:p.x,y:p.y,z:0} as any),s=this.size;return{x:v.x/s.k+s.W/2,y:s.H/2-v.y/s.k};}
  private down(e:EventTouch){if(this.touch!==-1)return;this.touch=e.getID()??-1;const p=this.at(e);this.lastX=this.startX=p.x;this.startY=this.lastY=p.y;this.mapDragging=false;this.gestureDragged=false;this.pressed=this.hits.find(h=>p.x>=h.x&&p.x<=h.x+h.w&&p.y>=h.y&&p.y<=h.y+h.h)||null;this.platform.syncAudio(this.screen==='battle');if(this.uiSkin&&this.screen!=='battle')this.drawMenu();}
- private move(e:EventTouch){if(e.getID()!==this.touch)return;const p=this.at(e);if(this.screen==='battle'&&!this.pressed&&this.battle)this.battle.move(this.battle.state.targetX+(p.x-this.lastX)/(this.size.W*.4));if(['chapters','transition'].includes(this.screen)&&this.startY>this.size.top+72&&this.startY<this.menuMapMetrics().bottom){if(Math.abs(p.y-this.startY)>8)this.mapDragging=true;if(this.mapDragging){this.pressed=null;this.mapScroll=Math.max(0,Math.min(this.menuMapMetrics().maxScroll,this.mapScroll-(p.y-this.lastY)));this.drawMenu();}}if(this.uiSkin&&['prepare','person','item','reward','result','settings','confirm','error','loading'].includes(this.screen)&&this.startY>=this.fullMenu.contentTop&&this.startY<=this.fullMenu.contentBottom&&(this.gestureDragged||Math.hypot(p.y-this.startY,p.x-this.startX)>8)){this.gestureDragged=true;this.pressed=null;this.fullMenu.scrollBy(this.lastY-p.y);this.drawMenu();}this.lastY=p.y;this.lastX=p.x;}
+ private move(e:EventTouch){if(e.getID()!==this.touch)return;const p=this.at(e);if(this.screen==='battle'&&!this.pressed&&this.battle)this.battle.move(this.battle.state.targetX+(p.x-this.lastX)/(this.size.W*.4));if(['chapters','transition'].includes(this.screen)&&this.startY>this.menuMapMetrics().y&&this.startY<this.menuMapMetrics().bottom){if(Math.abs(p.y-this.startY)>8)this.mapDragging=true;if(this.mapDragging){this.pressed=null;this.mapScroll=Math.max(0,Math.min(this.menuMapMetrics().maxScroll,this.mapScroll-(p.y-this.lastY)));this.drawMenu();}}if(this.uiSkin&&['prepare','person','item','reward','result','settings','confirm','error','loading'].includes(this.screen)&&this.startY>=this.fullMenu.contentTop&&this.startY<=this.fullMenu.contentBottom&&(this.gestureDragged||Math.hypot(p.y-this.startY,p.x-this.startX)>8)){this.gestureDragged=true;this.pressed=null;this.fullMenu.scrollBy(this.lastY-p.y);this.drawMenu();}this.lastY=p.y;this.lastX=p.x;}
  private up(e:EventTouch){if(e.getID()!==this.touch)return;this.platform.unlockAudio();const p=this.at(e),h=this.pressed,dragged=this.gestureDragged;this.cancel();if(h&&!dragged&&Math.abs(p.x-this.startX)<24&&Math.abs(p.y-this.startY)<24&&p.x>=h.x&&p.x<=h.x+h.w&&p.y>=h.y&&p.y<=h.y+h.h){h.action();}else if(this.uiSkin&&this.screen!=='battle')this.drawMenu();}
  private cancel(){this.touch=-1;this.pressed=null;this.battle?.cancel();}
  private button(id:string,title:string,x:number,y:number,w:number,action:()=>void,primary=false,disabled=false){if(this.uiSkin){const r=this.fullMenuButton(id,title,x,y,w,action,primary,disabled);return r;}const p=this.menu;p.fillStyle=primary?'#C9A45C':'#172C40';p.strokeStyle='#8E7549';p.lineWidth=1;if(primary&&NativePaint.textures.ui_gold){const t=NativePaint.textures.ui_gold;p.drawImage('ui_gold',0,0,t.width,t.height,x,y,w,48);}else{p.fillRect(x,y,w,48);p.strokeRect(x,y,w,48);}this.label(title,x+w/2,y+24,primary?18:14,disabled?'#79818A':primary?'#182638':'#F5EFE2','center');if(!disabled)this.hits.push({id,label:title,x,y,w,h:48,action});}
@@ -147,14 +147,9 @@ export class FormalGame extends Component {
    if(y>m.y+20&&y<m.bottom-35){p.fillStyle=i===this.mapSelection?'rgba(22,38,49,.95)':'rgba(243,235,211,.93)';p.fillRect(a.x-66,y+16,132,29);this.label((i+1)+' · '+CHAPTERS[i].place,a.x,y+30,14,i===this.mapSelection?'#F0DFB8':'#352E25','center');
     this.hits.push({id:'level'+i,label:CHAPTERS[i].title+(open?'':'未至'),x:a.x-66,y:y-34,w:132,h:80,action:()=>{this.mapSelection=i;this.drawMenu();}});}
   }
-  // A light measured chrome, independent from the retained five terrain panels.
+  if(this.uiSkin){this.drawMapChrome(p,transition);return;}
   p.fillStyle='#122639';p.fillRect(0,0,W,m.y);
-  if(this.uiSkin){
-   const r=inset(drawCompactPanel(p,{x:12,y:top,w:W-24,h:m.y-top-8},'raised').content,8);
-   const titleH=this.menuText('天下征程',{x:68,y:r.y,w:W-136,h:m.y-top-46},22,'#E6CD93','center');
-   const progressH=this.menuText('征程进度 · '+this.store.completed+'/20',{x:r.x,y:r.y+titleH+1,w:r.w,h:20},13);
-   const next=MILESTONES.find(v=>v.chapter>this.store.completed);this.menuText(next?'下一未领里程碑 · 第'+next.chapter+'关 '+next.title:'全部里程碑已领取',{x:r.x,y:r.y+titleH+progressH+2,w:r.w,h:m.y-top-titleH-progressH-46},12);
-  }else{this.label('天下征程',W/2,top+18,21,'#E6CD93','center');this.label('已克 '+this.store.completed+'/'+CHAPTERS.length,W/2,top+40,12,'#D4D8CF','center');this.label(nextMilestoneHint(this.store.completed),W/2,top+60,11,'#D4D8CF','center');}
+  this.label('天下征程',W/2,top+18,21,'#E6CD93','center');this.label('已克 '+this.store.completed+'/'+CHAPTERS.length,W/2,top+40,12,'#D4D8CF','center');this.label(nextMilestoneHint(this.store.completed),W/2,top+60,11,'#D4D8CF','center');
   this.hits.push({id:'map-back',label:'返回营地',x:0,y:top,w:52,h:48,action:()=>this.show('home')});this.label('‹',24,top+23,25);this.hits.push({id:'map-current',label:'回到当前',x:W-64,y:top,w:64,h:48,action:()=>{this.mapSelection=Math.min(CHAPTERS.length-1,this.store.completed);this.mapScroll=mapScrollFor(this.mapSelection,m);this.drawMenu();}});this.label('定位',W-32,top+24,12,'#E6CD93','center');
   const c=CHAPTERS[this.mapSelection],dy=m.bottom,owned=this.store.data.cleared.includes(c.id),available=this.store.unlocked(this.mapSelection);p.fillStyle='rgba(14,29,42,.98)';p.fillRect(0,dy,W,H-dy);
   const r=inset(drawCompactPanel(p,{x:12,y:dy+4,w:W-24,h:H-dy-bottom-66},'normal').content,8);
@@ -165,7 +160,33 @@ export class FormalGame extends Component {
   if(this.mapExpanded){const rewards=[...c.capture.map(id=>'收 '+PEOPLE[id]),...c.visit.map(id=>'访 '+PEOPLE[id]),...c.allies.map(id=>'盟 '+PEOPLE[id]),c.treasure?TREASURES[c.treasure].name:''].filter(Boolean).join(' · ');this.menuText(rewards,{x:r.x,y:r.y+83,w:r.w,h:Math.max(56,r.h-83)},13);
    if(this.store.completed===CHAPTERS.length){const orders=[null,'elite','few-supplies','double-officers'],labels=['常规','精兵','少援','双将'],at=orders.indexOf((this.store.data.replayOrder as string)||null);this.menuText('重游军令 · '+labels[Math.max(0,at)]+'  ›',{x:r.x,y:r.y+145,w:r.w,h:22},14,'#E6CD93');this.hits.push({id:'replay-order',label:'切换重游军令',x:16,y:r.y+127,w:W-32,h:48,action:()=>{this.store.setReplayOrder(orders[(at+1)%orders.length]);this.drawMenu();}});}else this.menuText('架空征程示意 · '+mapPanelNames[Math.floor(this.mapSelection/4)],{x:r.x,y:r.y+145,w:r.w,h:22},12);
   }
-  this.button(transition?'prepare-next':'map-depart',available?'整备出征':'先通关第'+this.mapSelection+'关',16,H-bottom-56,W-32,()=>{this.chapter=this.mapSelection;this.tab='companions';this.page=0;this.show('prepare');},true,!available);
+  this.button(transition?'prepare-next':'map-depart',available?'整备出征':'先通过第'+this.mapSelection+'关',16,H-bottom-56,W-32,()=>{this.chapter=this.mapSelection;this.tab='companions';this.page=0;this.show('prepare');},true,!available);
+ }
+ private drawMapChrome(p:NativePaint,transition:boolean){
+  const {W,H}=this.size,c=this.mapChrome(),available=this.store.unlocked(this.mapSelection);
+  p.fillStyle='#122639';p.fillRect(0,0,W,c.y);p.fillStyle='#101D2B';p.fillRect(0,c.bottom,W,H-c.bottom);
+  drawCompactPanel(p,{x:12,y:this.size.top,w:W-24,h:Math.max(48,c.y-this.size.top-6)},'raised');
+  this.menuText(c.title.text,c.title,c.title.size,'#F4DDA4','center');
+  this.menuText(c.progress.text,c.progress,c.progress.size,'#F3E8CF');
+  this.menuText(c.hint.text,c.hint,c.hint.size,'#B7C4C8');
+  drawButton(p,c.back,'返回',{tone:'navy',fontSize:15});this.hits.push({id:'map-back',label:'返回营地',x:c.back.x,y:c.back.y,w:c.back.w,h:c.back.h,action:()=>this.show('home')});
+  drawButton(p,c.current,'当前',{tone:'navy',fontSize:15});this.hits.push({id:'map-current',label:'回到当前',x:c.current.x,y:c.current.y,w:c.current.w,h:c.current.h,action:()=>{this.mapSelection=Math.min(CHAPTERS.length-1,this.store.completed);this.mapScroll=mapScrollFor(this.mapSelection,c);this.drawMenu();}});
+  drawCompactPanel(p,c.drawer,'normal');
+  this.menuText(c.drawerTitle.text,c.drawerTitle,c.drawerTitle.size,'#F4DDA4');
+  this.menuText(c.threat.text,c.threat,c.threat.size,'#F3EEE1');
+  this.menuText(c.reward.text,c.reward,c.reward.size,'#F3E8CF');
+  drawButton(p,c.detail,this.mapExpanded?'收起':'详情',{tone:'navy',fontSize:14});this.hits.push({id:'map-detail',label:'展开关卡详情',x:c.detail.x,y:c.detail.y,w:c.detail.w,h:c.detail.h,action:()=>{this.mapExpanded=!this.mapExpanded;this.drawMenu();}});
+  if(c.rewards)this.menuText(c.rewards.text,c.rewards,c.rewards.size,'#F3EEE1');
+  if(c.region)this.menuText(c.region.text,c.region,c.region.size,'#B7C4C8');
+  if(c.replay){const orders=[null,'elite','few-supplies','double-officers'];this.menuText(c.replay.text,c.replay,14,'#F4DDA4');this.hits.push({id:'replay-order',label:'切换重游军令',x:c.replay.x,y:c.replay.y,w:c.replay.w,h:c.replay.h,action:()=>{const at=orders.indexOf((this.store.data.replayOrder as string)||null);this.store.setReplayOrder(orders[(at+1)%orders.length]);this.drawMenu();}});}
+  this.button(transition?'prepare-next':'map-depart',available?'整备出征':'先通过第'+this.mapSelection+'关',c.depart.x,c.depart.y,c.depart.w,()=>{this.chapter=this.mapSelection;this.tab='companions';this.page=0;this.show('prepare');},true,!available);
+ }
+ private mapChrome(){
+  const c=CHAPTERS[this.mapSelection],measure=this.menuLayers?this.menuLayers.measure.bind(this.menuLayers):this.menu.measure.bind(this.menu);
+  const main=c.weapon?WEAPON_DATA[c.weapon].label:c.treasure?TREASURES[c.treasure].name:PEOPLE[c.boss],owned=this.store.data.cleared.includes(c.id);
+  const rewards=[...c.capture.map(id=>'收服 '+PEOPLE[id]),...c.visit.map(id=>'寻访 '+PEOPLE[id]),...c.allies.map(id=>'盟约 '+PEOPLE[id]),c.treasure?TREASURES[c.treasure].name:''].filter(Boolean).join(' · ');
+  const replay=this.store.completed===CHAPTERS.length,orders=[null,'elite','few-supplies','double-officers'],labels=['常规','精兵','少援','双将'],at=orders.indexOf((this.store.data.replayOrder as string)||null);
+  return layoutMapChrome(this.size,{expanded:this.mapExpanded,copy:mapHeaderCopy(this.store.completed),chapterTitle:'第'+(this.mapSelection+1)+'关 · '+c.place,threat:chapterThreats(this.mapSelection),reward:(owned?'已得 · ':'首胜可得 · ')+main,rewards,region:mapPanelNames[Math.floor(this.mapSelection/4)],replay:replay?'重游 · '+labels[Math.max(0,at)]:null},measure);
  }
  private card(x:number,y:number,w:number,h:number,tone='normal'){
   if(this.uiSkin){drawPanel(this.menu,{x,y,w,h},tone==='muted'?'muted':tone==='gold'?'raised':'normal');return;}const p=this.menu;p.fillStyle=tone==='muted'?'rgba(20,34,47,.83)':'rgba(17,33,48,.96)';p.fillRect(x,y,w,h);
@@ -403,18 +424,7 @@ export class FormalGame extends Component {
  }catch(e){this.retryingRender=false;this.renderFault=String(e);if(!this.disposed)this.showSafeError();}}
  private menuProbe(stage:string){if(DEBUG&&this.reviewFixture&&this.reviewMenuFault===stage){this.reviewMenuFault='';throw Error('injected menu '+stage+' failure');}}
  private drawHomeArt(region?:{x:number;y:number;w:number;h:number}){const {W,H,top,bottom}=this.size,r=region||homeLayout(W,H,top,bottom).hero;this.art.draw(this.bg,'home-hero','hero-home',r.x+r.w/2-W/2,H/2-r.y-r.h/2,r.w,r.h,'contain');}
- private menuMapMetrics(){const m=mapMetrics(this.size,this.mapExpanded);if(!this.uiSkin)return m;
-  const s=this.size,measure=this.menuLayers?this.menuLayers.measure.bind(this.menuLayers):this.menu.measure.bind(this.menu),next=MILESTONES.find(v=>v.chapter>this.store.completed);
-  const hint=next?'下一未领里程碑 · 第'+next.chapter+'关 '+next.title:'全部里程碑已领取';
-  const titleH=layoutText('天下征程',s.W-136,22,measure).height,progressH=layoutText('征程进度 · '+this.store.completed+'/20',s.W-72,13,measure).height,hintH=layoutText(hint,s.W-72,12,measure).height;
-  const y=s.top+Math.max(112,titleH+progressH+hintH+47),c=CHAPTERS[this.mapSelection],main=c.weapon?WEAPON_DATA[c.weapon].label:c.treasure?TREASURES[c.treasure].name:PEOPLE[c.boss];
-  const bodyWidth=s.W-72,drawerTitle=layoutText('当前选择 · 第'+(this.mapSelection+1)+'关 '+c.place,bodyWidth-72,16,measure).height,threat=layoutText(chapterThreats(this.mapSelection),bodyWidth,13,measure).height,reward=layoutText('首胜 · '+main,bodyWidth,13,measure).height;
-  const baseDrawer=Math.max(180,Math.max(drawerTitle,28+threat,55+reward)+106);
-  const rewards=[...c.capture.map(id=>'收 '+PEOPLE[id]),...c.visit.map(id=>'访 '+PEOPLE[id]),...c.allies.map(id=>'盟 '+PEOPLE[id]),c.treasure?TREASURES[c.treasure].name:''].filter(Boolean).join(' · ');
-  const extraHeight=layoutText(rewards,bodyWidth,13,measure).height,drawer=this.mapExpanded?Math.max(270,Math.max(83+extraHeight,167)+106):baseDrawer;
-  const bottom=s.H-s.bottom-drawer,height=Math.max(120,bottom-y),step=Math.max(122,(s.H-s.bottom-baseDrawer-y)/3.5),panel=step*4;
-  return{y,bottom,height,step,panel,total:panel*5,maxScroll:Math.max(0,panel*5-height)};
- }
+ private menuMapMetrics(){if(!this.uiSkin)return mapMetrics(this.size,this.mapExpanded);const c=this.mapChrome();return {y:c.y,bottom:c.bottom,height:c.height,step:c.step,panel:c.panel,total:c.total,maxScroll:c.maxScroll};}
  private menuText(text:string,r:{x:number;y:number;w:number;h:number},size=14,color='#D5DAD7',align='left'){
   const v=layoutText(text,r.w,size,this.menuLayers?this.menuLayers.measure.bind(this.menuLayers):this.menu.measure.bind(this.menu));v.lines.forEach((t,i)=>{const x=align==='center'?r.x+r.w/2:r.x,y=r.y+v.lineHeight/2+i*v.lineHeight,w=this.menuLayers?this.menuLayers.measure(t,size):this.menu.measure(t,size);this.label(t,x,y,size,color,align);this.fullMenu.textRecords.push({text:t,x,y,size,bounds:{x:align==='center'?x-w/2:x,y:y-size*.6,w,h:size*1.2},container:r,layer:'fixed'});});return v.height;
  }
