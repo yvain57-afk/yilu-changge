@@ -1,0 +1,16 @@
+import {open,E} from './browser.mjs';import fs from 'node:fs';import assert from 'node:assert/strict';
+const expected=JSON.parse(fs.readFileSync(E+'/web-manifest.json')).code_fingerprint;
+const t=await open('interaction',360,640);const passed=[];const check=(name,v)=>{assert.ok(v,name);passed.push(name);console.log('PASS',name)};
+try{
+await t.goto('home');check('fresh source fingerprint',(await t.snap()).build.code_fingerprint===expected);
+await t.tap('collection');check('home to collection',(await t.snap()).screen==='collection');
+await t.tap('next-page');const page=(await t.snap()).ui.texts.find(x=>x.text.startsWith('第 ')&&x.text.includes(' 页')).text;const person=(await t.snap()).buttons.find(b=>b.id.startsWith('person-'));await t.tap(person.id);check('collection to person',(await t.snap()).screen==='person');await t.tap('back');check('person back retains page',(await t.snap()).ui.texts.some(x=>x.text===page));
+await t.tap('tab-weapons');const weapon=(await t.snap()).buttons.find(b=>b.id.startsWith('item-'));await t.tap(weapon.id);check('collection to item',(await t.snap()).screen==='item');await t.tap('back');check('item back to collection',(await t.snap()).screen==='collection');await t.tap('back');check('top back to home',(await t.snap()).screen==='home');
+await t.tap('start');await t.tap('tab-weapons');await t.swipe(0,-250);const scrolled=(await t.snap()).ui.scroll;check('touch scroll works',scrolled>0);const detail=(await t.snap()).buttons.find(b=>b.id.startsWith('detail-'));assert.ok(detail);await t.tap(detail.id);await t.tap('back');check('prepare detail restores scroll',Math.abs((await t.snap()).ui.scroll-scrolled)<1);
+await t.goto('item:liannu');let s=await t.snap();const xp=s.save.xp,lv=s.save.weaponLevels.liannu||1;await t.tap('upgrade-item');s=await t.snap();check('upgrade deducts XP and increases permanent level',s.save.xp<xp&&s.save.weaponLevels.liannu===lv+1);await t.capture('upgrade-after-360x640');
+await t.goto('map');await t.tap('map-detail');await t.tap('map-current');await t.tap('map-depart');check('map departure opens preparation',(await t.snap()).screen==='prepare');await t.tap('depart');check('preparation launches battle',(await t.snap()).screen==='battle');await t.p.waitForTimeout(800);await t.capture('battle-after-departure-360x640');
+await t.goto('reward:0');await t.p.waitForTimeout(1200);const rewardSave=(await t.snap()).save;const btn=(await t.snap()).buttons.find(b=>b.id==='reward-done');check('reward acknowledgement enabled',!!btn);await t.tap('reward-done');check('reward acknowledgement does not award XP twice',(await t.snap()).save.xp===rewardSave.xp);
+for(const f of ['person:zhuge','person:lukang','item:liannu','collection:people','prepare:weapons','map']){await t.goto(f);await t.command('safe-insets',{top:44,bottom:34});await t.p.waitForTimeout(180);const s=await t.capture(f.replaceAll(':','-')+'-360x640-safe');check(f+' safe area',s.buttons.every(b=>b.x>=0&&b.y>=44&&b.x+b.w<=360.5&&b.y+b.h<=640-34+.5));}
+check('no JS errors',t.errors.length===0);check('no rendering errors',(await t.snap()).renderErrors.length===0);
+fs.writeFileSync(E+'/interactions.json',JSON.stringify({passed,code_fingerprint:expected,scope:'Cocos WebGL with actual touchscreen events; isolated saves'},null,2));
+}finally{await t.close();}

@@ -1,0 +1,254 @@
+{
+  "jiao": {
+    "name": "张角",
+    "frame": "g_boss_jiao_idle",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "dong": {
+    "name": "董卓",
+    "frame": "g_boss_dong_idle",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "yuan": {
+    "name": "袁绍",
+    "frame": "g_detail_yuan",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "hua": {
+    "name": "华佗",
+    "frame": "g_detail_hua",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "lubu": {
+    "name": "吕布",
+    "frame": "g_lubuIdle",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "diao": {
+    "name": "貂蝉",
+    "frame": "g_detail_diao",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "dian": {
+    "name": "典韦",
+    "frame": "g_boss_dian_idle",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "xu": {
+    "name": "许褚",
+    "frame": "g_front_xuRun0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "cao": {
+    "name": "曹操",
+    "frame": "g_boss_cao_idle",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "liao": {
+    "name": "张辽",
+    "frame": "g_front_liaoRun0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "xiahou": {
+    "name": "夏侯惇",
+    "frame": "g_front_xiahouRun0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "guo": {
+    "name": "郭嘉",
+    "frame": "g_detail_guo",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "xun": {
+    "name": "荀彧",
+    "frame": "g_detail_xun",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "sunjian": {
+    "name": "孙坚",
+    "frame": "g_detail_sunjian",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "sunce": {
+    "name": "孙策",
+    "frame": "g_boss_sunce_idle",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "sunquan": {
+    "name": "孙权",
+    "frame": "g_detail_sunquan",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "lumeng": {
+    "name": "吕蒙",
+    "frame": "g_front_lumengRun0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "zhou": {
+    "name": "周瑜",
+    "frame": "g_boss_zhou_idle",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "luxun": {
+    "name": "陆逊",
+    "frame": "g_front_luxunRun0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "sunxiang": {
+    "name": "孙尚香",
+    "frame": "g_front_sunxiangRun0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "zhao": {
+    "name": "赵云",
+    "frame": "g_front_zhaoRun0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "zhang": {
+    "name": "张飞",
+    "frame": "g_boss_zhang_idle",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "guan": {
+    "name": "关羽",
+    "frame": "g_boss_guan_idle",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "huang": {
+    "name": "黄忠",
+    "frame": "g_front_huangRun0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "liu": {
+    "name": "刘备",
+    "frame": "g_detail_liu",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "zhuge": {
+    "name": "诸葛亮",
+    "frame": "g_boss_zhuge_idle",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "sima": {
+    "name": "司马懿",
+    "frame": "g_detail_sima",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "machao": {
+    "name": "马超",
+    "frame": "g_front_machaoRun0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "pang": {
+    "name": "庞统",
+    "frame": "g_front_pangRun0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "jiang": {
+    "name": "姜维",
+    "frame": "g_front_jiangRun0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "taishici": {
+    "name": "太史慈",
+    "frame": "r27_char_taishici_run0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "ganning": {
+    "name": "甘宁",
+    "frame": "r27_char_ganning_run0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "lusu": {
+    "name": "鲁肃",
+    "frame": "r27_char_lusu_run0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "zhanghe": {
+    "name": "张郃",
+    "frame": "r27_char_zhanghe_run0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "caoren": {
+    "name": "曹仁",
+    "frame": "r27_char_caoren_run0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "xiahouyuan": {
+    "name": "夏侯渊",
+    "frame": "r27_char_xiahouyuan_run0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "weiyan": {
+    "name": "魏延",
+    "frame": "r27_char_weiyan_run0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "zhangren": {
+    "name": "张任",
+    "frame": "r27_char_zhangren_run0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "dengai": {
+    "name": "邓艾",
+    "frame": "r27_char_dengai_run0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "huangyueying": {
+    "name": "黄月英",
+    "frame": "r27_char_huangyueying_run0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "zhonghui": {
+    "name": "钟会",
+    "frame": "r27_char_zhonghui_run0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  },
+  "lukang": {
+    "name": "陆抗",
+    "frame": "r27_char_lukang_run0",
+    "source": "existing-full-body",
+    "visualInspected": true
+  }
+}

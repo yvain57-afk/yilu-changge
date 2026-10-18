@@ -1,0 +1,66 @@
+{
+  "task_id": "YILU_R3_COMBAT_PATCH",
+  "artifact_only_checks": true,
+  "files": [
+    {
+      "path": "ACCEPTANCE.json",
+      "bytes": 8855,
+      "sha256": "1d5c944b26ec794755aca81eaad346659eae80bf6ece47bf85ac9c3da948a0f5"
+    },
+    {
+      "path": "ART_ACTION_SPEC.md",
+      "bytes": 5524,
+      "sha256": "90636f7f56ce6f80f2912c4d9d08c89dd321c6437e1c29c0eaac9f4e935275c3"
+    },
+    {
+      "path": "CODEX_TASK.md",
+      "bytes": 11807,
+      "sha256": "3f9dff9252255bffcdbc7d94930a11a3bd264507b3bb3d03f6878c22f8e3e4d1"
+    },
+    {
+      "path": "COMBAT_SPEC.md",
+      "bytes": 10957,
+      "sha256": "9734ff08379682ad3f164a7a2e17af023e999b6ea33dfca703aeeb0add8ee0c1"
+    },
+    {
+      "path": "INHERITED_ASSET_WORKLIST.json",
+      "bytes": 40957,
+      "sha256": "987b39480d29df99e414ec03bef91a51cc77d241099ce736123958c7d248bf54"
+    },
+    {
+      "path": "INPUT_MANIFEST.json",
+      "bytes": 2558,
+      "sha256": "ab22cc5cb56b788e8c86dfa83b832668088b79517cf5c0052d0afd9dc89f40fe"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1352,
+      "sha256": "3c6596b9b4c743c16d8ed3400e2c04b6fb67f841c3f6d77db15cfc1e91ac2a59"
+    },
+    {
+      "path": "SOURCE_AUDIT.md",
+      "bytes": 6950,
+      "sha256": "6c9fd7042122c8ad5a5fb937550ed9db1fe257507e492bf382c3eb737a38209b"
+    },
+    {
+      "path": "combat_tuning.design.json",
+      "bytes": 16986,
+      "sha256": "1d2ed6fad79efce3be364fe769df767c1a8e7e4178f02ee10104ac4244489e78"
+    },
+    {
+      "path": "input/IMG_4431.PNG",
+      "bytes": 2462274,
+      "sha256": "a9ec77486ab87828398b67bb13466e71c7911cc56e4ca15107fde45be01e0411"
+    },
+    {
+      "path": "input/IMG_4432.jpg",
+      "bytes": 138073,
+      "sha256": "73a0b3af1016af61430d50efe2bad0cbcdd28a845522d7f48f88f8a248fd10f7"
+    },
+    {
+      "path": "input/IMG_4435.jpg",
+      "bytes": 546623,
+      "sha256": "bd32ff892f53dc5edf3f8a6bf642125550793edb3671584b28037952a9a47c84"
+    }
+  ]
+}

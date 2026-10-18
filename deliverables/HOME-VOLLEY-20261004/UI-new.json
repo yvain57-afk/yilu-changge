@@ -1,0 +1,417 @@
+{
+  "person": null,
+  "ui": {
+    "skin": "full",
+    "scroll": 0,
+    "maxScroll": 0,
+    "texts": [
+      {
+        "text": "一路长歌",
+        "x": 22,
+        "y": 37,
+        "size": 32,
+        "bounds": {
+          "x": 22,
+          "y": 17.8,
+          "w": 120.96,
+          "h": 38.4
+        },
+        "container": {
+          "x": 22,
+          "y": 18,
+          "w": 263,
+          "h": 40
+        },
+        "layer": "fixed"
+      },
+      {
+        "text": "三国 · 已克 0/20",
+        "x": 24,
+        "y": 71.5,
+        "size": 13,
+        "bounds": {
+          "x": 24,
+          "y": 63.7,
+          "w": 93.11999999999999,
+          "h": 15.6
+        },
+        "container": {
+          "x": 24,
+          "y": 62,
+          "w": 327,
+          "h": 22
+        },
+        "layer": "fixed"
+      },
+      {
+        "text": "设置",
+        "x": 328,
+        "y": 46,
+        "size": 15,
+        "bounds": {
+          "x": 313.6,
+          "y": 37,
+          "w": 28.799999999999997,
+          "h": 18
+        },
+        "container": {
+          "x": 311.5,
+          "y": 34,
+          "w": 33,
+          "h": 24
+        },
+        "layer": "fixed"
+      },
+      {
+        "text": "第1关 · 广宗 · 黄巾初阵",
+        "x": 22,
+        "y": 444.9999999999999,
+        "size": 18,
+        "bounds": {
+          "x": 22,
+          "y": 434.1999999999999,
+          "w": 181.92,
+          "h": 21.599999999999998
+        },
+        "container": {
+          "x": 22,
+          "y": 432.9999999999999,
+          "w": 331,
+          "h": 26
+        },
+        "layer": "fixed"
+      },
+      {
+        "text": "出征 长枪 · 永久 Lv.1",
+        "x": 55,
+        "y": 475.9999999999999,
+        "size": 14,
+        "bounds": {
+          "x": 55,
+          "y": 467.5999999999999,
+          "w": 121.44,
+          "h": 16.8
+        },
+        "container": {
+          "x": 55,
+          "y": 465.9999999999999,
+          "w": 298,
+          "h": 22
+        },
+        "layer": "fixed"
+      },
+      {
+        "text": "再胜2关 · 初立军功 · 古锭刀",
+        "x": 22,
+        "y": 506.9999999999999,
+        "size": 12,
+        "bounds": {
+          "x": 22,
+          "y": 499.7999999999999,
+          "w": 146.39999999999998,
+          "h": 14.399999999999999
+        },
+        "container": {
+          "x": 22,
+          "y": 497.9999999999999,
+          "w": 331,
+          "h": 22
+        },
+        "layer": "fixed"
+      },
+      {
+        "text": "开始征程",
+        "x": 187.5,
+        "y": 556.9999999999999,
+        "size": 15,
+        "bounds": {
+          "x": 158.94,
+          "y": 547.9999999999999,
+          "w": 57.12,
+          "h": 18
+        },
+        "container": {
+          "x": 30.5,
+          "y": 544.9999999999999,
+          "w": 314,
+          "h": 24
+        },
+        "layer": "fixed"
+      },
+      {
+        "text": "山河地图",
+        "x": 98.75,
+        "y": 618.9999999999999,
+        "size": 15,
+        "bounds": {
+          "x": 70.19,
+          "y": 609.9999999999999,
+          "w": 57.12,
+          "h": 18
+        },
+        "container": {
+          "x": 30.5,
+          "y": 606.9999999999999,
+          "w": 136.5,
+          "h": 24
+        },
+        "layer": "fixed"
+      },
+      {
+        "text": "军中图鉴",
+        "x": 276.25,
+        "y": 618.9999999999999,
+        "size": 15,
+        "bounds": {
+          "x": 247.69,
+          "y": 609.9999999999999,
+          "w": 57.12,
+          "h": 18
+        },
+        "container": {
+          "x": 208,
+          "y": 606.9999999999999,
+          "w": 136.5,
+          "h": 24
+        },
+        "layer": "fixed"
+      }
+    ],
+    "items": [],
+    "contentHeight": 0,
+    "viewport": {
+      "top": 116,
+      "bottom": 578.9999999999999
+    },
+    "layers": {
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "maskActive": false,
+      "layers": [
+        {
+          "active": 48,
+          "created": 48,
+          "committed": 4,
+          "generation": 4,
+          "aborted": 0,
+          "submissions": 1,
+          "resourceErrors": []
+        },
+        {
+          "active": 0,
+          "created": 0,
+          "committed": 4,
+          "generation": 4,
+          "aborted": 0,
+          "submissions": 0,
+          "resourceErrors": []
+        },
+        {
+          "active": 0,
+          "created": 0,
+          "committed": 4,
+          "generation": 4,
+          "aborted": 0,
+          "submissions": 0,
+          "resourceErrors": []
+        }
+      ],
+      "clipRoots": 1
+    },
+    "filter": "all",
+    "reducedMotion": false
+  },
+  "build": {
+    "build_id": "ios-8492a4c5b36745bf",
+    "code_fingerprint": "484b2e9a758919236df6d9e15b7e90831232bd12221dfc955ed8822614dd74a9",
+    "produced_at": "2026-10-04T05:29:26.803608+00:00",
+    "target": "simulator",
+    "configuration": "Debug",
+    "app_version": "0.12.7",
+    "build_number": "2026100402"
+  },
+  "verificationScope": "isolated-native-visual-fixture:UI:new",
+  "version": "campaign20-20260930",
+  "engine": "Cocos native Sprite/Graphics/Label",
+  "screen": "home",
+  "chapter": 0,
+  "runId": "",
+  "revision": 3,
+  "save": {
+    "schemaVersion": 3,
+    "rulesVersion": "campaign20-20260930",
+    "ruleBests": {},
+    "cleared": [],
+    "best": {},
+    "claimed": [],
+    "weapons": [
+      "spear"
+    ],
+    "weaponLevels": {
+      "spear": 1
+    },
+    "captures": [],
+    "visits": [],
+    "allies": [],
+    "treasures": [],
+    "companions": [],
+    "support": null,
+    "slots": {
+      "dian": null,
+      "qi": null,
+      "ma": null
+    },
+    "xp": 0,
+    "seen": [],
+    "selectedWeaponId": "spear",
+    "badges": [],
+    "historicalHonors": [],
+    "pendingRewardPresentation": null
+  },
+  "saveNotice": "",
+  "buttons": [
+    {
+      "id": "settings",
+      "label": "设置",
+      "x": 297,
+      "y": 20,
+      "w": 62,
+      "h": 52
+    },
+    {
+      "id": "start",
+      "label": "开始征程",
+      "x": 16,
+      "y": 530.9999999999999,
+      "w": 343,
+      "h": 52
+    },
+    {
+      "id": "chapters",
+      "label": "山河地图",
+      "x": 16,
+      "y": 592.9999999999999,
+      "w": 165.5,
+      "h": 52
+    },
+    {
+      "id": "collection",
+      "label": "军中图鉴",
+      "x": 193.5,
+      "y": 592.9999999999999,
+      "w": 165.5,
+      "h": 52
+    }
+  ],
+  "viewport": {
+    "width": 375,
+    "height": 667,
+    "safe": {
+      "left": 0,
+      "top": 0,
+      "right": 375,
+      "bottom": 667
+    },
+    "capsule": null,
+    "source": "cocos-native",
+    "safeSource": "cocos-native-safe-area",
+    "capsuleSource": "not-available",
+    "revision": 0
+  },
+  "nativeNodes": 0,
+  "frameState": {
+    "generation": 0,
+    "lastFrameCommitted": 0,
+    "abortedFrames": 0,
+    "submissions": [],
+    "resourceErrors": [],
+    "renderFault": ""
+  },
+  "createdNodes": 0,
+  "invalidRects": [],
+  "renderErrors": [],
+  "foregroundElapsedSeconds": 0,
+  "resultReadyLatencySeconds": 0,
+  "resultError": "",
+  "missingArt": [],
+  "performance": {
+    "sampleCount": 0,
+    "over50ms": 0,
+    "over100ms": 0,
+    "p95ms": 0,
+    "scope": "foreground battle render intervals, native host dependent"
+  },
+  "fps": 0,
+  "map": {
+    "scroll": 0,
+    "selected": 0,
+    "expanded": false,
+    "cachedPanels": 0,
+    "metrics": {
+      "y": 120,
+      "bottom": 478.9999999999999,
+      "height": 358.9999999999999,
+      "step": 122,
+      "panel": 488,
+      "total": 2440,
+      "maxScroll": 2081
+    }
+  },
+  "reward": null,
+  "audio": {
+    "active": false,
+    "hidden": false,
+    "bgmEnabled": false,
+    "musicRequested": false,
+    "musicReady": false,
+    "musicTrack": null,
+    "musicPlaying": false,
+    "effectChannels": 77,
+    "playingEffects": [],
+    "limits": {
+      "perKind": 1,
+      "globalVoices": 3,
+      "globalVolume": 0.65,
+      "startsPerSecond": 12,
+      "minStartGapMs": 25
+    },
+    "counters": {
+      "played": 0,
+      "suppressedBusy": 0,
+      "suppressedRate": 0,
+      "suppressedBudget": 0,
+      "loadFailures": 0,
+      "merged": 0,
+      "expired": 0,
+      "preempted": 0,
+      "missing": 0,
+      "fallback": 0,
+      "peakVoices": 0,
+      "peakVolume": 0
+    },
+    "weaponSfx": {
+      "pending": 0,
+      "active": [],
+      "counters": {
+        "played": 0,
+        "suppressedBusy": 0,
+        "suppressedRate": 0,
+        "suppressedBudget": 0,
+        "merged": 0,
+        "expired": 0,
+        "preempted": 0,
+        "missing": 0,
+        "fallback": 0,
+        "peakVoices": 0,
+        "peakVolume": 0
+      },
+      "trace": []
+    },
+    "loading": false
+  },
+  "error": ""
+}

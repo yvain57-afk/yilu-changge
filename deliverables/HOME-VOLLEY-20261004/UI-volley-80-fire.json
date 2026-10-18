@@ -1,0 +1,1385 @@
+{
+  "person": null,
+  "ui": {
+    "skin": "full",
+    "scroll": 0,
+    "maxScroll": 0,
+    "texts": [],
+    "items": [],
+    "contentHeight": 0,
+    "viewport": {
+      "top": 116,
+      "bottom": 578.9999999999999
+    },
+    "layers": {
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "maskActive": false,
+      "layers": [
+        {
+          "active": 0,
+          "created": 48,
+          "committed": 4,
+          "generation": 4,
+          "aborted": 0,
+          "submissions": 0,
+          "resourceErrors": []
+        },
+        {
+          "active": 0,
+          "created": 0,
+          "committed": 4,
+          "generation": 4,
+          "aborted": 0,
+          "submissions": 0,
+          "resourceErrors": []
+        },
+        {
+          "active": 0,
+          "created": 0,
+          "committed": 4,
+          "generation": 4,
+          "aborted": 0,
+          "submissions": 0,
+          "resourceErrors": []
+        }
+      ],
+      "clipRoots": 1
+    },
+    "filter": "all",
+    "reducedMotion": false
+  },
+  "build": {
+    "build_id": "ios-8492a4c5b36745bf",
+    "code_fingerprint": "484b2e9a758919236df6d9e15b7e90831232bd12221dfc955ed8822614dd74a9",
+    "produced_at": "2026-10-04T05:29:26.803608+00:00",
+    "target": "simulator",
+    "configuration": "Debug",
+    "app_version": "0.12.7",
+    "build_number": "2026100402"
+  },
+  "verificationScope": "isolated-native-visual-fixture:UI:volley:80-fire",
+  "version": "campaign20-20260930",
+  "engine": "Cocos native Sprite/Graphics/Label",
+  "screen": "battle",
+  "chapter": 13,
+  "runId": "mutdunu1-vuxpd99lq2",
+  "revision": 3,
+  "save": {
+    "schemaVersion": 3,
+    "rulesVersion": "campaign20-20260930",
+    "ruleBests": {
+      "campaign20-20260930": {
+        "c01": 55,
+        "c02": 55,
+        "c03": 55,
+        "c04": 55,
+        "c05": 55,
+        "c06": 55,
+        "c07": 55,
+        "c08": 55,
+        "c09": 55,
+        "c10": 55,
+        "c11": 55,
+        "c12": 55,
+        "c13": 55
+      }
+    },
+    "cleared": [
+      "c01",
+      "c02",
+      "c03",
+      "c04",
+      "c05",
+      "c06",
+      "c07",
+      "c08",
+      "c09",
+      "c10",
+      "c11",
+      "c12",
+      "c13"
+    ],
+    "best": {
+      "c01": 55,
+      "c02": 55,
+      "c03": 55,
+      "c04": 55,
+      "c05": 55,
+      "c06": 55,
+      "c07": 55,
+      "c08": 55,
+      "c09": 55,
+      "c10": 55,
+      "c11": 55,
+      "c12": 55,
+      "c13": 55
+    },
+    "claimed": [
+      "run:ui-isolated-0",
+      "run:ui-isolated-1",
+      "milestone:m01",
+      "run:ui-isolated-2",
+      "run:ui-isolated-3",
+      "milestone:m02",
+      "run:ui-isolated-4",
+      "run:ui-isolated-5",
+      "milestone:m03",
+      "run:ui-isolated-6",
+      "run:ui-isolated-7",
+      "milestone:m04",
+      "run:ui-isolated-8",
+      "run:ui-isolated-9",
+      "milestone:m05",
+      "run:ui-isolated-10",
+      "run:ui-isolated-11",
+      "milestone:m06",
+      "run:ui-isolated-12"
+    ],
+    "weapons": [
+      "spear",
+      "guding",
+      "huaji",
+      "shuangji",
+      "yitian",
+      "shemao",
+      "qinggang",
+      "guandao",
+      "shuanggu",
+      "liannu",
+      "duanji",
+      "tiesuodao",
+      "goulianqiang"
+    ],
+    "weaponLevels": {
+      "spear": 1,
+      "guding": 1,
+      "huaji": 1,
+      "shuangji": 1,
+      "yitian": 1,
+      "shemao": 1,
+      "qinggang": 1,
+      "guandao": 1,
+      "shuanggu": 1,
+      "liannu": 1,
+      "duanji": 1,
+      "tiesuodao": 1,
+      "goulianqiang": 1
+    },
+    "captures": [
+      "lubu",
+      "dian",
+      "xu",
+      "liao",
+      "xiahou",
+      "lumeng",
+      "sunxiang",
+      "luxun",
+      "zhao",
+      "zhang",
+      "guan",
+      "huang",
+      "machao",
+      "jiang",
+      "taishici",
+      "ganning",
+      "zhanghe"
+    ],
+    "visits": [
+      "hua",
+      "sunjian",
+      "diao",
+      "xun",
+      "guo",
+      "zhou",
+      "zhuge",
+      "pang",
+      "sima",
+      "lusu"
+    ],
+    "allies": [
+      "yuan",
+      "cao",
+      "sunce",
+      "sunquan",
+      "liu"
+    ],
+    "treasures": [
+      "taiping",
+      "yuxi",
+      "chitu",
+      "mengde",
+      "muniu",
+      "dilu",
+      "qingnang",
+      "qixing",
+      "huxinjing",
+      "jinfanling",
+      "fengshitu"
+    ],
+    "companions": [],
+    "support": null,
+    "slots": {
+      "dian": null,
+      "qi": null,
+      "ma": null
+    },
+    "xp": 910,
+    "seen": [
+      "jiao",
+      "dong",
+      "hua",
+      "sunjian",
+      "yuan",
+      "lubu",
+      "diao",
+      "dian",
+      "xu",
+      "xun",
+      "cao",
+      "xiahou",
+      "liao",
+      "guo",
+      "sunce",
+      "lumeng",
+      "zhou",
+      "luxun",
+      "sunxiang",
+      "sunquan",
+      "zhang",
+      "zhao",
+      "guan",
+      "huang",
+      "zhuge",
+      "pang",
+      "machao",
+      "jiang",
+      "sima",
+      "liu",
+      "taishici",
+      "ganning",
+      "lusu",
+      "zhanghe"
+    ],
+    "selectedWeaponId": "spear",
+    "badges": [
+      "badge_m01",
+      "badge_m02",
+      "badge_m03",
+      "badge_m04",
+      "badge_m05",
+      "badge_m06"
+    ],
+    "historicalHonors": [],
+    "pendingRewardPresentation": null,
+    "lastRewardXP": 90,
+    "weaponSelectionIntro": false
+  },
+  "saveNotice": "",
+  "battle": {
+    "armyVolley": {
+      "last": {
+        "troops": 80,
+        "arrows": 42,
+        "ranks": 3,
+        "groups": 8,
+        "arms": "fire"
+      },
+      "drawn": 42,
+      "active": 42
+    },
+    "movementBounds": [
+      -0.68,
+      0.68
+    ],
+    "pendingBossGuards": [],
+    "teamFeet": [
+      {
+        "x": -0.45,
+        "z": 0,
+        "role": "hero"
+      },
+      {
+        "x": -0.94,
+        "z": -1.35,
+        "row": 0,
+        "role": "soldier"
+      },
+      {
+        "x": -0.7299999999999999,
+        "z": -1.4900000000000002,
+        "row": 0,
+        "role": "soldier"
+      },
+      {
+        "x": -0.5199999999999999,
+        "z": -1.35,
+        "row": 0,
+        "role": "soldier"
+      },
+      {
+        "x": -0.30999999999999994,
+        "z": -1.4900000000000002,
+        "row": 0,
+        "role": "soldier"
+      },
+      {
+        "x": -0.09999999999999984,
+        "z": -1.35,
+        "row": 0,
+        "role": "soldier"
+      },
+      {
+        "x": 0.11000000000000013,
+        "z": -1.4900000000000002,
+        "row": 0,
+        "role": "soldier"
+      },
+      {
+        "x": -0.8699999999999999,
+        "z": -2.0700000000000003,
+        "row": 1,
+        "role": "soldier"
+      },
+      {
+        "x": -0.6599999999999998,
+        "z": -2.2100000000000004,
+        "row": 1,
+        "role": "soldier"
+      },
+      {
+        "x": -0.44999999999999984,
+        "z": -2.0700000000000003,
+        "row": 1,
+        "role": "soldier"
+      },
+      {
+        "x": -0.2399999999999999,
+        "z": -2.2100000000000004,
+        "row": 1,
+        "role": "soldier"
+      },
+      {
+        "x": -0.029999999999999832,
+        "z": -2.0700000000000003,
+        "row": 1,
+        "role": "soldier"
+      },
+      {
+        "x": 0.18000000000000013,
+        "z": -2.2100000000000004,
+        "row": 1,
+        "role": "soldier"
+      },
+      {
+        "x": -0.94,
+        "z": -2.79,
+        "row": 2,
+        "role": "soldier"
+      },
+      {
+        "x": -0.7299999999999999,
+        "z": -2.93,
+        "row": 2,
+        "role": "soldier"
+      },
+      {
+        "x": -0.5199999999999999,
+        "z": -2.79,
+        "row": 2,
+        "role": "soldier"
+      },
+      {
+        "x": -0.30999999999999994,
+        "z": -2.93,
+        "row": 2,
+        "role": "soldier"
+      },
+      {
+        "x": -0.09999999999999984,
+        "z": -2.79,
+        "row": 2,
+        "role": "soldier"
+      },
+      {
+        "x": 0.11000000000000013,
+        "z": -2.93,
+        "row": 2,
+        "role": "soldier"
+      }
+    ],
+    "teamEnvelope": {
+      "halfWidth": 0.7400000000000001,
+      "bodyRadius": 0.11,
+      "current": [
+        {
+          "x": -0.45,
+          "z": 0,
+          "role": "hero"
+        },
+        {
+          "x": -0.94,
+          "z": -1.35,
+          "row": 0,
+          "role": "soldier"
+        },
+        {
+          "x": -0.7299999999999999,
+          "z": -1.4900000000000002,
+          "row": 0,
+          "role": "soldier"
+        },
+        {
+          "x": -0.5199999999999999,
+          "z": -1.35,
+          "row": 0,
+          "role": "soldier"
+        },
+        {
+          "x": -0.30999999999999994,
+          "z": -1.4900000000000002,
+          "row": 0,
+          "role": "soldier"
+        },
+        {
+          "x": -0.09999999999999984,
+          "z": -1.35,
+          "row": 0,
+          "role": "soldier"
+        },
+        {
+          "x": 0.11000000000000013,
+          "z": -1.4900000000000002,
+          "row": 0,
+          "role": "soldier"
+        },
+        {
+          "x": -0.8699999999999999,
+          "z": -2.0700000000000003,
+          "row": 1,
+          "role": "soldier"
+        },
+        {
+          "x": -0.6599999999999998,
+          "z": -2.2100000000000004,
+          "row": 1,
+          "role": "soldier"
+        },
+        {
+          "x": -0.44999999999999984,
+          "z": -2.0700000000000003,
+          "row": 1,
+          "role": "soldier"
+        },
+        {
+          "x": -0.2399999999999999,
+          "z": -2.2100000000000004,
+          "row": 1,
+          "role": "soldier"
+        },
+        {
+          "x": -0.029999999999999832,
+          "z": -2.0700000000000003,
+          "row": 1,
+          "role": "soldier"
+        },
+        {
+          "x": 0.18000000000000013,
+          "z": -2.2100000000000004,
+          "row": 1,
+          "role": "soldier"
+        },
+        {
+          "x": -0.94,
+          "z": -2.79,
+          "row": 2,
+          "role": "soldier"
+        },
+        {
+          "x": -0.7299999999999999,
+          "z": -2.93,
+          "row": 2,
+          "role": "soldier"
+        },
+        {
+          "x": -0.5199999999999999,
+          "z": -2.79,
+          "row": 2,
+          "role": "soldier"
+        },
+        {
+          "x": -0.30999999999999994,
+          "z": -2.93,
+          "row": 2,
+          "role": "soldier"
+        },
+        {
+          "x": -0.09999999999999984,
+          "z": -2.79,
+          "row": 2,
+          "role": "soldier"
+        },
+        {
+          "x": 0.11000000000000013,
+          "z": -2.93,
+          "row": 2,
+          "role": "soldier"
+        }
+      ],
+      "future": [],
+      "horizon": 0
+    },
+    "teamEnvelopeFuture": {
+      "halfWidth": 0.7400000000000001,
+      "bodyRadius": 0.11,
+      "current": [
+        {
+          "x": -0.45,
+          "z": 0,
+          "role": "hero"
+        },
+        {
+          "x": -0.94,
+          "z": -1.35,
+          "row": 0,
+          "role": "soldier"
+        },
+        {
+          "x": -0.7299999999999999,
+          "z": -1.4900000000000002,
+          "row": 0,
+          "role": "soldier"
+        },
+        {
+          "x": -0.5199999999999999,
+          "z": -1.35,
+          "row": 0,
+          "role": "soldier"
+        },
+        {
+          "x": -0.30999999999999994,
+          "z": -1.4900000000000002,
+          "row": 0,
+          "role": "soldier"
+        },
+        {
+          "x": -0.09999999999999984,
+          "z": -1.35,
+          "row": 0,
+          "role": "soldier"
+        },
+        {
+          "x": 0.11000000000000013,
+          "z": -1.4900000000000002,
+          "row": 0,
+          "role": "soldier"
+        },
+        {
+          "x": -0.8699999999999999,
+          "z": -2.0700000000000003,
+          "row": 1,
+          "role": "soldier"
+        },
+        {
+          "x": -0.6599999999999998,
+          "z": -2.2100000000000004,
+          "row": 1,
+          "role": "soldier"
+        },
+        {
+          "x": -0.44999999999999984,
+          "z": -2.0700000000000003,
+          "row": 1,
+          "role": "soldier"
+        },
+        {
+          "x": -0.2399999999999999,
+          "z": -2.2100000000000004,
+          "row": 1,
+          "role": "soldier"
+        },
+        {
+          "x": -0.029999999999999832,
+          "z": -2.0700000000000003,
+          "row": 1,
+          "role": "soldier"
+        },
+        {
+          "x": 0.18000000000000013,
+          "z": -2.2100000000000004,
+          "row": 1,
+          "role": "soldier"
+        },
+        {
+          "x": -0.94,
+          "z": -2.79,
+          "row": 2,
+          "role": "soldier"
+        },
+        {
+          "x": -0.7299999999999999,
+          "z": -2.93,
+          "row": 2,
+          "role": "soldier"
+        },
+        {
+          "x": -0.5199999999999999,
+          "z": -2.79,
+          "row": 2,
+          "role": "soldier"
+        },
+        {
+          "x": -0.30999999999999994,
+          "z": -2.93,
+          "row": 2,
+          "role": "soldier"
+        },
+        {
+          "x": -0.09999999999999984,
+          "z": -2.79,
+          "row": 2,
+          "role": "soldier"
+        },
+        {
+          "x": 0.11000000000000013,
+          "z": -2.93,
+          "row": 2,
+          "role": "soldier"
+        }
+      ],
+      "future": [],
+      "horizon": 2
+    },
+    "enemyLifecycle": [],
+    "waveAccounting": [],
+    "pendingSquads": [],
+    "hostileShots": [],
+    "chapter": 13,
+    "formation": {
+      "band": 2,
+      "label": "中队",
+      "rows": 3,
+      "cols": 6,
+      "count": 18
+    },
+    "t": 0.9166666666666679,
+    "dist": 4.653846153846154,
+    "teamHalf": 0.7400000000000001,
+    "progressEligible": [],
+    "damageSources": {},
+    "damageHistory": [],
+    "director": {
+      "accepted": 0,
+      "deferred": 0,
+      "minimumBudget": null
+    },
+    "telegraphs": [],
+    "phase": "run",
+    "x": -0.45,
+    "target": -0.45,
+    "troops": 80,
+    "weapon": "spear",
+    "tier": 1,
+    "arms": "fire",
+    "companions": [],
+    "support": {
+      "id": null,
+      "cd": 0,
+      "pending": null,
+      "uses": 0,
+      "flash": 0
+    },
+    "slots": {
+      "dian": {
+        "id": null,
+        "st": "empty",
+        "n": 0,
+        "flash": 0
+      },
+      "qi": {
+        "id": null,
+        "st": "empty",
+        "n": 0,
+        "flash": 0,
+        "used": false
+      },
+      "ma": {
+        "id": null,
+        "st": "empty",
+        "n": 0,
+        "flash": 0
+      }
+    },
+    "boss": null,
+    "entities": [],
+    "routeXP": 0,
+    "timing": {
+      "march": 0.9166666666666679,
+      "officer": 0,
+      "boss": 0,
+      "intentionalHitStop": 0
+    },
+    "stats": {
+      "bossStrikes": 0,
+      "dodged": 0,
+      "hitTaken": 0,
+      "volleys": 1,
+      "arrowsHit": 0,
+      "taiping": 0,
+      "supportSaved": 0,
+      "crates": {}
+    },
+    "totals": {
+      "damage": 0,
+      "gate": 0,
+      "troops": 0
+    },
+    "paused": false,
+    "threatBands": [],
+    "runGot": [],
+    "defeatedOfficerIds": [],
+    "defeatedBossId": null,
+    "log": []
+  },
+  "ledger": [],
+  "diagnostics": {
+    "actorPoses": [
+      {
+        "actorId": "player",
+        "role": "hero",
+        "pose": "rec",
+        "frameKey": "g_spearRec",
+        "sourceFrameKey": "g_spearRec",
+        "quality": "legacy",
+        "canonicalScale": 1,
+        "worldDepth": 0,
+        "projectedScale": 1,
+        "bodyScale": 0.20103092783505155,
+        "bodyBox": {
+          "x": 105.52677835051547,
+          "y": 440.8022769573744,
+          "w": 24.324742268041238,
+          "h": 70.9237113402062
+        },
+        "footAnchor": {
+          "x": 120,
+          "y": 515.2721738645909
+        },
+        "pelvisAnchor": {
+          "x": 117.68914948453609,
+          "y": 483.35650376149806
+        },
+        "sourceSha": null,
+        "metadataBasis": "legacy_anatomical_reference_pending",
+        "untrimmedSize": [
+          275,
+          441
+        ],
+        "weaponId": "spear",
+        "mountId": null,
+        "logicalAttackPose": "rec",
+        "feedbackMode": null,
+        "attackTick": 0.29666666666666697,
+        "actualDamageReceived": 0,
+        "battleOutcome": null
+      }
+    ],
+    "renderFailure": null,
+    "logicalHero": 1,
+    "bodyBudget": {
+      "limit": 64,
+      "essential": 0,
+      "deferred": 0
+    },
+    "counts": {
+      "logical_troops": 80,
+      "visible_friendly": 19,
+      "visible_soldiers": 18,
+      "visible_companions": 0,
+      "visible_hero": 1,
+      "display_limit": 18,
+      "active_enemies": 0,
+      "visible_enemies": 0,
+      "active_projectiles": 9,
+      "count_scope": "body sprite rectangles submitted inside gameplay viewport, excludes zero alpha/dead enemies; occlusion not measured"
+    },
+    "texts": [
+      {
+        "str": "80",
+        "size": 24,
+        "kind": "troop",
+        "x": 211.33090206185568,
+        "y": 473.65,
+        "w": 28.32,
+        "h": 24,
+        "layer": "L6",
+        "claim": false
+      },
+      {
+        "str": "火箭",
+        "size": 12,
+        "kind": "ui",
+        "x": 165.33090206185568,
+        "y": 478.65,
+        "w": 24,
+        "h": 12,
+        "layer": "L6",
+        "claim": false
+      },
+      {
+        "str": "长枪",
+        "size": 14,
+        "kind": "ui",
+        "x": 88,
+        "y": 19,
+        "w": 28,
+        "h": 14,
+        "layer": "L7",
+        "claim": false
+      },
+      {
+        "str": "第14关 · 樊城",
+        "size": 14,
+        "kind": "ui",
+        "x": 22,
+        "y": 67,
+        "w": 82.74,
+        "h": 14,
+        "layer": "L7",
+        "claim": false
+      },
+      {
+        "str": "典",
+        "size": 13,
+        "kind": "ui",
+        "x": 20.5,
+        "y": 115.5,
+        "w": 13,
+        "h": 13,
+        "layer": "L7",
+        "claim": false
+      },
+      {
+        "str": "典籍",
+        "size": 9,
+        "kind": "ui",
+        "x": 18,
+        "y": 135.5,
+        "w": 18,
+        "h": 9,
+        "layer": "L7",
+        "claim": false
+      },
+      {
+        "str": "器",
+        "size": 13,
+        "kind": "ui",
+        "x": 20.5,
+        "y": 163.5,
+        "w": 13,
+        "h": 13,
+        "layer": "L7",
+        "claim": false
+      },
+      {
+        "str": "器物",
+        "size": 9,
+        "kind": "ui",
+        "x": 18,
+        "y": 183.5,
+        "w": 18,
+        "h": 9,
+        "layer": "L7",
+        "claim": false
+      },
+      {
+        "str": "骑",
+        "size": 13,
+        "kind": "ui",
+        "x": 20.5,
+        "y": 211.5,
+        "w": 13,
+        "h": 13,
+        "layer": "L7",
+        "claim": false
+      },
+      {
+        "str": "坐骑",
+        "size": 9,
+        "kind": "ui",
+        "x": 18,
+        "y": 231.5,
+        "w": 18,
+        "h": 9,
+        "layer": "L7",
+        "claim": false
+      },
+      {
+        "str": "支",
+        "size": 13,
+        "kind": "ui",
+        "x": 20.5,
+        "y": 259.5,
+        "w": 13,
+        "h": 13,
+        "layer": "L7",
+        "claim": false
+      },
+      {
+        "str": "未编入",
+        "size": 9,
+        "kind": "ui",
+        "x": 13.5,
+        "y": 279.5,
+        "w": 27,
+        "h": 9,
+        "layer": "L7",
+        "claim": false
+      }
+    ],
+    "hud": [
+      {
+        "name": "暂停",
+        "x": 12,
+        "y": 14,
+        "w": 32,
+        "h": 32
+      },
+      {
+        "name": "兵器",
+        "x": 52,
+        "y": 14,
+        "w": 300,
+        "h": 32
+      },
+      {
+        "name": "行军条",
+        "x": 12,
+        "y": 58,
+        "w": 351,
+        "h": 32
+      },
+      {
+        "name": "宝物槽·典",
+        "x": 8,
+        "y": 106,
+        "w": 38,
+        "h": 42
+      },
+      {
+        "name": "宝物槽·器",
+        "x": 8,
+        "y": 154,
+        "w": 38,
+        "h": 42
+      },
+      {
+        "name": "宝物槽·骑",
+        "x": 8,
+        "y": 202,
+        "w": 38,
+        "h": 42
+      },
+      {
+        "name": "支援·未编入",
+        "x": 8,
+        "y": 250,
+        "w": 38,
+        "h": 42
+      }
+    ],
+    "labels": [
+      {
+        "kind": "troop",
+        "x": 159.33090206185568,
+        "y": 468.65,
+        "w": 86.32,
+        "h": 33
+      }
+    ],
+    "gate": {
+      "unsettledHidden": 0,
+      "docked": 0
+    },
+    "used": [
+      [
+        "己方弓手·行进1",
+        {
+          "key": "g_archerWalk0",
+          "gen": true,
+          "want": "g_archerWalk0"
+        }
+      ],
+      [
+        "己方弓手·行进2",
+        {
+          "key": "g_archerWalk1",
+          "gen": true,
+          "want": "g_archerWalk1"
+        }
+      ],
+      [
+        "己方弓手·张弓",
+        {
+          "key": "g_archerDraw",
+          "gen": true,
+          "want": "g_archerDraw"
+        }
+      ],
+      [
+        "己方弓手·放箭",
+        {
+          "key": "g_archerRel",
+          "gen": true,
+          "want": "g_archerRel"
+        }
+      ],
+      [
+        "场景·granary",
+        {
+          "key": "g_granary",
+          "gen": true,
+          "want": "g_granary"
+        }
+      ],
+      [
+        "场景·tent",
+        {
+          "key": "g_tent",
+          "gen": true,
+          "want": "g_tent"
+        }
+      ],
+      [
+        "场景·木栅",
+        {
+          "key": "g_juma",
+          "gen": true,
+          "want": "g_juma"
+        }
+      ],
+      [
+        "场景·rocks",
+        {
+          "key": "g_rocks",
+          "gen": true,
+          "want": "g_rocks"
+        }
+      ],
+      [
+        "场景·tower",
+        {
+          "key": "g_tower",
+          "gen": true,
+          "want": "g_tower"
+        }
+      ]
+    ]
+  },
+  "buttons": [
+    {
+      "id": "pause",
+      "label": "暂停战斗",
+      "x": 4,
+      "y": 8,
+      "w": 48,
+      "h": 48
+    }
+  ],
+  "viewport": {
+    "width": 375,
+    "height": 667,
+    "safe": {
+      "left": 0,
+      "top": 0,
+      "right": 375,
+      "bottom": 667
+    },
+    "capsule": null,
+    "source": "cocos-native",
+    "safeSource": "cocos-native-safe-area",
+    "capsuleSource": "not-available",
+    "revision": 0
+  },
+  "nativeNodes": 149,
+  "frameState": {
+    "generation": 39,
+    "lastFrameCommitted": 39,
+    "abortedFrames": 0,
+    "submissions": [
+      {
+        "role": "hero_body",
+        "actorId": "player",
+        "frameKey": "g_spearRec",
+        "generation": 39
+      },
+      {
+        "role": "soldier_body",
+        "actorId": "soldier:0",
+        "frameKey": "g_archerWalk0",
+        "generation": 39
+      },
+      {
+        "role": "soldier_body",
+        "actorId": "soldier:2",
+        "frameKey": "g_archerRel",
+        "generation": 39
+      },
+      {
+        "role": "soldier_body",
+        "actorId": "soldier:4",
+        "frameKey": "g_archerRel",
+        "generation": 39
+      },
+      {
+        "role": "soldier_body",
+        "actorId": "soldier:1",
+        "frameKey": "g_archerRel",
+        "generation": 39
+      },
+      {
+        "role": "soldier_body",
+        "actorId": "soldier:3",
+        "frameKey": "g_archerWalk0",
+        "generation": 39
+      },
+      {
+        "role": "soldier_body",
+        "actorId": "soldier:5",
+        "frameKey": "g_archerRel",
+        "generation": 39
+      },
+      {
+        "role": "soldier_body",
+        "actorId": "soldier:6",
+        "frameKey": "g_archerWalk1",
+        "generation": 39
+      },
+      {
+        "role": "soldier_body",
+        "actorId": "soldier:8",
+        "frameKey": "g_archerWalk1",
+        "generation": 39
+      },
+      {
+        "role": "soldier_body",
+        "actorId": "soldier:10",
+        "frameKey": "g_archerWalk0",
+        "generation": 39
+      },
+      {
+        "role": "soldier_body",
+        "actorId": "soldier:7",
+        "frameKey": "g_archerWalk1",
+        "generation": 39
+      },
+      {
+        "role": "soldier_body",
+        "actorId": "soldier:9",
+        "frameKey": "g_archerWalk0",
+        "generation": 39
+      },
+      {
+        "role": "soldier_body",
+        "actorId": "soldier:11",
+        "frameKey": "g_archerWalk0",
+        "generation": 39
+      },
+      {
+        "role": "soldier_body",
+        "actorId": "soldier:12",
+        "frameKey": "g_archerRel",
+        "generation": 39
+      },
+      {
+        "role": "soldier_body",
+        "actorId": "soldier:14",
+        "frameKey": "g_archerRel",
+        "generation": 39
+      },
+      {
+        "role": "soldier_body",
+        "actorId": "soldier:16",
+        "frameKey": "g_archerRel",
+        "generation": 39
+      },
+      {
+        "role": "soldier_body",
+        "actorId": "soldier:13",
+        "frameKey": "g_archerRel",
+        "generation": 39
+      },
+      {
+        "role": "soldier_body",
+        "actorId": "soldier:15",
+        "frameKey": "g_archerRel",
+        "generation": 39
+      },
+      {
+        "role": "soldier_body",
+        "actorId": "soldier:17",
+        "frameKey": "g_archerRel",
+        "generation": 39
+      },
+      {
+        "role": "hud_weapon",
+        "actorId": "spear",
+        "frameKey": "g_icon_spear",
+        "generation": 39
+      }
+    ],
+    "resourceErrors": [],
+    "renderFault": ""
+  },
+  "createdNodes": 151,
+  "invalidRects": [],
+  "renderErrors": [],
+  "foregroundElapsedSeconds": 0.9264490000000002,
+  "resultReadyLatencySeconds": 0,
+  "resultError": "",
+  "missingArt": [],
+  "performance": {
+    "sampleCount": 39,
+    "over50ms": 1,
+    "over100ms": 0,
+    "p95ms": 49.117000000000075,
+    "scope": "foreground battle render intervals, native host dependent"
+  },
+  "fps": 42.09621900396027,
+  "map": {
+    "scroll": 0,
+    "selected": 0,
+    "expanded": false,
+    "cachedPanels": 0,
+    "metrics": {
+      "y": 120,
+      "bottom": 478.9999999999999,
+      "height": 358.9999999999999,
+      "step": 122,
+      "panel": 488,
+      "total": 2440,
+      "maxScroll": 2081
+    }
+  },
+  "reward": null,
+  "audio": {
+    "active": true,
+    "hidden": false,
+    "bgmEnabled": false,
+    "musicRequested": false,
+    "musicReady": false,
+    "musicTrack": null,
+    "musicPlaying": false,
+    "effectChannels": 77,
+    "playingEffects": [
+      "spear-1",
+      "army-fire-0"
+    ],
+    "limits": {
+      "perKind": 1,
+      "globalVoices": 3,
+      "globalVolume": 0.65,
+      "startsPerSecond": 12,
+      "minStartGapMs": 25
+    },
+    "counters": {
+      "played": 3,
+      "suppressedBusy": 0,
+      "suppressedRate": 0,
+      "suppressedBudget": 0,
+      "loadFailures": 0,
+      "merged": 0,
+      "expired": 0,
+      "preempted": 0,
+      "missing": 0,
+      "fallback": 0,
+      "peakVoices": 2,
+      "peakVolume": 0.25
+    },
+    "weaponSfx": {
+      "pending": 0,
+      "active": [
+        "army-fire-0",
+        "spear-1"
+      ],
+      "counters": {
+        "played": 3,
+        "suppressedBusy": 0,
+        "suppressedRate": 0,
+        "suppressedBudget": 0,
+        "merged": 0,
+        "expired": 0,
+        "preempted": 0,
+        "missing": 0,
+        "fallback": 0,
+        "peakVoices": 2,
+        "peakVolume": 0.25
+      },
+      "trace": [
+        {
+          "eventId": "mutdunu1-vuxpd99lq2:sfx:1",
+          "runId": "mutdunu1-vuxpd99lq2",
+          "tick": 9,
+          "attackId": "hero:0",
+          "projectileId": 1,
+          "source": "hero",
+          "sourceActorId": "hero",
+          "weaponId": "spear",
+          "arms": null,
+          "phase": "release",
+          "targetKind": "none",
+          "material": "none",
+          "heavy": false,
+          "clip": "spear-0",
+          "priority": 3,
+          "volume": 0.18,
+          "playedAtMs": 910.966
+        },
+        {
+          "eventId": "mutdunu1-vuxpd99lq2:sfx:2",
+          "runId": "mutdunu1-vuxpd99lq2",
+          "tick": 42,
+          "attackId": "volley:1",
+          "projectileId": 2,
+          "source": "army",
+          "sourceActorId": "troop",
+          "weaponId": null,
+          "arms": "fire",
+          "phase": "release",
+          "targetKind": "none",
+          "material": "none",
+          "heavy": false,
+          "clip": "army-fire-0",
+          "priority": 1,
+          "volume": 0.07,
+          "playedAtMs": 1461.035
+        },
+        {
+          "eventId": "mutdunu1-vuxpd99lq2:sfx:3",
+          "runId": "mutdunu1-vuxpd99lq2",
+          "tick": 46,
+          "attackId": "hero:1",
+          "projectileId": 10,
+          "source": "hero",
+          "sourceActorId": "hero",
+          "weaponId": "spear",
+          "arms": null,
+          "phase": "release",
+          "targetKind": "none",
+          "material": "none",
+          "heavy": false,
+          "clip": "spear-1",
+          "priority": 3,
+          "volume": 0.18,
+          "playedAtMs": 1519.315
+        }
+      ]
+    },
+    "loading": false
+  },
+  "error": ""
+}

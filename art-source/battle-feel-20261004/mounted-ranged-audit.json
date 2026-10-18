@@ -1,0 +1,715 @@
+[
+  {
+    "key": "feel_ride_jingfan_liannu_run",
+    "alphaBounds": [
+      130,
+      13,
+      330,
+      346
+    ],
+    "largestAlphaComponent": 35596,
+    "removedComponents": [
+      4
+    ]
+  },
+  {
+    "key": "feel_ride_jingfan_liannu_wind",
+    "alphaBounds": [
+      105,
+      16,
+      310,
+      348
+    ],
+    "largestAlphaComponent": 34827,
+    "removedComponents": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jingfan_liannu_rel",
+    "alphaBounds": [
+      83,
+      16,
+      288,
+      340
+    ],
+    "largestAlphaComponent": 35110,
+    "removedComponents": [
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jingfan_liannu_rec",
+    "alphaBounds": [
+      33,
+      17,
+      238,
+      348
+    ],
+    "largestAlphaComponent": 34501,
+    "removedComponents": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jingfan_yanlinggong_run",
+    "alphaBounds": [
+      129,
+      15,
+      331,
+      372
+    ],
+    "largestAlphaComponent": 34837,
+    "removedComponents": [
+      3,
+      2,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jingfan_yanlinggong_wind",
+    "alphaBounds": [
+      110,
+      20,
+      320,
+      378
+    ],
+    "largestAlphaComponent": 36249,
+    "removedComponents": [
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jingfan_yanlinggong_rel",
+    "alphaBounds": [
+      88,
+      16,
+      293,
+      376
+    ],
+    "largestAlphaComponent": 35435,
+    "removedComponents": [
+      8,
+      4,
+      3,
+      3,
+      3
+    ]
+  },
+  {
+    "key": "feel_ride_jingfan_yanlinggong_rec",
+    "alphaBounds": [
+      43,
+      20,
+      250,
+      377
+    ],
+    "largestAlphaComponent": 35058,
+    "removedComponents": []
+  },
+  {
+    "key": "feel_ride_jingfan_jiguannu_run",
+    "alphaBounds": [
+      128,
+      8,
+      320,
+      320
+    ],
+    "largestAlphaComponent": 31601,
+    "removedComponents": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jingfan_jiguannu_wind",
+    "alphaBounds": [
+      110,
+      10,
+      302,
+      319
+    ],
+    "largestAlphaComponent": 31121,
+    "removedComponents": [
+      4,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jingfan_jiguannu_rel",
+    "alphaBounds": [
+      86,
+      8,
+      281,
+      319
+    ],
+    "largestAlphaComponent": 31658,
+    "removedComponents": [
+      5,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jingfan_jiguannu_rec",
+    "alphaBounds": [
+      48,
+      12,
+      246,
+      320
+    ],
+    "largestAlphaComponent": 31095,
+    "removedComponents": [
+      3,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_dilu_liannu_run",
+    "alphaBounds": [
+      130,
+      14,
+      331,
+      347
+    ],
+    "largestAlphaComponent": 35977,
+    "removedComponents": [
+      2,
+      2,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_dilu_liannu_wind",
+    "alphaBounds": [
+      104,
+      16,
+      311,
+      349
+    ],
+    "largestAlphaComponent": 35646,
+    "removedComponents": [
+      4,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_dilu_liannu_rel",
+    "alphaBounds": [
+      83,
+      16,
+      290,
+      340
+    ],
+    "largestAlphaComponent": 35747,
+    "removedComponents": [
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_dilu_liannu_rec",
+    "alphaBounds": [
+      33,
+      17,
+      239,
+      349
+    ],
+    "largestAlphaComponent": 34924,
+    "removedComponents": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_dilu_yanlinggong_run",
+    "alphaBounds": [
+      128,
+      15,
+      333,
+      374
+    ],
+    "largestAlphaComponent": 35736,
+    "removedComponents": [
+      9,
+      8,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_dilu_yanlinggong_wind",
+    "alphaBounds": [
+      110,
+      20,
+      322,
+      378
+    ],
+    "largestAlphaComponent": 37519,
+    "removedComponents": [
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_dilu_yanlinggong_rel",
+    "alphaBounds": [
+      88,
+      16,
+      294,
+      376
+    ],
+    "largestAlphaComponent": 36517,
+    "removedComponents": [
+      4
+    ]
+  },
+  {
+    "key": "feel_ride_dilu_yanlinggong_rec",
+    "alphaBounds": [
+      43,
+      20,
+      252,
+      378
+    ],
+    "largestAlphaComponent": 36177,
+    "removedComponents": [
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_dilu_jiguannu_run",
+    "alphaBounds": [
+      127,
+      8,
+      321,
+      320
+    ],
+    "largestAlphaComponent": 32474,
+    "removedComponents": [
+      3,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_dilu_jiguannu_wind",
+    "alphaBounds": [
+      108,
+      8,
+      305,
+      320
+    ],
+    "largestAlphaComponent": 32119,
+    "removedComponents": [
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_dilu_jiguannu_rel",
+    "alphaBounds": [
+      85,
+      8,
+      283,
+      319
+    ],
+    "largestAlphaComponent": 32716,
+    "removedComponents": [
+      3,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_dilu_jiguannu_rec",
+    "alphaBounds": [
+      48,
+      10,
+      249,
+      320
+    ],
+    "largestAlphaComponent": 32009,
+    "removedComponents": [
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jueying_liannu_run",
+    "alphaBounds": [
+      129,
+      13,
+      332,
+      346
+    ],
+    "largestAlphaComponent": 36179,
+    "removedComponents": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jueying_liannu_wind",
+    "alphaBounds": [
+      86,
+      16,
+      292,
+      347
+    ],
+    "largestAlphaComponent": 35466,
+    "removedComponents": [
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jueying_liannu_rel",
+    "alphaBounds": [
+      83,
+      16,
+      290,
+      340
+    ],
+    "largestAlphaComponent": 35433,
+    "removedComponents": [
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jueying_liannu_rec",
+    "alphaBounds": [
+      34,
+      16,
+      241,
+      347
+    ],
+    "largestAlphaComponent": 35065,
+    "removedComponents": [
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jueying_yanlinggong_run",
+    "alphaBounds": [
+      127,
+      12,
+      333,
+      374
+    ],
+    "largestAlphaComponent": 35928,
+    "removedComponents": [
+      27,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jueying_yanlinggong_wind",
+    "alphaBounds": [
+      104,
+      11,
+      317,
+      378
+    ],
+    "largestAlphaComponent": 38157,
+    "removedComponents": [
+      7,
+      2
+    ]
+  },
+  {
+    "key": "feel_ride_jueying_yanlinggong_rel",
+    "alphaBounds": [
+      88,
+      9,
+      296,
+      376
+    ],
+    "largestAlphaComponent": 37256,
+    "removedComponents": [
+      7,
+      5,
+      2,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jueying_yanlinggong_rec",
+    "alphaBounds": [
+      43,
+      13,
+      253,
+      378
+    ],
+    "largestAlphaComponent": 36459,
+    "removedComponents": [
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jueying_jiguannu_run",
+    "alphaBounds": [
+      125,
+      8,
+      324,
+      320
+    ],
+    "largestAlphaComponent": 33316,
+    "removedComponents": [
+      2,
+      2,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jueying_jiguannu_wind",
+    "alphaBounds": [
+      103,
+      8,
+      301,
+      319
+    ],
+    "largestAlphaComponent": 33184,
+    "removedComponents": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jueying_jiguannu_rel",
+    "alphaBounds": [
+      83,
+      8,
+      284,
+      319
+    ],
+    "largestAlphaComponent": 33185,
+    "removedComponents": [
+      2,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_jueying_jiguannu_rec",
+    "alphaBounds": [
+      49,
+      8,
+      251,
+      320
+    ],
+    "largestAlphaComponent": 33025,
+    "removedComponents": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_chitu_liannu_run",
+    "alphaBounds": [
+      130,
+      14,
+      331,
+      347
+    ],
+    "largestAlphaComponent": 35472,
+    "removedComponents": [
+      6,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_chitu_liannu_wind",
+    "alphaBounds": [
+      105,
+      16,
+      311,
+      348
+    ],
+    "largestAlphaComponent": 34908,
+    "removedComponents": [
+      3,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_chitu_liannu_rel",
+    "alphaBounds": [
+      84,
+      16,
+      290,
+      340
+    ],
+    "largestAlphaComponent": 35094,
+    "removedComponents": [
+      5,
+      2,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_chitu_liannu_rec",
+    "alphaBounds": [
+      34,
+      17,
+      239,
+      348
+    ],
+    "largestAlphaComponent": 34507,
+    "removedComponents": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_chitu_yanlinggong_run",
+    "alphaBounds": [
+      129,
+      15,
+      332,
+      373
+    ],
+    "largestAlphaComponent": 35001,
+    "removedComponents": [
+      3,
+      3
+    ]
+  },
+  {
+    "key": "feel_ride_chitu_yanlinggong_wind",
+    "alphaBounds": [
+      111,
+      21,
+      321,
+      378
+    ],
+    "largestAlphaComponent": 36622,
+    "removedComponents": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_chitu_yanlinggong_rel",
+    "alphaBounds": [
+      88,
+      16,
+      293,
+      376
+    ],
+    "largestAlphaComponent": 35701,
+    "removedComponents": [
+      4,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_chitu_yanlinggong_rec",
+    "alphaBounds": [
+      44,
+      20,
+      251,
+      378
+    ],
+    "largestAlphaComponent": 35371,
+    "removedComponents": [
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_chitu_jiguannu_run",
+    "alphaBounds": [
+      128,
+      8,
+      321,
+      320
+    ],
+    "largestAlphaComponent": 31790,
+    "removedComponents": [
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_chitu_jiguannu_wind",
+    "alphaBounds": [
+      110,
+      9,
+      303,
+      320
+    ],
+    "largestAlphaComponent": 31430,
+    "removedComponents": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_chitu_jiguannu_rel",
+    "alphaBounds": [
+      86,
+      8,
+      282,
+      319
+    ],
+    "largestAlphaComponent": 31889,
+    "removedComponents": [
+      5,
+      1,
+      1
+    ]
+  },
+  {
+    "key": "feel_ride_chitu_jiguannu_rec",
+    "alphaBounds": [
+      49,
+      11,
+      247,
+      320
+    ],
+    "largestAlphaComponent": 31368,
+    "removedComponents": [
+      1
+    ]
+  }
+]

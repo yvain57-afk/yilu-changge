@@ -1,0 +1,46 @@
+{
+  "project_id": "yilu-changge",
+  "snapshot_id": "s_20261003T173347_ac020e9d",
+  "code_fingerprint": "9262d33ad5370693eb90a2a70a23b8a40622c509989c970546f6a1ae57253b53",
+  "finalized": {
+    "code_fingerprint": "9262d33ad5370693eb90a2a70a23b8a40622c509989c970546f6a1ae57253b53",
+    "meaning": "records facts in existing result; no tests executed",
+    "produced_at": "2026-10-03T17:35:30.589398+00:00",
+    "result_path": "deliverables/BATTLE-FEEL-20261004/REPORT.md",
+    "result_sha256": "b247ca3c0602254d7e926dc79e287f6cc17d674f7b84a0f8215b18227d87d171",
+    "task": "BATTLE-FEEL-20261004"
+  },
+  "report": {
+    "blob": "b247ca3c0602254d7e926dc79e287f6cc17d674f7b84a0f8215b18227d87d171",
+    "capture_type": "unknown",
+    "category": "checks",
+    "id": "f_946283914795bbd32b1e9c7d",
+    "lines": 52,
+    "observed_at": "2026-10-03T17:32:12.241745+00:00",
+    "produced_at": "2026-10-03T17:33:18.511472+00:00",
+    "readable": true,
+    "relative_path": "deliverables/BATTLE-FEEL-20261004/REPORT.md",
+    "size": 7136,
+    "source_role": "source_data",
+    "source_sha256": "b247ca3c0602254d7e926dc79e287f6cc17d674f7b84a0f8215b18227d87d171",
+    "version": {
+      "basis": "explicit local finalize receipt matched sanitized report SHA-256; no tests rerun",
+      "code_fingerprint": "9262d33ad5370693eb90a2a70a23b8a40622c509989c970546f6a1ae57253b53",
+      "status": "linked"
+    }
+  },
+  "completion_route": "finalize registered exact report receipt; direct collection returned busy; existing watcher published this snapshot and bound report SHA successfully",
+  "media": {
+    "id": "m_a6d4f9167fe0ba3939d20df1",
+    "precomputed_frames": 23,
+    "version": {
+      "basis": "user_assigned",
+      "code_fingerprint": "9262d33ad5370693eb90a2a70a23b8a40622c509989c970546f6a1ae57253b53",
+      "status": "linked"
+    },
+    "source_sha256": "a6d4f9167fe0ba3939d20df12f15f64f7abca84a3672aa74d1c19fe682a53170"
+  },
+  "tunnel": "connected by status at 2026-10-03T17:34:12Z",
+  "chatgpt_actual_read_this_version": "not_claimed",
+  "generated_at": "2026-10-03T17:38:04.170289+00:00"
+}

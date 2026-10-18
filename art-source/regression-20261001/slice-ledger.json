@@ -1,0 +1,142 @@
+[
+  {
+    "key": "r26_ride_jingfan_single",
+    "source": "art-source/regression-20261001/mount-sockets-source.png",
+    "source_sha256": "9e18ab909b3620bf5c2836add1ab0458596c81d3d6bf1c5d78c70b0df9ca6dde",
+    "source_box": [
+      11,
+      47,
+      360,
+      494
+    ],
+    "alpha_pixels": 87193,
+    "pixel_sha256": "fa450d620361a8669e23d057e3604fe7dd1f9713578dd212c74e72ba30b2a338"
+  },
+  {
+    "key": "r26_ride_jingfan_crossbow",
+    "source": "art-source/regression-20261001/mount-sockets-source.png",
+    "source_sha256": "9e18ab909b3620bf5c2836add1ab0458596c81d3d6bf1c5d78c70b0df9ca6dde",
+    "source_box": [
+      382,
+      73,
+      743,
+      494
+    ],
+    "alpha_pixels": 84899,
+    "pixel_sha256": "b73671fc8c5f51f3a4c1eb9155824f4b4509b8e367999a8ce4e0856cabe35423"
+  },
+  {
+    "key": "r26_ride_jingfan_bow",
+    "source": "art-source/regression-20261001/mount-sockets-source.png",
+    "source_sha256": "9e18ab909b3620bf5c2836add1ab0458596c81d3d6bf1c5d78c70b0df9ca6dde",
+    "source_box": [
+      754,
+      51,
+      1176,
+      488
+    ],
+    "alpha_pixels": 97026,
+    "pixel_sha256": "e1649b4a20bd8bfaac932fb0e4ce3e6ce818163a0fda38e3b262983e4f3e5403"
+  },
+  {
+    "key": "r26_ride_jingfan_dual",
+    "source": "art-source/regression-20261001/mount-sockets-source.png",
+    "source_sha256": "9e18ab909b3620bf5c2836add1ab0458596c81d3d6bf1c5d78c70b0df9ca6dde",
+    "source_box": [
+      1186,
+      46,
+      1532,
+      493
+    ],
+    "alpha_pixels": 85185,
+    "pixel_sha256": "a317478df7bf8e2a3ecd0e4b200f42cfbec2d945c0805162cd3899cfd6110775"
+  },
+  {
+    "key": "r26_ride_jueying_single",
+    "source": "art-source/regression-20261001/mount-sockets-source.png",
+    "source_sha256": "9e18ab909b3620bf5c2836add1ab0458596c81d3d6bf1c5d78c70b0df9ca6dde",
+    "source_box": [
+      9,
+      540,
+      362,
+      986
+    ],
+    "alpha_pixels": 87957,
+    "pixel_sha256": "23b842a2496bdd80b37cf60b77a7591f77a48ce0cd5b26858d7893e3ce99d53f"
+  },
+  {
+    "key": "r26_ride_jueying_crossbow",
+    "source": "art-source/regression-20261001/mount-sockets-source.png",
+    "source_sha256": "9e18ab909b3620bf5c2836add1ab0458596c81d3d6bf1c5d78c70b0df9ca6dde",
+    "source_box": [
+      382,
+      565,
+      743,
+      986
+    ],
+    "alpha_pixels": 85701,
+    "pixel_sha256": "34bfbe84090395b366f017e0f3c06a0568c1c34699e038da712aeae5bf368a1f"
+  },
+  {
+    "key": "r26_ride_jueying_bow",
+    "source": "art-source/regression-20261001/mount-sockets-source.png",
+    "source_sha256": "9e18ab909b3620bf5c2836add1ab0458596c81d3d6bf1c5d78c70b0df9ca6dde",
+    "source_box": [
+      754,
+      543,
+      1176,
+      980
+    ],
+    "alpha_pixels": 97484,
+    "pixel_sha256": "ba11a235eba0ca60e09b8771771b919b6ae9cc4d55863668aa3a59210a5ace4d"
+  },
+  {
+    "key": "r26_ride_jueying_dual",
+    "source": "art-source/regression-20261001/mount-sockets-source.png",
+    "source_sha256": "9e18ab909b3620bf5c2836add1ab0458596c81d3d6bf1c5d78c70b0df9ca6dde",
+    "source_box": [
+      1186,
+      538,
+      1531,
+      985
+    ],
+    "alpha_pixels": 85408,
+    "pixel_sha256": "4b20af4e70313b9069423c7ac64fd97cad47c08911954a438ce3a06420694ffd"
+  },
+  {
+    "key": "r26_part_duanji",
+    "source": "art-source/regression-20261001/held-parts-source.png",
+    "source_sha256": "82afc03d1d92acb638205e3006a38c2e0e2b1dd5d0a67bb34b0df638742096cf",
+    "source_box": [
+      156,
+      13,
+      526,
+      702
+    ],
+    "pixel_sha256": "707f0ddd1ccb4cdd214e99fd16bc897c729a54193e283b1d0a6772fd70a1953a"
+  },
+  {
+    "key": "r26_part_dundao_shield",
+    "source": "art-source/regression-20261001/held-parts-source.png",
+    "source_sha256": "82afc03d1d92acb638205e3006a38c2e0e2b1dd5d0a67bb34b0df638742096cf",
+    "source_box": [
+      874,
+      27,
+      1297,
+      705
+    ],
+    "pixel_sha256": "51f03938474028a0665e60b0515123bff743fe7ceac04567e6707547f0e31c88"
+  },
+  {
+    "key": "r26_part_dundao_blade",
+    "source": "art-source/regression-20261001/held-parts-source.png",
+    "source_sha256": "82afc03d1d92acb638205e3006a38c2e0e2b1dd5d0a67bb34b0df638742096cf",
+    "source_box": [
+      1545,
+      70,
+      2126,
+      663
+    ],
+    "pixel_sha256": "9aa7bb9c9ab0358e7c92d78587875e201647dac6d425b3a01914756083584a3e"
+  }
+]

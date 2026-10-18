@@ -1,0 +1,165 @@
+{
+  "created_at": "2026-10-03T17:29:18.864290+00:00",
+  "version": "0.12.6",
+  "build": "2026100401",
+  "code_fingerprint": "9262d33ad5370693eb90a2a70a23b8a40622c509989c970546f6a1ae57253b53",
+  "scope": "Same-tick before/after screenshots and original-speed Cocos WebGL recordings; neither assets nor physical-device evidence. Copies are SHA-256 identical to original evidence.",
+  "files": [
+    {
+      "type": "fixed_tick_actual_Cocos_WebGL",
+      "path": "images/before-fixed-4s.png",
+      "metadata": "images/before-fixed-4s.json",
+      "source": "evidence/BATTLE-FEEL-20261004/before/pixels/before-fixed-4s.png",
+      "sha256": "8e0ba79a9d0c7eacb02b7aa033df924390d2410f4e7aff5088258c6772725375",
+      "code_fingerprint": "434495b2036b2458f1a9914cc7e2bc18c7db92f23eebeaeab2e93ce8438a00a5",
+      "simulation_seconds": 4,
+      "simulation_ticks": 240,
+      "troops": 23,
+      "natural_speed": false,
+      "physical_device": false
+    },
+    {
+      "type": "fixed_tick_actual_Cocos_WebGL",
+      "path": "images/before-fixed-6s.png",
+      "metadata": "images/before-fixed-6s.json",
+      "source": "evidence/BATTLE-FEEL-20261004/before/pixels/before-fixed-6s.png",
+      "sha256": "0b2bcd54b9d24007260bf3286cc53e30186ed79faea3b98d31840a046826ef95",
+      "code_fingerprint": "434495b2036b2458f1a9914cc7e2bc18c7db92f23eebeaeab2e93ce8438a00a5",
+      "simulation_seconds": 6,
+      "simulation_ticks": 360,
+      "troops": 12,
+      "natural_speed": false,
+      "physical_device": false
+    },
+    {
+      "type": "fixed_tick_actual_Cocos_WebGL",
+      "path": "images/before-fixed-8s.png",
+      "metadata": "images/before-fixed-8s.json",
+      "source": "evidence/BATTLE-FEEL-20261004/before/pixels/before-fixed-8s.png",
+      "sha256": "6f7195d748308f1ffd5f091a0b43375f14095ff059450146fefbfa34f955ea34",
+      "code_fingerprint": "434495b2036b2458f1a9914cc7e2bc18c7db92f23eebeaeab2e93ce8438a00a5",
+      "simulation_seconds": 8,
+      "simulation_ticks": 480,
+      "troops": 8,
+      "natural_speed": false,
+      "physical_device": false
+    },
+    {
+      "type": "fixed_tick_actual_Cocos_WebGL",
+      "path": "images/before-fixed-10s.png",
+      "metadata": "images/before-fixed-10s.json",
+      "source": "evidence/BATTLE-FEEL-20261004/before/pixels/before-fixed-10s.png",
+      "sha256": "24f0051f407b06afcfe61bd33cc07d340368e80165e4bf65efd460679a3ffa2a",
+      "code_fingerprint": "434495b2036b2458f1a9914cc7e2bc18c7db92f23eebeaeab2e93ce8438a00a5",
+      "simulation_seconds": 10,
+      "simulation_ticks": 600,
+      "troops": 8,
+      "natural_speed": false,
+      "physical_device": false
+    },
+    {
+      "type": "continuous_actual_Cocos_WebGL",
+      "path": "media/before-normal-35s.mp4",
+      "source": "evidence/BATTLE-FEEL-20261004/before/media/before-normal-35s.mp4",
+      "sha256": "029700a91e26268504e8f07e4ff890f4ca734b45d74264327b3745c0e817f43b",
+      "code_fingerprint": "434495b2036b2458f1a9914cc7e2bc18c7db92f23eebeaeab2e93ce8438a00a5",
+      "speed": "original 1x, no speed change",
+      "input": "automatic legal movement on authored course",
+      "audio": "none",
+      "physical_device": false,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 402,
+            "height": 874,
+            "r_frame_rate": "25/1"
+          }
+        ],
+        "format": {
+          "duration": "35.000000"
+        }
+      }
+    },
+    {
+      "type": "fixed_tick_actual_Cocos_WebGL",
+      "path": "images/after-fixed-4s.png",
+      "metadata": "images/after-fixed-4s.json",
+      "source": "evidence/BATTLE-FEEL-20261004/final/pixels/after-fixed-4s.png",
+      "sha256": "f3d4fcd03d5b7006be7f77b42c9b97cdfead4ce6a1dceee119e0013ff57ac1c9",
+      "code_fingerprint": "9262d33ad5370693eb90a2a70a23b8a40622c509989c970546f6a1ae57253b53",
+      "simulation_seconds": 4,
+      "simulation_ticks": 240,
+      "troops": 23,
+      "natural_speed": false,
+      "physical_device": false
+    },
+    {
+      "type": "fixed_tick_actual_Cocos_WebGL",
+      "path": "images/after-fixed-6s.png",
+      "metadata": "images/after-fixed-6s.json",
+      "source": "evidence/BATTLE-FEEL-20261004/final/pixels/after-fixed-6s.png",
+      "sha256": "c22410a5d427a34e4925d5354d0be7f81726a08b4362e5c77077c5144d913f25",
+      "code_fingerprint": "9262d33ad5370693eb90a2a70a23b8a40622c509989c970546f6a1ae57253b53",
+      "simulation_seconds": 6,
+      "simulation_ticks": 360,
+      "troops": 12,
+      "natural_speed": false,
+      "physical_device": false
+    },
+    {
+      "type": "fixed_tick_actual_Cocos_WebGL",
+      "path": "images/after-fixed-8s.png",
+      "metadata": "images/after-fixed-8s.json",
+      "source": "evidence/BATTLE-FEEL-20261004/final/pixels/after-fixed-8s.png",
+      "sha256": "90774a8642b13ce5606f5191b04b8b1e34cef228483d3bf25d7fbe0c6562ac00",
+      "code_fingerprint": "9262d33ad5370693eb90a2a70a23b8a40622c509989c970546f6a1ae57253b53",
+      "simulation_seconds": 8,
+      "simulation_ticks": 480,
+      "troops": 8,
+      "natural_speed": false,
+      "physical_device": false
+    },
+    {
+      "type": "fixed_tick_actual_Cocos_WebGL",
+      "path": "images/after-fixed-10s.png",
+      "metadata": "images/after-fixed-10s.json",
+      "source": "evidence/BATTLE-FEEL-20261004/final/pixels/after-fixed-10s.png",
+      "sha256": "5793ef0bcec9d6550b7d17ea817d5aed56b0c98df77b1a41240fe8dbb8e2ee66",
+      "code_fingerprint": "9262d33ad5370693eb90a2a70a23b8a40622c509989c970546f6a1ae57253b53",
+      "simulation_seconds": 10,
+      "simulation_ticks": 600,
+      "troops": 8,
+      "natural_speed": false,
+      "physical_device": false
+    },
+    {
+      "type": "continuous_actual_Cocos_WebGL",
+      "path": "media/after-normal-35s.mp4",
+      "source": "evidence/BATTLE-FEEL-20261004/final/media/after-normal-35s.mp4",
+      "sha256": "a6d4f9167fe0ba3939d20df12f15f64f7abca84a3672aa74d1c19fe682a53170",
+      "code_fingerprint": "9262d33ad5370693eb90a2a70a23b8a40622c509989c970546f6a1ae57253b53",
+      "speed": "original 1x, no speed change",
+      "input": "automatic legal movement on authored course",
+      "audio": "none",
+      "physical_device": false,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 402,
+            "height": 874,
+            "r_frame_rate": "25/1"
+          }
+        ],
+        "format": {
+          "duration": "35.000000"
+        }
+      }
+    }
+  ]
+}

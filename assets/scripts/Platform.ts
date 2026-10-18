@@ -1,3 +1,5 @@
+import {MusicDirector} from './formal/MusicDirector';
+import {SFX_CLIPS,WeaponSoundMixer,SoundEvent,SOUND_LIMITS,LegacySoundContext} from './formal/WeaponSfx';
 import { game, Game as EngineGame, sys, resources, AudioClip, AudioSource, Node, view, screen, native } from 'cc';
 import { Tactics } from './core/tactics';
 import { WindowMetrics, UiRect } from './ui/UiLayout';
@@ -7,8 +9,8 @@ import { Book, Storage } from './core/save';
 declare const wx: any;
 /** The only platform-specific boundary. No network, identity, analytics or commerce. */
 export class Platform {
- tactics:Tactics; growth:Growth; private metricsCache:WindowMetrics|null=null; private metricsRevision=0; private windowChanged=()=>{this.metricsCache=null;this.metricsRevision++;}; readonly bgmEnabled=false; campaign:Campaign; book: Book; music: AudioSource|null=null; private effects:Record<string,AudioSource>={};private effectLast:Record<string,number>={};private active=false; clips:Record<string,AudioClip>={}; hidden=false;private musicRequested=false; private loadPromise:Promise<void>|null=null; private disposed=false; private effectTimes:number[]=[]; private audioCounters={played:0,suppressedBusy:0,suppressedRate:0,suppressedBudget:0,loadFailures:0};
- private onHide=()=>{this.hidden=true;this.active=false;this.music?.pause();this.stopEffects();this.pause();};
+ tactics:Tactics; growth:Growth; private metricsCache:WindowMetrics|null=null; private metricsRevision=0; private windowChanged=()=>{this.metricsCache=null;this.metricsRevision++;}; readonly bgmEnabled=true; campaign:Campaign; book: Book; music: AudioSource|null=null; private effects:Record<string,AudioSource>={};private mixer=new WeaponSoundMixer(this.effects);private legacySoundId=0;private effectLast:Record<string,number>={};private active=false; clips:Record<string,AudioClip>={}; hidden=false;private score=new MusicDirector();private musicFailures:string[]=[];private musicSources:Record<string,AudioSource>={}; private loadPromise:Promise<void>|null=null; private disposed=false; private effectTimes:number[]=[]; private audioCounters={played:0,suppressedBusy:0,suppressedRate:0,suppressedBudget:0,loadFailures:0};
+ private onHide=()=>{this.hidden=true;this.active=false;this.score.suspend();this.stopEffects();this.pause();};
  private visibility=()=>{if(typeof document!=='undefined'&&document.hidden)this.onHide();else this.onShow();};
  private blur=()=>this.onHide();
  private onShow=()=>{this.hidden=false;this.windowChanged(); /* Refresh safe area; explicit continue is still required. */};
@@ -48,35 +50,44 @@ export class Platform {
  async load(){
   if(this.loadPromise)return this.loadPromise;
   // Keep successful clips/players across retries; await all callbacks before allowing a retry.
-  this.loadPromise=this.loadEffects();
+  this.loadPromise=Promise.all([this.loadEffects(),this.loadMusic()]).then(()=>{});
   try{await this.loadPromise;}finally{this.loadPromise=null;}
  }
  private async loadEffects(){
-  this.music?.stop();
-  const kinds=['gather','hit','break','hurt','warn'];
-  const results=await Promise.all(kinds.map(k=>this.clips[k]?Promise.resolve(true):new Promise<boolean>(resolve=>resources.load(`audio/${k}`,AudioClip,(e,a)=>{if(!e&&a&&!this.disposed){this.clips[k]=a;resolve(true);}else{this.audioCounters.loadFailures++;resolve(false);}}))));
+  const kinds=['gather','hit','break','hurt','warn',...SFX_CLIPS];
+  const results=await Promise.all(kinds.map(k=>this.clips[k]?Promise.resolve(true):new Promise<boolean>(resolve=>resources.load(SFX_CLIPS.includes(k)?`audio/weapons/${k}`:`audio/${k}`,AudioClip,(e,a)=>{if(!e&&a&&!this.disposed){this.clips[k]=a;resolve(true);}else{this.audioCounters.loadFailures++;resolve(false);}}))));
   if(this.disposed)return;
   for(const k of kinds){if(!this.clips[k]||this.effects[k])continue;const channel=this.root.addComponent(AudioSource);channel.clip=this.clips[k];channel.volume=k==='hurt'?.24:k==='break'?.21:.16;channel.loop=false;this.effects[k]=channel;}
   if(results.some(ok=>!ok))throw Error('SFX resource load failed; retry retains successful channels');
  }
 
- syncAudio(active=true){this.active=active&&!this.hidden;this.music?.stop();if(!this.active||!this.book.data.settings.sfx)this.stopEffects();}
- /** Own every SFX player; pause stops them and requires explicit resume. */
- stopEffects(){this.effectLast={};this.effectTimes=[];for(const k of Object.keys(this.effects))if(this.effects[k].playing)this.effects[k].stop();}
- sound(k:string){
-  const channel=this.effects[k];if(!this.active||this.hidden||!this.book.data.settings.sfx||!channel)return;
-  const now=typeof performance!=='undefined'?performance.now():Date.now();
-  // Let a clip finish. Never stop/restart the same sound for each projectile hit.
-  if(channel.playing){this.audioCounters.suppressedBusy++;return;}
-  const interval=k==='hit'?130:k==='warn'?350:k==='hurt'?180:120;
-  this.effectTimes=this.effectTimes.filter(t=>now-t<1000);
-  if(now-(this.effectLast[k]??-Infinity)<interval||this.effectTimes.length>=12||now-(this.effectTimes[this.effectTimes.length-1]??-Infinity)<25){this.audioCounters.suppressedRate++;return;}
-  const playing=Object.keys(this.effects).map(k=>this.effects[k]).filter(c=>c.playing);
-  if(playing.length>=3||playing.reduce((v,c)=>v+c.volume,channel.volume)>.65){this.audioCounters.suppressedBudget++;return;}
-  this.effectLast[k]=now;this.effectTimes.push(now);channel.play();this.audioCounters.played++;
+ private async loadMusic(){
+  this.musicFailures=[];
+  await Promise.all((['menu','battle'] as const).map(k=>this.clips['score-'+k]?Promise.resolve():new Promise<void>(resolve=>{
+   resources.load('audio/shanhe/'+k,AudioClip,(err,clip)=>{if(this.disposed){resolve();return;}if(err||!clip){this.musicFailures.push(k);resolve();return;}
+    this.clips['score-'+k]=clip;const v=this.root.addComponent(AudioSource);v.clip=clip;v.loop=true;v.volume=0;this.musicSources[k]=v;this.score.attach(k,v);resolve();});
+  })));
+  this.score.configure(this.book.data.settings.music,this.book.data.settings.musicVolume??.6);
+  if(sys.isNative)this.score.unlock();
  }
- get audioState(){return {active:this.active,hidden:this.hidden,bgmEnabled:false,musicRequested:false,musicReady:false,musicTrack:null,musicPlaying:false,effectChannels:Object.keys(this.effects).length,playingEffects:Object.keys(this.effects).filter(k=>this.effects[k].playing),limits:{perKind:1,globalVoices:3,globalVolume:.65,startsPerSecond:12,minStartGapMs:25},counters:{...this.audioCounters},loading:!!this.loadPromise};}
+ setMusicScene(screen:string){this.score.setScene(screen);}
+ unlockAudio(){if(!this.hidden)this.score.unlock();}
+ updateMusic(dt:number){this.score.tick(dt);}
+
+ syncAudio(active=true){this.active=active&&!this.hidden;this.score.configure(this.book.data.settings.music,this.book.data.settings.musicVolume??.6);if(!this.active||!this.book.data.settings.sfx)this.stopEffects();}
+ /** Own every SFX player; pause stops them and requires explicit resume. */
+ stopEffects(){this.mixer.clear();this.effectLast={};this.effectTimes=[];for(const k of Object.keys(this.effects))if(this.effects[k].playing)this.effects[k].stop();}
+ consumeSoundEvents(events:SoundEvent[]){if(!this.active||this.hidden||!this.book.data.settings.sfx){this.stopEffects();return;}this.mixer.enqueue(events);}
+ pumpSound(){if(!this.active||this.hidden||!this.book.data.settings.sfx){this.stopEffects();return;}this.mixer.pump();}
+ sound(k:string,context?:LegacySoundContext){
+  if(k==='hurt'||k==='warn'){this.consumeSoundEvents([{eventId:'platform:'+ ++this.legacySoundId,runId:'platform',tick:this.legacySoundId*60,attackId:'platform:'+this.legacySoundId,projectileId:null,source:'enemy',sourceActorId:'platform',weaponId:null,arms:null,phase:k,targetKind:'none',material:'none',heavy:false}]);return;}
+  // Legacy game / reward clips share the same scheduler and hard budget.
+  if(!this.active||this.hidden||!this.book.data.settings.sfx)return;
+  this.mixer.enqueueLegacy(k,context);
+ }
+
+ get audioState(){let session:unknown=null;if(sys.isNative){try{session=JSON.parse(native.reflection.callStaticMethod('YiluNativeBridge','audioSessionState:',''));}catch{}}return {nativeAudioSession:session,musicPlayers:Object.fromEntries(Object.entries(this.musicSources).map(([k,v])=>[k,{playing:v.playing,currentTime:v.currentTime,duration:v.duration,volume:v.volume}])) ,active:this.active,hidden:this.hidden,bgmEnabled:true,musicRequested:this.book.data.settings.music,musicReady:this.score.state.ready,musicTrack:this.score.state.mode,musicPlaying:this.score.state.playing.length>0,score:this.score.state,musicFailures:[...this.musicFailures],effectChannels:Object.keys(this.effects).length,playingEffects:Object.keys(this.effects).filter(k=>this.effects[k].playing),limits:{perKind:1,globalVoices:3,globalVolume:.65,startsPerSecond:12,minStartGapMs:25},counters:{...this.audioCounters,...this.mixer.state.counters},weaponSfx:this.mixer.state,loading:!!this.loadPromise};}
 
  vibrate(){if(sys.isNative&&this.book.data.settings.vibration){native.reflection.callStaticMethod('YiluNativeBridge','impact:','light');return;}if(this.book.data.settings.vibration&&typeof wx!=='undefined'&&wx.vibrateShort)wx.vibrateShort({type:'light'});}
- destroy(){this.disposed=true;if(sys.isBrowser){window.removeEventListener('resize',this.windowChanged);document.removeEventListener('visibilitychange',this.visibility);window.removeEventListener('blur',this.blur);window.removeEventListener('focus',this.onShow);}if(typeof wx!=='undefined'){wx.offWindowResize?.(this.windowChanged);wx.offHide?.(this.onHide);wx.offShow?.(this.onShow);}game.off(EngineGame.EVENT_HIDE,this.onHide);game.off(EngineGame.EVENT_SHOW,this.onShow);this.active=false;this.music?.stop();this.stopEffects();}
+ destroy(){this.disposed=true;if(sys.isBrowser){window.removeEventListener('resize',this.windowChanged);document.removeEventListener('visibilitychange',this.visibility);window.removeEventListener('blur',this.blur);window.removeEventListener('focus',this.onShow);}if(typeof wx!=='undefined'){wx.offWindowResize?.(this.windowChanged);wx.offHide?.(this.onHide);wx.offShow?.(this.onShow);}game.off(EngineGame.EVENT_HIDE,this.onHide);game.off(EngineGame.EVENT_SHOW,this.onShow);this.active=false;this.score.destroy();this.stopEffects();}
 }

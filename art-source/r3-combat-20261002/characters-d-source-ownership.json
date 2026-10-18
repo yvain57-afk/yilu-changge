@@ -1,0 +1,886 @@
+{
+  "frames": [
+    {
+      "key": "r3_ally_caoren_run0",
+      "sourceGridCell": 0,
+      "sourceRect": [
+        -42,
+        -58,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        0,
+        0,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_caoren_pass0",
+      "sourceGridCell": 1,
+      "sourceRect": [
+        214,
+        -58,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        340,
+        0,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_caoren_run1",
+      "sourceGridCell": 2,
+      "sourceRect": [
+        470,
+        -58,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        680,
+        0,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_caoren_pass1",
+      "sourceGridCell": 3,
+      "sourceRect": [
+        726,
+        -58,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1020,
+        0,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_caoren_wind",
+      "sourceGridCell": 4,
+      "sourceRect": [
+        -42,
+        198,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        0,
+        372,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_caoren_rel",
+      "sourceGridCell": 5,
+      "sourceRect": [
+        214,
+        198,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        340,
+        372,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_caoren_rec",
+      "sourceGridCell": 6,
+      "sourceRect": [
+        470,
+        198,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        680,
+        372,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_caoren_ready",
+      "sourceGridCell": 7,
+      "sourceRect": [
+        726,
+        198,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1020,
+        372,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_zhonghui_run0",
+      "sourceGridCell": 8,
+      "sourceRect": [
+        -42,
+        454,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        0,
+        744,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_zhonghui_pass0",
+      "sourceGridCell": 9,
+      "sourceRect": [
+        214,
+        454,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        340,
+        744,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_zhonghui_run1",
+      "sourceGridCell": 10,
+      "sourceRect": [
+        470,
+        454,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        680,
+        744,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_zhonghui_pass1",
+      "sourceGridCell": 11,
+      "sourceRect": [
+        726,
+        454,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1020,
+        744,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_zhonghui_wind",
+      "sourceGridCell": 12,
+      "sourceRect": [
+        -42,
+        710,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        0,
+        1116,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_zhonghui_rel",
+      "sourceGridCell": 13,
+      "sourceRect": [
+        214,
+        710,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        340,
+        1116,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_zhonghui_rec",
+      "sourceGridCell": 14,
+      "sourceRect": [
+        470,
+        710,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        680,
+        1116,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_zhonghui_ready",
+      "sourceGridCell": 15,
+      "sourceRect": [
+        726,
+        710,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1020,
+        1116,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_lukang_run0",
+      "sourceGridCell": 16,
+      "sourceRect": [
+        -42,
+        966,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        0,
+        1488,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_lukang_pass0",
+      "sourceGridCell": 17,
+      "sourceRect": [
+        214,
+        966,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        340,
+        1488,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_lukang_run1",
+      "sourceGridCell": 18,
+      "sourceRect": [
+        470,
+        966,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        680,
+        1488,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_lukang_pass1",
+      "sourceGridCell": 19,
+      "sourceRect": [
+        726,
+        966,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1020,
+        1488,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_lukang_wind",
+      "sourceGridCell": 20,
+      "sourceRect": [
+        -42,
+        1222,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        0,
+        1860,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_lukang_rel",
+      "sourceGridCell": 21,
+      "sourceRect": [
+        214,
+        1222,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        340,
+        1860,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_lukang_rec",
+      "sourceGridCell": 22,
+      "sourceRect": [
+        470,
+        1222,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        680,
+        1860,
+        340,
+        372
+      ]
+    },
+    {
+      "key": "r3_ally_lukang_ready",
+      "sourceGridCell": 23,
+      "sourceRect": [
+        726,
+        1222,
+        340,
+        372
+      ],
+      "padding": [
+        42,
+        58
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1020,
+        1860,
+        340,
+        372
+      ]
+    }
+  ],
+  "sourceComponents": [
+    {
+      "pixels": 18058,
+      "owner": 1,
+      "bounds": [
+        280,
+        11,
+        498,
+        220
+      ]
+    },
+    {
+      "pixels": 18967,
+      "owner": 2,
+      "bounds": [
+        534,
+        14,
+        754,
+        237
+      ]
+    },
+    {
+      "pixels": 17949,
+      "owner": 3,
+      "bounds": [
+        802,
+        14,
+        1001,
+        231
+      ]
+    },
+    {
+      "pixels": 18627,
+      "owner": 0,
+      "bounds": [
+        20,
+        15,
+        241,
+        236
+      ]
+    },
+    {
+      "pixels": 21111,
+      "owner": 7,
+      "bounds": [
+        817,
+        242,
+        1006,
+        475
+      ]
+    },
+    {
+      "pixels": 22307,
+      "owner": 5,
+      "bounds": [
+        256,
+        246,
+        552,
+        470
+      ]
+    },
+    {
+      "pixels": 21132,
+      "owner": 6,
+      "bounds": [
+        544,
+        246,
+        788,
+        473
+      ]
+    },
+    {
+      "pixels": 24430,
+      "owner": 4,
+      "bounds": [
+        21,
+        251,
+        231,
+        473
+      ]
+    },
+    {
+      "pixels": 22093,
+      "owner": 8,
+      "bounds": [
+        23,
+        485,
+        215,
+        724
+      ]
+    },
+    {
+      "pixels": 19964,
+      "owner": 9,
+      "bounds": [
+        282,
+        485,
+        465,
+        719
+      ]
+    },
+    {
+      "pixels": 21160,
+      "owner": 10,
+      "bounds": [
+        528,
+        485,
+        717,
+        728
+      ]
+    },
+    {
+      "pixels": 20065,
+      "owner": 11,
+      "bounds": [
+        798,
+        485,
+        970,
+        719
+      ]
+    },
+    {
+      "pixels": 6,
+      "owner": 10,
+      "bounds": [
+        618,
+        528,
+        622,
+        531
+      ]
+    },
+    {
+      "pixels": 3,
+      "owner": 8,
+      "bounds": [
+        94,
+        536,
+        97,
+        537
+      ]
+    },
+    {
+      "pixels": 3,
+      "owner": 10,
+      "bounds": [
+        608,
+        536,
+        611,
+        537
+      ]
+    },
+    {
+      "pixels": 24089,
+      "owner": 12,
+      "bounds": [
+        20,
+        721,
+        219,
+        978
+      ]
+    },
+    {
+      "pixels": 22067,
+      "owner": 14,
+      "bounds": [
+        537,
+        735,
+        731,
+        978
+      ]
+    },
+    {
+      "pixels": 20851,
+      "owner": 15,
+      "bounds": [
+        810,
+        735,
+        978,
+        977
+      ]
+    },
+    {
+      "pixels": 24704,
+      "owner": 13,
+      "bounds": [
+        275,
+        739,
+        527,
+        977
+      ]
+    },
+    {
+      "pixels": 3,
+      "owner": 14,
+      "bounds": [
+        577,
+        807,
+        579,
+        809
+      ]
+    },
+    {
+      "pixels": 26642,
+      "owner": 19,
+      "bounds": [
+        778,
+        968,
+        1013,
+        1254
+      ]
+    },
+    {
+      "pixels": 25460,
+      "owner": 17,
+      "bounds": [
+        264,
+        970,
+        523,
+        1242
+      ]
+    },
+    {
+      "pixels": 25665,
+      "owner": 18,
+      "bounds": [
+        522,
+        971,
+        767,
+        1255
+      ]
+    },
+    {
+      "pixels": 24985,
+      "owner": 16,
+      "bounds": [
+        12,
+        978,
+        255,
+        1240
+      ]
+    },
+    {
+      "pixels": 30480,
+      "owner": 20,
+      "bounds": [
+        11,
+        1226,
+        248,
+        1514
+      ]
+    },
+    {
+      "pixels": 26254,
+      "owner": 21,
+      "bounds": [
+        255,
+        1232,
+        533,
+        1517
+      ]
+    },
+    {
+      "pixels": 27052,
+      "owner": 22,
+      "bounds": [
+        531,
+        1234,
+        783,
+        1520
+      ]
+    },
+    {
+      "pixels": 27330,
+      "owner": 23,
+      "bounds": [
+        794,
+        1234,
+        1012,
+        1525
+      ]
+    }
+  ]
+}

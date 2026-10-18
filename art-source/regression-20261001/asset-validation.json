@@ -1,0 +1,7 @@
+{
+  "check": "all frame rects within actual PNG; alpha visual read performed on QA sheets",
+  "sheets": 2,
+  "frames": 27,
+  "out_of_bounds": [],
+  "runtimeVerified": false
+}

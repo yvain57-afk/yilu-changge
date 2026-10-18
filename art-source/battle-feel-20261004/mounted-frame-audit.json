@@ -1,0 +1,800 @@
+{
+  "frames": [
+    {
+      "key": "feel_ride_jingfan_run0",
+      "sourceSha": "da077951dea7298ff6447940a9dc457fc201dc854d7541d3e4dab0abdfffd526",
+      "sourceCell": 0,
+      "alphaBounds": [
+        116,
+        17,
+        366,
+        443
+      ],
+      "largestAlphaComponent": 51635,
+      "removedComponents": [
+        1,
+        1,
+        1
+      ],
+      "rightFist": [
+        0.745536,
+        0.285714
+      ],
+      "leftHandOccludedByCape": [
+        0.444196,
+        0.290179
+      ]
+    },
+    {
+      "key": "feel_ride_jingfan_run1",
+      "sourceSha": "da077951dea7298ff6447940a9dc457fc201dc854d7541d3e4dab0abdfffd526",
+      "sourceCell": 1,
+      "alphaBounds": [
+        83,
+        18,
+        347,
+        403
+      ],
+      "largestAlphaComponent": 50311,
+      "removedComponents": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "rightFist": [
+        0.709821,
+        0.290179
+      ],
+      "leftHandOccludedByCape": [
+        0.383929,
+        0.301339
+      ]
+    },
+    {
+      "key": "feel_ride_jingfan_run2",
+      "sourceSha": "da077951dea7298ff6447940a9dc457fc201dc854d7541d3e4dab0abdfffd526",
+      "sourceCell": 2,
+      "alphaBounds": [
+        76,
+        17,
+        340,
+        427
+      ],
+      "largestAlphaComponent": 52820,
+      "removedComponents": [
+        1,
+        1
+      ],
+      "rightFist": [
+        0.709821,
+        0.294643
+      ],
+      "leftHandOccludedByCape": [
+        0.366071,
+        0.290179
+      ]
+    },
+    {
+      "key": "feel_ride_jingfan_run3",
+      "sourceSha": "da077951dea7298ff6447940a9dc457fc201dc854d7541d3e4dab0abdfffd526",
+      "sourceCell": 3,
+      "alphaBounds": [
+        75,
+        17,
+        330,
+        436
+      ],
+      "largestAlphaComponent": 51885,
+      "removedComponents": [
+        1
+      ],
+      "rightFist": [
+        0.674107,
+        0.287946
+      ],
+      "leftHandOccludedByCape": [
+        0.366071,
+        0.292411
+      ]
+    },
+    {
+      "key": "feel_ride_jingfan_wind",
+      "sourceSha": "da077951dea7298ff6447940a9dc457fc201dc854d7541d3e4dab0abdfffd526",
+      "sourceCell": 4,
+      "alphaBounds": [
+        108,
+        13,
+        375,
+        428
+      ],
+      "largestAlphaComponent": 54249,
+      "removedComponents": [
+        7,
+        2,
+        1,
+        1,
+        1
+      ],
+      "rightFist": [
+        0.747768,
+        0.140625
+      ],
+      "leftHandOccludedByCape": [
+        0.435268,
+        0.25
+      ]
+    },
+    {
+      "key": "feel_ride_jingfan_rel",
+      "sourceSha": "da077951dea7298ff6447940a9dc457fc201dc854d7541d3e4dab0abdfffd526",
+      "sourceCell": 5,
+      "alphaBounds": [
+        84,
+        21,
+        371,
+        409
+      ],
+      "largestAlphaComponent": 54773,
+      "removedComponents": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "rightFist": [
+        0.801339,
+        0.102679
+      ],
+      "leftHandOccludedByCape": [
+        0.381696,
+        0.247768
+      ]
+    },
+    {
+      "key": "feel_ride_jingfan_rec",
+      "sourceSha": "da077951dea7298ff6447940a9dc457fc201dc854d7541d3e4dab0abdfffd526",
+      "sourceCell": 6,
+      "alphaBounds": [
+        74,
+        17,
+        343,
+        428
+      ],
+      "largestAlphaComponent": 53025,
+      "removedComponents": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "rightFist": [
+        0.709821,
+        0.245536
+      ],
+      "leftHandOccludedByCape": [
+        0.366071,
+        0.279018
+      ]
+    },
+    {
+      "key": "feel_ride_jingfan_hurt",
+      "sourceSha": "da077951dea7298ff6447940a9dc457fc201dc854d7541d3e4dab0abdfffd526",
+      "sourceCell": 7,
+      "alphaBounds": [
+        75,
+        17,
+        337,
+        421
+      ],
+      "largestAlphaComponent": 50689,
+      "removedComponents": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "rightFist": [
+        0.654018,
+        0.189732
+      ],
+      "leftHandOccludedByCape": [
+        0.366071,
+        0.270089
+      ]
+    },
+    {
+      "key": "feel_ride_dilu_run0",
+      "sourceSha": "d73e89525d68afa616ff768af6a2665817dc9cb2ffa60919b763dd52292795b8",
+      "sourceCell": 0,
+      "alphaBounds": [
+        114,
+        16,
+        370,
+        443
+      ],
+      "largestAlphaComponent": 54026,
+      "removedComponents": [
+        6,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "rightFist": [
+        0.745536,
+        0.285714
+      ],
+      "leftHandOccludedByCape": [
+        0.444196,
+        0.290179
+      ]
+    },
+    {
+      "key": "feel_ride_dilu_run1",
+      "sourceSha": "d73e89525d68afa616ff768af6a2665817dc9cb2ffa60919b763dd52292795b8",
+      "sourceCell": 1,
+      "alphaBounds": [
+        83,
+        18,
+        350,
+        403
+      ],
+      "largestAlphaComponent": 52603,
+      "removedComponents": [
+        2
+      ],
+      "rightFist": [
+        0.709821,
+        0.290179
+      ],
+      "leftHandOccludedByCape": [
+        0.383929,
+        0.301339
+      ]
+    },
+    {
+      "key": "feel_ride_dilu_run2",
+      "sourceSha": "d73e89525d68afa616ff768af6a2665817dc9cb2ffa60919b763dd52292795b8",
+      "sourceCell": 2,
+      "alphaBounds": [
+        75,
+        16,
+        342,
+        427
+      ],
+      "largestAlphaComponent": 55352,
+      "removedComponents": [
+        1,
+        1,
+        1
+      ],
+      "rightFist": [
+        0.709821,
+        0.294643
+      ],
+      "leftHandOccludedByCape": [
+        0.366071,
+        0.290179
+      ]
+    },
+    {
+      "key": "feel_ride_dilu_run3",
+      "sourceSha": "d73e89525d68afa616ff768af6a2665817dc9cb2ffa60919b763dd52292795b8",
+      "sourceCell": 3,
+      "alphaBounds": [
+        73,
+        16,
+        332,
+        437
+      ],
+      "largestAlphaComponent": 54323,
+      "removedComponents": [
+        9,
+        1
+      ],
+      "rightFist": [
+        0.674107,
+        0.287946
+      ],
+      "leftHandOccludedByCape": [
+        0.366071,
+        0.292411
+      ]
+    },
+    {
+      "key": "feel_ride_dilu_wind",
+      "sourceSha": "d73e89525d68afa616ff768af6a2665817dc9cb2ffa60919b763dd52292795b8",
+      "sourceCell": 4,
+      "alphaBounds": [
+        107,
+        13,
+        375,
+        429
+      ],
+      "largestAlphaComponent": 57003,
+      "removedComponents": [
+        5,
+        2,
+        2
+      ],
+      "rightFist": [
+        0.747768,
+        0.140625
+      ],
+      "leftHandOccludedByCape": [
+        0.435268,
+        0.25
+      ]
+    },
+    {
+      "key": "feel_ride_dilu_rel",
+      "sourceSha": "d73e89525d68afa616ff768af6a2665817dc9cb2ffa60919b763dd52292795b8",
+      "sourceCell": 5,
+      "alphaBounds": [
+        83,
+        20,
+        374,
+        409
+      ],
+      "largestAlphaComponent": 57205,
+      "removedComponents": [
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "rightFist": [
+        0.801339,
+        0.102679
+      ],
+      "leftHandOccludedByCape": [
+        0.381696,
+        0.247768
+      ]
+    },
+    {
+      "key": "feel_ride_dilu_rec",
+      "sourceSha": "d73e89525d68afa616ff768af6a2665817dc9cb2ffa60919b763dd52292795b8",
+      "sourceCell": 6,
+      "alphaBounds": [
+        74,
+        16,
+        344,
+        429
+      ],
+      "largestAlphaComponent": 55696,
+      "removedComponents": [
+        5,
+        1,
+        1,
+        1,
+        1
+      ],
+      "rightFist": [
+        0.709821,
+        0.245536
+      ],
+      "leftHandOccludedByCape": [
+        0.366071,
+        0.279018
+      ]
+    },
+    {
+      "key": "feel_ride_dilu_hurt",
+      "sourceSha": "d73e89525d68afa616ff768af6a2665817dc9cb2ffa60919b763dd52292795b8",
+      "sourceCell": 7,
+      "alphaBounds": [
+        73,
+        17,
+        338,
+        422
+      ],
+      "largestAlphaComponent": 53076,
+      "removedComponents": [],
+      "rightFist": [
+        0.654018,
+        0.189732
+      ],
+      "leftHandOccludedByCape": [
+        0.366071,
+        0.270089
+      ]
+    },
+    {
+      "key": "feel_ride_jueying_run0",
+      "sourceSha": "ab9fa0004f4ad1f34a212e4b86bc7f3cfe0ed9e2631299052e6b834327683589",
+      "sourceCell": 0,
+      "alphaBounds": [
+        115,
+        16,
+        370,
+        445
+      ],
+      "largestAlphaComponent": 54242,
+      "removedComponents": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "rightFist": [
+        0.745536,
+        0.285714
+      ],
+      "leftHandOccludedByCape": [
+        0.444196,
+        0.290179
+      ]
+    },
+    {
+      "key": "feel_ride_jueying_run1",
+      "sourceSha": "ab9fa0004f4ad1f34a212e4b86bc7f3cfe0ed9e2631299052e6b834327683589",
+      "sourceCell": 1,
+      "alphaBounds": [
+        83,
+        18,
+        350,
+        405
+      ],
+      "largestAlphaComponent": 52860,
+      "removedComponents": [],
+      "rightFist": [
+        0.709821,
+        0.290179
+      ],
+      "leftHandOccludedByCape": [
+        0.383929,
+        0.301339
+      ]
+    },
+    {
+      "key": "feel_ride_jueying_run2",
+      "sourceSha": "ab9fa0004f4ad1f34a212e4b86bc7f3cfe0ed9e2631299052e6b834327683589",
+      "sourceCell": 2,
+      "alphaBounds": [
+        75,
+        16,
+        341,
+        428
+      ],
+      "largestAlphaComponent": 55553,
+      "removedComponents": [
+        1,
+        1
+      ],
+      "rightFist": [
+        0.709821,
+        0.294643
+      ],
+      "leftHandOccludedByCape": [
+        0.366071,
+        0.290179
+      ]
+    },
+    {
+      "key": "feel_ride_jueying_run3",
+      "sourceSha": "ab9fa0004f4ad1f34a212e4b86bc7f3cfe0ed9e2631299052e6b834327683589",
+      "sourceCell": 3,
+      "alphaBounds": [
+        74,
+        17,
+        333,
+        438
+      ],
+      "largestAlphaComponent": 54268,
+      "removedComponents": [
+        1
+      ],
+      "rightFist": [
+        0.674107,
+        0.287946
+      ],
+      "leftHandOccludedByCape": [
+        0.366071,
+        0.292411
+      ]
+    },
+    {
+      "key": "feel_ride_jueying_wind",
+      "sourceSha": "ab9fa0004f4ad1f34a212e4b86bc7f3cfe0ed9e2631299052e6b834327683589",
+      "sourceCell": 4,
+      "alphaBounds": [
+        107,
+        13,
+        375,
+        430
+      ],
+      "largestAlphaComponent": 56950,
+      "removedComponents": [
+        1,
+        1
+      ],
+      "rightFist": [
+        0.747768,
+        0.140625
+      ],
+      "leftHandOccludedByCape": [
+        0.435268,
+        0.25
+      ]
+    },
+    {
+      "key": "feel_ride_jueying_rel",
+      "sourceSha": "ab9fa0004f4ad1f34a212e4b86bc7f3cfe0ed9e2631299052e6b834327683589",
+      "sourceCell": 5,
+      "alphaBounds": [
+        83,
+        20,
+        374,
+        411
+      ],
+      "largestAlphaComponent": 57586,
+      "removedComponents": [
+        1,
+        1
+      ],
+      "rightFist": [
+        0.801339,
+        0.102679
+      ],
+      "leftHandOccludedByCape": [
+        0.381696,
+        0.247768
+      ]
+    },
+    {
+      "key": "feel_ride_jueying_rec",
+      "sourceSha": "ab9fa0004f4ad1f34a212e4b86bc7f3cfe0ed9e2631299052e6b834327683589",
+      "sourceCell": 6,
+      "alphaBounds": [
+        73,
+        16,
+        343,
+        430
+      ],
+      "largestAlphaComponent": 55769,
+      "removedComponents": [
+        1
+      ],
+      "rightFist": [
+        0.709821,
+        0.245536
+      ],
+      "leftHandOccludedByCape": [
+        0.366071,
+        0.279018
+      ]
+    },
+    {
+      "key": "feel_ride_jueying_hurt",
+      "sourceSha": "ab9fa0004f4ad1f34a212e4b86bc7f3cfe0ed9e2631299052e6b834327683589",
+      "sourceCell": 7,
+      "alphaBounds": [
+        74,
+        17,
+        339,
+        424
+      ],
+      "largestAlphaComponent": 52816,
+      "removedComponents": [
+        1
+      ],
+      "rightFist": [
+        0.654018,
+        0.189732
+      ],
+      "leftHandOccludedByCape": [
+        0.366071,
+        0.270089
+      ]
+    },
+    {
+      "key": "feel_ride_chitu_run0",
+      "sourceSha": "36a4843825b5f117ccf1466268683df9f0caf7c0e2174cf5939d5d0ed89118ec",
+      "sourceCell": 0,
+      "alphaBounds": [
+        114,
+        16,
+        370,
+        442
+      ],
+      "largestAlphaComponent": 53983,
+      "removedComponents": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "rightFist": [
+        0.745536,
+        0.285714
+      ],
+      "leftHandOccludedByCape": [
+        0.444196,
+        0.290179
+      ]
+    },
+    {
+      "key": "feel_ride_chitu_run1",
+      "sourceSha": "36a4843825b5f117ccf1466268683df9f0caf7c0e2174cf5939d5d0ed89118ec",
+      "sourceCell": 1,
+      "alphaBounds": [
+        83,
+        18,
+        350,
+        402
+      ],
+      "largestAlphaComponent": 52701,
+      "removedComponents": [
+        1
+      ],
+      "rightFist": [
+        0.709821,
+        0.290179
+      ],
+      "leftHandOccludedByCape": [
+        0.383929,
+        0.301339
+      ]
+    },
+    {
+      "key": "feel_ride_chitu_run2",
+      "sourceSha": "36a4843825b5f117ccf1466268683df9f0caf7c0e2174cf5939d5d0ed89118ec",
+      "sourceCell": 2,
+      "alphaBounds": [
+        75,
+        16,
+        342,
+        425
+      ],
+      "largestAlphaComponent": 55458,
+      "removedComponents": [
+        1
+      ],
+      "rightFist": [
+        0.709821,
+        0.294643
+      ],
+      "leftHandOccludedByCape": [
+        0.366071,
+        0.290179
+      ]
+    },
+    {
+      "key": "feel_ride_chitu_run3",
+      "sourceSha": "36a4843825b5f117ccf1466268683df9f0caf7c0e2174cf5939d5d0ed89118ec",
+      "sourceCell": 3,
+      "alphaBounds": [
+        74,
+        16,
+        332,
+        436
+      ],
+      "largestAlphaComponent": 54186,
+      "removedComponents": [
+        1
+      ],
+      "rightFist": [
+        0.674107,
+        0.287946
+      ],
+      "leftHandOccludedByCape": [
+        0.366071,
+        0.292411
+      ]
+    },
+    {
+      "key": "feel_ride_chitu_wind",
+      "sourceSha": "36a4843825b5f117ccf1466268683df9f0caf7c0e2174cf5939d5d0ed89118ec",
+      "sourceCell": 4,
+      "alphaBounds": [
+        107,
+        13,
+        375,
+        428
+      ],
+      "largestAlphaComponent": 57091,
+      "removedComponents": [
+        1
+      ],
+      "rightFist": [
+        0.747768,
+        0.140625
+      ],
+      "leftHandOccludedByCape": [
+        0.435268,
+        0.25
+      ]
+    },
+    {
+      "key": "feel_ride_chitu_rel",
+      "sourceSha": "36a4843825b5f117ccf1466268683df9f0caf7c0e2174cf5939d5d0ed89118ec",
+      "sourceCell": 5,
+      "alphaBounds": [
+        83,
+        20,
+        373,
+        409
+      ],
+      "largestAlphaComponent": 57250,
+      "removedComponents": [
+        4,
+        1
+      ],
+      "rightFist": [
+        0.801339,
+        0.102679
+      ],
+      "leftHandOccludedByCape": [
+        0.381696,
+        0.247768
+      ]
+    },
+    {
+      "key": "feel_ride_chitu_rec",
+      "sourceSha": "36a4843825b5f117ccf1466268683df9f0caf7c0e2174cf5939d5d0ed89118ec",
+      "sourceCell": 6,
+      "alphaBounds": [
+        73,
+        16,
+        344,
+        428
+      ],
+      "largestAlphaComponent": 56025,
+      "removedComponents": [
+        1,
+        1
+      ],
+      "rightFist": [
+        0.709821,
+        0.245536
+      ],
+      "leftHandOccludedByCape": [
+        0.366071,
+        0.279018
+      ]
+    },
+    {
+      "key": "feel_ride_chitu_hurt",
+      "sourceSha": "36a4843825b5f117ccf1466268683df9f0caf7c0e2174cf5939d5d0ed89118ec",
+      "sourceCell": 7,
+      "alphaBounds": [
+        73,
+        17,
+        338,
+        421
+      ],
+      "largestAlphaComponent": 52956,
+      "removedComponents": [],
+      "rightFist": [
+        0.654018,
+        0.189732
+      ],
+      "leftHandOccludedByCape": [
+        0.366071,
+        0.270089
+      ]
+    }
+  ],
+  "runtime": "pending",
+  "bodyHeight": 424,
+  "camera": "rear toward world forward",
+  "sourceMethod": "built-in imagegen, then connected-alpha component slicing; no generated pose deformation"
+}

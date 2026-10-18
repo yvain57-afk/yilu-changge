@@ -1,0 +1,229 @@
+{
+  "task": "YILU-REGRESSION-FIRST-UI-FULL-20261001",
+  "state": "planned_not_executed",
+  "source": "BUG_ANALYSIS.md",
+  "bugs": [
+    {
+      "id": "B00",
+      "priority": "precondition",
+      "title": "核对源代码、打包、实装与运行版本",
+      "screenshots": [],
+      "acceptance_scenarios": [
+        "device-version",
+        "runtime-build"
+      ],
+      "evidence_strength": "historical_receipt_only",
+      "status": "not_started",
+      "root_cause_confirmed_on_user_build": false,
+      "fixed_build": null,
+      "after_evidence": []
+    },
+    {
+      "id": "B01",
+      "priority": "P0",
+      "title": "多个HUD图标间歇消失",
+      "screenshots": [
+        "S02",
+        "S05",
+        "S06"
+      ],
+      "acceptance_scenarios": [
+        "R02",
+        "R05"
+      ],
+      "evidence_strength": "pixels_observed_root_pending",
+      "status": "not_started",
+      "root_cause_confirmed_on_user_build": false,
+      "fixed_build": null,
+      "after_evidence": []
+    },
+    {
+      "id": "B02",
+      "priority": "P0",
+      "title": "重复主将/过期身体残留",
+      "screenshots": [
+        "S05",
+        "S06"
+      ],
+      "acceptance_scenarios": [
+        "R02",
+        "R04",
+        "R05"
+      ],
+      "evidence_strength": "pixels_observed_root_pending",
+      "status": "not_started",
+      "root_cause_confirmed_on_user_build": false,
+      "fixed_build": null,
+      "after_evidence": []
+    },
+    {
+      "id": "B03",
+      "priority": "P0",
+      "title": "渲染异常后可能保留半帧并继续推进",
+      "screenshots": [
+        "S05",
+        "S06"
+      ],
+      "acceptance_scenarios": [
+        "R04",
+        "R05"
+      ],
+      "evidence_strength": "source_risk_confirmed_user_trigger_pending",
+      "status": "not_started",
+      "root_cause_confirmed_on_user_build": false,
+      "fixed_build": null,
+      "after_evidence": []
+    },
+    {
+      "id": "B04",
+      "priority": "P1",
+      "title": "漂浮完整兵器/手持与拾取重复",
+      "screenshots": [
+        "S02",
+        "S04"
+      ],
+      "acceptance_scenarios": [
+        "R02",
+        "R03",
+        "R05"
+      ],
+      "evidence_strength": "pixels_ambiguous_role_and_lifetime_need_trace",
+      "status": "not_started",
+      "root_cause_confirmed_on_user_build": false,
+      "fixed_build": null,
+      "after_evidence": []
+    },
+    {
+      "id": "B05",
+      "priority": "P1",
+      "title": "连弩弹体视觉与来源辨识不足",
+      "screenshots": [
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "acceptance_scenarios": [
+        "R02",
+        "R03",
+        "R07"
+      ],
+      "evidence_strength": "source_family_confirmed_per_projectile_source_pending",
+      "status": "not_started",
+      "root_cause_confirmed_on_user_build": false,
+      "fixed_build": null,
+      "after_evidence": []
+    },
+    {
+      "id": "B06",
+      "priority": "P1",
+      "title": "Boss状态标签缺口与HUD切换",
+      "screenshots": [
+        "S06"
+      ],
+      "acceptance_scenarios": [
+        "R02",
+        "R06"
+      ],
+      "evidence_strength": "reposition_mapping_source_confirmed_transition_time_pending",
+      "status": "not_started",
+      "root_cause_confirmed_on_user_build": false,
+      "fixed_build": null,
+      "after_evidence": []
+    },
+    {
+      "id": "B07",
+      "priority": "P1",
+      "title": "整备预览区域与控件姓名争用",
+      "screenshots": [
+        "S01"
+      ],
+      "acceptance_scenarios": [
+        "R01",
+        "R03"
+      ],
+      "evidence_strength": "layout_observed",
+      "status": "not_started",
+      "root_cause_confirmed_on_user_build": false,
+      "fixed_build": null,
+      "after_evidence": []
+    },
+    {
+      "id": "B08",
+      "priority": "P1",
+      "title": "门箱木栅与信息遮挡/归属",
+      "screenshots": [
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "acceptance_scenarios": [
+        "R02",
+        "R03"
+      ],
+      "evidence_strength": "visual_overlap_observed_collision_not_diagnosed",
+      "status": "not_started",
+      "root_cause_confirmed_on_user_build": false,
+      "fixed_build": null,
+      "after_evidence": []
+    },
+    {
+      "id": "B09",
+      "priority": "P2_semantics",
+      "title": "永久Lv与局内阶位需要明确说明",
+      "screenshots": [
+        "S01"
+      ],
+      "acceptance_scenarios": [
+        "R01",
+        "R07"
+      ],
+      "evidence_strength": "not_numeric_bug",
+      "status": "not_started",
+      "root_cause_confirmed_on_user_build": false,
+      "fixed_build": null,
+      "after_evidence": []
+    },
+    {
+      "id": "B10",
+      "priority": "P1_visual_correctness",
+      "title": "新坐骑16兵器持械组合缺口",
+      "screenshots": [],
+      "acceptance_scenarios": [
+        "R03"
+      ],
+      "evidence_strength": "historical_known_gap_requires_revalidation",
+      "status": "not_started",
+      "root_cause_confirmed_on_user_build": false,
+      "fixed_build": null,
+      "after_evidence": []
+    },
+    {
+      "id": "B11",
+      "priority": "P2_presentation",
+      "title": "步态与阶位视觉不齐",
+      "screenshots": [],
+      "acceptance_scenarios": [
+        "R03"
+      ],
+      "evidence_strength": "historical_known_gap_requires_revalidation",
+      "status": "not_started",
+      "root_cause_confirmed_on_user_build": false,
+      "fixed_build": null,
+      "after_evidence": []
+    },
+    {
+      "id": "B12",
+      "priority": "P1_quality",
+      "title": "性能问题缺少干扰隔离及真机数据",
+      "screenshots": [],
+      "acceptance_scenarios": [
+        "performance_compare"
+      ],
+      "evidence_strength": "historical_failure_not_current_measurement",
+      "status": "not_started",
+      "root_cause_confirmed_on_user_build": false,
+      "fixed_build": null,
+      "after_evidence": []
+    }
+  ]
+}

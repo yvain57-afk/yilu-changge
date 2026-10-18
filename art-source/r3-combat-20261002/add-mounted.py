@@ -1,0 +1,8 @@
+from pathlib import Path
+import json
+P=Path(__file__).resolve().parent
+# Manually reviewed fist centres, relative to untrimmed cells. No alpha-bound normalization.
+pts={
+'chitu':[(185,80,330,73),(190,80,322,74),(135,106,365,73),(218,95,332,95),(149,104,305,107),(147,50,326,74),(108,104,360,82),(152,98,300,98)],
+'dilu':[None,(206,72,328,67),(118,118,317,72),(205,84,290,105),(172,90,326,74),(195,64,297,62),(133,103,337,82),(197,88,288,100)]}
+(P/'mounted-hand-review.json').write_text(json.dumps(pts,indent=2)+'\n')

@@ -1,0 +1,5 @@
+import {open,E} from './browser.mjs';import fs from 'node:fs';import assert from 'node:assert/strict';
+const t=await open('people'),rows=[],seen=new Set();try{await t.goto('complete');await t.tap('collection');
+ for(let page=0;page<30;page++){let s=await t.snap(),cards=s.buttons.filter(x=>x.id.startsWith('person-'));if(cards.every(c=>seen.has(c.id)))break;for(const card of cards){if(seen.has(card.id))continue;seen.add(card.id);await t.tap(card.id);s=await t.capture('person42-'+card.id.slice(7));assert.equal(s.screen,'person');assert.deepEqual(s.missingArt,[]);assert.deepEqual(s.renderErrors,[]);rows.push({id:card.id.slice(7),build:s.build,text:s.ui.texts.map(x=>x.text),file:'pixels/person42-'+card.id.slice(7)+'.png'});await t.tap('back');}await t.tap('next-page');}
+ assert.equal(rows.length,42);assert.deepEqual(t.errors,[]);
+}finally{fs.writeFileSync(E+'/people42-runtime.json',JSON.stringify({rows,pageErrors:t.errors,scope:'All 42 actual detail pages, completed campaign memory save, full body source mapping; not physical device'},null,2));await t.close();}

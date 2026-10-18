@@ -1,0 +1,13 @@
+import fs from 'node:fs';import {createHash} from 'node:crypto';
+import {CHAPTERS,WEAPON_DATA,PEOPLE,TREASURES,MILESTONES,ACTOR_WEAPONS} from '../../assets/scripts/formal/data';
+import {MANIFEST} from '../../assets/scripts/formal/manifest';import {WEAPON_SFX} from '../../assets/scripts/formal/WeaponSfx';
+const design=JSON.parse(fs.readFileSync('docs/YILU-CAMPAIGN20-20260930/intake/campaign20.design.json','utf8'));
+const exists=(key:string)=>{const f=MANIFEST.frames[key];return !!f&&fs.existsSync('assets/resources/'+MANIFEST.sheets[f.s]+'.png');};
+const characters=design.new_people??design.new_characters;
+const ids=CHAPTERS.slice(10).flatMap(c=>[...c.capture,...c.visit,...c.allies]);
+const people=ids.map(id=>({id,name:PEOPLE[id],chapter:CHAPTERS.findIndex(c=>[...c.capture,...c.visit,...c.allies].includes(id))+1,actorWeapon:ACTOR_WEAPONS[id],audioMapped:!!WEAPON_SFX[ACTOR_WEAPONS[id]],frames:Object.fromEntries(['run','wind','rel','rec'].map(p=>[p,exists('c20_char_'+id+'_'+p)]))}));
+const weapons=Object.keys(WEAPON_DATA).slice(10).map(id=>({id,frames:Object.fromEntries(['run','wind','rel','rec'].map(p=>[p,exists('c20_hero_'+id+'_'+p)])),icon:exists('c20_icon_'+id),audioMapped:!!WEAPON_SFX[id]}));
+const treasures=Object.keys(TREASURES).slice(8).map(id=>({id,slot:TREASURES[id].slot,icon:exists(TREASURES[id].icon)}));
+const report={produced_at:new Date().toISOString(),capture_type:'source-resource-linkage-audit',counts:{chapters:CHAPTERS.length,people:Object.keys(PEOPLE).length,weapons:Object.keys(WEAPON_DATA).length,treasures:Object.keys(TREASURES).length,milestones:MILESTONES.length},people,weapons,treasures,map:[0,1,2,3,4].map(i=>({panel:i,exists:exists('c20_map_'+i)})),chapters:CHAPTERS.map(c=>({id:c.id,title:c.title,targetSeconds:c.targetSeconds,bossHP:c.bossHP,gateGrowthCap:c.gateGrowthCap,firstClearXP:c.firstClearXP})),sourceHashes:Object.fromEntries(['data.ts','manifest.ts','WeaponSfx.ts'].map(f=>[f,createHash('sha256').update(fs.readFileSync('assets/scripts/formal/'+f)).digest('hex')]))};
+fs.writeFileSync('evidence/YILU-CAMPAIGN20-20260930/content-coverage.json',JSON.stringify(report,null,2));
+if(JSON.stringify(report).includes(':false'))throw Error('missing linkage');console.log(report.counts);

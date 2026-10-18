@@ -1,0 +1,19 @@
+// Actual NativePaint source; Cocos transport is mocked. Native pixel validation is separate.
+import fs from 'node:fs';import vm from 'node:vm';import ts from 'typescript';import assert from 'node:assert/strict';import path from 'node:path';
+class Node{isValid=true;active=true;components=new Map();children=[];addChild(n){this.children.push(n);}addComponent(C){const c=new C();this.components.set(C,c);return c;}getComponent(C){return this.components.get(C);}setPosition(...p){this.position=p;}setScale(...p){this.scale=p;}setSiblingIndex(i){this.sibling=i;}destroy(){this.isValid=false;}}
+class UITransform{setAnchorPoint(...p){this.anchor=p;}setContentSize(...p){this.size=p;}}
+class Sprite{static SizeMode={CUSTOM:1};static Type={SIMPLE:0};}
+class Rect{constructor(x=0,y=0,width=0,height=0){Object.assign(this,{x,y,width,height});}}
+class SpriteFrame{isValid=true;rect=new Rect();destroy(){this.isValid=false;}}
+class Color{r=255;g=255;b=255;a=255;set(r,g,b,a){Object.assign(this,{r,g,b,a});}fromHEX(v){this.hex=v;}}
+const cc={Node,UITransform,Sprite,SpriteFrame,Rect,Color,Layers:{Enum:{UI_2D:1}},Texture2D:class{},Size:class{constructor(w,h){this.width=w;this.height=h;}},Vec2:class{},UIOpacity:class{},Graphics:class{},Label:class{},LabelOutline:class{},BitmapFont:class{},resources:{}};
+const mods=new Map();function load(file){if(mods.has(file))return mods.get(file);const exports={};mods.set(file,exports);const js=ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;vm.runInNewContext(js,{exports,require:n=>n==='cc'?cc:n==='./GroundMesh'?{GroundMesh:class{}}:load(path.resolve(path.dirname(file),n+'.ts')),console,Set,Map,Promise});return exports;}
+const {NativePaint:P}=load(path.resolve('assets/scripts/formal/NativePaint.ts')),root=new Node(),p=new P(root),L={W:402,H:874};const tex=()=>({width:4096,height:4096,isValid:true});P.textures.a=tex();P.textures.b=tex();
+const draw=(sheet='a',x=0)=>p.drawImage(sheet,x,0,16,24,20,30,16,24);
+p.begin(L);p.globalAlpha=0;p.scale(-1,1);p.rotate(.5);draw();draw();p.end();assert.equal(p.activeNodes,2);
+p.begin(L);draw('a',16);p.end();assert.equal(p.activeNodes,1);let n=root.children[0],s=n.getComponent(Sprite);assert.equal(s.spriteFrame.rect.x,16);assert.equal(n.getComponent(cc.UIOpacity).opacity,255);assert.equal(Math.abs(n.angle),0);assert.equal(n.scale[0],1);assert.equal(root.children[1].active,false);
+p.begin(L);draw('b',16);p.end();assert.equal(s.spriteFrame.texture,P.textures.b);const created=p.createdNodes;
+for(let i=0;i<10;i++){p.begin(L);draw();p.save();p.rotate(.8);p.globalAlpha=.1;p.abortFrame();assert.equal(root.children.filter(x=>x.active).length,0);assert.equal(p.activeNodes,0);assert.equal(p.stack.length,0);p.begin(L);draw();p.end();assert.equal(p.activeNodes,1);assert.equal(p.createdNodes,created);}
+for(const kind of ['mapping_missing','texture_not_ready','texture_released','invalid_rect','stale_node']){p.begin(L);if(kind==='texture_released')P.textures.a.isValid=false;if(kind==='stale_node')n.isValid=false;assert.throws(()=>kind==='mapping_missing'?p.frame('absent',0,0,20):kind==='texture_not_ready'?draw('absent'):kind==='invalid_rect'?draw('a',4090):draw(),new RegExp(kind));p.abortFrame();P.textures.a.isValid=true;n.isValid=true;}
+p.destroy();assert.throws(()=>p.begin(L),/destroyed renderer/);assert.equal(root.children.filter(x=>x.isValid).length,0);
+console.log(JSON.stringify({pass:true,scope:'actual NativePaint source with mocked Cocos node transport; not native pixels',checks:['same texture distinct rect','distinct texture same rect','opacity scale rotation rebound','sparse tail hidden','10 abort recover cycles no node growth','5 distinct resource failure categories','destroy invalidates pool'],aborts:p.abortedFrames,created},null,2));

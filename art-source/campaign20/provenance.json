@@ -1,0 +1,260 @@
+{
+  "generation": "OpenAI built-in image_gen; transparent sprites, opaque maps",
+  "source_images": [
+    {
+      "file": "art-source/campaign20/characters-a.png",
+      "bytes": 2274571,
+      "sha256": "d20f3fc8254286cc0a5bc19238bc5ac0cd98a05a2dcd7a07bb7ffb37697c3e6b",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "art-source/campaign20/characters-b.png",
+      "bytes": 2798936,
+      "sha256": "3fe373240426f1542b0989d9043a5e5e8d401a21381723cfb6228dba967f3aeb",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "file": "art-source/campaign20/enemies.png",
+      "bytes": 1602750,
+      "sha256": "186c6d078e00fc3585d3400a0b9eccfc1e4403e6ca23b23d4b8f7cc0594928e5",
+      "size": [
+        1316,
+        1195
+      ]
+    },
+    {
+      "file": "art-source/campaign20/fixed-review.png",
+      "bytes": 248997,
+      "sha256": "8bbee5275c25d0f53f18f5f8a3adab9814dde53b2d20765a30e5d62aa36f7362",
+      "size": [
+        1200,
+        400
+      ]
+    },
+    {
+      "file": "art-source/campaign20/goulianqiang-rec-fixed.png",
+      "bytes": 945068,
+      "sha256": "ffcf844c51ab6954088a7013fa2fdef0d3d638155b992d44624629fbba871cca",
+      "size": [
+        1402,
+        1122
+      ]
+    },
+    {
+      "file": "art-source/campaign20/goulianqiang-rec-reference.png",
+      "bytes": 84179,
+      "sha256": "0297f564eab438faa5ffd96fc8f57152c2dd81cd9326e822aa88d7ad176d80d9",
+      "size": [
+        226,
+        222
+      ]
+    },
+    {
+      "file": "art-source/campaign20/hero-weapons.png",
+      "bytes": 2359898,
+      "sha256": "6e3ba51a83e5170dac4d295bcbc4a5c4a246e31a232b450e217e3c42dee74bfb",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "file": "art-source/campaign20/icons.png",
+      "bytes": 2295091,
+      "sha256": "4ca2734cf58de1803f78a3001c010ad41d5b796772504239b939fe5c76cf7bb8",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "art-source/campaign20/map-scroll-study.png",
+      "bytes": 3431369,
+      "sha256": "d55a03256e9abe78d5e699b4dda07d8dc7a29a619b98ba8a1f23231e54245a6c",
+      "size": [
+        724,
+        2172
+      ]
+    },
+    {
+      "file": "art-source/campaign20/map0.png",
+      "bytes": 3609516,
+      "sha256": "94c5acddbd81e251103b0db9418f4493d8ab101c0f54aea730bde142992f3279",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "file": "art-source/campaign20/map1.png",
+      "bytes": 3653307,
+      "sha256": "757cac5d82b2753621af10656a46474ee796e4f788cbfc4037b8399a7f50f179",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "file": "art-source/campaign20/map2.png",
+      "bytes": 3578156,
+      "sha256": "f3fd59b446a965537ad72fba5613a195a998e4432be6ade00fede55663234d8e",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "file": "art-source/campaign20/map3.png",
+      "bytes": 3499219,
+      "sha256": "2244d52fd8041e276d60c55afad29b0c27d9f6f9f2bc1c8a69f71a3a6a76bd1d",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "file": "art-source/campaign20/map4.png",
+      "bytes": 3618754,
+      "sha256": "11d9d50779af1a14539fbe323c99df9c2bc7657234d56b9a2dfda9d7d1096b8f",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "file": "art-source/campaign20/mounts.png",
+      "bytes": 2752633,
+      "sha256": "9e4fd3a1fe48a263bd4a0164c9a09e35115aa06b492b3802f1efe087d671db5e",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "file": "art-source/campaign20/sites.png",
+      "bytes": 2159361,
+      "sha256": "1cdbd16eab62707c396849e8d473dbbed58297625545ec0b0a421ac6795f7b47",
+      "size": [
+        1402,
+        1122
+      ]
+    },
+    {
+      "file": "art-source/campaign20/zhanghe-rel-reference.png",
+      "bytes": 95276,
+      "sha256": "6bb0bb89b9e9e94cb31184b4f175f42290eb121f3adc7ed2212e0d9c4c48df76",
+      "size": [
+        261,
+        213
+      ]
+    }
+  ],
+  "manifest_key_count": 211,
+  "independent_textures": 12,
+  "bounds_failures": [],
+  "old_manifest_prefix_sha256": "5e99e76466e6302aa0100017dcb28c312a0c99e138f7fb6493d56182de8bd4fe",
+  "resource_files": [
+    {
+      "file": "assets/resources/formal20260927/campaign20-characters-a.png",
+      "sha256": "b319473adc8b660fe7cb371dea1b2c804325d7e742b158c560bd8290a14916c9",
+      "dimensions": [
+        2048,
+        937
+      ]
+    },
+    {
+      "file": "assets/resources/formal20260927/campaign20-characters-b.png",
+      "sha256": "44efdf0a725b69d8b390577e7cbb573ddd9829c8a17ec80b98b2c44a0ae6c7ac",
+      "dimensions": [
+        2048,
+        879
+      ]
+    },
+    {
+      "file": "assets/resources/formal20260927/campaign20-enemies.png",
+      "sha256": "521ca1c6a5a4775f3d51eceea8fecd2fae8324b5c4ce0859f97a8df1538568ff",
+      "dimensions": [
+        2048,
+        662
+      ]
+    },
+    {
+      "file": "assets/resources/formal20260927/campaign20-hero-weapons.png",
+      "sha256": "d5817d157b44fa9178cbe06df97d8563d60305db38476529d0a27e05452878a0",
+      "dimensions": [
+        2048,
+        801
+      ]
+    },
+    {
+      "file": "assets/resources/formal20260927/campaign20-icons.png",
+      "sha256": "003ef5fea53893561fd43f11985984df570abd66c9e3044508a778e5c650c7fa",
+      "dimensions": [
+        2048,
+        993
+      ]
+    },
+    {
+      "file": "assets/resources/formal20260927/campaign20-map0.png",
+      "sha256": "a6baaecfc096ae76d3c03cb819808c3379ecb1322cb3c2b9c311de7f95123381",
+      "dimensions": [
+        768,
+        1152
+      ]
+    },
+    {
+      "file": "assets/resources/formal20260927/campaign20-map1.png",
+      "sha256": "01ef4c5e1e1ed53a243039407d3e1dbf71310e629c978171d3f89ecfe54dabf1",
+      "dimensions": [
+        768,
+        1152
+      ]
+    },
+    {
+      "file": "assets/resources/formal20260927/campaign20-map2.png",
+      "sha256": "ceb26326840433dbdafcdba18439484cce330d05278bd192f5220828f212c36e",
+      "dimensions": [
+        768,
+        1152
+      ]
+    },
+    {
+      "file": "assets/resources/formal20260927/campaign20-map3.png",
+      "sha256": "ffd374d261be717c070178e599903902a096b1191785cbc442248e8001a5cc1f",
+      "dimensions": [
+        768,
+        1152
+      ]
+    },
+    {
+      "file": "assets/resources/formal20260927/campaign20-map4.png",
+      "sha256": "9af4d0b9b1df0f92bfc664e5ad537557a6ec799ae59fa59efdca0495cc2e3959",
+      "dimensions": [
+        768,
+        1152
+      ]
+    },
+    {
+      "file": "assets/resources/formal20260927/campaign20-mounts.png",
+      "sha256": "015866f79575920aea33fc8c0e276cba7c48dc36afb04ddc2a87c43265c8a197",
+      "dimensions": [
+        2048,
+        933
+      ]
+    },
+    {
+      "file": "assets/resources/formal20260927/campaign20-sites.png",
+      "sha256": "609a6ec21180fed1d9be43e46c7eb51dbc83b6fcbaa340abec3a7f2fb07b50c6",
+      "dimensions": [
+        2048,
+        927
+      ]
+    }
+  ]
+}

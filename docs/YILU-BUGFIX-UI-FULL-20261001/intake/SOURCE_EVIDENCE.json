@@ -1,0 +1,48 @@
+[
+  {
+    "id": "f_1b6ec394a8a327b11bb796c1",
+    "path": "assets/scripts/formal/NativePaint.ts",
+    "sha256": "5ced43aacff6ffb669751a996204c555e1ba5575218aae02815bc058e23da25a",
+    "lines": "17–23,45–46",
+    "finding": "begin重置索引；take立即激活/复用节点；end才隐藏未使用尾部；异常路径无abortFrame。"
+  },
+  {
+    "id": "f_bfaaedb97a83b6da0967cae5",
+    "path": "assets/scripts/formal/battle.ts",
+    "sha256": "fd5452bb01dc935b044b59d703c2cf34079cc10170faa42f4a673c0c0d35484e",
+    "lines": "290–334,993–1058,1140–1175,1304–1321,1392–1417",
+    "finding": "渲染角色后继续波形再HUD；ctx.begin→render→ctx.end→恢复seed没有finally；亮兵有第二次透明角色描画；飞入图标有效期；连弩走shemao族。"
+  },
+  {
+    "id": "f_120e058638fecf2251867a24",
+    "path": "assets/scripts/formal/FormalGame.ts",
+    "sha256": "6642532bb3004afa924940f67e6b37c5fcb68d94f9925cca97e99acd582647ac",
+    "lines": "86–101,150–160,274–278",
+    "finding": "武器列表永久Lv与开局阶位分开；整备固定坐标和独立资源回退；render catch只记录错误；不暂停模拟或撤销半帧。"
+  },
+  {
+    "id": "f_10d7c235139fd21ee0611021",
+    "path": "assets/scripts/formal/data.ts",
+    "sha256": "fd2b48efe889254980cb4e62727101650d23103655866e05b637799062f05342",
+    "lines": "2–21",
+    "finding": "16兵器；诸葛连弩liannu.family=shemao，动画主题需与攻击模型解耦。"
+  },
+  {
+    "id": "f_c9a6fd4878a5e1c27195ddf2",
+    "path": "evidence/YILU-CAMPAIGN20-20260930/snake-render-failure.json",
+    "lines": "2–20",
+    "finding": "历史失败指纹30504b37…，第9关ReferenceError: Cannot access 'dx' before initialization；不是当前或用户截图已确诊的证据。"
+  },
+  {
+    "id": "f_374c8a202b1d84ce5cff8e4b",
+    "path": "deliverables/YILU-CAMPAIGN20-20260930/device-install.json",
+    "lines": "26–67",
+    "finding": "历史回执最后安装02，08未安装；必须重新读实际手机版本。"
+  },
+  {
+    "id": "f_bfaaedb97a83b6da0967cae5",
+    "path": "assets/scripts/formal/battle.ts",
+    "lines": "456,1277–1278",
+    "finding": "上一轮指定快照已实际读取：状态reposition缺中文tag。当前源哈希相同；执行时复核并加枚举穷尽覆盖。"
+  }
+]

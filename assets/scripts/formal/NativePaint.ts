@@ -1,24 +1,142 @@
+// === FILE START: assets/scripts/formal/NativePaint.ts ===
 import {GroundMesh} from './GroundMesh';
 import {Node,Layers,UITransform,Sprite,SpriteFrame,Texture2D,Rect,Size,Vec2,Color,UIOpacity,Graphics,Label,LabelOutline,BitmapFont,resources} from 'cc';
 import {MANIFEST} from './manifest';
+// Preserve pre-task atlas boundary sampling even if Creator normalizes metadata.
+const CLAMP_PATHS=new Set(["ui20260925/camp-bg", "ui20260925/brand-title", "ui20260925/result-bg", "ui20260925/home-bg", "ui20260925/hero-home", "ui20260925/gold-button", "ui20260925/hero-blade", "ui20260925/map-bg", "battlefix2/shadow", "battlefix2/waves", "battlefix2/environment", "battlefix2/wall-middle", "battlefix2/zhao", "battlefix2/actions", "battlefix2/blade", "battle20260925/road", "battle20260925/heroes", "battle20260925/crates", "battle20260925/soldiers", "battle20260925/bosses", "battle20260925/companions", "battle20260925/gate-parts", "battle20260925/grass", "battle20260925/distant", "battle20260925/scenery", "formal20260927/campaign20-characters-b", "formal20260927/campaign20-map4", "formal20260927/campaign20-enemies", "formal20260927/regression-held-parts", "formal20260927/round2-ground", "formal20260927/r27-oldmounts", "formal20260927/campaign20-map2", "formal20260927/campaign20-map3", "formal20260927/campaign20-sites", "formal20260927/ui-full-components", "formal20260927/regression-mount-sockets", "formal20260927/campaign20-hero-weapons", "formal20260927/campaign20-characters-a", "formal20260927/r27-character-gaits", "formal20260927/campaign20-map1", "formal20260927/campaign20-map0", "formal20260927/r27-hero-hand-poses", "formal20260927/campaign20-mounts", "formal20260927/campaign20-icons", "formal20260927/r27-crossbows", "formal20260927/r2-chitu-crossbow", "formal20260927/r2-dilu-crossbow"]);
 type Gradient={stops:[number,string][];addColorStop:(at:number,color:string)=>void};
 type Matrix=[number,number,number,number,number,number];
+export type VisualMode='normal'|'grayscale'|'silhouette';
+
 const color=(v:any,alpha=1):Color=>{if(typeof v==='object')v=v.stops[Math.floor(v.stops.length/2)]?.[1]||'#ffffff';const c=new Color();if(v?.startsWith('rgba')||v?.startsWith('rgb(')){const a=v.match(/[\d.]+/g).map(Number);c.set(a[0],a[1],a[2],(a[3]??1)*255);}else c.fromHEX(v||'#ffffff');c.a=Math.min(255,Math.max(0,c.a*alpha));return c;};
-/** Retained Cocos primitives. This class never uses DOM Canvas or uploads a painted framebuffer. */
+
+/**
+ * Normalizes a lineDash array:
+ * - If any element is non-finite or < 0, or if the sum of elements is <= 0, returns [] (solid line).
+ * - Preserves 0-length segments (so [6, 0] remains [6, 0] and draws a continuous line without gaps).
+ * - Duplicates odd-length patterns (e.g. [6] -> [6, 6], [6, 4, 2] -> [6, 4, 2, 6, 4, 2]).
+ */
+export function normalizeLineDash(segments:number[]):number[]{
+ if(!Array.isArray(segments)||segments.length===0)return[];
+ if(segments.some(v=>typeof v!=='number'||!Number.isFinite(v)||v<0))return[];
+ const sum=segments.reduce((a,b)=>a+b,0);
+ if(sum<=1e-5)return[];
+ return segments.length%2===1?[...segments,...segments]:[...segments];
+}
+
+/**
+ * Emits dashed subpaths across consecutive polyline vertices without resetting phase at intermediate vertices.
+ * - Handles 0-length gap segments (e.g., [6, 0]) without breaking continuity.
+ * - For path (0,0)->(4,0)->(8,0) with [6,4]: draws 0..6 and leaves 6..8 empty.
+ */
+export function strokeDashedSubpath(
+ pts:[number,number][],
+ closed:boolean,
+ pattern:number[],
+ moveTo:(x:number,y:number)=>void,
+ lineTo:(x:number,y:number)=>void
+):void{
+ if(pts.length<2)return;
+ const totalCycle=pattern.reduce((a,b)=>a+b,0);
+ if(totalCycle<=1e-5){
+  moveTo(pts[0][0],pts[0][1]);
+  for(const [px,py] of pts.slice(1))lineTo(px,py);
+  if(closed)lineTo(pts[0][0],pts[0][1]);
+  return;
+ }
+ let segIdx=0;
+ let segRem=pattern[0];
+ let curX=pts[0][0],curY=pts[0][1];
+ moveTo(curX,curY);
+ const totalPts=closed?[...pts.slice(1),pts[0]]:pts.slice(1);
+ for(const [tx,ty] of totalPts){
+  const dx=tx-curX,dy=ty-curY;
+  const dist=Math.hypot(dx,dy);
+  if(dist<=1e-6){curX=tx;curY=ty;continue;}
+  const ux=dx/dist,uy=dy/dist;
+  let travelled=0;
+  let guard=0;
+  while(travelled<dist-1e-6&&guard++<10000){
+   let skips=0;
+   while(segRem<=1e-6&&skips++<pattern.length*2){
+    segIdx=(segIdx+1)%pattern.length;
+    segRem=pattern[segIdx];
+   }
+   if(segRem<=1e-6)break;
+   const step=Math.min(segRem,dist-travelled);
+   const nextDist=travelled+step;
+   const nx=curX+ux*nextDist,ny=curY+uy*nextDist;
+   if(segIdx%2===0){
+    lineTo(nx,ny);
+   }else{
+    moveTo(nx,ny);
+   }
+   travelled=nextDist;
+   segRem-=step;
+  }
+  curX=tx;curY=ty;
+ }
+}
+
+/** Retained Cocos primitives. Browser silhouettes cache an alpha-mask texture; UI frames render through Cocos nodes. */
 export class NativePaint {
- static textures:Record<string,Texture2D>={};static digits:BitmapFont;
- static async load(){await new Promise<void>((resolve,reject)=>resources.load('formal20260927/gate-digits',BitmapFont,(e,f)=>{if(e||!f)reject(e||Error('digits'));else{this.digits=f;resolve();}}));await Promise.all(Object.entries(MANIFEST.sheets as Record<string,string>).map(([key,p])=>new Promise<void>((resolve,reject)=>{if(this.textures[key])return resolve();resources.load(p+'/texture',Texture2D,(e,t)=>{if(e||!t)return reject(e||Error(p));this.textures[key]=t;resolve();});})));}
+ static textures:Record<string,Texture2D>={};
+ static silhouetteTextures:Record<string,Texture2D>={};
+ static digits:BitmapFont;
+ static async load(){await new Promise<void>((resolve,reject)=>resources.load('formal20260927/gate-digits',BitmapFont,(e,f)=>{if(e||!f)reject(e||Error('digits'));else{this.digits=f;resolve();}}));await Promise.all(Object.entries(MANIFEST.sheets as Record<string,string>).filter(([key])=>!Object.keys(MANIFEST.frames).filter(k=>/^c20_map_[0-4]$/.test(k)).some(k=>MANIFEST.frames[k].s===key)).map(([key,p])=>new Promise<void>((resolve,reject)=>{if(this.textures[key]?.isValid!==false&&this.textures[key])return resolve();delete this.textures[key];resources.load(p+'/texture',Texture2D,(e,t)=>{if(e||!t)return reject(e||Error(p));if(CLAMP_PATHS.has(p))t.setWrapMode(Texture2D.WrapMode.CLAMP_TO_EDGE,Texture2D.WrapMode.CLAMP_TO_EDGE);this.textures[key]=t;resolve();});})));}
+ static mapWanted=new Set<string>();static mapLoads:Partial<Record<string,Promise<void>>>={};
+ static async loadMapPanels(indices:number[]){
+  const keys=indices.map(i=>MANIFEST.frames['c20_map_'+i]?.s).filter(Boolean) as string[];this.mapWanted=new Set(keys);
+  await Promise.all(keys.map(key=>{if(this.textures[key])return Promise.resolve();if(this.mapLoads[key])return this.mapLoads[key];return this.mapLoads[key]=new Promise<void>((resolve,reject)=>resources.load(MANIFEST.sheets[key]+'/texture',Texture2D,(e,t)=>{delete this.mapLoads[key];if(e||!t)return reject(e||Error(key));if(CLAMP_PATHS.has(MANIFEST.sheets[key]))t.setWrapMode(Texture2D.WrapMode.CLAMP_TO_EDGE,Texture2D.WrapMode.CLAMP_TO_EDGE);if(this.mapWanted.has(key))this.textures[key]=t;else resources.release(MANIFEST.sheets[key]+'/texture',Texture2D);resolve();}));}));
+  for(let i=0;i<5;i++){const key=MANIFEST.frames['c20_map_'+i]?.s;if(key&&this.textures[key]&&!this.mapWanted.has(key)){delete this.textures[key];resources.release(MANIFEST.sheets[key]+'/texture',Texture2D);}}
+ }
+ /**
+  * Attempts to build a flat-colored (RGB=255,255,255, A=source.A) mask texture from the source ImageAsset
+  * when an HTMLImageElement/HTMLCanvasElement is accessible; otherwise returns null so the caller falls
+  * back to deterministic pure-black multiplication (Color(0,0,0,255)), which also guarantees 100% uniform
+  * interior color with zero facial/luminance detail leakage.
+  */
+ private static getWhiteMaskTexture(sheet:string,srcTex:Texture2D):Texture2D|null{
+  if(this.silhouetteTextures[sheet]?.isValid)return this.silhouetteTextures[sheet];
+  try{
+   const imgAsset:any=(srcTex as any).image;
+   const rawImg:any=imgAsset?.data||imgAsset?._nativeData;
+   if(typeof document!=='undefined'&&rawImg&&typeof rawImg.width==='number'&&rawImg.width>0&&(rawImg instanceof HTMLImageElement||rawImg instanceof HTMLCanvasElement||typeof ImageBitmap!=='undefined'&&rawImg instanceof ImageBitmap)){
+    const canvas=document.createElement('canvas');
+    canvas.width=srcTex.width;canvas.height=srcTex.height;
+    const ctx=canvas.getContext('2d');
+    if(ctx){
+     ctx.drawImage(rawImg,0,0);
+     ctx.globalCompositeOperation='source-in';
+     ctx.fillStyle='#ffffff';
+     ctx.fillRect(0,0,canvas.width,canvas.height);
+     const maskTex=new Texture2D();
+     maskTex.reset({width:canvas.width,height:canvas.height,format:Texture2D.PixelFormat.RGBA8888});
+     maskTex.uploadData(canvas);
+     maskTex.setWrapMode(Texture2D.WrapMode.CLAMP_TO_EDGE,Texture2D.WrapMode.CLAMP_TO_EDGE);
+     this.silhouetteTextures[sheet]=maskTex;
+     return maskTex;
+    }
+   }
+  }catch{/* Fallback to deterministic pure-black silhouette below */}
+  return null;
+ }
  private nodes:{n:Node;type:string;frame?:SpriteFrame;mesh?:GroundMesh}[]=[];private pools:Record<string,any[]>={};private used:Record<string,number>={};createdNodes=0;invalidRects=new Set<string>();private index=0;private lastGraphics:Graphics|null=null;private matrix:Matrix=[1,0,0,1,0,0];private stack:any[]=[];private path:{p:[number,number][];closed:boolean}[]=[];private current:{p:[number,number][];closed:boolean}|null=null;private lastPoint:[number,number]=[0,0];private L:any;
+ private lineDash:number[]=[];
  globalAlpha=1;globalCompositeOperation='source-over';fillStyle:any='#fff';strokeStyle:any='#fff';lineWidth=1;lineJoin='round';lineCap='round';font='600 14px sans-serif';textAlign='left';textBaseline='middle';shadowColor='';shadowBlur=0;shadowOffsetY=0;private outline:any=null;activeNodes=0;missing=new Set<string>();
+ generation=0;lastFrameCommitted=0;abortedFrames=0;private frameOpen=false;private destroyed=false;submissions:{role:string;actorId:string;frameKey?:string;generation:number}[]=[];resourceErrors:{kind:string;key:string;generation:number}[]=[];
  constructor(private root:Node){}
- begin(L:any){this.L=L;this.index=0;this.used={};this.lastGraphics=null;this.matrix=[1,0,0,1,0,0];this.stack=[];this.globalAlpha=1;this.outline=null;}
- end(){for(const [type,pool] of Object.entries(this.pools))for(let i=this.used[type]||0;i<pool.length;i++)pool[i].n.active=false;this.activeNodes=this.index;}
- destroy(){this.nodes.forEach(e=>{e.mesh?.destroy();e.frame?.destroy();e.n.destroy();});this.nodes=[];}
- private take(type:string){this.lastGraphics=null;const pool=this.pools[type]||(this.pools[type]=[]),slot=this.used[type]||0;this.used[type]=slot+1;let e=pool[slot];if(!e){const n=new Node('native-'+this.index+'-'+type);n.layer=Layers.Enum.UI_2D;this.root.addChild(n);n.addComponent(UITransform);n.addComponent(UIOpacity);e={n,type};if(type==='sprite'){n.addComponent(Sprite).sizeMode=Sprite.SizeMode.CUSTOM;e.frame=new SpriteFrame();}if(type==='label'){n.addComponent(Label);n.addComponent(LabelOutline);}if(type==='graphics')n.addComponent(Graphics);if(type==='ground')e.mesh=new GroundMesh(n);pool[slot]=e;this.nodes.push(e);this.createdNodes++;}e.n.active=true;e.n.setSiblingIndex(this.index++);e.n.setScale(1,1,1);e.n.angle=0;return e;}
+ private resourceFault(kind:string,key:string):never{this.resourceErrors.push({kind,key,generation:this.generation});if(this.resourceErrors.length>30)this.resourceErrors.shift();throw Error('render_resource:'+kind+':'+key);}
+ private resetState(){this.index=0;this.used={};this.lastGraphics=null;this.matrix=[1,0,0,1,0,0];this.stack=[];this.path=[];this.current=null;this.lineDash=[];this.globalAlpha=1;this.globalCompositeOperation='source-over';this.outline=null;this.shadowBlur=0;this.shadowOffsetY=0;this.shadowColor='';}
+ begin(L:any){if(this.destroyed)throw Error('render_resource:stale_node:destroyed renderer');this.L=L;this.resetState();this.generation++;this.frameOpen=true;this.submissions=[];}
+ end(){if(!this.frameOpen)throw Error('render_frame:commit without begin');for(const [type,pool] of Object.entries(this.pools))for(let i=this.used[type]||0;i<pool.length;i++)pool[i].n.active=false;this.activeNodes=this.index;this.lastFrameCommitted=this.generation;this.frameOpen=false;}
+ abortFrame(){for(const e of this.nodes)e.n.active=false;this.activeNodes=0;this.abortedFrames++;this.frameOpen=false;this.resetState();this.submissions=[];}
+ destroy(){this.abortFrame();this.destroyed=true;this.nodes.forEach(e=>{e.mesh?.destroy();e.frame?.destroy();e.n.destroy();});this.nodes=[];this.pools={};}
+ private take(type:string){this.lastGraphics=null;const pool=this.pools[type]||(this.pools[type]=[]),slot=this.used[type]||0;this.used[type]=slot+1;let e=pool[slot];if(!e){const n=new Node('native-'+this.index+'-'+type);n.layer=Layers.Enum.UI_2D;this.root.addChild(n);n.addComponent(UITransform);n.addComponent(UIOpacity);e={n,type};if(type==='sprite'){n.addComponent(Sprite).sizeMode=Sprite.SizeMode.CUSTOM;e.frame=new SpriteFrame();}if(type==='label'){n.addComponent(Label);n.addComponent(LabelOutline);}if(type==='graphics')n.addComponent(Graphics);if(type==='ground')e.mesh=new GroundMesh(n);pool[slot]=e;this.nodes.push(e);this.createdNodes++;}if(!e.n.isValid)this.resourceFault('stale_node',type);e.generation=this.generation;e.n.active=true;e.n.getComponent(UIOpacity)!.opacity=255;e.n.setSiblingIndex(this.index++);e.n.setScale(1,1,1);e.n.angle=0;if(type==='sprite'){const sp=e.n.getComponent(Sprite)!;sp.grayscale=false;sp.customMaterial=null;sp.color=Color.WHITE;}return e;}
  private graphics(){if(this.lastGraphics)return this.lastGraphics;const e=this.take('graphics');e.n.setPosition(0,0);e.n.getComponent(UIOpacity)!.opacity=255;const g=e.n.getComponent(Graphics)!;g.clear();this.lastGraphics=g;return g;}
  private xy(x:number,y:number):[number,number]{const [a,b,c,d,e,f]=this.matrix;return[a*x+c*y+e-this.L.W/2,this.L.H/2-(b*x+d*y+f)];}
- save(){this.stack.push({matrix:[...this.matrix],globalAlpha:this.globalAlpha,fillStyle:this.fillStyle,strokeStyle:this.strokeStyle,lineWidth:this.lineWidth,font:this.font,textAlign:this.textAlign,textBaseline:this.textBaseline,globalCompositeOperation:this.globalCompositeOperation});}
- restore(){const s=this.stack.pop();if(s)Object.assign(this,s);}
+ save(){this.stack.push({matrix:[...this.matrix],lineDash:[...this.lineDash],globalAlpha:this.globalAlpha,fillStyle:this.fillStyle,strokeStyle:this.strokeStyle,lineWidth:this.lineWidth,font:this.font,textAlign:this.textAlign,textBaseline:this.textBaseline,globalCompositeOperation:this.globalCompositeOperation});}
+ restore(){const s=this.stack.pop();if(s){Object.assign(this,s);this.lineDash=[...(s.lineDash||[])];}}
  translate(x:number,y:number){const m=this.matrix;m[4]+=m[0]*x+m[2]*y;m[5]+=m[1]*x+m[3]*y;}
  scale(x:number,y:number){const m=this.matrix;m[0]*=x;m[1]*=x;m[2]*=y;m[3]*=y;}
  rotate(t:number){const m=this.matrix,[a,b,c,d]=m,co=Math.cos(t),si=Math.sin(t);m[0]=a*co+c*si;m[1]=b*co+d*si;m[2]=c*co-a*si;m[3]=d*co-b*si;}
@@ -27,10 +145,41 @@ export class NativePaint {
  lineTo(x:number,y:number){if(!this.current)this.moveTo(x,y);else this.current.p.push(this.xy(x,y));this.lastPoint=[x,y];}
  closePath(){if(this.current)this.current.closed=true;}
  arc(x:number,y:number,r:number,a:number,b:number){this.ellipse(x,y,r,r,0,a,b);}
- ellipse(x:number,y:number,rx:number,ry:number,rot:number,a:number,b:number){const total=Math.min(Math.PI*2,b-a),n=Math.max(8,Math.ceil(Math.abs(total)*6));for(let i=0;i<=n;i++){const t=a+total*i/n,px=x+Math.cos(t)*rx*Math.cos(rot)-Math.sin(t)*ry*Math.sin(rot),py=y+Math.cos(t)*rx*Math.sin(rot)+Math.sin(t)*ry*Math.cos(rot);if(i===0&&!this.current)this.moveTo(px,py);else this.lineTo(px,py);}}
+ ellipse(x:number,y:number,rx:number,ry:number,rot:number,a:number,b:number){
+  const total=Math.min(Math.PI*2,b-a),n=Math.max(8,Math.ceil(Math.abs(total)*6));
+  for(let i=0;i<=n;i++){
+   const t=a+total*i/n;
+   const px=x+Math.cos(t)*rx*Math.cos(rot)-Math.sin(t)*ry*Math.sin(rot);
+   const py=y+Math.cos(t)*rx*Math.sin(rot)+Math.sin(t)*ry*Math.cos(rot);
+   if(i===0&&!this.current)this.moveTo(px,py);
+   else this.lineTo(px,py);
+  }
+ }
  arcTo(x:number,y:number,x2:number,y2:number,r:number){const [x0,y0]=this.lastPoint,la=Math.hypot(x0-x,y0-y)||1,lb=Math.hypot(x2-x,y2-y)||1,t=Math.min(r,la/2,lb/2),ax=x+(x0-x)/la*t,ay=y+(y0-y)/la*t,bx=x+(x2-x)/lb*t,by=y+(y2-y)/lb*t;this.lineTo(ax,ay);for(let i=1;i<=4;i++){const u=i/4;this.lineTo((1-u)**2*ax+2*u*(1-u)*x+u*u*bx,(1-u)**2*ay+2*u*(1-u)*y+u*u*by);}}
- private paint(stroke:boolean){const g=this.graphics();g.fillColor=color(this.fillStyle,this.globalAlpha);g.strokeColor=color(this.strokeStyle,this.globalAlpha);g.lineWidth=this.lineWidth*Math.hypot(this.matrix[0],this.matrix[1]);for(const p of this.path){if(!p.p.length)continue;g.moveTo(...p.p[0]);for(const v of p.p.slice(1))g.lineTo(...v);if(p.closed)g.close();}if(stroke)g.stroke();else g.fill();}
- fill(){this.paint(false);}stroke(){this.paint(true);}setLineDash(_v:number[]){}
+ private paint(stroke:boolean){
+  const g=this.graphics();
+  const scaleFactor=Math.hypot(this.matrix[0],this.matrix[1])||1;
+  g.fillColor=color(this.fillStyle,this.globalAlpha);
+  g.strokeColor=color(this.strokeStyle,this.globalAlpha);
+  g.lineWidth=this.lineWidth*scaleFactor;
+  const useDash=stroke&&this.lineDash.length>0;
+  const scaledDash=useDash?this.lineDash.map(d=>d*scaleFactor):[];
+  for(const p of this.path){
+   if(!p.p.length)continue;
+   if(useDash){
+    strokeDashedSubpath(p.p,p.closed,scaledDash,(mx,my)=>g.moveTo(mx,my),(lx,ly)=>g.lineTo(lx,ly));
+   }else{
+    g.moveTo(...p.p[0]);
+    for(const v of p.p.slice(1))g.lineTo(...v);
+    if(p.closed)g.close();
+   }
+  }
+  if(stroke)g.stroke();else g.fill();
+ }
+ fill(){this.paint(false);}
+ stroke(){this.paint(true);}
+ setLineDash(v:number[]){this.lineDash=normalizeLineDash(v);}
+ getLineDash():number[]{return[...this.lineDash];}
  fillRect(x:number,y:number,w:number,h:number){if(typeof this.fillStyle==='object'&&this.fillStyle.stops){const grad=this.fillStyle as Gradient;const stops=grad.stops;for(let i=0;i<32;i++){const t=(i+.5)/32;let j=1;while(j<stops.length-1&&stops[j][0]<t)j++;const lo=stops[Math.max(0,j-1)],hi=stops[Math.min(j,stops.length-1)],k=Math.max(0,Math.min(1,(t-lo[0])/(hi[0]-lo[0]||1))),a=color(lo[1]),b=color(hi[1]);this.fillStyle=`rgba(${a.r+(b.r-a.r)*k},${a.g+(b.g-a.g)*k},${a.b+(b.b-a.b)*k},${(a.a+(b.a-a.a)*k)/255})`;this.fillRect(x,y+h*i/32,w,h/32);}this.fillStyle=grad;return;}this.beginPath();this.moveTo(x,y);this.lineTo(x+w,y);this.lineTo(x+w,y+h);this.lineTo(x,y+h);this.closePath();this.fill();}
  strokeRect(x:number,y:number,w:number,h:number){this.beginPath();this.moveTo(x,y);this.lineTo(x+w,y);this.lineTo(x+w,y+h);this.lineTo(x,y+h);this.closePath();this.stroke();}
  createLinearGradient(..._a:number[]):Gradient{const stops:[number,string][]=[];return{stops,addColorStop:(at,c)=>{stops.push([at,c]);stops.sort((a,b)=>a[0]-b[0]);}};}
@@ -38,9 +187,74 @@ export class NativePaint {
  measure(str:string,size:number){return Array.from(String(str)).reduce((n,c)=>n+(/[\u2e80-\uffff]/.test(c)?1:/[il1 .·]/.test(c)?.33:.59)*size,0);}
  measureText(str:string){return{width:this.measure(str,Number(this.font.match(/([\d.]+)px/)?.[1]||14))};}
  strokeText(str:string,x:number,y:number){this.outline={str,x,y,color:this.strokeStyle,width:this.lineWidth};}
- fillText(str:string,x:number,y:number){str=String(str);const size=Number(this.font.match(/([\d.]+)px/)?.[1]||14),e=this.take('label'),n=e.n,l=n.getComponent(Label)!,u=n.getComponent(UITransform)!;const width=this.measure(str,size)+4;u.setAnchorPoint(this.textAlign==='center'?.5:this.textAlign==='right'?1:0,.5);u.setContentSize(width*2,size*3.3);n.setPosition(...this.xy(x,y));const m=this.matrix;n.setScale(Math.hypot(m[0],m[1])/2,Math.hypot(m[2],m[3])/2,1);n.angle=-Math.atan2(m[1],m[0])*180/Math.PI;l.font=/^[+−0-9-]+$/.test(str)?NativePaint.digits:null;l.string=str;l.fontSize=size*2;l.lineHeight=size*3;l.fontFamily='Arial';l.isBold=true;l.horizontalAlign=Label.HorizontalAlign.CENTER;l.verticalAlign=Label.VerticalAlign.CENTER;l.overflow=Label.Overflow.NONE;l.color=color(this.fillStyle);n.getComponent(UIOpacity)!.opacity=Math.round(this.globalAlpha*255);const out=n.getComponent(LabelOutline)!;out.enabled=!!this.outline&&!l.font;if(this.outline){out.color=color(this.outline.color);out.width=this.outline.width;}this.outline=null;}
- drawImage(im:any,sx:number,sy:number,sw:number,sh:number,x:number,y:number,w:number,h:number){const sheet=typeof im==='string'?im:im?.sheet,tex=NativePaint.textures[sheet];if(!tex){this.missing.add(String(sheet));return;}if(im?.frame){const f=MANIFEST.frames[im.frame];sx+=f.r[0];sy+=f.r[1];}const e=this.take('sprite'),n=e.n,u=n.getComponent(UITransform)!,s=n.getComponent(Sprite)!,f=e.frame!;if(![sx,sy,sw,sh].every(Number.isFinite)||sx<0||sy<0||sw<=0||sh<=0||sx+sw>tex.width+.01||sy+sh>tex.height+.01){this.invalidRects.add(sheet+':'+[sx,sy,sw,sh].join(','));e.n.active=false;return;}const oldRect=f.rect;const changed=f.texture!==tex||oldRect.x!==sx||oldRect.y!==sy||oldRect.width!==sw||oldRect.height!==sh;if(changed)s.spriteFrame=null;if(f.texture!==tex)f.texture=tex;const r=f.rect;if(r.x!==sx||r.y!==sy||r.width!==sw||r.height!==sh){f.rect=new Rect(sx,sy,sw,sh);f.originalSize=new Size(sw,sh);f.offset=new Vec2();}f.packable=false;s.spriteFrame=f;s.color=color(im?.tint||'#ffffff');u.setAnchorPoint(0,1);u.setContentSize(Math.abs(w),Math.abs(h));n.setPosition(...this.xy(x,y));const m=this.matrix,det=m[0]*m[3]-m[1]*m[2];n.setScale(Math.hypot(m[0],m[1])*Math.sign(w),Math.hypot(m[2],m[3])*Math.sign(det)*Math.sign(h),1);n.angle=-Math.atan2(m[1],m[0])*180/Math.PI;n.getComponent(UIOpacity)!.opacity=Math.round(Math.min(1,Math.max(0,this.globalAlpha))*255);}
- frame(key:string,x:number,y:number,h:number,o:any={}){const f=MANIFEST.frames[key];if(!f){this.missing.add(String(key));return null;}const [sx,sy,sw,sh]=f.r,sc=h/(o.refH||sh),w=sw*sc,hh=sh*sc,cx=o.grip?o.grip[0]*w:o.center?w/2:f.a[0]*w,cy=o.grip?o.grip[1]*hh:o.center?hh/2:hh*(1-f.a[1]);this.save();this.translate(x,y);if(o.rot)this.rotate(o.rot);if(o.flip)this.scale(-1,1);if(o.sy)this.scale(1,o.sy);if(o.alpha!=null)this.globalAlpha*=o.alpha;this.drawImage({sheet:f.s,tint:o.tint},sx,sy,sw,sh,-cx,-cy,w,hh);this.restore();return{x:x-cx,y:y-cy,w,h:hh};}
+ fillText(str:string,x:number,y:number){str=String(str);const size=Number(this.font.match(/([\d.]+)px/)?.[1]||14),e=this.take('label'),n=e.n,l=n.getComponent(Label)!,u=n.getComponent(UITransform)!;u.setAnchorPoint(this.textAlign==='center'?.5:this.textAlign==='right'?1:0,.5);n.setPosition(...this.xy(x,y));const m=this.matrix;n.setScale(Math.hypot(m[0],m[1])/2,Math.hypot(m[2],m[3])/2,1);n.angle=-Math.atan2(m[1],m[0])*180/Math.PI;l.font=/^[+−0-9-]+$/.test(str)?NativePaint.digits:null;l.string=str;l.fontSize=size*2;l.lineHeight=size*3;l.fontFamily='Arial';l.isBold=true;l.horizontalAlign=Label.HorizontalAlign.CENTER;l.verticalAlign=Label.VerticalAlign.CENTER;l.overflow=Label.Overflow.NONE;l.enableWrapText=false;l.color=color(this.fillStyle);n.getComponent(UIOpacity)!.opacity=Math.round(this.globalAlpha*255);const out=n.getComponent(LabelOutline)!;out.enabled=!!this.outline&&!l.font;if(this.outline){out.color=color(this.outline.color);out.width=this.outline.width;}l.updateRenderData(true);this.outline=null;}
+ drawImage(im:any,sx:number,sy:number,sw:number,sh:number,x:number,y:number,w:number,h:number){
+  const sheet=typeof im==='string'?im:im?.sheet,baseTex=NativePaint.textures[sheet];
+  if(!baseTex){this.missing.add(String(sheet));this.resourceFault('texture_not_ready',String(sheet));}
+  if(baseTex.isValid===false)this.resourceFault('texture_released',String(sheet));
+  if(im?.frame){const f=MANIFEST.frames[im.frame];if(!f)this.resourceFault('mapping_missing',im.frame);sx+=f.r[0];sy+=f.r[1];}
+  const e=this.take('sprite'),n=e.n,u=n.getComponent(UITransform)!,s=n.getComponent(Sprite)!,f=e.frame!.isValid===false?(e.frame=new SpriteFrame()):e.frame!;
+  if(![sx,sy,sw,sh].every(Number.isFinite)||sx<0||sy<0||sw<=0||sh<=0||sx+sw>baseTex.width+.01||sy+sh>baseTex.height+.01){this.invalidRects.add(sheet+':'+[sx,sy,sw,sh].join(','));e.n.active=false;this.resourceFault('invalid_rect',sheet+':'+[sx,sy,sw,sh].join(','));}
+  const mode:VisualMode=im?.visualMode||(im?.silhouette?'silhouette':im?.grayscale?'grayscale':'normal');
+  let activeTex=baseTex;
+  if(mode==='silhouette'){
+   const maskTex=NativePaint.getWhiteMaskTexture(String(sheet),baseTex);
+   if(maskTex)activeTex=maskTex;
+  }
+  const oldRect=f.rect;const changed=f.texture!==activeTex||oldRect.x!==sx||oldRect.y!==sy||oldRect.width!==sw||oldRect.height!==sh;
+  if(changed)s.spriteFrame=null;
+  if(f.texture!==activeTex)f.texture=activeTex;
+  const r=f.rect;if(r.x!==sx||r.y!==sy||r.width!==sw||r.height!==sh){f.rect=new Rect(sx,sy,sw,sh);f.originalSize=new Size(sw,sh);f.offset=new Vec2();}
+  f.packable=false;f.rotated=false;f.originalSize=new Size(sw,sh);f.offset=new Vec2();
+  s.type=Sprite.Type.SIMPLE;s.sizeMode=Sprite.SizeMode.CUSTOM;
+  // Reset pooled Sprite state unconditionally before applying visualMode
+  s.grayscale=false;
+  s.customMaterial=null;
+  s.spriteFrame=f;
+  if(mode==='silhouette'){
+   if(activeTex!==baseTex){
+    // White-mask texture available: tinting produces an exact flat-color silhouette (#16222F)
+    s.color=color(im?.silhouetteColor||'#16222F');
+   }else{
+    // Native fallback: pure black multiplication (0,0,0) mathematically zeroes all internal
+    // RGB luminance variations so facial features are 100% hidden while keeping alpha edges.
+    s.color=new Color(0,0,0,255);
+   }
+  }else if(mode==='grayscale'){
+   s.grayscale=true;
+   s.color=color(im?.tint||'#9AA6B2');
+  }else{
+   s.color=color(im?.tint||'#ffffff');
+  }
+  u.setAnchorPoint(0,1);u.setContentSize(Math.abs(w),Math.abs(h));n.setPosition(...this.xy(x,y));
+  const m=this.matrix,det=m[0]*m[3]-m[1]*m[2];
+  n.setScale(Math.hypot(m[0],m[1])*Math.sign(w),Math.hypot(m[2],m[3])*Math.sign(det)*Math.sign(h),1);
+  n.angle=-Math.atan2(m[1],m[0])*180/Math.PI;
+  n.getComponent(UIOpacity)!.opacity=Math.round(Math.min(1,Math.max(0,this.globalAlpha))*255);
+ }
+ frame(key:string,x:number,y:number,h:number,o:any={}){
+  const f=MANIFEST.frames[key];if(!f){this.missing.add(String(key));this.resourceFault('mapping_missing',String(key));}
+  const mode:VisualMode=o.visualMode||(o.silhouette?'silhouette':o.grayscale?'grayscale':'normal');
+  this.submissions.push({role:o.role||'decoration',actorId:o.actorId||'',frameKey:key,generation:this.generation});
+  const [sx,sy,sw,sh]=f.r,sc=h/(o.refH||sh),w=sw*sc,hh=sh*sc,cx=o.grip?o.grip[0]*w:o.center?w/2:f.a[0]*w,cy=o.grip?o.grip[1]*hh:o.center?hh/2:hh*(1-f.a[1]);
+  this.save();this.translate(x,y);if(o.rot)this.rotate(o.rot);if(o.flip)this.scale(-1,1);if(o.sy)this.scale(1,o.sy);if(o.alpha!=null)this.globalAlpha*=o.alpha;
+  this.drawImage({sheet:f.s,tint:o.tint,visualMode:mode,silhouette:mode==='silhouette',silhouetteColor:o.silhouetteColor,grayscale:mode==='grayscale'},sx,sy,sw,sh,-cx,-cy,w,hh);
+  this.restore();return{x:x-cx,y:y-cy,w,h:hh};
+ }
  backdrop(L:any,S:any){this.fillStyle='#b6c3c6';this.fillRect(0,0,L.W,L.H);const w=L.W*1.25,h=w*450/768;this.drawImage('battle20260925_distant',0,0,768,450,(L.W-w)/2-S.heroX*8,L.P0+34-h,w,h);}
- ground(L:any,S:any){const y0=Math.floor(L.P0-14),grass=[],road=[];for(let y=y0;y<L.H;y+=3){const z=L.zAt(y+.5),sc=L.c/(z+L.c),wz=z+S.dist,v=((wz*110)%512+512)%512,r=((wz*220)%640+640)%640,rw=640/220*L.ppu*sc*.98,gw=512/220*L.ppu*sc*1.6;road.push({x0:-rw/2,x1:rw/2,y0:L.H/2-y-3.1,y1:L.H/2-y,u0:0,u1:1,v:r/640});const half=L.W/2;for(let x=-half;x<half;){const left=((x/gw)%1+1)%1,w=Math.min(half-x,(1-left)*gw||gw);grass.push({x0:x,x1:x+w+.15,y0:L.H/2-y-3.1,y1:L.H/2-y,u0:left,u1:left+w/gw,v:v/512});x+=w;}}for(const [sheet,quads] of [['battle20260925_grass',grass],['battle20260925_road',road]] as const){for(let i=0;i<quads.length;i+=512){const e=this.take('ground');e.n.setPosition(0,0);e.mesh!.draw(NativePaint.textures[sheet],quads.slice(i,i+512) as any);}}const g=this.createLinearGradient();g.addColorStop(0,'rgba(226,228,214,.9)');g.addColorStop(1,'rgba(226,228,214,0)');this.fillStyle=g;this.fillRect(0,y0,L.W,L.Z1[1]+10-y0);}
+ ground(L:any,S:any){
+  const y0=Math.floor(L.P0-14),quads:any[]=[],period=36,worldWidth=6.8;
+  // Mirror consecutive long tiles: exact matching edge texels at joins, no hard wrap seam.
+  const sample=(y:number)=>{const z=L.zAt(y),scale=L.c/(z+L.c),q=(z+S.dist)/period,k=Math.floor(q),v=q-k;return{scale,v:k%2===0?v:1-v,q};};
+  for(let y=y0;y<L.H;){let next=Math.min(L.H,y+4);const a=sample(y),b=sample(next);
+   // Split at a tile reflection instead of interpolating across the turning point.
+   if(Math.floor(a.q)!==Math.floor(b.q)){const seam=Math.floor(a.q)*period-S.dist;const edge=L.hy+(L.heroY-L.hy)*L.c/(seam+L.c);if(edge>y+.01&&edge<next)next=edge;}
+   const c=sample(next),half=worldWidth/2,segments=[{a:-half,b:half,u:0,v:1}],edgeWidth=worldWidth*.19,extent=L.W/2/(L.ppu*Math.min(a.scale,c.scale));
+   for(let i=0;half+i*edgeWidth<extent;i++)for(const side of [-1,1]){const near=half+i*edgeWidth,far=near+edgeWidth,u=i%2?.81:1,v=i%2?1:.81;segments.push(side>0?{a:near,b:far,u,v}:{a:-far,b:-near,u:1-v,v:1-u});}
+   for(const seg of segments)quads.push({x0:seg.a*L.ppu*c.scale,x1:seg.b*L.ppu*c.scale,x2:seg.a*L.ppu*a.scale,x3:seg.b*L.ppu*a.scale,y0:L.H/2-next,y1:L.H/2-y,u0:seg.u,u1:seg.v,u2:seg.u,u3:seg.v,v0:c.v,v1:a.v});y=next;
+  }
+  for(let i=0;i<quads.length;i+=512){const e=this.take('ground');e.n.setPosition(0,0);e.mesh!.draw(NativePaint.textures.round2_ground,quads.slice(i,i+512));}
+  const g=this.createLinearGradient();g.addColorStop(0,'rgba(226,228,214,.9)');g.addColorStop(1,'rgba(226,228,214,0)');this.fillStyle=g;this.fillRect(0,y0,L.W,L.Z1[1]+10-y0);
+ }
 }
+// === FILE END: assets/scripts/formal/NativePaint.ts ===

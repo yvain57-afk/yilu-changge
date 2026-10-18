@@ -1,0 +1,29 @@
+{
+  "r26_part_duanji": {
+    "grip": [
+      0.49,
+      0.68
+    ],
+    "role": "held_weapon",
+    "containsBody": false,
+    "containsOtherWeapon": false
+  },
+  "r26_part_dundao_shield": {
+    "grip": [
+      0.5,
+      0.52
+    ],
+    "role": "held_weapon",
+    "containsBody": false,
+    "containsOtherWeapon": false
+  },
+  "r26_part_dundao_blade": {
+    "grip": [
+      0.69,
+      0.24
+    ],
+    "role": "held_weapon",
+    "containsBody": false,
+    "containsOtherWeapon": false
+  }
+}

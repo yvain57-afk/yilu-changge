@@ -1,0 +1,936 @@
+{
+  "frames": [
+    {
+      "key": "r3_ally_dengai_run0",
+      "sourceGridCell": 0,
+      "sourceRect": [
+        -62,
+        -2,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        170.66666666666666,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        0,
+        0,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_dengai_pass0",
+      "sourceGridCell": 1,
+      "sourceRect": [
+        109,
+        -2,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        170.66666666666666,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        380,
+        0,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_dengai_run1",
+      "sourceGridCell": 2,
+      "sourceRect": [
+        279,
+        -2,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        170.66666666666666,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        760,
+        0,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_dengai_pass1",
+      "sourceGridCell": 3,
+      "sourceRect": [
+        450,
+        -2,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        170.66666666666666,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1140,
+        0,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_dengai_ready",
+      "sourceGridCell": 5,
+      "sourceRect": [
+        791,
+        -2,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        170.66666666666666,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1900,
+        0,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_dengai_wind",
+      "sourceGridCell": 6,
+      "sourceRect": [
+        -62,
+        254,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        0,
+        260,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_dengai_rel",
+      "sourceGridCell": 8,
+      "sourceRect": [
+        450,
+        254,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        760,
+        260,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_dengai_rec",
+      "sourceGridCell": 9,
+      "sourceRect": [
+        706,
+        254,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1140,
+        260,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_lusu_run0",
+      "sourceGridCell": 12,
+      "sourceRect": [
+        -62,
+        510,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        170.66666666666666,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        0,
+        520,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_lusu_pass0",
+      "sourceGridCell": 13,
+      "sourceRect": [
+        109,
+        510,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        170.66666666666666,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        380,
+        520,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_lusu_run1",
+      "sourceGridCell": 14,
+      "sourceRect": [
+        279,
+        510,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        170.66666666666666,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        760,
+        520,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_lusu_pass1",
+      "sourceGridCell": 15,
+      "sourceRect": [
+        450,
+        510,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        170.66666666666666,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1140,
+        520,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_lusu_ready",
+      "sourceGridCell": 17,
+      "sourceRect": [
+        791,
+        510,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        170.66666666666666,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1900,
+        520,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_lusu_wind",
+      "sourceGridCell": 18,
+      "sourceRect": [
+        -62,
+        766,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        0,
+        780,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_lusu_rel",
+      "sourceGridCell": 19,
+      "sourceRect": [
+        194,
+        766,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        380,
+        780,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_lusu_rec",
+      "sourceGridCell": 20,
+      "sourceRect": [
+        450,
+        766,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        760,
+        780,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_huangyueying_run0",
+      "sourceGridCell": 24,
+      "sourceRect": [
+        -62,
+        1022,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        170.66666666666666,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        0,
+        1040,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_huangyueying_pass0",
+      "sourceGridCell": 25,
+      "sourceRect": [
+        109,
+        1022,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        170.66666666666666,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        380,
+        1040,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_huangyueying_run1",
+      "sourceGridCell": 26,
+      "sourceRect": [
+        279,
+        1022,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        170.66666666666666,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        760,
+        1040,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_huangyueying_pass1",
+      "sourceGridCell": 27,
+      "sourceRect": [
+        450,
+        1022,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        170.66666666666666,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1140,
+        1040,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_huangyueying_ready",
+      "sourceGridCell": 29,
+      "sourceRect": [
+        791,
+        1022,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        170.66666666666666,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1900,
+        1040,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_huangyueying_wind",
+      "sourceGridCell": 30,
+      "sourceRect": [
+        -62,
+        1278,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        0,
+        1300,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_huangyueying_rel",
+      "sourceGridCell": 32,
+      "sourceRect": [
+        450,
+        1278,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        760,
+        1300,
+        380,
+        260
+      ]
+    },
+    {
+      "key": "r3_ally_huangyueying_rec",
+      "sourceGridCell": 33,
+      "sourceRect": [
+        706,
+        1278,
+        380,
+        260
+      ],
+      "padding": [
+        62,
+        2
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1140,
+        1300,
+        380,
+        260
+      ]
+    }
+  ],
+  "sourceComponents": [
+    {
+      "pixels": 16905,
+      "owner": 5,
+      "bounds": [
+        837,
+        10,
+        1010,
+        249
+      ]
+    },
+    {
+      "pixels": 15691,
+      "owner": 2,
+      "bounds": [
+        352,
+        12,
+        524,
+        251
+      ]
+    },
+    {
+      "pixels": 15470,
+      "owner": 3,
+      "bounds": [
+        513,
+        12,
+        683,
+        247
+      ]
+    },
+    {
+      "pixels": 16871,
+      "owner": 1,
+      "bounds": [
+        183,
+        13,
+        382,
+        243
+      ]
+    },
+    {
+      "pixels": 16432,
+      "owner": 4,
+      "bounds": [
+        664,
+        14,
+        850,
+        243
+      ]
+    },
+    {
+      "pixels": 17012,
+      "owner": 0,
+      "bounds": [
+        7,
+        15,
+        213,
+        251
+      ]
+    },
+    {
+      "pixels": 19763,
+      "owner": 9,
+      "bounds": [
+        804,
+        257,
+        998,
+        509
+      ]
+    },
+    {
+      "pixels": 21644,
+      "owner": 6,
+      "bounds": [
+        16,
+        266,
+        261,
+        508
+      ]
+    },
+    {
+      "pixels": 21021,
+      "owner": 7,
+      "bounds": [
+        270,
+        269,
+        522,
+        508
+      ]
+    },
+    {
+      "pixels": 21930,
+      "owner": 8,
+      "bounds": [
+        523,
+        277,
+        828,
+        508
+      ]
+    },
+    {
+      "pixels": 19201,
+      "owner": 17,
+      "bounds": [
+        864,
+        517,
+        1013,
+        758
+      ]
+    },
+    {
+      "pixels": 20292,
+      "owner": 12,
+      "bounds": [
+        9,
+        519,
+        173,
+        763
+      ]
+    },
+    {
+      "pixels": 18867,
+      "owner": 13,
+      "bounds": [
+        188,
+        519,
+        342,
+        753
+      ]
+    },
+    {
+      "pixels": 19004,
+      "owner": 14,
+      "bounds": [
+        350,
+        519,
+        505,
+        763
+      ]
+    },
+    {
+      "pixels": 17598,
+      "owner": 15,
+      "bounds": [
+        518,
+        519,
+        667,
+        760
+      ]
+    },
+    {
+      "pixels": 19013,
+      "owner": 16,
+      "bounds": [
+        676,
+        519,
+        836,
+        755
+      ]
+    },
+    {
+      "pixels": 20500,
+      "owner": 21,
+      "bounds": [
+        856,
+        770,
+        998,
+        1020
+      ]
+    },
+    {
+      "pixels": 25552,
+      "owner": 18,
+      "bounds": [
+        24,
+        773,
+        225,
+        1019
+      ]
+    },
+    {
+      "pixels": 24444,
+      "owner": 19,
+      "bounds": [
+        281,
+        777,
+        520,
+        1019
+      ]
+    },
+    {
+      "pixels": 24864,
+      "owner": 20,
+      "bounds": [
+        548,
+        779,
+        751,
+        1019
+      ]
+    },
+    {
+      "pixels": 16722,
+      "owner": 24,
+      "bounds": [
+        9,
+        1032,
+        177,
+        1272
+      ]
+    },
+    {
+      "pixels": 17138,
+      "owner": 25,
+      "bounds": [
+        176,
+        1032,
+        352,
+        1264
+      ]
+    },
+    {
+      "pixels": 15901,
+      "owner": 26,
+      "bounds": [
+        349,
+        1034,
+        508,
+        1272
+      ]
+    },
+    {
+      "pixels": 16534,
+      "owner": 29,
+      "bounds": [
+        852,
+        1034,
+        1004,
+        1269
+      ]
+    },
+    {
+      "pixels": 15854,
+      "owner": 27,
+      "bounds": [
+        512,
+        1035,
+        668,
+        1267
+      ]
+    },
+    {
+      "pixels": 17065,
+      "owner": 28,
+      "bounds": [
+        668,
+        1035,
+        844,
+        1264
+      ]
+    },
+    {
+      "pixels": 20336,
+      "owner": 33,
+      "bounds": [
+        790,
+        1285,
+        989,
+        1527
+      ]
+    },
+    {
+      "pixels": 20666,
+      "owner": 30,
+      "bounds": [
+        17,
+        1288,
+        227,
+        1526
+      ]
+    },
+    {
+      "pixels": 20391,
+      "owner": 31,
+      "bounds": [
+        275,
+        1292,
+        488,
+        1525
+      ]
+    },
+    {
+      "pixels": 21853,
+      "owner": 32,
+      "bounds": [
+        512,
+        1296,
+        732,
+        1526
+      ]
+    },
+    {
+      "pixels": 6,
+      "owner": 30,
+      "bounds": [
+        188,
+        1313,
+        192,
+        1315
+      ]
+    },
+    {
+      "pixels": 3,
+      "owner": 31,
+      "bounds": [
+        449,
+        1313,
+        452,
+        1314
+      ]
+    },
+    {
+      "pixels": 83,
+      "owner": 33,
+      "bounds": [
+        856,
+        1318,
+        874,
+        1327
+      ]
+    }
+  ]
+}

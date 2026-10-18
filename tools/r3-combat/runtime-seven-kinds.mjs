@@ -1,0 +1,9 @@
+import {open,E} from './browser.mjs';import fs from 'node:fs';import assert from 'node:assert/strict';
+const t=await open('seven-route-prefetch',402,874,true),rows=[];
+try{await t.goto('new');for(const kind of ['light','guard','shield','archer','cavalry','banner','mechanism']){
+ await t.command('r3-scene',{chapter:15,weapon:'guandao',level:3,companions:[],seed:71,noFriendlyFire:true});
+ await t.p.evaluate(async kind=>{const cc=await System.import('cc'),g=cc.director.getScene().getChildByName('Canvas').components.find(x=>x.constructor.name==='FormalGame'),s=g.battle.state;s.course=[{d:62,type:'squad',x:0,n:1,enemyKind:kind}];s.ci=0;s.ents=[];s.courseLen=1e9;s.heroX=s.targetX=0;},kind);
+ const start=Date.now();let data;
+ while(Date.now()-start<35000){data=await t.p.evaluate(()=>{const s=__YLCG__.snapshot();return{build:s.build,t:s.battle.t,troops:s.battle.troops,enemyLifecycle:s.battle.enemyLifecycle,damageHistory:s.battle.damageHistory,shots:s.battle.hostileShots,renderErrors:s.renderErrors,missingArt:s.missingArt};});if(data.enemyLifecycle?.some(x=>x.events.some(y=>y.stage==='impact')))break;await t.p.waitForTimeout(100);}
+ await t.capture('seven-route-'+kind);assert.ok(data.enemyLifecycle.some(x=>x.events.some(y=>y.stage==='release')),kind+' released');assert.ok(data.enemyLifecycle.some(x=>x.events.some(y=>y.stage==='impact')),kind+' impacted');assert.deepEqual(data.renderErrors,[]);assert.deepEqual(data.missingArt,[]);rows.push({kind,...data});console.log(kind,data.t,data.troops);
+ }}finally{const video=await t.close();fs.writeFileSync(E+'/seven-route-runtime.json',JSON.stringify({scope:'Actual Cocos original-speed diagnostic course event at d62 through normal prefetch/spawn. Only friendly fire stopped; single-type route replaces chapter sequence explicitly. Not full natural chapter or native.',rows,pageErrors:t.errors,video},null,2));}

@@ -1,0 +1,260 @@
+{
+  "status": "specification_only_not_generated",
+  "reference": "reference/IMG_4399.jpeg",
+  "battle_restyle": false,
+  "text_baked_into_assets": false,
+  "whole_screen_bitmap_with_hidden_buttons": false,
+  "realtime_3d_required": false,
+  "tokens": {
+    "margin": 16,
+    "gap": 12,
+    "inner_gap": 8,
+    "touch_min": 48,
+    "button_height": [
+      48,
+      56
+    ],
+    "font_title": [
+      24,
+      28
+    ],
+    "font_body": [
+      15,
+      16
+    ],
+    "font_caption": [
+      12,
+      14
+    ],
+    "colors": {
+      "navyBase": "#101D2B",
+      "navyRaised": "#1B3248",
+      "goldFace": "#D7B363",
+      "goldHighlight": "#F4E0A3",
+      "paperText": "#F3EEE1",
+      "mutedText": "#B5BEC6",
+      "victoryRed": "#8F3028",
+      "success": "#78AE94"
+    }
+  },
+  "components": [
+    {
+      "id": "ui_button_gold",
+      "role": "button",
+      "mode": "nine_slice",
+      "states": [
+        "normal",
+        "pressed",
+        "disabled"
+      ],
+      "source": null,
+      "final_path": null,
+      "atlas": null,
+      "slice_margins": null,
+      "license_or_generation_provenance": null,
+      "status": "to_create_or_reuse"
+    },
+    {
+      "id": "ui_button_navy",
+      "role": "button",
+      "mode": "nine_slice",
+      "states": [
+        "normal",
+        "pressed",
+        "disabled"
+      ],
+      "source": null,
+      "final_path": null,
+      "atlas": null,
+      "slice_margins": null,
+      "license_or_generation_provenance": null,
+      "status": "to_create_or_reuse"
+    },
+    {
+      "id": "ui_button_warning",
+      "role": "button",
+      "mode": "nine_slice",
+      "states": [
+        "normal",
+        "pressed",
+        "disabled"
+      ],
+      "source": null,
+      "final_path": null,
+      "atlas": null,
+      "slice_margins": null,
+      "license_or_generation_provenance": null,
+      "status": "to_create_or_reuse"
+    },
+    {
+      "id": "ui_panel_navy",
+      "role": "panel",
+      "mode": "nine_slice",
+      "states": [
+        "normal",
+        "raised",
+        "muted"
+      ],
+      "source": null,
+      "final_path": null,
+      "atlas": null,
+      "slice_margins": null,
+      "license_or_generation_provenance": null,
+      "status": "to_create_or_reuse"
+    },
+    {
+      "id": "ui_card_item",
+      "role": "card",
+      "mode": "nine_slice",
+      "states": [
+        "normal",
+        "selected",
+        "locked"
+      ],
+      "source": null,
+      "final_path": null,
+      "atlas": null,
+      "slice_margins": null,
+      "license_or_generation_provenance": null,
+      "status": "to_create_or_reuse"
+    },
+    {
+      "id": "ui_tab",
+      "role": "tab",
+      "mode": "nine_slice",
+      "states": [
+        "normal",
+        "selected",
+        "disabled"
+      ],
+      "source": null,
+      "final_path": null,
+      "atlas": null,
+      "slice_margins": null,
+      "license_or_generation_provenance": null,
+      "status": "to_create_or_reuse"
+    },
+    {
+      "id": "ui_banner_victory",
+      "role": "banner",
+      "mode": "fixed_corners_stretch_center",
+      "states": [
+        "normal"
+      ],
+      "source": null,
+      "final_path": null,
+      "atlas": null,
+      "slice_margins": null,
+      "license_or_generation_provenance": null,
+      "status": "to_create_or_reuse"
+    },
+    {
+      "id": "ui_banner_milestone",
+      "role": "banner",
+      "mode": "fixed_corners_stretch_center",
+      "states": [
+        "normal"
+      ],
+      "source": null,
+      "final_path": null,
+      "atlas": null,
+      "slice_margins": null,
+      "license_or_generation_provenance": null,
+      "status": "to_create_or_reuse"
+    },
+    {
+      "id": "ui_reward_socket",
+      "role": "reward_tray",
+      "mode": "nine_slice",
+      "states": [
+        "normal",
+        "highlight"
+      ],
+      "source": null,
+      "final_path": null,
+      "atlas": null,
+      "slice_margins": null,
+      "license_or_generation_provenance": null,
+      "status": "to_create_or_reuse"
+    },
+    {
+      "id": "ui_medal_base",
+      "role": "decorative_medallion",
+      "mode": "sprite",
+      "states": [
+        "normal"
+      ],
+      "source": null,
+      "final_path": null,
+      "atlas": null,
+      "slice_margins": null,
+      "license_or_generation_provenance": null,
+      "status": "to_create_or_reuse"
+    },
+    {
+      "id": "ui_dialog",
+      "role": "dialog",
+      "mode": "nine_slice",
+      "states": [
+        "normal",
+        "warning"
+      ],
+      "source": null,
+      "final_path": null,
+      "atlas": null,
+      "slice_margins": null,
+      "license_or_generation_provenance": null,
+      "status": "to_create_or_reuse"
+    },
+    {
+      "id": "ui_progress_track",
+      "role": "progress",
+      "mode": "sliced_track_fill_cap",
+      "states": [
+        "normal"
+      ],
+      "source": null,
+      "final_path": null,
+      "atlas": null,
+      "slice_margins": null,
+      "license_or_generation_provenance": null,
+      "status": "to_create_or_reuse"
+    },
+    {
+      "id": "ui_lock_empty",
+      "role": "state_icons",
+      "mode": "sprite",
+      "states": [
+        "locked",
+        "empty",
+        "loading",
+        "error"
+      ],
+      "source": null,
+      "final_path": null,
+      "atlas": null,
+      "slice_margins": null,
+      "license_or_generation_provenance": null,
+      "status": "to_create_or_reuse"
+    }
+  ],
+  "reuse_current_content": [
+    "blue_cloak_player_identity",
+    "actual_people",
+    "16_weapon_identities",
+    "18_treasure_identities",
+    "five_map_panels",
+    "existing_flags_and_ten_milestone_stamps"
+  ],
+  "forbidden_rule_changes": [
+    "Lv_equals_run_tier",
+    "change_hero_to_weapon_owner",
+    "new_character_fragments",
+    "invent_treasure_levels",
+    "unimplemented_star_ratings",
+    "invent_win_streak",
+    "milestones_at_1_3_5_10_15",
+    "stamina_ads_gacha",
+    "music_reenabled"
+  ]
+}

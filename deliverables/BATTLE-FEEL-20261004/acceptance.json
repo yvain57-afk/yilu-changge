@@ -1,0 +1,155 @@
+{
+  "task": "BATTLE-FEEL-20261004",
+  "project_id": "yilu-changge",
+  "produced_at": "2026-10-03T17:32:43.461427+00:00",
+  "version": "0.12.6",
+  "build_number": "2026100401",
+  "code_fingerprint": "9262d33ad5370693eb90a2a70a23b8a40622c509989c970546f6a1ae57253b53",
+  "status": "playable_local_native_built_device_blocked_remaining_animation_gaps",
+  "playable": "http://127.0.0.1:43219/",
+  "review": "http://127.0.0.1:43219/review/",
+  "implementation": {
+    "rear_facing_mounted_hero": "implemented_runtime_verified",
+    "melee_four_phase_gait": "implemented_runtime_verified",
+    "ranged_correct_two_hand_grip": "implemented_small_screen_verified",
+    "ranged_four_phase_gait": "incomplete",
+    "enemy_hp_hit_death": "implemented_runtime_verified",
+    "allied_casualty_formation_gap": "implemented_runtime_verified"
+  },
+  "validation": {
+    "typecheck": "passed",
+    "targeted_tests": {
+      "passed": 29,
+      "failed": 0,
+      "skipped": 0,
+      "log": "evidence/BATTLE-FEEL-20261004/targeted-tests-final.log"
+    },
+    "web": "passed",
+    "ios_release": "passed",
+    "codesign_strict": "passed",
+    "physical_device": {
+      "produced_at": "2026-10-03T17:31:40.324051+00:00",
+      "bundle_id": "com.yvainair.yiluchangge",
+      "device_type": "physical iPhone",
+      "candidate": {
+        "version": "0.12.6",
+        "build": "2026100401"
+      },
+      "installed": "blocked_connection_timeout",
+      "last_actual_readback": {
+        "version": "0.12.5",
+        "build": "2026100304"
+      },
+      "build": {
+        "build_id": "ios-d3ef73cdaf734f88",
+        "code_fingerprint": "9262d33ad5370693eb90a2a70a23b8a40622c509989c970546f6a1ae57253b53",
+        "target": "physical_device",
+        "configuration": "Release",
+        "produced_at": "2026-10-03T17:04:34.196942+00:00"
+      },
+      "backup": {
+        "status": "passed",
+        "sqlite_quick_check": "ok",
+        "files": [
+          {
+            "path": "gamecaches/cacheList.json",
+            "bytes": 28,
+            "sha256": "1dc8fd27541ccbd0adec8fd17a210a4f335a0642c2e256c79d3a9747447ef6b9"
+          },
+          {
+            "path": "jsb.sqlite",
+            "bytes": 28672,
+            "sha256": "85f469f3b9a2863916117be8bfc3d25e0bde6b9b762af4c4c07a7f3c8a57f96d"
+          }
+        ],
+        "private_backup": true
+      },
+      "attempts": [
+        {
+          "operation": "same_bundle_install",
+          "timeout_seconds": 120,
+          "result": "timeout"
+        },
+        {
+          "operation": "version_readback",
+          "result": "old_version_confirmed"
+        },
+        {
+          "operation": "device_details",
+          "timeout_seconds": 20,
+          "result": "timeout"
+        }
+      ],
+      "next_requirement": "Reconnect and unlock iPhone; wait for user response before another attempt; fresh Documents backup before install.",
+      "launch": "not_attempted_new_version",
+      "visual_touch_performance": "not_tested",
+      "uninstall_clear_camera_publish": false
+    },
+    "natural_clip": {
+      "seconds": 35,
+      "media_type": "actual_cocos_webgl",
+      "input": "automatic_legal_visible_state_policy",
+      "speed": "original",
+      "audio": "silent_capture",
+      "simulated_seconds": 34.66666666666598,
+      "wall_seconds": 34.996,
+      "sampleCount": 197,
+      "pageErrors": [],
+      "full_chapter_or_twenty_chapters": false
+    },
+    "small_screen": "375x667, 140 fixed pose diagnostic samples / 40 PNGs, b895 fingerprint preserved; only generated meta differs from final",
+    "full_suite_not_rerun": true,
+    "prior_baseline_failure": "415/416, chapter duration thresholds c2 and c11 not repaired by presentation work"
+  },
+  "protection": {
+    "protected_count": 696,
+    "missing": [],
+    "changed": [
+      {
+        "path": "assets/scripts/formal/battle.ts",
+        "before": "70a0837fc70153c1c70f86303d8aa64cfc142499786fdc701948acbd81cfd769",
+        "after": "47775aabaf75d2a7bbc3241db096dcb0f2c8d1698cc40a375f4f81c3fffcc191"
+      },
+      {
+        "path": "assets/scripts/formal/BridgeBuild.ts",
+        "before": "1f85ab3a95703119b29233bb07e602f9d4b5fb8ef90bdedbe0d136bd9be72d21",
+        "after": "69d762eef4af4edb3851de1069bf866f1c3307df7d46c923b1a2ed85016479f7"
+      },
+      {
+        "path": "assets/scripts/formal/WeaponPresentation.ts",
+        "before": "7cb92d70a589fae676a046b9ae4137517cd1a8706644936407b573be14cfa22a",
+        "after": "8a60128603f068cd17c66114865ea3fdcab2591bd70575839a9058fa4b7416d2"
+      },
+      {
+        "path": "assets/scripts/formal/manifest.ts",
+        "before": "10936030d3f1bfa0edf26a1a9f9d7cb3bb0a3b71b65b5694c9cf832622053158",
+        "after": "03c462a24a422e44a37a4b5ff03edfa0ebd8337f87cf6cb4818bf9156abf6667"
+      }
+    ],
+    "head_before": "79fbea0f8f135e6d9457cde672118b52baacb4b6",
+    "head_after": "79fbea0f8f135e6d9457cde672118b52baacb4b6",
+    "branch_after": "codex/ios-polish-round2-20260929",
+    "intermediate_to_final": [
+      {
+        "path": "assets/scripts/formal/BattleFeelRangedArt.ts.meta",
+        "before": null,
+        "after": "4798257a55ccc4dcb82e357ecd838f25aa79fccc03cb37532bc177e7ef11b7c5"
+      }
+    ],
+    "web_native_same_fingerprint": true,
+    "code_fingerprint": "9262d33ad5370693eb90a2a70a23b8a40622c509989c970546f6a1ae57253b53"
+  },
+  "mcp": {
+    "video_id": "m_a6d4f9167fe0ba3939d20df1",
+    "keyframes_exported": true,
+    "snapshot_receipt": "MCP-RESULT.json",
+    "chatgpt_actual_read_this_version": "not_verified"
+  },
+  "remaining": [
+    "ranged three families four-phase gait and dedicated hurt poses",
+    "inherited special enemy full gait cycles and all weapon-specific body attack chains",
+    "native installation, touch, performance, background and heat",
+    "no new complete twenty-chapter run"
+  ],
+  "report_sha256": "b247ca3c0602254d7e926dc79e287f6cc17d674f7b84a0f8215b18227d87d171"
+}

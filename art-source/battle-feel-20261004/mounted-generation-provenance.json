@@ -1,0 +1,67 @@
+{
+  "task": "BATTLE-FEEL-20261004",
+  "sources": [
+    {
+      "path": "art-source/battle-feel-20261004/mounted-chitu-source.png",
+      "sha256": "36a4843825b5f117ccf1466268683df9f0caf7c0e2174cf5939d5d0ed89118ec",
+      "bytes": 1169080,
+      "producer": "built-in imagegen",
+      "alpha": "native RGBA"
+    },
+    {
+      "path": "art-source/battle-feel-20261004/mounted-dilu-source.png",
+      "sha256": "d73e89525d68afa616ff768af6a2665817dc9cb2ffa60919b763dd52292795b8",
+      "bytes": 1214517,
+      "producer": "built-in imagegen",
+      "alpha": "native RGBA"
+    },
+    {
+      "path": "art-source/battle-feel-20261004/mounted-jingfan-source.png",
+      "sha256": "da077951dea7298ff6447940a9dc457fc201dc854d7541d3e4dab0abdfffd526",
+      "bytes": 1205761,
+      "producer": "built-in imagegen",
+      "alpha": "native RGBA"
+    },
+    {
+      "path": "art-source/battle-feel-20261004/mounted-jueying-source.png",
+      "sha256": "ab9fa0004f4ad1f34a212e4b86bc7f3cfe0ed9e2631299052e6b834327683589",
+      "bytes": 1152304,
+      "producer": "built-in imagegen",
+      "alpha": "native RGBA"
+    }
+  ],
+  "approvedArtUsedForStyle": "art-source/r3-combat-20261002/mount-dilu-source.png",
+  "changes": "rear-facing toward screen top; four gallop phases and attack/recoil; 4 original mount coat identities",
+  "notRuntimeEvidence": true,
+  "rangedSources": [
+    {
+      "path": "art-source/battle-feel-20261004/mounted-ranged-chitu-source.png",
+      "sha256": "c438a06d518c903e9ec80fadee818f502edef98bd6188769fff9635b78226d6a",
+      "bytes": 2077746,
+      "producer": "built-in imagegen",
+      "alpha": "native RGBA"
+    },
+    {
+      "path": "art-source/battle-feel-20261004/mounted-ranged-dilu-source.png",
+      "sha256": "4de1d3fd4308d0f7e5aedc78ed061c229f91cad0930ed7a2b490ff7f589403ec",
+      "bytes": 2113748,
+      "producer": "built-in imagegen",
+      "alpha": "native RGBA"
+    },
+    {
+      "path": "art-source/battle-feel-20261004/mounted-ranged-jingfan-source.png",
+      "sha256": "195e02728e180e9f4d29cacf494c15a0c984ab47f9717dbee37ec9e94116f831",
+      "bytes": 2054311,
+      "producer": "built-in imagegen",
+      "alpha": "native RGBA"
+    },
+    {
+      "path": "art-source/battle-feel-20261004/mounted-ranged-jueying-source.png",
+      "sha256": "7d162cb90bf2871d3104080ed346102336f33a95b8deb7ecfb7689d6271ec295",
+      "bytes": 2078062,
+      "producer": "built-in imagegen",
+      "alpha": "native RGBA"
+    }
+  ],
+  "rangedNotes": "Separate correct held weapon per family. 12 poses per mount, 48 total. Single run pose per ranged family remains explicit gap."
+}

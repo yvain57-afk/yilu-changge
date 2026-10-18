@@ -1,0 +1,1244 @@
+{
+  "task_id": "YILU_UI_POLISH_R3",
+  "baseline_snapshot": "s_20261002T065016_024969e1",
+  "baseline_code_fingerprint": "cb6842dee7e9b609ae7d840dbaf3133c9fc9bd4678187537c042f47bf2bb4527",
+  "source": {
+    "evidence_id": "f_894eb14f50c0120fb06b498c",
+    "path": "deliverables/YILU_UI_POLISH_R2/asset-gaps.json",
+    "sha256": "d4c53e06c95a13071b8787a77372b129a1eb860d1740f99d330b32d0a8e85c89",
+    "lines": "1-458"
+  },
+  "counts": {
+    "total_keys": 76,
+    "rejected_keys": 6,
+    "unproduced_keys": 70,
+    "groups": {
+      "A-six-rejected": 6,
+      "B-forty-mounted": 40,
+      "C-thirty-transitions": 30
+    }
+  },
+  "notes": [
+    "Six rejected frame keys are not six candidate images: report describes ten generated candidates across two rounds.",
+    "Helper hand/occlusion layers are dependencies, not extra completions among the 76 named keys.",
+    "All next-execution states remain not_started. This manifest is a plan, not a project mutation."
+  ],
+  "items": [
+    {
+      "key": "r2_ride_chitu_crossbow_wind",
+      "group": "A-six-rejected",
+      "baseline_status": "rejected-generated-candidates",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Rigid crossbow grip span varies excessively or hidden rear hand; rejected candidates must not enter runtime.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_chitu_crossbow_rel",
+      "group": "A-six-rejected",
+      "baseline_status": "rejected-generated-candidates",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Rigid crossbow grip span varies excessively or hidden rear hand; rejected candidates must not enter runtime.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_chitu_crossbow_rec",
+      "group": "A-six-rejected",
+      "baseline_status": "rejected-generated-candidates",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Rigid crossbow grip span varies excessively or hidden rear hand; rejected candidates must not enter runtime.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_chitu_bow_run1",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_chitu_bow_wind",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_chitu_bow_rel",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_chitu_bow_rec",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_chitu_dual_run1",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_chitu_dual_wind",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_chitu_dual_rel",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_chitu_dual_rec",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_dilu_crossbow_wind",
+      "group": "A-six-rejected",
+      "baseline_status": "rejected-generated-candidates",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Rigid crossbow grip span varies excessively or hidden rear hand; rejected candidates must not enter runtime.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_dilu_crossbow_rel",
+      "group": "A-six-rejected",
+      "baseline_status": "rejected-generated-candidates",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Rigid crossbow grip span varies excessively or hidden rear hand; rejected candidates must not enter runtime.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_dilu_crossbow_rec",
+      "group": "A-six-rejected",
+      "baseline_status": "rejected-generated-candidates",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Rigid crossbow grip span varies excessively or hidden rear hand; rejected candidates must not enter runtime.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_dilu_bow_run1",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_dilu_bow_wind",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_dilu_bow_rel",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_dilu_bow_rec",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_dilu_dual_run1",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_dilu_dual_wind",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_dilu_dual_rel",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_dilu_dual_rec",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jingfan_crossbow_run1",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jingfan_crossbow_wind",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jingfan_crossbow_rel",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jingfan_crossbow_rec",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jingfan_bow_run1",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jingfan_bow_wind",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jingfan_bow_rel",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jingfan_bow_rec",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jingfan_dual_run1",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jingfan_dual_wind",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jingfan_dual_rel",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jingfan_dual_rec",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jueying_crossbow_run1",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jueying_crossbow_wind",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jueying_crossbow_rel",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jueying_crossbow_rec",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jueying_bow_run1",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jueying_bow_wind",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jueying_bow_rel",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jueying_bow_rec",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jueying_dual_run1",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jueying_dual_wind",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jueying_dual_rel",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_ride_jueying_dual_rec",
+      "group": "B-forty-mounted",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "No identity-preserving matching horse and grip pose produced.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_taishici_pass0",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_taishici_pass1",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_ganning_pass0",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_ganning_pass1",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_zhanghe_pass0",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_zhanghe_pass1",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_xiahouyuan_pass0",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_xiahouyuan_pass1",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_weiyan_pass0",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_weiyan_pass1",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_zhangren_pass0",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_zhangren_pass1",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_dengai_pass0",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_dengai_pass1",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_lusu_pass0",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_lusu_pass1",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_huangyueying_pass0",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_huangyueying_pass1",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_caoren_pass0",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_caoren_pass1",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_zhonghui_pass0",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_zhonghui_pass1",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_lukang_pass0",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_char_lukang_pass1",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Two true support phases already exist; distinct passing pose missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_body_crossbow_pass0",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Ground body has two true phases; distinct intermediate phase missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_body_crossbow_pass1",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Ground body has two true phases; distinct intermediate phase missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_body_dual_pass0",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Ground body has two true phases; distinct intermediate phase missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_body_dual_pass1",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Ground body has two true phases; distinct intermediate phase missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_body_bow_pass0",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Ground body has two true phases; distinct intermediate phase missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    },
+    {
+      "key": "r2_body_bow_pass1",
+      "group": "C-thirty-transitions",
+      "baseline_status": "not-produced",
+      "baseline_runtimeReady": false,
+      "baseline_reason": "Ground body has two true phases; distinct intermediate phase missing.",
+      "next_execution_status": "not_started",
+      "acceptance": {
+        "identity": null,
+        "anchors_and_grips": null,
+        "distinct_pose": null,
+        "atlas_and_mapping": null,
+        "actual_runtime": null
+      },
+      "evidence_ids": []
+    }
+  ]
+}

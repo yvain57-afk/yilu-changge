@@ -1,0 +1,1533 @@
+{
+  "task": "YILU-WEAPON-SFX-20260930",
+  "license": "CC0 1.0",
+  "sources": [
+    {
+      "author": "Still North Media: Ben Jaszczak and Brian Nelson, mirror MedicineStorm",
+      "url": "https://opengameart.org/content/medieval-sound-effects-weapon-textures",
+      "license": "CC0 1.0",
+      "use": "recorded weapon movement, bow and crossbow gestures"
+    },
+    {
+      "author": "Kenney",
+      "url": "https://kenney.nl/assets/impact-sounds",
+      "license": "CC0 1.0",
+      "use": "material contact foley"
+    }
+  ],
+  "process": "tools/weapon-sfx/make-assets.py; select separate gestures, layer recorded air/mechanism, band shape, fade, RMS normalise and peak limit. No synthesized main sounds.",
+  "files": [
+    {
+      "id": "spear-0",
+      "path": "assets/resources/audio/weapons/spear-0.wav",
+      "sha256": "36d42e4f8b71e3e9a27b6a700b88802c0c28acd30afd41a14eb2bfa7479f47c8",
+      "bytes": 21212,
+      "decoded_pcm16_bytes": 21168,
+      "decoded_float32_bytes": 42336,
+      "seconds": 0.24,
+      "peak_dBFS": -5.120689392089844,
+      "rms_dBFS": -20.99999970913206,
+      "sources": [
+        {
+          "file": "raw/Spear Swing.wav",
+          "start": 0.21,
+          "duration": 0.24,
+          "sha256": "a6faa99aa8d9a020b14f3ea27e422921c9fc336ff4d5870a14bf24a94bc0d016"
+        }
+      ],
+      "edit": {
+        "lowpass": 6500,
+        "highpass": 130,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "spear-1",
+      "path": "assets/resources/audio/weapons/spear-1.wav",
+      "sha256": "955355e1302608be7c0b72814e19e8f15458f2bc20cf54fd3c8fafb848b3bbab",
+      "bytes": 21212,
+      "decoded_pcm16_bytes": 21168,
+      "decoded_float32_bytes": 42336,
+      "seconds": 0.24,
+      "peak_dBFS": -6.1124491691589355,
+      "rms_dBFS": -21.00000043524542,
+      "sources": [
+        {
+          "file": "raw/Spear Swing.wav",
+          "start": 1.5,
+          "duration": 0.24,
+          "sha256": "a6faa99aa8d9a020b14f3ea27e422921c9fc336ff4d5870a14bf24a94bc0d016"
+        }
+      ],
+      "edit": {
+        "lowpass": 6500,
+        "highpass": 130,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "spear-2",
+      "path": "assets/resources/audio/weapons/spear-2.wav",
+      "sha256": "28da4cdb43ea1e8111dba94fdf6814531c63f95582f5f5fc8bbf334952cbd7ab",
+      "bytes": 21212,
+      "decoded_pcm16_bytes": 21168,
+      "decoded_float32_bytes": 42336,
+      "seconds": 0.24,
+      "peak_dBFS": -5.013716220855713,
+      "rms_dBFS": -20.99999970913206,
+      "sources": [
+        {
+          "file": "raw/Spear Swing.wav",
+          "start": 2.29,
+          "duration": 0.24,
+          "sha256": "a6faa99aa8d9a020b14f3ea27e422921c9fc336ff4d5870a14bf24a94bc0d016"
+        }
+      ],
+      "edit": {
+        "lowpass": 6500,
+        "highpass": 130,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "guandao-0",
+      "path": "assets/resources/audio/weapons/guandao-0.wav",
+      "sha256": "334fb8d8c993fcece66e332537f9a7087f6ab30957489937a01f6979a6a639de",
+      "bytes": 37088,
+      "decoded_pcm16_bytes": 37044,
+      "decoded_float32_bytes": 74088,
+      "seconds": 0.42,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -25.982073840738714,
+      "sources": [
+        {
+          "file": "raw/Axe Swing.wav",
+          "start": 1.56,
+          "duration": 0.42,
+          "sha256": "a27039c0778934e71e01b943cba04aa4cb788fd94e5e771b68374326494f38a4"
+        }
+      ],
+      "edit": {
+        "lowpass": 4500,
+        "highpass": 80,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "guandao-1",
+      "path": "assets/resources/audio/weapons/guandao-1.wav",
+      "sha256": "d15851f0893f141b3fb5b8091799d37422f327c2ead9efc6fe7a2b385316eff9",
+      "bytes": 37088,
+      "decoded_pcm16_bytes": 37044,
+      "decoded_float32_bytes": 74088,
+      "seconds": 0.42,
+      "peak_dBFS": -4.189975738525391,
+      "rms_dBFS": -20.99999970913206,
+      "sources": [
+        {
+          "file": "raw/Axe Swing.wav",
+          "start": 5.15,
+          "duration": 0.42,
+          "sha256": "a27039c0778934e71e01b943cba04aa4cb788fd94e5e771b68374326494f38a4"
+        }
+      ],
+      "edit": {
+        "lowpass": 4500,
+        "highpass": 80,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "guandao-2",
+      "path": "assets/resources/audio/weapons/guandao-2.wav",
+      "sha256": "64273768363550a5c47d8f658cb0676442812c76db41a5fb420981204e1eddda",
+      "bytes": 37088,
+      "decoded_pcm16_bytes": 37044,
+      "decoded_float32_bytes": 74088,
+      "seconds": 0.42,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -24.223349829231534,
+      "sources": [
+        {
+          "file": "raw/Axe Swing.wav",
+          "start": 5.92,
+          "duration": 0.42,
+          "sha256": "a27039c0778934e71e01b943cba04aa4cb788fd94e5e771b68374326494f38a4"
+        }
+      ],
+      "edit": {
+        "lowpass": 4500,
+        "highpass": 80,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "shemao-0",
+      "path": "assets/resources/audio/weapons/shemao-0.wav",
+      "sha256": "1a4d440038b6789e618c39bdb70bfb2487858bd42ae4872935145b457fece095",
+      "bytes": 16802,
+      "decoded_pcm16_bytes": 16758,
+      "decoded_float32_bytes": 33516,
+      "seconds": 0.19,
+      "peak_dBFS": -4.171767234802246,
+      "rms_dBFS": -21.00000043524542,
+      "sources": [
+        {
+          "file": "raw/Scythian Recurve Heavy Arrow Pass.wav",
+          "start": 2.19,
+          "duration": 0.19,
+          "sha256": "331f53a2e9ac334bca10bf80f5fc4fe51065ddeece3cc4ec3b231fcf9a7f25ec"
+        },
+        {
+          "file": "raw/Spear Swing.wav",
+          "start": 0.21,
+          "duration": 0.18,
+          "sha256": "a6faa99aa8d9a020b14f3ea27e422921c9fc336ff4d5870a14bf24a94bc0d016"
+        }
+      ],
+      "edit": {
+        "lowpass": 7500,
+        "highpass": 270,
+        "fade_ms": 12,
+        "layers": [
+          "Spear Swing",
+          0.18,
+          0.35
+        ],
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "shemao-1",
+      "path": "assets/resources/audio/weapons/shemao-1.wav",
+      "sha256": "8a95be52e561b7283ea010611c070d66c10bad43df324291ec3898cbc7c2f36f",
+      "bytes": 16802,
+      "decoded_pcm16_bytes": 16758,
+      "decoded_float32_bytes": 33516,
+      "seconds": 0.19,
+      "peak_dBFS": -3.4430527687072754,
+      "rms_dBFS": -21.00000043524542,
+      "sources": [
+        {
+          "file": "raw/Scythian Recurve Heavy Arrow Pass.wav",
+          "start": 2.82,
+          "duration": 0.19,
+          "sha256": "331f53a2e9ac334bca10bf80f5fc4fe51065ddeece3cc4ec3b231fcf9a7f25ec"
+        },
+        {
+          "file": "raw/Spear Swing.wav",
+          "start": 1.5,
+          "duration": 0.18,
+          "sha256": "a6faa99aa8d9a020b14f3ea27e422921c9fc336ff4d5870a14bf24a94bc0d016"
+        }
+      ],
+      "edit": {
+        "lowpass": 7500,
+        "highpass": 270,
+        "fade_ms": 12,
+        "layers": [
+          "Spear Swing",
+          0.18,
+          0.35
+        ],
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "shemao-2",
+      "path": "assets/resources/audio/weapons/shemao-2.wav",
+      "sha256": "3ae3044460f7093e30bcf786d784f0f3b94d342d6198d16e01150c05f7ecf1ef",
+      "bytes": 16802,
+      "decoded_pcm16_bytes": 16758,
+      "decoded_float32_bytes": 33516,
+      "seconds": 0.19,
+      "peak_dBFS": -3.6157596111297607,
+      "rms_dBFS": -21.00000043524542,
+      "sources": [
+        {
+          "file": "raw/Scythian Recurve Heavy Arrow Pass.wav",
+          "start": 3.5,
+          "duration": 0.19,
+          "sha256": "331f53a2e9ac334bca10bf80f5fc4fe51065ddeece3cc4ec3b231fcf9a7f25ec"
+        },
+        {
+          "file": "raw/Spear Swing.wav",
+          "start": 2.29,
+          "duration": 0.18,
+          "sha256": "a6faa99aa8d9a020b14f3ea27e422921c9fc336ff4d5870a14bf24a94bc0d016"
+        }
+      ],
+      "edit": {
+        "lowpass": 7500,
+        "highpass": 270,
+        "fade_ms": 12,
+        "layers": [
+          "Spear Swing",
+          0.18,
+          0.35
+        ],
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "huaji-0",
+      "path": "assets/resources/audio/weapons/huaji-0.wav",
+      "sha256": "54986e59630b0f14da94a2bd50830667a3cb5f7abec2b22b917dfaa99e902084",
+      "bytes": 30032,
+      "decoded_pcm16_bytes": 29988,
+      "decoded_float32_bytes": 59976,
+      "seconds": 0.34,
+      "peak_dBFS": -4.5656914710998535,
+      "rms_dBFS": -20.99999970913206,
+      "sources": [
+        {
+          "file": "raw/Sabre Swing.wav",
+          "start": 20.57,
+          "duration": 0.34,
+          "sha256": "bf6edd6317805e5579c58fc6ed5c52df917e6a3ebdb0b11cd7027684adaf4d04"
+        },
+        {
+          "file": "raw/Spear Swing.wav",
+          "start": 0.21,
+          "duration": 0.24,
+          "sha256": "a6faa99aa8d9a020b14f3ea27e422921c9fc336ff4d5870a14bf24a94bc0d016"
+        }
+      ],
+      "edit": {
+        "lowpass": 6500,
+        "highpass": 140,
+        "fade_ms": 12,
+        "layers": [
+          "Spear Swing",
+          0.24,
+          0.3
+        ],
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "huaji-1",
+      "path": "assets/resources/audio/weapons/huaji-1.wav",
+      "sha256": "5c583c6cd48c1d959ac0e074e70d33b242fdffe77dec6413057663e4bdae6671",
+      "bytes": 30032,
+      "decoded_pcm16_bytes": 29988,
+      "decoded_float32_bytes": 59976,
+      "seconds": 0.34,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -21.182734682839218,
+      "sources": [
+        {
+          "file": "raw/Sabre Swing.wav",
+          "start": 21.37,
+          "duration": 0.34,
+          "sha256": "bf6edd6317805e5579c58fc6ed5c52df917e6a3ebdb0b11cd7027684adaf4d04"
+        },
+        {
+          "file": "raw/Spear Swing.wav",
+          "start": 1.5,
+          "duration": 0.24,
+          "sha256": "a6faa99aa8d9a020b14f3ea27e422921c9fc336ff4d5870a14bf24a94bc0d016"
+        }
+      ],
+      "edit": {
+        "lowpass": 6500,
+        "highpass": 140,
+        "fade_ms": 12,
+        "layers": [
+          "Spear Swing",
+          0.24,
+          0.3
+        ],
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "huaji-2",
+      "path": "assets/resources/audio/weapons/huaji-2.wav",
+      "sha256": "2bd706187ee0b406aa4dab4ea8e9e1673685321e5277318c86640cee8254478d",
+      "bytes": 30032,
+      "decoded_pcm16_bytes": 29988,
+      "decoded_float32_bytes": 59976,
+      "seconds": 0.34,
+      "peak_dBFS": -3.0000009536743164,
+      "rms_dBFS": -23.042761218489538,
+      "sources": [
+        {
+          "file": "raw/Sabre Swing.wav",
+          "start": 21.87,
+          "duration": 0.34,
+          "sha256": "bf6edd6317805e5579c58fc6ed5c52df917e6a3ebdb0b11cd7027684adaf4d04"
+        },
+        {
+          "file": "raw/Spear Swing.wav",
+          "start": 2.29,
+          "duration": 0.24,
+          "sha256": "a6faa99aa8d9a020b14f3ea27e422921c9fc336ff4d5870a14bf24a94bc0d016"
+        }
+      ],
+      "edit": {
+        "lowpass": 6500,
+        "highpass": 140,
+        "fade_ms": 12,
+        "layers": [
+          "Spear Swing",
+          0.24,
+          0.3
+        ],
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "guding-0",
+      "path": "assets/resources/audio/weapons/guding-0.wav",
+      "sha256": "cf9f7580bbb41cdf31df37564ace5d0fe81207b313c30d8620cd71cd9d6632f2",
+      "bytes": 22094,
+      "decoded_pcm16_bytes": 22050,
+      "decoded_float32_bytes": 44100,
+      "seconds": 0.25,
+      "peak_dBFS": -6.909576416015625,
+      "rms_dBFS": -21.00000043524542,
+      "sources": [
+        {
+          "file": "raw/Seax Swing.wav",
+          "start": 3.26,
+          "duration": 0.25,
+          "sha256": "2fdf7688ce88a105393fe2b1f3b3f14dbe80e42708d2e2e46246d9d40bb2a151"
+        }
+      ],
+      "edit": {
+        "lowpass": 4700,
+        "highpass": 95,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "guding-1",
+      "path": "assets/resources/audio/weapons/guding-1.wav",
+      "sha256": "d4b2a38e1d117e0a6d89d52665cb1dc74af610f8a114ec82bc61a4c3768ae8a4",
+      "bytes": 22094,
+      "decoded_pcm16_bytes": 22050,
+      "decoded_float32_bytes": 44100,
+      "seconds": 0.25,
+      "peak_dBFS": -3.682178020477295,
+      "rms_dBFS": -20.99999970913206,
+      "sources": [
+        {
+          "file": "raw/Seax Swing.wav",
+          "start": 3.99,
+          "duration": 0.25,
+          "sha256": "2fdf7688ce88a105393fe2b1f3b3f14dbe80e42708d2e2e46246d9d40bb2a151"
+        }
+      ],
+      "edit": {
+        "lowpass": 4700,
+        "highpass": 95,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "guding-2",
+      "path": "assets/resources/audio/weapons/guding-2.wav",
+      "sha256": "3d9c839420ea21148638b72651b64988382246c3537fa22ee8e72fdc6cc47b82",
+      "bytes": 22094,
+      "decoded_pcm16_bytes": 22050,
+      "decoded_float32_bytes": 44100,
+      "seconds": 0.25,
+      "peak_dBFS": -4.640878677368164,
+      "rms_dBFS": -20.99999970913206,
+      "sources": [
+        {
+          "file": "raw/Seax Swing.wav",
+          "start": 6.89,
+          "duration": 0.25,
+          "sha256": "2fdf7688ce88a105393fe2b1f3b3f14dbe80e42708d2e2e46246d9d40bb2a151"
+        }
+      ],
+      "edit": {
+        "lowpass": 4700,
+        "highpass": 95,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "shuangji-0",
+      "path": "assets/resources/audio/weapons/shuangji-0.wav",
+      "sha256": "0599ffc56d8ca4429c24794674fea0282cf2251fbf0d9185f02a85a259a0dcd6",
+      "bytes": 23858,
+      "decoded_pcm16_bytes": 23814,
+      "decoded_float32_bytes": 47628,
+      "seconds": 0.27,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -26.86783125415254,
+      "sources": [
+        {
+          "file": "raw/Axe Swing.wav",
+          "start": 1.56,
+          "duration": 0.27,
+          "sha256": "a27039c0778934e71e01b943cba04aa4cb788fd94e5e771b68374326494f38a4"
+        },
+        {
+          "file": "raw/Spear Swing.wav",
+          "start": 0.21,
+          "duration": 0.22,
+          "sha256": "a6faa99aa8d9a020b14f3ea27e422921c9fc336ff4d5870a14bf24a94bc0d016"
+        }
+      ],
+      "edit": {
+        "lowpass": 4000,
+        "highpass": 160,
+        "fade_ms": 12,
+        "layers": [
+          "Spear Swing",
+          0.22,
+          0.4
+        ],
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "shuangji-1",
+      "path": "assets/resources/audio/weapons/shuangji-1.wav",
+      "sha256": "4aaf4f015a69068536f9125bb47caa27e1b08a31baad6fef2e436baedc42d3cb",
+      "bytes": 23858,
+      "decoded_pcm16_bytes": 23814,
+      "decoded_float32_bytes": 47628,
+      "seconds": 0.27,
+      "peak_dBFS": -3.6080644130706787,
+      "rms_dBFS": -21.00000043524542,
+      "sources": [
+        {
+          "file": "raw/Axe Swing.wav",
+          "start": 5.15,
+          "duration": 0.27,
+          "sha256": "a27039c0778934e71e01b943cba04aa4cb788fd94e5e771b68374326494f38a4"
+        },
+        {
+          "file": "raw/Spear Swing.wav",
+          "start": 1.5,
+          "duration": 0.22,
+          "sha256": "a6faa99aa8d9a020b14f3ea27e422921c9fc336ff4d5870a14bf24a94bc0d016"
+        }
+      ],
+      "edit": {
+        "lowpass": 4000,
+        "highpass": 160,
+        "fade_ms": 12,
+        "layers": [
+          "Spear Swing",
+          0.22,
+          0.4
+        ],
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "shuangji-2",
+      "path": "assets/resources/audio/weapons/shuangji-2.wav",
+      "sha256": "b19113f1d87580d0d52b63bdef61a9526bff3590629f6710c3d4e588f200dfc5",
+      "bytes": 23858,
+      "decoded_pcm16_bytes": 23814,
+      "decoded_float32_bytes": 47628,
+      "seconds": 0.27,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -25.347477732316726,
+      "sources": [
+        {
+          "file": "raw/Axe Swing.wav",
+          "start": 5.92,
+          "duration": 0.27,
+          "sha256": "a27039c0778934e71e01b943cba04aa4cb788fd94e5e771b68374326494f38a4"
+        },
+        {
+          "file": "raw/Spear Swing.wav",
+          "start": 2.29,
+          "duration": 0.22,
+          "sha256": "a6faa99aa8d9a020b14f3ea27e422921c9fc336ff4d5870a14bf24a94bc0d016"
+        }
+      ],
+      "edit": {
+        "lowpass": 4000,
+        "highpass": 160,
+        "fade_ms": 12,
+        "layers": [
+          "Spear Swing",
+          0.22,
+          0.4
+        ],
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "yitian-0",
+      "path": "assets/resources/audio/weapons/yitian-0.wav",
+      "sha256": "038738528ec3c7bbd32b443c7cc430cb07d24159f39593faf0819922a89dab7c",
+      "bytes": 26504,
+      "decoded_pcm16_bytes": 26460,
+      "decoded_float32_bytes": 52920,
+      "seconds": 0.3,
+      "peak_dBFS": -3.8736815452575684,
+      "rms_dBFS": -21.00000043524542,
+      "sources": [
+        {
+          "file": "raw/Katana Swing.wav",
+          "start": 0.32,
+          "duration": 0.3,
+          "sha256": "133860f84cb4c311cf273f3a16256a45568d7d4ce468eb081dd17e4e4bfa7487"
+        }
+      ],
+      "edit": {
+        "lowpass": 7300,
+        "highpass": 170,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "yitian-1",
+      "path": "assets/resources/audio/weapons/yitian-1.wav",
+      "sha256": "5f79fa12087b7d0e2561cfc80c3557640922f83a40bf66dfe0de51c2d6a20a25",
+      "bytes": 26504,
+      "decoded_pcm16_bytes": 26460,
+      "decoded_float32_bytes": 52920,
+      "seconds": 0.3,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -21.560828614974188,
+      "sources": [
+        {
+          "file": "raw/Katana Swing.wav",
+          "start": 5.73,
+          "duration": 0.3,
+          "sha256": "133860f84cb4c311cf273f3a16256a45568d7d4ce468eb081dd17e4e4bfa7487"
+        }
+      ],
+      "edit": {
+        "lowpass": 7300,
+        "highpass": 170,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "yitian-2",
+      "path": "assets/resources/audio/weapons/yitian-2.wav",
+      "sha256": "8780899abd0bf31787a114cf44f9c893653de030f51ca08d6df496ca99e66653",
+      "bytes": 26504,
+      "decoded_pcm16_bytes": 26460,
+      "decoded_float32_bytes": 52920,
+      "seconds": 0.3,
+      "peak_dBFS": -3.9833900928497314,
+      "rms_dBFS": -20.99999970913206,
+      "sources": [
+        {
+          "file": "raw/Katana Swing.wav",
+          "start": 7.91,
+          "duration": 0.3,
+          "sha256": "133860f84cb4c311cf273f3a16256a45568d7d4ce468eb081dd17e4e4bfa7487"
+        }
+      ],
+      "edit": {
+        "lowpass": 7300,
+        "highpass": 170,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "qinggang-0",
+      "path": "assets/resources/audio/weapons/qinggang-0.wav",
+      "sha256": "d27d66b790de0b390f9cf79972efe41297ab0f33c66be2c792c5621d717a6f4c",
+      "bytes": 15920,
+      "decoded_pcm16_bytes": 15876,
+      "decoded_float32_bytes": 31752,
+      "seconds": 0.18,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -26.682658786381005,
+      "sources": [
+        {
+          "file": "raw/Dagger Swing.wav",
+          "start": 0.97,
+          "duration": 0.18,
+          "sha256": "6503fce6a10700242e6a82c79914ce874564760dedfaac1abce46a85e4b0f8c2"
+        }
+      ],
+      "edit": {
+        "lowpass": 7800,
+        "highpass": 330,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "qinggang-1",
+      "path": "assets/resources/audio/weapons/qinggang-1.wav",
+      "sha256": "947dc88b99dff418c6ac016c8ec48255ad790b1b1bf3c38441ac28da4ce46b6a",
+      "bytes": 15920,
+      "decoded_pcm16_bytes": 15876,
+      "decoded_float32_bytes": 31752,
+      "seconds": 0.18,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -21.1257226454225,
+      "sources": [
+        {
+          "file": "raw/Dagger Swing.wav",
+          "start": 1.51,
+          "duration": 0.18,
+          "sha256": "6503fce6a10700242e6a82c79914ce874564760dedfaac1abce46a85e4b0f8c2"
+        }
+      ],
+      "edit": {
+        "lowpass": 7800,
+        "highpass": 330,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "qinggang-2",
+      "path": "assets/resources/audio/weapons/qinggang-2.wav",
+      "sha256": "2612c8dff7cc19d6a7baaf984c1a7ab7cfb92171b876d02d37f67ff4f51deed2",
+      "bytes": 15920,
+      "decoded_pcm16_bytes": 15876,
+      "decoded_float32_bytes": 31752,
+      "seconds": 0.18,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -21.533938626712125,
+      "sources": [
+        {
+          "file": "raw/Dagger Swing.wav",
+          "start": 2.57,
+          "duration": 0.18,
+          "sha256": "6503fce6a10700242e6a82c79914ce874564760dedfaac1abce46a85e4b0f8c2"
+        }
+      ],
+      "edit": {
+        "lowpass": 7800,
+        "highpass": 330,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "shuanggu-0",
+      "path": "assets/resources/audio/weapons/shuanggu-0.wav",
+      "sha256": "889a9984c454a907eff2472be4ed2176a451c3f48e91b1b74f2c47e4d51a4f88",
+      "bytes": 18566,
+      "decoded_pcm16_bytes": 18522,
+      "decoded_float32_bytes": 37044,
+      "seconds": 0.21,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -25.052781506621713,
+      "sources": [
+        {
+          "file": "raw/Sabre Swing.wav",
+          "start": 20.57,
+          "duration": 0.21,
+          "sha256": "bf6edd6317805e5579c58fc6ed5c52df917e6a3ebdb0b11cd7027684adaf4d04"
+        },
+        {
+          "file": "raw/Dagger Swing.wav",
+          "start": 0.97,
+          "duration": 0.18,
+          "sha256": "6503fce6a10700242e6a82c79914ce874564760dedfaac1abce46a85e4b0f8c2"
+        }
+      ],
+      "edit": {
+        "lowpass": 9000,
+        "highpass": 450,
+        "fade_ms": 12,
+        "layers": [
+          "Dagger Swing",
+          0.18,
+          0.25
+        ],
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "shuanggu-1",
+      "path": "assets/resources/audio/weapons/shuanggu-1.wav",
+      "sha256": "8e3b235c09188b7a70533cde38b6fbf33b884a38bbc81f77d0c4a6b9bf53649c",
+      "bytes": 18566,
+      "decoded_pcm16_bytes": 18522,
+      "decoded_float32_bytes": 37044,
+      "seconds": 0.21,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -25.059648974315838,
+      "sources": [
+        {
+          "file": "raw/Sabre Swing.wav",
+          "start": 21.37,
+          "duration": 0.21,
+          "sha256": "bf6edd6317805e5579c58fc6ed5c52df917e6a3ebdb0b11cd7027684adaf4d04"
+        },
+        {
+          "file": "raw/Dagger Swing.wav",
+          "start": 1.51,
+          "duration": 0.18,
+          "sha256": "6503fce6a10700242e6a82c79914ce874564760dedfaac1abce46a85e4b0f8c2"
+        }
+      ],
+      "edit": {
+        "lowpass": 9000,
+        "highpass": 450,
+        "fade_ms": 12,
+        "layers": [
+          "Dagger Swing",
+          0.18,
+          0.25
+        ],
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "shuanggu-2",
+      "path": "assets/resources/audio/weapons/shuanggu-2.wav",
+      "sha256": "2aae2823d1844385aa221937bce9df93987d5f0fc4dee1e0e567203e3f9ca5b8",
+      "bytes": 18566,
+      "decoded_pcm16_bytes": 18522,
+      "decoded_float32_bytes": 37044,
+      "seconds": 0.21,
+      "peak_dBFS": -3.452033042907715,
+      "rms_dBFS": -21.00000043524542,
+      "sources": [
+        {
+          "file": "raw/Sabre Swing.wav",
+          "start": 21.87,
+          "duration": 0.21,
+          "sha256": "bf6edd6317805e5579c58fc6ed5c52df917e6a3ebdb0b11cd7027684adaf4d04"
+        },
+        {
+          "file": "raw/Dagger Swing.wav",
+          "start": 2.57,
+          "duration": 0.18,
+          "sha256": "6503fce6a10700242e6a82c79914ce874564760dedfaac1abce46a85e4b0f8c2"
+        }
+      ],
+      "edit": {
+        "lowpass": 9000,
+        "highpass": 450,
+        "fade_ms": 12,
+        "layers": [
+          "Dagger Swing",
+          0.18,
+          0.25
+        ],
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "liannu-0",
+      "path": "assets/resources/audio/weapons/liannu-0.wav",
+      "sha256": "071d15b2f3e7d2fae434b614e88e154b707314ddb58951f1e88907836a9e8325",
+      "bytes": 20330,
+      "decoded_pcm16_bytes": 20286,
+      "decoded_float32_bytes": 40572,
+      "seconds": 0.23,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -28.10137432119188,
+      "sources": [
+        {
+          "file": "raw/Crossbow Shoot.wav",
+          "start": 0.25,
+          "duration": 0.23,
+          "sha256": "d8c68f970540d73ab6fe2db5309166e6dd911876501a16bb4df43498247e19b2"
+        },
+        {
+          "file": "raw/Crossbow Lever Trigger.wav",
+          "start": 2.28,
+          "duration": 0.18,
+          "sha256": "607b6398e35d14d9c9633d047fa0dbf7e8e5a3ffee13bdeddc8dba41320c960a"
+        }
+      ],
+      "edit": {
+        "lowpass": 7000,
+        "highpass": 150,
+        "fade_ms": 12,
+        "layers": [
+          "Crossbow Lever Trigger",
+          0.18,
+          0.25
+        ],
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "liannu-1",
+      "path": "assets/resources/audio/weapons/liannu-1.wav",
+      "sha256": "596d2030d26e5de755f756ef03cb65bf3412a36a28ccac04709268be6a4b1e3a",
+      "bytes": 20330,
+      "decoded_pcm16_bytes": 20286,
+      "decoded_float32_bytes": 40572,
+      "seconds": 0.23,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -27.29842846852833,
+      "sources": [
+        {
+          "file": "raw/Crossbow Shoot.wav",
+          "start": 2.41,
+          "duration": 0.23,
+          "sha256": "d8c68f970540d73ab6fe2db5309166e6dd911876501a16bb4df43498247e19b2"
+        },
+        {
+          "file": "raw/Crossbow Lever Trigger.wav",
+          "start": 4.23,
+          "duration": 0.18,
+          "sha256": "607b6398e35d14d9c9633d047fa0dbf7e8e5a3ffee13bdeddc8dba41320c960a"
+        }
+      ],
+      "edit": {
+        "lowpass": 7000,
+        "highpass": 150,
+        "fade_ms": 12,
+        "layers": [
+          "Crossbow Lever Trigger",
+          0.18,
+          0.25
+        ],
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "liannu-2",
+      "path": "assets/resources/audio/weapons/liannu-2.wav",
+      "sha256": "67e43c66d2ca9f77133246e3c74f7d64650f52a1e51a469ce22b4fd7709bdd06",
+      "bytes": 20330,
+      "decoded_pcm16_bytes": 20286,
+      "decoded_float32_bytes": 40572,
+      "seconds": 0.23,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -27.666456818443145,
+      "sources": [
+        {
+          "file": "raw/Crossbow Shoot.wav",
+          "start": 2.9,
+          "duration": 0.23,
+          "sha256": "d8c68f970540d73ab6fe2db5309166e6dd911876501a16bb4df43498247e19b2"
+        },
+        {
+          "file": "raw/Crossbow Lever Trigger.wav",
+          "start": 4.83,
+          "duration": 0.18,
+          "sha256": "607b6398e35d14d9c9633d047fa0dbf7e8e5a3ffee13bdeddc8dba41320c960a"
+        }
+      ],
+      "edit": {
+        "lowpass": 7000,
+        "highpass": 150,
+        "fade_ms": 12,
+        "layers": [
+          "Crossbow Lever Trigger",
+          0.18,
+          0.25
+        ],
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "army-bow-0",
+      "path": "assets/resources/audio/weapons/army-bow-0.wav",
+      "sha256": "7a3d74ed213443fc189d6ed6f9ac8d00445efa0b69df5d101f8f27acc3735707",
+      "bytes": 22976,
+      "decoded_pcm16_bytes": 22932,
+      "decoded_float32_bytes": 45864,
+      "seconds": 0.26,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -27.00442236937957,
+      "sources": [
+        {
+          "file": "raw/English Longbow Shoot.wav",
+          "start": 0.04,
+          "duration": 0.26,
+          "sha256": "c25684ccdab3eb13f17a0ffa637fbd175659d092665f16c0bce8510d46c4fbee"
+        }
+      ],
+      "edit": {
+        "lowpass": 6000,
+        "highpass": 160,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "army-bow-1",
+      "path": "assets/resources/audio/weapons/army-bow-1.wav",
+      "sha256": "174ab6a30b94a8b020e36a110c546d0fbff54a46a389d1dff15f7f3da1a136bc",
+      "bytes": 22976,
+      "decoded_pcm16_bytes": 22932,
+      "decoded_float32_bytes": 45864,
+      "seconds": 0.26,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -26.618279435152438,
+      "sources": [
+        {
+          "file": "raw/English Longbow Shoot.wav",
+          "start": 0.71,
+          "duration": 0.26,
+          "sha256": "c25684ccdab3eb13f17a0ffa637fbd175659d092665f16c0bce8510d46c4fbee"
+        }
+      ],
+      "edit": {
+        "lowpass": 6000,
+        "highpass": 160,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "army-bow-2",
+      "path": "assets/resources/audio/weapons/army-bow-2.wav",
+      "sha256": "34c625879ef71fca5aa615754790de41aa8cb16de887875903da7239e6a8847a",
+      "bytes": 22976,
+      "decoded_pcm16_bytes": 22932,
+      "decoded_float32_bytes": 45864,
+      "seconds": 0.26,
+      "peak_dBFS": -3.0000009536743164,
+      "rms_dBFS": -28.367909843222563,
+      "sources": [
+        {
+          "file": "raw/English Longbow Shoot.wav",
+          "start": 1.19,
+          "duration": 0.26,
+          "sha256": "c25684ccdab3eb13f17a0ffa637fbd175659d092665f16c0bce8510d46c4fbee"
+        }
+      ],
+      "edit": {
+        "lowpass": 6000,
+        "highpass": 160,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "army-fire-0",
+      "path": "assets/resources/audio/weapons/army-fire-0.wav",
+      "sha256": "b94dc707d72b0ce06be99a868585effb8aaf108537cf7e99e4885fcc06eedd74",
+      "bytes": 28268,
+      "decoded_pcm16_bytes": 28224,
+      "decoded_float32_bytes": 56448,
+      "seconds": 0.32,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -27.77933917055276,
+      "sources": [
+        {
+          "file": "raw/Scythian Recurve Shoot.wav",
+          "start": 0.14,
+          "duration": 0.32,
+          "sha256": "8d95d06f0c7539f14b5a69fb2818ab42dc985b6966db9856a30a7767f11c259b"
+        },
+        {
+          "file": "raw/Arrow Fletching.wav",
+          "start": 9.06,
+          "duration": 0.28,
+          "sha256": "d19db022f47e4d038b09ac68a9f43b1468bd831b14419219bf6b32cea93a7d9d"
+        }
+      ],
+      "edit": {
+        "lowpass": 5000,
+        "highpass": 120,
+        "fade_ms": 12,
+        "layers": [
+          "Arrow Fletching",
+          0.28,
+          0.18
+        ],
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "army-fire-1",
+      "path": "assets/resources/audio/weapons/army-fire-1.wav",
+      "sha256": "1a241645b4e44d16eb76a613c50d037d2c6a130a03ecd7500f3ebd9363840fa6",
+      "bytes": 28268,
+      "decoded_pcm16_bytes": 28224,
+      "decoded_float32_bytes": 56448,
+      "seconds": 0.32,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -31.054281508907096,
+      "sources": [
+        {
+          "file": "raw/Scythian Recurve Shoot.wav",
+          "start": 2.89,
+          "duration": 0.32,
+          "sha256": "8d95d06f0c7539f14b5a69fb2818ab42dc985b6966db9856a30a7767f11c259b"
+        },
+        {
+          "file": "raw/Arrow Fletching.wav",
+          "start": 11.25,
+          "duration": 0.28,
+          "sha256": "d19db022f47e4d038b09ac68a9f43b1468bd831b14419219bf6b32cea93a7d9d"
+        }
+      ],
+      "edit": {
+        "lowpass": 5000,
+        "highpass": 120,
+        "fade_ms": 12,
+        "layers": [
+          "Arrow Fletching",
+          0.28,
+          0.18
+        ],
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "army-fire-2",
+      "path": "assets/resources/audio/weapons/army-fire-2.wav",
+      "sha256": "e66ffb004a83e9779154316a9f343d204a9b44abe81ff46ed17c45c3c56bc6bf",
+      "bytes": 28268,
+      "decoded_pcm16_bytes": 28224,
+      "decoded_float32_bytes": 56448,
+      "seconds": 0.32,
+      "peak_dBFS": -2.999999523162842,
+      "rms_dBFS": -28.80967963565013,
+      "sources": [
+        {
+          "file": "raw/Scythian Recurve Shoot.wav",
+          "start": 3.33,
+          "duration": 0.32,
+          "sha256": "8d95d06f0c7539f14b5a69fb2818ab42dc985b6966db9856a30a7767f11c259b"
+        },
+        {
+          "file": "raw/Arrow Fletching.wav",
+          "start": 19.28,
+          "duration": 0.28,
+          "sha256": "d19db022f47e4d038b09ac68a9f43b1468bd831b14419219bf6b32cea93a7d9d"
+        }
+      ],
+      "edit": {
+        "lowpass": 5000,
+        "highpass": 120,
+        "fade_ms": 12,
+        "layers": [
+          "Arrow Fletching",
+          0.28,
+          0.18
+        ],
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "army-repeater-0",
+      "path": "assets/resources/audio/weapons/army-repeater-0.wav",
+      "sha256": "47535c8b17df12a93a0c68f5d8f24e6f0605ba74d7fe51c37325c77d0c8ae96b",
+      "bytes": 15920,
+      "decoded_pcm16_bytes": 15876,
+      "decoded_float32_bytes": 31752,
+      "seconds": 0.18,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -26.274612844789083,
+      "sources": [
+        {
+          "file": "raw/Crossbow Lever Trigger.wav",
+          "start": 2.28,
+          "duration": 0.18,
+          "sha256": "607b6398e35d14d9c9633d047fa0dbf7e8e5a3ffee13bdeddc8dba41320c960a"
+        }
+      ],
+      "edit": {
+        "lowpass": 4800,
+        "highpass": 200,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "army-repeater-1",
+      "path": "assets/resources/audio/weapons/army-repeater-1.wav",
+      "sha256": "28d801bccb9d246ee64c9a579c07316f590e70cc04fee0adf15f91e3ae90db70",
+      "bytes": 15920,
+      "decoded_pcm16_bytes": 15876,
+      "decoded_float32_bytes": 31752,
+      "seconds": 0.18,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -23.13310304845528,
+      "sources": [
+        {
+          "file": "raw/Crossbow Lever Trigger.wav",
+          "start": 4.23,
+          "duration": 0.18,
+          "sha256": "607b6398e35d14d9c9633d047fa0dbf7e8e5a3ffee13bdeddc8dba41320c960a"
+        }
+      ],
+      "edit": {
+        "lowpass": 4800,
+        "highpass": 200,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "army-repeater-2",
+      "path": "assets/resources/audio/weapons/army-repeater-2.wav",
+      "sha256": "76ac39786182836b784c5e6ca88d60c886420b101019856d30baa97a7c408f94",
+      "bytes": 15508,
+      "decoded_pcm16_bytes": 15464,
+      "decoded_float32_bytes": 30928,
+      "seconds": 0.17532879818594105,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -26.272422814997043,
+      "sources": [
+        {
+          "file": "raw/Crossbow Lever Trigger.wav",
+          "start": 4.83,
+          "duration": 0.18,
+          "sha256": "607b6398e35d14d9c9633d047fa0dbf7e8e5a3ffee13bdeddc8dba41320c960a"
+        }
+      ],
+      "edit": {
+        "lowpass": 4800,
+        "highpass": 200,
+        "fade_ms": 12,
+        "layers": null,
+        "note": "fire uses quiet recorded fletching friction for light rustle tail; no fabricated combustion recording"
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "impact-soft-0",
+      "path": "assets/resources/audio/weapons/impact-soft-0.wav",
+      "sha256": "54cce2ab3b21146aa330c6c34544e29e0fe4bd0b2f3fc306c78cbbc19fcfc118",
+      "bytes": 10196,
+      "decoded_pcm16_bytes": 10152,
+      "decoded_float32_bytes": 20304,
+      "seconds": 0.11510204081632654,
+      "peak_dBFS": -9.139970779418945,
+      "rms_dBFS": -20.99999970913206,
+      "sources": [
+        {
+          "file": "kenney/Audio/impactSoft_medium_000.ogg",
+          "sha256": "7d3ba0bb5e60a11b5d3e558c141303dcf494256675fbf753c0d252d2cf0481e3",
+          "start": 0
+        }
+      ],
+      "edit": {
+        "fade_ms": 12,
+        "duration_max": 0.24
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "impact-soft-1",
+      "path": "assets/resources/audio/weapons/impact-soft-1.wav",
+      "sha256": "137273fc9f12b96137b7aac1802dee124ed3b5128643f961dc7f176f14959c37",
+      "bytes": 15954,
+      "decoded_pcm16_bytes": 15910,
+      "decoded_float32_bytes": 31820,
+      "seconds": 0.18038548752834468,
+      "peak_dBFS": -7.768082141876221,
+      "rms_dBFS": -20.99999898301876,
+      "sources": [
+        {
+          "file": "kenney/Audio/impactSoft_medium_001.ogg",
+          "sha256": "7642a4fd43e547afe4f7adfadb3dabb681c0ff512f52c1674bae30a726841faf",
+          "start": 0
+        }
+      ],
+      "edit": {
+        "fade_ms": 12,
+        "duration_max": 0.24
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "impact-soft-2",
+      "path": "assets/resources/audio/weapons/impact-soft-2.wav",
+      "sha256": "06a5aaffdcbc465fcf1ec17d0331b64a8194dd55d6209463e074c543d4b8cf79",
+      "bytes": 11712,
+      "decoded_pcm16_bytes": 11668,
+      "decoded_float32_bytes": 23336,
+      "seconds": 0.13229024943310658,
+      "peak_dBFS": -9.640798568725586,
+      "rms_dBFS": -20.99999898301876,
+      "sources": [
+        {
+          "file": "kenney/Audio/impactSoft_medium_002.ogg",
+          "sha256": "5069e3571a77d7f7aae9ef71d0364aa245fb7d64a7c8cc9956f221d03088c089",
+          "start": 0
+        }
+      ],
+      "edit": {
+        "fade_ms": 12,
+        "duration_max": 0.24
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "impact-metal-0",
+      "path": "assets/resources/audio/weapons/impact-metal-0.wav",
+      "sha256": "88559cfbd96be2d99f99764aa6ffb98a1988997ec314a6392e820658e4ea57c3",
+      "bytes": 21212,
+      "decoded_pcm16_bytes": 21168,
+      "decoded_float32_bytes": 42336,
+      "seconds": 0.24,
+      "peak_dBFS": -4.105984687805176,
+      "rms_dBFS": -20.99999970913206,
+      "sources": [
+        {
+          "file": "kenney/Audio/impactMetal_light_000.ogg",
+          "sha256": "33b5e6e37c6e9d54e07bf5a89b12c76e879f40c1ea83cdd82714df1d6f9fec6d",
+          "start": 0
+        }
+      ],
+      "edit": {
+        "fade_ms": 12,
+        "duration_max": 0.24
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "impact-metal-1",
+      "path": "assets/resources/audio/weapons/impact-metal-1.wav",
+      "sha256": "4002bf6073e442af37d176a7121335b8e484323b533d6089ec7cd31e493f055b",
+      "bytes": 21212,
+      "decoded_pcm16_bytes": 21168,
+      "decoded_float32_bytes": 42336,
+      "seconds": 0.24,
+      "peak_dBFS": -3.2751173973083496,
+      "rms_dBFS": -21.00000043524542,
+      "sources": [
+        {
+          "file": "kenney/Audio/impactMetal_light_001.ogg",
+          "sha256": "fba69c467ddd85da7b1d82e259f936b876d9ba6a3d6f1b24bdd10468e46bfe08",
+          "start": 0
+        }
+      ],
+      "edit": {
+        "fade_ms": 12,
+        "duration_max": 0.24
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "impact-metal-2",
+      "path": "assets/resources/audio/weapons/impact-metal-2.wav",
+      "sha256": "214dbf8627dd0eba81a73a7e1462e21d4ce94f0acdad7536591b0e10bb0d5a1c",
+      "bytes": 20584,
+      "decoded_pcm16_bytes": 20540,
+      "decoded_float32_bytes": 41080,
+      "seconds": 0.2328798185941043,
+      "peak_dBFS": -3.0,
+      "rms_dBFS": -21.530882996803587,
+      "sources": [
+        {
+          "file": "kenney/Audio/impactMetal_light_002.ogg",
+          "sha256": "25a96f90a9a1f88a531e824e126f0519504625e5635e65a72e4f31611428db29",
+          "start": 0
+        }
+      ],
+      "edit": {
+        "fade_ms": 12,
+        "duration_max": 0.24
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "impact-wood-0",
+      "path": "assets/resources/audio/weapons/impact-wood-0.wav",
+      "sha256": "82a65fdf643e7549eb11cceaa6f4aeec7b07c004d79676bd10ac43cdcf5611da",
+      "bytes": 21212,
+      "decoded_pcm16_bytes": 21168,
+      "decoded_float32_bytes": 42336,
+      "seconds": 0.24,
+      "peak_dBFS": -5.392210483551025,
+      "rms_dBFS": -21.00000043524542,
+      "sources": [
+        {
+          "file": "kenney/Audio/impactWood_medium_000.ogg",
+          "sha256": "1723a9fd25103ed41af06054814e84e65f4a772bac86ab2dc927da93d9592ff5",
+          "start": 0
+        }
+      ],
+      "edit": {
+        "fade_ms": 12,
+        "duration_max": 0.24
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "impact-wood-1",
+      "path": "assets/resources/audio/weapons/impact-wood-1.wav",
+      "sha256": "6769bbaf1cce82a2479819871bcf96d878126a159a23843f9d78286132ad56e8",
+      "bytes": 21212,
+      "decoded_pcm16_bytes": 21168,
+      "decoded_float32_bytes": 42336,
+      "seconds": 0.24,
+      "peak_dBFS": -5.458650588989258,
+      "rms_dBFS": -20.99999970913206,
+      "sources": [
+        {
+          "file": "kenney/Audio/impactWood_medium_001.ogg",
+          "sha256": "15271dbe8e2872dbb0ff1aeb7b12b2d2b92b7c1951c88532b9ab9158c36dfc73",
+          "start": 0
+        }
+      ],
+      "edit": {
+        "fade_ms": 12,
+        "duration_max": 0.24
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "impact-wood-2",
+      "path": "assets/resources/audio/weapons/impact-wood-2.wav",
+      "sha256": "3cac103f49e640831e4dc1eaa7d285a64b2ab7f351b77544821c2bf6792184cb",
+      "bytes": 21212,
+      "decoded_pcm16_bytes": 21168,
+      "decoded_float32_bytes": 42336,
+      "seconds": 0.24,
+      "peak_dBFS": -5.589227676391602,
+      "rms_dBFS": -20.99999970913206,
+      "sources": [
+        {
+          "file": "kenney/Audio/impactWood_medium_002.ogg",
+          "sha256": "3f3f1917428b828f733a963167833c707bf88296ff158e1559c57c5cb813d799",
+          "start": 0
+        }
+      ],
+      "edit": {
+        "fade_ms": 12,
+        "duration_max": 0.24
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "impact-generic-0",
+      "path": "assets/resources/audio/weapons/impact-generic-0.wav",
+      "sha256": "96edd415cc04200065c35679fe99bd1bed65bf9ddc08f497be44766f2814215f",
+      "bytes": 14252,
+      "decoded_pcm16_bytes": 14208,
+      "decoded_float32_bytes": 28416,
+      "seconds": 0.16108843537414966,
+      "peak_dBFS": -6.332063674926758,
+      "rms_dBFS": -20.99999970913206,
+      "sources": [
+        {
+          "file": "kenney/Audio/impactGeneric_light_000.ogg",
+          "sha256": "f0e982611e97512fee5f777986b67e8b435434b601f94992ec044f7e89fb5acb",
+          "start": 0
+        }
+      ],
+      "edit": {
+        "fade_ms": 12,
+        "duration_max": 0.24
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "impact-generic-1",
+      "path": "assets/resources/audio/weapons/impact-generic-1.wav",
+      "sha256": "1f65bbf0fa0759338b10cf2e61756d62c71cd3029da648bb85368e9ebf7ac148",
+      "bytes": 10152,
+      "decoded_pcm16_bytes": 10108,
+      "decoded_float32_bytes": 20216,
+      "seconds": 0.11460317460317461,
+      "peak_dBFS": -4.682770252227783,
+      "rms_dBFS": -21.00000043524542,
+      "sources": [
+        {
+          "file": "kenney/Audio/impactGeneric_light_001.ogg",
+          "sha256": "c3cd1c073d186ae8fa35788ba94de581f1826e7427a7bb26490b2695fac18efa",
+          "start": 0
+        }
+      ],
+      "edit": {
+        "fade_ms": 12,
+        "duration_max": 0.24
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    },
+    {
+      "id": "impact-generic-2",
+      "path": "assets/resources/audio/weapons/impact-generic-2.wav",
+      "sha256": "e7ffaabc0e7baa7742addebce3558f04d19f8e66b6acc6cb1af60cf8f55fb3ff",
+      "bytes": 14252,
+      "decoded_pcm16_bytes": 14208,
+      "decoded_float32_bytes": 28416,
+      "seconds": 0.16108843537414966,
+      "peak_dBFS": -3.4716663360595703,
+      "rms_dBFS": -21.00000043524542,
+      "sources": [
+        {
+          "file": "kenney/Audio/impactGeneric_light_002.ogg",
+          "sha256": "d0bf60905b59ff630ffe01eb0edeeacd2504eaa8fb6523aeef7d2458b78264d3",
+          "start": 0
+        }
+      ],
+      "edit": {
+        "fade_ms": 12,
+        "duration_max": 0.24
+      },
+      "listen_status": "pending human listening; real recorded foley composite, not historical Chinese weapon recording"
+    }
+  ],
+  "total_bytes": 1101460,
+  "pcm16_bytes": 1099216,
+  "float32_bytes": 2198432
+}

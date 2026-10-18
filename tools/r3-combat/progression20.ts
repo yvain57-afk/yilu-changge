@@ -1,0 +1,11 @@
+import {configureLegalLoadout} from './legal-loadout';
+import {createBattle} from '../../assets/scripts/formal/battle';import {FormalStore} from '../../assets/scripts/formal/store';import {CHAPTERS,TREASURES} from '../../assets/scripts/formal/data';import {combatReviewTarget} from '../../assets/scripts/formal/CombatReviewPolicy';import {writeFileSync} from 'node:fs';
+const db=new Map<string,string>(),store=new FormalStore({getItem:k=>db.get(k)||null,setItem:(k,v)=>{db.set(k,v);}}),rows=[];
+for(let chapter=0;chapter<20;chapter++){
+ const loadout=configureLegalLoadout(store),b=createBattle({chapter,lineup:loadout,seed:71});let bossTroops=null;
+ for(let i=0;i<18000&&!b.state.ended;i++){if(i%6===0){const target=combatReviewTarget(b.snapshot(),'normal');if(target!==null)b.move(target);}b.step();if(b.state.boss&&bossTroops===null)bossTroops=b.state.troops;}
+ const s=b.snapshot(),won=s.phase==='won',before={completed:store.completed,xp:store.data.xp},settled=store.settle({id:'r3-sequential-'+chapter,chapter,won,troops:s.troops,treasures:s.runGot,defeatedOfficerIds:s.defeatedOfficerIds,defeatedBossId:s.defeatedBossId,practiceSegments:s.progressEligible,effectiveHits:s.stats.arrowsHit,routeXP:s.routeXP});
+ rows.push({chapter:chapter+1,loadout,before,settled,after:{completed:store.completed,xp:store.data.xp,badges:store.data.badges,selectedWeapon:store.data.selectedWeaponId},phase:s.phase,t:s.t,bossTroops,troops:s.troops,damage:s.damageSources,grossLoss:s.damageHistory.reduce((n,e)=>n+e.actual,0),saved:s.stats.supportSaved,timing:s.timing,reinforcement:b.ledger.filter(e=>e.kind==='troops'&&e.amount>0).reduce((n,e)=>n+e.amount,0),spawned:s.waveAccounting.reduce((n,e)=>n+e.spawned,0),warning:b.snapshot().director,release:s.enemyLifecycle.flatMap(e=>e.events).filter(e=>e.stage==='release').length,bossId:s.defeatedBossId,requiredOfficers:s.defeatedOfficerIds});
+ console.log('chapter',chapter+1,s.phase,s.t.toFixed(2),'troops',s.troops,'loss',JSON.stringify(s.damageSources));if(!won)break;store.acknowledgePresentation();
+}
+writeFileSync('evidence/R3-COMBAT-PATCH-20261002/combat/normal-sequential20.json',JSON.stringify({scope:'fresh isolated store; no progress skips, no invulnerability, no route lookahead; all rewards actual battle settled',rows,finalSave:store.data},null,2));

@@ -1,0 +1,9 @@
+import {open,E} from './browser.mjs';import fs from 'node:fs';import crypto from 'node:crypto';import assert from 'node:assert/strict';
+const cases=[['U01','home'],['U02','map'],['U03','prepare:weapons'],['U04','collection:people'],['U05','person:zhao'],['U06','item:liannu'],['U07','result'],['U08','reward:0'],['U09','milestone:9'],['U10','defeat'],['U11','pause'],['U12','settings'],['U13','error']];
+const t=await open('same-state'),results=[];
+const state=s=>({cleared:s.save.cleared,xp:s.save.xp,selectedWeaponId:s.save.selectedWeaponId,weapons:s.save.weapons,weaponLevels:s.save.weaponLevels,companions:s.save.companions,support:s.save.support,slots:s.save.slots,rewardItems:s.reward?.items,chapter:s.chapter,screen:s.screen});
+try{for(const [id,fixture] of cases){const pair={id,fixture};for(const [side,port] of [['before',43214],['after',43215]]){
+ await t.p.goto(`http://127.0.0.1:${port}/?yilu-review=UI:${fixture}`);await t.p.waitForFunction(()=>globalThis.__YLCG__&&__YLCG__.snapshot().screen!=='loading',{},{timeout:60000});await t.p.waitForTimeout(1500);
+ const s=await t.capture('pair-'+id+'-'+side),data=state(s);pair[side]={file:'pixels/pair-'+id+'-'+side+'.png',build:s.build,data,dataFingerprint:crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex'),scrollOffset:s.ui.scroll,minimumWaitAfterSceneReadyMs:1500,logicalViewport:[375,667],scope:s.verificationScope};
+ }assert.deepEqual(pair.after.data,pair.before.data,id+' same model state');results.push(pair);console.log(id,'same state',pair.before.build.code_fingerprint.slice(0,12),'->',pair.after.build.code_fingerprint.slice(0,12));}assert.deepEqual(t.errors,[]);
+}finally{fs.writeFileSync(E+'/same-state-pairs.json',JSON.stringify({results,pageErrors:t.errors,basis:'Archived actual UI-FINAL Web build vs new actual Cocos Web build. Both use identical legitimate memory fixtures; different build fingerprints retained. Not physical device.'},null,2));await t.close();}

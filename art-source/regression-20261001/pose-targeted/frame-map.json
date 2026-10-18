@@ -1,0 +1,639 @@
+{
+  "sheets": {
+    "r27_character_gaits": "formal20260927/r27-character-gaits",
+    "r27_crossbows": "formal20260927/r27-crossbows",
+    "r27_hero_hand_poses": "formal20260927/r27-hero-hand-poses"
+  },
+  "frames": {
+    "r27_char_taishici_run0": {
+      "s": "r27_character_gaits",
+      "r": [
+        8,
+        8,
+        271,
+        199
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 175.12
+    },
+    "r27_char_taishici_run1": {
+      "s": "r27_character_gaits",
+      "r": [
+        295,
+        8,
+        271,
+        199
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 175.12
+    },
+    "r27_char_ganning_run0": {
+      "s": "r27_character_gaits",
+      "r": [
+        582,
+        8,
+        288,
+        205
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 180.4
+    },
+    "r27_char_ganning_run1": {
+      "s": "r27_character_gaits",
+      "r": [
+        886,
+        8,
+        288,
+        205
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 180.4
+    },
+    "r27_char_zhanghe_run0": {
+      "s": "r27_character_gaits",
+      "r": [
+        1190,
+        8,
+        269,
+        218
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 191.84
+    },
+    "r27_char_zhanghe_run1": {
+      "s": "r27_character_gaits",
+      "r": [
+        1475,
+        8,
+        274,
+        218
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 191.84
+    },
+    "r27_char_xiahouyuan_run0": {
+      "s": "r27_character_gaits",
+      "r": [
+        1765,
+        8,
+        224,
+        217
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 190.96
+    },
+    "r27_char_xiahouyuan_run1": {
+      "s": "r27_character_gaits",
+      "r": [
+        8,
+        242,
+        220,
+        217
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 190.96
+    },
+    "r27_char_weiyan_run0": {
+      "s": "r27_character_gaits",
+      "r": [
+        244,
+        242,
+        271,
+        239
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 210.32
+    },
+    "r27_char_weiyan_run1": {
+      "s": "r27_character_gaits",
+      "r": [
+        531,
+        242,
+        261,
+        239
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 210.32
+    },
+    "r27_char_zhangren_run0": {
+      "s": "r27_character_gaits",
+      "r": [
+        808,
+        242,
+        285,
+        180
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 158.4
+    },
+    "r27_char_zhangren_run1": {
+      "s": "r27_character_gaits",
+      "r": [
+        1109,
+        242,
+        284,
+        180
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 158.4
+    },
+    "r27_char_dengai_run0": {
+      "s": "r27_character_gaits",
+      "r": [
+        1409,
+        242,
+        222,
+        218
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 191.84
+    },
+    "r27_char_dengai_run1": {
+      "s": "r27_character_gaits",
+      "r": [
+        1647,
+        242,
+        221,
+        218
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 191.84
+    },
+    "r27_char_lusu_run0": {
+      "s": "r27_character_gaits",
+      "r": [
+        8,
+        497,
+        169,
+        246
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 216.48
+    },
+    "r27_char_lusu_run1": {
+      "s": "r27_character_gaits",
+      "r": [
+        193,
+        497,
+        168,
+        246
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 216.48
+    },
+    "r27_char_huangyueying_run0": {
+      "s": "r27_character_gaits",
+      "r": [
+        377,
+        497,
+        220,
+        242
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 212.96
+    },
+    "r27_char_huangyueying_run1": {
+      "s": "r27_character_gaits",
+      "r": [
+        613,
+        497,
+        219,
+        242
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 212.96
+    },
+    "r27_char_caoren_run0": {
+      "s": "r27_character_gaits",
+      "r": [
+        848,
+        497,
+        215,
+        261
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 229.68
+    },
+    "r27_char_caoren_run1": {
+      "s": "r27_character_gaits",
+      "r": [
+        1079,
+        497,
+        216,
+        261
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 229.68
+    },
+    "r27_char_zhonghui_run0": {
+      "s": "r27_character_gaits",
+      "r": [
+        1311,
+        497,
+        198,
+        274
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 241.12
+    },
+    "r27_char_zhonghui_run1": {
+      "s": "r27_character_gaits",
+      "r": [
+        1525,
+        497,
+        198,
+        274
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 241.12
+    },
+    "r27_char_lukang_run0": {
+      "s": "r27_character_gaits",
+      "r": [
+        1739,
+        497,
+        227,
+        304
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 267.52
+    },
+    "r27_char_lukang_run1": {
+      "s": "r27_character_gaits",
+      "r": [
+        8,
+        817,
+        232,
+        304
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 267.52
+    },
+    "r27_held_liannu": {
+      "s": "r27_crossbows",
+      "r": [
+        8,
+        8,
+        490,
+        202
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 202
+    },
+    "r27_held_jiguannu": {
+      "s": "r27_crossbows",
+      "r": [
+        520,
+        8,
+        490,
+        161
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 161
+    },
+    "r27_held_yanlinggong": {
+      "s": "r27_crossbows",
+      "r": [
+        8,
+        264,
+        168,
+        240
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 240
+    },
+    "r27_body_crossbow0": {
+      "s": "r27_hero_hand_poses",
+      "r": [
+        8,
+        8,
+        237,
+        300
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 280
+    },
+    "r27_body_crossbow1": {
+      "s": "r27_hero_hand_poses",
+      "r": [
+        8,
+        328,
+        244,
+        300
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 280
+    },
+    "r27_body_dual0": {
+      "s": "r27_hero_hand_poses",
+      "r": [
+        338,
+        8,
+        237,
+        300
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 280
+    },
+    "r27_body_dual1": {
+      "s": "r27_hero_hand_poses",
+      "r": [
+        338,
+        328,
+        244,
+        300
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 280
+    },
+    "r27_body_bow0": {
+      "s": "r27_hero_hand_poses",
+      "r": [
+        668,
+        8,
+        247,
+        300
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 280
+    },
+    "r27_body_bow1": {
+      "s": "r27_hero_hand_poses",
+      "r": [
+        668,
+        328,
+        248,
+        300
+      ],
+      "a": [
+        0.5,
+        0
+      ],
+      "bh": 280
+    },
+    "r27_body_crossbow0_right_fingers": {
+      "s": "r27_hero_hand_poses",
+      "r": [
+        8,
+        650,
+        14,
+        14
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 14
+    },
+    "r27_body_crossbow0_left_fingers": {
+      "s": "r27_hero_hand_poses",
+      "r": [
+        30,
+        650,
+        14,
+        14
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 14
+    },
+    "r27_body_crossbow1_right_fingers": {
+      "s": "r27_hero_hand_poses",
+      "r": [
+        52,
+        650,
+        14,
+        14
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 14
+    },
+    "r27_body_crossbow1_left_fingers": {
+      "s": "r27_hero_hand_poses",
+      "r": [
+        74,
+        650,
+        14,
+        14
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 14
+    },
+    "r27_body_dual0_right_fingers": {
+      "s": "r27_hero_hand_poses",
+      "r": [
+        96,
+        650,
+        14,
+        14
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 14
+    },
+    "r27_body_dual0_left_fingers": {
+      "s": "r27_hero_hand_poses",
+      "r": [
+        118,
+        650,
+        14,
+        14
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 14
+    },
+    "r27_body_dual1_right_fingers": {
+      "s": "r27_hero_hand_poses",
+      "r": [
+        140,
+        650,
+        14,
+        14
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 14
+    },
+    "r27_body_dual1_left_fingers": {
+      "s": "r27_hero_hand_poses",
+      "r": [
+        162,
+        650,
+        14,
+        14
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 14
+    },
+    "r27_body_bow0_right_fingers": {
+      "s": "r27_hero_hand_poses",
+      "r": [
+        184,
+        650,
+        14,
+        14
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 14
+    },
+    "r27_body_bow0_left_fingers": {
+      "s": "r27_hero_hand_poses",
+      "r": [
+        206,
+        650,
+        14,
+        14
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 14
+    },
+    "r27_body_bow1_right_fingers": {
+      "s": "r27_hero_hand_poses",
+      "r": [
+        228,
+        650,
+        14,
+        14
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 14
+    },
+    "r27_body_bow1_left_fingers": {
+      "s": "r27_hero_hand_poses",
+      "r": [
+        250,
+        650,
+        14,
+        14
+      ],
+      "a": [
+        0.5,
+        0.5
+      ],
+      "bh": 14
+    }
+  }
+}

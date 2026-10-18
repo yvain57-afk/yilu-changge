@@ -1,0 +1,248 @@
+{
+  "task_id": "YILU_R3_COMBAT_PATCH",
+  "status": "not_executed",
+  "baseline_snapshot": "s_20261002T140020_2551691b",
+  "baseline_code_fingerprint": "cb6842dee7e9b609ae7d840dbaf3133c9fc9bd4678187537c042f47bf2bb4527",
+  "cases": [
+    {
+      "id": "L01",
+      "priority": "P0",
+      "title": "远处精英不被清掉",
+      "scope": "正常route，所有7兵种，包含z>40/60边界",
+      "expected": "无己方火力夹具：spawn→visible→warn/contact→release→impact/avoid完整；近处fixture不能替代",
+      "required_evidence": "lifecycle-log + actual continuous runtime",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "L02",
+      "priority": "P0",
+      "title": "预算不丢事件",
+      "scope": "连续高密度、墙段、Boss前",
+      "expected": "预算满时排队，消耗事件有唯一结果；无silent despawn",
+      "required_evidence": "wave-accounting",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "L03",
+      "priority": "P0",
+      "title": "近卫盾兵真实接敌",
+      "scope": "guard/shield处于z18和近战reach内外",
+      "expected": "远处不扣兵；近处有预备/挥刀/回收；挥空不扣",
+      "required_evidence": "damage-ledger + clip",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "L04",
+      "priority": "P0",
+      "title": "轻兵冲到身边",
+      "scope": "快速light正常波，静止/横移两输入",
+      "expected": "可攻击不自动自杀，无每帧重复；脱离后合法离场",
+      "required_evidence": "native/web event trace",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "L05",
+      "priority": "P0",
+      "title": "弓手真实箭矢",
+      "scope": "射手左右两路、发射前后死亡、玩家换线",
+      "expected": "出发点正确，锁定后不追踪，死前未发取消、已发继续",
+      "required_evidence": "trajectory log + original speed",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "L06",
+      "priority": "P0",
+      "title": "无伤害无hurt",
+      "scope": "空挥、全部落空、被防护、实际命中",
+      "expected": "hurt仅actualDamage>0；普通rec无败退；单次伤害可归因",
+      "required_evidence": "pose-event timeline",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "L07",
+      "priority": "P0",
+      "title": "败退与保命",
+      "scope": "兵力归零有/无七星灯",
+      "expected": "保命先结算；只有最终失败才defeated",
+      "required_evidence": "outcome/save test",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "L08",
+      "priority": "P0",
+      "title": "预警可达",
+      "scope": "墙段进出、1/2/3并发、射手死亡已发箭",
+      "expected": "在反应预算和实际接触截止之前有合法避让路径；危险预算到impact结束",
+      "required_evidence": "reachability trace",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "V01",
+      "priority": "P0",
+      "title": "首页构图",
+      "scope": "375/402/430尺寸与真机实际safe area",
+      "expected": "没有开发说明小字；头/双手/关键兵器不被条遮；未为适配把全UI上挪",
+      "required_evidence": "same-state image",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "V02",
+      "priority": "P0",
+      "title": "偃月刀握杆",
+      "scope": "ready/run0-3/wind/rel/rec/show",
+      "expected": "单直杆、两手合理、无残杆，实际出弹与刀势相符",
+      "required_evidence": "source QA + runtime cycle",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "V03",
+      "priority": "P0",
+      "title": "随军不突然变大",
+      "scope": "lubu+machao，c16，20次出手和左右移动",
+      "expected": "role键清楚，无Boss帧/其他角色fallback，身体标尺稳定",
+      "required_evidence": "actor metadata + original speed",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "V04",
+      "priority": "P0",
+      "title": "全动作语义",
+      "scope": "16兵器×5骑乘状态，全部可随军与20Boss",
+      "expected": "正常进攻无Hurt/Fallen/Spent/Yield冒充rec；缺帧明确报缺",
+      "required_evidence": "pose matrix + prioritized runtime",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "V05",
+      "priority": "P1",
+      "title": "76键逐键完成",
+      "scope": "继承ASSET_WORKLIST",
+      "expected": "来源/手点/身份/真实独立动作/图集/运行均通过才关闭",
+      "required_evidence": "per-key evidence",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "V06",
+      "priority": "P1",
+      "title": "门箱与预警阅读",
+      "scope": "密集兵、两门、粮车、宝匣共屏",
+      "expected": "门值/预警/主将轮廓优先；小字不抢视野",
+      "required_evidence": "runtime image and video",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "G01",
+      "priority": "P1",
+      "title": "20关远程覆盖",
+      "scope": "全route正常运行",
+      "expected": "第3关后有常规可见远程；没有4关连续远程失踪；击杀早于射击是合法结果",
+      "required_evidence": "wave/range lifecycle",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "G02",
+      "priority": "P1",
+      "title": "合理操作优于站定",
+      "scope": "6关×8种子×3策略×2合法配装",
+      "expected": "记录样本分布，后半站定明显更差；无隐藏未来信息",
+      "required_evidence": "policy matrix",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "G03",
+      "priority": "P1",
+      "title": "所有Boss显式行为",
+      "scope": "全部20个bossId",
+      "expected": "不静默fallback同一横扫，阶段循环/血尽/奖励无回归",
+      "required_evidence": "boss registry + event trace",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "G04",
+      "priority": "P1",
+      "title": "第16关实玩",
+      "scope": "用户偃月刀Lv3和合法配装；源图换装不混为一局",
+      "expected": "步兵真实接敌、远程迫使走位、可赢可输有原因，记录用户反馈但不代测量",
+      "required_evidence": "native continuous clip",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "S01",
+      "priority": "P0",
+      "title": "继承存档与奖励",
+      "scope": "原15/20、不同装备等级、重复领取/失败保存",
+      "expected": "不清档、不退级、不重复发奖；原claimed/收藏保留",
+      "required_evidence": "private backup hash + semantic diff",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "S02",
+      "priority": "P0",
+      "title": "错误U05-long修正",
+      "scope": "合法zhuge，四尺寸×两safe状态",
+      "expected": "断言人物/关系/标题/正文；错误ID让验收失败；缓存含脚本与fixture hash",
+      "required_evidence": "8 corrected results",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "S03",
+      "priority": "P1",
+      "title": "声音资源与事件",
+      "scope": "认可51+已有后续资源，更多敵军命中",
+      "expected": "资源hash保留；释放/命中各一次；按混音预算聚合不伪造静音听验",
+      "required_evidence": "audio manifest + native listen",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "P01",
+      "priority": "P1",
+      "title": "原生压力与恢复",
+      "scope": "无诊断录屏与有录屏分列、连续战斗与后台",
+      "expected": "无幽灵角色/失效Mask；FPS/帧间隔/热/耗电如实记录，缺项unknown",
+      "required_evidence": "device metrics",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "P02",
+      "priority": "P0",
+      "title": "新候选安装与启动",
+      "scope": "新构建唯一编号/指纹，先备份再同bundle覆盖",
+      "expected": "安装/启动/画面/操作/玩通分列；不重新安装旧0.12.3冒充",
+      "required_evidence": "install and runtime receipts",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "P03",
+      "priority": "P1",
+      "title": "全20关接续",
+      "scope": "隔离合法新档连续路线，不开无敌/直接清关",
+      "expected": "结算/新关/里程碑/终局不回归，自动结果不充当真人手感",
+      "required_evidence": "full progression record",
+      "status": "not_run",
+      "evidence_ids": []
+    }
+  ]
+}

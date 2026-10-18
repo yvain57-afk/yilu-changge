@@ -1,0 +1,156 @@
+{
+  "frames": [
+    {
+      "key": "r3_enemy_light_run",
+      "sourceGridCell": 0,
+      "sourceRect": [
+        -2,
+        -2,
+        547,
+        728
+      ],
+      "padding": [
+        2,
+        2
+      ],
+      "originalUntrimmedSize": [
+        543.0,
+        724.0
+      ],
+      "canonicalBodyHeight": 608.16,
+      "targetRect": [
+        0,
+        0,
+        547,
+        728
+      ]
+    },
+    {
+      "key": "r3_enemy_light_wind",
+      "sourceGridCell": 1,
+      "sourceRect": [
+        541,
+        -2,
+        547,
+        728
+      ],
+      "padding": [
+        2,
+        2
+      ],
+      "originalUntrimmedSize": [
+        543.0,
+        724.0
+      ],
+      "canonicalBodyHeight": 608.16,
+      "targetRect": [
+        547,
+        0,
+        547,
+        728
+      ]
+    },
+    {
+      "key": "r3_enemy_light_rel",
+      "sourceGridCell": 2,
+      "sourceRect": [
+        1084,
+        -2,
+        547,
+        728
+      ],
+      "padding": [
+        2,
+        2
+      ],
+      "originalUntrimmedSize": [
+        543.0,
+        724.0
+      ],
+      "canonicalBodyHeight": 608.16,
+      "targetRect": [
+        1094,
+        0,
+        547,
+        728
+      ]
+    },
+    {
+      "key": "r3_enemy_light_rec",
+      "sourceGridCell": 3,
+      "sourceRect": [
+        1627,
+        -2,
+        547,
+        728
+      ],
+      "padding": [
+        2,
+        2
+      ],
+      "originalUntrimmedSize": [
+        543.0,
+        724.0
+      ],
+      "canonicalBodyHeight": 608.16,
+      "targetRect": [
+        1641,
+        0,
+        547,
+        728
+      ]
+    }
+  ],
+  "sourceComponents": [
+    {
+      "pixels": 144480,
+      "owner": 1,
+      "bounds": [
+        650,
+        17,
+        1054,
+        695
+      ]
+    },
+    {
+      "pixels": 136733,
+      "owner": 0,
+      "bounds": [
+        43,
+        32,
+        537,
+        690
+      ]
+    },
+    {
+      "pixels": 127709,
+      "owner": 2,
+      "bounds": [
+        1175,
+        50,
+        1518,
+        702
+      ]
+    },
+    {
+      "pixels": 140970,
+      "owner": 3,
+      "bounds": [
+        1680,
+        52,
+        2098,
+        689
+      ]
+    },
+    {
+      "pixels": 3,
+      "owner": 3,
+      "bounds": [
+        1950,
+        145,
+        1953,
+        146
+      ]
+    }
+  ]
+}

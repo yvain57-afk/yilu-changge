@@ -16,7 +16,15 @@
 
 ## 项目约束
 
+- 当前优先级为 iPhone 上优化与短测，再决定微信小游戏接入；日常流程见 `docs/TESTING.md`。
+- 普通修改只跑相关现有测试；`npm run check:fast` 是少量检查，`npm run test:targeted -- tests/具体文件.test.ts` 指定范围。完整回归按大范围变动、正式候选或相关失败启用，不把少量检查当全面验收。
+- 日常默认不录长视频、不复制整树、不重复构建多平台；复用同源可用构建与增量缓存。新临时产物放 `.cache/iphone-quick/`，必要诊断证据和恢复资料保留。
+
 - 保留已认可的视觉方向、战场构图、四兵器表现与敌将交锋，不重新设计。
 - 工作树含大量此前已有的未提交 / 未跟踪工作；不得 reset、clean、stash 或覆盖。提交、合并、发布按用户明确授权执行。
 - 预览中的 `DEMO_LINEUP`、`autopilot`、调试按钮只用于演示，不作为正式数据或功能。
 - 源素材在 `art-source/`，切片由 `art-source/battle-preview-20260926/slice.py` 生成到 `docs/BATTLE-PREVIEW-20260926/assets/gen/`；不要把必要资源只留在临时目录。
+
+## 项目只读 MCP 开发交接
+
+接到用户主动交来的 ChatGPT 任务书，先核对 `project_id=yilu-changge`、`baseline_snapshot_id`、HEAD 和 `code_fingerprint`；只比较本任务相关的新差异，不回滚现有 dirty 或无目的重新研究全仓。按已授权范围实现并记录实际检查／证据，最后用 `./tools/project-reader/yilu-bridge finalize --task 任务编号 --result 项目内结果文档.md` 更新快照。入口见 `docs/ai-bridge/RUNBOOK.md`。这属于 Codex 项目操作约定，不表示 ChatGPT 可自动执行本地 Skill、命令或写任务。

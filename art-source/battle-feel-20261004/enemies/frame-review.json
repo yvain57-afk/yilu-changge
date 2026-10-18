@@ -1,0 +1,349 @@
+{
+  "sourceSha256": "dbea6aca944268fc4ac004fea5ea73222f01472ad467529a83dc099376bf7f0c",
+  "outputSha256": "71b9721751b715885286d7b46c0b05bd9200b97abcd11ea351e571c2dbd0f09a",
+  "frames": [
+    {
+      "key": "bf_enemy_cavalry_run0",
+      "sourceAnchor": [
+        194,
+        334
+      ],
+      "sourceBounds": [
+        46,
+        16,
+        264,
+        334
+      ],
+      "pixels": 33924,
+      "alphaBounds": [
+        59,
+        71,
+        279,
+        390
+      ],
+      "sourceFile": "art-source/battle-feel-20261004/enemies/source.png",
+      "bh": 300
+    },
+    {
+      "key": "bf_enemy_cavalry_run1",
+      "sourceAnchor": [
+        488,
+        290
+      ],
+      "sourceBounds": [
+        335,
+        11,
+        572,
+        289
+      ],
+      "pixels": 32721,
+      "alphaBounds": [
+        54,
+        110,
+        293,
+        389
+      ],
+      "sourceFile": "art-source/battle-feel-20261004/enemies/source.png",
+      "bh": 300
+    },
+    {
+      "key": "bf_enemy_cavalry_run2",
+      "sourceAnchor": [
+        776,
+        350
+      ],
+      "sourceBounds": [
+        636,
+        10,
+        874,
+        350
+      ],
+      "pixels": 36302,
+      "alphaBounds": [
+        67,
+        49,
+        306,
+        390
+      ],
+      "sourceFile": "art-source/battle-feel-20261004/enemies/source.png",
+      "bh": 300
+    },
+    {
+      "key": "bf_enemy_cavalry_run3",
+      "sourceAnchor": [
+        1096,
+        340
+      ],
+      "sourceBounds": [
+        965,
+        11,
+        1176,
+        340
+      ],
+      "pixels": 37237,
+      "alphaBounds": [
+        76,
+        60,
+        288,
+        391
+      ],
+      "sourceFile": "art-source/battle-feel-20261004/enemies/source.png",
+      "bh": 300
+    },
+    {
+      "key": "bf_enemy_cavalry_wind",
+      "sourceAnchor": [
+        176,
+        684
+      ],
+      "sourceBounds": [
+        52,
+        296,
+        270,
+        684
+      ],
+      "pixels": 35114,
+      "alphaBounds": [
+        83,
+        1,
+        303,
+        390
+      ],
+      "sourceFile": "art-source/battle-feel-20261004/enemies/source.png",
+      "bh": 300
+    },
+    {
+      "key": "bf_enemy_cavalry_rel",
+      "sourceAnchor": [
+        480,
+        677
+      ],
+      "sourceBounds": [
+        381,
+        362,
+        568,
+        677
+      ],
+      "pixels": 32424,
+      "alphaBounds": [
+        108,
+        74,
+        296,
+        390
+      ],
+      "sourceFile": "art-source/battle-feel-20261004/enemies/source.png",
+      "bh": 300
+    },
+    {
+      "key": "bf_enemy_cavalry_hit",
+      "sourceAnchor": [
+        776,
+        685
+      ],
+      "sourceBounds": [
+        631,
+        386,
+        911,
+        685
+      ],
+      "pixels": 41639,
+      "alphaBounds": [
+        62,
+        90,
+        344,
+        391
+      ],
+      "sourceFile": "art-source/battle-feel-20261004/enemies/source.png",
+      "bh": 300
+    },
+    {
+      "key": "bf_enemy_cavalry_fallen",
+      "sourceAnchor": [
+        1070,
+        670
+      ],
+      "sourceBounds": [
+        916,
+        481,
+        1240,
+        684
+      ],
+      "pixels": 43402,
+      "alphaBounds": [
+        53,
+        200,
+        379,
+        405
+      ],
+      "sourceFile": "art-source/battle-feel-20261004/enemies/source.png",
+      "bh": 300
+    },
+    {
+      "key": "bf_enemy_light_run0",
+      "sourceAnchor": [
+        170,
+        953
+      ],
+      "sourceBounds": [
+        68,
+        699,
+        272,
+        953
+      ],
+      "pixels": 23574,
+      "alphaBounds": [
+        105,
+        136,
+        311,
+        391
+      ],
+      "sourceFile": "art-source/battle-feel-20261004/enemies/source.png",
+      "bh": 250
+    },
+    {
+      "key": "bf_enemy_light_run1",
+      "sourceAnchor": null,
+      "sourceBounds": [
+        371,
+        695,
+        558,
+        945
+      ],
+      "pixels": 23096,
+      "alphaBounds": [
+        105,
+        140,
+        311,
+        390
+      ],
+      "sourceFile": "art-source/battle-feel-20261004/enemies/run-first-retry.png",
+      "bh": 250
+    },
+    {
+      "key": "bf_enemy_light_run2",
+      "sourceAnchor": null,
+      "sourceBounds": [
+        652,
+        702,
+        860,
+        948
+      ],
+      "pixels": 22246,
+      "alphaBounds": [
+        88,
+        135,
+        300,
+        393
+      ],
+      "sourceFile": "art-source/battle-feel-20261004/enemies/left-contact.png",
+      "bh": 250
+    },
+    {
+      "key": "bf_enemy_light_run3",
+      "sourceAnchor": null,
+      "sourceBounds": [
+        961,
+        702,
+        1175,
+        950
+      ],
+      "pixels": 23061,
+      "alphaBounds": [
+        87,
+        147,
+        302,
+        394
+      ],
+      "sourceFile": "art-source/battle-feel-20261004/enemies/left-passing.png",
+      "bh": 250
+    },
+    {
+      "key": "bf_enemy_light_wind",
+      "sourceAnchor": [
+        166,
+        1243
+      ],
+      "sourceBounds": [
+        69,
+        918,
+        244,
+        1243
+      ],
+      "pixels": 24737,
+      "alphaBounds": [
+        110,
+        64,
+        286,
+        391
+      ],
+      "sourceFile": "art-source/battle-feel-20261004/enemies/source.png",
+      "bh": 250
+    },
+    {
+      "key": "bf_enemy_light_rel",
+      "sourceAnchor": [
+        474,
+        1242
+      ],
+      "sourceBounds": [
+        365,
+        969,
+        563,
+        1242
+      ],
+      "pixels": 27720,
+      "alphaBounds": [
+        99,
+        116,
+        298,
+        391
+      ],
+      "sourceFile": "art-source/battle-feel-20261004/enemies/source.png",
+      "bh": 250
+    },
+    {
+      "key": "bf_enemy_light_hit",
+      "sourceAnchor": [
+        762,
+        1221
+      ],
+      "sourceBounds": [
+        620,
+        987,
+        888,
+        1221
+      ],
+      "pixels": 29998,
+      "alphaBounds": [
+        65,
+        155,
+        335,
+        391
+      ],
+      "sourceFile": "art-source/battle-feel-20261004/enemies/source.png",
+      "bh": 250
+    },
+    {
+      "key": "bf_enemy_light_fallen",
+      "sourceAnchor": [
+        1070,
+        1210
+      ],
+      "sourceBounds": [
+        914,
+        1052,
+        1222,
+        1221
+      ],
+      "pixels": 25675,
+      "alphaBounds": [
+        52,
+        231,
+        361,
+        402
+      ],
+      "sourceFile": "art-source/battle-feel-20261004/enemies/source.png",
+      "bh": 250
+    }
+  ]
+}

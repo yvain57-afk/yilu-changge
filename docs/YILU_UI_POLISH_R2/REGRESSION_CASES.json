@@ -1,0 +1,169 @@
+{
+  "task_id": "YILU_UI_POLISH_R2",
+  "execution_status": "not_run_in_project",
+  "test_policy": "Targeted tests first; final stable-source full test once. Do not count fixture geometry as pixel or device acceptance.",
+  "cases": [
+    {
+      "id": "Q01",
+      "title": "滚动部分可见",
+      "scope": "375×667/360×640下整备、人物、物品、奖励、结算",
+      "steps": "逐次滚动1、8、半卡像素，再到底回顶",
+      "expected": "相交内容连续显示；页头/底栏不漏像素；完全离开才剔除",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "Q02",
+      "title": "超高单卡",
+      "scope": "说明超过视口高",
+      "steps": "拖动查看完整长内容",
+      "expected": "不存在永远无法显示的整卡；全部文本可达",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "Q03",
+      "title": "触控裁切与取消",
+      "scope": "半露详情按钮、到顶/到底列表",
+      "steps": "从条目拖动8像素以上后回到起点松手；点视口外",
+      "expected": "不选择、不升级、不出征；裁外热区不可用",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "Q04",
+      "title": "原生坐标边界",
+      "scope": "四尺寸及隔离safeTop44/safeBottom34",
+      "steps": "检查裁切根/世界坐标/Label定位",
+      "expected": "无双重缩放偏移，文字与图标同一裁切；测试安全区不冒充真机",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "Q05",
+      "title": "长文字与装饰避让",
+      "scope": "地图、整备、图鉴、长名详情",
+      "steps": "采集文字实际包围盒并肉眼检查",
+      "expected": "不压金边/卷角，不缩必要正文规避越界",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "Q06",
+      "title": "菜单异常帧",
+      "scope": "固定层、内容层、弹窗层",
+      "steps": "依次注入图标/纹理/Label错误后重试，再开关20次",
+      "expected": "无半帧或幽灵热区；安全层不依赖失效图集；资源/回调在热身后不增长",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "Q07",
+      "title": "详情返回记忆",
+      "scope": "整备各页签/图鉴分页/奖励托盘",
+      "steps": "滚到中段→详情→返回；改变筛选/奖励ID",
+      "expected": "同来源恢复位置；新上下文按规则重置；先clamp再绘制",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "Q08",
+      "title": "当前配装与首屏",
+      "scope": "375×667及360×640整备",
+      "steps": "选连弩/偃月刀/长名新兵器，切页签",
+      "expected": "当前选择显著可见；永久等级与本局阶位分开；至少两条常规完整选择项",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "Q09",
+      "title": "全关系与替换",
+      "scope": "收/访/盟/遇/未遇、满编、锁槽",
+      "steps": "查看、替换、取消、确认",
+      "expected": "资格按原业务，取消无变更；不把已遇数量冒充全部可上阵",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "Q10",
+      "title": "升级与选择分离",
+      "scope": "未获/不足/足额/满级",
+      "steps": "升级一次，再选择出征，再重新打开详情",
+      "expected": "费用和增益来自业务；不重复扣款；未获不能装备",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "Q11",
+      "title": "奖励集合与演出",
+      "scope": "单件、多件、长名、里程碑10/20",
+      "steps": "显示主奖和托盘，0.3秒后跳过",
+      "expected": "横幅有意义或不显示；数量不双计；全部内容可达；不虚构星级",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "Q12",
+      "title": "领奖保存与恢复",
+      "scope": "保存失败、待确认、详情返回、跨启动",
+      "steps": "模拟写入失败→重试→确认两次；退出再恢复",
+      "expected": "不重复结算/发奖/扣费；同presentationId；未保存不显示成功",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "Q13",
+      "title": "重游与进度上下文",
+      "scope": "已克13关时重游第11关，及终局",
+      "steps": "结算→试用/下一关/回地图",
+      "expected": "本役、按钮目标、全局里程碑有明确区分；互不误指",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "Q14",
+      "title": "降低动态持久化",
+      "scope": "旧设置缺字段/字段存在/写失败",
+      "steps": "开关、重启、观看演出与战斗",
+      "expected": "偏好兼容保存；写失败可知；必要信息保留；玩法不变",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "Q15",
+      "title": "战斗表现守恒",
+      "scope": "受影响16兵器×步战/四坐骑组合",
+      "steps": "仅对有渲染/素材diff的组合运行实际姿态及c11连弩",
+      "expected": "单主将/持械正确/HUD/Boss；伤害和音效事件不变",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "Q16",
+      "title": "原片末段证据",
+      "scope": "既有c11视频128.260–139.920秒",
+      "steps": "按原始哈希解码并定位实际故障/恢复；无该场景则明确不在原片",
+      "expected": "不把结尾猜成故障；实际时间映射；无该证据再做短专项录制",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "Q17",
+      "title": "正常入口全流程",
+      "scope": "无review参数、独立本地测试存档",
+      "steps": "正常入口到菜单/战斗/保存/重开；再覆盖升级验证",
+      "expected": "fixture示例不进用户档；正常入口可达；升级验证仅设备准入后",
+      "status": "not_run",
+      "evidence_ids": []
+    },
+    {
+      "id": "Q18",
+      "title": "手机最终验收",
+      "scope": "实际已装版本回读、既有准入条件",
+      "steps": "先完成准入再签名安装新候选，触控/后台/恢复/低干扰性能",
+      "expected": "原生Web分列；真实新版本回读与启动；未执行不通过",
+      "status": "not_run",
+      "evidence_ids": []
+    }
+  ]
+}

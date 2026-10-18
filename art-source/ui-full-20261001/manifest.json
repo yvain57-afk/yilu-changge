@@ -1,0 +1,1279 @@
+{
+  "schema": 1,
+  "task": "YILU-BUGFIX-UI-FULL-20261001",
+  "status": "offline_assets_ready_runtime_not_integrated",
+  "gate_a_required": true,
+  "provenance": {
+    "method": "OpenAI built-in image_gen; generated specifically for this project; PIL crop/downscale/packing only",
+    "third_party_art": "none",
+    "reference": "IMG_4399.jpeg only for volume/hierarchy, no source pixels reused",
+    "lighting": "upper-left",
+    "text_baked": false
+  },
+  "atlas": {
+    "file": "ui-components.png",
+    "size": [
+      2048,
+      1024
+    ],
+    "sha256": "9d8966f8dc328a353d3b72e3f7dfe3db833fcb35a5fb58027e47915e21eb4f80",
+    "alpha": "straight RGBA",
+    "filter": "bilinear",
+    "padding": 4,
+    "rotate": false
+  },
+  "frames": [
+    {
+      "id": "ui_button_gold",
+      "state": "normal",
+      "mode": "nine_slice",
+      "source": "source/buttons-primary.png",
+      "source_sha256": "b52d339116a1228e9a35324874431014f6c6beed88f0685e56b2f6239f22f4ec",
+      "source_rect": [
+        28,
+        100,
+        467,
+        189
+      ],
+      "file": "slices/ui_button_gold__normal.png",
+      "sha256": "77be17166b2ad10b15ed42fe3199dc4c556a9c23e82dced35a58b03a01560309",
+      "size": [
+        234,
+        95
+      ],
+      "slice_margins": {
+        "left": 29,
+        "top": 28,
+        "right": 29,
+        "bottom": 28
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 29,
+        "top": 28,
+        "right": 29,
+        "bottom": 28
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        4,
+        4,
+        234,
+        95
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_button_gold",
+      "state": "pressed",
+      "mode": "nine_slice",
+      "source": "source/buttons-primary.png",
+      "source_sha256": "b52d339116a1228e9a35324874431014f6c6beed88f0685e56b2f6239f22f4ec",
+      "source_rect": [
+        535,
+        100,
+        466,
+        189
+      ],
+      "file": "slices/ui_button_gold__pressed.png",
+      "sha256": "bd7fb23bdb15365b9597bb3d5c3fa4c56e68584c232df0a8714447ff4e856379",
+      "size": [
+        233,
+        95
+      ],
+      "slice_margins": {
+        "left": 29,
+        "top": 28,
+        "right": 29,
+        "bottom": 28
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 29,
+        "top": 28,
+        "right": 29,
+        "bottom": 28
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        246,
+        4,
+        233,
+        95
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_button_gold",
+      "state": "disabled",
+      "mode": "nine_slice",
+      "source": "source/buttons-primary.png",
+      "source_sha256": "b52d339116a1228e9a35324874431014f6c6beed88f0685e56b2f6239f22f4ec",
+      "source_rect": [
+        1041,
+        100,
+        467,
+        189
+      ],
+      "file": "slices/ui_button_gold__disabled.png",
+      "sha256": "0c2ba4fddef4bada48fb818a51465c52e4a62cf8a5c944ccf64a653d505cdca2",
+      "size": [
+        234,
+        95
+      ],
+      "slice_margins": {
+        "left": 29,
+        "top": 28,
+        "right": 29,
+        "bottom": 28
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 29,
+        "top": 28,
+        "right": 29,
+        "bottom": 28
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        487,
+        4,
+        234,
+        95
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_button_navy",
+      "state": "normal",
+      "mode": "nine_slice",
+      "source": "source/buttons-primary.png",
+      "source_sha256": "b52d339116a1228e9a35324874431014f6c6beed88f0685e56b2f6239f22f4ec",
+      "source_rect": [
+        28,
+        411,
+        467,
+        189
+      ],
+      "file": "slices/ui_button_navy__normal.png",
+      "sha256": "212b86e1a0b2b4603a3211485bb3e73ad8eb912ebfc925a11c88d58b1998c2ba",
+      "size": [
+        234,
+        95
+      ],
+      "slice_margins": {
+        "left": 29,
+        "top": 28,
+        "right": 29,
+        "bottom": 28
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 29,
+        "top": 28,
+        "right": 29,
+        "bottom": 28
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        729,
+        4,
+        234,
+        95
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_button_navy",
+      "state": "pressed",
+      "mode": "nine_slice",
+      "source": "source/buttons-primary.png",
+      "source_sha256": "b52d339116a1228e9a35324874431014f6c6beed88f0685e56b2f6239f22f4ec",
+      "source_rect": [
+        535,
+        411,
+        466,
+        189
+      ],
+      "file": "slices/ui_button_navy__pressed.png",
+      "sha256": "ad7471c3580785c47ccd86e39787b0478a35e8bc3b245cc64d528f9b010b889e",
+      "size": [
+        233,
+        95
+      ],
+      "slice_margins": {
+        "left": 29,
+        "top": 28,
+        "right": 29,
+        "bottom": 28
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 29,
+        "top": 28,
+        "right": 29,
+        "bottom": 28
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        971,
+        4,
+        233,
+        95
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_button_navy",
+      "state": "disabled",
+      "mode": "nine_slice",
+      "source": "source/buttons-primary.png",
+      "source_sha256": "b52d339116a1228e9a35324874431014f6c6beed88f0685e56b2f6239f22f4ec",
+      "source_rect": [
+        1041,
+        411,
+        467,
+        189
+      ],
+      "file": "slices/ui_button_navy__disabled.png",
+      "sha256": "a95d94d92a1b5dc07f0cbde38e68ac291c83757a0daea0ac44518767a5762800",
+      "size": [
+        234,
+        95
+      ],
+      "slice_margins": {
+        "left": 29,
+        "top": 28,
+        "right": 29,
+        "bottom": 28
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 29,
+        "top": 28,
+        "right": 29,
+        "bottom": 28
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        1212,
+        4,
+        234,
+        95
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_button_warning",
+      "state": "normal",
+      "mode": "nine_slice",
+      "source": "source/buttons-primary.png",
+      "source_sha256": "b52d339116a1228e9a35324874431014f6c6beed88f0685e56b2f6239f22f4ec",
+      "source_rect": [
+        28,
+        722,
+        467,
+        189
+      ],
+      "file": "slices/ui_button_warning__normal.png",
+      "sha256": "16c671cf8d1eaefeff78cb42cb39aa1555228ff4617959202a56e0d6f22c2d72",
+      "size": [
+        234,
+        95
+      ],
+      "slice_margins": {
+        "left": 29,
+        "top": 28,
+        "right": 29,
+        "bottom": 28
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 29,
+        "top": 28,
+        "right": 29,
+        "bottom": 28
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        1454,
+        4,
+        234,
+        95
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_button_warning",
+      "state": "pressed",
+      "mode": "nine_slice",
+      "source": "source/buttons-primary.png",
+      "source_sha256": "b52d339116a1228e9a35324874431014f6c6beed88f0685e56b2f6239f22f4ec",
+      "source_rect": [
+        535,
+        722,
+        466,
+        189
+      ],
+      "file": "slices/ui_button_warning__pressed.png",
+      "sha256": "34cd21c70204d924e3f3cb475fdbf44ce1e790817972fd674f1372e05d6fcf91",
+      "size": [
+        233,
+        95
+      ],
+      "slice_margins": {
+        "left": 29,
+        "top": 28,
+        "right": 29,
+        "bottom": 28
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 29,
+        "top": 28,
+        "right": 29,
+        "bottom": 28
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        1696,
+        4,
+        233,
+        95
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_button_warning",
+      "state": "disabled",
+      "mode": "nine_slice",
+      "source": "source/buttons-primary.png",
+      "source_sha256": "b52d339116a1228e9a35324874431014f6c6beed88f0685e56b2f6239f22f4ec",
+      "source_rect": [
+        1041,
+        722,
+        467,
+        189
+      ],
+      "file": "slices/ui_button_warning__disabled.png",
+      "sha256": "5d9bd08e3d4222fc6b2501bbd9f59f82e7e235a7bf07ac7b627379785847244c",
+      "size": [
+        234,
+        95
+      ],
+      "slice_margins": {
+        "left": 29,
+        "top": 28,
+        "right": 29,
+        "bottom": 28
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 29,
+        "top": 28,
+        "right": 29,
+        "bottom": 28
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        4,
+        107,
+        234,
+        95
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_panel_navy",
+      "state": "normal",
+      "mode": "nine_slice",
+      "source": "source/panels.png",
+      "source_sha256": "cb4205ed77e5964aebc2091010453a6be48f562ce0cd592337f768ece5e5a12a",
+      "source_rect": [
+        40,
+        39,
+        357,
+        345
+      ],
+      "file": "slices/ui_panel_navy__normal.png",
+      "sha256": "4161db574a0e18bb49e12cc80dd80c2f7402af743998648b52d5715212fcbcc0",
+      "size": [
+        179,
+        173
+      ],
+      "slice_margins": {
+        "left": 38,
+        "top": 38,
+        "right": 38,
+        "bottom": 38
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 38,
+        "top": 38,
+        "right": 38,
+        "bottom": 38
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        246,
+        107,
+        179,
+        173
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_panel_navy",
+      "state": "raised",
+      "mode": "nine_slice",
+      "source": "source/panels.png",
+      "source_sha256": "cb4205ed77e5964aebc2091010453a6be48f562ce0cd592337f768ece5e5a12a",
+      "source_rect": [
+        449,
+        39,
+        357,
+        345
+      ],
+      "file": "slices/ui_panel_navy__raised.png",
+      "sha256": "301e1fe6479c0d1be5e4084b6b6c8abe84228356a6a009728f75fd8619f5ceec",
+      "size": [
+        179,
+        173
+      ],
+      "slice_margins": {
+        "left": 38,
+        "top": 38,
+        "right": 38,
+        "bottom": 38
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 38,
+        "top": 38,
+        "right": 38,
+        "bottom": 38
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        433,
+        107,
+        179,
+        173
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_panel_navy",
+      "state": "muted",
+      "mode": "nine_slice",
+      "source": "source/panels.png",
+      "source_sha256": "cb4205ed77e5964aebc2091010453a6be48f562ce0cd592337f768ece5e5a12a",
+      "source_rect": [
+        859,
+        39,
+        357,
+        345
+      ],
+      "file": "slices/ui_panel_navy__muted.png",
+      "sha256": "90d5fb759bf09602715bba26ef4e6ce66db36c504a3d3c968b0328f4128d79ec",
+      "size": [
+        179,
+        173
+      ],
+      "slice_margins": {
+        "left": 38,
+        "top": 38,
+        "right": 38,
+        "bottom": 38
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 38,
+        "top": 38,
+        "right": 38,
+        "bottom": 38
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        620,
+        107,
+        179,
+        173
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_card_item",
+      "state": "normal",
+      "mode": "nine_slice",
+      "source": "source/panels.png",
+      "source_sha256": "cb4205ed77e5964aebc2091010453a6be48f562ce0cd592337f768ece5e5a12a",
+      "source_rect": [
+        39,
+        437,
+        358,
+        342
+      ],
+      "file": "slices/ui_card_item__normal.png",
+      "sha256": "1fc22eca43d87ac455737a6c95873d2801e5f6b1c21df78e0eed8456a6a61581",
+      "size": [
+        179,
+        171
+      ],
+      "slice_margins": {
+        "left": 38,
+        "top": 38,
+        "right": 38,
+        "bottom": 38
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 38,
+        "top": 38,
+        "right": 38,
+        "bottom": 38
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        807,
+        107,
+        179,
+        171
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_card_item",
+      "state": "selected",
+      "mode": "nine_slice",
+      "source": "source/panels.png",
+      "source_sha256": "cb4205ed77e5964aebc2091010453a6be48f562ce0cd592337f768ece5e5a12a",
+      "source_rect": [
+        449,
+        436,
+        357,
+        343
+      ],
+      "file": "slices/ui_card_item__selected.png",
+      "sha256": "e76a23611097f453390d5bd1585be37c22964677f7a4c916a1355b184d9f35ad",
+      "size": [
+        179,
+        172
+      ],
+      "slice_margins": {
+        "left": 38,
+        "top": 38,
+        "right": 38,
+        "bottom": 38
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 38,
+        "top": 38,
+        "right": 38,
+        "bottom": 38
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        994,
+        107,
+        179,
+        172
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_card_item",
+      "state": "locked",
+      "mode": "nine_slice",
+      "source": "source/panels.png",
+      "source_sha256": "cb4205ed77e5964aebc2091010453a6be48f562ce0cd592337f768ece5e5a12a",
+      "source_rect": [
+        858,
+        436,
+        358,
+        343
+      ],
+      "file": "slices/ui_card_item__locked.png",
+      "sha256": "60f78a6e714b52773970bb9faa85fb51d6c7bd9595505fa0eeba7a7821026639",
+      "size": [
+        179,
+        172
+      ],
+      "slice_margins": {
+        "left": 38,
+        "top": 38,
+        "right": 38,
+        "bottom": 38
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 38,
+        "top": 38,
+        "right": 38,
+        "bottom": 38
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        1181,
+        107,
+        179,
+        172
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_dialog",
+      "state": "normal",
+      "mode": "nine_slice",
+      "source": "source/panels.png",
+      "source_sha256": "cb4205ed77e5964aebc2091010453a6be48f562ce0cd592337f768ece5e5a12a",
+      "source_rect": [
+        38,
+        828,
+        360,
+        346
+      ],
+      "file": "slices/ui_dialog__normal.png",
+      "sha256": "9a07f8b93fc57e0a4838b8941b7fbdd988d3eb66bc16f6bd3860a1371ed3b5ca",
+      "size": [
+        180,
+        173
+      ],
+      "slice_margins": {
+        "left": 39,
+        "top": 38,
+        "right": 39,
+        "bottom": 38
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 39,
+        "top": 38,
+        "right": 39,
+        "bottom": 38
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        1368,
+        107,
+        180,
+        173
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_dialog",
+      "state": "warning",
+      "mode": "nine_slice",
+      "source": "source/panels.png",
+      "source_sha256": "cb4205ed77e5964aebc2091010453a6be48f562ce0cd592337f768ece5e5a12a",
+      "source_rect": [
+        448,
+        828,
+        359,
+        343
+      ],
+      "file": "slices/ui_dialog__warning.png",
+      "sha256": "81c2c6a12cda9607c7df1156a891615f14e5fb22b10139efbf9c4eba028a19f5",
+      "size": [
+        180,
+        172
+      ],
+      "slice_margins": {
+        "left": 39,
+        "top": 38,
+        "right": 39,
+        "bottom": 38
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 39,
+        "top": 38,
+        "right": 39,
+        "bottom": 38
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        1556,
+        107,
+        180,
+        172
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_tab",
+      "state": "normal",
+      "mode": "nine_slice",
+      "source": "source/misc.png",
+      "source_sha256": "25d2d623d54bee70e4b4c9f3b8a592f082e865d0119aafc3570d39fb6065e2fd",
+      "source_rect": [
+        19,
+        87,
+        376,
+        136
+      ],
+      "file": "slices/ui_tab__normal.png",
+      "sha256": "a91b09843b03d6110d0c7ac1adc04cb74c5c7f3fdcaccf6e62d25ea6fe573f89",
+      "size": [
+        188,
+        68
+      ],
+      "slice_margins": {
+        "left": 27,
+        "top": 20,
+        "right": 27,
+        "bottom": 20
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 27,
+        "top": 20,
+        "right": 27,
+        "bottom": 20
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        1744,
+        107,
+        188,
+        68
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_tab",
+      "state": "selected",
+      "mode": "nine_slice",
+      "source": "source/misc.png",
+      "source_sha256": "25d2d623d54bee70e4b4c9f3b8a592f082e865d0119aafc3570d39fb6065e2fd",
+      "source_rect": [
+        432,
+        79,
+        392,
+        146
+      ],
+      "file": "slices/ui_tab__selected.png",
+      "sha256": "3a310bdf200d8a35d71836bd6bee8e180e448d33bde95ba5443b5477ea693176",
+      "size": [
+        196,
+        73
+      ],
+      "slice_margins": {
+        "left": 27,
+        "top": 20,
+        "right": 27,
+        "bottom": 20
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 27,
+        "top": 20,
+        "right": 27,
+        "bottom": 20
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        4,
+        288,
+        196,
+        73
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_tab",
+      "state": "disabled",
+      "mode": "nine_slice",
+      "source": "source/misc.png",
+      "source_sha256": "25d2d623d54bee70e4b4c9f3b8a592f082e865d0119aafc3570d39fb6065e2fd",
+      "source_rect": [
+        860,
+        84,
+        377,
+        138
+      ],
+      "file": "slices/ui_tab__disabled.png",
+      "sha256": "fdec70a2b7755d12524501cee951f307e102e2beb89a9ae65cc03e05210bc712",
+      "size": [
+        189,
+        69
+      ],
+      "slice_margins": {
+        "left": 27,
+        "top": 20,
+        "right": 27,
+        "bottom": 20
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 27,
+        "top": 20,
+        "right": 27,
+        "bottom": 20
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        208,
+        288,
+        189,
+        69
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_banner_victory",
+      "state": "normal",
+      "mode": "fixed_corners_stretch_center",
+      "source": "source/misc.png",
+      "source_sha256": "25d2d623d54bee70e4b4c9f3b8a592f082e865d0119aafc3570d39fb6065e2fd",
+      "source_rect": [
+        11,
+        338,
+        420,
+        218
+      ],
+      "file": "slices/ui_banner_victory__normal.png",
+      "sha256": "9d1945294209c80b237d88913cf164b054264a781ccedbaba7b36bd94f772a36",
+      "size": [
+        210,
+        109
+      ],
+      "slice_margins": {
+        "left": 60,
+        "top": 0,
+        "right": 60,
+        "bottom": 0
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 60,
+        "top": 0,
+        "right": 60,
+        "bottom": 0
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        405,
+        288,
+        210,
+        109
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_banner_milestone",
+      "state": "normal",
+      "mode": "fixed_corners_stretch_center",
+      "source": "source/misc.png",
+      "source_sha256": "25d2d623d54bee70e4b4c9f3b8a592f082e865d0119aafc3570d39fb6065e2fd",
+      "source_rect": [
+        461,
+        338,
+        425,
+        218
+      ],
+      "file": "slices/ui_banner_milestone__normal.png",
+      "sha256": "1dc4a781dd57275a87bcdc9444b977ab4a0ee1f665c642289794b55b4932fb39",
+      "size": [
+        213,
+        109
+      ],
+      "slice_margins": {
+        "left": 60,
+        "top": 0,
+        "right": 60,
+        "bottom": 0
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 60,
+        "top": 0,
+        "right": 60,
+        "bottom": 0
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        623,
+        288,
+        213,
+        109
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_medal_base",
+      "state": "normal",
+      "mode": "sprite",
+      "source": "source/misc.png",
+      "source_sha256": "25d2d623d54bee70e4b4c9f3b8a592f082e865d0119aafc3570d39fb6065e2fd",
+      "source_rect": [
+        928,
+        284,
+        320,
+        309
+      ],
+      "file": "slices/ui_medal_base__normal.png",
+      "sha256": "7afabe2ac0e16e44124b05980c1d6103a935ce7502f504a0fc62e3e12b121a78",
+      "size": [
+        160,
+        155
+      ],
+      "slice_margins": null,
+      "transparent_padding_px": 2,
+      "content_inset_px": null,
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        844,
+        288,
+        160,
+        155
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_progress_track",
+      "state": "normal",
+      "mode": "sliced_track_fill_cap",
+      "source": "source/misc.png",
+      "source_sha256": "25d2d623d54bee70e4b4c9f3b8a592f082e865d0119aafc3570d39fb6065e2fd",
+      "source_rect": [
+        330,
+        697,
+        516,
+        99
+      ],
+      "file": "slices/ui_progress_track__normal.png",
+      "sha256": "b60d7b5019fdec69f5e65ef7c1e139c811dc745d38830fe01c55d5289768c088",
+      "size": [
+        258,
+        50
+      ],
+      "slice_margins": {
+        "left": 35,
+        "top": 12,
+        "right": 35,
+        "bottom": 12
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 35,
+        "top": 12,
+        "right": 35,
+        "bottom": 12
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        1012,
+        288,
+        258,
+        50
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_progress_fill",
+      "state": "normal",
+      "mode": "sliced_track_fill_cap",
+      "source": "source/misc.png",
+      "source_sha256": "25d2d623d54bee70e4b4c9f3b8a592f082e865d0119aafc3570d39fb6065e2fd",
+      "source_rect": [
+        879,
+        702,
+        358,
+        91
+      ],
+      "file": "slices/ui_progress_fill__normal.png",
+      "sha256": "0197dba1fd2ab4b8f7e839e3a3aaa366d9b53d691e795281f07711abf2c12c64",
+      "size": [
+        179,
+        46
+      ],
+      "slice_margins": {
+        "left": 21,
+        "top": 10,
+        "right": 21,
+        "bottom": 10
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 21,
+        "top": 10,
+        "right": 21,
+        "bottom": 10
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        1278,
+        288,
+        179,
+        46
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_lock_empty",
+      "state": "locked",
+      "mode": "sprite",
+      "source": "source/misc.png",
+      "source_sha256": "25d2d623d54bee70e4b4c9f3b8a592f082e865d0119aafc3570d39fb6065e2fd",
+      "source_rect": [
+        89,
+        924,
+        206,
+        256
+      ],
+      "file": "slices/ui_lock_empty__locked.png",
+      "sha256": "f328801da4f01c3a5d128ce7cbbdbfa68e940c0428b7f9e217bd6b37c1cbbfcb",
+      "size": [
+        103,
+        128
+      ],
+      "slice_margins": null,
+      "transparent_padding_px": 2,
+      "content_inset_px": null,
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        1465,
+        288,
+        103,
+        128
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_lock_empty",
+      "state": "empty",
+      "mode": "sprite",
+      "source": "source/misc.png",
+      "source_sha256": "25d2d623d54bee70e4b4c9f3b8a592f082e865d0119aafc3570d39fb6065e2fd",
+      "source_rect": [
+        485,
+        965,
+        283,
+        192
+      ],
+      "file": "slices/ui_lock_empty__empty.png",
+      "sha256": "d9428797a7efd168f8fd9139bf94ae816758088a9dc8ba168b47075fd51855dd",
+      "size": [
+        142,
+        96
+      ],
+      "slice_margins": null,
+      "transparent_padding_px": 2,
+      "content_inset_px": null,
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        1576,
+        288,
+        142,
+        96
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_lock_empty",
+      "state": "loading",
+      "mode": "sprite",
+      "source": "source/misc.png",
+      "source_sha256": "25d2d623d54bee70e4b4c9f3b8a592f082e865d0119aafc3570d39fb6065e2fd",
+      "source_rect": [
+        921,
+        934,
+        244,
+        238
+      ],
+      "file": "slices/ui_lock_empty__loading.png",
+      "sha256": "1db4ae22c68e698c4833fd0460a0069c7057113af532aed700b1d759842a8952",
+      "size": [
+        122,
+        119
+      ],
+      "slice_margins": null,
+      "transparent_padding_px": 2,
+      "content_inset_px": null,
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        1726,
+        288,
+        122,
+        119
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_reward_socket",
+      "state": "normal",
+      "mode": "nine_slice",
+      "source": "source/addons.png",
+      "source_sha256": "b0698a7effccedcfb77dfc566ecb5fb03e21e3ad19df0ff105fc45e5dad66740",
+      "source_rect": [
+        127,
+        137,
+        416,
+        406
+      ],
+      "file": "slices/ui_reward_socket__normal.png",
+      "sha256": "79807ea91d65bf5f18e886ae569f8e41859a1cade7a3ee7a00535a68f4052448",
+      "size": [
+        208,
+        203
+      ],
+      "slice_margins": {
+        "left": 50,
+        "top": 50,
+        "right": 50,
+        "bottom": 50
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 50,
+        "top": 50,
+        "right": 50,
+        "bottom": 50
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        4,
+        451,
+        208,
+        203
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_reward_socket",
+      "state": "highlight",
+      "mode": "nine_slice",
+      "source": "source/addons.png",
+      "source_sha256": "b0698a7effccedcfb77dfc566ecb5fb03e21e3ad19df0ff105fc45e5dad66740",
+      "source_rect": [
+        712,
+        137,
+        416,
+        406
+      ],
+      "file": "slices/ui_reward_socket__highlight.png",
+      "sha256": "ff5afa35225e35283ee96fd2faf7fbf3bc1b4fabf1a29b17b1ac16f09350a81b",
+      "size": [
+        208,
+        203
+      ],
+      "slice_margins": {
+        "left": 50,
+        "top": 50,
+        "right": 50,
+        "bottom": 50
+      },
+      "transparent_padding_px": 2,
+      "content_inset_px": {
+        "left": 50,
+        "top": 50,
+        "right": 50,
+        "bottom": 50
+      },
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        220,
+        451,
+        208,
+        203
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_lock_empty",
+      "state": "error",
+      "mode": "sprite",
+      "source": "source/addons.png",
+      "source_sha256": "b0698a7effccedcfb77dfc566ecb5fb03e21e3ad19df0ff105fc45e5dad66740",
+      "source_rect": [
+        168,
+        746,
+        327,
+        328
+      ],
+      "file": "slices/ui_lock_empty__error.png",
+      "sha256": "a77c6c9e824eb11af27f359c7a3779039d90b18c2e7436c9c42ce1beb6420c5c",
+      "size": [
+        164,
+        164
+      ],
+      "slice_margins": null,
+      "transparent_padding_px": 2,
+      "content_inset_px": null,
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        436,
+        451,
+        164,
+        164
+      ],
+      "atlas": "ui-components.png"
+    },
+    {
+      "id": "ui_progress_cap",
+      "state": "normal",
+      "mode": "sprite",
+      "source": "source/addons.png",
+      "source_sha256": "b0698a7effccedcfb77dfc566ecb5fb03e21e3ad19df0ff105fc45e5dad66740",
+      "source_rect": [
+        768,
+        763,
+        300,
+        299
+      ],
+      "file": "slices/ui_progress_cap__normal.png",
+      "sha256": "d6905638839d367955abd9871cbc26d010eb0146749af26eb9a4023831a6ea61",
+      "size": [
+        150,
+        150
+      ],
+      "slice_margins": null,
+      "transparent_padding_px": 2,
+      "content_inset_px": null,
+      "source_scale": 0.5,
+      "suggested_pixels_per_logical_unit": 2,
+      "atlas_rect": [
+        608,
+        451,
+        150,
+        150
+      ],
+      "atlas": "ui-components.png"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "task_id": "YILU-REGRESSION-FIRST-UI-FULL-20261001",
+  "project_id": "yilu-changge",
+  "baseline_snapshot_id": "s_20261001T105238_c4420b2c",
+  "baseline_observed_at": "2026-10-01T10:52:38.956769+00:00",
+  "code_fingerprint": "6468762aedfe3024618ca86df5041b8c49be683656c2b02d358113c888264b08",
+  "evidence_fingerprint": "22d70d80e96cd00190c029aabd1fee6d6becc16564aa0784e66ad056c8aa63fd",
+  "branch": "codex/ios-polish-round2-20260929",
+  "head": "79fbea0f8f135e6d9457cde672118b52baacb4b6",
+  "dirty": true,
+  "compared_snapshot": "s_20260930T104112_421d5695",
+  "captured_changes_vs_compared": [],
+  "historical_device_receipt": {
+    "evidence_id": "f_374c8a202b1d84ce5cff8e4b",
+    "last_confirmed_build": "2026093002",
+    "final08_at_receipt": "not_installed",
+    "receipt_is_live_device_query": false
+  },
+  "user_screenshots_build": "unknown; must read actual installed app locally, do not infer from screenshot or current source",
+  "execution_state": "planning_and_source_inspection_only; no project writes, builds, installs or game tests executed in this conversation",
+  "stage_order": [
+    "A_bugfix_old_skin",
+    "gate_A",
+    "B_noncombat_ui",
+    "gate_B"
+  ],
+  "native_distribution": "same bundle ID, preserve save; no uninstall, no App Store/TestFlight publication in this task"
+}

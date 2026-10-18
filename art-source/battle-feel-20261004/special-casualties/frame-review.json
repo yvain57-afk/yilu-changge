@@ -1,0 +1,349 @@
+{
+  "sourceSha256": "a1e9d1bb3350cc2b913333624b3187066a0b8eadcd2152d7d5d102c31c8acbe9",
+  "outputSha256": "3ae99e4394e99b7a9199251e921db5fa6379275295fd2542b8ea125a0af11ce7",
+  "frames": [
+    {
+      "key": "bf_enemy_archer_hit",
+      "sourceAnchor": [
+        231,
+        350
+      ],
+      "ownedComponents": [
+        0
+      ],
+      "componentBounds": [
+        [
+          62,
+          39,
+          314,
+          359
+        ]
+      ],
+      "alphaBounds": [
+        54,
+        104,
+        308,
+        425
+      ],
+      "refH": 285,
+      "normalization": "fixed standing body reference shared by hit and fallen; fallen is never enlarged to standing crop height"
+    },
+    {
+      "key": "bf_enemy_archer_fallen",
+      "sourceAnchor": [
+        527,
+        349
+      ],
+      "ownedComponents": [
+        3,
+        4
+      ],
+      "componentBounds": [
+        [
+          339,
+          146,
+          715,
+          345
+        ],
+        [
+          378,
+          292,
+          587,
+          360
+        ]
+      ],
+      "alphaBounds": [
+        35,
+        212,
+        413,
+        427
+      ],
+      "refH": 285,
+      "normalization": "fixed standing body reference shared by hit and fallen; fallen is never enlarged to standing crop height"
+    },
+    {
+      "key": "bf_enemy_shield_hit",
+      "sourceAnchor": [
+        887,
+        343
+      ],
+      "ownedComponents": [
+        1
+      ],
+      "componentBounds": [
+        [
+          738,
+          46,
+          1002,
+          353
+        ]
+      ],
+      "alphaBounds": [
+        74,
+        118,
+        339,
+        427
+      ],
+      "refH": 283,
+      "normalization": "fixed standing body reference shared by hit and fallen; fallen is never enlarged to standing crop height"
+    },
+    {
+      "key": "bf_enemy_shield_fallen",
+      "sourceAnchor": [
+        1222,
+        332
+      ],
+      "ownedComponents": [
+        2
+      ],
+      "componentBounds": [
+        [
+          1027,
+          131,
+          1414,
+          354
+        ]
+      ],
+      "alphaBounds": [
+        28,
+        214,
+        417,
+        439
+      ],
+      "refH": 283,
+      "normalization": "fixed standing body reference shared by hit and fallen; fallen is never enlarged to standing crop height"
+    },
+    {
+      "key": "bf_enemy_guard_hit",
+      "sourceAnchor": [
+        211,
+        707
+      ],
+      "ownedComponents": [
+        6
+      ],
+      "componentBounds": [
+        [
+          46,
+          401,
+          310,
+          718
+        ]
+      ],
+      "alphaBounds": [
+        58,
+        109,
+        324,
+        428
+      ],
+      "refH": 298,
+      "normalization": "fixed standing body reference shared by hit and fallen; fallen is never enlarged to standing crop height"
+    },
+    {
+      "key": "bf_enemy_guard_fallen",
+      "sourceAnchor": [
+        545,
+        708
+      ],
+      "ownedComponents": [
+        8
+      ],
+      "componentBounds": [
+        [
+          353,
+          510,
+          736,
+          734
+        ]
+      ],
+      "alphaBounds": [
+        31,
+        218,
+        416,
+        443
+      ],
+      "refH": 298,
+      "normalization": "fixed standing body reference shared by hit and fallen; fallen is never enlarged to standing crop height"
+    },
+    {
+      "key": "bf_enemy_banner_hit",
+      "sourceAnchor": [
+        920,
+        714
+      ],
+      "ownedComponents": [
+        5
+      ],
+      "componentBounds": [
+        [
+          721,
+          364,
+          1064,
+          726
+        ]
+      ],
+      "alphaBounds": [
+        24,
+        65,
+        369,
+        429
+      ],
+      "refH": 250,
+      "normalization": "fixed standing body reference shared by hit and fallen; fallen is never enlarged to standing crop height"
+    },
+    {
+      "key": "bf_enemy_banner_fallen",
+      "sourceAnchor": [
+        1230,
+        706
+      ],
+      "ownedComponents": [
+        7
+      ],
+      "componentBounds": [
+        [
+          1032,
+          497,
+          1427,
+          721
+        ]
+      ],
+      "alphaBounds": [
+        25,
+        206,
+        422,
+        432
+      ],
+      "refH": 250,
+      "normalization": "fixed standing body reference shared by hit and fallen; fallen is never enlarged to standing crop height"
+    },
+    {
+      "key": "bf_enemy_mechanism_hit",
+      "sourceAnchor": [
+        195,
+        1029
+      ],
+      "ownedComponents": [
+        10
+      ],
+      "componentBounds": [
+        [
+          41,
+          755,
+          347,
+          1042
+        ]
+      ],
+      "alphaBounds": [
+        69,
+        141,
+        377,
+        430
+      ],
+      "refH": 283,
+      "normalization": "fixed standing body reference shared by hit and fallen; fallen is never enlarged to standing crop height"
+    },
+    {
+      "key": "bf_enemy_mechanism_fallen",
+      "sourceAnchor": [
+        540,
+        1028
+      ],
+      "ownedComponents": [
+        11,
+        13,
+        15
+      ],
+      "componentBounds": [
+        [
+          357,
+          834,
+          720,
+          1045
+        ],
+        [
+          625,
+          870,
+          686,
+          893
+        ],
+        [
+          585,
+          1025,
+          610,
+          1040
+        ]
+      ],
+      "alphaBounds": [
+        40,
+        221,
+        405,
+        434
+      ],
+      "refH": 283,
+      "normalization": "fixed standing body reference shared by hit and fallen; fallen is never enlarged to standing crop height"
+    },
+    {
+      "key": "bf_friendly_archer_hit",
+      "sourceAnchor": [
+        867,
+        1038
+      ],
+      "ownedComponents": [
+        9
+      ],
+      "componentBounds": [
+        [
+          734,
+          733,
+          1022,
+          1057
+        ]
+      ],
+      "alphaBounds": [
+        90,
+        110,
+        380,
+        436
+      ],
+      "refH": 255,
+      "normalization": "fixed standing body reference shared by hit and fallen; fallen is never enlarged to standing crop height"
+    },
+    {
+      "key": "bf_friendly_archer_fallen",
+      "sourceAnchor": [
+        1235,
+        1040
+      ],
+      "ownedComponents": [
+        12,
+        14
+      ],
+      "componentBounds": [
+        [
+          1046,
+          861,
+          1417,
+          1051
+        ],
+        [
+          1202,
+          967,
+          1423,
+          1030
+        ]
+      ],
+      "alphaBounds": [
+        34,
+        236,
+        413,
+        428
+      ],
+      "refH": 255,
+      "normalization": "fixed standing body reference shared by hit and fallen; fallen is never enlarged to standing crop height"
+    }
+  ],
+  "wholeSourceComponents": 16,
+  "retainedComponents": 16,
+  "manualPaint": false
+}

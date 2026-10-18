@@ -1,0 +1,26 @@
+[
+  {
+    "key": "r2_ride_chitu_crossbow_run0",
+    "source": "art-source/ui-polish-r2-20261002/chitu-crossbow-run0-source.png",
+    "sha256": "65beb8ce0cce3bf9cfa98d55f39ef661dda26fe462a5a6c759e0e6789590097f",
+    "method": "existing verified source reused as phase 0"
+  },
+  {
+    "key": "r2_ride_chitu_crossbow_run1",
+    "source": "art-source/ui-polish-r2-20261002/chitu-crossbow-run1-source.png",
+    "sha256": "2f5bd317a4cc2e51fb6f7e083462ee4788512c92ce0d58b663262f8ae6387334",
+    "method": "built-in imagegen lower-horse-leg edit: actual opposite hind-leg support"
+  },
+  {
+    "key": "r2_ride_dilu_crossbow_run0",
+    "source": "art-source/ui-polish-r2-20261002/dilu-crossbow-run0-source.png",
+    "sha256": "eec228ea9544ffe41dd576b5cbbf84229a391e69d7738ad7b20e146c07345e6d",
+    "method": "existing verified source reused as phase 0"
+  },
+  {
+    "key": "r2_ride_dilu_crossbow_run1",
+    "source": "art-source/ui-polish-r2-20261002/dilu-crossbow-run1-source.png",
+    "sha256": "d3bd04d61059200956c6747f3295b4e142dfb0e2e835d87ccc23fe5d6c45ea7f",
+    "method": "built-in imagegen lower-horse-leg edit: actual opposite hind-leg support"
+  }
+]

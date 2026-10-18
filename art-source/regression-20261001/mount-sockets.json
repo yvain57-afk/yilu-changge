@@ -1,0 +1,242 @@
+{
+  "r26_ride_jingfan_single": {
+    "bodyContainsWeapon": false,
+    "pose": "single",
+    "sockets": {
+      "right": {
+        "source_px": [
+          132,
+          201
+        ],
+        "normalized": [
+          0.3467048710601719,
+          0.34451901565995524
+        ],
+        "occlusion_frame": "r26_ride_jingfan_single_right_fingers"
+      },
+      "left": {
+        "source_px": [
+          234,
+          169
+        ],
+        "normalized": [
+          0.6389684813753582,
+          0.27293064876957496
+        ],
+        "occlusion_frame": "r26_ride_jingfan_single_left_fingers"
+      }
+    },
+    "body_frame": "r26_ride_jingfan_single",
+    "occlusion": "Draw body, weapon(s) attached at specified fist center, then skin/gauntlet cap; never draw another body."
+  },
+  "r26_ride_jingfan_crossbow": {
+    "bodyContainsWeapon": false,
+    "pose": "crossbow",
+    "sockets": {
+      "right": {
+        "source_px": [
+          550,
+          166
+        ],
+        "normalized": [
+          0.46537396121883656,
+          0.2209026128266033
+        ],
+        "occlusion_frame": "r26_ride_jingfan_crossbow_right_fingers"
+      },
+      "left": {
+        "source_px": [
+          611,
+          158
+        ],
+        "normalized": [
+          0.6343490304709142,
+          0.20190023752969122
+        ],
+        "occlusion_frame": "r26_ride_jingfan_crossbow_left_fingers"
+      }
+    },
+    "body_frame": "r26_ride_jingfan_crossbow",
+    "occlusion": "Draw body, weapon(s) attached at specified fist center, then skin/gauntlet cap; never draw another body."
+  },
+  "r26_ride_jingfan_bow": {
+    "bodyContainsWeapon": false,
+    "pose": "bow",
+    "sockets": {
+      "right": {
+        "source_px": [
+          895,
+          110
+        ],
+        "normalized": [
+          0.3341232227488152,
+          0.13501144164759726
+        ],
+        "occlusion_frame": "r26_ride_jingfan_bow_right_fingers"
+      },
+      "left": {
+        "source_px": [
+          1043,
+          140
+        ],
+        "normalized": [
+          0.6848341232227488,
+          0.2036613272311213
+        ],
+        "occlusion_frame": "r26_ride_jingfan_bow_left_fingers"
+      }
+    },
+    "body_frame": "r26_ride_jingfan_bow",
+    "occlusion": "Draw body, weapon(s) attached at specified fist center, then skin/gauntlet cap; never draw another body."
+  },
+  "r26_ride_jingfan_dual": {
+    "bodyContainsWeapon": false,
+    "pose": "dual",
+    "sockets": {
+      "right": {
+        "source_px": [
+          1263,
+          163
+        ],
+        "normalized": [
+          0.22254335260115607,
+          0.26174496644295303
+        ],
+        "occlusion_frame": "r26_ride_jingfan_dual_right_fingers"
+      },
+      "left": {
+        "source_px": [
+          1450,
+          158
+        ],
+        "normalized": [
+          0.7630057803468208,
+          0.2505592841163311
+        ],
+        "occlusion_frame": "r26_ride_jingfan_dual_left_fingers"
+      }
+    },
+    "body_frame": "r26_ride_jingfan_dual",
+    "occlusion": "Draw body, weapon(s) attached at specified fist center, then skin/gauntlet cap; never draw another body."
+  },
+  "r26_ride_jueying_single": {
+    "bodyContainsWeapon": false,
+    "pose": "single",
+    "sockets": {
+      "right": {
+        "source_px": [
+          132,
+          704
+        ],
+        "normalized": [
+          0.34844192634560905,
+          0.36771300448430494
+        ],
+        "occlusion_frame": "r26_ride_jueying_single_right_fingers"
+      },
+      "left": {
+        "source_px": [
+          232,
+          665
+        ],
+        "normalized": [
+          0.6317280453257791,
+          0.2802690582959641
+        ],
+        "occlusion_frame": "r26_ride_jueying_single_left_fingers"
+      }
+    },
+    "body_frame": "r26_ride_jueying_single",
+    "occlusion": "Draw body, weapon(s) attached at specified fist center, then skin/gauntlet cap; never draw another body."
+  },
+  "r26_ride_jueying_crossbow": {
+    "bodyContainsWeapon": false,
+    "pose": "crossbow",
+    "sockets": {
+      "right": {
+        "source_px": [
+          550,
+          662
+        ],
+        "normalized": [
+          0.46537396121883656,
+          0.23040380047505937
+        ],
+        "occlusion_frame": "r26_ride_jueying_crossbow_right_fingers"
+      },
+      "left": {
+        "source_px": [
+          609,
+          649
+        ],
+        "normalized": [
+          0.628808864265928,
+          0.1995249406175772
+        ],
+        "occlusion_frame": "r26_ride_jueying_crossbow_left_fingers"
+      }
+    },
+    "body_frame": "r26_ride_jueying_crossbow",
+    "occlusion": "Draw body, weapon(s) attached at specified fist center, then skin/gauntlet cap; never draw another body."
+  },
+  "r26_ride_jueying_bow": {
+    "bodyContainsWeapon": false,
+    "pose": "bow",
+    "sockets": {
+      "right": {
+        "source_px": [
+          895,
+          605
+        ],
+        "normalized": [
+          0.3341232227488152,
+          0.14187643020594964
+        ],
+        "occlusion_frame": "r26_ride_jueying_bow_right_fingers"
+      },
+      "left": {
+        "source_px": [
+          1040,
+          635
+        ],
+        "normalized": [
+          0.6777251184834123,
+          0.21052631578947367
+        ],
+        "occlusion_frame": "r26_ride_jueying_bow_left_fingers"
+      }
+    },
+    "body_frame": "r26_ride_jueying_bow",
+    "occlusion": "Draw body, weapon(s) attached at specified fist center, then skin/gauntlet cap; never draw another body."
+  },
+  "r26_ride_jueying_dual": {
+    "bodyContainsWeapon": false,
+    "pose": "dual",
+    "sockets": {
+      "right": {
+        "source_px": [
+          1260,
+          659
+        ],
+        "normalized": [
+          0.2144927536231884,
+          0.27069351230425054
+        ],
+        "occlusion_frame": "r26_ride_jueying_dual_right_fingers"
+      },
+      "left": {
+        "source_px": [
+          1450,
+          650
+        ],
+        "normalized": [
+          0.7652173913043478,
+          0.2505592841163311
+        ],
+        "occlusion_frame": "r26_ride_jueying_dual_left_fingers"
+      }
+    },
+    "body_frame": "r26_ride_jueying_dual",
+    "occlusion": "Draw body, weapon(s) attached at specified fist center, then skin/gauntlet cap; never draw another body."
+  }
+}

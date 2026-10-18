@@ -1,0 +1,49 @@
+{
+  "sheets": [
+    {
+      "sheet": "r27_character_gaits",
+      "path": "assets/resources/formal20260927/r27-character-gaits.png",
+      "sha256": "0c8536f0a1b12cb43dbe00379c9b05727614b280d2d5074fda02f644828c37b5",
+      "size": [
+        2048,
+        1129
+      ]
+    },
+    {
+      "sheet": "r27_crossbows",
+      "path": "assets/resources/formal20260927/r27-crossbows.png",
+      "sha256": "abde69f66279d1a8846b02dfc0911e82f10a1b9ea51de538e4ee966bb329343c",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    {
+      "sheet": "r27_hero_hand_poses",
+      "path": "assets/resources/formal20260927/r27-hero-hand-poses.png",
+      "sha256": "adb28115d9cdaf22a95674d8fae859461e5bfab2293c2d70c6339301602d0d01",
+      "size": [
+        1024,
+        674
+      ]
+    }
+  ],
+  "frameCount": 45,
+  "rectErrors": [],
+  "visuallyInspected": [
+    "gait-pairs-qa.jpg",
+    "opposite-qa-0.jpg",
+    "opposite-qa-1.jpg",
+    "body-poses-qa.jpg",
+    "body-sockets-qa.jpg",
+    "crossbows-grips-qa.jpg",
+    "held-bow-source.png"
+  ],
+  "newCharacterGaits": {
+    "characters": 12,
+    "distinctSupportLegPosesEach": 2,
+    "fourDistinctPhases": false
+  },
+  "runtimeVerified": false,
+  "deviceVerified": false
+}

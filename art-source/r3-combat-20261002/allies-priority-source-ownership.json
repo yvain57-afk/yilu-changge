@@ -1,0 +1,205 @@
+{
+  "frames": [
+    {
+      "key": "r3_ally_lubu_run0",
+      "sourceGridCell": 0,
+      "sourceRect": [
+        0,
+        0,
+        800,
+        800
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        800.0,
+        800.0
+      ],
+      "canonicalBodyHeight": 345,
+      "targetRect": [
+        0,
+        0,
+        800,
+        800
+      ]
+    },
+    {
+      "key": "r3_ally_lubu_wind",
+      "sourceGridCell": 1,
+      "sourceRect": [
+        800,
+        0,
+        800,
+        800
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        800.0,
+        800.0
+      ],
+      "canonicalBodyHeight": 345,
+      "targetRect": [
+        800,
+        0,
+        800,
+        800
+      ]
+    },
+    {
+      "key": "r3_ally_lubu_rel",
+      "sourceGridCell": 2,
+      "sourceRect": [
+        1600,
+        0,
+        800,
+        800
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        800.0,
+        800.0
+      ],
+      "canonicalBodyHeight": 345,
+      "targetRect": [
+        1600,
+        0,
+        800,
+        800
+      ]
+    },
+    {
+      "key": "r3_ally_lubu_rec",
+      "sourceGridCell": 3,
+      "sourceRect": [
+        2400,
+        0,
+        800,
+        800
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        800.0,
+        800.0
+      ],
+      "canonicalBodyHeight": 345,
+      "targetRect": [
+        2400,
+        0,
+        800,
+        800
+      ]
+    },
+    {
+      "key": "r3_ally_machao_run0",
+      "sourceGridCell": 4,
+      "sourceRect": [
+        0,
+        800,
+        800,
+        800
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        800.0,
+        800.0
+      ],
+      "canonicalBodyHeight": 345,
+      "targetRect": [
+        0,
+        800,
+        800,
+        800
+      ]
+    },
+    {
+      "key": "r3_ally_machao_wind",
+      "sourceGridCell": 5,
+      "sourceRect": [
+        800,
+        800,
+        800,
+        800
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        800.0,
+        800.0
+      ],
+      "canonicalBodyHeight": 345,
+      "targetRect": [
+        800,
+        800,
+        800,
+        800
+      ]
+    },
+    {
+      "key": "r3_ally_machao_rel",
+      "sourceGridCell": 6,
+      "sourceRect": [
+        1600,
+        800,
+        800,
+        800
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        800.0,
+        800.0
+      ],
+      "canonicalBodyHeight": 345,
+      "targetRect": [
+        1600,
+        800,
+        800,
+        800
+      ]
+    },
+    {
+      "key": "r3_ally_machao_rec",
+      "sourceGridCell": 7,
+      "sourceRect": [
+        2400,
+        800,
+        800,
+        800
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "originalUntrimmedSize": [
+        800.0,
+        800.0
+      ],
+      "canonicalBodyHeight": 345,
+      "targetRect": [
+        2400,
+        800,
+        800,
+        800
+      ]
+    }
+  ],
+  "sourceComponents": []
+}

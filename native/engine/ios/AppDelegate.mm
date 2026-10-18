@@ -28,6 +28,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "View.h"
+#import <AVFAudio/AVFAudio.h>
 
 #include "platform/ios/IOSPlatform.h"
 #import "platform/ios/AppDelegateBridge.h"
@@ -152,9 +153,17 @@ static CGFloat yiluCurrentTarget=0;
 + (void)reviewState:(NSString *)json;
 + (void)position:(NSString *)value;
 + (NSString *)reviewFixture:(NSString *)unused;
++ (NSString *)audioSessionState:(NSString *)unused;
 + (void)impact:(NSString *)style;
 @end
 @implementation YiluNativeBridge
++ (NSString *)audioSessionState:(NSString *)unused {
+    AVAudioSession *s=AVAudioSession.sharedInstance;
+    NSMutableArray *ports=[NSMutableArray array];
+    for(AVAudioSessionPortDescription *p in s.currentRoute.outputs)[ports addObject:@{@"type":p.portType,@"name":p.portName}];
+    NSDictionary *state=@{@"category":s.category,@"volume":@(s.outputVolume),@"sampleRate":@(s.sampleRate),@"otherAudioPlaying":@(s.otherAudioPlaying),@"silencedHint":@(s.secondaryAudioShouldBeSilencedHint),@"outputs":ports};
+    return [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:state options:0 error:nil] encoding:NSUTF8StringEncoding];
+}
 + (NSString *)reviewFixture:(NSString *)unused {
 #if CC_DEBUG
     for(NSString *arg in NSProcessInfo.processInfo.arguments)if([arg hasPrefix:@"--yilu-review="])return [arg substringFromIndex:14];

@@ -1,0 +1,946 @@
+{
+  "frames": [
+    {
+      "key": "r3_ally_taishici_run0",
+      "sourceGridCell": 0,
+      "sourceRect": [
+        -70,
+        -27,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        0,
+        0,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_taishici_pass0",
+      "sourceGridCell": 1,
+      "sourceRect": [
+        186,
+        -27,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        396,
+        0,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_taishici_run1",
+      "sourceGridCell": 2,
+      "sourceRect": [
+        442,
+        -27,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        792,
+        0,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_taishici_pass1",
+      "sourceGridCell": 3,
+      "sourceRect": [
+        698,
+        -27,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1188,
+        0,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_taishici_wind",
+      "sourceGridCell": 4,
+      "sourceRect": [
+        -70,
+        229,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        0,
+        310,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_taishici_rel",
+      "sourceGridCell": 5,
+      "sourceRect": [
+        186,
+        229,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        396,
+        310,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_taishici_rec",
+      "sourceGridCell": 6,
+      "sourceRect": [
+        442,
+        229,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        792,
+        310,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_taishici_ready",
+      "sourceGridCell": 7,
+      "sourceRect": [
+        698,
+        229,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1188,
+        310,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_ganning_run0",
+      "sourceGridCell": 8,
+      "sourceRect": [
+        -70,
+        485,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        0,
+        620,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_ganning_pass0",
+      "sourceGridCell": 9,
+      "sourceRect": [
+        186,
+        485,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        396,
+        620,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_ganning_run1",
+      "sourceGridCell": 10,
+      "sourceRect": [
+        442,
+        485,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        792,
+        620,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_ganning_pass1",
+      "sourceGridCell": 11,
+      "sourceRect": [
+        698,
+        485,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1188,
+        620,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_ganning_wind",
+      "sourceGridCell": 12,
+      "sourceRect": [
+        -70,
+        741,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        0,
+        930,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_ganning_rel",
+      "sourceGridCell": 13,
+      "sourceRect": [
+        186,
+        741,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        396,
+        930,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_ganning_rec",
+      "sourceGridCell": 14,
+      "sourceRect": [
+        442,
+        741,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        792,
+        930,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_ganning_ready",
+      "sourceGridCell": 15,
+      "sourceRect": [
+        698,
+        741,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1188,
+        930,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_zhanghe_run0",
+      "sourceGridCell": 16,
+      "sourceRect": [
+        -70,
+        997,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        0,
+        1240,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_zhanghe_pass0",
+      "sourceGridCell": 17,
+      "sourceRect": [
+        186,
+        997,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        396,
+        1240,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_zhanghe_run1",
+      "sourceGridCell": 18,
+      "sourceRect": [
+        442,
+        997,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        792,
+        1240,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_zhanghe_pass1",
+      "sourceGridCell": 19,
+      "sourceRect": [
+        698,
+        997,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1188,
+        1240,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_zhanghe_wind",
+      "sourceGridCell": 20,
+      "sourceRect": [
+        -70,
+        1253,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        0,
+        1550,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_zhanghe_rel",
+      "sourceGridCell": 21,
+      "sourceRect": [
+        186,
+        1253,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        396,
+        1550,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_zhanghe_rec",
+      "sourceGridCell": 22,
+      "sourceRect": [
+        442,
+        1253,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        792,
+        1550,
+        396,
+        310
+      ]
+    },
+    {
+      "key": "r3_ally_zhanghe_ready",
+      "sourceGridCell": 23,
+      "sourceRect": [
+        698,
+        1253,
+        396,
+        310
+      ],
+      "padding": [
+        70,
+        27
+      ],
+      "originalUntrimmedSize": [
+        256.0,
+        256.0
+      ],
+      "canonicalBodyHeight": 209.92,
+      "targetRect": [
+        1188,
+        1550,
+        396,
+        310
+      ]
+    }
+  ],
+  "sourceComponents": [
+    {
+      "pixels": 22367,
+      "owner": 3,
+      "bounds": [
+        784,
+        13,
+        1018,
+        244
+      ]
+    },
+    {
+      "pixels": 21383,
+      "owner": 1,
+      "bounds": [
+        287,
+        15,
+        513,
+        244
+      ]
+    },
+    {
+      "pixels": 21111,
+      "owner": 2,
+      "bounds": [
+        524,
+        18,
+        765,
+        244
+      ]
+    },
+    {
+      "pixels": 23105,
+      "owner": 0,
+      "bounds": [
+        8,
+        20,
+        258,
+        244
+      ]
+    },
+    {
+      "pixels": 25692,
+      "owner": 4,
+      "bounds": [
+        8,
+        246,
+        222,
+        506
+      ]
+    },
+    {
+      "pixels": 23635,
+      "owner": 7,
+      "bounds": [
+        799,
+        258,
+        1011,
+        501
+      ]
+    },
+    {
+      "pixels": 23016,
+      "owner": 5,
+      "bounds": [
+        266,
+        270,
+        550,
+        506
+      ]
+    },
+    {
+      "pixels": 23516,
+      "owner": 6,
+      "bounds": [
+        523,
+        274,
+        790,
+        508
+      ]
+    },
+    {
+      "pixels": 8,
+      "owner": 7,
+      "bounds": [
+        871,
+        304,
+        876,
+        306
+      ]
+    },
+    {
+      "pixels": 5,
+      "owner": 4,
+      "bounds": [
+        95,
+        305,
+        99,
+        307
+      ]
+    },
+    {
+      "pixels": 23600,
+      "owner": 8,
+      "bounds": [
+        7,
+        510,
+        243,
+        757
+      ]
+    },
+    {
+      "pixels": 22524,
+      "owner": 9,
+      "bounds": [
+        302,
+        513,
+        502,
+        747
+      ]
+    },
+    {
+      "pixels": 21825,
+      "owner": 11,
+      "bounds": [
+        804,
+        514,
+        993,
+        757
+      ]
+    },
+    {
+      "pixels": 23028,
+      "owner": 10,
+      "bounds": [
+        524,
+        515,
+        752,
+        757
+      ]
+    },
+    {
+      "pixels": 28228,
+      "owner": 12,
+      "bounds": [
+        23,
+        743,
+        253,
+        1021
+      ]
+    },
+    {
+      "pixels": 25212,
+      "owner": 13,
+      "bounds": [
+        275,
+        760,
+        550,
+        1021
+      ]
+    },
+    {
+      "pixels": 21235,
+      "owner": 15,
+      "bounds": [
+        820,
+        764,
+        1006,
+        1019
+      ]
+    },
+    {
+      "pixels": 24702,
+      "owner": 14,
+      "bounds": [
+        532,
+        775,
+        775,
+        1021
+      ]
+    },
+    {
+      "pixels": 5,
+      "owner": 12,
+      "bounds": [
+        119,
+        801,
+        123,
+        803
+      ]
+    },
+    {
+      "pixels": 4,
+      "owner": 15,
+      "bounds": [
+        861,
+        802,
+        864,
+        804
+      ]
+    },
+    {
+      "pixels": 26912,
+      "owner": 18,
+      "bounds": [
+        509,
+        1022,
+        768,
+        1265
+      ]
+    },
+    {
+      "pixels": 26743,
+      "owner": 16,
+      "bounds": [
+        6,
+        1025,
+        257,
+        1264
+      ]
+    },
+    {
+      "pixels": 24666,
+      "owner": 17,
+      "bounds": [
+        263,
+        1025,
+        497,
+        1264
+      ]
+    },
+    {
+      "pixels": 24176,
+      "owner": 19,
+      "bounds": [
+        776,
+        1026,
+        1011,
+        1265
+      ]
+    },
+    {
+      "pixels": 3,
+      "owner": 19,
+      "bounds": [
+        888,
+        1048,
+        891,
+        1049
+      ]
+    },
+    {
+      "pixels": 3,
+      "owner": 17,
+      "bounds": [
+        373,
+        1050,
+        376,
+        1051
+      ]
+    },
+    {
+      "pixels": 5,
+      "owner": 19,
+      "bounds": [
+        879,
+        1064,
+        883,
+        1066
+      ]
+    },
+    {
+      "pixels": 28418,
+      "owner": 20,
+      "bounds": [
+        7,
+        1259,
+        265,
+        1528
+      ]
+    },
+    {
+      "pixels": 27139,
+      "owner": 21,
+      "bounds": [
+        251,
+        1270,
+        580,
+        1528
+      ]
+    },
+    {
+      "pixels": 24918,
+      "owner": 23,
+      "bounds": [
+        816,
+        1274,
+        1019,
+        1528
+      ]
+    },
+    {
+      "pixels": 26968,
+      "owner": 22,
+      "bounds": [
+        513,
+        1284,
+        807,
+        1530
+      ]
+    },
+    {
+      "pixels": 4,
+      "owner": 20,
+      "bounds": [
+        99,
+        1309,
+        101,
+        1312
+      ]
+    },
+    {
+      "pixels": 5,
+      "owner": 22,
+      "bounds": [
+        587,
+        1320,
+        590,
+        1323
+      ]
+    },
+    {
+      "pixels": 3,
+      "owner": 22,
+      "bounds": [
+        604,
+        1333,
+        606,
+        1335
+      ]
+    }
+  ]
+}
