@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>一路长歌 · 首页整体调节</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<section class="preview"><header><span>一路长歌：三国</span><h1>首页整体调节</h1><p>点选画面里的内容，再拖动、改尺寸或改文字。</p></header>
+<div class="device-tools"><label>预览尺寸 <select id="size"><option value="375,667">375 × 667</option><option value="320,568">320 × 568 · 小屏</option><option value="402,874">402 × 874 · 长屏</option></select></label><label><input id="drag-mode" type="checkbox" checked> 编辑模式</label><button id="home" class="quiet">回到首页</button></div>
+<div id="device-space"><div id="device"><iframe id="game" title="真实游戏首页预览" src="game/index.html?yilu-review=UI:new&amp;home-button-tuner=1"></iframe><div id="pick-layer" aria-label="点选首页内容"></div><div id="button-outline" title="拖动所选内容调整位置" aria-label="拖动所选内容" tabindex="0"></div></div></div>
+<p class="note">取消编辑模式可点击游戏按钮。预览与手机进度隔离。</p></section>
+<aside><div class="section-title"><span>首页 · 人物 / 文字 / 按钮</span><h2>选哪里，改哪里</h2></div>
+<label class="element-label" for="element">选择要调整的内容</label><select id="element" disabled></select>
+<div id="controls"></div><div id="text-control"><label for="copy">文字内容</label><textarea id="copy" rows="2" maxlength="160" disabled></textarea><p id="copy-help" class="note"></p></div>
+<div id="metrics" class="metrics">正在加载游戏…</div>
+<div class="actions"><button id="save" class="primary" disabled>保存首页</button><button id="saved" disabled>回到已保存</button><button id="reset-item" disabled>还原所选</button><button id="reset" disabled>还原整个首页</button></div>
+<p id="status" role="status">正在连接预览…</p><p class="note">试调即时显示，保存后供下次构建使用。当前手机版不会自动改变。</p></aside>
+</main><script type="module" src="panel.js"></script></body></html>

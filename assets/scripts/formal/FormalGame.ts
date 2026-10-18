@@ -1,7 +1,7 @@
 import {combatReviewTarget} from './CombatReviewPolicy';
 import {MenuLayers} from './MenuLayers';
 import {inset,layoutText,homeLayout} from './MenuLayout';
-import {drawButton,drawCompactPanel,drawPanel,drawTab} from './UIComponents';
+import {drawButton,drawCompactPanel,drawPanel,drawTab,drawNavBar,drawMapPlaque} from './UIComponents';
 import {FullMenu,MenuHost,resultLossSummary} from './FullMenu';
 import {BRIDGE_BUILD} from './BridgeBuild';
 import {resolveWeaponPresentation,drawWeaponPresentation,presentationBounds} from './WeaponPresentation';
@@ -131,41 +131,196 @@ export class FormalGame extends Component {
  private campaignRank(){return this.store.completed===CHAPTERS.length?'九州长歌':MILESTONES.filter(m=>m.chapter<=this.store.completed).slice(-1)[0]?.title||'初出乡关';}
  private drawMap(){
   const {W,H,top,bottom}=this.size,p=this.menu,m=this.menuMapMetrics(),transition=this.screen==='transition',conquest=transition&&this.first&&!this.fullMenu.reducedMotion;
-  if(transition&&!this.fullMenu.reducedMotion&&!this.mapDragging&&this.screenAge<1.2){const a=mapScrollFor(this.chapter,m),b=mapScrollFor(this.mapSelection,m),t=Math.min(1,this.screenAge/.5);this.mapScroll=a+(b-a)*(t*t*(3-2*t));}
-  this.mapScroll=Math.max(0,Math.min(m.maxScroll,this.mapScroll));const panels=visibleMapPanels(this.mapScroll,m),key=panels.join(',');if(key!==this.mapPanelKey){this.mapPanelKey=key;NativePaint.loadMapPanels(panels).then(()=>{if(!this.disposed&&['chapters','transition'].includes(this.screen))this.drawMenu();}).catch(e=>{this.loadingError=String(e);});}
-  p.fillStyle='#CCD1BA';p.fillRect(0,m.y,W,m.height);
-  for(const i of panels){const f=MANIFEST.frames['c20_map_'+i];if(!f||!NativePaint.textures[f.s])continue;const py=m.y+i*m.panel-this.mapScroll,lo=Math.max(m.y,py),hi=Math.min(m.bottom,py+m.panel);if(hi<=lo)continue;const fy=(lo-py)/m.panel,fh=(hi-lo)/m.panel;p.drawImage(f.s,f.r[0],f.r[1]+fy*f.r[3],f.r[2],fh*f.r[3],0,lo,W,hi-lo);}
-  for(let i=0;i<CHAPTERS.length;i++){
-   const a=mapPosition(i,m,W),y=m.y+a.y-this.mapScroll,cleared=this.store.data.cleared.includes(CHAPTERS[i].id),open=this.store.unlocked(i),current=i===Math.min(CHAPTERS.length-1,this.store.completed),milestone=milestoneFor(i);
-   if(i>0&&this.store.data.cleared.includes(CHAPTERS[i-1].id)){const prev=mapPosition(i-1,m,W);for(const [fi,foot] of marchPath(prev,a).entries()){if(conquest&&i===this.chapter+1&&fi/12>Math.max(0,(this.screenAge-.7)/.5))continue;const yy=m.y+foot.y-this.mapScroll;if(yy>m.y+4&&yy<m.bottom-4){p.fillStyle='#92743F';p.beginPath();p.ellipse(foot.x,yy,1.4,2.4,.2,0,Math.PI*2);p.fill();}}}
-   if(y<m.y-45||y>m.bottom+45)continue;
-   if(!open||(conquest&&i===this.chapter+1&&this.screenAge<1.2)){p.globalAlpha=open?Math.max(0,1-(this.screenAge-.65)/.55):1;const fog=p.createLinearGradient();fog.addColorStop(0,'rgba(224,229,219,0)');fog.addColorStop(.5,'rgba(224,229,219,.78)');fog.addColorStop(1,'rgba(224,229,219,0)');p.fillStyle=fog;p.fillRect(0,y-55,W,106);p.globalAlpha=1;}
-   const site=milestone?'pass':['camp','city','water','pass'][i%4];p.frame('c20_site_'+site,a.x,y+12,milestone?86:71,{alpha:open?1:.54});
-   const justTaken=conquest&&i===this.chapter,flagAt=justTaken?Math.max(0,Math.min(1,(this.screenAge-.45)/.3)):1;if(justTaken&&flagAt<1)p.frame('c20_flag_locked',a.x+27,y-13,32,{alpha:1-flagAt});p.frame('c20_flag_'+(cleared?'done':current?'current':open?'open':'locked'),a.x+27,y-13+(1-flagAt)*14,32,{alpha:(open?1:.65)*flagAt});
-   if(current){p.frame('g_run_spear0',a.x-33,y+22,39,{alpha:this.uiSkin?1:.88+.12*Math.sin(this.screenAge*3)});}
-   if(cleared&&milestone&&(!justTaken||this.screenAge>.75))p.frame('c20_stamp_'+(i+1)/2,a.x-29,y-20,26,{center:true});
-   if(y>m.y+20&&y<m.bottom-35){p.fillStyle=i===this.mapSelection?'rgba(22,38,49,.95)':'rgba(243,235,211,.93)';p.fillRect(a.x-66,y+16,132,29);this.label((i+1)+' · '+CHAPTERS[i].place,a.x,y+30,14,i===this.mapSelection?'#F0DFB8':'#352E25','center');
-    this.hits.push({id:'level'+i,label:CHAPTERS[i].title+(open?'':'未至'),x:a.x-66,y:y-34,w:132,h:80,action:()=>{this.mapSelection=i;this.drawMenu();}});}
+  if(transition&&!this.fullMenu.reducedMotion&&!this.mapDragging&&this.screenAge<1.2){
+   const a=mapScrollFor(this.chapter,m),b=mapScrollFor(this.mapSelection,m),t=Math.min(1,this.screenAge/.5);
+   this.mapScroll=a+(b-a)*(t*t*(3-2*t));
   }
-  // A light measured chrome, independent from the retained five terrain panels.
-  p.fillStyle='#122639';p.fillRect(0,0,W,m.y);
+  this.mapScroll=Math.max(0,Math.min(m.maxScroll,this.mapScroll));
+  const panels=visibleMapPanels(this.mapScroll,m),key=panels.join(',');
+  if(key!==this.mapPanelKey){
+   this.mapPanelKey=key;
+   NativePaint.loadMapPanels(panels).then(()=>{
+    if(!this.disposed&&['chapters','transition'].includes(this.screen))this.drawMenu();
+   }).catch(e=>{
+    this.loadingError=String(e);
+   });
+  }
+  p.fillStyle='#CCD1BA';
+  p.fillRect(0,m.y,W,m.height);
+  for(const i of panels){
+   const f=MANIFEST.frames['c20_map_'+i];
+   if(!f||!NativePaint.textures[f.s])continue;
+   const py=m.y+i*m.panel-this.mapScroll,lo=Math.max(m.y,py),hi=Math.min(m.bottom,py+m.panel);
+   if(hi<=lo)continue;
+   const fy=(lo-py)/m.panel,fh=(hi-lo)/m.panel;
+   p.drawImage(f.s,f.r[0],f.r[1]+fy*f.r[3],f.r[2],fh*f.r[3],0,lo,W,hi-lo);
+  }
+  for(let i=0;i<CHAPTERS.length;i++){
+   const a=mapPosition(i,m,W),y=m.y+a.y-this.mapScroll;
+   const cleared=this.store.data.cleared.includes(CHAPTERS[i].id),open=this.store.unlocked(i);
+   const current=i===Math.min(CHAPTERS.length-1,this.store.completed),milestone=milestoneFor(i);
+   if(i>0){
+    const prev=mapPosition(i-1,m,W),prevCleared=this.store.data.cleared.includes(CHAPTERS[i-1].id),pathPts=marchPath(prev,a);
+    if(prevCleared){
+     p.save();
+     p.strokeStyle='rgba(218,182,110,0.55)';
+     p.lineWidth=2;
+     p.setLineDash([]);
+     p.beginPath();
+     let started=false;
+     for(const [fi,foot] of pathPts.entries()){
+      if(conquest&&i===this.chapter+1&&fi/12>Math.max(0,(this.screenAge-.7)/.5))continue;
+      const yy=m.y+foot.y-this.mapScroll;
+      if(yy>m.y+4&&yy<m.bottom-4){
+       if(!started){p.moveTo(foot.x,yy);started=true;}
+       else p.lineTo(foot.x,yy);
+      }
+     }
+     if(started)p.stroke();
+     for(const [fi,foot] of pathPts.entries()){
+      if(conquest&&i===this.chapter+1&&fi/12>Math.max(0,(this.screenAge-.7)/.5))continue;
+      const yy=m.y+foot.y-this.mapScroll;
+      if(yy>m.y+4&&yy<m.bottom-4){
+       p.fillStyle='#92743F';
+       p.beginPath();
+       p.ellipse(foot.x,yy,1.4,2.4,.2,0,Math.PI*2);
+       p.fill();
+      }
+     }
+     p.restore();
+    }else{
+     p.save();
+     p.strokeStyle='rgba(72,86,96,0.42)';
+     p.lineWidth=1.5;
+     p.setLineDash([6,4]);
+     p.beginPath();
+     let started=false;
+     for(const foot of pathPts){
+      const yy=m.y+foot.y-this.mapScroll;
+      if(yy>m.y+4&&yy<m.bottom-4){
+       if(!started){p.moveTo(foot.x,yy);started=true;}
+       else p.lineTo(foot.x,yy);
+      }
+     }
+     if(started)p.stroke();
+     p.restore();
+    }
+   }
+   if(y<m.y-45||y>m.bottom+45)continue;
+   if(!open||(conquest&&i===this.chapter+1&&this.screenAge<1.2)){
+    p.globalAlpha=open?Math.max(0,1-(this.screenAge-.65)/.55):1;
+    const fog=p.createLinearGradient();
+    fog.addColorStop(0,'rgba(224,229,219,0)');
+    fog.addColorStop(.5,'rgba(224,229,219,.78)');
+    fog.addColorStop(1,'rgba(224,229,219,0)');
+    p.fillStyle=fog;
+    p.fillRect(0,y-55,W,106);
+    p.globalAlpha=1;
+   }
+   const site=milestone?'pass':['camp','city','water','pass'][i%4];
+   p.frame('c20_site_'+site,a.x,y+12,milestone?86:71,{alpha:open?1:.54});
+   const justTaken=conquest&&i===this.chapter,flagAt=justTaken?Math.max(0,Math.min(1,(this.screenAge-.45)/.3)):1;
+   if(justTaken&&flagAt<1)p.frame('c20_flag_locked',a.x+27,y-13,32,{alpha:1-flagAt});
+   p.frame('c20_flag_'+(cleared?'done':current?'current':open?'open':'locked'),a.x+27,y-13+(1-flagAt)*14,32,{alpha:(open?1:.65)*flagAt});
+   if(current){
+    p.frame('g_run_spear0',a.x-33,y+22,39,{alpha:this.uiSkin?1:.88+.12*Math.sin(this.screenAge*3)});
+   }
+   if(cleared&&milestone&&(!justTaken||this.screenAge>.75)){
+    p.frame('c20_stamp_'+(i+1)/2,a.x-29,y-20,26,{center:true});
+   }
+   if(y>m.y+20&&y<m.bottom-35){
+    const plaqueText=(i+1)+' · '+CHAPTERS[i].place;
+    const plaqueState=i===this.mapSelection?'selected':current?'current':!open?'locked':'cleared';
+    drawMapPlaque(p,{x:a.x-66,y:y+16,w:132,h:29},plaqueText,plaqueState);
+    this.fullMenu.textRecords.push({
+     text:plaqueText,
+     x:a.x,
+     y:y+30.5,
+     size:13,
+     bounds:{x:a.x-60,y:y+18,w:120,h:25},
+     layer:'fixed'
+    });
+    this.hits.push({
+     id:'level'+i,
+     label:CHAPTERS[i].title+(open?'':'未至'),
+     x:a.x-66,
+     y:y-34,
+     w:132,
+     h:80,
+     action:()=>{this.mapSelection=i;this.drawMenu();}
+    });
+   }
+  }
+  const topFeather=p.createLinearGradient();
+  topFeather.addColorStop(0,'rgba(18,38,57,0.92)');
+  topFeather.addColorStop(1,'rgba(18,38,57,0)');
+  p.fillStyle=topFeather;
+  p.fillRect(0,m.y,W,26);
+  const botFeather=p.createLinearGradient();
+  botFeather.addColorStop(0,'rgba(14,29,42,0)');
+  botFeather.addColorStop(1,'rgba(14,29,42,0.94)');
+  p.fillStyle=botFeather;
+  p.fillRect(0,m.bottom-28,W,28);
+
+  p.fillStyle='#122639';
+  p.fillRect(0,0,W,m.y);
   if(this.uiSkin){
-   const r=inset(drawCompactPanel(p,{x:12,y:top,w:W-24,h:m.y-top-8},'raised').content,8);
-   const titleH=this.menuText('天下征程',{x:68,y:r.y,w:W-136,h:m.y-top-46},22,'#E6CD93','center');
-   const progressH=this.menuText('征程进度 · '+this.store.completed+'/20',{x:r.x,y:r.y+titleH+1,w:r.w,h:20},13);
-   const next=MILESTONES.find(v=>v.chapter>this.store.completed);this.menuText(next?'下一未领里程碑 · 第'+next.chapter+'关 '+next.title:'全部里程碑已领取',{x:r.x,y:r.y+titleH+progressH+2,w:r.w,h:m.y-top-titleH-progressH-46},12);
-  }else{this.label('天下征程',W/2,top+18,21,'#E6CD93','center');this.label('已克 '+this.store.completed+'/'+CHAPTERS.length,W/2,top+40,12,'#D4D8CF','center');this.label(nextMilestoneHint(this.store.completed),W/2,top+60,11,'#D4D8CF','center');}
-  this.hits.push({id:'map-back',label:'返回营地',x:0,y:top,w:52,h:48,action:()=>this.show('home')});this.label('‹',24,top+23,25);this.hits.push({id:'map-current',label:'回到当前',x:W-64,y:top,w:64,h:48,action:()=>{this.mapSelection=Math.min(CHAPTERS.length-1,this.store.completed);this.mapScroll=mapScrollFor(this.mapSelection,m);this.drawMenu();}});this.label('定位',W-32,top+24,12,'#E6CD93','center');
-  const c=CHAPTERS[this.mapSelection],dy=m.bottom,owned=this.store.data.cleared.includes(c.id),available=this.store.unlocked(this.mapSelection);p.fillStyle='rgba(14,29,42,.98)';p.fillRect(0,dy,W,H-dy);
+   const nav=drawNavBar(p,{x:12,y:top,w:W-24,h:m.y-top-8},{
+    showBack:true,
+    backLabel:'‹ 返回',
+    rightLabel:'定位',
+    pressedBack:this.pressed?.id==='map-back',
+    pressedRight:this.pressed?.id==='map-current'
+   });
+   const r=inset(nav.content,6);
+   const titleH=this.menuText('天下征程',{x:nav.titleRect.x,y:r.y,w:nav.titleRect.w,h:m.y-top-46},21,'#E6CD93','center');
+   const progressH=this.menuText('征程进度 · '+this.store.completed+'/20',{x:r.x,y:r.y+titleH+2,w:r.w,h:20},13,'#D5DAD7','center');
+   const next=MILESTONES.find(v=>v.chapter>this.store.completed);
+   this.menuText(next?'下一未领里程碑 · 第'+next.chapter+'关 '+next.title:'全部里程碑已领取',{x:r.x,y:r.y+titleH+progressH+3,w:r.w,h:m.y-top-titleH-progressH-46},12,'#BAC6CE','center');
+  }else{
+   this.label('天下征程',W/2,top+18,21,'#E6CD93','center');
+   this.label('已克 '+this.store.completed+'/'+CHAPTERS.length,W/2,top+40,12,'#D4D8CF','center');
+   this.label(nextMilestoneHint(this.store.completed),W/2,top+60,11,'#D4D8CF','center');
+  }
+  this.hits.push({id:'map-back',label:'返回营地',x:12,y:top,w:68,h:52,action:()=>this.show('home')});
+  this.hits.push({id:'map-current',label:'回到当前',x:W-80,y:top,w:68,h:52,action:()=>{
+   this.mapSelection=Math.min(CHAPTERS.length-1,this.store.completed);
+   this.mapScroll=mapScrollFor(this.mapSelection,m);
+   this.drawMenu();
+  }});
+  const c=CHAPTERS[this.mapSelection],dy=m.bottom,owned=this.store.data.cleared.includes(c.id),available=this.store.unlocked(this.mapSelection);
+  p.fillStyle='rgba(14,29,42,.98)';
+  p.fillRect(0,dy,W,H-dy);
   const r=inset(drawCompactPanel(p,{x:12,y:dy+4,w:W-24,h:H-dy-bottom-66},'normal').content,8);
   this.menuText('当前选择 · 第'+(this.mapSelection+1)+'关 '+c.place,{x:r.x,y:r.y,w:r.w-72,h:24},16,'#E6CD93');
   this.menuText(chapterThreats(this.mapSelection),{x:r.x,y:r.y+28,w:r.w,h:24},13);
-  const main=c.weapon?WEAPON_DATA[c.weapon].label:c.treasure?TREASURES[c.treasure].name:PEOPLE[c.boss];this.menuText((owned?'已获 · ':'首胜 · ')+main,{x:r.x,y:r.y+55,w:r.w,h:20},13,'#CFC1A1');
-  this.label(this.mapExpanded?'收起 ▾':'详情 ▴',W-46,r.y+11,12,'#D1C5A8','center');this.hits.push({id:'map-detail',label:'展开关卡详情',x:W-78,y:dy+5,w:66,h:48,action:()=>{this.mapExpanded=!this.mapExpanded;this.drawMenu();}});
-  if(this.mapExpanded){const rewards=[...c.capture.map(id=>'收 '+PEOPLE[id]),...c.visit.map(id=>'访 '+PEOPLE[id]),...c.allies.map(id=>'盟 '+PEOPLE[id]),c.treasure?TREASURES[c.treasure].name:''].filter(Boolean).join(' · ');this.menuText(rewards,{x:r.x,y:r.y+83,w:r.w,h:Math.max(56,r.h-83)},13);
-   if(this.store.completed===CHAPTERS.length){const orders=[null,'elite','few-supplies','double-officers'],labels=['常规','精兵','少援','双将'],at=orders.indexOf((this.store.data.replayOrder as string)||null);this.menuText('重游军令 · '+labels[Math.max(0,at)]+'  ›',{x:r.x,y:r.y+145,w:r.w,h:22},14,'#E6CD93');this.hits.push({id:'replay-order',label:'切换重游军令',x:16,y:r.y+127,w:W-32,h:48,action:()=>{this.store.setReplayOrder(orders[(at+1)%orders.length]);this.drawMenu();}});}else this.menuText('架空征程示意 · '+mapPanelNames[Math.floor(this.mapSelection/4)],{x:r.x,y:r.y+145,w:r.w,h:22},12);
+  const main=c.weapon?WEAPON_DATA[c.weapon].label:c.treasure?TREASURES[c.treasure].name:PEOPLE[c.boss];
+  this.menuText((owned?'已获 · ':'首胜 · ')+main,{x:r.x,y:r.y+55,w:r.w,h:20},13,'#CFC1A1');
+  this.label(this.mapExpanded?'收起 ▾':'详情 ▴',W-46,r.y+11,12,'#D1C5A8','center');
+  this.hits.push({id:'map-detail',label:'展开关卡详情',x:W-78,y:dy+5,w:66,h:48,action:()=>{
+   this.mapExpanded=!this.mapExpanded;
+   this.drawMenu();
+  }});
+  if(this.mapExpanded){
+   const rewards=[...c.capture.map(id=>'收 '+PEOPLE[id]),...c.visit.map(id=>'访 '+PEOPLE[id]),...c.allies.map(id=>'盟 '+PEOPLE[id]),c.treasure?TREASURES[c.treasure].name:''].filter(Boolean).join(' · ');
+   this.menuText(rewards,{x:r.x,y:r.y+83,w:r.w,h:Math.max(56,r.h-83)},13);
+   if(this.store.completed===CHAPTERS.length){
+    const orders=[null,'elite','few-supplies','double-officers'],labels=['常规','精兵','少援','双将'],at=orders.indexOf((this.store.data.replayOrder as string)||null);
+    this.menuText('重游军令 · '+labels[Math.max(0,at)]+'  ›',{x:r.x,y:r.y+145,w:r.w,h:22},14,'#E6CD93');
+    this.hits.push({id:'replay-order',label:'切换重游军令',x:16,y:r.y+127,w:W-32,h:48,action:()=>{
+     this.store.setReplayOrder(orders[(at+1)%orders.length]);
+     this.drawMenu();
+    }});
+   }else{
+    this.menuText('架空征程示意 · '+mapPanelNames[Math.floor(this.mapSelection/4)],{x:r.x,y:r.y+145,w:r.w,h:22},12);
+   }
   }
-  this.button(transition?'prepare-next':'map-depart',available?'整备出征':'先通关第'+this.mapSelection+'关',16,H-bottom-56,W-32,()=>{this.chapter=this.mapSelection;this.tab='companions';this.page=0;this.show('prepare');},true,!available);
+  this.button(transition?'prepare-next':'map-depart',available?'整备出征':'先通关第'+this.mapSelection+'关',16,H-bottom-56,W-32,()=>{
+   this.chapter=this.mapSelection;
+   this.tab='companions';
+   this.page=0;
+   this.show('prepare');
+  },true,!available);
  }
  private card(x:number,y:number,w:number,h:number,tone='normal'){
   if(this.uiSkin){drawPanel(this.menu,{x,y,w,h},tone==='muted'?'muted':tone==='gold'?'raised':'normal');return;}const p=this.menu;p.fillStyle=tone==='muted'?'rgba(20,34,47,.83)':'rgba(17,33,48,.96)';p.fillRect(x,y,w,h);
