@@ -27,19 +27,47 @@ test('real battle emits dense volley without creating additional hit groups',()=
   assert.equal(s.volleyReadout.arrows,volleyArrowCount(n));assert.equal(b.totals.damage,0);
  }
 });
-test('same seed input preserves baseline damage, gates, troops and sound events across three arms',()=>{
- const source=fs.readFileSync('evidence/HOME-VOLLEY-20261004/before-source/battle.ts','utf8');
+test('visual arrow density cannot change current combat, random outcomes or sound events',()=>{
+ // Compare the same current combat engine through two genuinely different
+ // presentation dependencies. The October 4 source remains historical evidence;
+ // gameplay is now intentionally allowed to evolve independently of arrow art.
+ const source=fs.readFileSync('assets/scripts/formal/battle.ts','utf8');
  const js=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2020,module:ts.ModuleKind.CommonJS}}).outputText;
  const mod={exports:{} as any},req=createRequire(path.resolve('assets/scripts/formal/battle.ts'));
- vm.runInThisContext(`(function(require,module,exports){${js}\n})`)(req,mod,mod.exports);
+ let sparseCalls=0,suppressedArrows=0;
+ const presentation={volleyPoint,volleyTrails:(troops:number,slots:any[],groups:number)=>{
+  const real=volleyTrails(troops,slots,groups);sparseCalls++;suppressedArrows+=real.flat().length;
+  return real.map(()=>[]); // Logical hit groups survive, visible arrow ranks do not.
+ }};
+ vm.runInThisContext(`(function(require,module,exports){${js}\n})`)((id:string)=>id==='./VolleyPresentation'?presentation:req(id),mod,mod.exports);
+ let checkedDamage=0,checkedGateGrowth=0,checkedSounds=0;
  for(const arms of ['bow','fire','repeater'])for(const n of [10,80,300]){
-  const args={chapter:16,seed:71,lineup:lineup(),viewport:{W:375,H:667,top:20,bottom:0}};
-  const before=mod.exports.createBattle(args),after=createBattle(args);
-  for(const b of [before,after]){b.state.arms=arms;b.state.troops=b.state.troopShown=n;}
-  for(let i=0;i<600;i++){if(i%90===0)for(const b of [before,after])b.move(i%180===0?-.45:.45);before.step();after.step();}
-  assert.deepEqual(after.totals,before.totals);assert.deepEqual(after.ledger,before.ledger);assert.deepEqual(after.drainAudioEvents(),before.drainAudioEvents());
-  assert.equal(after.state.troops,before.state.troops);assert.deepEqual(after.state.stats,before.state.stats);
+  const args={chapter:2,seed:71,lineup:lineup(),viewport:{W:375,H:667,top:20,bottom:0}};
+  const sparse=mod.exports.createBattle(args),dense=createBattle(args);
+  for(const b of [sparse,dense]){b.state.arms=arms;b.state.troops=b.state.troopShown=n;}
+  let sawDifferentTrails=false;
+  for(let i=0;i<1800;i++){
+   if(i%90===0)for(const b of [sparse,dense])b.move(i%180===0?-.45:.45);
+   sparse.step();dense.step();
+   if(dense.state.arrows.some(a=>(a.visuals||[]).length)){
+    sawDifferentTrails=true;assert.ok(sparse.state.arrows.every(a=>a.visuals.length===0));
+    assert.equal(sparse.state.arrows.length,dense.state.arrows.length,'display density must not add hit groups');
+   }
+   const audio=dense.drainAudioEvents();checkedSounds+=audio.length;assert.deepEqual(audio,sparse.drainAudioEvents());
+   if(i%300===299){
+    // Only the declared visual readout is omitted; random enemy walks, hit
+    // results, warnings, pickups and all other snapshot fields must stay equal.
+    const {armyVolley:_,...denseGame}=dense.snapshot(),{armyVolley:__,...sparseGame}=sparse.snapshot();
+    assert.deepEqual(denseGame,sparseGame,`${arms}/${n} at tick ${i+1}`);
+   }
+  }
+  assert.ok(sawDifferentTrails,`${arms}/${n} must exercise visibly different arrow ranks`);
+  assert.deepEqual(dense.totals,sparse.totals);assert.deepEqual(dense.ledger,sparse.ledger);
+  assert.equal(dense.state.troops,sparse.state.troops);assert.deepEqual(dense.state.stats,sparse.state.stats);
+  checkedDamage+=dense.totals.damage;checkedGateGrowth+=dense.totals.gate;
  }
+ assert.ok(sparseCalls>0&&suppressedArrows>0,'the replacement presentation must actually run');
+ assert.ok(checkedDamage>0&&checkedGateGrowth>0&&checkedSounds>0,'the comparison must exercise real damage, gates and audio');
 });
 test('home keeps live weapon/progress and each navigation action on small and tall screens',()=>{
  for(const n of Array.from({length:21},(_,i)=>i))for(const [W,H] of [[320,568],[375,667],[402,874]]){

@@ -6,3 +6,9 @@ export const presentationDuration=(r:RewardPresentation)=>r.kind==='migration'?3
 export const canSkipPresentation=(age:number)=>age>=.8;
 export function rewardLabel(item:RewardItem){return item.kind==='weapon'?WEAPON_DATA[item.id as WeaponId]?.label||item.id:item.kind==='treasure'?TREASURES[item.id]?.name||item.id:item.kind==='person'?PEOPLE[item.id]||item.id:'征程印章';}
 export function nextMilestoneHint(completed:number){const next=MILESTONES.find(m=>m.chapter>completed);if(!next)return '九州长歌 · 自由重游';const id=next.primaryNewContent,content=WEAPON_DATA[id as WeaponId]?.label||TREASURES[id]?.name||PEOPLE[id]||'新征程';return `再胜${next.chapter-completed}关 · ${next.title} · ${content}`;}
+
+export function chapterRewardHint(index:number){
+ const c=CHAPTERS[index];if(!c)return '';
+ const rewards=[c.weapon?WEAPON_DATA[c.weapon].label:'',c.treasure?TREASURES[c.treasure].name:'',...c.capture.map(id=>PEOPLE[id]),...c.visit.map(id=>PEOPLE[id]),...c.allies.map(id=>PEOPLE[id])].filter(Boolean);
+ return '首通收藏 · '+rewards.join('、');
+}

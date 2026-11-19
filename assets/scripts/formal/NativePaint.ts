@@ -2,6 +2,7 @@
 import {GroundMesh} from './GroundMesh';
 import {Node,Layers,UITransform,Sprite,SpriteFrame,Texture2D,Rect,Size,Vec2,Color,UIOpacity,Graphics,Label,LabelOutline,BitmapFont,resources} from 'cc';
 import {MANIFEST} from './manifest';
+import {isTextureEnabled,textureSourceSize} from './TextureProfile';
 // Preserve pre-task atlas boundary sampling even if Creator normalizes metadata.
 const CLAMP_PATHS=new Set(["ui20260925/camp-bg", "ui20260925/brand-title", "ui20260925/result-bg", "ui20260925/home-bg", "ui20260925/hero-home", "ui20260925/gold-button", "ui20260925/hero-blade", "ui20260925/map-bg", "battlefix2/shadow", "battlefix2/waves", "battlefix2/environment", "battlefix2/wall-middle", "battlefix2/zhao", "battlefix2/actions", "battlefix2/blade", "battle20260925/road", "battle20260925/heroes", "battle20260925/crates", "battle20260925/soldiers", "battle20260925/bosses", "battle20260925/companions", "battle20260925/gate-parts", "battle20260925/grass", "battle20260925/distant", "battle20260925/scenery", "formal20260927/campaign20-characters-b", "formal20260927/campaign20-map4", "formal20260927/campaign20-enemies", "formal20260927/regression-held-parts", "formal20260927/round2-ground", "formal20260927/r27-oldmounts", "formal20260927/campaign20-map2", "formal20260927/campaign20-map3", "formal20260927/campaign20-sites", "formal20260927/ui-full-components", "formal20260927/regression-mount-sockets", "formal20260927/campaign20-hero-weapons", "formal20260927/campaign20-characters-a", "formal20260927/r27-character-gaits", "formal20260927/campaign20-map1", "formal20260927/campaign20-map0", "formal20260927/r27-hero-hand-poses", "formal20260927/campaign20-mounts", "formal20260927/campaign20-icons", "formal20260927/r27-crossbows", "formal20260927/r2-chitu-crossbow", "formal20260927/r2-dilu-crossbow"]);
 type Gradient={stops:[number,string][];addColorStop:(at:number,color:string)=>void};
@@ -83,7 +84,7 @@ export class NativePaint {
  static textures:Record<string,Texture2D>={};
  static silhouetteTextures:Record<string,Texture2D>={};
  static digits:BitmapFont;
- static async load(){await new Promise<void>((resolve,reject)=>resources.load('formal20260927/gate-digits',BitmapFont,(e,f)=>{if(e||!f)reject(e||Error('digits'));else{this.digits=f;resolve();}}));await Promise.all(Object.entries(MANIFEST.sheets as Record<string,string>).filter(([key])=>!Object.keys(MANIFEST.frames).filter(k=>/^c20_map_[0-4]$/.test(k)).some(k=>MANIFEST.frames[k].s===key)).map(([key,p])=>new Promise<void>((resolve,reject)=>{if(this.textures[key]?.isValid!==false&&this.textures[key])return resolve();delete this.textures[key];resources.load(p+'/texture',Texture2D,(e,t)=>{if(e||!t)return reject(e||Error(p));if(CLAMP_PATHS.has(p))t.setWrapMode(Texture2D.WrapMode.CLAMP_TO_EDGE,Texture2D.WrapMode.CLAMP_TO_EDGE);this.textures[key]=t;resolve();});})));}
+ static async load(){await new Promise<void>((resolve,reject)=>resources.load('formal20260927/gate-digits',BitmapFont,(e,f)=>{if(e||!f)reject(e||Error('digits'));else{this.digits=f;resolve();}}));await Promise.all(Object.entries(MANIFEST.sheets as Record<string,string>).filter(([key])=>isTextureEnabled(key)&&!Object.keys(MANIFEST.frames).filter(k=>/^c20_map_[0-4]$/.test(k)).some(k=>MANIFEST.frames[k].s===key)).map(([key,p])=>new Promise<void>((resolve,reject)=>{if(this.textures[key]?.isValid!==false&&this.textures[key])return resolve();delete this.textures[key];resources.load(p+'/texture',Texture2D,(e,t)=>{if(e||!t)return reject(e||Error(p));if(CLAMP_PATHS.has(p))t.setWrapMode(Texture2D.WrapMode.CLAMP_TO_EDGE,Texture2D.WrapMode.CLAMP_TO_EDGE);this.textures[key]=t;resolve();});})));}
  static mapWanted=new Set<string>();static mapLoads:Partial<Record<string,Promise<void>>>={};
  static async loadMapPanels(indices:number[]){
   const keys=indices.map(i=>MANIFEST.frames['c20_map_'+i]?.s).filter(Boolean) as string[];this.mapWanted=new Set(keys);
@@ -121,6 +122,7 @@ export class NativePaint {
   }catch{/* Fallback to deterministic pure-black silhouette below */}
   return null;
  }
+ private frameCache=new Map<string,{texture:Texture2D;frame:SpriteFrame}>();
  private nodes:{n:Node;type:string;frame?:SpriteFrame;mesh?:GroundMesh}[]=[];private pools:Record<string,any[]>={};private used:Record<string,number>={};createdNodes=0;invalidRects=new Set<string>();private index=0;private lastGraphics:Graphics|null=null;private matrix:Matrix=[1,0,0,1,0,0];private stack:any[]=[];private path:{p:[number,number][];closed:boolean}[]=[];private current:{p:[number,number][];closed:boolean}|null=null;private lastPoint:[number,number]=[0,0];private L:any;
  private lineDash:number[]=[];
  globalAlpha=1;globalCompositeOperation='source-over';fillStyle:any='#fff';strokeStyle:any='#fff';lineWidth=1;lineJoin='round';lineCap='round';font='600 14px sans-serif';textAlign='left';textBaseline='middle';shadowColor='';shadowBlur=0;shadowOffsetY=0;private outline:any=null;activeNodes=0;missing=new Set<string>();
@@ -131,9 +133,18 @@ export class NativePaint {
  begin(L:any){if(this.destroyed)throw Error('render_resource:stale_node:destroyed renderer');this.L=L;this.resetState();this.generation++;this.frameOpen=true;this.submissions=[];}
  end(){if(!this.frameOpen)throw Error('render_frame:commit without begin');for(const [type,pool] of Object.entries(this.pools))for(let i=this.used[type]||0;i<pool.length;i++)pool[i].n.active=false;this.activeNodes=this.index;this.lastFrameCommitted=this.generation;this.frameOpen=false;}
  abortFrame(){for(const e of this.nodes)e.n.active=false;this.activeNodes=0;this.abortedFrames++;this.frameOpen=false;this.resetState();this.submissions=[];}
- destroy(){this.abortFrame();this.destroyed=true;this.nodes.forEach(e=>{e.mesh?.destroy();e.frame?.destroy();e.n.destroy();});this.nodes=[];this.pools={};}
- private take(type:string){this.lastGraphics=null;const pool=this.pools[type]||(this.pools[type]=[]),slot=this.used[type]||0;this.used[type]=slot+1;let e=pool[slot];if(!e){const n=new Node('native-'+this.index+'-'+type);n.layer=Layers.Enum.UI_2D;this.root.addChild(n);n.addComponent(UITransform);n.addComponent(UIOpacity);e={n,type};if(type==='sprite'){n.addComponent(Sprite).sizeMode=Sprite.SizeMode.CUSTOM;e.frame=new SpriteFrame();}if(type==='label'){n.addComponent(Label);n.addComponent(LabelOutline);}if(type==='graphics')n.addComponent(Graphics);if(type==='ground')e.mesh=new GroundMesh(n);pool[slot]=e;this.nodes.push(e);this.createdNodes++;}if(!e.n.isValid)this.resourceFault('stale_node',type);e.generation=this.generation;e.n.active=true;e.n.getComponent(UIOpacity)!.opacity=255;e.n.setSiblingIndex(this.index++);e.n.setScale(1,1,1);e.n.angle=0;if(type==='sprite'){const sp=e.n.getComponent(Sprite)!;sp.grayscale=false;sp.customMaterial=null;sp.color=Color.WHITE;}return e;}
+ destroy(){this.abortFrame();this.destroyed=true;this.nodes.forEach(e=>{e.mesh?.destroy();e.frame?.destroy();e.n.destroy();});this.nodes=[];this.pools={};for(const v of this.frameCache.values())v.frame.destroy();this.frameCache.clear();}
+ private take(type:string){this.lastGraphics=null;const pool=this.pools[type]||(this.pools[type]=[]),slot=this.used[type]||0;this.used[type]=slot+1;let e=pool[slot];if(!e){const n=new Node('native-'+this.index+'-'+type);n.layer=Layers.Enum.UI_2D;this.root.addChild(n);n.addComponent(UITransform);n.addComponent(UIOpacity);e={n,type};if(type==='sprite'){n.addComponent(Sprite).sizeMode=Sprite.SizeMode.CUSTOM;e.frame=new SpriteFrame();}if(type==='label'){n.addComponent(Label);n.addComponent(LabelOutline);}if(type==='graphics')n.addComponent(Graphics);if(type==='ground')e.mesh=new GroundMesh(n);pool[slot]=e;this.nodes.push(e);this.createdNodes++;}if(!e.n.isValid)this.resourceFault('stale_node',type);e.generation=this.generation;e.n.active=true;e.n.setSiblingIndex(this.index++);if(type==='graphics'||type==='ground'){e.n.getComponent(UIOpacity)!.opacity=255;e.n.setScale(1,1,1);e.n.angle=0;}return e;}
  private graphics(){if(this.lastGraphics)return this.lastGraphics;const e=this.take('graphics');e.n.setPosition(0,0);e.n.getComponent(UIOpacity)!.opacity=255;const g=e.n.getComponent(Graphics)!;g.clear();this.lastGraphics=g;return g;}
+ /** Ground shadows keep their tessellation. Only transforms/opacity change as actors march. */
+ drawShadow(x:number,y:number,width:number){
+  const e=this.take('shadow'),n=e.n;
+  if(!e.shadowReady){const g=n.addComponent(Graphics);g.fillColor=color('rgba(30,22,10,.28)');g.ellipse(0,0,50,16);g.fill();e.shadowReady=true;}
+  n.setPosition(...this.xy(x,y));const m=this.matrix;
+  n.setScale(width/100*Math.hypot(m[0],m[1]),width/100*Math.hypot(m[2],m[3]),1);
+  n.angle=-Math.atan2(m[1],m[0])*180/Math.PI;
+  n.getComponent(UIOpacity)!.opacity=Math.round(this.globalAlpha*255);
+ }
  private xy(x:number,y:number):[number,number]{const [a,b,c,d,e,f]=this.matrix;return[a*x+c*y+e-this.L.W/2,this.L.H/2-(b*x+d*y+f)];}
  save(){this.stack.push({matrix:[...this.matrix],lineDash:[...this.lineDash],globalAlpha:this.globalAlpha,fillStyle:this.fillStyle,strokeStyle:this.strokeStyle,lineWidth:this.lineWidth,font:this.font,textAlign:this.textAlign,textBaseline:this.textBaseline,globalCompositeOperation:this.globalCompositeOperation});}
  restore(){const s=this.stack.pop();if(s){Object.assign(this,s);this.lineDash=[...(s.lineDash||[])];}}
@@ -187,13 +198,15 @@ export class NativePaint {
  measure(str:string,size:number){return Array.from(String(str)).reduce((n,c)=>n+(/[\u2e80-\uffff]/.test(c)?1:/[il1 .·]/.test(c)?.33:.59)*size,0);}
  measureText(str:string){return{width:this.measure(str,Number(this.font.match(/([\d.]+)px/)?.[1]||14))};}
  strokeText(str:string,x:number,y:number){this.outline={str,x,y,color:this.strokeStyle,width:this.lineWidth};}
- fillText(str:string,x:number,y:number){str=String(str);const size=Number(this.font.match(/([\d.]+)px/)?.[1]||14),e=this.take('label'),n=e.n,l=n.getComponent(Label)!,u=n.getComponent(UITransform)!;u.setAnchorPoint(this.textAlign==='center'?.5:this.textAlign==='right'?1:0,.5);n.setPosition(...this.xy(x,y));const m=this.matrix;n.setScale(Math.hypot(m[0],m[1])/2,Math.hypot(m[2],m[3])/2,1);n.angle=-Math.atan2(m[1],m[0])*180/Math.PI;l.font=/^[+−0-9-]+$/.test(str)?NativePaint.digits:null;l.string=str;l.fontSize=size*2;l.lineHeight=size*3;l.fontFamily='Arial';l.isBold=true;l.horizontalAlign=Label.HorizontalAlign.CENTER;l.verticalAlign=Label.VerticalAlign.CENTER;l.overflow=Label.Overflow.NONE;l.enableWrapText=false;l.color=color(this.fillStyle);n.getComponent(UIOpacity)!.opacity=Math.round(this.globalAlpha*255);const out=n.getComponent(LabelOutline)!;out.enabled=!!this.outline&&!l.font;if(this.outline){out.color=color(this.outline.color);out.width=this.outline.width;}l.updateRenderData(true);this.outline=null;}
+ fillText(str:string,x:number,y:number){str=String(str);const size=Number(this.font.match(/([\d.]+)px/)?.[1]||14),e=this.take('label'),n=e.n,l=n.getComponent(Label)!,u=n.getComponent(UITransform)!;u.setAnchorPoint(this.textAlign==='center'?.5:this.textAlign==='right'?1:0,.5);n.setPosition(...this.xy(x,y));const m=this.matrix;n.setScale(Math.hypot(m[0],m[1])/2,Math.hypot(m[2],m[3])/2,1);n.angle=-Math.atan2(m[1],m[0])*180/Math.PI;l.font=/^[+−0-9-]+$/.test(str)?NativePaint.digits:null;l.string=str;l.fontSize=size*2;l.lineHeight=size*3;l.fontFamily='Arial';l.isBold=true;l.horizontalAlign=Label.HorizontalAlign.CENTER;l.verticalAlign=Label.VerticalAlign.CENTER;l.overflow=Label.Overflow.NONE;l.enableWrapText=false;l.color=color(this.fillStyle);n.getComponent(UIOpacity)!.opacity=Math.round(this.globalAlpha*255);const out=n.getComponent(LabelOutline)!;out.enabled=!!this.outline&&!l.font;if(this.outline){out.color=color(this.outline.color);out.width=this.outline.width;}// Cocos setters mark changed glyphs dirty. A forced refresh re-rasterizes even unchanged HUD text.
+  l.updateRenderData();this.outline=null;}
  drawImage(im:any,sx:number,sy:number,sw:number,sh:number,x:number,y:number,w:number,h:number){
   const sheet=typeof im==='string'?im:im?.sheet,baseTex=NativePaint.textures[sheet];
   if(!baseTex){this.missing.add(String(sheet));this.resourceFault('texture_not_ready',String(sheet));}
   if(baseTex.isValid===false)this.resourceFault('texture_released',String(sheet));
   if(im?.frame){const f=MANIFEST.frames[im.frame];if(!f)this.resourceFault('mapping_missing',im.frame);sx+=f.r[0];sy+=f.r[1];}
-  const e=this.take('sprite'),n=e.n,u=n.getComponent(UITransform)!,s=n.getComponent(Sprite)!,f=e.frame!.isValid===false?(e.frame=new SpriteFrame()):e.frame!;
+  const original=textureSourceSize(sheet);if(original){const fx=baseTex.width/original[0],fy=baseTex.height/original[1];sx*=fx;sy*=fy;sw*=fx;sh*=fy;}
+  const e=this.take('sprite'),n=e.n,u=n.getComponent(UITransform)!,s=n.getComponent(Sprite)!;let f=e.frame!.isValid===false?(e.frame=new SpriteFrame()):e.frame!;
   if(![sx,sy,sw,sh].every(Number.isFinite)||sx<0||sy<0||sw<=0||sh<=0||sx+sw>baseTex.width+.01||sy+sh>baseTex.height+.01){this.invalidRects.add(sheet+':'+[sx,sy,sw,sh].join(','));e.n.active=false;this.resourceFault('invalid_rect',sheet+':'+[sx,sy,sw,sh].join(','));}
   const mode:VisualMode=im?.visualMode||(im?.silhouette?'silhouette':im?.grayscale?'grayscale':'normal');
   let activeTex=baseTex;
@@ -201,16 +214,27 @@ export class NativePaint {
    const maskTex=NativePaint.getWhiteMaskTexture(String(sheet),baseTex);
    if(maskTex)activeTex=maskTex;
   }
+  // Immutable atlas rectangles survive depth-order changes. Changing a pooled
+  // sprite's subject no longer rewrites UVs of a private SpriteFrame every frame.
+  const frameKey=sheet+':'+(activeTex===baseTex?'base':'mask')+':'+[sx,sy,sw,sh].join(',');
+  const cached=this.frameCache.get(frameKey);
+  if(cached&&cached.texture===activeTex&&cached.frame.isValid!==false)f=cached.frame;
+  else if(this.frameCache.size<512){
+   cached?.frame.destroy();f=new SpriteFrame();
+   this.frameCache.set(frameKey,{texture:activeTex,frame:f});
+  }
   const oldRect=f.rect;const changed=f.texture!==activeTex||oldRect.x!==sx||oldRect.y!==sy||oldRect.width!==sw||oldRect.height!==sh;
-  if(changed)s.spriteFrame=null;
+  if(changed&&s.spriteFrame===f)s.spriteFrame=null;
   if(f.texture!==activeTex)f.texture=activeTex;
-  const r=f.rect;if(r.x!==sx||r.y!==sy||r.width!==sw||r.height!==sh){f.rect=new Rect(sx,sy,sw,sh);f.originalSize=new Size(sw,sh);f.offset=new Vec2();}
-  f.packable=false;f.rotated=false;f.originalSize=new Size(sw,sh);f.offset=new Vec2();
+  const r=f.rect;if(r.x!==sx||r.y!==sy||r.width!==sw||r.height!==sh)f.rect=new Rect(sx,sy,sw,sh);
+  f.packable=false;f.rotated=false;
+  if(f.originalSize.width!==sw||f.originalSize.height!==sh)f.originalSize=new Size(sw,sh);
+  if(f.offset.x!==0||f.offset.y!==0)f.offset=new Vec2();
   s.type=Sprite.Type.SIMPLE;s.sizeMode=Sprite.SizeMode.CUSTOM;
   // Reset pooled Sprite state unconditionally before applying visualMode
-  s.grayscale=false;
-  s.customMaterial=null;
-  s.spriteFrame=f;
+  if(s.grayscale!==false&&mode!=='grayscale')s.grayscale=false;
+  if(s.customMaterial!==null)s.customMaterial=null;
+  if(s.spriteFrame!==f)s.spriteFrame=f;
   if(mode==='silhouette'){
    if(activeTex!==baseTex){
     // White-mask texture available: tinting produces an exact flat-color silhouette (#16222F)

@@ -1,4 +1,4 @@
-import io,json,subprocess,base64,os
+import io,json,subprocess,base64,os,sys
 from pathlib import Path
 import pytest
 from PIL import Image
@@ -128,10 +128,10 @@ def test_source_replacement_retry_not_false_success(project,monkeypatch):
     assert e.value.status=='updating';assert read_json(state/'latest.json')['snapshot_id']==one['snapshot_id']
 
 def test_development_release_guard_and_real_build_stamp():
-    source=(ROOT/'assets/scripts/formal/BridgeDiagnostics.ts').read_text();build=(ROOT/'tools/build-ios.py').read_text()
+    source=(ROOT/'assets/scripts/formal/BridgeDiagnostics.ts').read_text()
     assert 'DEBUG&&sys.isNative' in source and 'this.age<1' in source and '2*1024*1024' in source
-    assert build.index('game_fingerprint(ROOT)')<build.index("'--build'")
-    assert "'--skip-export'" in build
+    result=subprocess.run([sys.executable, str(ROOT/'tools/build-wechat.py'), '--help'], capture_output=True, text=True)
+    assert result.returncode==0 and '--build-number' in result.stdout
 
 def test_watcher_debounces_updates_and_keeps_old_snapshot(project):
     import multiprocessing,time

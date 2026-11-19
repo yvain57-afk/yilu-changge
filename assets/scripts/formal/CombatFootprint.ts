@@ -27,7 +27,7 @@ export function formationSafety(x:number,now:number,execute:number,speed:number,
  const reach=Math.max(0,execute-now-reaction)*speed,lo=Math.max(bounds[0],x-reach),hi=Math.min(bounds[1],x+reach),intervals:Band[]=[];
  if(hi-lo<.012)return {safe:false,intervals,target:null};
  const step=.01,n=Math.ceil((hi-lo)/step),stride=(hi-lo)/n;let start:number|null=null;
- for(let i=0;i<=n;i++){const centre=lo+i*stride,safe=risks.every(r=>(r.wallSides.length?r.wallSides:[0]).every(side=>formationFeet(troops,companions,centre,side).every(p=>!footAtRisk(p,r,.02))));
+ for(let i=0;i<=n;i++){const centre=lo+i*stride,feetBySide=new Map<number,ReturnType<typeof formationFeet>>(),safe=risks.every(r=>(r.wallSides.length?r.wallSides:[0]).every(side=>{let feet=feetBySide.get(side);if(!feet){feet=formationFeet(troops,companions,centre,side);feetBySide.set(side,feet);}return feet.every(p=>!footAtRisk(p,r,.02));}));
   if(safe&&start===null)start=centre;
   if((!safe||i===n)&&start!==null){const end=safe?centre:centre-stride;if(end-start>.012)intervals.push([start+.005,end-.005]);start=null;}
  }

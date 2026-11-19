@@ -4,6 +4,7 @@ import {createBattle} from '../assets/scripts/formal/battle';
 import {CHAPTERS,PACING,marchSpeed,TREASURES} from '../assets/scripts/formal/data';
 import {steer} from '../tools/ios-steer';
 import {combatReviewTarget} from '../assets/scripts/formal/CombatReviewPolicy';
+import {WALL_BODY_MARGIN,WALL_LANE_LIMIT} from '../assets/scripts/formal/RouteCollision';
 import {configureLegalLoadout} from '../tools/r3-combat/legal-loadout';
 const memory=()=>{const d=new Map<string,string>();return{d,getItem:(k:string)=>d.get(k)??null,setItem:(k:string,v:string)=>{d.set(k,v);}}};
 const fresh=()=>new FormalStore(memory());
@@ -23,7 +24,15 @@ test('all twenty legal reference loadouts clear and meet authored chapter timing
   const store=fresh();for(let i=0;i<chapter;i++)assert.equal(store.settle({id:'timing-prior-'+i,chapter:i,won:true,troops:40,treasures:[],defeatedBossId:CHAPTERS[i].boss,defeatedOfficerIds:CHAPTERS[i].enemy}),true);
   configureLegalLoadout(store);assert.ok(store.data.weapons.includes(store.data.selectedWeaponId));
   const b=createBattle({chapter,lineup:store.loadout(),seed:7919}),[minimum,maximum]=CHAPTERS[chapter].targetSeconds!;
-  for(let tick=0;tick<300*60&&!b.state.ended;tick++){if(tick%6===0)b.move(combatReviewTarget(b.snapshot(),'normal'));b.step();b.drainAudioEvents();}
+  for(let tick=0;tick<300*60&&!b.state.ended;tick++){
+   if(tick%6===0){
+    const scene=b.snapshot();
+    const wall=scene.entities.find(e=>e.type==='wall'&&e.z>=WALL_BODY_MARGIN-.001&&e.z<2);
+    const target=wall ? -wall.side*(WALL_LANE_LIMIT+.08) : combatReviewTarget(scene,'normal');
+    b.move(target);
+   }
+   b.step();b.drainAudioEvents();
+  }
   const s=b.state,label='chapter '+(chapter+1);assert.equal(s.ended&&s.troops>0,true,label+' should clear with prior rewards only');
   // R3 Bosses have distinct authored sequences. Measure real target deviations instead of pretending every weapon/route shares the old 25–45s window.
   assert.ok(s.timing.boss>0&&s.timing.boss<180,label+' finite actual Boss encounter');

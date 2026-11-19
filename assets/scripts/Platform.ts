@@ -9,7 +9,7 @@ import { Book, Storage } from './core/save';
 declare const wx: any;
 /** The only platform-specific boundary. No network, identity, analytics or commerce. */
 export class Platform {
- tactics:Tactics; growth:Growth; private metricsCache:WindowMetrics|null=null; private metricsRevision=0; private windowChanged=()=>{this.metricsCache=null;this.metricsRevision++;}; readonly bgmEnabled=true; campaign:Campaign; book: Book; music: AudioSource|null=null; private effects:Record<string,AudioSource>={};private mixer=new WeaponSoundMixer(this.effects);private legacySoundId=0;private effectLast:Record<string,number>={};private active=false; clips:Record<string,AudioClip>={}; hidden=false;private score=new MusicDirector();private musicFailures:string[]=[];private musicSources:Record<string,AudioSource>={}; private loadPromise:Promise<void>|null=null; private disposed=false; private effectTimes:number[]=[]; private audioCounters={played:0,suppressedBusy:0,suppressedRate:0,suppressedBudget:0,loadFailures:0};
+ tactics:Tactics; growth:Growth; private metricsCache:WindowMetrics|null=null; private metricsRevision=0; private windowChanged=()=>{this.metricsCache=null;this.metricsRevision++;}; readonly bgmEnabled=true; campaign:Campaign; book: Book; music: AudioSource|null=null; private effects:Record<string,AudioSource>={};private mixer=new WeaponSoundMixer(this.effects);private legacySoundId=0;private effectLast:Record<string,number>={};private active=false; clips:Record<string,AudioClip>={}; hidden=false;private score=new MusicDirector({crossfade:!(typeof wx!=='undefined'&&typeof wx.createInnerAudioContext==='function'),recoverStart:typeof wx!=='undefined'&&typeof wx.createInnerAudioContext==='function'});private retriedBattleMusic=false;private musicFailures:string[]=[];private musicSources:Record<string,AudioSource>={}; private loadPromise:Promise<void>|null=null; private disposed=false; private effectTimes:number[]=[]; private audioCounters={played:0,suppressedBusy:0,suppressedRate:0,suppressedBudget:0,loadFailures:0};
  private onHide=()=>{this.hidden=true;this.active=false;this.score.suspend();this.stopEffects();this.pause();};
  private visibility=()=>{if(typeof document!=='undefined'&&document.hidden)this.onHide();else this.onShow();};
  private blur=()=>this.onHide();
@@ -70,7 +70,7 @@ export class Platform {
   this.score.configure(this.book.data.settings.music,this.book.data.settings.musicVolume??.6);
   if(sys.isNative)this.score.unlock();
  }
- setMusicScene(screen:string){this.score.setScene(screen);}
+ setMusicScene(screen:string){this.score.setScene(screen);if(screen!=='battle')this.retriedBattleMusic=false;else if(!this.clips['score-battle']&&!this.retriedBattleMusic&&!this.loadPromise){this.retriedBattleMusic=true;void this.loadMusic().catch(()=>{this.musicFailures.push('battle-retry');});}}
  unlockAudio(){if(!this.hidden)this.score.unlock();}
  updateMusic(dt:number){this.score.tick(dt);}
 

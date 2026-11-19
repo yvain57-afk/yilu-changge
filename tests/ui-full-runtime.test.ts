@@ -116,3 +116,14 @@ test('loss diagnosis aggregates aliases, ignores prevented hits, and never inven
  assert.match(resultLossSummary({archer:0,gate:'8'}),/没有完整的战损记录/);
  assert.match(resultLossSummary({new_source:8}),/其他攻击 · 损失 8 名/);assert.doesNotMatch(resultLossSummary({new_source:8}),/弓手|骑兵|箭雨/);
 });
+
+
+test('earned weapon and treasure can be equipped directly from the actual victory reward actions',()=>{
+ const h=host(0);assert.ok(h.store.settle({id:'loot-win',chapter:0,won:true,troops:30,weapons:['qinggang'],treasures:['mengde'],defeatedBossId:CHAPTERS[0].boss,defeatedOfficerIds:requiredOfficers(0)}));
+ h.g.rewardReturn='result';h.g.show('reward');h.reveal('equip-reward-qinggang');h.click('equip-reward-qinggang');
+ assert.equal(h.store.loadout().startWeaponId,'qinggang');
+ h.reveal('equip-reward-mengde');h.click('equip-reward-mengde');assert.equal(h.store.data.slots.dian,'mengde');
+ assert.equal(new FormalStore(h.io).loadout().startWeaponId,'qinggang');
+ assert.equal(new FormalStore(h.io).loadout().treasures.dian,'mengde');
+ assert.ok(h.store.data.pendingRewardPresentation,'equipping does not dismiss or repeat the reward');
+});

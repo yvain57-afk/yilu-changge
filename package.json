@@ -5,14 +5,14 @@
   "creator": {
     "version": "3.8.8"
   },
-  "description": "一路长歌：三国 — 十关 Cocos 集成测试版",
+  "description": "一将成军 · 微信小游戏",
   "scripts": {
     "test": "node tools/run-local.mjs tsx --test tests/*.test.ts",
     "typecheck:core": "node tools/run-local.mjs tsc -p tsconfig.core.json --noEmit",
     "typecheck": "node tools/run-local.mjs tsc --noEmit -p tsconfig.json",
     "art": "node tools/art.mjs && python3 tools/audio.py",
     "build:web": "node tools/build.mjs web-mobile",
-    "build:wechat": "node tools/build.mjs wechatgame && node tools/formal-wechat-optimize.mjs",
+    "build:wechat": "python3 tools/build-wechat.py",
     "serve": "node tools/serve.mjs",
     "edit:home-button": "node tools/run-local.mjs tsx tools/home-button-tuner/server.mjs",
     "test:negative": "node tools/run-local.mjs node tools/mutation.mjs",

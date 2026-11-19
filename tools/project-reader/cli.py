@@ -136,7 +136,7 @@ def status():
         except Exception:tunnel={**tunnel,'status':'unavailable','reason':'official local readiness not reachable'}
     acceptance=read_json(STATE/'local-acceptance.json',{'status':'not_run'})
     if acceptance.get('tool_fingerprint')!=tool_fingerprint():acceptance={**acceptance,'status':'stale','reason':'reader source changed since last protocol check'}
-    return {'project_id':PROJECT,'root':str(ROOT),'platform':'iOS native','build':'tools/build-ios.py','collector':{**h,'heartbeat_age_seconds':age,'live':age is not None and age<45 and process_alive(h.get('watcher_pid'))},'latest':read_json(STATE/'latest.json'),'local_mcp':acceptance,'tunnel':tunnel,'account_binding':'user must verify own Platform org + ChatGPT workspace; readiness alone is insufficient','chatgpt_actual_read':read_json(STATE/'chatgpt-acceptance.json',{'status':'blocked_user_action','images':'not_tested'})}
+    return {'project_id':PROJECT,'root':str(ROOT),'platform':ACTIVE_PLATFORM,'build':BUILD_ENTRY,'collector':{**h,'heartbeat_age_seconds':age,'live':age is not None and age<45 and process_alive(h.get('watcher_pid'))},'latest':read_json(STATE/'latest.json'),'local_mcp':acceptance,'tunnel':tunnel,'account_binding':'user must verify own Platform org + ChatGPT workspace; readiness alone is insufficient','chatgpt_actual_read':read_json(STATE/'chatgpt-acceptance.json',{'status':'blocked_user_action','images':'not_tested'})}
 
 async def wire_check():
     from mcp import Client,StdioServerParameters
