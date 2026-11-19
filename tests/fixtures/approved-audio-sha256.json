@@ -1,0 +1,630 @@
+[
+  {
+    "path": "assets/resources/audio/warn.mp3",
+    "sha256": "99a7ac1ef3e111cd697e45bf2266447f6e01a95395f1aba472419fdafd143fce"
+  },
+  {
+    "path": "assets/resources/audio/hit.mp3.meta",
+    "sha256": "923cf0d76a8a87ad0753ada40e0132a8fce1ecc9b68847f83c5545b36d7a0f90"
+  },
+  {
+    "path": "assets/resources/audio/break.mp3",
+    "sha256": "a792daf8c80a915f089ef8dd69c7b991ddd82af115062f7300d0e45f69c2bbf7"
+  },
+  {
+    "path": "assets/resources/audio/gather.mp3",
+    "sha256": "31bbdad4a26a001e9ce7b360dacb1d2617c2a52861194dca7317c8a61f40bf66"
+  },
+  {
+    "path": "assets/resources/audio/hit.mp3",
+    "sha256": "e0c56190020ae7be5bdb329b79a810e9761c4ae038212d84564af0c5dba087c1"
+  },
+  {
+    "path": "assets/resources/audio/gather.mp3.meta",
+    "sha256": "9af3dfcebc5d0f4ff500953bacc2901a0d9b0ea398c4f55cddf85f8c1b7b6715"
+  },
+  {
+    "path": "assets/resources/audio/hurt.mp3.meta",
+    "sha256": "716eb48ca2cfc63d388d83ba264a59261b44a590960ff81a4ba5bcf5df37850a"
+  },
+  {
+    "path": "assets/resources/audio/music.mp3",
+    "sha256": "b16ba541ef475d7c4d3917f103671e0f4deeb518a5196b1abd752527e8a10f67"
+  },
+  {
+    "path": "assets/resources/audio/break.mp3.meta",
+    "sha256": "190348fa5a69c4183a16c75a8ab4c9d9100d8318f06db50fe97ae988e831a8d5"
+  },
+  {
+    "path": "assets/resources/audio/hurt.mp3",
+    "sha256": "16c55c77040394c5e5cd68959350db3510d9ac9b3bd7d3e0f4cf1c5757a33423"
+  },
+  {
+    "path": "assets/resources/audio/music.mp3.meta",
+    "sha256": "7cd99befe7f17a1a8604dda3533c5b766da28d306eb901824348fe3788bcece6"
+  },
+  {
+    "path": "assets/resources/audio/weapons.meta",
+    "sha256": "3746c25a03f80ee97c90522fbb7e9f3787ea336be6abdcb5d2ef8d84e265b210"
+  },
+  {
+    "path": "assets/resources/audio/warn.mp3.meta",
+    "sha256": "664fe80c54524a3ce930938a564746b17be46cba0e49ce270c53d0a802430707"
+  },
+  {
+    "path": "assets/resources/audio/weapons/qinggang-0.wav.meta",
+    "sha256": "cf9153d8ef56e8c8ea843de3d8c0fbc0de880b211f1dec45d0542f5b7fe2ba83"
+  },
+  {
+    "path": "assets/resources/audio/weapons/qinggang-1.wav.meta",
+    "sha256": "b30e685d6ff2f60b8fdd6f7e97f2afd3c39582856f2b73c89954a90ca1c91c3c"
+  },
+  {
+    "path": "assets/resources/audio/weapons/qinggang-2.wav",
+    "sha256": "2612c8dff7cc19d6a7baaf984c1a7ab7cfb92171b876d02d37f67ff4f51deed2"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-generic-1.wav.meta",
+    "sha256": "109e3b380002730858432128c3d7db76b1d6de12d5030dc6bc9c1bfa4aa80a62"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-generic-0.wav.meta",
+    "sha256": "a348d80127a6f0759b44492ca9fbf7d1c76679439eae571e48bd47a5f10eb590"
+  },
+  {
+    "path": "assets/resources/audio/weapons/guding-0.wav.meta",
+    "sha256": "52de30db6264de897f7be096ab1156bba56316f68b8ac44aa52b89a33e8c8d12"
+  },
+  {
+    "path": "assets/resources/audio/weapons/guding-1.wav.meta",
+    "sha256": "02763fa5ae10ce695c2b1a2b8c9f0cd24ae26d348a331185a5f57656d999c946"
+  },
+  {
+    "path": "assets/resources/audio/weapons/qinggang-0.wav",
+    "sha256": "d27d66b790de0b390f9cf79972efe41297ab0f33c66be2c792c5621d717a6f4c"
+  },
+  {
+    "path": "assets/resources/audio/weapons/qinggang-1.wav",
+    "sha256": "947dc88b99dff418c6ac016c8ec48255ad790b1b1bf3c38441ac28da4ce46b6a"
+  },
+  {
+    "path": "assets/resources/audio/weapons/army-bow-0.wav.meta",
+    "sha256": "3ee8223f92f56c01e101bee1dd4ff42505a19d0322bbadaa731322de3938c364"
+  },
+  {
+    "path": "assets/resources/audio/weapons/army-bow-1.wav.meta",
+    "sha256": "5ca357b25b7347a1b70aa434e74d6e5f415194dc2bb40a5410d62a1af1bc015e"
+  },
+  {
+    "path": "assets/resources/audio/weapons/guandao-2.wav.meta",
+    "sha256": "00f27c99e16b4ef950c80cc06c05c76552c877f8bcb0621d2d4d3fc90c395916"
+  },
+  {
+    "path": "assets/resources/audio/weapons/army-fire-1.wav",
+    "sha256": "1a241645b4e44d16eb76a613c50d037d2c6a130a03ecd7500f3ebd9363840fa6"
+  },
+  {
+    "path": "assets/resources/audio/weapons/yanlinggong-1.wav",
+    "sha256": "f38c51b382f4bdd58b512e44a18771d8e82d4630ea89c0b2e5510314140e2dd2"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-wood-2.wav.meta",
+    "sha256": "0b68891aa586ed0d7a100e9b18859f7276a40bfc6038e62d7f17eef5f01599f5"
+  },
+  {
+    "path": "assets/resources/audio/weapons/yanlinggong-0.wav",
+    "sha256": "515a71eb076bf28d7caff52b9b52266b23050bf65e521d76bb87d1785fe435b6"
+  },
+  {
+    "path": "assets/resources/audio/weapons/army-fire-0.wav",
+    "sha256": "b94dc707d72b0ce06be99a868585effb8aaf108537cf7e99e4885fcc06eedd74"
+  },
+  {
+    "path": "assets/resources/audio/weapons/shuanggu-2.wav",
+    "sha256": "2aae2823d1844385aa221937bce9df93987d5f0fc4dee1e0e567203e3f9ca5b8"
+  },
+  {
+    "path": "assets/resources/audio/weapons/duanji-1.wav.meta",
+    "sha256": "5a50651ce3252b758bc7343d248f862e505b782effa531ee667ccb440514e2d3"
+  },
+  {
+    "path": "assets/resources/audio/weapons/shuanggu-2.wav.meta",
+    "sha256": "f1d0ee0568a5f7e6f81368750b09611db1bda8e02d52e4d0259a0d532a3b825e"
+  },
+  {
+    "path": "assets/resources/audio/weapons/duanji-0.wav.meta",
+    "sha256": "9cb53e484041d34e9e86b7ddcd93a914ef5e94d4e40c2f4d7f88c6920e9489d4"
+  },
+  {
+    "path": "assets/resources/audio/weapons/shuanggu-0.wav",
+    "sha256": "889a9984c454a907eff2472be4ed2176a451c3f48e91b1b74f2c47e4d51a4f88"
+  },
+  {
+    "path": "assets/resources/audio/weapons/army-fire-2.wav",
+    "sha256": "e66ffb004a83e9779154316a9f343d204a9b44abe81ff46ed17c45c3c56bc6bf"
+  },
+  {
+    "path": "assets/resources/audio/weapons/goulianqiang-0.wav.meta",
+    "sha256": "8683d622cfbb0e36a2e2c4254990de3564ab874a3a504859363a0bb68f121b3f"
+  },
+  {
+    "path": "assets/resources/audio/weapons/yanlinggong-2.wav",
+    "sha256": "778b92323154359b5957b4e91d295544367b5b02e4203b2d70d95591ec76e764"
+  },
+  {
+    "path": "assets/resources/audio/weapons/goulianqiang-1.wav.meta",
+    "sha256": "a5c0ac362e87c20cb72d9149c023bcd9136e59368c98d5bfa817a7fadbd37f45"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-metal-1.wav.meta",
+    "sha256": "09d7b6285a46e2bad332b2958856197e238d21332804148f3a3c73848cf03741"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-metal-0.wav.meta",
+    "sha256": "79654729e1040d50b46f68dfc84e76afb61e22c9913a694e32933c6c4d17543b"
+  },
+  {
+    "path": "assets/resources/audio/weapons/army-repeater-0.wav.meta",
+    "sha256": "c25cd03b174b64841d80213f2eb895cafd28a250a0682dda7b9b328339a2d50f"
+  },
+  {
+    "path": "assets/resources/audio/weapons/army-repeater-1.wav.meta",
+    "sha256": "e337c47908d3c23cf5aad07951fa4bed5233d41371c12128693a54d6668c4e07"
+  },
+  {
+    "path": "assets/resources/audio/weapons/liannu-0.wav.meta",
+    "sha256": "c3f87c806a58449267f13fc8bde127260101aace3a6d28e51c2ff204cdd58b5f"
+  },
+  {
+    "path": "assets/resources/audio/weapons/liannu-1.wav.meta",
+    "sha256": "846616c4c73e2d0c13e0ba4256a7bd1f896d719b5541a484f71419052168b607"
+  },
+  {
+    "path": "assets/resources/audio/weapons/shuanggu-1.wav",
+    "sha256": "8e3b235c09188b7a70533cde38b6fbf33b884a38bbc81f77d0c4a6b9bf53649c"
+  },
+  {
+    "path": "assets/resources/audio/weapons/shuangji-1.wav.meta",
+    "sha256": "a73766b60575d67ba9f34d24cd0034d90ddf62e65a253d1386ef618b9eb53d7a"
+  },
+  {
+    "path": "assets/resources/audio/weapons/shuangji-0.wav.meta",
+    "sha256": "cf0d027f77f4aa3e3d86059e085605aeebdeecdd802ee66fa2f42e3d937d0537"
+  },
+  {
+    "path": "assets/resources/audio/weapons/tiesuodao-2.wav.meta",
+    "sha256": "67af396cfad4dc4fc109988799192700c532bae3374b7bdce52ebcc2c5f05354"
+  },
+  {
+    "path": "assets/resources/audio/weapons/yitian-1.wav.meta",
+    "sha256": "38fd3fb2f125c58aab2a9b5d138b3269928a05ec9b09fc9bc4df05021d58f090"
+  },
+  {
+    "path": "assets/resources/audio/weapons/yitian-0.wav.meta",
+    "sha256": "9e3f64d71bb0b3527527ed0725f60ff9a95ba33a323ddffa661953d1b7d24fac"
+  },
+  {
+    "path": "assets/resources/audio/weapons/liannu-2.wav",
+    "sha256": "67e43c66d2ca9f77133246e3c74f7d64650f52a1e51a469ce22b4fd7709bdd06"
+  },
+  {
+    "path": "assets/resources/audio/weapons/liannu-0.wav",
+    "sha256": "071d15b2f3e7d2fae434b614e88e154b707314ddb58951f1e88907836a9e8325"
+  },
+  {
+    "path": "assets/resources/audio/weapons/shemao-2.wav.meta",
+    "sha256": "58b6b8a64285e10e33279412694336ab773b955668764a5e9716309ce13658f0"
+  },
+  {
+    "path": "assets/resources/audio/weapons/liannu-1.wav",
+    "sha256": "596d2030d26e5de755f756ef03cb65bf3412a36a28ccac04709268be6a4b1e3a"
+  },
+  {
+    "path": "assets/resources/audio/weapons/spear-0.wav.meta",
+    "sha256": "af51dab9b7e2d5f53c4370703142d2d5d79ec8e461020de815ccf76099701844"
+  },
+  {
+    "path": "assets/resources/audio/weapons/spear-1.wav.meta",
+    "sha256": "df43c0daa65be76407c05f6c9290c98f07cc4d640d91af8998f61462fdd570d3"
+  },
+  {
+    "path": "assets/resources/audio/weapons/jiguannu-load-0.wav.meta",
+    "sha256": "692f878b9efaa4de752608b70dc85b6688fe5987da83ec2dd26142c06bcf909d"
+  },
+  {
+    "path": "assets/resources/audio/weapons/jiguannu-load-1.wav.meta",
+    "sha256": "7a101438889d366774654b2577e729f7b35cbcc26811a7da0f3c9f92db5f15fb"
+  },
+  {
+    "path": "assets/resources/audio/weapons/goulianqiang-0.wav",
+    "sha256": "669609bc200736c66656267863db94b7d03fddaa184d11a50e1d8132ef86b025"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-wood-0.wav",
+    "sha256": "82a65fdf643e7549eb11cceaa6f4aeec7b07c004d79676bd10ac43cdcf5611da"
+  },
+  {
+    "path": "assets/resources/audio/weapons/jiguannu-0.wav",
+    "sha256": "5100f653eb0d0caece53c9bd9b1ad9fe81f3e9217fcbf4d2e87c8d5d5c6785e7"
+  },
+  {
+    "path": "assets/resources/audio/weapons/army-repeater-0.wav",
+    "sha256": "47535c8b17df12a93a0c68f5d8f24e6f0605ba74d7fe51c37325c77d0c8ae96b"
+  },
+  {
+    "path": "assets/resources/audio/weapons/army-repeater-1.wav",
+    "sha256": "28d801bccb9d246ee64c9a579c07316f590e70cc04fee0adf15f91e3ae90db70"
+  },
+  {
+    "path": "assets/resources/audio/weapons/jiguannu-1.wav",
+    "sha256": "003f3daf21826eb9c79ec1ca69b75c7d0a7fa75b4b8ad22f13990b56533d71b8"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-wood-1.wav",
+    "sha256": "6769bbaf1cce82a2479819871bcf96d878126a159a23843f9d78286132ad56e8"
+  },
+  {
+    "path": "assets/resources/audio/weapons/goulianqiang-1.wav",
+    "sha256": "1b611d1ff4a7871a787cfa8f839e1bdcda4d4c5e57d7a86e573e83315d09b980"
+  },
+  {
+    "path": "assets/resources/audio/weapons/yanlinggong-0.wav.meta",
+    "sha256": "445056921dab53eb889364d4347fa09309b22bab151888fc573316837fcf7e3e"
+  },
+  {
+    "path": "assets/resources/audio/weapons/yanlinggong-1.wav.meta",
+    "sha256": "897bfe365c385f8555927a225ae0138527b2f6187bfccd85a218281daef00128"
+  },
+  {
+    "path": "assets/resources/audio/weapons/jiguannu-1.wav.meta",
+    "sha256": "5f6d6a5ac8be7b9292522a33ebf5a9af336ef27072371b9dd2e174d655bd5cde"
+  },
+  {
+    "path": "assets/resources/audio/weapons/jiguannu-0.wav.meta",
+    "sha256": "69406e5c4275cbc252ae479e45cbe9569b20dcafc87fc28b682db6abba806e3a"
+  },
+  {
+    "path": "assets/resources/audio/weapons/dundao-2.wav.meta",
+    "sha256": "6bfb61a9d6ec3b22453f7ec8a4b340324400b62e699efe2c0ca51f3809892097"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-soft-0.wav.meta",
+    "sha256": "f4d04a8431dc39e65c7ecc63b95a91cfda624ce186d76c9b2f784e0f75d9de67"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-soft-1.wav.meta",
+    "sha256": "b45c54659d57a2bcb4601f46c86df96bd1aea914a525961e27344fc5d732e5c1"
+  },
+  {
+    "path": "assets/resources/audio/weapons/huaji-1.wav.meta",
+    "sha256": "9a4ddfc6d3f1fd4699098a008199959d2423dfae80725d0152954262585318a9"
+  },
+  {
+    "path": "assets/resources/audio/weapons/huaji-0.wav.meta",
+    "sha256": "436cc12b71bf605605fca6a46059e7b6f55355e9f346dea3b0f27b4e477c1d6b"
+  },
+  {
+    "path": "assets/resources/audio/weapons/jiguannu-2.wav",
+    "sha256": "931ce26317f9473a5b47a260a8d07a65f6b6df20b38be4a90baa9cdacdf6ab09"
+  },
+  {
+    "path": "assets/resources/audio/weapons/army-repeater-2.wav",
+    "sha256": "76ac39786182836b784c5e6ca88d60c886420b101019856d30baa97a7c408f94"
+  },
+  {
+    "path": "assets/resources/audio/weapons/army-fire-2.wav.meta",
+    "sha256": "c2e0a2442f032c908444e7cf2b02ee3917cbd308e5e41dae9bb7f7e38119fe8e"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-wood-2.wav",
+    "sha256": "3cac103f49e640831e4dc1eaa7d285a64b2ab7f351b77544821c2bf6792184cb"
+  },
+  {
+    "path": "assets/resources/audio/weapons/goulianqiang-2.wav",
+    "sha256": "01c6271aac0f78c6c282cd3068787458f6fa9b18553011889171a8b2d7e28d91"
+  },
+  {
+    "path": "assets/resources/audio/weapons/yitian-1.wav",
+    "sha256": "5f79fa12087b7d0e2561cfc80c3557640922f83a40bf66dfe0de51c2d6a20a25"
+  },
+  {
+    "path": "assets/resources/audio/weapons/goulianqiang-2.wav.meta",
+    "sha256": "d9e1b85095e6c08a8aded8846e9b6d303c3a26abbf79a3bfe6b43ccef229d88b"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-metal-2.wav.meta",
+    "sha256": "392a33b8e2eb4e11a75cbff79d9ed2923dd452e4f45adba8256c2b347e3d542c"
+  },
+  {
+    "path": "assets/resources/audio/weapons/army-repeater-2.wav.meta",
+    "sha256": "946fedf9ed6c5c3f85c0f1abf6136122ad9966319401f25feea1c224e5c0b245"
+  },
+  {
+    "path": "assets/resources/audio/weapons/yitian-0.wav",
+    "sha256": "038738528ec3c7bbd32b443c7cc430cb07d24159f39593faf0819922a89dab7c"
+  },
+  {
+    "path": "assets/resources/audio/weapons/liannu-2.wav.meta",
+    "sha256": "a861d0e1348c08adc4038f48ff4bcc00e9a6937b761632e2a63c6a1607f2909e"
+  },
+  {
+    "path": "assets/resources/audio/weapons/yitian-2.wav",
+    "sha256": "8780899abd0bf31787a114cf44f9c893653de030f51ca08d6df496ca99e66653"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-wood-1.wav.meta",
+    "sha256": "53a4eed256f8751ef0ad4777cae041736dab5ba8f853aab553dd7781aa0c8714"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-wood-0.wav.meta",
+    "sha256": "b37c6b8ae7832b9a1e4c56dcbe1c34231d19e3cafec99876befbd718007cd49a"
+  },
+  {
+    "path": "assets/resources/audio/weapons/duanji-2.wav.meta",
+    "sha256": "352b7ab3ff594b74980f182e8e8724d4663f555fc9fba9b3a2a6b749934c2b8c"
+  },
+  {
+    "path": "assets/resources/audio/weapons/shuanggu-0.wav.meta",
+    "sha256": "5a3ea2a4f4fda789702199175a0d9554bb9d883ca5a6bde2b33d6525679ec6c8"
+  },
+  {
+    "path": "assets/resources/audio/weapons/shuanggu-1.wav.meta",
+    "sha256": "27db55578beeb9d67e52d78afd6d6e989a9fbd3c3704edeefefd26026d786a1f"
+  },
+  {
+    "path": "assets/resources/audio/weapons/guandao-0.wav",
+    "sha256": "334fb8d8c993fcece66e332537f9a7087f6ab30957489937a01f6979a6a639de"
+  },
+  {
+    "path": "assets/resources/audio/weapons/guding-2.wav.meta",
+    "sha256": "04771f601a80383327e46cbf60779e861554f5f8484b15e15a55ee949a429965"
+  },
+  {
+    "path": "assets/resources/audio/weapons/dundao-2.wav",
+    "sha256": "92cc8165b502ce72f57bbee2b3e438c7c4a88a4cf62aab6c5164a4cc0c4fdc32"
+  },
+  {
+    "path": "assets/resources/audio/weapons/guandao-0.wav.meta",
+    "sha256": "8c3097bbd7ab1b68e73a3390931b8d00d419839724cc5668e6f4a7124bee436b"
+  },
+  {
+    "path": "assets/resources/audio/weapons/guandao-1.wav.meta",
+    "sha256": "0f346d5f12b82a0b1c0dc3b3da7a1851346e88db9f6725c27e90896b04f47be2"
+  },
+  {
+    "path": "assets/resources/audio/weapons/army-bow-2.wav.meta",
+    "sha256": "e7a759485835f2bc75aabe9a43b9ad1a865ce539967a80876fc6cdd2b847464f"
+  },
+  {
+    "path": "assets/resources/audio/weapons/army-bow-2.wav",
+    "sha256": "34c625879ef71fca5aa615754790de41aa8cb16de887875903da7239e6a8847a"
+  },
+  {
+    "path": "assets/resources/audio/weapons/guandao-1.wav",
+    "sha256": "d15851f0893f141b3fb5b8091799d37422f327c2ead9efc6fe7a2b385316eff9"
+  },
+  {
+    "path": "assets/resources/audio/weapons/army-bow-0.wav",
+    "sha256": "7a3d74ed213443fc189d6ed6f9ac8d00445efa0b69df5d101f8f27acc3735707"
+  },
+  {
+    "path": "assets/resources/audio/weapons/qinggang-2.wav.meta",
+    "sha256": "7fdbab41ca98942402625f00ef7a97e640e7687934654564558d563ad2fa836a"
+  },
+  {
+    "path": "assets/resources/audio/weapons/dundao-0.wav",
+    "sha256": "aff2a91ba6f0530ea52b283e9db33c475ddb2d67294bc3bc47f3b7315fce1dd3"
+  },
+  {
+    "path": "assets/resources/audio/weapons/dundao-1.wav",
+    "sha256": "2e393cb9f336a58499cef313f2105803cb0cb2ebe9fa3deeb69699d70daf0745"
+  },
+  {
+    "path": "assets/resources/audio/weapons/army-bow-1.wav",
+    "sha256": "174ab6a30b94a8b020e36a110c546d0fbff54a46a389d1dff15f7f3da1a136bc"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-generic-2.wav.meta",
+    "sha256": "62827d409ebb84ee6db96b42cbbe9b4a74ce7b7c5a7323c5238a3bdcdba37f94"
+  },
+  {
+    "path": "assets/resources/audio/weapons/guandao-2.wav",
+    "sha256": "64273768363550a5c47d8f658cb0676442812c76db41a5fb420981204e1eddda"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-soft-1.wav",
+    "sha256": "137273fc9f12b96137b7aac1802dee124ed3b5128643f961dc7f176f14959c37"
+  },
+  {
+    "path": "assets/resources/audio/weapons/shuangji-2.wav",
+    "sha256": "b19113f1d87580d0d52b63bdef61a9526bff3590629f6710c3d4e588f200dfc5"
+  },
+  {
+    "path": "assets/resources/audio/weapons/shemao-0.wav",
+    "sha256": "1a4d440038b6789e618c39bdb70bfb2487858bd42ae4872935145b457fece095"
+  },
+  {
+    "path": "assets/resources/audio/weapons/jiguannu-2.wav.meta",
+    "sha256": "976c86d005f8432651bc41b7d66146af244df12138d1d45316755c30171cdb44"
+  },
+  {
+    "path": "assets/resources/audio/weapons/huaji-2.wav.meta",
+    "sha256": "5c1b85a6ab9dcf67b06590084af032edf8704205756185a497acdfa6c3220caf"
+  },
+  {
+    "path": "assets/resources/audio/weapons/dundao-1.wav.meta",
+    "sha256": "ccabb90f8b35750e8d731d4774dd89259e245795d5318f42b462e93a11430083"
+  },
+  {
+    "path": "assets/resources/audio/weapons/dundao-0.wav.meta",
+    "sha256": "000a2c729d6a998386b1d83d23dac07dce3430714b69f864ae118e38de413dd0"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-soft-2.wav.meta",
+    "sha256": "40e0edeeb259d085a4f7726ace7100d0f71d5c78c0b5d008b56b7b7d96285e74"
+  },
+  {
+    "path": "assets/resources/audio/weapons/army-fire-1.wav.meta",
+    "sha256": "66b090811187a871b3c83e19a9f87c85b02c29a1370f4a655b79fd2a9b371918"
+  },
+  {
+    "path": "assets/resources/audio/weapons/army-fire-0.wav.meta",
+    "sha256": "02cd982cc13e7a45fbd81eb706b0033fa0a564ddebc142fe6084ecd264082be6"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-generic-2.wav",
+    "sha256": "e7ffaabc0e7baa7742addebce3558f04d19f8e66b6acc6cb1af60cf8f55fb3ff"
+  },
+  {
+    "path": "assets/resources/audio/weapons/shemao-1.wav",
+    "sha256": "8a95be52e561b7283ea010611c070d66c10bad43df324291ec3898cbc7c2f36f"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-soft-0.wav",
+    "sha256": "54cce2ab3b21146aa330c6c34544e29e0fe4bd0b2f3fc306c78cbbc19fcfc118"
+  },
+  {
+    "path": "assets/resources/audio/weapons/duanji-2.wav",
+    "sha256": "b38980e2cda6051bbffd455770f4b4d96ad98fd00c84a47cd23118274f003aa8"
+  },
+  {
+    "path": "assets/resources/audio/weapons/duanji-0.wav",
+    "sha256": "da161be77831f8693376272fdfef8c51ab1853c1b4555b2d013ae1bf7a486db9"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-soft-2.wav",
+    "sha256": "06a5aaffdcbc465fcf1ec17d0331b64a8194dd55d6209463e074c543d4b8cf79"
+  },
+  {
+    "path": "assets/resources/audio/weapons/jiguannu-load-2.wav.meta",
+    "sha256": "9b0f683676183e5ac7d55ccccc596b6409ca625afca6d008eadcc71c55919695"
+  },
+  {
+    "path": "assets/resources/audio/weapons/shuangji-1.wav",
+    "sha256": "4aaf4f015a69068536f9125bb47caa27e1b08a31baad6fef2e436baedc42d3cb"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-generic-0.wav",
+    "sha256": "96edd415cc04200065c35679fe99bd1bed65bf9ddc08f497be44766f2814215f"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-generic-1.wav",
+    "sha256": "1f65bbf0fa0759338b10cf2e61756d62c71cd3029da648bb85368e9ebf7ac148"
+  },
+  {
+    "path": "assets/resources/audio/weapons/shemao-2.wav",
+    "sha256": "3ae3044460f7093e30bcf786d784f0f3b94d342d6198d16e01150c05f7ecf1ef"
+  },
+  {
+    "path": "assets/resources/audio/weapons/shuangji-0.wav",
+    "sha256": "0599ffc56d8ca4429c24794674fea0282cf2251fbf0d9185f02a85a259a0dcd6"
+  },
+  {
+    "path": "assets/resources/audio/weapons/yanlinggong-2.wav.meta",
+    "sha256": "a6678dc74ba00877bfbb715ff6814beac8a3c7f0b416cae87d5f24f1543108a1"
+  },
+  {
+    "path": "assets/resources/audio/weapons/duanji-1.wav",
+    "sha256": "503b15fca72bbad5c695df089cd5328873aea316003d4527257770de05cdd984"
+  },
+  {
+    "path": "assets/resources/audio/weapons/jiguannu-load-1.wav",
+    "sha256": "6cc4453d98e26c28405933006d2c2b17c24714f627f242290f5aa660012faecd"
+  },
+  {
+    "path": "assets/resources/audio/weapons/guding-2.wav",
+    "sha256": "3d9c839420ea21148638b72651b64988382246c3537fa22ee8e72fdc6cc47b82"
+  },
+  {
+    "path": "assets/resources/audio/weapons/huaji-0.wav",
+    "sha256": "54986e59630b0f14da94a2bd50830667a3cb5f7abec2b22b917dfaa99e902084"
+  },
+  {
+    "path": "assets/resources/audio/weapons/tiesuodao-1.wav",
+    "sha256": "dbc9d9d5b0510cbd67998d653d5a838cb58d8354af8d6cb1144f5b3f93d343e4"
+  },
+  {
+    "path": "assets/resources/audio/weapons/spear-1.wav",
+    "sha256": "955355e1302608be7c0b72814e19e8f15458f2bc20cf54fd3c8fafb848b3bbab"
+  },
+  {
+    "path": "assets/resources/audio/weapons/shemao-1.wav.meta",
+    "sha256": "ed7f67420061584dc549854829b44510e33a114db61c2c59379fdf0d9da78be1"
+  },
+  {
+    "path": "assets/resources/audio/weapons/shemao-0.wav.meta",
+    "sha256": "1e642264e48e041e5937fd3b5c879734ee374830347d482939978c189082d5d2"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-metal-2.wav",
+    "sha256": "214dbf8627dd0eba81a73a7e1462e21d4ce94f0acdad7536591b0e10bb0d5a1c"
+  },
+  {
+    "path": "assets/resources/audio/weapons/spear-0.wav",
+    "sha256": "36d42e4f8b71e3e9a27b6a700b88802c0c28acd30afd41a14eb2bfa7479f47c8"
+  },
+  {
+    "path": "assets/resources/audio/weapons/spear-2.wav.meta",
+    "sha256": "677587efe7da1be0d0f32a5d7ca9ca842ff8ab66560964f32c56ed5a4b4db4b8"
+  },
+  {
+    "path": "assets/resources/audio/weapons/tiesuodao-0.wav",
+    "sha256": "a3b0175f3cd9779b072196dbaa724b9f1a19ff16e727d37cd1a8979ff1969669"
+  },
+  {
+    "path": "assets/resources/audio/weapons/huaji-1.wav",
+    "sha256": "5c583c6cd48c1d959ac0e074e70d33b242fdffe77dec6413057663e4bdae6671"
+  },
+  {
+    "path": "assets/resources/audio/weapons/jiguannu-load-0.wav",
+    "sha256": "ee5f65753c8cc540a9b7bbdd2f7f14acf2a7034b6ee587c53ab203149a3ccd0e"
+  },
+  {
+    "path": "assets/resources/audio/weapons/jiguannu-load-2.wav",
+    "sha256": "fff63297dbfab0cab762a92568aae5906be9a04431e0577a1af7ef4be0070c8a"
+  },
+  {
+    "path": "assets/resources/audio/weapons/guding-1.wav",
+    "sha256": "d4b2a38e1d117e0a6d89d52665cb1dc74af610f8a114ec82bc61a4c3768ae8a4"
+  },
+  {
+    "path": "assets/resources/audio/weapons/tiesuodao-2.wav",
+    "sha256": "96915e29ae0e5b4510725e18d04a35af733be8d7fdf2e7ef6c4e8c046ba25566"
+  },
+  {
+    "path": "assets/resources/audio/weapons/shuangji-2.wav.meta",
+    "sha256": "8ae149257a1652230c7a35bc32071ab837d5e6c5a8c1d010b5fad43430204e84"
+  },
+  {
+    "path": "assets/resources/audio/weapons/spear-2.wav",
+    "sha256": "28da4cdb43ea1e8111dba94fdf6814531c63f95582f5f5fc8bbf334952cbd7ab"
+  },
+  {
+    "path": "assets/resources/audio/weapons/tiesuodao-1.wav.meta",
+    "sha256": "4c392c197445419facad54ddaa06ed57abdb7e0575085caec0499fe4bf5ad1ea"
+  },
+  {
+    "path": "assets/resources/audio/weapons/tiesuodao-0.wav.meta",
+    "sha256": "796d73f1eae9f0a9e10b9f7a6162d942f0496a99b3182046b7bfc0924ad5302f"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-metal-1.wav",
+    "sha256": "4002bf6073e442af37d176a7121335b8e484323b533d6089ec7cd31e493f055b"
+  },
+  {
+    "path": "assets/resources/audio/weapons/yitian-2.wav.meta",
+    "sha256": "6bf97e19d89d5b5cb125ba83ab2e1a9a8277e9781ba9d5bbf84d5825fdc47c93"
+  },
+  {
+    "path": "assets/resources/audio/weapons/impact-metal-0.wav",
+    "sha256": "88559cfbd96be2d99f99764aa6ffb98a1988997ec314a6392e820658e4ea57c3"
+  },
+  {
+    "path": "assets/resources/audio/weapons/huaji-2.wav",
+    "sha256": "2bd706187ee0b406aa4dab4ea8e9e1673685321e5277318c86640cee8254478d"
+  },
+  {
+    "path": "assets/resources/audio/weapons/guding-0.wav",
+    "sha256": "cf9f7580bbb41cdf31df37564ace5d0fe81207b313c30d8620cd71cd9d6632f2"
+  }
+]

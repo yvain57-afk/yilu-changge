@@ -14,9 +14,10 @@ import {
 } from './UIComponents';
 import {CHAPTERS,PEOPLE,PERSON_PROFILES,WEAPON_DATA,TREASURES,TUNING,Slot,WeaponId,personRole,MILESTONES} from './data';
 import {resolveWeaponPresentation,drawWeaponPresentation,presentationBounds} from './WeaponPresentation';
-import {rewardLabel,nextMilestoneHint,canSkipPresentation} from './RewardFlow';
+import {rewardLabel,nextMilestoneHint,canSkipPresentation,chapterRewardHint} from './RewardFlow';
 import {BRIDGE_BUILD} from './BridgeBuild';
 import {FormalStore} from './store';
+import {RUN_GROWTH_COPY,treasureGrowth} from './RunGrowth';
 import {MANIFEST} from './manifest';
 import {Platform} from '../Platform';
 
@@ -256,7 +257,7 @@ export class FullMenu {
   this.reducedMotion=!!g.platform.book.data.settings.reducedMotion;
   if(!NativePaint.textures.ui_full_components){
    this.p.fillStyle='#101D2B';this.p.fillRect(0,0,this.W,g.size.H);
-   this.label(g.screen==='error'?'资源尚未就绪':'一路长歌：三国',this.W/2,g.size.H*.35,25,'#F1D9A0','center');
+   this.label(g.screen==='error'?'资源尚未就绪':'一将成军',this.W/2,g.size.H*.35,25,'#F1D9A0','center');
    this.wrap(g.screen==='error'?'加载失败，已保留进度。':'正在加载人物、战场与界面组件',24,g.size.H*.47,this.W-48,14);
    if(g.screen==='error'){
     this.label('重新加载',this.W/2,this.bottom+24,18,'#F1D9A0','center');
@@ -317,7 +318,7 @@ export class FullMenu {
    }
   };
   fade(0,top+136,[[0,.84],[.58,.42],[1,0]]);
-  text('title','游戏标题',{x:22,y:top+8,w:layout.titleWidth,h:40},32,'一路长歌','#F4DDA4');
+  text('title','游戏标题',{x:22,y:top+8,w:layout.titleWidth,h:40},32,'一将成军','#F4DDA4');
   text('progress','进度文字',{x:24,y:top+50,w:W-96,h:22},13,'三国 · 已克 {通关数}/20','#F3E8CF');
   button('settings','设置按钮',{x:W-78,y:top+10,w:62,h:48},'设置',()=>{this.settingsReturn='home';g.show('settings');},'navy',14);
 
@@ -361,11 +362,13 @@ export class FullMenu {
   const y=this.headBottom;
   const box=drawCompactPanel(this.p,{x:16,y,w:W-32,h:104},'normal'),r=inset(box.content,6);
   const selected=l.startWeaponId as WeaponId,lv=g.store.data.weaponLevels[selected]||1;
+  const owner=WEAPON_DATA[selected].owner;
+  const resonanceLine=owner?(l.companions.includes(owner)||l.support===owner?'已共鸣：'+PEOPLE[owner]+' · 主将伤害 +25%':l.allies.includes(owner)?'盟约：'+PEOPLE[owner]+' · 主将伤害 +50%':'配合'+PEOPLE[owner]+'可激活共鸣'):'长枪可配合任何随军，宝物被动照常生效';
   this.hero(r.x,r.y,44,40);
   this.text(WEAPON_DATA[selected].label,{x:r.x+54,y:r.y,w:r.w-132,h:20},15,'#F1D9A0');
   this.text('永久 Lv.'+lv+' · 本局Ⅰ阶',{x:r.x+54,y:r.y+21,w:r.w-132,h:18},12,'#C7D1D6');
   this.button('view-lineup','编组',W-98,y+10,64,()=>{
-   this.confirm('当前编组','主将 '+WEAPON_DATA[selected].label+'\n随军 '+(l.companions.map(id=>PEOPLE[id]).join('、')||'未编入')+' · 支援 '+(PEOPLE[l.support||'']||'未编入'),[
+   this.confirm('当前编组','主将 '+WEAPON_DATA[selected].label+'\n随军 '+(l.companions.map(id=>PEOPLE[id]).join('、')||'未编入')+' · 支援 '+(PEOPLE[l.support||'']||'未编入')+'\n'+resonanceLine,[
     {id:'lineup-weapon',label:'查看当前兵器',action:()=>this.detail('weapon',selected,'prepare')},
     {id:'lineup-tactic',label:'兵法 · '+(l.tactic==='zhenjun'?'震军':'贯阵')+' · 切换',action:()=>{
      g.store.equipTactic();
@@ -389,7 +392,7 @@ export class FullMenu {
 
   const blocks=rows.map(id=>{
    const name=weapon?WEAPON_DATA[id as WeaponId].label:treasure?TREASURES[id].name:PEOPLE[id];
-   const desc=weapon?(owned(id)?'永久 Lv.'+(g.store.data.weaponLevels[id]||1)+' · 本局Ⅰ阶':'第'+(CHAPTERS.findIndex(ch=>ch.weapon===id)+1)+'关首通获得'):treasure?({dian:'典籍',qi:'器物',ma:'坐骑'}[TREASURES[id].slot])+' · '+(owned(id)?'已收藏':'未获得'):personRole(id);
+   const desc=weapon?(owned(id)?'永久 Lv.'+(g.store.data.weaponLevels[id]||1)+' · 本局Ⅰ阶':'第'+(CHAPTERS.findIndex(ch=>ch.weapon===id)+1)+'关首通获得'):treasure?({dian:'典籍',qi:'器物',ma:'坐骑'}[TREASURES[id].slot])+' · '+(owned(id)?'已收藏':'未获得')+' · '+treasureGrowth(id).summary.split('：')[0]:personRole(id);
    const titleH=layoutText(name,W-190,15,this.measure).height,descH=layoutText(desc,W-190,12,this.measure).height,h=Math.max(78,titleH+descH+30);
    return{id,h,draw:(ry:number)=>{
     const isOwned=owned(id),sel=isSelected(id),rc=this.surface(ry,h,sel,!isOwned);
@@ -419,6 +422,7 @@ export class FullMenu {
    }};
   });
   if(!rows.length)blocks.push(this.infoBlock('empty',g.tab==='support'?'第二关寻访后开放支援。主将已整装，可直接出征。':'通关后可邀请同袍。主将已整装，可直接出征。'));
+  blocks.push(this.infoBlock('run-growth-guide','本关边打边成长\n'+(weapon?RUN_GROWTH_COPY.weapon:treasure?RUN_GROWTH_COPY.treasure:RUN_GROWTH_COPY.general)+'\n'+RUN_GROWTH_COPY.persistence));
   blocks.push({id:'tactic',h:60,draw:(ry:number)=>{
    const rc=this.surface(ry,60);
    this.text('兵法 · '+(l.tactic==='zhenjun'?'震军':'贯阵')+' · 点击切换',{x:rc.x,y:rc.y,w:rc.w,h:rc.h},14,'#F1D9A0');
@@ -533,10 +537,12 @@ export class FullMenu {
   ];
   if(known){
    const owner=Object.values(WEAPON_DATA).find(w=>w.owner===id);
-   if(owner)lines.push('共鸣兵器 · '+owner.label);
+   if(owner&&g.store.data.weapons.includes(Object.keys(WEAPON_DATA).find(k=>WEAPON_DATA[k as WeaponId]===owner)!))lines.push('专属兵器已获得 · 编入随军即自动装备，不占主将兵器位。');
+   if(owner)lines.push('共鸣兵器 · '+owner.label+'\n获得后自动配给对应随军，随军出招伤害+50%并显示共鸣光环；主将持同兵器时另获25%共鸣。');
    if(info&&info[3])lines.push(info[2]+'：'+info[3]);
   }
   if(rel==='盟')lines.push('盟约常驻加成，无需占用随军或支援槽位。');
+  if(known)lines.push(RUN_GROWTH_COPY.general+'\n'+RUN_GROWTH_COPY.persistence);
 
   const canEquip=rel==='收'||rel==='访';
   const portraitH=known&&info?.[3]&&info[3].length>28?164:188;
@@ -590,15 +596,19 @@ private item(){
   const body=weapon
    ?[
     owned?('永久等级：Lv.'+lv+' · 基础伤害 +'+Math.round((lv-1)*TUNING.weaponLevelDamage*100)+'%'):'当前状态：尚未获得',
-    '局内规则：本局Ⅰ阶出征，局内拾取同兵器匣可升Ⅱ/Ⅲ阶',
+    '局内规则：本局Ⅰ阶出征。'+RUN_GROWTH_COPY.weapon,
     lv<TUNING.weaponMaxLevel?('下一永久等级：Lv.'+(lv+1)+'（伤害 +'+Math.round(lv*TUNING.weaponLevelDamage*100)+'%）'):'永久等级已达上限（Lv.5）',
-    '武将共鸣：'+(w.owner?(PEOPLE[w.owner]+' / '+w.label):'通用主将兵器'),
+    '武将共鸣：'+(w.owner?(PEOPLE[w.owner]+' / '+w.label+'；获得后随军本主自动装备，出招伤害+50%；主将持用另获25%共鸣'):'通用主将兵器'),
+    RUN_GROWTH_COPY.persistence,
     statusLine
    ].join('\n')
    :[
-    '宝物效果：'+t.effect,
+    '佩戴效果：'+t.effect,
+    '本局被动：'+treasureGrowth(id).summary+'。不同被动可同时生效。',
+    RUN_GROWTH_COPY.treasure,
     '所属槽位：'+({dian:'典籍槽（第1关首通开启）',qi:'器物槽（第2关首通开启）',ma:'坐骑槽（第3关首通开启）'}[slot]),
-    statusLine
+    statusLine,
+    RUN_GROWTH_COPY.persistence
    ].join('\n');
   blocks.push(this.infoBlock('growth-ability',body));
   if(weapon&&owned){
@@ -612,6 +622,7 @@ private item(){
    });
   }
   const hasAction=owned&&(weapon?(lv<TUNING.weaponMaxLevel&&g.store.data.xp>=cost):g.store.slotOpen(slot));
+  if(weapon&&owned){const choose=blocks.findIndex(b=>b.id==='choose');if(choose>=0){const action=blocks.splice(choose,1)[0];blocks.splice(1,0,action);}}
   this.list(blocks,this.headBottom,hasAction);
   this.footer(
    hasAction?{
@@ -695,6 +706,16 @@ private item(){
     });
    })});
   }
+  for(const it of unique.filter(i=>i.kind==='weapon'||i.kind==='treasure')){
+   const isWeapon=it.kind==='weapon',treasure=TREASURES[it.id];
+   const equipped=isWeapon?g.store.data.selectedWeaponId===it.id:g.store.data.slots[treasure.slot]===it.id;
+   const canEquip=isWeapon||g.store.slotOpen(treasure.slot);
+   blocks.push({id:'equip-reward-'+it.id,h:50,draw:(y:number)=>this.button('equip-reward-'+it.id,
+    (equipped?'已装备 · ':canEquip?'立即装备 · ':'已入库 · ')+rewardLabel(it),16,y,this.W-32,()=>{
+     if(isWeapon){g.store.selectWeapon(it.id);g.drawMenu();}
+     else {const old=g.store.data.slots[treasure.slot];if(old&&old!==it.id){this.confirm('替换宝物',TREASURES[old].name+' → '+treasure.name,[{id:'replace-reward-treasure',label:'确认佩戴',action:()=>{g.store.equipTreasure(it.id);g.show('reward');}}],'reward');}else{g.store.equipTreasure(it.id);g.drawMenu();}}
+    },'gold',equipped||!canEquip||!!g.store.notice,{height:50,fontSize:14})});
+  }
   if(r.kind==='milestone')blocks.push(this.infoBlock('next-milestone',nextMilestoneHint(g.store.completed),13));
   this.list(blocks,this.headBottom,true);
   this.footer({
@@ -719,10 +740,20 @@ private item(){
    }});
   }
   blocks.push(this.infoBlock('battle-result','剩余兵力 '+Math.round(st?.troops||0)+' · 本局军功 +'+xp+'\n累计军功 '+g.store.data.xp+(g.store.notice?' · 保存未完成':' · 已保存'),15));
+  if(st?.momentum){
+   const m=st.momentum,boxes=Object.values(st.stats?.crates||{}).reduce((n:number,v:any)=>n+Number(v||0),0);
+   blocks.push(this.infoBlock('battle-feats','本局战果 · 击破 '+m.kills+' · 最高连破 '+m.bestCombo+'\n破阵爆发 '+m.bursts+' 次 · 宝箱 '+boxes+' 个',14));
+  }
   if(won){
+   const weapon=g.store.loadout().startWeaponId as WeaponId,lv=g.store.data.weaponLevels[weapon]||1,cost=TUNING.upgradeCost(lv);
+   if(lv<TUNING.weaponMaxLevel){
+    const ready=g.store.data.xp>=cost;
+    blocks.push(this.infoBlock('growth-next',WEAPON_DATA[weapon].label+' · 永久 Lv.'+lv+' → Lv.'+(lv+1)+'\n基础伤害 +'+Math.round((lv-1)*TUNING.weaponLevelDamage*100)+'% → +'+Math.round(lv*TUNING.weaponLevelDamage*100)+'%'+(ready?'':' · 还差 '+(cost-g.store.data.xp)+' 军功'),13));
+    blocks.push({id:'quick-upgrade-row',h:50,draw:(y:number)=>this.button('quick-upgrade','花 '+cost+' 军功 · 永久升级',16,y,this.W-32,()=>{g.store.upgrade(weapon);g.drawMenu();},'gold',!ready||!!g.store.notice,{height:50,fontSize:14})});
+   }
    const items=Array.from(new Map((receipt?.items||[]).map((i:any)=>[i.kind+':'+i.id,i])).values()) as any[];
    blocks.push(this.infoBlock('new-collection',g.first?items.map(i=>rewardLabel(i)).join(' · ')||'首通进度已记录':'重游战果已记录 · 首通收藏不重复授予'));
-   blocks.push(this.infoBlock('next-target',g.chapter===19?'二十关贯通 · 可回山河重游':'下一出征 · 第'+(next+1)+'关 '+CHAPTERS[next].place+'\n全局下一里程碑 · '+nextMilestoneHint(g.store.completed),13));
+   blocks.push(this.infoBlock('next-target',g.chapter===19?'二十关贯通 · 可回山河重游':'下一出征 · 第'+(next+1)+'关 '+CHAPTERS[next].place+'\n'+chapterRewardHint(next)+'\n'+nextMilestoneHint(g.store.completed),13));
   }else{
    blocks.push(this.infoBlock('losses',resultLossSummary(g.battle?.snapshot().damageSources)));
    blocks.push(this.infoBlock('retry-context','已通关进度、军功和收藏都会保留。\n直接重试会使用当前编组，也可以先调整再出征。',13));

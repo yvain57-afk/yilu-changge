@@ -25,7 +25,7 @@ export function fitProjectedFormation<T extends {x:number,z:number}>(slots:T[],v
 export function companionSlots(heroX:number,count:number,wallSide=0){
  // Advance companions beyond the hero's torso, keeping them clear of both legs and the rear archer ranks.
  const center=wallSide?(wallSide>0?-.55:.55):Math.max(-.42,Math.min(.42,heroX));
- return Array.from({length:count},(_,i)=>({x:center+(count<2?0:(i?-.32:.32))*(wallSide?.45:1),z:4.4+i*.35,row:i}));
+ return Array.from({length:count},(_,i)=>({x:center+(count<2?0:count>=3?[.34,-.34,0][i%3]:(i?-.32:.32))*(wallSide?.45:1),z:count>=3&&i===2?6.2:4.4+i*.35,row:i}));
 }
 
 export type LabelRect={x:number,y:number,w:number,h:number};

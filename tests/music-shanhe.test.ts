@@ -1,6 +1,7 @@
 import test from 'node:test';import assert from 'node:assert/strict';
 import fs from 'node:fs';import {createHash} from 'node:crypto';
 import {MusicDirector,musicModeForScreen} from '../assets/scripts/formal/MusicDirector';
+import {SOUND_LIMITS} from '../assets/scripts/formal/WeaponSfx';
 import {Book,KEY,defaults} from '../assets/scripts/core/save';
 class Voice{playing=false;volume=0;starts=0;pauses=0;stops=0;play(){this.playing=true;this.starts++;}pause(){this.playing=false;this.pauses++;}stop(){this.playing=false;this.stops++;}}
 function fixture(){const d=new MusicDirector(),menu=new Voice(),battle=new Voice();d.attach('menu',menu);d.attach('battle',battle);const tick=()=>{for(let i=0;i<60;i++)d.tick(1/60);};return{d,menu,battle,tick};}
@@ -31,8 +32,25 @@ test('old saves keep progress, unknown fields and music opt-out; new volume surv
  const b=new Book(storage);assert.equal(b.data.settings.music,false);assert.equal(b.data.settings.musicVolume,undefined);b.data.settings.musicVolume=.3;b.persist();const b2=new Book(storage);
  assert.equal(b2.data.settings.musicVolume,.3);assert.equal(b2.data.best['trial-01'],88);assert.deepEqual(JSON.parse(mem.get(KEY)!).otherFeature,{n:42});
 });
-test('approved effects and battle rules remain byte identical to this task baseline',()=>{
- const before=JSON.parse(fs.readFileSync('evidence/MUSIC-SHANHE-20261004/workspace-before.json','utf8'));
- const keep=['assets/scripts/formal/battle.ts','assets/scripts/formal/data.ts','assets/scripts/formal/store.ts'];
- for(const row of before.files)if(row.path.startsWith('assets/resources/audio/')||keep.includes(row.path))assert.equal(createHash('sha256').update(fs.readFileSync(row.path)).digest('hex'),row.sha256,row.path);
+test('approved audio assets remain byte identical and mixer budgets stay unchanged',()=>{
+ const audio=JSON.parse(fs.readFileSync('tests/fixtures/approved-audio-sha256.json','utf8'));
+ assert.ok(audio.length>0,'the approved audio baseline must not be empty');
+ for(const row of audio)assert.equal(createHash('sha256').update(fs.readFileSync(row.path)).digest('hex'),row.sha256,row.path);
+ assert.deepEqual(SOUND_LIMITS,{perKind:1,globalVoices:3,globalVolume:.65,startsPerSecond:12,minStartGapMs:25});
+});
+
+test('mini-game switches music sequentially and recovers a dropped play request without per-frame replay',()=>{
+ const trace:string[]=[],d=new MusicDirector({crossfade:false,recoverStart:true});
+ const menu=new Voice();menu.pause=()=>{menu.playing=false;trace.push('menu-pause');};
+ let attempts=0;const battle={playing:false,volume:0,play(){trace.push('battle-play');attempts++;if(attempts===2)this.playing=true;},pause(){this.playing=false;},stop(){this.playing=false;}};
+ d.attach('menu',menu);d.attach('battle',battle);d.unlock();d.setScene('home');for(let i=0;i<60;i++)d.tick(1/60);
+ d.setScene('battle');assert.ok(trace.indexOf('menu-pause')<trace.indexOf('battle-play'));assert.equal(menu.playing,false);assert.equal(attempts,1);
+ for(let i=0;i<180;i++)d.tick(1/60);assert.equal(attempts,2);assert.equal(battle.playing,true);assert.ok(battle.volume>0);
+ d.setScene('pause');for(let i=0;i<180;i++)d.tick(1/60);assert.equal(attempts,2);assert.equal(battle.playing,false);
+});
+test('mini-game failed start retries are bounded, including thrown platform errors, and mute stops retry',()=>{
+ const d=new MusicDirector({crossfade:false,recoverStart:true});let attempts=0;
+ d.attach('battle',{playing:false,volume:0,play(){attempts++;throw Error('native start failed');},pause(){},stop(){}});d.unlock();d.setScene('battle');
+ for(let i=0;i<600;i++)d.tick(1/60);assert.equal(attempts,3);assert.equal(d.state.playErrors,3);
+ d.configure(false,.6);for(let i=0;i<600;i++)d.tick(1/60);assert.equal(attempts,3);
 });

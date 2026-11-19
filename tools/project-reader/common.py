@@ -5,6 +5,8 @@ from pathlib import Path, PurePosixPath
 from datetime import datetime, timezone
 
 PROJECT = 'yilu-changge'
+ACTIVE_PLATFORM = 'WeChat mini game / Cocos 3.8.8'
+BUILD_ENTRY = 'tools/build-wechat.py'
 ROOT = Path(__file__).resolve().parents[2]
 STATE = Path.home() / 'Library/Application Support/YiluProjectReader' / PROJECT
 SCHEMA = '1.0'

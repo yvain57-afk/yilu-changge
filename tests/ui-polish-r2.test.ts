@@ -6,7 +6,8 @@ test('Q01: partially visible card remains drawable at 1 and 8 pixels',()=>{
  const h=host();h.g.show('prepare');for(const n of [1,8,40])assert.equal((h.ui as any).visible(h.ui.contentTop-n,80),true);
 });
 test('Q02: a card taller than viewport stays drawable, never permanently invisible',()=>{
- const h=host();h.g.show('person');assert.equal((h.ui as any).visible(h.ui.contentTop-20,800),true);
+ const h=host();h.g.personId=h.store.data.captures[0];assert.ok(h.g.personId);h.g.show('person');
+ assert.ok(h.ui.contentBottom-h.ui.contentTop<800);assert.equal((h.ui as any).visible(h.ui.contentTop-20,800),true);
 });
 test('Q03: clipped hit cannot escape viewport or expose tiny fragments',()=>{
  const v={x:0,y:100,w:375,h:200};assert.equal(clipHit({x:0,y:90,w:60,h:52},v),null);

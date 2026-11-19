@@ -1,3 +1,4 @@
+import {clearWallSupplies} from './RouteCollision';
 import {combatTuningFor} from './CombatTuning';
 /** FORMAL-20260927. Values marked tuning are explicit initial values, not original-game formulas. */
 export type WeaponId='spear'|'guandao'|'shemao'|'huaji'|'guding'|'shuangji'|'yitian'|'qinggang'|'shuanggu'|'liannu'|'duanji'|'tiesuodao'|'goulianqiang'|'dundao'|'yanlinggong'|'jiguannu';
@@ -69,7 +70,7 @@ const CHAPTER_META=[{"gateGrowthCap":6,"firstClearXP":30,"mapPanel":1,"targetSec
 CHAPTERS.forEach((c,i)=>Object.assign(c,CHAPTER_META[i]));
 /** Static design values. No runtime scaling against the player. */
 export const DIFFICULTY_PROFILES=[{"pair":1,"ordinaryHPMultiplier":1,"incomingDamageMultiplier":1,"waveInterval":4.0,"eliteBudget":0,"minimumTelegraph":1.6,"simultaneousThreats":1,"visibleEnemyCap":24},{"pair":2,"ordinaryHPMultiplier":1.05,"incomingDamageMultiplier":1,"waveInterval":3.8,"eliteBudget":0.05,"minimumTelegraph":1.5,"simultaneousThreats":1,"visibleEnemyCap":28},{"pair":3,"ordinaryHPMultiplier":1.1,"incomingDamageMultiplier":1.05,"waveInterval":3.6,"eliteBudget":0.08,"minimumTelegraph":1.4,"simultaneousThreats":2,"visibleEnemyCap":32},{"pair":4,"ordinaryHPMultiplier":1.2,"incomingDamageMultiplier":1.1,"waveInterval":3.4,"eliteBudget":0.12,"minimumTelegraph":1.3,"simultaneousThreats":2,"visibleEnemyCap":36},{"pair":5,"ordinaryHPMultiplier":1.3,"incomingDamageMultiplier":1.2,"waveInterval":3.2,"eliteBudget":0.18,"minimumTelegraph":1.2,"simultaneousThreats":2,"visibleEnemyCap":40},{"pair":6,"ordinaryHPMultiplier":1.45,"incomingDamageMultiplier":1.3,"waveInterval":3.0,"eliteBudget":0.22,"minimumTelegraph":1.15,"simultaneousThreats":2,"visibleEnemyCap":44},{"pair":7,"ordinaryHPMultiplier":1.6,"incomingDamageMultiplier":1.35,"waveInterval":2.9,"eliteBudget":0.26,"minimumTelegraph":1.1,"simultaneousThreats":2,"visibleEnemyCap":48},{"pair":8,"ordinaryHPMultiplier":1.7,"incomingDamageMultiplier":1.45,"waveInterval":2.8,"eliteBudget":0.3,"minimumTelegraph":1.05,"simultaneousThreats":2,"visibleEnemyCap":52},{"pair":9,"ordinaryHPMultiplier":1.85,"incomingDamageMultiplier":1.55,"waveInterval":2.7,"eliteBudget":0.34,"minimumTelegraph":1,"simultaneousThreats":3,"visibleEnemyCap":60},{"pair":10,"ordinaryHPMultiplier":2,"incomingDamageMultiplier":1.65,"waveInterval":2.6,"eliteBudget":0.38,"minimumTelegraph":0.95,"simultaneousThreats":3,"visibleEnemyCap":64}];
-export const difficultyFor=(chapter:number)=>{const old=DIFFICULTY_PROFILES[Math.max(0,Math.min(9,Math.floor(chapter/2)))],t=combatTuningFor(chapter);return {...old,waveInterval:t.waveInterval,minimumTelegraph:t.minimumTelegraph,simultaneousThreats:t.maxThreats,visibleEnemyCap:t.activeCap};};
+export const difficultyFor=(chapter:number)=>{const old=DIFFICULTY_PROFILES[Math.max(0,Math.min(9,Math.floor(chapter/2)))],t=combatTuningFor(chapter);return {...old,ordinaryHPMultiplier:chapter<3?1:old.ordinaryHPMultiplier,waveInterval:t.waveInterval,minimumTelegraph:t.minimumTelegraph,simultaneousThreats:t.maxThreats,visibleEnemyCap:t.activeCap};};
 export const MILESTONES=[{"id":"m01","chapter":2,"title":"初立军功","xpBonus":60,"badge":"badge_m01","primaryNewContent":"guding","special":"展示下一目标与下一关可用的新能力"},{"id":"m02","chapter":4,"title":"帐前立威","xpBonus":60,"badge":"badge_m02","primaryNewContent":"shuangji","special":"展示下一目标与下一关可用的新能力"},{"id":"m03","chapter":6,"title":"江东立足","xpBonus":60,"badge":"badge_m03","primaryNewContent":"shemao","special":"展示下一目标与下一关可用的新能力"},{"id":"m04","chapter":8,"title":"同袍成军","xpBonus":60,"badge":"badge_m04","primaryNewContent":"guandao","special":"展示下一目标与下一关可用的新能力"},{"id":"m05","chapter":10,"title":"半壁已定","xpBonus":60,"badge":"badge_m05","primaryNewContent":"liannu","special":"开启下篇第11关，原第10关奖励保留"},{"id":"m06","chapter":12,"title":"水陆扬名","xpBonus":60,"badge":"badge_m06","primaryNewContent":"tiesuodao","special":"展示下一目标与下一关可用的新能力"},{"id":"m07","chapter":14,"title":"破坚开道","xpBonus":60,"badge":"badge_m07","primaryNewContent":"dundao","special":"展示下一目标与下一关可用的新能力"},{"id":"m08","chapter":16,"title":"汉中立营","xpBonus":60,"badge":"badge_m08","primaryNewContent":"pozhengu","special":"展示下一目标与下一关可用的新能力"},{"id":"m09","chapter":18,"title":"奇门洞开","xpBonus":60,"badge":"badge_m09","primaryNewContent":"jiguannu","special":"展示下一目标与下一关可用的新能力"},{"id":"m10","chapter":20,"title":"九州长歌","xpBonus":60,"badge":"badge_m10","primaryNewContent":"jiuzhouyin","special":"完成二十关；开放不加新主线关卡的重游军令"}];
 export const milestoneFor=(chapter:number)=>MILESTONES.find(m=>m.chapter===chapter+1);
 export const MAP_PANELS=[{"id":1,"chapters":[1,2,3,4],"name":"群雄初起"},{"id":2,"chapters":[5,6,7,8],"name":"江河进军"},{"id":3,"chapters":[9,10,11,12],"name":"荆楚东行"},{"id":4,"chapters":[13,14,15,16],"name":"中原争雄"},{"id":5,"chapters":[17,18,19,20],"name":"西关归一"}];
@@ -102,8 +103,8 @@ export const BOSS_PATTERNS:Record<string,{name:string;warn:number;speed:number;d
 export const PACING={marchSeconds:[65,66,64,54,52,56,56,54,54,50,72,74,76,78,80,82,88,90,92,108],bossHP:CHAPTERS.map(c=>c.bossHP),officerHP:[0,0,0,165,95,170,180,190,195,115,140,150,160,170,180,190,200,210,220,230]};
 export const marchSpeed=(chapter:number)=>(CHAPTERS[chapter].length+5)/PACING.marchSeconds[chapter];
 export const TUNING={version:'campaign20-20260930',startTroops:30,tier:[1,1.35,1.75],overflow:4,weaponMaxLevel:5,weaponLevelDamage:.12,upgradeCost:(level:number)=>level*60,clearXP:30,replayXP:10,gateHitStep:1,gateHitWindow:30,gateSafetyLimit:9999};
-export type RouteEvent={d:number;type:string;x?:number;kind?:string;gives?:string;vals?:number[];n?:number;len?:number;side?:number;person?:string;fixed?:boolean;formation?:'pair'|'triple'|'stagger'|'guard'|'line';elite?:boolean;growthCap?:number;enemyKind?:'light'|'guard'|'shield'|'archer'|'cavalry'|'banner'|'mechanism';choiceId?:string;choiceRole?:'safe'|'challenge';rewardXP?:number;waveId?:string};
-/** Finite authored route, seeded per chapter; all crate contents must come from unlocked pools. */
+export type RouteEvent={d:number;type:string;x?:number;kind?:string;gives?:string;vals?:number[];n?:number;len?:number;side?:number;person?:string;fixed?:boolean;formation?:'pair'|'triple'|'stagger'|'guard'|'line';elite?:boolean;growthCap?:number;enemyKind?:'light'|'guard'|'shield'|'archer'|'cavalry'|'banner'|'mechanism';choiceId?:string;choiceRole?:'safe'|'challenge';rewardXP?:number;waveId?:string;trial?:boolean;upgrade?:boolean};
+/** Fixed route pressure; trial drops are battle-only and never change permanent unlocks. */
 export function routeFor(chapter:number,weapons:string[],treasures:string[],startWeaponId?:string):RouteEvent[]{
  const l=CHAPTERS[chapter],owned=weapons.filter(w=>!!WEAPON_DATA[w as WeaponId]),start=owned.includes(startWeaponId||'')?startWeaponId!:'spear',pool=owned.filter(w=>w!==start),w=pool[Math.min(chapter,pool.length-1)]||start;
  const layouts:Record<string,{name:string;walls:[number,number,number][];gates:[number,number,number][];arms:number[];weapons:number[];grain:[number,number][];squads:[number,number][];chain:number}>= {
@@ -116,13 +117,12 @@ export function routeFor(chapter:number,weapons:string[],treasures:string[],star
  const at=(seconds:number)=>seconds*speed;
  // World-distance positions are authored from marching time, not global timeScale.
  const tuning=combatTuningFor(chapter);
- for(let t=5,wave=0;t<duration-8;t+=tuning.waveInterval,wave++){
-  // c16 follows the authored relief windows; walls narrow the budget instead of deleting waves.
-  let count=Math.round(tuning.waveMin+(tuning.waveMax-tuning.waveMin)*(wave%3)/2);
-  if(chapter===15)count=t<8?14:t<18?20:t<27?16:t<39?22:t<55?24:t<68?22:18;
+ for(let t=11,wave=0;t<duration-8;t+=tuning.waveInterval,wave++){
+  const progress=Math.max(0,Math.min(1,(t-11)/(duration-20)));
+  const count=Math.round(tuning.waveMin+(tuning.waveMax-tuning.waveMin)*progress);
   const side=(wave%3-1)*.42,form=l.faction==='魏'?(wave%3===0?'pair':'line'):l.faction==='吴'?(wave%2?'pair':'stagger'):l.faction==='蜀'?(wave%2?'guard':'triple'):(wave%3?'stagger':'triple');
-  if(chapter>=16&&t<18)count=Math.round(12+(count-12)*(t-5)/13);
-  const archers=chapter<2?0:Math.max(1,Math.round(count*(chapter>=16&&t<18?.10:tuning.archerShare))),special=chapter<3?0:chapter>=16?(wave%3===0?1:2):Math.min(2,Math.floor(count*.08));
+  // New enemy types enter after the first upgrades; later waves increase bodies, not HP mid-run.
+  const archers=chapter<2||progress<.18?0:Math.max(1,Math.round(count*tuning.archerShare)),special=chapter<3||progress<.32?0:chapter>=16?(wave%3===0?1:2):Math.min(2,Math.floor(count*.08));
   const specialKind:RouteEvent['enemyKind']=chapter>=16?(wave%3===0?'mechanism':wave%3===1?'shield':'cavalry'):chapter>=12?(wave%3===0?'banner':wave%3===1?'shield':'guard'):chapter>=8?(wave%3===0?'cavalry':wave%3===1?'banner':'guard'):chapter>=4?(wave%2?'shield':'banner'):'shield';
   route.push({d:at(t),type:'squad',x:side,n:count-archers-special,formation:form,enemyKind:'light',waveId:l.id+':normal:'+wave+':light'});
   if(archers)route.push({d:at(t+.5),type:'squad',x:-side,n:archers,formation:'pair',enemyKind:'archer',waveId:l.id+':normal:'+wave+':archer'});
@@ -132,13 +132,29 @@ export function routeFor(chapter:number,weapons:string[],treasures:string[],star
  [10,31].forEach((t,i)=>route.push({d:at(t),type:'squad',x:i?-.48:.48,n:4,formation:'guard',elite:l.faction==='魏'}));
  // Last hostile ranks come before the +1 chain, leaving a readable reorganisation window.
  route.push({d:at(duration-8),type:'squad',x:0,n:8+Math.min(4,chapter),formation:'line',elite:true});
- [13,34,chapter<3?55:46].forEach((t,i)=>route.push({d:at(t),type:'crate',x:i?0:.45,kind:'weapon',gives:i===1?w:start}));
- [22,chapter<3?60:duration-2].forEach(t=>route.push({d:at(t),type:'crate',x:0,kind:'arms'}));
+ // The first two weapon chests upgrade the currently held weapon, even after a trial swap.
+ [14,38].forEach(t=>route.push({d:at(t),type:'crate',x:0,kind:'weapon',gives:start,upgrade:true}));
+ let rewardWeapon=l.weapon&&!owned.includes(l.weapon)?l.weapon:w;
+ [22,duration-3].forEach(t=>route.push({d:at(t),type:'crate',x:0,kind:'arms'}));
+ // Keep an explicit growth opportunity at most eight marching seconds away.
+ route.push({d:at(6),type:'crate',x:0,kind:'power'},{d:at(18),type:'crate',x:0,kind:'guard'},{d:at(34),type:'crate',x:0,kind:'haste'});
+ for(let t=46,i=0;t<duration-4;t+=8,i++)route.push({d:at(t),type:'crate',x:0,kind:['power','haste','guard'][i%3]});
+ const treasurePool=treasures.filter(id=>!!TREASURES[id]);
+ const firstTreasure=treasurePool[(chapter+treasurePool.length-1)%treasurePool.length]||'taiping';
+ const secondTreasure=l.treasure&&l.treasure!==firstTreasure?l.treasure:treasurePool.find(id=>id!==firstTreasure)||'huxinjing';
+ [firstTreasure,secondTreasure].forEach((gives,i)=>route.push({d:at(i?42:26),type:'crate',x:0,kind:'treasure',gives,trial:!treasurePool.includes(gives)}));
+ const friendly=['zhao','sunxiang','zhao','lubu','dian','zhang','zhao','guan','zhang','zhao','guan','taishici','zhao','zhanghe','ganning','xiahouyuan','weiyan','jiang','dengai','jiang'][chapter];
+ const owner=WEAPON_DATA[rewardWeapon as WeaponId]?.owner,hostiles=[l.boss,...requiredOfficers(chapter)];
+ const companionIDs=['lubu','dian','zhao','zhang',...Object.keys(COMPANION_STYLE)];
+ const general=owner&&companionIDs.includes(owner)&&!hostiles.includes(owner)?owner:friendly;
+ // Teach a real owner pair in fresh runs; an already-owned alternative keeps its replay rotation.
+ if((!owner&&rewardWeapon===start)||(owner&&hostiles.includes(owner)&&!owned.includes(rewardWeapon)))rewardWeapon=ACTOR_WEAPONS[general];
+ route.push({d:at(duration-7),type:'crate',x:0,kind:'weapon',gives:rewardWeapon,trial:!owned.includes(rewardWeapon)});
+ route.push({d:at(30),type:'crate',x:0,kind:'general',gives:general,trial:true});
  [13,28].forEach((t,i)=>route.push({d:at(t),type:'crate',x:i?.5:-.5,kind:'grain'}));
  q.walls.slice(0,2).forEach(([,len,side],i)=>route.push({d:at(i?32:19),type:'wall',len:at(i?3:4),side}));
  q.gates.forEach(([,a,b],i)=>route.push({d:at(i?30:17),type:'gates',vals:[a,b],growthCap:l.gateGrowthCap}));
  for(let i=0;i<3;i++)route.push({d:at(duration-5+i*1.4),type:'gates',vals:[1,-5],fixed:true,growthCap:0});
- if(treasures.length)route.push({d:at(27),type:'crate',x:-.5,kind:'treasure',gives:treasures[(chapter+treasures.length-1)%treasures.length]});
  if(chapter===1)route.push({d:at(45),type:'cameo',x:1.1,person:'lubu'});
  if(chapter===8)['xing','chen','yang'].forEach((person,i)=>route.push({d:at(12+i*14),type:'cameo',x:i%2?-1.15:1.15,person}));
  requiredOfficers(chapter).forEach((person,i)=>route.push({d:at(40+i*6),type:'officer',x:i%2?.48:-.48,person,n:1}));
@@ -150,6 +166,7 @@ export function routeFor(chapter:number,weapons:string[],treasures:string[],star
   route.push({d:at(t),type:'crate',x:side,kind:'grain',n:9,choiceId:id,choiceRole:'challenge',rewardXP:2});
   route.push({d:at(t-2),type:'squad',x:side,n:3+Math.floor(chapter/4),formation:'guard',elite:true,enemyKind:chapter>=12?'shield':chapter>=4?'guard':'light',choiceId:id,choiceRole:'challenge'});
  });
+ clearWallSupplies(route);
  // Ordinary light troops remain the majority. The marked ranks introduce visible tactical threats.
  let waveIndex=0;for(const e of route){if(e.type==='squad'&&!e.enemyKind){e.enemyKind=e.elite?'guard':'light';e.waveId=l.id+':authored:'+waveIndex++;}}
  return route.sort((a,b)=>a.d-b.d);

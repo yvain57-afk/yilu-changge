@@ -1,3 +1,5 @@
+> 2026-11-19 起，当前维护平台为微信小游戏《一将成军》。下方 iOS 构建与验收数据为历史记录。
+
 ## 最新版已实际启动 · 2026-10-02
 
 用户解锁后0.12.3/2026100201启动成功，已读取实体iPhone「当前编组」游戏画面，可直接试玩；证据 evidence/YILU_UI_POLISH_R2/iphone-latest-20261002/native-lineup.png 及 native-launch-result.json。绑定来自安装包指纹/设备版本回读，不是图片内嵌指纹。本次没有重新安装或摄像头访问。安装前后存档一致；完整触控、性能、后台、主将连弩专项仍待验。GPT R3规划已完成但未实施，76动作键和8个U05-long错误ID覆盖仍未完成。细节 deliverables/YILU_UI_POLISH_R2/IPHONE-LATEST-GPT-SYNC-20261002.md。下方Locked、未安装、停止手机均为历史阶段。
@@ -80,7 +82,7 @@
 - project_id：`yilu-changge`
 - 真实工程：`/Users/yvainair/Code/游戏-左右滑古代史`
 - 活动平台：原生 iOS，Cocos Creator 3.8.8 / TypeScript；微信路线暂缓，并未取消。
-- 构建入口：`tools/build-ios.py`；正式场景：`assets/scripts/formal/FormalGame.ts`。
+- 构建入口：`npm run build:wechat`；正式场景：`assets/scripts/formal/FormalGame.ts`。
 - 当前分支：`codex/ios-polish-round2-20260929`；接入前 HEAD：`79fbea0f8f135e6d9457cde672118b52baacb4b6`。本轮未提交、推送或合并。
 - 本轮：`YILU-MCP-COMPLETE-20260929`。只读资料桥接、本地媒体、开发诊断和交接；不调整数值、美术、关卡或存档。
 
